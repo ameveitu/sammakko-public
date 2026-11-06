@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "kind": "POSTSEAL_B12_FRESH_RECONSTRUCTION_NOT_ORIGINAL_ZIP_CONTENT",
+  "archive": "/Users/aikuiset/Documents/Codex/2026-10-24/e/outputs/Sammakko/exports/Sammakko_181_B12_139of181.zip",
+  "inventory": {
+    "archive": "/Users/aikuiset/Documents/Codex/2026-10-24/e/outputs/Sammakko/exports/Sammakko_181_B12_139of181.zip",
+    "sha256": "1c46327c17505c18a07c6f9a2cb62469401765878ba3005dc9305979e9939a35",
+    "sourceRevision": "29bd0e1b2577e3e9f303c594e728f8dc9c77c6d7",
+    "zipBytes": 44265926,
+    "uncompressedBytes": 120798631,
+    "compressedMemberBytes": 42068970,
+    "members": 10331,
+    "manifestFiles": 10329,
+    "compressionMethods": {
+      "8": 10331
+    },
+    "CRC": "PASS",
+    "allManifestSHA256": "PASS",
+    "safePathsAndEntryTypes": "PASS",
+    "manifestSHA256": "e6ba614a60abf04d493e533d1c036c3c59d92e6e55073a38389820b7cb716b0d",
+    "historicalIndexSHA256": "0f9c444ea2f6936642baf42fe4645c3cc0ed467329c20cbec5b6e3f7a415eb99"
+  },
+  "commands": [
+    {
+      "command": [
+        "npm",
+        "ci",
+        "--offline"
+      ],
+      "exitCode": 0,
+      "seconds": 1.578,
+      "stdout": "01-stdout.txt",
+      "stderr": "01-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/build.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 14.306,
+      "stdout": "02-stdout.txt",
+      "stderr": "02-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/verify.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 7.729,
+      "stdout": "03-stdout.txt",
+      "stderr": "03-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/check-package-tests.mjs",
+        "B12",
+        "reconstruction-sammakko-B12-reconstruction-r1"
+      ],
+      "exitCode": 0,
+      "seconds": 14.556,
+      "stdout": "04-stdout.txt",
+      "stderr": "04-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/production-status.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 4.697,
+      "stdout": "05-stdout.txt",
+      "stderr": "05-stderr.txt"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "lesson-network/test-export.py"
+      ],
+      "exitCode": 0,
+      "seconds": 1.55,
+      "stdout": "06-stdout.txt",
+      "stderr": "06-stderr.txt"
+    }
+  ],
+  "extracted": "/private/tmp/sammakko-B12-reconstruction-r1/extracted",
+  "sourceTests": {
+    "tests": 652,
+    "pass": 652,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "sourceRevision": "29bd0e1b2577e3e9f303c594e728f8dc9c77c6d7",
+  "technicalChecked": 139,
+  "networkVerified": 690,
+  "networkChecks": 344333,
+  "exporterTests": 5,
+  "scope": "Cached offline locked install; normal build/verify; source-bound652; status139; exporter5. No browser rerun solely for packaging; prior scoped native evidence reused with original limits. Only fresh /tmp reconstruction modified. SIZE_AUDIT separate."
+}

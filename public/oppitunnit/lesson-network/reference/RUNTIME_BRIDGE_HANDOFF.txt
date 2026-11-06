@@ -1,0 +1,57 @@
+RUNTIME BRIDGE FOR TEACHER -> HTML LESSON -> KC GAME
+
+This is a separate integration handoff. Sol's current Phase1 task implements the lesson network and adapter boundary; it does not modify the supplied game runtimes.
+
+Observed source identities
+
+Lite181: commit d475715339169463354e91f260c8c305db91a50a.
+Full Sammakko supplied baseline: commit d547e9ebfbd8ca1737abe40be34e9ace53ea773e, as recorded by the sealed review input.
+No deployed endpoint was verified here. Reinspect the actual newer runtime before implementing its adapter.
+
+LITE181: MISSING KC DEEP LINK
+
+src/main.ts dispatches #aikuiselle, #alueet and #paja scenes. open(id, mode, ...) opens lessons in memory. The adult graph's open callback clears the hash and invokes open(id,'learn'). The selected adult graph node is also component state. Copying the address bar does not select that KC on reload.
+
+Minimum future Lite bridge:
+
+1. Select and document a canonical inbound KC URL form; it is proposed until implemented.
+2. Parse and safely decode the KC; reject unknown/out-of-scope IDs clearly.
+3. Support both fresh-load entry and later route changes.
+4. When a KC is opened through normal UI, update its shareable URL consistently.
+5. Choose an appropriate world/context for that KC rather than retain an unrelated last world.
+6. Add an adult selected-KC action to open the configured HTML lesson page and another to copy the actual game link. Join by exact kcId.
+7. Preserve existing learner history. Page opens, previews, URL copies and teacher inspection must not mint mastery or mission rewards.
+8. Provide a build-specific availability manifest and a small route-verification result for the lesson-network adapter.
+
+This bridge changes routing/integration, not the canonical graph or lesson correctness. Coordinate it with the current Lite correction pass; it need not wait for all 690 lesson bodies to exist.
+
+FULL SAMMAKKO: SOURCE-SUPPORTED STARTUP ROUTE
+
+apps/web/adventure.ts opens a registered KC and writes #journey/${id}; at startup it parses #journey/ and checks registry membership. It has no general hashchange dispatcher. Existing e2e tests explicitly reload after same-document hash navigation.
+
+Use BASE/#journey/<encoded canonical KC-ID> in a fresh document/tab. Preserve a configured deployment path prefix. Remove any engineering query when building an ordinary adventure link. BASE/?engineering=1#<KC-ID> is a technical menu selection, not automatic lesson launch.
+
+Runtime availability is separate from 690 catalogue membership. Read the actual build's compiled/index.json kcIds and successfully supported packs. The supplied report distinguishes 12 compiled packs from 10 newer bounded journeys; the compiled index was not materialized in the reviewed source tree, so this handover does not provide an authoritative live available-ID list.
+
+TEACHER VIEW BOUNDARY
+
+The network should publish a manifest that the host teacher view can consume:
+
+  kcId -> lessonPagePath, scaffold/content status, lesson revision,
+          Lite alignment status, game-link resolver status
+
+The teacher opens the HTML page for presentation and uses a separately labelled copy action for the desired game's KC link. The lesson-page URL and game URL are different deliverables. Learner profile/history, teacher session state and a specific random item are not part of a generic shared KC link.
+
+Only turn on an ordinary classroom copy/open action when the configured route, exact KC availability and endpoint have been verified, and the deployment is reachable by the intended pupil audience. Distinguish local_preview, classroom_network and public deployment scopes. Source-known but endpoint-unverified routes can be exposed as clearly labelled developer tests. A localhost, loopback or file: link is a local preview, not a shareable classroom link. If unavailable, show the reason and retain useful actions to copy the KC ID or a correctly labelled lesson page link. Missing deployment does not block completion of the local Phase-1 foundation.
+
+MINIMUM INTEGRATION CHECKS
+
+- Copy/paste into a fresh tab opens the exact expected KC on the stated build.
+- Reload retains the intended KC where route support is claimed.
+- Unknown and unimplemented IDs cannot silently become another exercise.
+- The selected game's own prerequisite/preview behavior remains in force.
+- Opening/copying/presenting cannot create an answered-attempt, checked state or world reward.
+- Direct links remain valid under the configured host path prefix.
+- Local preview URLs cannot be labelled ready for pupils on other devices.
+- A lesson-network page is never labelled a direct Lite game link.
+- The availability manifest, route version and endpoint verification evidence are updated together.

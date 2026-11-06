@@ -1,0 +1,635 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M79-RECIP-01",
+  "revision": 13,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "reciprocal.svg",
+      "sha256": "9e9d9f2a063c839d849d0b00bd055c68ebc119eaba13e1b34fb148e502cbb80b"
+    },
+    {
+      "path": "shared/loikka/curious.png",
+      "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "7363236d22605b06e83e02e1ec70a71eedbd5b36e7c659aaf40287106851ee68"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://openstax.org/books/prealgebra-2e/pages/4-2-multiply-and-divide-fractions",
+      "title": "Multiply and Divide Fractions — Prealgebra 2e §4.2, Find Reciprocals",
+      "organisation": "OpenStax / Rice University",
+      "accessed": "2026-10-29",
+      "retrieved": "Official HTML Find Reciprocals definition, nonzero restriction, sign reasoning, whole-number example and comparison with opposites; current licence footer.",
+      "adopted": "Product-one is the defining relationship. State zero exception, write whole numbers over one, and keep reciprocal separate from opposite.",
+      "rejected": "No automatic flip rule for zero, no claim reciprocal always increases magnitude, no general fraction-division algorithm imported as a prerequisite.",
+      "usageRestrictions": "Current page states CC BY-NC-SA and separate AI/commercial permission restrictions. Concept comparison of mathematical facts only; no protected text, exercise, media or code reused."
+    },
+    {
+      "url": "https://ximera.osu.edu/csccmathematics/precalculus/precalculus/moreTrigFunctions/reciprocals",
+      "title": "Reciprocals",
+      "organisation": "Ximera, Ohio State-hosted CSCC Mathematics PreCalculus",
+      "accessed": "2026-10-29",
+      "retrieved": "Official HTML reciprocal/zero, size and sign subsections; CC BY-NC-SA4.0 shown. No embedded graph/video review claimed.",
+      "adopted": "Zero cannot be inverted into a valid fraction; one is its own reciprocal; both negative members can multiply to positive one.",
+      "rejected": "Do not import limits, asymptotes or reciprocal functions. Source size paragraph contains a wording slip calling the opposite-sign A/A form value1; rely on direct arithmetic giving−1, not that sentence.",
+      "usageRestrictions": "Page states CC BY-NC-SA4.0. No external text/diagram/code copied; own strip model."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@b125c32f0deac2d90cb73f75aeb5dd18544e4ca2e5b9ed59f660aac6c9a4141b",
+      "note": "Author source checks only; different independent exact-revision review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@b125c32f0deac2d90cb73f75aeb5dd18544e4ca2e5b9ed59f660aac6c9a4141b",
+      "note": "Author source checks only; different independent exact-revision review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@b125c32f0deac2d90cb73f75aeb5dd18544e4ca2e5b9ed59f660aac6c9a4141b",
+      "note": "No actual human or learner validation."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@b125c32f0deac2d90cb73f75aeb5dd18544e4ca2e5b9ed59f660aac6c9a4141b",
+      "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/algebra-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@b125c32f0deac2d90cb73f75aeb5dd18544e4ca2e5b9ed59f660aac6c9a4141b",
+      "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/algebra-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@b125c32f0deac2d90cb73f75aeb5dd18544e4ca2e5b9ed59f660aac6c9a4141b",
+      "note": "No actual human/target-learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@15c0e23fece879d6d0e761fc979add60ed54c0671a3d0d61d1b12d0e1250240b",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@15c0e23fece879d6d0e761fc979add60ed54c0671a3d0d61d1b12d0e1250240b",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@15c0e23fece879d6d0e761fc979add60ed54c0671a3d0d61d1b12d0e1250240b",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@dfb55e712a3421d835fbd54d1cd0f3a1c16b3d72853fcec47c3c19e6a00d4b62",
+      "note": "LR04-B09: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@dfb55e712a3421d835fbd54d1cd0f3a1c16b3d72853fcec47c3c19e6a00d4b62",
+      "note": "LR04-B09: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@dfb55e712a3421d835fbd54d1cd0f3a1c16b3d72853fcec47c3c19e6a00d4b62",
+      "note": "LR04-B09: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@3c32c6fcff6704df09916a8585f342d8ab207b06846025c1a37af71993efe15d",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@3c32c6fcff6704df09916a8585f342d8ab207b06846025c1a37af71993efe15d",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@3c32c6fcff6704df09916a8585f342d8ab207b06846025c1a37af71993efe15d",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@2c10757f4ca0032d7ee8a7adfe38508b73ea090b3165aa4408d1dfff2b6b093a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@2c10757f4ca0032d7ee8a7adfe38508b73ea090b3165aa4408d1dfff2b6b093a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@2c10757f4ca0032d7ee8a7adfe38508b73ea090b3165aa4408d1dfff2b6b093a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@7349734c14c254e01228c6f126f4d71cbba2707de2edc3852d344f9c1ea2ff50",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@7349734c14c254e01228c6f126f4d71cbba2707de2edc3852d344f9c1ea2ff50",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@7349734c14c254e01228c6f126f4d71cbba2707de2edc3852d344f9c1ea2ff50",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@b0e5ccaf124c848cb9373d3fc2bcb05694524e0bc6ed2bded38631113da299f5",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@b0e5ccaf124c848cb9373d3fc2bcb05694524e0bc6ed2bded38631113da299f5",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@b0e5ccaf124c848cb9373d3fc2bcb05694524e0bc6ed2bded38631113da299f5",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@3eddd9ecbdf969c7d743064158a0d0342db9da31d5544cb0c8409c3a1ba0efc1",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@3eddd9ecbdf969c7d743064158a0d0342db9da31d5544cb0c8409c3a1ba0efc1",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@3eddd9ecbdf969c7d743064158a0d0342db9da31d5544cb0c8409c3a1ba0efc1",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@2020fe62b558e32711eb25e278e7191f1ec4abebc261b0469b358629ed85f95f",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@2020fe62b558e32711eb25e278e7191f1ec4abebc261b0469b358629ed85f95f",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@2020fe62b558e32711eb25e278e7191f1ec4abebc261b0469b358629ed85f95f",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@99c516cdc712f58ca66398cab3a85d511dc3b84eb5e875ec5a7f9abac57dd2b2",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@99c516cdc712f58ca66398cab3a85d511dc3b84eb5e875ec5a7f9abac57dd2b2",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@99c516cdc712f58ca66398cab3a85d511dc3b84eb5e875ec5a7f9abac57dd2b2",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@efb02fc48948fd06c81d7323db153019928c35d712e33b94ba637cb10983f0f6",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@efb02fc48948fd06c81d7323db153019928c35d712e33b94ba637cb10983f0f6",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@efb02fc48948fd06c81d7323db153019928c35d712e33b94ba637cb10983f0f6",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@c7259b125809ce3acddf9b82f4d2d064101bb218918254213c23db7b47b747d7",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@c7259b125809ce3acddf9b82f4d2d064101bb218918254213c23db7b47b747d7",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@c7259b125809ce3acddf9b82f4d2d064101bb218918254213c23db7b47b747d7",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@dba07f842733a439e897dc7046b0c1a156f4039d8eb9bf8cb94484026146f099",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@dba07f842733a439e897dc7046b0c1a156f4039d8eb9bf8cb94484026146f099",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Käänteisluku perustuu tuloon 1, vastaluku summaan 0. Nollan käänteislukua ei keksitä, ja negatiivisen käänteisluvun merkki säilyy. Annosten määrä voi olla murtoluku, esimerkiksi 5/2; negatiivista lukua ei esitetä negatiivisena fyysisenä pituutena. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@dba07f842733a439e897dc7046b0c1a156f4039d8eb9bf8cb94484026146f099",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M79-RECIP-01",
+    "sourceBuild": "lite181-2026-10-27",
+    "sourceFile": "authority/production-181-v2/lite/src/content/algebra79b.ts",
+    "nodeRevision": "audit1-2026-10-28",
+    "validRevisions": [
+      "audit1-2026-10-28"
+    ],
+    "actualFamilies": [
+      "whole",
+      "pairs",
+      "pick",
+      "missing",
+      "transfer"
+    ],
+    "familyMapping": {
+      "pick": "Swap guided by product-one rather than flip-only recognition.",
+      "missing": "Actual newer numeric missing numerator family mapped to open fullfraction response, exact product check.",
+      "whole": "Whole4 represented4/1 then1/4, with product justification.",
+      "pairs": "Actual newer sort separates reciprocal from opposite/complement; own open responses include counterexamples and optionalnegative.",
+      "transfer": "Unit-fraction litres-to-cup-count meaning retained with explicit units and offline illustration; no generaldivision proof."
+    },
+    "registry": {
+      "whole": {
+        "node": "M79-RECIP-01",
+        "tag": "whole",
+        "outcome": "valitsee oikean vaihtoehdon",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {
+          "negative": "Negatiivinen luku on vain väärä vaihtoehto.",
+          "decimal": "Desimaaliluku on vain väärä vaihtoehto."
+        },
+        "support": [],
+        "source": [
+          "families.ts M79-RECIP-01/*"
+        ]
+      },
+      "pairs": {
+        "node": "M79-RECIP-01",
+        "tag": "pairs",
+        "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {
+          "negative": "Negatiivinen luku on vain väärä vaihtoehto.",
+          "decimal": "Desimaaliluku on vain väärä vaihtoehto."
+        },
+        "support": [],
+        "source": [
+          "families.ts M79-RECIP-01/*"
+        ]
+      },
+      "pick": {
+        "node": "M79-RECIP-01",
+        "tag": "pick",
+        "outcome": "valitsee oikean vaihtoehdon",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {
+          "negative": "Negatiivinen luku on vain väärä vaihtoehto.",
+          "decimal": "Desimaaliluku on vain väärä vaihtoehto."
+        },
+        "support": [],
+        "source": [
+          "families.ts M79-RECIP-01/*"
+        ]
+      },
+      "missing": {
+        "node": "M79-RECIP-01",
+        "tag": "missing",
+        "outcome": "kirjoittaa luvun",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {
+          "negative": "Negatiivinen luku on vain väärä vaihtoehto.",
+          "decimal": "Desimaaliluku on vain väärä vaihtoehto."
+        },
+        "support": [],
+        "source": [
+          "families.ts M79-RECIP-01/*"
+        ]
+      },
+      "transfer": {
+        "node": "M79-RECIP-01",
+        "tag": "transfer",
+        "outcome": "kirjoittaa luvun",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {
+          "negative": "Negatiivinen luku on vain väärä vaihtoehto.",
+          "decimal": "Desimaaliluku on vain väärä vaihtoehto."
+        },
+        "support": [],
+        "source": [
+          "families.ts M79-RECIP-01/*"
+        ]
+      }
+    },
+    "demoInventory": [
+      {
+        "say": "Luku kolme viidesosaa menee kääntökoneeseen. Osoittaja ja nimittäjä vaihtavat paikkaa: tulee viisi kolmasosaa. Katso, mitä tulosta tulee.",
+        "animated": true,
+        "label": "3/5 käänteisluku",
+        "duration": 8.7
+      },
+      {
+        "say": "Kuinka monta neljäsosan palaa mahtuu yhteen kokonaiseen? Neljä. Siksi luvun 1/4 käänteisluku on 4.",
+        "animated": true,
+        "label": "montako 1/4 mahtuu yhteen",
+        "duration": 9.4
+      },
+      {
+        "say": "Kahden viidesosan paloja mahtuu yhteen kaksi ja vielä puolikas: viisi kahdesosaa. Se on luvun 2/5 käänteisluku.",
+        "animated": true,
+        "label": "montako 2/5 mahtuu yhteen",
+        "duration": 8.3
+      },
+      {
+        "say": "Kokonaisluku on murtoluku, jonka nimittäjä on yksi. Luvun neljä käänteisluku on yksi neljäsosa.",
+        "animated": false,
+        "type": "static card; original definition read from NodeSpec and parts.ts"
+      }
+    ],
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+      "content.mjs": "c4636c6188731667a1b86f7a11a80cd20af9fc37fe824dcb75835d86688bb1c4",
+      "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "EVENT_COMMIT_REVIEW_B05.md": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+      "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2",
+      "authority/production-181-v2/ASSETS.md": "bdccb0695c27382d99f8831077adf2f247b1bb168018bc5f829c510df3792c48",
+      "authority/production-181-v2/STYLE_REVIEW_FI.md": "aed7c1ba925e0743dc8f4d78b26cf875c5595e3afb39e0d3cd679f881b1683a4",
+      "authority/production-181-v2/ASSET_STYLE_GATE.txt": "fb5a31989b7ac7ad3f2e4f875ca86ea2f224821de09fa5eb4371fc3f36239fb7",
+      "authority/production-181-v2/lite/src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+      "authority/production-181-v2/lite/src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "authority/production-181-v2/lite/src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/src/engine/expr.ts": "5aa128b08a9c45a6612f942cc9c52a670910ab87e28f47f5522b0dff67989b77",
+      "authority/production-181-v2/lite/src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "shared/aava/curious.png": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2",
+      "shared/loikka/curious.png": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+    },
+    "reconciliation": "alignment.md",
+    "motionOverlay": false,
+    "runtimeRoutePolicy": "Shared verified resolver only; no invented public pupil game URL.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/algebra79b.ts": "2cb8b4e292009053a217f710c067ef8fb9b7b33a3205c127fe622f3886e7ac3b",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/parts.ts": "806680eedb06693374837d9488532f84cd4c905ca9415cae83e4e855d78f9a7e",
+        "src/engine/check.ts": "47db66a3f49e0ad81dbe6a44ef630f68c219ef1278b96b1d48e353ccb5d113c3",
+        "src/engine/expr.ts": "5aa128b08a9c45a6612f942cc9c52a670910ab87e28f47f5522b0dff67989b77",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [
+        "AUTHORING.md",
+        "EVENT_COMMIT_REVIEW_B05.md",
+        "INTERACTION_FEEDBACK_CONTRACT.md",
+        "authority/production-181-v2/ASSETS.md",
+        "authority/production-181-v2/ASSET_STYLE_GATE.txt",
+        "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt",
+        "authority/production-181-v2/STYLE_REVIEW_FI.md",
+        "content.mjs",
+        "reference/inputs/canonical-690-graph.json",
+        "reference/inputs/mvp-scope-181.json",
+        "shared/aava/curious.png",
+        "shared/loikka/curious.png"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "purpose": "Understand a reciprocal as a multiplier producing one, with whole-number/fraction/zero boundaries.",
+    "teacherObjective": "Oppilas perustelee käänteisluvun tulon1 avulla, muodostaa käänteislukuparin ja erottaa käänteisluvun vastaluvusta sekä nollan poikkeuksesta.",
+    "childGoal": "Etsin luvulle kertoimen, jolla tulo on yksi.",
+    "hook": "How many fixed-size pieces fill one named whole?",
+    "concreteToRepresentation": "Paper unit strip and fixed template → original diagram/manual piece placement → product1 → fraction notation and reciprocal swap.",
+    "examples": [
+      "Four quarter-pieces giveone:4·1/4=1.",
+      "2/5 pieces:2whole pieces and half of a piece fillone;2/5·5/2=1.",
+      "Reversepair5/2 and2/5, opposed to additive inverse−2/5.",
+      "Zero has none;one is itsown;negative example optional, backed by product."
+    ],
+    "interaction": "Step/undo/reset/finish fixed-length positive strip model; independent open fraction fields and explicit nonexistence mode. Accept equivalent unreduced/signed fractions within bounds.",
+    "scope": [
+      "Finite authored fraction cases, signed integer numerator/denominator within48, nonzero denominator; exact product-one comparison.",
+      "Physical strip only1/4 and2/5 positive lengths; optional negative case justified symbolically.",
+      "No general fraction-division proficiency claim or volume-unit conversion."
+    ],
+    "repair": "Bothinput/change for numerator/denominator/mode/target retire dependent verdict; explicitcheck reads current visible fields. Invariant model steps preserve it. Unsupported selectorkeys/modes/bounds reject.",
+    "transfer": "One litre divided into fixed quarter-litre portions:4portions, with count distinct from portion volume.",
+    "limits": [
+      "Onscreen support does not demonstrate physical cutting/measurement, general fraction division, retention, independent/formal mastery or efficacy.",
+      "Remainder is1/5 ofwhole but1/2 ofone2/5-piece; unit shift explicitly named.",
+      "Optional signed extension adds no canonical prerequisite lock."
+    ],
+    "gradeBand": "7-9",
+    "canonical": {
+      "id": "M79-RECIP-01",
+      "subject": "mathematics",
+      "grade_band": "7-9",
+      "topic_area": "S2 Luvut",
+      "parent_concept": "Lukujen ominaisuudet",
+      "title": "Käänteisluvun käsite",
+      "short_description": "Käänteisluvun käsite",
+      "node_kind": "concept",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "M79-S2"
+      ],
+      "relations": [
+        {
+          "id": "M-FRAC-03",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-FRAC-03 on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "M-MULDIV-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-MULDIV-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-FRAC-03"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate",
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "S2 Luvut",
+        "Lukujen ominaisuudet"
+      ]
+    },
+    "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-FRAC-03"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "requiredPrerequisites": [
+      {
+        "id": "M-FRAC-03",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-FRAC-03 on ydinesitieto tälle osaamiskohteelle."
+      }
+    ],
+    "strongSupport": [
+      {
+        "id": "M-MULDIV-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "M-MULDIV-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      }
+    ],
+    "assumed": [
+      "Relevant quantity reading and supplied calculations; adult reading/pointing allowed. No compulsory naming/speech confirmation."
+    ],
+    "assetProvenance": {
+      "originalSubjectSVG": "reciprocal.svg",
+      "suppliedPNG": "shared/loikka/curious.png",
+      "PNGUnmodified": true,
+      "ownerLicensingPending": true
+    },
+    "evidenceLimits": [
+      "Onscreen support does not demonstrate physical cutting/measurement, general fraction division, retention, independent/formal mastery or efficacy.",
+      "Remainder is1/5 ofwhole but1/2 ofone2/5-piece; unit shift explicitly named.",
+      "Optional signed extension adds no canonical prerequisite lock."
+    ]
+  },
+  "extensions": {
+    "authoredOn": "2026-10-29",
+    "assignment": "B07 ownEXPRFORM/RECIP only; explicitGO afterB06sealed e7632c5416d9acb50e56931ec3a90c5b4ba54af9",
+    "reviewStatus": "Author checks only; different independent review and main native integration pending.",
+    "feedbackContractSha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+    "eventCommitAddendumSha256": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+    "pureTestCommand": "node --test lesson-network/packages/M79-RECIP-01/tests.mjs",
+    "clusterBrowserQA": "node lesson-network/packages/M79-EXPR-FORM/browser.mjs",
+    "sourceNotes": {
+      "research.md": "796e731bf78ffc1cc35152952b892d822c25acddef82cc92dfb7ab5e69fbe520",
+      "alignment.md": "a0991b6b3a6f125e34e52a00217279bb12b1751a269b6db638b56f0bbb70beed",
+      "tests.mjs": "9ac24b48057ecaabf7e0b89ce5c8140c6b80d3cd2d96d56e4805bf5ef7b7ddf5"
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B09",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

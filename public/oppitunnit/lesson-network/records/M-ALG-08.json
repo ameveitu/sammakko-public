@@ -1,0 +1,704 @@
+{
+  "kcId": "M-ALG-08",
+  "pagePath": "lessons/M-ALG-08.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-ALG-08",
+  "canonicalNode": {
+    "id": "M-ALG-08",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Algebra",
+    "parent_concept": "Yhtälö",
+    "title": "Yksinkertaisen yhtälön ratkaiseminen päättelemällä",
+    "short_description": "Yksinkertaisen yhtälön ratkaiseminen päättelemällä",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S3"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-ALG-07",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-ALG-07 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-ADD-SUB-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-ADD-SUB-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-MULDIV-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MULDIV-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-ALG-07"
+        ],
+        "rationale": "Yhtälön ja ratkaisun testaamisen perusidea tarvitaan."
+      },
+      {
+        "any_of": [
+          "M-ADD-SUB-01",
+          "M-MULDIV-01"
+        ],
+        "rationale": "Yksinkertainen yhtälö voi kuulua additiiviseen tai multiplikatiiviseen perheeseen; molempien masteryä ei tarvita ennen aloittamista."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Algebra",
+      "Yhtälö"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-ALG-07",
+      "targetKCId": "M-ALG-08",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ALG-07 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ADD-SUB-01",
+      "targetKCId": "M-ALG-08",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-SUB-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-MULDIV-01",
+      "targetKCId": "M-ALG-08",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MULDIV-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-ALG-08",
+      "targetKCId": "M79-PCT-BASE",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-ALG-08 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-ALG-08",
+      "targetKCId": "M79-EQ1-SOLVE",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-ALG-08 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-ALG-07"
+      ],
+      "rationale": "Yhtälön ja ratkaisun testaamisen perusidea tarvitaan."
+    },
+    {
+      "any_of": [
+        "M-ADD-SUB-01",
+        "M-MULDIV-01"
+      ],
+      "rationale": "Yksinkertainen yhtälö voi kuulua additiiviseen tai multiplikatiiviseen perheeseen; molempien masteryä ei tarvita ennen aloittamista."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-ALG-08/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-120-algorithms-column-addition/",
+        "title": "Algorithms: column addition",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML teaching points and copyright page read. Subtraction teacher-guide introduction/exchange explanation read; no linked slides/video executed.",
+        "adopted": "Align place values; start at ones; regroup ten smaller units as one larger unit. Explicit incoming carry and new digit.",
+        "rejected": "No copied prose, figures or tasks. English Year3 sequencing is comparison only, not Finnish grade mapping or efficacy evidence. No mandatory written method when another method works.",
+        "licence": "NCETM copyright page: Crown Copyright, superseded by Open Government Licence, unless otherwise stated; attribution and named-author permission conditions stated. Third-party exceptions not cleared.",
+        "licenceURL": "https://www.ncetm.org.uk/copyright/"
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-121-algorithms-column-subtraction/",
+        "title": "Algorithms: column subtraction",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML teaching points and copyright page read. Subtraction teacher-guide introduction/exchange explanation read; no linked slides/video executed.",
+        "adopted": "Exchange larger units when needed; separate steps over zero; inverse and estimation checks; choose methods.",
+        "rejected": "No copied prose, figures or tasks. English Year3 sequencing is comparison only, not Finnish grade mapping or efficacy evidence. No mandatory written method when another method works.",
+        "licence": "NCETM copyright page: Crown Copyright, superseded by Open Government Licence, unless otherwise stated; attribution and named-author permission conditions stated. Third-party exceptions not cleared.",
+        "licenceURL": "https://www.ncetm.org.uk/copyright/"
+      },
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/4/algebra/find-unknown-values/",
+        "title": "Find unknown values: Year4 planning tool",
+        "organization": "Education Services Australia / Commonwealth of Australia",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary planning text, misconceptions and terms read; external linked activities not executed.",
+        "adopted": "Part-whole reasoning, missing part versus whole, equality as same value and discussing alternative methods.",
+        "rejected": "No translated source task or three-equation ball puzzle; no forced balance algorithm. Compare only; canonical Finnish3–6 atomic boundary controls scope. No efficacy claim.",
+        "licence": "Commonwealth CC BY4.0 unless otherwise indicated; logos, trademarks and third-party material excluded.",
+        "licenceURL": "https://www.mathematicshub.edu.au/terms-of-use/"
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+        "note": "Author QA is not independent approval. Descartes review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+        "note": "Independent B15 Descartes current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Descartes-on-Newton-ready-current.json. Synthetic technical scope, not learner validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+        "note": "Not performed. No learner/efficacy/manual acceptance."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+        "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-ALG-08",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "initial.svg",
+        "sha256": "488a814eef6f4bf836437cb603b1ea8c9aebc6e6399b189d064732376736b5b2"
+      },
+      {
+        "path": "example1.svg",
+        "sha256": "66688f7350649ccf948e1db161c07b6d3827155b101a2b27b1d1de617595056a"
+      },
+      {
+        "path": "example2.svg",
+        "sha256": "26c21bfa6ada2c6c5602e6aa828491b671e5d73b2f8683a170b918d06d8da56f"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "4a68a4d0003538a6fd9a48d533f47dbaab09c2614e16d88b3026ac8be40808e2"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-120-algorithms-column-addition/",
+        "title": "Algorithms: column addition",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML teaching points and copyright page read. Subtraction teacher-guide introduction/exchange explanation read; no linked slides/video executed.",
+        "adopted": "Align place values; start at ones; regroup ten smaller units as one larger unit. Explicit incoming carry and new digit.",
+        "rejected": "No copied prose, figures or tasks. English Year3 sequencing is comparison only, not Finnish grade mapping or efficacy evidence. No mandatory written method when another method works.",
+        "licence": "NCETM copyright page: Crown Copyright, superseded by Open Government Licence, unless otherwise stated; attribution and named-author permission conditions stated. Third-party exceptions not cleared.",
+        "licenceURL": "https://www.ncetm.org.uk/copyright/"
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-121-algorithms-column-subtraction/",
+        "title": "Algorithms: column subtraction",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML teaching points and copyright page read. Subtraction teacher-guide introduction/exchange explanation read; no linked slides/video executed.",
+        "adopted": "Exchange larger units when needed; separate steps over zero; inverse and estimation checks; choose methods.",
+        "rejected": "No copied prose, figures or tasks. English Year3 sequencing is comparison only, not Finnish grade mapping or efficacy evidence. No mandatory written method when another method works.",
+        "licence": "NCETM copyright page: Crown Copyright, superseded by Open Government Licence, unless otherwise stated; attribution and named-author permission conditions stated. Third-party exceptions not cleared.",
+        "licenceURL": "https://www.ncetm.org.uk/copyright/"
+      },
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/4/algebra/find-unknown-values/",
+        "title": "Find unknown values: Year4 planning tool",
+        "organization": "Education Services Australia / Commonwealth of Australia",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary planning text, misconceptions and terms read; external linked activities not executed.",
+        "adopted": "Part-whole reasoning, missing part versus whole, equality as same value and discussing alternative methods.",
+        "rejected": "No translated source task or three-equation ball puzzle; no forced balance algorithm. Compare only; canonical Finnish3–6 atomic boundary controls scope. No efficacy claim.",
+        "licence": "Commonwealth CC BY4.0 unless otherwise indicated; logos, trademarks and third-party material excluded.",
+        "licenceURL": "https://www.mathematicshub.edu.au/terms-of-use/"
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+        "note": "Author QA is not independent approval. Descartes review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+        "note": "Author QA is not independent approval. Descartes review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+        "note": "Not performed. No learner/efficacy/manual acceptance."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+        "note": "Independent B15 Descartes current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Descartes-on-Newton-ready-current.json. Synthetic technical scope, not learner validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+        "note": "Independent B15 Descartes canonical/Lite/source boundary review: roles/groups preserved, no new hardgates. lesson-network/evidence/production/B15/reviews/Descartes-on-Newton-ready-current.json"
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+        "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-ALG-08",
+      "sourceBuild": "audit1-2026-10-28",
+      "sourceHashes": {
+        "src/content/written.ts": "58ee93036fb7417e8324072db5be810426a99db346c23ef0651c9525a9bfd0c6",
+        "src/content/writtenanim.ts": "96ae626bce755998b6ed390f84ee21f16ac0fdb22dac12c40021b9432f1b65bc",
+        "src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+        "src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+        "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/placeanim.ts": "d6f1284272675a8b78d62649f3b9e3490a7d324df139f292986f533cee803f99",
+        "src/content/numbers.ts": "2ff4cae1816ea1d61ec938361a8306dc9a24d6e893f67895a390a83b7ae1c4d5",
+        "src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+      },
+      "actualTaskFamilies": {
+        "sub": {
+          "kind": "numeric",
+          "prompt": "12 − □ = 6",
+          "hint": "Kuinka paljon luvusta 12 pitää ottaa pois, että jää 6?",
+          "explanation": "12 − 6 = 6, joten □ = 12 − 6 = 6.",
+          "registry": {
+            "node": "M-ALG-08",
+            "tag": "sub",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "undo": {
+          "kind": "place",
+          "prompt": "Mikä lasku kumoaa koneen? Vedä kumoava kortti jokaisen koneen alle. Yksi kortti jää yli.",
+          "hint": "Plus ja miinus kumoavat toisensa, samoin kerto ja jako. Luku pysyy samana.",
+          "explanation": ": 3 ↔ × 3, × 6 ↔ : 6, + 2 ↔ − 2.",
+          "registry": {
+            "node": "M-ALG-08",
+            "tag": "undo",
+            "outcome": "sijoittaa osat oikeille paikoille",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "add": {
+          "kind": "numeric",
+          "prompt": "□ + 12 = 15",
+          "hint": "Mikä lasku kumoaa yhteenlaskun?",
+          "explanation": "□ = 15 − 12 = 3. Tarkistus: 3 + 12 = 15.",
+          "registry": {
+            "node": "M-ALG-08",
+            "tag": "add",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "mul": {
+          "kind": "numeric",
+          "prompt": "3 × □ = 21",
+          "hint": "Mikä lasku kumoaa kertolaskun?",
+          "explanation": "□ = 21 : 3 = 7. Tarkistus: 3 × 7 = 21.",
+          "registry": {
+            "node": "M-ALG-08",
+            "tag": "mul",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "transfer": {
+          "kind": "numeric",
+          "prompt": "Pussissa on helmiä. Kun Aava lisää 3 helmeä, niitä on 14. Montako helmeä pussissa oli alussa?",
+          "hint": "Kirjoita □ + 3 = 14 ja kumoa lisäys.",
+          "explanation": "□ + 3 = 14, joten □ = 14 − 3 = 11.",
+          "registry": {
+            "node": "M-ALG-08",
+            "tag": "transfer",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        }
+      },
+      "demoSummaries": [
+        {
+          "say": "Tuntematon luku menee koneeseen plus seitsemän, ja ulos tulee viisitoista. Käännetään kone: vähennyslasku kumoaa yhteenlaskun. Viisitoista kulkee takaisin koneen miinus seitsemän läpi: kahdeksan. Tarkistus: kahdeksan plus seitsemän on viisitoista.",
+          "kind": "animation",
+          "duration": 12.6,
+          "label": "□ + 7 = 15"
+        },
+        {
+          "say": "Neljä kertaa ruutu on kaksikymmentäkahdeksan. Kone kertaa neljä käännetään: jaettuna neljällä. Kaksikymmentäkahdeksan jaettuna neljällä on seitsemän.",
+          "kind": "animation",
+          "duration": 12.6,
+          "label": "□ × 4 = 28"
+        }
+      ],
+      "reconciliation": "M-ALG-08: actual add/mul/sub/undo/transfer. Free unknown-value answers retain reasoning, including unknown subtrahend. Three optional inverse selectors represent matching, not compulsory dragging or proof of general equation-solving process. Extra x−k and x:k expose unknown position and inverse division. Natural-number main cases; clearly labelled fraction extension. No general affine solver, formal balance algorithm, or process/mastery promotion. Actual canonical atomic3–6, all_of ALG07 plus any_of ADD-SUB01/MULDIV01 retained; scaffolds do not create an AND gate."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-ALG-08",
+        "subject": "mathematics",
+        "grade_band": "3-6",
+        "topic_area": "Algebra",
+        "parent_concept": "Yhtälö",
+        "title": "Yksinkertaisen yhtälön ratkaiseminen päättelemällä",
+        "short_description": "Yksinkertaisen yhtälön ratkaiseminen päättelemällä",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL3-6-S3"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-ALG-07",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-ALG-07 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-ADD-SUB-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-ADD-SUB-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-MULDIV-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-MULDIV-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-ALG-07"
+            ],
+            "rationale": "Yhtälön ja ratkaisun testaamisen perusidea tarvitaan."
+          },
+          {
+            "any_of": [
+              "M-ADD-SUB-01",
+              "M-MULDIV-01"
+            ],
+            "rationale": "Yksinkertainen yhtälö voi kuulua additiiviseen tai multiplikatiiviseen perheeseen; molempien masteryä ei tarvita ennen aloittamista."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Algebra",
+          "Yhtälö"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-ALG-07"
+          ],
+          "rationale": "Yhtälön ja ratkaisun testaamisen perusidea tarvitaan."
+        },
+        {
+          "any_of": [
+            "M-ADD-SUB-01",
+            "M-MULDIV-01"
+          ],
+          "rationale": "Yksinkertainen yhtälö voi kuulua additiiviseen tai multiplikatiiviseen perheeseen; molempien masteryä ei tarvita ennen aloittamista."
+        }
+      ],
+      "role": "atomic",
+      "additionalHardGates": [],
+      "childGoal": "Etsi puuttuva luku yhdestä laskusta.",
+      "bounds": "No formal independent process/history. One-operation relations only, known integer0..9999, unknown rational0..9999, nonzero multiplier/divisor.",
+      "art": "Supplied Aava curious PNG, unchanged bytes, generated raster reinterpretation of user character. Original mathematical SVG generated by this module; no external figures."
+    },
+    "extensions": {
+      "batch": "B15",
+      "author": "Newton",
+      "licenceScope": "Reference provenance only, no publication or human/efficacy clearance."
+    },
+    "contentHash": "47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+    "contentRevision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+          "note": "Author QA is not independent approval. Descartes review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+          "note": "Independent B15 Descartes current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Descartes-on-Newton-ready-current.json. Synthetic technical scope, not learner validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+          "note": "Not performed. No learner/efficacy/manual acceptance."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+          "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+          "note": "Author QA is not independent approval. Descartes review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@47efb74eaac9396972cb12d54af7d0b10e787923a197cf6508ebcb2340970b00",
+          "note": "Independent B15 Descartes canonical/Lite/source boundary review: roles/groups preserved, no new hardgates. lesson-network/evidence/production/B15/reviews/Descartes-on-Newton-ready-current.json"
+        }
+      ]
+    }
+  },
+  "outputHash": "f5f10ea50ae3fa5e947751a418d8fbc243cec66abd782c91c73008b4b6ce40aa",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "f5f10ea50ae3fa5e947751a418d8fbc243cec66abd782c91c73008b4b6ce40aa",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

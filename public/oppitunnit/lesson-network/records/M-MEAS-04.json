@@ -1,0 +1,736 @@
+{
+  "kcId": "M-MEAS-04",
+  "pagePath": "lessons/M-MEAS-04.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-MEAS-04",
+  "canonicalNode": {
+    "id": "M-MEAS-04",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Geometria ja mittaaminen",
+    "parent_concept": "Pituusmittaus",
+    "title": "Pituuden mittaaminen yksikön avulla",
+    "short_description": "Pituuden mittaaminen yksikön avulla",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S3"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-MEAS-03",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MEAS-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-MEAS-03"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Geometria ja mittaaminen",
+      "Pituusmittaus"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-MEAS-03",
+      "targetKCId": "M-MEAS-04",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MEAS-03 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-MEAS-04",
+      "targetKCId": "M-SCALE-03",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MEAS-04 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-MEAS-04",
+      "targetKCId": "M-GMEAS-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MEAS-04 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-MEAS-03"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-MEAS-04/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/ey-measures/",
+        "title": "Measures",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual public source retrieved during B07 preparation/GO research; no full linked resource reading inferred.",
+        "inspected": "Public HTML unit iteration, equal units, endpoints, no gaps/overlaps and measurement errors; first read in earlier measurement batches and actually re-retrieved for B07.",
+        "usageRestrictions": "NCETM copyright page independently retrieved2026-10-29: default Crown Copyright/Open Government Licence with acknowledgement, named-author and third-party exceptions. Professional development is not a ready-made lesson to lift. No source figure, worksheet or wording copied.",
+        "adopted": "Tile a complete length using equal-size units; the unit must be named with the number. Model correct endpoints and expose gaps.",
+        "rejectedOrLimited": "Do not treat a screen centimetre as physically calibrated; no weight/capacity/time branches imported. Early-years comparison guidance is not a new prerequisite."
+      },
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/2/measurement/informal-units/",
+        "title": "Informal units: Year2 planning tool",
+        "organization": "Mathematics Hub / Education Services Australia / Australian Government",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual public source retrieved during B07 preparation/GO research; no full linked resource reading inferred.",
+        "inspected": "Public expected development, explicit tiling versus iteration and smaller-unit/larger-count misconception, plus licence footer.",
+        "usageRestrictions": "Footer ©Commonwealth of Australia unless indicated; CC BY4.0 unless indicated. No linked third-party material or source assets copied.",
+        "adopted": "Keep object length fixed when changing unit size; distinguish number of selected pieces from length in cm. Feedback on actual gap/overlap arrangement.",
+        "rejectedOrLimited": "Do not import mass/capacity or curved measurement and fraction demands; no claim source establishes new lesson efficacy."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+        "note": "Source-owned B07 draft; author pure/source checks do not grant independent or human approval."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/core-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@7fee90e0df97ff88002cfd43499f58ccb1d4ddc81da69ae7dc56bb08b4ceab12",
+        "note": "Source-owned two-lesson entry pilot author draft; current independent technical review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@5c5d64fcb99c429666fe79042e959b7258e41cf04bc8a3ffde1d9b7c9837f0d7",
+        "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+        "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+        "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/entry-pilot-independent.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+        "note": "Source-owned B07 draft; author pure/source checks do not grant independent or human approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+        "note": "No actual human/target-learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@7fee90e0df97ff88002cfd43499f58ccb1d4ddc81da69ae7dc56bb08b4ceab12",
+        "note": "No human/learner review performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@5c5d64fcb99c429666fe79042e959b7258e41cf04bc8a3ffde1d9b7c9837f0d7",
+        "note": "No human/learner review performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+        "note": "No human/learner review performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-MEAS-04",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "same-length-two-units.svg",
+        "sha256": "f5054ef327d36ff250a5b22a0df10207a5cea1170fb15335b1a083e0b2f5d4c1"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "1fc14d5cb211cf118dfcd8332cf1187392e23cf3b5c51125de5adf305d0697e1"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      },
+      {
+        "path": "entry-pilot.css",
+        "sha256": "d00a83cf46daa23dd97b15f97b6c7a266d9326987b243a88ca607460d8090f94"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/ey-measures/",
+        "title": "Measures",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual public source retrieved during B07 preparation/GO research; no full linked resource reading inferred.",
+        "inspected": "Public HTML unit iteration, equal units, endpoints, no gaps/overlaps and measurement errors; first read in earlier measurement batches and actually re-retrieved for B07.",
+        "usageRestrictions": "NCETM copyright page independently retrieved2026-10-29: default Crown Copyright/Open Government Licence with acknowledgement, named-author and third-party exceptions. Professional development is not a ready-made lesson to lift. No source figure, worksheet or wording copied.",
+        "adopted": "Tile a complete length using equal-size units; the unit must be named with the number. Model correct endpoints and expose gaps.",
+        "rejectedOrLimited": "Do not treat a screen centimetre as physically calibrated; no weight/capacity/time branches imported. Early-years comparison guidance is not a new prerequisite."
+      },
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/2/measurement/informal-units/",
+        "title": "Informal units: Year2 planning tool",
+        "organization": "Mathematics Hub / Education Services Australia / Australian Government",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual public source retrieved during B07 preparation/GO research; no full linked resource reading inferred.",
+        "inspected": "Public expected development, explicit tiling versus iteration and smaller-unit/larger-count misconception, plus licence footer.",
+        "usageRestrictions": "Footer ©Commonwealth of Australia unless indicated; CC BY4.0 unless indicated. No linked third-party material or source assets copied.",
+        "adopted": "Keep object length fixed when changing unit size; distinguish number of selected pieces from length in cm. Feedback on actual gap/overlap arrangement.",
+        "rejectedOrLimited": "Do not import mass/capacity or curved measurement and fraction demands; no claim source establishes new lesson efficacy."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+        "note": "Source-owned B07 draft; author pure/source checks do not grant independent or human approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+        "note": "Source-owned B07 draft; author pure/source checks do not grant independent or human approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+        "note": "Source-owned B07 draft; author pure/source checks do not grant independent or human approval."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/core-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/core-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+        "note": "No actual human/target-learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@7fee90e0df97ff88002cfd43499f58ccb1d4ddc81da69ae7dc56bb08b4ceab12",
+        "note": "Source-owned two-lesson entry pilot author draft; current independent technical review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@7fee90e0df97ff88002cfd43499f58ccb1d4ddc81da69ae7dc56bb08b4ceab12",
+        "note": "Source-owned two-lesson entry pilot author draft; current independent technical review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@7fee90e0df97ff88002cfd43499f58ccb1d4ddc81da69ae7dc56bb08b4ceab12",
+        "note": "No human/learner review performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@5c5d64fcb99c429666fe79042e959b7258e41cf04bc8a3ffde1d9b7c9837f0d7",
+        "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@5c5d64fcb99c429666fe79042e959b7258e41cf04bc8a3ffde1d9b7c9837f0d7",
+        "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@5c5d64fcb99c429666fe79042e959b7258e41cf04bc8a3ffde1d9b7c9837f0d7",
+        "note": "No human/learner review performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+        "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+        "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+        "note": "No human/learner review performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+        "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/entry-pilot-independent.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+        "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/entry-pilot-independent.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-MEAS-04",
+      "nodeRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "globalFallback": "lite181-2026-10-27",
+      "sourceFile": "src/content/added181.ts",
+      "sourceHashes": {
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "src/content/measureanim.ts": "e157bfeb17df885cc8a6392a55b9bd10f8078efb6f065bae2f0347b6270d6cf4",
+        "src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+        "src/content/added181.ts": "1fb1c7ec3aa12bf340768c7d87afdb5b3b5550323bb28f83fbe5c3fc33cbf236"
+      },
+      "rawNodeSpec": "  {\n    id: 'M-MEAS-04', rev: AUDIT_REV, validRevs: [AUDIT_REV], stop: 'Mittaa yksiköllä', icon: '📐',\n    goal: 'Opit mittaamaan pituuden toistamalla samaa yksikköä alusta loppuun ja kertomaan tuloksen luvulla ja yksiköllä.',\n    intro: 'Lentopajan siipiin tarvitaan oikean pituisia rimoja. Mitataan ne yksiköllä.',\n    reward: 'Mittaat pituuden yksiköllä, alusta loppuun!',\n    demo: () => [\n      { say: 'Pituus mitataan toistamalla samaa yksikköä: palat peräkkäin, ilman rakoja, alusta loppuun. Jokainen pala on yksi senttimetri. Viisi palaa: viisi senttimetriä.', scene: layScene(5) },\n      { say: 'Viivoittimessa yksiköt ovat valmiina. Jos rima alkaa kohdasta kaksi, lasketaan välit kohdasta kaksi loppuun asti: kuusi senttiä.', scene: rulerScene(2, 8) },\n      { say: 'Sama rima isommilla paloilla antaa pienemmän luvun. Siksi tulokseen kirjoitetaan aina yksikkö.', scene: twoUnitScene(6, 2) },\n    ],\n    item: cases({\n      units: (r) => {\n        const n = r.int(3, 9);\n        return ask(`Jokainen keltainen pala on 1 cm. Kuinka pitkä rima on?`, n, `Paloja on ${n}, ja jokainen on 1 cm: ${n} cm.`, { unit: 'cm', scene: unitRow(n), hint: 'Laske palat rimaa pitkin alusta loppuun.', whyAt: { [n - 1]: 'Yksi pala jäi laskematta.', [n + 1]: 'Laskit yhden palan liikaa.' } });\n      },\n      offset: (r) => {\n        const a = r.int(1, 4), len = r.int(3, 7), b = a + len;\n        return ask('Kuinka monta senttimetriä rima on?', len, `Rima alkaa kohdasta ${a} ja loppuu kohtaan ${b}: välejä on ${len}, eli ${len} cm.`, { unit: 'cm', scene: rulerArt(12, a, b), hint: 'Rima ei ala nollasta. Laske välit.', whyAt: { [len + 1]: 'Laskit viivat, et välejä. Laske välit.', [b]: `${b} on riman loppukohta. Rima alkaa kohdasta ${a}, joten laske välit siitä.` } });\n      },\n      unitSize: (r) => {\n        const big = r.pick([2, 3]), n = r.int(2, 4);\n        return {\n          say: `Loikka mittasi riman isoilla paloilla: ${word(n)} palaa. Aava mittaa saman riman pienillä paloilla. Saako Aava suuremman vai pienemmän luvun?`,\n          scene: paint(unitRow(n, 24 * big, `${n} isoa palaa`) + unitRow(n * big, 24, `${n * big} pientä palaa`)),\n          task: fixed([t('suuremman'), t('pienemmän'), t('saman')], 0, [undefined, 'Pieniä paloja mahtuu samaan pituuteen enemmän.', 'Luku riippuu siitä, kuinka iso yksikkö on.'], 3),\n          hint: 'Kumpia paloja tarvitaan enemmän samaan pituuteen: isoja vai pieniä?',\n          explain: `Pienempiä paloja tarvitaan enemmän: ${n * big} pientä palaa. Siksi tulokseen kirjoitetaan aina myös yksikkö.`,\n        };\n      },\n    }, (r) => {\n      const a = r.int(3, 6), len = r.int(4, 8), b = a + len;\n      return {\n        say: `Viivoittimen alkupää on katkennut. Rima on kohdasta ${a} kohtaan ${b}. Sulka sanoo: \"Rima on ${b} cm.\" Kuinka pitkä rima on?`,\n        scene: paint(rulerArt(14, a, b)),\n        task: choose(r, t(`${len} cm`), [t(`${b} cm`), t(`${len + 1} cm`)], [`Riman pää on kohdassa ${b}, mutta alku ei ole nollassa.`, 'Laske välit, älä viivoja.']),\n        hint: 'Loppukohta ei ole pituus, kun alku ei ole nollassa.',\n        explain: `Välejä kohdasta ${a} kohtaan ${b} on ${len}: rima on ${len} cm.`,\n      };\n    }),\n  },",
+      "goal": "Own NodeSpec.goal retained in rawNodeSpec",
+      "actualFamilies": [
+        {
+          "tag": "units",
+          "kind": "numeric",
+          "range": "n3..9",
+          "treatment": "One labelled1cm piece each; count all units; whyAt n±1."
+        },
+        {
+          "tag": "offset",
+          "kind": "numeric",
+          "range": "a1..4,len3..7,b=a+len",
+          "treatment": "Ruler12, length intervals, whyAt len+1 vs endpointb; same-key collision at a1 gives endpoint feedback precedence."
+        },
+        {
+          "tag": "unitSize",
+          "kind": "choice",
+          "range": "big2/3,n2..4",
+          "treatment": "Same object; smaller units give more pieces; picture two independently sized SVG viewports needs caution."
+        },
+        {
+          "tag": "transfer",
+          "kind": "choice",
+          "range": "a3..6,len4..8,b=a+len",
+          "treatment": "Broken ruler14; reject endpoint length and tick-count error."
+        }
+      ],
+      "demos": [
+        "layScene(5): sequential1cm unit copies",
+        "rulerScene(2,8): count6 intervals after moving stick",
+        "twoUnitScene(6,2): same length6 small or3 large units"
+      ],
+      "phaseDispatch": "kit.cases ordinary named families in guided/independent/retrieval, transfer separate. No guidedTags on these3.",
+      "registryOverlay": "index.ts registered actual ARITH/WRITTEN/ADDED181 NodeSpecs. None of these3 in SIMS overlay. No explicit families.ts node/wildcard/tag declarations or scope activity-use rows targeting these3: defaults OUTCOME, empty assumed/supplied/coTaught/support; canonical dynamic rule absent. M-MUL-01 goal fallback from GOALS; other2 own explicit goal.",
+      "audit": "audit/LESSON_AUDIT.md overview19 and detailed M-MEAS-04 lines301ff.3 actual demos vs2 coverage. whyAt collision a1 noted by audit. Current unitRow rect widths unit-2 leave visual gutters although comment says no gaps; original authored tile boundaries use true abutment.",
+      "comparison": "Constructive layout has individual piece-start controls, add/remove and shared geometry. Check sorted coverage, then report value/unit; arbitrary row order accepted. Detect gap, overlap, start/end faults separately. A correct numeral cannot hide bad layout. Both6cm and correctly named piece count accepted. Helper boundary overlay preserves still-valid answer.",
+      "evidenceLimits": "Virtual tiling and reported measurement do not verify physical alignment, ruler handling, reading strategy, independence or learning efficacy.",
+      "reconciliationFile": "alignment.md"
+    },
+    "planning": {
+      "gradeBand": "1-2",
+      "canonical": {
+        "id": "M-MEAS-04",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Geometria ja mittaaminen",
+        "parent_concept": "Pituusmittaus",
+        "title": "Pituuden mittaaminen yksikön avulla",
+        "short_description": "Pituuden mittaaminen yksikön avulla",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S3"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-MEAS-03",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-MEAS-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-MEAS-03"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Geometria ja mittaaminen",
+          "Pituusmittaus"
+        ]
+      },
+      "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "teacherObjective": "Oppilas asettaa samankokoiset mittayksiköt koko pituuden peitoksi ilman rakoja tai päällekkäisyyttä ja ilmoittaa mittaluvun sekä yksikön.",
+      "childGoal": "Mittaan pituuden ja kerron luvun sekä yksikön.",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-MEAS-03"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "strongSupport": [],
+      "assumed": "Required M-MEAS-03 (centimetre and ruler interval). Iteration/tiling applied procedurally; no extra M-MEAS-01 hard gate, conversion fluency, fraction or object naming demand. Screen geometry not physical cm calibration.",
+      "scope": "All target lengths6cm; targets0..6 or2..8 in model coordinates. Selected piece1cm or2cm, maximum8 pieces within0..12cm drawing; positions editable in1cm steps. Report6cm or correct number of selected-size pieces. No fractional remainder piece.",
+      "interaction": "Constructive layout has individual piece-start controls, add/remove and shared geometry. Check sorted coverage, then report value/unit; arbitrary row order accepted. Detect gap, overlap, start/end faults separately. A correct numeral cannot hide bad layout. Both6cm and correctly named piece count accepted. Helper boundary overlay preserves still-valid answer.",
+      "evidenceLimits": "Virtual tiling and reported measurement do not verify physical alignment, ruler handling, reading strategy, independence or learning efficacy.",
+      "curriculumVsDesign": "Canonical roles/grade/groups/curriculum refs are frozen curriculum facts. Finite scenes, controls and lesson sequencing are original project design; external comparables corroborate concepts, not new normative graph facts or efficacy.",
+      "feedbackSemantics": "Root-owned input and change handlers each commit semantic edits; explicit check rereads visible task/answer. Edits clear dependent verdict. Separate help/model actions preserve the same still-valid practice verdict. No timers or persistence; pause/resume/reset/dispose clean3 scoped listeners.",
+      "assetProvenance": [
+        {
+          "path": "same-length-two-units.svg",
+          "origin": "Original package code-native subject diagram or source CSS,2026-10-29. No external artwork copied."
+        },
+        {
+          "path": "lesson.css",
+          "origin": "Original package code-native subject diagram or source CSS,2026-10-29. No external artwork copied."
+        },
+        {
+          "path": "shared/aava/curious.png",
+          "origin": "Actual supplied shared PNG unchanged, no redraw/duplication."
+        }
+      ]
+    },
+    "extensions": {
+      "authorBatch": "B07",
+      "author": "Mill",
+      "sourceOnly": true,
+      "noHumanValidation": true,
+      "entryPilot": {
+        "referenceArchiveSha256": "ba487d6ebf45035efaee1a435f0ae36536f68079a249006dfb6fc7a49de05494",
+        "reviewSha256": "61e5a72690371010146c5fa6a5730346d7e78b9eea7ce3c681c8afab96b01946",
+        "design": "Early live exploration and optional native anchor navigation; compact presentation chrome only on these two pages. Retained full explanations, case/answer semantics, constructive placement or event-clock/rhythm meaning, canonical title and all teacher functions.",
+        "learningBenefit": "Unmeasured design hypothesis; no human/learner validation.",
+        "review": "author_draft_pending_independent_review"
+      }
+    },
+    "contentHash": "30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+    "contentRevision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+          "note": "Source-owned B07 draft; author pure/source checks do not grant independent or human approval."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/core-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@7fee90e0df97ff88002cfd43499f58ccb1d4ddc81da69ae7dc56bb08b4ceab12",
+          "note": "Source-owned two-lesson entry pilot author draft; current independent technical review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@5c5d64fcb99c429666fe79042e959b7258e41cf04bc8a3ffde1d9b7c9837f0d7",
+          "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+          "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+          "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/entry-pilot-independent.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+          "note": "Source-owned B07 draft; author pure/source checks do not grant independent or human approval."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+          "note": "No actual human/target-learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@7fee90e0df97ff88002cfd43499f58ccb1d4ddc81da69ae7dc56bb08b4ceab12",
+          "note": "No human/learner review performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@5c5d64fcb99c429666fe79042e959b7258e41cf04bc8a3ffde1d9b7c9837f0d7",
+          "note": "No human/learner review performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+          "note": "No human/learner review performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+          "note": "Source-owned B07 draft; author pure/source checks do not grant independent or human approval."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/core-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@7fee90e0df97ff88002cfd43499f58ccb1d4ddc81da69ae7dc56bb08b4ceab12",
+          "note": "Source-owned two-lesson entry pilot author draft; current independent technical review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@5c5d64fcb99c429666fe79042e959b7258e41cf04bc8a3ffde1d9b7c9837f0d7",
+          "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+          "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+          "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/entry-pilot-independent.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+        }
+      ]
+    }
+  },
+  "outputHash": "f0cf17b838d78e39812d388490acecd490c891b919c5d5e784e86c5d9e2b185d",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "f0cf17b838d78e39812d388490acecd490c891b919c5d5e784e86c5d9e2b185d",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

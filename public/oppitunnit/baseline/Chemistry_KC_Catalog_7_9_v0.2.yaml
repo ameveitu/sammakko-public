@@ -1,0 +1,3350 @@
+catalog:
+  id: Chemistry_KC_Catalog_7_9_v0.2
+  version: '0.2'
+  status: pre-MVP refactored candidate baseline
+  scope: Suomen perusopetuksen kemia 7–9, esitietoina ympäristöopin 1–6 kemian ja luonnontieteellisen tutkimisen alkutiedot
+  language: fi
+  time_locked_note: Voimassa olevan POPS 2014 -rakenteen pohjalta tehty pedagoginen DAG; ei OPH:n määräämä vuosiluokkajärjestys.
+    POPS 2027/2028 -uudistus ei ole vielä tämän version normatiivinen lähde.
+  external_prerequisite_catalogs:
+  - Science_KC_Foundation_1_6_v0.2
+  - Math_KC_Catalog_1_6_v0.4
+  - Math_KC_Catalog_7_9_v0.2
+  prerequisite_semantics:
+    required: Aidosti välttämätön ydinesitieto useimmille ydintehtäville.
+    strong: Vahva tuki; voidaan korjata rinnalla tai ohittaa vaihtoehtoisella representaatiolla.
+    helpful: Hyödyllinen, ei avausportti.
+  group_semantics:
+    all_of: kaikki vaaditaan
+    any_of: vähintään yksi riittää
+    between_groups: ryhmät yhdistyvät AND-logiikalla
+  source_basis_semantics:
+    direct_curriculum: suoraan normatiivisen sisältöalueen nimeämä tai siitä suoraan erotettava taito
+    assessment_refined: arviointikriteeri/tukimateriaali auttaa hienontamaan
+    pedagogically_derived: Sammakon pedagoginen välisolmu tai granulaatio
+  relation_type_semantics:
+    prerequisite: Osaamiskohteen tiedollinen tai taidollinen esitieto.
+    process_support: Prosessitaito tukee työskentelyä mutta ei ole automaattisesti avausportti.
+    representation_support: Representaatiotaito tukee ymmärtämistä tai ilmaisua.
+    safety_gate: Turvallisuusehto käytännön/kokeelliselle toiminnalle; ei käsitteellisen osaamisen hard prerequisite.
+    transfer_bridge: Soveltamista tukeva yhteys.
+    enrichment: Syventävä yhteys.
+  refactor_lineage:
+    base_catalog: Chemistry_KC_Catalog_7_9_v0.1
+    node_audit: STEM_KC_NODE_AUDIT_v0.1
+    refactor_generation: STEM_KC_Catalogs_v0.2
+    policy: Apply high-confidence granularity/foundation/parent changes; retain original IDs as integration nodes when split;
+      do not apply medium-confidence split candidates automatically.
+  node_kind_semantics:
+    foundation: Pedagoginen perustaito, joka voi toimia globaalina oppimisen lähtöpisteenä.
+    concept: Yksi erikseen hallittava käsite tai abstraktio.
+    procedure: Yksi erikseen harjoiteltava menettely, algoritmi tai suoritus.
+    representation: Matemaattisen tai luonnontieteellisen tiedon esitystapa tai esitysten välinen muunnos.
+    process_skill: Sisältöalueiden läpi kulkeva työskentely-, päättely-, tutkimus- tai strateginen taito.
+    integration: Koostenooodi, jonka hallinta edellyttää määriteltyjen atomisempien alinoodeiden yhdistämistä.
+  entry_role_semantics:
+    foundation: Voidaan aloittaa ilman aiempaa muodollista sisältö-KC:tä; arkikieli ja tavallinen havaintokyky sallitaan.
+    domain_entry: Ei globaali foundation, mutta voidaan esitellä ilmiö-/kontekstipohjaisesti ilman hard prerequisitea; strong/helpful-tukia
+      voi olla.
+    dynamic: Prosessi-/representaatiotaito, jonka todellinen konteksti määräytyy tehtäväinstanssista.
+    operational: Turvallisuus- tai toimintavalmius, joka voi olla käytännön tekemisen portti mutta ei käsitteellisen oppimisen
+      hard prerequisite.
+    none: Ei ole aloitusroolissa.
+  mastery_role_semantics:
+    atomic: Tavoitteena oma itsenäinen mastery-tila.
+    integration: Koostaa useita atomisia KC:itä; mastery johdetaan alinoodeista ja erillisestä soveltamisnäytöstä.
+    process: Evidenssiä kertyy useissa sisältökonteksteissa; ei välttämättä lineaarinen sisältömastery.
+    operational: Turvallisuus/toimintakyky; voidaan käyttää suoritusporttina.
+    placeholder: Paikallisen OPS:n tai myöhemmän lähdevalinnan täsmennettävä väliaikainen rakenne.
+  concept_path_semantics: Hierarkkinen taksonomiapolku. parent_concept säilyy välittömänä leaf-parenttina; concept_path estää
+    taksonomian jäämisen litteäksi.
+  foundation_semantics_v0_2: foundation_entry=true vain aidolle globaalille pedagogiselle lähtöpisteelle. zero_required_indegree
+    ei yksin tee foundationia.
+  integration_semantics_v0_2: Splitattu alkuperäinen ID säilytetään yhteensopivana integration-noodina. Uudet atomisemmat
+    lapset kantavat varsinaisen hienojakoisen mastery-tilan.
+source_registry:
+  CHEM79-S1:
+    authority: Opetushallitus
+    normative: true
+    title: Kemia vuosiluokat 7–9
+    section: S1 Luonnontieteellinen tutkimus
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  CHEM79-S2:
+    authority: Opetushallitus
+    normative: true
+    title: Kemia vuosiluokat 7–9
+    section: S2 Kemia omassa elämässä ja elinympäristössä
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  CHEM79-S3:
+    authority: Opetushallitus
+    normative: true
+    title: Kemia vuosiluokat 7–9
+    section: S3 Kemia yhteiskunnassa
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  CHEM79-S4:
+    authority: Opetushallitus
+    normative: true
+    title: Kemia vuosiluokat 7–9
+    section: S4 Kemia maailmankuvan rakentajana
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  CHEM79-S5:
+    authority: Opetushallitus
+    normative: true
+    title: Kemia vuosiluokat 7–9
+    section: S5 Aineiden ominaisuudet ja rakenne
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  CHEM79-S6:
+    authority: Opetushallitus
+    normative: true
+    title: Kemia vuosiluokat 7–9
+    section: S6 Aineiden ominaisuudet ja muutokset
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  CHEM79-ASSESS:
+    authority: Opetushallitus
+    normative: false
+    title: Kemian päättöarvioinnin kriteerit ja tukimateriaali
+    section: Päättöarviointi
+    url: https://www.oph.fi/fi/koulutus-ja-tutkinnot/kemian-paattoarviointi
+    retrieved_at: '2026-10-06'
+nodes:
+- id: CHEM79-SAFE-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Turvallisuus
+  title: Kemian turvallisen työskentelyn periaatteiden noudattaminen
+  short_description: Kemian turvallisen työskentelyn periaatteiden noudattaminen
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: SCI-ENV-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite.
+  - id: ENV-CHEM-HOMECHEM-SAFE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-HOMECHEM-SAFE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-HOMECHEM-SAFE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: operational
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Turvallisuus
+- id: CHEM79-LAB-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Laboratoriotyö
+  title: Kemian perustyövälineiden tarkoituksenmukainen käyttäminen
+  short_description: Kemian perustyövälineiden tarkoituksenmukainen käyttäminen
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: CHEM79-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Laboratoriotyön toteutuksen turvallisuusehto.
+  - id: SCI-ENV-TOOL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Perustyövälineen käyttö on taidollinen ydinesitieto.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-TOOL-01
+    rationale: Välineen käytön pohjataito on hard prerequisite.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: operational
+  mastery_role: operational
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Laboratoriotyö
+- id: CHEM79-QUESTION-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Tutkimuskysymys
+  title: Kemiallisesti tutkittavan kysymyksen muodostaminen
+  short_description: Kemiallisesti tutkittavan kysymyksen muodostaminen
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: SCI-ENV-QUESTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-QUESTION-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: SCI-ENV-CAUSE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-CAUSE-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-QUESTION-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Tutkimuskysymys
+- id: CHEM79-PLAN-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Tutkimuksen suunnittelu
+  title: Kemian tutkimuksen suunnitteleminen muuttujat ja turvallisuus huomioiden
+  short_description: Kemian tutkimuksen suunnitteleminen muuttujat ja turvallisuus huomioiden
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: SCI-ENV-PLAN-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-PLAN-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Turvallisuus sisällytetään käytännön suunnitelman toteutusportiksi.
+  - id: CHEM79-QUESTION-01
+    relation_type: process_support
+    strength: strong
+    rationale: CHEM79-QUESTION-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-PLAN-01
+    rationale: Tutkimuksen suunnittelun pohjataito on hard prerequisite.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Tutkimuksen suunnittelu
+- id: CHEM79-OBS-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Havainnointi
+  title: Kemiallisen tutkimuksen havaintojen erottaminen tulkinnoista
+  short_description: Kemiallisen tutkimuksen havaintojen erottaminen tulkinnoista
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-OBSERVE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Havainnointi
+- id: CHEM79-MEAS-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Mittaaminen
+  title: Kemian tutkimuksessa tarvittavan suureen mittaaminen
+  short_description: Kemian tutkimuksessa tarvittavan suureen mittaaminen
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: SCI-ENV-MEAS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-MEAS-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M-MEAS-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MEAS-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-MEAS-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Mittaaminen
+- id: CHEM79-DATA-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Aineisto
+  title: Kemian tutkimustulosten kokoaminen ja esittäminen
+  short_description: Kemian tutkimustulosten kokoaminen ja esittäminen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: CHEM79-DATA-COLLECT
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-DATA-01 on v0.2:ssa integraationoodi; atominen alitaito CHEM79-DATA-COLLECT vaaditaan kokonaisuuden
+      hallintaan.
+  - id: CHEM79-DATA-PRESENT
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-DATA-01 on v0.2:ssa integraationoodi; atominen alitaito CHEM79-DATA-PRESENT vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-DATA-COLLECT
+    - CHEM79-DATA-PRESENT
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: CHEM79-DATA-COLLECT, CHEM79-DATA-PRESENT. Lisäksi vaaditaan
+    erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id001
+  - CHEM79-DATA-COLLECT
+  - CHEM79-DATA-PRESENT
+  integration_of: *id001
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Aineisto
+- id: CHEM79-CONCL-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Tulosten arviointi
+  title: Kemian tutkimuksesta johtopäätöksen tekeminen ja arviointi
+  short_description: Kemian tutkimuksesta johtopäätöksen tekeminen ja arviointi
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: CHEM79-CONCLUSION
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CONCL-01 on v0.2:ssa integraationoodi; atominen alitaito CHEM79-CONCLUSION vaaditaan kokonaisuuden hallintaan.
+  - id: CHEM79-INVESTIGATION-EVAL
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CONCL-01 on v0.2:ssa integraationoodi; atominen alitaito CHEM79-INVESTIGATION-EVAL vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-CONCLUSION
+    - CHEM79-INVESTIGATION-EVAL
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: CHEM79-CONCLUSION, CHEM79-INVESTIGATION-EVAL. Lisäksi vaaditaan
+    erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id002
+  - CHEM79-CONCLUSION
+  - CHEM79-INVESTIGATION-EVAL
+  integration_of: *id002
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Tulosten arviointi
+- id: CHEM79-MODEL-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Mallintaminen
+  title: Hiukkas- tai rakennemallin käyttäminen kemiallisen ilmiön selittämiseen
+  short_description: Hiukkas- tai rakennemallin käyttäminen kemiallisen ilmiön selittämiseen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: CHEM79-PARTICLE-MODEL-USE
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-MODEL-01 on v0.2:ssa integraationoodi; atominen alitaito CHEM79-PARTICLE-MODEL-USE vaaditaan kokonaisuuden
+      hallintaan.
+  - id: CHEM79-STRUCTURE-MODEL-USE
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-MODEL-01 on v0.2:ssa integraationoodi; atominen alitaito CHEM79-STRUCTURE-MODEL-USE vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-PARTICLE-MODEL-USE
+    - CHEM79-STRUCTURE-MODEL-USE
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: CHEM79-PARTICLE-MODEL-USE, CHEM79-STRUCTURE-MODEL-USE. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id003
+  - CHEM79-PARTICLE-MODEL-USE
+  - CHEM79-STRUCTURE-MODEL-USE
+  integration_of: *id003
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Mallintaminen
+- id: CHEM79-CHEMICAL-SAFE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Kemikaaliturvallisuus
+  title: Kodin kemikaalin turvallisen käytön ja varoitusmerkintöjen perusidea
+  short_description: Kodin kemikaalin turvallisen käytön ja varoitusmerkintöjen perusidea
+  node_kind: integration
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S2
+  relations:
+  - id: CHEM79-CHEMICAL-USE-SAFE
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CHEMICAL-SAFE on v0.2:ssa integraationoodi; atominen alitaito CHEM79-CHEMICAL-USE-SAFE vaaditaan kokonaisuuden
+      hallintaan.
+  - id: CHEM79-HAZARD-LABEL
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CHEMICAL-SAFE on v0.2:ssa integraationoodi; atominen alitaito CHEM79-HAZARD-LABEL vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-CHEMICAL-USE-SAFE
+    - CHEM79-HAZARD-LABEL
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: CHEM79-CHEMICAL-USE-SAFE, CHEM79-HAZARD-LABEL. Lisäksi vaaditaan
+    erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id004
+  - CHEM79-CHEMICAL-USE-SAFE
+  - CHEM79-HAZARD-LABEL
+  integration_of: *id004
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Kemia
+  - S2 Oma elämä ja ympäristö
+  - Kemikaaliturvallisuus
+- id: CHEM79-FIRE-SAFE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Paloturvallisuus
+  title: Palamisen edellytysten ja paloturvallisuuden kemiallinen perusidea
+  short_description: Palamisen edellytysten ja paloturvallisuuden kemiallinen perusidea
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S2
+  relations:
+  - id: CHEM79-FIRE-CONDITIONS
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-FIRE-SAFE on v0.2:ssa integraationoodi; atominen alitaito CHEM79-FIRE-CONDITIONS vaaditaan kokonaisuuden
+      hallintaan.
+  - id: CHEM79-FIRE-ACTION
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-FIRE-SAFE on v0.2:ssa integraationoodi; atominen alitaito CHEM79-FIRE-ACTION vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-FIRE-CONDITIONS
+    - CHEM79-FIRE-ACTION
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: CHEM79-FIRE-CONDITIONS, CHEM79-FIRE-ACTION. Lisäksi vaaditaan
+    erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id005
+  - CHEM79-FIRE-CONDITIONS
+  - CHEM79-FIRE-ACTION
+  integration_of: *id005
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Kemia
+  - S2 Oma elämä ja ympäristö
+  - Paloturvallisuus
+- id: CHEM79-STATE-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Olomuodot
+  title: Aineen olomuodon yhdistäminen hiukkasten järjestykseen ja liikkeeseen
+  short_description: Aineen olomuodon yhdistäminen hiukkasten järjestykseen ja liikkeeseen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S2
+  - CHEM79-S5
+  relations:
+  - id: ENV-CHEM-STATE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-STATE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-MODEL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-MODEL-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-STATE-01
+    - CHEM79-MODEL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S2 Oma elämä ja ympäristö
+  - Olomuodot
+- id: CHEM79-STATECHANGE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Olomuodon muutokset
+  title: Olomuodon muutoksen selittäminen hiukkasmallilla
+  short_description: Olomuodon muutoksen selittäminen hiukkasmallilla
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S2
+  relations:
+  - id: CHEM79-STATE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-STATE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-CHEM-STATECHANGE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-STATECHANGE-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: ENV-PHY-THERMAL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-THERMAL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-STATE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S2 Oma elämä ja ympäristö
+  - Olomuodon muutokset
+- id: CHEM79-SUBSTANCE-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Aine
+  title: Aineen, materiaalin ja esineen käsitteiden erottaminen
+  short_description: Aineen, materiaalin ja esineen käsitteiden erottaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: ENV-CHEM-MATERIAL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-MATERIAL-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-MATERIAL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Aine
+- id: CHEM79-PURE-MIX
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Seokset ja puhtaat aineet
+  title: Puhtaan aineen ja seoksen erottaminen
+  short_description: Puhtaan aineen ja seoksen erottaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-SUBSTANCE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SUBSTANCE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-SUBSTANCE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Seokset ja puhtaat aineet
+- id: CHEM79-MIX-HOM
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Seokset
+  title: Tasakoosteisen ja sekakoosteisen seoksen erottaminen
+  short_description: Tasakoosteisen ja sekakoosteisen seoksen erottaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-PURE-MIX
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-PURE-MIX on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-PURE-MIX
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Seokset
+- id: CHEM79-SOLUBILITY
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Liukoisuus
+  title: Liukoisuuden ymmärtäminen aineen ominaisuutena ja liuottimesta riippuvana ilmiönä
+  short_description: Liukoisuuden ymmärtäminen aineen ominaisuutena ja liuottimesta riippuvana ilmiönä
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: ENV-CHEM-PROP-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-PROP-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-PURE-MIX
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-PURE-MIX on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-PROP-01
+    - CHEM79-PURE-MIX
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Liukoisuus
+- id: CHEM79-WATERFAT-SOL
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Liukoisuus
+  title: Vesi- ja rasvaliukoisuuden vertaileminen
+  short_description: Vesi- ja rasvaliukoisuuden vertaileminen
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-SOLUBILITY
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SOLUBILITY on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-SOLUBILITY
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Liukoisuus
+- id: CHEM79-SEPARATE-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Seosten erottaminen
+  title: Seoksen erotusmenetelmän valitseminen aineiden ominaisuuksien perusteella
+  short_description: Seoksen erotusmenetelmän valitseminen aineiden ominaisuuksien perusteella
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-PURE-MIX
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-PURE-MIX on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-CHEM-PROP-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-PROP-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-PURE-MIX
+    - ENV-CHEM-PROP-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Seosten erottaminen
+- id: CHEM79-SEPARATE-02
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Seosten erottaminen
+  title: Suodattamisen, haihduttamisen ja dekantoinnin perusperiaatteiden tunnistaminen
+  short_description: Suodattamisen, haihduttamisen ja dekantoinnin perusperiaatteiden tunnistaminen
+  node_kind: integration
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-FILTRATION
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SEPARATE-02 on v0.2:ssa integraationoodi; atominen alitaito CHEM79-FILTRATION vaaditaan kokonaisuuden
+      hallintaan.
+  - id: CHEM79-EVAPORATION
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SEPARATE-02 on v0.2:ssa integraationoodi; atominen alitaito CHEM79-EVAPORATION vaaditaan kokonaisuuden
+      hallintaan.
+  - id: CHEM79-DECANTING
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SEPARATE-02 on v0.2:ssa integraationoodi; atominen alitaito CHEM79-DECANTING vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-FILTRATION
+    - CHEM79-EVAPORATION
+    - CHEM79-DECANTING
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: CHEM79-FILTRATION, CHEM79-EVAPORATION, CHEM79-DECANTING.
+    Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id006
+  - CHEM79-FILTRATION
+  - CHEM79-EVAPORATION
+  - CHEM79-DECANTING
+  integration_of: *id006
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Seosten erottaminen
+- id: CHEM79-ELEMENT
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Alkuaine
+  title: Alkuaineen ymmärtäminen yhdenlaisten atomien aineeksi
+  short_description: Alkuaineen ymmärtäminen yhdenlaisten atomien aineeksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-PURE-MIX
+    relation_type: prerequisite
+    strength: strong
+    rationale: CHEM79-PURE-MIX on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: CHEM79-MODEL-01
+    relation_type: representation_support
+    strength: strong
+    rationale: CHEM79-MODEL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: ENV-CHEM-MATERIAL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-MATERIAL-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: CHEM79-ATOM-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: CHEM79-ATOM-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: Alkuaine voidaan esitellä puhtaiden aineiden luokittelusta tai atomimallin kautta; pure/mix on vahva mutta
+    ei globaali hard gate.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  dynamic_prerequisite_rule: may_enter_from_pure_substance_classification_or_atomic_model_context
+  entry_role: dynamic
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Alkuaine
+- id: CHEM79-ATOM-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Atomi
+  title: Atomin ymmärtäminen alkuaineen rakenneosaksi
+  short_description: Atomin ymmärtäminen alkuaineen rakenneosaksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-ELEMENT
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-ELEMENT on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-MODEL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-MODEL-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-ELEMENT
+    - CHEM79-MODEL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Atomi
+- id: CHEM79-ATOM-NUCLEUS
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Atomin rakenne
+  title: Atomin ytimen ja elektroniverhon erottaminen
+  short_description: Atomin ytimen ja elektroniverhon erottaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-ATOM-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-ATOM-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-ATOM-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Atomin rakenne
+- id: CHEM79-PROTON
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Subatomiset hiukkaset
+  title: Protonin varauksen ja sijainnin tunnistaminen
+  short_description: Protonin varauksen ja sijainnin tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-ATOM-NUCLEUS
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-ATOM-NUCLEUS on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-ATOM-NUCLEUS
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - Aineen rakenne
+  - Atomi
+  - Subatomiset hiukkaset
+- id: CHEM79-ELECTRON
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Subatomiset hiukkaset
+  title: Elektronin varauksen ja sijainnin tunnistaminen
+  short_description: Elektronin varauksen ja sijainnin tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-ATOM-NUCLEUS
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-ATOM-NUCLEUS on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-ATOM-NUCLEUS
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - Aineen rakenne
+  - Atomi
+  - Subatomiset hiukkaset
+- id: CHEM79-NEUTRON
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Subatomiset hiukkaset
+  title: Neutronin varauksettomuuden ja sijainnin tunnistaminen
+  short_description: Neutronin varauksettomuuden ja sijainnin tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-ATOM-NUCLEUS
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-ATOM-NUCLEUS on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-ATOM-NUCLEUS
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - Aineen rakenne
+  - Atomi
+  - Subatomiset hiukkaset
+- id: CHEM79-ATOMICNUM
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Jaksollinen järjestelmä
+  title: Järjestysluvun yhdistäminen protonien määrään
+  short_description: Järjestysluvun yhdistäminen protonien määrään
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-PROTON
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-PROTON on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-PROTON
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Jaksollinen järjestelmä
+- id: CHEM79-PERIODIC-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Jaksollinen järjestelmä
+  title: Jaksollisen järjestelmän ymmärtäminen alkuaineiden järjestämisen malliksi
+  short_description: Jaksollisen järjestelmän ymmärtäminen alkuaineiden järjestämisen malliksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-ELEMENT
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-ELEMENT on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-ATOMICNUM
+    relation_type: prerequisite
+    strength: strong
+    rationale: CHEM79-ATOMICNUM tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-ELEMENT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Jaksollinen järjestelmä
+- id: CHEM79-PERIOD-GROUP
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Jaksollinen järjestelmä
+  title: Ryhmän ja jakson tunnistaminen jaksollisesta järjestelmästä
+  short_description: Ryhmän ja jakson tunnistaminen jaksollisesta järjestelmästä
+  node_kind: representation
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-PERIODIC-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-PERIODIC-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-PERIODIC-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Jaksollinen järjestelmä
+- id: CHEM79-ELEM-PROP
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Jaksollinen järjestelmä
+  title: Alkuaineen ominaisuuden ja paikan jaksollisessa järjestelmässä välisen yhteyden kvalitatiivinen tarkastelu
+  short_description: Alkuaineen ominaisuuden ja paikan jaksollisessa järjestelmässä välisen yhteyden kvalitatiivinen tarkastelu
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-PERIODIC-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-PERIODIC-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-PERIODIC-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Jaksollinen järjestelmä
+- id: CHEM79-COMPOUND
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Yhdisteet
+  title: Yhdisteen ymmärtäminen vähintään kahden alkuaineen atomeista koostuvaksi puhtaaksi aineeksi
+  short_description: Yhdisteen ymmärtäminen vähintään kahden alkuaineen atomeista koostuvaksi puhtaaksi aineeksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-ELEMENT
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-ELEMENT on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-ATOM-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-ATOM-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-ELEMENT
+    - CHEM79-ATOM-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Yhdisteet
+- id: CHEM79-COMP-MODEL
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Yhdisteet
+  title: Yhdisteen rakentumisen hahmottaminen hiukkas- tai rakennemallilla
+  short_description: Yhdisteen rakentumisen hahmottaminen hiukkas- tai rakennemallilla
+  node_kind: representation
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-COMPOUND
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-COMPOUND on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-MODEL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-MODEL-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-COMPOUND
+    - CHEM79-MODEL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Yhdisteet
+- id: CHEM79-SYMBOL
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Kemian merkkikieli
+  title: Alkuaineen kemiallisen merkin tulkitseminen
+  short_description: Alkuaineen kemiallisen merkin tulkitseminen
+  node_kind: representation
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-ELEMENT
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-ELEMENT on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-ELEMENT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Kemian merkkikieli
+- id: CHEM79-FORMULA
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Kemian merkkikieli
+  title: Yksinkertaisen kemiallisen kaavan tulkitseminen atomilajien ja lukusuhteen kuvauksena
+  short_description: Yksinkertaisen kemiallisen kaavan tulkitseminen atomilajien ja lukusuhteen kuvauksena
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-FORMULA-ELEMENTS
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-FORMULA on v0.2:ssa integraationoodi; atominen alitaito CHEM79-FORMULA-ELEMENTS vaaditaan kokonaisuuden
+      hallintaan.
+  - id: CHEM79-FORMULA-RATIO
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-FORMULA on v0.2:ssa integraationoodi; atominen alitaito CHEM79-FORMULA-RATIO vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-FORMULA-ELEMENTS
+    - CHEM79-FORMULA-RATIO
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: CHEM79-FORMULA-ELEMENTS, CHEM79-FORMULA-RATIO. Lisäksi vaaditaan
+    erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id007
+  - CHEM79-FORMULA-ELEMENTS
+  - CHEM79-FORMULA-RATIO
+  integration_of: *id007
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Kemian merkkikieli
+- id: CHEM79-SUBSCRIPT
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Kemian merkkikieli
+  title: Kaavan alaindeksin merkityksen tulkitseminen
+  short_description: Kaavan alaindeksin merkityksen tulkitseminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-FORMULA
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-FORMULA on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-FORMULA
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Kemian merkkikieli
+- id: CHEM79-CARBON
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Hiili
+  title: Hiilen tunnistaminen monien yhdisteiden keskeiseksi alkuaineeksi
+  short_description: Hiilen tunnistaminen monien yhdisteiden keskeiseksi alkuaineeksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-ELEMENT
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-ELEMENT on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-CHEM-CYCLE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-CYCLE-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-ELEMENT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Hiili
+- id: CHEM79-CARBON-COMPOUND
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Hiilen yhdisteet
+  title: Hiiliyhdisteen perusidean ymmärtäminen
+  short_description: Hiiliyhdisteen perusidean ymmärtäminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-CARBON
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CARBON on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-COMPOUND
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-COMPOUND on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-CARBON
+    - CHEM79-COMPOUND
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Hiilen yhdisteet
+- id: CHEM79-NUTRIENT-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Ravintoaineet
+  title: Ravintoaineiden tarkastelu kemiallisina aineina ja aineryhminä
+  short_description: Ravintoaineiden tarkastelu kemiallisina aineina ja aineryhminä
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-CARBON-COMPOUND
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CARBON-COMPOUND on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-CARBON-COMPOUND
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Ravintoaineet
+- id: CHEM79-NUTRIENT-CARB
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Ravintoaineet
+  title: Hiilihydraattien tunnistaminen ravintoaineiden kemialliseksi ryhmäksi
+  short_description: Hiilihydraattien tunnistaminen ravintoaineiden kemialliseksi ryhmäksi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-NUTRIENT-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-NUTRIENT-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-NUTRIENT-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Ravintoaineet
+- id: CHEM79-NUTRIENT-FAT
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Ravintoaineet
+  title: Rasvojen tunnistaminen ravintoaineiden kemialliseksi ryhmäksi
+  short_description: Rasvojen tunnistaminen ravintoaineiden kemialliseksi ryhmäksi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-NUTRIENT-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-NUTRIENT-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-NUTRIENT-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Ravintoaineet
+- id: CHEM79-NUTRIENT-PROT
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Ravintoaineet
+  title: Proteiinien tunnistaminen ravintoaineiden kemialliseksi ryhmäksi
+  short_description: Proteiinien tunnistaminen ravintoaineiden kemialliseksi ryhmäksi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-NUTRIENT-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-NUTRIENT-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-NUTRIENT-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Ravintoaineet
+- id: CHEM79-ORG-GROUP
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Orgaaninen kemia
+  title: Paikallisessa opetussuunnitelmassa valitun orgaanisen yhdisteryhmän rakenne–ominaisuus-yhteyden tutkiminen
+  short_description: Valtakunnallinen OPS edellyttää perehtymistä johonkin orgaaniseen yhdisteryhmään, mutta ei määrää samaa
+    ryhmää kaikille.
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-CARBON-COMPOUND
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CARBON-COMPOUND on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-CARBON-COMPOUND
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: local_curriculum_placeholder
+  dynamic_prerequisite_rule: local_curriculum_profile_selects_one_organic_compound_group
+  entry_role: none
+  mastery_role: placeholder
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Orgaaninen kemia
+- id: CHEM79-CHANGE-PHYS
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Aineen muutos
+  title: Fysikaalisen ja kemiallisen muutoksen erottaminen
+  short_description: Fysikaalisen ja kemiallisen muutoksen erottaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: ENV-CHEM-STATECHANGE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-STATECHANGE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-CHEM-BURN-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-BURN-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - any_of:
+    - ENV-CHEM-STATECHANGE-01
+    - ENV-CHEM-BURN-01
+    rationale: Vertailu voidaan aloittaa joko tutusta fysikaalisesta muutoksesta tai tutusta kemiallisesta muutoksesta; molempien
+      masteryä ei vaadita etukäteen.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Aineen muutos
+- id: CHEM79-REACTION-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Kemiallinen reaktio
+  title: Kemiallisen reaktion tunnistaminen uusien aineiden muodostumiseksi
+  short_description: Kemiallisen reaktion tunnistaminen uusien aineiden muodostumiseksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-CHANGE-PHYS
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CHANGE-PHYS on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-CHANGE-PHYS
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Kemiallinen reaktio
+- id: CHEM79-REACT-PROD
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Kemiallinen reaktio
+  title: Lähtöaineiden ja reaktiotuotteiden erottaminen
+  short_description: Lähtöaineiden ja reaktiotuotteiden erottaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-REACTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-REACTION-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-REACTION-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Kemiallinen reaktio
+- id: CHEM79-MATTER-CONS
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S4 Maailmankuva
+  parent_concept: Aineen säilyminen
+  title: Aineen säilymisen periaatteen käyttäminen kemiallisen reaktion selittämisessä
+  short_description: Aineen säilymisen periaatteen käyttäminen kemiallisen reaktion selittämisessä
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S4
+  - CHEM79-S6
+  relations:
+  - id: ENV-CHEM-MATTERCONS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-MATTERCONS-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-REACTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-REACTION-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-MATTERCONS-01
+    - CHEM79-REACTION-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S4 Maailmankuva
+  - Aineen säilyminen
+- id: CHEM79-REACTION-MODEL
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Kemiallinen reaktio
+  title: Kemiallisen reaktion esittäminen hiukkasmallina atomien uudelleenjärjestymisenä
+  short_description: Kemiallisen reaktion esittäminen hiukkasmallina atomien uudelleenjärjestymisenä
+  node_kind: representation
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-REACT-PROD
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-REACT-PROD on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-COMP-MODEL
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-COMP-MODEL on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-MATTER-CONS
+    relation_type: prerequisite
+    strength: strong
+    rationale: Aineen säilyminen vahvistaa mallin tulkintaa; sitä voidaan rakentaa myös mallin avulla.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-REACT-PROD
+    - CHEM79-COMP-MODEL
+    rationale: Lähtöaine/tuote ja hiukkasmalli ovat ydinesitiedot.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Kemiallinen reaktio
+- id: CHEM79-REACTION-ENERGY
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Reaktioenergia
+  title: Energian sitoutumisen tai vapautumisen tunnistaminen kemiallisessa reaktiossa
+  short_description: Energian sitoutumisen tai vapautumisen tunnistaminen kemiallisessa reaktiossa
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-REACTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-REACTION-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-PHY-ENERGYTRANS-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-ENERGYTRANS-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-REACTION-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Reaktioenergia
+- id: CHEM79-EXOENDO
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Reaktioenergia
+  title: Energiaa vapauttavan ja energiaa sitovan reaktion laadullinen erottaminen
+  short_description: Energiaa vapauttavan ja energiaa sitovan reaktion laadullinen erottaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-REACTION-ENERGY
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-REACTION-ENERGY on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-REACTION-ENERGY
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Reaktioenergia
+- id: CHEM79-RATE-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Reaktionopeus
+  title: Reaktionnopeuden ymmärtäminen reaktion etenemisen nopeutena
+  short_description: Reaktionnopeuden ymmärtäminen reaktion etenemisen nopeutena
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-REACTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-REACTION-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-REACTION-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Reaktionopeus
+- id: CHEM79-RATE-FACTOR
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Reaktionopeus
+  title: Reaktionnopeuteen vaikuttavan tekijän tutkiminen kontrolloidulla kokeella
+  short_description: Reaktionnopeuteen vaikuttavan tekijän tutkiminen kontrolloidulla kokeella
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-RATE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-RATE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-PLAN-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-PLAN-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-RATE-01
+    - CHEM79-PLAN-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: integration
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Reaktionopeus
+- id: CHEM79-RATE-TEMP
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Reaktionopeus
+  title: Lämpötilan vaikutuksen tunnistaminen reaktionnopeuteen
+  short_description: Lämpötilan vaikutuksen tunnistaminen reaktionnopeuteen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-RATE-FACTOR
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-RATE-FACTOR on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-PHY-TEMP-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-TEMP-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-RATE-FACTOR
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Reaktionopeus
+- id: CHEM79-RATE-CONC
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Reaktionopeus
+  title: Pitoisuuden vaikutuksen tunnistaminen reaktionnopeuteen
+  short_description: Pitoisuuden vaikutuksen tunnistaminen reaktionnopeuteen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-RATE-FACTOR
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-RATE-FACTOR on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-CONC-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CONC-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-RATE-FACTOR
+    - CHEM79-CONC-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Reaktionopeus
+- id: CHEM79-RATE-SURF
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Reaktionopeus
+  title: Pinta-alan vaikutuksen tunnistaminen reaktionnopeuteen
+  short_description: Pinta-alan vaikutuksen tunnistaminen reaktionnopeuteen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-RATE-FACTOR
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-RATE-FACTOR on ydinesitieto tälle osaamiskohteelle.
+  - id: M-GMEAS-02
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-GMEAS-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-RATE-FACTOR
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Reaktionopeus
+- id: CHEM79-CARBONCYCLE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Hiilen kierto
+  title: Hiilen kiertokulun keskeisten varastojen ja siirtymien hahmottaminen
+  short_description: Hiilen kiertokulun keskeisten varastojen ja siirtymien hahmottaminen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-CARBON-RESERVOIRS
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CARBONCYCLE on v0.2:ssa integraationoodi; atominen alitaito CHEM79-CARBON-RESERVOIRS vaaditaan kokonaisuuden
+      hallintaan.
+  - id: CHEM79-CARBON-TRANSFERS
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CARBONCYCLE on v0.2:ssa integraationoodi; atominen alitaito CHEM79-CARBON-TRANSFERS vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-CARBON-RESERVOIRS
+    - CHEM79-CARBON-TRANSFERS
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: CHEM79-CARBON-RESERVOIRS, CHEM79-CARBON-TRANSFERS. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id008
+  - CHEM79-CARBON-RESERVOIRS
+  - CHEM79-CARBON-TRANSFERS
+  integration_of: *id008
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Hiilen kierto
+- id: CHEM79-CARBON-BURN
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Hiilen kierto
+  title: Palamisen yhdistäminen hiilen kiertokulkuun
+  short_description: Palamisen yhdistäminen hiilen kiertokulkuun
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-CARBONCYCLE
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CARBONCYCLE on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-CHEM-BURN-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-BURN-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-CARBONCYCLE
+    - ENV-CHEM-BURN-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Hiilen kierto
+- id: CHEM79-CARBON-PHOTO
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Hiilen kierto
+  title: Yhteyttämisen yhdistäminen hiilen kiertokulkuun
+  short_description: Yhteyttämisen yhdistäminen hiilen kiertokulkuun
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-CARBONCYCLE
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CARBONCYCLE on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-CHEM-PHOTOSYN-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-PHOTOSYN-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-CARBONCYCLE
+    - ENV-CHEM-PHOTOSYN-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Hiilen kierto
+- id: CHEM79-CONC-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Pitoisuus
+  title: Pitoisuuden ymmärtäminen aineosan määränä suhteessa seokseen tai liuokseen
+  short_description: Pitoisuuden ymmärtäminen aineosan määränä suhteessa seokseen tai liuokseen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-PURE-MIX
+    relation_type: prerequisite
+    strength: strong
+    rationale: CHEM79-PURE-MIX on ydinesitieto tälle osaamiskohteelle.
+  - id: M-MULTREL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MULTREL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M-PCT-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-PCT-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: CHEM79-SOLUTION
+    relation_type: prerequisite
+    strength: required
+    rationale: Liuoksen käsite on ydinesitieto.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-SOLUTION
+    rationale: Pitoisuus/happamuus tarkastellaan liuoksissa; puhdas aine/seos -luokittelu tukee.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Pitoisuus
+- id: CHEM79-CONC-COMP
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Pitoisuus
+  title: Kahden liuoksen pitoisuuden vertaileminen
+  short_description: Kahden liuoksen pitoisuuden vertaileminen
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-CONC-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CONC-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M-NUM-10
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-NUM-10 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-CONC-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Pitoisuus
+- id: CHEM79-CONC-CALC
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Pitoisuus
+  title: Yksinkertaisen prosenttipitoisuuden laskeminen arkisessa tilanteessa
+  short_description: Yksinkertaisen prosenttipitoisuuden laskeminen arkisessa tilanteessa
+  node_kind: procedure
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-CONC-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CONC-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M79-PCT-SHARE
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-PCT-SHARE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-CONC-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Pitoisuus
+- id: CHEM79-ACIDBASE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Happamuus
+  title: Happaman, neutraalin ja emäksisen liuoksen erottaminen
+  short_description: Happaman, neutraalin ja emäksisen liuoksen erottaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-PURE-MIX
+    relation_type: prerequisite
+    strength: strong
+    rationale: CHEM79-PURE-MIX on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-SOLUTION
+    relation_type: prerequisite
+    strength: required
+    rationale: Liuoksen käsite on ydinesitieto.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-SOLUTION
+    rationale: Pitoisuus/happamuus tarkastellaan liuoksissa; puhdas aine/seos -luokittelu tukee.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Happamuus
+- id: CHEM79-PH
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Happamuus
+  title: pH-asteikon tulkitseminen happamuuden kuvaajana
+  short_description: pH-asteikon tulkitseminen happamuuden kuvaajana
+  node_kind: representation
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-ACIDBASE
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-ACIDBASE on ydinesitieto tälle osaamiskohteelle.
+  - id: M-NUM-10
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-NUM-10 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-ACIDBASE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Happamuus
+- id: CHEM79-INDICATOR
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Happamuus
+  title: Indikaattorin värimuutoksen käyttäminen happamuuden arviointiin
+  short_description: Indikaattorin värimuutoksen käyttäminen happamuuden arviointiin
+  node_kind: procedure
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-ACIDBASE
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-ACIDBASE on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-LAB-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: Laboratoriotaito tukee indikaattorin käyttöä; simulaatiossa käsite voidaan oppia ilman fyysistä laboratoriota.
+  - id: CHEM79-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Fyysisessä indikaattorikokeessa turvallisuus on toteutusportti.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-ACIDBASE
+    rationale: Happamuuden käsite on tiedollinen ydinesitieto.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Happamuus
+- id: CHEM79-REACTION-EQ-01
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Reaktioyhtälö
+  title: Yksinkertaisen reaktioyhtälön vasemman ja oikean puolen tulkitseminen lähtöaineiksi ja tuotteiksi
+  short_description: Yksinkertaisen reaktioyhtälön vasemman ja oikean puolen tulkitseminen lähtöaineiksi ja tuotteiksi
+  node_kind: representation
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-REACT-PROD
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-REACT-PROD on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-FORMULA
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-FORMULA on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-REACT-PROD
+    - CHEM79-FORMULA
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Reaktioyhtälö
+- id: CHEM79-COEFF
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Reaktioyhtälö
+  title: Reaktioyhtälön kertoimen merkityksen tulkitseminen hiukkasten lukusuhteena
+  short_description: Reaktioyhtälön kertoimen merkityksen tulkitseminen hiukkasten lukusuhteena
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-REACTION-EQ-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-REACTION-EQ-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M-RATREP-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-RATREP-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-REACTION-EQ-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Reaktioyhtälö
+- id: CHEM79-BALANCE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Reaktioyhtälö
+  title: Yksinkertaisen reaktioyhtälön tasapainottaminen aineen säilymisen avulla
+  short_description: Yksinkertaisen reaktioyhtälön tasapainottaminen aineen säilymisen avulla
+  node_kind: procedure
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-COEFF
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-COEFF on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-MATTER-CONS
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-MATTER-CONS on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-COEFF
+    - CHEM79-MATTER-CONS
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Reaktioyhtälö
+- id: CHEM79-RESOURCE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S3 Kemia yhteiskunnassa
+  parent_concept: Luonnonvarat
+  title: Luonnonvaran kemiallisen käytön ja tuotteen materiaaliketjun tunnistaminen
+  short_description: Luonnonvaran kemiallisen käytön ja tuotteen materiaaliketjun tunnistaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S3
+  relations:
+  - id: ENV-CHEM-MATERIAL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-MATERIAL-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: domain_entry
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S3 Kemia yhteiskunnassa
+  - Luonnonvarat
+- id: CHEM79-LIFECYCLE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S3 Kemia yhteiskunnassa
+  parent_concept: Elinkaari
+  title: Tuotteen elinkaaren vaiheiden ja materiaalivirtojen hahmottaminen
+  short_description: Tuotteen elinkaaren vaiheiden ja materiaalivirtojen hahmottaminen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S3
+  relations:
+  - id: CHEM79-LIFECYCLE-STAGES
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-LIFECYCLE on v0.2:ssa integraationoodi; atominen alitaito CHEM79-LIFECYCLE-STAGES vaaditaan kokonaisuuden
+      hallintaan.
+  - id: CHEM79-LIFECYCLE-FLOWS
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-LIFECYCLE on v0.2:ssa integraationoodi; atominen alitaito CHEM79-LIFECYCLE-FLOWS vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-LIFECYCLE-STAGES
+    - CHEM79-LIFECYCLE-FLOWS
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: CHEM79-LIFECYCLE-STAGES, CHEM79-LIFECYCLE-FLOWS. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id009
+  - CHEM79-LIFECYCLE-STAGES
+  - CHEM79-LIFECYCLE-FLOWS
+  integration_of: *id009
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Kemia
+  - S3 Kemia yhteiskunnassa
+  - Elinkaari
+- id: CHEM79-SUSTAIN
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S3 Kemia yhteiskunnassa
+  parent_concept: Kestävä kemia
+  title: Kemiallisen tuotteen tai prosessin kestävyyden vertaileminen aine- ja energiavirtojen perusteella
+  short_description: Kemiallisen tuotteen tai prosessin kestävyyden vertaileminen aine- ja energiavirtojen perusteella
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S3
+  relations:
+  - id: CHEM79-SUSTAIN-COMPARE
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SUSTAIN on v0.2:ssa integraationoodi; atominen alitaito CHEM79-SUSTAIN-COMPARE vaaditaan kokonaisuuden
+      hallintaan.
+  - id: CHEM79-SUSTAIN-MATTER-FLOW
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SUSTAIN on v0.2:ssa integraationoodi; atominen alitaito CHEM79-SUSTAIN-MATTER-FLOW vaaditaan kokonaisuuden
+      hallintaan.
+  - id: CHEM79-SUSTAIN-ENERGY-FLOW
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SUSTAIN on v0.2:ssa integraationoodi; atominen alitaito CHEM79-SUSTAIN-ENERGY-FLOW vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-SUSTAIN-COMPARE
+    - CHEM79-SUSTAIN-MATTER-FLOW
+    - CHEM79-SUSTAIN-ENERGY-FLOW
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: CHEM79-SUSTAIN-COMPARE, CHEM79-SUSTAIN-MATTER-FLOW, CHEM79-SUSTAIN-ENERGY-FLOW.
+    Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id010
+  - CHEM79-SUSTAIN-COMPARE
+  - CHEM79-SUSTAIN-MATTER-FLOW
+  - CHEM79-SUSTAIN-ENERGY-FLOW
+  integration_of: *id010
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Kemia
+  - S3 Kemia yhteiskunnassa
+  - Kestävä kemia
+- id: CHEM79-SCALE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S4 Maailmankuva
+  parent_concept: Mittakaavat
+  title: Kemian mittakaavojen yhdistäminen makrotason havainnosta hiukkastasoon
+  short_description: Kemian mittakaavojen yhdistäminen makrotason havainnosta hiukkastasoon
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - CHEM79-S4
+  relations:
+  - id: CHEM79-MODEL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-MODEL-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M79-POWER-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-POWER-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-MODEL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: dynamic
+  mastery_role: integration
+  concept_path:
+  - Kemia
+  - S4 Maailmankuva
+  - Mittakaavat
+- id: CHEM79-SOLUTION
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Liuokset
+  title: Liuoksen ymmärtäminen liuenneen aineen ja liuottimen muodostamaksi tasakoosteiseksi seokseksi
+  short_description: Liuoksen ymmärtäminen liuenneen aineen ja liuottimen muodostamaksi tasakoosteiseksi seokseksi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-SOLUBILITY
+    relation_type: prerequisite
+    strength: required
+    rationale: Liukoisuuden käsite tarvitaan liuoksen muodostumisen ymmärtämiseen.
+  - id: CHEM79-MIX-HOM
+    relation_type: prerequisite
+    strength: strong
+    rationale: Tasakoosteisuuden käsite tukee.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-SOLUBILITY
+    rationale: Liukoisuuden käsite on ydinesitieto.
+  evidence_notes: Tarvittava välisolmu liukoisuuden, pitoisuuden ja happamuuden välille.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Liuokset
+- id: CHEM79-DATA-COLLECT
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Aineisto
+  title: Kemian tutkimustulosten kokoaminen
+  short_description: Kemian tutkimustulosten kokoaminen
+  node_kind: procedure
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: SCI-ENV-DATA-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-DATA-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M-DATA-10
+    relation_type: representation_support
+    strength: strong
+    rationale: M-DATA-10 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-DATA-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-DATA-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: CHEM79-DATA-01
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Aineisto
+- id: CHEM79-DATA-PRESENT
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Aineisto
+  title: Kemian tutkimustulosten esittäminen
+  short_description: Kemian tutkimustulosten esittäminen
+  node_kind: representation
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: SCI-ENV-DATA-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-DATA-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M-DATA-10
+    relation_type: representation_support
+    strength: strong
+    rationale: M-DATA-10 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-DATA-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-DATA-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: CHEM79-DATA-01
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Aineisto
+- id: CHEM79-CONCLUSION
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Johtopäätökset
+  title: Kemian tutkimuksesta johtopäätöksen tekeminen
+  short_description: Kemian tutkimuksesta johtopäätöksen tekeminen
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: SCI-ENV-CONCL-01
+    relation_type: process_support
+    strength: strong
+    rationale: SCI-ENV-CONCL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: SCI-ENV-EVAL-01
+    relation_type: process_support
+    strength: strong
+    rationale: SCI-ENV-EVAL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: CHEM79-DATA-01
+    relation_type: representation_support
+    strength: strong
+    rationale: CHEM79-DATA-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-CONCL-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: dynamic
+  mastery_role: process
+  split_from: CHEM79-CONCL-01
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Johtopäätökset
+- id: CHEM79-INVESTIGATION-EVAL
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Tulosten arviointi
+  title: Kemian tutkimuksen toteutuksen ja tulosten arviointi
+  short_description: Kemian tutkimuksen toteutuksen ja tulosten arviointi
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: SCI-ENV-CONCL-01
+    relation_type: process_support
+    strength: strong
+    rationale: SCI-ENV-CONCL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: SCI-ENV-EVAL-01
+    relation_type: process_support
+    strength: strong
+    rationale: SCI-ENV-EVAL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: CHEM79-DATA-01
+    relation_type: representation_support
+    strength: strong
+    rationale: CHEM79-DATA-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-CONCL-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: dynamic
+  mastery_role: process
+  split_from: CHEM79-CONCL-01
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Tulosten arviointi
+- id: CHEM79-PARTICLE-MODEL-USE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Mallintaminen
+  title: Hiukkasmallin käyttäminen kemiallisen ilmiön selittämiseen
+  short_description: Hiukkasmallin käyttäminen kemiallisen ilmiön selittämiseen
+  node_kind: representation
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: SCI-ENV-MODEL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-MODEL-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-MODEL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-MODEL-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: CHEM79-MODEL-01
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Mallintaminen
+- id: CHEM79-STRUCTURE-MODEL-USE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Mallintaminen
+  title: Rakennemallin käyttäminen kemiallisen ilmiön selittämiseen
+  short_description: Rakennemallin käyttäminen kemiallisen ilmiön selittämiseen
+  node_kind: representation
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S1
+  relations:
+  - id: SCI-ENV-MODEL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-MODEL-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-MODEL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-MODEL-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: CHEM79-MODEL-01
+  concept_path:
+  - Kemia
+  - S1 Luonnontieteellinen tutkimus
+  - Mallintaminen
+- id: CHEM79-CHEMICAL-USE-SAFE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Kemikaaliturvallisuus
+  title: Kodin kemikaalin turvallisen käytön periaatteiden soveltaminen
+  short_description: Kodin kemikaalin turvallisen käytön periaatteiden soveltaminen
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S2
+  relations:
+  - id: ENV-CHEM-HOMECHEM-SAFE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-HOMECHEM-SAFE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-SAFE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SAFE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-HOMECHEM-SAFE-01
+    - CHEM79-SAFE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-CHEMICAL-SAFE itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: operational
+  mastery_role: operational
+  split_from: CHEM79-CHEMICAL-SAFE
+  concept_path:
+  - Kemia
+  - S2 Oma elämä ja ympäristö
+  - Kemikaaliturvallisuus
+- id: CHEM79-HAZARD-LABEL
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Kemikaaliturvallisuus
+  title: Kemikaalin varoitusmerkintöjen tulkitseminen
+  short_description: Kemikaalin varoitusmerkintöjen tulkitseminen
+  node_kind: representation
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S2
+  relations:
+  - id: ENV-CHEM-HOMECHEM-SAFE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-HOMECHEM-SAFE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-SAFE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SAFE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-HOMECHEM-SAFE-01
+    - CHEM79-SAFE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-CHEMICAL-SAFE itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: dynamic
+  mastery_role: process
+  split_from: CHEM79-CHEMICAL-SAFE
+  concept_path:
+  - Kemia
+  - S2 Oma elämä ja ympäristö
+  - Kemikaaliturvallisuus
+- id: CHEM79-FIRE-CONDITIONS
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Palaminen
+  title: Palamisen edellytysten kemiallinen perusidea
+  short_description: Palamisen edellytysten kemiallinen perusidea
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S2
+  relations:
+  - id: ENV-CHEM-BURN-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-BURN-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-SAFE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SAFE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-BURN-01
+    - CHEM79-SAFE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-FIRE-SAFE itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: CHEM79-FIRE-SAFE
+  concept_path:
+  - Kemia
+  - S2 Oma elämä ja ympäristö
+  - Palaminen
+- id: CHEM79-FIRE-ACTION
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Paloturvallisuus
+  title: Paloturvallisen toiminnan periaatteiden soveltaminen
+  short_description: Paloturvallisen toiminnan periaatteiden soveltaminen
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S2
+  relations:
+  - id: ENV-CHEM-BURN-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-BURN-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-SAFE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SAFE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-BURN-01
+    - CHEM79-SAFE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-FIRE-SAFE itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: operational
+  mastery_role: operational
+  split_from: CHEM79-FIRE-SAFE
+  concept_path:
+  - Kemia
+  - S2 Oma elämä ja ympäristö
+  - Paloturvallisuus
+- id: CHEM79-FILTRATION
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Seosten erottaminen
+  title: Suodattamisen perusperiaatteen tunnistaminen
+  short_description: Suodattamisen perusperiaatteen tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-SEPARATE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SEPARATE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-SEPARATE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-SEPARATE-02 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: CHEM79-SEPARATE-02
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Seosten erottaminen
+- id: CHEM79-EVAPORATION
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Seosten erottaminen
+  title: Haihduttamisen perusperiaatteen tunnistaminen
+  short_description: Haihduttamisen perusperiaatteen tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-SEPARATE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SEPARATE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-SEPARATE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-SEPARATE-02 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: CHEM79-SEPARATE-02
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Seosten erottaminen
+- id: CHEM79-DECANTING
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S5 Aineiden ominaisuudet ja rakenne
+  parent_concept: Seosten erottaminen
+  title: Dekantoinnin perusperiaatteen tunnistaminen
+  short_description: Dekantoinnin perusperiaatteen tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S5
+  relations:
+  - id: CHEM79-SEPARATE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SEPARATE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-SEPARATE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-SEPARATE-02 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: CHEM79-SEPARATE-02
+  concept_path:
+  - Kemia
+  - S5 Aineiden ominaisuudet ja rakenne
+  - Seosten erottaminen
+- id: CHEM79-FORMULA-ELEMENTS
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Kemian merkkikieli
+  title: Kemiallisen kaavan atomilajien tunnistaminen
+  short_description: Kemiallisen kaavan atomilajien tunnistaminen
+  node_kind: representation
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-SYMBOL
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-SYMBOL on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-COMPOUND
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-COMPOUND on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-SYMBOL
+    - CHEM79-COMPOUND
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-FORMULA itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: CHEM79-FORMULA
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Kemian merkkikieli
+- id: CHEM79-FORMULA-RATIO
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Kemian merkkikieli
+  title: Kemiallisen kaavan atomien lukusuhteen tulkitseminen
+  short_description: Kemiallisen kaavan atomien lukusuhteen tulkitseminen
+  node_kind: representation
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: CHEM79-SYMBOL
+    relation_type: prerequisite
+    strength: strong
+    rationale: 'CHEM79-SYMBOL on ydinesitieto tälle osaamiskohteelle. v0.2 edge-audit: required ilman hard prerequisite -ryhmää
+      muutettu strong-tasolle.'
+  - id: CHEM79-COMPOUND
+    relation_type: prerequisite
+    strength: strong
+    rationale: 'CHEM79-COMPOUND on ydinesitieto tälle osaamiskohteelle. v0.2 edge-audit: required ilman hard prerequisite
+      -ryhmää muutettu strong-tasolle.'
+  - id: CHEM79-FORMULA-ELEMENTS
+    relation_type: prerequisite
+    strength: required
+    rationale: Atomilajit pitää tunnistaa ennen niiden lukusuhteen tulkintaa.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-FORMULA-ELEMENTS
+    rationale: Lukusuhde tulkitaan tunnistettujen atomilajien välillä.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-FORMULA itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: CHEM79-FORMULA
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Kemian merkkikieli
+- id: CHEM79-CARBON-RESERVOIRS
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Hiilen kierto
+  title: Hiilen kiertokulun keskeisten varastojen tunnistaminen
+  short_description: Hiilen kiertokulun keskeisten varastojen tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: ENV-CHEM-CYCLE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-CYCLE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-CARBON
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CARBON on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-CYCLE-01
+    - CHEM79-CARBON
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-CARBONCYCLE itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: CHEM79-CARBONCYCLE
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Hiilen kierto
+- id: CHEM79-CARBON-TRANSFERS
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S6 Aineiden muutokset
+  parent_concept: Hiilen kierto
+  title: Hiilen siirtymien hahmottaminen varastojen välillä
+  short_description: Hiilen siirtymien hahmottaminen varastojen välillä
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S6
+  relations:
+  - id: ENV-CHEM-CYCLE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-CYCLE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-CARBON
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-CARBON on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-CYCLE-01
+    - CHEM79-CARBON
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-CARBONCYCLE itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: CHEM79-CARBONCYCLE
+  concept_path:
+  - Kemia
+  - S6 Aineiden muutokset
+  - Hiilen kierto
+- id: CHEM79-LIFECYCLE-STAGES
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S3 Kemia yhteiskunnassa
+  parent_concept: Elinkaari
+  title: Tuotteen elinkaaren vaiheiden tunnistaminen
+  short_description: Tuotteen elinkaaren vaiheiden tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S3
+  relations:
+  - id: CHEM79-RESOURCE
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-RESOURCE on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-RESOURCE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-LIFECYCLE itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: CHEM79-LIFECYCLE
+  concept_path:
+  - Kemia
+  - S3 Kemia yhteiskunnassa
+  - Elinkaari
+- id: CHEM79-LIFECYCLE-FLOWS
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S3 Kemia yhteiskunnassa
+  parent_concept: Elinkaari
+  title: Tuotteen elinkaaren materiaalivirtojen hahmottaminen
+  short_description: Tuotteen elinkaaren materiaalivirtojen hahmottaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S3
+  relations:
+  - id: CHEM79-RESOURCE
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-RESOURCE on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-RESOURCE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-LIFECYCLE itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: CHEM79-LIFECYCLE
+  concept_path:
+  - Kemia
+  - S3 Kemia yhteiskunnassa
+  - Elinkaari
+- id: CHEM79-SUSTAIN-COMPARE
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S3 Kemia yhteiskunnassa
+  parent_concept: Kestävä kemia
+  title: Kemiallisen tuotteen tai prosessin kestävyyden vertaileminen
+  short_description: Kemiallisen tuotteen tai prosessin kestävyyden vertaileminen
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S3
+  relations:
+  - id: CHEM79-SUSTAIN-MATTER-FLOW
+    relation_type: prerequisite
+    strength: strong
+    rationale: Ainevirtojen analyysi tukee kestävyysvertailua.
+  - id: CHEM79-SUSTAIN-ENERGY-FLOW
+    relation_type: prerequisite
+    strength: strong
+    rationale: Energiavirtojen analyysi tukee kestävyysvertailua.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-SUSTAIN itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: dynamic
+  mastery_role: process
+  split_from: CHEM79-SUSTAIN
+  concept_path:
+  - Kemia
+  - S3 Kemia yhteiskunnassa
+  - Kestävä kemia
+- id: CHEM79-SUSTAIN-MATTER-FLOW
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S3 Kemia yhteiskunnassa
+  parent_concept: Kestävä kemia
+  title: Ainevirtojen analysointi kestävyyden näkökulmasta
+  short_description: Ainevirtojen analysointi kestävyyden näkökulmasta
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S3
+  relations:
+  - id: CHEM79-LIFECYCLE
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-LIFECYCLE on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-MATTER-CONS
+    relation_type: prerequisite
+    strength: strong
+    rationale: CHEM79-MATTER-CONS tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: CHEM79-REACTION-ENERGY
+    relation_type: prerequisite
+    strength: strong
+    rationale: CHEM79-REACTION-ENERGY tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-LIFECYCLE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-SUSTAIN itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: CHEM79-SUSTAIN
+  concept_path:
+  - Kemia
+  - S3 Kemia yhteiskunnassa
+  - Kestävä kemia
+- id: CHEM79-SUSTAIN-ENERGY-FLOW
+  subject: chemistry
+  grade_band: 7-9
+  topic_area: S3 Kemia yhteiskunnassa
+  parent_concept: Kestävä kemia
+  title: Energiavirtojen analysointi kestävyyden näkökulmasta
+  short_description: Energiavirtojen analysointi kestävyyden näkökulmasta
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - CHEM79-S3
+  relations:
+  - id: CHEM79-LIFECYCLE
+    relation_type: prerequisite
+    strength: required
+    rationale: CHEM79-LIFECYCLE on ydinesitieto tälle osaamiskohteelle.
+  - id: CHEM79-MATTER-CONS
+    relation_type: prerequisite
+    strength: strong
+    rationale: CHEM79-MATTER-CONS tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: CHEM79-REACTION-ENERGY
+    relation_type: prerequisite
+    strength: strong
+    rationale: CHEM79-REACTION-ENERGY tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - CHEM79-LIFECYCLE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista CHEM79-SUSTAIN itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: CHEM79-SUSTAIN
+  concept_path:
+  - Kemia
+  - S3 Kemia yhteiskunnassa
+  - Kestävä kemia

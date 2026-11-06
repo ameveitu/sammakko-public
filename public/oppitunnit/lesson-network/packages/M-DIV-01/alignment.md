@@ -1,0 +1,14 @@
+# M-DIV-01 — actual Lite and canonical alignment
+
+Canonical title: Ositusjako: määrä jaetaan annettuun määrään yhtä suuria ryhmiä. Grade1-2, concept/atomic. Graph SHA17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb. Exact required/strong relationships are copied without promotion in lesson.json planning.
+
+NodeSpec.id=M-DIV-01; source ranta2.ts; stop=Reilu jako; node rev/validRevs audit1-2026-10-28. Global CONTENT_REV lite181-2026-10-27 is fallback only. Imported Lite remains immutable.
+
+Exact frozen objective is PARTITIVE sharing: known total and number of recipients, unknown each share. Two roundRobin demos:6 objects to3 then2 recipients. deal: k2..4,per2..4,total=k×per, finite pile picture, choices distinguish recipient count/whole/one-too-many; hint round robin, repeated-addition explanation. fair: three plates, equal per2..4 versus shuffled unequal counts, compare shares. share: pack k2..4,g=per2..4,pile=k×per, constructive allocation. story: k2/3,per2..5, fish/duckling context, distinguish subtracting recipient count from sharing. transfer: k2..4,per2..4 asks original whole from equal shares; optional reverse connection here, no new multiplication gate. roundRobin shows finite pile and one-at-a-time movement. ui.pack has per-bag buttons, undo and locked submit. engine.check pack only checks findIndex against target g: empty/short all-matching arrays can succeed by inspection; our exact dense k-field counts and conservation validator rejects these. Audit row26; COVERAGE omits share and uses stale global rev. No own family declarations and no SIMS overlay. index fills GOALS and retains audit1 revision.
+
+## Authored treatment
+Concept/atomic role retained. Fixed recipients and finite total. Learner constructs equal complete shares in any action order, then reports one share.6/3 each2,8/2 each4,8/4 each2. Whole-used and equal-shares both checked, optional assisted round explicitly disclosed. Not quotition or fraction assessment.
+
+Pedagogy, concrete example, original precise diagrams, misconception and transfer precede or accompany supported practice. Optional supports do not become evidence gates. All on-screen objects are deterministic models, not learner physical observations. Exact source hashes and primary-source adopted/rejected decisions are in lesson.json. No efficacy/human validation, persistence, score, mastery, route/public deployment approval is claimed.
+
+INTERACTION_FEEDBACK_CONTRACT: old correct and incorrect feedback retires on semantic edits; equivalent piece identity/order, control order or visual guides preserve truth. Returning to a prior answer still needs explicit recheck. Exact shape, dense required indices, missing/extra/invalid/duplicate entries and conservation are checked; interface failure never gives success. Self-contained mount lifecycle owns3delegated listeners, no timers/imports; reset adds none, dispose removes all. Tests/QA remain pending until author freeze.

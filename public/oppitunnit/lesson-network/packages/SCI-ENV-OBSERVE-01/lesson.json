@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "kcId": "SCI-ENV-OBSERVE-01",
+  "revision": 13,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "leaf.svg",
+      "sha256": "f227aafc9ad9f6d4901260ef4c53791279ef2f9861ace6fde8707f92c6d01cb8"
+    },
+    {
+      "path": "cup.svg",
+      "sha256": "439a9876ee7c87e60b111da65152597040ec141292c1b3add418d208d090d05d"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study",
+      "title": "National curriculum in England: science programmes of study",
+      "organization": "Department for Education, England",
+      "retrievedAt": "2026-10-29",
+      "usageRestrictions": "Page states Crown copyright 2015, Open Government Licence v3.0 except third-party content. Own Finnish explanations and drawings only.",
+      "adopted": [
+        "KS1: lähitarkastelu, arjen ilmiöt ja ensikäden tutkiminen; kuva on rajattu toissijainen kohde.",
+        "Turvallisen tutun paperin katseleminen, tunnustelu ja hiljainen rapistelu on oma sovellus aistien käytöstä."
+      ],
+      "rejected": [
+        "Kasvien lajien nimeämistä tai laajaa luokittelua ei vaadita havainnon tekemiseksi.",
+        "Englannin opetussuunnitelmaa ei esitetä Suomen kanonisena opetussuunnitelmana."
+      ],
+      "independentlyVerified": "KS1 Working scientifically ja Animals including humans -kohdat sekä sivun lisenssikappale luettu. Tämä ei ole suomalaisen KC-jaon riippumaton validointi."
+    },
+    {
+      "url": "https://www.nps.gov/teachers/classrooms/inference-vs-observation-in-archeology.htm",
+      "title": "Inference vs. Observation in Archeology",
+      "organization": "U.S. National Park Service",
+      "retrievedAt": "2026-10-29",
+      "usageRestrictions": "https://www.nps.gov/aboutus/disclaimer.htm retrieved 2026-10-29: NPS-created federal works generally public domain, exceptions for third-party works and protected marks. No source photos, logos or worksheets reused.",
+      "adopted": [
+        "Havainto ja siitä tehty mahdollinen selitys erotetaan. Selitys ei ole automaattisesti väärä.",
+        "Lauseen perustaa verrataan siihen, mitä kohteesta voi havaita."
+      ],
+      "rejected": [
+        "Juustokynttilän sytytys- ja syömisdemo jätetty kokonaan pois.",
+        "Lähteen 3.–5. luokkien arkeologinen tehtävä ja kirjoitustaakka eivät sovi tämän perustunnin vaatimuksiksi."
+      ],
+      "independentlyVerified": "Lesson background, procedure and grade level read. Adaptation to ages 7–8 is project design, not source-tested age validation."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@062e69db9f95dd1e8c1bf1c8c6495496c7909449ba60be8504a2a4d17da42527",
+      "note": "Authored comparison and technical self-check only; independent review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@062e69db9f95dd1e8c1bf1c8c6495496c7909449ba60be8504a2a4d17da42527",
+      "note": "Authored comparison and technical self-check only; independent review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@062e69db9f95dd1e8c1bf1c8c6495496c7909449ba60be8504a2a4d17da42527",
+      "note": "No human feedback or child testing."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@062e69db9f95dd1e8c1bf1c8c6495496c7909449ba60be8504a2a4d17da42527",
+      "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B01/review.md. Human/learner effectiveness and release approval remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@062e69db9f95dd1e8c1bf1c8c6495496c7909449ba60be8504a2a4d17da42527",
+      "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B01/review.md. Human/learner effectiveness and release approval remain pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@bdcb245e0a809e925c6bfa1b8e87dce3409b8b42c695ff0aff2882a2c60b9c71",
+      "note": "LR03 changed source roles and teaching steps. Prior review retained as history; independent current-source and human/classroom review remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@bdcb245e0a809e925c6bfa1b8e87dce3409b8b42c695ff0aff2882a2c60b9c71",
+      "note": "LR03 changed source roles and teaching steps. Prior review retained as history; independent current-source and human/classroom review remain pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@bdcb245e0a809e925c6bfa1b8e87dce3409b8b42c695ff0aff2882a2c60b9c71",
+      "note": "LR03 changed source roles and teaching steps. Prior review retained as history; independent current-source and human/classroom review remain pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@5e47275151c7be1dc03155f4863b840f82ac6ecc5961e76df14c34d632bb42c8",
+      "note": "LR03 source-role and projector-stage layout updated. Independent content/alignment and real human/classroom review remain pending; historical evidence retained."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@5e47275151c7be1dc03155f4863b840f82ac6ecc5961e76df14c34d632bb42c8",
+      "note": "LR03 source-role and projector-stage layout updated. Independent content/alignment and real human/classroom review remain pending; historical evidence retained."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@5e47275151c7be1dc03155f4863b840f82ac6ecc5961e76df14c34d632bb42c8",
+      "note": "LR03 source-role and projector-stage layout updated. Independent content/alignment and real human/classroom review remain pending; historical evidence retained."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@5c3c5facaf360657899beb0c4759c558ee71c50a18091066dfaabc34b7b1cb8a",
+      "note": "LR03 final current source requires independent content/alignment and real human/classroom review; historical evidence retained."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@5c3c5facaf360657899beb0c4759c558ee71c50a18091066dfaabc34b7b1cb8a",
+      "note": "LR03 final current source requires independent content/alignment and real human/classroom review; historical evidence retained."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@5c3c5facaf360657899beb0c4759c558ee71c50a18091066dfaabc34b7b1cb8a",
+      "note": "LR03 final current source requires independent content/alignment and real human/classroom review; historical evidence retained."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@9622808873733a681fb4aa39b9f97622ca622e472e9cf8e05614d0c5afc39e50",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@9622808873733a681fb4aa39b9f97622ca622e472e9cf8e05614d0c5afc39e50",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@9622808873733a681fb4aa39b9f97622ca622e472e9cf8e05614d0c5afc39e50",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@998b10e7600d3476de6f038928fbcefac6f5f4d07097e7acc527df8d8d4c2e5d",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@998b10e7600d3476de6f038928fbcefac6f5f4d07097e7acc527df8d8d4c2e5d",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@998b10e7600d3476de6f038928fbcefac6f5f4d07097e7acc527df8d8d4c2e5d",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@ac765265e49e7313f547cfa3c34473bfb3d9d28dd3fd44d77b103a43a1414256",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@ac765265e49e7313f547cfa3c34473bfb3d9d28dd3fd44d77b103a43a1414256",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@ac765265e49e7313f547cfa3c34473bfb3d9d28dd3fd44d77b103a43a1414256",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@25a2ba68d8743a69193390ac87c4ceb7c29ca07528c9b21caf3db9c2ee8d3824",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@25a2ba68d8743a69193390ac87c4ceb7c29ca07528c9b21caf3db9c2ee8d3824",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@25a2ba68d8743a69193390ac87c4ceb7c29ca07528c9b21caf3db9c2ee8d3824",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@283b07f49ad4d47431fdbfb710659d2b309b01540603ecf0ea4e62ed112ff612",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@283b07f49ad4d47431fdbfb710659d2b309b01540603ecf0ea4e62ed112ff612",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@283b07f49ad4d47431fdbfb710659d2b309b01540603ecf0ea4e62ed112ff612",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@12465ffccf346b1759b9594296e16b931435515f491fa9d46962ef558d09ef68",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@12465ffccf346b1759b9594296e16b931435515f491fa9d46962ef558d09ef68",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@12465ffccf346b1759b9594296e16b931435515f491fa9d46962ef558d09ef68",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@9ba3c0003247f0f0bd1c7b34e01bb2ad80d139372e54ccbfea9943f24a668164",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@9ba3c0003247f0f0bd1c7b34e01bb2ad80d139372e54ccbfea9943f24a668164",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@9ba3c0003247f0f0bd1c7b34e01bb2ad80d139372e54ccbfea9943f24a668164",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@8123806f58dc5e6c9e574285121477f8ce0dfb2862a6945123a2193ee75ec9bc",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@8123806f58dc5e6c9e574285121477f8ce0dfb2862a6945123a2193ee75ec9bc",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@8123806f58dc5e6c9e574285121477f8ce0dfb2862a6945123a2193ee75ec9bc",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@b753a101dbe1a52e9c965b31d799b79f9ab3aa3b8fbb64585ade82bcab990c9a",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@b753a101dbe1a52e9c965b31d799b79f9ab3aa3b8fbb64585ade82bcab990c9a",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Reikä ja pisarat ovat kuvasta näkyviä, tekijä tai mukin kylmyys eivät. Selitystä ei väitetä vääräksi vaan vielä todentamattomaksi. Luokitteluharjoituksella on oma lähtökuva samassa vaiheessa. Turvallinen paperikoe ei ulotu tuntemattomien aineiden maistamiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@b753a101dbe1a52e9c965b31d799b79f9ab3aa3b8fbb64585ade82bcab990c9a",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "SCI-ENV-OBSERVE-01",
+    "liteContentRevision": "lite181-2026-10-27",
+    "liteNodeRevision": "launch1-2026-11-01",
+    "families": [
+      "match",
+      "feature",
+      "colour",
+      "sort",
+      "transfer"
+    ],
+    "sourceDirectory": "lesson-network/authority/production-181-v2/lite",
+    "sourceHashes": {
+      "src/content/science.ts": "b72eb983d570fda14794825e6f0210f4ef599fea039a431d817f32c25b7f9a58",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da",
+      "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad"
+    },
+    "inventory": "alignment.md",
+    "reconciliation": "alignment.md#reconciliation-for-opus",
+    "status": "comparison_authored_review_pending",
+    "limitations": "Lite source is unapproved reference material. COVERAGE.md omits the later heavy/sort branch; source code takes precedence for inventory. No Lite code changed.",
+    "registryCheck": {
+      "entryPoint": "src/content/index.ts",
+      "motionOverrides": "src/content/motionsims.ts",
+      "inSimMap": false,
+      "effectiveFamilies": [
+        "match",
+        "feature",
+        "colour",
+        "sort",
+        "transfer"
+      ],
+      "note": "ALL includes exactly one spec for this ID. SIMS has no entry for this ID, so no sim wrapper or motion revision replaces this node."
+    },
+    "historicalSourceReference": {
+      "sourceBuild": "lite181-2026-10-27",
+      "sourceRevision": "audit1-2026-10-28",
+      "note": "Immutable supplied snapshot source hashes above remain historical provenance."
+    },
+    "sourceRevision": "launch1-2026-11-01",
+    "validLiteRevisions": [
+      "launch1-2026-11-01",
+      "audit1-2026-10-28"
+    ],
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "launch1-2026-11-01",
+      "validRevisions": [
+        "audit1-2026-10-28",
+        "launch1-2026-11-01"
+      ],
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/science.ts": "932b67922c6d8a4993ba66a98e14e8b2a6e1787a002e8f7bbeadc3c573a3cfc3",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "change": "Observation practice accessible descriptions name only depicted colors and geometry. They do not classify the correct option, identify a hidden cause, or claim human/classroom validation.",
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "1-2",
+    "teacherObjective": "Havainnon tekeminen ilmiöstä tai kohteesta",
+    "childGoal": "Huomaan kohteesta jotakin ja erotan havainnon mahdollisesta selityksestä.",
+    "sourceGraphRevision": "d547e9ebfbd8ca1737abe40be34e9ace53ea773e",
+    "sourceGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "canonicalSourceBasis": "pedagogically_derived",
+    "canonicalCurriculumRefs": [
+      "ENV12-T5-T13"
+    ],
+    "canonicalPrerequisiteGroups": [],
+    "requiredPrerequisites": [],
+    "strongSupport": [],
+    "assumed": [],
+    "scope": "Havainto kuvatusta kohteesta ja mahdollisen selityksen ero. Oikean kohteen tarkastelu aikuisen kanssa on valinnainen siirto. Oma kuvailu, kirjaaminen ja syyn todistaminen eivät ole harjoituksen tarkistuskohteita.",
+    "evidenceLimits": "Ruutuharjoituksen vastaus koskee vain näytettyä kuvaa ja annettua lausetta. Ei pysyvyyden, itsenäisyyden, aistitoimintojen tai fyysisen työskentelyn todentamista. Ei tallennusta, pisteitä, osaamistiloja tai analytiikkaa.",
+    "assetProvenance": [
+      {
+        "path": "leaf.svg",
+        "origin": "Original subject diagram authored as SVG for this KC on 2026-10-29; no copied external figure."
+      },
+      {
+        "path": "cup.svg",
+        "origin": "Original subject diagram authored as SVG for this KC on 2026-10-29; no copied external figure."
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "origin": "User-supplied shared v2 PNG, reused byte-for-byte. Generated raster reinterpretation of user character identity; not claimed hand-drawn. No mascot redrawing, reslicing or motion."
+      }
+    ],
+    "sequence": [
+      "Merkityksellinen aloitus ja konkreettinen kokemus",
+      "Selitetty kuvamalli",
+      "Virhekäsitysesimerkki ja siirtoesimerkki",
+      "Vapaa mietintätauko",
+      "Vapaa tutkinta ja lyhyt tarkistettu harjoitus",
+      "Tuki, lisäpohdinta ja lähtökysymys"
+    ],
+    "interactionLimits": "Module is a deterministic picture exploration. Pause/resume disables/enables its fieldset. Reset clears in-memory state; dispose removes its single delegated listener. No timers, imports, audio requirement or storage. Diagram text alternatives supply the visible features; this supported alternative is not an independent physical observation.",
+    "researchNote": "research.md"
+  },
+  "extensions": {
+    "technicalValidation": {
+      "date": "2026-10-29",
+      "nodeCommand": "node --test lesson-network/packages/M-MEAS-00/tests.mjs lesson-network/packages/SCI-ENV-OBSERVE-01/tests.mjs",
+      "nodeTestsTotalAcrossAssignedPackages": 7,
+      "nodeResult": "passed",
+      "packageLoader": "loadPackages and composePackage, source only; no build",
+      "browser": {
+        "engine": "Chromium headless via installed Playwright",
+        "viewport": "390x844",
+        "context": "isolated temporary copies with shell.css; actual modules; not generated lesson-network pages",
+        "checks": [
+          "all image loads",
+          "button height greater than 44px",
+          "keyboard Enter",
+          "correct/wrong feedback",
+          "pause/reset/resume",
+          "dispose twice",
+          "no residual listener after remount",
+          "no horizontal overflow",
+          "static examples without JS",
+          "no page errors"
+        ],
+        "screenshotsVisuallyInspected": true
+      },
+      "independentReview": "pending",
+      "humanReview": "pending",
+      "integration": "Main agent owns shared build, production status and full network checks"
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR03",
+      "method": "source-role-and-step-calibration",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

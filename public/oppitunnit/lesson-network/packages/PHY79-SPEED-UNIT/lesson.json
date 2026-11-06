@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "kcId": "PHY79-SPEED-UNIT",
+  "revision": 13,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "lesson.css",
+      "sha256": "b893e3f98156b44e4d36d181acb39f2d9874a24277353f3c20737e3598377665"
+    },
+    {
+      "path": "initial.svg",
+      "sha256": "3c5204ca3b19fed031bffa42d11aa9fd93a48d85cfe6e5180bda8a3572349639"
+    },
+    {
+      "path": "example.svg",
+      "sha256": "9b60f0dfdff546beca0b1c89c0cdd0100bc6ddd5b80d8b364f60e251b745860a"
+    },
+    {
+      "path": "transfer.svg",
+      "sha256": "5f3135d5d0c7ab50d67b36862720333b6cf858f096646cf0d6a5fdf9b11539d6"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    }
+  ],
+  "research": [
+    {
+      "title": "OpenStax College Physics2e §2.3 Time, Velocity, and Speed",
+      "url": "https://openstax.org/books/college-physics-2e/pages/2-3-time-velocity-and-speed",
+      "accessed": "2026-10-29",
+      "read": "Actual primary HTML: elapsed time, path/elapsed average speed vs displacement/elapsed velocity, return journey distinction.",
+      "licence": "Actual preface https://openstax.org/books/college-physics-2e/pages/preface lines25–34 states CC BY-NC-SA4.0, not blanket CC BY. Third-party art has separate credits. No source prose/figures/code reused.",
+      "adopted": "Distinguish totalpath and displacement; keep stops in elapsed time. Original Finnish finite examples and diagrams; no efficacy transfer."
+    },
+    {
+      "title": "OpenStax College Physics2e §2.4 Acceleration",
+      "url": "https://openstax.org/books/college-physics-2e/pages/2-4-acceleration",
+      "accessed": "2026-10-29",
+      "read": "Actual primary HTML: change in velocity over elapsed time, direction, and negative acceleration need not reduce speed.",
+      "licence": "Same actual preface CC BY-NC-SA4.0 with art exceptions. Conceptual comparison only; no copied figures or long passages.",
+      "adopted": "Compare equal-time changes and braking; scope signed1D model, distinguish direction from speed magnitude. No claims about child outcomes."
+    },
+    {
+      "title": "NIST SP811 §4 SI derived units",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "accessed": "2026-10-29",
+      "read": "Actual primary HTML Table2 and derivation discussion: m/s and m/s². Policy https://www.nist.gov/open/license also retrieved.",
+      "licence": "NIST employee non-SRD works generally not US-copyright, foreign/third-party/SRD qualifications and acknowledgment rules apply. No source art or text copied; dimensional facts independently derived.",
+      "adopted": "Length/time and velocity/time dimensions; no claim that a source validates local rendering or learning effectiveness."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@0e68dc27477f0aeb1dce8c6b1d250d19541e4ab6834c58b9d143674a73fabab4",
+      "note": "B13 author checks only; independent parent review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@0e68dc27477f0aeb1dce8c6b1d250d19541e4ab6834c58b9d143674a73fabab4",
+      "note": "B13 author checks only; independent parent review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@0e68dc27477f0aeb1dce8c6b1d250d19541e4ab6834c58b9d143674a73fabab4",
+      "note": "No human or learner validation performed."
+    },
+    {
+      "kind": "content",
+      "revision": "1@0e68dc27477f0aeb1dce8c6b1d250d19541e4ab6834c58b9d143674a73fabab4",
+      "state": "reviewed",
+      "note": "Independent B13 parent source/domain/teaching and scoped native review closed; lesson-network/evidence/production/B13/reviews/parent-physics/review-closed.json. Technical synthetic scope, not learner validation."
+    },
+    {
+      "kind": "alignment",
+      "revision": "1@0e68dc27477f0aeb1dce8c6b1d250d19541e4ab6834c58b9d143674a73fabab4",
+      "state": "reviewed",
+      "note": "Independent B13 parent canonical/Lite/source boundaries reviewed; lesson-network/evidence/production/B13/reviews/parent-physics/review-closed.json. Frozen graph/required groups retained."
+    },
+    {
+      "kind": "human",
+      "revision": "1@0e68dc27477f0aeb1dce8c6b1d250d19541e4ab6834c58b9d143674a73fabab4",
+      "state": "pending",
+      "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@de2bea3d91171060f0db082efaf310b217855fe12dab38a965c0d1cc22bc1dc1",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@de2bea3d91171060f0db082efaf310b217855fe12dab38a965c0d1cc22bc1dc1",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@de2bea3d91171060f0db082efaf310b217855fe12dab38a965c0d1cc22bc1dc1",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@dc4bced50bb0cfeb4df1551e03cdb5f0f2b53877dc274970e791957803106d93",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@dc4bced50bb0cfeb4df1551e03cdb5f0f2b53877dc274970e791957803106d93",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@dc4bced50bb0cfeb4df1551e03cdb5f0f2b53877dc274970e791957803106d93",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@00b664703ae06ac7c039de90b99cc6230e412ed1b7b52e57eed371b12b8193af",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@00b664703ae06ac7c039de90b99cc6230e412ed1b7b52e57eed371b12b8193af",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@00b664703ae06ac7c039de90b99cc6230e412ed1b7b52e57eed371b12b8193af",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@b3fc070d1bbe03401c4804faa4f36141fcee8afbd3fcfdd911394e6f974f88d8",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@b3fc070d1bbe03401c4804faa4f36141fcee8afbd3fcfdd911394e6f974f88d8",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@b3fc070d1bbe03401c4804faa4f36141fcee8afbd3fcfdd911394e6f974f88d8",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@971a0cce937f7769884368760e20b4fa3b5b2570b468c05263f23932725bf786",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@971a0cce937f7769884368760e20b4fa3b5b2570b468c05263f23932725bf786",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@971a0cce937f7769884368760e20b4fa3b5b2570b468c05263f23932725bf786",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@bac6fb9c7e3f4a55e854f364ac119fa562caddd68ecc5471cd0e635541302fdd",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@bac6fb9c7e3f4a55e854f364ac119fa562caddd68ecc5471cd0e635541302fdd",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@bac6fb9c7e3f4a55e854f364ac119fa562caddd68ecc5471cd0e635541302fdd",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@254f2d013fb6d194ebf44c32692773232e71f1c71b2071571e1a485ce85bbbf9",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@254f2d013fb6d194ebf44c32692773232e71f1c71b2071571e1a485ce85bbbf9",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@254f2d013fb6d194ebf44c32692773232e71f1c71b2071571e1a485ce85bbbf9",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@0f919d9bfa094596487d470802b4581a3432f7ac5c3edf550221dd587a695b4f",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@0f919d9bfa094596487d470802b4581a3432f7ac5c3edf550221dd587a695b4f",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@0f919d9bfa094596487d470802b4581a3432f7ac5c3edf550221dd587a695b4f",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@e5a5a66d45bad4276d4b81445e9b9e243a1591f361fad4ceb4b4b4e3975b74d6",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@e5a5a66d45bad4276d4b81445e9b9e243a1591f361fad4ceb4b4b4e3975b74d6",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@e5a5a66d45bad4276d4b81445e9b9e243a1591f361fad4ceb4b4b4e3975b74d6",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@091debea54ae20d345817eaece36aae181e0092c4b64c4c3a290be106ccdac9a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@091debea54ae20d345817eaece36aae181e0092c4b64c4c3a290be106ccdac9a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@091debea54ae20d345817eaece36aae181e0092c4b64c4c3a290be106ccdac9a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@3bc4d919147aafb4da04568b5e8fa9e65ab0ce27455788753c6640add11d8b47",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@3bc4d919147aafb4da04568b5e8fa9e65ab0ce27455788753c6640add11d8b47",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@3bc4d919147aafb4da04568b5e8fa9e65ab0ce27455788753c6640add11d8b47",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@2958d57e37fe1abe49a22d4e426b9864d58c4aa5172b831e24581acc5c938653",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@2958d57e37fe1abe49a22d4e426b9864d58c4aa5172b831e24581acc5c938653",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@2958d57e37fe1abe49a22d4e426b9864d58c4aa5172b831e24581acc5c938653",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@50b3ee20347eaa3adc1448c4df5e864bff35ee232747d9ef20ae845308c124dc",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@50b3ee20347eaa3adc1448c4df5e864bff35ee232747d9ef20ae845308c124dc",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@50b3ee20347eaa3adc1448c4df5e864bff35ee232747d9ef20ae845308c124dc",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@70848f3290baaffd7b499d0f6d3b3de57fd3a9422d274d1810a23960c80aa3e7",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@70848f3290baaffd7b499d0f6d3b3de57fd3a9422d274d1810a23960c80aa3e7",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Nopeuden yksikkö muodostuu matkan yksiköstä jaettuna ajan yksiköllä. m/s, km/h ja cm/min ovat kelvollisia omissa annetun mittauksen yksiköissään; nollanopeuskin tarvitsee yksikön. Annetut yksiköt ja vastauksen muodostaminen ovat yhdessä. Esimerkin yksikkörakennetta ei tarvitse päätellä piiloon jääneestä taulukosta. Nykyinen Lite vastaa yksikön muodostamiseen. Se ei edellytä muuntamaan kaikkia tehtäviä m/s:ksi; muunnosten osaaminen käsitellään erikseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@70848f3290baaffd7b499d0f6d3b3de57fd3a9422d274d1810a23960c80aa3e7",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "PHY79-SPEED-UNIT",
+    "liteContentRevision": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "inventory": {
+      "definition": "physics.ts453–482",
+      "demos": [
+        "12m/4s",
+        "120km/2h",
+        "30cm/5min"
+      ],
+      "families": [
+        "ms",
+        "kmh",
+        "meaning",
+        "factory",
+        "transfer",
+        "sim"
+      ],
+      "media": "phyanim.ts497+ unitBuildScene separatesnumber andunit; motionsims.ts122+30m metricwatch/ruler",
+      "correction": "COVERAGE omits meaning/factory and says1demo vsactual3. Free unit-construction response not just recognition; valid alternative speedunit gets format-specific guidance rather than false dimension claim. Conversion factors supplied, not hiddenprerequisites.",
+      "audit": "LESSON_AUDIT169,979–982 historical only."
+    },
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "authority/production-181-v2/lite/src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+      "authority/production-181-v2/lite/src/content/physics.ts": "835ad69dd95f622adcb6050ab63d00a4477d64425545dd1b8af5a4892f978430",
+      "authority/production-181-v2/lite/src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/features.ts": "8ddef5451be9d011297f5d32b1ab0d869a1e132d608bd30f679b8e2d900884c5",
+      "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "authority/production-181-v2/lite/src/content/world.ts": "c350e4f517d6aa23729ee958ec8b933abc828da41956e12a9da04a49b94e4704",
+      "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/src/engine/motion.ts": "7b2851bee0927ba383462ea8d24b7f2a8467c82b581fd519efdb4b4566365451",
+      "authority/production-181-v2/lite/src/ui/motion.ts": "1a3598c501e33fda21af3b42e86d0ddfef91fc4d67de15754159eaa5f98f19cc",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da",
+      "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+      "evidence/production/B11/AUTHORING_HOST_CLARIFICATION_FI.md": "9cf96652028cf9f4a78589b283d9a4dc5981e993ad2300f539f1028aa6f86c7d",
+      "evidence/production/B12/REPAIR_NOTES_FI.md": "a4ea9405c36008d6b390bbb0019a89e2814a9100ccfab86a33d11e72531ea2a5"
+    },
+    "authority": "Actual executable family definitions+SIMS injection+animations, not incomplete COVERAGE. Historical tests not adopted as current proof.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/features.ts": "674518dd106c0bfa3f379e19c95a557de2eac361f86ec097eb2598dcbe86b181",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/phyanim.ts": "419fc83a164c4799543edf6f4dc72021abe3d6ee5fc74d719b70d53243bab7ad",
+        "src/content/physics.ts": "2318f77c54ed6bc5fd2956f1f7342e3169d8e276e86d878be0196a261b0b8412",
+        "src/content/world.ts": "0c66cc7b41c914e8ebd6e3848d842ba12930a8ef78ca8c2564d5f3a509959f5a",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/engine/motion.ts": "5204500f68d9c8e66fee7caf689e778fa347008383fe87a1e60e978f20ca3a83",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/ui/motion.ts": "b7392e9ed572102ae8fe9304bd19e4e69a413c28cad211747f44468b089fd3a4"
+      },
+      "historicalNonLiteReferences": [
+        "AUTHORING.md",
+        "evidence/production/B11/AUTHORING_HOST_CLARIFICATION_FI.md",
+        "evidence/production/B12/REPAIR_NOTES_FI.md",
+        "reference/inputs/canonical-690-graph.json",
+        "reference/inputs/mvp-scope-181.json"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "PHY79-SPEED-UNIT",
+      "subject": "physics",
+      "grade_band": "7-9",
+      "topic_area": "S5 Vuorovaikutus ja liike",
+      "parent_concept": "Nopeus",
+      "title": "Nopeuden yksikön johtaminen matkan ja ajan yksiköistä",
+      "short_description": "Nopeuden yksikön johtaminen matkan ja ajan yksiköistä",
+      "node_kind": "concept",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "PHY79-S5"
+      ],
+      "relations": [
+        {
+          "id": "PHY79-SPEED-CONCEPT",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "PHY79-QTY-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "M-UNIT-02",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-UNIT-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        },
+        {
+          "id": "M-UNIT-05",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-UNIT-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "PHY79-SPEED-CONCEPT",
+            "PHY79-QTY-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate",
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Fysiikka",
+        "S5 Vuorovaikutus ja liike",
+        "Nopeus"
+      ]
+    },
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "PHY79-SPEED-CONCEPT",
+          "PHY79-QTY-01"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "role": "atomic",
+    "gradeBand": "7-9",
+    "teacherObjective": "Johtaa nopeuden yksikön matkan yksikkö/ajan yksikkö ja tulkitsee per-merkinnän. Ei edellytä muuntokertoimen muistamista.",
+    "childGoal": "Muodostan nopeuden yksikön matkan ja ajan yksiköistä.",
+    "additionalHardGates": [],
+    "scope": "Finite original1D models only; signed velocity and integrated totalpath. Exact closed-form state independent of frame rate. Constant acceleration bounds SI only; piecewiseconstant speed with explicit units. Supported labels/kinds/fields/ranges fail closed, no descriptor defaults. Rawdecimal input <=128chars, <=6 meaningful fractional digits, equivalent zeros/comma/dot accepted, no expression/rounding oracle.",
+    "sourceVsDesign": "Frozen curriculum labels inherited, not fresh Finnish official curriculum approval. Primary concept comparison does not establish lesson efficacy.",
+    "evidenceLimits": "No formal learnerhistory, physical measurement, oral demonstration or independent process/rubric claim."
+  },
+  "extensions": {
+    "productionBatch": "B13",
+    "author": "Descartes",
+    "simulationType": "selfcontained_closed_form_1D_acceleration_or_piecewise_motion_one_scenario_clock",
+    "mascotProvenance": "Actual suppliedPNG reused byteexact; not inside measurement geometry. No generatedreplacementassets.",
+    "sharedRuntimeChanges": false,
+    "independentReview": "pending_parent",
+    "humanReview": "not_performed",
+    "authorQA": "Author source and isolated-native checks recorded externally with exact source binding; parent actual151 and independent review pending. No author approval.",
+    "capabilities": "start/pause/quarterstep/seek/reset/end;6s wallclock fullrun, explicitmodeltime; ownstateAt supplies all numbers/SVG/table/staticassets. Own per-root dispose+RAFcancel; input/change/noevent centralreadback.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B10",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

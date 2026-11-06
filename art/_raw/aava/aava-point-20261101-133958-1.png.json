@@ -1,0 +1,78 @@
+{
+  "file": "aava-point-20261101-133958-1.png",
+  "sha256": "df92edd7e39c4f2db03caefe3b6dc6deadba3a459471467e2985453d7d762ca2",
+  "bytes": 1028219,
+  "createdAt": "2026-11-01T11:39:43.886Z",
+  "tool": "sammakko-imagegen 1.0.0",
+  "keySource": "keychain",
+  "endpoint": "images/edits",
+  "requestId": "req_6fa84422fc7a460099889e7b93d5f854",
+  "model": "gpt-image-2.5-sunburst",
+  "preset": null,
+  "params": {
+    "size": "1024x1024",
+    "quality": "medium",
+    "background": "transparent",
+    "output_format": "png",
+    "output_compression": null,
+    "n": 2,
+    "moderation": "auto"
+  },
+  "returned": {
+    "size": "1024x1024",
+    "quality": "medium",
+    "background": "transparent",
+    "output_format": "png"
+  },
+  "prompt": "Character Aava (must match the reference images exactly): a small pale butter-yellow duckling drawn in SIDE PROFILE facing right. Large rounded orange bill made of two soft lobes (upper and lower) with a darker orange outline, pointing right. One simple round dark-blue/black eye with a tiny white highlight, a soft pink blush dot under the eye. Round head on a short pear-shaped body, a small rounded wing on the side, a short pointed tail at the back-left, two thin orange legs with small webbed feet. NO hair tuft on the head, NO open mouth, NO eyebrows, NO extra details. Dark-blue outline (#244868) of even weight. Aava is the main character and the brand mascot: never redesign her.\n\nUse the first image as the exact reference for the character: keep the same proportions, colors, outline weight, eye style and crayon texture. Change only this: pose only: Aava stands and points forward to the right with one wing stretched out straight, side profile facing right, beak closed. Keep the transparent background and empty margin around the character.",
+  "promptParts": [
+    {
+      "from": "character-aava",
+      "text": "Character Aava (must match the reference images exactly): a small pale butter-yellow duckling drawn in SIDE PROFILE facing right. Large rounded orange bill made of two soft lobes (upper and lower) with a darker orange outline, pointing right. One simple round dark-blue/black eye with a tiny white highlight, a soft pink blush dot under the eye. Round head on a short pear-shaped body, a small rounded wing on the side, a short pointed tail at the back-left, two thin orange legs with small webbed feet. NO hair tuft on the head, NO open mouth, NO eyebrows, NO extra details. Dark-blue outline (#244868) of even weight. Aava is the main character and the brand mascot: never redesign her."
+    },
+    {
+      "from": "edit-keep-character",
+      "text": "Use the first image as the exact reference for the character: keep the same proportions, colors, outline weight, eye style and crayon texture. Change only this: pose only: Aava stands and points forward to the right with one wing stretched out straight, side profile facing right, beak closed. Keep the transparent background and empty margin around the character."
+    }
+  ],
+  "inputs": [
+    {
+      "file": "lite/public/characters/aava/idle.png",
+      "sha256": "84675b1db8291223a553c76ceca0053553de9597667d16025a5580c92b423b83"
+    },
+    {
+      "file": "lite/public/characters/aava/wave.png",
+      "sha256": "9408d18917718436689d6f9a516decff2539fbb4ee167f6a26192f71ba98880b"
+    },
+    {
+      "file": "lite/public/characters/aava/walk_02.png",
+      "sha256": "5e866916696800f897667a0e630278eed4acb3bf6eeecad596546b560225a463"
+    },
+    {
+      "file": "lite/public/characters/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    }
+  ],
+  "mask": null,
+  "cost": {
+    "estimateUsd": 0.29932,
+    "actualUsd": 0.045424,
+    "usage": {
+      "input_tokens": 2588,
+      "input_tokens_details": {
+        "image_tokens": 2048,
+        "text_tokens": 540
+      },
+      "output_tokens": 878,
+      "output_tokens_details": {
+        "image_tokens": 878,
+        "text_tokens": 0
+      },
+      "total_tokens": 3466
+    },
+    "imagesInRequest": 2,
+    "note": "actualUsd koskee koko pyyntöä"
+  },
+  "seconds": 15,
+  "license": "OpenAI-ehdot: tuotos kuuluu käyttäjälle; tarkista README:n lisenssiosio ennen julkaisua."
+}

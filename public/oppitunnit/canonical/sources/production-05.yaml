@@ -1,0 +1,42 @@
+schema_version: '0.1'
+kind: scoped_source_registry_supplement
+batch: production-05-quantity-numeral
+approval_scope: citation_only_and_explicit_project_design_not_content_approval
+sources:
+  - id: PROD05-OPH-MATH12-QTY-NUMERAL
+    type: curriculum_authority
+    title: Matematiikka1–2 — lukumäärän ja numeromerkinnän yhteys
+    publisher: Opetushallitus / ePerusteet
+    url: https://eperusteet.opintopolku.fi/eperusteet-service/api/perusteet/419550/kaikki
+    status: verified_citation_scoped
+    applies_to: [M-NUM-QTY-NUMERAL]
+    locator:
+      basis_id: 419550
+      subject_id: 466344
+      subject_band_id: 466963
+      band_definition_id: 428780
+      content_id: 469266
+      field: kuvaus.fi
+      html_paragraphs: [1, 2]
+    verification:
+      receipt: reports/autonomous-52/B03/quantity-numeral-source-fetch.json
+      response_bytes: 9222036
+      sha256: 7692dcef834d7ab175a1053e40abff6c016bc12003b4a7fdf4b64370c7696d94
+      fresh_fetch: true
+      date: '2026-10-27'
+    supported_claim: Määrän, lukusanan ja numeromerkinnän yhteyksien sekä lukujen tarkoituksenmukaisen käytön kansallinen sisältöalue; tässä vain määrä–numeromerkintä-komponentti.
+    limits: Ei projektin KC-jaon, process-roolin,3–6-alueen,kahdeksan tapauksen tai24h-säännön normatiivinen tai empiirinen hyväksyntä. Ei uusi lupa vanhojen lähderekisteritietueiden soveltamisalan laajennukseen.
+  - id: PROJECT-QUANTITY-NUMERAL-v1
+    type: project_formalization
+    publisher: Sammakko
+    title: Retkirasian numerolappu — rajattu kaksisuuntainen määrä–numeroprosessi
+    status: project_design
+    applies_to: [M-NUM-QTY-NUMERAL]
+    locators:
+      - authority/simple-core-next-batches-v1/CONTENT_CARDS_FI.txt
+      - content-design/autonomous-52/M-NUM-QTY-NUMERAL.md
+      - packages/domain/association.ts
+      - packages/learning/association-policy.ts
+      - packages/content/association-deck.ts
+    supported_claim: Alkuperäinen rajattu määrä–numeromerkintä-sovitus olemassa olevaan finite-association-sopimukseen; malli/tuki/oma päätös ja oikean parin valinnasta erillinen väärän parin korjaus. Kaikki tapausrajat ovat projektipäätöksiä.
+    limits: Ei oppimistulos- tai ymmärrettävyystutkimus, oppijavalidointi, riippumaton sisältöhyväksyntä,Give-N-arviointi tai kolmen representaation integraatioväite. Malli ja tuettu vastaus eivät myönnä itsenäistä näyttöä.

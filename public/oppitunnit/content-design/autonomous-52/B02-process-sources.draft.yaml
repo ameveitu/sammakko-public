@@ -1,0 +1,209 @@
+# Draft source records only; not an integrated registry or content approval.
+schema_version: "0.1"
+kind: draft_additive_source_supplement
+status: DRAFT_NOT_INTEGRATED
+approval_scope: citation_only_and_explicit_project_design_not_content_approval
+retrieved_on: 2026-10-26
+applies_to:
+  - M-NUM-WORD-NUMERAL
+  - M-NUM-QTY-WORD
+source_report:
+  path: reports/autonomous-52/B02/source-and-content-design.md
+  sha256: c7715dd62eeaffeefaf3ef93df84d503685137ab040688a2da4a7ee3ee9111fd
+  mode: reuse_same_day_primary_source_verification_no_new_fetch
+sources:
+  - id: PROJECT-ASSOCIATION-v1
+    type: project_formalization
+    title: Rajattu kaksisuuntainen vastaavuusprosessi, mallikansi ja muistihakuraja
+    publisher: Sammakko
+    status: project_design
+    applies_to:
+      - M-NUM-WORD-NUMERAL
+      - M-NUM-QTY-WORD
+    locators:
+      - packages/domain/association.ts
+      - packages/learning/association-policy.ts
+      - packages/content/association-deck.ts
+      - packages/learning/association-delivery.ts
+      - packages/learning/retrieval.ts
+      - reports/autonomous-52/B02/association-taught-path-consult.md
+      - reports/autonomous-52/B02/association-deck-independent-review.md
+    supported_claim: Äärellinen saman arvon vastaavuus molemmissa suunnissa, vahvistettu oma valinta, todellinen
+      eri arvoisen alkuparin korjaus, koko vaaditun faktajoukon kaksisuuntainen mallikansi ja muuttumaton
+      raakaa apua säilyttävä oppimishistoria. Process-rooli, sanallinen pääsy, case-kattavuus ja
+      3/2/4/24h-kynnykset ovat projektin sopimuksia.
+    limits: Ei empiirinen vaikuttavuustutkimus, itsenäinen hyväksyntä näille kahdelle pack-draftille tai lupa
+      ihmiskokeeseen/julkaisuun. Mallin toimitus, tuettu vastaus ja closure eivät myönnä myönteistä
+      taitoevidenssiä. Viivästetty neljän tapauksen näyte ei todista kaikkien faktojen säilymistä.
+    primary_guidance_reused:
+      - source: R01
+        url: https://ies.ed.gov/ncee/wwc/PracticeGuide/26
+        reviewed: 2026-10-26 HTML recommendations 1–3, as bound in source_report
+        node_mapping:
+          M-NUM-WORD-NUMERAL: Näkyvä sana–merkintä-parimalli, lyhyt kieli ja tuen vähentäminen ennen omaa valintaa.
+          M-NUM-QTY-WORD: Koko ryhmän ja sanan parimalli sekä oma tarkistus ilman tarjottua numerovälivastausta.
+        limits: K–6-tuen käytäntöopas; ei näiden digitaalisten tehtävien tai tarkkojen kynnysten validointi.
+          PDF-menetelmiä ei väitetä luetuiksi.
+      - source: R02
+        url: https://www.ncetm.org.uk/classroom-resources/ey-cardinality-and-counting/
+        reviewed: 2026-10-26 HTML introduction, counting/tagging, last number, Numeral meanings and Conservation, as
+          bound in source_report
+        node_mapping:
+          M-NUM-WORD-NUMERAL: Vain merkintöjen esitysten rinnakkainen opetussuunnittelun tuki; sana–merkintä-alueen
+            normiviite on OPH.
+          M-NUM-QTY-WORD: Koko määrän sanallinen merkitys ja asettelun erottaminen määrästä; ei Give-N:n lisäämistä
+            tähän sopimukseen.
+        limits: Alkuperäinen opetusresurssi, ei sovelluksen vaikutuskoe; ei spontaanin suullisen tuotannon validointi.
+  - id: PROD02-OPH-MATH12-S2
+    type: curriculum_authority
+    title: "Matematiikka, vuosiluokat 1–2: S2 Luvut ja laskutoimitukset"
+    publisher: Opetushallitus / ePerusteet
+    url: https://eperusteet.opintopolku.fi/eperusteet-service/api/perusteet/419550/kaikki
+    status: proposed_citation_scoped
+    classification: verified_curriculum_scope_pending_additive_registry_integration
+    applies_to:
+      - M-NUM-WORD-NUMERAL
+      - M-NUM-QTY-WORD
+    locator:
+      basis_id: 419550
+      subject_id: 466344
+      subject_band_id: 466963
+      band_definition_id: 428780
+      content_id: 469266
+      field: kuvaus.fi
+      html_paragraphs:
+        - 1
+        - 2
+      adjacent_objective_id: 469445
+      adjacent_objective_label: T6
+    verification:
+      reused_report: reports/autonomous-52/B02/source-and-content-design.md
+      access: direct_origin_http_200_reported_2026-10-26
+      response_bytes: 9222036
+      sha256: 7692dcef834d7ab175a1053e40abff6c016bc12003b4a7fdf4b64370c7696d94
+      global_version_timestamp: 1789464097140
+      publication_utc: 2026-09-15T09:21:37.140Z
+      fresh_fetch_this_authoring_task: false
+    supported_claim: Vuosiluokkien 1–2 määrä–lukusana–numeromerkintä-yhteyksien ja lukujen käyttötapojen
+      kansallinen sisältöalue.
+    limits: Ei juuri tämän KC-jaon, kaksisuuntaisuuden process-roolin, sanareitin, 20/8 tapauksen, lukualueen,
+      esitietovälttämättömyyden, onnistumiskynnysten, 24h-säännön tai vaikuttavuuden normatiivinen hyväksyntä.
+      PROD01-recordin applies_to-luetteloa ei muuteta.
+existing_records_reused:
+  - id: ATKINSON-RENKL-MERRILL-2003
+    scope: "PROVENANCE_AUDIT.md:n aiemmin tarkistettu abstrakti: rajattu fading-rationale; ei täysien
+      menetelmien/vaikutuksen hyväksyntää."
+  - id: CAST-UDL-3
+    scope: "Rekisterin suunnittelukehys: tavoitteen säilyttäminen vaihtoehtoisessa pääsyssä; ei causaalinen
+      tutkimus tai sovelluksen saavutettavuushyväksyntä."
+admission_required:
+  registry: Mainin erillinen lisäys nykyiseen manifestiin/lataukseen. tools/source-inputs.ts tarkistaa nyt
+    vanhan manifestin tiukasti; draft ei muuta sitä.
+  canonical: Paketit jäävät content-design-hakemistoon. Canonical-siirto ja delivery-scope, tuotantolataus,
+    normal personal journey, natiivi/renderöinti ja lopullinen katselmus kuuluvat mainille nykyisen jäädytetyn
+    native-ajon jälkeen.
+  teaching_path: Suunniteltu toteutus käyttää learning_journey_v1:n tyypitettyä association_deck_v1-mallia ja
+    todellisia entry-exposure/delivery-markkereita. Yleiset lesson_blueprint-proosamallit pysyvät conservative
+    family -altistuksena, jos legacy-reitti avataan; niitä ei saa käyttää omien faktapoikkeusten
+    toimitustodisteena.
+  drafts_not_runtime_test_fixtures: true
+  no_runtime_activation: true
+  no_personal_data: true
+  no_human_release_approval: true
+validation:
+  status: LOCAL_DRAFT_COMPILE_AND_TRUTH_CHECKS_PASS_NOT_ADMITTED
+  temporary_registry_policy: "Only in the authoring process: append these two exact draft records to a detached
+    copy of context.sourceRegistry and sourceIds. Do not mutate canonical registry, apps, packages, tools,
+    tests or status."
+  native_or_build_run: false
+  receipts:
+    - kc_id: M-NUM-WORD-NUMERAL
+      local_compile: PASS_WITH_EXPLICIT_TEMPORARY_SOURCES
+      production_loader_in_memory: PASS_NO_REGISTRY_OR_RUNTIME_ACTIVATION
+      truth_correct_cases: 2560
+      wrong_relation_cases: 2560
+      worked_rows: 20
+      independent_cases: 20
+      mandatory_application_cases: 2
+      first_fact_repair_observations: 170
+      delayed_sample_cases: 4
+      policy: calibration-0.8.0
+      content_hash: f736924d4b9fc4cb82ac3c420673f27888d210a4df8ac89b726f0b6ac81d4371
+      normal_runtime_integration: PENDING_MAIN_ADMISSION
+      warnings_and_holds:
+        - code: REVIEW_PENDING
+          path: /implementation_evidence/source_pinning
+        - code: REVIEW_PENDING
+          path: /implementation_evidence/domain_truth
+        - code: REVIEW_PENDING
+          path: /implementation_evidence/pedagogy_review
+        - code: REVIEW_PENDING
+          path: /implementation_evidence/subject_review
+        - code: REVIEW_PENDING
+          path: /implementation_evidence/accessibility_review
+        - code: REVIEW_PENDING
+          path: /implementation_evidence/runtime_smoke
+      truth_check_binding:
+        exhaustively_checked_content_hash: 123aa02fa669edae1c692eb23d71b90d6ea1e89862aa0be4523066d4f25e2608
+        final_content_hash: f736924d4b9fc4cb82ac3c420673f27888d210a4df8ac89b726f0b6ac81d4371
+        only_difference: differentiation.support_variants.optional_audio (non-executable authored access prose)
+        unchanged_items_policy_deck_and_case_scopes: true
+    - kc_id: M-NUM-QTY-WORD
+      local_compile: PASS_WITH_EXPLICIT_TEMPORARY_SOURCES
+      production_loader_in_memory: PASS_NO_REGISTRY_OR_RUNTIME_ACTIVATION
+      truth_correct_cases: 2560
+      wrong_relation_cases: 2560
+      worked_rows: 8
+      independent_cases: 8
+      mandatory_application_cases: 2
+      first_fact_repair_observations: 170
+      delayed_sample_cases: 4
+      policy: calibration-0.8.0
+      content_hash: a46f658e98c5add21786289d9715910f03e85dce4f1fbe7abae634d31ca5f7b4
+      normal_runtime_integration: PENDING_MAIN_ADMISSION
+      warnings_and_holds:
+        - code: REVIEW_PENDING
+          path: /implementation_evidence/source_pinning
+        - code: REVIEW_PENDING
+          path: /implementation_evidence/domain_truth
+        - code: REVIEW_PENDING
+          path: /implementation_evidence/pedagogy_review
+        - code: REVIEW_PENDING
+          path: /implementation_evidence/subject_review
+        - code: REVIEW_PENDING
+          path: /implementation_evidence/accessibility_review
+        - code: REVIEW_PENDING
+          path: /implementation_evidence/runtime_smoke
+      truth_check_binding:
+        exhaustively_checked_content_hash: 822d36f87ac244ff2717907e4068330079af046832c09c5c887c962216afb9af
+        final_content_hash: a46f658e98c5add21786289d9715910f03e85dce4f1fbe7abae634d31ca5f7b4
+        only_difference: differentiation.support_variants.optional_audio (non-executable authored access prose)
+        unchanged_items_policy_deck_and_case_scopes: true
+  guarded_production_source_hashes:
+    packages/domain/association.ts: 7890444a99c48d8455f0aac50027b637fadf56af48a825375928c7ec6e9563a8
+    packages/learning/association-policy.ts: 5d6dc285fb9e88cec23e75882d183e71b7a381a78cbc839550eebb785539ad95
+    packages/content/association-deck.ts: 25c1d3fbba4c9ec7c886cf495afa21d510a507d5b3b3a2fd963d2a7753ec71a8
+    packages/learning/association-delivery.ts: d8389994819a8bc76bf9cdf7ab6e51eaadf9eb95c3ddb9a62e0a50e7fa38e1f3
+    packages/learning/retrieval.ts: 3ed50b0da2a22532d2538e995ea319b6cc5ce5d186176d7a9a84b2700a5c3611
+    packages/content/journey.ts: 996638b84d2c68c1338ab381de77059bd423f25e61d8f0a09566ff544f6099d0
+    packages/content/compiler.ts: 1a003d8a3ae9ec3ae37f9fada070dd3f0a6c2bea3087f68a52900c78ab372070
+    packages/content/loader.ts: fc5c0ce21ec8078ddcef53b343562741e99d80abe047827c20925ad49d7ac3b8
+    packages/learning/policy.ts: 5b7709458edc6128bb6149cf13cea2aa7f63b45ce1101c4f925d90c936179373
+    tools/inputs.ts: 1d4ffcbad7fa21f18f3992ab833ab81de647aa7c04b3c0a3253a8588c1c0f404
+    tools/source-inputs.ts: a1960d3d33d683cd49a167af615a8965d09eb08bc5499499298bddedf073b7e5
+    canonical/sources/registry-v0.1.yaml: 23e9c2e6fed78c832cd419c8b0203ae54015df55bdfbbabd1986c297aeb609fb
+    canonical/sources/production-01.yaml: 8a18420a943ec4531d79027ba2a7272ce7a57a731f101027d1688ca365d7e3e7
+  guarded_sources_unchanged_during_probe: true
+  executed_at: 2026-10-26T13:52:52.564Z
+  command: "node --import tsx --input-type=module (stdin): explicit detached temporary registry, compilePack,
+    256 generated seeds per template, resolveAssociationDeckEntry, wrong-relation and first-fact repair
+    discrimination, in-memory loadPack; no fixture imports"
+  no_personal_progress_or_stores: true
+  no_project_test_or_native_or_build_run: true
+  final_prose_compile_at: 2026-10-26T13:55:48.056Z
+  remaining_holds:
+    - source integration/admission
+    - pack-specific independent content review
+    - normal personal route
+    - native/rendered/access equivalence
+    - human/pilot/efficacy/licensing/release

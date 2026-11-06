@@ -1,0 +1,90 @@
+{
+  "kind": "author_self_check",
+  "kcId": "SCI-ENV-PRESENT-DATA-01",
+  "contentRevision": "1@7c449d2970073731db961722e8ee4608e55a24179cde266f6c323ddca7a69e8a",
+  "date": "2026-10-29",
+  "status": "source_frozen_pending_different_independent_review_and_main_integration",
+  "humanReview": "NOT_PERFORMED",
+  "independentReview": "NOT_PERFORMED by author; separate reviewer required",
+  "pureTests": {
+    "status": "PASS",
+    "assignedTests": 4,
+    "totalAcrossOwnThree": 12,
+    "command": "node --test lesson-network/packages/SCI-ENV-PRESENT-DATA-01/tests.mjs"
+  },
+  "lint": "PASS scoped ESLint",
+  "sourceValidator": "PASS actual loadPackages/composePackage over isolated copies of assigned3 plus declared shared PNG; no live build",
+  "browser": {
+    "kcId": "SCI-ENV-PRESENT-DATA-01",
+    "status": "PASS",
+    "runs": [
+      {
+        "width": 320,
+        "actualPositiveNegative": true,
+        "correctEditNeutralRecheckRepair": true,
+        "lifecycle": true,
+        "images": true,
+        "noOverflow": true
+      },
+      {
+        "width": 390,
+        "actualPositiveNegative": true,
+        "correctEditNeutralRecheckRepair": true,
+        "lifecycle": true,
+        "images": true,
+        "noOverflow": true
+      },
+      {
+        "width": 1280,
+        "actualPositiveNegative": true,
+        "correctEditNeutralRecheckRepair": true,
+        "lifecycle": true,
+        "images": true,
+        "noOverflow": true
+      }
+    ],
+    "static": true,
+    "pageErrors": [],
+    "artifacts": "/var/folders/5_/9spkk87514d17y3nq1rtxv3w0000gn/T/SCI-ENV-PRESENT-DATA-01-B04-author-GL753K",
+    "limits": "Author source harness only. Main integrated review, different independent reviewer and human/learner validation remain.",
+    "harnessSha256": "cef8e9ba3486417236872f5b0d3e8fc0393c671279d911ed6180db6ad2b7538d",
+    "screenshots": [
+      {
+        "path": "/var/folders/5_/9spkk87514d17y3nq1rtxv3w0000gn/T/SCI-ENV-PRESENT-DATA-01-B04-author-GL753K/320-practice.png",
+        "sha256": "8510a8efded24eaf44a9c04a29534137443224c0cdf89347151bf85c6da55484",
+        "visuallyInspected": true
+      },
+      {
+        "path": "/var/folders/5_/9spkk87514d17y3nq1rtxv3w0000gn/T/SCI-ENV-PRESENT-DATA-01-B04-author-GL753K/figure-0.png",
+        "sha256": "234d25a43a1e0b8c13b224111fed21659f04c168023da464036bf00c25b5a991",
+        "visuallyInspected": true
+      },
+      {
+        "path": "/var/folders/5_/9spkk87514d17y3nq1rtxv3w0000gn/T/SCI-ENV-PRESENT-DATA-01-B04-author-GL753K/1280-practice.png",
+        "sha256": "cc16c0fc92054b37670532443e211453023ca161ba6ab6dcc9ea9f8cf5f06a14",
+        "visuallyInspected": true
+      }
+    ],
+    "fixtureCorrection": "Initial preview omitted shared .lesson wrapper and failed overflow. Fixture corrected to actual wrapper; final3width runs passed. Motion option text shortened after real phone screenshot; final current bytes rerun passed.",
+    "visualObservations": "Original3and1figure matches given record. Phone/desktop actual answer-based picture and zero row shown; labels, counts and source table retained."
+  },
+  "evidenceLimits": [
+    "Author self-check only. No independent self-approval, learner/human validation, efficacy, retention or mastery claim.",
+    "Main owns integrated network build, shared-loader/render/navigation/export validation.",
+    "All observations explicitly given/simulated; screen record is not a real child observation or persistent notebook."
+  ],
+  "assets": [
+    {
+      "path": "presentation.svg",
+      "sha256": "8046666943abd1ae657b1f3eaf06095264301bc401ba5e85cb3657901c48bb95"
+    },
+    {
+      "path": "shared/loikka/map.png",
+      "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "a88d5bf61eb4f8b49e1121184893030ad77df10aadb42bf7ba92c726089132b0"
+    }
+  ]
+}

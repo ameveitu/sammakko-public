@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-UNIT-04",
+  "revision": 13,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "back.svg",
+      "sha256": "2ee932e8d1e1981018477f858aed57fcf76682d0f78aa42c16ed57a0ea040cd5"
+    },
+    {
+      "path": "cube.svg",
+      "sha256": "b044a99903c5bb3f49ffc2f4e8715ec92bcd49841c1d1cd30b93d94c0e675506"
+    },
+    {
+      "path": "example.svg",
+      "sha256": "b3be1d49cd23986e2ad7a0131182d23170c0b226515afc7bbd60bd4b9e8bf7bb"
+    },
+    {
+      "path": "initial.svg",
+      "sha256": "32e9f60e6c075a41629da0b71c6209027a4f51d43c76ffd0af995a90dbc6f88f"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "1263ea6a34daa4b741027b6db6cf54cb135a42cc6607711c5afa6b3f93e6df82"
+    },
+    {
+      "path": "transfer.svg",
+      "sha256": "7c8000e0b2dfdffb755b65e7d9188f2efc28c2e1178500e246e58c8ea66d017d"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.mathematicshub.edu.au/planning-tool/6/measurement/metric-units-and-using-instruments/",
+      "title": "Metric units and using instruments: Year6 planning tool",
+      "organization": "Education Services Australia / Mathematics Hub",
+      "accessed": "2026-10-29",
+      "retrieval": "Primary HTML explanation, misconceptions and practical suggestions read; linked activities/PDF/video not executed.",
+      "adopted": "Same quantity across units, contextual magnitude checks, place-value reasoning before shortcuts, separate capacity from current contained volume.",
+      "rejected": "Not Finnish curriculum authority or evidence of lesson efficacy. Correct the page wording that calls gram a base unit and its inconsistent negative-power typography via independent dimensional derivation and NIST. No copied tasks/prose/figures.",
+      "licence": "Commonwealth material CC BY4.0 unless otherwise indicated; excludes logos/trademarks/third-party material.",
+      "licenceURL": "https://www.mathematicshub.edu.au/terms-of-use/"
+    },
+    {
+      "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+      "title": "Metric(SI)Prefixes",
+      "organization": "NIST",
+      "accessed": "2026-10-29",
+      "retrieval": "Primary HTML prefix table and kilogram historical exception read.",
+      "adopted": "Exact powers10 and full intermediate prefix positions, kilogram remains SI base mass despite gram-prefix convention.",
+      "rejected": "No imported graphics, pronunciation gate or foreign spelling requirement.",
+      "usageRestrictions": "NIST employee non-SRD works generally not copyrighted in USA; foreign/third-party/SRD exceptions per https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications. Conceptual factual corroboration only; original Finnish vectors/code. No licence gate approval."
+    },
+    {
+      "url": "https://www.nist.gov/pml/owm/si-units-volume",
+      "title": "SI Units–Volume",
+      "organization": "NIST",
+      "accessed": "2026-10-29",
+      "retrieval": "Primary HTML unit table and litre-cube explanation read; no Adobe Stock/Pixabay pictures or linked templates copied.",
+      "adopted": "1l=1dm³,1ml=1cm³,1000l=1m³. Show10×10×10 instead of applying linear10 to cubic names.",
+      "rejected": "Do not reproduce stock images or carry the page’s plain-cm typography typo into a volume equation. Independent original cube drawing, same units derived exactly.",
+      "usageRestrictions": "NIST rights page as above; third-party graphic credits explicitly excluded. No copied protected figure/prose."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@9048c92d0b2e02d7e4bb180a9691bfad272f8d8813a3e4bc57134e0a927b7e14",
+      "note": "B13 author current source; separate Carver independent review pending. Author QA is not selfapproval."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@9048c92d0b2e02d7e4bb180a9691bfad272f8d8813a3e4bc57134e0a927b7e14",
+      "note": "B13 author current source; separate Carver independent review pending. Author QA is not selfapproval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@9048c92d0b2e02d7e4bb180a9691bfad272f8d8813a3e4bc57134e0a927b7e14",
+      "note": "No human/learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@a76542daaddc939b24d4c029625468c6d6c1165f03688c7bcaaec99272ee543b",
+      "note": "B13 author candidate, fresh current source validation; independent Carver review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@a76542daaddc939b24d4c029625468c6d6c1165f03688c7bcaaec99272ee543b",
+      "note": "B13 author candidate, fresh current source validation; independent Carver review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@a76542daaddc939b24d4c029625468c6d6c1165f03688c7bcaaec99272ee543b",
+      "note": "Not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@a76542daaddc939b24d4c029625468c6d6c1165f03688c7bcaaec99272ee543b",
+      "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@a76542daaddc939b24d4c029625468c6d6c1165f03688c7bcaaec99272ee543b",
+      "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@a76542daaddc939b24d4c029625468c6d6c1165f03688c7bcaaec99272ee543b",
+      "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+    },
+    {
+      "kind": "content",
+      "revision": "1@a76542daaddc939b24d4c029625468c6d6c1165f03688c7bcaaec99272ee543b",
+      "state": "reviewed",
+      "note": "Independent B13 Feynman source/domain/teaching and scoped native review closed; lesson-network/evidence/production/B13/reviews/Feynman-on-Newton-raw-snapshot.json. Technical synthetic scope, not learner validation."
+    },
+    {
+      "kind": "alignment",
+      "revision": "1@a76542daaddc939b24d4c029625468c6d6c1165f03688c7bcaaec99272ee543b",
+      "state": "reviewed",
+      "note": "Independent B13 Feynman canonical/Lite/source boundaries reviewed; lesson-network/evidence/production/B13/reviews/Feynman-on-Newton-raw-snapshot.json. Frozen graph/required groups retained."
+    },
+    {
+      "kind": "human",
+      "revision": "1@a76542daaddc939b24d4c029625468c6d6c1165f03688c7bcaaec99272ee543b",
+      "state": "pending",
+      "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@c553fd2f376e8fea34e9223bdb8c94f4bd95ca17874be662080fb511d5dc6c45",
+      "note": "LR04-B07: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@c553fd2f376e8fea34e9223bdb8c94f4bd95ca17874be662080fb511d5dc6c45",
+      "note": "LR04-B07: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@c553fd2f376e8fea34e9223bdb8c94f4bd95ca17874be662080fb511d5dc6c45",
+      "note": "LR04-B07: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@3b8d2a4b68d4eaf5eee57c6af63035057cb729360cf9f669084bbf07d6bbdaff",
+      "note": "LR04-B07: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@3b8d2a4b68d4eaf5eee57c6af63035057cb729360cf9f669084bbf07d6bbdaff",
+      "note": "LR04-B07: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@3b8d2a4b68d4eaf5eee57c6af63035057cb729360cf9f669084bbf07d6bbdaff",
+      "note": "LR04-B07: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@2ef4f33df517fb4f9dc4dc6ed0f972518de53792971fe0c7b558d712b6be8661",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@2ef4f33df517fb4f9dc4dc6ed0f972518de53792971fe0c7b558d712b6be8661",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@2ef4f33df517fb4f9dc4dc6ed0f972518de53792971fe0c7b558d712b6be8661",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@f07ca38b3fc64edc9e910ba8750aca6511bb19871ada40e35ba0e8653bc8753b",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@f07ca38b3fc64edc9e910ba8750aca6511bb19871ada40e35ba0e8653bc8753b",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@f07ca38b3fc64edc9e910ba8750aca6511bb19871ada40e35ba0e8653bc8753b",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@8cce4dd14a7cc4d2f627afcdd433d8e08a0d78c7c5982c0818971f043c93869c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@8cce4dd14a7cc4d2f627afcdd433d8e08a0d78c7c5982c0818971f043c93869c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@8cce4dd14a7cc4d2f627afcdd433d8e08a0d78c7c5982c0818971f043c93869c",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@f59107f0ed1294ecc33183720b440cee02a8fa465a88c6464fce1a28f72949f8",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@f59107f0ed1294ecc33183720b440cee02a8fa465a88c6464fce1a28f72949f8",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@f59107f0ed1294ecc33183720b440cee02a8fa465a88c6464fce1a28f72949f8",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@14fa3e105cb83f5ae44a023c06d5eea3fd81f2214baede776c70e07dbb2dd0ee",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@14fa3e105cb83f5ae44a023c06d5eea3fd81f2214baede776c70e07dbb2dd0ee",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@14fa3e105cb83f5ae44a023c06d5eea3fd81f2214baede776c70e07dbb2dd0ee",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@bb2a3092952e5cec0ec54261508c6f72817b7bdc4c7a1f0e629db2d908b4f678",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@bb2a3092952e5cec0ec54261508c6f72817b7bdc4c7a1f0e629db2d908b4f678",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@bb2a3092952e5cec0ec54261508c6f72817b7bdc4c7a1f0e629db2d908b4f678",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@0184f7993198135b1d02a6f676019e03e81e9a26e79be6381f58a6961facf80b",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@0184f7993198135b1d02a6f676019e03e81e9a26e79be6381f58a6961facf80b",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@0184f7993198135b1d02a6f676019e03e81e9a26e79be6381f58a6961facf80b",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@0a21516d090100dd85cd610abe1056aac5b1778a6225a99135a8f84daf601f23",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@0a21516d090100dd85cd610abe1056aac5b1778a6225a99135a8f84daf601f23",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@0a21516d090100dd85cd610abe1056aac5b1778a6225a99135a8f84daf601f23",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@400550eb1fe63dd71497f135fb1b92724e36d56dc82c25ca564e60746e4fdd38",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@400550eb1fe63dd71497f135fb1b92724e36d56dc82c25ca564e60746e4fdd38",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Litraetuliitteiden lineaarinen muunnos erotetaan kuutiopituuden kolmannesta potenssista. 1 dm³ = 1000 cm³ ja 1 cm³ = 1 ml perustellaan. Annoksen yksikkö sekä kokonaismäärä pysyvät yhdessä, eikä ruudun nestejakokuvaa ylitulkita virtausmalliksi tai massamuunnokseksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@400550eb1fe63dd71497f135fb1b92724e36d56dc82c25ca564e60746e4fdd38",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M-UNIT-04",
+    "sourceBuild": "audit1-2026-10-28",
+    "sourceHashes": {
+      "src/content/saari1.ts": "0f0722dc20192b7414d481efe1b66251b3f8665baf07b107fb5be7872b0c0a25",
+      "src/content/unitanim.ts": "269139fefb1e63bc26778caaca5b6ae19c393ec881dbd9cfd29ab24b05d5c518",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+    },
+    "actualTaskFamilies": {
+      "l-cl-4": {
+        "kind": "numeric",
+        "seed": 1,
+        "phase": "guided",
+        "prompt": "1 l = □ cl",
+        "hint": "Isommasta pienempään yksikköön: luku kasvaa, joten kerrotaan.",
+        "explanation": "1 l = 100 cl, joten 1 l = 1 × 100 = 100 cl.",
+        "registry": {
+          "node": "M-UNIT-04",
+          "tag": "l-cl-4",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [
+            "M-MUL-01",
+            "M-DIV-01"
+          ],
+          "supplied": [
+            "Yksikköportaat ja kerroin näkyvät tehtävässä."
+          ],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-UNIT-01",
+            "M-MEAS-09"
+          ],
+          "source": [
+            "families.ts M-UNIT-04/*"
+          ]
+        }
+      },
+      "sense": {
+        "kind": "sort",
+        "seed": 2,
+        "phase": "guided",
+        "prompt": "Onko mitta järkevä? Lajittele: järkevä tai ei järkevä. Muunnoksen jälkeen tämä arvio paljastaa monta virhettä.",
+        "hint": "Vertaa tuttuun: 1 cm on sormen leveys, 1 kg on maitopurkki, 1 dl on pieni kuppi.",
+        "explanation": "Juomalasi 2 dl on järkevä; Kylpyamme on oikeasti noin 150 l; Maitopurkki on oikeasti noin 1 l; Teelusikka 5 ml on järkevä.",
+        "registry": {
+          "node": "M-UNIT-04",
+          "tag": "sense",
+          "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+          "assumed": [
+            "M-MUL-01",
+            "M-DIV-01"
+          ],
+          "supplied": [
+            "Yksikköportaat ja kerroin näkyvät tehtävässä."
+          ],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-UNIT-01",
+            "M-MEAS-09"
+          ],
+          "source": [
+            "families.ts M-UNIT-04/*"
+          ]
+        }
+      },
+      "match": {
+        "kind": "place",
+        "seed": 4,
+        "phase": "guided",
+        "prompt": "Yhdistä samat määrät: vedä jokaisen määrän alle sama määrä toisessa yksikössä. Yksi kortti jää yli.",
+        "hint": "Isosta pieneen kerrotaan, pienestä isoon jaetaan. Laske portaat.",
+        "explanation": "3 l = 300 cl, 1 dl = 100 ml, 90 dl = 9 l. 3000 cl jäi yli.",
+        "registry": {
+          "node": "M-UNIT-04",
+          "tag": "match",
+          "outcome": "sijoittaa osat oikeille paikoille",
+          "assumed": [
+            "M-MUL-01",
+            "M-DIV-01"
+          ],
+          "supplied": [
+            "Yksikköportaat ja kerroin näkyvät tehtävässä."
+          ],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-UNIT-01",
+            "M-MEAS-09"
+          ],
+          "source": [
+            "families.ts M-UNIT-04/*"
+          ]
+        }
+      },
+      "dl-l-3": {
+        "kind": "numeric",
+        "seed": 6,
+        "phase": "guided",
+        "prompt": "10 dl = □ l",
+        "hint": "Pienemmästä isompaan yksikköön: luku pienenee, joten jaetaan.",
+        "explanation": "1 l = 10 dl, joten 10 dl = 10 : 10 = 1 l.",
+        "registry": {
+          "node": "M-UNIT-04",
+          "tag": "dl-l-3",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [
+            "M-MUL-01",
+            "M-DIV-01"
+          ],
+          "supplied": [
+            "Yksikköportaat ja kerroin näkyvät tehtävässä."
+          ],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-UNIT-01",
+            "M-MEAS-09"
+          ],
+          "source": [
+            "families.ts M-UNIT-04/*"
+          ]
+        }
+      },
+      "l-dl-0": {
+        "kind": "numeric",
+        "seed": 7,
+        "phase": "guided",
+        "prompt": "1 l = □ dl",
+        "hint": "Isommasta pienempään yksikköön: luku kasvaa, joten kerrotaan.",
+        "explanation": "1 l = 10 dl, joten 1 l = 1 × 10 = 10 dl.",
+        "registry": {
+          "node": "M-UNIT-04",
+          "tag": "l-dl-0",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [
+            "M-MUL-01",
+            "M-DIV-01"
+          ],
+          "supplied": [
+            "Yksikköportaat ja kerroin näkyvät tehtävässä."
+          ],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-UNIT-01",
+            "M-MEAS-09"
+          ],
+          "source": [
+            "families.ts M-UNIT-04/*"
+          ]
+        }
+      },
+      "l-ml-1": {
+        "kind": "numeric",
+        "seed": 8,
+        "phase": "guided",
+        "prompt": "4 l = □ ml",
+        "hint": "Isommasta pienempään yksikköön: luku kasvaa, joten kerrotaan.",
+        "explanation": "1 l = 1000 ml, joten 4 l = 4 × 1000 = 4000 ml.",
+        "registry": {
+          "node": "M-UNIT-04",
+          "tag": "l-ml-1",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [
+            "M-MUL-01",
+            "M-DIV-01"
+          ],
+          "supplied": [
+            "Yksikköportaat ja kerroin näkyvät tehtävässä."
+          ],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-UNIT-01",
+            "M-MEAS-09"
+          ],
+          "source": [
+            "families.ts M-UNIT-04/*"
+          ]
+        }
+      },
+      "dl-ml-2": {
+        "kind": "numeric",
+        "seed": 12,
+        "phase": "guided",
+        "prompt": "1 dl = □ ml",
+        "hint": "Isommasta pienempään yksikköön: luku kasvaa, joten kerrotaan.",
+        "explanation": "1 dl = 100 ml, joten 1 dl = 1 × 100 = 100 ml.",
+        "registry": {
+          "node": "M-UNIT-04",
+          "tag": "dl-ml-2",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [
+            "M-MUL-01",
+            "M-DIV-01"
+          ],
+          "supplied": [
+            "Yksikköportaat ja kerroin näkyvät tehtävässä."
+          ],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-UNIT-01",
+            "M-MEAS-09"
+          ],
+          "source": [
+            "families.ts M-UNIT-04/*"
+          ]
+        }
+      },
+      "transfer": {
+        "kind": "numeric",
+        "seed": 1,
+        "phase": "transfer",
+        "prompt": "Kannussa on 3 l mehua. Yhteen lasiin mahtuu 5 dl. Montako lasia saadaan täyteen?",
+        "hint": "Muunna kannun litrat desilitroiksi (× 10), sitten jaa lasin koolla.",
+        "explanation": "3 l = 30 dl. 30 dl : 5 dl = 6.",
+        "registry": {
+          "node": "M-UNIT-04",
+          "tag": "transfer",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [
+            "M-MUL-01",
+            "M-DIV-01"
+          ],
+          "supplied": [
+            "Yksikköportaat ja kerroin näkyvät tehtävässä."
+          ],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-UNIT-01",
+            "M-MEAS-09"
+          ],
+          "source": [
+            "families.ts M-UNIT-04/*"
+          ]
+        }
+      }
+    },
+    "demoSummaries": [
+      {
+        "say": "Isosta yksiköstä pieneen: luku kasvaa, koska pieniä yksiköitä tarvitaan enemmän. l → dl: jokainen porras alas kertoo kymmenellä.",
+        "kind": "animation",
+        "duration": 5.4
+      },
+      {
+        "say": "Desimaaliluku muuntuu samalla tavalla: 2,5 l → dl. Numerot siirtyvät, pilkku pysyy.",
+        "kind": "animation",
+        "duration": 5.4
+      },
+      {
+        "say": "Pienestä isoon: jaetaan. dl → l: jokainen porras ylös jakaa kymmenellä. Tarkista aina, onko vastaus järkevän kokoinen.",
+        "kind": "animation",
+        "duration": 5.4
+      },
+      {
+        "say": "Mehuaseman kannu: desilitra-asteikko näyttää, että litrassa on 10 dl. Sitten kaadetaan laseihin.",
+        "kind": "animation",
+        "duration": 9.4
+      }
+    ],
+    "reconciliation": "Actual conversion/sense/match/transfer read. Scalar conversion and3field equivalent quantities kept; measured-value same/different checks distinguish exact equality from fallible real-world typical-size guessing. Optional physical estimation remains teacher observed. Independent local exact arithmetic corrects finite decimal rounding in reference generator; no Lite edits.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "launch1-2026-11-01",
+      "validRevisions": [
+        "launch1-2026-11-01",
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/saari1.ts": "02d96b3ff18fcb8a560eb0ceaebe438caaa33cf518ced1c277ba70793d030bb6",
+        "src/content/unitanim.ts": "269139fefb1e63bc26778caaca5b6ae19c393ec881dbd9cfd29ab24b05d5c518",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M-UNIT-04",
+      "subject": "mathematics",
+      "grade_band": "3-6",
+      "topic_area": "Geometria ja mittaaminen",
+      "parent_concept": "Yksikkömuunnos",
+      "title": "Yleisimpien vetomittojen tai tilavuusyksiköiden muuntaminen",
+      "short_description": "Yleisimpien vetomittojen tai tilavuusyksiköiden muuntaminen",
+      "source_basis": "assessment_refined",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL3-6-S4",
+        "OPH-MATH-VL6-ASSESSMENT-SUPPORT"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "procedure",
+      "relations": [
+        {
+          "id": "M-MEAS-09",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MEAS-09 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-UNIT-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-UNIT-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-MEAS-09",
+            "M-UNIT-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Geometria ja mittaaminen",
+        "Yksikkömuunnos"
+      ]
+    },
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-MEAS-09",
+          "M-UNIT-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "role": "atomic",
+    "gradeBand": "3-6",
+    "teacherObjective": "Yleisimpien vetomittojen tai tilavuusyksiköiden muuntaminen",
+    "studentObjective": "Aava täyttää laseja. Sama mehu voidaan mitata litroina tai desilitroina.",
+    "additionalHardGates": [],
+    "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "requiredPrerequisites": [
+      {
+        "all_of": [
+          "M-MEAS-09",
+          "M-UNIT-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "crossKCAssumptions": "Multiplication/division factors supplied; decimal/fraction meanings explained, no new hard gate. Volume cubic relation locally explained; practical measurement not inferred from screen.",
+    "entry": "Concise supplied namedPNG; meaningful fixed same-quantity model+state and44pxstep within phone844. No header/chrome overrides.",
+    "evidenceLimits": "Local current supported response only; optional help, no formal mastery/learner efficacy/retention or personal history."
+  },
+  "extensions": {
+    "productionBatch": "B13",
+    "author": "Newton",
+    "humanReview": "not_performed",
+    "independentReview": "pending_Carver",
+    "simulationType": "exact_dimension_specific_unit_renaming_and_conserved_grouping",
+    "limits": "Own3delegated listeners and650ms bounded presentation interval, ownerWeakMapdisposesprevious and initializescontrols; currentinput/change/noeventCheckStepPlayconverterreadback; help/modelinvariant practicefeedback. No physical fluid/time simulation; no runtime oracle.",
+    "assetProvenance": "User supplied actual namedRGBA PNG unchanged; original exact mathematical SVG, static initial exactly current live model0.",
+    "sourcePreview": "Author isolated fullshellpreview only, not actual combined151.",
+    "exactAnswerFormat": "Normalized nonnegative rational value, raw128, ordinary signed decimal/grouped digits or signed fraction, precision18+9 after harmless zeros removed. Negativezero and double-negative fractions represent supported nonnegative values; truly negative values/zerodenominator rejected. No rounding.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B07",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

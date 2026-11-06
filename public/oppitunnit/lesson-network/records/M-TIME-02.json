@@ -1,0 +1,736 @@
+{
+  "kcId": "M-TIME-02",
+  "pagePath": "lessons/M-TIME-02.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-TIME-02",
+  "canonicalNode": {
+    "id": "M-TIME-02",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Geometria ja mittaaminen",
+    "parent_concept": "Kellonaika",
+    "title": "Kellonajan lukemisen perusidea",
+    "short_description": "Kellonajan lukemisen perusidea",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S3"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "concept",
+    "relations": [
+      {
+        "id": "M-TIME-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-TIME-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-NUM-07",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-NUM-07 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-TIME-01",
+          "M-NUM-07"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Geometria ja mittaaminen",
+      "Kellonaika"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-TIME-01",
+      "targetKCId": "M-TIME-02",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-TIME-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-NUM-07",
+      "targetKCId": "M-TIME-02",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-NUM-07 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-TIME-01",
+        "M-NUM-07"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-TIME-02/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks1/units/time-sequencing-events-and-telling-the-time-to-the-hour-and-half-hour/lessons/tell-the-time-to-the-half-hour-using-the-hour-hand",
+        "title": "Tell the time to the half hour using the hour hand",
+        "organization": "Oak National Academy",
+        "accessed": "2026-10-29",
+        "adopted": "Continuous hour-hand movement between hours; explicit misconception about which hour is named.",
+        "rejected": "English half past naming cannot be transferred to Finnish puoli-next-hour; no protected slides or wording copied.",
+        "usageRestrictions": "Page states ©Oak2025/OGL3 except otherwise stated; used for conceptual comparison only, original Finnish text and SVG.",
+        "limitations": "UK Year1 comparator; age translation and activity design are project decisions, no Finnish curriculum prescription or efficacy proof."
+      },
+      {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-5-units-outside-si",
+        "title": "NIST Guide to SI, Chapter5: Units outside SI",
+        "organization": "NIST",
+        "accessed": "2026-10-29",
+        "adopted": "1h=60min for hour/half-hour model.",
+        "rejected": "No SI metrology or conversion drill imposed on the young learner.",
+        "usageRestrictions": "Reference for exact unit fact; no table/prose/figures reproduced.",
+        "limitations": "Unit definition, not evidence for teaching method."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@acf68bcdb3faacc9458372830924a03d1db849f3d6463696e757e3884c88d762",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@09143c3f7250b455508136794e730d69c93d3b2a4d651749f138c37afa7610d5",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@861d095195a08726addba6739d88fbb68dc96447aa2df5e2368377bdb3828e7b",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "4@6c5df65b0626174f1c01d2e89fbda1da9e914b32fffb1d22baf2d7751b9cff1f",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "5@0dbcdc0b442cb3371d4959c7a2037a81f7b9391427bc3e97a1b49da7a54a7323",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@acf68bcdb3faacc9458372830924a03d1db849f3d6463696e757e3884c88d762",
+        "note": "No human or target learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@09143c3f7250b455508136794e730d69c93d3b2a4d651749f138c37afa7610d5",
+        "note": "No human or target learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@861d095195a08726addba6739d88fbb68dc96447aa2df5e2368377bdb3828e7b",
+        "note": "No human or target learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "4@6c5df65b0626174f1c01d2e89fbda1da9e914b32fffb1d22baf2d7751b9cff1f",
+        "note": "No human or target learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "5@0dbcdc0b442cb3371d4959c7a2037a81f7b9391427bc3e97a1b49da7a54a7323",
+        "note": "No human or target learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+        "note": "No human or target learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+        "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-TIME-02",
+    "revision": 6,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "clock-three.svg",
+        "sha256": "d624ab670ad5849b008b14e1b555a3c8ed11b99665be26d6bdb582aa434def0a"
+      },
+      {
+        "path": "clock-half.svg",
+        "sha256": "1d157fe65aaa206c5d940f0b8a25c169aa812123a1eb391d252644a1ae52701d"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "6e12013f008ef9121293db0dcd33183dcf1abed7615dd74e821b00a3040591a5"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks1/units/time-sequencing-events-and-telling-the-time-to-the-hour-and-half-hour/lessons/tell-the-time-to-the-half-hour-using-the-hour-hand",
+        "title": "Tell the time to the half hour using the hour hand",
+        "organization": "Oak National Academy",
+        "accessed": "2026-10-29",
+        "adopted": "Continuous hour-hand movement between hours; explicit misconception about which hour is named.",
+        "rejected": "English half past naming cannot be transferred to Finnish puoli-next-hour; no protected slides or wording copied.",
+        "usageRestrictions": "Page states ©Oak2025/OGL3 except otherwise stated; used for conceptual comparison only, original Finnish text and SVG.",
+        "limitations": "UK Year1 comparator; age translation and activity design are project decisions, no Finnish curriculum prescription or efficacy proof."
+      },
+      {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-5-units-outside-si",
+        "title": "NIST Guide to SI, Chapter5: Units outside SI",
+        "organization": "NIST",
+        "accessed": "2026-10-29",
+        "adopted": "1h=60min for hour/half-hour model.",
+        "rejected": "No SI metrology or conversion drill imposed on the young learner.",
+        "usageRestrictions": "Reference for exact unit fact; no table/prose/figures reproduced.",
+        "limitations": "Unit definition, not evidence for teaching method."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@acf68bcdb3faacc9458372830924a03d1db849f3d6463696e757e3884c88d762",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@acf68bcdb3faacc9458372830924a03d1db849f3d6463696e757e3884c88d762",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@acf68bcdb3faacc9458372830924a03d1db849f3d6463696e757e3884c88d762",
+        "note": "No human or target learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@09143c3f7250b455508136794e730d69c93d3b2a4d651749f138c37afa7610d5",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@09143c3f7250b455508136794e730d69c93d3b2a4d651749f138c37afa7610d5",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@09143c3f7250b455508136794e730d69c93d3b2a4d651749f138c37afa7610d5",
+        "note": "No human or target learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@861d095195a08726addba6739d88fbb68dc96447aa2df5e2368377bdb3828e7b",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "3@861d095195a08726addba6739d88fbb68dc96447aa2df5e2368377bdb3828e7b",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@861d095195a08726addba6739d88fbb68dc96447aa2df5e2368377bdb3828e7b",
+        "note": "No human or target learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "4@6c5df65b0626174f1c01d2e89fbda1da9e914b32fffb1d22baf2d7751b9cff1f",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "4@6c5df65b0626174f1c01d2e89fbda1da9e914b32fffb1d22baf2d7751b9cff1f",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "4@6c5df65b0626174f1c01d2e89fbda1da9e914b32fffb1d22baf2d7751b9cff1f",
+        "note": "No human or target learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "5@0dbcdc0b442cb3371d4959c7a2037a81f7b9391427bc3e97a1b49da7a54a7323",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "5@0dbcdc0b442cb3371d4959c7a2037a81f7b9391427bc3e97a1b49da7a54a7323",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "5@0dbcdc0b442cb3371d4959c7a2037a81f7b9391427bc3e97a1b49da7a54a7323",
+        "note": "No human or target learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+        "note": "Author draft; different-author exact-source and actual compiled review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+        "note": "No human or target learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+        "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-TIME-02",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "sourceFiles": [
+        "src/content/added181.ts:1-86,258-320",
+        "src/content/families.ts",
+        "src/content/world.ts",
+        "src/content/goals.ts",
+        "src/content/features.ts",
+        "src/engine/types.ts",
+        "audit/LESSON_AUDIT.md:45"
+      ],
+      "families": [
+        "full",
+        "half",
+        "set",
+        "hands",
+        "departure-clock transfer"
+      ],
+      "inherited": "Distinguish hour/minute hands; whole/half times; set a departure clock; Finnish naming.",
+      "corrected": "No speed/timing mastery inferred; optional accelerated model explicitly not real elapsed time. Continuous hour hand and12→1 boundary tested; no enforced speech/audio.",
+      "extended": "Original controllable whole-hour sweep, direct30min steps, four reading clocks and setting a new departure time, optional paper-clock comparison.",
+      "state": "authored_comparison_pending_independent_review",
+      "reconciliation": "alignment.md"
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-TIME-02",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Geometria ja mittaaminen",
+        "parent_concept": "Kellonaika",
+        "title": "Kellonajan lukemisen perusidea",
+        "short_description": "Kellonajan lukemisen perusidea",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S3"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "concept",
+        "relations": [
+          {
+            "id": "M-TIME-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-TIME-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-NUM-07",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-NUM-07 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-TIME-01",
+              "M-NUM-07"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Geometria ja mittaaminen",
+          "Kellonaika"
+        ]
+      },
+      "additionalHardGates": [],
+      "teacherObjective": "Kellonajan lukemisen perusidea",
+      "childGoal": "Luen tasatunnin ja puolen tunnin.",
+      "gradeBand": "1-2",
+      "role": "atomic",
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "assumptions": "TIME01 duration comparison and NUM07 ordered numerals are required in frozen graph. Introduce both hand roles and Finnish puoli nomenclature; do not assume minute-by-minute reading.",
+      "scope": "Analogue whole/half hour, continuous hand relationship and12hour wrap; no full minute reading,24hour conversion or real-time calibration.",
+      "evidenceLimits": "Low-stakes reading/setting; feedback and optional hints are support, not independent retained mastery. No personal history stored.",
+      "sourceVsDesign": "Frozen graph provenance inherited; no new OPH requirement or efficacy claim. Story, examples, exact model bounds, controls and pedagogical sequencing are project design.",
+      "assetProvenance": "Original deterministic SVG. User-supplied actual transparent Aava/Loikka PNG unchanged, named in lesson, no substitute character artwork or decorative motion."
+    },
+    "extensions": {
+      "productionBatch": "B11",
+      "simulationType": "coupled_clock_hands_accelerated_model_minutes",
+      "humanReview": "not_performed",
+      "executionLimits": "Supported start3/9/12, model0..60integer minutes,100ms modelminute tick (approx6seconds/hour),30min step. No autoplay; pause/reset/dispose stop timer; reset preserves paused state. Active instance owned per resolved lesson root; previous mount disposed. Current visible enum controls validated, input/change handled and check re-reads current premise; blank/unsupported does not silently become zero. New mount actively enables its own controls after previous instance disposal; synthetic and native regression retains original disabled-remount failure."
+    },
+    "contentHash": "2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+    "contentRevision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@acf68bcdb3faacc9458372830924a03d1db849f3d6463696e757e3884c88d762",
+          "note": "Author draft; different-author exact-source and actual compiled review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@09143c3f7250b455508136794e730d69c93d3b2a4d651749f138c37afa7610d5",
+          "note": "Author draft; different-author exact-source and actual compiled review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "3@861d095195a08726addba6739d88fbb68dc96447aa2df5e2368377bdb3828e7b",
+          "note": "Author draft; different-author exact-source and actual compiled review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "4@6c5df65b0626174f1c01d2e89fbda1da9e914b32fffb1d22baf2d7751b9cff1f",
+          "note": "Author draft; different-author exact-source and actual compiled review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "5@0dbcdc0b442cb3371d4959c7a2037a81f7b9391427bc3e97a1b49da7a54a7323",
+          "note": "Author draft; different-author exact-source and actual compiled review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+          "note": "Author draft; different-author exact-source and actual compiled review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+          "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@acf68bcdb3faacc9458372830924a03d1db849f3d6463696e757e3884c88d762",
+          "note": "No human or target learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@09143c3f7250b455508136794e730d69c93d3b2a4d651749f138c37afa7610d5",
+          "note": "No human or target learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "3@861d095195a08726addba6739d88fbb68dc96447aa2df5e2368377bdb3828e7b",
+          "note": "No human or target learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "4@6c5df65b0626174f1c01d2e89fbda1da9e914b32fffb1d22baf2d7751b9cff1f",
+          "note": "No human or target learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "5@0dbcdc0b442cb3371d4959c7a2037a81f7b9391427bc3e97a1b49da7a54a7323",
+          "note": "No human or target learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+          "note": "No human or target learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+          "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@acf68bcdb3faacc9458372830924a03d1db849f3d6463696e757e3884c88d762",
+          "note": "Author draft; different-author exact-source and actual compiled review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@09143c3f7250b455508136794e730d69c93d3b2a4d651749f138c37afa7610d5",
+          "note": "Author draft; different-author exact-source and actual compiled review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "3@861d095195a08726addba6739d88fbb68dc96447aa2df5e2368377bdb3828e7b",
+          "note": "Author draft; different-author exact-source and actual compiled review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "4@6c5df65b0626174f1c01d2e89fbda1da9e914b32fffb1d22baf2d7751b9cff1f",
+          "note": "Author draft; different-author exact-source and actual compiled review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "5@0dbcdc0b442cb3371d4959c7a2037a81f7b9391427bc3e97a1b49da7a54a7323",
+          "note": "Author draft; different-author exact-source and actual compiled review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+          "note": "Author draft; different-author exact-source and actual compiled review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "6@2aa1922052a65d20cf7738f27057be5d2253ffcfdb75e368afc188dc9ca25848",
+          "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "1fbc4f372776bd57bb784f18bc23164ce2e8b752d6b3ce6dad7ce99d5e60ee1a",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "1fbc4f372776bd57bb784f18bc23164ce2e8b752d6b3ce6dad7ce99d5e60ee1a",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "asset": "Sisi 3D candidate",
+  "status": "sphere-pass build (ball head, head-roundness KPI), approved by the user for the game on 2026-11-06",
+  "license": "Private repository source; no redistribution license granted.",
+  "source_sha256": {
+    "art/characters/lizard/concepts/sleepy-lizard-v1.png": "ccd162a58cb1b436340d2488f419b22de5fb9fa485299083e21069806784a72d",
+    "art/characters/lizard/concepts/front-reference-v1.png": "1fda10413d52c80a1c7e85727ca1e34083c12626d0bd71b206583ccd1d1ea9c8",
+    "art/characters/lizard/concepts/APPROVAL.json": "ceece940ff2b672c3f0dddc96ae00e0ac3ed81734c2ec3ce512501403a4bad31",
+    "tools/characters-3d/profile/sisi_parts.py": "5510269e7955061fe9fc125268d3f76f6507fa8795b71f081a4be35fe65a4f52",
+    "art/characters/lizard/concepts/turnaround-side-v1.png": "6c203d013b609f76ca9afd968df2562328c7f9446aaedf07da2282ab5ccbad27"
+  },
+  "authoring": "Profile-matched: part masks traced from the approved 2D drawing (tools/characters-3d/profile/<id>_parts.py), built and rigged in headless Blender by build_profile_character.py. The front shape follows a generated front reference used only as a measuring aid (art/characters/lizard/concepts/README.md).",
+  "coordinates": "Blender +Z up, +X forward; GLB +Y up, +X forward; meters, origin at ground center.",
+  "clips": [
+    "idle",
+    "walk",
+    "greet",
+    "sleep"
+  ],
+  "glb_sha256": "c724b42c0dde00b11441a342c164474c9022435946c929622a059b4f3ca8190d",
+  "budgets": {
+    "triangles_max_exclusive": 20000,
+    "bones_max_exclusive": 24,
+    "glb_bytes_max_exclusive": 3000000
+  },
+  "measured": {
+    "bytes": 747216,
+    "triangles": 19846,
+    "bones": [
+      "root",
+      "body",
+      "arm_1",
+      "arm_-1",
+      "belly",
+      "crest_4",
+      "head",
+      "crest_1",
+      "crest_2",
+      "crest_3",
+      "eye_closed_1",
+      "eye_closed_-1",
+      "eye_open_1",
+      "lid_1",
+      "eye_open_-1",
+      "lid_-1",
+      "leg_1",
+      "foot_1",
+      "leg_-1",
+      "foot_-1",
+      "tail1",
+      "tail2",
+      "tail3"
+    ],
+    "actions": [
+      "greet",
+      "idle",
+      "sleep",
+      "walk"
+    ],
+    "bounds_blender_m": [
+      [
+        -0.5397663116455078,
+        -0.44680699706077576,
+        0.0012239734642207623
+      ],
+      [
+        0.7696910500526428,
+        0.44680699706077576,
+        1.5008342266082764
+      ]
+    ],
+    "checks": {
+      "buffer_bounds_and_embedded": true,
+      "budget": true,
+      "walk_one_foot_grounded": true,
+      "walk_stance_fixed_relative_root": true,
+      "tail_above_ground": true,
+      "sleep_tongue_above_ground": true,
+      "idle_blink_scales": true,
+      "greet_arm_moves": true
+    }
+  },
+  "limits": [
+    "Front view: the eyes droop outward and the pupils look down and inward compared with the front reference; the tongue reads as a thin line from the front.",
+    "The reference crest bumps are smoothed, and the head top shows a dent (deferred polish).",
+    "Sleep is a forward curl with closed eyes, not the concept's fully floor-curled pose."
+  ],
+  "runtime_review": {
+    "status": "local candidate technically inspected; final art approval not implied",
+    "review": "ROOT_REVIEW.md",
+    "browser": {
+      "passed": 6,
+      "failed": 0,
+      "seconds": 32.7
+    },
+    "skinningSamples": 48,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "runtimeClipSeconds": {
+      "idle": 2.0416666666666665,
+      "walk": 2.0416666666666665,
+      "greet": 1.5416666666666667,
+      "sleep": 3.75
+    }
+  },
+  "revision": {
+    "id": "sisi-3d-v3-profile-match",
+    "date": "2026-11-05",
+    "notes": "Silhouette, eye, lid, cheek, bill and tongue masks rebuilt from the 2D profile drawing; IoU in drawing_match. Outline normals are smoothed and stored as the outline_normal attribute; the runtime adds the navy outline. Walk legs alternate with one foot always planted."
+  },
+  "drawing_match": {
+    "profile": {
+      "silhouette": 0.9941,
+      "eye": 1.0,
+      "eye_centre_px": 0.0,
+      "eye_white": 0.9879,
+      "eye_white_centre_px": 0.11,
+      "pupil": 0.9976,
+      "pupil_centre_px": 0.01,
+      "tongue": 0.9351,
+      "tongue_centre_px": 4.72,
+      "lid": 0.9909,
+      "lid_centre_px": 0.04,
+      "cheek": 0.9982,
+      "cheek_centre_px": 0.04
+    },
+    "front": {
+      "silhouette": 0.9254,
+      "eye": 0.8607,
+      "eye_centre_px": 5.19,
+      "eye_white": 0.4425,
+      "eye_white_centre_px": 5.53,
+      "pupil": 0.3277,
+      "pupil_centre_px": 18.1,
+      "tongue": 0.0,
+      "tongue_centre_px": 85.6,
+      "lid": 0.7044,
+      "lid_centre_px": 4.56,
+      "mouth": 0.0,
+      "mouth_centre_px": 21.96,
+      "cheek": 0.1685,
+      "cheek_centre_px": 10.94
+    }
+  },
+  "approval": {
+    "date": "2026-11-06",
+    "record": "art/characters-3d/APPROVAL-2026-11-06.json",
+    "deferred_polish": [
+      "Body sides lumpy at 45/315 degrees.",
+      "Eyes sit at the sides from the front.",
+      "Small tail lobes are not balls.",
+      "No crest/belly jiggle in greet and sleep."
+    ]
+  },
+  "build_tools_sha256": {
+    "tools/characters-3d/profile/build_profile_character.py": "c4c1230f2a4ced885f1d6852692cf7a30e994504c70ea5ae115aa3443661ce29",
+    "tools/characters-3d/profile/common.py": "4d6a2fd2435b3c1304bef1a02888830b97bbdb8b252d43e1085463893f493905",
+    "tools/characters-3d/profile/compare.py": "5a4234b1867570116fee7ba75aa32730a4c957358461cd775cdce07539378d0d",
+    "tools/characters-3d/profile/contact_sheet.py": "557c27e613bbe6c850710fdf14d0db2334d30924bb7d8254e7ca279269d08338",
+    "tools/characters-3d/toon_preview.py": "ad5edbc88aa354c538e9d4976066ba6ac48a1823db6dd5d4c541b97227763a90",
+    "lite/src/world/character-style.js": "71f2e553a5a5feea4388e3f06442c81c7f158c87b50754c3ca3b08169f8e7594"
+  }
+}

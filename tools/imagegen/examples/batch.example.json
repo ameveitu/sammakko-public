@@ -1,0 +1,14 @@
+{
+  "_ohje": "Kokeile ensin: node tools/imagegen/imagegen.mjs batch tools/imagegen/examples/batch.example.json  (dry-run). Vain osa: --only aava-wave,water-tile",
+  "defaults": {
+    "model": "flare",
+    "out": "tools/imagegen/out/esimerkki"
+  },
+  "jobs": [
+    { "name": "aava-wave", "preset": "sprite", "character": ["aava"], "prompt": "Aava", "vars": { "pose": "waving one wing, happy" } },
+    { "name": "loikka-jump", "preset": "sprite", "character": ["loikka"], "prompt": "Loikka", "vars": { "pose": "mid-jump, legs stretched, joyful" } },
+    { "name": "water-tile", "preset": "texture", "prompt": "calm blue lake water with small soft ripples" },
+    { "name": "home-hero", "preset": "background", "character": ["aava", "loikka"], "prompt": "Aava and Loikka on a small sunny island by the water, morning light", "vars": { "space": "the left half" } },
+    { "name": "star-icon", "preset": "icon", "prompt": "a golden reward star" }
+  ]
+}

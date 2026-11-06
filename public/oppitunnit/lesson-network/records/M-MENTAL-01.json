@@ -1,0 +1,729 @@
+{
+  "kcId": "M-MENTAL-01",
+  "pagePath": "lessons/M-MENTAL-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-MENTAL-01",
+  "canonicalNode": {
+    "id": "M-MENTAL-01",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Päässälasku",
+    "title": "Luvun hajottaminen laskemista helpottavaan muotoon",
+    "short_description": "Luvun hajottaminen laskemista helpottavaan muotoon",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "concept",
+    "relations": [
+      {
+        "id": "M-NUM-18",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-NUM-18 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-PLACE-03",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-PLACE-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-NUM-18",
+          "M-PLACE-03"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Päässälasku"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-NUM-18",
+      "targetKCId": "M-MENTAL-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-NUM-18 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-PLACE-03",
+      "targetKCId": "M-MENTAL-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-PLACE-03 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-MENTAL-01",
+      "targetKCId": "M-ADD-100",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-MENTAL-01 tukee olennaisesti oppimista, mutta puute voidaan korjata noodin sisällä.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-MENTAL-01",
+      "targetKCId": "M-SUB-100",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-MENTAL-01 tukee olennaisesti oppimista, mutta puute voidaan korjata noodin sisällä.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-MENTAL-01",
+      "targetKCId": "M-CALC-STRAT",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-MENTAL-01 tukee olennaisesti oppimista, mutta puute voidaan korjata noodin sisällä.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-NUM-18",
+        "M-PLACE-03"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-MENTAL-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-111-addition-and-subtraction-bridging-10/",
+        "title": "Addition and subtraction: bridging10",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "read": "HTML Teaching Points1–6, lines60–70.",
+        "adopted": "Group/reorder positive addends preserving the total, make a decade or subtract through it; distinguish the chosen strategy from numerical truth.",
+        "usageRestrictions": "NCETM copyright page independently retrieved2026-10-29: default Crown/OGL unless stated, attribution and named-author permission/third-party exceptions. No figures, slides, code or protected prose copied.",
+        "limits": "Year2 guidance to conceptual strategy, not a prescribed single successful decomposition. Linked guide/slides and original research not read.",
+        "perKC": [
+          "M-MENTAL-01"
+        ]
+      },
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/2/number/addition-and-subtraction/",
+        "title": "Year2 addition and subtraction planning tool",
+        "organization": "Education Services Australia / Commonwealth of Australia",
+        "accessed": "2026-10-29",
+        "read": "HTML Expected level, student outcomes/misconceptions50–80 and strategy examples102–107.",
+        "adopted": "Offer multiple legitimate strategies and decomposition orders, connect quantities and equations, apply in fresh everyday context.",
+        "usageRestrictions": "ESA/Commonwealth terms-of-use independently retrieved2026-10-29: default CC BY4.0 unless stated, excludes logos/trademarks and third-party material. Original Finnish explanation and diagrams only.",
+        "limits": "Australian guidance ranges up to99; this lesson chooses its bounded domain separately. No linked slides/activity or research study claimed read; no personal speed/efficacy evidence.",
+        "perKC": [
+          "M-MENTAL-01"
+        ]
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@9b3de31f01dea48d9f411cf86bebfd78b7183b5d7d393fdfdf6bc8aa53d5410b",
+        "note": "Author checks only; independent Feynman review pending after source freeze. Not self-approved."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+        "note": "Entry-only body revision after actual115 inspection; previous records retained. Different-author review not inherited; no human validation."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+        "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/euler3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@9b3de31f01dea48d9f411cf86bebfd78b7183b5d7d393fdfdf6bc8aa53d5410b",
+        "note": "No real human/learner review performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+        "note": "Entry-only body revision after actual115 inspection; previous records retained. Different-author review not inherited; no human validation."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-MENTAL-01",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "lesson.css",
+        "sha256": "335a019818eccea7ddc6fbcfd55cd0fec47639f57314f8dc28b52568e3071beb"
+      },
+      {
+        "path": "split-add.svg",
+        "sha256": "7ec22403c91df4bd9f3068c7f4b02dc664c6d73695b12962e87bf0090c92d591"
+      },
+      {
+        "path": "split-start.svg",
+        "sha256": "69e056116aadb16a0288d71fb921f829c92a4c91b0ac8dabdb1fc6e1ba07f8f1"
+      },
+      {
+        "path": "split-subtract.svg",
+        "sha256": "d56dbe0a6d171409ec09016d5ed597a0065ffa41a4e10adb7c65fe84979d3574"
+      },
+      {
+        "path": "split-tens.svg",
+        "sha256": "d1b72bb534124d7533abdef9dafd8048c1f8845af97dbc14c3d83e5d51d8e3db"
+      },
+      {
+        "path": "shared/aava/map.png",
+        "sha256": "49b47a345fa26f9017acb1672d1b7d6d4fe0dcd511e756c693b731269579ebe9"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-111-addition-and-subtraction-bridging-10/",
+        "title": "Addition and subtraction: bridging10",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "read": "HTML Teaching Points1–6, lines60–70.",
+        "adopted": "Group/reorder positive addends preserving the total, make a decade or subtract through it; distinguish the chosen strategy from numerical truth.",
+        "usageRestrictions": "NCETM copyright page independently retrieved2026-10-29: default Crown/OGL unless stated, attribution and named-author permission/third-party exceptions. No figures, slides, code or protected prose copied.",
+        "limits": "Year2 guidance to conceptual strategy, not a prescribed single successful decomposition. Linked guide/slides and original research not read.",
+        "perKC": [
+          "M-MENTAL-01"
+        ]
+      },
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/2/number/addition-and-subtraction/",
+        "title": "Year2 addition and subtraction planning tool",
+        "organization": "Education Services Australia / Commonwealth of Australia",
+        "accessed": "2026-10-29",
+        "read": "HTML Expected level, student outcomes/misconceptions50–80 and strategy examples102–107.",
+        "adopted": "Offer multiple legitimate strategies and decomposition orders, connect quantities and equations, apply in fresh everyday context.",
+        "usageRestrictions": "ESA/Commonwealth terms-of-use independently retrieved2026-10-29: default CC BY4.0 unless stated, excludes logos/trademarks and third-party material. Original Finnish explanation and diagrams only.",
+        "limits": "Australian guidance ranges up to99; this lesson chooses its bounded domain separately. No linked slides/activity or research study claimed read; no personal speed/efficacy evidence.",
+        "perKC": [
+          "M-MENTAL-01"
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@9b3de31f01dea48d9f411cf86bebfd78b7183b5d7d393fdfdf6bc8aa53d5410b",
+        "note": "Author checks only; independent Feynman review pending after source freeze. Not self-approved."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@9b3de31f01dea48d9f411cf86bebfd78b7183b5d7d393fdfdf6bc8aa53d5410b",
+        "note": "Author checks only; independent Feynman review pending after source freeze. Not self-approved."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@9b3de31f01dea48d9f411cf86bebfd78b7183b5d7d393fdfdf6bc8aa53d5410b",
+        "note": "No real human/learner review performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+        "note": "Entry-only body revision after actual115 inspection; previous records retained. Different-author review not inherited; no human validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+        "note": "Entry-only body revision after actual115 inspection; previous records retained. Different-author review not inherited; no human validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+        "note": "Entry-only body revision after actual115 inspection; previous records retained. Different-author review not inherited; no human validation."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+        "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/euler3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+        "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/euler3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-MENTAL-01",
+      "nodeRevision": "audit1-2026-10-28",
+      "liteContentRevision": "lite181-2026-10-27",
+      "actualInventory": {
+        "nodeRevision": "audit1-2026-10-28",
+        "ownGoal": "Opit hajottamaan luvun niin, että laskeminen helpottuu.",
+        "intro": "Lautan rakentajat calculate mentally; split into useful parts.",
+        "rewardLimit": "No claim that support makes mental fluency established.",
+        "demos": [
+          "cutScene(38,7):7=2+5",
+          "jumpsScene(36,48,38,[2,5],40)",
+          "cutScene(53,8,-):8=3+5",
+          "jumpsScene(44,72,46,[20,4],66)"
+        ],
+        "families": {
+          "toTen": "Choice; a=tens20..70+ones6..9, b crosses next ten. Several distractor pairs still sum to b, rejected only for not landing on ten.",
+          "tensOnes": "Choice standard tens+ones for21..89; exact tens use numeric blank10 in n=(n−10)+blank.",
+          "use": "Numeric a25..68,b11..29 excluding20; hints tens/ones, whyAt lost/extra ten or omitted ones.",
+          "cut": "Interactive first-part knife gap, sub40% b5..9,a crossing tens; cutFill unique canonicalfirst, button emits only selected gap."
+        },
+        "transfer": "Subtraction a40..70+need1..b-1,b6..9; choose need+(b-need) with first landing on lower ten. All offered pairs preserve b, pedagogical criterion is decade landing.",
+        "audit": "LESSON_AUDIT418–420 cutScene and cut-widget, partial steps, corrected use ranges.",
+        "reconciliation": [
+          "COVERAGE omits cut and two of4 actual demos.",
+          "Treat every valid nonnegative split of b with correct intermediate and result as mathematically valid; label if first step reaches decade, do not call another valid split mathematically wrong.",
+          "Addition/subtraction order of removed positive parts and equivalent tens/ones decomposition can vary; blank never means zero."
+        ],
+        "rawNodeSpec": {
+          "path": "src/content/facts.ts",
+          "text": "  {\n    id: 'M-MENTAL-01', rev: AUDIT_REV, validRevs: [AUDIT_REV], stop: 'Fiksu jako', icon: '🧩',\n    goal: 'Opit hajottamaan luvun niin, että laskeminen helpottuu.',\n    intro: 'Lautan rakentajat laskevat päässä. Temppu: jaa luku sopiviin osiin.',\n    reward: 'Jaat luvut fiksusti: päässälasku helpottuu!',\n    demo: () => [\n      { say: 'Kolmekymmentäkahdeksan plus seitsemän. Seitsemän jaetaan kahteen osaan. Leikataan niin, että ensimmäinen osa vie tasakymppiin: kaksi ja viisi. 38 + 2 = 40, ja viisi lisää: 45.', scene: cutScene(38, 7) },\n      { say: 'Lukusuoralla sama näyttää kahdelta hypyltä: ensin kaksi tasakymppiin 40, sitten viisi lisää.', scene: jumpsScene(36, 48, 38, [2, 5], 40) },\n      { say: 'Miinuksessa leikataan samoin: 53 − 8. Ensin kolme pois, niin päästään tasan 50:een, sitten loput viisi: 45.', scene: cutScene(53, 8, '-') },\n      { say: 'Ison luvun voi jakaa kymppeihin ja ykkösiin: 46 + 24 = 46 + 20 + 4. Ensin hyppy 20, sitten 4.', scene: jumpsScene(44, 72, 46, [20, 4], 66) },\n    ],\n    item: cases({\n      toTen: (r) => {\n        const t1 = r.int(2, 7), o = r.int(6, 9), a = t1 * 10 + o, b = r.int(11 - o, 9), fill = 10 - o;\n        return {\n          say: `Miten luku ${b} kannattaa jakaa, kun lasketaan ${a} + ${b}?`,\n          task: (() => { const ws = alts(r, fill, [fill + 1, fill - 1, 1], 2, 1, b - 1); return choose(r, ex(`${fill} + ${b - fill}`), ws.map((x) => ex(`${x} + ${b - x}`)), ws.map((x) => `${a} + ${x} = ${a + x}. Se ei ole tasakymppi.`)); })(),\n          hint: `Paljonko luvusta ${a} puuttuu seuraavaan tasakymppiin ${a + fill}?`,\n          explain: `${a} + ${fill} = ${a + fill}. Sitten ${a + fill} + ${b - fill} = ${a + b}.`,\n        };\n      },\n      tensOnes: (r) => {\n        const n = r.int(21, 89);\n        if (n % 10 === 0) return ask(`${n} = ${n - 10} + □`, 10, `${n - 10} + 10 = ${n}.`, { hint: `Tasakymppien välissä on aina yksi kymppi.`, whyAt: { 1: `${n - 10} + 1 = ${n - 9}, ei ${n}. Väli on kokonainen kymppi.`, [n - 10]: `${n - 10} on jo mukana. Kysytään, paljonko siihen lisätään.` } });\n        return {\n          say: `Miten ${n} jaetaan kymppeihin ja ykkösiin?`,\n          task: choose(r, ex(`${n - (n % 10)} + ${n % 10}`), [ex(`${Math.floor(n / 10)} + ${n % 10}`), ex(`${n - (n % 10) - 10} + ${(n % 10) + 1}`)], [`${Math.floor(n / 10)} on kymppien määrä. ${Math.floor(n / 10)} kymppiä on ${n - (n % 10)}.`, `${n - (n % 10) - 10} + ${(n % 10) + 1} = ${n - 9}, ei ${n}.`]),\n          hint: `Montako kymppiä luvussa ${n} on? Jokainen kymppi on kymmenen.`,\n          explain: `${n} = ${n - (n % 10)} + ${n % 10}.`,\n        };\n      },\n      use: (r) => {\n        const a = r.int(25, 68), b = r.pick([11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 29]), bt = b - (b % 10), bo = b % 10;\n        return ask(`${a} + ${b} = ?`, a + b, `${a} + ${bt} = ${a + bt}, ja vielä ${bo}: ${a + b}.`, { hint: `Jaa ${b} kymppeihin ja ykkösiin: ${bt} + ${bo}. Lisää ensin ${bt}.`, whyAt: { [a + b - 10]: `Yksi kymppi jäi pois: ${b} sisältää ${bt / 10 === 1 ? 'yhden kympin' : `${bt / 10} kymppiä`}.`, [a + b + 10]: `Kymppejä tuli yksi liikaa: ${a} + ${bt} = ${a + bt}.`, [a + bo]: `Muista myös kympit: ${a} + ${bt} = ${a + bt}.`, [a + bt]: `Kympit on lisätty, mutta ykköset ${bo} puuttuvat vielä.` } });\n      },\n      cut: (r) => {\n        const sub = r.chance(0.4), b = r.int(5, 9);\n        const a = sub ? r.int(3, 8) * 10 + r.int(1, b - 1) : r.int(2, 7) * 10 + r.int(11 - b, 9);\n        return {\n          say: sub ? `Lasketaan ${a} − ${b}. Leikkaa ${b} kahteen osaan niin, että ensimmäinen osa vie alas tasakymppiin.` : `Lasketaan ${a} + ${b}. Leikkaa ${b} kahteen osaan niin, että ensimmäinen osa vie tasakymppiin.`,\n          task: { kind: 'cut' as const, a, b, op: sub ? '-' as const : '+' as const },\n          hint: sub ? `Montako pitää ottaa pois luvusta ${a}, jotta päästään tasan ${a - (a % 10)}:een?` : `Paljonko luvusta ${a} puuttuu tasakymppiin ${a + 10 - (a % 10)}?`,\n          explain: sub ? `${a} − ${a % 10} = ${a - (a % 10)}, sitten vielä ${b - (a % 10)} pois: ${a - b}.` : `${a} + ${10 - (a % 10)} = ${a + 10 - (a % 10)}, sitten ${b - 10 + (a % 10)} lisää: ${a + b}.`,\n        };\n      },\n    }, (r) => {\n      const b = r.int(6, 9), need = r.int(1, b - 1), a = r.int(4, 7) * 10 + need;\n      return {\n        say: `Lasketaan ${a} − ${b}. Miten ${b} kannattaa jakaa?`,\n        task: (() => { const ws = alts(r, need, [need + 1, need - 1, b - 1], 2, 1, b - 1); return choose(r, ex(`${need} + ${b - need}`), ws.map((x) => ex(`${x} + ${b - x}`)), ws.map((x) => `${a} − ${x} = ${a - x}. Se ei ole tasakymppi.`)); })(),\n        hint: `Montako pitää ottaa pois, jotta luvusta ${a} tulee tasan ${a - need}?`,\n        explain: `${a} − ${need} = ${a - need}, sitten vielä ${b - need} pois: ${a - b}.`,\n      };\n    }),\n  },\n  // ============================================================ addition to 100",
+          "startLine": 559,
+          "endLine": 613
+        },
+        "canonical": {
+          "id": "M-MENTAL-01",
+          "subject": "mathematics",
+          "grade_band": "1-2",
+          "topic_area": "Luvut ja laskutoimitukset",
+          "parent_concept": "Päässälasku",
+          "title": "Luvun hajottaminen laskemista helpottavaan muotoon",
+          "short_description": "Luvun hajottaminen laskemista helpottavaan muotoon",
+          "source_basis": "direct_curriculum",
+          "curriculum_refs": [
+            "OPH-POPS2014-MATH-VL1-2-S2"
+          ],
+          "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+          "status": "candidate",
+          "required_root": false,
+          "root_kind": "none",
+          "node_kind": "concept",
+          "relations": [
+            {
+              "id": "M-NUM-18",
+              "relation_type": "prerequisite",
+              "strength": "required",
+              "rationale": "M-NUM-18 on tämän osaamiskohteen välitön välttämätön esitieto."
+            },
+            {
+              "id": "M-PLACE-03",
+              "relation_type": "prerequisite",
+              "strength": "required",
+              "rationale": "M-PLACE-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+            }
+          ],
+          "prerequisite_groups": [
+            {
+              "all_of": [
+                "M-NUM-18",
+                "M-PLACE-03"
+              ],
+              "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+            }
+          ],
+          "foundation_entry": false,
+          "zero_required_indegree": false,
+          "foundation_entry_rationale": null,
+          "entry_role": "none",
+          "mastery_role": "atomic",
+          "concept_path": [
+            "Matematiikka",
+            "Luvut ja laskutoimitukset",
+            "Päässälasku"
+          ]
+        },
+        "liteGraphNode": {
+          "id": "M-MENTAL-01",
+          "title": "Luvun hajottaminen laskemista helpottavaan muotoon",
+          "subject": "mathematics",
+          "grade": "1-2",
+          "kind": "concept",
+          "role": "atomic",
+          "entry": "none",
+          "foundation": false,
+          "dynamic": null,
+          "groups": [
+            {
+              "all": [
+                "M-NUM-18",
+                "M-PLACE-03"
+              ]
+            }
+          ],
+          "rel": [
+            {
+              "id": "M-NUM-18",
+              "type": "prerequisite",
+              "strength": "required"
+            },
+            {
+              "id": "M-PLACE-03",
+              "type": "prerequisite",
+              "strength": "required"
+            }
+          ],
+          "soft": [],
+          "curriculum": [
+            "OPH-POPS2014-MATH-VL1-2-S2"
+          ],
+          "original": false
+        },
+        "registry": "FACT_NODES/RANTA2_NODES included in ALL and goals fallback; no targeted families DECL/data.coverage/SIMS overlay. cases transfer separate; other phases select actual listed families."
+      },
+      "sourceHashes": {
+        "src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+        "src/content/ranta2.ts": "28d8f7b08205a7e5be0c2087c85e256e609578e83a9e6e714a1ee8573ff47fc6",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/audit.ts": "d9891d42eb739a4b65f8e80e4d24eda700f76e136a2fbc149e1965c3a4d69995",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "src/engine/expr.ts": "5aa128b08a9c45a6612f942cc9c52a670910ab87e28f47f5522b0dff67989b77",
+        "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427"
+      },
+      "taskFamilies": [
+        "toTen",
+        "tensOnes",
+        "use",
+        "cut",
+        "transfer"
+      ],
+      "changes": [
+        "COVERAGE omits cut and two of4 actual demos.",
+        "Treat every valid nonnegative split of b with correct intermediate and result as mathematically valid; label if first step reaches decade, do not call another valid split mathematically wrong.",
+        "Addition/subtraction order of removed positive parts and equivalent tens/ones decomposition can vary; blank never means zero."
+      ],
+      "frozenLite": "Read-only; suggestions recorded, no Lite/runtime/game-source edits.",
+      "inherited": "Small concrete quantities, meaningful strategy/models, contextual transfer and optional hints.",
+      "extended": "User-selected decomposition with two manual same-scale line steps; learner writes both parts and result.",
+      "bridge": "Teacher network resolver owns real deployed Lite/full routes; no public URL or personal mastery claim."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-MENTAL-01",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Päässälasku",
+        "title": "Luvun hajottaminen laskemista helpottavaan muotoon",
+        "short_description": "Luvun hajottaminen laskemista helpottavaan muotoon",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "concept",
+        "relations": [
+          {
+            "id": "M-NUM-18",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-NUM-18 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-PLACE-03",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-PLACE-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-NUM-18",
+              "M-PLACE-03"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Päässälasku"
+        ]
+      },
+      "canonicalSource": "reference/inputs/canonical-690-graph.json",
+      "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "gradeBand": "1-2",
+      "requiredGroups": [
+        {
+          "all_of": [
+            "M-NUM-18",
+            "M-PLACE-03"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "strongSupport": [],
+      "additionalHardGates": [],
+      "teacherObjective": "Luvun hajottaminen laskemista helpottavaan muotoon",
+      "childGoal": "Jaan luvun osiin, jotka säilyttävät määrän ja auttavat laskemaan.",
+      "instructionalForm": "User-selected decomposition with two manual same-scale line steps; learner writes both parts and result.",
+      "scope": "Finnish grades1–2, source-owned standalone support and low-stakes current-response checking. Canonical curriculum_refs copied as project provenance, not newly audited Finnish law/current curriculum claims.",
+      "support": "Adult reading optional, no spoken/naming/audio gate; free anchors to model/explanation/practice/exit and optional help/offline/extension.",
+      "assumptions": "Concrete objects/number words/numerals from actual prerequisite chain. Small +/- steps and equations explicitly explained where used; no new hard fluency gate.",
+      "evidenceLimits": "No timer, recall-speed, delayed retention, formal mastery, physical skill, efficacy, independent-credit or personal-history claims. Help/model/explanation and current feedback do not demonstrate independent construction/fluency.",
+      "interpretation": "FACT numeric answer checks a sum only; ARITH checks a written true quantity relationship with relevant parts, not just equal numeric totals; MENTAL requires two preserved parts plus correct result, accepts non-decade and commuted valid decompositions.",
+      "uiSkill": "game-studio:game-ui-frontend read and applied: calm tabletop math view, CSS theme variables, DOM controls, early action, low chrome, optional notes, meaningful manual state transitions, mobile wrapping.",
+      "playtestSkill": "game-studio:game-playtest read with shared checklist; planned source-preview boot/input/state/screenshot/lifecycle/resize checks320/390/1280, not integrated115 proof.",
+      "animation": "Finite manual steps/all/reset, no time loop or decorative character animation. No animation implies verified learner speed.",
+      "feedbackContract": {
+        "path": "INTERACTION_FEEDBACK_CONTRACT.md",
+        "sha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+        "eventCommitGuidance": "EVENT_COMMIT_REVIEW_B05.md",
+        "eventCommitSha256": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+        "rule": "Input/change retire dependent current verdict. Explicit checks read every visible response/context field. Help-only and separate model edits preserve invariant practice verdict."
+      }
+    },
+    "extensions": {
+      "batch": "B10",
+      "author": "Euler own3 only; Feynman independent review after freeze. No self-approval.",
+      "assetProvenance": "Unmodified supplied v2 generated raster reinterpretation of user-drawn identities, not asserted hand-drawn original. SHA bound; no asset generation. Original mathematical SVGs generated from own deterministic functions.",
+      "externalOracle": "No external runtime oracle. Main Wolfram finite reference crosscheck is separate project evidence, not approval or a replacement for own domain/source/UI tests. No duplicate query or new tool claim.",
+      "releaseHolds": "Human/learner/full manual accessibility/efficacy/licence/release/deployment holds remain unchanged.",
+      "entryRevision": "Own-body compact action/model adjacency after actual115 fullshell inspection; optional model selectors moved below figure. No shared chrome or mathematical/checker/module change. Author native recheck and different-author review required on this exact new revision."
+    },
+    "contentHash": "c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+    "contentRevision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@9b3de31f01dea48d9f411cf86bebfd78b7183b5d7d393fdfdf6bc8aa53d5410b",
+          "note": "Author checks only; independent Feynman review pending after source freeze. Not self-approved."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+          "note": "Entry-only body revision after actual115 inspection; previous records retained. Different-author review not inherited; no human validation."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+          "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/euler3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@9b3de31f01dea48d9f411cf86bebfd78b7183b5d7d393fdfdf6bc8aa53d5410b",
+          "note": "No real human/learner review performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+          "note": "Entry-only body revision after actual115 inspection; previous records retained. Different-author review not inherited; no human validation."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@9b3de31f01dea48d9f411cf86bebfd78b7183b5d7d393fdfdf6bc8aa53d5410b",
+          "note": "Author checks only; independent Feynman review pending after source freeze. Not self-approved."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+          "note": "Entry-only body revision after actual115 inspection; previous records retained. Different-author review not inherited; no human validation."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@c3170e3d8aca0a63b45adedf1d68c91cc7a5438c4f450de44c6bb15a90b9bc61",
+          "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/euler3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "6965ccb828a895998bd10f188f9d9b77fbcfb0ab558913799202311e0ba5f0ec",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "6965ccb828a895998bd10f188f9d9b77fbcfb0ab558913799202311e0ba5f0ec",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

@@ -1,0 +1,41 @@
+.b10-route { --ink: #173f36; --paper: #fffbf1; --pond: #28667b; --line: #78978a; max-width: 42rem; color: var(--ink); }
+.b10-route .intro { display: flex; align-items: center; gap: .7rem; }
+.b10-route .intro img { width: 80px; height: 80px; flex: 0 0 80px; }
+.b10-route img { max-width: 100%; height: auto; }
+.b10-route svg { display: block; width: 100%; height: auto; }
+.b10-route .diagram { max-width: 34rem; margin: .65rem 0; }
+.b10-route .explore { border-left: 4px solid var(--pond); padding-left: .8rem; margin: 1rem 0; }
+.b10-route .actions, .b10-route .fields { display: flex; flex-wrap: wrap; align-items: end; gap: .5rem; }
+.b10-route label { display: block; margin: .6rem 0; }
+.b10-route button, .b10-route input, .b10-route select { min-height: 44px; min-width: 44px; font: inherit; max-width: 100%; }
+.b10-route button { padding: .45rem .75rem; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: .4rem; }
+.b10-route button[data-action="step"], .b10-route button[data-action="check"] { color: white; background: var(--pond); }
+.b10-route button:disabled { opacity: .6; }
+.b10-route select { display: block; width: 100%; padding: .4rem; }
+.b10-route input[type="text"] { display: block; width: 5.5rem; padding: .35rem; }
+.b10-route input[type="checkbox"] { width: 24px; min-width: 24px; min-height: 24px; vertical-align: middle; }
+.b10-route .choices { display: flex; flex-wrap: wrap; gap: .35rem; }
+.b10-route .choices label { min-width: 50px; min-height: 44px; padding: .3rem; border: 1px solid var(--line); border-radius: .3rem; }
+.b10-route [data-verdict] { display: block; padding: .6rem .7rem; border-left: 4px solid var(--line); margin: .6rem 0; }
+.b10-route [data-verdict="correct"] { border-color: #245f4c; }
+.b10-route [data-verdict="retry"] { border-color: #a34d13; }
+.b10-route :focus-visible { outline: 3px solid #a66c30; outline-offset: 2px; }
+.b10-route [hidden] { display: none !important; }
+.b10-route .smallnote { font-size: .95em; }
+.b10-route label:has(input[type="checkbox"]) { min-height: 44px; display: flex; align-items: center; gap: .4rem; }
+
+/* B10 r2: owned entry body only. Shared presentation header chrome is main-owned. */
+.b10-route .intro { gap: .6rem; margin: .3rem 0; }
+.b10-route .intro img { width: 56px; height: 56px; flex-basis: 56px; margin: 0; }
+.b10-route .intro p { font-size: 1rem; line-height: 1.4; margin: .15rem 0; }
+.b10-route [data-entry-goal] { font-size: 1rem; line-height: 1.4; margin: .35rem 0; }
+.b10-route .explore { margin: .5rem 0 1rem; padding-left: .55rem; }
+.b10-route .explore > h2 { font-size: 1.1rem; line-height: 1.25; margin: .25rem 0; }
+.b10-route .explore > .diagram { max-width: 22rem; margin: .25rem 0; }
+.b10-route .explore > [data-caption] { font-size: 1rem; line-height: 1.4; margin: .25rem 0 .4rem; }
+.b10-route .explore .actions { gap: .4rem; }
+.b10-route .explore .actions button { font-size: 1rem; line-height: 1.4; min-height: 44px; margin: 0; }
+.b10-route [data-route-tools] { margin: .35rem 0 .2rem; }
+.b10-route [data-route-tools] > summary { font-size: 1rem; line-height: 1.4; min-height: 44px; }
+.b10-route [data-route-tools] > p, .b10-route [data-route-tools] label { font-size: 1rem; line-height: 1.4; margin: .35rem 0; }
+.b10-route label:has(input[type="checkbox"]) { flex-direction: row; }

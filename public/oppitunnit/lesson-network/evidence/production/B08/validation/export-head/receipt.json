@@ -1,0 +1,56 @@
+{
+  "kind": "BOUNDED_EXPORT_HEAD_PORTABLE_REGRESSION_RECEIPT_NOT_PROJECT_ACCEPTANCE",
+  "ready": true,
+  "at": "2026-10-29T05:11:12.358454+00:00",
+  "pathBase": "All source/test/evidence paths below are relative to project root. Raw run logs retain observed temporary fixture locations, never test prerequisites.",
+  "source": {
+    "path": "lesson-network/export.py",
+    "sha256": "a2529ccb1436400bda8441ee0d595dd9e23dceae439e1a43f633c5cfe00bb74c",
+    "unchangedSincePriorReady": true
+  },
+  "regression": {
+    "path": "lesson-network/test-export.py",
+    "sha256": "d69205868d96ac3237c7a76626afd1f36a3a8215840d643cbd76921e543e8ac7",
+    "command": "python3 -B lesson-network/test-export.py",
+    "candidateDefault": "Adjacent export.py resolved from __file__; no /tmp or user-directory dependency.",
+    "fixtures": "Fresh platform-default tempfile directory; all Gitcommits/ZIPs inside fixtures only."
+  },
+  "run": {
+    "exitCode": 0,
+    "status": "PASS",
+    "testsRun": 5,
+    "failures": 0,
+    "errors": 0,
+    "python": "3.9.6 (default, May  7 2023, 23:32:44) \n[Clang 14.0.3 (clang-1403.0.22.14.1)]",
+    "stdout": "lesson-network/evidence/production/B08/validation/export-head/portable-run-stdout.json",
+    "stderr": "lesson-network/evidence/production/B08/validation/export-head/portable-run-stderr.log"
+  },
+  "cases": [
+    "Dirty/staged/untracked absent, committed blobs/manifest/CRC/SHA intact, sealed overwrite refused",
+    "Extracted fallback explicit; Git absent/enclosing unrelated repo; missing provenance fails",
+    "Archive attribute omission/substitution failclosed",
+    "Committed symlink rejected",
+    "Manual tar extraction: traversal/absolute/backslash/link/hardlink/FIFO/unexpected/duplicate/blob mismatch; Python3.9syntax/runtime"
+  ],
+  "fixtureRunReceipts": [
+    "lesson-network/evidence/production/B08/validation/export-head/fixture-runs/attributes/run-B08_OMITTED.json",
+    "lesson-network/evidence/production/B08/validation/export-head/fixture-runs/attributes/run-B08_SUBSTITUTED.json",
+    "lesson-network/evidence/production/B08/validation/export-head/fixture-runs/dirty/run-B08_TEST.json",
+    "lesson-network/evidence/production/B08/validation/export-head/fixture-runs/enclosing/nested/run-B08_NESTED.json",
+    "lesson-network/evidence/production/B08/validation/export-head/fixture-runs/enclosing/nested/run-B08_NO_PROVENANCE.json",
+    "lesson-network/evidence/production/B08/validation/export-head/fixture-runs/enclosing/nested/run-B08_REEXPORT.json",
+    "lesson-network/evidence/production/B08/validation/export-head/fixture-runs/extracted/run-B08_REEXPORT.json",
+    "lesson-network/evidence/production/B08/validation/export-head/fixture-runs/fallback-source/run-B08_FALLBACK_SOURCE.json",
+    "lesson-network/evidence/production/B08/validation/export-head/fixture-runs/symlink/run-B08_SYMLINK.json"
+  ],
+  "priorEvidence": [
+    "lesson-network/evidence/production/B08/validation/export-head/initial-run-stdout.json",
+    "lesson-network/evidence/production/B08/validation/export-head/initial-run-stderr.log",
+    "lesson-network/evidence/production/B08/validation/export-head/initial-real-head-snapshot.json"
+  ],
+  "limits": [
+    "Current-root postcommit snapshot/export and project-wide remediation acceptance belong to main; this receipt is bounded regression proof.",
+    "No project commit/production export/sealed ZIP overwrite, B09source edits, sharedstatus/build or human-review promotion.",
+    "Historical actualroot snapshot is labelled with its observed pre-remediation commit and preserved; not claimed to be a new postcommit export."
+  ]
+}

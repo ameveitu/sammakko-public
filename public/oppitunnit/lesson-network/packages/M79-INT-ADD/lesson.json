@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M79-INT-ADD",
+  "revision": 14,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "initial.svg",
+      "sha256": "2f813fac7e145f0bd29fc0cedca41d244b949c42783590bac2f4b316fcece10c"
+    },
+    {
+      "path": "example.svg",
+      "sha256": "2193ac758eba5c48bd1eb789ce6a38cfeb30caf10ecaa6257b4ec899f8e660af"
+    },
+    {
+      "path": "transfer.svg",
+      "sha256": "5cd50c62c45d1da01c9df94b62fd957ca1651848be94fa544b09c62d64edd623"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "b80bc704e43f570ae7f5f3d7e604121cdaaf27041660fe7b47163d275e591f80"
+    },
+    {
+      "path": "shared/loikka/map.png",
+      "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://openstax.org/books/prealgebra-2e/pages/3-2-add-integers",
+      "title": "Prealgebra2e — 3.2 Add Integers",
+      "organization": "OpenStax / Rice University",
+      "accessed": "2026-10-29",
+      "inspected": "Signed addition, neutral pairs and context; actual Prealgebra2e preface rights read.",
+      "usageRestrictions": "CC BY-NC-SA4.0 in book preface; art/third-party exceptions retained. No source expressive text, examples or figures copied; original mathematical examples and diagrams.",
+      "adopted": "Connect symbolic sign to direction and zero without equating plus with right in every case.",
+      "rejected": "Do not adopt broad brain-learning claims, USgrade mapping or unrestricted mastery. No negative physical object counts."
+    },
+    {
+      "url": "https://www.amsi.org.au/teacher_modules/Integer.html",
+      "title": "The Integers — TIMES Module15",
+      "organization": "AMSI / ICE-EM University of Melbourne",
+      "accessed": "2026-10-29",
+      "inspected": "Number-line addition, opposites and division as inverse multiplication; PDF page1 rights inspected.",
+      "usageRestrictions": "PDF ©University of Melbourne/ICE-EM2010, resource-specific CC BY-NC-ND3.0; no source prose/task/figure adaptation. Original Finnish text/SVG and suppliedPNG only.",
+      "adopted": "Separate number-line direction from operation; justify division by its inverse relationship.",
+      "rejected": "No copied counter artwork or broad arithmetic prerequisites imposed; no FinnishOPS or efficacy inference."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@d72c69e4f550e9b77aae8d59bde560470444264e3d915ae8eb6c914f6f90d649",
+      "note": "Author source work; independent parent review pending. No selfapproval."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@d72c69e4f550e9b77aae8d59bde560470444264e3d915ae8eb6c914f6f90d649",
+      "note": "Author source work; independent parent review pending. No selfapproval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@d72c69e4f550e9b77aae8d59bde560470444264e3d915ae8eb6c914f6f90d649",
+      "note": "No human/learner/efficacy validation."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "2@d8799fe2e1e86655e67fe638bebf16395d388bb3f4617ed92730502bcc68d6d4",
+      "note": "Independent B15 parent current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/parent-on-Descartes/review-closed.json. Synthetic technical scope, not learner validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "2@d8799fe2e1e86655e67fe638bebf16395d388bb3f4617ed92730502bcc68d6d4",
+      "note": "Independent B15 parent canonical/Lite/source boundary review: roles/groups preserved, no new hardgates. lesson-network/evidence/production/B15/reviews/parent-on-Descartes/review-closed.json"
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@d8799fe2e1e86655e67fe638bebf16395d388bb3f4617ed92730502bcc68d6d4",
+      "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@7b0e86d3212dfdb81a7a57222ae597bcaebb8c483e5f6c76a2bd11f4426da5ca",
+      "note": "LR04-B08: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@7b0e86d3212dfdb81a7a57222ae597bcaebb8c483e5f6c76a2bd11f4426da5ca",
+      "note": "LR04-B08: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@7b0e86d3212dfdb81a7a57222ae597bcaebb8c483e5f6c76a2bd11f4426da5ca",
+      "note": "LR04-B08: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@b3b203044f57d0b224434fabc85e90d5ad167cc2e9044862aaa17fd68c8980d4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@b3b203044f57d0b224434fabc85e90d5ad167cc2e9044862aaa17fd68c8980d4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@b3b203044f57d0b224434fabc85e90d5ad167cc2e9044862aaa17fd68c8980d4",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@8fa207f5a0e52547d5c29276fa72aa1893b9876950726b93f4a081bd5f33090f",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@8fa207f5a0e52547d5c29276fa72aa1893b9876950726b93f4a081bd5f33090f",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@8fa207f5a0e52547d5c29276fa72aa1893b9876950726b93f4a081bd5f33090f",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@babeaab01777ded119c534cb4479162d90f79e3da0086ac92115e3f463d4c1fe",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@babeaab01777ded119c534cb4479162d90f79e3da0086ac92115e3f463d4c1fe",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@babeaab01777ded119c534cb4479162d90f79e3da0086ac92115e3f463d4c1fe",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@c6e571fb26970c111441b8883646f963d1b410877929b2151e0b13f1abeea65e",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@c6e571fb26970c111441b8883646f963d1b410877929b2151e0b13f1abeea65e",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@c6e571fb26970c111441b8883646f963d1b410877929b2151e0b13f1abeea65e",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@427310a00010d4114faef2b827bd23fe91196efc6c6b5301049e81a1ad9bdce7",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@427310a00010d4114faef2b827bd23fe91196efc6c6b5301049e81a1ad9bdce7",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@427310a00010d4114faef2b827bd23fe91196efc6c6b5301049e81a1ad9bdce7",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@6b817671d54f13510635e07e82b72b65150f160245f728b58aba905b4c86b266",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@6b817671d54f13510635e07e82b72b65150f160245f728b58aba905b4c86b266",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@6b817671d54f13510635e07e82b72b65150f160245f728b58aba905b4c86b266",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@e3439e3bb618ce0cc56a4773ad730a8146dafd7ba6d72b03e79d1accf902c722",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@e3439e3bb618ce0cc56a4773ad730a8146dafd7ba6d72b03e79d1accf902c722",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@e3439e3bb618ce0cc56a4773ad730a8146dafd7ba6d72b03e79d1accf902c722",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@a905260c1421c7b322d8c1fc4c3f79eefb205ebdbaa05c9f1c16d71d6313a468",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@a905260c1421c7b322d8c1fc4c3f79eefb205ebdbaa05c9f1c16d71d6313a468",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@a905260c1421c7b322d8c1fc4c3f79eefb205ebdbaa05c9f1c16d71d6313a468",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@f7f9fde58463dceb378fd0dc719bafbcfd43c6054b02c4344f30c3ae692cd0e4",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@f7f9fde58463dceb378fd0dc719bafbcfd43c6054b02c4344f30c3ae692cd0e4",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Negatiivisen lisääminen vie vasemmalle; laskutoimituksen plus ja luvun etumerkki eivät tarkoita samaa. Vastakkaiset luvut voivat antaa nollan, ja lämpötila sekä lämpötilan muutos erotetaan. Tehtävän luvut, lukusuora tai annetut lämpötilat sekä vastaus ovat samassa vaiheessa. Nykyisen Liten suoran whyAt sisältää nollatuloksen suojan; numeeristen tehtävien wz-apuri pudottaa oikeaa vastausta vastaavat virheavaimet. Tämä lähdetarkistus ei ole uusi kaikkien siementen testi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@f7f9fde58463dceb378fd0dc719bafbcfd43c6054b02c4344f30c3ae692cd0e4",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M79-INT-ADD",
+    "sourceBuild": "lite181-2026-10-27",
+    "sourceRevision": "audit1-2026-10-28",
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "authority/production-181-v2/lite/src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+      "authority/production-181-v2/lite/src/content/neganim.ts": "38429c827f5637f57b054cade85b40cc9f36396e27cee3d79e99e526b89766a4",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/features.ts": "8ddef5451be9d011297f5d32b1ab0d869a1e132d608bd30f679b8e2d900884c5",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+    },
+    "families": [
+      "mixed",
+      "transfer",
+      "sign",
+      "line",
+      "negneg"
+    ],
+    "inventory": {
+      "goal": "Opit laskemaan yhteen negatiivisia lukuja lukusuoran avulla: positiivinen luku vie oikealle, negatiivinen vasemmalle.",
+      "intro": "Loikka hyppii jäälahden lukusuoralla. Plus-hyppy menee oikealle, miinus-hyppy vasemmalle.",
+      "reward": "Lasket kokonaislukuja yhteen varmasti!",
+      "revision": "audit1-2026-10-28",
+      "demos": [
+        {
+          "say": "Miinus kolme plus viisi: aloitetaan kohdasta miinus kolme ja hypätään viisi oikealle.",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function",
+          "animation": {
+            "duration": 7.949999999999999,
+            "label": "Hypyt jään lukusuoralla",
+            "startCaption": "Loikka lähtee kohdasta −3.",
+            "endCaption": "Plus vie oikealle. Nollan yli mentiin ja päädyttiin kahteen."
+          }
+        },
+        {
+          "say": "Miinus neljä plus miinus kolme: negatiivisen lisääminen vie vasemmalle.",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function",
+          "animation": {
+            "duration": 6.85,
+            "label": "Hypyt jään lukusuoralla",
+            "startCaption": "Loikka lähtee kohdasta −4.",
+            "endCaption": "Kaksi miinusta peräkkäin: mennään yhä kauemmas vasemmalle."
+          }
+        },
+        {
+          "say": "Toinen tapa: plus- ja miinusnapit. Plus ja miinus yhdessä on nolla, joten parit kumoavat toisensa. Jäljelle jäävät napit ovat summa.",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function",
+          "animation": {
+            "duration": 9.6,
+            "label": "Nollaparit",
+            "startCaption": "−6 on 6 miinusnappia, 4 on 4 plusnappia.",
+            "endCaption": "Jäljelle jäi 2 miinusnappia: summa on −2."
+          }
+        }
+      ],
+      "items": {
+        "mixed": {
+          "say": "−4 + 2 = ?",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "big": "−2"
+              },
+              {
+                "big": "−6"
+              },
+              {
+                "big": "2"
+              }
+            ],
+            "answer": 0,
+            "why": [
+              null,
+              "Plus vie oikealle, ei vasemmalle.",
+              "Merkki on väärin päin: miinusnappeja on enemmän, joten tulos on negatiivinen."
+            ]
+          },
+          "hint": "2 plusnappia kumoaa 2 miinusnappia. Montako miinusnappia jää?",
+          "explain": "−4:sta 2 oikealle: −2.",
+          "registry": {
+            "node": "M79-INT-ADD",
+            "tag": "mixed",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "transfer": {
+          "say": "Aamulla lämpötila oli −7 °C. Päivällä se nousi 4 astetta. Mikä oli lämpötila päivällä?",
+          "task": {
+            "kind": "numeric",
+            "answer": -3,
+            "unit": "°C",
+            "whyAt": {
+              "3": "Etumerkki on väärin päin.",
+              "11": "Aloitit 7 asteesta, mutta aamulla oli pakkasta: −7.",
+              "-11": "Lämpötila nousi, joten mennään ylöspäin, ei alaspäin."
+            }
+          },
+          "hint": "Lähde mittarissa kohdasta −7 ja nouse 4 astetta.",
+          "explain": "−7 + 4 = −3 °C.",
+          "registry": {
+            "node": "M79-INT-ADD",
+            "tag": "transfer",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "sign": {
+          "say": "Laskematta loppuun: tuleeko summasta negatiivinen vai positiivinen?",
+          "task": {
+            "kind": "sort",
+            "items": [
+              {
+                "text": "−3 + (−5)"
+              },
+              {
+                "text": "−8 + (−5)"
+              },
+              {
+                "text": "−2 + 4"
+              },
+              {
+                "text": "5 + (−1)"
+              },
+              {
+                "text": "−1 + (−3)"
+              }
+            ],
+            "cats": [
+              {
+                "label": "Negatiivinen ❄️"
+              },
+              {
+                "label": "Positiivinen ☀️"
+              }
+            ],
+            "answer": [
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            "why": [
+              "Molemmat ovat negatiivisia: summa on negatiivinen.",
+              "Molemmat ovat negatiivisia: summa on negatiivinen.",
+              "2 miinusta ja 4 plussaa: plussia on enemmän.",
+              "1 miinusta ja 5 plussaa: plussia on enemmän.",
+              "Molemmat ovat negatiivisia: summa on negatiivinen."
+            ]
+          },
+          "hint": "Vertaa: kumpia nappeja on enemmän, plussia vai miinuksia?",
+          "explain": "Etumerkki tulee siltä, jonka itseisarvo on suurempi. Kaksi negatiivista antaa aina negatiivisen.",
+          "registry": {
+            "node": "M79-INT-ADD",
+            "tag": "sign",
+            "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "line": {
+          "say": "−2 + 9 = ? Merkitse vastaus lukusuoralle.",
+          "task": {
+            "kind": "line",
+            "min": -10,
+            "max": 10,
+            "step": 1,
+            "answer": 7,
+            "labelEvery": 5,
+            "whyAt": {
+              "11": "Aloitit kohdasta 2, mutta lähtö on −2.",
+              "-11": "Hyppäsit vasemmalle. Plus vie oikealle.",
+              "-7": "Etumerkki on väärin päin."
+            }
+          },
+          "hint": "Aloita kohdasta −2 ja hyppää 9 askelta oikealle.",
+          "explain": "−2:sta 9 askelta oikealle: 7.",
+          "registry": {
+            "node": "M79-INT-ADD",
+            "tag": "line",
+            "outcome": "merkitsee kohdan lukusuoralle",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "negneg": {
+          "say": "(−2) + (−6) = ?",
+          "task": {
+            "kind": "numeric",
+            "answer": -8,
+            "whyAt": {
+              "4": "Hyppäsit 6 oikealle. Negatiivisen lisääminen vie vasemmalle.",
+              "8": "Kaksi negatiivista yhteen antaa negatiivisen: molemmat hypyt menevät vasemmalle."
+            }
+          },
+          "hint": "Negatiivisen luvun lisääminen vie vasemmalle.",
+          "explain": "Kaksi miinus-hyppyä vasemmalle: −2 − 6 = −8.",
+          "registry": {
+            "node": "M79-INT-ADD",
+            "tag": "negneg",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        }
+      }
+    },
+    "comparison": "Actual line/negneg/mixed/sign/transfer,3demos iceHops×2+zeroPairScene read/resolved. Correct Lite phrase Plus vie oikealle: the added number decides direction, not the +operator alone. Original walkmodel, signednumbers notnegativeobjects. Supplied zero-pair explanation optional; no counteranimation claimed. COVERAGE omits sign/sort and third demo.",
+    "runtimeOverlay": "Actual index.ts assembles ALGEBRA79B_NODES; fallbackgoals+revisionpolicy apply. No SIMS overlay. Actual family() defaults resolved, not assumed from COVERAGE. No Lite edits.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "launch1-2026-11-01",
+      "validRevisions": [
+        "launch1-2026-11-01",
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/algebra79b.ts": "2cb8b4e292009053a217f710c067ef8fb9b7b33a3205c127fe622f3886e7ac3b",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/features.ts": "674518dd106c0bfa3f379e19c95a557de2eac361f86ec097eb2598dcbe86b181",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/neganim.ts": "38429c827f5637f57b054cade85b40cc9f36396e27cee3d79e99e526b89766a4",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6"
+      },
+      "historicalNonLiteReferences": [
+        "reference/inputs/canonical-690-graph.json"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M79-INT-ADD",
+      "subject": "mathematics",
+      "grade_band": "7-9",
+      "topic_area": "S2 Luvut",
+      "parent_concept": "Kokonaislukulaskut",
+      "title": "Kokonaislukujen yhteenlasku",
+      "short_description": "Kokonaislukujen yhteenlasku",
+      "node_kind": "procedure",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "M79-S2"
+      ],
+      "relations": [
+        {
+          "id": "M79-INT-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M79-INT-01 on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "M-ADD-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-ADD-01 on ydinesitieto tälle osaamiskohteelle."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M79-INT-01",
+            "M-ADD-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate",
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "S2 Luvut",
+        "Kokonaislukulaskut"
+      ]
+    },
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M79-INT-01",
+          "M-ADD-01"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "role": "atomic",
+    "gradeBand": "7-9",
+    "teacherObjective": "Laskee kokonaislukujen summan ja yhdistää lähtöluvun, lisättävän luvun etumerkin, suunnan ja lopputuloksen.",
+    "childGoal": "Lisään kokonaisluvun ja perustelen suunnan.",
+    "additionalHardGates": [],
+    "strongSupport": [],
+    "scope": "Math sum supports exactinteger operands−12…12. Named walkmodels additionally require sumwithin−12…12 for fixedvisibleaxis. Modelsteps countabs(b), position=a+sign(b)*phase. No user-defined expression or silentclipping. Exactdecimal/fraction forms accepted only when equal to integer sum.",
+    "interaction": "Finite explicitlytyped original descriptors. Main math/control/render separation, strict descriptorkeys rejectignoredfields. Model changes do not grade oreraseunrelatedtask; no-event visiblepremises read onallactions/ticks/pause/resume. Empty/invalid no fallback. Direct typedone-fieldresponse; no mandatorymodel/clickthrough/audio/speech/naming.",
+    "feedback": "Only task/answer signature changes invalidate practicefeedback. Every action and lifecycle reconciles currentpremises before retaining verdict. Unchanged model/help preserves validpractice. Boundary andinvalidnoevent counterexamples required. No history/mastery.",
+    "lifecycle": "Loaderhost resolves own immediatelyprecedingarticle; directroot explicitly supported. WeakMap perrootreplacement,3matching delegatedlisteners andownedinterval cleanup; siblingsindependent, oldAPIinert, pausedreset disabled.",
+    "curriculumVsDesign": "Exactfrozen graph objectives/roles/groups imported. Foreign primary conceptualcomparison, not new FinnishOPS assertion/efficacy evidence. Models/numbers/contextoriginal design.",
+    "assetProvenance": "Original SVG/Finnish prose; exact suppliedv2 transparentPNG withcharactername, no redraw or handdrawn claim.",
+    "evidenceLimits": "Local lowstakespractice only. Authorchecks do notapproveowncontent; independentparent and human/learner/efficacy/manualAXS/licence/Lite/public remain separate."
+  },
+  "extensions": {
+    "author": "Descartes",
+    "productionBatch": "B15",
+    "researchNote": "research.md",
+    "alignmentNote": "alignment.md",
+    "tests": "tests.mjs",
+    "browserQA": "browser-qa.mjs",
+    "independentReview": "pending_parent",
+    "humanReview": "not_performed",
+    "feedbackContractSHA256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B08",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

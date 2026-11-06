@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 1,
+  "kcId": "PHY79-UNIT-CONV",
+  "revision": 21,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "initial.svg",
+      "sha256": "40e8f5d45963a02b27eeb689e837735eaa6b5d4ff1ef0cbb47fb2b5fb41edae5"
+    },
+    {
+      "path": "equivalent.svg",
+      "sha256": "fb2535b4277c6bdf7224e84e1457044b849cfba15547418863da4d26beb93117"
+    },
+    {
+      "path": "minutes.svg",
+      "sha256": "f2b6c8f3b6e8caa952769f86f5bd014ebf72909593aad1f39ccaee4cfcb9629e"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "62dcaf8b519f21edab8fbb4b57d1f4d022d7d6860ed6ceec19b4dcb6a2de6a79"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "title": "NIST Guide to SI Chapter4 — prefixes",
+      "organization": "NIST",
+      "accessed": "2026-10-29",
+      "adopted": "Exact decimal length prefixes and quantity-preserving unit conversion.",
+      "rejected": "No binary kilo or shifting decimal point without unit reasoning.",
+      "usageRestrictions": "Exact unit facts corroborated; no tables/text/images copied.",
+      "limitations": "Scientific reference, not empirical teaching or Finnish curriculum evidence."
+    },
+    {
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-5-units-outside-si",
+      "title": "NIST SI Chapter5 — minute/hour",
+      "organization": "NIST",
+      "accessed": "2026-10-29",
+      "adopted": "1min=60s and1h=60min, not decimal100.",
+      "rejected": "Do not apply metre-centimetre factor to time.",
+      "usageRestrictions": "Definitions only, no reproduced source passages.",
+      "limitations": "Linearly scaled length/time only; no temperature/area/composite units implied."
+    },
+    {
+      "url": "https://www.thenational.academy/teachers/lessons/converting-units-of-length",
+      "title": "Converting units of length",
+      "organization": "Oak National Academy",
+      "accessed": "2026-10-29",
+      "adopted": "Reason about larger/smaller unit and equal quantity before multiplication or division; physical ruler comparison optional.",
+      "rejected": "Do not overload prerequisites or infer independent physical measurement from numerical answers.",
+      "usageRestrictions": "Conceptual comparison; original wording/examples/figures. No source slides copied or blanket redistribution licence inferred.",
+      "limitations": "UK Year5 comparator adapted to Finnish7–9 physics context; not an OPH prescription/efficacy result."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@ba4be6f13805cae4cbabdecd118141a027e4258e36f2f8e84b0d3f6f02cde953",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@ba4be6f13805cae4cbabdecd118141a027e4258e36f2f8e84b0d3f6f02cde953",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@ba4be6f13805cae4cbabdecd118141a027e4258e36f2f8e84b0d3f6f02cde953",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@67f2d721a435e40ef6b469e426fa28311d3a361afdd3b97b3f423825dc209266",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@67f2d721a435e40ef6b469e426fa28311d3a361afdd3b97b3f423825dc209266",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@67f2d721a435e40ef6b469e426fa28311d3a361afdd3b97b3f423825dc209266",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@707d86cd082471854ad20f175bbaabed6f5520602ae501a6580d58e1cb356955",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@707d86cd082471854ad20f175bbaabed6f5520602ae501a6580d58e1cb356955",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@707d86cd082471854ad20f175bbaabed6f5520602ae501a6580d58e1cb356955",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@f2210ba66d4f0eacf81dc81cf3e63c3be5eccf83ad32b82fe20bb4438b78209c",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@f2210ba66d4f0eacf81dc81cf3e63c3be5eccf83ad32b82fe20bb4438b78209c",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@f2210ba66d4f0eacf81dc81cf3e63c3be5eccf83ad32b82fe20bb4438b78209c",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "5@b4fcbaea0242b16da9b4850f2a75bea21eb13542a709c4243d86a130e4d2de03",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "5@b4fcbaea0242b16da9b4850f2a75bea21eb13542a709c4243d86a130e4d2de03",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@b4fcbaea0242b16da9b4850f2a75bea21eb13542a709c4243d86a130e4d2de03",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "6@a9f2278f20f5ed9aeb4143c82a3cd9678421a51c0550d6b73bccfe28e8f9f446",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "6@a9f2278f20f5ed9aeb4143c82a3cd9678421a51c0550d6b73bccfe28e8f9f446",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@a9f2278f20f5ed9aeb4143c82a3cd9678421a51c0550d6b73bccfe28e8f9f446",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "6@a9f2278f20f5ed9aeb4143c82a3cd9678421a51c0550d6b73bccfe28e8f9f446",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "6@a9f2278f20f5ed9aeb4143c82a3cd9678421a51c0550d6b73bccfe28e8f9f446",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@a9f2278f20f5ed9aeb4143c82a3cd9678421a51c0550d6b73bccfe28e8f9f446",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "7@a7ba6d5346b3ce2afa8d9d39bfe32b0d510020ad0596234a8f561a029abf9959",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "7@a7ba6d5346b3ce2afa8d9d39bfe32b0d510020ad0596234a8f561a029abf9959",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@a7ba6d5346b3ce2afa8d9d39bfe32b0d510020ad0596234a8f561a029abf9959",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@a7ba6d5346b3ce2afa8d9d39bfe32b0d510020ad0596234a8f561a029abf9959",
+      "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@a7ba6d5346b3ce2afa8d9d39bfe32b0d510020ad0596234a8f561a029abf9959",
+      "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@a7ba6d5346b3ce2afa8d9d39bfe32b0d510020ad0596234a8f561a029abf9959",
+      "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "8@4d2b797929eeae8f16da544c390b076dce134a174cd9809817ce3623daca7057",
+      "note": "LR04-B11: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "8@4d2b797929eeae8f16da544c390b076dce134a174cd9809817ce3623daca7057",
+      "note": "LR04-B11: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@4d2b797929eeae8f16da544c390b076dce134a174cd9809817ce3623daca7057",
+      "note": "LR04-B11: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "8@68ad08c0ab79f5a9d7e38f75e3240e5a2f4c659c071297722e6e649cd4c2cb63",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "8@68ad08c0ab79f5a9d7e38f75e3240e5a2f4c659c071297722e6e649cd4c2cb63",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@68ad08c0ab79f5a9d7e38f75e3240e5a2f4c659c071297722e6e649cd4c2cb63",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "8@fb83a17ee916626073983858e85ceb569d2eb70f191bed257a475e160b676e63",
+      "note": "LR04-B11: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "8@fb83a17ee916626073983858e85ceb569d2eb70f191bed257a475e160b676e63",
+      "note": "LR04-B11: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@fb83a17ee916626073983858e85ceb569d2eb70f191bed257a475e160b676e63",
+      "note": "LR04-B11: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "8@2985f98f8d8ba7695edd3e9813de1cbd4c07d9cf943021507c6732a0ee1719e1",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "8@2985f98f8d8ba7695edd3e9813de1cbd4c07d9cf943021507c6732a0ee1719e1",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@2985f98f8d8ba7695edd3e9813de1cbd4c07d9cf943021507c6732a0ee1719e1",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "8@b91aaa27f32f4a7441a041357c6f9e04a64ca51801c965815cdcd82f209096c7",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "8@b91aaa27f32f4a7441a041357c6f9e04a64ca51801c965815cdcd82f209096c7",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@b91aaa27f32f4a7441a041357c6f9e04a64ca51801c965815cdcd82f209096c7",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "9@79b6a830f41b98b1ca847af1834b30aea8456c96f4228873b633768b89377faa",
+      "note": "Current source follow-up: coherent visible teaching steps and projector layout. Historical reviews retained; current source/browser gates required. Human review remains pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "9@79b6a830f41b98b1ca847af1834b30aea8456c96f4228873b633768b89377faa",
+      "note": "Current source follow-up: coherent visible teaching steps and projector layout. Historical reviews retained; current source/browser gates required. Human review remains pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@79b6a830f41b98b1ca847af1834b30aea8456c96f4228873b633768b89377faa",
+      "note": "Current source follow-up: coherent visible teaching steps and projector layout. Historical reviews retained; current source/browser gates required. Human review remains pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@54951bfcceadf6d1a9abbf84cf5347e466af7f3ce707e44cf0ee7e253c818c21",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@54951bfcceadf6d1a9abbf84cf5347e466af7f3ce707e44cf0ee7e253c818c21",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@54951bfcceadf6d1a9abbf84cf5347e466af7f3ce707e44cf0ee7e253c818c21",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@5888623d4bf577c4cd327fe4a2e6b44cbe105d24f5587f2476b164b3bf486407",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@5888623d4bf577c4cd327fe4a2e6b44cbe105d24f5587f2476b164b3bf486407",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@5888623d4bf577c4cd327fe4a2e6b44cbe105d24f5587f2476b164b3bf486407",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@a85ecee280a1fa2866b5ac4b13c9b76955a25fa9c4c67f2dbfbe8cae1e9d7a38",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@a85ecee280a1fa2866b5ac4b13c9b76955a25fa9c4c67f2dbfbe8cae1e9d7a38",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@a85ecee280a1fa2866b5ac4b13c9b76955a25fa9c4c67f2dbfbe8cae1e9d7a38",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@72b1f89c5b6e13ae17a4188f8000d02d414b06cf2dc7b5fa1024a192df3a2042",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@72b1f89c5b6e13ae17a4188f8000d02d414b06cf2dc7b5fa1024a192df3a2042",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@72b1f89c5b6e13ae17a4188f8000d02d414b06cf2dc7b5fa1024a192df3a2042",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@aaaa69a093b325ef9f9768bf7be86f3cb010a507980d4def5f61a0d0ff8128cc",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@aaaa69a093b325ef9f9768bf7be86f3cb010a507980d4def5f61a0d0ff8128cc",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@aaaa69a093b325ef9f9768bf7be86f3cb010a507980d4def5f61a0d0ff8128cc",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "16@3680bb5f2314feef8b41f5fd495ebe5b278057c68216290e2a4584d9b18efd80",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "16@3680bb5f2314feef8b41f5fd495ebe5b278057c68216290e2a4584d9b18efd80",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "16@3680bb5f2314feef8b41f5fd495ebe5b278057c68216290e2a4584d9b18efd80",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "17@dad8a1a1bc44baef22b0e1ceb74297a05cf6f30d1e81605d532e6591e1de2e65",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "17@dad8a1a1bc44baef22b0e1ceb74297a05cf6f30d1e81605d532e6591e1de2e65",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "17@dad8a1a1bc44baef22b0e1ceb74297a05cf6f30d1e81605d532e6591e1de2e65",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "19@ffa6502df61b58b973eb53665c34a9f6b345fded2fc5c7d0a99d4e4c96e77c11",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "19@ffa6502df61b58b973eb53665c34a9f6b345fded2fc5c7d0a99d4e4c96e77c11",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "19@ffa6502df61b58b973eb53665c34a9f6b345fded2fc5c7d0a99d4e4c96e77c11",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "20@bf80746fe1c0436c788e149db3d04d1e470974205e65ac40b4a2c2f2b8f727dc",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "20@bf80746fe1c0436c788e149db3d04d1e470974205e65ac40b4a2c2f2b8f727dc",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "20@bf80746fe1c0436c788e149db3d04d1e470974205e65ac40b4a2c2f2b8f727dc",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "21@89dd586461058a7dd9f131db809eb357c2500497b148986d9cc55f93bb22fc5e",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "21@89dd586461058a7dd9f131db809eb357c2500497b148986d9cc55f93bb22fc5e",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Pituuden ja ajan yksiköt eivät sekoitu, ja aikamuunnosten 60-kerroin annetaan. Korjattu hajonnut toiminto: yksikönvaihtopainike oli eri vaiheessa kuin päivittyvä kuva/lukuarvo. Nyt kuva, tulos, painike sekä valinnaiset luku/yksikkövalinnat ovat samassa vaiheessa. Oma muunnostehtävä säilyy erillisenä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "21@89dd586461058a7dd9f131db809eb357c2500497b148986d9cc55f93bb22fc5e",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "PHY79-UNIT-CONV",
+    "liteContentRevision": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "sourceFiles": [
+      "src/content/physics.ts:317-355",
+      "src/content/phyanim.ts:156-200",
+      "src/content/families.ts:94-100",
+      "src/content/goals.ts:39",
+      "src/content/world.ts:162",
+      "src/engine/types.ts",
+      "audit/LESSON_AUDIT.md:163"
+    ],
+    "families": [
+      "kmM",
+      "minS",
+      "hMin",
+      "cmM",
+      "match",
+      "compare transfer"
+    ],
+    "inherited": "Known unit factors; direction/magnitude reasoning; same quantity in two units; comparisons require compatible units.",
+    "corrected": "Only units of the same quantity convert. All units in a physics problem do not become identical. Exact rational arithmetic, explicitly reject unsupported/dimension-incompatible units; no decimal point/100time shortcut.",
+    "extended": "Exploratory declared7units, paired same-quantity graphic, four new practice contexts including1min45s, equivalent numeric forms and honest right-quantity/wrong-requested-unit feedback.",
+    "state": "authored_comparison_pending_independent_review",
+    "reconciliation": "alignment.md",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "launch1-2026-11-01",
+      "validRevisions": [
+        "launch1-2026-11-01",
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/phyanim.ts": "419fc83a164c4799543edf6f4dc72021abe3d6ee5fc74d719b70d53243bab7ad",
+        "src/content/physics.ts": "2318f77c54ed6bc5fd2956f1f7342e3169d8e276e86d878be0196a261b0b8412",
+        "src/content/world.ts": "0c66cc7b41c914e8ebd6e3848d842ba12930a8ef78ca8c2564d5f3a509959f5a",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "PHY79-UNIT-CONV",
+      "subject": "physics",
+      "grade_band": "7-9",
+      "topic_area": "S1 Luonnontieteellinen tutkimus",
+      "parent_concept": "Yksiköt",
+      "title": "Yksikkömuunnoksen tekeminen ennen fysikaalista laskua",
+      "short_description": "Yksikkömuunnoksen tekeminen ennen fysikaalista laskua",
+      "node_kind": "procedure",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "PHY79-S1"
+      ],
+      "relations": [
+        {
+          "id": "PHY79-QTY-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "M-UNIT-02",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-UNIT-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        },
+        {
+          "id": "M-UNIT-03",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-UNIT-03 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        },
+        {
+          "id": "M-UNIT-04",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-UNIT-04 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        },
+        {
+          "id": "M-UNIT-05",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-UNIT-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        },
+        {
+          "id": "M79-UNIT-LIN",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M79-UNIT-LIN tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "PHY79-QTY-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate",
+      "dynamic_prerequisite_rule": "requires_quantity_specific_unit_conversion_skill_for_item_instance",
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Fysiikka",
+        "S1 Luonnontieteellinen tutkimus",
+        "Yksiköt"
+      ]
+    },
+    "additionalHardGates": [],
+    "teacherObjective": "Yksikkömuunnoksen tekeminen ennen fysikaalista laskua",
+    "childGoal": "Kirjoitan saman suureen laskun tarvitsemassa yksikössä.",
+    "gradeBand": "7-9",
+    "role": "atomic",
+    "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "assumptions": "Frozen QTY01 required; quantity-specific M-UNIT02/05 and decimal arithmetic acknowledged as Lite per-family assumptions. Give factor and explain operation, no additional hard graph gate.",
+    "scope": "Finite nonnegative exact length mm/cm/m/km and time s/min/h; input at most6integer+3decimal digits. No area/volume/affine/composite conversion.",
+    "evidenceLimits": "Guided conversion and fresh low-stakes requested-unit reports are not evidence of independent/delayed mastery or instrument competence. No personal history.",
+    "sourceVsDesign": "Frozen graph provenance inherited; no new OPH requirement or efficacy claim. Story, examples, exact model bounds, controls and pedagogical sequencing are project design.",
+    "assetProvenance": "Original deterministic SVG. User-supplied actual transparent Aava/Loikka PNG unchanged, named in lesson, no substitute character artwork or decorative motion."
+  },
+  "extensions": {
+    "productionBatch": "B11",
+    "simulationType": "exact_quantity_preserving_unit_representation",
+    "humanReview": "not_performed",
+    "executionLimits": "Typed fixed unit dimensions; exact BigInt rational conversion/finite decimal or fraction display; arbitrary unsupported unit/kind rejected, no defaults. Exploration result disclosed only on reveal; editing model clears reveal, editing practice clears practice verdict. No timers/autoplay. Active instance owned per resolved lesson root; previous mount disposed. Current visible enum controls validated, input/change handled and check re-reads current premise; blank/unsupported does not silently become zero. New mount actively enables its own controls after previous instance disposal; synthetic and native regression retains original disabled-remount failure. Plain decimal digit bounds apply after harmless leading/trailing-zero normalization (raw input max128characters); only plain decimal numeric input is supported; exact fractional output is not fraction-input support. No rounding or scientific/expression eval. Static initial.svg derives from the same exact initial model state as mount; solved originalSVG retained separately in explanation. No-JavaScript fallback and live initial readout stay compatible.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B11",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

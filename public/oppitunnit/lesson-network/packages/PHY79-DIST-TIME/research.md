@@ -1,0 +1,7 @@
+# PHY79-DIST-TIME — sources read2026-10-29
+
+OpenStax College Physics2.3 compares starting/ending times and derives elapsed time. Adopt explicit nonzero clock example10→16 gives6s; reject treating final clock reading as elapsed time in general. University Physics3.1 keeps coordinate and displacement distinct; our original returning path separates travelled distance from final coordinate without introducing vector velocity. NIST unit definitions corroborate m and s separation. These corroborate deterministic physics, not pedagogy/efficacy; no protected text/figures reused or redistribution licence inferred.
+
+Lite physics.ts dist/time/tool/read/transfer, phyanim raceScene, motionsims overlay’s post-motion wait, families incidental assumptions, goals/world/types and audit row141 reviewed during authoring. Preserve concrete ruler/own clock and longer duration need not mean longer distance. Our model marker is a vaunu, not a simplified substitute for Aava/Loikka artwork. Supplied Loikka PNG stands outside the measured diagram. Choose bounded straight, shorter/slower, return and offset examples; all positions, path totals, clocks and SVG come from the same piecewise descriptor. Parameters are project design, not physical observations. No normative OPH additions.
+
+A physical stopwatch task still needs adult observation of actual interval boundaries and handling. Screen reading is not evidence of that process or retained independent mastery. Units/quantities/prerequisite navigation remain from frozen graph; this lesson does not mutate Lite or legacy game.

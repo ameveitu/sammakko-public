@@ -1,0 +1,963 @@
+{
+  "kcId": "M-NUM-EQUALSTEP-SEQ",
+  "pagePath": "lessons/M-NUM-EQUALSTEP-SEQ.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-NUM-EQUALSTEP-SEQ",
+  "canonicalNode": {
+    "id": "M-NUM-EQUALSTEP-SEQ",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Lukujonot",
+    "title": "Tasavälisen lukujonon tunnistaminen ja jatkaminen",
+    "short_description": "Tasavälisen lukujonon tunnistaminen ja jatkaminen",
+    "source_basis": "pedagogically_derived",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2"
+    ],
+    "evidence_notes": "v0.2-refaktorissa erotettu noodista M-NUM-16 itsenäiseksi evidenssikohteeksi.",
+    "status": "candidate_refactored",
+    "node_kind": "concept",
+    "relations": [
+      {
+        "id": "M-NUM-07",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-NUM-07 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-NUM-07"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "split_from": "M-NUM-16",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Lukujonot"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-NUM-07",
+      "targetKCId": "M-NUM-EQUALSTEP-SEQ",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-NUM-07 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-NUM-EQUALSTEP-SEQ",
+      "targetKCId": "M-NUM-16",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-NUM-16 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-EQUALSTEP-SEQ vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-NUM-07"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-NUM-EQUALSTEP-SEQ/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "Matematiikkaa alkuopetuksessa – tukea lisätunnin toteuttamiseen",
+        "url": "https://www.oph.fi/fi/koulutus-ja-tutkinnot/matematiikkaa-alkuopetuksessa-tukea-lisatunnin-toteuttamiseen",
+        "accessed": "2026-10-29",
+        "designTakeaway": "Vary sequence starting points and distinguish sequence knowledge from cardinal total. Offer number support and concrete offline action; do not require spoken naming.",
+        "usageRestrictions": "© Opetushallitus2026. Link and original brief design paraphrase only; no copied images/slides/text. No broader reuse licence inferred."
+      },
+      {
+        "title": "Cardinality and Counting",
+        "url": "https://www.ncetm.org.uk/classroom-resources/ey-cardinality-and-counting/",
+        "accessed": "2026-10-29",
+        "designTakeaway": "Keep a sequence location distinct from a count of objects. Support backward boundary crossings and starts other than1. Group diagrams explicitly distinguish number of groups from number of equal units.",
+        "usageRestrictions": "NCETM copyright page https://www.ncetm.org.uk/copyright/ states Crown Copyright/OGL unless stated otherwise, with attribution/author conditions. Link and original paraphrase only; no site photographs or branded figures copied."
+      },
+      {
+        "title": "DfE Mathematics guidance: year1, 1NPV–1 and1NF–2",
+        "url": "https://assets.publishing.service.gov.uk/media/600952a5e90e073ed5001da7/Maths_guidance_year_1.pdf",
+        "accessed": "2026-10-29",
+        "designTakeaway": "Contrast odd-start constant steps with multiples from0. Show actual equally sized units in equal groups and explain both group count and total. Do not award multiplication-fact fluency from supported numeric answers.",
+        "usageRestrictions": "Crown copyright; linked official guidance via https://www.gov.uk/government/publications/teaching-mathematics-in-primary-schools (OGLv3 except noted thirdparty). No copied example wording/figures; original Finnish lessons and SVG."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": {
+      "task_id": "KC-31-M-NUM-EQUALSTEP-SEQ",
+      "kc_id": "M-NUM-EQUALSTEP-SEQ",
+      "mastery_role": "atomic",
+      "node_kind": "concept",
+      "status": "PENDING_IMPLEMENTATION",
+      "content_file": null,
+      "prerequisites": [
+        {
+          "all_of": [
+            "M-NUM-07"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "validation": {
+        "schema": "pending_autonomous_adventure_review",
+        "graph_refs": "pending_autonomous_adventure_review",
+        "domain_truth": "pending_autonomous_adventure_review",
+        "item_invariants": "pending_autonomous_adventure_review",
+        "pedagogy_review": "pending_autonomous_adventure_review",
+        "subject_review": "pending_autonomous_adventure_review",
+        "accessibility_review": "pending_autonomous_adventure_review",
+        "runtime_smoke": "pending_autonomous_adventure_review"
+      },
+      "production_order": 31,
+      "historical_status": "DEFERRED_UNTIL_CALIBRATION",
+      "autonomous_evidence": [],
+      "historical_validation": {
+        "schema": "pending",
+        "graph_refs": "pending",
+        "domain_truth": "pending",
+        "item_invariants": "pending",
+        "pedagogy_review": "pending",
+        "subject_review": "pending",
+        "accessibility_review": "pending",
+        "runtime_smoke": "pending"
+      }
+    }
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@30732fc049acbddcad7bc0f27364a8353a72c650a9e8d4cd33c3a473b45ce3ce",
+        "note": "Author draft; different-author review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@6a341e7ad2794fc1febc92adc39c3d32b4a2d00d6c558458337a2436211ba83d",
+        "note": "R2 entry repair; exact current Carver re-review and main compiled verification pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+        "note": "R3 copy and isolated-fixture repair; exact current Carver re-review and main compiled verification pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+        "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/newton3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@30732fc049acbddcad7bc0f27364a8353a72c650a9e8d4cd33c3a473b45ce3ce",
+        "note": "No human or learner review performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@6a341e7ad2794fc1febc92adc39c3d32b4a2d00d6c558458337a2436211ba83d",
+        "note": "No human or learner review performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+        "note": "No human or learner review performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-NUM-EQUALSTEP-SEQ",
+    "revision": 3,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "lesson.css",
+        "sha256": "b6fcac22ff5de1739c5cfe1cb660dcc2f25d747434a06b7950ffe221b28d1f01"
+      },
+      {
+        "path": "example.svg",
+        "sha256": "02b0c650a93c650738954a949a45e086b9dc3901037828ffa035b7719133350b"
+      },
+      {
+        "path": "transfer.svg",
+        "sha256": "563294f2adb3452ecf0db6d11696691f357befd37ff3fa0dda26cb05aceff90b"
+      },
+      {
+        "path": "shared/loikka/map.png",
+        "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+      }
+    ],
+    "research": [
+      {
+        "title": "Matematiikkaa alkuopetuksessa – tukea lisätunnin toteuttamiseen",
+        "url": "https://www.oph.fi/fi/koulutus-ja-tutkinnot/matematiikkaa-alkuopetuksessa-tukea-lisatunnin-toteuttamiseen",
+        "accessed": "2026-10-29",
+        "designTakeaway": "Vary sequence starting points and distinguish sequence knowledge from cardinal total. Offer number support and concrete offline action; do not require spoken naming.",
+        "usageRestrictions": "© Opetushallitus2026. Link and original brief design paraphrase only; no copied images/slides/text. No broader reuse licence inferred."
+      },
+      {
+        "title": "Cardinality and Counting",
+        "url": "https://www.ncetm.org.uk/classroom-resources/ey-cardinality-and-counting/",
+        "accessed": "2026-10-29",
+        "designTakeaway": "Keep a sequence location distinct from a count of objects. Support backward boundary crossings and starts other than1. Group diagrams explicitly distinguish number of groups from number of equal units.",
+        "usageRestrictions": "NCETM copyright page https://www.ncetm.org.uk/copyright/ states Crown Copyright/OGL unless stated otherwise, with attribution/author conditions. Link and original paraphrase only; no site photographs or branded figures copied."
+      },
+      {
+        "title": "DfE Mathematics guidance: year1, 1NPV–1 and1NF–2",
+        "url": "https://assets.publishing.service.gov.uk/media/600952a5e90e073ed5001da7/Maths_guidance_year_1.pdf",
+        "accessed": "2026-10-29",
+        "designTakeaway": "Contrast odd-start constant steps with multiples from0. Show actual equally sized units in equal groups and explain both group count and total. Do not award multiplication-fact fluency from supported numeric answers.",
+        "usageRestrictions": "Crown copyright; linked official guidance via https://www.gov.uk/government/publications/teaching-mathematics-in-primary-schools (OGLv3 except noted thirdparty). No copied example wording/figures; original Finnish lessons and SVG."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@30732fc049acbddcad7bc0f27364a8353a72c650a9e8d4cd33c3a473b45ce3ce",
+        "note": "Author draft; different-author review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@30732fc049acbddcad7bc0f27364a8353a72c650a9e8d4cd33c3a473b45ce3ce",
+        "note": "Author draft; different-author review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@30732fc049acbddcad7bc0f27364a8353a72c650a9e8d4cd33c3a473b45ce3ce",
+        "note": "No human or learner review performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@6a341e7ad2794fc1febc92adc39c3d32b4a2d00d6c558458337a2436211ba83d",
+        "note": "R2 entry repair; exact current Carver re-review and main compiled verification pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@6a341e7ad2794fc1febc92adc39c3d32b4a2d00d6c558458337a2436211ba83d",
+        "note": "R2 entry repair; exact current Carver re-review and main compiled verification pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@6a341e7ad2794fc1febc92adc39c3d32b4a2d00d6c558458337a2436211ba83d",
+        "note": "No human or learner review performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+        "note": "R3 copy and isolated-fixture repair; exact current Carver re-review and main compiled verification pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+        "note": "R3 copy and isolated-fixture repair; exact current Carver re-review and main compiled verification pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+        "note": "No human or learner review performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+        "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/newton3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+        "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/newton3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-NUM-EQUALSTEP-SEQ",
+      "liteContentRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "actualFamilies": {
+        "rule": {
+          "taskKind": "choice",
+          "seed": 1,
+          "phase": "guided",
+          "say": "Kuinka pitkä on jokainen hyppy?",
+          "hint": "Paljonko on luvusta 5 lukuun 7?",
+          "explain": "5, 7, 9, 11: joka hyppy on + 2.",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "text": "+1",
+                "speak": "+1"
+              },
+              {
+                "text": "+2",
+                "speak": "+2"
+              },
+              {
+                "text": "+4",
+                "speak": "+4"
+              }
+            ],
+            "answer": 1,
+            "why": [
+              "Jos hyppy olisi 1, 5:n jälkeen tulisi 6, ei 7.",
+              null,
+              "Jos hyppy olisi 4, 5:n jälkeen tulisi 9, ei 7."
+            ]
+          },
+          "registry": {
+            "node": "M-NUM-EQUALSTEP-SEQ",
+            "tag": "rule",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "static",
+            "html": "<svg viewBox=\"0 0 274 90\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"38\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"38\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">5</text><ellipse cx=\"104\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"104\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">7</text><ellipse cx=\"170\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"170\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">9</text><ellipse cx=\"236\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"236\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">11</text><g>\n    <ellipse cx=\"38\" cy=\"27.15\" rx=\"13.65\" ry=\"7.15\" fill=\"#3e9b54\"/>\n    <ellipse cx=\"38\" cy=\"21.3\" rx=\"13\" ry=\"8.06\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"44.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"44.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"32.019999999999996\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"45.02\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"29.939999999999998\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <circle cx=\"46.06\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <path d=\"M32.15 21.95 Q38 27.15 43.85 21.95\" stroke=\"#1f4d2b\" stroke-width=\"1.04\" fill=\"none\" stroke-linecap=\"round\"/>\n  </g></svg>"
+          }
+        },
+        "extend": {
+          "taskKind": "build",
+          "seed": 2,
+          "phase": "guided",
+          "say": "Jatka jonoa kahdella kivellä.",
+          "hint": "Hyppy on 2. Lisää 2 viimeiseen lukuun.",
+          "explain": "0, 2, 4, 6, 8: joka kerta + 2.",
+          "task": {
+            "kind": "build",
+            "tokens": [
+              "6",
+              "8",
+              "7"
+            ],
+            "target": "6 8",
+            "mode": "seq",
+            "max": 2
+          },
+          "registry": {
+            "node": "M-NUM-EQUALSTEP-SEQ",
+            "tag": "extend",
+            "outcome": "rakentaa lausekkeen tai yhtälön merkkipaloista (samanarvoiset muodot hyväksytään)",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "static",
+            "html": "<svg viewBox=\"0 0 340 90\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"38\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"38\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">0</text><ellipse cx=\"104\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"104\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">2</text><ellipse cx=\"170\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"170\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">4</text><ellipse cx=\"236\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"var(--sun)\"/><text x=\"236\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#3a2c00\">?</text><ellipse cx=\"302\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"var(--sun)\"/><text x=\"302\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#3a2c00\">?</text><g>\n    <ellipse cx=\"38\" cy=\"27.15\" rx=\"13.65\" ry=\"7.15\" fill=\"#3e9b54\"/>\n    <ellipse cx=\"38\" cy=\"21.3\" rx=\"13\" ry=\"8.06\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"44.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"44.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"32.019999999999996\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"45.02\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"29.939999999999998\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <circle cx=\"46.06\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <path d=\"M32.15 21.95 Q38 27.15 43.85 21.95\" stroke=\"#1f4d2b\" stroke-width=\"1.04\" fill=\"none\" stroke-linecap=\"round\"/>\n  </g></svg>"
+          }
+        },
+        "which": {
+          "taskKind": "choice",
+          "seed": 4,
+          "phase": "guided",
+          "say": "Missä jonossa hypyt ovat kaikki yhtä pitkiä?",
+          "hint": "Laske jokaisen hypyn pituus: paljonko luku kasvaa?",
+          "explain": "2, 4, 6, 8: joka kerta + 2.",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "text": "2, 4, 7, 9",
+                "speak": "2, 4, 7, 9"
+              },
+              {
+                "text": "2, 3, 5, 8",
+                "speak": "2, 3, 5, 8"
+              },
+              {
+                "text": "2, 4, 6, 8",
+                "speak": "2, 4, 6, 8"
+              }
+            ],
+            "answer": 2,
+            "why": [
+              "Hypyt: 2, 3, 2. Keskimmäinen on pidempi.",
+              "Hypyt: 1, 2, 3. Ne pitenevät.",
+              null
+            ],
+            "cols": 1
+          },
+          "registry": {
+            "node": "M-NUM-EQUALSTEP-SEQ",
+            "tag": "which",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "none"
+          }
+        },
+        "step2": {
+          "taskKind": "choice",
+          "seed": 7,
+          "phase": "guided",
+          "say": "Hypyt ovat yhtä pitkiä. Mikä numero on seuraavassa kivessä?",
+          "hint": "Paljonko luku kasvaa joka kerta?",
+          "explain": "0, 2, 4, 6: joka kerta + 2.",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "big": "6"
+              },
+              {
+                "big": "5"
+              },
+              {
+                "big": "8"
+              }
+            ],
+            "answer": 0,
+            "why": [
+              null,
+              "Hyppy ei ole yksi vaan 2.",
+              "8 on kahden hypyn päässä: ennen sitä tulee 6."
+            ]
+          },
+          "registry": {
+            "node": "M-NUM-EQUALSTEP-SEQ",
+            "tag": "step2",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "static",
+            "html": "<svg viewBox=\"0 0 274 90\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"38\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"38\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">0</text><ellipse cx=\"104\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"104\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">2</text><ellipse cx=\"170\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"170\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">4</text><ellipse cx=\"236\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"var(--sun)\"/><text x=\"236\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#3a2c00\">?</text><g>\n    <ellipse cx=\"38\" cy=\"27.15\" rx=\"13.65\" ry=\"7.15\" fill=\"#3e9b54\"/>\n    <ellipse cx=\"38\" cy=\"21.3\" rx=\"13\" ry=\"8.06\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"44.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"44.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"32.019999999999996\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"45.02\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"29.939999999999998\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <circle cx=\"46.06\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <path d=\"M32.15 21.95 Q38 27.15 43.85 21.95\" stroke=\"#1f4d2b\" stroke-width=\"1.04\" fill=\"none\" stroke-linecap=\"round\"/>\n  </g></svg>"
+          }
+        },
+        "step5": {
+          "taskKind": "choice",
+          "seed": 9,
+          "phase": "guided",
+          "say": "Hypyt ovat yhtä pitkiä. Mikä numero on seuraavassa kivessä?",
+          "hint": "Paljonko luku kasvaa joka kerta?",
+          "explain": "15, 20, 25, 30: joka kerta + 5.",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "big": "35"
+              },
+              {
+                "big": "26"
+              },
+              {
+                "big": "30"
+              }
+            ],
+            "answer": 2,
+            "why": [
+              "35 on kahden hypyn päässä: ennen sitä tulee 30.",
+              "Hyppy ei ole yksi vaan 5.",
+              null
+            ]
+          },
+          "registry": {
+            "node": "M-NUM-EQUALSTEP-SEQ",
+            "tag": "step5",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "static",
+            "html": "<svg viewBox=\"0 0 274 90\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"38\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"38\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">15</text><ellipse cx=\"104\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"104\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">20</text><ellipse cx=\"170\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"170\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">25</text><ellipse cx=\"236\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"var(--sun)\"/><text x=\"236\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#3a2c00\">?</text><g>\n    <ellipse cx=\"38\" cy=\"27.15\" rx=\"13.65\" ry=\"7.15\" fill=\"#3e9b54\"/>\n    <ellipse cx=\"38\" cy=\"21.3\" rx=\"13\" ry=\"8.06\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"44.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"44.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"32.019999999999996\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"45.02\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"29.939999999999998\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <circle cx=\"46.06\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <path d=\"M32.15 21.95 Q38 27.15 43.85 21.95\" stroke=\"#1f4d2b\" stroke-width=\"1.04\" fill=\"none\" stroke-linecap=\"round\"/>\n  </g></svg>"
+          }
+        },
+        "step10": {
+          "taskKind": "choice",
+          "seed": 14,
+          "phase": "guided",
+          "say": "Hypyt ovat yhtä pitkiä. Mikä numero on seuraavassa kivessä?",
+          "hint": "Paljonko luku kasvaa joka kerta?",
+          "explain": "10, 20, 30, 40: joka kerta + 10.",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "big": "50"
+              },
+              {
+                "big": "40"
+              },
+              {
+                "big": "31"
+              }
+            ],
+            "answer": 1,
+            "why": [
+              "50 on kahden hypyn päässä: ennen sitä tulee 40.",
+              null,
+              "Hyppy ei ole yksi vaan 10."
+            ]
+          },
+          "registry": {
+            "node": "M-NUM-EQUALSTEP-SEQ",
+            "tag": "step10",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "static",
+            "html": "<svg viewBox=\"0 0 274 90\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"38\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"38\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">10</text><ellipse cx=\"104\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"104\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">20</text><ellipse cx=\"170\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"170\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">30</text><ellipse cx=\"236\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"var(--sun)\"/><text x=\"236\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#3a2c00\">?</text><g>\n    <ellipse cx=\"38\" cy=\"27.15\" rx=\"13.65\" ry=\"7.15\" fill=\"#3e9b54\"/>\n    <ellipse cx=\"38\" cy=\"21.3\" rx=\"13\" ry=\"8.06\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"44.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"44.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"32.019999999999996\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"45.02\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"29.939999999999998\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <circle cx=\"46.06\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <path d=\"M32.15 21.95 Q38 27.15 43.85 21.95\" stroke=\"#1f4d2b\" stroke-width=\"1.04\" fill=\"none\" stroke-linecap=\"round\"/>\n  </g></svg>"
+          }
+        },
+        "transfer": {
+          "taskKind": "choice",
+          "seed": 1,
+          "phase": "transfer",
+          "say": "Yhden kiven numero puuttuu. Mikä siinä on?",
+          "hint": "Katso kahta ensimmäistä kiveä: kuinka pitkä hyppy on?",
+          "explain": "Hyppy on 5: 5, 10, 15, 20.",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "big": "15"
+              },
+              {
+                "big": "25"
+              },
+              {
+                "big": "11"
+              }
+            ],
+            "answer": 0,
+            "why": [
+              null,
+              "25 tulisi viimeisen kiven jälkeen.",
+              "Hyppy ei ole yksi vaan 5."
+            ]
+          },
+          "registry": {
+            "node": "M-NUM-EQUALSTEP-SEQ",
+            "tag": "transfer",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "static",
+            "html": "<svg viewBox=\"0 0 274 90\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"38\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"38\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">5</text><ellipse cx=\"104\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"104\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">10</text><ellipse cx=\"170\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"var(--sun)\"/><text x=\"170\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#3a2c00\">?</text><ellipse cx=\"236\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"236\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">20</text><g>\n    <ellipse cx=\"38\" cy=\"27.15\" rx=\"13.65\" ry=\"7.15\" fill=\"#3e9b54\"/>\n    <ellipse cx=\"38\" cy=\"21.3\" rx=\"13\" ry=\"8.06\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"44.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"44.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"32.019999999999996\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"45.02\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"29.939999999999998\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <circle cx=\"46.06\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <path d=\"M32.15 21.95 Q38 27.15 43.85 21.95\" stroke=\"#1f4d2b\" stroke-width=\"1.04\" fill=\"none\" stroke-linecap=\"round\"/>\n  </g></svg>"
+          }
+        }
+      },
+      "demoCount": 3,
+      "comparison": "alignment.md",
+      "motionOverlay": false,
+      "sourceHashes": {
+        "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+        "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2",
+        "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+        "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+        "EVENT_COMMIT_REVIEW_B05.md": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+        "authority/production-181-v2/ASSETS.md": "bdccb0695c27382d99f8831077adf2f247b1bb168018bc5f829c510df3792c48",
+        "authority/production-181-v2/STYLE_REVIEW_FI.md": "aed7c1ba925e0743dc8f4d78b26cf875c5595e3afb39e0d3cd679f881b1683a4",
+        "authority/production-181-v2/ASSET_STYLE_GATE.txt": "fb5a31989b7ac7ad3f2e4f875ca86ea2f224821de09fa5eb4371fc3f36239fb7",
+        "authority/production-181-v2/lite/src/content/numbers.ts": "2ff4cae1816ea1d61ec938361a8306dc9a24d6e893f67895a390a83b7ae1c4d5",
+        "authority/production-181-v2/lite/src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+        "authority/production-181-v2/lite/src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "authority/production-181-v2/lite/src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+        "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "authority/production-181-v2/lite/src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da",
+        "shared/loikka/map.png": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6",
+        "shared/aava/curious.png": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      },
+      "state": "author_draft_review_pending"
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-NUM-EQUALSTEP-SEQ",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Lukujonot",
+        "title": "Tasavälisen lukujonon tunnistaminen ja jatkaminen",
+        "short_description": "Tasavälisen lukujonon tunnistaminen ja jatkaminen",
+        "source_basis": "pedagogically_derived",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2"
+        ],
+        "evidence_notes": "v0.2-refaktorissa erotettu noodista M-NUM-16 itsenäiseksi evidenssikohteeksi.",
+        "status": "candidate_refactored",
+        "node_kind": "concept",
+        "relations": [
+          {
+            "id": "M-NUM-07",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-NUM-07 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-NUM-07"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "split_from": "M-NUM-16",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Lukujonot"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-NUM-07"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "gradeBand": "1-2",
+      "teacherObjective": "Tasavälisen lukujonon tunnistaminen ja jatkaminen",
+      "childGoal": "Tunnistan samanpituiset askeleet ja jatkan lukujonoa.",
+      "role": "atomic",
+      "scope": "Tuettu tunnistus ja kahden luvun jatko eivät osoita kaikkien lukujonojen sääntöjen hallintaa tai kertotaulumuistia. Tässä tasavälisyys tarkoittaa samaa positiivista lisäystä; ei kaikkia matemaattisia jonoja eikä negatiivisia lukuja.",
+      "assumed": [
+        "Only canonical M-NUM-07; words/numerals/rule explained in place."
+      ],
+      "concreteToRepresentation": "Free controlled route exploration, numeric affine path, explained examples, practice; equal groups show countable units where used.",
+      "help": "Optional model/worded scaffold; never automatically enters answer.",
+      "offline": "Piirrä yhden välein numeroitu polku. Näytä yhtä suuri kahden tai viiden väli eri kohdista. Tee myös jono, jossa väli vaihtuu. Tarkista välit, älä vain sitä, kasvavatko luvut.",
+      "exit": "Jatka samalla askeleella: 3, 6, 9, … Mikä on askelen koko?",
+      "evidenceLimits": "Tuettu tunnistus ja kahden luvun jatko eivät osoita kaikkien lukujonojen sääntöjen hallintaa tai kertotaulumuistia. Tässä tasavälisyys tarkoittaa samaa positiivista lisäystä; ei kaikkia matemaattisia jonoja eikä negatiivisia lukuja.",
+      "assetProvenance": "Original exact SVGs and unchanged user-supplied shared PNG. No protected figure copied; no new raster or licence grant."
+    },
+    "extensions": {
+      "productionBatch": "B10",
+      "author": "Newton",
+      "simulationType": "equal_affine_numberline_and_standalone_practice",
+      "independentReview": "pending_different_author_Carver",
+      "humanReview": "not_performed",
+      "evidencePolicy": "Local technical practice; no learner persistence, formal mastery or efficacy.",
+      "timing": "900ms per illustrative step, completed-arrival captions; not a physical speed model.",
+      "uiDirection": {
+        "setting": "Loikka and Aava exploring a numbered shore path and equally filled trays",
+        "material": "quiet cream paper, green ink, restrained pond-blue action, supplied textured PNG hook",
+        "view": "2D affine numeric axis and exact counted group diagrams; native DOM controls",
+        "firstAction": "one step immediately available; no forced introduction or speech",
+        "motion": "only deliberate numeric marker motion, no decorative autoplay; optional play/stop/step/start; finite nonnegative routes",
+        "mobile": "single column, wrapping44px buttons, collapsed optional help/teacher details, diagrams retain metric geometry"
+      },
+      "sourcePreviewLimit": "Author native HTTP preview is not actual compiled115 integration.",
+      "entryRepair": {
+        "reason": "Actual compiled full-shell P2 entry: r1 diagram/caption below initial844 viewport.",
+        "scope": "Own body ordering, compact intro and control typography only; shared header chrome owned by main.",
+        "controls": "Primary step stays with current diagram/caption; route/play/stop/start and group support remain optional in disclosure.",
+        "preserved": "Canonical h1/draft/teacher/navigation, all examples/content/limits/math/module/lifecycle unchanged.",
+        "verification": "Actual current compiled shell after main r2 rebuild required; candidate clone/source preview is not acceptance."
+      },
+      "copyRepair": {
+        "reason": "Main-requested Finnish one-step singular and removal of redundant repeated hook, after independent review safe boundary.",
+        "scope": "Completed caption wording only; duplicate hook removed; equal-step unique route question retained in teacher details. No mathematical/control/layout/CSS changes.",
+        "testFixture": "Use central disposable pending→reviewed→stale lifecycle helper without assuming the copied real review is pending; verify fixture metadata restored byte-exact.",
+        "historicalEvidence": "Main actual r2 entry9/9 and interaction9/9 remain r2-only; actual rebuilt r3 affected entry verification and Carver exact-r3 review pending."
+      }
+    },
+    "contentHash": "d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+    "contentRevision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@30732fc049acbddcad7bc0f27364a8353a72c650a9e8d4cd33c3a473b45ce3ce",
+          "note": "Author draft; different-author review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@6a341e7ad2794fc1febc92adc39c3d32b4a2d00d6c558458337a2436211ba83d",
+          "note": "R2 entry repair; exact current Carver re-review and main compiled verification pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+          "note": "R3 copy and isolated-fixture repair; exact current Carver re-review and main compiled verification pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+          "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/newton3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@30732fc049acbddcad7bc0f27364a8353a72c650a9e8d4cd33c3a473b45ce3ce",
+          "note": "No human or learner review performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@6a341e7ad2794fc1febc92adc39c3d32b4a2d00d6c558458337a2436211ba83d",
+          "note": "No human or learner review performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+          "note": "No human or learner review performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@30732fc049acbddcad7bc0f27364a8353a72c650a9e8d4cd33c3a473b45ce3ce",
+          "note": "Author draft; different-author review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@6a341e7ad2794fc1febc92adc39c3d32b4a2d00d6c558458337a2436211ba83d",
+          "note": "R2 entry repair; exact current Carver re-review and main compiled verification pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+          "note": "R3 copy and isolated-fixture repair; exact current Carver re-review and main compiled verification pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "3@d598af35ca15761cdf87dc4767a7e0da0c6f42c5f6345412c2b677692e9a95bb",
+          "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/newton3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "76d68e0cf13f8eb0ca97a18496ea938eaaeade2ccb8fd1fe5a98d3868369d5ca",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "aff10650c09128e13cbadbdffb65a698fcdf94bf5d4a572195a3c31de7f33640",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "76d68e0cf13f8eb0ca97a18496ea938eaaeade2ccb8fd1fe5a98d3868369d5ca",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

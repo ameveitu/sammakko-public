@@ -1,0 +1,2436 @@
+schema_version: 0.4.0
+id: Golden_KC_Subgraph_Required_Closure_v0.4
+anchor_kc: PHY79-SPEED-CONCEPT
+selection_rule: Original anchor-centered intended membership plus transitive required-prerequisite closure
+  from frozen baseline relations and groups; no descendant expansion from newly added prerequisites.
+baseline_catalog: STEM_KC_Catalogs_v0.2
+frozen_for_bootstrap: true
+change_policy: Generated working-slice projection. Frozen 690-node catalog and historical v0.3 seed are
+  unchanged. See ADR-0003.
+seed_slice: Golden_KC_Subgraph_45_Full_v0.3
+seed_nodes: 45
+closure_added_ids:
+  - PHY79-DATA-01
+  - PHY79-GRAPH-01
+  - PHY79-UNIT-CONV
+  - SCI-ENV-DATA-01
+  - SCI-ENV-PRESENT-DATA-01
+  - SCI-ENV-RECORD-01
+  - SCI-ENV-RECORD-DATA-01
+counts:
+  nodes: 52
+  internal_relations: 82
+  required_topology_edges: 63
+foundation_entries:
+  - M-MEAS-00
+  - M-NUM-1TO1
+  - M-NUM-STABLE-ORDER
+  - M-TH-01
+  - SCI-ENV-OBSERVE-01
+suggested_required_topological_order:
+  - M-MEAS-00
+  - M-NUM-1TO1
+  - M-NUM-STABLE-ORDER
+  - M-NUM-WORD-NUMERAL
+  - M-TH-01
+  - SCI-ENV-OBSERVE-01
+  - M-MEAS-02
+  - M-TIME-01
+  - M-NUM-01
+  - ENV-PHY-MOTION-OBS-01
+  - M-TIME-03
+  - M-MEAS-01
+  - M-NUM-02
+  - ENV-PHY-MOTION-CHANGE-01
+  - PHY79-QTY-CONCEPT
+  - M-ADD-01
+  - M-DIV-02
+  - M-NUM-QTY-NUMERAL
+  - M-NUM-QTY-WORD
+  - ENV-PHY-MOTION-01
+  - PHY79-NUMVALUE
+  - PHY79-UNIT-CONCEPT
+  - M-MUL-01
+  - M-NUM-03
+  - PHY79-MOTION-REF
+  - PHY79-QTY-01
+  - M-MULTREL-01
+  - M-NUM-07
+  - M-NUM-14
+  - PHY79-DIST-TIME
+  - M-NUM-EQUALSTEP-SEQ
+  - M-NUM-MULTIPLE-INTRO
+  - PHY79-SPEED-CONCEPT
+  - M-NUM-16
+  - PHY79-ACCEL-CONCEPT
+  - PHY79-SPEED-CALC
+  - PHY79-SPEED-UNIT
+  - PHY79-ACCEL-CALC
+  - PHY79-ACCEL-MOTION-GRAPH
+  - PHY79-ACCEL-VT-GRAPH
+  - PHY79-SPEED-REARR
+  - PHY79-ACCEL-GRAPH
+  - PHY79-UNIT-CONV
+  - PHY79-SPEED-MIXED
+  - SCI-ENV-PRESENT-DATA-01
+  - SCI-ENV-RECORD-DATA-01
+  - SCI-ENV-RECORD-01
+  - SCI-ENV-DATA-01
+  - PHY79-DATA-01
+  - PHY79-GRAPH-01
+  - PHY79-ST-GRAPH
+  - PHY79-VT-GRAPH
+nodes:
+  - id: ENV-PHY-MOTION-01
+    subject: science
+    grade_band: 1-2
+    topic_area: Fysiikan alkutiedot
+    parent_concept: Liike
+    title: Liikkeen ja liikkeen muutoksen havainnointi
+    short_description: Liikkeen ja liikkeen muutoksen havainnointi
+    node_kind: integration
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - ENV12-S4
+    relations:
+      - id: ENV-PHY-MOTION-OBS-01
+        relation_type: prerequisite
+        strength: required
+        rationale: ENV-PHY-MOTION-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-MOTION-OBS-01 vaaditaan
+          kokonaisuuden hallintaan.
+      - id: ENV-PHY-MOTION-CHANGE-01
+        relation_type: prerequisite
+        strength: required
+        rationale: ENV-PHY-MOTION-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-MOTION-CHANGE-01
+          vaaditaan kokonaisuuden hallintaan.
+    prerequisite_groups:
+      - all_of:
+          - ENV-PHY-MOTION-OBS-01
+          - ENV-PHY-MOTION-CHANGE-01
+        rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot
+          hallitaan.
+    evidence_notes: "v0.2-integraationoodi. Atomiset mastery-tilat: ENV-PHY-MOTION-OBS-01,
+      ENV-PHY-MOTION-CHANGE-01. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä
+      masteryä."
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored_integration
+    entry_role: none
+    mastery_role: integration
+    split_children:
+      - ENV-PHY-MOTION-OBS-01
+      - ENV-PHY-MOTION-CHANGE-01
+    integration_of:
+      - ENV-PHY-MOTION-OBS-01
+      - ENV-PHY-MOTION-CHANGE-01
+    dynamic_prerequisite_rule: null
+    concept_path:
+      - Ympäristöoppi / luonnontieteellinen perusta
+      - Fysiikan alkutiedot
+      - Liike
+  - id: ENV-PHY-MOTION-CHANGE-01
+    subject: science
+    grade_band: 1-2
+    topic_area: Fysiikan alkutiedot
+    parent_concept: Liike
+    title: Liikkeen muutoksen havainnointi
+    short_description: Liikkeen muutoksen havainnointi
+    node_kind: concept
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - ENV12-S4
+    relations:
+      - id: SCI-ENV-OBSERVE-01
+        relation_type: prerequisite
+        strength: required
+        rationale: Liikkeen havainnointi perustuu yleiseen havainnointitaitoon.
+      - id: ENV-PHY-MOTION-OBS-01
+        relation_type: prerequisite
+        strength: required
+        rationale: Liikkeen muutos edellyttää ensin liikkeen tunnistamista.
+    prerequisite_groups:
+      - all_of:
+          - SCI-ENV-OBSERVE-01
+          - ENV-PHY-MOTION-OBS-01
+        rationale: Muutos tunnistetaan jo havaitussa liikkeessä.
+    evidence_notes: v0.2-refaktorissa erotettu noodista ENV-PHY-MOTION-01 itsenäiseksi evidenssikohteeksi.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored
+    entry_role: none
+    mastery_role: atomic
+    split_from: ENV-PHY-MOTION-01
+    concept_path:
+      - Ympäristöoppi / luonnontieteellinen perusta
+      - Fysiikan alkutiedot
+      - Liike
+  - id: ENV-PHY-MOTION-OBS-01
+    subject: science
+    grade_band: 1-2
+    topic_area: Fysiikan alkutiedot
+    parent_concept: Liike
+    title: Liikkeen havainnointi
+    short_description: Liikkeen havainnointi
+    node_kind: concept
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - ENV12-S4
+    relations:
+      - id: SCI-ENV-OBSERVE-01
+        relation_type: prerequisite
+        strength: required
+        rationale: Liikkeen havainnointi perustuu yleiseen havainnointitaitoon.
+    prerequisite_groups:
+      - all_of:
+          - SCI-ENV-OBSERVE-01
+        rationale: Yleinen havainnointi on ydinesitieto.
+    evidence_notes: v0.2-refaktorissa erotettu noodista ENV-PHY-MOTION-01 itsenäiseksi evidenssikohteeksi.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored
+    entry_role: none
+    mastery_role: atomic
+    split_from: ENV-PHY-MOTION-01
+    concept_path:
+      - Ympäristöoppi / luonnontieteellinen perusta
+      - Fysiikan alkutiedot
+      - Liike
+  - id: M-ADD-01
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Yhteenlasku
+    title: Yhteenlasku kahden määrän yhdistämisenä
+    short_description: Yhteenlasku kahden määrän yhdistämisenä
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.
+    status: candidate
+    required_root: false
+    root_kind: none
+    node_kind: procedure
+    relations:
+      - id: M-NUM-02
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-02 on tämän osaamiskohteen välitön välttämätön esitieto.
+    prerequisite_groups:
+      - all_of:
+          - M-NUM-02
+        rationale: v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Yhteenlasku
+  - id: M-DIV-02
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Jakolasku
+    title: "Sisältöjako: selvitetään montako annettua ryhmää määrään mahtuu"
+    short_description: "Sisältöjako: selvitetään montako annettua ryhmää määrään mahtuu"
+    source_basis: assessment_refined
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+      - OPH-MATH-VL6-ASSESSMENT-SUPPORT
+    evidence_notes: Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.
+    status: candidate
+    required_root: false
+    root_kind: none
+    node_kind: concept
+    relations:
+      - id: M-MUL-01
+        relation_type: prerequisite
+        strength: strong
+        rationale: Sisältöjako voidaan rakentaa ryhmittelynä ennen kertolaskun muodollista hallintaa.
+      - id: M-NUM-02
+        relation_type: prerequisite
+        strength: required
+        rationale: Ryhmiteltävä määrä pitää hahmottaa lukumääränä.
+    prerequisite_groups:
+      - all_of:
+          - M-NUM-02
+        rationale: Sisältöjaon vähimmäisesitieto on lukumäärän hallinta; kertolasku on vahva yhteys.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Jakolasku
+  - id: M-MEAS-00
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Geometria ja mittaaminen
+    parent_concept: Mittaamisen valmius
+    title: Mitattavien ominaisuuksien suora vertaaminen
+    short_description: Mitattavien ominaisuuksien suora vertaaminen
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S3
+    evidence_notes: FOUNDATION ROOT / 0-NOODI. Lisätty katkaisemaan mittaamisen keinotekoinen esitietokierto.
+    status: candidate
+    required_root: true
+    root_kind: foundation
+    root_note: Ei required-esitietoa tässä katalogissa. Tämä ei sulje pois strong/helpful- tai dynaamisia valmiuksia.
+    node_kind: foundation
+    relations:
+      - id: M-TH-01
+        relation_type: prerequisite
+        strength: strong
+        rationale: Yleinen vertailutaito tukee mitattavien ominaisuuksien suoraa vertaamista, mutta ei ole hard gate.
+    prerequisite_groups: []
+    foundation_entry: true
+    zero_required_indegree: true
+    foundation_entry_rationale: Suora ominaisuuksien vertailu edeltää standardiyksiköllä mittaamista.
+    entry_role: foundation
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Geometria ja mittaaminen
+      - Mittaamisen valmius
+  - id: M-MEAS-01
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Geometria ja mittaaminen
+    parent_concept: Mittaamisen periaate
+    title: Mittaaminen suureen vertaamisena sovittuun yksikköön
+    short_description: Mittaaminen suureen vertaamisena sovittuun yksikköön
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S3
+    evidence_notes: Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.
+    status: candidate
+    required_root: false
+    root_kind: none
+    node_kind: procedure
+    relations:
+      - id: M-MEAS-00
+        relation_type: prerequisite
+        strength: required
+        rationale: M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto.
+      - id: M-NUM-01
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-01 on tämän osaamiskohteen välitön välttämätön esitieto.
+    prerequisite_groups:
+      - all_of:
+          - M-MEAS-00
+          - M-NUM-01
+        rationale: v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Geometria ja mittaaminen
+      - Mittaamisen periaate
+  - id: M-MEAS-02
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Geometria ja mittaaminen
+    parent_concept: Pituus
+    title: Pituuden ymmärtäminen suureeksi
+    short_description: Pituuden ymmärtäminen suureeksi
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S3
+    evidence_notes: Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.
+    status: candidate
+    required_root: false
+    root_kind: none
+    node_kind: concept
+    relations:
+      - id: M-MEAS-00
+        relation_type: prerequisite
+        strength: required
+        rationale: M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto.
+    prerequisite_groups:
+      - all_of:
+          - M-MEAS-00
+        rationale: v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Geometria ja mittaaminen
+      - Pituus
+  - id: M-MUL-01
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Kertolasku
+    title: Kertolasku yhtä suurten ryhmien toistumisena
+    short_description: Kertolasku yhtä suurten ryhmien toistumisena
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.
+    status: candidate
+    required_root: false
+    root_kind: none
+    node_kind: procedure
+    relations:
+      - id: M-ADD-01
+        relation_type: prerequisite
+        strength: required
+        rationale: M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto.
+      - id: M-NUM-16
+        relation_type: prerequisite
+        strength: strong
+        rationale: Yhtä suurten ryhmien kertolaskukäsite voidaan rakentaa suoraan yhteenlaskusta ilman valmista
+          monikertajonotaitoa.
+    prerequisite_groups:
+      - all_of:
+          - M-ADD-01
+        rationale: Yhtä suurten ryhmien toistuminen rakentuu yhteenlaskun yhdistämismerkityksen päälle.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Kertolasku
+  - id: M-MULTREL-01
+    subject: mathematics
+    grade_band: 3-6
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Multiplikatiivinen ajattelu
+    title: "Multiplikatiivinen vertailu: x kertaa niin paljon"
+    short_description: "Multiplikatiivinen vertailu: x kertaa niin paljon"
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL3-6-S2
+    evidence_notes: Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.
+    status: candidate
+    required_root: false
+    root_kind: none
+    node_kind: concept
+    relations:
+      - id: M-MUL-01
+        relation_type: prerequisite
+        strength: required
+        rationale: M-MUL-01 on tämän osaamiskohteen välitön välttämätön esitieto.
+      - id: M-DIV-02
+        relation_type: prerequisite
+        strength: strong
+        rationale: Multiplikatiivinen vertailu voidaan rakentaa kertolaskun kautta; sisältöjako on hyödyllinen
+          käänteissuhteen ymmärtämiseen.
+    prerequisite_groups:
+      - all_of:
+          - M-MUL-01
+        rationale: Kertolaskun merkitys on ydinesitieto.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Multiplikatiivinen ajattelu
+  - id: M-NUM-01
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Laskemisen periaatteet
+    title: Kohteiden laskeminen yksi yhteen -vastaavuudella
+    short_description: Kohteiden laskeminen yksi yhteen -vastaavuudella
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: "v0.2-integraationoodi. Atomiset mastery-tilat: M-NUM-STABLE-ORDER, M-NUM-1TO1. Lisäksi
+      vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä."
+    status: candidate_refactored_integration
+    required_root: true
+    root_kind: foundation
+    root_note: Ei required-esitietoa tässä katalogissa. Tämä ei sulje pois strong/helpful- tai dynaamisia valmiuksia.
+    node_kind: integration
+    relations:
+      - id: M-NUM-STABLE-ORDER
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-01 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-STABLE-ORDER vaaditaan kokonaisuuden
+          hallintaan.
+      - id: M-NUM-1TO1
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-01 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-1TO1 vaaditaan kokonaisuuden
+          hallintaan.
+    prerequisite_groups:
+      - all_of:
+          - M-NUM-STABLE-ORDER
+          - M-NUM-1TO1
+        rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot
+          hallitaan.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: Yksi yhteen -laskeminen on lukukäsitteen pedagoginen aloituspiste.
+    entry_role: none
+    mastery_role: integration
+    split_children:
+      - M-NUM-STABLE-ORDER
+      - M-NUM-1TO1
+    integration_of:
+      - M-NUM-STABLE-ORDER
+      - M-NUM-1TO1
+    dynamic_prerequisite_rule: null
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Lukukäsite
+      - Laskemisen periaatteet
+  - id: M-NUM-02
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Kardinaliteetti
+    title: Laskennan viimeinen lukusana kertoo koko joukon lukumäärän
+    short_description: Kun kohteet on laskettu oikein, viimeisenä sanottu lukusana ilmaisee koko joukon lukumäärän
+      (kardinaliteettiperiaate).
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.
+    status: candidate
+    required_root: false
+    root_kind: none
+    node_kind: concept
+    relations:
+      - id: M-NUM-01
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-01 on tämän osaamiskohteen välitön välttämätön esitieto.
+    prerequisite_groups:
+      - all_of:
+          - M-NUM-01
+        rationale: v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Lukukäsite
+      - Kardinaliteetti
+  - id: M-NUM-03
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Lukumäärän representaatiot
+    title: Lukumäärän, lukusanan ja numeromerkinnän yhdistäminen
+    short_description: Lukumäärän, lukusanan ja numeromerkinnän yhdistäminen
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: "v0.2-integraationoodi. Atomiset mastery-tilat: M-NUM-QTY-WORD, M-NUM-QTY-NUMERAL,
+      M-NUM-WORD-NUMERAL. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä
+      masteryä."
+    status: candidate_refactored_integration
+    required_root: false
+    root_kind: none
+    node_kind: integration
+    relations:
+      - id: M-NUM-QTY-WORD
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-03 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-QTY-WORD vaaditaan kokonaisuuden
+          hallintaan.
+      - id: M-NUM-QTY-NUMERAL
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-03 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-QTY-NUMERAL vaaditaan kokonaisuuden
+          hallintaan.
+      - id: M-NUM-WORD-NUMERAL
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-03 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-WORD-NUMERAL vaaditaan kokonaisuuden
+          hallintaan.
+    prerequisite_groups:
+      - all_of:
+          - M-NUM-QTY-WORD
+          - M-NUM-QTY-NUMERAL
+          - M-NUM-WORD-NUMERAL
+        rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot
+          hallitaan.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: integration
+    split_children:
+      - M-NUM-QTY-WORD
+      - M-NUM-QTY-NUMERAL
+      - M-NUM-WORD-NUMERAL
+    integration_of:
+      - M-NUM-QTY-WORD
+      - M-NUM-QTY-NUMERAL
+      - M-NUM-WORD-NUMERAL
+    dynamic_prerequisite_rule: null
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Lukukäsite
+      - Lukumäärän representaatiot
+  - id: M-NUM-07
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Lukujono
+    title: Lukujonon jatkaminen eteenpäin
+    short_description: Lukujonon jatkaminen eteenpäin
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.
+    status: candidate
+    required_root: false
+    root_kind: none
+    node_kind: procedure
+    relations:
+      - id: M-NUM-03
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-03 on tämän osaamiskohteen välitön välttämätön esitieto.
+    prerequisite_groups:
+      - all_of:
+          - M-NUM-03
+        rationale: v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Lukujono
+  - id: M-NUM-14
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Luvun käyttötarkoitus
+    title: Luvun käyttäminen mittaustuloksen ilmaisemiseen
+    short_description: Luvun käyttäminen mittaustuloksen ilmaisemiseen
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.
+    status: candidate
+    required_root: false
+    root_kind: none
+    node_kind: procedure
+    relations:
+      - id: M-NUM-03
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-03 on tämän osaamiskohteen välitön välttämätön esitieto.
+      - id: M-MEAS-01
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-MEAS-01 tukee olennaisesti oppimista, mutta puute voidaan korjata noodin sisällä.
+    prerequisite_groups:
+      - all_of:
+          - M-NUM-03
+        rationale: v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Luvun käyttötarkoitus
+  - id: M-NUM-16
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Lukujen ominaisuudet
+    title: Tasavälisen lukujonon ja monikerran alun tunnistaminen
+    short_description: Tasavälisen lukujonon ja monikerran alun tunnistaminen
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: "v0.2-integraationoodi. Atomiset mastery-tilat: M-NUM-EQUALSTEP-SEQ, M-NUM-MULTIPLE-INTRO.
+      Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä."
+    status: candidate_refactored_integration
+    required_root: false
+    root_kind: none
+    node_kind: integration
+    relations:
+      - id: M-NUM-EQUALSTEP-SEQ
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-16 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-EQUALSTEP-SEQ vaaditaan
+          kokonaisuuden hallintaan.
+      - id: M-NUM-MULTIPLE-INTRO
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-16 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-MULTIPLE-INTRO vaaditaan
+          kokonaisuuden hallintaan.
+    prerequisite_groups:
+      - all_of:
+          - M-NUM-EQUALSTEP-SEQ
+          - M-NUM-MULTIPLE-INTRO
+        rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot
+          hallitaan.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: integration
+    split_children:
+      - M-NUM-EQUALSTEP-SEQ
+      - M-NUM-MULTIPLE-INTRO
+    integration_of:
+      - M-NUM-EQUALSTEP-SEQ
+      - M-NUM-MULTIPLE-INTRO
+    dynamic_prerequisite_rule: null
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Lukujen ominaisuudet
+  - id: M-NUM-1TO1
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Laskemisen periaatteet
+    title: Yhden lukusanan kohdistaminen kuhunkin laskettavaan kohteeseen
+    short_description: Yhden lukusanan kohdistaminen kuhunkin laskettavaan kohteeseen
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: v0.2-refaktorissa erotettu noodista M-NUM-01 itsenäiseksi evidenssikohteeksi.
+    status: candidate_refactored
+    node_kind: foundation
+    relations: []
+    prerequisite_groups: []
+    foundation_entry: true
+    zero_required_indegree: true
+    foundation_entry_rationale: Yksi yhteen -laskeminen on lukukäsitteen pedagoginen aloituspiste.
+    entry_role: foundation
+    mastery_role: atomic
+    split_from: M-NUM-01
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Lukukäsite
+      - Laskemisen periaatteet
+  - id: M-NUM-EQUALSTEP-SEQ
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Lukujonot
+    title: Tasavälisen lukujonon tunnistaminen ja jatkaminen
+    short_description: Tasavälisen lukujonon tunnistaminen ja jatkaminen
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: v0.2-refaktorissa erotettu noodista M-NUM-16 itsenäiseksi evidenssikohteeksi.
+    status: candidate_refactored
+    node_kind: concept
+    relations:
+      - id: M-NUM-07
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-07 on tämän osaamiskohteen välitön välttämätön esitieto.
+    prerequisite_groups:
+      - all_of:
+          - M-NUM-07
+        rationale: v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    split_from: M-NUM-16
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Lukujonot
+  - id: M-NUM-MULTIPLE-INTRO
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Monikerrat
+    title: Monikerran käsitteen alku
+    short_description: Monikerran käsitteen alku
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: v0.2-refaktorissa erotettu noodista M-NUM-16 itsenäiseksi evidenssikohteeksi.
+    status: candidate_refactored
+    node_kind: concept
+    relations:
+      - id: M-NUM-07
+        relation_type: prerequisite
+        strength: required
+        rationale: M-NUM-07 on tämän osaamiskohteen välitön välttämätön esitieto.
+    prerequisite_groups:
+      - all_of:
+          - M-NUM-07
+        rationale: v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    split_from: M-NUM-16
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Monikerrat
+  - id: M-NUM-QTY-NUMERAL
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Lukumäärän representaatiot
+    title: Lukumäärän yhdistäminen sitä vastaavaan numeromerkintään
+    short_description: Lukumäärän yhdistäminen sitä vastaavaan numeromerkintään
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: v0.2-refaktorissa erotettu noodista M-NUM-03 itsenäiseksi evidenssikohteeksi.
+    status: candidate_refactored
+    node_kind: representation
+    relations:
+      - id: M-NUM-02
+        relation_type: prerequisite
+        strength: required
+        rationale: Lukumäärän käsitteen hallinta tarvitaan määrän yhdistämiseksi representaatioon.
+    prerequisite_groups:
+      - all_of:
+          - M-NUM-02
+        rationale: Kardinaliteetti on määrärelaation ydinesitieto.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: process
+    split_from: M-NUM-03
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Lukumäärän representaatiot
+  - id: M-NUM-QTY-WORD
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Lukumäärän representaatiot
+    title: Lukumäärän yhdistäminen sitä vastaavaan lukusanaan
+    short_description: Lukumäärän yhdistäminen sitä vastaavaan lukusanaan
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: v0.2-refaktorissa erotettu noodista M-NUM-03 itsenäiseksi evidenssikohteeksi.
+    status: candidate_refactored
+    node_kind: representation
+    relations:
+      - id: M-NUM-02
+        relation_type: prerequisite
+        strength: required
+        rationale: Lukumäärän käsitteen hallinta tarvitaan määrän yhdistämiseksi representaatioon.
+    prerequisite_groups:
+      - all_of:
+          - M-NUM-02
+        rationale: Kardinaliteetti on määrärelaation ydinesitieto.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: process
+    split_from: M-NUM-03
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Lukumäärän representaatiot
+  - id: M-NUM-STABLE-ORDER
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Laskemisen periaatteet
+    title: Lukusanojen käyttäminen vakaassa järjestyksessä
+    short_description: Lukusanojen käyttäminen vakaassa järjestyksessä
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: v0.2-refaktorissa erotettu noodista M-NUM-01 itsenäiseksi evidenssikohteeksi.
+    status: candidate_refactored
+    node_kind: foundation
+    relations: []
+    prerequisite_groups: []
+    foundation_entry: true
+    zero_required_indegree: true
+    foundation_entry_rationale: Yksi yhteen -laskeminen on lukukäsitteen pedagoginen aloituspiste.
+    entry_role: foundation
+    mastery_role: atomic
+    split_from: M-NUM-01
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Lukukäsite
+      - Laskemisen periaatteet
+  - id: M-NUM-WORD-NUMERAL
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Luvut ja laskutoimitukset
+    parent_concept: Lukumäärän representaatiot
+    title: Lukusanan yhdistäminen sitä vastaavaan numeromerkintään
+    short_description: Lukusanan yhdistäminen sitä vastaavaan numeromerkintään
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S2
+    evidence_notes: v0.2-refaktorissa erotettu noodista M-NUM-03 itsenäiseksi evidenssikohteeksi.
+    status: candidate_refactored
+    node_kind: representation
+    relations:
+      - id: M-NUM-STABLE-ORDER
+        relation_type: prerequisite
+        strength: strong
+        rationale: Vakaa lukusanajono tukee lukusanan ja numeromerkin vastaavuuden oppimista.
+    prerequisite_groups: []
+    foundation_entry: false
+    zero_required_indegree: true
+    foundation_entry_rationale: null
+    entry_role: dynamic
+    mastery_role: process
+    split_from: M-NUM-03
+    concept_path:
+      - Matematiikka
+      - Luvut ja laskutoimitukset
+      - Lukumäärän representaatiot
+  - id: M-TH-01
+    subject: mathematics
+    grade_band: 1-6
+    topic_area: Ajattelun taidot
+    parent_concept: Vertailu
+    title: Yhtäläisyyksien ja erojen havaitseminen
+    short_description: Yhtäläisyyksien ja erojen havaitseminen
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S1
+      - OPH-POPS2014-MATH-VL3-6-S1
+    evidence_notes: FOUNDATION ROOT. Ei required-esitietoa.
+    status: candidate
+    required_root: true
+    root_kind: foundation
+    root_note: Ei required-esitietoa tässä katalogissa. Tämä ei sulje pois strong/helpful- tai dynaamisia valmiuksia.
+    node_kind: foundation
+    relations: []
+    prerequisite_groups: []
+    foundation_entry: true
+    zero_required_indegree: true
+    foundation_entry_rationale: Havainnollinen vertailu voidaan aloittaa ilman muodollista matematiikan esitietoa.
+    entry_role: foundation
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Ajattelun taidot
+      - Vertailu
+  - id: M-TIME-01
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Geometria ja mittaaminen
+    parent_concept: Aika
+    title: Ajan ymmärtäminen mitattavana suureena
+    short_description: Ajan ymmärtäminen mitattavana suureena
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S3
+    evidence_notes: Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.
+    status: candidate
+    required_root: false
+    root_kind: none
+    node_kind: concept
+    relations:
+      - id: M-MEAS-00
+        relation_type: prerequisite
+        strength: required
+        rationale: M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto.
+    prerequisite_groups:
+      - all_of:
+          - M-MEAS-00
+        rationale: v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Geometria ja mittaaminen
+      - Aika
+  - id: M-TIME-03
+    subject: mathematics
+    grade_band: 1-2
+    topic_area: Geometria ja mittaaminen
+    parent_concept: Aikayksiköt
+    title: Aikayksiköiden ja keston yhteyden ymmärtäminen
+    short_description: Aikayksiköiden ja keston yhteyden ymmärtäminen
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - OPH-POPS2014-MATH-VL1-2-S3
+    evidence_notes: Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.
+    status: candidate
+    required_root: false
+    root_kind: none
+    node_kind: concept
+    relations:
+      - id: M-TIME-01
+        relation_type: prerequisite
+        strength: required
+        rationale: M-TIME-01 on tämän osaamiskohteen välitön välttämätön esitieto.
+    prerequisite_groups:
+      - all_of:
+          - M-TIME-01
+        rationale: v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään.
+    foundation_entry: false
+    zero_required_indegree: false
+    foundation_entry_rationale: null
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Matematiikka
+      - Geometria ja mittaaminen
+      - Aikayksiköt
+  - id: PHY79-ACCEL-CALC
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Muuttuva liike
+    title: Keskimääräisen kiihtyvyyden laskeminen nopeuden muutoksesta ja ajasta
+    short_description: Keskimääräisen kiihtyvyyden laskeminen nopeuden muutoksesta ja ajasta
+    node_kind: procedure
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-ACCEL-CONCEPT
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-ACCEL-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+      - id: M79-INT-SUB
+        relation_type: prerequisite
+        strength: strong
+        rationale: M79-INT-SUB tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+      - id: M-DIV-01
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-DIV-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-ACCEL-CONCEPT
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Muuttuva liike
+  - id: PHY79-ACCEL-CONCEPT
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Muuttuva liike
+    title: Kiihtyvyyden ymmärtäminen nopeuden muutoksena ajassa
+    short_description: Kiihtyvyyden ymmärtäminen nopeuden muutoksena ajassa
+    node_kind: concept
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-SPEED-CONCEPT
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+      - id: M-MULTREL-01
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-MULTREL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-SPEED-CONCEPT
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Muuttuva liike
+  - id: PHY79-ACCEL-GRAPH
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Muuttuva liike
+    title: Muuttuvan liikkeen tunnistaminen liike- ja nopeuskuvaajista
+    short_description: Muuttuvan liikkeen tunnistaminen liike- ja nopeuskuvaajista
+    node_kind: integration
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-ACCEL-MOTION-GRAPH
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-ACCEL-GRAPH on v0.2:ssa integraationoodi; atominen alitaito PHY79-ACCEL-MOTION-GRAPH
+          vaaditaan kokonaisuuden hallintaan.
+      - id: PHY79-ACCEL-VT-GRAPH
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-ACCEL-GRAPH on v0.2:ssa integraationoodi; atominen alitaito PHY79-ACCEL-VT-GRAPH vaaditaan
+          kokonaisuuden hallintaan.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-ACCEL-MOTION-GRAPH
+          - PHY79-ACCEL-VT-GRAPH
+        rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot
+          hallitaan.
+    evidence_notes: "v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-ACCEL-MOTION-GRAPH,
+      PHY79-ACCEL-VT-GRAPH. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä
+      masteryä."
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored_integration
+    entry_role: none
+    mastery_role: integration
+    split_children:
+      - PHY79-ACCEL-MOTION-GRAPH
+      - PHY79-ACCEL-VT-GRAPH
+    integration_of:
+      - PHY79-ACCEL-MOTION-GRAPH
+      - PHY79-ACCEL-VT-GRAPH
+    dynamic_prerequisite_rule: null
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Muuttuva liike
+  - id: PHY79-ACCEL-MOTION-GRAPH
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Muuttuva liike
+    title: Muuttuvan liikkeen tunnistaminen paikka–aika- tai liikekuvaajasta
+    short_description: Muuttuvan liikkeen tunnistaminen paikka–aika- tai liikekuvaajasta
+    node_kind: representation
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-ACCEL-CONCEPT
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-ACCEL-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+      - id: PHY79-ST-GRAPH
+        relation_type: representation_support
+        strength: strong
+        rationale: PHY79-ST-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+      - id: PHY79-VT-GRAPH
+        relation_type: representation_support
+        strength: strong
+        rationale: PHY79-VT-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-ACCEL-CONCEPT
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-ACCEL-GRAPH itsenäiseksi evidenssikohteeksi.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored
+    entry_role: none
+    mastery_role: process
+    split_from: PHY79-ACCEL-GRAPH
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Muuttuva liike
+  - id: PHY79-ACCEL-VT-GRAPH
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Muuttuva liike
+    title: Muuttuvan liikkeen tunnistaminen nopeus–aika-kuvaajasta
+    short_description: Muuttuvan liikkeen tunnistaminen nopeus–aika-kuvaajasta
+    node_kind: representation
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-ACCEL-CONCEPT
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-ACCEL-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+      - id: PHY79-ST-GRAPH
+        relation_type: representation_support
+        strength: strong
+        rationale: PHY79-ST-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+      - id: PHY79-VT-GRAPH
+        relation_type: representation_support
+        strength: strong
+        rationale: PHY79-VT-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-ACCEL-CONCEPT
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-ACCEL-GRAPH itsenäiseksi evidenssikohteeksi.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored
+    entry_role: none
+    mastery_role: process
+    split_from: PHY79-ACCEL-GRAPH
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Muuttuva liike
+  - id: PHY79-DATA-01
+    subject: physics
+    grade_band: 7-9
+    topic_area: S1 Luonnontieteellinen tutkimus
+    parent_concept: Aineisto
+    title: Mittaustulosten kokoaminen taulukkoon
+    short_description: Mittaustulosten kokoaminen taulukkoon
+    node_kind: representation
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S1
+    relations:
+      - id: SCI-ENV-DATA-01
+        relation_type: prerequisite
+        strength: required
+        rationale: SCI-ENV-DATA-01 on ydinesitieto tälle osaamiskohteelle.
+      - id: M-DATA-10
+        relation_type: representation_support
+        strength: strong
+        rationale: M-DATA-10 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - SCI-ENV-DATA-01
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: process
+    concept_path:
+      - Fysiikka
+      - S1 Luonnontieteellinen tutkimus
+      - Aineisto
+  - id: PHY79-DIST-TIME
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Liike
+    title: Matkan ja ajan tunnistaminen liikkeen mitattaviksi suureiksi
+    short_description: Matkan ja ajan tunnistaminen liikkeen mitattaviksi suureiksi
+    node_kind: concept
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-QTY-01
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+      - id: PHY79-MOTION-REF
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-MOTION-REF on ydinesitieto tälle osaamiskohteelle.
+      - id: M-TIME-03
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-TIME-03 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+      - id: M-MEAS-02
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-MEAS-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-QTY-01
+          - PHY79-MOTION-REF
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Liike
+  - id: PHY79-GRAPH-01
+    subject: physics
+    grade_band: 7-9
+    topic_area: S1 Luonnontieteellinen tutkimus
+    parent_concept: Kuvaaja
+    title: Mittaustulosten esittäminen kuvaajana
+    short_description: Mittaustulosten esittäminen kuvaajana
+    node_kind: representation
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S1
+    relations:
+      - id: PHY79-DATA-01
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-DATA-01 on ydinesitieto tälle osaamiskohteelle.
+      - id: M79-FUNC-GRAPH
+        relation_type: representation_support
+        strength: strong
+        rationale: M79-FUNC-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-DATA-01
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: process
+    concept_path:
+      - Fysiikka
+      - S1 Luonnontieteellinen tutkimus
+      - Kuvaaja
+  - id: PHY79-MOTION-REF
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Liike
+    title: Liikkeen kuvaaminen suhteessa valittuun tarkastelukohteeseen
+    short_description: Liikkeen kuvaaminen suhteessa valittuun tarkastelukohteeseen
+    node_kind: concept
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: ENV-PHY-MOTION-01
+        relation_type: prerequisite
+        strength: required
+        rationale: ENV-PHY-MOTION-01 on ydinesitieto tälle osaamiskohteelle.
+    prerequisite_groups:
+      - all_of:
+          - ENV-PHY-MOTION-01
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Liike
+  - id: PHY79-NUMVALUE
+    subject: physics
+    grade_band: 7-9
+    topic_area: S1 Luonnontieteellinen tutkimus
+    parent_concept: Suureet ja yksiköt
+    title: Suureen lukuarvon erottaminen suureesta ja yksiköstä
+    short_description: Suureen lukuarvon erottaminen suureesta ja yksiköstä
+    node_kind: concept
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - PHY79-S1
+      - PHY79-ASSESS
+    relations:
+      - id: M-MEAS-01
+        relation_type: prerequisite
+        strength: strong
+        rationale: "M-MEAS-01 on ydinesitieto tälle osaamiskohteelle. v0.2 edge-audit: required ilman hard
+          prerequisite -ryhmää muutettu strong-tasolle."
+      - id: M-NUM-14
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+      - id: PHY79-QTY-CONCEPT
+        relation_type: prerequisite
+        strength: required
+        rationale: Fysikaalisen suureen käsite tarvitaan tämän erotteluun.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-QTY-CONCEPT
+        rationale: Suureen käsite on ydinesitieto.
+    evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-QTY-01 itsenäiseksi evidenssikohteeksi.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored
+    entry_role: none
+    mastery_role: atomic
+    split_from: PHY79-QTY-01
+    concept_path:
+      - Fysiikka
+      - S1 Luonnontieteellinen tutkimus
+      - Suureet ja yksiköt
+  - id: PHY79-QTY-01
+    subject: physics
+    grade_band: 7-9
+    topic_area: S1 Luonnontieteellinen tutkimus
+    parent_concept: Suureet ja yksiköt
+    title: Fysikaalisen suureen, lukuarvon ja yksikön erottaminen
+    short_description: Fysikaalisen suureen, lukuarvon ja yksikön erottaminen
+    node_kind: integration
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S1
+      - PHY79-ASSESS
+    relations:
+      - id: PHY79-QTY-CONCEPT
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-QTY-CONCEPT vaaditaan
+          kokonaisuuden hallintaan.
+      - id: PHY79-NUMVALUE
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-NUMVALUE vaaditaan kokonaisuuden
+          hallintaan.
+      - id: PHY79-UNIT-CONCEPT
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-UNIT-CONCEPT vaaditaan
+          kokonaisuuden hallintaan.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-QTY-CONCEPT
+          - PHY79-NUMVALUE
+          - PHY79-UNIT-CONCEPT
+        rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot
+          hallitaan.
+    evidence_notes: "v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-QTY-CONCEPT, PHY79-NUMVALUE,
+      PHY79-UNIT-CONCEPT. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä
+      masteryä."
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored_integration
+    entry_role: none
+    mastery_role: integration
+    split_children:
+      - PHY79-QTY-CONCEPT
+      - PHY79-NUMVALUE
+      - PHY79-UNIT-CONCEPT
+    integration_of:
+      - PHY79-QTY-CONCEPT
+      - PHY79-NUMVALUE
+      - PHY79-UNIT-CONCEPT
+    dynamic_prerequisite_rule: null
+    concept_path:
+      - Fysiikka
+      - S1 Luonnontieteellinen tutkimus
+      - Suureet ja yksiköt
+  - id: PHY79-QTY-CONCEPT
+    subject: physics
+    grade_band: 7-9
+    topic_area: S1 Luonnontieteellinen tutkimus
+    parent_concept: Suureet ja yksiköt
+    title: Fysikaalisen suureen käsitteen ymmärtäminen
+    short_description: Fysikaalisen suureen käsitteen ymmärtäminen
+    node_kind: concept
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - PHY79-S1
+      - PHY79-ASSESS
+    relations:
+      - id: M-MEAS-01
+        relation_type: prerequisite
+        strength: required
+        rationale: M-MEAS-01 on ydinesitieto tälle osaamiskohteelle.
+      - id: M-NUM-14
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - M-MEAS-01
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-QTY-01 itsenäiseksi evidenssikohteeksi.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored
+    entry_role: none
+    mastery_role: atomic
+    split_from: PHY79-QTY-01
+    concept_path:
+      - Fysiikka
+      - S1 Luonnontieteellinen tutkimus
+      - Suureet ja yksiköt
+  - id: PHY79-SPEED-CALC
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Nopeus
+    title: Keskinopeuden laskeminen v=s/t
+    short_description: Keskinopeuden laskeminen v=s/t
+    node_kind: procedure
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-SPEED-CONCEPT
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+      - id: M-DIV-01
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-DIV-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+      - id: M79-PROP-01
+        relation_type: prerequisite
+        strength: strong
+        rationale: M79-PROP-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-SPEED-CONCEPT
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Nopeus
+  - id: PHY79-SPEED-CONCEPT
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Nopeus
+    title: Keskinopeuden ymmärtäminen matkan ja ajan suhteena
+    short_description: Keskinopeuden ymmärtäminen matkan ja ajan suhteena
+    node_kind: concept
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-DIST-TIME
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-DIST-TIME on ydinesitieto tälle osaamiskohteelle.
+      - id: M-MULTREL-01
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-MULTREL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-DIST-TIME
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Nopeus
+  - id: PHY79-SPEED-MIXED
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Nopeus
+    title: Nopeuslasku sekayksiköillä yksiköt ensin yhtenäistäen
+    short_description: Nopeuslasku sekayksiköillä yksiköt ensin yhtenäistäen
+    node_kind: procedure
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-SPEED-CALC
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-SPEED-CALC on ydinesitieto tälle osaamiskohteelle.
+      - id: PHY79-UNIT-CONV
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-UNIT-CONV on ydinesitieto tälle osaamiskohteelle.
+      - id: PHY79-SPEED-UNIT
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-SPEED-UNIT on ydinesitieto tälle osaamiskohteelle.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-SPEED-CALC
+          - PHY79-UNIT-CONV
+          - PHY79-SPEED-UNIT
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Nopeus
+  - id: PHY79-SPEED-REARR
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Nopeus
+    title: Matkan tai ajan ratkaiseminen nopeussuhteesta
+    short_description: Matkan tai ajan ratkaiseminen nopeussuhteesta
+    node_kind: procedure
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-SPEED-CALC
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-SPEED-CALC on ydinesitieto tälle osaamiskohteelle.
+      - id: M79-EQ1-SOLVE
+        relation_type: prerequisite
+        strength: strong
+        rationale: M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-SPEED-CALC
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Nopeus
+  - id: PHY79-SPEED-UNIT
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Nopeus
+    title: Nopeuden yksikön johtaminen matkan ja ajan yksiköistä
+    short_description: Nopeuden yksikön johtaminen matkan ja ajan yksiköistä
+    node_kind: concept
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-SPEED-CONCEPT
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+      - id: PHY79-QTY-01
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+      - id: M-UNIT-02
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-UNIT-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+      - id: M-UNIT-05
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-UNIT-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-SPEED-CONCEPT
+          - PHY79-QTY-01
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Nopeus
+  - id: PHY79-ST-GRAPH
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Liikekuvaajat
+    title: Matka–aika-kuvaajan tulkitseminen liikkeen mallina
+    short_description: Matka–aika-kuvaajan tulkitseminen liikkeen mallina
+    node_kind: representation
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-SPEED-CONCEPT
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+      - id: PHY79-GRAPH-01
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-GRAPH-01 on ydinesitieto tälle osaamiskohteelle.
+      - id: M79-SLOPE
+        relation_type: prerequisite
+        strength: strong
+        rationale: M79-SLOPE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-SPEED-CONCEPT
+          - PHY79-GRAPH-01
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: process
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Liikekuvaajat
+  - id: PHY79-UNIT-CONCEPT
+    subject: physics
+    grade_band: 7-9
+    topic_area: S1 Luonnontieteellinen tutkimus
+    parent_concept: Suureet ja yksiköt
+    title: Fysikaalisen yksikön roolin ymmärtäminen
+    short_description: Fysikaalisen yksikön roolin ymmärtäminen
+    node_kind: concept
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - PHY79-S1
+      - PHY79-ASSESS
+    relations:
+      - id: M-MEAS-01
+        relation_type: prerequisite
+        strength: strong
+        rationale: "M-MEAS-01 on ydinesitieto tälle osaamiskohteelle. v0.2 edge-audit: required ilman hard
+          prerequisite -ryhmää muutettu strong-tasolle."
+      - id: M-NUM-14
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+      - id: PHY79-QTY-CONCEPT
+        relation_type: prerequisite
+        strength: required
+        rationale: Fysikaalisen suureen käsite tarvitaan tämän erotteluun.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-QTY-CONCEPT
+        rationale: Suureen käsite on ydinesitieto.
+    evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-QTY-01 itsenäiseksi evidenssikohteeksi.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored
+    entry_role: none
+    mastery_role: atomic
+    split_from: PHY79-QTY-01
+    concept_path:
+      - Fysiikka
+      - S1 Luonnontieteellinen tutkimus
+      - Suureet ja yksiköt
+  - id: PHY79-UNIT-CONV
+    subject: physics
+    grade_band: 7-9
+    topic_area: S1 Luonnontieteellinen tutkimus
+    parent_concept: Yksiköt
+    title: Yksikkömuunnoksen tekeminen ennen fysikaalista laskua
+    short_description: Yksikkömuunnoksen tekeminen ennen fysikaalista laskua
+    node_kind: procedure
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S1
+    relations:
+      - id: PHY79-QTY-01
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+      - id: M-UNIT-02
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-UNIT-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+      - id: M-UNIT-03
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-UNIT-03 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+      - id: M-UNIT-04
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-UNIT-04 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+      - id: M-UNIT-05
+        relation_type: prerequisite
+        strength: strong
+        rationale: M-UNIT-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+      - id: M79-UNIT-LIN
+        relation_type: prerequisite
+        strength: strong
+        rationale: M79-UNIT-LIN tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-QTY-01
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    dynamic_prerequisite_rule: requires_quantity_specific_unit_conversion_skill_for_item_instance
+    entry_role: none
+    mastery_role: atomic
+    concept_path:
+      - Fysiikka
+      - S1 Luonnontieteellinen tutkimus
+      - Yksiköt
+  - id: PHY79-VT-GRAPH
+    subject: physics
+    grade_band: 7-9
+    topic_area: S5 Vuorovaikutus ja liike
+    parent_concept: Liikekuvaajat
+    title: Nopeus–aika-kuvaajan tulkitseminen tasaisessa ja muuttuvassa liikkeessä
+    short_description: Nopeus–aika-kuvaajan tulkitseminen tasaisessa ja muuttuvassa liikkeessä
+    node_kind: representation
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - PHY79-S5
+    relations:
+      - id: PHY79-SPEED-CONCEPT
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+      - id: PHY79-GRAPH-01
+        relation_type: prerequisite
+        strength: required
+        rationale: PHY79-GRAPH-01 on ydinesitieto tälle osaamiskohteelle.
+    prerequisite_groups:
+      - all_of:
+          - PHY79-SPEED-CONCEPT
+          - PHY79-GRAPH-01
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: process
+    concept_path:
+      - Fysiikka
+      - S5 Vuorovaikutus ja liike
+      - Liikekuvaajat
+  - id: SCI-ENV-DATA-01
+    subject: science
+    grade_band: 3-6
+    topic_area: Tutkimisen taidot
+    parent_concept: Aineisto
+    title: Mittausten ja havaintojen kokoaminen aineistoksi
+    short_description: Mittausten ja havaintojen kokoaminen aineistoksi
+    node_kind: representation
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - ENV36-T4-T18
+    relations:
+      - id: SCI-ENV-RECORD-01
+        relation_type: prerequisite
+        strength: required
+        rationale: SCI-ENV-RECORD-01 on ydinesitieto tälle osaamiskohteelle.
+      - id: SCI-ENV-MEAS-01
+        relation_type: prerequisite
+        strength: strong
+        rationale: SCI-ENV-MEAS-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+    prerequisite_groups:
+      - all_of:
+          - SCI-ENV-RECORD-01
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate
+    entry_role: none
+    mastery_role: process
+    concept_path:
+      - Ympäristöoppi / luonnontieteellinen perusta
+      - Tutkimisen taidot
+      - Aineisto
+  - id: SCI-ENV-OBSERVE-01
+    subject: science
+    grade_band: 1-2
+    topic_area: Tutkimisen taidot
+    parent_concept: Havainnointi
+    title: Havainnon tekeminen ilmiöstä tai kohteesta
+    short_description: Havainnon tekeminen ilmiöstä tai kohteesta
+    node_kind: foundation
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - ENV12-T5-T13
+    relations: []
+    prerequisite_groups: []
+    evidence_notes: v0.2-refaktorissa erotettu noodista SCI-ENV-OBS-01 itsenäiseksi evidenssikohteeksi.
+    foundation_entry: true
+    zero_required_indegree: true
+    status: candidate_refactored
+    entry_role: foundation
+    mastery_role: atomic
+    split_from: SCI-ENV-OBS-01
+    concept_path:
+      - Ympäristöoppi / luonnontieteellinen perusta
+      - Tutkimisen taidot
+      - Havainnointi
+  - id: SCI-ENV-PRESENT-DATA-01
+    subject: science
+    grade_band: 1-2
+    topic_area: Tutkimisen taidot
+    parent_concept: Tulosten esittäminen
+    title: Havaintojen esittäminen tarkoituksenmukaisella tavalla
+    short_description: Havaintojen esittäminen tarkoituksenmukaisella tavalla
+    node_kind: representation
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - ENV12-T5-T13
+    relations:
+      - id: SCI-ENV-OBSERVE-01
+        relation_type: prerequisite
+        strength: required
+        rationale: SCI-ENV-OBSERVE-01 on ydinesitieto tälle osaamiskohteelle.
+    prerequisite_groups:
+      - all_of:
+          - SCI-ENV-OBSERVE-01
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: v0.2-refaktorissa erotettu noodista SCI-ENV-RECORD-01 itsenäiseksi evidenssikohteeksi.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored
+    entry_role: none
+    mastery_role: process
+    split_from: SCI-ENV-RECORD-01
+    concept_path:
+      - Ympäristöoppi / luonnontieteellinen perusta
+      - Tutkimisen taidot
+      - Tulosten esittäminen
+  - id: SCI-ENV-RECORD-01
+    subject: science
+    grade_band: 1-2
+    topic_area: Tutkimisen taidot
+    parent_concept: Tulosten kirjaaminen
+    title: Havaintojen taltioiminen ja esittäminen
+    short_description: Havaintojen taltioiminen ja esittäminen
+    node_kind: integration
+    source_basis: direct_curriculum
+    curriculum_refs:
+      - ENV12-T5-T13
+    relations:
+      - id: SCI-ENV-RECORD-DATA-01
+        relation_type: prerequisite
+        strength: required
+        rationale: SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-RECORD-DATA-01 vaaditaan
+          kokonaisuuden hallintaan.
+      - id: SCI-ENV-PRESENT-DATA-01
+        relation_type: prerequisite
+        strength: required
+        rationale: SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-PRESENT-DATA-01 vaaditaan
+          kokonaisuuden hallintaan.
+    prerequisite_groups:
+      - all_of:
+          - SCI-ENV-RECORD-DATA-01
+          - SCI-ENV-PRESENT-DATA-01
+        rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot
+          hallitaan.
+    evidence_notes: "v0.2-integraationoodi. Atomiset mastery-tilat: SCI-ENV-RECORD-DATA-01,
+      SCI-ENV-PRESENT-DATA-01. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä
+      masteryä."
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored_integration
+    entry_role: none
+    mastery_role: integration
+    split_children:
+      - SCI-ENV-RECORD-DATA-01
+      - SCI-ENV-PRESENT-DATA-01
+    integration_of:
+      - SCI-ENV-RECORD-DATA-01
+      - SCI-ENV-PRESENT-DATA-01
+    dynamic_prerequisite_rule: null
+    concept_path:
+      - Ympäristöoppi / luonnontieteellinen perusta
+      - Tutkimisen taidot
+      - Tulosten kirjaaminen
+  - id: SCI-ENV-RECORD-DATA-01
+    subject: science
+    grade_band: 1-2
+    topic_area: Tutkimisen taidot
+    parent_concept: Tulosten kirjaaminen
+    title: Havaintojen taltioiminen
+    short_description: Havaintojen taltioiminen
+    node_kind: procedure
+    source_basis: pedagogically_derived
+    curriculum_refs:
+      - ENV12-T5-T13
+    relations:
+      - id: SCI-ENV-OBSERVE-01
+        relation_type: prerequisite
+        strength: required
+        rationale: SCI-ENV-OBSERVE-01 on ydinesitieto tälle osaamiskohteelle.
+    prerequisite_groups:
+      - all_of:
+          - SCI-ENV-OBSERVE-01
+        rationale: Kaikki listatut ydinesitiedot tarvitaan.
+    evidence_notes: v0.2-refaktorissa erotettu noodista SCI-ENV-RECORD-01 itsenäiseksi evidenssikohteeksi.
+    foundation_entry: false
+    zero_required_indegree: false
+    status: candidate_refactored
+    entry_role: none
+    mastery_role: atomic
+    split_from: SCI-ENV-RECORD-01
+    concept_path:
+      - Ympäristöoppi / luonnontieteellinen perusta
+      - Tutkimisen taidot
+      - Tulosten kirjaaminen
+internal_relations:
+  - source: ENV-PHY-MOTION-OBS-01
+    target: ENV-PHY-MOTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-MOTION-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-MOTION-OBS-01 vaaditaan
+      kokonaisuuden hallintaan.
+  - source: ENV-PHY-MOTION-CHANGE-01
+    target: ENV-PHY-MOTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-MOTION-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-MOTION-CHANGE-01
+      vaaditaan kokonaisuuden hallintaan.
+  - source: SCI-ENV-OBSERVE-01
+    target: ENV-PHY-MOTION-CHANGE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Liikkeen havainnointi perustuu yleiseen havainnointitaitoon.
+  - source: ENV-PHY-MOTION-OBS-01
+    target: ENV-PHY-MOTION-CHANGE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Liikkeen muutos edellyttää ensin liikkeen tunnistamista.
+  - source: SCI-ENV-OBSERVE-01
+    target: ENV-PHY-MOTION-OBS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Liikkeen havainnointi perustuu yleiseen havainnointitaitoon.
+  - source: M-NUM-02
+    target: M-ADD-01
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-02 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: M-MUL-01
+    target: M-DIV-02
+    relation_type: prerequisite
+    strength: strong
+    rationale: Sisältöjako voidaan rakentaa ryhmittelynä ennen kertolaskun muodollista hallintaa.
+  - source: M-NUM-02
+    target: M-DIV-02
+    relation_type: prerequisite
+    strength: required
+    rationale: Ryhmiteltävä määrä pitää hahmottaa lukumääränä.
+  - source: M-TH-01
+    target: M-MEAS-00
+    relation_type: prerequisite
+    strength: strong
+    rationale: Yleinen vertailutaito tukee mitattavien ominaisuuksien suoraa vertaamista, mutta ei ole hard gate.
+  - source: M-MEAS-00
+    target: M-MEAS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: M-NUM-01
+    target: M-MEAS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-01 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: M-MEAS-00
+    target: M-MEAS-02
+    relation_type: prerequisite
+    strength: required
+    rationale: M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: M-ADD-01
+    target: M-MUL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: M-NUM-16
+    target: M-MUL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: Yhtä suurten ryhmien kertolaskukäsite voidaan rakentaa suoraan yhteenlaskusta ilman valmista
+      monikertajonotaitoa.
+  - source: M-MUL-01
+    target: M-MULTREL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: M-MUL-01 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: M-DIV-02
+    target: M-MULTREL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: Multiplikatiivinen vertailu voidaan rakentaa kertolaskun kautta; sisältöjako on hyödyllinen
+      käänteissuhteen ymmärtämiseen.
+  - source: M-NUM-STABLE-ORDER
+    target: M-NUM-01
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-01 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-STABLE-ORDER vaaditaan kokonaisuuden
+      hallintaan.
+  - source: M-NUM-1TO1
+    target: M-NUM-01
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-01 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-1TO1 vaaditaan kokonaisuuden hallintaan.
+  - source: M-NUM-01
+    target: M-NUM-02
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-01 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: M-NUM-QTY-WORD
+    target: M-NUM-03
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-03 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-QTY-WORD vaaditaan kokonaisuuden
+      hallintaan.
+  - source: M-NUM-QTY-NUMERAL
+    target: M-NUM-03
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-03 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-QTY-NUMERAL vaaditaan kokonaisuuden
+      hallintaan.
+  - source: M-NUM-WORD-NUMERAL
+    target: M-NUM-03
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-03 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-WORD-NUMERAL vaaditaan kokonaisuuden
+      hallintaan.
+  - source: M-NUM-03
+    target: M-NUM-07
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-03 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: M-NUM-03
+    target: M-NUM-14
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-03 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: M-MEAS-01
+    target: M-NUM-14
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MEAS-01 tukee olennaisesti oppimista, mutta puute voidaan korjata noodin sisällä.
+  - source: M-NUM-EQUALSTEP-SEQ
+    target: M-NUM-16
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-16 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-EQUALSTEP-SEQ vaaditaan
+      kokonaisuuden hallintaan.
+  - source: M-NUM-MULTIPLE-INTRO
+    target: M-NUM-16
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-16 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-MULTIPLE-INTRO vaaditaan
+      kokonaisuuden hallintaan.
+  - source: M-NUM-07
+    target: M-NUM-EQUALSTEP-SEQ
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-07 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: M-NUM-07
+    target: M-NUM-MULTIPLE-INTRO
+    relation_type: prerequisite
+    strength: required
+    rationale: M-NUM-07 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: M-NUM-02
+    target: M-NUM-QTY-NUMERAL
+    relation_type: prerequisite
+    strength: required
+    rationale: Lukumäärän käsitteen hallinta tarvitaan määrän yhdistämiseksi representaatioon.
+  - source: M-NUM-02
+    target: M-NUM-QTY-WORD
+    relation_type: prerequisite
+    strength: required
+    rationale: Lukumäärän käsitteen hallinta tarvitaan määrän yhdistämiseksi representaatioon.
+  - source: M-NUM-STABLE-ORDER
+    target: M-NUM-WORD-NUMERAL
+    relation_type: prerequisite
+    strength: strong
+    rationale: Vakaa lukusanajono tukee lukusanan ja numeromerkin vastaavuuden oppimista.
+  - source: M-MEAS-00
+    target: M-TIME-01
+    relation_type: prerequisite
+    strength: required
+    rationale: M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: M-TIME-01
+    target: M-TIME-03
+    relation_type: prerequisite
+    strength: required
+    rationale: M-TIME-01 on tämän osaamiskohteen välitön välttämätön esitieto.
+  - source: PHY79-ACCEL-CONCEPT
+    target: PHY79-ACCEL-CALC
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ACCEL-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-SPEED-CONCEPT
+    target: PHY79-ACCEL-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - source: M-MULTREL-01
+    target: PHY79-ACCEL-CONCEPT
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MULTREL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - source: PHY79-ACCEL-MOTION-GRAPH
+    target: PHY79-ACCEL-GRAPH
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ACCEL-GRAPH on v0.2:ssa integraationoodi; atominen alitaito PHY79-ACCEL-MOTION-GRAPH
+      vaaditaan kokonaisuuden hallintaan.
+  - source: PHY79-ACCEL-VT-GRAPH
+    target: PHY79-ACCEL-GRAPH
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ACCEL-GRAPH on v0.2:ssa integraationoodi; atominen alitaito PHY79-ACCEL-VT-GRAPH vaaditaan
+      kokonaisuuden hallintaan.
+  - source: PHY79-ACCEL-CONCEPT
+    target: PHY79-ACCEL-MOTION-GRAPH
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ACCEL-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-ST-GRAPH
+    target: PHY79-ACCEL-MOTION-GRAPH
+    relation_type: representation_support
+    strength: strong
+    rationale: PHY79-ST-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - source: PHY79-VT-GRAPH
+    target: PHY79-ACCEL-MOTION-GRAPH
+    relation_type: representation_support
+    strength: strong
+    rationale: PHY79-VT-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - source: PHY79-ACCEL-CONCEPT
+    target: PHY79-ACCEL-VT-GRAPH
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ACCEL-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-ST-GRAPH
+    target: PHY79-ACCEL-VT-GRAPH
+    relation_type: representation_support
+    strength: strong
+    rationale: PHY79-ST-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - source: PHY79-VT-GRAPH
+    target: PHY79-ACCEL-VT-GRAPH
+    relation_type: representation_support
+    strength: strong
+    rationale: PHY79-VT-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - source: SCI-ENV-DATA-01
+    target: PHY79-DATA-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-DATA-01 on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-QTY-01
+    target: PHY79-DIST-TIME
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-MOTION-REF
+    target: PHY79-DIST-TIME
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-MOTION-REF on ydinesitieto tälle osaamiskohteelle.
+  - source: M-TIME-03
+    target: PHY79-DIST-TIME
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-TIME-03 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - source: M-MEAS-02
+    target: PHY79-DIST-TIME
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MEAS-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - source: PHY79-DATA-01
+    target: PHY79-GRAPH-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-DATA-01 on ydinesitieto tälle osaamiskohteelle.
+  - source: ENV-PHY-MOTION-01
+    target: PHY79-MOTION-REF
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-MOTION-01 on ydinesitieto tälle osaamiskohteelle.
+  - source: M-MEAS-01
+    target: PHY79-NUMVALUE
+    relation_type: prerequisite
+    strength: strong
+    rationale: "M-MEAS-01 on ydinesitieto tälle osaamiskohteelle. v0.2 edge-audit: required ilman hard
+      prerequisite -ryhmää muutettu strong-tasolle."
+  - source: M-NUM-14
+    target: PHY79-NUMVALUE
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - source: PHY79-QTY-CONCEPT
+    target: PHY79-NUMVALUE
+    relation_type: prerequisite
+    strength: required
+    rationale: Fysikaalisen suureen käsite tarvitaan tämän erotteluun.
+  - source: PHY79-QTY-CONCEPT
+    target: PHY79-QTY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-QTY-CONCEPT vaaditaan
+      kokonaisuuden hallintaan.
+  - source: PHY79-NUMVALUE
+    target: PHY79-QTY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-NUMVALUE vaaditaan kokonaisuuden
+      hallintaan.
+  - source: PHY79-UNIT-CONCEPT
+    target: PHY79-QTY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-UNIT-CONCEPT vaaditaan
+      kokonaisuuden hallintaan.
+  - source: M-MEAS-01
+    target: PHY79-QTY-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: M-MEAS-01 on ydinesitieto tälle osaamiskohteelle.
+  - source: M-NUM-14
+    target: PHY79-QTY-CONCEPT
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - source: PHY79-SPEED-CONCEPT
+    target: PHY79-SPEED-CALC
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-DIST-TIME
+    target: PHY79-SPEED-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-DIST-TIME on ydinesitieto tälle osaamiskohteelle.
+  - source: M-MULTREL-01
+    target: PHY79-SPEED-CONCEPT
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MULTREL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - source: PHY79-SPEED-CALC
+    target: PHY79-SPEED-MIXED
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CALC on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-UNIT-CONV
+    target: PHY79-SPEED-MIXED
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-UNIT-CONV on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-SPEED-UNIT
+    target: PHY79-SPEED-MIXED
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-UNIT on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-SPEED-CALC
+    target: PHY79-SPEED-REARR
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CALC on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-SPEED-CONCEPT
+    target: PHY79-SPEED-UNIT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-QTY-01
+    target: PHY79-SPEED-UNIT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-SPEED-CONCEPT
+    target: PHY79-ST-GRAPH
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-GRAPH-01
+    target: PHY79-ST-GRAPH
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-GRAPH-01 on ydinesitieto tälle osaamiskohteelle.
+  - source: M-MEAS-01
+    target: PHY79-UNIT-CONCEPT
+    relation_type: prerequisite
+    strength: strong
+    rationale: "M-MEAS-01 on ydinesitieto tälle osaamiskohteelle. v0.2 edge-audit: required ilman hard
+      prerequisite -ryhmää muutettu strong-tasolle."
+  - source: M-NUM-14
+    target: PHY79-UNIT-CONCEPT
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - source: PHY79-QTY-CONCEPT
+    target: PHY79-UNIT-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: Fysikaalisen suureen käsite tarvitaan tämän erotteluun.
+  - source: PHY79-QTY-01
+    target: PHY79-UNIT-CONV
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-SPEED-CONCEPT
+    target: PHY79-VT-GRAPH
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - source: PHY79-GRAPH-01
+    target: PHY79-VT-GRAPH
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-GRAPH-01 on ydinesitieto tälle osaamiskohteelle.
+  - source: SCI-ENV-RECORD-01
+    target: SCI-ENV-DATA-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-RECORD-01 on ydinesitieto tälle osaamiskohteelle.
+  - source: SCI-ENV-OBSERVE-01
+    target: SCI-ENV-PRESENT-DATA-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-OBSERVE-01 on ydinesitieto tälle osaamiskohteelle.
+  - source: SCI-ENV-RECORD-DATA-01
+    target: SCI-ENV-RECORD-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-RECORD-DATA-01 vaaditaan
+      kokonaisuuden hallintaan.
+  - source: SCI-ENV-PRESENT-DATA-01
+    target: SCI-ENV-RECORD-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-PRESENT-DATA-01 vaaditaan
+      kokonaisuuden hallintaan.
+  - source: SCI-ENV-OBSERVE-01
+    target: SCI-ENV-RECORD-DATA-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-OBSERVE-01 on ydinesitieto tälle osaamiskohteelle.

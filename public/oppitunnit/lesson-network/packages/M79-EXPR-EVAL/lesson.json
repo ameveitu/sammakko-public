@@ -1,0 +1,729 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M79-EXPR-EVAL",
+  "revision": 13,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "substitution.svg",
+      "sha256": "6a12641da77f0484f9e4f0aaa56132385e934f7e5e1ce75805957d3a6b43d680"
+    },
+    {
+      "path": "shared/loikka/curious.png",
+      "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "5268a7bfc7276af1eeea246f5cff6bebadc2416a096356a9ffcbd3f1dc3a55e7"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.ncetm.org.uk/media/zeeniedj/ncetm_ks3_cc_1_4.pdf",
+      "title": "1.4 Simplifying and manipulating expressions, equations and formulae",
+      "organization": "NCETM",
+      "accessed": "2026-10-29",
+      "inspected": "PDF overview/PD restriction, key ideas1.4.1.4–1.4.1.6 and printed pp10–11 examples contrasting operation order and letters as numbers. Same URL also inspected in earlier algebra batches; this is genuine reuse, not a new full-literature review.",
+      "usageRestrictions": "Crown Copyright2019/2021; NCETM acknowledgement and exceptions. PD guidance is not for direct lesson lifting. No figures or task sentences copied.",
+      "adopted": "Keep number meaning and operation structure visible when replacing a letter. Contrast multiplication-before-addition with a grouped sum.",
+      "rejected": "Do not turn expression evaluation into solving for an unknown or into fruit-salad algebra; do not add manipulation/factorisation as required skills."
+    },
+    {
+      "url": "https://ies.ed.gov/ncee/WWC/PracticeGuide/20",
+      "title": "Teaching Strategies for Improving Algebra Knowledge in Middle and High School Students",
+      "organization": "Institute of Education Sciences / What Works Clearinghouse",
+      "accessed": "2026-10-29",
+      "inspected": "Official landing page recommendations1–3, publication/revision date and evidence labels. Full guide not read in this preparation.",
+      "usageRestrictions": "Reference to public agency landing page; no licence for all guide/third-party components inferred. No guide figures/text copied.",
+      "adopted": "Invite comparison of worked reasoning and expression structure rather than present answers without a calculation path.",
+      "rejected": "No claim that this page proves the new lesson effective. The first two recommendations are labelled minimal evidence; do not describe every recommendation as strongly supported."
+    },
+    {
+      "url": "https://tasks.illustrativemathematics.org/content-standards/tasks/2208",
+      "title": "Introducing Equivalent Expressions 1",
+      "organization": "Illustrative Mathematics",
+      "accessed": "2026-10-29",
+      "inspected": "Task, commentary, solution and licence footer. Compare fixed structure with a changing substituted value.",
+      "usageRestrictions": "CC BY-NC-SA4.0 footer. Conceptual comparison only; no source task text, numbers/sequence, illustrations or story copied.",
+      "adopted": "Separate the supplied variable value from the fixed operations; make clear that the expression value depends on the supplied input.",
+      "rejected": "The source uses powers and inverse searching, including a discussion of an omitted negative solution. None becomes this lesson’s required demand or a general one-solution rule."
+    },
+    {
+      "url": "https://openstax.org/books/prealgebra-2e/pages/2-2-evaluate-simplify-and-translate-expressions",
+      "title": "2.2 Evaluate, Simplify, and Translate Expressions — Prealgebra2e",
+      "organization": "OpenStax / Rice University; Marecek, Anthony-Smith, Mathis",
+      "accessed": "2026-10-29",
+      "inspected": "Public evaluation definition and examples2.13/2.14. Current reuse footer inspected on adjacent section2.1; no full-book reading claim.",
+      "usageRestrictions": "Current footer says CC BY-NC-SA and adds permission conditions for AI offerings/commercial reuse; trademarks excluded. Do not assume older CC BY terms. No text, figure, worked-example sequence or asset adopted. Original lesson basis uses other sources and independent mathematics.",
+      "adopted": "No source-specific treatment selected for copying/adaptation; the common mathematical fact of substitution is independently corroborated by NCETM.",
+      "rejected": "Exclude OpenStax assets/text and any implied permission to package a derivative under this project’s undecided licence."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@4d501c996107dfaae3c498b5055c6748498ac31112f01d6c67bee41efe9bd27a",
+      "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/expression-place-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@4d501c996107dfaae3c498b5055c6748498ac31112f01d6c67bee41efe9bd27a",
+      "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/expression-place-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@4d501c996107dfaae3c498b5055c6748498ac31112f01d6c67bee41efe9bd27a",
+      "note": "No human or target-learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@99b46a3f516d8d0cc79e9051eb724f9aff7b28ad0630894575428366483c0985",
+      "note": "LR04-B08: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@99b46a3f516d8d0cc79e9051eb724f9aff7b28ad0630894575428366483c0985",
+      "note": "LR04-B08: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@99b46a3f516d8d0cc79e9051eb724f9aff7b28ad0630894575428366483c0985",
+      "note": "LR04-B08: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@72214443aa6e3b323e85ca6826899a95f7b1561beb81e5854646488f45c6be5e",
+      "note": "LR04-B08: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@72214443aa6e3b323e85ca6826899a95f7b1561beb81e5854646488f45c6be5e",
+      "note": "LR04-B08: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@72214443aa6e3b323e85ca6826899a95f7b1561beb81e5854646488f45c6be5e",
+      "note": "LR04-B08: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@4f6979767128bdede6c5a66996bece581f8a674fe8d3eb6e0b8d969c8091895a",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@4f6979767128bdede6c5a66996bece581f8a674fe8d3eb6e0b8d969c8091895a",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@4f6979767128bdede6c5a66996bece581f8a674fe8d3eb6e0b8d969c8091895a",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@60733f356041c4d8b640fe9fcd0c3e95b0bc2bc7a360d60d14cefc318f2a6cb6",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@60733f356041c4d8b640fe9fcd0c3e95b0bc2bc7a360d60d14cefc318f2a6cb6",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@60733f356041c4d8b640fe9fcd0c3e95b0bc2bc7a360d60d14cefc318f2a6cb6",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@bbb5ce9fb202370792585c85e3556974a0a692c738b313dce96249062e155503",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@bbb5ce9fb202370792585c85e3556974a0a692c738b313dce96249062e155503",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@bbb5ce9fb202370792585c85e3556974a0a692c738b313dce96249062e155503",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@c80315708a7f295e355a699024d4b274ee1e8e2cc5027df496abfc80f4e46079",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@c80315708a7f295e355a699024d4b274ee1e8e2cc5027df496abfc80f4e46079",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@c80315708a7f295e355a699024d4b274ee1e8e2cc5027df496abfc80f4e46079",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@0868c47ce30c631f75d7aad340ac679d60142219efedab73136c6b39a3dddcee",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@0868c47ce30c631f75d7aad340ac679d60142219efedab73136c6b39a3dddcee",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@0868c47ce30c631f75d7aad340ac679d60142219efedab73136c6b39a3dddcee",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@9ceff28fa3ed811b3e18016a473023a1aab3fd55fb44550c6e05f617bbe165df",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@9ceff28fa3ed811b3e18016a473023a1aab3fd55fb44550c6e05f617bbe165df",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@9ceff28fa3ed811b3e18016a473023a1aab3fd55fb44550c6e05f617bbe165df",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@e682b6308146dca8c6bd59b17610c2c5f778384fba5807e9739520a853c72894",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@e682b6308146dca8c6bd59b17610c2c5f778384fba5807e9739520a853c72894",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@e682b6308146dca8c6bd59b17610c2c5f778384fba5807e9739520a853c72894",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@a0ed8705b93f1fee879319bd9d8df79805204a1275481741147f82a0797a0d3a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@a0ed8705b93f1fee879319bd9d8df79805204a1275481741147f82a0797a0d3a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@a0ed8705b93f1fee879319bd9d8df79805204a1275481741147f82a0797a0d3a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@0d167ae2f3ef8b94d4da8dd7a9509017c40354ade547b96db214bfe4910b232a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@0d167ae2f3ef8b94d4da8dd7a9509017c40354ade547b96db214bfe4910b232a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@0d167ae2f3ef8b94d4da8dd7a9509017c40354ade547b96db214bfe4910b232a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@41a932f115de2662f91dafb0a260cab1e984669233d9cbd3c5880008348147dc",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@41a932f115de2662f91dafb0a260cab1e984669233d9cbd3c5880008348147dc",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Kirjaimen tilalle sijoitetaan annettu luku ja laskujärjestys avataan. 3x ja 3(x + 2) erotetaan; oma osalasku/kokoarvo-tehtävä näyttää annetun arvon ja lausekkeen samassa vaiheessa. Negatiivinen lisäkokeilu on rajattu ja taksikaava annettu, joten itsenäistä kaavan muodostamista ei väitetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@41a932f115de2662f91dafb0a260cab1e984669233d9cbd3c5880008348147dc",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M79-EXPR-EVAL",
+    "nodeRevision": "audit1-2026-10-28",
+    "validRevisions": [
+      "audit1-2026-10-28"
+    ],
+    "globalFallback": "lite181-2026-10-27",
+    "sourceFile": "algebra79b.ts",
+    "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceHashes": {
+      "src/content/ranta2.ts": "28d8f7b08205a7e5be0c2087c85e256e609578e83a9e6e714a1ee8573ff47fc6",
+      "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+      "src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+      "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+      "src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+      "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+      "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+    },
+    "goal": "Opit laskemaan lausekkeen arvon, kun muuttujan tilalle sijoitetaan luku. Muista: 3x tarkoittaa 3 · x.",
+    "goalOverlay": "own goal",
+    "intro": "Laboratorion kaavat odottavat lukuja. Sijoita luku kirjaimen paikalle.",
+    "reward": "Sijoitat lukuja lausekkeisiin ja lasket oikein!",
+    "demos": [
+      {
+        "say": "Lasketaan kolme x plus kaksi, kun x on neljä. Neljä menee x:n paikalle, ja piilossa ollut kertomerkki tulee näkyviin. Kolme x ei ole kolmekymmentäneljä, vaan kolme kertaa neljä.",
+        "label": "3x + 2, kun x = 4",
+        "seconds": 12.3,
+        "finalCaption": "Lausekkeen arvo on 14."
+      },
+      {
+        "say": "Kaksi kertaa sulkeissa a plus viisi, kun a on kolme. Sulut lasketaan ensin.",
+        "label": "2(a + 5), kun a = 3",
+        "seconds": 10.3,
+        "finalCaption": "Lausekkeen arvo on 16."
+      },
+      {
+        "say": "Negatiivinen luku sijoitetaan sulkeisiin. Neljä x plus yhdeksän, kun x on miinus kaksi.",
+        "label": "4x + 9, kun x = −2",
+        "seconds": 10.3,
+        "finalCaption": "Lausekkeen arvo on 1."
+      }
+    ],
+    "families": {
+      "paren": {
+        "kind": "numeric",
+        "registry": {
+          "node": "M79-EXPR-EVAL",
+          "tag": "paren",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "example": {
+          "say": "Laske 2(a + 3), kun a = 2.",
+          "task": {
+            "kind": "numeric",
+            "answer": 10,
+            "whyAt": {
+              "5": "Tämä on sulkeiden arvo. Kerro vielä 2:lla.",
+              "7": "2(…) tarkoittaa kertolaskua: 2 · (2 + 3).",
+              "25": "Numeroita ei kirjoiteta peräkkäin. 2 · 5."
+            }
+          },
+          "explain": "Sulut ensin: 2 + 3 = 5. Sitten 2 · 5 = 10.",
+          "hint": "Laske ensin sulut: 2 + 3. Kerro sitten 2:lla.",
+          "tag": "paren"
+        }
+      },
+      "neg": {
+        "kind": "numeric",
+        "registry": {
+          "node": "M79-EXPR-EVAL",
+          "tag": "neg",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [
+            "M79-INT-MUL",
+            "M79-INT-ADD"
+          ],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M79-INT-MUL"
+          ],
+          "source": [
+            "families.ts M79-EXPR-EVAL/neg"
+          ]
+        },
+        "example": {
+          "say": "Laske 2x + 5, kun x = −5.",
+          "task": {
+            "kind": "numeric",
+            "answer": -5,
+            "whyAt": {
+              "2": "2x tarkoittaa kertolaskua 2 · (−5).",
+              "5": "Etumerkki meni väärin. −10 + 5 = −5.",
+              "15": "2 · (−5) on negatiivinen: −10. Miinusmerkki unohtui.",
+              "-15": "5 lisätään, ei vähennetä: −10 + 5."
+            }
+          },
+          "explain": "2 · (−5) + 5 = −10 + 5 = −5.",
+          "hint": "Kirjoita sulut negatiivisen luvun ympärille.",
+          "tag": "neg"
+        }
+      },
+      "match": {
+        "kind": "place",
+        "registry": {
+          "node": "M79-EXPR-EVAL",
+          "tag": "match",
+          "outcome": "sijoittaa osat oikeille paikoille",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "example": {
+          "say": "Sijoita x = 2 jokaiseen lausekkeeseen. Vedä oikea arvo jokaiselle.",
+          "task": {
+            "kind": "place",
+            "slots": [
+              {
+                "id": "s0",
+                "text": "2x + 1 → ▢"
+              },
+              {
+                "id": "s1",
+                "text": "2(x + 1) → ▢"
+              },
+              {
+                "id": "s2",
+                "text": "x + 2 → ▢"
+              }
+            ],
+            "tokens": [
+              {
+                "id": "v2",
+                "text": "4"
+              },
+              {
+                "id": "x",
+                "text": "23"
+              },
+              {
+                "id": "v1",
+                "text": "6"
+              },
+              {
+                "id": "v0",
+                "text": "5"
+              }
+            ],
+            "answer": {
+              "s0": "v0",
+              "s1": "v1",
+              "s2": "v2"
+            },
+            "why": {
+              "s0": "2 · 2 + 1 = 5.",
+              "s1": "Sulut ensin: 2 · (2 + 1) = 2 · 3 = 6.",
+              "s2": "1 · 2 + 2 = 4."
+            }
+          },
+          "hint": "Kirjoita jokaiseen x:n paikalle 2. Sulut ensin, sitten kertolasku, viimeisenä yhteenlasku.",
+          "explain": "2x + 1 = 5, 2(x + 1) = 6, x + 2 = 4.",
+          "tag": "match"
+        }
+      },
+      "linear": {
+        "kind": "choice",
+        "registry": {
+          "node": "M79-EXPR-EVAL",
+          "tag": "linear",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "example": {
+          "say": "Laske 2x + 9, kun x = 7.",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "big": "18",
+                "speak": "kahdeksantoista"
+              },
+              {
+                "big": "23",
+                "speak": "kaksikymmentäkolme"
+              },
+              {
+                "big": "36",
+                "speak": "kolmekymmentäkuusi"
+              }
+            ],
+            "answer": 1,
+            "why": [
+              "Kertomerkki ei ole plus.",
+              null,
+              "Numero ja kirjain vierekkäin tarkoittavat kertolaskua."
+            ]
+          },
+          "hint": "Kirjoita näkyviin 2 · 7 + 9 ja laske kertolasku ensin.",
+          "explain": "2 · 7 + 9 = 14 + 9 = 23.",
+          "tag": "linear"
+        }
+      },
+      "transfer": {
+        "kind": "numeric",
+        "registry": {
+          "node": "M79-EXPR-EVAL",
+          "tag": "transfer",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "example": {
+          "say": "Taksimatkan hinta on 4 + 2k euroa, kun matka on k km. Paljonko maksaa 6 km?",
+          "task": {
+            "kind": "numeric",
+            "answer": 16,
+            "unit": "€",
+            "whyAt": {
+              "12": "Tämä on kilometrien hinta. Lisää aloitusmaksu 4 €.",
+              "30": "2k ei ole numerot peräkkäin: 2 · 6.",
+              "36": "Laskit ensin 4 + 2. Kertolasku tehdään ennen yhteenlaskua: 2 · 6."
+            }
+          },
+          "explain": "4 + 2 · 6 = 4 + 12 = 16 €.",
+          "hint": "Sijoita k = 6. Laske ensin 2 · 6.",
+          "tag": "transfer"
+        }
+      }
+    },
+    "phaseDispatch": "kit.cases: named ordinary families for guided/independent/retrieval; separate transfer.256 seeds/phase,1024 items perKC.",
+    "registryOverlay": "Manifest coverage then node/wildcard/tag family merges recorded in effective inventory. Neither assigned KC has a SIMS motion override or a dynamic canonical rule.",
+    "correctionsAndLimits": "COVERAGE undercounts demos2 versus3, omits match, and understates paren6–70/neg−24–7 ranges. Keep supplied value distinct from unknown solving; no unsupported efficacy inference from Lite audit.",
+    "audit": "LESSON_AUDIT describes static substitution being replaced by evalScene, added match, whyAt and the k=x=2 distractor correction. Historical results are unapproved context.",
+    "reconciliationFile": "alignment.md",
+    "untouched": "Immutable Lite, frozen graph/roles/prerequisites and prior packages unchanged.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+        "src/content/algebra79b.ts": "2cb8b4e292009053a217f710c067ef8fb9b7b33a3205c127fe622f3886e7ac3b",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/content/ranta2.ts": "87944d2b01f0eeb53212fa1e9d86fa034c4b8db3a8fd0c572f7d74a462716020",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/ui/widgets.ts": "ed38f173766820cfc9dafcf8ea95a57a8940afe50a36ad19f3b00f3193e56ede"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "7-9",
+    "canonical": {
+      "id": "M79-EXPR-EVAL",
+      "subject": "mathematics",
+      "grade_band": "7-9",
+      "topic_area": "S3 Algebra",
+      "parent_concept": "Lauseke",
+      "title": "Lausekkeen arvon laskeminen muuttujan arvolla",
+      "short_description": "Lausekkeen arvon laskeminen muuttujan arvolla",
+      "node_kind": "procedure",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "M79-S3"
+      ],
+      "relations": [
+        {
+          "id": "M79-VAR-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M79-VAR-01 on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "M-EXPR-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-EXPR-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M79-VAR-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate",
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "S3 Algebra",
+        "Lauseke"
+      ]
+    },
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M79-VAR-01"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "required": [
+      {
+        "id": "M79-VAR-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M79-VAR-01 on ydinesitieto tälle osaamiskohteelle."
+      }
+    ],
+    "strongSupport": [
+      {
+        "id": "M-EXPR-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "M-EXPR-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      }
+    ],
+    "teacherObjective": "Oppilas sijoittaa annetun luvun lausekkeeseen ja laskee nimetyn osalaskun sekä koko lausekkeen arvon oikeassa laskujärjestyksessä.",
+    "childGoal": "Sijoitan annetun luvun kirjaimen paikalle ja lasken lausekkeen arvon.",
+    "assumed": "Required on M79-VAR-01. M-EXPR-01 on vahva tuki, ei uusi lukko. Kertolaskun ja laskujärjestyksen käytetyt vaiheet selitetään. Lite neg olettaa INT-MUL/INT-ADD; oma negatiivinen tuki nimetään eikä siitä tehdä uutta kanonista porttia. procedure/atomic/entry none säilyy. Ei equation-solving-, yleistä merkkijonolaskinta, itsenäisyys-/pysyvyys-/mastery-väitettä tai tallennusta.",
+    "scope": [
+      "Supplied-value linear, grouped, signed and stipulated-fare expressions. Checked practice completes two named numerical quantities, not a free symbolic expression. Signed arithmetic explicitly supported.",
+      "Demo3x+2 uses x2–6; two-stage practice has4 exact named cases. No equation solving or unrestricted expression parser."
+    ],
+    "interaction": "Kolme nimettyä tapausta: linear, paren ja signed. Annettu x/a ja sijoitettu lasku näkyvät. Oppilas kirjoittaa yhden nimetyn osalaskun arvon sekä koko arvon:12/14,8/16 tai−8/1. Kentät voi täyttää missä järjestyksessä vain. Tarkistus kertoo juuri virheellisen vaiheen ja syyn; oikea toinen kenttä ei peitä väärää tai tyhjää ensimmäistä. Tämä on tuettu laskuketjun täydentäminen, ei väite vapaasta symbolisen sijoituksen kirjoittamisesta. Suora lopputulos ja muut laskutavat voi lisäksi käsitellä paperilla; ketju ei ole ainoa matemaattinen menetelmä.",
+    "support": [
+      "Vihje avaa yhden laskuvaiheen ja kertomerkinnän; ei pakollista puhetta.",
+      "Lisätutkimus: x=0, sama kirjain kahdessa kohdassa, ero3x+2 /3(x+2); ei potensseja tämän rajatun mallin vaatimukseksi.",
+      "Offline: kolme kirjekuorta ja merkkejä; myöhemmin annettu2(a+5)-tilanne. Opettaja voi lukea.",
+      "Exit: mikä muuttui laskussa, kun kirjaimen paikalle tuli4? Missä kerto- ja yhteenlasku näkyvät?"
+    ],
+    "feedbackSemantics": [
+      "Both input/change use a shared scoped semantic dispatcher. Check reads current case and visible numerical fields. Case change clears dependent answer feedback; separate demo value/steps preserve it."
+    ],
+    "evidenceLimits": [
+      "Original curriculum facts are frozen canonical data; scenarios and finite models are project design choices.",
+      "Supported on-screen activity; no persistence, learner record, formal mastery award, efficacy, retention or human-validation claim.",
+      "No physical handling proficiency inferred. Child core contains mathematical instructions; assessment/evidence limitations are teacher-facing."
+    ],
+    "assetProvenance": [
+      {
+        "path": "substitution.svg",
+        "origin": "Original mathematical SVG drawn in code for this package2026-10-29; no source figure or mascot redrawn."
+      },
+      {
+        "path": "shared/loikka/curious.png",
+        "origin": "Actual user-supplied shared transparent PNG referenced unchanged; not duplicated into the package. Owner licensing/release decisions remain separate."
+      }
+    ]
+  },
+  "extensions": {
+    "batch": "B06",
+    "authored": "2026-10-29",
+    "sourcePreparation": "B06 actual source/research prep reused explicitly, not a fabricated fresh search per item.",
+    "feedbackContractSha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+    "eventCommitAddendumSha256": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+    "researchLimits": "Original diagrams/Finnish text. NCETM place-value PDF extraction inadequate; OpenStax material explicitly not adopted under assumed reuse terms. See research.md.",
+    "browserQA": "browser.mjs is intended for exact actual compiled site; source-harness checks separately labelled. Human review remains pending.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B08",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

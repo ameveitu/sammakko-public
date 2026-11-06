@@ -1,0 +1,669 @@
+{
+  "kcId": "M-FRAC-15",
+  "pagePath": "lessons/M-FRAC-15.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-FRAC-15",
+  "canonicalNode": {
+    "id": "M-FRAC-15",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Murtolukulaskut",
+    "title": "Murtoluvun kertominen luonnollisella luvulla",
+    "short_description": "Murtoluvun kertominen luonnollisella luvulla",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-FRAC-03",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-FRAC-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-MUL-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MUL-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-FRAC-03",
+          "M-MUL-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Murtolukulaskut"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-FRAC-03",
+      "targetKCId": "M-FRAC-15",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-FRAC-03 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-MUL-01",
+      "targetKCId": "M-FRAC-15",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MUL-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-FRAC-15",
+      "targetKCId": "M79-FRAC-MUL",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-FRAC-15 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-FRAC-03",
+        "M-MUL-01"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-FRAC-15/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-306-multiplying-whole-numbers-and-fractions/",
+        "title": "Multiplying whole numbers and fractions",
+        "organisation": "NCETM",
+        "accessed": "2026-10-29",
+        "inspected": "Official HTML introduction and five teaching points; target repeated-addition point1 distinguished from broader mixed-number/scaling/inverse points. No full teacher guide/video claim.",
+        "adopted": "Repeated equal fractional quantities can be expressed as whole-number multiplication; allow totals aboveone.",
+        "rejected": "Do not import general fraction×fraction, division, mixed-number arithmetic or reverse-quantity algorithms as required. Source3.9 was inspected as a contrast and rejected as the primary match.",
+        "usageRestrictions": "NCETM default Crown/Open Government Licence with attribution, named-author and third-party qualifications. Conceptual comparison only; no source text/figures/slides/video copied. Copyright page actually retrieved in this production conversation on2026-10-29."
+      },
+      {
+        "url": "https://www.mathmammoth.com/videos/fractions_2",
+        "title": "Free fraction videos online, part2 — Multiply fractions by whole numbers",
+        "organisation": "Math Mammoth / Maria Miller",
+        "accessed": "2026-10-29",
+        "inspected": "Publisher-authored HTML section describing repeated shaded groups, denominator trap and recipe scaling. Embedded video not watched.",
+        "adopted": "Repeat the samefractional amount with unit-size fixed; a recipe/portion scaling transfer can supply purpose.",
+        "rejected": "No copying of exercise, image or video. Broader fraction×fraction, mixed products and division sections do not define this lesson scope.",
+        "usageRestrictions": "No open republication permission assumed; conceptual comparison/link only, no source protected content reused."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+        "note": "Author source checks only; different-author exact-revision review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/place-decimal-fraction-independent-r2.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+        "note": "No human or learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-FRAC-15",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "groups.svg",
+        "sha256": "1f085407d4da84b6ac5d83da066af7f07f31c5b7ab1635681ad4b47e03cc817d"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "316d47729e5504ce27de83ac9b95c76b96eb7c542ce4151193ab3473f944895a"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-306-multiplying-whole-numbers-and-fractions/",
+        "title": "Multiplying whole numbers and fractions",
+        "organisation": "NCETM",
+        "accessed": "2026-10-29",
+        "inspected": "Official HTML introduction and five teaching points; target repeated-addition point1 distinguished from broader mixed-number/scaling/inverse points. No full teacher guide/video claim.",
+        "adopted": "Repeated equal fractional quantities can be expressed as whole-number multiplication; allow totals aboveone.",
+        "rejected": "Do not import general fraction×fraction, division, mixed-number arithmetic or reverse-quantity algorithms as required. Source3.9 was inspected as a contrast and rejected as the primary match.",
+        "usageRestrictions": "NCETM default Crown/Open Government Licence with attribution, named-author and third-party qualifications. Conceptual comparison only; no source text/figures/slides/video copied. Copyright page actually retrieved in this production conversation on2026-10-29."
+      },
+      {
+        "url": "https://www.mathmammoth.com/videos/fractions_2",
+        "title": "Free fraction videos online, part2 — Multiply fractions by whole numbers",
+        "organisation": "Math Mammoth / Maria Miller",
+        "accessed": "2026-10-29",
+        "inspected": "Publisher-authored HTML section describing repeated shaded groups, denominator trap and recipe scaling. Embedded video not watched.",
+        "adopted": "Repeat the samefractional amount with unit-size fixed; a recipe/portion scaling transfer can supply purpose.",
+        "rejected": "No copying of exercise, image or video. Broader fraction×fraction, mixed products and division sections do not define this lesson scope.",
+        "usageRestrictions": "No open republication permission assumed; conceptual comparison/link only, no source protected content reused."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+        "note": "Author source checks only; different-author exact-revision review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+        "note": "Author source checks only; different-author exact-revision review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+        "note": "No human or learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/place-decimal-fraction-independent-r2.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/place-decimal-fraction-independent-r2.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-FRAC-15",
+      "sourceBuild": "lite181-2026-10-27",
+      "sourceFile": "authority/production-181-v2/lite/src/content/saari2.ts",
+      "nodeRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "goalOrigin": "GOALS fallback viaindex",
+      "actualFamilies": [
+        "whole",
+        "line",
+        "repeat",
+        "count",
+        "transfer"
+      ],
+      "familyMapping": {
+        "repeat": "Product as repeated equalunitfraction amounts.",
+        "count": "Explicitly distinguish numeratorpiececount fromwholequantity.",
+        "whole": "bunitfractionsfillone; zero and wholeboundaries supplied.",
+        "line": "Actual newer3rowmatching inventoried; own open calculations/construction not claimed equivalent to free general production.",
+        "transfer": "Show every stated guestgroup, fix legacycapped4picture; distinguish whole pies and piececount."
+      },
+      "registry": {
+        "whole": {
+          "node": "M-FRAC-15",
+          "tag": "whole",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "line": {
+          "node": "M-FRAC-15",
+          "tag": "line",
+          "outcome": "sijoittaa osat oikeille paikoille",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "repeat": {
+          "node": "M-FRAC-15",
+          "tag": "repeat",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "count": {
+          "node": "M-FRAC-15",
+          "tag": "count",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "transfer": {
+          "node": "M-FRAC-15",
+          "tag": "transfer",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        }
+      },
+      "demoInventory": [
+        {
+          "say": "Kolmesta piirakasta otetaan kustakin kaksi viidesosaa. Katso, kun palat siirtyvät vatiin yksi kerrallaan. Kolme kertaa kaksi palaa on kuusi palaa, ja jokainen on yhä viidesosa: kuusi viidesosaa. Viisi palaa täyttää yhden kokonaisen.",
+          "label": "3 × 2/5",
+          "duration": 11,
+          "dimensions": [
+            320,
+            250
+          ]
+        },
+        {
+          "say": "Neljä vierasta saa kukin kolme neljäsosaa. Kaksitoista neljäsosaa täyttää kolme vatia: kolme kokonaista piirakkaa. Nimittäjää ei kerrota, koska palan koko pysyy samana.",
+          "label": "4 × 3/4",
+          "duration": 14.6,
+          "dimensions": [
+            320,
+            250
+          ]
+        }
+      ],
+      "motionOverlay": false,
+      "sourceHashes": {
+        "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+        "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2",
+        "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+        "EVENT_COMMIT_REVIEW_B05.md": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+        "authority/production-181-v2/lite/src/content/ranta2.ts": "28d8f7b08205a7e5be0c2087c85e256e609578e83a9e6e714a1ee8573ff47fc6",
+        "authority/production-181-v2/lite/src/content/decimals.ts": "7ada1da383cb235ec320e4f4da2150c79ddb02fcd5334874a5c59fd05ae8c21e",
+        "authority/production-181-v2/lite/src/content/saari2.ts": "bf9e657f3e4f975cbdafd9c8b5c891d789ffd4e98be7126ee438096f7d9f5c6e",
+        "authority/production-181-v2/lite/src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "authority/production-181-v2/lite/src/content/decanim.ts": "714c5d2eccee47d74d6ff7d67c04de3a5ccda3cc2b1551005396773d36af4d24",
+        "authority/production-181-v2/lite/src/content/fracanim.ts": "b95b23255f75dfd3e88a4eba904e22d9cee75d2f756e4125824658488eac3ac1",
+        "authority/production-181-v2/lite/src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+        "authority/production-181-v2/lite/src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+        "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "authority/production-181-v2/lite/src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "shared/aava/curious.png": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2",
+        "shared/loikka/map.png": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+      },
+      "reconciliation": "alignment.md",
+      "corrections": [
+        "Actual line/place family included, missing from stale COVERAGE.",
+        "Verified source transferseed1 asks8groups but caps pictureat4; ownmodeldrawsall8and24quarterpieces.",
+        "factoryScene26→30radius growth not copied; everypiece width72/b,height26 remains fixed.",
+        "Count of pieces distinguished from whole-unit amount; improper/equivalent/zero results accepted."
+      ],
+      "runtimeRoutePolicy": "Shared verified resolver only. No invented public pupil URL or new legacygame policy branch."
+    },
+    "planning": {
+      "gradeBand": "3-6",
+      "teacherObjective": "Oppilas tulkitsee luonnollisella luvulla kertomisen saman murtomäärän toistamisena ja laskee yksikköosat säilyttäen alkuperäisen vertailukokonaisen.",
+      "childGoal": "Kokoan monta samanlaista murtomäärää yhteen.",
+      "canonical": {
+        "id": "M-FRAC-15",
+        "subject": "mathematics",
+        "grade_band": "3-6",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Murtolukulaskut",
+        "title": "Murtoluvun kertominen luonnollisella luvulla",
+        "short_description": "Murtoluvun kertominen luonnollisella luvulla",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL3-6-S2"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-FRAC-03",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-FRAC-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-MUL-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-MUL-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-FRAC-03",
+              "M-MUL-01"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Murtolukulaskut"
+        ]
+      },
+      "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-FRAC-03",
+            "M-MUL-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "requiredPrerequisites": [
+        {
+          "id": "M-FRAC-03",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-FRAC-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-MUL-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MUL-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "strongSupport": [],
+      "scope": "Six strictfixtures incl0/1multiplier, proper/improper/whole results and8guestgroups. General helpern0–8,a0…b,b2–8. Openfractionfields nonnegative0–999/positive1–999.",
+      "assumed": [
+        "Relevant canonical integer/unit knowledge; the lesson supplies its pictures and quantity/reference-unit meanings. Adult reading/pointing allowed. No compulsory object naming, speech confirmation or irrelevant taps."
+      ],
+      "concreteToRepresentation": "Equal paper-unit strips, eachgroup same a/b → repeat groups →move identical fractional pieces →whole bins at bpieces →k×a/b=(ka)/b. Keep improperfraction valid rather than force mixed-number conversion.",
+      "interaction": "Step whole-groups forward/back, play/stop/reset/end exact-size fractional-piece collection. Separate direct numerator/denominator answer accepts equivalent amounts with no mandatory model taps.",
+      "help": "Count groups and parts pergroup, then state eachpartunit1/b. kwholemultiplier can be writtenk/1but not required.",
+      "advanced": "Compare grouporder and optional0/1multiplier boundaries; repeatedfractiontotal can exceedone. No generalfraction×fraction or negativefactor requirement.",
+      "offline": "Precut equal-paperpieces/portionrecipe. Use identicalwhole reference on eachsheet. No evidence of real cooking/cutting from screen.",
+      "exit": "Miksi nimittäjä ei kerrota luvulla3 laskussa3×2/5? Näytä sama pala ennen ja jälkeen.",
+      "evidenceLimits": [
+        "Whole-number repeat only, not general fractional-factor scaling, negative factors or mixed-number algorithm.",
+        "No physical cutting/portioning, free explanation, retention, independent/formal mastery or efficacy inference."
+      ],
+      "assetProvenance": {
+        "originalSubjectSVG": "groups.svg",
+        "suppliedPNG": "shared/aava/curious.png",
+        "PNGUnmodified": true,
+        "noExternalFigureReused": true,
+        "licence": "Owner decision for original text/art; supplied PNG licence not presumed open."
+      }
+    },
+    "extensions": {
+      "authoredOn": "2026-10-29",
+      "assignment": "ExplicitB08authorGO afterB07sealed164600c9b4324c920f5da1cf67d7d332113c4747; ownPLACE02/DEC01/FRAC15only.",
+      "reviewStatus": "Author checks only; different independent source and main actualnative integration pending.",
+      "feedbackContractSha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "eventCommitAddendumSha256": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+      "pureTestCommand": "node --test lesson-network/packages/M-FRAC-15/tests.mjs",
+      "clusterBrowserQA": "node lesson-network/packages/M-PLACE-02/browser.mjs",
+      "sourceNotes": {
+        "research.md": "a25dc625f86934c85749bc4b843ea8a94784c9434950ddad448527a1f937b9a2",
+        "alignment.md": "150a81d4e5a3a9ef1d5048f1cbc2317190f5d1cc2f98ad43c1d49915900d47ae",
+        "tests.mjs": "c08c5800da5eb5ed3ba3b5ce997b2fea8b4646f37b256b842b6eeb6f853b41de"
+      }
+    },
+    "contentHash": "2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+    "contentRevision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+          "note": "Author source checks only; different-author exact-revision review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/place-decimal-fraction-independent-r2.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+          "note": "No human or learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+          "note": "No actual human/target-learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+          "note": "Author source checks only; different-author exact-revision review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@2d79db7a608ea8f8819947b647a7365bcaa3db46d93bae3f9be4a2d18026bb22",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/place-decimal-fraction-independent-r2.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    }
+  },
+  "outputHash": "540629dea05132e0b5420ffe9b8a74f6cfb31ed73ae31d9141fe1d6a7600b761",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "540629dea05132e0b5420ffe9b8a74f6cfb31ed73ae31d9141fe1d6a7600b761",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

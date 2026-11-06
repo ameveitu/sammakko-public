@@ -1,0 +1,679 @@
+{
+  "kcId": "M-ADD-01",
+  "pagePath": "lessons/M-ADD-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-ADD-01",
+  "canonicalNode": {
+    "id": "M-ADD-01",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Yhteenlasku",
+    "title": "Yhteenlasku kahden määrän yhdistämisenä",
+    "short_description": "Yhteenlasku kahden määrän yhdistämisenä",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-NUM-02",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-NUM-02 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-NUM-02"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Yhteenlasku"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-NUM-02",
+      "targetKCId": "M-ADD-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-NUM-02 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-NEG-04",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-ADD-01 tukee olennaisesti oppimista, mutta puute voidaan korjata noodin sisällä.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-ADD-SUB-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-ADD-COMM",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-ADD-ASSOC",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-ADD-SUB-SELECT",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-MUL-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-FRAC-11",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-GMEAS-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-STAT-04",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Keskiarvon tasauksen käsite voidaan ensin ymmärtää konkreettisella jakamisella ilman muodollista yhteenlaskualgoritmia.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-STAT-05",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Keskiarvon numeerinen lasku tarvitsee yhteenlaskun merkityksen.",
+      "sourceRelationIndex": 3
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-DEC-ADD",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Yhteenlaskun merkitys tarvitaan.",
+      "sourceRelationIndex": 3
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-DEC-SUB",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Yhteenlaskun merkitys tarvitaan.",
+      "sourceRelationIndex": 3
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M79-INT-ADD",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M79-PCT-CHANGED",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-ADD-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-NUM-02"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-ADD-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/ey-composition/",
+        "title": "Composition — Early Years",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "treatment": "See parts and whole together; recombine disjoint groups without changing their total.",
+        "adopted": "Visible parts move to one collection. Small direct sums, repeated equal parts and optional count support.",
+        "rejected": "Do not require naming objects, counting taps or all hidden-part/inverse-operation work. Do not substitute prepared-answer recognition for free sentence construction.",
+        "usageRestrictions": "Original text/figures not copied. NCETM default Crown Copyright/OGL attribution; named-author and third-party exceptions apply. Rights checked https://www.ncetm.org.uk/copyright/ . No source licence transfer to supplied mascot artwork.",
+        "limitations": "Foreign early-years conceptual guidance, younger than Finnish grades1–2; adaptation is a project decision. Not a lesson trial, Finnish curriculum mapping or effectiveness/retention evidence."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": {
+      "task_id": "KC-16-M-ADD-01",
+      "kc_id": "M-ADD-01",
+      "mastery_role": "atomic",
+      "node_kind": "procedure",
+      "status": "PENDING_IMPLEMENTATION",
+      "content_file": null,
+      "prerequisites": [
+        {
+          "all_of": [
+            "M-NUM-02"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "validation": {
+        "schema": "pending_autonomous_adventure_review",
+        "graph_refs": "pending_autonomous_adventure_review",
+        "domain_truth": "pending_autonomous_adventure_review",
+        "item_invariants": "pending_autonomous_adventure_review",
+        "pedagogy_review": "pending_autonomous_adventure_review",
+        "subject_review": "pending_autonomous_adventure_review",
+        "accessibility_review": "pending_autonomous_adventure_review",
+        "runtime_smoke": "pending_autonomous_adventure_review"
+      },
+      "production_order": 16,
+      "historical_status": "DEFERRED_UNTIL_CALIBRATION",
+      "autonomous_evidence": [],
+      "historical_validation": {
+        "schema": "pending",
+        "graph_refs": "pending",
+        "domain_truth": "pending",
+        "item_invariants": "pending",
+        "pedagogy_review": "pending",
+        "subject_review": "pending",
+        "accessibility_review": "pending",
+        "runtime_smoke": "pending"
+      }
+    }
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@f9cd1efe326860123d0da8125ee395a6c9100d3b42f35b8d86fc4243e4e7f69a",
+        "note": "Author source/technical checks only. Separate independent review remains pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@8388f7dc2fa006aa07b974df6254cd98bf32fecb4b07957cfef1a89231b3f2ad",
+        "note": "Revision2 learner-copy refinement only. Author checks; separate independent review remains pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+        "note": "Revision3 focused optional-helper keyboard repair only. Author checks; Carver targeted re-review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/main-independent-current-source.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@f9cd1efe326860123d0da8125ee395a6c9100d3b42f35b8d86fc4243e4e7f69a",
+        "note": "No human or child review performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@8388f7dc2fa006aa07b974df6254cd98bf32fecb4b07957cfef1a89231b3f2ad",
+        "note": "No human/child review performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+        "note": "No human or child review performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-ADD-01",
+    "revision": 3,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "joining.svg",
+        "sha256": "9029a2c37593461a00ba5ac197736d1bb7f279ba3ed37bea1d43d142e7b0e8ca"
+      },
+      {
+        "path": "shared/loikka/happy.png",
+        "sha256": "78871cfd1760663c4150acedc424b30fca408310906643a4d8aee9469fe0ec2e"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/ey-composition/",
+        "title": "Composition — Early Years",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "treatment": "See parts and whole together; recombine disjoint groups without changing their total.",
+        "adopted": "Visible parts move to one collection. Small direct sums, repeated equal parts and optional count support.",
+        "rejected": "Do not require naming objects, counting taps or all hidden-part/inverse-operation work. Do not substitute prepared-answer recognition for free sentence construction.",
+        "usageRestrictions": "Original text/figures not copied. NCETM default Crown Copyright/OGL attribution; named-author and third-party exceptions apply. Rights checked https://www.ncetm.org.uk/copyright/ . No source licence transfer to supplied mascot artwork.",
+        "limitations": "Foreign early-years conceptual guidance, younger than Finnish grades1–2; adaptation is a project decision. Not a lesson trial, Finnish curriculum mapping or effectiveness/retention evidence."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@f9cd1efe326860123d0da8125ee395a6c9100d3b42f35b8d86fc4243e4e7f69a",
+        "note": "Author source/technical checks only. Separate independent review remains pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@f9cd1efe326860123d0da8125ee395a6c9100d3b42f35b8d86fc4243e4e7f69a",
+        "note": "Author source/technical checks only. Separate independent review remains pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@f9cd1efe326860123d0da8125ee395a6c9100d3b42f35b8d86fc4243e4e7f69a",
+        "note": "No human or child review performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@8388f7dc2fa006aa07b974df6254cd98bf32fecb4b07957cfef1a89231b3f2ad",
+        "note": "Revision2 learner-copy refinement only. Author checks; separate independent review remains pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@8388f7dc2fa006aa07b974df6254cd98bf32fecb4b07957cfef1a89231b3f2ad",
+        "note": "Revision2 learner-copy refinement only. Author checks; separate independent review remains pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@8388f7dc2fa006aa07b974df6254cd98bf32fecb4b07957cfef1a89231b3f2ad",
+        "note": "No human/child review performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+        "note": "Revision3 focused optional-helper keyboard repair only. Author checks; Carver targeted re-review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+        "note": "Revision3 focused optional-helper keyboard repair only. Author checks; Carver targeted re-review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+        "note": "No human or child review performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/main-independent-current-source.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/main-independent-current-source.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-ADD-01",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "sourceFiles": [
+        "src/content/arith.ts",
+        "src/content/countanim.ts",
+        "src/content/goals.ts",
+        "src/content/families.ts",
+        "src/content/index.ts",
+        "src/content/kit.ts",
+        "src/content/motionsims.ts",
+        "src/data/graph.json",
+        "src/engine/types.ts",
+        "src/engine/check.ts",
+        "src/engine/expr.ts",
+        "audit/LESSON_AUDIT.md"
+      ],
+      "sourceHashes": {
+        "src/content/arith.ts": "b04cc4cfa2d0e94777ce2461c755519f7927e274e80d859fdd4bf6e2dbe13381",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "src/engine/expr.ts": "5aa128b08a9c45a6612f942cc9c52a670910ab87e28f47f5522b0dff67989b77",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b"
+      },
+      "families": [
+        "join",
+        "expr",
+        "sentence",
+        "transfer"
+      ],
+      "inventory": {
+        "intro": "Loikka and Aava join picnic portions.",
+        "demo": "Actual joinScene3+2 and4+3: per-piece joining, continued count, final equation.",
+        "generators": "join1–5+1–5; expr1–6+1–4; sentence1–5+1–4 fact build with reusable number tokens; transfer2–4+1–3+1.",
+        "hint": "Count all or continue from the first part; include all original portions.",
+        "feedback": "Part vs whole, one too many/few; sentence fact mode accepts swapped operands.",
+        "media": "countanim joinScene; no ADD01 motion overlay.",
+        "registry": "cases selects join/expr/sentence except separate three-part transfer; no ADD01 family or coverage overlay.",
+        "audit": "Reports joining animation, sentence construction and hints; immutable audit is unapproved history."
+      },
+      "inherited": "Combine disjoint sets; all pieces retained; direct total and supported mathematical notation.",
+      "extended": "Direct numeric answer, equal repeated parts, visible source conservation, optional marks and dense boundary validation.",
+      "corrected": "Marker completion or observation is not required to answer. Fixed sentence completion is not free expression construction or evidence of independent competence.",
+      "state": "authored_independent_review_pending",
+      "reconciliation": "alignment.md"
+    },
+    "planning": {
+      "gradeBand": "1-2",
+      "role": "atomic",
+      "teacherObjective": "Yhteenlasku kahden määrän yhdistämisenä",
+      "childGoal": "Yhdistän kaksi määrää ja kerron yhteisen määrän.",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-NUM-02"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "strongSupport": [],
+      "assumed": "M-NUM-02 cardinality and its counting ancestry. Small numeral reading/writing supported by adult if needed; names/species, spoken confirmation and a marking procedure are not required.",
+      "coTaught": [
+        "M-SYM-PLUS (optional notation introduced, no hard prerequisite or mastery credit)",
+        "M-SYM-EQUAL (optional equality meaning introduced, no hard prerequisite or mastery credit)"
+      ],
+      "scope": "Two positive disjoint parts with total at most10. Optional equal-part cases, supplied sentence slots and three-part extension. No broad arithmetic fluency or unaided free expression construction claim.",
+      "evidenceLimits": "Assisted low-stakes response in supplied context. Model and marks visible; no persistent personal evidence, formal mastery, independence or retention inference.",
+      "sourceBasis": "direct_curriculum",
+      "curriculumVsDesign": "Canonical direct-curriculum grades1–2 atomic node and exact M-NUM-02 AND group preserved. NCETM is foreign conceptual corroboration, not new OPH authority. Example counts, movement path, numbering and scaffolds are project design.",
+      "assetProvenance": "Original deterministic SVG and renderer; supplied unchanged Loikka happy/Aava curious transparent PNGs. No mascot redraw or invented pose. Public release/licensing holds retained.",
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb"
+    },
+    "extensions": {
+      "productionBatch": "B05",
+      "simulationType": "conserved_disjoint_sets_joining",
+      "humanReview": "not_performed",
+      "independentReview": "pending_other_agent",
+      "playback": "1.2 pieces per playback second is illustrative pacing, not physical duration measurement.",
+      "data": "No personal or learner history. Optional marks indicate only local support."
+    },
+    "contentHash": "6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+    "contentRevision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@f9cd1efe326860123d0da8125ee395a6c9100d3b42f35b8d86fc4243e4e7f69a",
+          "note": "Author source/technical checks only. Separate independent review remains pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@8388f7dc2fa006aa07b974df6254cd98bf32fecb4b07957cfef1a89231b3f2ad",
+          "note": "Revision2 learner-copy refinement only. Author checks; separate independent review remains pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+          "note": "Revision3 focused optional-helper keyboard repair only. Author checks; Carver targeted re-review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+          "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/main-independent-current-source.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@f9cd1efe326860123d0da8125ee395a6c9100d3b42f35b8d86fc4243e4e7f69a",
+          "note": "No human or child review performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@8388f7dc2fa006aa07b974df6254cd98bf32fecb4b07957cfef1a89231b3f2ad",
+          "note": "No human/child review performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+          "note": "No human or child review performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@f9cd1efe326860123d0da8125ee395a6c9100d3b42f35b8d86fc4243e4e7f69a",
+          "note": "Author source/technical checks only. Separate independent review remains pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@8388f7dc2fa006aa07b974df6254cd98bf32fecb4b07957cfef1a89231b3f2ad",
+          "note": "Revision2 learner-copy refinement only. Author checks; separate independent review remains pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+          "note": "Revision3 focused optional-helper keyboard repair only. Author checks; Carver targeted re-review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "3@6042ab6c7fc84f2dad7b7209f4b8c93785c80ef34187739100a44bcc954d3af5",
+          "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/main-independent-current-source.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "e9ee05c65d524cbeb6643e080c9d9b0ff816cbf494d70f694d7198f11d5a2d46",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "7f2161ddd1794b68f98a7b4c3ed2c348df570225628b36c11b03abb6c36b70dc",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "e9ee05c65d524cbeb6643e080c9d9b0ff816cbf494d70f694d7198f11d5a2d46",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

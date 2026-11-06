@@ -1,0 +1,692 @@
+{
+  "kcId": "M-SUB-FACT-10",
+  "pagePath": "lessons/M-SUB-FACT-10.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-SUB-FACT-10",
+  "canonicalNode": {
+    "id": "M-SUB-FACT-10",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Laskufaktat",
+    "title": "Vähennyslaskun perusfaktat lukualueella 0–10",
+    "short_description": "Vähennyslaskun perusfaktat lukualueella 0–10",
+    "source_basis": "pedagogically_derived",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2"
+    ],
+    "evidence_notes": "v0.2-refaktorissa erotettu noodista M-ADD-FACT-01 itsenäiseksi evidenssikohteeksi.",
+    "status": "candidate_refactored",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-NUM-18",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-NUM-18 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-ADD-SUB-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Perusfaktoja voidaan harjoitella ennen eksplisiittistä käänteisyyden käsitteellistä hallintaa."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-NUM-18"
+        ],
+        "rationale": "Lukuhajotelmat ovat ydinesitieto; add/sub-käänteisyys vahva tuki."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "split_from": "M-ADD-FACT-01",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Laskufaktat"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-NUM-18",
+      "targetKCId": "M-SUB-FACT-10",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-NUM-18 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ADD-SUB-01",
+      "targetKCId": "M-SUB-FACT-10",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Perusfaktoja voidaan harjoitella ennen eksplisiittistä käänteisyyden käsitteellistä hallintaa.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-SUB-FACT-10",
+      "targetKCId": "M-ADD-FACT-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-FACT-01 on v0.2:ssa integraationoodi; atominen alitaito M-SUB-FACT-10 vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-NUM-18"
+      ],
+      "rationale": "Lukuhajotelmat ovat ydinesitieto; add/sub-käänteisyys vahva tuki."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-SUB-FACT-10/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "NCETM1.7 Addition and subtraction: strategies within10",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-107-addition-and-subtraction-strategies-within-10/",
+        "read": "HTML61–80 introduction and all10 teaching points; no guide/slides/video read",
+        "adopted": "Known-part/count-on and count-back alternatives; zero/self subtraction and doubles relation.",
+        "rejected": "No speed/fluency certification from short local responses; no mandated single strategy.",
+        "licence": "NCETM copyright HTML53–57 read2026-10-29: unless otherwise stated Crown copyright/OGL; attribution and named-author permission caveat. No source prose/figures/code copied.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      },
+      {
+        "title": "NCETM1.12 Subtraction as difference",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-112-subtraction-as-difference/",
+        "read": "HTML61–72 introduction and all4 teaching points; no downloads read",
+        "adopted": "Compare unchanged sets by pairing; subtraction can describe difference without removing.",
+        "rejected": "Not imported as a Finnish year requirement or a full data-comparison curriculum.",
+        "licence": "NCETM copyright policy as independently read; conceptual comparison only, original diagrams/prose.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      },
+      {
+        "title": "NCETM1.6 Augmentation and reduction",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-106-additive-structures-introduction-to-augmentation-and-reduction/",
+        "read": "HTML61–72 introduction and all4 teaching points; video/guide/representations not read",
+        "adopted": "Connect first/change/now quantities to symbols; two-step story retains intermediate state.",
+        "rejected": "No word-trigger-only sign heuristic; direction and exact quantities supplied, no forced narrated response.",
+        "licence": "NCETM copyright policy as independently read; original contexts and graphics only.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      },
+      {
+        "title": "Mathematics Hub Year1 Addition and subtraction",
+        "url": "https://www.mathematicshub.edu.au/planning-tool/1/number/addition-and-subtraction/",
+        "read": "HTML50–79 development/learner misconceptions, especially zero and equality; licence footer190 and actual terms-of-use60–85",
+        "adopted": "More than one strategy, fresh contexts and clear equal quantities; zero is a counterexample to always-bigger/smaller rules.",
+        "rejected": "Australian up-to20 and curriculum codes do not broaden this canonical0–10 graph or establish Finnish mandate/efficacy. No linked resource/slide claimed read.",
+        "licence": "Commonwealth material CC BY4 unless indicated; logos/trademarks/third-party exclusions (actual Terms of Use read). No copied text/figures; source is pedagogical comparator.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@23d292e4ef9bb51a3ea1034accedf93a350101b82c26ced7377bcd9a1e71aa50",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@008a14f94e7d1e968cc19a4ebfcec80ba2fc79029c8e0d34117ec6f283a89d8a",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+        "note": "B11 r2 author noJS static default alignment fix. Existing f_8_3 selected matches question/hint and unchanged JS reset; independent Carver delta/current native pending. No self or human approval."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@23d292e4ef9bb51a3ea1034accedf93a350101b82c26ced7377bcd9a1e71aa50",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@008a14f94e7d1e968cc19a4ebfcec80ba2fc79029c8e0d34117ec6f283a89d8a",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+        "note": "B11 r2 author noJS static default alignment fix. Existing f_8_3 selected matches question/hint and unchanged JS reset; independent Carver delta/current native pending. No self or human approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+        "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-SUB-FACT-10",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "comparison.svg",
+        "sha256": "56f6e9c1d049bb723e5ed50614479a82deb0a77eb43d818a63df8aa7f00c345e"
+      },
+      {
+        "path": "count-up.svg",
+        "sha256": "552358c779d12f89ba10ca6a713ae1f9417236e82a51086148824c28c5cbd81a"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "860da2bc5fb7b0e5cc09191c50dfafa0163eb65b5769f7e530e8af410bf7c006"
+      },
+      {
+        "path": "take-end.svg",
+        "sha256": "25abf1734fe13c74d63301de2b7a8c447af8a7257eaf2c5582358252ad17c271"
+      },
+      {
+        "path": "take-start.svg",
+        "sha256": "fe6f91440114a4acf77c8a2600a6115b6589ea4ca54fee6ba3ae791a4ac57814"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "title": "NCETM1.7 Addition and subtraction: strategies within10",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-107-addition-and-subtraction-strategies-within-10/",
+        "read": "HTML61–80 introduction and all10 teaching points; no guide/slides/video read",
+        "adopted": "Known-part/count-on and count-back alternatives; zero/self subtraction and doubles relation.",
+        "rejected": "No speed/fluency certification from short local responses; no mandated single strategy.",
+        "licence": "NCETM copyright HTML53–57 read2026-10-29: unless otherwise stated Crown copyright/OGL; attribution and named-author permission caveat. No source prose/figures/code copied.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      },
+      {
+        "title": "NCETM1.12 Subtraction as difference",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-112-subtraction-as-difference/",
+        "read": "HTML61–72 introduction and all4 teaching points; no downloads read",
+        "adopted": "Compare unchanged sets by pairing; subtraction can describe difference without removing.",
+        "rejected": "Not imported as a Finnish year requirement or a full data-comparison curriculum.",
+        "licence": "NCETM copyright policy as independently read; conceptual comparison only, original diagrams/prose.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      },
+      {
+        "title": "NCETM1.6 Augmentation and reduction",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-106-additive-structures-introduction-to-augmentation-and-reduction/",
+        "read": "HTML61–72 introduction and all4 teaching points; video/guide/representations not read",
+        "adopted": "Connect first/change/now quantities to symbols; two-step story retains intermediate state.",
+        "rejected": "No word-trigger-only sign heuristic; direction and exact quantities supplied, no forced narrated response.",
+        "licence": "NCETM copyright policy as independently read; original contexts and graphics only.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      },
+      {
+        "title": "Mathematics Hub Year1 Addition and subtraction",
+        "url": "https://www.mathematicshub.edu.au/planning-tool/1/number/addition-and-subtraction/",
+        "read": "HTML50–79 development/learner misconceptions, especially zero and equality; licence footer190 and actual terms-of-use60–85",
+        "adopted": "More than one strategy, fresh contexts and clear equal quantities; zero is a counterexample to always-bigger/smaller rules.",
+        "rejected": "Australian up-to20 and curriculum codes do not broaden this canonical0–10 graph or establish Finnish mandate/efficacy. No linked resource/slide claimed read.",
+        "licence": "Commonwealth material CC BY4 unless indicated; logos/trademarks/third-party exclusions (actual Terms of Use read). No copied text/figures; source is pedagogical comparator.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@23d292e4ef9bb51a3ea1034accedf93a350101b82c26ced7377bcd9a1e71aa50",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@23d292e4ef9bb51a3ea1034accedf93a350101b82c26ced7377bcd9a1e71aa50",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@23d292e4ef9bb51a3ea1034accedf93a350101b82c26ced7377bcd9a1e71aa50",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@008a14f94e7d1e968cc19a4ebfcec80ba2fc79029c8e0d34117ec6f283a89d8a",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@008a14f94e7d1e968cc19a4ebfcec80ba2fc79029c8e0d34117ec6f283a89d8a",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@008a14f94e7d1e968cc19a4ebfcec80ba2fc79029c8e0d34117ec6f283a89d8a",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+        "note": "B11 r2 author noJS static default alignment fix. Existing f_8_3 selected matches question/hint and unchanged JS reset; independent Carver delta/current native pending. No self or human approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+        "note": "B11 r2 author noJS static default alignment fix. Existing f_8_3 selected matches question/hint and unchanged JS reset; independent Carver delta/current native pending. No self or human approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+        "note": "B11 r2 author noJS static default alignment fix. Existing f_8_3 selected matches question/hint and unchanged JS reset; independent Carver delta/current native pending. No self or human approval."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+        "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-SUB-FACT-10",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "definition": "facts.ts378–423",
+      "taskFamilies": [
+        "fact",
+        "think",
+        "left",
+        "up",
+        "transfer callback"
+      ],
+      "demos": [
+        "takeAway7−3",
+        "countUpScene6→9",
+        "lineHops8−2"
+      ],
+      "transfer": "pairScene comparison larger5…8 against smaller1…a−1, no removal",
+      "audit": "LESSON_AUDIT.md66,390–392",
+      "media": "countanim.ts153–182,479–503,603–621,826–858",
+      "sourceHashes": {
+        "src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "overlay": "Both own AUDIT_REV audit1-2026-10-28; own explicit goals. Registry fallback/index read; neither target has SIMS or family DECL override; COVERAGE missing up/sign and understates3 demos, actual definitions prevail. Phase transfer callback separate from random guided/independent family pool. Numeric Lite tolerance1e−9 not inherited.",
+      "inherited": [
+        "fact",
+        "think",
+        "left",
+        "up",
+        "transfer callback"
+      ],
+      "corrected": "Extend supported0−0/n−0/n−n; do not generalize strictly decreases beyond nonzero subtrahend; interval count not endpoint count. No tolerance near0. Pure numeric answer not strategy/fluency proof.",
+      "limits": "Actual source read; old Lite audits are unapproved author reports, not new independent proof."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-SUB-FACT-10",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Laskufaktat",
+        "title": "Vähennyslaskun perusfaktat lukualueella 0–10",
+        "short_description": "Vähennyslaskun perusfaktat lukualueella 0–10",
+        "source_basis": "pedagogically_derived",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2"
+        ],
+        "evidence_notes": "v0.2-refaktorissa erotettu noodista M-ADD-FACT-01 itsenäiseksi evidenssikohteeksi.",
+        "status": "candidate_refactored",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-NUM-18",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-NUM-18 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-ADD-SUB-01",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "Perusfaktoja voidaan harjoitella ennen eksplisiittistä käänteisyyden käsitteellistä hallintaa."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-NUM-18"
+            ],
+            "rationale": "Lukuhajotelmat ovat ydinesitieto; add/sub-käänteisyys vahva tuki."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "split_from": "M-ADD-FACT-01",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Laskufaktat"
+        ]
+      },
+      "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-NUM-18"
+          ],
+          "rationale": "Lukuhajotelmat ovat ydinesitieto; add/sub-käänteisyys vahva tuki."
+        }
+      ],
+      "gradeBand": "1-2",
+      "role": "atomic",
+      "teacherObjective": "Vähennyslaskun perusfaktat lukualueella 0–10",
+      "childGoal": "Ratkaisen pienen miinuksen osien avulla.",
+      "additionalHardGates": [],
+      "strongSupport": [
+        {
+          "id": "M-ADD-SUB-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Perusfaktoja voidaan harjoitella ennen eksplisiittistä käänteisyyden käsitteellistä hallintaa."
+        }
+      ],
+      "scope": "All66 nonnegative subtraction pairs0≤b≤a≤10, take-away/count-up/difference models and two transfer contexts. Count-back also explained; not timed recall.",
+      "evidenceLimits": "Local untimed checked responses only. Model/hints are assistance; no formal mastery, fluent recall, retention, strategy proof, personal history or learning-effectiveness inference.",
+      "assetProvenance": "Supplied immutable user-provided v2 transparent PNG as named character; no new raster generation or implied handdrawn provenance. Mathematical SVG is original exact code, not mascot replacement."
+    },
+    "extensions": {
+      "productionBatch": "B11",
+      "author": "Euler",
+      "simulationType": "Manual discrete quantity transformations; no playback/physical clock, frames or timer. Pause/resume/reset/dispose apply to all active controls.",
+      "interaction": "Both input/change commits and current visible readback before model actions/check; dependent edits retire verdict, independent model/help does not. Strict finite integer equality; blank is missing, no tolerance or semantic fallback.",
+      "integration": false,
+      "independentReview": "pending_Feynman",
+      "humanReview": "not_performed",
+      "designQA": "Own isolated full current shell design preview only, not actual main127; no shared header/presentation overrides or main build.",
+      "researchLimits": "Primary HTML sections and copyright/terms inspected2026-10-29. No slides/video/original research/Finnish-current requirements/efficacy claims."
+    },
+    "contentHash": "6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+    "contentRevision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@23d292e4ef9bb51a3ea1034accedf93a350101b82c26ced7377bcd9a1e71aa50",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@008a14f94e7d1e968cc19a4ebfcec80ba2fc79029c8e0d34117ec6f283a89d8a",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+          "note": "B11 r2 author noJS static default alignment fix. Existing f_8_3 selected matches question/hint and unchanged JS reset; independent Carver delta/current native pending. No self or human approval."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+          "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@23d292e4ef9bb51a3ea1034accedf93a350101b82c26ced7377bcd9a1e71aa50",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@008a14f94e7d1e968cc19a4ebfcec80ba2fc79029c8e0d34117ec6f283a89d8a",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+          "note": "B11 r2 author noJS static default alignment fix. Existing f_8_3 selected matches question/hint and unchanged JS reset; independent Carver delta/current native pending. No self or human approval."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+          "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@23d292e4ef9bb51a3ea1034accedf93a350101b82c26ced7377bcd9a1e71aa50",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@008a14f94e7d1e968cc19a4ebfcec80ba2fc79029c8e0d34117ec6f283a89d8a",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+          "note": "B11 r2 author noJS static default alignment fix. Existing f_8_3 selected matches question/hint and unchanged JS reset; independent Carver delta/current native pending. No self or human approval."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@6e9b34781dc790776f1c85519d8d936d7319dc6e0994af697b89655d2847419a",
+          "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "5e06e75247335a650d4c5559905ef1bf82b1ec1987c48f40ac2332fcdc543335",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "5e06e75247335a650d4c5559905ef1bf82b1ec1987c48f40ac2332fcdc543335",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

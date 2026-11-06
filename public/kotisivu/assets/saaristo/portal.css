@@ -1,0 +1,12 @@
+/* Portal from the homepage to /saaristo/: a glowing pill and a cross-document view transition. */
+@view-transition{navigation:auto}
+.shore-art{view-transition-name:saaristo-island}
+::view-transition-group(saaristo-island){animation-duration:.7s;animation-timing-function:cubic-bezier(.2,.8,.2,1)}
+.saaristo-portal{position:relative;display:inline-flex;align-items:center;gap:10px;margin-top:14px;min-height:44px;padding:9px 18px;border-radius:999px;font-size:13px;font-weight:800;color:#fff8e6;text-decoration:none;background:linear-gradient(120deg,#3b3466,#a65f7c 55%,#f0a46c);box-shadow:0 6px 22px -8px #a65f7c;isolation:isolate;overflow:hidden}
+.saaristo-portal span{color:#ffe7a6}
+.saaristo-portal:before{content:"";position:absolute;inset:-40%;z-index:-1;background:conic-gradient(from 0deg,transparent 0 70%,rgba(255,240,200,.55) 80%,transparent 90%);animation:portal-spin 4.5s linear infinite}
+.saaristo-portal:after{content:"";position:absolute;inset:2px;z-index:-1;border-radius:inherit;background:linear-gradient(120deg,#3b3466,#a65f7c 55%,#f0a46c)}
+.saaristo-portal:hover{transform:translateY(-2px)}
+@keyframes portal-spin{to{transform:rotate(1turn)}}
+@media (prefers-reduced-motion:reduce){.saaristo-portal:before{animation:none}::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
+.calm-chars .saaristo-portal:before{animation:none}

@@ -1,0 +1,665 @@
+{
+  "kcId": "M-DATA-09",
+  "pagePath": "lessons/M-DATA-09.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-DATA-09",
+  "canonicalNode": {
+    "id": "M-DATA-09",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Tietojenkäsittely ja tilastot",
+    "parent_concept": "Data",
+    "title": "Tiedon järjestelmällinen kerääminen",
+    "short_description": "Tiedon järjestelmällinen kerääminen",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S5"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "concept",
+    "relations": [
+      {
+        "id": "M-DATA-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-DATA-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-TH-07",
+        "relation_type": "process_support",
+        "strength": "strong",
+        "rationale": "M-TH-07 on tämän osaamiskohteen välitön välttämätön esitieto. v0.2: ei käytetä kovana avausporttina, koska kyse on prosessi-/representaatiotuesta."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-DATA-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Tietojenkäsittely ja tilastot",
+      "Data"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-DATA-01",
+      "targetKCId": "M-DATA-09",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DATA-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-TH-07",
+      "targetKCId": "M-DATA-09",
+      "relationType": "process_support",
+      "strength": "strong",
+      "rationale": "M-TH-07 on tämän osaamiskohteen välitön välttämätön esitieto. v0.2: ei käytetä kovana avausporttina, koska kyse on prosessi-/representaatiotuesta.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-DATA-09",
+      "targetKCId": "M-DATA-10",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DATA-09 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-DATA-09",
+      "targetKCId": "M79-DATA-COLLECT",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-DATA-09 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-DATA-01"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-DATA-09/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.amstat.org/docs/default-source/amstat-documents/gaiseiiprek-12_full.pdf",
+        "title": "Pre-K–12 Guidelines for Assessment and Instruction in Statistics Education II (GAISE II): A Framework for Statistics and Data Science Education",
+        "organization": "American Statistical Association; writing committee co-chairs Anna Bargagliotti and Christine Franklin",
+        "retrievedAt": "2026-10-29",
+        "retrievedSections": "PDFp3 copyright; LevelA collect/consider data and preparation before collecting; secondary-data discussion",
+        "usageRestrictions": "©2020 American Statistical Association. All rights reserved; reproduction requires written permission. Concepts inform original design; no copied tables, figures, survey questions or long passages.",
+        "adopted": [
+          "Keruutapa suunnitellaan kysymykseen sopivaksi; myös valmista aineistoa voi käyttää."
+        ],
+        "rejected": [
+          "Tutkimuksen yhtä järjestystä ei esitetä kaikkien tutkimusten lakina; tyhjän lomakkeen valmistelu ennen keruuta ei ole virhe."
+        ]
+      },
+      {
+        "url": "https://base-prod.rspb-prod.magnolia-platform.com/author/dam/jcr%3A3157c6f3-6d22-4e75-b352-6a1e76a93c89",
+        "title": "How to take part — Big Schools’ Birdwatch2026 (English page of bilingual PDF)",
+        "organization": "Royal Society for the Protection of Birds (RSPB)",
+        "retrievedAt": "2026-10-29",
+        "retrievedSections": "English PDFp1 steps and teaching hint; dated2026 resource",
+        "usageRestrictions": "No permissive reuse licence identified. Photo credit Ben Andrew/rspb-images.com. Treat as copyrighted; no artwork/worksheet copied. Historical protocol example, not current campaign instructions or proposed participation.",
+        "adopted": [
+          "Määrittele, lasketaanko samanaikaisia yksilöitä vai havaintokertoja; älä laske toistuvaa yksilöä automaattisesti uutena."
+        ],
+        "rejected": [
+          "Ei lajintunnistusvaatimusta, ruokintaa, kampanjaliittymistä tai tulosten lähettämistä; lähteen2026 päivämääriä ei esitetä nykyohjeena."
+        ]
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+        "note": "Source frozen after author checks; independent final review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+        "note": "Scoped stale-feedback repair and regressions passed; main independent re-review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+        "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B03/data-independent-review.json. Human/learner effectiveness and release approval remain pending."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+        "note": "No human review or child validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+        "note": "No human validation."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-DATA-09",
+    "revision": 3,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "lesson.css",
+        "sha256": "725d60607d5ab67343d6dd26aa948dee0dfe6cc6f63cd978996b93223e4e7e95"
+      },
+      {
+        "path": "scope.svg",
+        "sha256": "2dae4276bd975efba48741de7d5091c3ccc59239081016e633ee9236dc7d20f7"
+      },
+      {
+        "path": "shared/aava/map.png",
+        "sha256": "49b47a345fa26f9017acb1672d1b7d6d4fe0dcd511e756c693b731269579ebe9"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.amstat.org/docs/default-source/amstat-documents/gaiseiiprek-12_full.pdf",
+        "title": "Pre-K–12 Guidelines for Assessment and Instruction in Statistics Education II (GAISE II): A Framework for Statistics and Data Science Education",
+        "organization": "American Statistical Association; writing committee co-chairs Anna Bargagliotti and Christine Franklin",
+        "retrievedAt": "2026-10-29",
+        "retrievedSections": "PDFp3 copyright; LevelA collect/consider data and preparation before collecting; secondary-data discussion",
+        "usageRestrictions": "©2020 American Statistical Association. All rights reserved; reproduction requires written permission. Concepts inform original design; no copied tables, figures, survey questions or long passages.",
+        "adopted": [
+          "Keruutapa suunnitellaan kysymykseen sopivaksi; myös valmista aineistoa voi käyttää."
+        ],
+        "rejected": [
+          "Tutkimuksen yhtä järjestystä ei esitetä kaikkien tutkimusten lakina; tyhjän lomakkeen valmistelu ennen keruuta ei ole virhe."
+        ]
+      },
+      {
+        "url": "https://base-prod.rspb-prod.magnolia-platform.com/author/dam/jcr%3A3157c6f3-6d22-4e75-b352-6a1e76a93c89",
+        "title": "How to take part — Big Schools’ Birdwatch2026 (English page of bilingual PDF)",
+        "organization": "Royal Society for the Protection of Birds (RSPB)",
+        "retrievedAt": "2026-10-29",
+        "retrievedSections": "English PDFp1 steps and teaching hint; dated2026 resource",
+        "usageRestrictions": "No permissive reuse licence identified. Photo credit Ben Andrew/rspb-images.com. Treat as copyrighted; no artwork/worksheet copied. Historical protocol example, not current campaign instructions or proposed participation.",
+        "adopted": [
+          "Määrittele, lasketaanko samanaikaisia yksilöitä vai havaintokertoja; älä laske toistuvaa yksilöä automaattisesti uutena."
+        ],
+        "rejected": [
+          "Ei lajintunnistusvaatimusta, ruokintaa, kampanjaliittymistä tai tulosten lähettämistä; lähteen2026 päivämääriä ei esitetä nykyohjeena."
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+        "note": "Source frozen after author checks; independent final review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+        "note": "Source frozen after author checks; independent final review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+        "note": "No human review or child validation."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+        "note": "Scoped stale-feedback repair and regressions passed; main independent re-review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+        "note": "Scoped stale-feedback repair and regressions passed; main independent re-review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+        "note": "No human validation."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+        "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B03/data-independent-review.json. Human/learner effectiveness and release approval remain pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+        "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B03/data-independent-review.json. Human/learner effectiveness and release approval remain pending."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-DATA-09",
+      "liteContentRevision": "lite181-2026-10-27",
+      "liteNodeRevision": "audit1-2026-10-28",
+      "families": [
+        "method",
+        "fix",
+        "order",
+        "steps",
+        "compare",
+        "transfer"
+      ],
+      "familyTaskKinds": {
+        "method": "choice",
+        "fix": "choice",
+        "order": "choice",
+        "steps": "place",
+        "compare": "choice",
+        "transfer": "choice"
+      },
+      "sourceHashes": {
+        "src/content/saari2.ts": "bf9e657f3e4f975cbdafd9c8b5c891d789ffd4e98be7126ee438096f7d9f5c6e",
+        "src/content/dataanim.ts": "a8c997f90dc9e53b2c9925984b6c1e5a4c0b24969dea0800fc0d68f407aa2fcd",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715"
+      },
+      "registryCheck": {
+        "entryPoint": "src/content/index.ts",
+        "motionMap": "src/content/motionsims.ts",
+        "inSimMap": false,
+        "note": "Actual registry and SIMS map inspected during prep. No sim family for these IDs. Immutable source hashes rechecked before authorship."
+      },
+      "inventory": "alignment.md",
+      "reconciliation": "alignment.md#reconciliation-for-opus",
+      "status": "authored_comparison_independent_review_pending"
+    },
+    "planning": {
+      "gradeBand": "3-6",
+      "teacherObjective": "Tiedon järjestelmällinen kerääminen",
+      "childGoal": "Sovin kysymykseen sopivan keruutavan ja kirjaan jokaisen sovitun kerran.",
+      "sourceGraphRevision": "d547e9ebfbd8ca1737abe40be34e9ace53ea773e",
+      "sourceGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "canonicalSourceBasis": "direct_curriculum",
+      "canonicalCurriculumRefs": [
+        "OPH-POPS2014-MATH-VL3-6-S5"
+      ],
+      "canonicalNodeKind": "concept",
+      "canonicalMasteryRole": "atomic",
+      "canonicalEntryRole": "none",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-DATA-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "requiredPrerequisites": [
+        {
+          "id": "M-DATA-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-DATA-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "strongSupport": [
+        {
+          "id": "M-TH-07",
+          "relation_type": "process_support",
+          "strength": "strong",
+          "rationale": "M-TH-07 on tämän osaamiskohteen välitön välttämätön esitieto. v0.2: ei käytetä kovana avausporttina, koska kyse on prosessi-/representaatiotuesta."
+        }
+      ],
+      "assumed": [
+        "M-DATA-01 canonical required collection prerequisite. M-TH-07 remains strong process_support.",
+        "Day/moment labels and observation counts are supplied; no clock-reading task. A fixed reference window is a design choice appropriate to the proposed question."
+      ],
+      "scope": "Annettuun kysymykseen sopivan keruusuunnitelman rakentaminen ja kolmen keksityn kuvahavainnon kirjaaminen. Rajaus, ajankohta, kertojen kattavuus ja yksi kirjaus/kerta tarkistetaan. Vaihtoehtoinen kysymys hyväksyy toisen rajauksen. Ei kellonlukua, ulkoista tutkimusta tai lintulajien tunnistamista.",
+      "evidenceLimits": "The notebook operates on supplied synthetic records; it cannot establish physical fieldwork, actual compliance, population abundance, causal explanation, retention or human validation. Kaikki ruututoiminta on matalan kynnyksen harjoittelua. Ei tallennusta, osaamistilan ansaitsemista tai ihmiskatselmuksen väitettä.",
+      "interaction": "Three revisitable labelled synthetic snapshots and an editable in-memory observation notebook; not live temporal simulation.",
+      "assetProvenance": [
+        {
+          "path": "lesson.css",
+          "origin": "Original local scoped stylesheet."
+        },
+        {
+          "path": "scope.svg",
+          "origin": "Original subject SVG authored for this KC on2026-10-29; counts and corresponding representations verified by own domain tests."
+        },
+        {
+          "path": "shared/aava/map.png",
+          "origin": "Unchanged supplied shared v2 actual transparent PNG. Generated raster interpretation of user character, not a newly hand-drawn original. Referenced, never duplicated/redrawn in package."
+        }
+      ],
+      "sequence": [
+        "Konkreettinen tarkoitus ja lyhyt lapsen tavoite",
+        "Kaksi selitettyä esimerkkiä ennen harjoittelua, virhekäsitys ja siirto",
+        "Ennustus ja vapaaehtoinen tuki",
+        "KC:n oma rakentava tai lukemista harjoittava toiminta ja täsmällinen palaute",
+        "Lisäpohdinta, opettajan/offline-ohje ja lähtökysymys"
+      ],
+      "moduleContract": "Self-contained no-import module. Component-owned delegated click/input/change listeners, each detached on dispose. Checked feedback has a semantic state key; native edits of owned answer fields neutralize it until explicit recheck. No timers/global listeners. Native fieldset pause blocks edits; resume catches programmatic value changes made while paused. Reset clears state without adding handlers.",
+      "researchNote": "research.md"
+    },
+    "extensions": {
+      "reportedPreliminaryFinding": {
+        "reportedBy": "Main relayed Helmholtz independent preliminary review",
+        "issue": "Complete notebook plus a trailing sparse-array hole could return success.",
+        "correction": "Dense record-list validation at both checkNotebook and recordVisit boundaries, including missing slots and undefined/null records.",
+        "regression": "Trailing/middle/leading holes and explicit undefined/null reject; valid dense complete records still accepted."
+      },
+      "authorChecks": {
+        "date": "2026-10-29",
+        "scope": "Only DATA04/DATA09 checked-feedback invalidation; DATA05 and other sources unchanged.",
+        "sourceStable": true,
+        "reportedEvidence": {
+          "path": "evidence/production/B03/feedback-stale-reproductions.json",
+          "sha256": "618aafe7b3dc2116177ef626793e7ee4b7052a7d1dde7bfbf444231102362698"
+        },
+        "pureTests": {
+          "command": "node --test lesson-network/packages/M-DATA-04/tests.mjs lesson-network/packages/M-DATA-09/tests.mjs",
+          "result": "passed",
+          "testCases": 11
+        },
+        "browserRegression": {
+          "command": "LESSON_PREVIEW_URL=http://127.0.0.1:4200/ node --test lesson-network/packages/M-DATA-04/tests.mjs lesson-network/packages/M-DATA-09/tests.mjs",
+          "result": "passed",
+          "totalCasesIncludingPure": 13,
+          "browserCases": 2,
+          "engine": "Actual headless Chromium against isolated source composition",
+          "checks": [
+            "Exact native Cards3→9 and protocol mat→desk reproductions",
+            "Semantic quantity/header/category/protocol/draft changes neutralize checked feedback",
+            "Returning to correct values does not automatically restore checked feedback",
+            "DATA04 row reorder preserves semantic truth",
+            "Unrelated input events do not affect component feedback",
+            "Pause ignores edit events; resume neutralizes changed data",
+            "One click/input/change listener each, all zero after double dispose; reset adds none"
+          ]
+        },
+        "lint": {
+          "command": "./node_modules/.bin/eslint lesson-network/packages/M-DATA-04/lesson.mjs lesson-network/packages/M-DATA-04/tests.mjs lesson-network/packages/M-DATA-09/lesson.mjs lesson-network/packages/M-DATA-09/tests.mjs",
+          "result": "passed"
+        },
+        "contract": "Isolated package/module/CSS/hash validation passed for the two changed packages only.",
+        "independentReview": "Main re-review/rebuild pending",
+        "humanValidation": "Not performed or claimed"
+      },
+      "authorChecksHistory": [
+        {
+          "appliesToContentRevision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+          "checks": {
+            "date": "2026-10-29",
+            "sourceStable": true,
+            "pureTests": {
+              "command": "node --test lesson-network/packages/M-DATA-04/tests.mjs lesson-network/packages/M-DATA-05/tests.mjs lesson-network/packages/M-DATA-09/tests.mjs",
+              "result": "passed",
+              "testCasesAcrossThreePackages": 13,
+              "coverage": [
+                "Row permutations/equal values/zero-vs-blank construction",
+                "Wrong row counts despite matching sum",
+                "SVG observation counts and geometry boundaries",
+                "Literal table lookup and optional ungraded tracing",
+                "162 question/protocol combinations",
+                "Notebook missing/zero/duplicate/replacement/scope/time handling",
+                "Sparse-record regression at both boundaries"
+              ]
+            },
+            "sourceContract": "Passed isolated loadPackages/composePackage including actual asset hashes, CSS validation and module syntax/dependency validation. Only these three packages loaded.",
+            "browser": {
+              "engine": "Installed Playwright Chromium headless",
+              "phone": "390x844",
+              "desktop": "1280x900",
+              "context": "Current shared shell CSS plus source-owned local styles and actual modules, in isolated temporary composition; no live/shared build.",
+              "checks": [
+                "Actual table construction, equal quantities, reversal and missing/zero feedback",
+                "Reading answers accepted without row tracing, repeated values and unknown",
+                "Both systematic questions, protocol construction and record replacement/zero/missing visit",
+                "Keyboard Enter",
+                "Native controls at least44px",
+                "All source/dynamic images loaded",
+                "No horizontal overflow",
+                "Pause/reset/resume",
+                "Double dispose and fresh remount without duplicate actions",
+                "No-JS static explanations",
+                "No page JS errors"
+              ],
+              "harness": "/tmp/b03-mill-browser.mjs",
+              "previewPreparation": "/tmp/b03-mill-preview.mjs",
+              "practiceScreenshotsVisuallyInspected": true,
+              "remainingAuthorQA": "Read-only inspection of full-page phone/desktop screenshots after freeze; report any new finding before editing."
+            },
+            "independentReview": "Pending; preliminary DATA09 hole finding fixed, not a whole-lesson approval.",
+            "humanReview": "Not performed",
+            "integration": "Main owns build, shared status, independent acceptance and Git."
+          }
+        }
+      ]
+    },
+    "contentHash": "49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+    "contentRevision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+          "note": "Source frozen after author checks; independent final review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+          "note": "Scoped stale-feedback repair and regressions passed; main independent re-review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+          "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B03/data-independent-review.json. Human/learner effectiveness and release approval remain pending."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+          "note": "No human review or child validation."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+          "note": "No human validation."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+          "note": "Source frozen after author checks; independent final review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+          "note": "Scoped stale-feedback repair and regressions passed; main independent re-review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+          "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B03/data-independent-review.json. Human/learner effectiveness and release approval remain pending."
+        }
+      ]
+    }
+  },
+  "outputHash": "cb4a64ec83a278856e476a27b0a34fdae08e35bb7d3417932230f3d0788ab1bf",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "cb4a64ec83a278856e476a27b0a34fdae08e35bb7d3417932230f3d0788ab1bf",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

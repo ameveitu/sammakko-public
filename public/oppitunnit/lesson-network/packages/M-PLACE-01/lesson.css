@@ -1,0 +1,21 @@
+.ten-lesson { max-width: 44rem; }
+.ten-lesson > img { display: block; width: 26rem; max-width: 100%; height: auto; }
+.ten-lesson .lesson-intro { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.ten-lesson .lesson-intro img { flex: 0 0 96px; }
+.ten-lesson .lesson-intro h2 { flex: 1 1 12rem; }
+.ten-lesson h3 { margin-top: 1.4rem; }
+.ten-lesson select { width: 100%; max-width: 24rem; }
+.ten-lesson .ten-pieces { display: flex; flex-wrap: wrap; gap: 4px; min-height: 80px; margin: .5rem 0; }
+.ten-lesson .ten-pieces button { margin: 0; width: 48px; min-width: 48px; height: 76px; padding: 4px; }
+.ten-lesson .ten-pieces svg { width: 28px; height: 60px; margin: auto; }
+.ten-lesson [data-picked] { display: grid; grid-template-columns: repeat(5,44px); gap: 2px; justify-content: start; }
+.ten-lesson [data-group-box] { border: 2px dashed #80947c; padding: .3rem; margin: 1rem 0; }
+.ten-lesson [data-tied="true"] { border: 3px solid #9c642c; background: #f2e6c9; }
+.ten-lesson .ten-inline { display: flex; flex-direction: row; align-items: center; gap: .6rem; }
+.ten-lesson input[type="checkbox"] { width: 44px; height: 44px; min-width: 44px; min-height: 44px; flex: 0 0 44px; }
+.ten-lesson button { min-width: 44px; min-height: 44px; }
+.ten-lesson output { display: block; margin: 1rem 0; border-left: 4px solid #688778; padding: .7rem; background: #f8faf4; }
+.ten-lesson [data-verdict="correct"] { border-color: #237052; }
+.ten-lesson [data-verdict="retry"] { border-color: #9a4f24; }
+
+.ten-lesson [data-picked] button { width: 44px; min-width: 44px; }

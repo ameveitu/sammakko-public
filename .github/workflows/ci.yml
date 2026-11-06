@@ -1,0 +1,299 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      delivery:
+        type: boolean
+        description: Save the verified server package (main only)
+        default: false
+      full_lite:
+        type: boolean
+        description: Run the exhaustive Lite browser suite in each engine
+        default: false
+      diagnostics:
+        type: choice
+        description: Save one area of diagnostic samples for one day
+        options: [none, lite, lessons, publication]
+        default: none
+      capture:
+        type: string
+        description: Optional publication screenshot basename
+      topic:
+        type: string
+        description: Optional KC ID for Lite or lesson screenshots
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  art:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: lite/.nvmrc
+      - name: Verify source art inventory and unchanged canonical characters
+        run: node art/build.mjs --check
+      - name: Verify selected runtime art, provenance and references
+        run: node art/check-runtime.mjs
+  secrets:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: lite/.nvmrc
+      - name: No API keys or browser-side OpenAI access
+        run: node tools/secret-scan.mjs --all
+      - name: Image tool tests (dry-run, no network)
+        run: node --test tools/imagegen/test/imagegen.test.mjs
+      - name: Audio tool tests (dry-run, fake socket, no network)
+        run: node --test tools/audiogen/test/audiogen.test.mjs
+  check:
+    outputs:
+      digest: ${{ steps.digest.outputs.sha }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    defaults:
+      run:
+        working-directory: lite
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: lite/.nvmrc
+          cache: npm
+          cache-dependency-path: lite/package-lock.json
+      - run: npm ci
+      - name: Production build
+        run: npm run build
+      - name: Unit and contract tests
+        run: npx vitest run
+      - name: Runtime manifest and title list ship unchanged
+        run: |
+          cmp dist/lite-runtime.json public/lite-runtime.json
+          cmp dist/canonical-ids.json public/canonical-ids.json
+          node -e "const m=require('./dist/lite-runtime.json'); if(m.runtimeAvailability.ids.length!==181) throw new Error('kc count '+m.runtimeAvailability.ids.length)"
+      - name: Record checked Lite tree
+        id: digest
+        run: echo "sha=$(bash ../.github/scripts/tree-digest.sh dist)" >> "$GITHUB_OUTPUT"
+  browsers:
+    needs: check
+    runs-on: ubuntu-24.04
+    timeout-minutes: ${{ inputs.full_lite && 360 || 35 }}
+    strategy:
+      fail-fast: false
+      matrix:
+        engine: [chromium, firefox, webkit]
+    defaults:
+      run:
+        working-directory: lite
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: lite/.nvmrc
+          cache: npm
+          cache-dependency-path: lite/package-lock.json
+      - run: npm ci
+      - name: Rebuild and verify the checked Lite tree
+        env:
+          EXPECTED_DIGEST: ${{ needs.check.outputs.digest }}
+        run: |
+          npm run build
+          test "$(bash ../.github/scripts/tree-digest.sh dist)" = "$EXPECTED_DIGEST"
+      - run: npx playwright install --with-deps ${{ matrix.engine }}
+      - name: Check routes, saved attempts, interaction and Saaristo audio
+        if: ${{ !inputs.full_lite }}
+        run: npx playwright test --config playwright.launch.config.ts --project=${{ matrix.engine }} e2e/kc-and-tabs.spec.ts e2e/launch-controls.spec.ts e2e/expedition-listen.spec.ts --trace off --reporter=dot
+      - name: Run the requested exhaustive Lite browser suite
+        if: inputs.full_lite
+        run: npx playwright test --config playwright.launch.config.ts --project=${{ matrix.engine }} --trace off --reporter=dot
+      - name: Inspect the 181 reviewed topics on desktop and mobile
+        if: matrix.engine == 'chromium'
+        env:
+          SAMMAKKO_CAPTURE_TOPIC: ${{ inputs.diagnostics == 'lite' && inputs.topic || '' }}
+        run: npx playwright test --config playwright.scope.config.ts --reporter=dot --trace off
+      - name: Save requested Lite diagnostics
+        if: ${{ !cancelled() && matrix.engine == 'chromium' && inputs.diagnostics == 'lite' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: sammakko-lite-diagnostics-${{ github.sha }}
+          path: lite/launch-browser-test-results/scope/**/*.png
+          if-no-files-found: ignore
+          retention-days: 1
+  lessons:
+    outputs:
+      digest: ${{ steps.digest.outputs.sha }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    defaults:
+      run:
+        working-directory: public/oppitunnit
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: lite/.nvmrc
+          cache: npm
+          cache-dependency-path: public/oppitunnit/package-lock.json
+      - run: npm ci
+      - name: Install SVG validation dependency
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+      - name: Verify review gates reject stale sources and evidence
+        run: node --test ../../.github/scripts/test-launch-review-gate.mjs
+      - name: Verify current exact181 software-review decisions without modifying metadata
+        run: node ../../tools/launch/finalize-reviews.mjs
+      - name: Build lesson site
+        env:
+          SAMMAKKO_SITE_PACKAGE: '1'
+        run: node lesson-network/build.mjs
+      - name: Verify lesson structure and links
+        env:
+          SAMMAKKO_SITE_PACKAGE: '1'
+        run: node lesson-network/verify.mjs
+      - name: Verify audience projection and source boundaries
+        run: node --test lesson-network/test-audience.mjs
+      - name: Install presentation browser
+        run: npx playwright install --with-deps chromium
+      - name: Check every presentation stage, disclosure and reset at both projector sizes
+        env:
+          SAMMAKKO_CAPTURE_TOPIC: ${{ inputs.diagnostics == 'lessons' && inputs.topic || '' }}
+        run: node ../../.github/scripts/check-launch-presentations.mjs --output ../../.build/launch-presentation-evidence
+      - name: Refresh source-bound technical evidence after all 181 package tests
+        run: |
+          node lesson-network/check-package-tests.mjs B16 site-${{ github.run_id }}-${{ github.run_attempt }} --current
+          node lesson-network/refresh-technical-receipts.mjs site-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Recompute source-bound lesson status
+        run: node lesson-network/production-status.mjs
+      - name: Require exact lesson and Lite scopes
+        run: node ../../.github/scripts/check-lessons.mjs
+      - name: Save requested lesson diagnostics
+        if: ${{ !cancelled() && inputs.diagnostics == 'lessons' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: sammakko-lesson-diagnostics-${{ github.sha }}
+          path: .build/launch-presentation-evidence/*.png
+          if-no-files-found: ignore
+          retention-days: 1
+      - name: Record checked lesson tree
+        id: digest
+        run: echo "sha=$(bash ../../.github/scripts/tree-digest.sh lesson-network/site)" >> "$GITHUB_OUTPUT"
+  package:
+    outputs:
+      delivery: ${{ steps.delivery.outcome }}
+      server_digest: ${{ steps.digest.outputs.sha }}
+    needs: [check, browsers, lessons, secrets, art]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: lite/.nvmrc
+          cache: npm
+          cache-dependency-path: lite/package-lock.json
+      - name: Publication contract regressions
+        run: node --test public/shared/test-navigation.mjs public/oppimisverkko/test-view.mjs public/oppimisverkko/test-navigation.mjs public/whitepaper/test-build.mjs .github/scripts/test-publication-metadata.mjs
+      - name: Check generated site navigation against the shared route contract
+        run: node public/shared/navigation.mjs --check
+      - name: Check generated whitepaper against its editable source
+        run: node public/whitepaper/build.mjs --check
+      - name: Rebuild both checked trees on the packaging runner
+        env:
+          LITE_DIGEST: ${{ needs.check.outputs.digest }}
+          LESSON_DIGEST: ${{ needs.lessons.outputs.digest }}
+        run: bash .github/scripts/rebuild-site.sh
+      - name: Verify public sitemap and indexing with a test-only origin
+        env:
+          SAMMAKKO_PUBLIC_ORIGIN: https://sammakko.example
+        run: |
+          node .github/scripts/package-site.mjs
+          python3 .github/scripts/check-site.py
+      - name: Package only deployable build outputs
+        run: node .github/scripts/package-site.mjs
+      - name: Check all published links, release hashes and 181 Lite lesson routes
+        run: python3 .github/scripts/check-site.py
+      - name: Prepare self-hosted server package
+        run: node .github/scripts/package-server.mjs
+      - name: Build and start the delivery server
+        run: |
+          docker build --tag sammakko-release .build/server
+          docker run --detach --name sammakko-release --read-only --tmpfs /tmp --cap-drop ALL --security-opt no-new-privileges -p 127.0.0.1:5210:8080 sammakko-release
+          curl --fail --retry 10 --retry-connrefused --retry-delay 1 http://127.0.0.1:5210/release.json --output /dev/null
+      - name: Install browser test dependencies
+        working-directory: lite
+        run: |
+          npx playwright install --with-deps chromium firefox webkit
+      - name: Verify the full publication through Nginx in all three engines
+        working-directory: lite
+        env:
+          SAMMAKKO_CAPTURE: ${{ inputs.diagnostics == 'publication' && inputs.capture || '' }}
+          PUBLICATION_BASE_URL: http://127.0.0.1:5210
+          EXPECTED_RELEASE_SHA: ${{ github.sha }}
+        run: npx playwright test --config playwright.publication.launch.config.ts --trace off --max-failures=5
+      - name: Save requested publication screenshots
+        if: ${{ !cancelled() && inputs.diagnostics == 'publication' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: sammakko-publication-diagnostics-${{ github.sha }}
+          path: lite/launch-publication-test-results/**/*.png
+          if-no-files-found: ignore
+          retention-days: 1
+      - name: Stop test server
+        if: always()
+        run: |
+          docker logs sammakko-release || true
+          docker rm --force sammakko-release || true
+      - name: Record the tested delivery tree
+        id: digest
+        run: echo "sha=$(bash .github/scripts/tree-digest.sh .build/server)" >> "$GITHUB_OUTPUT"
+      - name: Upload self-hosted server package
+        id: delivery
+        continue-on-error: ${{ github.event.repository.private }}
+        if: github.ref == 'refs/heads/main' && (inputs.delivery || contains(github.event.head_commit.message, '[server-package]'))
+        uses: actions/upload-artifact@v4
+        with:
+          name: sammakko-server-${{ github.sha }}
+          path: .build/server/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 7
+  server-draft:
+    needs: [package, check, lessons]
+    if: github.ref == 'refs/heads/main' && github.event.repository.private && needs.package.outputs.delivery == 'failure'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: lite/.nvmrc
+          cache: npm
+          cache-dependency-path: lite/package-lock.json
+      - name: Reproduce and verify the tested server package
+        env:
+          LITE_DIGEST: ${{ needs.check.outputs.digest }}
+          LESSON_DIGEST: ${{ needs.lessons.outputs.digest }}
+          SERVER_DIGEST: ${{ needs.package.outputs.server_digest }}
+        run: |
+          bash .github/scripts/rebuild-site.sh
+          node .github/scripts/package-site.mjs
+          node .github/scripts/package-server.mjs
+          test "$(bash .github/scripts/tree-digest.sh .build/server)" = "$SERVER_DIGEST"
+          tar -C .build/server -czf "sammakko-server-$GITHUB_SHA.tar.gz" .
+      - name: Save the checked server distribution as a private draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash .github/scripts/private-draft.sh "sammakko-server-$GITHUB_SHA" "$GITHUB_SHA" "sammakko-server-$GITHUB_SHA.tar.gz"

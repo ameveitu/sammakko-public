@@ -1,0 +1,152 @@
+{
+  "kind": "requirements_for_Sol_implementation_not_test_results",
+  "version": 1,
+  "cases": [
+    {
+      "id": "LN-01",
+      "requirement": "Exactly one real HTML5 page per canonical KC",
+      "expected": "690 unique .html files; every identity matches the canonical record; no missing or extra IDs"
+    },
+    {
+      "id": "LN-02",
+      "requirement": "Canonical input integrity",
+      "expected": "Pinned canonical bytes/metadata preserved; scaffold status is separate from canonical status"
+    },
+    {
+      "id": "LN-03",
+      "requirement": "Direct top links",
+      "expected": "Each page top-neighbour set exactly matches its own relation targets; no invented transitive neighbours"
+    },
+    {
+      "id": "LN-04",
+      "requirement": "Direct bottom links",
+      "expected": "Each page bottom-neighbour set exactly matches the inverse relation index; all 1,287 edges represented in both directions"
+    },
+    {
+      "id": "LN-05",
+      "requirement": "Relation metadata",
+      "expected": "Type, strength, rationale and source relation identity preserved; required/strong/helpful labels remain distinct"
+    },
+    {
+      "id": "LN-06",
+      "requirement": "Logical prerequisites",
+      "expected": "599 groups, 587 all_of and 12 any_of preserved; AND between groups",
+      "fixture": "M-ALG-08 and M-SCALE-02"
+    },
+    {
+      "id": "LN-07",
+      "requirement": "Cross-subject dependencies",
+      "expected": "All 127 cross-subject relations remain navigable despite subject filters",
+      "fixture": "PHY79-UNIT-CONV; CHEM79-CHANGE-PHYS"
+    },
+    {
+      "id": "LN-08",
+      "requirement": "Cycle-safe support network",
+      "expected": "Both directions retained and shown in correct regions; traversal terminates; no forced all-edge DAG",
+      "fixture": "CHEM79-ELEMENT <-> CHEM79-ATOM-01"
+    },
+    {
+      "id": "LN-09",
+      "requirement": "Dynamic rules",
+      "expected": "All 18 explicit rules preserved with unresolved future activity binding; no invented links or no-prior-knowledge claims",
+      "fixture": "M-TH-08"
+    },
+    {
+      "id": "LN-10",
+      "requirement": "Integration and taxonomy separation",
+      "expected": "Component-child metadata is not used to reverse prerequisite navigation",
+      "fixture": "M-COORD-01"
+    },
+    {
+      "id": "LN-11",
+      "requirement": "Foundation, operational and placeholder roles",
+      "expected": "Foundation support retained; safety labelled as operational; placeholder gets no invented lesson/mastery",
+      "fixture": "M-MEAS-00; SCI-ENV-TOOL-01; CHEM79-ORG-GROUP"
+    },
+    {
+      "id": "LN-12",
+      "requirement": "Intentional empty navigation",
+      "expected": "10 no-static-relation pages and 178 no-dependent pages show truthful empty states, not broken-link errors"
+    },
+    {
+      "id": "LN-13",
+      "requirement": "Lite subset identity",
+      "expected": "Exactly 181 included IDs and 509 outside IDs; scope membership is not playable-link or pedagogical-approval status"
+    },
+    {
+      "id": "LN-14",
+      "requirement": "No instructional authoring in this phase",
+      "expected": "New lesson body remains absent/null; no invented explanations, examples, assessments or KC simulations; visible pending-content label"
+    },
+    {
+      "id": "LN-15",
+      "requirement": "No new pedagogical research in this phase",
+      "expected": "Research slots remain pending; catalogue provenance is not labelled comparative pedagogy research; technical docs are allowed"
+    },
+    {
+      "id": "LN-16",
+      "requirement": "Preserve existing Sol material",
+      "expected": "Inventory and retain prior drafts/annotations and statuses; no overwrite or automatic approval"
+    },
+    {
+      "id": "LN-17",
+      "requirement": "Teacher and presentation modes",
+      "expected": "Same KC identity and links; detailed metadata in teacher panel; presentation stays honest about draft content"
+    },
+    {
+      "id": "LN-18",
+      "requirement": "Stable lesson URLs",
+      "expected": "Copy lesson URL, paste, reload and browser-back show expected KC; query-mode changes do not change identity; local preview URLs are labelled local and sharing readiness remains separate"
+    },
+    {
+      "id": "LN-19",
+      "requirement": "Ordinary HTML links under path prefix",
+      "expected": "Canonical identity and top/bottom navigation work without JavaScript and under a non-root static hosting path"
+    },
+    {
+      "id": "LN-20",
+      "requirement": "Lite route honesty",
+      "expected": "No guessed #kc route or empty URL presented as ready; unavailable reason and copy-KC/page alternatives work"
+    },
+    {
+      "id": "LN-21",
+      "requirement": "Full route honesty",
+      "expected": "Construct source-backed #journey route only with availability/configuration checks; fresh document required; engineering menu is not a direct game route"
+    },
+    {
+      "id": "LN-22",
+      "requirement": "No catalogue-to-runtime availability shortcut",
+      "expected": "690 catalogue entries do not become 690 game links; unknown compiled index stays unknown; endpoint test status is separate"
+    },
+    {
+      "id": "LN-23",
+      "requirement": "Shareable-link safety and evidence separation",
+      "expected": "Exact KC preserved; no teacher/learner profile in URL; opening/copying/presenting creates no answer/mastery/mission reward; localhost/loopback/file URLs are not labelled classroom-ready"
+    },
+    {
+      "id": "LN-24",
+      "requirement": "Idempotent generation and resume",
+      "expected": "Second unchanged build leaves stable content/links; interrupt/resume completes missing records; failed validation never marked verified"
+    },
+    {
+      "id": "LN-25",
+      "requirement": "Shared assets and renderer seam",
+      "expected": "Shared template/assets; no duplicated heavy renderer per KC; empty later-interactive slots have an explicit lifecycle contract"
+    },
+    {
+      "id": "LN-26",
+      "requirement": "All 690 loop completion",
+      "expected": "Representative fixtures are followed by complete generation/validation; summary reports every pending/blocked page honestly"
+    },
+    {
+      "id": "LN-27",
+      "requirement": "Browser inspection",
+      "expected": "Representative pages at phone/desktop sizes show usable navigation and teacher controls; no curriculum content fabricated for tests"
+    },
+    {
+      "id": "LN-28",
+      "requirement": "Complete reviewable output and phase boundary",
+      "expected": "Source, generator, data, 690-page dist, serve/check commands, checkpoint report and handover delivered; Phase2 not started automatically"
+    }
+  ]
+}

@@ -1,0 +1,579 @@
+schema_version: 0.1.0
+kc_id: PHY79-SPEED-CONCEPT
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Keskinopeuden ymmärtäminen matkan ja ajan suhteena
+  subject: physics
+  grade_band: 7-9
+  mastery_role: atomic
+  node_kind: concept
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Nopeus
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  prerequisite_snapshot:
+    hard:
+    - PHY79-DIST-TIME
+    strong:
+    - M-MULTREL-01
+    helpful: []
+teaching_model:
+  learning_goal: 'Oppilas ymmärtää keskinopeuden matkan ja ajan suhteena: kuinka paljon matkaa kertyy yhtä aikayksikköä kohti
+    tarkastellulla välillä, ja osaa käyttää tätä rakennetta liikkeiden käsitteelliseen vertailuun.'
+  learner_facing_goal: Ymmärrän, että nopeus ei riipu vain matkasta tai vain ajasta, vaan siitä, kuinka paljon matkaa kuljetaan
+    suhteessa aikaan.
+  success_evidence:
+  - Tunnistaa, että sama matka lyhyemmässä ajassa tarkoittaa suurempaa keskinopeutta.
+  - Tunnistaa, että samassa ajassa pidempi matka tarkoittaa suurempaa keskinopeutta.
+  - Kun sekä matka että aika muuttuvat, vertaa niiden suhdetta eikä vain toista suuretta.
+  - Tunnistaa tilanteita, joissa eri matka ja eri aika tuottavat saman keskinopeuden.
+  - Soveltaa ajatusta uuteen liikkumiskontekstiin ilman annettua kaavaa.
+  core_idea: Keskinopeus kuvaa kuljetun matkan suhdetta kuluneeseen aikaan koko tarkasteluvälillä; se vastaa ajatusta 'matkaa
+    yhtä aikayksikköä kohti'.
+  boundaries:
+    in_scope:
+    - Keskinopeuden käsitteellinen suhde matkaan ja aikaan.
+    - Liikkeiden vertailu yksinkertaisilla kokonaislukusuhteilla.
+    - Sama keskinopeus eri matka–aika-pareilla.
+    - Keskinopeuden erottaminen pelkästä matkasta tai ajasta.
+    out_of_scope:
+    - Kaavan v=s/t mekaaninen laskeminen erillisenä proseduurina.
+    - Nopeuden yksikön muodollinen johtaminen.
+    - Yksikkömuunnokset.
+    - Matka–aika- tai nopeus–aika-kuvaajien muodollinen tulkinta.
+    - Hetkellinen nopeus ja kiihtyvyyden laskenta.
+  prerequisite_assumptions:
+  - kc_id: PHY79-DIST-TIME
+    expected_level: 'Required prerequisite mastered: matka ja aika tunnistetaan liikkeen mitattaviksi suureiksi.'
+  - kc_id: M-MULTREL-01
+    expected_level: Strong support; multiplikatiivinen vertailu helpottaa suhteen ymmärtämistä mutta ei ole hard gate.
+  conceptual_invariants:
+  - Keskinopeus riippuu sekä kuljetusta matkasta että kuluneesta ajasta.
+  - Sama matka lyhyemmässä ajassa merkitsee suurempaa keskinopeutta.
+  - Sama aika pidemmällä matkalla merkitsee suurempaa keskinopeutta.
+  - Jos matka ja aika skaalataan samalla positiivisella kertoimella, keskinopeus pysyy samana.
+  - Keskinopeus tarkasteluvälillä ei väitä, että hetkellinen nopeus olisi ollut koko ajan sama.
+  - Tämän KC:n mastery ei edellytä muodollisen nopeusyksikön johtamista eikä v=s/t-laskuproseduuria.
+  likely_confusions:
+  - PHY79-SPEED-CONCEPT-MIS-DISTANCE-ONLY
+  - PHY79-SPEED-CONCEPT-MIS-TIME-ONLY
+  - PHY79-SPEED-CONCEPT-MIS-ENDPOINT
+  - PHY79-SPEED-CONCEPT-MIS-AVERAGE-AS-CONSTANT
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+  - DIAGNOSTIC
+  - ORIENT
+  - PREDICT
+  - EXPLORE
+  - EXPLAIN
+  - WORKED_EXAMPLE
+  - FADED_EXAMPLE
+  - INDEPENDENT_PRACTICE
+  - TRANSFER_CHECK
+  - MASTERY_GATE
+  fast_path:
+    enabled: true
+    diagnostic_requirement: Required prerequisite mastery plus correct conceptual diagnostics covering same-distance and same-time
+      cases.
+    transfer_confirmation: required
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Selvitä, käyttääkö oppilas jo matkan ja ajan suhdetta vai päätteleekö vain matkan tai ajan perusteella.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - PHY79-SPEED-CONCEPT-DIAG-SAME-TIME
+          - PHY79-SPEED-CONCEPT-DIAG-SAME-DIST
+    ORIENT:
+      purpose: Luo tarve kahden suureen yhteiselle käsitteelle.
+      blocks:
+      - type: explanatory_text
+        content: Kaksi sammakkoa lähtee eri reiteille. Toinen kulkee pidemmän matkan mutta käyttää myös enemmän aikaa. Pelkkä
+          'kumpi kulki pidemmälle?' tai 'kumpi käytti vähemmän aikaa?' ei aina kerro, kumpi liikkui keskimäärin nopeammin.
+    PREDICT:
+      purpose: Pyydä oppilasta sitoutumaan ennusteeseen ennen simulaatiota.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - PHY79-SPEED-CONCEPT-PREDICT-RACE
+    EXPLORE:
+      purpose: Anna oppilaan muuttaa matkaa ja aikaa yhteisellä mittakaavalla ja havaita niiden suhteen vaikutus liikkeeseen.
+      blocks:
+      - type: simulation
+        content:
+          simulation_ref: PHY79-SPEED-CONCEPT-SIM-RATIO
+          instruction: Muuta sammakkojen matkaa ja aikaa. Etsi kaksi erilaista matka–aika-paria, joilla sammakot liikkuvat
+            keskimäärin yhtä nopeasti.
+    EXPLAIN:
+      purpose: Nimeä simulaatiossa havaittu suhderakenne.
+      blocks:
+      - type: explanatory_text
+        content: Keskinopeus kertoo, kuinka paljon matkaa kertyy yhtä aikayksikköä kohti. Siksi matkaa ja aikaa pitää tarkastella
+          yhdessä.
+      - type: comparison
+        content:
+          cases:
+          - sama matka + vähemmän aikaa → suurempi keskinopeus
+          - sama aika + enemmän matkaa → suurempi keskinopeus
+          - sekä matka että aika muuttuvat → vertaa suhdetta
+    WORKED_EXAMPLE:
+      purpose: Mallinna suhde ilman, että KC muuttuu pelkäksi kaavan sijoitusharjoitukseksi.
+      blocks:
+      - type: worked_example
+        content:
+          problem: Loikka kulkee 6 m 3 sekunnissa ja Kurnu 8 m 4 sekunnissa. Kumpi liikkuu keskimäärin nopeammin?
+          steps:
+          - Katso, kuinka paljon matkaa kumpikin kulkee yhtä sekuntia kohti.
+          - 'Loikka: 6 m jakautuu 3 sekunnille → 2 m joka sekunti keskimäärin.'
+          - 'Kurnu: 8 m jakautuu 4 sekunnille → myös 2 m joka sekunti keskimäärin.'
+          - Matkat ja ajat ovat eri, mutta keskinopeus on sama.
+          note: Merkintä v = s/t voidaan näyttää lisätietona. Tässä ei arvioida kaavaan sijoittamisen rutiinia.
+    FADED_EXAMPLE:
+      purpose: Vähennä tukea ja jätä suhteen viimeinen päätelmä oppilaalle.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - PHY79-SPEED-CONCEPT-FADED-EQUAL-RATE
+    INDEPENDENT_PRACTICE:
+      purpose: Kerää itsenäistä näyttöä tapauksista, joissa kumpikaan yksittäinen suure ei yksin ratkaise vertailua.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - PHY79-SPEED-CONCEPT-INDEP-COMPARE
+          - PHY79-SPEED-CONCEPT-INDEP-EQUAL
+    TRANSFER_CHECK:
+      purpose: Varmista, että suhde siirtyy pois sammakko-/kilparataesityksestä uuteen kontekstiin.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - PHY79-SPEED-CONCEPT-TRANSFER-CONVEYOR
+    MASTERY_GATE:
+      purpose: Mastery edellyttää itsenäistä suhdepäättelyä ja uuden kontekstin transferia; vihjeellä ratkaistu tehtävä jää
+        supported-evidenssiksi.
+      blocks:
+      - type: reflection
+        content: Miksi pisimmän matkan kulkenut ei aina ole nopein?
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+    fast_path_confirmation_tags: []
+    execution_policy: Fast path skips teaching and guided work; independent minima and adversarial/equality coverage remain required.
+    pass_rule: Required prerequisite mastered; same-time and same-distance diagnostics correct independently. Fast path still
+      requires novel transfer.
+  independent:
+    minimum_successes: 3
+    template_diversity: 2
+    required_tags: [both_vary, farther_slower, shorter_time_slower, equal_ratio]
+    must_include: At least one both-distance-and-time-vary case.
+  transfer:
+    required: true
+    minimum_successes: 1
+    novel_context_required: true
+  delayed:
+    required: true
+    minimum_successes: 3
+    minimum_delay_hours: 24
+    reuse_templates: [PHY79-SPEED-CONCEPT-INDEP-COMPARE, PHY79-SPEED-CONCEPT-INDEP-EQUAL]
+    required_tags: [both_vary, equal_ratio, average_not_constant]
+    required_contexts: []
+    earliest_delay_policy: Schedule after at least one downstream speed/unit/graph KC or next session.
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+  - misconception_id: PHY79-SPEED-CONCEPT-MIS-DISTANCE-ONLY
+    evidence_tags: [farther_slower]
+    rule: Later independent item must be solved correctly where farther mover is slower.
+  - misconception_id: PHY79-SPEED-CONCEPT-MIS-TIME-ONLY
+    evidence_tags: [shorter_time_slower]
+    rule: Later independent item must be solved correctly where shorter-duration mover is slower because distance is much
+      shorter.
+  - misconception_id: PHY79-SPEED-CONCEPT-MIS-AVERAGE-AS-CONSTANT
+    evidence_tags: [average_not_constant]
+    rule: A genuinely delayed unaided check identifies that average speed alone does not prove constant instantaneous speed.
+  - misconception_id: PHY79-SPEED-CONCEPT-MIS-ENDPOINT
+    evidence_tags: [both_vary]
+    rule: Endpoint attribution remains observational unless a discriminating response is available; a later unaided ratio comparison clears a supported hypothesis.
+items:
+- id: PHY79-SPEED-CONCEPT-DIAG-SAME-TIME
+  kc_ids:
+  - PHY79-SPEED-CONCEPT
+  purpose: diagnostic
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: motion_compare
+    instruction: Molemmat liikkuvat 4 sekuntia. A kulkee 8 m, B 12 m. Kumpi liikkuu keskimäärin nopeammin?
+  truth_model:
+    kind: ratio_compare
+    left:
+      distance: 8
+      time: 4
+    right:
+      distance: 12
+      time: 4
+    correct: right
+  misconception_rules:
+  - misconception_id: PHY79-SPEED-CONCEPT-MIS-DISTANCE-ONLY
+    detect: not_applicable_this_case
+  hints: []
+  invariants:
+  - Same elapsed time isolates distance effect.
+  provenance: []
+- id: PHY79-SPEED-CONCEPT-DIAG-SAME-DIST
+  kc_ids:
+  - PHY79-SPEED-CONCEPT
+  purpose: diagnostic
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: motion_compare
+    instruction: Molemmat kulkevat 10 m. A käyttää 2 s, B 5 s. Kumpi liikkuu keskimäärin nopeammin?
+  truth_model:
+    kind: ratio_compare
+    left:
+      distance: 10
+      time: 2
+    right:
+      distance: 10
+      time: 5
+    correct: left
+  misconception_rules: []
+  hints: []
+  invariants:
+  - Same distance isolates time effect.
+  provenance: []
+- id: PHY79-SPEED-CONCEPT-PREDICT-RACE
+  kc_ids:
+  - PHY79-SPEED-CONCEPT
+  purpose: guided
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: prediction_before_simulation
+    instruction: A kulkee 6 m 3 sekunnissa. B kulkee 8 m 4 sekunnissa. Kumpi on keskimäärin nopeampi, vai ovatko yhtä nopeita?
+  truth_model:
+    kind: ratio_compare_exact
+    left:
+      distance: 6
+      time: 3
+    right:
+      distance: 8
+      time: 4
+    correct: equal
+    comparison: 6*4 == 8*3
+  misconception_rules: []
+  hints: []
+  invariants: []
+  provenance: []
+- id: PHY79-SPEED-CONCEPT-FADED-EQUAL-RATE
+  kc_ids:
+  - PHY79-SPEED-CONCEPT
+  purpose: guided
+  response_type: number
+  difficulty_band: support
+  prompt_model:
+    kind: faded_ratio
+    instruction: Loikka kulkee 9 m 3 sekunnissa. Se kulkee keskimäärin ___ metriä yhdessä sekunnissa.
+    scaffold: Show distance split into 3 equal time groups.
+    scaffold_units: {quantity: m, interval: s}
+  truth_model:
+    kind: rational_division
+    numerator: 9
+    denominator: 3
+    expected: 3
+  misconception_rules: []
+  hints:
+  - level: 1
+    text: Jaa koko matka kolmeen yhtä pitkään aikajaksoon.
+  invariants:
+  - Exact integer division; no unit conversion.
+  provenance: []
+- id: PHY79-SPEED-CONCEPT-INDEP-COMPARE
+  kc_ids:
+  - PHY79-SPEED-CONCEPT
+  purpose: independent
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: generated_ratio_compare
+    instruction: Kumpi liike on keskimäärin nopeampi?
+    scene_rule: Both distance and time vary; neither raw distance nor raw time alone predicts the answer.
+  truth_model:
+    kind: cross_multiply_compare
+    left: dA/tA
+    right: dB/tB
+    compare: dA*tB vs dB*tA
+  misconception_rules:
+  - misconception_id: PHY79-SPEED-CONCEPT-MIS-DISTANCE-ONLY
+    detect: choice_matches_larger_distance_only
+  - misconception_id: PHY79-SPEED-CONCEPT-MIS-TIME-ONLY
+    detect: choice_matches_shorter_time_only
+  hints: []
+  invariants:
+  - Correctness uses exact integer cross multiplication; no floating-point tolerance needed.
+  provenance: []
+  parameter_model:
+    distance_range:
+    - 4
+    - 20
+    time_range:
+    - 2
+    - 10
+    integers: true
+    constraints:
+    - dA != dB
+    - tA != tB
+    - avoid_ties
+    - counterbalance_distance_only_heuristic
+    - counterbalance_time_only_heuristic
+- id: PHY79-SPEED-CONCEPT-INDEP-EQUAL
+  kc_ids:
+  - PHY79-SPEED-CONCEPT
+  purpose: independent
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: generated_equal_ratio
+    instruction: Liikkuvatko nämä kaksi keskimäärin yhtä nopeasti?
+    generation: Choose base ratio p/q and two positive scale factors k1 != k2.
+  truth_model:
+    kind: cross_multiply_equal
+    predicate: dA*tB == dB*tA
+  misconception_rules: []
+  hints: []
+  invariants:
+  - Generated pair must have different distance and different time but identical exact ratio.
+  provenance: []
+  parameter_model:
+    base_numerator:
+    - 1
+    - 6
+    base_denominator:
+    - 1
+    - 5
+    scale_factors:
+    - 1
+    - 5
+    integers: true
+- id: PHY79-SPEED-CONCEPT-TRANSFER-CONVEYOR
+  kc_ids:
+  - PHY79-SPEED-CONCEPT
+  purpose: transfer
+  response_type: choice
+  difficulty_band: challenge
+  prompt_model:
+    kind: novel_context_ratio
+    instruction: Kuljetinhihna A siirtää laatikkoa 15 m 5 sekunnissa. Hihna B siirtää 18 m 9 sekunnissa. Kumpi siirtää laatikkoa
+      keskimäärin nopeammin?
+    context: conveyor
+  truth_model:
+    kind: cross_multiply_compare
+    left:
+      distance: 15
+      time: 5
+    right:
+      distance: 18
+      time: 9
+    correct: left
+    comparison: 15*9 > 18*5
+  misconception_rules: []
+  hints: []
+  invariants:
+  - No frog/race visual cues; same conceptual structure.
+  provenance: []
+- id: PHY79-SPEED-CONCEPT-DELAYED-AVERAGE
+  kc_ids:
+  - PHY79-SPEED-CONCEPT
+  purpose: delayed_review
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: concept_check
+    instruction: Kahdella pyöräilijällä oli sama keskinopeus koko matkalla. Voimmeko tästä varmasti päätellä, että kummankin nopeus pysyi vakiona koko hänen matkansa ajan?
+  truth_model:
+    kind: semantic_option
+    correct: no_average_does_not_fix_instantaneous_history
+  misconception_rules:
+  - misconception_id: PHY79-SPEED-CONCEPT-MIS-AVERAGE-AS-CONSTANT
+    detect: 'yes'
+  hints: []
+  invariants: []
+  provenance: []
+misconceptions:
+- id: PHY79-SPEED-CONCEPT-MIS-DISTANCE-ONLY
+  description: Oppilas päättelee, että pidemmän matkan kulkenut liikkui aina nopeammin huomioimatta aikaa.
+  evidence_patterns:
+  - kind: choice_pattern
+    when: Chooses larger distance despite lower distance/time ratio.
+  feedback_strategy:
+    conceptual_prompt: Entä jos pidempi matka vei myös paljon enemmän aikaa? Kuinka paljon matkaa kertyi yhtä aikayksikköä
+      kohti?
+    representation: Normalize both motions to the same elapsed time in the simulation after the prompt.
+  repair_targets:
+  - PHY79-DIST-TIME
+  - PHY79-SPEED-CONCEPT
+  status: hypothesis
+- id: PHY79-SPEED-CONCEPT-MIS-TIME-ONLY
+  description: Oppilas päättelee, että vähemmän aikaa käyttänyt liikkui aina nopeammin huomioimatta matkaa.
+  evidence_patterns:
+  - kind: choice_pattern
+    when: Chooses shorter duration despite lower distance/time ratio.
+  feedback_strategy:
+    conceptual_prompt: Kuinka pitkä matka siinä ajassa kuljettiin? Vertaa matkaa yhtä aikayksikköä kohti.
+    representation: Normalize both motions to the same distance or same time.
+  repair_targets:
+  - PHY79-DIST-TIME
+  - PHY79-SPEED-CONCEPT
+  status: hypothesis
+- id: PHY79-SPEED-CONCEPT-MIS-ENDPOINT
+  description: Oppilas käyttää loppupaikkaa tai radan visuaalista pituutta nopeuden mittarina eikä tarkasteluvälillä kuljettua
+    matkaa ja aikaa.
+  evidence_patterns:
+  - kind: visual_heuristic
+    when: Response follows farther screen endpoint despite model ratio.
+  feedback_strategy:
+    conceptual_prompt: Kertooko loppupaikka yksin, kuinka kauan liike kesti?
+    representation: Show start marker, traveled distance and elapsed time separately.
+  repair_targets:
+  - PHY79-DIST-TIME
+  status: hypothesis
+- id: PHY79-SPEED-CONCEPT-MIS-AVERAGE-AS-CONSTANT
+  description: Oppilas päättelee keskinopeudesta, että liike tapahtui koko ajan täsmälleen samalla hetkellisellä nopeudella.
+  evidence_patterns:
+  - kind: concept_check
+    when: Claims identical average speed implies constant instantaneous speed.
+  feedback_strategy:
+    conceptual_prompt: Voisiko samalle matkalle ja kokonaisajalle päätyä myös välillä hitaammin ja välillä nopeammin?
+    representation: Compare two time histories with the same total distance and elapsed time; do not yet assess formal v–t
+      graphs.
+  repair_targets:
+  - PHY79-SPEED-CONCEPT
+  status: hypothesis
+differentiation:
+  support_variants:
+    step_chunking: 1) tunnista matka, 2) tunnista aika, 3) pidä toinen samana tai normalisoi, 4) vertaa matkaa yhtä aikayksikköä
+      kohti.
+    hint_availability: Hints progress from 'look at both quantities' to a same-time normalization visualization; formula is
+      not first hint.
+    text_density: Keep one comparison question per screen with persistent distance/time labels.
+    worked_example_depth: Full ratio example after misconception evidence; then fade one step at a time.
+    alternate_representation: Side-by-side motion, ratio table, or verbal 'metriä sekunnissa' explanation.
+    reduced_motion: Simulation may be replaced by static keyframes with elapsed-time markers and the same domain state.
+  challenge_variants:
+    learner_prompt: 'Vertaa kahta päättelytapaa: matkat samassa ajassa ja ajat samalla matkalla. Miksi molemmat voivat paljastaa saman keskinopeussuhteen? Keksi kaksi erilaista matka–aika-paria, joilla on sama keskinopeus.'
+    reduced_scaffolding: Remove normalization prompts and ask learner to justify comparison.
+    abstraction: Use symbolic distance/time pairs while still assessing concept rather than algebraic manipulation.
+    multi_step_reasoning: Choose among three motions and justify ordering by average speed.
+    alternate_solution_compare: Compare same-time normalization, same-distance normalization and direct ratio reasoning as
+      equivalent strategies.
+    transfer_novelty: Use conveyor belt, animal migration segment, robot motion or water flow distance-over-time context.
+    acceleration_probe: Diagnostic + one equal-ratio case + novel transfer can complete the KC when prerequisite evidence
+      is strong.
+representations:
+- id: PHY79-SPEED-CONCEPT-REP-MOTION
+  type: simulation
+  purpose: Make distance/time co-variation observable on a common physical scale.
+  domain_bindings:
+  - motion.distance
+  - motion.elapsed_time
+  - motion.average_speed
+- id: PHY79-SPEED-CONCEPT-REP-RATIO-TABLE
+  type: table
+  purpose: Expose distance per equal time interval without requiring formal algebra.
+  domain_bindings:
+  - motion.distance
+  - motion.elapsed_time
+  - motion.average_speed
+- id: PHY79-SPEED-CONCEPT-REP-STATIC-KEYFRAMES
+  type: diagram
+  purpose: Reduced-motion equivalent of the simulation.
+  domain_bindings:
+  - motion.distance
+  - motion.elapsed_time
+simulation_specs:
+- id: PHY79-SPEED-CONCEPT-SIM-RATIO
+  domain_model:
+    kind: uniform_motion_demonstrator
+    state:
+      distance_m: positive_number
+      elapsed_time_s: positive_number
+    derived:
+      average_speed_m_per_s: distance_m / elapsed_time_s
+    animation_policy: For each run, progress is linear in model time; screen distance uses one common meter scale for both
+      movers.
+  learner_controls:
+  - id: distance
+    range_m:
+    - 2
+    - 20
+    step: 1
+  - id: elapsed_time
+    range_s:
+    - 1
+    - 10
+    step: 1
+  observed_variables:
+  - distance_m
+  - elapsed_time_s
+  - relative_motion_progress
+  invariants:
+  - average_speed_m_per_s equals distance_m / elapsed_time_s exactly in the truth model.
+  - Two motions with equal cross-products distance_A*time_B == distance_B*time_A are displayed as equal average speed.
+  - Visual track scaling must be common across compared movers; renderer may not rescale each track independently.
+  - Reduced-motion rendering must preserve the same numerical/domain state.
+  pedagogical_question: Miten matkan ja ajan pitää muuttua, jotta keskinopeus pysyy samana?
+requires_capabilities:
+- rich_text
+- inline_math
+- single_choice
+- table
+- simulation_host
+- prediction_commit
+- worked_example
+- hint_ladder
+- diagram
+- reduced_motion_variant
+provenance:
+  curriculum:
+  - source_id: OPH-POPS-CURRENT
+    claim: The catalog maps this KC directly to physics 7–9 S5 interaction and motion; exact ePerusteet passage should be
+      resolved before pilot.
+    status: needs_source
+  pedagogy:
+  - source_id: ATKINSON-RENKL-MERRILL-2003
+    claim: Worked-example support is faded before independent problem solving.
+    status: verified
+  - source_id: ROEDIGER-KARPICKE-2006
+    claim: Delayed retrieval is included so immediate success is not treated as the endpoint of learning.
+    status: verified
+  - source_id: CEPEDA-ETAL-2006
+    claim: The content pack includes delayed review rather than massing all practice in one encounter.
+    status: verified
+  - source_id: CAST-UDL-3
+    claim: Reduced-motion and alternate representations preserve the same learning goal.
+    status: verified
+  domain:
+  - source_id: PROJECT-PHYSICS-SPEED-MODEL-v0.1
+    claim: Average speed truth model is distance divided by elapsed time for the modeled interval; external domain citation
+      should be attached before pilot.
+    status: needs_source
+validation:
+  schema: pass
+  graph_refs: pass
+  domain_truth: pending
+  item_invariants: pass
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: designed

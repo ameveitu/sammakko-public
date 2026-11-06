@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const root=new URL('./',import.meta.url);
+const run=p=>execFileSync(process.execPath,[new URL(p,root).pathname],{encoding:'utf8',stdio:'pipe'});
+run('build.mjs');
+const behavior=run('check-behavior.mjs');
+const validation=JSON.parse(run('verify.mjs'));
+const files=['build.mjs','verify.mjs','runtime.mjs','content.mjs','audience.mjs','assets/audience.js','assets/lesson-flow.js','verify-game-actions.mjs','assets/lesson-loader.js','check-behavior.mjs','assets/shell.css','assets/shell.js','site/data/lesson-manifest.json','inventory.json'];
+const hashes=Object.fromEntries(files.map(p=>[p,crypto.createHash('sha256').update(fs.readFileSync(new URL(p,root))).digest('hex')]));
+fs.mkdirSync(new URL('evidence/phase1_1/',root),{recursive:true});
+fs.writeFileSync(new URL('evidence/phase1_1/validation.json',root),JSON.stringify({validation,behavior,hashes},null,2)+'\n');
+console.log(JSON.stringify({passed:validation.passed,checks:validation.checks,behavior:behavior.trim()}));

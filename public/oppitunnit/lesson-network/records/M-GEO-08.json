@@ -1,0 +1,230 @@
+{
+  "kcId": "M-GEO-08",
+  "pagePath": "lessons/M-GEO-08.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-GEO-08",
+  "canonicalNode": {
+    "id": "M-GEO-08",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Geometria ja mittaaminen",
+    "parent_concept": "Ominaisuudet",
+    "title": "Kuvion tai kappaleen geometrisen ominaisuuden nimeäminen",
+    "short_description": "Kuvion tai kappaleen geometrisen ominaisuuden nimeäminen",
+    "source_basis": "pedagogically_derived",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S3"
+    ],
+    "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: M-GEO-2D-PROP-NAME, M-GEO-3D-PROP-NAME. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+    "status": "candidate_refactored_integration",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "integration",
+    "relations": [
+      {
+        "id": "M-GEO-2D-PROP-NAME",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-GEO-08 on v0.2:ssa integraationoodi; atominen alitaito M-GEO-2D-PROP-NAME vaaditaan kokonaisuuden hallintaan."
+      },
+      {
+        "id": "M-GEO-3D-PROP-NAME",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-GEO-08 on v0.2:ssa integraationoodi; atominen alitaito M-GEO-3D-PROP-NAME vaaditaan kokonaisuuden hallintaan."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-GEO-2D-PROP-NAME",
+          "M-GEO-3D-PROP-NAME"
+        ],
+        "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "integration",
+    "split_children": [
+      "M-GEO-2D-PROP-NAME",
+      "M-GEO-3D-PROP-NAME"
+    ],
+    "integration_of": [
+      "M-GEO-2D-PROP-NAME",
+      "M-GEO-3D-PROP-NAME"
+    ],
+    "dynamic_prerequisite_rule": null,
+    "concept_path": [
+      "Matematiikka",
+      "Geometria ja mittaaminen",
+      "Ominaisuudet"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-GEO-2D-PROP-NAME",
+      "targetKCId": "M-GEO-08",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-GEO-08 on v0.2:ssa integraationoodi; atominen alitaito M-GEO-2D-PROP-NAME vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-GEO-3D-PROP-NAME",
+      "targetKCId": "M-GEO-08",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-GEO-08 on v0.2:ssa integraationoodi; atominen alitaito M-GEO-3D-PROP-NAME vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-GEO-08",
+      "targetKCId": "M-GEO-2D-CLASSIFY",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-GEO-08 on tämän osaamiskohteen välitön välttämätön esitieto. v0.2 edge-audit: required ilman hard prerequisite -ryhmää muutettu strong-tasolle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-GEO-08",
+      "targetKCId": "M-GEO-3D-CLASSIFY",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-GEO-08 on tämän osaamiskohteen välitön välttämätön esitieto. v0.2 edge-audit: required ilman hard prerequisite -ryhmää muutettu strong-tasolle.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-GEO-2D-PROP-NAME",
+        "M-GEO-3D-PROP-NAME"
+      ],
+      "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "awaiting_reviewed_handover",
+    "body": null,
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    }
+  },
+  "newPedagogicalResearch": {
+    "state": "not_started_this_phase",
+    "records": [],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "not_performed_for_new_lesson"
+  },
+  "humanReview": {
+    "state": "not_performed_for_new_lesson"
+  },
+  "liteAlignment": {
+    "subsetMembership": false,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "outside_current_lite_scope"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "outside_current_lite_scope",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "outputHash": "10bf7e43be155ff5b2e8a8d4a8132f5df8a7a1dbc0401dacc0e6b1ba8670aac3",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "10bf7e43be155ff5b2e8a8d4a8132f5df8a7a1dbc0401dacc0e6b1ba8670aac3",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

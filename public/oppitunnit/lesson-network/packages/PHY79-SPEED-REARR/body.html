@@ -1,0 +1,124 @@
+<link rel="stylesheet" href="lesson.css"><div class="r15" data-rate15>
+
+
+
+
+
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="opening"><img src="shared/loikka/map.png" alt="Loikka" width="64" height="64"><p>Loikka kulkee joka sekunti 3 metriä.</p></div><p><strong>Ratkaise puuttuva matka tai aika.</strong></p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step" data-audience-coupled>
+<fieldset disabled><legend>Tutki laskun vaiheita</legend><div class="row"><button type="button" data-action="step">Seuraava vaihe</button><button type="button" data-action="restart">Alkuun</button></div></fieldset>
+<figure class="live" data-lesson-role="worked-example"><div data-picture><img src="initial.svg" alt="Annetut suureet: laskumallin alku" width="360" height="224"></div><figcaption data-caption>Ennusta ratkaisu. Nämä ovat laskun vaiheita, eivät kuluneen ajan kuvia.</figcaption></figure>
+
+
+
+
+
+
+
+
+
+<noscript data-lesson-role="metadata"><p>Laskun vaiheet voi avata JavaScriptillä. Ratkaistut esimerkit ja selitykset toimivat myös ilman sitä.</p></noscript>
+
+
+
+
+
+
+
+
+<fieldset disabled><details data-lesson-role="teaching-step"><summary>Vaihda mallia</summary><label>Malli<select data-model><option value="distance">3 m/s ja 5 s: matka</option><option value="duration">16 m nopeudella 4 m/s: aika</option><option value="hours">100 km nopeudella 40 km/h</option><option value="zeroDistance">Nollanopeus, tunnettu aika</option><option value="zeroTime">Nolla sekuntia</option><option value="impossible">Nollanopeus ei vie perille</option><option value="underdetermined">Nolla ja nolla: aika ei määräydy</option></select></label></details></fieldset>
+<p class="thinking">Viidessä sekunnissa tuleeko matkaa 3 + 5 metriä vai viisi kertaa 3 metriä? Perustele ennen seuraavaa vaihetta.</p><p>d on matka, v nopeus ja t aika. Yksikkö s tarkoittaa sekuntia. 1 km = 1000 m. 1 min = 60 s. 1 h = 60 min = 3600 s.</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<details data-lesson-role="worked-example"><summary>Esimerkit ja selitykset</summary><section><h3>Matka rakentuu yhtä pitkistä osista</h3><p>Vakionopeus 3 m/s tarkoittaa kolmea metriä joka sekunti. Viidessä sekunnissa kertyy viisi 3 metrin osaa: d = v × t = 15 m. Kuvan osat ovat matkan laskumalli, eivät ajan mittaus.</p><figure data-lesson-role="worked-example"><img src="example1.svg" alt="Matka rakentuu yhtä pitkistä osista: ratkaistu laskumalli" width="360" height="224"></figure></section><section><h3>Montako osaa mahtuu matkaan?</h3><p>Matka 16 m ja vakionopeus 4 m/s. Matkaan mahtuu neljä 4 metrin osaa. Jokaista täyttä osaa vastaa yksi sekunti: t = d : v = 4 s. Tarkista 4 m/s ×4 s = 16 m.</p><figure data-lesson-role="worked-example"><img src="example2.svg" alt="Montako osaa mahtuu matkaan?: ratkaistu laskumalli" width="360" height="224"></figure></section><section><h3>Siirrä idea puoleen tuntiin</h3><p>100 km nopeudella 40 km/h: kahdessa tunnissa 80 km, jäljelle 20 km. Se on puolen tunnin matka. Aika on 2,5 h eli 2 h 30 min. Murtoluku 5/2 h käy myös.</p><figure data-lesson-role="worked-example"><img src="example3.svg" alt="Siirrä idea puoleen tuntiin: ratkaistu laskumalli" width="360" height="224"></figure></section><p><strong>Huomaa:</strong> Nopeuden ja ajan lukuarvojen summa 3 + 5 ei kuvaa kuljettua matkaa. Matka saadaan kertomalla. Aikaa ratkaistaessa jaetaan matka nopeudella, ei nopeutta matkalla.</p></details>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<section><h2>Kokeile itse</h2><p>Voit vastata suoraan. Kuva ja apu ovat käytettävissä.</p><fieldset disabled><legend>Oma lasku</legend><label>Tilanne<select data-task><option value="distance">Tehtävä A</option><option value="duration">Tehtävä B</option><option value="zero">Tehtävä C</option><option value="start">Tehtävä D</option><option value="already">Tehtävä E</option><option value="transfer">Tehtävä F</option><option value="fraction">Tehtävä G</option><option value="impossible">Tehtävä H</option><option value="underdetermined">Tehtävä I</option></select></label><p data-question data-lesson-role="question">Kuinka pitkälle? Nopeus on vakio. Vakionopeus 3 m/s, aika 5 s. Matka yksikössä m.</p><div data-fields><div class="fields"><label>Lukuarvo<input data-answer type="text" inputmode="decimal" maxlength="128" autocomplete="off"></label><label>Yksikkö<select data-answer><option value="m" selected>m</option><option value="km">km</option><option value="cm">cm</option></select></label></div></div><button type="button" data-action="check">Tarkista</button></fieldset><output data-feedback data-result="neutral" aria-live="polite">Voit kokeilla. Tarkista, kun haluat.</output>
+<details data-help data-lesson-role="hint"><summary>Apua laskemiseen</summary><p data-help-text>Joka sekunti tulee 3 m lisää. Viisi kertaa sama matka: kerro 3 ×5.</p><p>Pilkku tai piste käy. Luvun lopun nollat eivät muuta arvoa. Tarkka murtoluku, kuten 5/18, käy. Jos määrä on oikein eri yksikössä, palaute kertoo sen ja pyytää vielä tehtävän yksikön.</p></details></section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Lisähaaste ja rajatapaukset</summary><p>Nollanopeudella ja tunnetulla 5 sekunnin ajalla matka on 0. Jos taas sekä matka että nopeus ovat 0, aikaa ei voi päätellä yhdeksi luvuksi: esimerkiksi 0 s ja 5 s sopivat. Positiiviseen matkaan ei päästä nollanopeudella.</p></details>
+</section>
+
+
+
+
+
+
+
+<details data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p>Vuosiluokat 7–9. d tarkoittaa kuljettua matkaa, ei paikkakoordinaattia. Esimerkeissä nopeus on vakio. Sama d = v × t toimii myös koko saman välin keskinopeudella, kun matka ja aika ovat sen määritelmän mukaiset. Nollanopeudesta ei jaeta: positiivinen matka on mahdoton ja nollamatkan aika alimäärätty. Tuleva M 79-DEC-DIV on lisätuki, ei uusi aloitusportti; puolikkaan tunnin voi ratkaista osina.</p><p>Piirrä viisi yhtä pitkää 3 metrin matkaosaa. Merkitse alle kunkin osan vastaava 1 s vakionopeudella. Leikkaa erikseen 16 metrin mallinauha neljään 4 metrin osaan. Pidä matkan ja ajan yksiköt eri riveillä. Mallipaperi ei mittaa oikeaa kävelynopeutta.</p><p>Laskumallin neljä vaihetta ovat päättelyn näkyvä tuki. Ne eivät kuvaa kulunutta aikaa tai mitattua liikettä. Suureiden syötealue on 0–1000000; yksiköt ovat vain m, km, cm, s, min, h, m/s ja km/h oman suureensa mukaisesti. Valmiit tehtävät käyttävät tämän alueen pieniä osia. Negatiivista suuntaa tai kiihtyvää liikettä ei tässä mallinneta.</p><p>Harjoitus on vain tämän sivun laskutukea, vastauksia ei tallenneta. Se ei osoita muistamista, itsenäistä hallintaa tai fyysistä mittaustaitoa. Syötteen tekninen raja on 128 merkkiä, murtoluvun osissa 24 numeroa ja desimaalissa 12 merkitsevää desimaalipaikkaa. Rajan ylitys hylätään, ei pyöristetä.</p></details>
+
+
+
+
+
+
+<section data-teaching-step="7" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lähtökysymys:</strong> Miksi 0 m :4 m/s antaa 0 s, mutta 0 m :0 m/s ei anna yhtä ainoaa aikaa?</p>
+</section>
+
+
+
+
+
+
+</div>

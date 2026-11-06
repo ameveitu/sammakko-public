@@ -1,0 +1,704 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M79-INT-01",
+  "revision": 15,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "initial.svg",
+      "sha256": "134932a8188511be3adc15197c045f05009c667ef0b7614ff78962f865bd0ba3"
+    },
+    {
+      "path": "example.svg",
+      "sha256": "af9f77db50a8d0434dbf64e220c14df93444c029b15b91a928285f3f9eb4183f"
+    },
+    {
+      "path": "transfer.svg",
+      "sha256": "83dcfef96b512cde758ab8c67a06f8cd761747f7220cb42d9cc21f6383481887"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "30e446b75b3b2145c814595e904262c8989616b464812fd4eb62e8d00c7d8562"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.amsi.org.au/teacher_modules/Integer.html",
+      "title": "The Integers — TIMES Module15",
+      "organization": "AMSI / University of Melbourne ICE-EM",
+      "accessed": "2026-10-29",
+      "inspected": "Number-line order, opposites, crossing zero, positive/negative direction. PDF front matter pages1–2 read for rights.",
+      "usageRestrictions": "Resource-specific PDF © University of Melbourne/ICE-EM2010, CC BY-NC-ND3.0 (except stated material). No source figures, translated task/prose or derivative module copied. Original Finnish examples and vector geometry; no blanket CC BY claim.",
+      "adopted": "Use one line and equal unit intervals to separate left/right order from nonnegative separation. Same point gives zero.",
+      "limitations": "AMSI arithmetic module is broader than our integration objective; it does not verify this lesson or Finnish curriculum mapping."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@bf1542a006534ac0ef7b3bc476736f9d87f5b447a85ff5e63e3a1b26517af53b",
+      "note": "Author source freeze awaits different-author independent review. No author selfapproval."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@bf1542a006534ac0ef7b3bc476736f9d87f5b447a85ff5e63e3a1b26517af53b",
+      "note": "Author source freeze awaits different-author independent review. No author selfapproval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@bf1542a006534ac0ef7b3bc476736f9d87f5b447a85ff5e63e3a1b26517af53b",
+      "note": "No human/learner/efficacy/manualAXS approval."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@e4ceba21425f79c0a6f6a259bbc8e97098300e503339b60707d060d6b5a9cf3b",
+      "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@e4ceba21425f79c0a6f6a259bbc8e97098300e503339b60707d060d6b5a9cf3b",
+      "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@e4ceba21425f79c0a6f6a259bbc8e97098300e503339b60707d060d6b5a9cf3b",
+      "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+      "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+      "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+      "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+      "note": "Independent B14 parent source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/parent-on-Descartes/review-closed.json. Technical synthetic scope; not learner validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+      "note": "Independent B14 parent canonical/Lite/source boundaries reviewed for current revision; frozen roles/prerequisite groups preserved. lesson-network/evidence/production/B14/reviews/parent-on-Descartes/review-closed.json"
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+      "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@631577c3ee2a337594c5c6c3a787089a97a76e7620a8d68f689ab2e9f1829c6a",
+      "note": "LR04-B08: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@631577c3ee2a337594c5c6c3a787089a97a76e7620a8d68f689ab2e9f1829c6a",
+      "note": "LR04-B08: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@631577c3ee2a337594c5c6c3a787089a97a76e7620a8d68f689ab2e9f1829c6a",
+      "note": "LR04-B08: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@373fe25bf5281756c89097218c4ef4226a8fe357f825177bec9bfcd632ef8bbb",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@373fe25bf5281756c89097218c4ef4226a8fe357f825177bec9bfcd632ef8bbb",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@373fe25bf5281756c89097218c4ef4226a8fe357f825177bec9bfcd632ef8bbb",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@f61f244795e22c79fcafb794911c1e880a3074ebcb8a9259dde7d7155756c814",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@f61f244795e22c79fcafb794911c1e880a3074ebcb8a9259dde7d7155756c814",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@f61f244795e22c79fcafb794911c1e880a3074ebcb8a9259dde7d7155756c814",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@fc0eb33fc186572fc8a598f7d2ec5f46984d456ac0755fa5574518666d7e5570",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@fc0eb33fc186572fc8a598f7d2ec5f46984d456ac0755fa5574518666d7e5570",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@fc0eb33fc186572fc8a598f7d2ec5f46984d456ac0755fa5574518666d7e5570",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@a89a4c2aa2b9bea9bc83ccf402f25a71409fe010c84e521381ae24bc5c503135",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@a89a4c2aa2b9bea9bc83ccf402f25a71409fe010c84e521381ae24bc5c503135",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@a89a4c2aa2b9bea9bc83ccf402f25a71409fe010c84e521381ae24bc5c503135",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@732c7d5b48cf1f866946d1827cdd4212992379875730d83e38976cf4c6a6ed6c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@732c7d5b48cf1f866946d1827cdd4212992379875730d83e38976cf4c6a6ed6c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@732c7d5b48cf1f866946d1827cdd4212992379875730d83e38976cf4c6a6ed6c",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@73215bd20680d4315993131e16ad953bed19f006b775c3e2e3acbf520139a8ff",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@73215bd20680d4315993131e16ad953bed19f006b775c3e2e3acbf520139a8ff",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@73215bd20680d4315993131e16ad953bed19f006b775c3e2e3acbf520139a8ff",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@a9291c6d1aa8de833b088da9f9867f9a211b6d471403d6090f3a8f5d8b0a1363",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@a9291c6d1aa8de833b088da9f9867f9a211b6d471403d6090f3a8f5d8b0a1363",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@a9291c6d1aa8de833b088da9f9867f9a211b6d471403d6090f3a8f5d8b0a1363",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@800de8276418015f64d721b31f3fb89dcccb61a21fe3f32756beecb594511b55",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@800de8276418015f64d721b31f3fb89dcccb61a21fe3f32756beecb594511b55",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@800de8276418015f64d721b31f3fb89dcccb61a21fe3f32756beecb594511b55",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@87c839e35b232f9e16d2878de96f0a257095e998403967052863d99c5543303a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@87c839e35b232f9e16d2878de96f0a257095e998403967052863d99c5543303a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@87c839e35b232f9e16d2878de96f0a257095e998403967052863d99c5543303a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@3d6e24173bea77b1f7cd0b3523304047b9cd78fad4fd24ba2c653d580fed1dbb",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@3d6e24173bea77b1f7cd0b3523304047b9cd78fad4fd24ba2c653d580fed1dbb",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Saman lukuparin pienempi/suurempi luku ja etäisyys kirjataan yhdessä. Nolla ja sama päätepiste ovat mukana; kulkusuunta ei muuta järjestystä tai väliä. Kolmen vastauksen harjoitus säilyttää integraation, eikä yksittäinen Lite-hyppy korvaa sitä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@3d6e24173bea77b1f7cd0b3523304047b9cd78fad4fd24ba2c653d580fed1dbb",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M79-INT-01",
+    "sourceBuild": "lite181-2026-10-27 immutable production-181-v2 snapshot",
+    "sourceRevision": "audit1-2026-10-28",
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "authority/production-181-v2/lite/src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+      "authority/production-181-v2/lite/src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+      "authority/production-181-v2/lite/src/content/neganim.ts": "38429c827f5637f57b054cade85b40cc9f36396e27cee3d79e99e526b89766a4",
+      "authority/production-181-v2/lite/src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/features.ts": "8ddef5451be9d011297f5d32b1ab0d869a1e132d608bd30f679b8e2d900884c5",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+    },
+    "families": [
+      "closer",
+      "transfer",
+      "land",
+      "jump",
+      "mid"
+    ],
+    "inventory": {
+      "goal": "Opit hyppimään lukusuoralla nollan yli, etsimään kahden luvun puolivälin ja päättelemään, kumpi luku on lähempänä.",
+      "intro": "Yhdistetään järjestys ja etäisyys: hypitään, verrataan ja etsitään puolivälejä.",
+      "reward": "Lukusuora on hallussasi!",
+      "revision": "audit1-2026-10-28",
+      "demos": [
+        {
+          "say": "Kohdasta −3 seitsemän askelta oikealle: ensin 3 askelta nollaan, sitten 4 lisää.",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function"
+        },
+        {
+          "say": "Puoliväli: kaksi sammakkoa hyppää yhtä aikaa toisiaan kohti. Missä ne kohtaavat?",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function"
+        }
+      ],
+      "items": {
+        "closer": {
+          "say": "Kumpi on lähempänä lukua −3: −7 vai 4?",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "big": "−7"
+              },
+              {
+                "big": "4"
+              }
+            ],
+            "answer": 0,
+            "why": [
+              null,
+              "4 on 7 askeleen päässä, −7 vain 4."
+            ],
+            "cols": 2
+          },
+          "hint": "Laske askeleet luvusta −3 kumpaankin lukuun.",
+          "explain": "Etäisyydet: 4 ja 7. Lähempänä on −7.",
+          "registry": {
+            "node": "M79-INT-01",
+            "tag": "closer",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "transfer": {
+          "say": "Yöllä oli −9 °C ja iltapäivällä 1 °C. Kuinka monta astetta lämpötila nousi?",
+          "task": {
+            "kind": "numeric",
+            "answer": 10,
+            "unit": "°C",
+            "whyAt": {
+              "8": "Vähensit numerot toisistaan. Lämpötila nousi nollan yli, joten asteet lasketaan yhteen.",
+              "-10": "Lämpötila nousi, joten muutos on positiivinen."
+            }
+          },
+          "hint": "Laske asteet nollaan asti ja nollasta ylöspäin.",
+          "explain": "Nollaan 9 astetta ja siitä 1: 10 astetta.",
+          "registry": {
+            "node": "M79-INT-01",
+            "tag": "transfer",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "land": {
+          "say": "Mihin sammakko päätyy? Yhdistä jokainen hyppy oikeaan paikkaan. Yksi lappu jää yli.",
+          "task": {
+            "kind": "place",
+            "slots": [
+              {
+                "id": "s0",
+                "text": "−1, 2 vasemmalle → ▢"
+              },
+              {
+                "id": "s1",
+                "text": "−5, 6 oikealle → ▢"
+              },
+              {
+                "id": "s2",
+                "text": "4, 8 vasemmalle → ▢"
+              }
+            ],
+            "tokens": [
+              {
+                "id": "e2",
+                "text": "−4"
+              },
+              {
+                "id": "x",
+                "text": "3"
+              },
+              {
+                "id": "e0",
+                "text": "−3"
+              },
+              {
+                "id": "e1",
+                "text": "1"
+              }
+            ],
+            "answer": {
+              "s0": "e0",
+              "s1": "e1",
+              "s2": "e2"
+            },
+            "why": {
+              "s0": "−1 − 2 = −3.",
+              "s1": "−5 + 6 = 1.",
+              "s2": "4 − 8 = −4."
+            }
+          },
+          "hint": "Oikealle luvut kasvavat, vasemmalle pienenevät. Kun ylität nollan, laske ensin askeleet nollaan.",
+          "explain": "Lappu 3 jää yli: siinä ensimmäisen hypyn tuloksen etumerkki on väärin.",
+          "registry": {
+            "node": "M79-INT-01",
+            "tag": "land",
+            "outcome": "sijoittaa osat oikeille paikoille",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "jump": {
+          "say": "Aloita kohdasta −2 ja hyppää 8 askelta vasemmalle. Napauta, mihin päädyt.",
+          "task": {
+            "kind": "line",
+            "min": -10,
+            "max": 10,
+            "step": 1,
+            "answer": -10,
+            "labelEvery": 5,
+            "whyAt": {
+              "6": "Hyppäsit väärään suuntaan: vasemmalle tarkoittaa pienempiä lukuja.",
+              "-9": "Yksi askel jäi hyppäämättä. Laske askeleet uudelleen.",
+              "-11": "Yksi askel liikaa. Laske askeleet uudelleen."
+            }
+          },
+          "hint": "Laske 8 askelta vasemmalle kohdasta −2.",
+          "explain": "−2 − 8 = −10.",
+          "registry": {
+            "node": "M79-INT-01",
+            "tag": "jump",
+            "outcome": "merkitsee kohdan lukusuoralle",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "mid": {
+          "say": "Mikä luku on lukujen −9 ja −1 puolivälissä?",
+          "task": {
+            "kind": "numeric",
+            "answer": -5,
+            "unit": "",
+            "whyAt": {
+              "4": "4 on puolet välin pituudesta, ei puoliväli. Lisää se pienempään lukuun −9.",
+              "8": "8 on koko välin pituus.",
+              "-10": "Laskit luvut yhteen, mutta et jakanut kahdella."
+            }
+          },
+          "hint": "Laske välin pituus askelina ja ota siitä puolet. Lähde pienemmästä luvusta.",
+          "explain": "Väli on 8 askelta, puolet siitä 4: −9 + 4 = −5.",
+          "registry": {
+            "node": "M79-INT-01",
+            "tag": "mid",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        }
+      }
+    },
+    "comparison": "Retain actual jump/mid/closer/land/transfer inventory and iceHops/midScene demos. Core canonical integration directly checks both ORDER and DIST for the same pair. Midpoint/closer and directional jumps remain optional explained extension, not a new hard gate. Same endpoints and reversed presentation distinguish order from displacement.",
+    "reconciliationForOpus": [
+      "Actual Lite goal widens canonical integration to midpoint/jumps/closer. Core here uses precisely canonical ORDER+DIST; optional midpoint is not required before direct answer.",
+      "COVERAGE omits land/place and two demos. Reward Lukusuora on hallussasi is not evidence of integrated or retained mastery."
+    ],
+    "runtimeOverlay": "index.ts registers ALGEBRA79_NODES, fills goals, sets revisionpolicy; no SIMS entry for these3. Actual family() resolves defaults and coverage+declarations; registry is not new canonical prerequisite authority.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/algebra79.ts": "dba08bcb491473c1e29dde39e66c894631fc4ad96ddee5339eef2a2dbf7a1b6b",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/features.ts": "674518dd106c0bfa3f379e19c95a557de2eac361f86ec097eb2598dcbe86b181",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/neganim.ts": "38429c827f5637f57b054cade85b40cc9f36396e27cee3d79e99e526b89766a4",
+        "src/content/phyanim.ts": "419fc83a164c4799543edf6f4dc72021abe3d6ee5fc74d719b70d53243bab7ad",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6"
+      },
+      "historicalNonLiteReferences": [
+        "reference/inputs/canonical-690-graph.json"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M79-INT-01",
+      "subject": "mathematics",
+      "grade_band": "7-9",
+      "topic_area": "S2 Luvut",
+      "parent_concept": "Kokonaisluvut",
+      "title": "Kokonaislukujen järjestys ja etäisyys lukusuoralla",
+      "short_description": "Kokonaislukujen järjestys ja etäisyys lukusuoralla",
+      "node_kind": "integration",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "M79-S2"
+      ],
+      "relations": [
+        {
+          "id": "M79-INT-ORDER",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M79-INT-01 on v0.2:ssa integraationoodi; atominen alitaito M79-INT-ORDER vaaditaan kokonaisuuden hallintaan."
+        },
+        {
+          "id": "M79-INT-DIST",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M79-INT-01 on v0.2:ssa integraationoodi; atominen alitaito M79-INT-DIST vaaditaan kokonaisuuden hallintaan."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M79-INT-ORDER",
+            "M79-INT-DIST"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: M79-INT-ORDER, M79-INT-DIST. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate_refactored_integration",
+      "entry_role": "none",
+      "mastery_role": "integration",
+      "split_children": [
+        "M79-INT-ORDER",
+        "M79-INT-DIST"
+      ],
+      "integration_of": [
+        "M79-INT-ORDER",
+        "M79-INT-DIST"
+      ],
+      "dynamic_prerequisite_rule": null,
+      "concept_path": [
+        "Matematiikka",
+        "S2 Luvut",
+        "Kokonaisluvut"
+      ]
+    },
+    "gradeBand": "7-9",
+    "role": "integration",
+    "teacherObjective": "Yhdistää samalle kokonaislukuparille suuruusjärjestyksen ja ei-negatiivisen etäisyyden; erottaa etumerkin, kulkusuunnan ja välin pituuden.",
+    "childGoal": "Yhdistän lukujen järjestyksen ja välin pituuden.",
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M79-INT-ORDER",
+          "M79-INT-DIST"
+        ],
+        "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+      }
+    ],
+    "requiredPrerequisites": [
+      {
+        "id": "M79-INT-ORDER",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M79-INT-01 on v0.2:ssa integraationoodi; atominen alitaito M79-INT-ORDER vaaditaan kokonaisuuden hallintaan."
+      },
+      {
+        "id": "M79-INT-DIST",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M79-INT-01 on v0.2:ssa integraationoodi; atominen alitaito M79-INT-DIST vaaditaan kokonaisuuden hallintaan."
+      }
+    ],
+    "strongSupport": [],
+    "additionalHardGates": [],
+    "scope": "Finite named endpoint pairs within−10…10. Unit intervals, nonnegative separation0…20, identical points allowed. Same model used for static SVG, stepped path and answers. Optional equal-distance reasoning does not implement a general signed-arithmetic assessment.",
+    "interaction": "Original finite models with independent optional stepping/play/pause/reset/end; direct structured response, no mandatory model/support. Visible prompt and values reread on input/change and everyCheck. Model changes do not erase unrelated task feedback. Invalid selection is rejected without default substitution.",
+    "feedback": "Task or visible answer edits invalidate that task verdict. Model-only/support/view changes preserve unrelated task result. Exact dense primitive-string arrays; missing/holes/undefined/symbol/extra properties rejected. Graph row order freely permutes equivalent pointsets. Optional converter has separate current-premise feedback.",
+    "lifecycle": "Per-root WeakMap owner; replacement disposes old3listeners and owned interval; old API inert, paused reset stays disabled; no storage/network/mastery/history.",
+    "evidenceLimits": "Author implementation and synthetic local checks; not independent content approval, human/learner or efficacy validation. Process practice constructs requested finite graph points; not full graphing mastery. Integration practices ORDER+DIST jointly, no atom mastery inference.",
+    "assetProvenance": "Original mathematical SVG and Finnish text. Exact unmodified user-supplied v2 PNG, not redrawn or asserted hand-drawn. Static named mascot outside measurement geometry.",
+    "curriculumVsDesign": "Frozen canonical exact role/sourcebasis/groups retained. Foreignprimarymaterial corroborates ideas and definitions, not new Finnish OPS requirement or targetlearner evidence."
+  },
+  "extensions": {
+    "researchNote": "research.md",
+    "alignmentNote": "alignment.md",
+    "tests": "tests.mjs",
+    "author": "Descartes",
+    "batch": "B14",
+    "authorScope": "Only assigned new3 source; all151 sources/shared/generated/status/mainbuild/Git remain parent-owned.",
+    "reviewStatus": "Independent parent review pending exact sourcefreeze; no selfapproval.",
+    "feedbackContractSHA256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+    "browserQA": "browser-qa.mjs",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B08",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

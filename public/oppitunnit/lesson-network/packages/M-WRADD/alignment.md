@@ -1,0 +1,5 @@
+# Actual Lite → standalone
+
+M-WRADD: actual column/ones/step/check/where/transfer. Written numbers are aligned by place, with explicit cin/digit/carry and quantity-preserving exchange text in each generated frame. Free-result tasks do not establish use of algorithm. Distinct digit and forgotten-carry tasks retain actual family meaning; no generic all-quiz claim. Source transfer narrative has possible repeated-passenger ambiguity; new context uses distinct boxes. Coverage summary omits where although actual generator includes it. Supports nonnegative whole operands/results0..9999 including zero/new-place; no decimal or signed column claim.
+
+Actual 4 phases ×512 seeds, family tags and41frames per animation sampled before writing. Inventory original: /tmp/sammakko-B15-Newton-author-ok72pmrs/actual-Lite-canonical.json. Exact source hashes in lesson.json. No edits to Lite/graaf/renderer. Support is explicit and does not create new hard prerequisites. Matching/selection is not constructive process evidence.

@@ -1,0 +1,46 @@
+{
+ "_ohje": "VP01 visual-polish -ympäristölevyt. Tyylireferenssi on hyväksytty art/backgrounds/hero-island.jpg; hahmoja ei generoida. Raakakuvat menevät git-ignoroituun kansioon tools/imagegen/out/visual-polish/, sivutiedostot kopioidaan tools/visual-polish/provenance/. Aja repojuuresta: node tools/imagegen/imagegen.mjs batch tools/visual-polish/batches/plates.json [--live]",
+ "defaults": {
+  "model": "sunburst",
+  "quality": "medium",
+  "background": "opaque",
+  "n": 2,
+  "template": "background",
+  "out": "../../imagegen/out/visual-polish",
+  "image": ["../../../art/backgrounds/hero-island.jpg"]
+ },
+ "jobs": [
+  {
+   "name": "vp-home-shore-band",
+   "size": "2304x768",
+   "vars": {
+    "subject": "a very wide, low panoramic lakeside shore band in exactly the same hand-drawn style, line weight and colours as the reference image. Bottom 45%: calm turquoise lake water with a few short white wave dashes. Top 55%: plain empty warm cream paper sky (#f7f3e7), no clouds, no sun. Along the horizon line at about 55% height, very small distant low islands with a few tiny pine trees, spaced far apart: one cluster near the far left edge, one near the far right edge, and nothing in the middle third. In the bottom-left corner a small patch of sandy shore with a few reeds; in the bottom-right corner a small grassy point with a rounded bush. The whole middle of the image is only calm water and empty sky",
+    "space": "the middle third and the whole upper half"
+   }
+  },
+  {
+   "name": "vp-lite-shore-left",
+   "size": "1024x1536",
+   "vars": {
+    "subject": "a tall vertical lakeside edge seen from above at a gentle angle, in exactly the same hand-drawn style, line weight and colours as the reference image. Left half: turquoise shallow lake water with a few short white wave dashes, tall green reeds and cattails growing along a soft sandy shoreline, a few smooth grey stones at the waterline, a couple of wooden jetty posts in the water. The right quarter of the image fades into plain empty warm cream paper (#f4f1e6) with no objects at all",
+    "space": "the right quarter"
+   }
+  },
+  {
+   "name": "vp-lite-shore-right",
+   "size": "1024x1536",
+   "vars": {
+    "subject": "a tall vertical lakeside edge seen from above at a gentle angle, in exactly the same hand-drawn style, line weight and colours as the reference image. Right half: a grassy shore with rounded bushes and two pine trees at the top, a curved sandy beach, turquoise water with gentle wave dashes and a small wooden rowing boat pulled up on the sand near the bottom. The left quarter of the image fades into plain empty warm cream paper (#f4f1e6) with no objects at all",
+    "space": "the left quarter"
+   }
+  },
+  {
+   "name": "vp-lite-workshop-edge",
+   "size": "1024x1536",
+   "vars": {
+    "subject": "a tall vertical view of the inside wall of a cosy wooden lakeside boathouse workshop, in exactly the same hand-drawn style, line weight and colours as the reference image. Warm honey-coloured vertical wooden planks, one small square window near the top showing turquoise lake water and a distant tiny island, a coiled rope hanging on a peg, a plain wooden shelf with two clay pots, and a sawdust-covered wooden floor at the bottom. No tools, no aircraft parts, no wings, no propellers, no rockets, no numbers. The right quarter of the image fades into plain empty warm cream paper (#f4f1e6) with no objects at all",
+    "space": "the right quarter"
+   }
+  }
+ ]
+}

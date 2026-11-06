@@ -1,0 +1,677 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M79-FUNC-TABLE",
+  "revision": 14,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "table-pairs.svg",
+      "sha256": "da95bf14225694e905b96128ed6b73af491e401f7ca4bfe8e4413e746491f9d6"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "d27f727acc5beb21def36d2f9492f4756edfd9ddf6de33f99bb4d654e3d4a9a3"
+    },
+    {
+      "path": "shared/aava/map.png",
+      "sha256": "49b47a345fa26f9017acb1672d1b7d6d4fe0dcd511e756c693b731269579ebe9"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://ca.accessim.org/6-8/grade-8/unit-5/section-a/lesson-1?a=student",
+      "title": "Grade 8, Unit 5, Lesson 1: Inputs and Outputs — Making Tables",
+      "organization": "Illustrative Mathematics, IM 6–8 Math v.360",
+      "accessed": "2026-10-29",
+      "inspected": "Julkinen opiskelijasivu: 1.2 Guess My Rule, 1.3 Making Tables, Student Lesson Summary ja sivun lisenssi. Kaikki upotetut matemaattiset merkit eivät näkyneet tekstipoiminnassa; kuvan tekstivastineet ja taulukkorakenne näkyivät.",
+      "usageRestrictions": "v.360 ©2024 IM, CC BY-NC 4.0; pohjan OUR-versio CC BY 4.0, logot erillisiä. Vain rakenteellinen pedagoginen vertailu; ei tekstien, kuvien, tehtäväsarjan tai logojen kopioita.",
+      "adopted": "Annetun syötteen ja sen tuloksen kirjaus kokonaiseksi pariksi. Sallittu syötealue kerrotaan. Vakiofunktio sallii toistuvat tulokset.",
+      "rejected": "Ei piilotetun säännön arvaamista päätavoitteeksi, desimaalien paikka-arvosääntöä tai nollalla jaon alkuharjoitusta tähän rajattuun oppituntiin."
+    },
+    {
+      "url": "https://www.ncetm.org.uk/media/tgnhs4se/ncetm_ks4_cc_9_4.pdf",
+      "title": "9.4 Exploring functions",
+      "organization": "NCETM",
+      "accessed": "2026-10-29",
+      "inspected": "PDF s. 1, 6–7: funktion ja määrittelyjoukon sanasto, yksi tulos per syöte, esitysmuotojen merkityksen yhdistäminen.",
+      "usageRestrictions": "NCETM:n copyright-sivu noudettu 2026-10-29: Crown Copyright / OGL oletuksena, lähde ja tekijä mainittava; nimetyn tekijän aineistolle mahdollinen erillinen lupa. PDF on opettajan ammatillisen kehityksen aineistoa, ei suoraan kopioitava oppitunti. Ei kuvien tai tehtävätekstin kopiointia.",
+      "adopted": "Pidetään näkyvissä syötteen, säännön ja tuloksen yhteys. Eri syötteiden sama tulos on sallittu.",
+      "rejected": "KS4:n kuvaajamuunnoksia, käänteis-, eksponentti- ja yhdistettyjä funktioita ei tuoda tämän taulukkoprosessin vaatimuksiksi."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "2@7170386c07005d59c5f4a7d6da5ac3baff0325e223de208327feee7df0f91aa0",
+      "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/algebra-independent-current-compiled.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "2@7170386c07005d59c5f4a7d6da5ac3baff0325e223de208327feee7df0f91aa0",
+      "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/algebra-independent-current-compiled.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@7170386c07005d59c5f4a7d6da5ac3baff0325e223de208327feee7df0f91aa0",
+      "note": "No actual human/learner validation has occurred."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@68aae6cf529111b06b28ee3c895aa9a5742a2417a85f5c050c0b505397f38606",
+      "note": "LR04-B08: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@68aae6cf529111b06b28ee3c895aa9a5742a2417a85f5c050c0b505397f38606",
+      "note": "LR04-B08: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@68aae6cf529111b06b28ee3c895aa9a5742a2417a85f5c050c0b505397f38606",
+      "note": "LR04-B08: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@2afc8aead1ffdcd9e8286713904aad35d1f5eb8c999be0882ddeba4f493950c9",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@2afc8aead1ffdcd9e8286713904aad35d1f5eb8c999be0882ddeba4f493950c9",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@2afc8aead1ffdcd9e8286713904aad35d1f5eb8c999be0882ddeba4f493950c9",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@0f8bd4dd735df24e474f34f150cbf4cdfee40d7652120f05a1d74e27faba5e11",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@0f8bd4dd735df24e474f34f150cbf4cdfee40d7652120f05a1d74e27faba5e11",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@0f8bd4dd735df24e474f34f150cbf4cdfee40d7652120f05a1d74e27faba5e11",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@460c4460ee388b646c2848eedafa91c1aa1c5a4e921b3c9be4b2d29c2144366c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@460c4460ee388b646c2848eedafa91c1aa1c5a4e921b3c9be4b2d29c2144366c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@460c4460ee388b646c2848eedafa91c1aa1c5a4e921b3c9be4b2d29c2144366c",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@91c2f07bae6e6bc882aeff1e4a9df8c99c249139c970ac1142b0749db1f008f1",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@91c2f07bae6e6bc882aeff1e4a9df8c99c249139c970ac1142b0749db1f008f1",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@91c2f07bae6e6bc882aeff1e4a9df8c99c249139c970ac1142b0749db1f008f1",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@7efcf643c9fd2f4cdf95b18b5ec3e7e06a8db64d6a19a1164a682d6644196f37",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@7efcf643c9fd2f4cdf95b18b5ec3e7e06a8db64d6a19a1164a682d6644196f37",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@7efcf643c9fd2f4cdf95b18b5ec3e7e06a8db64d6a19a1164a682d6644196f37",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@c0bb4fb0c0c33e28ed5bbf0405535141ed2d1f58d5fa2839cb61eefc4932912c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@c0bb4fb0c0c33e28ed5bbf0405535141ed2d1f58d5fa2839cb61eefc4932912c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@c0bb4fb0c0c33e28ed5bbf0405535141ed2d1f58d5fa2839cb61eefc4932912c",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@32038c8fde1c8aec6115fc1b39bcabecc5cf6335238c1ea08d80a2c09cbae3c7",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@32038c8fde1c8aec6115fc1b39bcabecc5cf6335238c1ea08d80a2c09cbae3c7",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@32038c8fde1c8aec6115fc1b39bcabecc5cf6335238c1ea08d80a2c09cbae3c7",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@7f38bbf9bcfc278a216945d80a7dfab656498b48368deedceaec30068123cf89",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@7f38bbf9bcfc278a216945d80a7dfab656498b48368deedceaec30068123cf89",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@7f38bbf9bcfc278a216945d80a7dfab656498b48368deedceaec30068123cf89",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@b185b24cf39858d6800fd9bae937b52959459a731987379f63e663801c839932",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@b185b24cf39858d6800fd9bae937b52959459a731987379f63e663801c839932",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@b185b24cf39858d6800fd9bae937b52959459a731987379f63e663801c839932",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@95fd9cd87f7d696d3189c4f58113d5ed9c47b1d57b5a0948543adb6da69e5754",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@95fd9cd87f7d696d3189c4f58113d5ed9c47b1d57b5a0948543adb6da69e5754",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Syöte ja tulos kuuluvat samalle riville myös rivijärjestystä vaihtaessa. Epätasaiset x-välit 0, 2, 5 vaativat annetun säännön, eivät aina +2 -rivisääntöä. Oma koko taulukko, sääntö ja vastauskentät ovat yhdessä; vakio- ja vähenevä sääntö mukana. Äärellinen taulukko ei yleisesti määrää yhtä ainoaa kaavaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@95fd9cd87f7d696d3189c4f58113d5ed9c47b1d57b5a0948543adb6da69e5754",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "liteNodeId": "M79-FUNC-TABLE",
+    "liteSourceRevision": "audit1-2026-10-28",
+    "liteGlobalFallback": "lite181-2026-10-27",
+    "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceHashes": {
+      "src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+      "src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+      "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+      "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+    },
+    "intro": "Funktiokone tuottaa lukuja. Arvotaulukkoon kirjataan, mitä mistäkin tulee.",
+    "goal": "Opit tekemään funktiolle arvotaulukon: jokaiselle x:lle lasketaan y sääntöä käyttäen.",
+    "demoInventory": [
+      {
+        "say": "Funktio y on kaksi x plus yksi. Jokainen x lasketaan säännöllä vuorotellen, ja tulos kirjataan omalle rivilleen. Lopuksi katsotaan, mitä taulukko kertoo säännöstä.",
+        "label": "arvotaulukon täyttö",
+        "seconds": 13.3,
+        "finalCaption": "Kun x = 0, y = 1. Se on säännön vakio. Taulukosta näkee säännön."
+      },
+      {
+        "say": "Sama toimii negatiivisilla luvuilla: y on kolme x miinus kaksi. Kun x on miinus yksi, y on miinus viisi. Kerroin näkyy kasvuna, vakio rivillä x on nolla.",
+        "label": "arvotaulukon täyttö",
+        "seconds": 11.8,
+        "finalCaption": "Kun x = 0, y = −2. Se on säännön vakio. Taulukosta näkee säännön."
+      }
+    ],
+    "familyInventory": {
+      "rule": {
+        "kind": "choice",
+        "registry": {
+          "node": "M79-FUNC-TABLE",
+          "tag": "rule",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "example": {
+          "say": "Mikä sääntö tuottaa taulukon?",
+          "scene": "[function]",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "big": "y = x + 4"
+              },
+              {
+                "big": "y = 4x"
+              },
+              {
+                "big": "y = 2x + 2"
+              }
+            ],
+            "answer": 2,
+            "why": [
+              "Kokeile x = 0: y:n pitää olla 2, mutta tästä tulee 4.",
+              "Toimii vain rivillä x = 1. Kun x = 0, y:n pitää olla 2.",
+              null
+            ]
+          },
+          "hint": "Paljonko y kasvaa joka rivillä? Mikä y on, kun x = 0?",
+          "explain": "Kun x kasvaa yhdellä, y kasvaa 2: kerroin on 2. Kun x = 0, y = 2.",
+          "tag": "rule"
+        }
+      },
+      "table": {
+        "kind": "choice",
+        "registry": {
+          "node": "M79-FUNC-TABLE",
+          "tag": "table",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "example": {
+          "say": "Mikä taulukko kuuluu säännölle y = 2x + 2?",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "text": "0 → 2, 1 → 4, 2 → 6"
+              },
+              {
+                "text": "0 → 2, 1 → 4, 2 → 7"
+              },
+              {
+                "text": "0 → 4, 1 → 5, 2 → 6"
+              }
+            ],
+            "answer": 0,
+            "why": [
+              null,
+              "Viimeinen arvo on väärin: 2 · 2 + 2 = 6.",
+              "Tässä y kasvaa vain yhdellä. Kertoimen 2 takia y kasvaa 2 joka askeleella."
+            ]
+          },
+          "hint": "Laske itse y, kun x = 0, 1 ja 2, ja vertaa.",
+          "explain": "Lasketaan: 0 → 2, 1 → 4, 2 → 6.",
+          "tag": "table"
+        }
+      },
+      "detect": {
+        "kind": "place",
+        "registry": {
+          "node": "M79-FUNC-TABLE",
+          "tag": "detect",
+          "outcome": "sijoittaa osat oikeille paikoille",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "example": {
+          "say": "Säännönetsivä: lue taulukosta kerroin ja vakio, ja ennusta y, kun x = 5. Yksi lappu jää yli.",
+          "scene": "[function]",
+          "task": {
+            "kind": "place",
+            "slots": [
+              {
+                "id": "k",
+                "text": "kerroin: y kasvaa joka rivillä ▢"
+              },
+              {
+                "id": "b",
+                "text": "vakio: y, kun x = 0 → ▢"
+              },
+              {
+                "id": "p",
+                "text": "ennuste: x = 5 → y = ▢"
+              }
+            ],
+            "tokens": [
+              {
+                "id": "vp",
+                "text": "17"
+              },
+              {
+                "id": "d1",
+                "text": "5"
+              },
+              {
+                "id": "vb",
+                "text": "2"
+              },
+              {
+                "id": "d2",
+                "text": "15"
+              },
+              {
+                "id": "vk",
+                "text": "3"
+              }
+            ],
+            "answer": {
+              "k": "vk",
+              "b": "vb",
+              "p": "vp"
+            },
+            "why": {
+              "k": "2 → 5 → 8: kasvu on 3.",
+              "b": "Rivillä x = 0 lukee y = 2.",
+              "p": "y = 3 · 5 + 2 = 17."
+            }
+          },
+          "hint": "Kasvu on kahden peräkkäisen y:n erotus. Ennusteessa muista lisätä vakio.",
+          "explain": "Sääntö on y = 3x + 2, joten x = 5 antaa 17.",
+          "tag": "detect"
+        }
+      },
+      "fill": {
+        "kind": "numeric",
+        "registry": {
+          "node": "M79-FUNC-TABLE",
+          "tag": "fill",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [
+            "M79-EXPR-EVAL",
+            "M79-INT-SUB",
+            "M-MULTAB-ALL"
+          ],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M79-EXPR-EVAL",
+            "M79-INT-SUB"
+          ],
+          "source": [
+            "families.ts M79-FUNC-TABLE/fill"
+          ]
+        },
+        "example": {
+          "say": "Täydennä taulukko: y = 2x + 4.",
+          "task": {
+            "kind": "numeric",
+            "answer": 10,
+            "whyAt": {
+              "6": "Vakio 4 unohtui.",
+              "8": "Tämä on edellisen rivin arvo.",
+              "9": "2x tarkoittaa 2 · x, ei 2 + x.",
+              "12": "Tämä on seuraavan rivin arvo.",
+              "14": "Kerro ensin: 2 · 3, sitten lisää 4."
+            }
+          },
+          "explain": "Kun x = 3: 2 · 3 + 4 = 10.",
+          "hint": "Sijoita x = 3 sääntöön, tai lisää 2 edellisen rivin y-arvoon.",
+          "scene": "[function]",
+          "tag": "fill"
+        }
+      },
+      "transfer": {
+        "kind": "plot",
+        "registry": {
+          "node": "M79-FUNC-TABLE",
+          "tag": "transfer",
+          "outcome": "piirtää pisteet kuvaajaan",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "example": {
+          "say": "Laske arvotaulukko säännölle y = x ja merkitse pisteet, kun x = 0, 1, 2 ja 3.",
+          "task": {
+            "kind": "plot",
+            "xs": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "ys": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "xMax": 6,
+            "yMax": 6,
+            "xStep": 1,
+            "yStep": 1,
+            "xLabel": "x",
+            "yLabel": "y"
+          },
+          "hint": "Laske ensin y jokaiselle x:lle. Piste (x, y): ensin oikealle x, sitten ylös y.",
+          "explain": "Pisteet: (0, 0), (1, 1), (2, 2), (3, 3).",
+          "tag": "transfer"
+        }
+      }
+    },
+    "phaseDispatch": "kit.cases: guided/independent/retrieval samasta nimetystä perhejoukosta; transfer omasta generaattorista. 256 siementä/phase, yhteensä 1024 per KC. Ei uuden oppitunnin vaikuttavuustesti.",
+    "registryOverlay": "index.ts yhdistää ALGEBRA79B_NODES ja täydentää GOALS-puutteet; molemmilla oma audit1-revisio ja tavoite. SIMS ei sisällä kumpaakaan KC:tä. families.ts yhdistää manifestin ja node/*/tag-deklaraatiot; effective family()-rivit inventoitu. Dynaamista kanonista sääntöä ei ole.",
+    "audit": "LESSON_AUDIT: staattinen arvotaulukko korvattu tableFillScene-demolla, lisätty negatiivinen demo, kohdennetut vihjeet/whyAt ja detect. COVERAGE on vanhentunut: vain yksi demo ja ei detect/place; todellinen lähde ratkaisee.",
+    "comparison": [
+      "Annetut säännöt 2x+1, 8−x ja 4; harjoituksen syötteet 0,2,5, kontekstin sallittu alue kokonaisluvut 0–5. Kolme manuaalisesti kirjattua tulosta muodostaa kokonaisen taulukon.",
+      "Rivin järjestys ei muuta paria. Vakiofunktion toistuvat tulokset ovat päteviä. Äärellinen taulukko ei määrää yleistä sääntöä yksikäsitteisesti.",
+      "Negatiivinen sijoitus selitetään lisäesimerkissä, ei tarkistetussa kontekstissa. Kuvaajan piirtäminen ei kuulu tarkistukseen."
+    ],
+    "limitations": [
+      "Lite-demojen ja tehtävien lähdekatselmus ei ole hyväksyntä. Alkuperäistä Liteä ei muutettu.",
+      "Tunnistaminen ei yksin osoita taulukon rakentamista; oma harjoitus kirjaa kaikki kolme riviä."
+    ],
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+        "src/content/algebra79.ts": "dba08bcb491473c1e29dde39e66c894631fc4ad96ddee5339eef2a2dbf7a1b6b",
+        "src/content/algebra79b.ts": "2cb8b4e292009053a217f710c067ef8fb9b7b33a3205c127fe622f3886e7ac3b",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "7-9",
+    "canonicalRole": {
+      "node_kind": "representation",
+      "mastery_role": "process",
+      "entry_role": "none",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "M79-S4"
+      ],
+      "integration_of": null,
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa."
+    },
+    "teacherObjective": "Rakentaa annetun funktion arvotaulukon laskemalla ja kirjaamalla syötteen ja sen tuloksen pareiksi sekä tulkitsee rivin tilanteessa.",
+    "childGoal": "Rakennan taulukon, jonka samalla rivillä ovat syöte ja sen oma tulos.",
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M79-FUNC-01"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "required": [
+      {
+        "id": "M79-FUNC-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M79-FUNC-01 on ydinesitieto tälle osaamiskohteelle."
+      }
+    ],
+    "strongSupport": [
+      {
+        "id": "M-DATA-03",
+        "relation_type": "representation_support",
+        "strength": "strong",
+        "rationale": "M-DATA-03 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      }
+    ],
+    "assumed": [
+      "Lukujen ja taulukon sarakkeiden lukeminen; kertominen kahdella, lisääminen ja vähentäminen selitetään malleissa. Lite fill-perheen EXPR-EVAL/INT-SUB/MULTAB-oletuksia ei tehdä uusiksi kanonisiksi hard gateiksi."
+    ],
+    "scope": [
+      "Annetut säännöt 2x+1, 8−x ja 4; harjoituksen syötteet 0,2,5, kontekstin sallittu alue kokonaisluvut 0–5. Kolme manuaalisesti kirjattua tulosta muodostaa kokonaisen taulukon.",
+      "Rivin järjestys ei muuta paria. Vakiofunktion toistuvat tulokset ovat päteviä. Äärellinen taulukko ei määrää yleistä sääntöä yksikäsitteisesti.",
+      "Negatiivinen sijoitus selitetään lisäesimerkissä, ei tarkistetussa kontekstissa. Kuvaajan piirtäminen ei kuulu tarkistukseen."
+    ],
+    "feedbackContract": [
+      "Syötteen y-muokkaus ja tyhjennys nollaavat taulukon oikean/väärän palautteen. Säännön vaihto aloittaa tyhjän taulukon.",
+      "Kokonaisen rivin siirto säilyttää x–y-parin ja palautteen. Vihjeen avaaminen ei muuta vastausta.",
+      "B05 addendum: both input and change commit semantic answers consistently; explicit checks use the visible answer. Truth-preserving model/reorder controls retain dependent-feedback boundaries."
+    ],
+    "deterministicValidation": "Täsmälliset tiheät paritaulukot, pituudet, jokaisen indeksin omistus, tyypit, äärelliset kokonaisluvut, sallittu alue ja kaikki vaaditut osat tarkistetaan. Ei merkkijono-/taulukkoavainten epäsuoraa muunnosta. Vaihtoehtoiset pätevät järjestykset/arvot sallitaan.",
+    "evidenceLimits": [
+      "Paikallinen matalan panoksen opetustarkistus; ei tallennusta, oppijahistoriaa, mastery-palkintoa, itsenäisyyden tai säilymisen mittausta.",
+      "Ei ihmis-, lapsi- tai opettajavalidointia eikä vaikuttavuusväitettä.",
+      "Kanoninen luokka-aste on 7–9, ei 7–9 vuoden ikäväite; pienet kokonaisluvut ovat käsitteellinen tuki."
+    ],
+    "assetProvenance": [
+      {
+        "path": "table-pairs.svg",
+        "origin": "Tämän paketin oma koodina piirretty alkuperäinen matemaattinen SVG 2026-10-29; ei lähdekuvan jäljennös eikä maskotti."
+      },
+      {
+        "path": "shared/aava/map.png",
+        "origin": "Käyttäjän toimittama shared-PNG, viitattu alkuperäisin tavuin. Ei uudelleenpiirtoa, kopiointia pakettiin, rasterimuokkausta tai uutta hyväksyntäväitettä."
+      }
+    ]
+  },
+  "extensions": {
+    "authorBatch": "B05",
+    "sourceInspectionDate": "2026-10-29",
+    "feedbackContractSha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+    "interactionQA": "browser.mjs targets real compiled site, exact contentRevision. Separate author source-harness results are labeled as source-only.",
+    "eventCommitReview": {
+      "addendum": "EVENT_COMMIT_REVIEW_B05.md",
+      "sha256": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+      "previousContentRevision": "1@e79bc7deeb27ec2a5155802b0b12aae58e2d0b1b5c2f0ab9c693384b42c424f1",
+      "correction": "Shared component dispatch for input and change; TABLE explicit checking reads current visible row pairs and rule, row reordering retains associations.",
+      "regression": "browser.mjs eventCommitRegression covers each event alone, stale success/retry, blank/repair and invariant controls; pure/domain functions unchanged.",
+      "limits": "Single-event commits are synthetic consistency regressions. Ordinary browser flows tested separately; no actual learner/assistive-technology incident inferred. No-event immediate invalidation or disabled-field mutation is not claimed. Explicit checking nevertheless reads the visible answer.",
+      "compiledQA": "PENDING main exact r2 build; no r1 native result promoted."
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B08",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

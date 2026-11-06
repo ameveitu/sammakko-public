@@ -1,0 +1,534 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-MEAS-05",
+  "revision": 14,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "balance.svg",
+      "sha256": "2fb906cb25ed3a961230f68e7bebb903954e68a52e1653a26fcb6e7c381dc24a"
+    },
+    {
+      "path": "shared/loikka/curious.png",
+      "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "0dd9d9c56e88865031f43fb3c06dc0c3237a6fee28b0114f8af3f8b8b02e7666"
+    }
+  ],
+  "research": [
+    {
+      "title": "NCETM — Measures",
+      "url": "https://www.ncetm.org.uk/classroom-resources/ey-measures/",
+      "accessed": "2026-10-29",
+      "retrieval": "Official primary page opened and targeted relevant sections read during B04 preparation on2026-10-29.",
+      "licence": "NCETM copyright page states default Crown Copyright/Open Government Licence unless otherwise stated, attribution required and named-author permissions caveat. No source assets/text reused; reference only.",
+      "use": "Attribute comparison and conservation; own original model and text.",
+      "ageAdaptation": "Early Years guidance; adapt for Finnish grades1–2 with purposeful experiments and short independent captions, adult read-aloud optional."
+    },
+    {
+      "title": "University of Cambridge NRICH — Balances",
+      "url": "https://nrich.maths.org/eyfs-activities/balances",
+      "accessed": "2026-10-29",
+      "retrieval": "Official primary page opened and targeted relevant sections read during B04 preparation on2026-10-29.",
+      "licence": "Cambridge terms; non-commercial classroom permissions are not a website redistribution licence. Independently authored context/art; reference link only.",
+      "use": "Practical comparator with explicit age adaptation; no source figures copied.",
+      "ageAdaptation": "Published age3–5. Keep hands-on access; add grade1–2 comparisons with equal masses of different visible sizes. Optional three-object investigation is separate from core."
+    },
+    {
+      "title": "Australian Government / Education Services Australia Mathematics Hub — Direct and indirect comparisons: Foundation: Planning tool",
+      "url": "https://www.mathematicshub.edu.au/planning-tool/f/measurement/direct-and-indirect-comparison/",
+      "accessed": "2026-10-29",
+      "retrieval": "Official primary page opened and targeted relevant sections read during B04 preparation on2026-10-29.",
+      "licence": "Page footer: Commonwealth of Australia, CC BY4.0 unless otherwise indicated. Third-party linked resources retain their own terms; none reused. Link and conceptual comparison only.",
+      "use": "Misconception comparator; foreign curriculum is not Finnish normative evidence.",
+      "ageAdaptation": "Australian Foundation, younger than Finnish grades1–2; conceptual support, with age-respectful stories and optional explanation/transfer extensions."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@ce605709f58f015397586b062357a8ba2383a957b8a7a13ec37ee21cf0d30898",
+      "note": "Author-owned source; requires a different independent reviewer. No self-approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@ce605709f58f015397586b062357a8ba2383a957b8a7a13ec37ee21cf0d30898",
+      "note": "Author-owned source; requires a different independent reviewer. No self-approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@ce605709f58f015397586b062357a8ba2383a957b8a7a13ec37ee21cf0d30898",
+      "note": "No actual human or learner validation."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@ce605709f58f015397586b062357a8ba2383a957b8a7a13ec37ee21cf0d30898",
+      "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/measure-independent-review.json. Human/learner efficacy and release approval remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@ce605709f58f015397586b062357a8ba2383a957b8a7a13ec37ee21cf0d30898",
+      "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/measure-independent-review.json. Human/learner efficacy and release approval remain pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@599feb8d35eff0bbb41027c57ca91b3a984e923f02d363fb636c8521ee62ad25",
+      "note": "LR04-B05: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@599feb8d35eff0bbb41027c57ca91b3a984e923f02d363fb636c8521ee62ad25",
+      "note": "LR04-B05: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@599feb8d35eff0bbb41027c57ca91b3a984e923f02d363fb636c8521ee62ad25",
+      "note": "LR04-B05: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@7ada7e22b95786f6704031ef29d7acc63cd2ca17f1a4ba76b3a531d9556ed5ac",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@7ada7e22b95786f6704031ef29d7acc63cd2ca17f1a4ba76b3a531d9556ed5ac",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@7ada7e22b95786f6704031ef29d7acc63cd2ca17f1a4ba76b3a531d9556ed5ac",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@7e70e1c14bbe9fe810e0f4055d883463967bf141190983efb299a589aea32b5c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@7e70e1c14bbe9fe810e0f4055d883463967bf141190983efb299a589aea32b5c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@7e70e1c14bbe9fe810e0f4055d883463967bf141190983efb299a589aea32b5c",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@bd0e9cd3174b64d7a1369e76a628675b4f233edba8c8cb92904c707d7421bab3",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@bd0e9cd3174b64d7a1369e76a628675b4f233edba8c8cb92904c707d7421bab3",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@bd0e9cd3174b64d7a1369e76a628675b4f233edba8c8cb92904c707d7421bab3",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@b0d3f8850153f163b6bff07bce8122e677c40bbf3425f55d10e200fb11173086",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@b0d3f8850153f163b6bff07bce8122e677c40bbf3425f55d10e200fb11173086",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@b0d3f8850153f163b6bff07bce8122e677c40bbf3425f55d10e200fb11173086",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@3dada98efeb39b0ceadf41dccf8374437fbb92a4a62da853eddc24efe001f600",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@3dada98efeb39b0ceadf41dccf8374437fbb92a4a62da853eddc24efe001f600",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@3dada98efeb39b0ceadf41dccf8374437fbb92a4a62da853eddc24efe001f600",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@89dac3e9d1ee6b38d32b641e8b6923a5fd135e0b320002c5fe2f1deb3184bdef",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@89dac3e9d1ee6b38d32b641e8b6923a5fd135e0b320002c5fe2f1deb3184bdef",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@89dac3e9d1ee6b38d32b641e8b6923a5fd135e0b320002c5fe2f1deb3184bdef",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@44fcd73456e91e55d579b09baefe0b7a0c388c209c7da4f0d190ea0bf83151e1",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@44fcd73456e91e55d579b09baefe0b7a0c388c209c7da4f0d190ea0bf83151e1",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@44fcd73456e91e55d579b09baefe0b7a0c388c209c7da4f0d190ea0bf83151e1",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@e11584c65036e7acb1dcb6924d7d6dd0cbc1fc0d9a56573210ad382d96d5ec88",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@e11584c65036e7acb1dcb6924d7d6dd0cbc1fc0d9a56573210ad382d96d5ec88",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@e11584c65036e7acb1dcb6924d7d6dd0cbc1fc0d9a56573210ad382d96d5ec88",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@e657b1571cf9166b9d1d7161eb5bd80c4fcb3e5a028277f4259e7fae62f7729f",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@e657b1571cf9166b9d1d7161eb5bd80c4fcb3e5a028277f4259e7fae62f7729f",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Tyhjä tasavartinen vaaka nollataan; vasta molemmat paketit mukana vertaavat niiden painavuutta. Alempi kuppi nimeää painavamman, puolenvaihto ei muuta kohteen ominaisuutta. Malli/ohjaimet/vastaus säilyvät yhdessä. Kulmasta ei lueta numeerista massaa. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@e657b1571cf9166b9d1d7161eb5bd80c4fcb3e5a028277f4259e7fae62f7729f",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M-MEAS-05",
+    "sourceBuild": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "sourceFile": "authority/production-181-v2/lite/src/content/ranta2.ts",
+    "actualFamilies": [
+      "size",
+      "equal",
+      "weigh",
+      "balance",
+      "transfer"
+    ],
+    "familyMapping": {
+      "balance": "Choice from ideal settled lower/higher pan.",
+      "size": "Small heavy vs larger light group; not a universal object-type rule.",
+      "equal": "Equal masses; new package includes different visible sizes.",
+      "weigh": "Actual three-package pairwise weigh widget, omitted by stale COVERAGE; final checker sees only pick.",
+      "transfer": "Lite1kg feathers/rocks assumes unit knowledge; replaced by different-looking equal-mass packages in core."
+    },
+    "registry": {
+      "size": {
+        "node": "M-MEAS-05",
+        "tag": "size",
+        "outcome": "valitsee oikean vaihtoehdon",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {},
+        "support": [],
+        "source": [
+          "oletus"
+        ]
+      },
+      "equal": {
+        "node": "M-MEAS-05",
+        "tag": "equal",
+        "outcome": "valitsee oikean vaihtoehdon",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {},
+        "support": [],
+        "source": [
+          "oletus"
+        ]
+      },
+      "weigh": {
+        "node": "M-MEAS-05",
+        "tag": "weigh",
+        "outcome": "punnitsee paketteja pareittain vaa'alla ja päättelee punnituksista painavimman tai kevyimmän",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {},
+        "support": [],
+        "source": [
+          "oletus"
+        ]
+      },
+      "balance": {
+        "node": "M-MEAS-05",
+        "tag": "balance",
+        "outcome": "valitsee oikean vaihtoehdon",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {},
+        "support": [],
+        "source": [
+          "oletus"
+        ]
+      },
+      "transfer": {
+        "node": "M-MEAS-05",
+        "tag": "transfer",
+        "outcome": "valitsee oikean vaihtoehdon",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {},
+        "support": [],
+        "source": [
+          "oletus"
+        ]
+      }
+    },
+    "demos": [
+      {
+        "say": "Kivi vasemmalle, lehti oikealle. Vaaka heilahtaa ja asettuu: kivi painuu alas, joten kivi on painavampi.",
+        "label": "Vaaka: vasemmalla kivi, oikealla lehti",
+        "duration": 8
+      },
+      {
+        "say": "Iso ei aina ole painava. Kolme isoa lehteä vasemmalle, pieni kivi oikealle. Kivi painaa vaa'an alas.",
+        "label": "Vaaka: vasemmalla lehti, lehti, lehti, oikealla kivi",
+        "duration": 9.399999999999999
+      },
+      {
+        "say": "Kun molemmilla puolilla on yhtä paljon painoa, vaaka jää suoraan.",
+        "label": "Vaaka: vasemmalla simpukka, simpukka, oikealla simpukka, simpukka",
+        "duration": 9.4
+      }
+    ],
+    "audit": {
+      "path": "authority/production-181-v2/lite/audit/LESSON_AUDIT.md",
+      "state": "tehty / korjattu",
+      "meaning": "Historical synthetic self-audit, not independent or human approval."
+    },
+    "sourceHashes": {
+      "src/content/measure.ts": "84fed7e22f850f1c4cf1a0910ddf017e2e580a49b5b3e7c65b89b9b7ca61fa75",
+      "src/content/ranta2.ts": "28d8f7b08205a7e5be0c2087c85e256e609578e83a9e6e714a1ee8573ff47fc6",
+      "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+      "src/content/measureanim.ts": "e157bfeb17df885cc8a6392a55b9bd10f8078efb6f065bae2f0347b6270d6cf4",
+      "src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+    },
+    "correctionsAndExtensions": [
+      "Known fixture masses independent of appearance; include both larger-light and larger-heavy examples.",
+      "Object IDs A/B stay with packages when sides reverse; correct object comparison remains true.",
+      "Active punnitse action; manual A-only stage never described as comparison to off-scale B. No strategy inferred from final pick."
+    ],
+    "reconciliation": "alignment.md",
+    "runtimeRoutePolicy": "No external pupil route authored; shared verified resolver only.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/measure.ts": "c899553f52ed576acf7ba682eff1fd19ae81958a5fab8521fba9e24cdc402982",
+        "src/content/measureanim.ts": "e157bfeb17df885cc8a6392a55b9bd10f8078efb6f065bae2f0347b6270d6cf4",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/content/ranta2.ts": "87944d2b01f0eeb53212fa1e9d86fa034c4b8db3a8fd0c572f7d74a462716020",
+        "src/engine/check.ts": "47db66a3f49e0ad81dbe6a44ef630f68c219ef1278b96b1d48e353ccb5d113c3",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/ui/widgets.ts": "ed38f173766820cfc9dafcf8ea95a57a8940afe50a36ad19f3b00f3193e56ede"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M-MEAS-05",
+      "subject": "mathematics",
+      "grade_band": "1-2",
+      "topic_area": "Geometria ja mittaaminen",
+      "parent_concept": "Massa",
+      "title": "Massan ymmärtäminen suureeksi",
+      "short_description": "Massan ymmärtäminen suureeksi",
+      "source_basis": "pedagogically_derived",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL1-2-S3"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "concept",
+      "relations": [
+        {
+          "id": "M-MEAS-00",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-MEAS-00"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Geometria ja mittaaminen",
+        "Massa"
+      ]
+    },
+    "canonicalRole": "atomic",
+    "canonicalNodeKind": "concept",
+    "canonicalEntryRole": "none",
+    "gradeBand": "1-2",
+    "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "teacherObjective": "Vertaan kahden esimerkkiesineen massaa tasavartisella vaa’alla ja erotan massan esineen näkyvästä koosta.",
+    "childGoal": "Vertaan painavuutta vaa’alla.",
+    "prerequisiteGroups": [
+      {
+        "all_of": [
+          "M-MEAS-00"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "requiredPrerequisites": [
+      {
+        "id": "M-MEAS-00",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "strongSupport": [],
+    "assumptions": [
+      "M-MEAS-00 direct attribute comparison.",
+      "Zeroed equal-arm balance with equal pan masses and common local gravity.",
+      "Each manually chosen stage represents a settled position; angle magnitude is not calibrated mass.",
+      "Model masses describe these packages, not all objects of that appearance. Kilogram transfer omitted from core."
+    ],
+    "scope": "Four fixed bounded pairs: masses2/5,5/2,4/4,2/5 internally; visible sizes independent; no numeric mass reading.",
+    "interaction": "Load both packages in one action or step through A then B; reverse pan sides; compare stable identities.",
+    "concreteToRepresentation": "Physical comparison and teacher procedure → original diagram → controllable same-quantity model → short practice/feedback → transfer/offline discussion.",
+    "evidenceLimit": "Local supported low-stakes comparison only; no real-object competence, learner data, formal mastery, retention or efficacy claim."
+  },
+  "extensions": {
+    "authoredOn": "2026-10-29",
+    "assignment": "B04 own M-MEAS-02,05,08 only; explicit GO after B03sealed7c58cd2",
+    "licence": "Original Finnish text/SVG/module, owner licensing decision reserved. Supplied shared PNG unchanged.",
+    "simulationType": "manual-control-ideal-physical-model-no-autoplay",
+    "reviewStatus": "Author self-check; independent review/main integration pending; human/learner validation not performed.",
+    "pureTestCommand": "node --test lesson-network/packages/M-MEAS-05/tests.mjs",
+    "browserTestCommand": "SAMMAKKO_TEST_URL=http://127.0.0.1:PORT/ node lesson-network/packages/M-MEAS-05/browser-tests.mjs",
+    "feedbackContractSha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+    "sourceNotes": {
+      "research.md": "11850193532db797ff032d7d390ffc9cf26a2d5261300555a82575a0f419b506",
+      "alignment.md": "6ffad09215f17f7b85d941d7f7bb698b8bb4bc26284f64074bae1069892c3f4e",
+      "tests.mjs": "1dc61017660c3889efe50f227851b5476507dcaa76cde57174615daef358a9b1",
+      "browser-tests.mjs": "74ab0561a74888f0497c61c97695482d21afcb3316fb4cd5e2074a822135d376"
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B05",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

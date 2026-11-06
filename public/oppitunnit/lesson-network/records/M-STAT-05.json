@@ -1,0 +1,257 @@
+{
+  "kcId": "M-STAT-05",
+  "pagePath": "lessons/M-STAT-05.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-STAT-05",
+  "canonicalNode": {
+    "id": "M-STAT-05",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Tietojenkäsittely ja tilastot",
+    "parent_concept": "Tunnusluvut",
+    "title": "Aritmeettisen keskiarvon laskeminen",
+    "short_description": "Aritmeettisen keskiarvon laskeminen",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S5"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-STAT-04",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-STAT-04 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-ADD-100",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Aritmeettisen keskiarvon laskemisen hard prerequisite on yhteenlaskun merkitys/riittävä tehtäväkohtainen fluenssi, ei juuri 0–100-algoritmin mastery."
+      },
+      {
+        "id": "M-DIV-FACT-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Jakolaskufaktat tukevat, mutta keskiarvolaskun jakaminen voi olla tehtäväkohtaisesti tuettu."
+      },
+      {
+        "id": "M-ADD-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "Keskiarvon numeerinen lasku tarvitsee yhteenlaskun merkityksen."
+      },
+      {
+        "id": "M-DIV-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "Keskiarvon numeerinen lasku tarvitsee jakamisen merkityksen."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-STAT-04",
+          "M-ADD-01",
+          "M-DIV-01"
+        ],
+        "rationale": "Käsite sekä perusoperaatioiden merkitys ovat hard prerequisites; fluenssitaso on tehtäväkohtainen."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Tietojenkäsittely ja tilastot",
+      "Tunnusluvut"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-STAT-04",
+      "targetKCId": "M-STAT-05",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-STAT-04 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ADD-100",
+      "targetKCId": "M-STAT-05",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Aritmeettisen keskiarvon laskemisen hard prerequisite on yhteenlaskun merkitys/riittävä tehtäväkohtainen fluenssi, ei juuri 0–100-algoritmin mastery.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-DIV-FACT-01",
+      "targetKCId": "M-STAT-05",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Jakolaskufaktat tukevat, mutta keskiarvolaskun jakaminen voi olla tehtäväkohtaisesti tuettu.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-STAT-05",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Keskiarvon numeerinen lasku tarvitsee yhteenlaskun merkityksen.",
+      "sourceRelationIndex": 3
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M-STAT-05",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Keskiarvon numeerinen lasku tarvitsee jakamisen merkityksen.",
+      "sourceRelationIndex": 4
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-STAT-05",
+      "targetKCId": "M79-MEAN",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-STAT-05 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-STAT-04",
+        "M-ADD-01",
+        "M-DIV-01"
+      ],
+      "rationale": "Käsite sekä perusoperaatioiden merkitys ovat hard prerequisites; fluenssitaso on tehtäväkohtainen."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "awaiting_reviewed_handover",
+    "body": null,
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    }
+  },
+  "newPedagogicalResearch": {
+    "state": "not_started_this_phase",
+    "records": [],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "not_performed_for_new_lesson"
+  },
+  "humanReview": {
+    "state": "not_performed_for_new_lesson"
+  },
+  "liteAlignment": {
+    "subsetMembership": false,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "outside_current_lite_scope"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "outside_current_lite_scope",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "outputHash": "3db02fbad3496c8017576e143e5ea4ea3921febe86501fff43d8448c0f2d3a8e",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "3db02fbad3496c8017576e143e5ea4ea3921febe86501fff43d8448c0f2d3a8e",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

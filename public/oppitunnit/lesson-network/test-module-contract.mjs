@@ -1,0 +1,12 @@
+import fs from 'node:fs';import os from 'node:os';import path from 'node:path';import assert from 'node:assert/strict';import {validateModule,validateStylesheet,loadPackages,digest}from './content.mjs';
+validateModule('export function sorted(x){return Array.from(x).sort();}');validateModule('export const label="import from someone"; // import fake from nowhere');validateModule('export function mount(){return {reset(){},dispose(){}}}');
+for(const s of ['import x from "remote";','export {x} from "remote";','async function x(){return import("remote")}','const x=require("remote");'])assert.throws(()=>validateModule(s),/dependencies unsupported/);
+assert.throws(()=>validateModule('export function bad({'),/invalid JavaScript/);assert.throws(()=>validateModule('export const value: number = 1;'),/invalid JavaScript/);console.log('PASS executable import syntax rejected; Array.from, strings and comments accepted');
+
+validateStylesheet('[data-work] svg { max-width: 28rem; }');validateStylesheet('[aria-pressed="true"] { border: 3px solid green; }');assert.throws(()=>validateStylesheet('@import "remote.css";'));assert.throws(()=>validateStylesheet('p{background:url(https://remote.invalid/x)}'));
+
+for(const css of [String.raw`@impor\74 "https://invalid.test/x";`,String.raw`p{background:u\72l(https://invalid.test/x)}`, 'p{background:image-set("https://invalid.test/x.png" 1x)}','p{background:-webkit-image-set("https://invalid.test/x.png" 1x)}'])assert.throws(()=>validateStylesheet(css),/unsupported/);
+
+const temp=fs.mkdtempSync(path.join(os.tmpdir(),'lesson-CSS-contract-'));
+try{const dir=path.join(temp,'packages','M-ALG-04');fs.mkdirSync(dir,{recursive:true});fs.mkdirSync(path.join(temp,'reference','inputs'),{recursive:true});fs.writeFileSync(path.join(temp,'reference','inputs','mvp-scope-181.json'),JSON.stringify({selected_ids:['M-ALG-04']}));const css='@import "https://invalid.test/x.css";',body='<link rel="stylesheet" href="theme.CSS"><p>Local only</p>';fs.writeFileSync(path.join(dir,'theme.CSS'),css);fs.writeFileSync(path.join(dir,'body.html'),body);fs.writeFileSync(path.join(dir,'lesson.json'),JSON.stringify({schemaVersion:1,kcId:'M-ALG-04',revision:1,state:'draft',body:'body.html',module:null,assets:[{path:'theme.CSS',sha256:digest(css)}],research:[],reviews:[],alignment:{},planning:{},extensions:{}}));assert.throws(()=>loadPackages(temp,['M-ALG-04']),/stylesheet.*unsupported/);}finally{fs.rmSync(temp,{recursive:true,force:true});}
+console.log('PASS escaped/image-set and uppercase-extension stylesheet dependencies rejected');

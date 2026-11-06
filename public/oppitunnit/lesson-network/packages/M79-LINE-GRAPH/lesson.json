@@ -1,0 +1,798 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M79-LINE-GRAPH",
+  "revision": 14,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "initial.svg",
+      "sha256": "efc17c860b98df3068053141a3b290f99411da243478a6291c278935d00dad41"
+    },
+    {
+      "path": "example1.svg",
+      "sha256": "22d3a6f1b01ea1b37fb1108c8bec696418684f6ff5d7693c37fe36bab2c8db87"
+    },
+    {
+      "path": "example2.svg",
+      "sha256": "2327e6817d7c2b459801bd21fae18a351790c183321ba9b18fd96288fc21a966"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "ce6a6db69a1859f721fccfb4e1f47d6aed6db34a63698c899c22bedc1573a929"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://openstax.org/books/elementary-algebra-2e/pages/4-4-understand-slope-of-a-line",
+      "title": "Understand Slope of a Line",
+      "organization": "OpenStax / Rice University",
+      "accessed": "2026-10-29",
+      "retrieval": "Primary HTML slope, two-point differences, zero/undefined slope sections and current footer read. No embedded video or learner trial.",
+      "adopted": "Signed rise divided by run in the same point order; horizontal zero and vertical undefined are different.",
+      "rejected": "No prose, examples, figures or tasks copied. No readiness quiz, compulsory method, perpendicular-line scope or efficacy inference.",
+      "licence": "Current book footer: CC BY-NC-SA 4.0; separate commercial and AI/LLM restrictions stated. Reference only, no clearance claim.",
+      "licenceURL": "https://openstax.org/books/elementary-algebra-2e/pages/4-4-understand-slope-of-a-line"
+    },
+    {
+      "url": "https://openstax.org/books/elementary-algebra-2e/pages/4-5-use-the-slope-intercept-form-of-an-equation-of-a-line",
+      "title": "Use the Slope–Intercept Form of an Equation of a Line",
+      "organization": "OpenStax / Rice University",
+      "accessed": "2026-10-29",
+      "retrieval": "Primary HTML intercept/graph sections and current footer read.",
+      "adopted": "Separate k from b; intercept (0,b), two distinct x-values and exact substitution.",
+      "rejected": "Original Finnish wording, numbers and diagrams; no copied exercise sequence or formal process/mastery claim.",
+      "licence": "Current book footer: CC BY-NC-SA 4.0; commercial and AI/LLM restrictions stated. Not publication clearance.",
+      "licenceURL": "https://openstax.org/books/elementary-algebra-2e/pages/4-5-use-the-slope-intercept-form-of-an-equation-of-a-line"
+    },
+    {
+      "url": "https://www.mathematicshub.edu.au/planning-tool/8/algebra/graphs/",
+      "title": "Year 8: Algebra — Graphs",
+      "organization": "Australian Government / Mathematics Hub",
+      "accessed": "2026-10-29",
+      "retrieval": "Primary teaching-planning HTML and terms-of-use page read; linked external resources not reviewed.",
+      "adopted": "Label axes and scales, connect tables to graphs, use two points that need not include the origin.",
+      "rejected": "The page calls vertical gradient infinite: rejected in favour of undefined division by zero. Foreign year mapping does not override canonical Finnish7–9 or justify efficacy. No copied text/figures.",
+      "licence": "Terms: Commonwealth material CC BY 4.0 unless indicated; logos/trademarks/third-party exceptions retained. No rights clearance inferred.",
+      "licenceURL": "https://www.mathematicshub.edu.au/terms-of-use/"
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@2c2bcd0bdf6ccd00d219ba4c0fad8d155249e458880cd2921fdd820ff1971612",
+      "note": "Author QA only. Feynman independent review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@2c2bcd0bdf6ccd00d219ba4c0fad8d155249e458880cd2921fdd820ff1971612",
+      "note": "Author QA only. Feynman independent review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@2c2bcd0bdf6ccd00d219ba4c0fad8d155249e458880cd2921fdd820ff1971612",
+      "note": "No learner, efficacy, rights or human approval performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@49712fbef2c90459f81f92fb14919048c63ecee1046037adb23cc501b3d852ba",
+      "note": "R2 point-label collision repair only; Feynman independent delta review pending. Original R1 review/failure preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@49712fbef2c90459f81f92fb14919048c63ecee1046037adb23cc501b3d852ba",
+      "note": "R2 point-label collision repair only; Feynman independent delta review pending. Original R1 review/failure preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@49712fbef2c90459f81f92fb14919048c63ecee1046037adb23cc501b3d852ba",
+      "note": "Not performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "2@49712fbef2c90459f81f92fb14919048c63ecee1046037adb23cc501b3d852ba",
+      "note": "Independent B16 Feynman exact current source/domain/teaching and actual181 native scope closed: lesson-network/evidence/production/B16/reviews/Feynman-on-Newton-ready-current.json. Synthetic technical scope, not learner validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "2@49712fbef2c90459f81f92fb14919048c63ecee1046037adb23cc501b3d852ba",
+      "note": "Independent B16 Feynman canonical/Lite/source boundaries reviewed, roles/groups preserved, no new hardgates. lesson-network/evidence/production/B16/reviews/Feynman-on-Newton-ready-current.json"
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@49712fbef2c90459f81f92fb14919048c63ecee1046037adb23cc501b3d852ba",
+      "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@7df1dd97ec94ffe9d5522153d368e9f929ddb7e2503aa9ed7bf5556b19575dab",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@7df1dd97ec94ffe9d5522153d368e9f929ddb7e2503aa9ed7bf5556b19575dab",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@7df1dd97ec94ffe9d5522153d368e9f929ddb7e2503aa9ed7bf5556b19575dab",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@b2589c1acdccca795266fee6d58ad2ab4475616c740797dc91587376f4a7eb1d",
+      "note": "LR04-B09: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@b2589c1acdccca795266fee6d58ad2ab4475616c740797dc91587376f4a7eb1d",
+      "note": "LR04-B09: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@b2589c1acdccca795266fee6d58ad2ab4475616c740797dc91587376f4a7eb1d",
+      "note": "LR04-B09: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@7d27231ff47c33276be2bc4418817c71a1ecbf7ad2b9baa2f0e1440ee9e897a9",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@7d27231ff47c33276be2bc4418817c71a1ecbf7ad2b9baa2f0e1440ee9e897a9",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@7d27231ff47c33276be2bc4418817c71a1ecbf7ad2b9baa2f0e1440ee9e897a9",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@4ccae34888dfa1e910d5bb4b6aa5c2c4ba04c62189b33566279ec94213eec4da",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@4ccae34888dfa1e910d5bb4b6aa5c2c4ba04c62189b33566279ec94213eec4da",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@4ccae34888dfa1e910d5bb4b6aa5c2c4ba04c62189b33566279ec94213eec4da",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@3abd0698b38dff9d7b8b9d2620f56e7b341df6aa25abd117a0e37a3b01312043",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@3abd0698b38dff9d7b8b9d2620f56e7b341df6aa25abd117a0e37a3b01312043",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@3abd0698b38dff9d7b8b9d2620f56e7b341df6aa25abd117a0e37a3b01312043",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@45a2647ad1745e39e76130b6caaba467e30d80d4814c836e00ed00f639a75b6b",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@45a2647ad1745e39e76130b6caaba467e30d80d4814c836e00ed00f639a75b6b",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@45a2647ad1745e39e76130b6caaba467e30d80d4814c836e00ed00f639a75b6b",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@8e6297582a346ec4dfcd11d1a5540ea2fd33867aaff537e7f40f49226d59e7d6",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@8e6297582a346ec4dfcd11d1a5540ea2fd33867aaff537e7f40f49226d59e7d6",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@8e6297582a346ec4dfcd11d1a5540ea2fd33867aaff537e7f40f49226d59e7d6",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@a9242eadd810c7344599479d315f5d50ad73ad8c3809f640b769f0e62f8fbc6e",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@a9242eadd810c7344599479d315f5d50ad73ad8c3809f640b769f0e62f8fbc6e",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@a9242eadd810c7344599479d315f5d50ad73ad8c3809f640b769f0e62f8fbc6e",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@3109a9b71ac9e308ed4d409f1607ac27f469e007f35cd292d9d585f303bcb7be",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@3109a9b71ac9e308ed4d409f1607ac27f469e007f35cd292d9d585f303bcb7be",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@3109a9b71ac9e308ed4d409f1607ac27f469e007f35cd292d9d585f303bcb7be",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@390312a0cdde202015263d80f1f2cc8ab6ae6a69103c4461afbedd7ce49c30d6",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@390312a0cdde202015263d80f1f2cc8ab6ae6a69103c4461afbedd7ce49c30d6",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@390312a0cdde202015263d80f1f2cc8ab6ae6a69103c4461afbedd7ce49c30d6",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@1f916ac588c6fa83a0e9b4dad2182ebd06eec41148db18b3df97153ed98ecffd",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@1f916ac588c6fa83a0e9b4dad2182ebd06eec41148db18b3df97153ed98ecffd",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@1f916ac588c6fa83a0e9b4dad2182ebd06eec41148db18b3df97153ed98ecffd",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@3207a70d60f818b29c96283f51cd341119c2bd1f82dd3665a41c4042f59c8d24",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@3207a70d60f818b29c96283f51cd341119c2bd1f82dd3665a41c4042f59c8d24",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Kaksi eri x-arvon pistettä määrää suoran; pisteet saa valita itse, eikä origo ole pakollinen. Oma yhtälö/tehtävä ja P/Q-kentät pysyvät yhdessä. Vaaka-, x-akseli- ja ei-leikkaa-tapaukset käsitellään ilman kysymykseen upotettua oikeaa vastausta. Liten määrätty pistepari on dokumentoidusti kapeampi tehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@3207a70d60f818b29c96283f51cd341119c2bd1f82dd3665a41c4042f59c8d24",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M79-LINE-GRAPH",
+    "sourceBuild": "audit1-2026-10-28",
+    "sourceHashes": {
+      "src/content/written.ts": "58ee93036fb7417e8324072db5be810426a99db346c23ef0651c9525a9bfd0c6",
+      "src/content/writtenanim.ts": "96ae626bce755998b6ed390f84ee21f16ac0fdb22dac12c40021b9432f1b65bc",
+      "src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+      "src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+      "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+      "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+      "src/content/placeanim.ts": "d6f1284272675a8b78d62649f3b9e3490a7d324df139f292986f533cee803f99",
+      "src/content/numbers.ts": "2ff4cae1816ea1d61ec938361a8306dc9a24d6e893f67895a390a83b7ae1c4d5",
+      "src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+      "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+      "src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+    },
+    "actualTaskFamilies": {
+      "draw": {
+        "kind": "plot",
+        "prompt": "Piirrä suora y = −x + 1: merkitse pisteet, kun x = 0 ja x = 2.",
+        "hint": "Kun x = 0, y = b. Toinen piste: sijoita x = 2.",
+        "explanation": "x = 0 → y = 1, x = 2 → y = −1.",
+        "registry": {
+          "node": "M79-LINE-GRAPH",
+          "tag": "draw",
+          "outcome": "piirtää pisteet kuvaajaan",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        }
+      },
+      "lines": {
+        "kind": "place",
+        "prompt": "Yhdistä jokainen kuvaus oikeaan yhtälöön. Yksi yhtälö jää yli.",
+        "hint": "x:n kerroin k kertoo nousun, vakio b leikkauskohdan y-akselilla.",
+        "explanation": "y = 2x + 1, y = 2x − 3 ja y = −2x + 1. Yhtälössä y = x + 2 k ja b ovat vaihtaneet paikkaa.",
+        "registry": {
+          "node": "M79-LINE-GRAPH",
+          "tag": "lines",
+          "outcome": "sijoittaa osat oikeille paikoille",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        }
+      },
+      "which": {
+        "kind": "choice",
+        "prompt": "Kumpi suora on y = 2x + 2?",
+        "hint": "Positiivinen kerroin: suora nousee oikealle.",
+        "explanation": "y = 2x + 2 nousee vasemmalta oikealle.",
+        "registry": {
+          "node": "M79-LINE-GRAPH",
+          "tag": "which",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        }
+      },
+      "intercept": {
+        "kind": "choice",
+        "prompt": "Missä pisteessä suora y = 2x − 1 leikkaa y-akselin?",
+        "hint": "y-akselilla x = 0. Sijoita x = 0 yhtälöön.",
+        "explanation": "x = 0 antaa y = −1: piste (0, −1).",
+        "registry": {
+          "node": "M79-LINE-GRAPH",
+          "tag": "intercept",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        }
+      },
+      "transfer": {
+        "kind": "numeric",
+        "prompt": "Missä kohdassa suora y = −2x − 4 leikkaa x-akselin? Anna x.",
+        "hint": "x-akselilla y on nolla. Ratkaise yhtälö.",
+        "explanation": "x-akselilla y = 0: −2x − 4 = 0, joten x = −2.",
+        "registry": {
+          "node": "M79-LINE-GRAPH",
+          "tag": "transfer",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        }
+      }
+    },
+    "demoSummaries": [
+      {
+        "say": "Katso, mitä luvut tekevät. Ensin muutetaan vain b:tä: suora liukuu ylös ja alas, ja vihreä leikkauspiste y-akselilla seuraa b:tä. Sitten muutetaan k:ta: suora kääntyy leikkauspisteen ympäri. Oranssi porras näyttää: askel oikealle, k ylös tai alas.",
+        "kind": "animation",
+        "duration": 17.2,
+        "width": 320,
+        "height": 252,
+        "label": "kerroin ja vakio",
+        "snapshots": [
+          {
+            "time": 0,
+            "caption": "Suora y = 2x. Muutetaan ensin vain lukua b.",
+            "sha256": "856f26036538925ab8553bc26c5c19d41e27aa174f5b6537de44990cb0ab764f"
+          },
+          {
+            "time": 0.43,
+            "caption": "Suora y = 2x. Muutetaan ensin vain lukua b.",
+            "sha256": "856f26036538925ab8553bc26c5c19d41e27aa174f5b6537de44990cb0ab764f"
+          },
+          {
+            "time": 0.86,
+            "caption": "b = 0: suora siirtyy ylös ja leikkaa y-akselin kohdassa 0. Kaltevuus ei muutu.",
+            "sha256": "856f26036538925ab8553bc26c5c19d41e27aa174f5b6537de44990cb0ab764f"
+          },
+          {
+            "time": 1.2899999999999998,
+            "caption": "b = 0: suora siirtyy ylös ja leikkaa y-akselin kohdassa 0. Kaltevuus ei muutu.",
+            "sha256": "856f26036538925ab8553bc26c5c19d41e27aa174f5b6537de44990cb0ab764f"
+          },
+          {
+            "time": 1.72,
+            "caption": "b = 3: suora siirtyy ylös ja leikkaa y-akselin kohdassa 3. Kaltevuus ei muutu.",
+            "sha256": "f34219ab741e3c674d0cdcdd006c5563d723c89837310bcfe29e08ab467e3f8a"
+          },
+          {
+            "time": 2.15,
+            "caption": "b = 3: suora siirtyy ylös ja leikkaa y-akselin kohdassa 3. Kaltevuus ei muutu.",
+            "sha256": "763b669f6080739ddfe11059a6a8254586971a3385716d68fc5d6472dc73146e"
+          },
+          {
+            "time": 2.5799999999999996,
+            "caption": "b = 3: suora siirtyy ylös ja leikkaa y-akselin kohdassa 3. Kaltevuus ei muutu.",
+            "sha256": "a3b8f543ff1fbf8c8de4ea5b293de2ed7e16b08bf0b851ddefbad3872eaeda8c"
+          },
+          {
+            "time": 3.01,
+            "caption": "b = 3: suora siirtyy ylös ja leikkaa y-akselin kohdassa 3. Kaltevuus ei muutu.",
+            "sha256": "a3b8f543ff1fbf8c8de4ea5b293de2ed7e16b08bf0b851ddefbad3872eaeda8c"
+          },
+          {
+            "time": 3.44,
+            "caption": "b = −2: suora siirtyy alas ja leikkaa y-akselin kohdassa −2. Kaltevuus ei muutu.",
+            "sha256": "553bd87b19db58c028d5ed825728fe3de0cd115480e13cd5db2a51314424c8b8"
+          },
+          {
+            "time": 3.8699999999999997,
+            "caption": "b = −2: suora siirtyy alas ja leikkaa y-akselin kohdassa −2. Kaltevuus ei muutu.",
+            "sha256": "9cecd2a796523b487d9308092bd56ff893a380d410fe1a981290b1ea3b6f6ee0"
+          },
+          {
+            "time": 4.3,
+            "caption": "b = −2: suora siirtyy alas ja leikkaa y-akselin kohdassa −2. Kaltevuus ei muutu.",
+            "sha256": "9cecd2a796523b487d9308092bd56ff893a380d410fe1a981290b1ea3b6f6ee0"
+          },
+          {
+            "time": 4.7299999999999995,
+            "caption": "b = 1: suora siirtyy ylös ja leikkaa y-akselin kohdassa 1. Kaltevuus ei muutu.",
+            "sha256": "3894fae60c733ec064eddfc115231eb1036b8f0e686c0a85ee524d5f74a34373"
+          },
+          {
+            "time": 5.159999999999999,
+            "caption": "b = 1: suora siirtyy ylös ja leikkaa y-akselin kohdassa 1. Kaltevuus ei muutu.",
+            "sha256": "a3517131e3a3a354d30f8018b4930ba6980579926837037e63d3ce7ca9bd3aa2"
+          },
+          {
+            "time": 5.59,
+            "caption": "b = 1: suora siirtyy ylös ja leikkaa y-akselin kohdassa 1. Kaltevuus ei muutu.",
+            "sha256": "81bbe641376db29d400d114ab6e192dc52fca74b1798c45379e97c4a19268884"
+          },
+          {
+            "time": 6.02,
+            "caption": "b = 1: suora siirtyy ylös ja leikkaa y-akselin kohdassa 1. Kaltevuus ei muutu.",
+            "sha256": "81bbe641376db29d400d114ab6e192dc52fca74b1798c45379e97c4a19268884"
+          },
+          {
+            "time": 6.45,
+            "caption": "b = 1: suora siirtyy ylös ja leikkaa y-akselin kohdassa 1. Kaltevuus ei muutu.",
+            "sha256": "81bbe641376db29d400d114ab6e192dc52fca74b1798c45379e97c4a19268884"
+          },
+          {
+            "time": 6.88,
+            "caption": "b = 1: suora siirtyy ylös ja leikkaa y-akselin kohdassa 1. Kaltevuus ei muutu.",
+            "sha256": "81bbe641376db29d400d114ab6e192dc52fca74b1798c45379e97c4a19268884"
+          },
+          {
+            "time": 7.31,
+            "caption": "b = 1: suora siirtyy ylös ja leikkaa y-akselin kohdassa 1. Kaltevuus ei muutu.",
+            "sha256": "81bbe641376db29d400d114ab6e192dc52fca74b1798c45379e97c4a19268884"
+          },
+          {
+            "time": 7.739999999999999,
+            "caption": "b = 1: suora siirtyy ylös ja leikkaa y-akselin kohdassa 1. Kaltevuus ei muutu.",
+            "sha256": "81bbe641376db29d400d114ab6e192dc52fca74b1798c45379e97c4a19268884"
+          },
+          {
+            "time": 8.17,
+            "caption": "k = 2: yksi askel oikealle, 2 ylös – suora nousee.",
+            "sha256": "ac83226a8b7a1d1ea07fc4672ee794f2ee72c6c7561366923daa365cd09012f4"
+          },
+          {
+            "time": 8.6,
+            "caption": "k = 2: yksi askel oikealle, 2 ylös – suora nousee.",
+            "sha256": "ac83226a8b7a1d1ea07fc4672ee794f2ee72c6c7561366923daa365cd09012f4"
+          },
+          {
+            "time": 9.03,
+            "caption": "k = 3: yksi askel oikealle, 3 ylös – suora nousee jyrkästi.",
+            "sha256": "cba4b0b8a5eb49c572d2a63dde41a4ae751e8df4d63776b351f26a325c689a64"
+          },
+          {
+            "time": 9.459999999999999,
+            "caption": "k = 3: yksi askel oikealle, 3 ylös – suora nousee jyrkästi.",
+            "sha256": "c894afc2bd6743b014c5be20638cc49858f6da17ff8bc8e92fcd6ea39f63fc6a"
+          },
+          {
+            "time": 9.889999999999999,
+            "caption": "k = 3: yksi askel oikealle, 3 ylös – suora nousee jyrkästi.",
+            "sha256": "c894afc2bd6743b014c5be20638cc49858f6da17ff8bc8e92fcd6ea39f63fc6a"
+          },
+          {
+            "time": 10.319999999999999,
+            "caption": "k = 1: yksi askel oikealle, 1 ylös – suora nousee.",
+            "sha256": "471f88b1095eef125df78241bd44907684dfd13ac2264b019a311df25cdc8422"
+          },
+          {
+            "time": 10.75,
+            "caption": "k = 1: yksi askel oikealle, 1 ylös – suora nousee.",
+            "sha256": "ffd466c98bc363b1be7c38a073ba5fa805c25be7f56acf0f8a2debcabf678e7d"
+          },
+          {
+            "time": 11.18,
+            "caption": "k = 1: yksi askel oikealle, 1 ylös – suora nousee.",
+            "sha256": "73a82fcc8d7436fbd2fcc161c2d04e1f2a6fdb654cb11470258ee25490e9c61e"
+          },
+          {
+            "time": 11.61,
+            "caption": "k = 1: yksi askel oikealle, 1 ylös – suora nousee.",
+            "sha256": "73a82fcc8d7436fbd2fcc161c2d04e1f2a6fdb654cb11470258ee25490e9c61e"
+          },
+          {
+            "time": 12.04,
+            "caption": "k = −1: yksi askel oikealle, 1 alas – suora laskee.",
+            "sha256": "0ae5f552e3d19ae393ce5170c818e2b6a68473b882550b2fbab150ed7ce160d4"
+          },
+          {
+            "time": 12.469999999999999,
+            "caption": "k = −1: yksi askel oikealle, 1 alas – suora laskee.",
+            "sha256": "f3be6e0c87f8eb7a4b846323779a6f2ba713f6ffe451859b5b58a4e48f0adbc8"
+          },
+          {
+            "time": 12.9,
+            "caption": "k = −1: yksi askel oikealle, 1 alas – suora laskee.",
+            "sha256": "448379a12346b39597a9bea79a9d330c82a3ae58cc920557215b978a24dd162e"
+          },
+          {
+            "time": 13.329999999999998,
+            "caption": "k = −1: yksi askel oikealle, 1 alas – suora laskee.",
+            "sha256": "448379a12346b39597a9bea79a9d330c82a3ae58cc920557215b978a24dd162e"
+          },
+          {
+            "time": 13.76,
+            "caption": "k = −2: yksi askel oikealle, 2 alas – suora laskee.",
+            "sha256": "1e9be707864e5d88f4624d17915a0d619180838e85be4fce7dc1eb56e0901368"
+          },
+          {
+            "time": 14.190000000000001,
+            "caption": "k = −2: yksi askel oikealle, 2 alas – suora laskee.",
+            "sha256": "2fcbff78f4f1f830d7115e7ee606c3bae0c63aebb8e5de970615752503beb7d2"
+          },
+          {
+            "time": 14.62,
+            "caption": "b kertoo, missä suora leikkaa y-akselin. k kertoo, paljonko suora nousee tai laskee yhtä askelta kohti.",
+            "sha256": "6c45ff52398709d49c18324011e9ceefbf9a0d6b048899f16c82e3abbf37eb1f"
+          },
+          {
+            "time": 15.05,
+            "caption": "b kertoo, missä suora leikkaa y-akselin. k kertoo, paljonko suora nousee tai laskee yhtä askelta kohti.",
+            "sha256": "6c45ff52398709d49c18324011e9ceefbf9a0d6b048899f16c82e3abbf37eb1f"
+          },
+          {
+            "time": 15.479999999999999,
+            "caption": "b kertoo, missä suora leikkaa y-akselin. k kertoo, paljonko suora nousee tai laskee yhtä askelta kohti.",
+            "sha256": "6c45ff52398709d49c18324011e9ceefbf9a0d6b048899f16c82e3abbf37eb1f"
+          },
+          {
+            "time": 15.91,
+            "caption": "b kertoo, missä suora leikkaa y-akselin. k kertoo, paljonko suora nousee tai laskee yhtä askelta kohti.",
+            "sha256": "6c45ff52398709d49c18324011e9ceefbf9a0d6b048899f16c82e3abbf37eb1f"
+          },
+          {
+            "time": 16.34,
+            "caption": "b kertoo, missä suora leikkaa y-akselin. k kertoo, paljonko suora nousee tai laskee yhtä askelta kohti.",
+            "sha256": "6c45ff52398709d49c18324011e9ceefbf9a0d6b048899f16c82e3abbf37eb1f"
+          },
+          {
+            "time": 16.77,
+            "caption": "b kertoo, missä suora leikkaa y-akselin. k kertoo, paljonko suora nousee tai laskee yhtä askelta kohti.",
+            "sha256": "6c45ff52398709d49c18324011e9ceefbf9a0d6b048899f16c82e3abbf37eb1f"
+          },
+          {
+            "time": 17.2,
+            "caption": "b kertoo, missä suora leikkaa y-akselin. k kertoo, paljonko suora nousee tai laskee yhtä askelta kohti.",
+            "sha256": "6c45ff52398709d49c18324011e9ceefbf9a0d6b048899f16c82e3abbf37eb1f"
+          }
+        ]
+      },
+      {
+        "say": "Suora y = 2x + 1 leikkaa y-akselin kohdassa 1, koska x = 0 antaa y = 1. Kaksi pistettä riittää suoran piirtämiseen.",
+        "kind": "static",
+        "html": "<svg viewBox=\"0 0 300 242\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"16\" y1=\"226\" x2=\"16\" y2=\"18\" stroke=\"var(--line)\"/><line x1=\"42\" y1=\"226\" x2=\"42\" y2=\"18\" stroke=\"var(--line)\"/><line x1=\"68\" y1=\"226\" x2=\"68\" y2=\"18\" stroke=\"var(--line)\"/><line x1=\"94\" y1=\"226\" x2=\"94\" y2=\"18\" stroke=\"var(--line)\"/><line x1=\"120\" y1=\"226\" x2=\"120\" y2=\"18\" stroke=\"var(--line)\"/><line x1=\"146\" y1=\"226\" x2=\"146\" y2=\"18\" stroke=\"var(--line)\"/><line x1=\"172\" y1=\"226\" x2=\"172\" y2=\"18\" stroke=\"var(--line)\"/><line x1=\"198\" y1=\"226\" x2=\"198\" y2=\"18\" stroke=\"var(--line)\"/><line x1=\"224\" y1=\"226\" x2=\"224\" y2=\"18\" stroke=\"var(--line)\"/><line x1=\"250\" y1=\"226\" x2=\"250\" y2=\"18\" stroke=\"var(--line)\"/><line x1=\"276\" y1=\"226\" x2=\"276\" y2=\"18\" stroke=\"var(--line)\"/><line x1=\"16\" y1=\"226\" x2=\"276\" y2=\"226\" stroke=\"var(--line)\"/><line x1=\"16\" y1=\"200\" x2=\"276\" y2=\"200\" stroke=\"var(--line)\"/><line x1=\"16\" y1=\"174\" x2=\"276\" y2=\"174\" stroke=\"var(--line)\"/><line x1=\"16\" y1=\"148\" x2=\"276\" y2=\"148\" stroke=\"var(--line)\"/><line x1=\"16\" y1=\"122\" x2=\"276\" y2=\"122\" stroke=\"var(--line)\"/><line x1=\"16\" y1=\"96\" x2=\"276\" y2=\"96\" stroke=\"var(--line)\"/><line x1=\"16\" y1=\"70\" x2=\"276\" y2=\"70\" stroke=\"var(--line)\"/><line x1=\"16\" y1=\"44\" x2=\"276\" y2=\"44\" stroke=\"var(--line)\"/><line x1=\"16\" y1=\"18\" x2=\"276\" y2=\"18\" stroke=\"var(--line)\"/><line x1=\"16\" y1=\"122\" x2=\"284\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"2.2\"/><path d=\"M288 122l-7 -4v8z\" fill=\"currentColor\"/><line x1=\"146\" y1=\"226\" x2=\"146\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"2.2\"/><path d=\"M146 6l-4 7h8z\" fill=\"currentColor\"/><text x=\"16\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">−5</text><text x=\"42\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">−4</text><text x=\"68\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">−3</text><text x=\"94\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">−2</text><text x=\"120\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">−1</text><text x=\"172\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">1</text><text x=\"198\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">2</text><text x=\"224\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">3</text><text x=\"250\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">4</text><text x=\"276\" y=\"136\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">5</text><text x=\"141\" y=\"230\" text-anchor=\"end\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">−4</text><text x=\"141\" y=\"204\" text-anchor=\"end\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">−3</text><text x=\"141\" y=\"178\" text-anchor=\"end\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">−2</text><text x=\"141\" y=\"152\" text-anchor=\"end\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">−1</text><text x=\"141\" y=\"100\" text-anchor=\"end\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">1</text><text x=\"141\" y=\"74\" text-anchor=\"end\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">2</text><text x=\"141\" y=\"48\" text-anchor=\"end\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">3</text><text x=\"141\" y=\"22\" text-anchor=\"end\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">4</text><text x=\"141\" y=\"136\" text-anchor=\"end\" font-size=\"11\" font-weight=\"600\" fill=\"currentColor\">0</text><text x=\"286\" y=\"116\" text-anchor=\"end\" font-size=\"13\" font-weight=\"800\" fill=\"currentColor\">x</text><text x=\"154\" y=\"14\" text-anchor=\"start\" font-size=\"13\" font-weight=\"800\" fill=\"currentColor\">y</text><polyline points=\"81,226 185,18\" fill=\"none\" stroke=\"var(--pond)\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"181\" y=\"34\" text-anchor=\"end\" font-size=\"13\" font-weight=\"800\" fill=\"var(--pond)\">y = 2x + 1</text><circle cx=\"146\" cy=\"96\" r=\"6\" fill=\"var(--red)\"/><text x=\"155\" y=\"89\" text-anchor=\"start\" font-size=\"13\" font-weight=\"800\" fill=\"var(--red)\">(0, 1)</text><circle cx=\"172\" cy=\"44\" r=\"6\" fill=\"var(--red)\"/><text x=\"181\" y=\"37\" text-anchor=\"start\" font-size=\"13\" font-weight=\"800\" fill=\"var(--red)\">(1, 3)</text></svg>"
+      }
+    ],
+    "reconciliation": "Actual draw remains constructive: own two points, any distinct x in stated visible bounds, joined current proposal, no copied given answer table. lines/matching → coefficient formation from verbal change/intercept, with optional parameter-b/k demonstrations; no claim that this equals original drag-matching. which stays recognition, intercept requires (0,b), transfer adds meaningful finite units and x-axis boundary cases.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+        "src/content/algebra79.ts": "dba08bcb491473c1e29dde39e66c894631fc4ad96ddee5339eef2a2dbf7a1b6b",
+        "src/content/algebra79b.ts": "2cb8b4e292009053a217f710c067ef8fb9b7b33a3205c127fe622f3886e7ac3b",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/facts.ts": "a696f7fd77cf6de59eae08d4fac0791a04f35065352415b1fac9c1fdb377c3c9",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/numbers.ts": "6db9ad2c369c3111be19409d6b3da02f990c08ec8841c122081d5487d066f5af",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/content/placeanim.ts": "d6f1284272675a8b78d62649f3b9e3490a7d324df139f292986f533cee803f99",
+        "src/content/written.ts": "4e78786b0036a1a1b5a27efea6923facb0dbba72ecfa4191e75c4b863bc9278e",
+        "src/content/writtenanim.ts": "96ae626bce755998b6ed390f84ee21f16ac0fdb22dac12c40021b9432f1b65bc",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M79-LINE-GRAPH",
+      "subject": "mathematics",
+      "grade_band": "7-9",
+      "topic_area": "S4 Funktiot",
+      "parent_concept": "Lineaarinen funktio",
+      "title": "Suoran piirtäminen koordinaatistoon yhtälöstä",
+      "short_description": "Suoran piirtäminen koordinaatistoon yhtälöstä",
+      "node_kind": "procedure",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "M79-S4"
+      ],
+      "relations": [
+        {
+          "id": "M79-FUNC-GRAPH",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M79-FUNC-GRAPH on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "M79-EQ1-SOLVE",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M79-FUNC-GRAPH"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate",
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "S4 Funktiot",
+        "Lineaarinen funktio"
+      ]
+    },
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M79-FUNC-GRAPH"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "role": "atomic",
+    "additionalHardGates": [],
+    "childGoal": "Piirrän yhtälön suoran kahdesta pisteestä.",
+    "bounds": "Typed finite Cartesian models and exact rational answers; no objective lowered to recognition. No runtime external oracle or persisted learner history. See teacher limits and validation.md.",
+    "art": "Supplied shared/aava/curious.png unchanged PNG bytes. Original mathematical SVGs generated by own exact module. No copied external art."
+  },
+  "extensions": {
+    "batch": "B16",
+    "author": "Newton",
+    "licenceScope": "Provenance only; human, rights, efficacy and full assistive-technology acceptance not performed.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B09",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

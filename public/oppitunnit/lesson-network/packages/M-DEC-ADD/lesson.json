@@ -1,0 +1,808 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-DEC-ADD",
+  "revision": 15,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "initial.svg",
+      "sha256": "aa50e37fb9cb014cbc0f5efd0d86d364a3227f760ccfad5cc8c39c836db081aa"
+    },
+    {
+      "path": "example1.svg",
+      "sha256": "e8c1f77889591aabcce1d94970da72fc0c0b88031512cc8ae1a95976d3188ca2"
+    },
+    {
+      "path": "example2.svg",
+      "sha256": "4b5934722e8cc06fa649c55fc8883760a1c3c6d12c141f1bf62e125a2b02a502"
+    },
+    {
+      "path": "example3.svg",
+      "sha256": "74104f82ee741ee4af8519d7a9a0bd419c1f34f1dd5d1b59c6df5208ca5a29ce"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "1ad2135a7dbf899a8c8ede27c4ad651eb09bb8b1a635ca2fd8fe19ce99f63322"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-5-unit-1-decimal-fractions/",
+      "title": "Decimal fractions",
+      "organization": "NCETM",
+      "accessed": "2026-10-29",
+      "retrieval": "Actual HTML learning outcomes read, including named decimal units, mental/column calculation and measure connections. Linked slides/PDF/video not retrieved.",
+      "usageRestrictions": "Actual NCETM copyright HTML read2026-10-29: Crown/OGL default unless stated, attribution and named-author permission caveat. Oak lesson HTML states©Oak2025/OGL3.0 except exceptions. Conceptual comparison only; no teacher slides, worksheets, video, source prose or figures copied. No overall release/licence clearance.",
+      "adopted": "Compose quantities from like decimal units and exchange across place boundaries before column notation; use unlike written precision to test place meaning.",
+      "rejected": "No right-edge digit alignment, decimal-length comparison substitute, subtraction assessment under an addition-only KC, copied column graphics, or claim of independent written-algorithm competence.",
+      "scopeLimits": "Conceptual comparator; frozen Finnish graph supplies grade/role/groups. No efficacy or learner validation claim."
+    },
+    {
+      "url": "https://www.ncetm.org.uk/copyright/",
+      "title": "Copyright",
+      "organization": "NCETM",
+      "accessed": "2026-10-29",
+      "retrieval": "Actual copyright HTML55–57 read; acknowledgement and author-specific caveat.",
+      "usageRestrictions": "Actual NCETM copyright HTML read2026-10-29: Crown/OGL default unless stated, attribution and named-author permission caveat. Oak lesson HTML states©Oak2025/OGL3.0 except exceptions. Conceptual comparison only; no teacher slides, worksheets, video, source prose or figures copied. No overall release/licence clearance.",
+      "adopted": "Credit retrieved source and preserve exceptions in research note.",
+      "rejected": "No blanket licence grant to project, mascots or third-party resources."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@8ea287a42aa7b9645949f9d1d687a9bbe5c341936f930be0ccb064fe7bea8028",
+      "note": "Author source draft. Newton different-author review and parent actual175integration are pending. No human/learner review performed."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@8ea287a42aa7b9645949f9d1d687a9bbe5c341936f930be0ccb064fe7bea8028",
+      "note": "Author source draft. Newton different-author review and parent actual175integration are pending. No human/learner review performed."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@8ea287a42aa7b9645949f9d1d687a9bbe5c341936f930be0ccb064fe7bea8028",
+      "note": "Author source draft. Newton different-author review and parent actual175integration are pending. No human/learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@3df3d03eabc7e4dc5dd0f4a9947cc3362e19ebaa4c5c8b08663bc72470d0177b",
+      "note": "r2 bounded current-model/dispose reconciliation. Prior findings and reviews retained; Newton targeted rereview pending; no humanreview."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@3df3d03eabc7e4dc5dd0f4a9947cc3362e19ebaa4c5c8b08663bc72470d0177b",
+      "note": "r2 bounded current-model/dispose reconciliation. Prior findings and reviews retained; Newton targeted rereview pending; no humanreview."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@3df3d03eabc7e4dc5dd0f4a9947cc3362e19ebaa4c5c8b08663bc72470d0177b",
+      "note": "r2 bounded current-model/dispose reconciliation. Prior findings and reviews retained; Newton targeted rereview pending; no humanreview."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "2@3df3d03eabc7e4dc5dd0f4a9947cc3362e19ebaa4c5c8b08663bc72470d0177b",
+      "note": "Independent B15 Newton current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Newton-on-Feynman-ready-current.json. Synthetic technical scope, not learner validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "2@3df3d03eabc7e4dc5dd0f4a9947cc3362e19ebaa4c5c8b08663bc72470d0177b",
+      "note": "Independent B15 Newton canonical/Lite/source boundary review: roles/groups preserved, no new hardgates. lesson-network/evidence/production/B15/reviews/Newton-on-Feynman-ready-current.json"
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@3df3d03eabc7e4dc5dd0f4a9947cc3362e19ebaa4c5c8b08663bc72470d0177b",
+      "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@0387f8ff6e115f02f71b046ee88e65512b4333079821ee55ca480cd59a2cc50d",
+      "note": "LR04-B03: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@0387f8ff6e115f02f71b046ee88e65512b4333079821ee55ca480cd59a2cc50d",
+      "note": "LR04-B03: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@0387f8ff6e115f02f71b046ee88e65512b4333079821ee55ca480cd59a2cc50d",
+      "note": "LR04-B03: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@012fdbaf9487f327e47186bd7d34414a598723ac7d33f3c9afea68304605fb0b",
+      "note": "LR04 projector framing: given scenario/question separated from response controls into two visible columns; all owner selectors and question information retained. No math or font scaling changes."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@012fdbaf9487f327e47186bd7d34414a598723ac7d33f3c9afea68304605fb0b",
+      "note": "LR04 projector framing: given scenario/question separated from response controls into two visible columns; all owner selectors and question information retained. No math or font scaling changes."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@012fdbaf9487f327e47186bd7d34414a598723ac7d33f3c9afea68304605fb0b",
+      "note": "LR04 projector framing: given scenario/question separated from response controls into two visible columns; all owner selectors and question information retained. No math or font scaling changes."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@83a224e8fe03561db4c3c9997730baa344cbfb12fc40f45cca877d696ee1f83f",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@83a224e8fe03561db4c3c9997730baa344cbfb12fc40f45cca877d696ee1f83f",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@83a224e8fe03561db4c3c9997730baa344cbfb12fc40f45cca877d696ee1f83f",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@e40d889a08d44831ebc9661f3adcd978c015c2e703fb2753314fb5f05badfd43",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@e40d889a08d44831ebc9661f3adcd978c015c2e703fb2753314fb5f05badfd43",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@e40d889a08d44831ebc9661f3adcd978c015c2e703fb2753314fb5f05badfd43",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@88717ca70379566d19fd7cf21b3602616444833641fb720aa13a2662f240a3b6",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@88717ca70379566d19fd7cf21b3602616444833641fb720aa13a2662f240a3b6",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@88717ca70379566d19fd7cf21b3602616444833641fb720aa13a2662f240a3b6",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@f6343c5c37f877962c3112423eb9f0633e1d77576995a746478a001631e5aebc",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@f6343c5c37f877962c3112423eb9f0633e1d77576995a746478a001631e5aebc",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@f6343c5c37f877962c3112423eb9f0633e1d77576995a746478a001631e5aebc",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@99014c59df46a67f0696ac8874dd3e57c8289ed8d78864294262fe0b71bbba7f",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@99014c59df46a67f0696ac8874dd3e57c8289ed8d78864294262fe0b71bbba7f",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@99014c59df46a67f0696ac8874dd3e57c8289ed8d78864294262fe0b71bbba7f",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@1561e58d0cbaae67b2d3ab3d640d7581a3ac593a8f8641defd1f1b9abee19420",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@1561e58d0cbaae67b2d3ab3d640d7581a3ac593a8f8641defd1f1b9abee19420",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@1561e58d0cbaae67b2d3ab3d640d7581a3ac593a8f8641defd1f1b9abee19420",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@21319c941be944f2e43cc2e50763c83da3c27b283fd9760cefac2072a1875815",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@21319c941be944f2e43cc2e50763c83da3c27b283fd9760cefac2072a1875815",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@21319c941be944f2e43cc2e50763c83da3c27b283fd9760cefac2072a1875815",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@9ba42235ec5b39a1d88d7d0ecd16510de8467b4ababea42f40dec34cf89dcc11",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@9ba42235ec5b39a1d88d7d0ecd16510de8467b4ababea42f40dec34cf89dcc11",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@9ba42235ec5b39a1d88d7d0ecd16510de8467b4ababea42f40dec34cf89dcc11",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@e9000f7601839dc6fe7694b622b98558815e311acf0e384545b3423c22e369ee",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@e9000f7601839dc6fe7694b622b98558815e311acf0e384545b3423c22e369ee",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: 0,76 + 0,58 = 1,34 ja 2,5 + 1,25 perustuvat samojen lukuyksiköiden kohdistamiseen. Kokonaisen/yksikön on pysyttävä samana; pelkkä numeroiden oikeaan reunaan kohdistaminen on virhe. Korjasin mallin ja valitsimen yhteen vaiheeseen. Harjoituksen lasku ja vastaus eivät eroa omille ruuduilleen. Nykyinen Lite sisältää yhteenlaskun lisäksi sub-perheen ja vähennysdemon. Lessonin yhteenlaskupainotus ei sellaisenaan kata koko Liten vähennyslaajuutta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@e9000f7601839dc6fe7694b622b98558815e311acf0e384545b3423c22e369ee",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "sourceRevision": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "validRevisions": [
+      "audit1-2026-10-28"
+    ],
+    "nodeSpec": "M-DEC-ADD",
+    "sourceHashes": {
+      "authority/production-181-v2/lite/src/content/decimals.ts": "7ada1da383cb235ec320e4f4da2150c79ddb02fcd5334874a5c59fd05ae8c21e",
+      "authority/production-181-v2/lite/src/content/decanim.ts": "714c5d2eccee47d74d6ff7d67c04de3a5ccda3cc2b1551005396773d36af4d24",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/src/engine/rng.ts": "b92772fa78848c5e31599e70d19d33a8eb9944e72b4d37a603cfa53b618855b0",
+      "authority/production-181-v2/lite/src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da",
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "evidence/production/B14/AUTHORING_HOST_AND_REUSE_FI.md": "ab0aced739d5b415543c0e8c00d8c471af8419b44088a48384156318728d4e5e"
+    },
+    "inventory": {
+      "revision": "audit1-2026-10-28",
+      "validRevs": [
+        "audit1-2026-10-28"
+      ],
+      "intro": "Sukeltajat laskevat yhteen helmien painoja ja nauhojen pituuksia.",
+      "goal": "Opit laskemaan desimaalilukuja yhteen ja vähentämään niitä: samat osat kohdakkain.",
+      "rewardNotAdopted": "Lasket desimaaliluvut yhteen ja vähennät, pilkut kohdakkain!",
+      "demos": [
+        {
+          "index": 0,
+          "say": "Lasketaan 2,5 + 1,25. Jos numerot laitetaan oikeaan reunaan, viisi kymmenesosaa joutuu sadasosien alle. Siirretään pilkut kohdakkain, lisätään nolla ja lasketaan oikealta: sadasosat, kymmenesosat, ykköset.",
+          "animation": {
+            "width": 320,
+            "height": 236,
+            "duration": 12.3,
+            "label": "2,5 + 1,25 = 3,75",
+            "frames": [
+              {
+                "t": 0,
+                "caption": "Ansa: jos numerot laitetaan oikeaan reunaan, 2,5:n kymmenesosat osuvat 1,25:n sadasosien kohdalle.",
+                "frameSHA256": "349575f82d5e48fa587e59391ed7f12b0f5fb8a08c93f70cfeff10f83adad6d6"
+              },
+              {
+                "t": 6.15,
+                "caption": "Kymmenesosat: 5 + 2 = 7.",
+                "frameSHA256": "702452d492c4fb5dcea10be7c26a43f029a5fbbaa98628fffc5133fe65c87bfc"
+              },
+              {
+                "t": 12.3,
+                "caption": "2,5 + 1,25 = 3,75.",
+                "frameSHA256": "871bc28c1ee8ad63e467792c16bbea32cd58f02dc9896244949a9cd0fb8aaf3c"
+              }
+            ]
+          }
+        },
+        {
+          "index": 1,
+          "say": "Lasketaan 3,47 + 1,8. Kymmenesosia tulee kaksitoista: kirjoitetaan kaksi ja yksi kokonainen muistiin.",
+          "animation": {
+            "width": 320,
+            "height": 236,
+            "duration": 12.3,
+            "label": "3,47 + 1,8 = 5,27",
+            "frames": [
+              {
+                "t": 0,
+                "caption": "Ansa: jos numerot laitetaan oikeaan reunaan, 1,8:n kymmenesosat osuvat 3,47:n sadasosien kohdalle.",
+                "frameSHA256": "11174ee94a261c5fe6b06f832f8ce82d3656c3d0775e8ef7d1cbce4e633d886f"
+              },
+              {
+                "t": 6.15,
+                "caption": "Kymmenesosat: 4 + 8 = 12. Kirjoita 2, muistiin 1.",
+                "frameSHA256": "f9498877eef37d718c3ebd4de2c5458214d7dedf357f7d21122d51b8434cd959"
+              },
+              {
+                "t": 12.3,
+                "caption": "3,47 + 1,8 = 5,27.",
+                "frameSHA256": "3ec73aac86857b01ce7c79d4a8745027cd7ba149a072bad1305f442694c455f7"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "say": "Vähennetään 5 − 1,7. Viitonen kirjoitetaan 5,0. Nollasta ei voi vähentää seitsemää, joten lainataan yksi ykkönen: kymmenen kymmenesosaa.",
+          "animation": {
+            "width": 320,
+            "height": 236,
+            "duration": 10.8,
+            "label": "5 − 1,7 = 3,3",
+            "frames": [
+              {
+                "t": 0,
+                "caption": "Ansa: jos numerot laitetaan oikeaan reunaan, 5:n ykköset osuvat 1,7:n kymmenesosien kohdalle.",
+                "frameSHA256": "c4359ca7ce50b3e2411ed4764a9cea1631fcfe00b70c1d255706d6deff73d7a4"
+              },
+              {
+                "t": 5.4,
+                "caption": "Kymmenesosat: 0 − 7 ei onnistu. Lainataan 1 seuraavasta: 10 − 7 = 3.",
+                "frameSHA256": "213b0e5882f404969c1d8c7c5620eb26373077e8b09b6325ebb53b6b06f11621"
+              },
+              {
+                "t": 10.8,
+                "caption": "5 − 1,7 = 3,3.",
+                "frameSHA256": "d062e37cce21c9cce6a23768c404e810140f19202cf933410445b2695298b5d5"
+              }
+            ]
+          }
+        }
+      ],
+      "byPhase": {
+        "guided": {
+          "detective": 134,
+          "sub": 120,
+          "tenths": 131,
+          "mixed": 127
+        },
+        "independent": {
+          "detective": 134,
+          "sub": 120,
+          "tenths": 131,
+          "mixed": 127
+        },
+        "transfer": {
+          "transfer": 512
+        },
+        "retrieval": {
+          "detective": 134,
+          "sub": 120,
+          "tenths": 131,
+          "mixed": 127
+        }
+      },
+      "sample": {
+        "detective": {
+          "phase": "guided",
+          "seed": 1,
+          "say": "Helmisukeltajan laskut: kumpi lasku on oikein, kumpi väärin? Lajittele.",
+          "task": {
+            "kind": "sort",
+            "items": [
+              {
+                "big": "4,7 + 2,95 = 7,02"
+              },
+              {
+                "big": "3,2 + 2,32 = 5,52"
+              },
+              {
+                "big": "3,1 + 2,73 = 5,83"
+              },
+              {
+                "big": "1,1 + 2,68 = 3,69"
+              }
+            ],
+            "cats": [
+              {
+                "label": "✓ oikein"
+              },
+              {
+                "label": "✗ väärin"
+              }
+            ],
+            "answer": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "why": [
+              "7 kymmenesosaa on laskettu sadasosien kanssa. Oikein: 4,70 + 2,95 = 7,65.",
+              "Pilkut kohdakkain: 3,20 + 2,32 = 5,52.",
+              "Pilkut kohdakkain: 3,10 + 2,73 = 5,83.",
+              "1 kymmenesosaa on laskettu sadasosien kanssa. Oikein: 1,10 + 2,68 = 3,78."
+            ]
+          },
+          "hint": "Lisää lyhyempään nolla loppuun (esim. 2,5 = 2,50) ja laske itse. Vertaa tulosta.",
+          "explain": "Väärissä laskuissa numerot on laitettu oikeaan reunaan, ja kymmenesosat on laskettu sadasosien kanssa."
+        },
+        "sub": {
+          "phase": "guided",
+          "seed": 4,
+          "say": "5,2 − 1,3 = ?",
+          "task": {
+            "kind": "numeric",
+            "answer": 3.9,
+            "whyAt": {
+              "4.9": "Lainasit kymmenen kymmenesosaa, mutta unohdit vähentää lainatun ykkösen kokonaisista."
+            }
+          },
+          "hint": "Kirjoita molempiin yksi desimaali, esimerkiksi 5 = 5,0.",
+          "explain": "5,2 − 1,3 = 3,9. Tarkistus: 3,9 + 1,3 = 5,2."
+        },
+        "tenths": {
+          "phase": "guided",
+          "seed": 7,
+          "say": "0,1 + 0,9 = ?",
+          "task": {
+            "kind": "numeric",
+            "answer": 1,
+            "whyAt": {
+              "10": "10 kymmenesosaa on 1,0, ei 10.",
+              "0.1": "Kymmenesosat plus kymmenesosat ovat kymmenesosia, eivät sadasosia."
+            }
+          },
+          "hint": "Laske kymmenesosina: 1 + 9 kymmenesosaa. Kymmenen kymmenesosaa on 1.",
+          "explain": "1 kymmenesosaa + 9 kymmenesosaa = 10 kymmenesosaa = 1,0."
+        },
+        "mixed": {
+          "phase": "guided",
+          "seed": 12,
+          "say": "1,6 + 4,21 = ?",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "big": "5,81"
+              },
+              {
+                "big": "5,27"
+              },
+              {
+                "big": "5,91"
+              }
+            ],
+            "answer": 0,
+            "why": [
+              null,
+              "Kymmenesosat ja sadasosat sekoittuivat. Laita pilkut kohdakkain: 1,60 + 4,21.",
+              "Tarkista kymmenesosat."
+            ]
+          },
+          "hint": "Kirjoita 1,6 muotoon 1,60, pilkut kohdakkain, ja laske oikealta.",
+          "explain": "1,60 + 4,21 = 5,81."
+        },
+        "transfer": {
+          "phase": "transfer",
+          "seed": 1,
+          "say": "Aava sukeltaa 1,25 tuntia aamulla ja 0,25 tuntia illalla. Montako tuntia yhteensä?",
+          "task": {
+            "kind": "numeric",
+            "answer": 1.5,
+            "unit": "h"
+          },
+          "hint": "Kirjoita molemmat kahdella desimaalilla: 1,25 + 0,25.",
+          "explain": "1,25 + 0,25 = 1,50 tuntia."
+        }
+      },
+      "families": {
+        "detective": {
+          "node": "M-DEC-ADD",
+          "tag": "detective",
+          "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "sub": {
+          "node": "M-DEC-ADD",
+          "tag": "sub",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "tenths": {
+          "node": "M-DEC-ADD",
+          "tag": "tenths",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "mixed": {
+          "node": "M-DEC-ADD",
+          "tag": "mixed",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "transfer": {
+          "node": "M-DEC-ADD",
+          "tag": "transfer",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        }
+      },
+      "itemsSampled": 2048,
+      "registry": "index.ts read: own AUDIT_REV retained; own goal retained; no target key in SIMS; family declarations actual runtime merge sampled."
+    },
+    "exactFamilyNames": [
+      "detective",
+      "sub",
+      "tenths",
+      "mixed",
+      "transfer"
+    ],
+    "registry": "index.ts: DECIMAL_NODES merged, own AUDIT_REV/goal retained; no targetSIMS overlay. families.ts runtime declarations sampled.",
+    "audit": "LESSON_AUDIT rows102–104 and critique/correction sections714–725: column alignment/carry, equal groups/place shifts, sharing/exchange. Historical audit counts are claims of that source, not this package validation.",
+    "comparison": "tenths/mixed/detective ideas retained as constructed named units, direct sum and place-error feedback. sub and subtraction demo excluded because frozen addition-only target. Transfer retains same-unit addition but uses mass rather than a prolonged dive story.",
+    "limitations": "Frozen addition-only target, despite combined Lite goal. Both addends0–999 with≤3decimal places; same-unit contexts. No subtraction, negative quantities, rounding, mixed units or forced column algorithm.",
+    "correctedMismatch": "Lite addition-and-subtraction goal and sub family exceed frozen addition-only KC; not adopted. Other subtraction prerequisites preserved without a new gate.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/decanim.ts": "714c5d2eccee47d74d6ff7d67c04de3a5ccda3cc2b1551005396773d36af4d24",
+        "src/content/decimals.ts": "034afc3ca790e7d138505c5e11170568c045db5773633d1fbaf3a8edaecb915b",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/parts.ts": "806680eedb06693374837d9488532f84cd4c905ca9415cae83e4e855d78f9a7e",
+        "src/engine/rng.ts": "b92772fa78848c5e31599e70d19d33a8eb9944e72b4d37a603cfa53b618855b0",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95"
+      },
+      "historicalNonLiteReferences": [
+        "INTERACTION_FEEDBACK_CONTRACT.md",
+        "evidence/production/B14/AUTHORING_HOST_AND_REUSE_FI.md",
+        "reference/inputs/canonical-690-graph.json"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M-DEC-ADD",
+      "subject": "mathematics",
+      "grade_band": "3-6",
+      "topic_area": "Luvut ja laskutoimitukset",
+      "parent_concept": "Desimaalilukulaskut",
+      "title": "Desimaalilukujen yhteenlasku",
+      "short_description": "Desimaalilukujen yhteenlasku",
+      "source_basis": "pedagogically_derived",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL3-6-S2"
+      ],
+      "evidence_notes": "v0.2-refaktorissa erotettu noodista M-DEC-07 itsenäiseksi evidenssikohteeksi.",
+      "status": "candidate_refactored",
+      "node_kind": "procedure",
+      "relations": [
+        {
+          "id": "M-DEC-04",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-DEC-04 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-WRADD",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Desimaalien yhteenlasku voidaan rakentaa paikka-arvomalleilla ilman kirjallisen kokonaislukualgoritmin hard masteryä."
+        },
+        {
+          "id": "M-WRSUB",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Desimaalien vähennyslasku voidaan rakentaa paikka-arvomalleilla ilman kirjallisen kokonaislukualgoritmin hard masteryä."
+        },
+        {
+          "id": "M-ADD-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "Yhteenlaskun merkitys tarvitaan."
+        },
+        {
+          "id": "M-SUB-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "Vähennyslaskun merkitys tarvitaan."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-DEC-04",
+            "M-ADD-01",
+            "M-SUB-01"
+          ],
+          "rationale": "Desimaalipaikka-arvo ja perusoperaatioiden merkitys ovat hard prerequisites; kirjalliset algoritmit tukevat."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "split_from": "M-DEC-07",
+      "concept_path": [
+        "Matematiikka",
+        "Luvut ja laskutoimitukset",
+        "Desimaalilukulaskut"
+      ]
+    },
+    "gradeBand": "3-6",
+    "teacherObjective": "Desimaalilukujen yhteenlasku",
+    "childGoal": "Yhdistä samat paikka-arvot.",
+    "role": "atomic",
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-DEC-04",
+          "M-ADD-01",
+          "M-SUB-01"
+        ],
+        "rationale": "Desimaalipaikka-arvo ja perusoperaatioiden merkitys ovat hard prerequisites; kirjalliset algoritmit tukevat."
+      }
+    ],
+    "strongSupport": [
+      {
+        "id": "M-WRADD",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Desimaalien yhteenlasku voidaan rakentaa paikka-arvomalleilla ilman kirjallisen kokonaislukualgoritmin hard masteryä."
+      },
+      {
+        "id": "M-WRSUB",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Desimaalien vähennyslasku voidaan rakentaa paikka-arvomalleilla ilman kirjallisen kokonaislukualgoritmin hard masteryä."
+      }
+    ],
+    "additionalHardGates": [],
+    "assumed": [
+      "Named decimal units and whole-number operation meaning from frozen parents.",
+      "Supplied measure unit facts in transfer; no extra time/conversion gate."
+    ],
+    "scope": "Frozen addition-only target, despite combined Lite goal. Both addends0–999 with≤3decimal places; same-unit contexts. No subtraction, negative quantities, rounding, mixed units or forced column algorithm.",
+    "evidenceLimits": "Local deterministic checked practice with optional model/help. No persistence, formal rubric, retained/independent/mastery/human/efficacy evidence.",
+    "assetProvenance": "Original mathematical SVGs generated from current exact model; supplied unchanged shared PNG, actual hash. User-supplied raster reinterpretation, not claimed handdrawn or public-domain.",
+    "feedbackContractSHA256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+    "interaction": "Distinct equal-groups/sharing/place-value models; explicit step and rewind, no decorative autoplay. Direct answer practice includes editable visible operands, exact equivalent fractions, both event types and noevent Check; supported conversion factors fixed/validated.",
+    "hostOwnership": "Own immediately preceding article, per-root WeakMap disposes prior owner; sameKC sibling isolation; old API inert; paused reset stays disabled;3 listener functions cleaned; no timers/frames.",
+    "supportLimits": "Model/help can show worked results; no extra independent credit inferred. Reconcile current answer before every action/lifecycle/early return, preserve unchanged valid model/help use."
+  },
+  "extensions": {
+    "productionBatch": "B15",
+    "simulationType": "named-decimal-unit-exchange",
+    "noRuntimeImports": true,
+    "noPersistence": true,
+    "executionLimits": "Finite illustrative models use exact configured quantity states. SVG fractional pixel geometry is depiction only; BigInt rational calculations decide correctness. Practice operand/domain bounds explicit; no expression evaluation/decimal divisors/rounding. Native sourcepreview separate from actual175.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B03",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

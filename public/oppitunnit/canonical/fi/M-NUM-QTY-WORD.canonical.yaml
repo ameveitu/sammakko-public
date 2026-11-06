@@ -1,0 +1,831 @@
+# B02 private IN_PROGRESS content; independent pack/personal/native review pending, not a completed node.
+schema_version: 0.1.0
+kc_id: M-NUM-QTY-WORD
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Lukumäärän yhdistäminen sitä vastaavaan lukusanaan
+  subject: mathematics
+  grade_band: 1-2
+  mastery_role: process
+  node_kind: representation
+  concept_path:
+    - Matematiikka
+    - Luvut ja laskutoimitukset
+    - Lukumäärän representaatiot
+  source_basis: pedagogically_derived
+  curriculum_refs:
+    - OPH-POPS2014-MATH-VL1-2-S2
+  prerequisite_snapshot:
+    hard:
+      - M-NUM-02
+    strong: []
+    helpful: []
+teaching_model:
+  learning_goal: Oppilas yhdistää kolmen–kuuden erillisen esineen koko ryhmän sitä vastaavaan suomen lukusanaan
+    ja annetusta lukusanasta valmiiseen vastaavaan ryhmään. Process-näyttö vaatii kaikki kahdeksan
+    suunta/arvo-tapausta alueella 3–6.
+  learner_facing_goal: Löydän ryhmälle sen määrää tarkoittavan sanan ja sanalle sopivan ryhmän.
+  core_idea: Sana neljä tarkoittaa koko neljän esineen määrää. Ryhmän leveys, esineiden koko tai väri ei
+    ratkaise sanaa. Sama yhteys toimii myös sanasta valmiin ryhmän valintaan ilman numeromerkkiä välissä.
+  success_evidence:
+    - "Antaa oman tuettoman vahvistetun vastauksen jokaisessa neljän arvon 3,4,5,6 molemmassa suunnassa:
+      yhteensä kahdeksan erillistä tapausta."
+    - Yhdistää koko näkyvän määrän sanaan ilman järjestelmän laskuria, numeromäärävihjettä tai automaattista
+      loppusanaa. Omaa rauhallista laskemista ei kielletä.
+    - Korjaa todellisen väärän ryhmä–sana-parin ensimmäisestä opetetusta kolmen faktasta molemmissa suunnissa.
+      Kolme vaihtoehtoa estää pelkän eri kumppanin valinnan riittämisen.
+    - Vähintään 24 tunnin jälkeen antaa neljä uutta tuetonta havaintoa määristä kolme ja kuusi molempiin
+      suuntiin. Tämä on rajattu edustava näyte, ei kaikkien neljän faktan täydellinen säilymisnäyttö.
+  boundaries:
+    in_scope:
+      - Näkyvät erilliset esineryhmät 3–6 ja annetut suomen lukusanat kolme–kuusi molempiin suuntiin. Määrä
+        voidaan tunnistaa tai laskea itse.
+      - Rivi- ja hajautettu asettelu, koko ryhmän vastaavuus, vaihtoehdon valinta ja aidosti eri arvoisen
+        parin korjaus.
+      - Yhteys esitetään määrän ja sanan välillä ilman tarjottua numeromerkkiä välittäjänä.
+    out_of_scope:
+      - Määrät 1–2 tai 7–10, Give-N eli pyydetyn joukon rakentaminen suuremmasta joukosta,
+        lisääminen/poistaminen tai laskutoimitukset.
+      - Spontaani suullinen tuottaminen, ääntäminen, numeromerkkien tunnistaminen, lukunopeus tai
+        M-NUM-03-integraation hallinta.
+      - M-NUM-02:n same-members-kronologian tai lapsitaitojen hallinnan myöntäminen tästä valmiin ryhmän
+        valinnasta.
+  prerequisite_assumptions:
+    - kc_id: M-NUM-02
+      expected_level: "Required-esitieto ja all_of-ryhmän ainoa jäsen: ajantasainen yhteensopiva hankinta ennen
+        itsenäistä arviointia. Pelkkä tuettu tutustuminen ei täytä sitä; erillistä kalenteriodotusta ei
+        lisätä."
+  conceptual_invariants:
+    - Lukusana viittaa koko ryhmän määrään, ei viimeiseen tai suurimpaan esineeseen.
+    - Oppijan oma parivalinta tuottaa yhden suunnan ja määrän havaintoa. Esitietojen hallintaa tai toisen
+      suunnan onnistumista ei päätellä siitä.
+    - Järjestelmän annettu lukumäärä tai automaattinen laskusana tekisi samasta vastauksesta tuetun; oma
+      laskeminen pysyy sallittuna strategiana.
+    - Koko kahdeksan tapauksen vaatimus säilyy process-roolina. Kolme onnistumista ja kaksi pohjaa ovat vain
+      lisäminimit.
+    - Tyypitetty malli näyttää kaikki neljä määrää molempiin suuntiin. Faktan näyttäminen/tuettu vastaus eivät
+      anna myönteistä itsenäistä näyttöä.
+  likely_confusions:
+    - M-NUM-QTY-WORD-OBS-PARI
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+    - DIAGNOSTIC
+    - ORIENT
+    - WORKED_EXAMPLE
+    - GUIDED_PRACTICE
+    - FADED_EXAMPLE
+    - INDEPENDENT_PRACTICE
+    - TRANSFER_CHECK
+    - MASTERY_GATE
+  fast_path:
+    enabled: false
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Tarkastele määrän ja sanan yhteyttä molemmista suunnista esitiedon M-NUM-02 voimassa ollessa.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-QTY-WORD-DIAG-RYHMAN-LAPPU
+              - M-NUM-QTY-WORD-DIAG-SANAN-RYHMA
+    ORIENT:
+      purpose: Anna koko ryhmän sanalle tarkoitus pakkaamisessa, ilman vaaditun joukon rakentamistehtävää.
+      blocks:
+        - type: explanatory_text
+          content: Aava on koonnut retkitarvikkeet pieniin ryhmiin. Loikka tekee niille sanalaput. Valitaan jokaiselle
+            ryhmälle sen määrää vastaava sana ja listan sanalle valmis ryhmä.
+    WORKED_EXAMPLE:
+      purpose: Näytä kolmen–kuuden faktat molempiin suuntiin tyypitetyllä kannella, ei numeromerkin kautta.
+      blocks:
+        - type: worked_example
+          content:
+            representation_ref: M-NUM-QTY-WORD-JOURNEY
+            description: Aava tarkistaa kolme esinettä ja liittää koko ryhmään sanan kolme. Sitten sana kolme on annettu
+              ja hän valitsee kolmen esineen ryhmän muiden valmiiden ryhmien joukosta. Sama tehdään määrille
+              neljä, viisi ja kuusi. Näyttämisen kirjaus koskee vain oikeasti toimitettua riviä.
+    GUIDED_PRACTICE:
+      purpose: Oppija valitsee itse molemmista suunnista. Pyydetty mallipari näyttää juuri nykyisen määrän ja sanan,
+        ei valmista omaa vastausta.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-QTY-WORD-GUIDED-RYHMASTA
+              - M-NUM-QTY-WORD-GUIDED-SANASTA
+    FADED_EXAMPLE:
+      purpose: Piilota mallipari, laskurin tulos ja oikea valinta; säilytä tuttu toiminto ja mahdollisuus pyytää apua.
+      blocks:
+        - type: explanatory_text
+          content: Nyt tukipari menee piiloon. Tarkista ryhmä itse ja valitse pari. Saat laskea rauhassa. Tämä on vielä
+            harjoittelua.
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-QTY-WORD-GUIDED-RYHMASTA
+              - M-NUM-QTY-WORD-GUIDED-SANASTA
+    INDEPENDENT_PRACTICE:
+      purpose: Kerää kahdeksan omaa tuetonta määrän/sanan paripäätöstä alueelta 3–6; ei vain yhden tutun kuvion
+        tunnistamista.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-QTY-WORD-INDEP-PAKKAUSLAPPU
+              - M-NUM-QTY-WORD-INDEP-TARVIKERYHMA
+    TRANSFER_CHECK:
+      purpose: Vaihda väärä ryhmän sana tai sanaan liitetty ryhmä oikeaksi. Ensimmäinen opetettu kolmen fakta
+        vaaditaan molemmista suunnista.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-QTY-WORD-APPFIRST-RYHMAN-SANALAPPU
+              - M-NUM-QTY-WORD-APPFIRST-SANAN-ESINERYHMA
+    MASTERY_GATE:
+      purpose: Pidä ryhmän määrän merkitys näkyvissä ilman uutta pisteytettävää puhe- tai kirjoitustehtävää.
+      blocks:
+        - type: reflection
+          content: Jos samat esineet levitetään kauemmas toisistaan, pitääkö sanalappu vaihtaa? Miksi? Saat tarkistaa
+            laskemalla. Pohdintaa ei pisteytetä.
+    DELAYED_REVIEW:
+      purpose: Myöhempi neljän uuden havainnon näyte kolmen ja kuuden yhteyksistä molempiin suuntiin.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-QTY-WORD-DELAY-RYHMASTA
+              - M-NUM-QTY-WORD-DELAY-SANASTA
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+    fast_path_confirmation_tags:
+      - association_resolved
+    execution_policy: Kaksi alkukartoitusta auttaa valitsemaan tuen. Fast path on pois käytöstä, eikä diagnoosi
+      korvaa koko prosessin itsenäistä tapauskattavuutta.
+    pass_rule: Molemmat vastaavuuspäätökset kirjataan todellisina havaintoina. Väärä pari ei paikanna puutetta
+      lapsi-KC:hen.
+  independent:
+    minimum_successes: 3
+    template_diversity: 2
+    max_supported_attempts_counted: 0
+    required_tags:
+      - association_resolved
+  transfer:
+    required: true
+    minimum_successes: 2
+    novel_context_required: true
+  delayed:
+    required: true
+    minimum_successes: 4
+    minimum_delay_hours: 24
+    reuse_templates: []
+    required_tags:
+      - association_resolved
+    required_contexts: []
+    earliest_delay_policy: Vähintään 24 tuntia koko hankintanäytön täyttymisestä; myöhemmässä istunnossa tai
+      toisen osaamiskohteen jälkeen neljä uutta tuetonta havaintoa. Ensimmäinen ja viimeinen arvo molemmissa
+      suunnissa ovat rajattu näyte, eivät koko faktajoukon säilymisnäyttö. Ajastus ja onnistumisrajat ovat
+      projektipäätöksiä.
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+    - misconception_id: M-NUM-QTY-WORD-OBS-PARI
+      evidence_tags:
+        - association_resolved
+      rule: Myöhempi tueton oikea relaatiopäätös poistaa tämän tehtäväkohtaisen aktiivisen havaintomerkinnän
+        nykyisessä politiikassa. Se ei vahvista aiemman virheen syytä tai korvaa koko prosessin erikseen
+        vaadittuja tapauksia.
+items:
+  - id: M-NUM-QTY-WORD-DIAG-RYHMAN-LAPPU
+    kc_ids:
+      - M-NUM-QTY-WORD
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse sana, joka kertoo tämän ryhmän määrän.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_word
+      direction: forward
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+        - 6
+      optionCount: 3
+      context: Retkipussin näkyvät merkit
+      layout: row
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-WORD-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko esineryhmää. Suurin esine tai ryhmän leveys ei kerro, montako esineitä on. Saat laskea
+          rauhassa.
+      - level: 2
+        text: Katso tukiparista koko ryhmä ja siihen liittyvä sana. Tarkista ryhmä itse esine kerrallaan. Avun jälkeen
+          tämä on harjoittelua.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät suunnasta. Oikeaa kumppania ei
+        esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä tapauskattavuutta.
+      - Kohdemäärät ja vaihtoehtoryhmät pysyvät kolmesta kuuteen. Ei valmista lukumäärälaskuria tai
+        numeromerkkiä välittäjänä.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen suunnan ja arvon havaintoa.
+          Prosessin muu tapauskattavuus ei synny tästä automaattisesti.
+  - id: M-NUM-QTY-WORD-DIAG-SANAN-RYHMA
+    kc_ids:
+      - M-NUM-QTY-WORD
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Mikä esineryhmä sopii annettuun sanaan?
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_word
+      direction: reverse
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+        - 6
+      optionCount: 3
+      context: Aavan sanallinen pakkauslappu
+      layout: scatter
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-WORD-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko esineryhmää. Suurin esine tai ryhmän leveys ei kerro, montako esineitä on. Saat laskea
+          rauhassa.
+      - level: 2
+        text: Katso tukiparista koko ryhmä ja siihen liittyvä sana. Tarkista ryhmä itse esine kerrallaan. Avun jälkeen
+          tämä on harjoittelua.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät suunnasta. Oikeaa kumppania ei
+        esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä tapauskattavuutta.
+      - Kohdemäärät ja vaihtoehtoryhmät pysyvät kolmesta kuuteen. Ei valmista lukumäärälaskuria tai
+        numeromerkkiä välittäjänä.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen suunnan ja arvon havaintoa.
+          Prosessin muu tapauskattavuus ei synny tästä automaattisesti.
+  - id: M-NUM-QTY-WORD-GUIDED-RYHMASTA
+    kc_ids:
+      - M-NUM-QTY-WORD
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: support
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Katso koko ryhmää ja valitse sen lukusana. Malliparin saa avuksi.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_word
+      direction: forward
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+        - 6
+      optionCount: 3
+      context: Aavan kanssa tehty pakkauslappu
+      layout: row
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-WORD-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko esineryhmää. Suurin esine tai ryhmän leveys ei kerro, montako esineitä on. Saat laskea
+          rauhassa.
+      - level: 2
+        text: Katso tukiparista koko ryhmä ja siihen liittyvä sana. Tarkista ryhmä itse esine kerrallaan. Avun jälkeen
+          tämä on harjoittelua.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät suunnasta. Oikeaa kumppania ei
+        esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä tapauskattavuutta.
+      - Kohdemäärät ja vaihtoehtoryhmät pysyvät kolmesta kuuteen. Ei valmista lukumäärälaskuria tai
+        numeromerkkiä välittäjänä.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen suunnan ja arvon havaintoa.
+          Prosessin muu tapauskattavuus ei synny tästä automaattisesti.
+  - id: M-NUM-QTY-WORD-GUIDED-SANASTA
+    kc_ids:
+      - M-NUM-QTY-WORD
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: support
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse sanaa vastaava ryhmä. Voit tarkistaa ryhmän rauhassa.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_word
+      direction: reverse
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+        - 6
+      optionCount: 3
+      context: Loikan kanssa tarkistettu tarvikejoukko
+      layout: scatter
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-WORD-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko esineryhmää. Suurin esine tai ryhmän leveys ei kerro, montako esineitä on. Saat laskea
+          rauhassa.
+      - level: 2
+        text: Katso tukiparista koko ryhmä ja siihen liittyvä sana. Tarkista ryhmä itse esine kerrallaan. Avun jälkeen
+          tämä on harjoittelua.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät suunnasta. Oikeaa kumppania ei
+        esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä tapauskattavuutta.
+      - Kohdemäärät ja vaihtoehtoryhmät pysyvät kolmesta kuuteen. Ei valmista lukumäärälaskuria tai
+        numeromerkkiä välittäjänä.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen suunnan ja arvon havaintoa.
+          Prosessin muu tapauskattavuus ei synny tästä automaattisesti.
+  - id: M-NUM-QTY-WORD-INDEP-PAKKAUSLAPPU
+    kc_ids:
+      - M-NUM-QTY-WORD
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Mikä sana kertoo tämän ryhmän määrän?
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_word
+      direction: forward
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+        - 6
+      optionCount: 3
+      context: Loikan tarkistettu merkkiryhmä
+      layout: scatter
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-WORD-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko esineryhmää. Suurin esine tai ryhmän leveys ei kerro, montako esineitä on. Saat laskea
+          rauhassa.
+      - level: 2
+        text: Katso tukiparista koko ryhmä ja siihen liittyvä sana. Tarkista ryhmä itse esine kerrallaan. Avun jälkeen
+          tämä on harjoittelua.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät suunnasta. Oikeaa kumppania ei
+        esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä tapauskattavuutta.
+      - Kohdemäärät ja vaihtoehtoryhmät pysyvät kolmesta kuuteen. Ei valmista lukumäärälaskuria tai
+        numeromerkkiä välittäjänä.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen suunnan ja arvon havaintoa.
+          Prosessin muu tapauskattavuus ei synny tästä automaattisesti.
+  - id: M-NUM-QTY-WORD-INDEP-TARVIKERYHMA
+    kc_ids:
+      - M-NUM-QTY-WORD
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse ryhmä, jossa on sanan kertoma määrä esineitä.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_word
+      direction: reverse
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+        - 6
+      optionCount: 3
+      context: Aavan listaan sopiva tarvikejoukko
+      layout: row
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-WORD-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko esineryhmää. Suurin esine tai ryhmän leveys ei kerro, montako esineitä on. Saat laskea
+          rauhassa.
+      - level: 2
+        text: Katso tukiparista koko ryhmä ja siihen liittyvä sana. Tarkista ryhmä itse esine kerrallaan. Avun jälkeen
+          tämä on harjoittelua.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät suunnasta. Oikeaa kumppania ei
+        esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä tapauskattavuutta.
+      - Kohdemäärät ja vaihtoehtoryhmät pysyvät kolmesta kuuteen. Ei valmista lukumäärälaskuria tai
+        numeromerkkiä välittäjänä.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen suunnan ja arvon havaintoa.
+          Prosessin muu tapauskattavuus ei synny tästä automaattisesti.
+  - id: M-NUM-QTY-WORD-APPFIRST-RYHMAN-SANALAPPU
+    kc_ids:
+      - M-NUM-QTY-WORD
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: challenge
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Ryhmän sanalappu on väärä. Valitse tilalle oikea lukusana.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_word
+      direction: forward
+      operator: repair
+      values:
+        - 3
+        - 4
+        - 5
+      optionCount: 3
+      context: Pakkauspöydän väärä lukusana
+      layout: scatter
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-WORD-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko esineryhmää. Suurin esine tai ryhmän leveys ei kerro, montako esineitä on. Saat laskea
+          rauhassa.
+      - level: 2
+        text: Katso tukiparista koko ryhmä ja siihen liittyvä sana. Tarkista ryhmä itse esine kerrallaan. Avun jälkeen
+          tämä on harjoittelua.
+    invariants:
+      - Alkupari on aidosti eri arvoinen. Oppija valitsee uuden kumppanin; pelkkä parin eron huomaaminen ei
+        riitä.
+      - Kolmesta vaihtoehdosta kaksi on väärin. Pelkkä alkuperäisen kumppanin välttäminen ei anna ratkaisua.
+      - Kohdemäärät ja vaihtoehtoryhmät pysyvät kolmesta kuuteen. Ei valmista lukumäärälaskuria tai
+        numeromerkkiä välittäjänä.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Aidosti eri arvoisen alkuparin korjaus on tässä rajattu soveltamisoperaatio. Ensimmäinen opetettu arvo
+          vaaditaan molemmissa suunnissa; uusi kuva tai tarinanimi ei korvaa sitä.
+  - id: M-NUM-QTY-WORD-APPFIRST-SANAN-ESINERYHMA
+    kc_ids:
+      - M-NUM-QTY-WORD
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: challenge
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Esineryhmä ei vastaa sanaa. Valitse tilalle oikea ryhmä.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_word
+      direction: reverse
+      operator: repair
+      values:
+        - 3
+        - 4
+        - 5
+      optionCount: 3
+      context: Väärään pakkauslappuun liitetty joukko
+      layout: row
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-WORD-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko esineryhmää. Suurin esine tai ryhmän leveys ei kerro, montako esineitä on. Saat laskea
+          rauhassa.
+      - level: 2
+        text: Katso tukiparista koko ryhmä ja siihen liittyvä sana. Tarkista ryhmä itse esine kerrallaan. Avun jälkeen
+          tämä on harjoittelua.
+    invariants:
+      - Alkupari on aidosti eri arvoinen. Oppija valitsee uuden kumppanin; pelkkä parin eron huomaaminen ei
+        riitä.
+      - Kolmesta vaihtoehdosta kaksi on väärin. Pelkkä alkuperäisen kumppanin välttäminen ei anna ratkaisua.
+      - Kohdemäärät ja vaihtoehtoryhmät pysyvät kolmesta kuuteen. Ei valmista lukumäärälaskuria tai
+        numeromerkkiä välittäjänä.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Aidosti eri arvoisen alkuparin korjaus on tässä rajattu soveltamisoperaatio. Ensimmäinen opetettu arvo
+          vaaditaan molemmissa suunnissa; uusi kuva tai tarinanimi ei korvaa sitä.
+  - id: M-NUM-QTY-WORD-DELAY-RYHMASTA
+    kc_ids:
+      - M-NUM-QTY-WORD
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse tämän ryhmän määrää vastaava lukusana.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_word
+      direction: forward
+      operator: match
+      values:
+        - 3
+        - 6
+      optionCount: 2
+      context: Uuden retken sanalaput
+      layout: scatter
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-WORD-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko esineryhmää. Suurin esine tai ryhmän leveys ei kerro, montako esineitä on. Saat laskea
+          rauhassa.
+      - level: 2
+        text: Katso tukiparista koko ryhmä ja siihen liittyvä sana. Tarkista ryhmä itse esine kerrallaan. Avun jälkeen
+          tämä on harjoittelua.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät suunnasta. Oikeaa kumppania ei
+        esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä tapauskattavuutta.
+      - Kohdemäärät ja vaihtoehtoryhmät pysyvät kolmesta kuuteen. Ei valmista lukumäärälaskuria tai
+        numeromerkkiä välittäjänä.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen suunnan ja arvon havaintoa.
+          Prosessin muu tapauskattavuus ei synny tästä automaattisesti.
+  - id: M-NUM-QTY-WORD-DELAY-SANASTA
+    kc_ids:
+      - M-NUM-QTY-WORD
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Mikä ryhmä vastaa tätä lukusanaa?
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_word
+      direction: reverse
+      operator: match
+      values:
+        - 3
+        - 6
+      optionCount: 2
+      context: Uuden retken valmiit ryhmät
+      layout: row
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-WORD-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko esineryhmää. Suurin esine tai ryhmän leveys ei kerro, montako esineitä on. Saat laskea
+          rauhassa.
+      - level: 2
+        text: Katso tukiparista koko ryhmä ja siihen liittyvä sana. Tarkista ryhmä itse esine kerrallaan. Avun jälkeen
+          tämä on harjoittelua.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät suunnasta. Oikeaa kumppania ei
+        esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä tapauskattavuutta.
+      - Kohdemäärät ja vaihtoehtoryhmät pysyvät kolmesta kuuteen. Ei valmista lukumäärälaskuria tai
+        numeromerkkiä välittäjänä.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen suunnan ja arvon havaintoa.
+          Prosessin muu tapauskattavuus ei synny tästä automaattisesti.
+misconceptions:
+  - id: M-NUM-QTY-WORD-OBS-PARI
+    description: Vahvistettu sana ei vastaa koko näytetyn ryhmän määrää tai valittu valmis ryhmä ei vastaa sanaa.
+      Havainto ei osoita kardinaliteetin puutetta tai muuta lapsitaitodiagnoosia.
+    evidence_patterns:
+      - kind: committed_relation_error
+        when: Oppija vahvistaa vaihtoehdon, joka ei vastaa vihjeen arvoa. Keskeneräistä tai vahvistamatonta vastausta
+          ei nimetä tällä havainnolla.
+    feedback_strategy:
+      conceptual_prompt: Sana ja ryhmän määrä eivät vielä täsmää. Katsotaan koko ryhmää ja tarkistetaan se yhdessä
+        esine kerrallaan. Sana tarkoittaa kaikkia tämän ryhmän esineitä.
+      representation: Näytä pyydettäessä nykyiseen faktaan sidottu tyypitetty mallipari. Se on tukea; väärä vastaus
+        tai tarjottu malli ei muutu itsenäiseksi näytöksi.
+    repair_targets:
+      - M-NUM-QTY-WORD
+    status: hypothesis
+differentiation:
+  support_variants:
+    step_chunking: Yksi koko ryhmä tai sana vihjeenä ja yksi parivalinta kerrallaan. Malli etenee määrissä kolme,
+      neljä, viisi ja kuusi.
+    hint_availability: Avun voi pyytää ennen virhettä; näytettävä tukipari sidotaan nykyiseen faktaan.
+      Automaattinen laskusana on tukea.
+    text_density: Lyhyt ohje, selvästi erotettavat esineet ja suuret vaihtoehtokortit. Ei esineiden nimeämistä,
+      määräsyötekenttää tai kuulokuittausta.
+    representation_boundary: Sana on tekstinä annettu tai valinnaisesti luettu; annettu sanamuoto ei ole oppijan
+      spontaania puhetta. Numeromerkkiä ei tarjota välivastaukseksi.
+    reduced_motion: Kuvat voi näyttää paikallaan; vastaamiseen ei liity aikapainetta.
+    optional_audio: Ääni on valinnainen ja aluksi pois. Tekstireitti toimii ilman puhepalvelua tai kuulemisen
+      kuittausta. Sanan nimiluku ei ole oppijan spontaania puhetta eikä kuulemisen havainto.
+  challenge_variants:
+    learner_prompt: Loikka valitsee ryhmän, joka vie eniten tilaa. Aava levittää saman pienen ryhmän ja tiivistää
+      suuremman ryhmän. Miksi leveys ei ratkaise sanalappua? Korjaa lisäksi valmiiksi väärä pari ja tarkista
+      sama yhteys toiseen suuntaan.
+    reduced_scaffolding: Määräalue pysyy kolmesta kuuteen. Vaikeus tulee koko ryhmän merkityksen ja ristiriitaisen
+      parin tarkistamisesta, ei suuremmista luvuista.
+    assessment_limit: Pohdintaa ei pisteytetä eikä tulkita M-NUM-02:n uudeksi hallinnaksi. Valmiin ryhmän valinta
+      ei ole Give-N-rakentamista.
+    transfer_novelty: Todellinen eriarvoisen parin korjaus vaatii oman korvaavan kumppanin. Pelkkä rivin hajautus
+      tai tarinanimi ei ole soveltamisnäyttö.
+representations:
+  - id: M-NUM-QTY-WORD-PROCESS
+    kind: finite_association_process_v1
+    relation: quantity_word
+    independent_cases:
+      - direction: forward
+        value: 3
+      - direction: forward
+        value: 4
+      - direction: forward
+        value: 5
+      - direction: forward
+        value: 6
+      - direction: reverse
+        value: 3
+      - direction: reverse
+        value: 4
+      - direction: reverse
+        value: 5
+      - direction: reverse
+        value: 6
+    application_cases:
+      - direction: forward
+        value: 3
+      - direction: reverse
+        value: 3
+    delayed_cases:
+      - direction: forward
+        value: 3
+      - direction: forward
+        value: 6
+      - direction: reverse
+        value: 3
+      - direction: reverse
+        value: 6
+  - id: M-NUM-QTY-WORD-JOURNEY
+    kind: learning_journey_v1
+    capability: finite_association_v1
+    chapter: Retkipussien sanalaput
+    companion: Aava
+    purpose: Aava tarvitsee Loikan kanssa sanalaput valmiille pienille tavararyhmille.
+    consequence: Retkiryhmien lukusanalliset pakkauslaput on tarkistettu.
+    instruction: Valitse ryhmälle sana tai sanalle sopiva valmis ryhmä.
+    model:
+      kind: association_deck_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_word
+      entries:
+        - value: 3
+          alternatives:
+            - 3
+            - 4
+            - 6
+          layout: row
+        - value: 4
+          alternatives:
+            - 4
+            - 3
+            - 5
+          layout: scatter
+        - value: 5
+          alternatives:
+            - 5
+            - 4
+            - 6
+          layout: row
+        - value: 6
+          alternatives:
+            - 6
+            - 5
+            - 3
+          layout: scatter
+    retrieval:
+      kind: closed_association_facts_v2
+      claim: association
+simulation_specs: []
+requires_capabilities:
+  - rich_text
+  - diagram
+  - worked_example
+  - single_choice
+  - hint_ladder
+  - reduced_motion_variant
+provenance:
+  curriculum:
+    - source_id: PROD02-OPH-MATH12-S2
+      claim: Perusteen 419550 matematiikan 466344 vuosiluokkakokonaisuuden 466963 S2-sisältö 469266, kuvaus.fi
+        kappaleet 1–2, tukee lukumäärän ja lukusanan yhteyden sisältöaluetta. Kolmen–kuuden kahdeksan
+        tapauksen prosessi on rajattu projektitulkinta, ei OPH:n tavoitekynnys.
+      status: verified
+  pedagogy:
+    - source_id: ATKINSON-RENKL-MERRILL-2003
+      claim: Aiemmin tarkistetun abstraktin rajattu tuki mallista kohti omaa ratkaisua siirtymiselle; ei tämän
+        määrän/sanan tehtävän tehoa tai täyttä siirtovaikutusta koskevaa näyttöä.
+      status: verified
+    - source_id: CAST-UDL-3
+      claim: Tavoitetta säilyttävä esityksen ja toiminnan esteiden tarkastelu, ei tämän visuaalisen ryhmätehtävän
+        ei-visuaalisen vastaavuuden tai täyden saavutettavuuden hyväksyntä.
+      status: verified
+    - source_id: PROJECT-ASSOCIATION-v1
+      claim: "B02-perheraportin R01/R02-ohjeista tehty alkuperäinen sovitus: koko ryhmän näkyvä parimalli, pyydetty
+        tuki ja oma päätös ilman numeromerkkiä. Kahdeksan tapausta, kolme onnistumista, kaksi pohjaa ja
+        4/24h-näyte ovat projektirajoja."
+  domain:
+    - source_id: PROJECT-ASSOCIATION-v1
+      claim: Rajattu määrä–sana-process pysyy arvoissa 3–6 suhteessa nykyiseen esitietopolkuun. Annetun sanan
+        tunnistus ja valmiin vastaavan ryhmän valinta eivät osoita Give-N-rakentamista, spontaania puhetta tai
+        yleistä kardinaliteettia.
+validation:
+  schema: pending
+  graph_refs: pending
+  domain_truth: pending
+  item_invariants: pending
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: draft

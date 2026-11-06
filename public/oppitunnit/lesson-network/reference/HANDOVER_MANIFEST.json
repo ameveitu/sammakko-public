@@ -1,0 +1,78 @@
+{
+  "kind": "assignment_package",
+  "title": "Sammakko 690 HTML5 lesson network Phase1 handover",
+  "date": "2026-10-28",
+  "userFacingTimezone": "Europe/Helsinki",
+  "task": "Give Sol an executable scaffold-only assignment; no site or 690 lesson bodies have been implemented by this package",
+  "targetNodeCount": 690,
+  "liteSubsetCount": 181,
+  "navigationAssumption": "Top direct prerequisite/support neighbours; bottom direct dependents; disclosed because user named children for both",
+  "supersedesForThisRun": [
+    "Immediate full 690 content-authoring instruction in earlier SOL_COORDINATION_NOTE.txt",
+    "Immediate preliminary-microgame authoring instruction in earlier Sol notes"
+  ],
+  "sourceInputs": [
+    {
+      "path": "inputs/canonical-690-graph.json",
+      "sha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "bytes": 1227282,
+      "source": "/workspace/scratch/808e79782e8e/audit/lite181-review/sammakko-lite-181/reference/canonical-690-graph.json",
+      "readOnlyReference": true
+    },
+    {
+      "path": "inputs/mvp-scope-181.json",
+      "sha256": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "bytes": 357719,
+      "source": "/workspace/scratch/808e79782e8e/audit/lite181-review/sammakko-lite-181/reference/mvp-scope-181.json",
+      "readOnlyReference": true
+    },
+    {
+      "path": "inputs/lite181-review-findings.json",
+      "sha256": "1bd6e783fe9959c20fa38bef38fa6af8c5fde1c20ac0e2c44e2971fe8cd6c2b5",
+      "bytes": 17008,
+      "source": "/workspace/scratch/808e79782e8e/deliverables/Sammakko_Lite_181_Review/FINDINGS.json",
+      "readOnlyReference": true
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "build": "Lite181",
+      "path": "src/main.ts",
+      "sha256": "60a0982246de4cd755ce2c0a7cfc20aabdc86edbc3c62c1b56f703486ac293b4",
+      "finding": "No KC URL route; adult action opens KC in memory"
+    },
+    {
+      "build": "Full Sammakko supplied baseline",
+      "path": "apps/web/adventure.ts",
+      "sha256": "3312c48fc822a4f939bf0f2efc358ff8f8949c8ead770f06cac3c66ce0869cbd",
+      "finding": "Startup #journey route with registry membership; no general hashchange routing"
+    },
+    {
+      "build": "Full Sammakko supplied baseline",
+      "path": "packages/content/loader.ts",
+      "sha256": "fc5c0ce21ec8078ddcef53b343562741e99d80abe047827c20925ad49d7ac3b8",
+      "finding": "Compiled index and content-pack membership validation"
+    },
+    {
+      "build": "Full Sammakko supplied baseline",
+      "path": "tests/e2e/journey-foundations.spec.ts",
+      "sha256": "786a7223994d87afa69a8561867fde27a84cbba94a70235a770553273482b928",
+      "finding": "Explicit reload after same-document hash navigation"
+    }
+  ],
+  "verificationPerformed": [
+    "Canonical counts/IDs/typed edges/groups independently derived",
+    "Strongly connected components and required-only acyclicity checked",
+    "Exact Lite subset checked",
+    "Source route handlers and existing test comments inspected",
+    "Handover JSON and cross-file consistency validated"
+  ],
+  "notPerformed": [
+    "New HTML network implementation",
+    "New pedagogical web research",
+    "New lesson or simulation authoring",
+    "Live runtime endpoint tests",
+    "Student/teacher observation"
+  ],
+  "sourceRuntimeFilesModified": false
+}

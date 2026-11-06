@@ -1,0 +1,6 @@
+#!/bin/sh
+# Estää API-avainten ja salaisuustiedostojen commitoinnin.
+# Asennus (kerran per klooni): git config core.hooksPath tools/git-hooks
+root="$(git rev-parse --show-toplevel)" || exit 1
+if [ ! -f "$root/tools/secret-scan.mjs" ]; then exit 0; fi
+cd "$root" && exec node tools/secret-scan.mjs --staged

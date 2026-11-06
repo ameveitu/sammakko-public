@@ -1,0 +1,206 @@
+{
+  "kind": "normative_phase1_implementation_contract",
+  "version": 1,
+  "canonical_input": {
+    "path": "inputs/canonical-690-graph.json",
+    "sha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "preserve_all_fields": true,
+    "mutations_allowed": false
+  },
+  "output": {
+    "required_page_count": 690,
+    "page_pattern": "lessons/{canonicalKCId}.html",
+    "real_html_files_required": true,
+    "shared_assets": true,
+    "essential_navigation_requires_javascript": false,
+    "host_path_prefix_supported": true
+  },
+  "navigation": {
+    "top_source": "currentNode.relations",
+    "bottom_source": "inverse index of all nodes relations naming currentNode.id",
+    "normalized_direction": "support/prerequisite -> dependent",
+    "direct_only": true,
+    "metadata": [
+      "relationType",
+      "strength",
+      "rationale",
+      "sourceRelationIndex"
+    ],
+    "group_logic": "AND across groups; AND inside all_of; OR inside any_of",
+    "cycles_preserved": true,
+    "cross_subject_preserved": true,
+    "taxonomy_and_integration_separate": true,
+    "page_access_mastery_gates": false
+  },
+  "page_regions": [
+    {
+      "id": "identity",
+      "state": "canonical metadata only"
+    },
+    {
+      "id": "upstream_navigation",
+      "label": "Tätä aihetta tukevat aiheet"
+    },
+    {
+      "id": "lesson_body",
+      "state": "awaiting_reviewed_handover",
+      "content": null,
+      "label": "Oppituntisisältö valmistellaan seuraavassa vaiheessa"
+    },
+    {
+      "id": "teacher_actions",
+      "actions": [
+        "copy_lesson_url",
+        "copy_kc_id",
+        "open_or_copy_lite_if_verified",
+        "open_or_copy_full_if_verified"
+      ]
+    },
+    {
+      "id": "downstream_navigation",
+      "label": "Aiheet, joita tämä tukee"
+    },
+    {
+      "id": "teacher_details",
+      "contents": [
+        "canonical source",
+        "role and group semantics",
+        "integration components",
+        "existing draft references",
+        "pending alignment/review/link states"
+      ]
+    }
+  ],
+  "scaffold_record_contract": {
+    "identity": [
+      "kcId",
+      "pagePath",
+      "canonicalSourceHash",
+      "canonicalNodeId"
+    ],
+    "scaffold": [
+      "schemaVersion",
+      "templateVersion",
+      "generationState",
+      "validationState",
+      "outputHash"
+    ],
+    "newInstructionalContent": {
+      "state": "awaiting_reviewed_handover",
+      "body": null
+    },
+    "newPedagogicalResearch": {
+      "state": "not_started_this_phase",
+      "records": []
+    },
+    "existingDrafts": {
+      "inventoryState": "unresolved_until_inventory",
+      "references": null,
+      "preserveOriginalStatuses": true
+    },
+    "contentReview": {
+      "state": "not_performed_for_new_lesson"
+    },
+    "humanReview": {
+      "state": "not_performed_for_new_lesson"
+    },
+    "liteAlignment": [
+      "subsetMembership",
+      "referenceBuild",
+      "reviewReference",
+      "alignmentState"
+    ],
+    "runtimeAvailability": "separate external manifest; never inferred from catalogue membership",
+    "checkpoint": [
+      "canonicalInputHash",
+      "sourceReferenceHash",
+      "schemaVersion",
+      "templateVersion",
+      "outputHash",
+      "validationResult",
+      "blockers"
+    ]
+  },
+  "future_content_slots": [
+    "bounded_target",
+    "assumed_supported_or_supplied_knowledge",
+    "initial_experience",
+    "demonstration",
+    "explanation",
+    "worked_examples",
+    "guided_practice",
+    "independent_check",
+    "transfer",
+    "recall",
+    "teacher_notes"
+  ],
+  "future_family_fields": [
+    "familyId",
+    "revision",
+    "learnerAction",
+    "assumedKCIds",
+    "suppliedBeforeResponse",
+    "coTaughtKCIds",
+    "demonstratedOutcome",
+    "operationAndNumberDomain",
+    "representationDomain",
+    "equivalenceRules",
+    "processContract",
+    "helpAndReplaySemantics",
+    "supportDestinations",
+    "evidenceLimits"
+  ],
+  "future_research_fields": [
+    "sourceUrl",
+    "sourceTitle",
+    "authorOrOrganization",
+    "publicationDate",
+    "accessedDate",
+    "specificConceptOrTreatment",
+    "ageAndPriorKnowledgeContext",
+    "comparisonFindings",
+    "adoptionOrRejectionRationale",
+    "citationBindings",
+    "assetLicenseAndAttribution"
+  ],
+  "future_renderer_interfaces": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "role_awareness": [
+    "atomic",
+    "process",
+    "integration",
+    "operational",
+    "placeholder"
+  ],
+  "unresolved_is_not_not_applicable": true,
+  "existing_authored_content_overwrite_allowed": false,
+  "new_content_approval_from_scaffold_completion_allowed": false,
+  "sharing_contract": {
+    "deploymentScopes": [
+      "unconfigured",
+      "local_preview",
+      "classroom_network",
+      "public"
+    ],
+    "studentReachability": "separate from local route correctness",
+    "localPreviewCopy": "allowed with explicit local-only label",
+    "localhostOrFileUrlClassroomReady": false,
+    "deploymentRequiredForPhase1Completion": false
+  }
+}

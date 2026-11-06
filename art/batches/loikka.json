@@ -1,0 +1,77 @@
+{
+ "_ohje": "Loikan uudet asennot alkuperäisistä PNG:istä. Aja repojuuresta: node tools/imagegen/imagegen.mjs batch art/batches/loikka.json [--live]",
+ "defaults": {
+  "model": "sunburst",
+  "quality": "medium",
+  "size": "1024x1024",
+  "background": "transparent",
+  "n": 2,
+  "template": "edit-keep-character",
+  "character": [
+   "loikka"
+  ],
+  "out": "../_raw/loikka",
+  "image": [
+   "../../lite/public/characters/loikka/idle.png",
+   "../../lite/public/characters/loikka/wave.png",
+   "../../lite/public/characters/loikka/happy.png",
+   "../../lite/public/characters/loikka/crouch.png"
+  ]
+ },
+ "jobs": [
+  {
+   "name": "loikka-celebrate",
+   "vars": {
+    "change": "pose only: Loikka celebrates, both arms raised high, eyes happily closed as upward curves, big smile, same front-facing view as the references"
+   }
+  },
+  {
+   "name": "loikka-think",
+   "vars": {
+    "change": "pose only: Loikka stands thinking, one hand on the chin, eyes looking up, same front-facing view as the references"
+   }
+  },
+  {
+   "name": "loikka-sleep",
+   "vars": {
+    "change": "pose only: Loikka sits asleep, eyes closed as small downward curves, relaxed, same front-facing view as the references"
+   }
+  },
+  {
+   "name": "loikka-sad",
+   "vars": {
+    "change": "pose only: Loikka stands a little sad, shoulders down, small frown, eyes looking down, same front-facing view as the references"
+   }
+  },
+  {
+   "name": "loikka-surprised",
+   "vars": {
+    "change": "pose only: Loikka is surprised, eyes very wide, mouth a small round o, hands up, same front-facing view as the references"
+   }
+  },
+  {
+   "name": "loikka-point",
+   "vars": {
+    "change": "pose only: Loikka stands and points to the right with one arm stretched out, same front-facing view as the references"
+   }
+  },
+  {
+   "name": "loikka-read",
+   "vars": {
+    "change": "pose only: Loikka stands holding a small open yellow book with both hands, looking at it, same front-facing view as the references"
+   }
+  },
+  {
+   "name": "loikka-sit",
+   "vars": {
+    "change": "pose only: Loikka sits on the ground with legs out in front, content smile, same front-facing view as the references"
+   }
+  },
+  {
+   "name": "loikka-swim",
+   "vars": {
+    "change": "pose only: Loikka swims, body horizontal, arms and legs stretched like a swimming frog, head up, happy, same front-facing view as the references"
+   }
+  }
+ ]
+}

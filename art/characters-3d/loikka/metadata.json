@@ -1,0 +1,85 @@
+{
+  "asset": "Loikka 3D candidate",
+  "status": "unapproved local candidate; no runtime replacement",
+  "license": "Private repository source; no redistribution license granted.",
+  "source_sha256": {
+    "lite/public/characters/loikka/airborne.png": "19d628d3000a462507596cbe7b9f5a3ef1e706177dbd1c5b9892efd046b27149",
+    "lite/public/characters/loikka/blink.png": "0cd510039c8e916b5bc3da2433a5d98a1d89c12221e29dff5c22d066851eac77",
+    "lite/public/characters/loikka/crouch.png": "5f6e1f029dafd7d0132c0ac2b60f15a28d113e86d9edac9a83c4d97f9447e5bf",
+    "lite/public/characters/loikka/curious.png": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d",
+    "lite/public/characters/loikka/happy.png": "78871cfd1760663c4150acedc424b30fca408310906643a4d8aee9469fe0ec2e",
+    "lite/public/characters/loikka/idle.png": "de2aa05fec754aee9d52cdcbc5b0488cf633f527d0507d0b3a7d517707289060",
+    "lite/public/characters/loikka/land.png": "7a709d4acf140e90a294747c793336dbc5651523e5adcc8b5a4fad93c1e2797f",
+    "lite/public/characters/loikka/leap.png": "1ab3606ae628739064bf8c17b340f86ac7117ecaf67499c0635b7bd639ab3806",
+    "lite/public/characters/loikka/map.png": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6",
+    "lite/public/characters/loikka/walk_01.png": "e454c60074228166e03f1617ae7379ded65a6cb6a594ab044b8940f8301f4088",
+    "lite/public/characters/loikka/walk_02.png": "5a1016b00ec190504d52d958c387dd7fc3ef980247b56a6f58332eab9c89c33f",
+    "lite/public/characters/loikka/wave.png": "cab852641aab700a077e7c6f2e940b9a88bb3772c76af26b322845f87b7491b4",
+    "art/characters/loikka/celebrate.png": "77cf29557ada703c2d1f1adbef4cc5db3bb6d10693f65c2939d9f75b69f511b1",
+    "art/characters/loikka/point.png": "f62e626e5fff9ad55c4693c59ac8c3378596f491738a90d19996ac18d4a38a14",
+    "art/characters/loikka/read.png": "bc7507cdcce69c2217685564d99c1f8c76fd48eed0510f9deaddfc9fbcf62d0c",
+    "art/characters/loikka/sad.png": "544d4fcd0ee6175995873cf9a2f3eb115d611c6a69a00483940ac680075227f3",
+    "art/characters/loikka/sit.png": "72e5ee2a758a0a296f2659c83cf8f85ff2d6ab6c425c034836f8005df2b356a1",
+    "art/characters/loikka/sleep.png": "187d04c948a919fb889bcdf1fc93fb4b2aaf6ecd9a0a0c8ed247399572bb5280",
+    "art/characters/loikka/surprised.png": "2fe3a3853e3c7e6cd73f18cb8cf84a8e5959c8d0139c757c4be71e0286abc8ec",
+    "art/characters/loikka/swim.png": "0291c5caebbd2f2cce2f8d4a594b9f0f89d5b4b629edfea6380cd2bf9dc398f0",
+    "art/characters/loikka/think.png": "4b72a2d491324dfcd12d92e9bcb02f3345324e6c0e59de89c690afba49b31e38"
+  },
+  "authoring": "Procedural Blender mesh and rigid-weight armature from approved reference images; no external provider.",
+  "coordinates": "Blender +Z up; glTF export +Y up, meters, ground origin.",
+  "clips": [
+    "idle",
+    "walk",
+    "leap",
+    "wave"
+  ],
+  "budgets": {
+    "triangles_max_exclusive": 20000,
+    "bones_max_exclusive": 24,
+    "glb_bytes_max_exclusive": 3000000
+  },
+  "glb_sha256": "08a24d98b2b337b7579b61a6c6f342b9be13e4d532f5819c383dd9ff1b56e5a7",
+  "measured": {
+    "bytes": 458040,
+    "triangles": 12448,
+    "bounds_blender_m": [
+      [
+        -0.3299998641014099,
+        -0.6099998354911804,
+        -1.1043847791825101e-07
+      ],
+      [
+        0.34999993443489075,
+        0.6100000143051147,
+        1.4800000190734863
+      ]
+    ],
+    "bones": [
+      "root",
+      "body",
+      "arm_1",
+      "arm_-1",
+      "head",
+      "leg_1",
+      "foot_1",
+      "leg_-1",
+      "foot_-1"
+    ],
+    "actions": [
+      "idle",
+      "leap",
+      "walk",
+      "wave"
+    ],
+    "checks": {
+      "budget_pass": true,
+      "walk_root_fixed": true,
+      "walk_one_foot_contact": true,
+      "walk_stance_foot_stationary": true,
+      "leap_ground_and_apex": true
+    }
+  },
+  "forward": "Blender +X; exported glTF +X (glTF +Y is up)",
+  "walk_scope": "In-place walk: root fixed and stance-foot horizontal positions verified at each integer frame.",
+  "external_uris": []
+}

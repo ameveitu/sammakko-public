@@ -1,0 +1,50 @@
+{
+ "schema": "sammakko-visual-polish-assets/1",
+ "module": "VP02",
+ "note": "Koristekerros: ei opetussisältöä, ei hahmoja, ei oppijadataa. Raakakuvat ja promptit eivät kuulu selainpakettiin.",
+ "files": [
+  {
+   "out": "public/kotisivu/assets/visual-polish/shore-band.webp",
+   "module": "VP02",
+   "kind": "image",
+   "bytes": 31714,
+   "sha256": "dc199858b795f94337d55d41e89cd668466826976cd2747b91fc75f76d8aa274",
+   "budget": 81920,
+   "source": {
+    "generator": "tools/imagegen/imagegen.mjs batch tools/visual-polish/batches/plates.json (gpt-image-2.5-sunburst, style reference art/backgrounds/hero-island.jpg)",
+    "sidecar": "tools/visual-polish/provenance/vp-home-shore-band-20261102-011318-2.png.json",
+    "rawSha256": "f12db45dd5955dfae0c237c2f853e62c13c9ef63cb1b36af943c99fb9a4f48d9"
+   },
+   "derived": "tools/visual-polish/build-assets.py: width 1920, WebP quality 78"
+  },
+  {
+   "out": "public/kotisivu/assets/visual-polish/reeds.webp",
+   "module": "VP02",
+   "kind": "image",
+   "bytes": 50954,
+   "sha256": "dfa04a6ac0e6d34aff70d08e9c46be9d868dfaff8a89ac42eee2cc9483d76fab",
+   "budget": 81920,
+   "source": {
+    "generator": "tools/visual-polish/blender/reeds.py (Blender 5.2.1 LTS, Cycles CPU, seed 20261102, 32 samples)",
+    "rawSha256": "7cdbbc1ce8d804ce1a1942162b815d20323cc599582c1477582b7a1ed6febd86"
+   },
+   "derived": "tools/visual-polish/build-assets.py: width 360, WebP quality 82, alpha, alpha-cropped"
+  },
+  {
+   "out": "public/kotisivu/assets/visual-polish/mode.js",
+   "module": "VP02",
+   "budget": 1024,
+   "kind": "code",
+   "bytes": 522,
+   "sha256": "562333a3f6fb631564b0ca758477bf53525c5cd9a0bbb800bea3ec5468c93046"
+  },
+  {
+   "out": "public/kotisivu/assets/visual-polish/home.css",
+   "module": "VP02",
+   "budget": 4096,
+   "kind": "code",
+   "bytes": 4022,
+   "sha256": "c755562f365251ae382855a0f0a75a575be5ac9ba7e7850b9320e0ac8f74fb59"
+  }
+ ]
+}

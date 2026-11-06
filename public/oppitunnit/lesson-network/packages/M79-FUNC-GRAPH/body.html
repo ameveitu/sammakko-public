@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="lesson.css"><div class="b14" data-b14-graph>
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/loikka/map.png" width="56" height="56" alt="Loikka"><p>Loikka muuttaa ohjetaulukon pisteiksi.</p></div><p data-goal><strong>Teen funktion arvopareista kuvaajan.</strong></p>
+</section>
+
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<fieldset data-lesson-role="worked-example"><legend>Vaakasuunnassa x, pystysuunnassa y</legend><div data-view><img src="initial.svg" alt="Vaakasuunnassa x, pystysuunnassa y; aloitusvaihe."></div><p data-readout aria-live="polite">Piste (−1, −3): ensin x = −1, sitten y = −3. 1/4 taulukon pistettä.</p><div class="actions" data-primary><button data-action="step">Seuraava vaihe</button><button data-action="play">Toista</button><button data-action="pause">Pysäytä</button><button data-action="model-reset">Mallin alkuun</button><button data-action="end">Näytä loppu</button></div><p data-running>Toisto pysäytetty.</p><details data-model-details data-lesson-role="teaching-step"><summary>Vaihda mallia / katso arvot</summary><label>Malli<select data-model><option value="rise">Nouseva: y = 2x − 1</option><option value="fall">Laskeva: y = 4 − 2x</option><option value="flat">Vakio: y = 2</option><option value="tickets">Lippujen hinta: y = 2x + 1</option></select></label><div data-table><table><caption>Arvoparit: Nouseva: y = 2x − 1</caption><thead><tr><th>x</th><th>y</th></tr></thead><tbody><tr><td>−1</td><td>−3</td></tr><tr><td>0</td><td>−1</td></tr><tr><td>1</td><td>1</td></tr><tr><td>2</td><td>3</td></tr></tbody></table><p>Sääntö pätee kaikilla reaaliluvuilla välillä −1 ≤ x ≤ 2.</p></div></details></fieldset>
+</section>
+
+
+
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Pohdi ensin:</strong> Miten näet pisteestä, kumpi luku on x?</p>
+</section>
+
+
+
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<details id="examples" data-lesson-role="worked-example"><summary>Kaksi esimerkkiä ja uusi tilanne</summary><h2>Arvopari muuttuu pisteeksi</h2><p>Sääntö y = 2x − 1: kun x = −1, y = −3; kun x = 0, y = −1; kun x = 1, y = 1. Pisteessä (−1, −3) liikut ensin vasemmalle ja sitten alas. Koordinaattien vaihtaminen tuottaa eri pisteen.</p><p>Alkumallissa sääntö koskee kaikkia reaalilukuja välillä −1 ≤ x ≤ 2. Siksi lopuksi voidaan piirtää suora myös taulukon pisteiden väliin. Arvotaulukko tukee tätä esitystä; sen hallinta ei ole uusi pakollinen portti.</p><figure data-lesson-role="worked-example"><img src="example.svg" alt="Laskeva funktio y=4−2x: pisteet(0,4),(1,2),(2,0) ja suora välillä0…2."><figcaption>Toinen esimerkki: x kasvaa yhdellä, y pienenee kahdella. (1,2) ei ole sama piste kuin(2,1).</figcaption></figure><p><strong>Virheajatus:</strong> eri x-arvoilla täytyy olla eri y. Ei tarvitse: y = 2 on funktio myös silloin, kun kaikki sen pisteet ovat samalla vaakasuoralla.</p><figure data-lesson-role="worked-example"><img src="transfer.svg" alt="Lippujen sallitut määrät0,1,2 antavat hinnat1,3,5euroa. Kolmea pistettä ei yhdistetä."><figcaption>Siirto uuteen tilanteeseen: lippujen määrät ovat vain0,1,2. Hintataulukon pisteitä ei yhdistetä, koska puolta lippua ei tässä myydä. Tässä mallissa varausmaksu maksetaan myös nollan lipun varauksesta.</figcaption></figure></details>
+</section>
+
+
+
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<section aria-label="Oma harjoitus" data-audience-columns><div data-response-column><h2>Kokeile itse</h2><p>Voit vastata suoraan. Malli ja apu ovat valinnaisia; ei pakollista puhetta tai kuuntelua.</p><p data-question>y = 2x − 1. Merkitse kolme pistettä: x = −1, 0 ja 1. Täytä kunkin pisteen x ja y. Rivien järjestys on vapaa.</p><div class="pair"><label>Piste1: x<input data-answer inputmode="decimal" type="text" autocomplete="off"></label><label>Piste1: y<input data-answer inputmode="decimal" type="text" autocomplete="off"></label></div><div class="pair"><label>Piste2: x<input data-answer inputmode="decimal" type="text" autocomplete="off"></label><label>Piste2: y<input data-answer inputmode="decimal" type="text" autocomplete="off"></label></div><div class="pair"><label>Piste3: x<input data-answer inputmode="decimal" type="text" autocomplete="off"></label><label>Piste3: y<input data-answer inputmode="decimal" type="text" autocomplete="off"></label></div><details data-lesson-role="metadata"><summary>Piirron tarkistusraja</summary><p>Nykyiset täydelliset kokonaislukupisteesi näkyvät ruudukossa. Tyhjä tai tukematon pari jätetään piirtämättä. Tarkistus hyväksyy vain pyydetyn koko pistejoukon.</p></details><button data-action="check">Tarkista</button><output data-feedback data-result="neutral" aria-live="polite">Tarkista, kun olet valmis.</output></div><div data-visual-column><label>Tehtävä<select data-task><option value="rise">Nousevan funktion pisteet</option><option value="fall">Laskevan funktion pisteet</option><option value="flat">Vakiofunktion pisteet</option><option value="transfer">Lippujen hinnan pisteet</option></select></label><div data-practice-view><img src="practice.svg" alt="Omat pisteet piirretään tähän koordinaatistoon: xvaaka1,y pysty2perruutu."></div><details data-help data-lesson-role="hint"><summary>Tarvitsen apua</summary><p>Valitse pyydetty x, laske y annetulla säännöllä ja kirjoita pari (x, y). Vaakasuunnassa yksi ruutu on 1, pystysuunnassa yksi ruutu on 2. Rivien järjestys ei muuta pistejoukkoa.</p><p>Avun kanssa tehty vastaus on tuettua harjoittelua. Voit avata esimerkin ja jatkaa samaa tavoitetta.</p></details></div></section>
+</section>
+
+
+<details data-lesson-role="teacher-note"><summary>Lisätutkimus ja opettajalle</summary><p>Muodostaa annetusta säännöstä arvopareja ja esittää ne koordinaatistossa; ilmoittaa akselit, asteikon ja sallitut syötteet. Selittää, milloin pisteiden välinen suora kuuluu annettuun malliin.</p><p>Luokat 7–9. Kanoninen rooli process. Pakolliset esitiedot säilyvät graafista: kaikki nimetyt taidot tarvitaan. Vahva tuki ei ole lisäportti. Valinnainen arvotaulukko, kulkureitti ja ratkaistut esimerkit säilyttävät saman koordinaattitavoitteen.</p><p>Piirrä paperille akselit ja merkitse asteikot. Kirjoita ensin arvoparit, merkitse sitten pisteet. Pyydä perustelemaan, miksi x tulee vaakasuunnassa ja miksi lippujen pisteitä ei yhdistetä. Valmiiksi annettu arvotaulukko tukee koordinaatiston käyttöä mutta ei osoita itse laskettua taulukkoa.</p><p>Neljä annettua sääntöä. Näytön x-akseli:−2…3, y-akseli:−4…6; vaakaruutu1, pystyruutu2. Harjoituksissa merkitään kolme pyydettyä kokonaislukupistettä. Muita lausekkeita tai vapaita käyriä ei tässä tarkisteta.</p><p>Paikallinen vastaus ei osoita itsenäistä, viivästettyä tai formaalia hallintaa. Kokeilujen lukumäärä tai mallin käyttö ei ansaitse hallintaa. Ei henkilöhistoriaa, tallennusta tai oppijaseurantaa. Ihmis-/oppilas-/vaikuttavuus-/täyden manuaalisen saavutettavuuden ja julkaisun hyväksyntää ei ole tehty.</p></details>
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lopuksi:</strong> Voiko sama y kuulua kahdelle x:lle? Milloin kolme pistettä saa yhdistää suoraksi?</p>
+</section>
+
+
+<noscript data-lesson-role="metadata"><p>Alkukuva, arvot ja ratkaistut esimerkit toimivat ilman JavaScriptiä. Liikkeen toisto ja paikallinen tarkistus tarvitsevat JavaScriptin. Voit tehdä saman tehtävän paperille. Näkyvä vaihetoisto ei ole fyysisen tapahtuman mittauskello.</p></noscript></div>

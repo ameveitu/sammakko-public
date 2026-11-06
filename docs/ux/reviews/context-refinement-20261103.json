@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "kind": "source_review_followup",
+  "at": "2026-11-03T14:11:22.030Z",
+  "reviewer": "ChatGPT root after independent source review",
+  "previous": "docs/ux/reviews/context-runtime-20261103.json",
+  "decision": "reviewed_with_stated_limits",
+  "humanValidation": "pending",
+  "finding": "Poster-row option labels could still display the previous quantity after an invalid notebook edit, despite the reference and poster correctly rejecting it.",
+  "change": "Update existing option labels from current record values on every edit without rebuilding inputs/selects or changing selections. Always update the reference and poster. Missing remains Vastaamatta, invalid remains Tarkista luku, and no checker runs.",
+  "sourceSha256": {
+    "public/oppitunnit/lesson-network/packages/SCI-ENV-RECORD-01/lesson.mjs": "99a51567a79916729ae48bdd264212bfb8feffb7e49426e0794af4c04e4fb76b",
+    "lite/publication-tests/lesson-context.spec.ts": "264dc4c91dd3da4d5171889a946be488e528b2b00f1cfec105d20ab7447617ac"
+  },
+  "from": "15@40080239d0e6765d8f0880e2f7f73e274eeab8c115db7776ac00eb061247f46d",
+  "to": "15@b0eaaf580d24ca3a5f3e79a16fe2fd2902a01bb70abf36937390b2e729398676",
+  "validation": "Focused truth tests and GitHub Actions regression required; browser test explicitly checks invalid option label, original data and selection restoration."
+}

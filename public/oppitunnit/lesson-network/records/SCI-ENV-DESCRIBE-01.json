@@ -1,0 +1,195 @@
+{
+  "kcId": "SCI-ENV-DESCRIBE-01",
+  "pagePath": "lessons/SCI-ENV-DESCRIBE-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "SCI-ENV-DESCRIBE-01",
+  "canonicalNode": {
+    "id": "SCI-ENV-DESCRIBE-01",
+    "subject": "science",
+    "grade_band": "1-2",
+    "topic_area": "Tutkimisen taidot",
+    "parent_concept": "Havainnointi",
+    "title": "Tehdyn havainnon kuvaileminen",
+    "short_description": "Tehdyn havainnon kuvaileminen",
+    "node_kind": "representation",
+    "source_basis": "pedagogically_derived",
+    "curriculum_refs": [
+      "ENV12-T5-T13"
+    ],
+    "relations": [
+      {
+        "id": "SCI-ENV-OBSERVE-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "Havainto täytyy tehdä ennen sen kuvailemista."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "SCI-ENV-OBSERVE-01"
+        ],
+        "rationale": "Kuvaileminen perustuu tehtyyn havaintoon."
+      }
+    ],
+    "evidence_notes": "v0.2-refaktorissa erotettu noodista SCI-ENV-OBS-01 itsenäiseksi evidenssikohteeksi.",
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "status": "candidate_refactored",
+    "entry_role": "none",
+    "mastery_role": "process",
+    "split_from": "SCI-ENV-OBS-01",
+    "concept_path": [
+      "Ympäristöoppi / luonnontieteellinen perusta",
+      "Tutkimisen taidot",
+      "Havainnointi"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "SCI-ENV-OBSERVE-01",
+      "targetKCId": "SCI-ENV-DESCRIBE-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Havainto täytyy tehdä ennen sen kuvailemista.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "SCI-ENV-DESCRIBE-01",
+      "targetKCId": "SCI-ENV-OBS-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Integraationoodi edellyttää havainnon kuvailemista.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "SCI-ENV-OBSERVE-01"
+      ],
+      "rationale": "Kuvaileminen perustuu tehtyyn havaintoon."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "awaiting_reviewed_handover",
+    "body": null,
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    }
+  },
+  "newPedagogicalResearch": {
+    "state": "not_started_this_phase",
+    "records": [],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "not_performed_for_new_lesson"
+  },
+  "humanReview": {
+    "state": "not_performed_for_new_lesson"
+  },
+  "liteAlignment": {
+    "subsetMembership": false,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "outside_current_lite_scope"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "outside_current_lite_scope",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "outputHash": "aa6163c0d9e8ef29dfef8fe5d3da22fd2f752ec3a0833eaf89d7acf33d0bcc03",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "aa6163c0d9e8ef29dfef8fe5d3da22fd2f752ec3a0833eaf89d7acf33d0bcc03",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

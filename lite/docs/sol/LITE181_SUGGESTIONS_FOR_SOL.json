@@ -1,0 +1,122 @@
+{
+  "schema": "lite181-suggestions-for-sol/1",
+  "from": "Opus (Sammakko Lite, haara lite-mvp-177)",
+  "to": "Sol (181 KC:n opettajaoppitunnit)",
+  "date": "2026-10-29",
+  "content_rev": "lite181-2026-10-27",
+  "lite_commit": "4dcca20",
+  "note": "Ehdotuksia, ei muutoksia Solin tiedostoihin. Jokainen rivi on KC-kohtainen ja viittaa Liten nykyiseen lähteeseen. 'divergence' kertoo, missä Liten oppitunti ja Solin suunnittelukortti (src/data/sol-annotations.json) tai aiempi katselmus poikkeavat toisistaan. 'suggestion_for_sol' on Opuksen ehdotus opettajaoppitunnille; päätös on Solin. Lite ei muutu näiden perusteella ilman erillistä päätöstä ja uutta rev-arvoa. Ihmispalautetta lapsilta tai opettajilta ei ole kerätty: yksikään rivi ei perustu havaittuun oppimiseen.",
+  "shared_conventions": [
+    {
+      "topic": "Hahmot",
+      "lite_now": "Aava on keltainen ankanpoikanen (kävelee ja ui), Loikka on sininen sammakko. Sulka on eri hahmo, eikä sitä piirretä Aavan kuvalla. Hahmot ovat generoituja rasterikuvia (public/characters/), eivät käyttäjän piirtämiä. Lisenssi on omistajan päätös (docs/characters/CREDITS.md).",
+      "suggestion_for_sol": "Käytä samoja nimiä ja lajeja. Pidä maskotit erillään mitattavista kuvista (radat, mittanauhat, kuvaajat), kuten Lite tekee."
+    },
+    {
+      "topic": "Liike ja aika",
+      "lite_now": "Kaikki liikesimulaatiot (src/ui/motion.ts) piirtävät radan, mittanauhan, sekuntikellon ja s,t- ja v,t-kuvaajat yhdestä kellosta. Kelaus 10× muuttaa vain toistonopeutta, ei fysikaalista nopeutta. Soikealla radalla matka on kuljettu reitti (kierrokset × kierroksen pituus), ei kulma.",
+      "suggestion_for_sol": "Kun HTML-oppitunti näyttää liikettä, sano erikseen, että toistonopeus ei ole kappaleen nopeus, ja että soikiolla matka luetaan auki kelatulta janalta."
+    },
+    {
+      "topic": "Rantakisa (Lentopaja)",
+      "lite_now": "Loikka 3 m/s ja Aava 2 m/s juoksevat 6, 12 tai 18 m. Lapsi arvaa uuden ajan ennen toista kisaa, ja Aava vertaa: matka kaksinkertaistui, aika kaksinkertaistui, nopeus pysyi 3 m/s (src/game/state.ts raceTalk). Kisa on peliä, eikä se kirjaa oppimisnäyttöä.",
+      "suggestion_for_sol": "Jos PHY79-DIST-TIME- tai PHY79-SPEED-CONCEPT-oppitunti haluaa viitata peliin, samat luvut (3 m/s, 2 m/s, 6/12/18 m) pitävät esimerkit yhteneväisinä."
+    },
+    {
+      "topic": "Tuottamisnäyttö (katselmus 2, U02 ja U03)",
+      "lite_now": "Kuudessa oppitunnissa tarkistus vaatii yhden oikean oman tuotoksen: M79-EXPR-FORM ja M79-EQ1-FORM rakentaminen (build), M-DATA-02 kirjaaminen (record), M-TH-07 listaaminen (list), M-WRADD allekkain laskeminen (column, transfer) ja M79-FRAC-DIV laskeminen. Valmiiden lausekkeiden yhdistely (translate, parts), asujen määrän laskeminen ilman listaa (outfits) ja yhden numeron täyttö (step) ovat tunnistamista. Sääntö koskee revisiolla review2-2026-10-29 annettuja vastauksia. Aiemmin ansaittu tarkistus säilyy, ja aikuinen näkee sen tilana 'tarkistettu tunnistamalla', kunnes oma tuotos nähdään. Myöhempi tuotos (myös harjoittelussa) päivittää tilan. Launch-kierros lisää rajatut nykyrevision portit M-NUM-1TO1, M-DATA-01, M-DATA-04, M79-FUNC-GRAPH ja M-DEC-04. Portin hyväksyvä suoritus vaatii sekä sallitun tagin että kyseisen policy-revision; vanha saman tagin vastaus ei kelpaa uuden tehtävän tuotokseksi.",
+      "suggestion_for_sol": "Jos opettajaoppitunti väittää lapsen kirjoittavan tai rakentavan, sen tarkistustehtävän kannattaa pyytää omaa tuotosta, ei valintaa valmiista."
+    },
+    {
+      "topic": "Paljastettu vastaus (katselmus 2, U01)",
+      "lite_now": "Kun lapsi avaa peitetyn sekuntikellon ennen vastaamista, oikea vastaus kirjataan merkinnällä help: ['reveal'] ja se on neutraali: se ei kasvata eikä katkaise tarkistusputkea eikä näy aikuisen suhdeluvussa. Väärä vastaus lasketaan silti vääräksi. Liikeoppituntien ensimmäinen esimerkki kysyy ja pyytää arvaamaan; vastaus tulee vasta seuraavalla sivulla.",
+      "suggestion_for_sol": "Sama periaate sopii opettajaoppitunteihin: tarkistusväline näytetään vasta oman vastauksen jälkeen."
+    },
+    {
+      "topic": "Revisiot (katselmus 2, U08)",
+      "lite_now": "Oppitunti, jonka generoidut tehtävät muuttuvat, saa uuden rev-arvon; vanhat revisiot pysyvät validRevs-listassa. tests/item-manifest.json tallentaa tehtävien tiivisteen per oppitunti, ja testi kaatuu, jos tehtävät muuttuvat ilman uutta rev-arvoa. Tällä kierroksella review2-2026-10-29 sai M-GEO-04, M-TH-02, M-TH-08, M-PLACE-05 ja kuusi tuottamisoppituntia.",
+      "suggestion_for_sol": "Kun Sol viittaa Liten tehtävään, KC-tunniste ja rev yhdessä yksilöivät tehtäväperheen."
+    },
+    {
+      "topic": "Opettajan suora linkki",
+      "lite_now": "Saman sivuston tarkka181-reitti on /lite/#kc/<tunnus>. Oppituntien valmistelusta avataan oikea aihe uuteen välilehteen; yleisöesitys on erillinen /oppitunnit/presentations/<tunnus>.html-dokumentti.",
+      "suggestion_for_sol": "Käytä julkaisuadapterin tarkistamaa KC-linkkiä ja jaa yleisölle vain erillinen esitysvälilehti. 509 aihepohjalla ei ole pelilinkkiä."
+    }
+  ],
+  "items": [
+    {
+      "kc": "M-NUM-STABLE-ORDER",
+      "lite_rev": "audit1-2026-10-28",
+      "source": "src/content/numbers.ts (rhyme-perhe)",
+      "lite_now": "Rhyme-perheessä lapsi rakentaa lorun napauttamalla sekoitettuja sanakortteja järjestykseen (build, mode seq). Spot-perheessä hän tunnistaa, mikä sana jäi sanomatta.",
+      "divergence": "Solin kortin raja: sanapankki ei todista vapaata suullista tuottamista. Liten rhyme on sanapankkitehtävä.",
+      "suggestion_for_sol": "Kuvaa Liten rhyme opettajaoppitunnissa tuettuna järjestämisenä. Vapaa suullinen luettelu yhdestä kahdeksaan jää opettajan havainnoitavaksi. Jos Sol haluaa Liten erottavan nämä, ehdota tehtäväperheen nimeä ja rajaa, niin Opus tekee siitä oman muutoksen.",
+      "kind": "evidence_scope"
+    },
+    {
+      "kc": "M-NUM-1TO1",
+      "lite_rev": "launch1-2026-11-01",
+      "source": "src/engine/check.ts (tapcount), src/content/countanim.ts (countAlong)",
+      "lite_now": "Esittely näyttää oikein lasketun, kahdesti lasketun ja ohitetun tapauksen. Tap/transfer vaativat jokaisen esineen kertamerkinnän; ask:false ei vaadi loppumäärää. Yksi hyväksytty oma merkintätehtävä vaaditaan tämän revision tuottamisnäytöksi.",
+      "divergence": "Sekä oppitunti että Lite harjoittelevat annettujen esineiden kertakohdistusta. Liten rajattu näyttö koskee merkintöjä, ei itsenäistä sanajonon tuottamista.",
+      "suggestion_for_sol": "Pidä kertamerkintä erillään loppumäärästä ja sanajonosta. Opettaja voi tukea lukusanoja. Varsinainen oppijoiden validointi on vielä tekemättä.",
+      "kind": "feedback_language"
+    },
+    {
+      "kc": "M-NUM-01",
+      "lite_rev": "count2-2026-10-27",
+      "source": "src/content/numbers.ts, src/engine/check.ts",
+      "lite_now": "Lapsi laskee hajallaan olevat esineet napauttamalla. Käyttöliittymä näyttää napautettujen määrän vain silloin, kun tehtävä sallii merkinnät.",
+      "divergence": "Solin raja: ei käyttöliittymän automaattista laskemista itsenäisellä reitillä. Tätä ei ole tarkistettu jokaisesta Liten tehtäväperheestä tässä kierroksessa.",
+      "suggestion_for_sol": "Merkitse tämä tarkistettavaksi Solin Lite-kartoituksessa. Jos itsenäisessä vaiheessa näkyy laskuri, ilmoita siemen ja tehtäväperhe, niin Opus korjaa sen.",
+      "kind": "needs_check"
+    },
+    {
+      "kc": "M-MEAS-00",
+      "lite_rev": "audit1-2026-10-28",
+      "source": "src/content/measure.ts (aligned, tricky, equal, heavy)",
+      "lite_now": "Nauhavertailu alkupäät kohdistamalla, mukana yhtä pitkät -tapaus. Samassa oppitunnissa on myös heavy-perhe, jossa massaa verrataan vaa'alla.",
+      "divergence": "Solin kortin tavoite on pelkkä pituusvertailu. Liten oppitunti sekoittaa siihen massan. Lisäksi Solin esimerkki 'kääntäminen ei muuta nauhan pituutta' puuttuu Liten esittelystä.",
+      "suggestion_for_sol": "Päätä, kuuluuko massan vertailu tähän KC:hen vai toiseen. Jos ei kuulu, Opus siirtää heavy-perheen pois uudella rev-arvolla. Kääntämisen tapaus sopii opettajaoppitunnin esittelyyn.",
+      "kind": "scope_mismatch"
+    },
+    {
+      "kc": "M-MEAS-01",
+      "lite_rev": "audit1-2026-10-28",
+      "source": "src/ui/widgets.ts (iterate), src/engine/check.ts (iterate)",
+      "lite_now": "Mittapalat asettuvat automaattisesti päittäin. Lapsi päättää vain, montako palaa lisää, ja palaute kertoo, jäikö nauhaa mittaamatta tai menikö viimeinen pala yli.",
+      "divergence": "Solin palaute koskee rakoja palojen välissä. Liten pienoispelissä rako ei voi syntyä, joten Lite ei harjoita eikä havaitse sitä virhettä.",
+      "suggestion_for_sol": "Käsittele raot ja limittäisyys opettajaoppitunnissa. Kerro, jos Liten pitäisi sallia vapaa sijoittelu: se on uusi vuorovaikutus ja oma, testattava muutos.",
+      "kind": "interaction_gap"
+    },
+    {
+      "kc": "PHY79-SPEED-CONCEPT",
+      "lite_rev": "audit1-2026-10-28",
+      "source": "src/content/physics.ts (sameS, sameT, equal, rank, ratio)",
+      "lite_now": "Esittely: sama matka eri ajassa, sama aika eri matkalla, sitten metrit joka sekunti (5 m/s). Siirtotehtävä vertaa suhteita.",
+      "divergence": "Ei sisällöllistä ristiriitaa Solin korttiin. Solin raja ('tasaiseen liikkeeseen rajoittuva malli näkyviin') ei näy Liten tekstissä sanallisesti.",
+      "suggestion_for_sol": "Kirjoita opettajaoppitunnissa auki, että vertailu olettaa tasaisen vauhdin. Ehdota tarvittaessa lyhyt lause, jonka Opus lisää Liten esittelyyn.",
+      "kind": "aligned_minor"
+    },
+    {
+      "kc": "PHY79-SPEED-MIXED",
+      "lite_rev": "audit1-2026-10-28",
+      "source": "src/content/motionsims.ts (soikio 400 m)",
+      "lite_now": "Valinnainen soikiotehtävä: kierros on 400 m reittiä, matka = kierrokset × 400 m. Näkymä näyttää kierroslaskurin ja nopeusmittarin.",
+      "divergence": "Aiempi katselmus nosti esiin soikion matkan ja ajan sekaannuksen. Lite käyttää kuljettua reittiä, ei kulmaa. Kaikki opettajamateriaalit eivät välttämättä tee samaa.",
+      "suggestion_for_sol": "Jos opettajaoppitunnissa on kiertävä rata, mittaa matka reittiä pitkin ja näytä se auki kelattuna janana.",
+      "kind": "shared_model"
+    },
+    {
+      "kc": "M-TIME-01",
+      "lite_rev": "audit1-2026-10-28",
+      "source": "src/content/index.ts (SIMS-demo, katselmus L181-03)",
+      "lite_now": "Ensimmäinen malliesimerkki on aina yhteinen liikesoitin: lapsi käynnistää, pysäyttää ja toistaa tapahtuman ennen staattisia kuvia.",
+      "divergence": "Katselmus L181-03 on Litessä osittain auki: kertaustehtävien kuvaaja- ja tapahtumaparit ovat ennallaan.",
+      "suggestion_for_sol": "Jos Sol suunnittelee kertauskysymyksen, jossa sama tapahtuma nähdään sekä soittimessa että kuvaajassa, Opus voi ottaa sen Liten kertausperheeksi.",
+      "kind": "open_review_item"
+    }
+  ],
+  "updatedAt": "2026-11-01",
+  "historicalSource": "history/LITE181_SUGGESTIONS_FOR_SOL_2026-10-29.json"
+}

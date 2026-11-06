@@ -1,0 +1,485 @@
+{
+  "kcId": "M-UNIT-05",
+  "pagePath": "lessons/M-UNIT-05.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-UNIT-05",
+  "canonicalNode": {
+    "id": "M-UNIT-05",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Geometria ja mittaaminen",
+    "parent_concept": "Yksikkömuunnos",
+    "title": "Aikayksiköiden muuntaminen",
+    "short_description": "Aikayksiköiden muuntaminen",
+    "source_basis": "assessment_refined",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S4",
+      "OPH-MATH-VL6-ASSESSMENT-SUPPORT"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-TIME-03",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-TIME-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-MUL-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Aikayksikkömuunnoksessa käytettävä operaatio riippuu muunnossuunnasta."
+      },
+      {
+        "id": "M-DIV-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Aikayksikkömuunnoksessa käytettävä operaatio riippuu muunnossuunnasta."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-TIME-03"
+        ],
+        "rationale": "Aikayksiköiden suhteiden merkitys on ydin; operaatio määräytyy tehtävästä."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "dynamic_prerequisite_rule": "requires_multiplication_or_division_according_to_conversion_direction",
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Geometria ja mittaaminen",
+      "Yksikkömuunnos"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-TIME-03",
+      "targetKCId": "M-UNIT-05",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-TIME-03 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-MUL-01",
+      "targetKCId": "M-UNIT-05",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Aikayksikkömuunnoksessa käytettävä operaatio riippuu muunnossuunnasta.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M-UNIT-05",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Aikayksikkömuunnoksessa käytettävä operaatio riippuu muunnossuunnasta.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-UNIT-05",
+      "targetKCId": "PHY79-UNIT-CONV",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-UNIT-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 4
+    },
+    {
+      "sourceKCId": "M-UNIT-05",
+      "targetKCId": "PHY79-SPEED-UNIT",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-UNIT-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 3
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-TIME-03"
+      ],
+      "rationale": "Aikayksiköiden suhteiden merkitys on ydin; operaatio määräytyy tehtävästä."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": "requires_multiplication_or_division_according_to_conversion_direction",
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-UNIT-05/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.bipm.org/en/web/guest/publications/si-brochure",
+        "title": "The International System of Units —9th edition,2026",
+        "organization": "BIPM",
+        "accessed": "2026-10-29",
+        "treatment": "Primary-source skill-cluster comparison.",
+        "adopted": "Verified standard time factors; all domain/representation calculations derive from them.",
+        "rejected": "Do not treat accelerated unit regrouping as an actual hour experienced.",
+        "limitations": "A mathematical reference, not pedagogy/efficacy proof. Finnish vrk is display wording; internal unit d.",
+        "usageRestrictions": "Official publication page identifies CC BY4.0; original diagrams and prose, attribution/link retained."
+      },
+      {
+        "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+        "title": "Mathematics programmes of study",
+        "organization": "Department for Education",
+        "accessed": "2026-10-29",
+        "treatment": "Primary-source skill-cluster comparison.",
+        "adopted": "One duration, different standard units; visible grouping and practical purpose.",
+        "rejected": "No mandatory clockface/decimal assumptions imported from the wider English programme.",
+        "limitations": "Foreign curriculum comparison, not Finnish source wording or age equivalence.",
+        "usageRestrictions": "Conceptual comparison only; no protected prose/figures copied."
+      },
+      {
+        "url": "https://nrich.maths.org/problems/timing",
+        "title": "Timing — Age7–11",
+        "organization": "University of Cambridge / NRICH",
+        "accessed": "2026-10-29",
+        "treatment": "Primary-source skill-cluster comparison.",
+        "adopted": "Meaningful purpose for time reasoning, with explicit support.",
+        "rejected": "Reject clock-offset/calendar puzzles as the novice default; too many additional assumptions for this unit lesson.",
+        "limitations": "Comparable task examined/rejected in part; not an efficacy evaluation or source for exact local sequence.",
+        "usageRestrictions": "Cambridge copyright; no wording/figures copied or redistribution licence inferred."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+    "history": [
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+        "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/measure-units-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+        "note": "No human or target-learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-UNIT-05",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "units.svg",
+        "sha256": "56322c724018316ec33bd2f5865905cfb06f6daade01c0f277db5c96a52ddc22"
+      },
+      {
+        "path": "shared/aava/map.png",
+        "sha256": "49b47a345fa26f9017acb1672d1b7d6d4fe0dcd511e756c693b731269579ebe9"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.bipm.org/en/web/guest/publications/si-brochure",
+        "title": "The International System of Units —9th edition,2026",
+        "organization": "BIPM",
+        "accessed": "2026-10-29",
+        "treatment": "Primary-source skill-cluster comparison.",
+        "adopted": "Verified standard time factors; all domain/representation calculations derive from them.",
+        "rejected": "Do not treat accelerated unit regrouping as an actual hour experienced.",
+        "limitations": "A mathematical reference, not pedagogy/efficacy proof. Finnish vrk is display wording; internal unit d.",
+        "usageRestrictions": "Official publication page identifies CC BY4.0; original diagrams and prose, attribution/link retained."
+      },
+      {
+        "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+        "title": "Mathematics programmes of study",
+        "organization": "Department for Education",
+        "accessed": "2026-10-29",
+        "treatment": "Primary-source skill-cluster comparison.",
+        "adopted": "One duration, different standard units; visible grouping and practical purpose.",
+        "rejected": "No mandatory clockface/decimal assumptions imported from the wider English programme.",
+        "limitations": "Foreign curriculum comparison, not Finnish source wording or age equivalence.",
+        "usageRestrictions": "Conceptual comparison only; no protected prose/figures copied."
+      },
+      {
+        "url": "https://nrich.maths.org/problems/timing",
+        "title": "Timing — Age7–11",
+        "organization": "University of Cambridge / NRICH",
+        "accessed": "2026-10-29",
+        "treatment": "Primary-source skill-cluster comparison.",
+        "adopted": "Meaningful purpose for time reasoning, with explicit support.",
+        "rejected": "Reject clock-offset/calendar puzzles as the novice default; too many additional assumptions for this unit lesson.",
+        "limitations": "Comparable task examined/rejected in part; not an efficacy evaluation or source for exact local sequence.",
+        "usageRestrictions": "Cambridge copyright; no wording/figures copied or redistribution licence inferred."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+        "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/measure-units-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+        "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/measure-units-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+        "note": "No human or target-learner validation performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-UNIT-05",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "sourceFiles": [
+        "src/content/saari1.ts:936-1000",
+        "src/content/unitanim.ts:147-228",
+        "src/content/goals.ts:83",
+        "src/content/families.ts:91-93",
+        "src/content/index.ts",
+        "audit/LESSON_AUDIT.md:134,741-743",
+        "src/engine/types.ts"
+      ],
+      "families": [
+        "hmin",
+        "mins",
+        "mixed",
+        "back",
+        "day",
+        "hhmm",
+        "clock transfer"
+      ],
+      "inherited": "Standard60/24 factors, mixed/reverse grouping, decimal-minute contrast and ferry context.",
+      "corrected": "Audit real-time claim replaced by explicit accelerated clock semantics; displayed answer drives checking, no unsupported unit/case fallback.",
+      "extended": "Same-duration nonnormalized feedback, bounded reversible unit notation model, separate optional digital-clock bridge.",
+      "state": "comparison_authored_review_pending",
+      "reconciliation": "alignment.md"
+    },
+    "planning": {
+      "gradeBand": "3-6",
+      "role": "atomic",
+      "teacherObjective": "Aikayksiköiden muuntaminen",
+      "childGoal": "Ilmaisen saman keston eri aikayksiköillä.",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-TIME-03"
+          ],
+          "rationale": "Aikayksiköiden suhteiden merkitys on ydin; operaatio määräytyy tehtävästä."
+        }
+      ],
+      "strongSupport": [
+        {
+          "id": "M-MUL-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Aikayksikkömuunnoksessa käytettävä operaatio riippuu muunnossuunnasta."
+        },
+        {
+          "id": "M-DIV-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Aikayksikkömuunnoksessa käytettävä operaatio riippuu muunnossuunnasta."
+        }
+      ],
+      "dynamicPrerequisiteRule": "requires_multiplication_or_division_according_to_conversion_direction",
+      "assumed": "Qualitative/standard-second duration required. Operation support depends on conversion direction; grouping/addition model supplies bridge without a new global hardgate.",
+      "coTaught": [
+        "Digital time notation introduced only in optional transfer (Lite assumesM-TIME-02); no frozen edge added."
+      ],
+      "scope": "Seconds/minutes/hours/day-unit, normalized mixed durations; optional same-day ferry clock bridge. No calendar/DST model or general decimal assessment.",
+      "evidenceLimits": "Checked typed representation of given situations; no formal independent/retained mastery, physical timing proficiency or personal history.",
+      "sourceBasis": "assessment_refined",
+      "curriculumVsDesign": "Inherited OPH registry references; foreign sources contextual, exact lesson/story/ranges/playback are project decisions.",
+      "assetProvenance": "Original SVG/clock/unit renderer; supplied Aava map PNG unchanged. Existing public licence/release holds retained.",
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb"
+    },
+    "extensions": {
+      "productionBatch": "B06",
+      "simulationType": "duration_unit_regrouping_and_explicit_accelerated_clock",
+      "humanReview": "not_performed",
+      "timingSemantics": "Grouping animation transforms notation, not elapsed time. Separate optionalclock:10modelmin/1playbacks, step5modelmin; stops30min, pauseboth/noautoplayresume.",
+      "modelRange": {
+        "hours": [
+          0,
+          3
+        ],
+        "extraMinutes": [
+          0,
+          59
+        ]
+      },
+      "informationalMetadata": "Executable truth lives in the source-owned module and exact revision; classification/range record describes that implementation, not a dynamic external model declaration."
+    },
+    "contentHash": "1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+    "contentRevision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+      "history": [
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+          "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/measure-units-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+          "note": "No human or target-learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@1f00d59647cd28beff48bb56a8b31ed14876c0d43b731b2f0c57a132532286f2",
+          "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/measure-units-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+        }
+      ]
+    }
+  },
+  "outputHash": "322abe0993fa80e7114771720eb410e2811e950277d469eb1a709c43190ea008",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "322abe0993fa80e7114771720eb410e2811e950277d469eb1a709c43190ea008",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

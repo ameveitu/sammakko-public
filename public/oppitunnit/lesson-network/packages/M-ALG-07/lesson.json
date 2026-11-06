@@ -1,0 +1,593 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-ALG-07",
+  "revision": 15,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "example1.svg",
+      "sha256": "f615aef366586688922ed588376c6e0b26f9db4ebcc4304e636f29111533e589"
+    },
+    {
+      "path": "example2.svg",
+      "sha256": "4273d879650c46846a35c81464963ac7447fa30a228baeda79043f1d1ece1b0c"
+    },
+    {
+      "path": "example3.svg",
+      "sha256": "ee9cc0bf6dabe3a4917c7987d1e5b9a6c4d874955b6571f2daeaec50c6536fa4"
+    },
+    {
+      "path": "initial.svg",
+      "sha256": "6fe9d0677db24591292d9441b7bc8c309c51f54008f8810c2e5f874b48aab813"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "d657489ed5ec9087e574e0e33902d754f35737aa9db7e01695a8ab6511ab0337"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.mathematicshub.edu.au/planning-tool/7/algebra/linear-expressions-and-equations/",
+      "title": "Linear expressions and equations: Year7 planning tool",
+      "organization": "Education Services Australia / Mathematics Hub",
+      "accessed": "2026-10-29",
+      "retrieval": "Primary HTML explanation, misconceptions and home activities read; linked videos/PDF/tools not executed.",
+      "adopted": "Quantities before symbolic operations; balance for nonnegative physical analogies; undo operations and independently verify by substitution.",
+      "rejected": "Do not import natural-number-only domain into signed Lite solving; explicit nonzero condition added. Historical marketplace narrative/extension typography not reproduced. No copied tasks/prose/figures or Finnish curriculum/efficacy claim.",
+      "licence": "Commonwealth CC BY4.0 unless otherwise indicated; logos/trademarks and third-party material excluded.",
+      "licenceURL": "https://www.mathematicshub.edu.au/terms-of-use/"
+    },
+    {
+      "url": "https://tasks.illustrativemathematics.org/content-standards/6/EE/B/5",
+      "title": "6.EE.B.5: solutions and substitution",
+      "organization": "Illustrative Mathematics",
+      "accessed": "2026-10-29",
+      "retrieval": "Primary standard and exact page rights footer read; linked task ZIP not downloaded.",
+      "adopted": "Test a proposed value in both sides of the original equation; candidate testing is distinct from solving.",
+      "rejected": "No translated task/prose or copied figure. Not a Finnish age mapping or learner validation.",
+      "licence": "CC BY-NC-SA4.0 International, exact page footer; no publication/licence clearance.",
+      "licenceURL": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    {
+      "url": "https://tasks.illustrativemathematics.org/content-standards/tasks/613",
+      "title": "Same solutions?",
+      "organization": "Illustrative Mathematics",
+      "accessed": "2026-10-29",
+      "retrieval": "Primary task/commentary/solutions and rights footer read.",
+      "adopted": "Compare solution sets and reversible transformations; distinguish a successful substitution from general equivalence.",
+      "rejected": "New Finnish situations/equations/vectors; no task list/solution table copied. /pages/about inaccessible; rights use retrieved specific footer. No efficacy claim.",
+      "licence": "CC BY-NC-SA4.0 International, exact page footer.",
+      "licenceURL": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@f75719226d0a42e6161d0d1cda42734b5cf252a82a204d8f3181ba93db13f32a",
+      "note": "B14 Newton author QA is not independent approval. Descartes different-author review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@f75719226d0a42e6161d0d1cda42734b5cf252a82a204d8f3181ba93db13f32a",
+      "note": "B14 Newton author QA is not independent approval. Descartes different-author review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@f75719226d0a42e6161d0d1cda42734b5cf252a82a204d8f3181ba93db13f32a",
+      "note": "Not performed; no learner/efficacy/manual acceptance."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@04a7ef89aee64d260b0c635c4e32f847ebf6f246524143bcec388d3c6f80adf4",
+      "note": "B14 per-host sibling root r2; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@04a7ef89aee64d260b0c635c4e32f847ebf6f246524143bcec388d3c6f80adf4",
+      "note": "B14 per-host sibling root r2; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@04a7ef89aee64d260b0c635c4e32f847ebf6f246524143bcec388d3c6f80adf4",
+      "note": "No human review performed; root repair is technical author QA."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@0d0cceeaaa85c47609d22fb10c1dc93fb99f0b8b579cdcbe8214cfb854b37cfb",
+      "note": "B14 current-model/transform readback and documented nesting r3; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@0d0cceeaaa85c47609d22fb10c1dc93fb99f0b8b579cdcbe8214cfb854b37cfb",
+      "note": "B14 current-model/transform readback and documented nesting r3; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@0d0cceeaaa85c47609d22fb10c1dc93fb99f0b8b579cdcbe8214cfb854b37cfb",
+      "note": "No human review performed; root repair is technical author QA."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@0d0cceeaaa85c47609d22fb10c1dc93fb99f0b8b579cdcbe8214cfb854b37cfb",
+      "note": "Independent B14 Descartes source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/Descartes-on-Newton/current-r3/ready.json. Technical synthetic scope; not learner validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@0d0cceeaaa85c47609d22fb10c1dc93fb99f0b8b579cdcbe8214cfb854b37cfb",
+      "note": "Independent B14 Descartes canonical/Lite/source boundaries reviewed for current revision; frozen roles/prerequisite groups preserved. lesson-network/evidence/production/B14/reviews/Descartes-on-Newton/current-r3/ready.json"
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@0d0cceeaaa85c47609d22fb10c1dc93fb99f0b8b579cdcbe8214cfb854b37cfb",
+      "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@3cb7f41b020092cb48cf659b44a41b1dce4d2280a55cb25306dd8f846f0b30ff",
+      "note": "LR04-B02: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@3cb7f41b020092cb48cf659b44a41b1dce4d2280a55cb25306dd8f846f0b30ff",
+      "note": "LR04-B02: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@3cb7f41b020092cb48cf659b44a41b1dce4d2280a55cb25306dd8f846f0b30ff",
+      "note": "LR04-B02: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@f701dc9d8d317394ced3dd5b0b48c5846df5edd629b4e63d09bbc46c49600d14",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@f701dc9d8d317394ced3dd5b0b48c5846df5edd629b4e63d09bbc46c49600d14",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@f701dc9d8d317394ced3dd5b0b48c5846df5edd629b4e63d09bbc46c49600d14",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@0fd9aea67e086e0abb7f501391a971aa3adf6baee6f3290f172074011b4ea5b4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@0fd9aea67e086e0abb7f501391a971aa3adf6baee6f3290f172074011b4ea5b4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@0fd9aea67e086e0abb7f501391a971aa3adf6baee6f3290f172074011b4ea5b4",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@6fd13d31a12eb7c2abafa1c8f92e00d2bd2f60e2f438d21437faf366ab6cb883",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@6fd13d31a12eb7c2abafa1c8f92e00d2bd2f60e2f438d21437faf366ab6cb883",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@6fd13d31a12eb7c2abafa1c8f92e00d2bd2f60e2f438d21437faf366ab6cb883",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@7dd496cfcbbaf71eb470747275705eb408d77d8528944965a788b2373833a9d9",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@7dd496cfcbbaf71eb470747275705eb408d77d8528944965a788b2373833a9d9",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@7dd496cfcbbaf71eb470747275705eb408d77d8528944965a788b2373833a9d9",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@73ea98567789d9d757c3a5165560fa9ec3cea95d2ad69a14e6388d2c86d3d76a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@73ea98567789d9d757c3a5165560fa9ec3cea95d2ad69a14e6388d2c86d3d76a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@73ea98567789d9d757c3a5165560fa9ec3cea95d2ad69a14e6388d2c86d3d76a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@b27cc4cb4faf9f0e1280ed9580b07fd0f6e2e476614b8e9fc96c4864dbfcf7ea",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@b27cc4cb4faf9f0e1280ed9580b07fd0f6e2e476614b8e9fc96c4864dbfcf7ea",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@b27cc4cb4faf9f0e1280ed9580b07fd0f6e2e476614b8e9fc96c4864dbfcf7ea",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@9e4f893210a24e97f3ac72752ae1971ba88e28fcf90451ed1072a718af21ced7",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@9e4f893210a24e97f3ac72752ae1971ba88e28fcf90451ed1072a718af21ced7",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@9e4f893210a24e97f3ac72752ae1971ba88e28fcf90451ed1072a718af21ced7",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@eeb1f4957ae89c7bbdab4c584fa46719bed8dfe0dc4bfd0c5d11c29e4e150c2a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@eeb1f4957ae89c7bbdab4c584fa46719bed8dfe0dc4bfd0c5d11c29e4e150c2a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@eeb1f4957ae89c7bbdab4c584fa46719bed8dfe0dc4bfd0c5d11c29e4e150c2a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@1acf3cae0db05be8e2d27ab943ecf2a7b42d4f76578f87e57cc8abeee6056ff4",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@1acf3cae0db05be8e2d27ab943ecf2a7b42d4f76578f87e57cc8abeee6056ff4",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Sama ehdotus sijoitetaan jokaiseen x:ään ja molemmat alkuperäiset puolet lasketaan. Malli, avattavat ratkaistut esimerkit ja oma vasen/oikea/kyllä-ei-vastaus pysyvät erillisinä. Väärä ehdotus ei muuta ehtoa, eikä 3x tarkoita numeroiden liimaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@1acf3cae0db05be8e2d27ab943ecf2a7b42d4f76578f87e57cc8abeee6056ff4",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M-ALG-07",
+    "sourceBuild": "audit1-2026-10-28",
+    "sourceHashes": {
+      "src/content/written.ts": "58ee93036fb7417e8324072db5be810426a99db346c23ef0651c9525a9bfd0c6",
+      "src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+      "src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+      "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+      "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+    },
+    "actualTaskFamilies": {
+      "balance": {
+        "kind": "choice",
+        "seed": 1,
+        "phase": "guided",
+        "prompt": "Pussissa on ehkä 4 painoyksikköä. Pysyykö vaaka silloin tasapainossa?",
+        "hint": "Laita 4 pussin paikalle: 4 + 3 = ?",
+        "explanation": "4 + 3 = 7 ≠ 5. Pussissa on 2.",
+        "registry": {
+          "node": "M-ALG-07",
+          "tag": "balance",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [
+            "M-MULTAB-ALL"
+          ],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-MULTAB-ALL"
+          ],
+          "source": [
+            "families.ts M-ALG-07/*"
+          ]
+        }
+      },
+      "steer": {
+        "kind": "sort",
+        "seed": 4,
+        "phase": "guided",
+        "prompt": "Yhtälö x + 4 = 9. Lajittele kokeilut: liian pieni, ratkaisu vai liian suuri?",
+        "hint": "Laske jokaiselle x + 4 ja vertaa lukuun 9.",
+        "explanation": "9 + 4 = 13, 5 + 4 = 9, 6 + 4 = 10, 4 + 4 = 8. Ratkaisu on 5.",
+        "registry": {
+          "node": "M-ALG-07",
+          "tag": "steer",
+          "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+          "assumed": [
+            "M-MULTAB-ALL"
+          ],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-MULTAB-ALL"
+          ],
+          "source": [
+            "families.ts M-ALG-07/*"
+          ]
+        }
+      },
+      "test": {
+        "kind": "choice",
+        "seed": 7,
+        "phase": "guided",
+        "prompt": "Onko x = 3 yhtälön x + 9 = 11 ratkaisu?",
+        "hint": "Laske 3 + 9.",
+        "explanation": "3 + 9 = 12 ≠ 11. Ratkaisu on 2.",
+        "registry": {
+          "node": "M-ALG-07",
+          "tag": "test",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [
+            "M-MULTAB-ALL"
+          ],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-MULTAB-ALL"
+          ],
+          "source": [
+            "families.ts M-ALG-07/*"
+          ]
+        }
+      },
+      "which": {
+        "kind": "choice",
+        "seed": 12,
+        "phase": "guided",
+        "prompt": "Mikä luku toteuttaa yhtälön 3 × □ = 21? Kokeile jokaista.",
+        "hint": "Kerro jokainen vaihtoehto luvulla 3. Mikä antaa 21?",
+        "explanation": "3 × 7 = 21 ✓",
+        "registry": {
+          "node": "M-ALG-07",
+          "tag": "which",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [
+            "M-MULTAB-ALL"
+          ],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-MULTAB-ALL"
+          ],
+          "source": [
+            "families.ts M-ALG-07/*"
+          ]
+        }
+      },
+      "transfer": {
+        "kind": "choice",
+        "seed": 1,
+        "phase": "transfer",
+        "prompt": "Loikka väittää, että x = 7 ratkaisee yhtälön 2x + 3 = 17. Pitääkö väite paikkansa?",
+        "hint": "Sijoita x = 7: laske 2 · 7 + 3.",
+        "explanation": "2 · 7 + 3 = 17 ✓",
+        "registry": {
+          "node": "M-ALG-07",
+          "tag": "transfer",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [
+            "M-MULTAB-ALL"
+          ],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M-MULTAB-ALL"
+          ],
+          "source": [
+            "families.ts M-ALG-07/*"
+          ]
+        }
+      }
+    },
+    "demoSummaries": [
+      {
+        "say": "Yhtälö: pussi plus kolme on kahdeksan. Kokeillaan kahta: kaksi plus kolme on viisi, liian kevyt, joten kokeillaan isompaa. Seitsemän plus kolme on kymmenen, liian painava. Viisi plus kolme on kahdeksan: vaaka on suorassa, joten viisi on ratkaisu. Taulukko muistaa jokaisen kokeilun.",
+        "kind": "animation",
+        "duration": 11.3
+      },
+      {
+        "say": "Pussi plus kuusi on neljätoista. Neljä on liian vähän, kymmenen liikaa, yhdeksän vielä liikaa. Kahdeksan plus kuusi on neljätoista: ratkaisu.",
+        "kind": "animation",
+        "duration": 13.5
+      }
+    ],
+    "reconciliation": "Actual test/balance/which/steer and transfer distinguish testing a candidate from finding one. Our free left/right totals plus yes/no make substitution explicit, one free-number task retains finding a solution. Original guessScene trials retained conceptually, no imposed taps/audio/naming. Does not infer independent multiplication mastery from supplied support.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+        "src/content/algebra79.ts": "dba08bcb491473c1e29dde39e66c894631fc4ad96ddee5339eef2a2dbf7a1b6b",
+        "src/content/algebra79b.ts": "2cb8b4e292009053a217f710c067ef8fb9b7b33a3205c127fe622f3886e7ac3b",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/written.ts": "4e78786b0036a1a1b5a27efea6923facb0dbba72ecfa4191e75c4b863bc9278e",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M-ALG-07",
+      "subject": "mathematics",
+      "grade_band": "3-6",
+      "topic_area": "Algebra",
+      "parent_concept": "Yhtälö",
+      "title": "Ehdotetun ratkaisun testaaminen yhtälössä",
+      "short_description": "Ehdotetun ratkaisun testaaminen yhtälössä",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL3-6-S3"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "procedure",
+      "relations": [
+        {
+          "id": "M-ALG-06",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-ALG-06 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-ALG-06"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Algebra",
+        "Yhtälö"
+      ]
+    },
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-ALG-06"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "role": "atomic",
+    "gradeBand": "3-6",
+    "teacherObjective": "Ehdotetun ratkaisun testaaminen yhtälössä",
+    "studentObjective": "Aava ehdottaa lukua. Sijoita se x:n paikalle ja vertaa yhtälön puolia.",
+    "additionalHardGates": [],
+    "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "crossKCAssumptions": "Actual canonical required groups only. Supplied arithmetic/geometry support explained; no new hardgate. Dynamic arithmetic rule remains as actualregistry.",
+    "entry": "Compact body; unchanged shared presentation chrome; model/state/action within844 design target.",
+    "evidenceLimits": "Local current mathematical response only; no independent/retained/formal mastery or efficacy/human approval."
+  },
+  "extensions": {
+    "productionBatch": "B14",
+    "author": "Newton",
+    "humanReview": "not_performed",
+    "independentReview": "pending_Descartes",
+    "simulationType": "substitute_exact_affine_equation_steps",
+    "limits": "Exact BigInt rational affine math; reject variable/zero division and nonlinear terms. WeakMap perroot cleanup/reenable. input/change/Check current visible values. No runtime oracle.",
+    "assetProvenance": "Supplied namedPNG unchanged; own original mathSVG.",
+    "sourcePreview": "Author isolated source-only fullcurrent shell designQA; not combined163 actualnative.",
+    "rootSelectionRepair": "B14 P2: own loader host uses preceding article; per-root owner unchanged, sibling roots independent. Native red/green regression. No domain/body/CSS/asset change.",
+    "currentVisibleReadbackRepair": "R3: all dependent actions and lifecycle pause/resume reconcile selected model; optional transform retires stale output when its own inputs change. Independent valid practice feedback unaffected. Nesting guard supports documented12 parentheses, rejects13. No math-answer/body/CSS/SVG change.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B02",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "status": "PASS",
+  "kind": "POSTSEAL_B15_FRESH_RECONSTRUCTION_NOT_ORIGINAL_ZIP_CONTENT",
+  "inventory": {
+    "archive": "/Users/aikuiset/Documents/Codex/2026-10-24/e/outputs/Sammakko/exports/Sammakko_181_B15_175of181.zip",
+    "sha256": "62cf3babbff740a91b8798d4600f67aa84b60dcb26a67db8b5903d236f4a95b6",
+    "sourceRevision": "6fadf8463caf7ef44069933f641d5fc8c02b7906",
+    "zipBytes": 51943718,
+    "uncompressedBytes": 151564107,
+    "compressedMemberBytes": 49186242,
+    "historicalEvidenceIndex": "PASS",
+    "compactTargetBytes": 50000000,
+    "compactTargetMet": false,
+    "warning100MB": false,
+    "members": 12619,
+    "manifestFiles": 12617,
+    "compressionMethods": {
+      "8": 12619
+    },
+    "CRC": "PASS",
+    "allManifestSHA256": "PASS",
+    "safePathsAndEntryTypes": "PASS",
+    "manifestSHA256": "4ed7c8653aaa3a45fa47ac31c7da95188a13617b02e11d02b43e6dcb9d7271a3",
+    "historicalIndexSHA256": "cda5584c14eb0f1392e814412e9a81d53f3b5a6a506dfe33266bc1d2426d2370"
+  },
+  "sourceRevision": "6fadf8463caf7ef44069933f641d5fc8c02b7906",
+  "archive": "/Users/aikuiset/Documents/Codex/2026-10-24/e/outputs/Sammakko/exports/Sammakko_181_B15_175of181.zip",
+  "extracted": "/private/tmp/sammakko-B15-reconstruction-Feynman-r2/extracted",
+  "commands": [
+    {
+      "tag": "00-no-original-source-probe",
+      "command": [
+        "/usr/local/bin/node",
+        "--input-type=module",
+        "-e",
+        "import fs from 'node:fs';import assert from 'node:assert/strict';const roots=JSON.parse(process.argv[1]);for(const root of roots){let denied=false;try{fs.readdirSync(root);}catch(e){denied=['EACCES','EPERM'].includes(e.code);}assert(denied,'Original source read was not denied: '+root);}console.log(JSON.stringify({status:'PASS',originalSourceReadDenied:true,roots}));",
+        "[\"/Users/aikuiset/Documents/Codex/2026-10-24/e/outputs/Sammakko\", \"/Users/aikuiset/Sammakko/Sammakko_Codex_Bootstrap_45KC_v0.3\"]"
+      ],
+      "sandboxProfileSHA256": "f625017c471cc59e2bd99a92470dfb75db42fc0e1bf2d39ab5f77d3e53de3f6d",
+      "exitCode": 0,
+      "seconds": 0.037,
+      "stdout": "00-no-original-source-probe-stdout.txt",
+      "stdoutSHA256": "3ff4c27d941e0024289e56b9712ab04fa3726b2eccd73d806ff62160feeb94b5",
+      "stderr": "00-no-original-source-probe-stderr.txt",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "tag": "01-node-version",
+      "command": [
+        "/usr/local/bin/node",
+        "--version"
+      ],
+      "sandboxProfileSHA256": "f625017c471cc59e2bd99a92470dfb75db42fc0e1bf2d39ab5f77d3e53de3f6d",
+      "exitCode": 0,
+      "seconds": 0.019,
+      "stdout": "01-node-version-stdout.txt",
+      "stdoutSHA256": "66067cd148ad9719b8fd48e9e233a4dcfa29b9a5e449f9463f9f6b0fb2c58ada",
+      "stderr": "01-node-version-stderr.txt",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "tag": "02-npm-version",
+      "command": [
+        "/usr/local/bin/node",
+        "/usr/local/lib/node_modules/npm/bin/npm-cli.js",
+        "--version"
+      ],
+      "sandboxProfileSHA256": "f625017c471cc59e2bd99a92470dfb75db42fc0e1bf2d39ab5f77d3e53de3f6d",
+      "exitCode": 0,
+      "seconds": 0.092,
+      "stdout": "02-npm-version-stdout.txt",
+      "stdoutSHA256": "d9f29f5aab43c8c1a8d6acc856e258b89735f541aa5e1f07b39a62f28bfa8d06",
+      "stderr": "02-npm-version-stderr.txt",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "tag": "03-offline-ci",
+      "command": [
+        "/usr/local/bin/node",
+        "/usr/local/lib/node_modules/npm/bin/npm-cli.js",
+        "ci",
+        "--offline",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "sandboxProfileSHA256": "f625017c471cc59e2bd99a92470dfb75db42fc0e1bf2d39ab5f77d3e53de3f6d",
+      "exitCode": 0,
+      "seconds": 1.349,
+      "stdout": "03-offline-ci-stdout.txt",
+      "stdoutSHA256": "699489cec72a4e5386728922925aaa0c475f1b95fe5c742d8099d3dbed710492",
+      "stderr": "03-offline-ci-stderr.txt",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "tag": "04-original-source-proof",
+      "command": [
+        "/usr/local/bin/node",
+        "--input-type=module",
+        "-e",
+        "import fs from 'node:fs';import assert from 'node:assert/strict';import{verifyValidationReceipt}from './lesson-network/validation-receipt.mjs';const p=JSON.parse(fs.readFileSync(process.argv[1]));assert(verifyValidationReceipt(process.cwd(),p));console.log(JSON.stringify({status:'PASS_REUSED_EXECUTION_SOURCE_HASHES_VERIFIED',counts:p.counts,contentRevisions:p.contentRevisions,newExecution:false}));",
+        "lesson-network/evidence/production/B15/validation/current-postreview-r1/receipt.json"
+      ],
+      "sandboxProfileSHA256": "f625017c471cc59e2bd99a92470dfb75db42fc0e1bf2d39ab5f77d3e53de3f6d",
+      "exitCode": 0,
+      "seconds": 0.207,
+      "stdout": "04-original-source-proof-stdout.txt",
+      "stdoutSHA256": "7225773e4cc6a87a932eda1ce574afdeb939a272e6aa5d1fcfe8b0f07859a1c2",
+      "stderr": "04-original-source-proof-stderr.txt",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "tag": "05-normal690-build",
+      "command": [
+        "/usr/local/bin/node",
+        "lesson-network/build.mjs"
+      ],
+      "sandboxProfileSHA256": "f625017c471cc59e2bd99a92470dfb75db42fc0e1bf2d39ab5f77d3e53de3f6d",
+      "exitCode": 0,
+      "seconds": 14.604,
+      "stdout": "05-normal690-build-stdout.txt",
+      "stdoutSHA256": "7e86f8fdd5c0419ff12a7931ed0dd9ce40d85bf8bc265acdf3e48fdfe170950c",
+      "stderr": "05-normal690-build-stderr.txt",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "tag": "06-normal690-verify",
+      "command": [
+        "/usr/local/bin/node",
+        "lesson-network/verify.mjs"
+      ],
+      "sandboxProfileSHA256": "f625017c471cc59e2bd99a92470dfb75db42fc0e1bf2d39ab5f77d3e53de3f6d",
+      "exitCode": 0,
+      "seconds": 7.54,
+      "stdout": "06-normal690-verify-stdout.txt",
+      "stdoutSHA256": "9b1565265e3e84d027d58aa5d80fba4501188d03c06c15f5aea8735f803b0fa6",
+      "stderr": "06-normal690-verify-stderr.txt",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "tag": "07-new12-dependency-smoke",
+      "command": [
+        "/usr/local/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "lesson-network/packages/PHY79-ACCEL-MOTION-GRAPH/tests.mjs",
+        "lesson-network/packages/PHY79-ACCEL-VT-GRAPH/tests.mjs",
+        "lesson-network/packages/PHY79-SPEED-MIXED/tests.mjs",
+        "lesson-network/packages/PHY79-SPEED-REARR/tests.mjs",
+        "lesson-network/packages/M-ALG-08/tests.mjs",
+        "lesson-network/packages/M-DEC-08/tests.mjs",
+        "lesson-network/packages/M-DEC-09/tests.mjs",
+        "lesson-network/packages/M-DEC-ADD/tests.mjs",
+        "lesson-network/packages/M-WRADD/tests.mjs",
+        "lesson-network/packages/M-WRSUB/tests.mjs",
+        "lesson-network/packages/M79-INT-ADD/tests.mjs",
+        "lesson-network/packages/M79-INT-DIV/tests.mjs"
+      ],
+      "sandboxProfileSHA256": "f625017c471cc59e2bd99a92470dfb75db42fc0e1bf2d39ab5f77d3e53de3f6d",
+      "exitCode": 0,
+      "seconds": 0.749,
+      "stdout": "07-new12-dependency-smoke-stdout.txt",
+      "stdoutSHA256": "3fc91fb6d9333bf0ef6edb046fd598b3040938f950500f8939d9319d4769a695",
+      "stderr": "07-new12-dependency-smoke-stderr.txt",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "tag": "08-status175",
+      "command": [
+        "/usr/local/bin/node",
+        "lesson-network/production-status.mjs"
+      ],
+      "sandboxProfileSHA256": "f625017c471cc59e2bd99a92470dfb75db42fc0e1bf2d39ab5f77d3e53de3f6d",
+      "exitCode": 0,
+      "seconds": 5.1,
+      "stdout": "08-status175-stdout.txt",
+      "stdoutSHA256": "efe8d4aab7df634b55d8ff344519ab0d0bed3847c94b077d9ace741bdc7c93b7",
+      "stderr": "08-status175-stderr.txt",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "tag": "09-exporter-tests",
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "lesson-network/test-export.py"
+      ],
+      "sandboxProfileSHA256": "f625017c471cc59e2bd99a92470dfb75db42fc0e1bf2d39ab5f77d3e53de3f6d",
+      "exitCode": 0,
+      "seconds": 0.893,
+      "stdout": "09-exporter-tests-stdout.txt",
+      "stdoutSHA256": "30f35cba4912761da7a060f0b078074cbaa48dbe1216321632f7eb7d6dfeabd3",
+      "stderr": "09-exporter-tests-stderr.txt",
+      "stderrSHA256": "0073358b511ad14729bba1673d39686675a6e62f82c9d5a580d72cbb22df0d54"
+    },
+    {
+      "tag": "10-postbuild-original-source-proof",
+      "command": [
+        "/usr/local/bin/node",
+        "--input-type=module",
+        "-e",
+        "import fs from 'node:fs';import assert from 'node:assert/strict';import{verifyValidationReceipt}from './lesson-network/validation-receipt.mjs';const p=JSON.parse(fs.readFileSync(process.argv[1]));assert(verifyValidationReceipt(process.cwd(),p));console.log(JSON.stringify({status:'PASS_REUSED_EXECUTION_SOURCE_HASHES_VERIFIED',counts:p.counts,contentRevisions:p.contentRevisions,newExecution:false}));",
+        "lesson-network/evidence/production/B15/validation/current-postreview-r1/receipt.json"
+      ],
+      "sandboxProfileSHA256": "f625017c471cc59e2bd99a92470dfb75db42fc0e1bf2d39ab5f77d3e53de3f6d",
+      "exitCode": 0,
+      "seconds": 0.208,
+      "stdout": "10-postbuild-original-source-proof-stdout.txt",
+      "stdoutSHA256": "7225773e4cc6a87a932eda1ce574afdeb939a272e6aa5d1fcfe8b0f07859a1c2",
+      "stderr": "10-postbuild-original-source-proof-stderr.txt",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "nodeVersion": "v24.14.0",
+  "npmVersion": "11.9.0",
+  "npmOfflineCachedLockInstall": true,
+  "originalSourceReadDenied": true,
+  "networkDenied": true,
+  "forbiddenSourceRoots": [
+    "/Users/aikuiset/Documents/Codex/2026-10-24/e/outputs/Sammakko",
+    "/Users/aikuiset/Sammakko/Sammakko_Codex_Bootstrap_45KC_v0.3"
+  ],
+  "originalSourceProof": {
+    "path": "lesson-network/evidence/production/B15/validation/current-postreview-r1/receipt.json",
+    "SHA256": "abc51c306145969ce71d5aa6bf7c113088ae100628de383f2fb3a2112786780e",
+    "counts": {
+      "tests": 970,
+      "pass": 970,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "freshExecution": false
+  },
+  "freshNew12DependencyTests": {
+    "tests": 111,
+    "pass": 111,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "expectedNewCountBasis": "Finalfullproof minus B14fullproof; oldtestfile+guardbytes verified unchanged.",
+  "runtimeAndTestFixtureInputs": {
+    "status": "PASS",
+    "allPackageAndFixtureDeclaredInputsPresent": true
+  },
+  "technicalChecked": 175,
+  "remaining": 6,
+  "networkVerified": 690,
+  "networkChecks": 366734,
+  "exporterTests": 5,
+  "initialLearnerHTTPTransfer": "UNMEASURED",
+  "fullOfflineInstallation": "UNMEASURED",
+  "scope": "Cached offline npmci; only extractedsource, OSdenies originalrepo/network; fresh normal690 build/verify. Original fulltestexecution reused by exact source/stdout/stderr hashes, not repeated. Onlynew12 dependencytests fresh. No browser/content approval/transfer/offline-size claim."
+}

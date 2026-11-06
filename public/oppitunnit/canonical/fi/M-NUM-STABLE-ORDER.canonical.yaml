@@ -1,0 +1,828 @@
+schema_version: 0.1.0
+kc_id: M-NUM-STABLE-ORDER
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Lukusanojen käyttäminen vakaassa järjestyksessä
+  subject: mathematics
+  grade_band: 1-2
+  mastery_role: atomic
+  node_kind: foundation
+  concept_path:
+    - Matematiikka
+    - Luvut ja laskutoimitukset
+    - Lukukäsite
+    - Laskemisen periaatteet
+  source_basis: pedagogically_derived
+  curriculum_refs:
+    - OPH-POPS2014-MATH-VL1-2-S2
+  prerequisite_snapshot:
+    hard: []
+    strong: []
+    helpful: []
+teaching_model:
+  learning_goal: Oppilas muodostaa suomenkielisten lukusanojen tavanomaisen järjestyksen yhdestä annettuun
+    loppusanaan. Tässä rajattu itsenäinen ja viivästetty ydinnäyttö kattaa jonon yhdestä kahdeksaan ilman
+    esineiden seurantaa.
+  learner_facing_goal: Osaan rakentaa lukusanat tavalliseen laskemisjärjestykseen yhdestä sovittuun loppusanaan.
+  success_evidence:
+    - Valitsee sanavalikoimasta itse sanat ja muodostaa koko jonon yhdestä kahdeksaan oikeassa järjestyksessä
+      ilman poisjättöjä tai toistoja.
+    - Toistaa täyden jonon itsenäisesti eri tehtäväpohjassa; sanavalikoiman vaihtuva paikka ei muuta
+      sanajärjestystä.
+    - Soveltaa järjestystä siirtotehtävässä jatkamalla annetun sanan neljä jälkeen loppusanaan kahdeksan.
+      Jatko tuottaa count_stable_continuation-näytön, ei täyden jonon count_stable_order-näyttöä.
+    - Muodostaa täyden jonon yhdestä kahdeksaan uudelleen aikaisintaan 24 tunnin kuluttua ilman tukea.
+  core_idea: "Tavallisessa laskemisessa lukusanojen keskinäinen järjestys pysyy samana. Sanavalikoima voi olla
+    eri järjestyksessä kuin rakennettava jono: jokaisen vastaussanan ja sen paikan valitsee oppilas. Tässä
+    tavoitteessa ei lasketa esineitä eikä yhdistetä sanoja numeromerkkeihin."
+  boundaries:
+    in_scope:
+      - Suomenkielisten lukusanojen koostaminen kokonaisesta, toistettavasta sanavalikoimasta yhdestä
+        kymmeneen; ydinnäyttö yhdestä kahdeksaan.
+      - Ohjattu eteneminen lyhyemmästä täydestä jonosta pidempään. Itsenäinen ja viivästetty tavoite pysyy
+        samana myös tukipolulla.
+      - "Rajattu siirtotehtävä: annetun sanan neljä jälkeinen peräkkäinen jakso sanaan kahdeksan. Vastaukseen
+        ei kopioida annettua sanaa."
+    out_of_scope:
+      - Laskettavien esineiden seuraaminen, yksi yhteen -kohdistuksen, kokonaislaskemisen tai kardinaliteetin
+        hallinnan myöntäminen.
+      - Numeromerkit, sanojen kirjoittaminen, oikeinkirjoitus tai puheentunnistus.
+      - Oma-aloitteinen suullinen tuottaminen, ääntäminen, lukusujuvuus tai annetun alkupään muistamisen
+        todistaminen jatkotehtävästä.
+      - Hyppäyslaskeminen, erotukset, laskutoimitukset, lukujonovirheen arviointi toiselle oppijalle tai
+        nopeusvaatimus.
+  prerequisite_assumptions: []
+  conceptual_invariants:
+    - Tavanomainen sanajärjestys on sama riippumatta sanavalikoiman sijainneista.
+    - Koko jonon näytössä aloitetaan yhdestä ja päätetään annettuun sanaan. Annetun sanan jälkeinen jatko on
+      eri näyttölaji.
+    - Sanavalikoiman kuunteleminen ei järjestä sanoja oppilaan puolesta eikä arviointi edellytä sanojen
+      kirjoittamista.
+  likely_confusions:
+    - M-NUM-STABLE-ORDER-HYP-JONO
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+    - DIAGNOSTIC
+    - ORIENT
+    - WORKED_EXAMPLE
+    - GUIDED_PRACTICE
+    - FADED_EXAMPLE
+    - INDEPENDENT_PRACTICE
+    - TRANSFER_CHECK
+    - MASTERY_GATE
+  fast_path:
+    enabled: true
+    diagnostic_requirement: Kaksi eri diagnostista pohjaa tuottaa täyden yhdestä kahdeksaan -jonon itsenäisesti ja
+      count_stable_order-näytön. Jatkotehtävä ei korvaa diagnostista vahvistusta tai itsenäistä ydinminimiä.
+    transfer_confirmation: required
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Selvitä ennen mallia, pystyykö oppilas rakentamaan kokonaisen tavallisen lukusanajonon eri
+        sanavalikoimajärjestyksissä.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-STABLE-ORDER-DIAG-JONO
+              - M-NUM-STABLE-ORDER-DIAG-UUDELLEEN
+    ORIENT:
+      purpose: Kohdista huomio sanojen keskinäiseen järjestykseen ilman esineitä tai numeroita.
+      blocks:
+        - type: explanatory_text
+          content: Kun sanot laskemisessa lukusanoja, sanat seuraavat toisiaan tutussa järjestyksessä. Nyt harjoitellaan
+            sitä järjestystä. Kuvassa ei ole laskettavia esineitä.
+        - type: explanatory_text
+          content: Voit kuunnella haluamiasi sanoja sanavalikoimasta. Kuuntelu ei lisää sanaa vastaukseen. Lisää itse
+            haluamasi sanat omaan jonoosi.
+    WORKED_EXAMPLE:
+      purpose: Opeta tavallinen järjestys yhdestä neljään ennen ensimmäistä ohjattua pyyntöä. Malli on opetusta, ei
+        itsenäistä näyttöä.
+      blocks:
+        - type: explanatory_text
+          content: Tämä on opetuksen malli. Katso sanojen järjestystä. Voit kuunnella samoja sanoja paikallisesta
+            sanavalikoimasta erikseen; kuuntelu ei lisää niitä vastaukseen. Tässä ei arvioida ääntämistä tai
+            ulkoa puhumista.
+        - type: explanatory_text
+          content: >-
+            Aloitamme sanoista yksi, kaksi, kolme. Sanan yksi jälkeen tulee kaksi. Sanan kaksi jälkeen tulee
+            kolme.
+
+
+            Jono on: yksi, kaksi, kolme.
+        - type: explanatory_text
+          content: >-
+            Pidennetään jonoa. Sanan kolme jälkeen tulee neljä.
+
+
+            Koko tämän harjoituksen jono on: yksi, kaksi, kolme, neljä.
+
+
+            Seuraavassa ohjatussa tehtävässä saat rakentaa tämän jonon itse. Vastauspaikkoihin ei lisätä
+            sanoja puolestasi.
+    GUIDED_PRACTICE:
+      purpose: Rakenna itse opetettu täydellinen jono yhdestä neljään. Ohjattu vastaus pysyy avustettuna eikä tuota
+        itsenäistä hallintanäyttöä.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-STABLE-ORDER-GUIDED-LYHYT
+    FADED_EXAMPLE:
+      purpose: Opeta peräkkäin jatkot neljästä kuuteen ja kuudesta kahdeksaan, näytä koko arvioitava jono ja anna
+        ohjatut harjoitukset ennen itsenäistä tehtävää.
+      blocks:
+        - type: explanatory_text
+          content: >-
+            Tämäkin on opetusta. Äsken opittu alku on yksi, kaksi, kolme, neljä. Sanan neljä jälkeen tulee
+            viisi. Sanan viisi jälkeen tulee kuusi.
+
+
+            Jatko on: viisi, kuusi.
+
+
+            Koko jono yhdestä sanaan kuusi on: yksi, kaksi, kolme, neljä, viisi, kuusi.
+        - type: explanatory_text
+          content: >-
+            Opitaan vielä seuraava pieni jatko. Sanan kuusi jälkeen tulee seitsemän. Sanan seitsemän jälkeen
+            tulee kahdeksan.
+
+
+            Jatko on: seitsemän, kahdeksan.
+
+
+            Koko jono yhdestä sanaan kahdeksan on: yksi, kaksi, kolme, neljä, viisi, kuusi, seitsemän,
+            kahdeksan.
+        - type: comparison
+          content:
+            text: Sama alku säilyy, kun jonon loppuun opitaan seuraavia sanoja. Nämä ovat opetuksen malleja.
+            cases:
+              - "Yhdestä neljään: yksi, kaksi, kolme, neljä."
+              - "Yhdestä kuuteen: yksi, kaksi, kolme, neljä, viisi, kuusi."
+              - "Yhdestä kahdeksaan: yksi, kaksi, kolme, neljä, viisi, kuusi, seitsemän, kahdeksan."
+        - type: explanatory_text
+          content: Harjoittele nyt itse ensin koko jonoa yhdestä kuuteen ja sitten yhdestä kahdeksaan. Sanavalikoima
+            pysyy sekoitettuna, eikä vastaustasi täytetä mallista. Voit kuunnella sen sanoja erikseen. Nämä
+            ovat ohjattuja harjoituksia; itsenäisessä tehtävässä rakennat jonon ilman annettua
+            järjestysmallia.
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-STABLE-ORDER-GUIDED-PIDEMPI
+              - M-NUM-STABLE-ORDER-GUIDED-TAYSJONO
+    INDEPENDENT_PRACTICE:
+      purpose: Varmista täysi yhdestä kahdeksaan -järjestys vähintään kolmella itsenäisellä onnistumisella kahdesta
+        pohjasta.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-STABLE-ORDER-INDEP-RAKENNA
+              - M-NUM-STABLE-ORDER-INDEP-OMA-JONO
+    TRANSFER_CHECK:
+      purpose: Sovella järjestystä annetun myöhemmän sanan jälkeen; älä korvaa täyden jonon näyttöä annetulla
+        alkupäällä.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-STABLE-ORDER-TRANSFER-NELJAN-JALKEEN
+    MASTERY_GATE:
+      purpose: Pohdi sanavalikoiman ja lukusanajonon eroa ilman tekstin automaattista arviointia.
+      blocks:
+        - type: reflection
+          content: Jos sanavalikoiman sanat siirtyvät eri paikkoihin, muuttuuko tavallinen laskemisjärjestys? Miten
+            löysit oman jonosi seuraavan sanan?
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+    fast_path_confirmation_tags:
+      - count_stable_order
+    execution_policy: Kaksi itsenäistä diagnostista onnistumista voi ohittaa opetuksen ja ohjatun harjoittelun.
+      Itsenäiset vähimmäisnäytöt ja siirtotehtävä säilyvät pakollisina.
+    pass_rule: "Kaksi eri diagnostista pohjaa oikein ilman tukea: kummassakin kokonainen tavanomainen jono yhdestä
+      kahdeksaan. Jatkon onnistuminen ei täytä täyden jonon vahvistusehtoa."
+  independent:
+    minimum_successes: 3
+    template_diversity: 2
+    diagnostic_credit:
+      kind: equivalent_count_diagnostics_v1
+      diagnostic_templates: [M-NUM-STABLE-ORDER-DIAG-JONO, M-NUM-STABLE-ORDER-DIAG-UUDELLEEN]
+      independent_templates: [M-NUM-STABLE-ORDER-INDEP-RAKENNA, M-NUM-STABLE-ORDER-INDEP-OMA-JONO]
+    max_supported_attempts_counted: 0
+    required_tags:
+      - count_stable_order
+  transfer:
+    required: true
+    minimum_successes: 1
+    novel_context_required: true
+  delayed:
+    required: true
+    minimum_successes: 2
+    minimum_delay_hours: 24
+    reuse_templates:
+      - M-NUM-STABLE-ORDER-INDEP-RAKENNA
+    required_tags:
+      - count_stable_order
+    required_contexts: []
+    earliest_delay_policy: Aikaisintaan 24 tuntia ensimmäisen hankitun osaamisen jälkeen. Viivästetty
+      alkuperäistehtävä ja uusi itsenäinen ydintehtävän tapaus tarkistavat saman päätavoitteen. Projektin
+      ajoitusvalinta ei ole tutkimuksesta johdettu vakio.
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+    - misconception_id: M-NUM-STABLE-ORDER-HYP-JONO
+      evidence_tags:
+        - count_stable_order
+      rule: Myöhempi itsenäinen onnistuminen tämän tavoitteen kokonaisessa predikaatissa kumoaa tämän
+        tehtäväkohtaisen havaintohypoteesin nykyisessä arviointipolitiikassa. Yksittäisestä virheestä ei
+        päätellä sen syytä tai toisen taidon puutetta.
+items:
+  - id: M-NUM-STABLE-ORDER-DIAG-JONO
+    kc_ids:
+      - M-NUM-STABLE-ORDER
+    purpose: diagnostic
+    response_type: ordering
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Muodosta tavallinen lukusanajono alkaen sanasta yksi ja päättyen sanaan kahdeksan.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: stable_order
+    parameter_model:
+      kind: word_sequence_v1
+      lexicon: fi-1-10-v1
+      start:
+        kind: from_one
+      through: fi-word-8
+      context: lukusanat-alkukartoitus
+    misconception_rules:
+      - misconception_id: M-NUM-STABLE-ORDER-HYP-JONO
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Voit kuunnella sanavalikoiman sanoja niin monta kertaa kuin haluat. Kuuntelu ei lisää sanoja
+          vastaukseen.
+      - level: 2
+        text: Tarkastele itse rakentamaasi jonoa. Onko mukana toistuva sana, pois jäänyt kohta tai keskenään vaihtunut
+          sanapari?
+      - level: 3
+        text: Voit poistaa omia sanojasi ja rakentaa jonon uudelleen. Etene tavallisessa laskemisjärjestyksessä
+          aloitussanasta annettuun loppusanaan; sanat ja niiden paikat valitset itse.
+    invariants:
+      - Vastauksen käyttökertojen järjestys säilyy sellaisenaan; sitä ei lajitella eikä muuteta joukoksi.
+      - Tehtävässä ei ole laskettavia esineitä, numeromerkintöjä tai oikeinkirjoituksen arviointia. Koko
+        paikallinen suomenkielinen sanavalikoima on käytettävissä toistuvasti.
+      - Itsenäinen onnistuminen edellyttää kokonaista tavanomaista lukusanajonoa yhdestä annettuun
+        loppusanaan; se tuottaa count_stable_order-tunnisteen.
+      - Käyttöliittymä ei lisää seuraavaa sanaa, järjestä sanavalikoimaa vastauksen mukaisesti eikä anna
+        oikean pituisia valmiita vastauspaikkoja.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävä soveltaa suljettua suomenkielistä lukusanojen järjestyspredikaattia. Valittavien sanojen
+          käyttäminen havainnoi rajattua esitettyä järjestystä, ei oma-aloitteista suullista tuottamista,
+          ääntämistä tai lukusujuvuutta.
+        status: hypothesis
+  - id: M-NUM-STABLE-ORDER-DIAG-UUDELLEEN
+    kc_ids:
+      - M-NUM-STABLE-ORDER
+    purpose: diagnostic
+    response_type: ordering
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Rakenna laskemisessa käytettävä sanajono yhdestä sanaan kahdeksan. Valitse itse sanat ja niiden
+        järjestys.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: stable_order
+    parameter_model:
+      kind: word_sequence_v1
+      lexicon: fi-1-10-v1
+      start:
+        kind: from_one
+      through: fi-word-8
+      context: lukusanat-toinen-kartoitus
+    misconception_rules:
+      - misconception_id: M-NUM-STABLE-ORDER-HYP-JONO
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Voit kuunnella sanavalikoiman sanoja niin monta kertaa kuin haluat. Kuuntelu ei lisää sanoja
+          vastaukseen.
+      - level: 2
+        text: Tarkastele itse rakentamaasi jonoa. Onko mukana toistuva sana, pois jäänyt kohta tai keskenään vaihtunut
+          sanapari?
+      - level: 3
+        text: Voit poistaa omia sanojasi ja rakentaa jonon uudelleen. Etene tavallisessa laskemisjärjestyksessä
+          aloitussanasta annettuun loppusanaan; sanat ja niiden paikat valitset itse.
+    invariants:
+      - Vastauksen käyttökertojen järjestys säilyy sellaisenaan; sitä ei lajitella eikä muuteta joukoksi.
+      - Tehtävässä ei ole laskettavia esineitä, numeromerkintöjä tai oikeinkirjoituksen arviointia. Koko
+        paikallinen suomenkielinen sanavalikoima on käytettävissä toistuvasti.
+      - Itsenäinen onnistuminen edellyttää kokonaista tavanomaista lukusanajonoa yhdestä annettuun
+        loppusanaan; se tuottaa count_stable_order-tunnisteen.
+      - Käyttöliittymä ei lisää seuraavaa sanaa, järjestä sanavalikoimaa vastauksen mukaisesti eikä anna
+        oikean pituisia valmiita vastauspaikkoja.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävä soveltaa suljettua suomenkielistä lukusanojen järjestyspredikaattia. Valittavien sanojen
+          käyttäminen havainnoi rajattua esitettyä järjestystä, ei oma-aloitteista suullista tuottamista,
+          ääntämistä tai lukusujuvuutta.
+        status: hypothesis
+  - id: M-NUM-STABLE-ORDER-GUIDED-LYHYT
+    kc_ids:
+      - M-NUM-STABLE-ORDER
+    purpose: guided
+    response_type: ordering
+    difficulty_band: support
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Rakenna itse lyhyt jono yhdestä sanaan neljä.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: stable_order
+    parameter_model:
+      kind: word_sequence_v1
+      lexicon: fi-1-10-v1
+      start:
+        kind: from_one
+      through: fi-word-4
+      context: lukusanat-ohjattu-lyhyt
+    misconception_rules:
+      - misconception_id: M-NUM-STABLE-ORDER-HYP-JONO
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Voit kuunnella sanavalikoiman sanoja niin monta kertaa kuin haluat. Kuuntelu ei lisää sanoja
+          vastaukseen.
+      - level: 2
+        text: Tarkastele itse rakentamaasi jonoa. Onko mukana toistuva sana, pois jäänyt kohta tai keskenään vaihtunut
+          sanapari?
+      - level: 3
+        text: Voit poistaa omia sanojasi ja rakentaa jonon uudelleen. Etene tavallisessa laskemisjärjestyksessä
+          aloitussanasta annettuun loppusanaan; sanat ja niiden paikat valitset itse.
+    invariants:
+      - Vastauksen käyttökertojen järjestys säilyy sellaisenaan; sitä ei lajitella eikä muuteta joukoksi.
+      - Tehtävässä ei ole laskettavia esineitä, numeromerkintöjä tai oikeinkirjoituksen arviointia. Koko
+        paikallinen suomenkielinen sanavalikoima on käytettävissä toistuvasti.
+      - Itsenäinen onnistuminen edellyttää kokonaista tavanomaista lukusanajonoa yhdestä annettuun
+        loppusanaan; se tuottaa count_stable_order-tunnisteen.
+      - Käyttöliittymä ei lisää seuraavaa sanaa, järjestä sanavalikoimaa vastauksen mukaisesti eikä anna
+        oikean pituisia valmiita vastauspaikkoja.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävä soveltaa suljettua suomenkielistä lukusanojen järjestyspredikaattia. Valittavien sanojen
+          käyttäminen havainnoi rajattua esitettyä järjestystä, ei oma-aloitteista suullista tuottamista,
+          ääntämistä tai lukusujuvuutta.
+        status: hypothesis
+  - id: M-NUM-STABLE-ORDER-GUIDED-PIDEMPI
+    kc_ids:
+      - M-NUM-STABLE-ORDER
+    purpose: guided
+    response_type: ordering
+    difficulty_band: support
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Muodosta jono yhdestä sanaan kuusi. Koko jono on sinun rakennettavasi.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: stable_order
+    parameter_model:
+      kind: word_sequence_v1
+      lexicon: fi-1-10-v1
+      start:
+        kind: from_one
+      through: fi-word-6
+      context: lukusanat-ohjattu-pidempi
+    misconception_rules:
+      - misconception_id: M-NUM-STABLE-ORDER-HYP-JONO
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Voit kuunnella sanavalikoiman sanoja niin monta kertaa kuin haluat. Kuuntelu ei lisää sanoja
+          vastaukseen.
+      - level: 2
+        text: Tarkastele itse rakentamaasi jonoa. Onko mukana toistuva sana, pois jäänyt kohta tai keskenään vaihtunut
+          sanapari?
+      - level: 3
+        text: Voit poistaa omia sanojasi ja rakentaa jonon uudelleen. Etene tavallisessa laskemisjärjestyksessä
+          aloitussanasta annettuun loppusanaan; sanat ja niiden paikat valitset itse.
+    invariants:
+      - Vastauksen käyttökertojen järjestys säilyy sellaisenaan; sitä ei lajitella eikä muuteta joukoksi.
+      - Tehtävässä ei ole laskettavia esineitä, numeromerkintöjä tai oikeinkirjoituksen arviointia. Koko
+        paikallinen suomenkielinen sanavalikoima on käytettävissä toistuvasti.
+      - Itsenäinen onnistuminen edellyttää kokonaista tavanomaista lukusanajonoa yhdestä annettuun
+        loppusanaan; se tuottaa count_stable_order-tunnisteen.
+      - Käyttöliittymä ei lisää seuraavaa sanaa, järjestä sanavalikoimaa vastauksen mukaisesti eikä anna
+        oikean pituisia valmiita vastauspaikkoja.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävä soveltaa suljettua suomenkielistä lukusanojen järjestyspredikaattia. Valittavien sanojen
+          käyttäminen havainnoi rajattua esitettyä järjestystä, ei oma-aloitteista suullista tuottamista,
+          ääntämistä tai lukusujuvuutta.
+        status: hypothesis
+  - id: M-NUM-STABLE-ORDER-GUIDED-TAYSJONO
+    kc_ids:
+      - M-NUM-STABLE-ORDER
+    purpose: guided
+    response_type: ordering
+    difficulty_band: support
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Harjoittele itse koko opetettua jonoa yhdestä sanaan kahdeksan. Tämä on ohjattu harjoitus ennen
+        itsenäisiä tehtäviä.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: stable_order
+    parameter_model:
+      kind: word_sequence_v1
+      lexicon: fi-1-10-v1
+      start:
+        kind: from_one
+      through: fi-word-8
+      context: lukusanat-ohjattu-koko-jono
+    misconception_rules:
+      - misconception_id: M-NUM-STABLE-ORDER-HYP-JONO
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Voit kuunnella sanavalikoiman sanoja niin monta kertaa kuin haluat. Kuuntelu ei lisää sanoja
+          vastaukseen.
+      - level: 2
+        text: Tarkastele itse rakentamaasi jonoa. Onko mukana toistuva sana, pois jäänyt kohta tai keskenään vaihtunut
+          sanapari?
+      - level: 3
+        text: Voit poistaa omia sanojasi ja rakentaa jonon uudelleen. Etene tavallisessa laskemisjärjestyksessä
+          aloitussanasta annettuun loppusanaan; sanat ja niiden paikat valitset itse.
+    invariants:
+      - Vastauksen käyttökertojen järjestys säilyy sellaisenaan; sitä ei lajitella eikä muuteta joukoksi.
+      - Tehtävässä ei ole laskettavia esineitä, numeromerkintöjä tai oikeinkirjoituksen arviointia. Koko
+        paikallinen suomenkielinen sanavalikoima on käytettävissä toistuvasti.
+      - Itsenäinen onnistuminen edellyttää kokonaista tavanomaista lukusanajonoa yhdestä annettuun
+        loppusanaan; se tuottaa count_stable_order-tunnisteen.
+      - Käyttöliittymä ei lisää seuraavaa sanaa, järjestä sanavalikoimaa vastauksen mukaisesti eikä anna
+        oikean pituisia valmiita vastauspaikkoja.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävä soveltaa suljettua suomenkielistä lukusanojen järjestyspredikaattia. Valittavien sanojen
+          käyttäminen havainnoi rajattua esitettyä järjestystä, ei oma-aloitteista suullista tuottamista,
+          ääntämistä tai lukusujuvuutta.
+        status: hypothesis
+  - id: M-NUM-STABLE-ORDER-INDEP-RAKENNA
+    kc_ids:
+      - M-NUM-STABLE-ORDER
+    purpose: independent
+    response_type: ordering
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Rakenna tavallinen lukusanajono yhdestä sanaan kahdeksan.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: stable_order
+    parameter_model:
+      kind: word_sequence_v1
+      lexicon: fi-1-10-v1
+      start:
+        kind: from_one
+      through: fi-word-8
+      context: lukusanat-taysi-jono
+    misconception_rules:
+      - misconception_id: M-NUM-STABLE-ORDER-HYP-JONO
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Voit kuunnella sanavalikoiman sanoja niin monta kertaa kuin haluat. Kuuntelu ei lisää sanoja
+          vastaukseen.
+      - level: 2
+        text: Tarkastele itse rakentamaasi jonoa. Onko mukana toistuva sana, pois jäänyt kohta tai keskenään vaihtunut
+          sanapari?
+      - level: 3
+        text: Voit poistaa omia sanojasi ja rakentaa jonon uudelleen. Etene tavallisessa laskemisjärjestyksessä
+          aloitussanasta annettuun loppusanaan; sanat ja niiden paikat valitset itse.
+    invariants:
+      - Vastauksen käyttökertojen järjestys säilyy sellaisenaan; sitä ei lajitella eikä muuteta joukoksi.
+      - Tehtävässä ei ole laskettavia esineitä, numeromerkintöjä tai oikeinkirjoituksen arviointia. Koko
+        paikallinen suomenkielinen sanavalikoima on käytettävissä toistuvasti.
+      - Itsenäinen onnistuminen edellyttää kokonaista tavanomaista lukusanajonoa yhdestä annettuun
+        loppusanaan; se tuottaa count_stable_order-tunnisteen.
+      - Käyttöliittymä ei lisää seuraavaa sanaa, järjestä sanavalikoimaa vastauksen mukaisesti eikä anna
+        oikean pituisia valmiita vastauspaikkoja.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävä soveltaa suljettua suomenkielistä lukusanojen järjestyspredikaattia. Valittavien sanojen
+          käyttäminen havainnoi rajattua esitettyä järjestystä, ei oma-aloitteista suullista tuottamista,
+          ääntämistä tai lukusujuvuutta.
+        status: hypothesis
+  - id: M-NUM-STABLE-ORDER-INDEP-OMA-JONO
+    kc_ids:
+      - M-NUM-STABLE-ORDER
+    purpose: independent
+    response_type: ordering
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: "Muodosta oma vastauksesi: lukusanat tavallisessa laskemisjärjestyksessä yhdestä sanaan kahdeksan."
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: stable_order
+    parameter_model:
+      kind: word_sequence_v1
+      lexicon: fi-1-10-v1
+      start:
+        kind: from_one
+      through: fi-word-8
+      context: lukusanat-toinen-taysi-jono
+    misconception_rules:
+      - misconception_id: M-NUM-STABLE-ORDER-HYP-JONO
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Voit kuunnella sanavalikoiman sanoja niin monta kertaa kuin haluat. Kuuntelu ei lisää sanoja
+          vastaukseen.
+      - level: 2
+        text: Tarkastele itse rakentamaasi jonoa. Onko mukana toistuva sana, pois jäänyt kohta tai keskenään vaihtunut
+          sanapari?
+      - level: 3
+        text: Voit poistaa omia sanojasi ja rakentaa jonon uudelleen. Etene tavallisessa laskemisjärjestyksessä
+          aloitussanasta annettuun loppusanaan; sanat ja niiden paikat valitset itse.
+    invariants:
+      - Vastauksen käyttökertojen järjestys säilyy sellaisenaan; sitä ei lajitella eikä muuteta joukoksi.
+      - Tehtävässä ei ole laskettavia esineitä, numeromerkintöjä tai oikeinkirjoituksen arviointia. Koko
+        paikallinen suomenkielinen sanavalikoima on käytettävissä toistuvasti.
+      - Itsenäinen onnistuminen edellyttää kokonaista tavanomaista lukusanajonoa yhdestä annettuun
+        loppusanaan; se tuottaa count_stable_order-tunnisteen.
+      - Käyttöliittymä ei lisää seuraavaa sanaa, järjestä sanavalikoimaa vastauksen mukaisesti eikä anna
+        oikean pituisia valmiita vastauspaikkoja.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävä soveltaa suljettua suomenkielistä lukusanojen järjestyspredikaattia. Valittavien sanojen
+          käyttäminen havainnoi rajattua esitettyä järjestystä, ei oma-aloitteista suullista tuottamista,
+          ääntämistä tai lukusujuvuutta.
+        status: hypothesis
+  - id: M-NUM-STABLE-ORDER-TRANSFER-NELJAN-JALKEEN
+    kc_ids:
+      - M-NUM-STABLE-ORDER
+    purpose: transfer
+    response_type: ordering
+    difficulty_band: challenge
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Annettu sana on neljä. Muodosta sen jälkeen tulevat lukusanat tavallisessa järjestyksessä
+        loppusanaan kahdeksan asti. Älä lisää annettua sanaa vastaukseen.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: word_continuation
+        baselineIndependent: M-NUM-STABLE-ORDER-INDEP-RAKENNA
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: stable_order
+    parameter_model:
+      kind: word_sequence_v1
+      lexicon: fi-1-10-v1
+      start:
+        kind: after_word
+        word: fi-word-4
+      through: fi-word-8
+      context: lukusanat-annetun-jalkeen
+    misconception_rules:
+      - misconception_id: M-NUM-STABLE-ORDER-HYP-JONO
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Kuuntele annettu sana ja haluamiasi sanavalikoiman sanoja. Mikä on tämän tehtävän aloituskohta?
+      - level: 2
+        text: Vastaukseen kuuluu annetun sanan jälkeinen jakso. Tarkastele, sisältyykö antamaasi vastaukseen jotakin
+          ennen sitä tai sen jälkeen.
+      - level: 3
+        text: Voit mielessäsi edetä yhdestä löytääksesi annetun sanan paikan. Rakenna vastaus itse vasta sen
+          jälkeisistä sanoista loppusanaan asti; alkuosaa ei tarvitse lähettää.
+    invariants:
+      - Vastauksen käyttökertojen järjestys säilyy sellaisenaan; sitä ei lajitella eikä muuteta joukoksi.
+      - Tehtävässä ei ole laskettavia esineitä, numeromerkintöjä tai oikeinkirjoituksen arviointia. Koko
+        paikallinen suomenkielinen sanavalikoima on käytettävissä toistuvasti.
+      - Annettu aloitusta edeltävä sana on tehtävätieto. Vastaus sisältää vain sitä seuraavat sanat
+        loppusanaan asti; onnistuminen tuottaa vain count_stable_continuation-tunnisteen.
+      - Käyttöliittymä ei lisää seuraavaa sanaa, järjestä sanavalikoimaa vastauksen mukaisesti eikä anna
+        oikean pituisia valmiita vastauspaikkoja.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävä soveltaa suljettua suomenkielistä lukusanojen järjestyspredikaattia. Valittavien sanojen
+          käyttäminen havainnoi rajattua esitettyä järjestystä, ei oma-aloitteista suullista tuottamista,
+          ääntämistä tai lukusujuvuutta.
+        status: hypothesis
+  - id: M-NUM-STABLE-ORDER-DELAYED-TAYSJONO
+    kc_ids:
+      - M-NUM-STABLE-ORDER
+    purpose: delayed_review
+    response_type: ordering
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Muodosta lukusanajono yhdestä sanaan kahdeksan.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: stable_order
+    parameter_model:
+      kind: word_sequence_v1
+      lexicon: fi-1-10-v1
+      start:
+        kind: from_one
+      through: fi-word-8
+      context: lukusanat-myohainen-paluu
+    misconception_rules:
+      - misconception_id: M-NUM-STABLE-ORDER-HYP-JONO
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Voit kuunnella sanavalikoiman sanoja niin monta kertaa kuin haluat. Kuuntelu ei lisää sanoja
+          vastaukseen.
+      - level: 2
+        text: Tarkastele itse rakentamaasi jonoa. Onko mukana toistuva sana, pois jäänyt kohta tai keskenään vaihtunut
+          sanapari?
+      - level: 3
+        text: Voit poistaa omia sanojasi ja rakentaa jonon uudelleen. Etene tavallisessa laskemisjärjestyksessä
+          aloitussanasta annettuun loppusanaan; sanat ja niiden paikat valitset itse.
+    invariants:
+      - Vastauksen käyttökertojen järjestys säilyy sellaisenaan; sitä ei lajitella eikä muuteta joukoksi.
+      - Tehtävässä ei ole laskettavia esineitä, numeromerkintöjä tai oikeinkirjoituksen arviointia. Koko
+        paikallinen suomenkielinen sanavalikoima on käytettävissä toistuvasti.
+      - Itsenäinen onnistuminen edellyttää kokonaista tavanomaista lukusanajonoa yhdestä annettuun
+        loppusanaan; se tuottaa count_stable_order-tunnisteen.
+      - Käyttöliittymä ei lisää seuraavaa sanaa, järjestä sanavalikoimaa vastauksen mukaisesti eikä anna
+        oikean pituisia valmiita vastauspaikkoja.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävä soveltaa suljettua suomenkielistä lukusanojen järjestyspredikaattia. Valittavien sanojen
+          käyttäminen havainnoi rajattua esitettyä järjestystä, ei oma-aloitteista suullista tuottamista,
+          ääntämistä tai lukusujuvuutta.
+        status: hypothesis
+misconceptions:
+  - id: M-NUM-STABLE-ORDER-HYP-JONO
+    description: "Vastauksen sanajono ei vastaa pyydettyä tavanomaista järjestystä: siinä voi olla poisjättö,
+      toisto, vaihtunut järjestys tai ylimääräinen sana. Havainto ei todista syytä eikä esineiden
+      seurantataitoa."
+    evidence_patterns:
+      - kind: interaction_pattern
+        when: Hyvin muodostetun vastauksen deterministinen havainto observed:stable_order. Jatkossa verrataan vain
+          pyydettyä jaksoa, ydin- ja viivästetyssä näytössä koko yhdestä alkavaa jonoa.
+    feedback_strategy:
+      conceptual_prompt: Miten voit tarkastella oman jonosi sanojen järjestystä suhteessa siihen, mistä piti
+        aloittaa ja mihin lopettaa?
+      representation: Oma muokattava sanajono ja kokonainen sekoitettu sanavalikoima. Ei virhejonoa korjattavaksi,
+        oikean seuraavan sanan osoitusta tai valmiiksi täytettyä alkua.
+    repair_targets:
+      - M-NUM-STABLE-ORDER
+    status: hypothesis
+differentiation:
+  support_variants:
+    step_chunking: Opetetaan malli yhdestä neljään ennen ohjattua neljän jonoa. Seuraavassa opetuksessa
+      mallinnetaan jatkot viisi–kuusi ja seitsemän–kahdeksan sekä täydet jonot kuuteen ja kahdeksaan ennen
+      niiden ohjattua harjoittelua. Itsenäisen ja viivästetyn täyden jonon ehdot ja onnistumismäärät pysyvät
+      muuttumattomina.
+    hint_availability: Kolme pyydettävää prosessivihjettä jokaisessa tehtävässä. Tuki ja vihjeet pysyvät
+      avustettuina; ohjelma ei lisää sanoja eikä paljasta jatkotehtävän jaksoa.
+    text_density: Lyhyet toimintaohjeet ja erikseen kuunneltavat paikalliset suomalaiset lukusanat. Tämä ei ole
+      lupaus muun oppituntitekstin puhetoistosta.
+    alternate_representation: Sanojen kuuntelu ja nykyinen näppäimistökäyttö, ilman numeroita, oikeinkirjoitusta
+      tai laskettavia kohteita.
+    reduced_motion: Sanojen järjestyksen muodostaminen ei edellytä liikkuvan esityksen seuraamista. Nykyinen
+      vähennetyn liikkeen tuki säilyttää saman tavoitteen.
+  challenge_variants:
+    learner_prompt: "Sanavalikoiman paikat vaihtuvat, mutta lukusanajono ei. Selitä, miksi voit rakentaa saman
+      jonon silti. Kun annetaan sana neljä, voit ajatella mielessäsi jonon alusta tai jatkaa tutusta kohdasta:
+      miksi vastaukseen tarvitaan kummallakin tavalla sama pyydetty jakso?"
+    reduced_scaffolding: Ohjattu harjoittelu ohitetaan nykyisen haastepolun mukaisesti; itsenäiset täyden jonon
+      ehdot pysyvät samoina.
+    alternate_solution_compare: Vertaa mielessä yhdestä etenemistä ja tutusta sanasta jatkamista ilman nopeus- tai
+      ilman-uudelleenlaskentaa-vaatimusta. Pohdintaa ei pisteytetä suulliseksi muistamiseksi.
+    transfer_novelty: Kaikki itsenäiset pohjat alkavat yhdestä ja päättyvät kahdeksaan. Vain siirto alkaa annetun
+      neljän jälkeen ja tuottaa erillisen jatkotunnisteen.
+    acceleration_probe: Täyden jonon kaksi diagnostista onnistumista mahdollistavat nopean polun; jatkosiirto ja
+      vähintään kolme itsenäistä onnistumista säilyvät.
+representations:
+  - id: M-NUM-STABLE-ORDER-REP-SANAT
+    type: ordered_words
+    purpose: Näytä oppilaan itse koostama sanojen käyttökertojen järjestys. Aloitus ja lopetus ovat tehtävätietoa,
+      eivät valmiita vastauspaikkoja.
+    domain_bindings:
+      - tokens.id
+      - tokens.label
+      - start
+      - through
+      - response.words
+  - id: M-NUM-STABLE-ORDER-JOURNEY-v1
+    kind: learning_journey_v1
+    chapter: Rannan valmistelut
+    companion: Loikka
+    capability: word_sequence_tiles_v1
+    purpose: Loikka harjoittelee laskemisen sanoja retkeä varten.
+    consequence: Retken laskusanoja on harjoiteltu yhdessä.
+    instruction: Rakenna lukusanat laskemisjärjestykseen.
+    guidedSequence:
+      itemRefs:
+        - M-NUM-STABLE-ORDER-GUIDED-LYHYT
+        - M-NUM-STABLE-ORDER-GUIDED-PIDEMPI
+        - M-NUM-STABLE-ORDER-GUIDED-TAYSJONO
+    model:
+      kind: word_sequence_v1
+      through: 8
+    retrieval:
+      kind: closed_episode_retrieval_v1
+      claim: stable_order
+  - id: v7-evidence-compatibility
+    kind: v7_evidence_compatibility_v1
+    sourceCommit: 0b2a791918f472cf8ba61eede095a6a578adeab6
+    sourceContentHash: cb03afd71fbed9a5c0a7cdb86dcc3c09b9a87e6016f13be286d08a4b14f845d5
+    allowedChanges: [additive_journey, lesson_wording]
+simulation_specs: []
+requires_capabilities:
+  - rich_text
+  - ordering
+  - hint_ladder
+  - read_aloud_hook
+  - reduced_motion_variant
+provenance:
+  curriculum:
+    - source_id: PROD01-OPH-MATH12-S2
+      claim: "ePerusteet 419550, matematiikka 466344, vuosiluokkakokonaisuus 466963, S2 469266, kuvaus.fi-kappaleet
+        1–2: lukujonojen ja lukusanojen laaja opetussuunnitelmayhteys. Oma atominen järjestystavoite,
+        suomenkielinen sanavalikoima ja tarkka näyttöpolitiikka ovat projektijohdosta."
+      status: verified
+  pedagogy:
+    - source_id: PROD01-OU-COUNTING-PRINCIPLES
+      claim: OpenLearnin Week 1, 1.1, Activity 1 / Discussion, luetelmakohta 1 käsittelee lukusanojen ja niiden
+        järjestyksen oppimista. Lähde ei validoi valittavien suomenkielisten sanojen käyttöliittymää tai tämän
+        erillisen osaamistilan pisteytystä.
+      status: verified
+    - source_id: PROJECT-BATCH01-POLICY-v0.1
+      claim: Täysi yhdestä kahdeksaan -ydinjono, kolme itsenäistä onnistumista kahdesta pohjasta, kaksi diagnostista
+        vahvistusta, erillinen jatkosiirto sekä aikaisintaan 24 tunnin viivästetty kaksi onnistumista ovat
+        rajattuja projektivalintoja. Mikään lähde ei osoita näitä täsmällisiä vakioita tai tämän toteutuksen
+        vaikuttavuutta.
+      status: hypothesis
+  domain:
+    - source_id: PROD01-OU-COUNTING-PRINCIPLES
+      claim: OpenLearnin Activity 1 / Discussion, luetelmakohta 1 tukee tavanomaista lukusanojen järjestystä
+        koskevaa määritelmää; esineiden ja sanojen kohdistus on eri tarkastelukohta.
+      status: verified
+    - source_id: PROJECT-ENUMERATION-v0.1
+      claim: Rajattu suomenkielinen täyden jonon ja annetun sanan jälkeisen jakson predikaatti käyttää eri
+        onnistumistunnisteita. Paikallinen tokenkoostaminen ja observed:stable_order-havaintohypoteesi eivät
+        väitä oma-aloitteista suullista tuottamista tai annetun alkuosan muistamista.
+      status: hypothesis
+validation:
+  schema: pending
+  graph_refs: pending
+  domain_truth: pending
+  item_invariants: pending
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: designed

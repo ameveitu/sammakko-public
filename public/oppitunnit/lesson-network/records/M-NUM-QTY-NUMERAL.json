@@ -1,0 +1,586 @@
+{
+  "kcId": "M-NUM-QTY-NUMERAL",
+  "pagePath": "lessons/M-NUM-QTY-NUMERAL.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-NUM-QTY-NUMERAL",
+  "canonicalNode": {
+    "id": "M-NUM-QTY-NUMERAL",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Lukumäärän representaatiot",
+    "title": "Lukumäärän yhdistäminen sitä vastaavaan numeromerkintään",
+    "short_description": "Lukumäärän yhdistäminen sitä vastaavaan numeromerkintään",
+    "source_basis": "pedagogically_derived",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2"
+    ],
+    "evidence_notes": "v0.2-refaktorissa erotettu noodista M-NUM-03 itsenäiseksi evidenssikohteeksi.",
+    "status": "candidate_refactored",
+    "node_kind": "representation",
+    "relations": [
+      {
+        "id": "M-NUM-02",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "Lukumäärän käsitteen hallinta tarvitaan määrän yhdistämiseksi representaatioon."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-NUM-02"
+        ],
+        "rationale": "Kardinaliteetti on määrärelaation ydinesitieto."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "process",
+    "split_from": "M-NUM-03",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Lukumäärän representaatiot"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-NUM-02",
+      "targetKCId": "M-NUM-QTY-NUMERAL",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Lukumäärän käsitteen hallinta tarvitaan määrän yhdistämiseksi representaatioon.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-NUM-QTY-NUMERAL",
+      "targetKCId": "M-NUM-03",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-NUM-03 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-QTY-NUMERAL vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-NUM-02"
+      ],
+      "rationale": "Kardinaliteetti on määrärelaation ydinesitieto."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-NUM-QTY-NUMERAL/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "NCETM — Cardinality and Counting",
+        "url": "https://www.ncetm.org.uk/classroom-resources/ey-cardinality-and-counting/",
+        "accessed": "2026-10-29",
+        "retrieval": "Public HTML cardinality, subitising, numeral meanings and conservation sections read during B06 preparation.",
+        "adopted": "Connect whole quantities with labels, allow subitising/direct answers and recognise rearrangement without addition/removal.",
+        "rejected": "No mandatory tapping/naming or copied progression as a hard prerequisite.",
+        "limitations": "Foreign early-years conceptual comparison, not validated Finnish1–2 efficacy.",
+        "usageRestrictions": "Original prose/diagrams only. Copyright page read: default Crown/OGL, author exceptions; no source figures used."
+      },
+      {
+        "title": "University of Cambridge NRICH — Show Me",
+        "url": "https://nrich.maths.org/eyfs-activities/show-me",
+        "accessed": "2026-10-29",
+        "retrieval": "Public HTML activity, mathematical journey and variation sections read; linkedPDF not read.",
+        "adopted": "Same quantity represented in varied layouts and labels, including constructing a requested group.",
+        "rejected": "No teen-number or additive-strategy requirement imported.",
+        "limitations": "Source age3–5 comparison; this adaptation and small numeric range are project designs.",
+        "usageRestrictions": "©University of Cambridge; no source activity text, illustrations or cards copied."
+      },
+      {
+        "title": "NSW Department of Education — Connecting number names, numerals and quantities",
+        "url": "https://education.nsw.gov.au/teaching-and-learning/curriculum/literacy-and-numeracy/teaching-and-learning-resources/numeracy/connecting-number-names",
+        "accessed": "2026-10-29",
+        "retrieval": "Public HTML identifying numerals, representations and collections; staff-only pack/cards/videos not opened.",
+        "adopted": "Distinguish representation matching from oral naming; connect concrete/visual/verbal/symbolic quantities.",
+        "rejected": "No English teen/ty distinction, free oral-production claim or racing requirement.",
+        "limitations": "Public guidance only, not a review of the complete resource or learner efficacy.",
+        "usageRestrictions": "No redistribution licence inferred; no source graphics/text reused."
+      },
+      {
+        "title": "OPH — Perusopetuksen opetussuunnitelman perusteet2014, Matematiikka1–2 S2",
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "accessed": "2026-10-29",
+        "retrieval": "Targeted PDFp128/printed129 S2 quantity/word/numeral relationship independently read during prep.",
+        "adopted": "Broad concrete-quantity and representation connection behind inherited S2 reference.",
+        "rejected": "Does not prescribe these exact2 split nodes, controls, numeric examples or process evidence policy.",
+        "limitations": "Frozen2014 basis, no claim to certify all current amendments. Canonical source_basis remains pedagogically_derived.",
+        "usageRestrictions": "©OPH; paraphrase only, no source figures copied."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [
+      {
+        "path": "canonical/fi/M-NUM-QTY-NUMERAL.canonical.yaml",
+        "sha256": "2d127e930d145bd64af768982f5da5a86f31b59a982e270a5d9932f242d47449",
+        "status": "original_source_referenced_not_reapproved",
+        "originalHeader": "# Private B03 draft: implementation and independent/native review pending.\nschema_version: 0.1.0\nkc_id: M-NUM-QTY-NUMERAL\ncatalog_version: STEM_KC_Catalogs_v0.2\nmetadata:\n  title: Lukumäärän yhdistäminen sitä vastaavaan numeromerkintään\n  subject: mathematics\n  grade_band: 1-2"
+      },
+      {
+        "path": "content-design/autonomous-52/M-NUM-QTY-NUMERAL.md",
+        "sha256": "d4612fa5ece62c4689b2dd22411f389393acdd46cd4dffa01fc9154509dd18ea",
+        "status": "original_source_referenced_not_reapproved",
+        "originalHeader": "# Retkirasian numerolappu — bounded implementation card\n\n2026-10-27. Next after actual observation acceptance; design pending, not completion.\n\nFrozen M-NUM-QTY-NUMERAL is a process/representation node, requires M-NUM-02. Preserve that role and real compatible evidence qualification. Objective: associate visible quantities with decimal numerals, both directions. No written number-word recognition, object naming, Give-N construction or integration mastery is claimed. Scope3–6 follows the existing cardinality route; existing finite-process coverage requires eight direction/value decisions plus genuine correction application and a delayed sample. These are project design minima, not externally validated constants.\n\nPurpose: “Valitaan rasioihin numerolaput.” Aava reuses the supplies already counted with Loikka. Show a whole set and its large numeral, then inverse direction without auto-selecting an answer. Guided keeps the supplied pair; fading removes it. Independent displays actual objects and plain numeral choices, or a numeral and distinct whole-set choices. No matching dots on numeral cards; no auto-total or quantity-giving speech. Two wrong labels become correction application, one decision at a time. An earlier saved group should appear in the supplies consequence without becoming a novel assessment merely by narrative reuse.\n"
+      }
+    ],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": {
+      "task_id": "KC-18-M-NUM-QTY-NUMERAL",
+      "kc_id": "M-NUM-QTY-NUMERAL",
+      "mastery_role": "process",
+      "node_kind": "representation",
+      "status": "ENGINEERING_COMPLETE",
+      "content_file": "canonical/fi/M-NUM-QTY-NUMERAL.canonical.yaml",
+      "prerequisites": [
+        {
+          "all_of": [
+            "M-NUM-02"
+          ],
+          "rationale": "Kardinaliteetti on määrärelaation ydinesitieto."
+        }
+      ],
+      "validation": {
+        "schema": "pass_structural_current",
+        "graph_refs": "pass_frozen690_closed52",
+        "domain_truth": "pass_deterministic_adversarial",
+        "item_invariants": "pass_current_regression",
+        "pedagogy_review": "pass_scoped_AI_adult_design_HUMAN_PENDING",
+        "subject_review": "pass_bounded_source_domain_HUMAN_PENDING",
+        "accessibility_review": "pass_scoped_keyboard_optional_audio_FULL_NONVISUAL_PENDING",
+        "architecture_review": "pass_independent_scoped",
+        "runtime_smoke": "pass_actual_personal_journey",
+        "local_e2e": "pass_native86_zero_retries_skips_flaky",
+        "local_e2e_evidence": "reports/autonomous-52/B03/quantity-numeral-acceptance.json",
+        "source_approval": "scoped_source_and_project_design_RELEASE_HOLDS_PRESERVED"
+      },
+      "production_order": 18,
+      "historical_status": "DEFERRED_UNTIL_CALIBRATION",
+      "autonomous_evidence": [
+        {
+          "path": "reports/autonomous-52/B03/quantity-numeral-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B03/quantity-numeral-contract-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B03/quantity-numeral-teaching-ui-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B03/quantity-numeral-source-audit.md"
+        },
+        {
+          "path": "reports/autonomous-52/B03/quantity-numeral-human-review.md"
+        }
+      ],
+      "historical_validation": {
+        "schema": "pending",
+        "graph_refs": "pending",
+        "domain_truth": "pending",
+        "item_invariants": "pending",
+        "pedagogy_review": "pending",
+        "subject_review": "pending",
+        "accessibility_review": "pending",
+        "runtime_smoke": "pending"
+      },
+      "accepted_route": "Prepared visible quantities3–6 ↔ decimal numerals, eight directional cases, actual wrong-pair repair and delayed sample; not number-word production, Give-N, three-representation integration or real learner efficacy.",
+      "human_review": "PENDING_UNEXECUTED",
+      "held_alternatives": [
+        "Target-learner comprehension and efficacy untested",
+        "Manual/nonvisual accessibility and full VoiceOver review pending",
+        "Bidirectional mobile model6 needs vertical scrolling",
+        "Optional taught word/multistep extensions and actual cross-encounter saved-result reuse remain batch16 work",
+        "Licensing/pilot/release/completed52 review holds remain"
+      ]
+    }
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+        "note": "Author technical/source checks only; separate independent review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+        "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/quantity-mapping-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+        "note": "No human or learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+        "note": "No human or target-learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-NUM-QTY-NUMERAL",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "pairs.svg",
+        "sha256": "6abd281cfa565d6bf4deaed0d8c38ce6d66d2e230264dfa81bc3e571f6dfe553"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "ef3982add5fcbfcad3f278eb1055a7ec897d14270e2de68dda0328edc9a58de6"
+      }
+    ],
+    "research": [
+      {
+        "title": "NCETM — Cardinality and Counting",
+        "url": "https://www.ncetm.org.uk/classroom-resources/ey-cardinality-and-counting/",
+        "accessed": "2026-10-29",
+        "retrieval": "Public HTML cardinality, subitising, numeral meanings and conservation sections read during B06 preparation.",
+        "adopted": "Connect whole quantities with labels, allow subitising/direct answers and recognise rearrangement without addition/removal.",
+        "rejected": "No mandatory tapping/naming or copied progression as a hard prerequisite.",
+        "limitations": "Foreign early-years conceptual comparison, not validated Finnish1–2 efficacy.",
+        "usageRestrictions": "Original prose/diagrams only. Copyright page read: default Crown/OGL, author exceptions; no source figures used."
+      },
+      {
+        "title": "University of Cambridge NRICH — Show Me",
+        "url": "https://nrich.maths.org/eyfs-activities/show-me",
+        "accessed": "2026-10-29",
+        "retrieval": "Public HTML activity, mathematical journey and variation sections read; linkedPDF not read.",
+        "adopted": "Same quantity represented in varied layouts and labels, including constructing a requested group.",
+        "rejected": "No teen-number or additive-strategy requirement imported.",
+        "limitations": "Source age3–5 comparison; this adaptation and small numeric range are project designs.",
+        "usageRestrictions": "©University of Cambridge; no source activity text, illustrations or cards copied."
+      },
+      {
+        "title": "NSW Department of Education — Connecting number names, numerals and quantities",
+        "url": "https://education.nsw.gov.au/teaching-and-learning/curriculum/literacy-and-numeracy/teaching-and-learning-resources/numeracy/connecting-number-names",
+        "accessed": "2026-10-29",
+        "retrieval": "Public HTML identifying numerals, representations and collections; staff-only pack/cards/videos not opened.",
+        "adopted": "Distinguish representation matching from oral naming; connect concrete/visual/verbal/symbolic quantities.",
+        "rejected": "No English teen/ty distinction, free oral-production claim or racing requirement.",
+        "limitations": "Public guidance only, not a review of the complete resource or learner efficacy.",
+        "usageRestrictions": "No redistribution licence inferred; no source graphics/text reused."
+      },
+      {
+        "title": "OPH — Perusopetuksen opetussuunnitelman perusteet2014, Matematiikka1–2 S2",
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "accessed": "2026-10-29",
+        "retrieval": "Targeted PDFp128/printed129 S2 quantity/word/numeral relationship independently read during prep.",
+        "adopted": "Broad concrete-quantity and representation connection behind inherited S2 reference.",
+        "rejected": "Does not prescribe these exact2 split nodes, controls, numeric examples or process evidence policy.",
+        "limitations": "Frozen2014 basis, no claim to certify all current amendments. Canonical source_basis remains pedagogically_derived.",
+        "usageRestrictions": "©OPH; paraphrase only, no source figures copied."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+        "note": "Author technical/source checks only; separate independent review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+        "note": "Actual Lite/canonical comparison authored; separate independent review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+        "note": "No human or learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+        "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/quantity-mapping-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+        "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/quantity-mapping-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+        "note": "No human or target-learner validation performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-NUM-QTY-NUMERAL",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "actualFamilies": [
+        "q2n",
+        "n2q",
+        "fill",
+        "transfer"
+      ],
+      "inventory": "alignment.md",
+      "reconciliation": "alignment.md",
+      "sourceHashes": {
+        "authority/production-181-v2/lite/src/content/numbers.ts": "2ff4cae1816ea1d61ec938361a8306dc9a24d6e893f67895a390a83b7ae1c4d5",
+        "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "authority/production-181-v2/lite/src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "authority/production-181-v2/lite/src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "authority/production-181-v2/lite/src/content/world.ts": "c350e4f517d6aa23729ee958ec8b933abc828da41956e12a9da04a49b94e4704",
+        "authority/production-181-v2/lite/src/ui/art.ts": "aa26c0ba183a3fe0e87a07ffd6e274de68a53fcb63d784a8a8b5135081eee52f",
+        "authority/production-181-v2/lite/src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+        "authority/production-181-v2/lite/src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+        "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "authority/production-181-v2/lite/src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "authority/production-181-v2/lite/src/data/sol-annotations.json": "fb22d9fd48c774458b5241bacf76e16b2975974cf9b4c7eb2875ae861831c98d",
+        "authority/production-181-v2/lite/reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+      },
+      "inherited": "Bidirectional quantity mapping, explicit examples and feedback; fill construction and swapped-label repair.",
+      "corrected": "Supplied-token construction and actual matching remain visible; no compulsory speech/marks; direct known answers allowed; truthful evidence boundary.",
+      "extended": "Two retained mappings, equal-quantity alternative labels, explicit semantic input/change and current visible answer checking."
+    },
+    "planning": {
+      "gradeBand": "1-2",
+      "role": "process",
+      "canonicalNodeKind": "representation",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-NUM-02"
+          ],
+          "rationale": "Kardinaliteetti on määrärelaation ydinesitieto."
+        }
+      ],
+      "requiredPrerequisites": [
+        "M-NUM-02"
+      ],
+      "teacherObjective": "Lukumäärän yhdistäminen sitä vastaavaan numeromerkintään",
+      "childGoal": "Yhdistän määrän numeromerkintään.",
+      "scope": "Two quantity mappings with supplied labels1–9; worked3/4, practice3/5, repair4/2, equal4/4 transfer. Optional build any3 distinct stones from6.",
+      "assumed": "Cardinality required; reading can be mediated by adult; no new WORD-NUMERAL/speech/handwriting hard gate.",
+      "coTaught": [
+        "Labels used in examples explicitly introduced; supplied-word matching is not free oral production."
+      ],
+      "sourceBasis": "pedagogically_derived",
+      "curriculumRefs": [
+        "OPH-POPS2014-MATH-VL1-2-S2"
+      ],
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "curriculumVsDesign": "OPH broad S2 relationship retrieved; split/process roles and DAG remain frozen pedagogical derivations. Story/examples/controls/thresholds are project decisions.",
+      "evidenceLimits": "Constructed supplied-label correspondences across examples; optional requested subset separately. No formal mastery, independence, retention, free speech/handwriting or learner efficacy claim. No personal data.",
+      "assetProvenance": "Original pairs.svg and deterministic SVG model; unchanged supplied Aava curious PNG at96px, not recreated or claimed hand-drawn. User-owned asset rights hold unchanged."
+    },
+    "extensions": {
+      "productionBatch": "B06",
+      "researchNote": "research.md",
+      "alignmentNote": "alignment.md",
+      "testModule": "tests.mjs",
+      "humanReview": "not_performed",
+      "simulationType": "quantity_numeral_mapping_and_subset_construction",
+      "moduleLifecycle": "Self-contained; component owns both input/change semantic fields, visible-answer check, timers/listeners and local state. Loader owns pause lifecycle. Help/model separate from answer validity."
+    },
+    "contentHash": "156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+    "contentRevision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+          "note": "Author technical/source checks only; separate independent review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+          "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/quantity-mapping-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+          "note": "No human or learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+          "note": "No human or target-learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+          "note": "Actual Lite/canonical comparison authored; separate independent review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@156602709e4fcf7adac84d8f3eac9c3c90d804883580ea2e5430e2dec62e0f32",
+          "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/quantity-mapping-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+        }
+      ]
+    }
+  },
+  "outputHash": "01c49e506bb6d3718cc4912d3da126640e4a2ab5e151fa24e3b1d37adc201d93",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "1e12f7f6236d1d28950f0b47b331ede261e6d29e7e5a022b33d5783d2a0690d8",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "01c49e506bb6d3718cc4912d3da126640e4a2ab5e151fa24e3b1d37adc201d93",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

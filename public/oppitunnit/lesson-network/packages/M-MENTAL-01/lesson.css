@@ -1,0 +1,41 @@
+.b10-lesson { --ink: #183e36; --accent: #236952; --muted: #668b7a; --paper: #fffefa; color: var(--ink); line-height: 1.6; max-width: 56rem; margin: 0 auto; }
+.b10-lesson h2 { font-size: 1.65rem; line-height: 1.2; margin: 1.2rem 0 .55rem; }
+.b10-lesson h3 { font-size: 1.15rem; margin: 1.2rem 0 .5rem; }
+.b10-lesson .b10-opening { display: flex; align-items: center; gap: .7rem; }
+.b10-lesson .b10-opening img { flex: 0 0 auto; width: 72px; height: 72px; object-fit: contain; }
+.b10-lesson .b10-opening p { margin: .3rem 0; }
+.b10-lesson nav { display: flex; flex-wrap: wrap; gap: .5rem 1.1rem; margin: .75rem 0; }
+.b10-lesson a { color: var(--accent); text-underline-offset: .2rem; }
+.b10-lesson fieldset { border: 0; padding: .65rem 0 1rem; margin: .5rem 0; min-width: 0; border-bottom: 1px solid #b5c9bc; }
+.b10-lesson legend { font-size: 1.15rem; font-weight: 700; }
+.b10-lesson label { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .8rem; margin: .65rem 0; }
+.b10-lesson input, .b10-lesson select, .b10-lesson button { font: inherit; box-sizing: border-box; max-width: 100%; border: 1.5px solid var(--muted); border-radius: .4rem; min-height: 44px; padding: .45rem .65rem; background: var(--paper); color: var(--ink); }
+.b10-lesson input { width: 8rem; }
+.b10-lesson input[data-equation] { width: 100%; max-width: 28rem; }
+.b10-lesson button { cursor: pointer; }
+.b10-lesson .b10-actions { display: flex; flex-wrap: wrap; gap: .55rem; margin: .7rem 0; }
+.b10-lesson .b10-primary { background: var(--accent); color: white; border-color: var(--accent); }
+.b10-lesson button:disabled { opacity: .55; cursor: default; }
+.b10-lesson :focus-visible { outline: 3px solid #b37a21; outline-offset: 3px; }
+.b10-lesson figure { margin: .8rem 0 1.1rem; }
+.b10-lesson svg, .b10-lesson figure img { display: block; width: 100%; max-width: 29rem; height: auto; }
+.b10-lesson .b10-picture { max-width: 29rem; }
+.b10-lesson .b10-picture img { display: block; width: 100%; height: auto; }
+.b10-lesson figcaption { max-width: 38rem; }
+.b10-lesson output { display: block; padding: .65rem .8rem; border-left: 4px solid #8aa99a; margin: .7rem 0; background: #edf5ef; min-height: 2rem; }
+.b10-lesson output[data-verdict="correct"] { border-color: var(--accent); }
+.b10-lesson output[data-verdict="retry"] { border-color: #9b4538; }
+.b10-lesson details { border-top: 1px solid #b5c9bc; padding: .7rem 0; margin: .7rem 0; }
+.b10-lesson summary { cursor: pointer; padding: .3rem 0; font-weight: 700; min-height: 32px; }
+.b10-lesson .b10-teacher { font-size: .95rem; }
+
+/* Own lesson body: useful action and model stay adjacent in the full presentation shell. */
+.b10-lesson { font-size: 1.05rem; }
+.b10-lesson h2 { font-size: 1.35rem; margin: .45rem 0; }
+.b10-lesson .b10-opening img { width: 64px; height: 64px; }
+.b10-lesson .b10-opening p { line-height: 1.4; }
+.b10-lesson .b10-first-actions { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .65fr); gap: .45rem; margin: .35rem 0; max-width: 29rem; }
+.b10-lesson .b10-first-actions button { margin: 0; padding: .4rem .3rem; line-height: 1.25; min-height: 44px; }
+.b10-lesson .b10-picture { margin: .35rem 0; }
+.b10-lesson .b10-model-options { margin: .4rem 0; padding: .2rem 0; }
+.b10-lesson[data-mental-split] .b10-picture { max-width: 26rem; }

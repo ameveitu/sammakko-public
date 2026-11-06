@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="lesson.css">
+<div class="sym-lesson" data-minus-lesson>
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<h2>Pois otettu määrä tai määrien ero</h2>
+<div class="sym-opening"><img src="shared/loikka/curious.png" alt="Loikka" width="72" height="72"><p>Loikan lautasella on 5 marjaa. Hän syö niistä 2. <strong>Ota marjat pois yksi kerrallaan.</strong></p></div>
+</section>
+
+<nav aria-label="Oppitunnin kohdat" data-lesson-role="metadata"><a href="#minus-kokeile">Kokeile</a><a href="#minus-miksi">Miksi miinus?</a><a href="#minus-harjoitus">Oma lasku</a><a href="#minus-lopuksi">Lopuksi</a></nav>
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<section id="minus-kokeile"><fieldset data-audience-columns><legend data-model-title>Katso, mikä muuttuu</legend><div data-visual-column><div class="sym-picture" data-model-picture><img src="remove-start.svg" alt="Lautasella on aluksi viisi marjaa. Yhtään ei ole vielä poistettu." width="360" height="200"></div><p data-model-caption>Aluksi 5 marjaa. Pois otetaan 2.</p></div><div data-response-column>
+<label>Malli <select data-mode><option value="remove">Otetaan pois</option><option value="compare">Verrataan kahta joukkoa</option></select></label>
+<p data-prediction>Mieti ensin: montako marjaa jää, kun 2 on syöty?</p>
+<div class="sym-actions"><button type="button" class="sym-primary" data-minus-action="step">Yksi marja pois</button><button type="button" data-minus-action="model-reset">Mallin alkuun</button></div>
+
+</div></fieldset></section>
+<details id="minus-miksi" data-lesson-role="answer"><summary>Miksi tähän tulee miinus?</summary>
+<p><strong>Miinusmerkki − voi kertoa, että osa otetaan pois.</strong> Kirjoita ensin alkuperäinen määrä ja sitten pois otettu määrä.</p>
+<figure data-lesson-role="worked-example"><img src="remove-end.svg" alt="Viidestä marjasta kaksi on yliviivattu. Jäljelle jää kolme. Merkintä 5 − 2." width="360" height="200"><figcaption><strong>5 − 2</strong> luetaan ”viisi miinus kaksi”. Aluksi 5, pois 2, jäljelle 3. Yliviivattuja marjoja ei lasketa jäljelle jääneisiin.</figcaption></figure>
+<h3>Miinus kertoo myös eron</h3><p>Yhdessä joukossa on 5 merkkiä ja toisessa 3. Valitse mallista <strong>Verrataan kahta joukkoa</strong>. Yhdistä yksi merkki kummastakin pariksi.</p>
+<figure data-lesson-role="worked-example"><img src="compare-end.svg" alt="Viisi merkkiä ylhäällä ja kolme alhaalla. Kolme paria yhdistyy viivoilla, kaksi yläjoukon merkkiä jää ilman paria." width="360" height="200"><figcaption>Kolme paria. Kaksi jää ilman paria. <strong>5 − 3</strong> kertoo eron: 5 on 2 enemmän kuin 3. Kaikki esineet pysyvät paikoillaan.</figcaption></figure>
+<p>Vertailussa aloitat suuremmasta määrästä. <strong>5 − 3 ja 3 − 5 eivät ole sama lasku.</strong> Lukujen vaihtaminen ei tässä toimi kuten plussassa.</p></details>
+</section>
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<section id="minus-harjoitus"><fieldset><legend>Kirjoita tilanteen miinuslasku</legend>
+<label>Tilanne <select data-case><option value="snack">Marjoja pois</option><option value="shells">Simpukoiden ero</option><option value="crayons">Uusi tilanne: kynät</option></select></label>
+<p data-question>Lautasella oli 6 marjaa. Niistä syötiin 2. Kirjoita lasku, joka kertoo jäljelle jäävän määrän.</p>
+<div class="sym-picture" data-practice-picture><img src="practice.svg" alt="Kuusi merkkiä, joista kaksi on yliviivattu poistetuiksi. Yksi merkki esittää yhtä marjaa." width="360" height="200"></div>
+<label>Kaksi määrää ja miinusmerkki <input data-expression type="text" inputmode="text" autocomplete="off" maxlength="24" aria-label="Oma miinuslasku"></label>
+<button type="button" class="sym-primary" data-minus-action="check">Tarkista lasku</button><output data-feedback data-verdict="neutral" aria-live="polite">Tarkista oma laskusi, kun olet valmis.</output>
+<details data-lesson-role="hint"><summary>Tarvitsen vihjeen</summary><p>Poistamisessa kirjoita: alkuperäinen määrä − pois otettu määrä. Vertailussa kirjoita: suurempi määrä − pienempi määrä. Voit vertailla tekemällä pareja.</p></details>
+</fieldset></section>
+</section>
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Entä kaksi yhtä suurta joukkoa?</summary><p>Kolme nappia ja kolme nappia. Kun teet pareja, jokaiselle löytyy pari. Ero on 0: <strong>3 − 3</strong>. Vertailussa mitään ei poisteta.</p></details>
+</section>
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<p id="minus-lopuksi" data-lesson-role="question"><strong>Lopuksi:</strong> Miten miinus voi kertoa jotakin, vaikka mitään ei oteta pois?</p>
+</section>
+
+<details class="sym-teacher" data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary>
+<p>Luokat 1–2. Tavoite: yhdistää miinusmerkki poistamiseen ja määrien eroon. Pakollinen esitieto on M-NUM-03. M-SUB-01 ja M-ARITH-01 eivät ole uusia portteja: merkitykset opetetaan pienin kuvatuin määrin.</p>
+<p>Ota viidestä napista kaksi pois. Vertaa sen jälkeen viiden ja kolmen napin muuttumattomia rivejä pareittain. Kysy, mitä luvut 5 ja 3 kertovat jälkimmäisessä tilanteessa. Aikuinen voi lukea ohjeet; vastauksen voi osoittaa tai kirjoittaa ilman puhepakkoa.</p>
+<p>Rastit ovat poistamisen malli. Paritus on vertailun malli. Tarkistus koskee kuvatun tilanteen esittämistä miinuslaskulla, ei fyysistä poistamista, itsenäistä laskusujuvuutta, muistamista tai formaalia hallintaa. Malli ja vihje ovat apua. Ei henkilöhistoriaa. Pelisilta varmistetaan erikseen verkon kuoressa.</p></details>
+<noscript data-lesson-role="metadata"><p>Ilman JavaScriptiä voit käyttää kuvia ja selityksiä. Vuorovaikutteinen malli ja tarkistus tarvitsevat JavaScriptin.</p></noscript>
+</div>

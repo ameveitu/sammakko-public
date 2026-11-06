@@ -1,0 +1,3537 @@
+catalog:
+  id: Physics_KC_Catalog_7_9_v0.2
+  version: '0.2'
+  status: pre-MVP refactored candidate baseline
+  scope: Suomen perusopetuksen fysiikka 7–9, esitietoina ympäristöopin 1–6 fysiikan ja luonnontieteellisen tutkimisen alkutiedot
+  language: fi
+  time_locked_note: Voimassa olevan POPS 2014 -rakenteen pohjalta tehty pedagoginen DAG; ei OPH:n määräämä vuosiluokkajärjestys.
+    POPS 2027/2028 -uudistus ei ole vielä tämän version normatiivinen lähde.
+  external_prerequisite_catalogs:
+  - Science_KC_Foundation_1_6_v0.2
+  - Math_KC_Catalog_1_6_v0.4
+  - Math_KC_Catalog_7_9_v0.2
+  prerequisite_semantics:
+    required: Aidosti välttämätön ydinesitieto useimmille ydintehtäville.
+    strong: Vahva tuki; voidaan korjata rinnalla tai ohittaa vaihtoehtoisella representaatiolla.
+    helpful: Hyödyllinen, ei avausportti.
+  group_semantics:
+    all_of: kaikki vaaditaan
+    any_of: vähintään yksi riittää
+    between_groups: ryhmät yhdistyvät AND-logiikalla
+  source_basis_semantics:
+    direct_curriculum: suoraan normatiivisen sisältöalueen nimeämä tai siitä suoraan erotettava taito
+    assessment_refined: arviointikriteeri/tukimateriaali auttaa hienontamaan
+    pedagogically_derived: Sammakon pedagoginen välisolmu tai granulaatio
+  relation_type_semantics:
+    prerequisite: Osaamiskohteen tiedollinen tai taidollinen esitieto.
+    process_support: Prosessitaito tukee työskentelyä mutta ei ole automaattisesti avausportti.
+    representation_support: Representaatiotaito tukee ymmärtämistä tai ilmaisua.
+    safety_gate: Turvallisuusehto käytännön/kokeelliselle toiminnalle; ei käsitteellisen osaamisen hard prerequisite.
+    transfer_bridge: Soveltamista tukeva yhteys.
+    enrichment: Syventävä yhteys.
+  refactor_lineage:
+    base_catalog: Physics_KC_Catalog_7_9_v0.1
+    node_audit: STEM_KC_NODE_AUDIT_v0.1
+    refactor_generation: STEM_KC_Catalogs_v0.2
+    policy: Apply high-confidence granularity/foundation/parent changes; retain original IDs as integration nodes when split;
+      do not apply medium-confidence split candidates automatically.
+  node_kind_semantics:
+    foundation: Pedagoginen perustaito, joka voi toimia globaalina oppimisen lähtöpisteenä.
+    concept: Yksi erikseen hallittava käsite tai abstraktio.
+    procedure: Yksi erikseen harjoiteltava menettely, algoritmi tai suoritus.
+    representation: Matemaattisen tai luonnontieteellisen tiedon esitystapa tai esitysten välinen muunnos.
+    process_skill: Sisältöalueiden läpi kulkeva työskentely-, päättely-, tutkimus- tai strateginen taito.
+    integration: Koostenooodi, jonka hallinta edellyttää määriteltyjen atomisempien alinoodeiden yhdistämistä.
+  entry_role_semantics:
+    foundation: Voidaan aloittaa ilman aiempaa muodollista sisältö-KC:tä; arkikieli ja tavallinen havaintokyky sallitaan.
+    domain_entry: Ei globaali foundation, mutta voidaan esitellä ilmiö-/kontekstipohjaisesti ilman hard prerequisitea; strong/helpful-tukia
+      voi olla.
+    dynamic: Prosessi-/representaatiotaito, jonka todellinen konteksti määräytyy tehtäväinstanssista.
+    operational: Turvallisuus- tai toimintavalmius, joka voi olla käytännön tekemisen portti mutta ei käsitteellisen oppimisen
+      hard prerequisite.
+    none: Ei ole aloitusroolissa.
+  mastery_role_semantics:
+    atomic: Tavoitteena oma itsenäinen mastery-tila.
+    integration: Koostaa useita atomisia KC:itä; mastery johdetaan alinoodeista ja erillisestä soveltamisnäytöstä.
+    process: Evidenssiä kertyy useissa sisältökonteksteissa; ei välttämättä lineaarinen sisältömastery.
+    operational: Turvallisuus/toimintakyky; voidaan käyttää suoritusporttina.
+    placeholder: Paikallisen OPS:n tai myöhemmän lähdevalinnan täsmennettävä väliaikainen rakenne.
+  concept_path_semantics: Hierarkkinen taksonomiapolku. parent_concept säilyy välittömänä leaf-parenttina; concept_path estää
+    taksonomian jäämisen litteäksi.
+  foundation_semantics_v0_2: foundation_entry=true vain aidolle globaalille pedagogiselle lähtöpisteelle. zero_required_indegree
+    ei yksin tee foundationia.
+  integration_semantics_v0_2: Splitattu alkuperäinen ID säilytetään yhteensopivana integration-noodina. Uudet atomisemmat
+    lapset kantavat varsinaisen hienojakoisen mastery-tilan.
+source_registry:
+  PHY79-S1:
+    authority: Opetushallitus
+    normative: true
+    title: Fysiikka vuosiluokat 7–9
+    section: S1 Luonnontieteellinen tutkimus
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  PHY79-S2:
+    authority: Opetushallitus
+    normative: true
+    title: Fysiikka vuosiluokat 7–9
+    section: S2 Fysiikka omassa elämässä ja elinympäristössä
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  PHY79-S3:
+    authority: Opetushallitus
+    normative: true
+    title: Fysiikka vuosiluokat 7–9
+    section: S3 Fysiikka yhteiskunnassa
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  PHY79-S4:
+    authority: Opetushallitus
+    normative: true
+    title: Fysiikka vuosiluokat 7–9
+    section: S4 Fysiikka maailmankuvan rakentajana
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  PHY79-S5:
+    authority: Opetushallitus
+    normative: true
+    title: Fysiikka vuosiluokat 7–9
+    section: S5 Vuorovaikutus ja liike
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  PHY79-S6:
+    authority: Opetushallitus
+    normative: true
+    title: Fysiikka vuosiluokat 7–9
+    section: S6 Sähkö
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  PHY79-ASSESS:
+    authority: Opetushallitus
+    normative: false
+    title: Fysiikan päättöarvioinnin kriteerit ja tukimateriaali
+    section: Päättöarviointi
+    url: https://www.oph.fi/fi/koulutus-ja-tutkinnot/fysiikan-paattoarvioinnin-tukimateriaali
+    retrieved_at: '2026-10-06'
+nodes:
+- id: PHY79-SAFE-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Turvallisuus
+  title: Turvallinen työskentely fysiikan tutkimuksessa
+  short_description: Turvallinen työskentely fysiikan tutkimuksessa
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: SCI-ENV-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite.
+  - id: ENV-PHY-ELECSAFE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-ELECSAFE-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: operational
+  mastery_role: operational
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Turvallisuus
+- id: PHY79-QUESTION-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Tutkimuskysymys
+  title: Fysikaalisesti tutkittavan kysymyksen muodostaminen
+  short_description: Fysikaalisesti tutkittavan kysymyksen muodostaminen
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: SCI-ENV-QUESTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-QUESTION-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: SCI-ENV-CAUSE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-CAUSE-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-QUESTION-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Tutkimuskysymys
+- id: PHY79-PLAN-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Tutkimuksen suunnittelu
+  title: Fysiikan tutkimuksen suunnitteleminen muuttujat huomioiden
+  short_description: Fysiikan tutkimuksen suunnitteleminen muuttujat huomioiden
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: SCI-ENV-PLAN-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-PLAN-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-QUESTION-01
+    relation_type: process_support
+    strength: strong
+    rationale: Kysymys tukee suunnittelun tarkennusta.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-PLAN-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Tutkimuksen suunnittelu
+- id: PHY79-QTY-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Suureet ja yksiköt
+  title: Fysikaalisen suureen, lukuarvon ja yksikön erottaminen
+  short_description: Fysikaalisen suureen, lukuarvon ja yksikön erottaminen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  - PHY79-ASSESS
+  relations:
+  - id: PHY79-QTY-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-QTY-CONCEPT vaaditaan kokonaisuuden hallintaan.
+  - id: PHY79-NUMVALUE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-NUMVALUE vaaditaan kokonaisuuden hallintaan.
+  - id: PHY79-UNIT-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-UNIT-CONCEPT vaaditaan kokonaisuuden hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-QTY-CONCEPT
+    - PHY79-NUMVALUE
+    - PHY79-UNIT-CONCEPT
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-QTY-CONCEPT, PHY79-NUMVALUE, PHY79-UNIT-CONCEPT. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id001
+  - PHY79-QTY-CONCEPT
+  - PHY79-NUMVALUE
+  - PHY79-UNIT-CONCEPT
+  integration_of: *id001
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Suureet ja yksiköt
+- id: PHY79-SI-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Suureet ja yksiköt
+  title: Fysiikassa käytettävien SI-yksiköiden ja tunnusten perusidea
+  short_description: Fysiikassa käytettävien SI-yksiköiden ja tunnusten perusidea
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: PHY79-QTY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M-UNIT-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-UNIT-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-QTY-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Suureet ja yksiköt
+- id: PHY79-UNIT-CONV
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Yksiköt
+  title: Yksikkömuunnoksen tekeminen ennen fysikaalista laskua
+  short_description: Yksikkömuunnoksen tekeminen ennen fysikaalista laskua
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: PHY79-QTY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M-UNIT-02
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-UNIT-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M-UNIT-03
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-UNIT-03 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M-UNIT-04
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-UNIT-04 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M-UNIT-05
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-UNIT-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M79-UNIT-LIN
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-UNIT-LIN tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-QTY-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  dynamic_prerequisite_rule: requires_quantity_specific_unit_conversion_skill_for_item_instance
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Yksiköt
+- id: PHY79-MEAS-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Mittaaminen
+  title: Suureen mittaaminen tarkoituksenmukaisella mittalaitteella
+  short_description: Suureen mittaaminen tarkoituksenmukaisella mittalaitteella
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: SCI-ENV-MEAS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-MEAS-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-QTY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Turvallisuus vaaditaan fyysisessä mittaustilanteessa, ei käsitteellisen mittaamisen avaamiseksi.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-MEAS-01
+    - PHY79-QTY-01
+    rationale: Mittaamisen aiempi taito ja suureen käsite ovat tiedolliset ydinesitiedot.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Mittaaminen
+- id: PHY79-PREC-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Mittaustarkkuus
+  title: Mittaustarkkuuden ja ilmoitettujen numeroiden järkevyyden arviointi
+  short_description: Mittaustarkkuuden ja ilmoitettujen numeroiden järkevyyden arviointi
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  - PHY79-ASSESS
+  relations:
+  - id: PHY79-MEAS-PRECISION
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-PREC-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-MEAS-PRECISION vaaditaan kokonaisuuden
+      hallintaan.
+  - id: PHY79-REPORTED-DIGITS
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-PREC-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-REPORTED-DIGITS vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-MEAS-PRECISION
+    - PHY79-REPORTED-DIGITS
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-MEAS-PRECISION, PHY79-REPORTED-DIGITS. Lisäksi vaaditaan
+    erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id002
+  - PHY79-MEAS-PRECISION
+  - PHY79-REPORTED-DIGITS
+  integration_of: *id002
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Mittaustarkkuus
+- id: PHY79-DATA-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Aineisto
+  title: Mittaustulosten kokoaminen taulukkoon
+  short_description: Mittaustulosten kokoaminen taulukkoon
+  node_kind: representation
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: SCI-ENV-DATA-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-DATA-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M-DATA-10
+    relation_type: representation_support
+    strength: strong
+    rationale: M-DATA-10 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-DATA-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Aineisto
+- id: PHY79-GRAPH-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Kuvaaja
+  title: Mittaustulosten esittäminen kuvaajana
+  short_description: Mittaustulosten esittäminen kuvaajana
+  node_kind: representation
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: PHY79-DATA-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-DATA-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M79-FUNC-GRAPH
+    relation_type: representation_support
+    strength: strong
+    rationale: M79-FUNC-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-DATA-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Kuvaaja
+- id: PHY79-REL-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Riippuvuudet
+  title: Suureiden välisen riippuvuuden tunnistaminen mittausdatasta
+  short_description: Suureiden välisen riippuvuuden tunnistaminen mittausdatasta
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: PHY79-GRAPH-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-GRAPH-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M79-DEP-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-DEP-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-GRAPH-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Riippuvuudet
+- id: PHY79-MODEL-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Mallintaminen
+  title: Yksinkertaisen fysiikan mallin muodostaminen mittaustuloksista
+  short_description: Yksinkertaisen fysiikan mallin muodostaminen mittaustuloksista
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: SCI-ENV-MODEL-02
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-MODEL-02 on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-REL-01
+    relation_type: process_support
+    strength: strong
+    rationale: PHY79-REL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-MODEL-02
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Mallintaminen
+- id: PHY79-CONCL-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Tulosten arviointi
+  title: Tutkimustulosten arviointi ja johtopäätöksen perusteleminen
+  short_description: Tutkimustulosten arviointi ja johtopäätöksen perusteleminen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: PHY79-RESULT-EVAL
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CONCL-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-RESULT-EVAL vaaditaan kokonaisuuden hallintaan.
+  - id: PHY79-CONCLUSION-JUSTIFY
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CONCL-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-CONCLUSION-JUSTIFY vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-RESULT-EVAL
+    - PHY79-CONCLUSION-JUSTIFY
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-RESULT-EVAL, PHY79-CONCLUSION-JUSTIFY. Lisäksi vaaditaan
+    erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id003
+  - PHY79-RESULT-EVAL
+  - PHY79-CONCLUSION-JUSTIFY
+  integration_of: *id003
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Tulosten arviointi
+- id: PHY79-PREDICT-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Mallit
+  title: Fysikaalisen mallin käyttäminen ennusteen tekemiseen
+  short_description: Fysikaalisen mallin käyttäminen ennusteen tekemiseen
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: PHY79-MODEL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-MODEL-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-MODEL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Mallit
+- id: PHY79-TEMP-HEAT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Lämpöilmiöt
+  title: Lämpötilan ja lämpöenergian erottaminen
+  short_description: Lämpötilan ja lämpöenergian erottaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S2
+  relations:
+  - id: ENV-PHY-TEMP-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-TEMP-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-PHY-THERMAL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-THERMAL-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-TEMP-01
+    - ENV-PHY-THERMAL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S2 Oma elämä ja ympäristö
+  - Lämpöilmiöt
+- id: PHY79-HEATFLOW
+  subject: physics
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Lämpöilmiöt
+  title: Lämpöenergian siirtymisen suunnan tunnistaminen
+  short_description: Lämpöenergian siirtymisen suunnan tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S2
+  relations:
+  - id: PHY79-TEMP-HEAT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-TEMP-HEAT on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-TEMP-HEAT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S2 Oma elämä ja ympäristö
+  - Lämpöilmiöt
+- id: PHY79-HEAT-MECH
+  subject: physics
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Lämpöilmiöt
+  title: Johtumisen, kuljettumisen ja säteilyn tunnistaminen lämpöenergian siirtymisen malleina
+  short_description: Johtumisen, kuljettumisen ja säteilyn tunnistaminen lämpöenergian siirtymisen malleina
+  node_kind: integration
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S2
+  relations:
+  - id: PHY79-HEAT-CONDUCTION
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-HEAT-MECH on v0.2:ssa integraationoodi; atominen alitaito PHY79-HEAT-CONDUCTION vaaditaan kokonaisuuden
+      hallintaan.
+  - id: PHY79-HEAT-CONVECTION
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-HEAT-MECH on v0.2:ssa integraationoodi; atominen alitaito PHY79-HEAT-CONVECTION vaaditaan kokonaisuuden
+      hallintaan.
+  - id: PHY79-HEAT-RADIATION
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-HEAT-MECH on v0.2:ssa integraationoodi; atominen alitaito PHY79-HEAT-RADIATION vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-HEAT-CONDUCTION
+    - PHY79-HEAT-CONVECTION
+    - PHY79-HEAT-RADIATION
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-HEAT-CONDUCTION, PHY79-HEAT-CONVECTION, PHY79-HEAT-RADIATION.
+    Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id004
+  - PHY79-HEAT-CONDUCTION
+  - PHY79-HEAT-CONVECTION
+  - PHY79-HEAT-RADIATION
+  integration_of: *id004
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Fysiikka
+  - S2 Oma elämä ja ympäristö
+  - Lämpöilmiöt
+- id: PHY79-RAD-EM
+  subject: physics
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Säteilylajit
+  title: Sähkömagneettisen säteilyn tunnistaminen ja luokitteleminen säteilylajiksi
+  short_description: Sähkömagneettisen säteilyn tunnistaminen ja luokitteleminen säteilylajiksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S2
+  relations:
+  - id: ENV-PHY-LIGHT-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-LIGHT-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: ENV-PHY-ENERGYFORM-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-ENERGYFORM-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: domain_entry
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - Säteily
+  - Säteilylajit
+- id: PHY79-RAD-PARTICLE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Säteilylajit
+  title: Hiukkassäteilyn tunnistaminen säteilylajiksi
+  short_description: Hiukkassäteilyn tunnistaminen säteilylajiksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S2
+  relations:
+  - id: ENV-PHY-ENERGYFORM-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-ENERGYFORM-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: ENV-PHY-MOTION-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-MOTION-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: CHEM79-ATOM-01
+    relation_type: prerequisite
+    strength: helpful
+    rationale: CHEM79-ATOM-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: domain_entry
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - Säteily
+  - Säteilylajit
+- id: PHY79-RAD-ION
+  subject: physics
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Säteily
+  title: Ionisoivan ja ionisoimattoman säteilyn turvallisuusmerkityksen ymmärtäminen
+  short_description: Ionisoivan ja ionisoimattoman säteilyn turvallisuusmerkityksen ymmärtäminen
+  node_kind: integration
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S2
+  relations:
+  - id: PHY79-RAD-ION-CLASS
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-RAD-ION on v0.2:ssa integraationoodi; atominen alitaito PHY79-RAD-ION-CLASS vaaditaan kokonaisuuden hallintaan.
+  - id: PHY79-RAD-ION-SAFETY
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-RAD-ION on v0.2:ssa integraationoodi; atominen alitaito PHY79-RAD-ION-SAFETY vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-RAD-ION-CLASS
+    - PHY79-RAD-ION-SAFETY
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-RAD-ION-CLASS, PHY79-RAD-ION-SAFETY. Lisäksi vaaditaan
+    erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id005
+  - PHY79-RAD-ION-CLASS
+  - PHY79-RAD-ION-SAFETY
+  integration_of: *id005
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Fysiikka
+  - S2 Oma elämä ja ympäristö
+  - Säteily
+- id: PHY79-RAD-SAFE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Säteilyturvallisuus
+  title: Säteilyyn liittyvän terveys- ja turvallisuusriskin arvioinnin perusidea
+  short_description: Säteilyyn liittyvän terveys- ja turvallisuusriskin arvioinnin perusidea
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S2
+  relations:
+  - id: PHY79-RAD-ION
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-RAD-ION on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-SAFE-01
+    relation_type: process_support
+    strength: strong
+    rationale: PHY79-SAFE-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-RAD-ION
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S2 Oma elämä ja ympäristö
+  - Säteilyturvallisuus
+- id: PHY79-ENERGY-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S4 Maailmankuva
+  parent_concept: Energia
+  title: Energian säilymisen periaatteen käyttäminen ilmiön selittämiseen
+  short_description: Energian säilymisen periaatteen käyttäminen ilmiön selittämiseen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S4
+  relations:
+  - id: ENV-PHY-ENERGYCONS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-ENERGYCONS-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-ENERGYCONS-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S4 Maailmankuva
+  - Energia
+- id: PHY79-ENERGY-TRANSFER
+  subject: physics
+  grade_band: 7-9
+  topic_area: S4 Maailmankuva
+  parent_concept: Energia
+  title: Energian siirtymisen ja muuntumisen erottaminen
+  short_description: Energian siirtymisen ja muuntumisen erottaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S4
+  relations:
+  - id: PHY79-ENERGY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ENERGY-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-PHY-ENERGYTRANS-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-ENERGYTRANS-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-ENERGY-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S4 Maailmankuva
+  - Energia
+- id: PHY79-KINETIC
+  subject: physics
+  grade_band: 7-9
+  topic_area: S4 Maailmankuva
+  parent_concept: Mekaaninen energia
+  title: Liike-energian laadullinen riippuvuus massasta ja nopeudesta
+  short_description: Liike-energian laadullinen riippuvuus massasta ja nopeudesta
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S4
+  - PHY79-S5
+  relations:
+  - id: PHY79-ENERGY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ENERGY-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-PHY-MOTION-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-MOTION-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-ENERGY-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S4 Maailmankuva
+  - Mekaaninen energia
+- id: PHY79-POTENTIAL
+  subject: physics
+  grade_band: 7-9
+  topic_area: S4 Maailmankuva
+  parent_concept: Mekaaninen energia
+  title: Painovoimaan liittyvän potentiaalienergian laadullinen riippuvuus korkeudesta ja massasta
+  short_description: Painovoimaan liittyvän potentiaalienergian laadullinen riippuvuus korkeudesta ja massasta
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S4
+  - PHY79-S5
+  relations:
+  - id: PHY79-ENERGY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ENERGY-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-ENERGY-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S4 Maailmankuva
+  - Mekaaninen energia
+- id: PHY79-ENERGY-SOURCE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S3 Fysiikka yhteiskunnassa
+  parent_concept: Energiantuotanto
+  title: Energiantuotannon lähteen ja energiamuunnoksen tunnistaminen
+  short_description: Energiantuotannon lähteen ja energiamuunnoksen tunnistaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S3
+  relations:
+  - id: PHY79-ENERGY-TRANSFER
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ENERGY-TRANSFER on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-ENERGY-TRANSFER
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S3 Fysiikka yhteiskunnassa
+  - Energiantuotanto
+- id: PHY79-RENEW
+  subject: physics
+  grade_band: 7-9
+  topic_area: S3 Fysiikka yhteiskunnassa
+  parent_concept: Energiavarat
+  title: Uusiutuvien ja uusiutumattomien energiavarojen erottaminen
+  short_description: Uusiutuvien ja uusiutumattomien energiavarojen erottaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S3
+  relations:
+  - id: PHY79-ENERGY-SOURCE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ENERGY-SOURCE on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-ENERGY-SOURCE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S3 Fysiikka yhteiskunnassa
+  - Energiavarat
+- id: PHY79-ENERGY-IMPACT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S3 Fysiikka yhteiskunnassa
+  parent_concept: Energiavarat
+  title: Energiantuotannon kestävyyteen liittyvien fysikaalisten näkökulmien vertaileminen
+  short_description: Energiantuotannon kestävyyteen liittyvien fysikaalisten näkökulmien vertaileminen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S3
+  relations:
+  - id: PHY79-RENEW
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-RENEW on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-RENEW
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: integration
+  concept_path:
+  - Fysiikka
+  - S3 Fysiikka yhteiskunnassa
+  - Energiavarat
+- id: PHY79-UNIVERSE-SCALE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S4 Maailmankuva
+  parent_concept: Maailmankaikkeus
+  title: Maailmankaikkeuden mittasuhteiden hahmottaminen suuruusluokkina
+  short_description: Maailmankaikkeuden mittasuhteiden hahmottaminen suuruusluokkina
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S4
+  relations:
+  - id: ENV-PHY-SPACE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-SPACE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M79-POWER-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-POWER-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M79-EXACTAPPROX-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-EXACTAPPROX-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-SPACE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S4 Maailmankuva
+  - Maailmankaikkeus
+- id: PHY79-UNIVERSE-STRUCT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S4 Maailmankuva
+  parent_concept: Maailmankaikkeus
+  title: Maailmankaikkeuden rakenteiden hierarkian hahmottaminen
+  short_description: Maailmankaikkeuden rakenteiden hierarkian hahmottaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S4
+  relations:
+  - id: ENV-PHY-SPACE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-SPACE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-UNIVERSE-SCALE
+    relation_type: prerequisite
+    strength: strong
+    rationale: PHY79-UNIVERSE-SCALE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-SPACE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S4 Maailmankuva
+  - Maailmankaikkeus
+- id: PHY79-MOTION-REF
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Liike
+  title: Liikkeen kuvaaminen suhteessa valittuun tarkastelukohteeseen
+  short_description: Liikkeen kuvaaminen suhteessa valittuun tarkastelukohteeseen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: ENV-PHY-MOTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-MOTION-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-MOTION-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Liike
+- id: PHY79-DIST-TIME
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Liike
+  title: Matkan ja ajan tunnistaminen liikkeen mitattaviksi suureiksi
+  short_description: Matkan ja ajan tunnistaminen liikkeen mitattaviksi suureiksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-QTY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-MOTION-REF
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-MOTION-REF on ydinesitieto tälle osaamiskohteelle.
+  - id: M-TIME-03
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-TIME-03 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M-MEAS-02
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MEAS-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-QTY-01
+    - PHY79-MOTION-REF
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Liike
+- id: PHY79-SPEED-CONCEPT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Nopeus
+  title: Keskinopeuden ymmärtäminen matkan ja ajan suhteena
+  short_description: Keskinopeuden ymmärtäminen matkan ja ajan suhteena
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-DIST-TIME
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-DIST-TIME on ydinesitieto tälle osaamiskohteelle.
+  - id: M-MULTREL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MULTREL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-DIST-TIME
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Nopeus
+- id: PHY79-SPEED-CALC
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Nopeus
+  title: Keskinopeuden laskeminen v=s/t
+  short_description: Keskinopeuden laskeminen v=s/t
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-SPEED-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - id: M-DIV-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-DIV-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M79-PROP-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-PROP-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-SPEED-CONCEPT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Nopeus
+- id: PHY79-SPEED-UNIT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Nopeus
+  title: Nopeuden yksikön johtaminen matkan ja ajan yksiköistä
+  short_description: Nopeuden yksikön johtaminen matkan ja ajan yksiköistä
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-SPEED-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-QTY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M-UNIT-02
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-UNIT-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M-UNIT-05
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-UNIT-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-SPEED-CONCEPT
+    - PHY79-QTY-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Nopeus
+- id: PHY79-SPEED-MIXED
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Nopeus
+  title: Nopeuslasku sekayksiköillä yksiköt ensin yhtenäistäen
+  short_description: Nopeuslasku sekayksiköillä yksiköt ensin yhtenäistäen
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-SPEED-CALC
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CALC on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-UNIT-CONV
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-UNIT-CONV on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-SPEED-UNIT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-UNIT on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-SPEED-CALC
+    - PHY79-UNIT-CONV
+    - PHY79-SPEED-UNIT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Nopeus
+- id: PHY79-SPEED-REARR
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Nopeus
+  title: Matkan tai ajan ratkaiseminen nopeussuhteesta
+  short_description: Matkan tai ajan ratkaiseminen nopeussuhteesta
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-SPEED-CALC
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CALC on ydinesitieto tälle osaamiskohteelle.
+  - id: M79-EQ1-SOLVE
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-SPEED-CALC
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Nopeus
+- id: PHY79-ST-GRAPH
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Liikekuvaajat
+  title: Matka–aika-kuvaajan tulkitseminen liikkeen mallina
+  short_description: Matka–aika-kuvaajan tulkitseminen liikkeen mallina
+  node_kind: representation
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-SPEED-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-GRAPH-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-GRAPH-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M79-SLOPE
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-SLOPE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-SPEED-CONCEPT
+    - PHY79-GRAPH-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Liikekuvaajat
+- id: PHY79-VT-GRAPH
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Liikekuvaajat
+  title: Nopeus–aika-kuvaajan tulkitseminen tasaisessa ja muuttuvassa liikkeessä
+  short_description: Nopeus–aika-kuvaajan tulkitseminen tasaisessa ja muuttuvassa liikkeessä
+  node_kind: representation
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-SPEED-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-GRAPH-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-GRAPH-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-SPEED-CONCEPT
+    - PHY79-GRAPH-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Liikekuvaajat
+- id: PHY79-ACCEL-CONCEPT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Muuttuva liike
+  title: Kiihtyvyyden ymmärtäminen nopeuden muutoksena ajassa
+  short_description: Kiihtyvyyden ymmärtäminen nopeuden muutoksena ajassa
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-SPEED-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - id: M-MULTREL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MULTREL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-SPEED-CONCEPT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Muuttuva liike
+- id: PHY79-ACCEL-CALC
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Muuttuva liike
+  title: Keskimääräisen kiihtyvyyden laskeminen nopeuden muutoksesta ja ajasta
+  short_description: Keskimääräisen kiihtyvyyden laskeminen nopeuden muutoksesta ja ajasta
+  node_kind: procedure
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-ACCEL-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ACCEL-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - id: M79-INT-SUB
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-INT-SUB tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M-DIV-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-DIV-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-ACCEL-CONCEPT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Muuttuva liike
+- id: PHY79-ACCEL-GRAPH
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Muuttuva liike
+  title: Muuttuvan liikkeen tunnistaminen liike- ja nopeuskuvaajista
+  short_description: Muuttuvan liikkeen tunnistaminen liike- ja nopeuskuvaajista
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-ACCEL-MOTION-GRAPH
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ACCEL-GRAPH on v0.2:ssa integraationoodi; atominen alitaito PHY79-ACCEL-MOTION-GRAPH vaaditaan kokonaisuuden
+      hallintaan.
+  - id: PHY79-ACCEL-VT-GRAPH
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ACCEL-GRAPH on v0.2:ssa integraationoodi; atominen alitaito PHY79-ACCEL-VT-GRAPH vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-ACCEL-MOTION-GRAPH
+    - PHY79-ACCEL-VT-GRAPH
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-ACCEL-MOTION-GRAPH, PHY79-ACCEL-VT-GRAPH. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id006
+  - PHY79-ACCEL-MOTION-GRAPH
+  - PHY79-ACCEL-VT-GRAPH
+  integration_of: *id006
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Muuttuva liike
+- id: PHY79-INTERACT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Vuorovaikutus
+  title: Vuorovaikutuksen tunnistaminen voiman taustalla
+  short_description: Vuorovaikutuksen tunnistaminen voiman taustalla
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: ENV-PHY-FORCE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-FORCE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-FORCE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Vuorovaikutus
+- id: PHY79-FORCE-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Voima
+  title: Voiman suuruuden ja suunnan ymmärtäminen kappaleeseen vaikuttavana suureena
+  short_description: Voiman suuruuden ja suunnan ymmärtäminen kappaleeseen vaikuttavana suureena
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-FORCE-MAGNITUDE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-FORCE-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-FORCE-MAGNITUDE vaaditaan kokonaisuuden
+      hallintaan.
+  - id: PHY79-FORCE-DIRECTION
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-FORCE-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-FORCE-DIRECTION vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-FORCE-MAGNITUDE
+    - PHY79-FORCE-DIRECTION
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-FORCE-MAGNITUDE, PHY79-FORCE-DIRECTION. Lisäksi vaaditaan
+    erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id007
+  - PHY79-FORCE-MAGNITUDE
+  - PHY79-FORCE-DIRECTION
+  integration_of: *id007
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Voima
+- id: PHY79-FORCE-DIAG
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Voimat
+  title: Kappaleeseen vaikuttavien voimien tunnistaminen yksinkertaisesta tilanteesta
+  short_description: Kappaleeseen vaikuttavien voimien tunnistaminen yksinkertaisesta tilanteesta
+  node_kind: representation
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-FORCE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-FORCE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-FORCE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Voimat
+- id: PHY79-NETFORCE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Voimat
+  title: Voimien yhteisvaikutuksen laadullinen määrittäminen
+  short_description: Voimien yhteisvaikutuksen laadullinen määrittäminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-FORCE-DIAG
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-FORCE-DIAG on ydinesitieto tälle osaamiskohteelle.
+  - id: M79-INT-ADD
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-INT-ADD tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-FORCE-DIAG
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Voimat
+- id: PHY79-FORCE-MOTION
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Voima ja liike
+  title: Voimien yhteisvaikutuksen yhdistäminen liikkeen muutokseen
+  short_description: Voimien yhteisvaikutuksen yhdistäminen liikkeen muutokseen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-NETFORCE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-NETFORCE on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-PHY-MOTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-MOTION-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-NETFORCE
+    - ENV-PHY-MOTION-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Voima ja liike
+- id: PHY79-WEIGHT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Voimat
+  title: Painon tunnistaminen Maan gravitaatiovuorovaikutukseen liittyväksi voimaksi
+  short_description: Painon tunnistaminen Maan gravitaatiovuorovaikutukseen liittyväksi voimaksi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-FORCE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-FORCE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-FORCE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Voimat
+- id: PHY79-FRICTION
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Voimat
+  title: Kitkan vaikutuksen tunnistaminen liikkeessä
+  short_description: Kitkan vaikutuksen tunnistaminen liikkeessä
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-FORCE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-FORCE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-FORCE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Voimat
+- id: PHY79-SUPPORT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Voimat
+  title: Tukivoiman tunnistaminen kosketusvuorovaikutuksessa
+  short_description: Tukivoiman tunnistaminen kosketusvuorovaikutuksessa
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-FORCE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-FORCE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-FORCE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Voimat
+- id: PHY79-ACTIONPAIR
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Vuorovaikutus
+  title: Vuorovaikutusvoimien esiintyminen pareina eri kappaleissa
+  short_description: Vuorovaikutusvoimien esiintyminen pareina eri kappaleissa
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-INTERACT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-INTERACT on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-INTERACT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Vuorovaikutus
+- id: PHY79-WORK-CONCEPT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Työ
+  title: Mekaanisen työn ymmärtäminen voiman ja siirtymän yhteytenä
+  short_description: Mekaanisen työn ymmärtäminen voiman ja siirtymän yhteytenä
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-FORCE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-FORCE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-ENERGY-TRANSFER
+    relation_type: prerequisite
+    strength: strong
+    rationale: Työ kytketään energiaan, mutta energiakäsite ei ole mekaanisen työn määritelmän ainoa sisäänkäynti.
+  - id: PHY79-DIST-TIME
+    relation_type: prerequisite
+    strength: required
+    rationale: Mekaaninen työ tarvitsee siirtymän käsitteen.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-FORCE-01
+    - PHY79-DIST-TIME
+    rationale: Voima ja siirtymä ovat työn käsitteelliset ydinesitiedot.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Työ
+- id: PHY79-WORK-CALC
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Työ
+  title: Yksinkertaisen mekaanisen työn laskeminen W=Fs
+  short_description: Yksinkertaisen mekaanisen työn laskeminen W=Fs
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-WORK-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-WORK-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - id: M-MUL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MUL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-WORK-CONCEPT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Työ
+- id: PHY79-POWER-CONCEPT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Teho
+  title: Tehon ymmärtäminen työn tai energiansiirron nopeutena
+  short_description: Tehon ymmärtäminen työn tai energiansiirron nopeutena
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-WORK-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-WORK-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-DIST-TIME
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-DIST-TIME on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-WORK-CONCEPT
+    - PHY79-DIST-TIME
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Teho
+- id: PHY79-POWER-CALC
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Teho
+  title: Tehon laskeminen P=W/t yksinkertaisessa tilanteessa
+  short_description: Tehon laskeminen P=W/t yksinkertaisessa tilanteessa
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-POWER-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-POWER-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - id: M-DIV-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-DIV-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-POWER-CONCEPT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Teho
+- id: PHY79-CHARGE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Sähköinen varaus
+  title: Sähköisen varauksen positiivisen ja negatiivisen luonteen perusidea
+  short_description: Sähköisen varauksen positiivisen ja negatiivisen luonteen perusidea
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: ENV-PHY-FORCE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-FORCE-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: SCI-ENV-CAUSE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-CAUSE-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: CHEM79-ELECTRON
+    relation_type: prerequisite
+    strength: helpful
+    rationale: CHEM79-ELECTRON on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: CHEM79-PROTON
+    relation_type: prerequisite
+    strength: helpful
+    rationale: CHEM79-PROTON on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: domain_entry
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Sähköinen varaus
+- id: PHY79-CHARGING
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Sähköinen varaus
+  title: Sähköistymisen tunnistaminen varausten epätasapainoksi
+  short_description: Sähköistymisen tunnistaminen varausten epätasapainoksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-CHARGE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CHARGE on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-CHARGE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Sähköinen varaus
+- id: PHY79-CIRCUIT-01
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Virtapiiri
+  title: Suljetun virtapiirin ja sen keskeisten osien tunnistaminen
+  short_description: Suljetun virtapiirin ja sen keskeisten osien tunnistaminen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-CIRCUIT-CLOSED
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CIRCUIT-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-CIRCUIT-CLOSED vaaditaan kokonaisuuden
+      hallintaan.
+  - id: PHY79-CIRCUIT-COMPONENTS
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CIRCUIT-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-CIRCUIT-COMPONENTS vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-CIRCUIT-CLOSED
+    - PHY79-CIRCUIT-COMPONENTS
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-CIRCUIT-CLOSED, PHY79-CIRCUIT-COMPONENTS. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id008
+  - PHY79-CIRCUIT-CLOSED
+  - PHY79-CIRCUIT-COMPONENTS
+  integration_of: *id008
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Virtapiiri
+- id: PHY79-CURRENT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Sähkövirta
+  title: Sähkövirran ymmärtäminen virtapiirin suureeksi
+  short_description: Sähkövirran ymmärtäminen virtapiirin suureeksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-CIRCUIT-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CIRCUIT-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-QTY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-CIRCUIT-01
+    - PHY79-QTY-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Sähkövirta
+- id: PHY79-VOLTAGE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Jännite
+  title: Jännitteen ymmärtäminen virtapiirin suureeksi
+  short_description: Jännitteen ymmärtäminen virtapiirin suureeksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-CIRCUIT-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CIRCUIT-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-QTY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-CIRCUIT-01
+    - PHY79-QTY-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Jännite
+- id: PHY79-MEAS-I
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Sähkömittaus
+  title: Sähkövirran mittaaminen virtapiirissä
+  short_description: Sähkövirran mittaaminen virtapiirissä
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-CURRENT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CURRENT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-MEAS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-MEAS-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Fyysisen mittauksen turvallisuusehto.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-CURRENT
+    - PHY79-MEAS-01
+    rationale: Suure ja mittaamisen perusrakenne ovat tiedolliset hard prerequisites.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Sähkömittaus
+- id: PHY79-MEAS-U
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Sähkömittaus
+  title: Jännitteen mittaaminen virtapiirissä
+  short_description: Jännitteen mittaaminen virtapiirissä
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-VOLTAGE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-VOLTAGE on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-MEAS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-MEAS-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Fyysisen mittauksen turvallisuusehto.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-VOLTAGE
+    - PHY79-MEAS-01
+    rationale: Suure ja mittaamisen perusrakenne ovat tiedolliset hard prerequisites.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Sähkömittaus
+- id: PHY79-UI-REL
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Virtapiirin riippuvuudet
+  title: Jännitteen ja sähkövirran välisen riippuvuuden tutkiminen mittausdatasta
+  short_description: Jännitteen ja sähkövirran välisen riippuvuuden tutkiminen mittausdatasta
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-MEAS-I
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-MEAS-I on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-MEAS-U
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-MEAS-U on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-REL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-REL-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-MEAS-I
+    - PHY79-MEAS-U
+    - PHY79-REL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Virtapiirin riippuvuudet
+- id: PHY79-RESISTANCE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Resistanssi
+  title: Resistanssin ymmärtäminen U–I-riippuvuutta kuvaavaksi ominaisuudeksi
+  short_description: Resistanssin ymmärtäminen U–I-riippuvuutta kuvaavaksi ominaisuudeksi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-UI-REL
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-UI-REL on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-UI-REL
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Resistanssi
+- id: PHY79-OHM
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Virtapiirin riippuvuudet
+  title: Yksinkertaisen U=RI-suhteen käyttäminen mittausdatasta muodostettuna mallina
+  short_description: Yksinkertaisen U=RI-suhteen käyttäminen mittausdatasta muodostettuna mallina
+  node_kind: procedure
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-RESISTANCE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-RESISTANCE on ydinesitieto tälle osaamiskohteelle.
+  - id: M79-PROP-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-PROP-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M79-EQ1-SOLVE
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-RESISTANCE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Virtapiirin riippuvuudet
+- id: PHY79-SERIES
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Kytkennät
+  title: Sarjakytkennän kvalitatiivinen virta- ja jännitekäyttäytyminen
+  short_description: Sarjakytkennän kvalitatiivinen virta- ja jännitekäyttäytyminen
+  node_kind: integration
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-SERIES-CURRENT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SERIES on v0.2:ssa integraationoodi; atominen alitaito PHY79-SERIES-CURRENT vaaditaan kokonaisuuden hallintaan.
+  - id: PHY79-SERIES-VOLTAGE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-SERIES on v0.2:ssa integraationoodi; atominen alitaito PHY79-SERIES-VOLTAGE vaaditaan kokonaisuuden hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-SERIES-CURRENT
+    - PHY79-SERIES-VOLTAGE
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-SERIES-CURRENT, PHY79-SERIES-VOLTAGE. Lisäksi vaaditaan
+    erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id009
+  - PHY79-SERIES-CURRENT
+  - PHY79-SERIES-VOLTAGE
+  integration_of: *id009
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Kytkennät
+- id: PHY79-PARALLEL
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Kytkennät
+  title: Rinnankytkennän kvalitatiivinen virta- ja jännitekäyttäytyminen
+  short_description: Rinnankytkennän kvalitatiivinen virta- ja jännitekäyttäytyminen
+  node_kind: integration
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-PARALLEL-CURRENT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-PARALLEL on v0.2:ssa integraationoodi; atominen alitaito PHY79-PARALLEL-CURRENT vaaditaan kokonaisuuden
+      hallintaan.
+  - id: PHY79-PARALLEL-VOLTAGE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-PARALLEL on v0.2:ssa integraationoodi; atominen alitaito PHY79-PARALLEL-VOLTAGE vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-PARALLEL-CURRENT
+    - PHY79-PARALLEL-VOLTAGE
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-PARALLEL-CURRENT, PHY79-PARALLEL-VOLTAGE. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id010
+  - PHY79-PARALLEL-CURRENT
+  - PHY79-PARALLEL-VOLTAGE
+  integration_of: *id010
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Kytkennät
+- id: PHY79-ELEC-POWER
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Sähköenergia
+  title: Sähkötehon ymmärtäminen sähkölaitteen energiansiirron nopeutena
+  short_description: Sähkötehon ymmärtäminen sähkölaitteen energiansiirron nopeutena
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S6
+  - PHY79-S3
+  relations:
+  - id: PHY79-POWER-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-POWER-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-CURRENT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CURRENT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-VOLTAGE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-VOLTAGE on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-POWER-CONCEPT
+    - PHY79-CURRENT
+    - PHY79-VOLTAGE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Sähköenergia
+- id: PHY79-ELEC-ENERGY
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Sähköenergia
+  title: Sähköenergian käytön yhdistäminen tehoon ja käyttöaikaan
+  short_description: Sähköenergian käytön yhdistäminen tehoon ja käyttöaikaan
+  node_kind: procedure
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S6
+  - PHY79-S3
+  relations:
+  - id: PHY79-ELEC-POWER
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ELEC-POWER on ydinesitieto tälle osaamiskohteelle.
+  - id: M-MUL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MUL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-ELEC-POWER
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Sähköenergia
+- id: PHY79-ELEC-SAFE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Sähköturvallisuus
+  title: Kodin sähköturvallisuuden perusteleminen virtapiirin ja energiansiirron avulla
+  short_description: Kodin sähköturvallisuuden perusteleminen virtapiirin ja energiansiirron avulla
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: ENV-PHY-ELECSAFE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-ELECSAFE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-CURRENT
+    relation_type: prerequisite
+    strength: strong
+    rationale: PHY79-CURRENT tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: PHY79-VOLTAGE
+    relation_type: prerequisite
+    strength: strong
+    rationale: PHY79-VOLTAGE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-ELECSAFE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Sähköturvallisuus
+- id: PHY79-MAGNET
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Magnetismi
+  title: Magneettisen vuorovaikutuksen kvalitatiivinen tunnistaminen
+  short_description: Magneettisen vuorovaikutuksen kvalitatiivinen tunnistaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-OBSERVE-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: ENV-PHY-FORCE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-FORCE-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: ENV-PHY-CAUSE-MOTION-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-CAUSE-MOTION-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: domain_entry
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Magnetismi
+- id: PHY79-ELECTROMAG
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Sähkömagnetismi
+  title: Sähkövirran ja magnetismin kvalitatiivisen yhteyden ymmärtäminen
+  short_description: Sähkövirran ja magnetismin kvalitatiivisen yhteyden ymmärtäminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-MAGNET
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-MAGNET on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-CURRENT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CURRENT on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-MAGNET
+    - PHY79-CURRENT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Sähkömagnetismi
+- id: PHY79-GENERATION
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Sähköntuotanto
+  title: Sähkön tuottamisen perusidea energiamuunnoksena ja sähkömagnetismin sovelluksena
+  short_description: Sähkön tuottamisen perusidea energiamuunnoksena ja sähkömagnetismin sovelluksena
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S6
+  - PHY79-S3
+  relations:
+  - id: PHY79-ELECTROMAG
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ELECTROMAG on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-ENERGY-SOURCE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ENERGY-SOURCE on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-ELECTROMAG
+    - PHY79-ENERGY-SOURCE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Sähköntuotanto
+- id: PHY79-QTY-CONCEPT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Suureet ja yksiköt
+  title: Fysikaalisen suureen käsitteen ymmärtäminen
+  short_description: Fysikaalisen suureen käsitteen ymmärtäminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S1
+  - PHY79-ASSESS
+  relations:
+  - id: M-MEAS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: M-MEAS-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M-NUM-14
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - M-MEAS-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-QTY-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-QTY-01
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Suureet ja yksiköt
+- id: PHY79-NUMVALUE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Suureet ja yksiköt
+  title: Suureen lukuarvon erottaminen suureesta ja yksiköstä
+  short_description: Suureen lukuarvon erottaminen suureesta ja yksiköstä
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S1
+  - PHY79-ASSESS
+  relations:
+  - id: M-MEAS-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: 'M-MEAS-01 on ydinesitieto tälle osaamiskohteelle. v0.2 edge-audit: required ilman hard prerequisite -ryhmää
+      muutettu strong-tasolle.'
+  - id: M-NUM-14
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: PHY79-QTY-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: Fysikaalisen suureen käsite tarvitaan tämän erotteluun.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-QTY-CONCEPT
+    rationale: Suureen käsite on ydinesitieto.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-QTY-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-QTY-01
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Suureet ja yksiköt
+- id: PHY79-UNIT-CONCEPT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Suureet ja yksiköt
+  title: Fysikaalisen yksikön roolin ymmärtäminen
+  short_description: Fysikaalisen yksikön roolin ymmärtäminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S1
+  - PHY79-ASSESS
+  relations:
+  - id: M-MEAS-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: 'M-MEAS-01 on ydinesitieto tälle osaamiskohteelle. v0.2 edge-audit: required ilman hard prerequisite -ryhmää
+      muutettu strong-tasolle.'
+  - id: M-NUM-14
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: PHY79-QTY-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: Fysikaalisen suureen käsite tarvitaan tämän erotteluun.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-QTY-CONCEPT
+    rationale: Suureen käsite on ydinesitieto.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-QTY-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-QTY-01
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Suureet ja yksiköt
+- id: PHY79-MEAS-PRECISION
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Mittaustarkkuus
+  title: Mittaustarkkuuden arviointi
+  short_description: Mittaustarkkuuden arviointi
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S1
+  - PHY79-ASSESS
+  relations:
+  - id: PHY79-MEAS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-MEAS-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M-MEAS-14
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MEAS-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M79-EXACTAPPROX-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-EXACTAPPROX-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-MEAS-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-PREC-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: PHY79-PREC-01
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Mittaustarkkuus
+- id: PHY79-REPORTED-DIGITS
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Mittaustarkkuus
+  title: Ilmoitettujen numeroiden järkevyyden arviointi mittaustuloksessa
+  short_description: Ilmoitettujen numeroiden järkevyyden arviointi mittaustuloksessa
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S1
+  - PHY79-ASSESS
+  relations:
+  - id: PHY79-MEAS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-MEAS-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: M-MEAS-14
+    relation_type: prerequisite
+    strength: strong
+    rationale: M-MEAS-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: M79-EXACTAPPROX-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: M79-EXACTAPPROX-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-MEAS-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-PREC-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: PHY79-PREC-01
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Mittaustarkkuus
+- id: PHY79-RESULT-EVAL
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Tulosten arviointi
+  title: Fysiikan tutkimustulosten arviointi
+  short_description: Fysiikan tutkimustulosten arviointi
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: SCI-ENV-CONCL-01
+    relation_type: process_support
+    strength: strong
+    rationale: SCI-ENV-CONCL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: SCI-ENV-EVAL-01
+    relation_type: process_support
+    strength: strong
+    rationale: SCI-ENV-EVAL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: PHY79-DATA-01
+    relation_type: representation_support
+    strength: strong
+    rationale: PHY79-DATA-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-CONCL-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: dynamic
+  mastery_role: process
+  split_from: PHY79-CONCL-01
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Tulosten arviointi
+- id: PHY79-CONCLUSION-JUSTIFY
+  subject: physics
+  grade_band: 7-9
+  topic_area: S1 Luonnontieteellinen tutkimus
+  parent_concept: Johtopäätökset
+  title: Fysiikan tutkimuksen johtopäätöksen perusteleminen tuloksilla
+  short_description: Fysiikan tutkimuksen johtopäätöksen perusteleminen tuloksilla
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S1
+  relations:
+  - id: SCI-ENV-CONCL-01
+    relation_type: process_support
+    strength: strong
+    rationale: SCI-ENV-CONCL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: SCI-ENV-EVAL-01
+    relation_type: process_support
+    strength: strong
+    rationale: SCI-ENV-EVAL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: PHY79-DATA-01
+    relation_type: representation_support
+    strength: strong
+    rationale: PHY79-DATA-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-CONCL-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: dynamic
+  mastery_role: process
+  split_from: PHY79-CONCL-01
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Johtopäätökset
+- id: PHY79-HEAT-CONDUCTION
+  subject: physics
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Lämpöilmiöt
+  title: Lämmön johtumisen tunnistaminen lämpöenergian siirtymisen mekanismiksi
+  short_description: Lämmön johtumisen tunnistaminen lämpöenergian siirtymisen mekanismiksi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S2
+  relations:
+  - id: PHY79-HEATFLOW
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-HEATFLOW on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-HEATFLOW
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-HEAT-MECH itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-HEAT-MECH
+  concept_path:
+  - Fysiikka
+  - S2 Oma elämä ja ympäristö
+  - Lämpöilmiöt
+- id: PHY79-HEAT-CONVECTION
+  subject: physics
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Lämpöilmiöt
+  title: Lämmön kuljettumisen tunnistaminen lämpöenergian siirtymisen mekanismiksi
+  short_description: Lämmön kuljettumisen tunnistaminen lämpöenergian siirtymisen mekanismiksi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S2
+  relations:
+  - id: PHY79-HEATFLOW
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-HEATFLOW on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-HEATFLOW
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-HEAT-MECH itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-HEAT-MECH
+  concept_path:
+  - Fysiikka
+  - S2 Oma elämä ja ympäristö
+  - Lämpöilmiöt
+- id: PHY79-HEAT-RADIATION
+  subject: physics
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Lämpöilmiöt
+  title: Lämpösäteilyn tunnistaminen lämpöenergian siirtymisen mekanismiksi
+  short_description: Lämpösäteilyn tunnistaminen lämpöenergian siirtymisen mekanismiksi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S2
+  relations:
+  - id: PHY79-HEATFLOW
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-HEATFLOW on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-HEATFLOW
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-HEAT-MECH itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-HEAT-MECH
+  concept_path:
+  - Fysiikka
+  - S2 Oma elämä ja ympäristö
+  - Lämpöilmiöt
+- id: PHY79-RAD-ION-CLASS
+  subject: physics
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Säteily
+  title: Säteilyn luokitteleminen ionisoivaksi tai ionisoimattomaksi
+  short_description: Säteilyn luokitteleminen ionisoivaksi tai ionisoimattomaksi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S2
+  relations:
+  - id: PHY79-RAD-EM
+    relation_type: prerequisite
+    strength: required
+    rationale: Sähkömagneettinen säteily tarjoaa yhden reitin luokitteluun.
+  - id: PHY79-RAD-PARTICLE
+    relation_type: prerequisite
+    strength: required
+    rationale: Hiukkassäteily tarjoaa toisen reitin luokitteluun.
+  prerequisite_groups:
+  - any_of:
+    - PHY79-RAD-EM
+    - PHY79-RAD-PARTICLE
+    rationale: Ionisoivuuden käsite voidaan aloittaa kummasta säteilyperheestä tahansa.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-RAD-ION itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-RAD-ION
+  concept_path:
+  - Fysiikka
+  - S2 Oma elämä ja ympäristö
+  - Säteily
+- id: PHY79-RAD-ION-SAFETY
+  subject: physics
+  grade_band: 7-9
+  topic_area: S2 Oma elämä ja ympäristö
+  parent_concept: Säteilyturvallisuus
+  title: Ionisoivuuden turvallisuusmerkityksen ymmärtäminen
+  short_description: Ionisoivuuden turvallisuusmerkityksen ymmärtäminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S2
+  relations:
+  - id: PHY79-RAD-EM
+    relation_type: prerequisite
+    strength: required
+    rationale: Sähkömagneettinen säteily tarjoaa yhden reitin luokitteluun.
+  - id: PHY79-RAD-PARTICLE
+    relation_type: prerequisite
+    strength: required
+    rationale: Hiukkassäteily tarjoaa toisen reitin luokitteluun.
+  prerequisite_groups:
+  - any_of:
+    - PHY79-RAD-EM
+    - PHY79-RAD-PARTICLE
+    rationale: Ionisoivuuden käsite voidaan aloittaa kummasta säteilyperheestä tahansa.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-RAD-ION itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-RAD-ION
+  concept_path:
+  - Fysiikka
+  - S2 Oma elämä ja ympäristö
+  - Säteilyturvallisuus
+- id: PHY79-ACCEL-MOTION-GRAPH
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Muuttuva liike
+  title: Muuttuvan liikkeen tunnistaminen paikka–aika- tai liikekuvaajasta
+  short_description: Muuttuvan liikkeen tunnistaminen paikka–aika- tai liikekuvaajasta
+  node_kind: representation
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-ACCEL-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ACCEL-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-ST-GRAPH
+    relation_type: representation_support
+    strength: strong
+    rationale: PHY79-ST-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: PHY79-VT-GRAPH
+    relation_type: representation_support
+    strength: strong
+    rationale: PHY79-VT-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-ACCEL-CONCEPT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-ACCEL-GRAPH itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: PHY79-ACCEL-GRAPH
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Muuttuva liike
+- id: PHY79-ACCEL-VT-GRAPH
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Muuttuva liike
+  title: Muuttuvan liikkeen tunnistaminen nopeus–aika-kuvaajasta
+  short_description: Muuttuvan liikkeen tunnistaminen nopeus–aika-kuvaajasta
+  node_kind: representation
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-ACCEL-CONCEPT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-ACCEL-CONCEPT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-ST-GRAPH
+    relation_type: representation_support
+    strength: strong
+    rationale: PHY79-ST-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: PHY79-VT-GRAPH
+    relation_type: representation_support
+    strength: strong
+    rationale: PHY79-VT-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-ACCEL-CONCEPT
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-ACCEL-GRAPH itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: PHY79-ACCEL-GRAPH
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Muuttuva liike
+- id: PHY79-FORCE-MAGNITUDE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Voima
+  title: Voiman suuruuden ymmärtäminen
+  short_description: Voiman suuruuden ymmärtäminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-INTERACT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-INTERACT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-QTY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-INTERACT
+    - PHY79-QTY-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-FORCE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-FORCE-01
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Voima
+- id: PHY79-FORCE-DIRECTION
+  subject: physics
+  grade_band: 7-9
+  topic_area: S5 Vuorovaikutus ja liike
+  parent_concept: Voima
+  title: Voiman suunnan ymmärtäminen
+  short_description: Voiman suunnan ymmärtäminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S5
+  relations:
+  - id: PHY79-INTERACT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-INTERACT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-QTY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-INTERACT
+    - PHY79-QTY-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-FORCE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-FORCE-01
+  concept_path:
+  - Fysiikka
+  - S5 Vuorovaikutus ja liike
+  - Voima
+- id: PHY79-CIRCUIT-CLOSED
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Virtapiiri
+  title: Suljetun virtapiirin ehdon tunnistaminen
+  short_description: Suljetun virtapiirin ehdon tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: ENV-PHY-ELECSAFE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: Alakoulun sähköturvallisuus tukee virtapiirin käsitettä.
+  - id: ENV-PHY-DEVICE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: Arjen sähkölaitteiden perusymmärrys tukee virtapiirin osien hahmottamista.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-CIRCUIT-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: domain_entry
+  mastery_role: atomic
+  split_from: PHY79-CIRCUIT-01
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Virtapiiri
+- id: PHY79-CIRCUIT-COMPONENTS
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Virtapiiri
+  title: Virtapiirin keskeisten osien tunnistaminen
+  short_description: Virtapiirin keskeisten osien tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: ENV-PHY-ELECSAFE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: Alakoulun sähköturvallisuus tukee virtapiirin käsitettä.
+  - id: ENV-PHY-DEVICE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: Arjen sähkölaitteiden perusymmärrys tukee virtapiirin osien hahmottamista.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-CIRCUIT-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: domain_entry
+  mastery_role: atomic
+  split_from: PHY79-CIRCUIT-01
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Virtapiiri
+- id: PHY79-SERIES-CURRENT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Kytkennät
+  title: Virran kvalitatiivinen käyttäytyminen sarjakytkennässä
+  short_description: Virran kvalitatiivinen käyttäytyminen sarjakytkennässä
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-CURRENT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CURRENT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-VOLTAGE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-VOLTAGE on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-CURRENT
+    - PHY79-VOLTAGE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-SERIES itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-SERIES
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Kytkennät
+- id: PHY79-SERIES-VOLTAGE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Kytkennät
+  title: Jännitteen kvalitatiivinen käyttäytyminen sarjakytkennässä
+  short_description: Jännitteen kvalitatiivinen käyttäytyminen sarjakytkennässä
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-CURRENT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CURRENT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-VOLTAGE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-VOLTAGE on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-CURRENT
+    - PHY79-VOLTAGE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-SERIES itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-SERIES
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Kytkennät
+- id: PHY79-PARALLEL-CURRENT
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Kytkennät
+  title: Virran kvalitatiivinen käyttäytyminen rinnankytkennässä
+  short_description: Virran kvalitatiivinen käyttäytyminen rinnankytkennässä
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-CURRENT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CURRENT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-VOLTAGE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-VOLTAGE on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-CURRENT
+    - PHY79-VOLTAGE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-PARALLEL itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-PARALLEL
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Kytkennät
+- id: PHY79-PARALLEL-VOLTAGE
+  subject: physics
+  grade_band: 7-9
+  topic_area: S6 Sähkö
+  parent_concept: Kytkennät
+  title: Jännitteen kvalitatiivinen käyttäytyminen rinnankytkennässä
+  short_description: Jännitteen kvalitatiivinen käyttäytyminen rinnankytkennässä
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - PHY79-S6
+  relations:
+  - id: PHY79-CURRENT
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-CURRENT on ydinesitieto tälle osaamiskohteelle.
+  - id: PHY79-VOLTAGE
+    relation_type: prerequisite
+    strength: required
+    rationale: PHY79-VOLTAGE on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - PHY79-CURRENT
+    - PHY79-VOLTAGE
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista PHY79-PARALLEL itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: PHY79-PARALLEL
+  concept_path:
+  - Fysiikka
+  - S6 Sähkö
+  - Kytkennät

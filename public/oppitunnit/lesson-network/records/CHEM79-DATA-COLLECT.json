@@ -1,0 +1,209 @@
+{
+  "kcId": "CHEM79-DATA-COLLECT",
+  "pagePath": "lessons/CHEM79-DATA-COLLECT.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "CHEM79-DATA-COLLECT",
+  "canonicalNode": {
+    "id": "CHEM79-DATA-COLLECT",
+    "subject": "chemistry",
+    "grade_band": "7-9",
+    "topic_area": "S1 Luonnontieteellinen tutkimus",
+    "parent_concept": "Aineisto",
+    "title": "Kemian tutkimustulosten kokoaminen",
+    "short_description": "Kemian tutkimustulosten kokoaminen",
+    "node_kind": "procedure",
+    "source_basis": "pedagogically_derived",
+    "curriculum_refs": [
+      "CHEM79-S1"
+    ],
+    "relations": [
+      {
+        "id": "SCI-ENV-DATA-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "SCI-ENV-DATA-01 on ydinesitieto tälle osaamiskohteelle."
+      },
+      {
+        "id": "M-DATA-10",
+        "relation_type": "representation_support",
+        "strength": "strong",
+        "rationale": "M-DATA-10 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "SCI-ENV-DATA-01"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "evidence_notes": "v0.2-refaktorissa erotettu noodista CHEM79-DATA-01 itsenäiseksi evidenssikohteeksi.",
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "status": "candidate_refactored",
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "split_from": "CHEM79-DATA-01",
+    "concept_path": [
+      "Kemia",
+      "S1 Luonnontieteellinen tutkimus",
+      "Aineisto"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "SCI-ENV-DATA-01",
+      "targetKCId": "CHEM79-DATA-COLLECT",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "SCI-ENV-DATA-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-DATA-10",
+      "targetKCId": "CHEM79-DATA-COLLECT",
+      "relationType": "representation_support",
+      "strength": "strong",
+      "rationale": "M-DATA-10 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "CHEM79-DATA-COLLECT",
+      "targetKCId": "CHEM79-DATA-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "CHEM79-DATA-01 on v0.2:ssa integraationoodi; atominen alitaito CHEM79-DATA-COLLECT vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "SCI-ENV-DATA-01"
+      ],
+      "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "awaiting_reviewed_handover",
+    "body": null,
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    }
+  },
+  "newPedagogicalResearch": {
+    "state": "not_started_this_phase",
+    "records": [],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "not_performed_for_new_lesson"
+  },
+  "humanReview": {
+    "state": "not_performed_for_new_lesson"
+  },
+  "liteAlignment": {
+    "subsetMembership": false,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "outside_current_lite_scope"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "outside_current_lite_scope",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "outputHash": "3600b745c615a318993a307d878a977c21c05f4f85a8fab640f8ee03cb2c82df",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "3600b745c615a318993a307d878a977c21c05f4f85a8fab640f8ee03cb2c82df",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

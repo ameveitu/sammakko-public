@@ -1,0 +1,169 @@
+{
+  "kind": "critical_review_not_implementation",
+  "source_revision": "20f589ef1e076e4b2b7dcc18d183cbf6dfa02459",
+  "priorities": {
+    "P1": "before enabling actual content authoring",
+    "P2": "before smooth teacher use or reliable automated release",
+    "P3": "delivery polish"
+  },
+  "findings": [
+    {
+      "id": "R01",
+      "priority": "P1",
+      "category": "content_readiness_gap",
+      "title_fi": "Tuettu oppitunnin sisääntulo puuttuu",
+      "summary": "A non-null authored body stops build; direct edits to generated HTML are replaced; the template always renders a placeholder. Intentional Phase1 guard, but no usable content-authoring inlet yet.",
+      "source": [
+        "lesson-network/build.mjs:53",
+        "lesson-network/build.mjs:65",
+        "lesson-network/build.mjs:74",
+        "lesson-network/verify.mjs:192"
+      ],
+      "evidence": [
+        "evidence/content_readiness.json"
+      ],
+      "remedy": "Separate authored lesson packages from generated records/site, then implement a validated loader/composer.",
+      "acceptance": "One noncurricular static package renders and survives rebuilds without generator changes; other KCs remain pending."
+    },
+    {
+      "id": "R02",
+      "priority": "P1",
+      "category": "confirmed_authored_metadata_preservation_risk",
+      "title_fi": "Täydennetty suunnittelutieto voi kadota onnistuneessa rakennuksessa",
+      "summary": "With body still null, learnerAction, contentReview notes/state and liteAlignment.reviewerNote were silently reset by a successful rebuild. Existing canonical/content-design sources were not lost.",
+      "source": [
+        "lesson-network/build.mjs:53",
+        "lesson-network/build.mjs:61",
+        "lesson-network/build.mjs:79"
+      ],
+      "evidence": [
+        "evidence/build_probes.json"
+      ],
+      "remedy": "Own authored metadata in persistent sources; reject unsupported edits before overwrite; make derived records explicitly non-authoritative.",
+      "acceptance": "Supported authored metadata survives two builds and neighbouring updates, or invalid editing is rejected before loss."
+    },
+    {
+      "id": "R03",
+      "priority": "P1",
+      "category": "interactive_content_readiness_gap",
+      "title_fi": "Moduulien ja resurssien liittäminen on vasta kuvattu",
+      "summary": "Renderer lifecycle names are copied as metadata; no KC module loader/asset pipeline/lifecycle dispatcher exists. The verifier excludes curricular media and per-page script/style entries. This is consistent with the original empty phase.",
+      "source": [
+        "lesson-network/build.mjs:68",
+        "lesson-network/build.mjs:84",
+        "lesson-network/assets/shell.js",
+        "lesson-network/verify.mjs:245",
+        "lesson-network/verify.mjs:275"
+      ],
+      "evidence": [
+        "evidence/content_readiness.json"
+      ],
+      "remedy": "Implement a minimal optional module/asset boundary and prove it with one noncurricular interaction; no curricular Three.js scene needed.",
+      "acceptance": "Asset paths work under prefix, unrelated lessons do not load the module, reset/mount are repeatable and disposal stops work."
+    },
+    {
+      "id": "R04",
+      "priority": "P2",
+      "category": "content_versioning_readiness_gap",
+      "title_fi": "KC-kohtainen sisältöversio puuttuu",
+      "summary": "teacher-integration.lessonRevision is one global template/configuration hash. There is no separate per-KC authored content revision for review, feedback or incremental publication.",
+      "source": [
+        "lesson-network/build.mjs:42",
+        "lesson-network/build.mjs:81",
+        "lesson-network/build.mjs:88",
+        "lesson-network/build.mjs:96"
+      ],
+      "evidence": [
+        "evidence/graph_results.json"
+      ],
+      "remedy": "Separate graph, template, KC content and runtime revisions; bind review/alignment evidence to exact content versions.",
+      "acceptance": "A single-KC content edit changes its revision without changing other KC content revisions or claiming old approval for new content."
+    },
+    {
+      "id": "R05",
+      "priority": "P2",
+      "category": "confirmed_validation_gap",
+      "title_fi": "Tarkistin hyväksyy johdonmukaisesti väärennetyn pelilinkin",
+      "summary": "Unavailable deployment plus self-consistent ready record/manifests and a rendered enabled WRONG-KC game link passed verification with zero failures. Shipped default links are correctly unavailable.",
+      "source": [
+        "lesson-network/verify.mjs:184",
+        "lesson-network/verify.mjs:236",
+        "lesson-network/verify.mjs:290",
+        "lesson-network/verify.mjs:323"
+      ],
+      "evidence": [
+        "evidence/validation_probes.json"
+      ],
+      "remedy": "Independently derive exact route and readiness from configuration/runtime membership; verify rendered open and copy actions against that result.",
+      "acceptance": "Wrong KC, missing index/endpoint and false classroom-ready states fail even when all file hashes agree."
+    },
+    {
+      "id": "R06",
+      "priority": "P2",
+      "category": "presentation_workflow_gap",
+      "title_fi": "Esitystila painottaa esitietolistoja ja katkeaa siirtymässä",
+      "summary": "In measured views lesson body starts below the initial viewport after long prerequisites. Dependency navigation drops presentation mode.",
+      "source": [
+        "lesson-network/build.mjs:47",
+        "lesson-network/build.mjs:74",
+        "lesson-network/assets/shell.css",
+        "lesson-network/assets/shell.js:3"
+      ],
+      "evidence": [
+        "evidence/ui_results.json"
+      ],
+      "remedy": "Compact presentation navigation and disclose details while keeping every direct link; preserve presentation context across lesson navigation.",
+      "acceptance": "Technical lesson starts visibly in agreed desktop view; all neighbours remain available; following a link retains mode."
+    },
+    {
+      "id": "R07",
+      "priority": "P2",
+      "category": "confirmed_semantic_ui_ambiguity",
+      "title_fi": "TAI-vaihtoehdot näkyvät ensiksi yksittäin vaadittuina",
+      "summary": "All24 alternative edges across12 any_of KC pages are labelled Vaadittu in flat top navigation, despite correctly preserved later OR groups. Reverse instances affect15 prerequisite pages.",
+      "source": [
+        "lesson-network/build.mjs:45",
+        "lesson-network/build.mjs:47",
+        "lesson-network/build.mjs:72"
+      ],
+      "evidence": [
+        "evidence/alternative_prerequisites.json",
+        "evidence/ui_results.json"
+      ],
+      "remedy": "Render primary labels using group semantics; preserve raw strength/rationale in teacher source details.",
+      "acceptance": "All12 OR cases and reverse relationships communicate alternatives, especially M-ALG-08 and M-SCALE-02."
+    },
+    {
+      "id": "R08",
+      "priority": "P2",
+      "category": "confirmed_browser_navigation_bug",
+      "title_fi": "Palautuneet hakukentät ja hakutulos eivät aina täsmää",
+      "summary": "On recreated-document Chromium Back navigation, q=M-ALG-08 and Lite=yes remained in fields but690 rows and count returned. Reproduced twice; cache behavior may vary by browser.",
+      "source": [
+        "lesson-network/assets/shell.js:14",
+        "lesson-network/assets/shell.js:16"
+      ],
+      "evidence": [
+        "evidence/ui_results.json"
+      ],
+      "remedy": "Synchronize filters during initialization/pageshow or use coherent URL-backed filter state.",
+      "acceptance": "Input values, visible rows and count agree on both cached and recreated Back navigation."
+    },
+    {
+      "id": "R09",
+      "priority": "P3",
+      "category": "confirmed_export_portability_bug",
+      "title_fi": "Uudelleenpaketointi ei toimi itsenäisestä ZIPistä",
+      "summary": "The documented export command fails outside Git because it unconditionally calls git rev-parse HEAD. Viewing/building/serving are unaffected.",
+      "source": [
+        "lesson-network/export.py:16"
+      ],
+      "evidence": [
+        "evidence/build_probes.json"
+      ],
+      "remedy": "Support explicit/original manifest provenance without Git, or document the repository-only requirement; reject unrelated outer Git provenance.",
+      "acceptance": "Export succeeds from a clean standalone extract with honest provenance, or the restriction is explicitly documented."
+    }
+  ],
+  "scope_note": "Content absence, missing live deployment and missing Lite runtime bridge were deliberately deferred. No current source graph defect was found."
+}

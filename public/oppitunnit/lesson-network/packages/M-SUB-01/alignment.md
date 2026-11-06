@@ -1,0 +1,7 @@
+# M-SUB-01 — actual Lite reconciliation
+
+Actual ranta2.ts370–440: GOALS remaining-after-removal goal; signScene5−2 and lineHops5−2/9−3 demos; picture/story/expr/back plus two-removal transfer. Read takeArt, signScene, lineHops, cases/index/families/coverage/audit/types. No own family/coverage override or SIMS entry. Source back/line and two-stage work are optional explanations rather than required response formats. Numeric core supports removal to zero and explicit zero removal. Every original piece is kept visibly in exactly one of two locations; any correct removed subset/order is accepted by model check. A correct prospective number does not approve a partial displayed removal. No free equation construction claim.
+
+Frozen node: Vähennyslasku määrän vähentämisenä; 1-2; procedure/atomic; exact AND prerequisite M-NUM-02. No new symbol, backward-counting, doubling, shape-recognition, speech or multiplication hard gate. All immutable source hashes are in metadata. Source audits are unapproved history, not human acceptance.
+
+Optional controls support the target rather than mandatory extra counting. Both input/change commits and visible-current-value checks are explicit. A checked numeric question retains valid feedback during unrelated model playback; model verdict retires when its own mathematical state changes. Focus is preserved by stable control nodes; lifecycle owns listeners/frames. No personal history, mastery/independence/retention/effectiveness or public endpoint validation. Another agent must independently review this authored package.

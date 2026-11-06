@@ -1,0 +1,139 @@
+<link rel="stylesheet" href="lesson.css"><div class="b10-route">
+
+
+
+
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/aava/curious.png" width="80" height="80" alt="Aava tutkii yhtä suuria merkkiryhmiä."><p>Aava ryhmittelee, Loikka askeltaa.</p></div><p data-entry-goal><strong>Löydän luvut, joihin päädyn yhtä suurilla askeleilla nollasta.</strong></p>
+</section>
+
+
+
+
+
+
+
+
+<section data-route-lab>
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<section class="explore"><h2>Nollasta saman verran</h2><div class="diagram" data-model></div><p data-caption>Valitse askel.</p><div class="actions" data-entry-primary><button type="button" data-action="step">Yksi askel</button></div><details data-route-tools data-lesson-role="teaching-step"><summary>Reitti ja toisto</summary><p>Paina yhtä askelta tai valitse toinen reitti. Saat kokeilla heti.</p><label>Reitti<select data-model-case><option value="three">Kolme kerrallaan</option><option value="two">Kaksi kerrallaan</option><option value="five">Viisi kerrallaan</option></select></label><div class="actions"><button type="button" data-action="play">Toista reitti</button><button type="button" data-action="stop">Pysäytä</button><button type="button" data-action="start">Alkuun</button></div><label><input type="checkbox" data-groups> Näytä samanlaiset merkkiryhmät</label><div class="diagram" data-model-groups hidden></div></details></section>
+</section>
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<h3>Askelten määrä ja päätepiste ovat eri luvut</h3><p><strong>0 → 3 → 6 → 9 → 12.</strong> Neljällä kolmen askeleella päädyt lukuun 12, et lukuun 4. Luvut 3, 6, 9 ja 12 ovat kolmen monikertoja: niihin päädytään toistamalla samaa kolmen askelta nollasta.</p><img src="example.svg" width="360" height="170" alt="Lukusuoralla neljä yhtä pitkää kolmen askelta nollasta lukuun 12.">
+</section>
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<h3>Ryhmiä vai merkkejä?</h3><p>Aavalla on <strong>kolme ryhmää, jokaisessa viisi merkkiä</strong>. Merkkejä on yhteensä 5, 10, 15: siis 15. Ryhmiä on 3. Kuvat esittävät samanlaisia laskettavia merkkejä, eivät kolmea erilaista esinelajia.</p><img src="transfer.svg" width="360" height="135" alt="Kolme ryhmää, jokaisessa viisi erillistä samankokoista merkkiä: yhteensä viisitoista.">
+</section>
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Mieti:</strong> kolmen askelilla kuljetaan 6:sta 9:ään. Onko 8 päätepiste?</p><details data-lesson-role="answer"><summary>Katso ajatus</summary><p>Ei. 8 jää kahden päätepisteen väliin. Askeleen aikana sen kohdalta voi kulkea, mutta siihen ei päädytä askeleen lopussa.</p></details>
+</section>
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step" data-audience-coupled><div data-audience-columns><div data-visual-column>
+<h2>Kokeile oma vastaus</h2><label>Tehtävä<select data-task><option value="nth">Neljä kolmen askelta</option><option value="two">Neljä kahden askelta</option><option value="five">Viides viiden askel</option><option value="hit">Osuuko yhdeksään?</option><option value="miss">Jääkö väliin?</option><option value="all">Kaikki kahden päätepisteet</option><option value="groups">Neljä kolmen ryhmää</option><option value="zero">Alussa: ei vielä askelta</option></select></label>
+
+
+
+
+
+
+
+
+<p data-question data-lesson-role="question">Lähtö on 0. Jokainen askel on 3. Mihin päädyt neljännellä askeleella?</p><div class="diagram" data-given></div>
+</div><div data-response-column>
+
+
+
+
+
+
+<div data-number-fields class="fields"><label>Vastaus tai seuraava luku<input data-value="0" type="text" inputmode="numeric" maxlength="2" autocomplete="off"></label><label data-second-wrap>Sitä seuraava luku<input data-value="1" type="text" inputmode="numeric" maxlength="2" autocomplete="off"></label></div><label data-yesno-wrap hidden>Vastauksesi<select data-yesno><option value="">Valitse</option><option value="yes">Kyllä</option><option value="no">Ei</option></select></label>
+
+
+
+
+
+
+
+
+<div data-hit-wrap class="choices" hidden><label><input type="checkbox" data-hit="1"> 1</label><label><input type="checkbox" data-hit="2"> 2</label><label><input type="checkbox" data-hit="3"> 3</label><label><input type="checkbox" data-hit="4"> 4</label><label><input type="checkbox" data-hit="5"> 5</label><label><input type="checkbox" data-hit="6"> 6</label><label><input type="checkbox" data-hit="7"> 7</label><label><input type="checkbox" data-hit="8"> 8</label><label><input type="checkbox" data-hit="9"> 9</label><label><input type="checkbox" data-hit="10"> 10</label><label><input type="checkbox" data-hit="11"> 11</label><label><input type="checkbox" data-hit="12"> 12</label></div><button type="button" data-action="check">Tarkista</button><output data-feedback data-verdict="neutral" aria-live="polite">Tarkista, kun olet valmis.</output><details data-lesson-role="hint"><summary>Apua</summary><p>Aloita aina nollasta. Katso yhden askelen koko ja toista se. Voit katsoa lukusuoraa tai näyttää samankokoiset merkkiryhmät mallin alta. Malli ei kirjoita harjoituksen vastausta.</p></details>
+</div></div></section>
+
+
+
+
+<noscript data-lesson-role="metadata"><p>Vuorovaikutteinen kokeilu tarvitsee JavaScriptin. Voit tutkia yllä olevia esimerkkejä ja vastata paperille. Tarkistettu paikallinen vastaus ei tallennu henkilöhistoriaan.</p></noscript></section>
+
+
+
+
+
+
+
+
+<section data-teaching-step="10" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Tutki lisää</summary><p>Nolla on aloituspaikka, kun askelia on 0. Myös 0 kuuluu näin saataviin ei-negatiivisiin monikertoihin. Tässä positiivisen askelen päätepisteet alkavat luvusta 2, 3 tai 5; monivalinnassa pyydetään vain luvut 1–12.</p></details>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="11" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lopuksi:</strong> Nollasta kolme viiden askelta: mikä on päätepiste? Montako askelta teit?</p>
+</section>
+
+
+
+
+
+
+<details class="teacher" data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p class="smallnote">Lukusuoran yhden numerovälin pituus pysyy samana. Osoitin näyttää paikan; liike ei mittaa fyysistä hyppyä. Ei automaattista toistoa.</p><p>Luokat 1–2. Vaadittu esitieto on M-NUM-07. Numerot, askelsääntö ja mallin sanat annetaan tässä; ei uutta puhe-, esineiden nimeämis- tai laskutoimitusmerkkien porttia. Aikuinen voi lukea. Tuki ja malli ovat vapaaehtoisia.</p><p>Tee samanlaisista merkeistä yhtä suuret ryhmät. Laske ensin ryhmät ja sitten kaikki merkit ryhmä kerrallaan. Aikuinen havainnoi erikseen, miten kokonaismäärä lasketaan; oikea ruutuvastaus ei kerro laskutapaa.</p><p>Päätepisteen tai tuetun ryhmäkokonaismäärän löytäminen ei osoita kertotaulun ulkoa muistamista, kertolaskumerkin käyttöä tai itsenäistä ryhmittelystrategiaa. Mallit käyttävät positiivista askelta 2, 3 tai 5 ja enintään viittä askelta; lähtö ja nolla askelta näytetään erikseen. Paikallinen harjoitus ei myönnä formaalia peli- tai prosessihallintaa, henkilökohtaista osaamismerkintää tai oppilaan itsenäisyysarviota. Ei tallennusta, aikarajaa tai vaikuttavuusväitettä.</p></details></div>

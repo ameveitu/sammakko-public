@@ -1,0 +1,135 @@
+schema_version: '0.1'
+kind: scoped_source_registry_supplement
+batch: production-01
+retrieved_on: '2026-10-25'
+baseline: eac6755cb7842d35a9899ba71dfbbe4465af9247
+report: reports/production-01-provenance.md
+integration_status: integrated_via_registry_v0.1
+approval_scope: citation_only_for_listed_claims
+policy: >-
+  Additive proposed records; do not replace bootstrap or baseline source records.
+  Approval verifies narrow source support, not later content, capability,
+  independent review, efficacy, release readiness or third-party reuse rights.
+sources:
+  - id: PROD01-OPH-MATH12-S2
+    type: curriculum_authority
+    title: 'Matematiikka, vuosiluokat 1-2: S2 Luvut ja laskutoimitukset'
+    publisher: Opetushallitus / ePerusteet
+    url: https://eperusteet.opintopolku.fi/eperusteet-service/api/perusteet/419550/kaikki
+    supplements:
+      - OPH-POPS-CURRENT
+      - OPH-POPS2014-MATH-VL1-2-S2
+    status: approved_citation_scoped
+    classification: verified_curriculum_scope
+    verification:
+      access: direct_origin_http_200
+      response_bytes: 9222036
+      sha256: 7692dcef834d7ab175a1053e40abff6c016bc12003b4a7fdf4b64370c7696d94
+      publication_utc: '2026-09-15T09:21:37.140Z'
+      global_version_timestamp: 1789464097140
+    locator:
+      basis_id: 419550
+      subject_id: 466344
+      subject_band_id: 466963
+      content_id: 469266
+      field: kuvaus.fi
+      html_paragraphs: [1, 2]
+      adjacent_objective_id: 469445
+      adjacent_objective_label: T6
+      historical_pdf_section: '13.4.4'
+      historical_pdf_page_one_based: 129
+      historical_objective_page_one_based: 128
+    applies_to: [M-NUM-1TO1, M-NUM-STABLE-ORDER, M-NUM-01, M-NUM-02]
+    approved_claim: >-
+      National grades 1-2 number-concept/counting/sequence scope, including
+      connections between quantity, count word and numeral, and uses of numbers.
+    limits: >-
+      No mandate for the project's KC decomposition, graph, year placement,
+      assessment modality, mastery policy or every instructional detail.
+      This verifies the named national clauses, not local OPS or all current rules.
+  - id: PROD01-OPH-MATH12-S3
+    type: curriculum_authority
+    title: 'Matematiikka, vuosiluokat 1-2: S3 Geometria ja mittaaminen'
+    publisher: Opetushallitus / ePerusteet
+    url: https://eperusteet.opintopolku.fi/eperusteet-service/api/perusteet/419550/kaikki
+    supplements:
+      - OPH-POPS-CURRENT
+      - OPH-POPS2014-MATH-VL1-2-S3
+    status: approved_citation_scoped
+    classification: verified_curriculum_scope
+    verification:
+      access: direct_origin_http_200
+      response_bytes: 9222036
+      sha256: 7692dcef834d7ab175a1053e40abff6c016bc12003b4a7fdf4b64370c7696d94
+      publication_utc: '2026-09-15T09:21:37.140Z'
+      global_version_timestamp: 1789464097140
+    locator:
+      basis_id: 419550
+      subject_id: 466344
+      subject_band_id: 466963
+      content_id: 469267
+      field: kuvaus.fi
+      html_paragraphs: [3]
+      adjacent_objective_id: 469449
+      adjacent_objective_label: T10
+      historical_pdf_section: '13.4.4'
+      historical_pdf_page_one_based: 129
+      historical_objective_page_one_based: 129
+    applies_to: [M-MEAS-01]
+    approved_claim: >-
+      National grades 1-2 scope includes understanding measurement principles
+      and using units with length and other named quantities.
+    limits: >-
+      Equal-unit iteration details and whole-unit length coverage are derived
+      domain/project formalization, not verbatim OPH requirements. No fixed KC
+      sequence, local year placement or complete-current-rules claim is approved.
+  - id: PROD01-OU-COUNTING-PRINCIPLES
+    type: domain_reference
+    title: 'Teaching mathematics: 1.1 Learning to count and counting effectively'
+    publisher: The Open University / OpenLearn
+    url: https://www.open.edu/openlearn/mod/oucontent/view.php?id=93965&section=_unit2.1.1
+    status: approved_citation_scoped
+    classification: educator_published_domain_explanation
+    verification:
+      access: primary_publisher_text_via_web_tool
+      crawl_freshness: 'Web tool reported about 1.4 years; fresh-origin revision unverified.'
+      direct_origin_attempt: http_403
+    locator:
+      section: 'Week 1 / 1.1 Learning to count and counting effectively'
+      activity: 'Activity 1 How do children learn to count?'
+      heading: Discussion
+      bullets: [1, 2, 3, 4]
+    applies_to: [M-NUM-1TO1, M-NUM-STABLE-ORDER, M-NUM-01, M-NUM-02]
+    approved_claim: >-
+      Count-word order, assigning words while referring to objects, the final
+      word's whole-set quantity meaning, and object counting-order invariance.
+    limits: >-
+      Educator explanation, not original empirical evidence for Sammakko.
+      Examples use English. Separate atomic/integration scores, Finnish tokens,
+      prerequisite necessity, broad conservation theory and efficacy are not verified.
+  - id: PROD01-UTAS-UNIT-ITERATION
+    type: domain_reference
+    title: 'Mathematics Pathways / Pathway to Education / Measurement: Unit iteration'
+    publisher: University of Tasmania
+    url: https://www.utas.edu.au/mathematics-pathways/pathway-to-education/measurement
+    status: approved_citation_scoped
+    classification: educator_published_domain_explanation
+    verification:
+      access: primary_publisher_text_via_web_tool
+      crawl_freshness: 'Web tool reported about two days; fresh-origin revision unverified.'
+      direct_origin_attempt: http_403
+    locator:
+      section: Big Idea 2
+      headings:
+        - 'Understanding 1 / Understanding the attribute to be measured: final paragraphs'
+        - 'Understanding 2 / Unit iteration: opening paragraphs and ruler-mark examples'
+        - 'Understanding 4 / Measurement of area and perimeter: unit-coverage explanation'
+    applies_to: [M-MEAS-01]
+    approved_claim: >-
+      Retain a chosen unit, repeat or reposition it without overlap, and distinguish
+      unit spans from ruler margins/mark positions. Explicit gap-free coverage also
+      appears in the area explanation; contiguous straight-length coverage is derived.
+    limits: >-
+      Whole-unit straight-length truth predicates are project formalization requiring
+      validation/review, not Finnish normative wording, a tested developmental
+      sequence, physical exactness or evidence of instructional efficacy.

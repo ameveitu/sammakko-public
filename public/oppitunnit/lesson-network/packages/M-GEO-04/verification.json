@@ -1,0 +1,109 @@
+{
+  "kind": "author_self_check",
+  "kcId": "M-GEO-04",
+  "date": "2026-10-29",
+  "contentRevision": "1@0d2a90c5c1acc43f2bee2385d7fad5f8746a7a5ef45f05dabba279505bb8cd65",
+  "status": "source_stable_pending_different_independent_reviewer_and_main_integration",
+  "independentReview": "NOT_PERFORMED: author cannot approve own package",
+  "humanReview": "NOT_PERFORMED",
+  "packageValidator": "PASS exact current validator with enumeration scoped only to these2 actual packages; no live build",
+  "pureTests": {
+    "command": "node --test lesson-network/packages/M-FRAC-02/tests.mjs lesson-network/packages/M-GEO-04/tests.mjs",
+    "totalTests": 10,
+    "assignedPackageTests": 5,
+    "status": "PASS",
+    "focus": "Domain truth, all selections, rational equivalence, area/rotation invariants, sparse arrays, invalid indices/prototype names."
+  },
+  "lint": "PASS scoped ESLint and module syntax; owned integration QA script syntax/lint also PASS",
+  "browser": {
+    "kind": "author_scoped_Chromium_source_preview",
+    "status": "PASS",
+    "actualSharedCSSAndLoader": true,
+    "sourcePNGLinks": "Actual unchanged supplied shared PNG bytes via source symlinks; no redraw or duplication",
+    "runs": [
+      {
+        "id": "M-GEO-04",
+        "width": 320,
+        "revision": "1@0d2a90c5c1acc43f2bee2385d7fad5f8746a7a5ef45f05dabba279505bb8cd65",
+        "status": "PASS",
+        "practice": true,
+        "lifecycle": true,
+        "images": true,
+        "overflow": false,
+        "storage": 0
+      },
+      {
+        "id": "M-GEO-04",
+        "width": 390,
+        "revision": "1@0d2a90c5c1acc43f2bee2385d7fad5f8746a7a5ef45f05dabba279505bb8cd65",
+        "status": "PASS",
+        "practice": true,
+        "lifecycle": true,
+        "images": true,
+        "overflow": false,
+        "storage": 0
+      },
+      {
+        "id": "M-GEO-04",
+        "width": 1280,
+        "revision": "1@0d2a90c5c1acc43f2bee2385d7fad5f8746a7a5ef45f05dabba279505bb8cd65",
+        "status": "PASS",
+        "practice": true,
+        "lifecycle": true,
+        "images": true,
+        "overflow": false,
+        "storage": 0
+      }
+    ],
+    "pageErrors": [],
+    "screenshots": [
+      {
+        "path": "/tmp/sammakko-b03-author/screens/M-GEO-04-1280-practice.png",
+        "sha256": "60948a7a97b82fdc2384c1ac0a7ab75c93d3332409a9633bb8a8509597174b9f"
+      },
+      {
+        "path": "/tmp/sammakko-b03-author/screens/M-GEO-04-320-practice.png",
+        "sha256": "bef707852032098f8f220cb42c51a102df45ec8192d78f920a8cc0cb74931a48"
+      },
+      {
+        "path": "/tmp/sammakko-b03-author/screens/M-GEO-04-390-practice.png",
+        "sha256": "1079dfada8eba8cf3edb3f0e98eb96cff7b7271a0d0c812d7c76046b5c3a7b2e"
+      },
+      {
+        "path": "/tmp/sammakko-b03-author/screens/M-GEO-04-figure-0.png",
+        "sha256": "66aee8467cb7b824642916161d1219bbefd01bbb9d6bba019a0466710ab4ad18"
+      }
+    ],
+    "harnessPath": "/tmp/sammakko-b03-author/browser-selfcheck.mjs",
+    "harnessSha256": "b94d5df6579583f3c68bb95d7b1b0ee2b28c8ab2c027381ee6796e8b70dd3402",
+    "resultPath": "/tmp/sammakko-b03-author/browser-results.json",
+    "resultSha256": "8adc1cef5cf0c09dcf23324d12e04d16cff774914fd05fee025e29791e405282",
+    "initialHarnessFailure": {
+      "path": "/tmp/sammakko-b03-author/browser-results-initial.json",
+      "reason": "Circle-caption regex did not match inflection; collapsed optional figure was not visible for screenshot. Fixed test harness only; package revision unchanged. Initial failure retained."
+    },
+    "visualObservation": "Actual rendered figure inspected: rotated square, rectangle, distinct triangles, circle and open/curved nonexamples.320px practice uses a vertical card list; all figures stay inside frame and controls remain reachable.",
+    "lifecycle": "Actual clicks positive/negative, shared pause/resume with original disabled states, paused reset twice, direct API pause/reset/dispose, duplicate mount replacing old instance. Storage0 before/after.",
+    "limit": "Temporary source composition, not integrated690 build/navigation/release verification; no learning/human claims."
+  },
+  "assets": [
+    {
+      "path": "shape-properties.svg",
+      "sha256": "77d8d035628d928d514de9fa4996c82f2fb5ce50828f7d98106dc2925f7163a8"
+    },
+    {
+      "path": "shared/loikka/curious.png",
+      "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "d7ea919816ea21f1b600ea2500b61b0ae63d995c6f0eb6d4c0c43de36411d368"
+    }
+  ],
+  "limits": [
+    "Rajatut valmiit geometriset mallit; ei yleinen vapaiden käyttäjäpolygonien tunnistin.",
+    "Ei pinta-aloja, piirejä, koordinaatteja, kulmien astemittaa tai symmetrian arviointia.",
+    "Ruuturyhmittely ei todenna fyysistä rakentamista, itsenäistä piirtämistä, kaikkien kuvioiden tunnistamista tai pysyvää osaamista.",
+    "Valmiit tuet ja korostus eivät ole itsenäistä näyttöä."
+  ]
+}

@@ -1,0 +1,11 @@
+[data-length-lesson] { margin: 1.5rem 0; }
+[data-length-lesson] [data-model] { max-width: 26rem; margin: 1rem auto; }
+[data-length-lesson] .answers { display: flex; flex-wrap: wrap; gap: .4rem; }
+[data-length-lesson] .answers button { min-width: 3.6rem; margin: 0; }
+[data-length-lesson] [aria-pressed="true"] { border: 3px solid #245f4c; background: #dcebd3; }
+[data-length-lesson] select { width: 100%; max-width: 28rem; }
+[data-length-lesson] [data-result="correct"] { border-left: 4px solid #245f4c; padding-left: .6rem; }
+[data-length-lesson] [data-result="retry"] { border-left: 4px solid #a34d13; padding-left: .6rem; }
+
+/* Projector follow-up: preserve labels, model geometry and 44px controls. */
+.audience [data-length-lesson] [data-model] svg { max-height: 40svh; }

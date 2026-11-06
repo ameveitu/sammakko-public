@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="lesson.css"><div class="d15" data-dec15 data-a-label="Ensimmäinen määrä" data-b-label="Toinen määrä">
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="opening"><img src="shared/aava/curious.png" alt="Aava" width="64" height="64"><p>Aava yhdistää 0,76 m ja 0,58 m.</p></div>
+<p><strong>Yhdistä samat paikka-arvot.</strong></p>
+</section>
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step" data-audience-coupled>
+<fieldset disabled><legend>Kokeile mallia</legend><div class="row"><button type="button" data-action="step">Yhdistä ja vaihda</button><button type="button" data-action="model-reset">Alkuun</button></div>
+</fieldset><figure class="live" data-lesson-role="worked-example"><div data-picture><img src="initial.svg" alt="Samat osat yhteen: mallin alku" width="360" height="230"></div><figcaption data-caption>Palat ovat arvolappuja: arvo lukee sarakkeen yllä. Koko ei kuvaa arvoa.</figcaption></figure>
+
+
+
+<noscript data-lesson-role="metadata"><p>Toimiva malli tarvitsee JavaScriptin. Selitykset ja ratkaistut esimerkit voit avata myös ilman sitä.</p></noscript>
+
+<fieldset disabled><details data-lesson-role="teaching-step"><summary>Vaihda mallia</summary><label>Malli<select data-model><option value="exchange">Kaksi vaihtoa: 0,76 + 0,58</option><option value="align">Eri määrä desimaaleja</option><option value="carry">Kymmenesosista kokonaiseksi</option><option value="zero">Nollan lisääminen</option></select></label></details></fieldset><p class="thinking">14 sadasosaa: onko se 0,14 vai 1,4? Mitä voit vaihtaa ennen koko summaa?</p>
+</section>
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<details data-lesson-role="worked-example"><summary>Esimerkit ja selitykset</summary><section><h3>Vaihto säilyttää määrän</h3><p>0,76 m + 0,58 m: 14 sadasosaa vaihtuu 1 kymmenesosaksi ja 4 sadasosaksi. Kymmenesosia on nyt 13. Niistä saadaan 1 kokonainen ja 3 kymmenesosaa. Yhteensä 1,34 m.</p><figure data-lesson-role="worked-example"><img src="example1.svg" alt="Vaihto säilyttää määrän: ratkaistu esimerkki" width="360" height="230"></figure></section>
+<section><h3>Eri määrä numeroita, samat paikat</h3><p>2,5 + 1,25 = 2,50 + 1,25 = 3,75. Nolla luvun lopussa ei muuta arvoa. Viisi kymmenesosaa ei ole viisi sadasosaa. Tasaamme paikka-arvot, emme lukujen oikeita reunoja.</p><figure data-lesson-role="worked-example"><img src="example2.svg" alt="Eri määrä numeroita, samat paikat: ratkaistu esimerkki" width="360" height="230"></figure></section>
+<section><h3>Siirto massaan</h3><p>1,275 kg + 0,625 kg = 1,900 kg = 1,9 kg. Nyt myös tuhannesosat ovat samanarvoisia keskenään. Mittayksikkö säilyy kilogrammana.</p><figure data-lesson-role="worked-example"><img src="example3.svg" alt="Siirto massaan: ratkaistu esimerkki" width="360" height="230"></figure></section></details>
+</section>
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<section><h2>Kokeile itse</h2><p>Voit vastata suoraan. Kuvaa tai apua saa käyttää.</p>
+<fieldset disabled><legend>Oma lasku</legend><div data-audience-columns><div data-visual-column><label>Tilanne<select data-task><option value="exchange">Kaksi vaihtoa</option><option value="align">Pilkut kohdakkain</option><option value="carry">Kokonaisen yli</option><option value="zero">Nolla ja pienet osat</option><option value="transfer">Kaksi mittaustulosta</option><option value="thousand">Tuhannesosat mukaan</option></select></label><p data-question>Kaksi nauhaa, pituudet metreinä. Kuinka monta metriä yhteensä? 0,76 + 0,58 = ? m</p><div class="fields"><label><span data-a-label>Ensimmäinen määrä</span><input data-a type="text" inputmode="decimal" value="0,76" maxlength="128"></label><label><span data-b-label>Toinen määrä</span><input data-b type="text" inputmode="decimal" value="0,58" maxlength="128"></label></div><div class="row"><button type="button" data-action="adjust" data-delta="-0.01">−0,01 toiseen</button><button type="button" data-action="adjust" data-delta="0.01">+0,01 toiseen</button></div></div><div data-response-column><label>Vastaus <span data-unit>m</span><input data-answer type="text" inputmode="decimal" maxlength="128" autocomplete="off"></label><button type="button" data-action="check">Tarkista</button></div></div></fieldset><output data-feedback data-result="neutral" aria-live="polite">Voit kokeilla. Tarkista, kun haluat.</output>
+<details data-help data-lesson-role="hint"><summary>Apua laskemiseen</summary><p>Kirjoita lyhyempi desimaaliosa nollilla yhtä pitkäksi: 2,5 = 2,50. Laske samanarvoiset osat yhteen. Aina10 pienempää osaa voidaan vaihtaa1 seuraavaksi suuremmaksi.</p><p>Luvun lopun nollat eivät muuta arvoa: 0,5 = 0,50. Voit kirjoittaa myös pisteen tai tarkan murtoluvun, kuten 1/2.</p></details>
+<details data-lesson-role="teaching-step"><summary>Mitä lukuja voin kokeilla?</summary><p>Kumpikin luku 0–999, enintään kolme desimaalia. Molemmissa sama mittayksikkö. Yksikkömuunnoksessa annettua kerrointa ei voi vaihtaa.</p></details></section>
+</section>
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<section data-lesson-role="question"><h2>Lisähaaste: perustele</h2><p>Lisää ensimmäiseen lukuun0,01 ja vähennä toisesta0,01. Muuttuuko summa?</p><details data-lesson-role="answer"><summary>Katso perustelu</summary><p>Esimerkiksi0,76+0,58 ja0,77+0,57 ovat molemmat1,34. Etsi syy siirtämällä yksi sadasosa, älä vain laskemalla uudestaan.</p></details></section>
+</section>
+
+<details data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p>Vuosiluokat 3–6. Kanoninen tavoite on yhteenlasku. Lite yhdistää myös vähennyslaskun, mutta sitä ei vaadita tämän sivun harjoituksissa. Kanoniset required- ja strong-ryhmät säilyvät metadatassa; kirjallisia algoritmeja ei lisätä aloitusportiksi. Arvopalojen fyysinen koko ei kuvaa arvoa: arvo on nimetty sarakkeessa. Oppija saa laskea päässä, osina, murtolukuina tai paperilla; yhden vastauksen hyväksyntä ei osoita menetelmää tai muistissa säilymistä.</p><p>Kirjoita lapuille1 m,0,1 m ja0,01 m. Kokoa0,76 m ja0,58 m. Yhdistä samanarvoiset laput ja vaihda aina10 seuraavaksi isommaksi. Pidä sama metrin kokonainen. Laput eivät ole oikean pituisia mittavälineitä.</p><p>Palaute on tämän sivun laskutukea. Tekninen syöteraja on128 merkkiä, murtoluvun osissa24 numeroa ja desimaalissa12 merkitsevää desimaalipaikkaa. Rajan ylitys hylätään, ei pyöristetä. Vastauksia ei tallenneta, eikä sivu arvioi oppilaan muistamista tai itsenäistä hallintaa. Pelireittejä ei tässä väitetä varmennetuiksi.</p></details>
+
+<section data-teaching-step="7" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lähtökysymys:</strong> Miksi 0,2 + 0,03 = 0,23 eikä 0,5?</p>
+</section>
+</div>

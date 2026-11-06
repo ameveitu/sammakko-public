@@ -1,0 +1,571 @@
+{
+  "status": "review_proposal_not_an_applied_source_patch",
+  "date": "2026-10-27",
+  "scope_is_numerical_cap": false,
+  "closure_policy": "Recursively include every canonical relation of strength required or strong, retaining its relation type. Activity uses remain separate from canonical edges.",
+  "canonical_sha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "original_manifest_sha256": "58f7ca8bb7868dde2a4e4189259871e83d18681510f7841dad22e4eae2114ab8",
+  "existing": {
+    "node_count": 177,
+    "subjects": {
+      "mathematics": 145,
+      "physics": 21,
+      "science": 11
+    },
+    "relation_count": 331,
+    "relations_by_type_and_strength": {
+      "prerequisite:required": 231,
+      "prerequisite:strong": 77,
+      "process_support:strong": 11,
+      "representation_support:strong": 11,
+      "safety_gate:required": 1
+    },
+    "foundation_entries": 7,
+    "outside_canonical_relations": [],
+    "required_strong_graph_acyclic": true
+  },
+  "proposed": {
+    "node_count": 181,
+    "subjects": {
+      "mathematics": 149,
+      "physics": 21,
+      "science": 11
+    },
+    "relation_count": 338,
+    "relations_by_type_and_strength": {
+      "prerequisite:required": 238,
+      "prerequisite:strong": 77,
+      "process_support:strong": 11,
+      "representation_support:strong": 11,
+      "safety_gate:required": 1
+    },
+    "foundation_entries": 7,
+    "outside_canonical_relations": [],
+    "required_strong_graph_acyclic": true
+  },
+  "optional_broader_perimeter": {
+    "node_count": 182,
+    "subjects": {
+      "mathematics": 150,
+      "physics": 21,
+      "science": 11
+    },
+    "relation_count": 339,
+    "relations_by_type_and_strength": {
+      "prerequisite:required": 239,
+      "prerequisite:strong": 77,
+      "process_support:strong": 11,
+      "representation_support:strong": 11,
+      "safety_gate:required": 1
+    },
+    "foundation_entries": 7,
+    "outside_canonical_relations": [],
+    "required_strong_graph_acyclic": true
+  },
+  "added_ids": [
+    "M-FRAC-12",
+    "M-GMEAS-01",
+    "M-MEAS-04",
+    "M-TIME-02"
+  ],
+  "added_canonical_nodes": [
+    {
+      "id": "M-FRAC-12",
+      "subject": "mathematics",
+      "grade_band": "3-6",
+      "topic_area": "Luvut ja laskutoimitukset",
+      "parent_concept": "Murtolukulaskut",
+      "title": "Samannimisten murtolukujen vähennyslasku",
+      "short_description": "Samannimisten murtolukujen vähennyslasku",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL3-6-S2"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "procedure",
+      "relations": [
+        {
+          "id": "M-FRAC-03",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-FRAC-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-SUB-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-SUB-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-FRAC-03",
+            "M-SUB-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Luvut ja laskutoimitukset",
+        "Murtolukulaskut"
+      ]
+    },
+    {
+      "id": "M-GMEAS-01",
+      "subject": "mathematics",
+      "grade_band": "3-6",
+      "topic_area": "Geometria",
+      "parent_concept": "Piiri",
+      "title": "Kuvion piirin ymmärtäminen reunaviivan kokonaispituudeksi",
+      "short_description": "Kuvion piirin ymmärtäminen reunaviivan kokonaispituudeksi",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL3-6-S4"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "concept",
+      "relations": [
+        {
+          "id": "M-MEAS-04",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MEAS-04 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-ADD-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-MEAS-04",
+            "M-ADD-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Geometria",
+        "Piiri"
+      ]
+    },
+    {
+      "id": "M-MEAS-04",
+      "subject": "mathematics",
+      "grade_band": "1-2",
+      "topic_area": "Geometria ja mittaaminen",
+      "parent_concept": "Pituusmittaus",
+      "title": "Pituuden mittaaminen yksikön avulla",
+      "short_description": "Pituuden mittaaminen yksikön avulla",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL1-2-S3"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "procedure",
+      "relations": [
+        {
+          "id": "M-MEAS-03",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MEAS-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-MEAS-03"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Geometria ja mittaaminen",
+        "Pituusmittaus"
+      ]
+    },
+    {
+      "id": "M-TIME-02",
+      "subject": "mathematics",
+      "grade_band": "1-2",
+      "topic_area": "Geometria ja mittaaminen",
+      "parent_concept": "Kellonaika",
+      "title": "Kellonajan lukemisen perusidea",
+      "short_description": "Kellonajan lukemisen perusidea",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL1-2-S3"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "concept",
+      "relations": [
+        {
+          "id": "M-TIME-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-TIME-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-NUM-07",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-NUM-07 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-TIME-01",
+            "M-NUM-07"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Geometria ja mittaaminen",
+        "Kellonaika"
+      ]
+    }
+  ],
+  "added_relations_direction": "prerequisite/source -> dependent/target",
+  "added_relations": [
+    {
+      "source": "M-FRAC-03",
+      "target": "M-FRAC-12",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "source": "M-SUB-01",
+      "target": "M-FRAC-12",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "source": "M-MEAS-04",
+      "target": "M-GMEAS-01",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "source": "M-ADD-01",
+      "target": "M-GMEAS-01",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "source": "M-MEAS-03",
+      "target": "M-MEAS-04",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "source": "M-TIME-01",
+      "target": "M-TIME-02",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "source": "M-NUM-07",
+      "target": "M-TIME-02",
+      "type": "prerequisite",
+      "strength": "required"
+    }
+  ],
+  "proposed_selected_ids": [
+    "ENV-PHY-MOTION-01",
+    "ENV-PHY-MOTION-CHANGE-01",
+    "ENV-PHY-MOTION-OBS-01",
+    "M-ADD-01",
+    "M-ADD-100",
+    "M-ADD-20",
+    "M-ADD-FACT-01",
+    "M-ADD-FACT-10",
+    "M-ADD-SUB-01",
+    "M-ALG-04",
+    "M-ALG-05",
+    "M-ALG-06",
+    "M-ALG-07",
+    "M-ALG-08",
+    "M-ARITH-01",
+    "M-COORD-01",
+    "M-COORD-02",
+    "M-COORD-PLOT-Q1",
+    "M-COORD-READ-Q1",
+    "M-DATA-01",
+    "M-DATA-02",
+    "M-DATA-03",
+    "M-DATA-04",
+    "M-DATA-05",
+    "M-DATA-09",
+    "M-DATA-10",
+    "M-DEC-01",
+    "M-DEC-02",
+    "M-DEC-03",
+    "M-DEC-04",
+    "M-DEC-08",
+    "M-DEC-09",
+    "M-DEC-ADD",
+    "M-DEC-DECOMPOSE",
+    "M-DEC-READ",
+    "M-DEC-WRITE",
+    "M-DIV-01",
+    "M-DIV-02",
+    "M-DIV-FACT-01",
+    "M-DIVIS-01",
+    "M-EXPR-01",
+    "M-FRAC-01",
+    "M-FRAC-02",
+    "M-FRAC-03",
+    "M-FRAC-05",
+    "M-FRAC-06",
+    "M-FRAC-08",
+    "M-FRAC-11",
+    "M-FRAC-12",
+    "M-FRAC-15",
+    "M-GEO-01",
+    "M-GEO-02",
+    "M-GEO-04",
+    "M-GMEAS-01",
+    "M-MEAS-00",
+    "M-MEAS-01",
+    "M-MEAS-02",
+    "M-MEAS-03",
+    "M-MEAS-04",
+    "M-MEAS-05",
+    "M-MEAS-06",
+    "M-MEAS-08",
+    "M-MEAS-09",
+    "M-MENTAL-01",
+    "M-MUL-01",
+    "M-MUL-02",
+    "M-MULDIV-01",
+    "M-MULTAB-ALL",
+    "M-MULTAB-HIGH",
+    "M-MULTAB-LOW",
+    "M-MULTREL-01",
+    "M-NEG-01",
+    "M-NEG-02",
+    "M-NEG-03",
+    "M-NUM-01",
+    "M-NUM-02",
+    "M-NUM-03",
+    "M-NUM-06",
+    "M-NUM-07",
+    "M-NUM-08",
+    "M-NUM-10",
+    "M-NUM-14",
+    "M-NUM-16",
+    "M-NUM-17",
+    "M-NUM-18",
+    "M-NUM-1TO1",
+    "M-NUM-EQUALSTEP-SEQ",
+    "M-NUM-MULTIPLE-INTRO",
+    "M-NUM-QTY-NUMERAL",
+    "M-NUM-QTY-WORD",
+    "M-NUM-STABLE-ORDER",
+    "M-NUM-WORD-NUMERAL",
+    "M-PLACE-01",
+    "M-PLACE-02",
+    "M-PLACE-03",
+    "M-PLACE-04",
+    "M-PLACE-05",
+    "M-REP-04",
+    "M-SUB-01",
+    "M-SUB-100",
+    "M-SUB-20",
+    "M-SUB-FACT-10",
+    "M-SYM-01",
+    "M-SYM-EQUAL",
+    "M-SYM-MINUS",
+    "M-SYM-PLUS",
+    "M-TH-01",
+    "M-TH-02",
+    "M-TH-03",
+    "M-TH-04",
+    "M-TH-07",
+    "M-TH-08",
+    "M-TIME-01",
+    "M-TIME-02",
+    "M-TIME-03",
+    "M-UNIT-01",
+    "M-UNIT-02",
+    "M-UNIT-03",
+    "M-UNIT-04",
+    "M-UNIT-05",
+    "M-WORK-01",
+    "M-WRADD",
+    "M-WRDIV",
+    "M-WRMUL",
+    "M-WRSUB",
+    "M79-DEC-DIV",
+    "M79-DEP-01",
+    "M79-EQ1-FORM",
+    "M79-EQ1-SOLVE",
+    "M79-EXPR-EVAL",
+    "M79-EXPR-FORM",
+    "M79-FRAC-DIV",
+    "M79-FRAC-MUL",
+    "M79-FUNC-01",
+    "M79-FUNC-GRAPH",
+    "M79-FUNC-TABLE",
+    "M79-INT-01",
+    "M79-INT-ADD",
+    "M79-INT-DIST",
+    "M79-INT-DIV",
+    "M79-INT-MUL",
+    "M79-INT-ORDER",
+    "M79-INT-SUB",
+    "M79-LINE-GRAPH",
+    "M79-LOGIC-01",
+    "M79-PROP-01",
+    "M79-RECIP-01",
+    "M79-SLOPE",
+    "M79-UNIT-LIN",
+    "M79-VAR-01",
+    "M79-VAR-UNKNOWN",
+    "M79-VAR-VARYING",
+    "PHY79-ACCEL-CALC",
+    "PHY79-ACCEL-CONCEPT",
+    "PHY79-ACCEL-GRAPH",
+    "PHY79-ACCEL-MOTION-GRAPH",
+    "PHY79-ACCEL-VT-GRAPH",
+    "PHY79-DATA-01",
+    "PHY79-DIST-TIME",
+    "PHY79-GRAPH-01",
+    "PHY79-MOTION-REF",
+    "PHY79-NUMVALUE",
+    "PHY79-QTY-01",
+    "PHY79-QTY-CONCEPT",
+    "PHY79-SPEED-CALC",
+    "PHY79-SPEED-CONCEPT",
+    "PHY79-SPEED-MIXED",
+    "PHY79-SPEED-REARR",
+    "PHY79-SPEED-UNIT",
+    "PHY79-ST-GRAPH",
+    "PHY79-UNIT-CONCEPT",
+    "PHY79-UNIT-CONV",
+    "PHY79-VT-GRAPH",
+    "SCI-ENV-DATA-01",
+    "SCI-ENV-MEAS-01",
+    "SCI-ENV-OBSERVE-01",
+    "SCI-ENV-PRESENT-DATA-01",
+    "SCI-ENV-RECORD-01",
+    "SCI-ENV-RECORD-DATA-01",
+    "SCI-ENV-SAFE-01",
+    "SCI-ENV-TOOL-01"
+  ],
+  "activity_uses_to_register": [
+    {
+      "target": "M-TH-08",
+      "family": "transfer",
+      "uses": "M-GMEAS-01",
+      "role": "context_knowledge",
+      "reason": "Square perimeter from side length; perimeter meaning is not supplied."
+    },
+    {
+      "target": "M79-EXPR-FORM",
+      "family": "shape",
+      "uses": "M-GMEAS-01",
+      "role": "context_knowledge",
+      "reason": "Square/equilateral-triangle perimeter expressions."
+    },
+    {
+      "target": "M79-EQ1-FORM",
+      "family": "transfer",
+      "uses": "M-GMEAS-01",
+      "role": "context_knowledge",
+      "reason": "Rectangle perimeter equation."
+    },
+    {
+      "target": "M-FRAC-11",
+      "family": "transfer",
+      "uses": "M-FRAC-12",
+      "role": "co_taught",
+      "reason": "The remaining-pie explanation explicitly subtracts same-denominator fractions. Counting unshaded pieces is also possible, so this response does not alone demonstrate the full subtraction KC."
+    },
+    {
+      "target": "M-UNIT-05",
+      "family": "transfer",
+      "uses": "M-TIME-02",
+      "role": "context_knowledge",
+      "reason": "Existing arrival-time task reads departure time and asks for time of day after a duration; source saari1.ts508-514. This addition is due to the retained clock-time context, not the new elapsed stopwatch."
+    }
+  ],
+  "optional_node": {
+    "id": "M79-POLY-PERIM",
+    "extra_count": 1,
+    "reason": "Only if broader general polygon-perimeter procedure is deliberately admitted."
+  },
+  "limits": [
+    "The proposal proves canonical closure for these seeds, not semantic completeness of every activity.",
+    "Do not add the activity uses as new global canonical prerequisite edges.",
+    "Every new node still needs an implemented teaching/support path; this file adds no runtime content."
+  ],
+  "previous_proposed_before_user_feedback_followup": {
+    "node_count": 180,
+    "subjects": {
+      "mathematics": 148,
+      "physics": 21,
+      "science": 11
+    },
+    "relation_count": 336,
+    "relations_by_type_and_strength": {
+      "prerequisite:required": 236,
+      "prerequisite:strong": 77,
+      "process_support:strong": 11,
+      "representation_support:strong": 11,
+      "safety_gate:required": 1
+    },
+    "foundation_entries": 7,
+    "outside_canonical_relations": [],
+    "required_strong_graph_acyclic": true
+  },
+  "feedback_update": {
+    "date": "2026-10-27",
+    "previous_proposed_nodes": 180,
+    "current_proposed_nodes": 181,
+    "reason": "Follow-up inspection found existing M-UNIT-05 transfer assumes time-of-day notation. M-TIME-02 and its required/strong closure add exactly one node. All prior proposed activities retained.",
+    "elapsed_stopwatch_requires_clock_time_node": false
+  }
+}

@@ -1,0 +1,695 @@
+{
+  "kcId": "M-ADD-SUB-01",
+  "pagePath": "lessons/M-ADD-SUB-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-ADD-SUB-01",
+  "canonicalNode": {
+    "id": "M-ADD-SUB-01",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Laskutoimitusten yhteys",
+    "title": "Yhteen- ja vähennyslaskun käänteinen yhteys",
+    "short_description": "Yhteen- ja vähennyslaskun käänteinen yhteys",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-ADD-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-SUB-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-SUB-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-ADD-01",
+          "M-SUB-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Laskutoimitusten yhteys"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-ADD-SUB-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-SUB-01",
+      "targetKCId": "M-ADD-SUB-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-SUB-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-ADD-SUB-01",
+      "targetKCId": "M-ALG-08",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-SUB-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-ADD-SUB-01",
+      "targetKCId": "M-ADD-FACT-10",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Perusfaktoja voidaan harjoitella ennen eksplisiittistä käänteisyyden käsitteellistä hallintaa.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-ADD-SUB-01",
+      "targetKCId": "M-SUB-FACT-10",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Perusfaktoja voidaan harjoitella ennen eksplisiittistä käänteisyyden käsitteellistä hallintaa.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-ADD-01",
+        "M-SUB-01"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-ADD-SUB-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-1-unit-6-additive-structures/",
+        "title": "Additive structures",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "read": "Actual HTML learning outcomes1–19, including inverse operations17–18.",
+        "adopted": "Knownparts/whole, addition undone by removing the same added part; inverse supports missing-original situation.",
+        "rejected": "No multiplication, general equation parser, four-distinct-facts rule or mandatory counting-back gate.",
+        "usageRestrictions": "NCETM default Crown/OGL with attribution/named-author/third-party caveats; policy independently read. Original Finnish text/figures only; no copied prose, artwork, slides or source code.",
+        "limitations": "Foreign conceptual/Year1 guidance, not a Finnish mandated sequence, learner observation or efficacy study. Linked slides/PDF/video not claimed read."
+      },
+      {
+        "url": "https://ncetm.org.uk/classroom-resources/ca-the-bar-model",
+        "title": "The Bar Model",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "read": "Primary HTML concrete-to-pictorial and additive relations.",
+        "adopted": "Same parts and whole support two subtraction equations; begin with movable objects rather than assume bars or symbols.",
+        "rejected": "No multiplication, general equation parser, four-distinct-facts rule or mandatory counting-back gate.",
+        "usageRestrictions": "NCETM default Crown/OGL with attribution/named-author/third-party caveats; policy independently read. Original Finnish text/figures only; no copied prose, artwork, slides or source code.",
+        "limitations": "Foreign conceptual/Year1 guidance, not a Finnish mandated sequence, learner observation or efficacy study. Linked slides/PDF/video not claimed read."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/ey-composition/",
+        "title": "Composition",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "read": "HTML part–whole, inverse and conservation passages.",
+        "adopted": "Partition/recombine fixed whole; pieces remain accounted for when separated.",
+        "rejected": "No multiplication, general equation parser, four-distinct-facts rule or mandatory counting-back gate.",
+        "usageRestrictions": "NCETM default Crown/OGL with attribution/named-author/third-party caveats; policy independently read. Original Finnish text/figures only; no copied prose, artwork, slides or source code.",
+        "limitations": "Foreign conceptual/Year1 guidance, not a Finnish mandated sequence, learner observation or efficacy study. Linked slides/PDF/video not claimed read."
+      },
+      {
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "title": "Perusopetuksen opetussuunnitelman perusteet2014 — S2",
+        "organization": "Opetushallitus",
+        "accessed": "2026-10-29",
+        "read": "Targeted historical primary PDF128/printed129, S2 lines4334–4345.",
+        "adopted": "Concrete addition/subtraction and1–10 decompositions; exact project inverse node comes from frozen graph.",
+        "usageRestrictions": "©OPH; original paraphrase/factual comparison only, no source art or long prose copied.",
+        "limitations": "Historical frozen curriculum context, no current amendment/legal audit or claim that this UI/graph sequence is mandated."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+        "note": "Author technical checks only; independent reviewer pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/inverse-integration-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+        "note": "No human/learner validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-ADD-SUB-01",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "joined.svg",
+        "sha256": "ee70efea1f2c16fa69653644b7f7c35ba7a3f88191217c3ff480377da6a16cc6"
+      },
+      {
+        "path": "removed.svg",
+        "sha256": "0a270a8d1c0b0e4358cc783b9139cf47b281a614a188a6b5f124194eb3a53207"
+      },
+      {
+        "path": "shared/loikka/curious.png",
+        "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-1-unit-6-additive-structures/",
+        "title": "Additive structures",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "read": "Actual HTML learning outcomes1–19, including inverse operations17–18.",
+        "adopted": "Knownparts/whole, addition undone by removing the same added part; inverse supports missing-original situation.",
+        "rejected": "No multiplication, general equation parser, four-distinct-facts rule or mandatory counting-back gate.",
+        "usageRestrictions": "NCETM default Crown/OGL with attribution/named-author/third-party caveats; policy independently read. Original Finnish text/figures only; no copied prose, artwork, slides or source code.",
+        "limitations": "Foreign conceptual/Year1 guidance, not a Finnish mandated sequence, learner observation or efficacy study. Linked slides/PDF/video not claimed read."
+      },
+      {
+        "url": "https://ncetm.org.uk/classroom-resources/ca-the-bar-model",
+        "title": "The Bar Model",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "read": "Primary HTML concrete-to-pictorial and additive relations.",
+        "adopted": "Same parts and whole support two subtraction equations; begin with movable objects rather than assume bars or symbols.",
+        "rejected": "No multiplication, general equation parser, four-distinct-facts rule or mandatory counting-back gate.",
+        "usageRestrictions": "NCETM default Crown/OGL with attribution/named-author/third-party caveats; policy independently read. Original Finnish text/figures only; no copied prose, artwork, slides or source code.",
+        "limitations": "Foreign conceptual/Year1 guidance, not a Finnish mandated sequence, learner observation or efficacy study. Linked slides/PDF/video not claimed read."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/ey-composition/",
+        "title": "Composition",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "read": "HTML part–whole, inverse and conservation passages.",
+        "adopted": "Partition/recombine fixed whole; pieces remain accounted for when separated.",
+        "rejected": "No multiplication, general equation parser, four-distinct-facts rule or mandatory counting-back gate.",
+        "usageRestrictions": "NCETM default Crown/OGL with attribution/named-author/third-party caveats; policy independently read. Original Finnish text/figures only; no copied prose, artwork, slides or source code.",
+        "limitations": "Foreign conceptual/Year1 guidance, not a Finnish mandated sequence, learner observation or efficacy study. Linked slides/PDF/video not claimed read."
+      },
+      {
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "title": "Perusopetuksen opetussuunnitelman perusteet2014 — S2",
+        "organization": "Opetushallitus",
+        "accessed": "2026-10-29",
+        "read": "Targeted historical primary PDF128/printed129, S2 lines4334–4345.",
+        "adopted": "Concrete addition/subtraction and1–10 decompositions; exact project inverse node comes from frozen graph.",
+        "usageRestrictions": "©OPH; original paraphrase/factual comparison only, no source art or long prose copied.",
+        "limitations": "Historical frozen curriculum context, no current amendment/legal audit or claim that this UI/graph sequence is mandated."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+        "note": "Author technical checks only; independent reviewer pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+        "note": "Author technical checks only; independent reviewer pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+        "note": "No human/learner validation."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/inverse-integration-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/inverse-integration-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-ADD-SUB-01",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "sourceFiles": [
+        "src/content/facts.ts",
+        "src/content/numbers.ts",
+        "src/content/countanim.ts",
+        "src/content/kit.ts",
+        "src/content/parts.ts",
+        "src/content/fi.ts",
+        "src/content/index.ts",
+        "src/content/goals.ts",
+        "src/content/families.ts",
+        "src/content/motionsims.ts",
+        "src/content/audit-rev.ts",
+        "src/engine/types.ts",
+        "src/engine/check.ts",
+        "src/engine/expr.ts",
+        "src/engine/graph.ts",
+        "src/data/graph.json",
+        "src/ui/widgets.ts",
+        "src/ui/anim.ts",
+        "src/engine/motion.ts",
+        "audit/LESSON_AUDIT.md",
+        "docs/PEDAGOGY_REFERENCES.md",
+        "COVERAGE.md"
+      ],
+      "sourceHashes": {
+        "src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+        "src/content/numbers.ts": "2ff4cae1816ea1d61ec938361a8306dc9a24d6e893f67895a390a83b7ae1c4d5",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+        "src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "src/engine/expr.ts": "5aa128b08a9c45a6612f942cc9c52a670910ab87e28f47f5522b0dff67989b77",
+        "src/engine/graph.ts": "8bcdc3d7cafed82fd8d2a0a7dd69a547f2e70d6d2a87834f110164d4fe4b24d9",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+        "src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+        "src/engine/motion.ts": "7b2851bee0927ba383462ea8d24b7f2a8467c82b581fd519efdb4b4566365451",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427"
+      },
+      "actualInventory": {
+        "canonical": {
+          "id": "M-ADD-SUB-01",
+          "subject": "mathematics",
+          "grade_band": "1-2",
+          "topic_area": "Luvut ja laskutoimitukset",
+          "parent_concept": "Laskutoimitusten yhteys",
+          "title": "Yhteen- ja vähennyslaskun käänteinen yhteys",
+          "short_description": "Yhteen- ja vähennyslaskun käänteinen yhteys",
+          "source_basis": "direct_curriculum",
+          "curriculum_refs": [
+            "OPH-POPS2014-MATH-VL1-2-S2"
+          ],
+          "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+          "status": "candidate",
+          "required_root": false,
+          "root_kind": "none",
+          "node_kind": "procedure",
+          "relations": [
+            {
+              "id": "M-ADD-01",
+              "relation_type": "prerequisite",
+              "strength": "required",
+              "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+            },
+            {
+              "id": "M-SUB-01",
+              "relation_type": "prerequisite",
+              "strength": "required",
+              "rationale": "M-SUB-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+            }
+          ],
+          "prerequisite_groups": [
+            {
+              "all_of": [
+                "M-ADD-01",
+                "M-SUB-01"
+              ],
+              "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+            }
+          ],
+          "foundation_entry": false,
+          "zero_required_indegree": false,
+          "foundation_entry_rationale": null,
+          "entry_role": "none",
+          "mastery_role": "atomic",
+          "concept_path": [
+            "Matematiikka",
+            "Luvut ja laskutoimitukset",
+            "Laskutoimitusten yhteys"
+          ]
+        },
+        "node": "facts.ts274–338; explicit goal; audit1-2026-10-28",
+        "demo": [
+          "familyScene(simpukka,3,4): join, operand reversal, removeB, removeA, four facts accumulate; opacity/lift indicates removed rather than separately located sets",
+          "lineHops5,+3 then8,-3 actual separate timelines; no shared-clock claim"
+        ],
+        "families": {
+          "family": "a,b2..9;c=a+b, choose related subtraction from two false equations",
+          "undo": "a2..9,b2..8; after receipt c, recover originala with subtraction/check addition",
+          "check": "c8..18,b2..c−2; choose a+b=c to check given subtraction; other additions are mathematically true but unrelated",
+          "write": "a2..8,b2..9 bumped ifequal; buildfact c−b=a; actualsameFact validates arithmetic+fullbag tokens and accepts c−a=b and mirrored equations",
+          "transfer": "a3..9,b2..9: select nonmember a−b=c vs two validfamilyfacts"
+        },
+        "media": "Actual familyScene/lineHops, countanim side helpers, anim/ease/Clock; build widget reusable tokens not one-use; sameFact is arithmetic and tokenbag, no domain-specific scope expansion needed.",
+        "reconciliation": [
+          "Use spatially separate returned/removed pieces, fixedidentities/sizes and conservedwhole; no invisible disappearance or inferredthirdremoval.",
+          "Do not require four distinct equations whena=b; zero edge explicitly optional/support.",
+          "Small fixed0..10 scope and guided subtraction completion; no arbitrary legacy semanticchoice extension, parser or multiplication.",
+          "COVERAGE omits write and 3rddemo; actualsource wins."
+        ]
+      },
+      "comparison": "alignment.md",
+      "state": "authored_independent_review_pending"
+    },
+    "planning": {
+      "gradeBand": "1-2",
+      "role": "atomic",
+      "teacherObjective": "Yhteen- ja vähennyslaskun käänteinen yhteys",
+      "childGoal": "Yhdistän osat ja puran saman lisäyksen.",
+      "canonical": {
+        "id": "M-ADD-SUB-01",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Laskutoimitusten yhteys",
+        "title": "Yhteen- ja vähennyslaskun käänteinen yhteys",
+        "short_description": "Yhteen- ja vähennyslaskun käänteinen yhteys",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-ADD-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-SUB-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-SUB-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-ADD-01",
+              "M-SUB-01"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Laskutoimitusten yhteys"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-ADD-01",
+            "M-SUB-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "required": [
+        {
+          "id": "M-ADD-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-SUB-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-SUB-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "strongSupport": [],
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "sourceBasis": "direct_curriculum",
+      "scope": "Fixed whole0–10; addition undone by same-part removal; recover original and guided valid subtraction completion, optional zero/equal parts.",
+      "assumed": "Canonical immediate prerequisite groups retained. Adult may read; no required object names, speech, count-taps, new symbol/reading gate.",
+      "coTaught": [
+        "M-NUM-06 zero optional, no new hard prerequisite or credit.",
+        "Minus/equal signs and part/whole role explained in given format."
+      ],
+      "evidenceLimits": "Author-developed guided number response and one subtraction-completion with fixed symbols. Both related subtractions accepted, equal parts deduplicated; not unconstrained sentence construction, independent strategy or full fact-family mastery.",
+      "assetProvenance": "Original mathematical SVGs and unchanged supplied shared PNG; no external figure/prose/source-code copy.",
+      "curriculumVsDesign": "Frozen role/grade/relations preserved; task ranges, movement pace and interface are project choices, not curriculum mandates."
+    },
+    "extensions": {
+      "productionBatch": "B07",
+      "simulationType": "conserved_join_remove_restore",
+      "humanReview": "not_performed",
+      "independentReview": "pending_other_agent",
+      "semantics": "Author-developed guided number response and one subtraction-completion with fixed symbols. Both related subtractions accepted, equal parts deduplicated; not unconstrained sentence construction, independent strategy or full fact-family mastery.",
+      "lifecycle": "Own controls and listeners only; reset retains pause, dispose idempotent.",
+      "timing": "1.2seconds per transition is illustrative playback; no physical time inference."
+    },
+    "contentHash": "4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+    "contentRevision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+          "note": "Author technical checks only; independent reviewer pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/inverse-integration-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+          "note": "No human/learner validation."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+          "note": "No actual human/target-learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+          "note": "Author technical checks only; independent reviewer pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@4886af941920da8d957779caa37b8d6195e48b533a99f1c593d6c0ec3b084eee",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/inverse-integration-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    }
+  },
+  "outputHash": "201bdc8e7f225ecba5bd3955ca5d6b09247d30478ad5c0a6e98b3e4b8f4e0167",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "201bdc8e7f225ecba5bd3955ca5d6b09247d30478ad5c0a6e98b3e4b8f4e0167",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

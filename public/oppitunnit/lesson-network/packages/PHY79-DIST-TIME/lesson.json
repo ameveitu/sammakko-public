@@ -1,0 +1,686 @@
+{
+  "schemaVersion": 1,
+  "kcId": "PHY79-DIST-TIME",
+  "revision": 23,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "initial.svg",
+      "sha256": "335587501e010828c6556f61c9ffc62fa10d940e59eeadcdb7d6514ad366a460"
+    },
+    {
+      "path": "track.svg",
+      "sha256": "2794f73e27953820bdaa56c3fae8c09fda4a1ca882e181a795ff9de9163435d2"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "2b0a1d3173e6c5194731e63b2ca65425eca6d493634e5b91f15201d42e54712b"
+    },
+    {
+      "path": "shared/loikka/curious.png",
+      "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://openstax.org/books/college-physics/pages/2-3-time-velocity-and-speed",
+      "title": "Time, Velocity, and Speed — elapsed time",
+      "organization": "OpenStax",
+      "accessed": "2026-10-29",
+      "adopted": "Elapsed time is ending clock reading minus starting reading; stopped stopwatch can directly show duration.",
+      "rejected": "College-level velocity formalism not imposed; distance and time identification first.",
+      "usageRestrictions": "Conceptual corroboration only, no textbook text/images copied; book-specific current licence not presumed.",
+      "limitations": "Physics truth source, not empirical evidence of Finnish pupil understanding."
+    },
+    {
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/3-1-position-displacement-and-average-velocity",
+      "title": "Position, displacement and average velocity",
+      "organization": "OpenStax",
+      "accessed": "2026-10-29",
+      "adopted": "Keep position/displacement distinct from elapsed interval and travelled path.",
+      "rejected": "Do not equate final coordinate to travelled distance; no vector calculus required.",
+      "usageRestrictions": "Independent original text/figures; no reproduced protected material.",
+      "limitations": "Own four bounded kinematic scenarios, not real measured tracks or efficacy proof."
+    },
+    {
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-5-units-outside-si",
+      "title": "NIST SI guide — time units",
+      "organization": "NIST",
+      "accessed": "2026-10-29",
+      "adopted": "s denotes second; length and time have distinct unit dimensions.",
+      "rejected": "Unit symbols are not interchangeable just because numerical values coincide.",
+      "usageRestrictions": "Definitions corroborated; no source table/prose copied.",
+      "limitations": "Unit fact only; pedagogical design and model parameters project-authored."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@d0334b335d02a91131c1d63951c93035657947991624d1810f63e4b16f05cca0",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@d0334b335d02a91131c1d63951c93035657947991624d1810f63e4b16f05cca0",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@d0334b335d02a91131c1d63951c93035657947991624d1810f63e4b16f05cca0",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@529774eb3b8134976919fe4cfe72788d53ec9c13d519185701a54b63e7e79b41",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@529774eb3b8134976919fe4cfe72788d53ec9c13d519185701a54b63e7e79b41",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@529774eb3b8134976919fe4cfe72788d53ec9c13d519185701a54b63e7e79b41",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@98f77fcb21230b797b2427ee65a24b140d4fba6f5da926779aba2a8c248aefb0",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@98f77fcb21230b797b2427ee65a24b140d4fba6f5da926779aba2a8c248aefb0",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@98f77fcb21230b797b2427ee65a24b140d4fba6f5da926779aba2a8c248aefb0",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@a7798cc7ed12f080cf3297d1d5f7d35b676e1bda1d48b15b65c3c511f92b7286",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@a7798cc7ed12f080cf3297d1d5f7d35b676e1bda1d48b15b65c3c511f92b7286",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@a7798cc7ed12f080cf3297d1d5f7d35b676e1bda1d48b15b65c3c511f92b7286",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "5@7007dd5bcb101ab258f8d3e7d3b99d3c2d50b9d310d4c2b1550e572e72d189be",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "5@7007dd5bcb101ab258f8d3e7d3b99d3c2d50b9d310d4c2b1550e572e72d189be",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@7007dd5bcb101ab258f8d3e7d3b99d3c2d50b9d310d4c2b1550e572e72d189be",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "6@fed5a3476fbd9b9c210682747cad500bd895529db9ecc3a7f3071b98a7236bf0",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "6@fed5a3476fbd9b9c210682747cad500bd895529db9ecc3a7f3071b98a7236bf0",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@fed5a3476fbd9b9c210682747cad500bd895529db9ecc3a7f3071b98a7236bf0",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "7@4fbcd023b6f0d73ebacd47eb256abd59aa5ae06ef8152fb9ab0a68fde1bcd5a3",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "7@4fbcd023b6f0d73ebacd47eb256abd59aa5ae06ef8152fb9ab0a68fde1bcd5a3",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@4fbcd023b6f0d73ebacd47eb256abd59aa5ae06ef8152fb9ab0a68fde1bcd5a3",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "8@b4326f0ffd99ae21c24f04fee3c9edeb0619b8d8e1142103a6f81c0f061e7715",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "8@b4326f0ffd99ae21c24f04fee3c9edeb0619b8d8e1142103a6f81c0f061e7715",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@b4326f0ffd99ae21c24f04fee3c9edeb0619b8d8e1142103a6f81c0f061e7715",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "8@e9cde87727f5ae2224d4cd58f7d27fb519f85c128227b75a18800596758eb294",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "8@e9cde87727f5ae2224d4cd58f7d27fb519f85c128227b75a18800596758eb294",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@e9cde87727f5ae2224d4cd58f7d27fb519f85c128227b75a18800596758eb294",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "9@9310baa42e4c995000e5c55f9ebb03ab2fd50d6de1fae83cb022f5e5f5428de8",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "9@9310baa42e4c995000e5c55f9ebb03ab2fd50d6de1fae83cb022f5e5f5428de8",
+      "note": "Author draft; different-author exact-source and actual compiled review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@9310baa42e4c995000e5c55f9ebb03ab2fd50d6de1fae83cb022f5e5f5428de8",
+      "note": "No human or target learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@9310baa42e4c995000e5c55f9ebb03ab2fd50d6de1fae83cb022f5e5f5428de8",
+      "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@9310baa42e4c995000e5c55f9ebb03ab2fd50d6de1fae83cb022f5e5f5428de8",
+      "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@9310baa42e4c995000e5c55f9ebb03ab2fd50d6de1fae83cb022f5e5f5428de8",
+      "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "10@69c4a8c7a004ce2d0667c3f2e3d805cc267cacaf3b2de8327da9bf6575842360",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "10@69c4a8c7a004ce2d0667c3f2e3d805cc267cacaf3b2de8327da9bf6575842360",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@69c4a8c7a004ce2d0667c3f2e3d805cc267cacaf3b2de8327da9bf6575842360",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "10@477be16ed47e4900de955c8a727732c29c3c1d39ab55579aa5bb599189c71d86",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "10@477be16ed47e4900de955c8a727732c29c3c1d39ab55579aa5bb599189c71d86",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@477be16ed47e4900de955c8a727732c29c3c1d39ab55579aa5bb599189c71d86",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "10@b8a873deb48b9477a70463a720df458fc0cad306cce6abcf0ab6162a7befd346",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "10@b8a873deb48b9477a70463a720df458fc0cad306cce6abcf0ab6162a7befd346",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@b8a873deb48b9477a70463a720df458fc0cad306cce6abcf0ab6162a7befd346",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "10@715c1da17396b43f5bdbcbd65daa821e6184de2d1e3387ca5f87c0cc60f0fb0c",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "10@715c1da17396b43f5bdbcbd65daa821e6184de2d1e3387ca5f87c0cc60f0fb0c",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@715c1da17396b43f5bdbcbd65daa821e6184de2d1e3387ca5f87c0cc60f0fb0c",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "10@5ff00dabc05e834db724912793b5b8103f8fa0d6d79c0e743eadc9472d4f3931",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "10@5ff00dabc05e834db724912793b5b8103f8fa0d6d79c0e743eadc9472d4f3931",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@5ff00dabc05e834db724912793b5b8103f8fa0d6d79c0e743eadc9472d4f3931",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "10@5c5691224463fed5cb2b738a3077abe592a96509bc4f507de7f09f5d44bd4707",
+      "note": "Graceful source freeze after bounded framing/lifecycle/AX/cross-step changes. Latest exact-source independent acceptance and human review remain pending. Historical evidence retained."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "10@5c5691224463fed5cb2b738a3077abe592a96509bc4f507de7f09f5d44bd4707",
+      "note": "Graceful source freeze after bounded framing/lifecycle/AX/cross-step changes. Latest exact-source independent acceptance and human review remain pending. Historical evidence retained."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@5c5691224463fed5cb2b738a3077abe592a96509bc4f507de7f09f5d44bd4707",
+      "note": "Graceful source freeze after bounded framing/lifecycle/AX/cross-step changes. Latest exact-source independent acceptance and human review remain pending. Historical evidence retained."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@a77a1fa8b1c2a2e5b2b91a51fed8cb937d9c29836be19172a2f7ca8298e1dae4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@a77a1fa8b1c2a2e5b2b91a51fed8cb937d9c29836be19172a2f7ca8298e1dae4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@a77a1fa8b1c2a2e5b2b91a51fed8cb937d9c29836be19172a2f7ca8298e1dae4",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@b532c26cc36856f92e8f724bf311f47ecbabf39ef4a4195858043d6c494b8942",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@b532c26cc36856f92e8f724bf311f47ecbabf39ef4a4195858043d6c494b8942",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@b532c26cc36856f92e8f724bf311f47ecbabf39ef4a4195858043d6c494b8942",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@bb1ee4cc458ca57c2c8e97463b82674972c86bd63869781781de0a53f81943ea",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@bb1ee4cc458ca57c2c8e97463b82674972c86bd63869781781de0a53f81943ea",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@bb1ee4cc458ca57c2c8e97463b82674972c86bd63869781781de0a53f81943ea",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@2ab0c72b9d25e9e963d82a655fa2d1e02b2a43a178884e49f27f26ae9f7e4446",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@2ab0c72b9d25e9e963d82a655fa2d1e02b2a43a178884e49f27f26ae9f7e4446",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@2ab0c72b9d25e9e963d82a655fa2d1e02b2a43a178884e49f27f26ae9f7e4446",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "17@d57b1d78128b8a389c10ea8d1542fee0939f3fee2e49b6d8b50f8f189f440c21",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "17@d57b1d78128b8a389c10ea8d1542fee0939f3fee2e49b6d8b50f8f189f440c21",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "17@d57b1d78128b8a389c10ea8d1542fee0939f3fee2e49b6d8b50f8f189f440c21",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "18@f9d572db338ba5fad7dbbb704cdcea7fcc3d54a2eb72949db18a38217f9a4401",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "18@f9d572db338ba5fad7dbbb704cdcea7fcc3d54a2eb72949db18a38217f9a4401",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "18@f9d572db338ba5fad7dbbb704cdcea7fcc3d54a2eb72949db18a38217f9a4401",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "19@1ce6dfdb7d21aaee1a7b581a66e5a9f8cccf223e30b434d400c9593da67221a5",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "19@1ce6dfdb7d21aaee1a7b581a66e5a9f8cccf223e30b434d400c9593da67221a5",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "19@1ce6dfdb7d21aaee1a7b581a66e5a9f8cccf223e30b434d400c9593da67221a5",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "21@2c858ade469c58e35a8e99ee35996431869216ac31176780a3b369371c219a06",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "21@2c858ade469c58e35a8e99ee35996431869216ac31176780a3b369371c219a06",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "21@2c858ade469c58e35a8e99ee35996431869216ac31176780a3b369371c219a06",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "22@f65e9a7fffc959ca2afc159df063f6ea7eedebf94947853809f1c1da2a5019ab",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "22@f65e9a7fffc959ca2afc159df063f6ea7eedebf94947853809f1c1da2a5019ab",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "22@f65e9a7fffc959ca2afc159df063f6ea7eedebf94947853809f1c1da2a5019ab",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "23@7afd0b2ce6118f2cf62445ced44a1dae4d306c0a82c646c54b809e3b9b7377e0",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "23@7afd0b2ce6118f2cf62445ced44a1dae4d306c0a82c646c54b809e3b9b7377e0",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Matka ja kesto sekä niiden mittavälineet erotetaan. Paluumatka lasketaan kuljettuun matkaan, ja siirretyistä alkuarvoista lasketaan erotus; loppulukema ei sellaisenaan ole kesto. Korjasin liikkeen, lukemat ja kaikki malliohjaimet yhteen vaiheeseen sekä lisäsin paluun myöhemmästä tutkimisohjeesta. Tehtävän annettu havaintoaineisto ei jää piiloon ohjaimia käytettäessä. Nykyinen Lite erottaa matkan ja ajan sekä käyttää neutraalia harjoitusanimaation otsikkoa. Korjasin Aavaa virheellisesti sammakoksi nimenneen demon alun muotoon Nyt Loikka ja Aava; arvot ja generoitu tehtäväsisältö säilyivät. Matkan ja ajan valinta ei osoita omaa mittaamista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "23@7afd0b2ce6118f2cf62445ced44a1dae4d306c0a82c646c54b809e3b9b7377e0",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "PHY79-DIST-TIME",
+    "liteContentRevision": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "sourceFiles": [
+      "src/content/physics.ts:388-418",
+      "src/content/phyanim.ts:raceScene",
+      "src/content/motionsims.ts:95-103",
+      "src/content/families.ts:157",
+      "src/content/goals.ts:41",
+      "src/content/world.ts:167",
+      "src/engine/types.ts",
+      "audit/LESSON_AUDIT.md:166"
+    ],
+    "families": [
+      "dist",
+      "time",
+      "tool",
+      "read",
+      "motion overlay with wait",
+      "transfer"
+    ],
+    "inherited": "Read separate distance/time measures, different distances/durations and correct measuring tools.",
+    "corrected": "Position versus travelled path and nonzero initial readings explicit; own stopwatch stops at end of defined event while later observation wait continues. No speed computation imposed.",
+    "extended": "Controllable piecewise straight/return/offset trajectories, matching exact clock/ruler/state/static original diagram; three fresh low-stakes reports.",
+    "state": "authored_comparison_pending_independent_review",
+    "reconciliation": "alignment.md",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "launch1-2026-11-01",
+      "validRevisions": [
+        "launch1-2026-11-01",
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/phyanim.ts": "419fc83a164c4799543edf6f4dc72021abe3d6ee5fc74d719b70d53243bab7ad",
+        "src/content/physics.ts": "2318f77c54ed6bc5fd2956f1f7342e3169d8e276e86d878be0196a261b0b8412",
+        "src/content/world.ts": "0c66cc7b41c914e8ebd6e3848d842ba12930a8ef78ca8c2564d5f3a509959f5a",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "PHY79-DIST-TIME",
+      "subject": "physics",
+      "grade_band": "7-9",
+      "topic_area": "S5 Vuorovaikutus ja liike",
+      "parent_concept": "Liike",
+      "title": "Matkan ja ajan tunnistaminen liikkeen mitattaviksi suureiksi",
+      "short_description": "Matkan ja ajan tunnistaminen liikkeen mitattaviksi suureiksi",
+      "node_kind": "concept",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "PHY79-S5"
+      ],
+      "relations": [
+        {
+          "id": "PHY79-QTY-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "PHY79-MOTION-REF",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "PHY79-MOTION-REF on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "M-TIME-03",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-TIME-03 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        },
+        {
+          "id": "M-MEAS-02",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-MEAS-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "PHY79-QTY-01",
+            "PHY79-MOTION-REF"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate",
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Fysiikka",
+        "S5 Vuorovaikutus ja liike",
+        "Liike"
+      ]
+    },
+    "additionalHardGates": [],
+    "teacherObjective": "Matkan ja ajan tunnistaminen liikkeen mitattaviksi suureiksi",
+    "childGoal": "Erotan kuljetun matkan ja siihen kuluneen ajan.",
+    "gradeBand": "7-9",
+    "role": "atomic",
+    "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "assumptions": "Frozen required QTY01 and MOTIONREF; introduce path vs coordinate and model subtraction explicitly. No added hard graph gate.",
+    "scope": "Length/path and elapsed time in selected measured motion interval; not complete kinematics, speed formula, uncertainty or physical measuring competence.",
+    "evidenceLimits": "Report interpretation, units and simple derivation are low-stakes; optional support/model/feedback available, no independence/retention/personal evidence claim.",
+    "sourceVsDesign": "Frozen graph provenance inherited; no new OPH requirement or efficacy claim. Story, examples, exact model bounds, controls and pedagogical sequencing are project design.",
+    "assetProvenance": "Original deterministic SVG. User-supplied actual transparent Aava/Loikka PNG unchanged, named in lesson, no substitute character artwork or decorative motion."
+  },
+  "extensions": {
+    "productionBatch": "B11",
+    "simulationType": "finite_piecewise_motion_shared_path_clock_geometry",
+    "humanReview": "not_performed",
+    "executionLimits": "4 declared trajectories;0.1modelsecond integer ticks, up to movementend+2second observation;100ms playback approximate1x, step1modelsecond. Stop own measure at chosen event end; no internal waiting segments. Pause/reset/dispose clear interval; no autoplay. Active instance owned per resolved lesson root; previous mount disposed. Current visible enum controls validated, input/change handled and check re-reads current premise; blank/unsupported does not silently become zero. New mount actively enables its own controls after previous instance disposal; synthetic and native regression retains original disabled-remount failure. Plain decimal digit bounds apply after harmless leading/trailing-zero normalization (raw input max128characters); only plain decimal numeric response text is supported, not fraction-input notation. No rounding or scientific/expression eval. Static initial.svg derives from the same exact initial model state as mount; solved originalSVG retained separately in explanation. No-JavaScript fallback and live initial readout stay compatible.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B10",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

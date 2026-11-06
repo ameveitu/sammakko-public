@@ -1,0 +1,734 @@
+schema_version: 0.1.0
+kc_id: M-NUM-1TO1
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Yhden lukusanan kohdistaminen kuhunkin laskettavaan kohteeseen
+  subject: mathematics
+  grade_band: 1-2
+  mastery_role: atomic
+  node_kind: foundation
+  concept_path:
+    - Matematiikka
+    - Luvut ja laskutoimitukset
+    - Lukukäsite
+    - Laskemisen periaatteet
+  source_basis: pedagogically_derived
+  curriculum_refs:
+    - OPH-POPS2014-MATH-VL1-2-S2
+  prerequisite_snapshot:
+    hard: []
+    strong: []
+    helpful: []
+teaching_model:
+  learning_goal: Oppilas ottaa jokaisen kohteen mukaan kerran. Opetus näyttää tavallisen laskemisen kokonaisena
+    toimintana. Tämän KC:n arviointi seuraa vain kohteen ja lukusanan käyttökerran vastaavuutta; se ei myönnä
+    lukusanajonon, integraation tai kardinaliteetin hallintaa.
+  learner_facing_goal: Jokainen palikka mukaan kerran
+  success_evidence:
+    - Tuottaa jokaista näkyvää merkkiä kohti yhden itse valitun lukusanan käyttökerran.
+    - Valitsee kutakin käyttökertaa varten yhden merkin ja käy kaikki merkit täsmälleen kerran missä tahansa
+      itse valitsemassaan järjestyksessä.
+    - Säilyttää saman kohdistusperiaatteen rivistä aidosti hajallaan olevaan asetteluun siirryttäessä;
+      kohteiden lukumääräalue pysyy samana.
+    - Osoittaa kohdistamisen uudelleen aikaisintaan 24 tunnin kuluttua ilman tukea. Tämä säilynyt näyttö ei
+      väitä lukusanajonon tai kardinaliteetin hallintaa.
+  core_idea: "Yksi yhteen tarkoittaa tässä kohteen ja lukusanan käyttökerran paria. Sama sana voidaan käyttää
+    useassa eri parissa: kohdistuksen arviointi seuraa käyttökertoja ja kohteita, ei erilaisten sanojen
+    määrää. Tavallinen laskemisjärjestys on erillinen oppimistavoite."
+  boundaries:
+    in_scope:
+      - Näkyvien, toisistaan erottuvien merkkien kohdistaminen lukusanojen käyttökertoihin; sanavalikoima
+        kattaa yhdestä kymmeneen.
+      - Riviin aseteltujen merkkien käsittely ja siirto hajallaan olevaan asetteluun. Itsenäisten tehtävien ja
+        siirron yhteinen kohdemääräalue on kolmesta kahdeksaan.
+      - Paikallisten suomenkielisten sanojen kuuntelu sekä sanojen ja kohteiden itse valittu koostaminen;
+        virheet ja vastauksen muokkaus pysyvät mahdollisina.
+    out_of_scope:
+      - Lukusanojen tavanomaisen järjestyksen arviointi tai sen vaatiminen esitiedoksi.
+      - Kardinaliteetin tai integroidun laskemisen hallinnan myöntäminen tämän KC:n näytöstä. Opetusesimerkin
+        tavallinen laskeminen saa näyttää nämä yhteydet ilman niiden hallinnan myöntämistä.
+      - Numeromerkkien tunnistaminen, sanojen kirjoittaminen, ääntäminen, oma-aloitteinen suullinen
+        muistaminen tai puheentunnistus.
+      - Yleinen siirtovaikutus, opetuksen vaikuttavuus tai täysi ei-visuaalinen saavutettavuus tämän rajatun
+        tehtävän perusteella.
+  prerequisite_assumptions: []
+  conceptual_invariants:
+    - Jokainen kohde tarvitsee oman lukusanan käyttökertansa.
+    - Käyntijärjestys ja kohteen paikka eivät muuta täsmälleen-kerran-kohdistuksen ehtoa.
+    - Sanan arvon tai järjestyksen virhe ei yksin osoita kohdistusvirhettä.
+  likely_confusions:
+    - M-NUM-1TO1-HYP-KOHDISTUS
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+    - DIAGNOSTIC
+    - ORIENT
+    - EXPLAIN
+    - GUIDED_PRACTICE
+    - INDEPENDENT_PRACTICE
+    - TRANSFER_CHECK
+    - MASTERY_GATE
+  fast_path:
+    enabled: true
+    diagnostic_requirement: Kaksi eri diagnostista tehtäväpohjaa onnistuu itsenäisesti ja tuottaa
+      count_correspondence-näytön. Järjestysvirhe ei estä tätä juuritavoitetta. Itsenäinen vähimmäisnäyttö ja
+      todellinen asettelusiirto tehdään myös nopealla polulla.
+    transfer_confirmation: required
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Havaitse kohdistaminen ennen sääntöä, mallia tai vihjettä kahdessa eri kohdemääräalueen tilanteessa.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-1TO1-DIAG-OMA-TAPA
+              - M-NUM-1TO1-DIAG-UUSI-RIVI
+    ORIENT:
+      purpose: Anna ymmärrettävä laskemisen tarkoitus ennen toimintamallia.
+      blocks:
+        - type: explanatory_text
+          content:
+            kind: enumeration_counting_method_v1
+            section: orient
+    EXPLAIN:
+      purpose: Näytä tavallinen laskeminen vaiheittain. Esineiden käyntijärjestys voi vaihtua, lukusanojen järjestys
+        ei.
+      blocks:
+        - type: worked_example
+          content:
+            kind: enumeration_counting_demo_v1
+            count: 3
+    GUIDED_PRACTICE:
+      purpose: Harjoittele omien kohdistusten muodostamista ja tarkistamista. Ohjattu näyttö ei tuota itsenäistä
+        osaamista.
+      blocks:
+        - type: explanatory_text
+          content:
+            kind: enumeration_counting_method_v1
+            section: guided
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-1TO1-GUIDED-PARIT
+              - M-NUM-1TO1-GUIDED-TARKISTUS
+    INDEPENDENT_PRACTICE:
+      purpose: Kerää vähintään kolme itsenäistä onnistumista kahdesta tehtäväpohjasta ilman automaattista kohteiden
+        seurantaa.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-1TO1-INDEP-OMA-REITTI
+              - M-NUM-1TO1-INDEP-HUOLELLINEN
+    TRANSFER_CHECK:
+      purpose: Käytä samaa kohdistusperiaatetta aidosti kaksiulotteisessa asettelussa. Siirto ei perustu uuteen
+        nimeen tai pelkkään siirtotehtävän rooliin.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-1TO1-TRANSFER-HAJALLA
+    MASTERY_GATE:
+      purpose: Anna sanallinen pohdinta omasta seurantatavasta; teksti ei ole automaattisen oikeellisuuden tai
+        hallinnan peruste.
+      blocks:
+        - type: reflection
+          content: Miten muistit, mitkä palikat jo laskit?
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+    fast_path_confirmation_tags:
+      - count_correspondence
+    execution_policy: Kaksi itsenäistä diagnostista onnistumista voi ohittaa opetuksen ja ohjatun harjoittelun.
+      Itsenäiset vähimmäisnäytöt ja siirtotehtävä säilyvät pakollisina.
+    pass_rule: Kaksi eri diagnostista pohjaa oikein ilman tukea. Kummankin onnistuminen perustuu vain kohteiden ja
+      sanan käyttökertojen täsmälleen-kerran-vastaavuuteen.
+  independent:
+    minimum_successes: 3
+    template_diversity: 2
+    diagnostic_credit:
+      kind: equivalent_count_diagnostics_v1
+      diagnostic_templates: [M-NUM-1TO1-DIAG-OMA-TAPA, M-NUM-1TO1-DIAG-UUSI-RIVI]
+      independent_templates: [M-NUM-1TO1-INDEP-OMA-REITTI, M-NUM-1TO1-INDEP-HUOLELLINEN]
+    max_supported_attempts_counted: 0
+    required_tags:
+      - count_correspondence
+  transfer:
+    required: true
+    minimum_successes: 1
+    novel_context_required: true
+  delayed:
+    required: true
+    minimum_successes: 2
+    minimum_delay_hours: 24
+    reuse_templates:
+      - M-NUM-1TO1-INDEP-OMA-REITTI
+    required_tags:
+      - count_correspondence
+    required_contexts: []
+    earliest_delay_policy: Aikaisintaan 24 tuntia ensimmäisen hankitun osaamisen jälkeen. Viivästetty
+      alkuperäistehtävä ja uusi itsenäinen ydintehtävän tapaus tarkistavat saman päätavoitteen. Projektin
+      ajoitusvalinta ei ole tutkimuksesta johdettu vakio.
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+    - misconception_id: M-NUM-1TO1-HYP-KOHDISTUS
+      evidence_tags:
+        - count_correspondence
+      rule: Myöhempi itsenäinen onnistuminen tämän tavoitteen kokonaisessa predikaatissa kumoaa tämän
+        tehtäväkohtaisen havaintohypoteesin nykyisessä arviointipolitiikassa. Yksittäisestä virheestä ei
+        päätellä sen syytä tai toisen taidon puutetta.
+items:
+  - id: M-NUM-1TO1-DIAG-OMA-TAPA
+    kc_ids:
+      - M-NUM-1TO1
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske kuvan palikat. Valitse palikka ja sille lukusana.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: correspondence
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Palikat
+      objectLabel: Palikka
+      countRange:
+        - 3
+        - 5
+      layout: row
+      context: kohdistus-alkukartoitus
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-1TO1-HYP-KOHDISTUS
+        detect: observed:correspondence
+    hints:
+      - level: 1
+        text: Valitse yksi palikka. Käytä sille sanaa. Tyhjennä esinevalinta ennen seuraavaa palikkaa.
+      - level: 2
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+      - level: 3
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+    invariants:
+      - Jokainen sanan käyttökerta kohdistuu yhteen todelliseen merkkiin, jokainen merkki saa täsmälleen yhden
+        käyttökerran.
+      - Lukusanan arvo, saman sanan uudelleenkäyttö eri merkeille ja sanojen järjestys eivät ratkaise tämän
+        juuritavoitteen onnistumista.
+      - Kaikki esineiden käyntijärjestykset ovat sallittuja. Kohdistuksia ei tuoteta automaattisesti eikä jo
+        käsiteltyjä merkkejä estetä valitsemasta.
+      - Koko suomenkielinen sanavalikoima säilyy sekoitettuna ja toistettavana. Vihjeen tai tuen jälkeen
+        onnistuminen ei ole itsenäistä näyttöä.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävän suljettu correspondence-predikaatti erottaa sanan käyttökertojen
+          täsmälleen-kerran-kohdistuksen lukusanojen järjestyksestä. Sanavalikoima ja rajattu lukumääräalue
+          ovat projektin representaatioratkaisuja, eivät OPH:n tarkkoja vaatimuksia.
+        status: hypothesis
+  - id: M-NUM-1TO1-DIAG-UUSI-RIVI
+    kc_ids:
+      - M-NUM-1TO1
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske nämä palikat. Ota jokainen mukaan vain kerran.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: correspondence
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Palikat
+      objectLabel: Palikka
+      countRange:
+        - 6
+        - 8
+      layout: row
+      context: kohdistus-toinen-kartoitus
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-1TO1-HYP-KOHDISTUS
+        detect: observed:correspondence
+    hints:
+      - level: 1
+        text: Valitse yksi palikka. Käytä sille sanaa. Tyhjennä esinevalinta ennen seuraavaa palikkaa.
+      - level: 2
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+      - level: 3
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+    invariants:
+      - Jokainen sanan käyttökerta kohdistuu yhteen todelliseen merkkiin, jokainen merkki saa täsmälleen yhden
+        käyttökerran.
+      - Lukusanan arvo, saman sanan uudelleenkäyttö eri merkeille ja sanojen järjestys eivät ratkaise tämän
+        juuritavoitteen onnistumista.
+      - Kaikki esineiden käyntijärjestykset ovat sallittuja. Kohdistuksia ei tuoteta automaattisesti eikä jo
+        käsiteltyjä merkkejä estetä valitsemasta.
+      - Koko suomenkielinen sanavalikoima säilyy sekoitettuna ja toistettavana. Vihjeen tai tuen jälkeen
+        onnistuminen ei ole itsenäistä näyttöä.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävän suljettu correspondence-predikaatti erottaa sanan käyttökertojen
+          täsmälleen-kerran-kohdistuksen lukusanojen järjestyksestä. Sanavalikoima ja rajattu lukumääräalue
+          ovat projektin representaatioratkaisuja, eivät OPH:n tarkkoja vaatimuksia.
+        status: hypothesis
+  - id: M-NUM-1TO1-GUIDED-PARIT
+    kc_ids:
+      - M-NUM-1TO1
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: support
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Kokeile mallin jälkeen. Valitse palikka ja sille lukusana. Jatka palikka kerrallaan.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: first_correspondence_v1
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: correspondence
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Palikat
+      objectLabel: Palikka
+      countRange:
+        - 3
+        - 4
+      layout: row
+      context: kohdistus-ohjattu-pari
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-1TO1-HYP-KOHDISTUS
+        detect: observed:correspondence
+    hints:
+      - level: 1
+        text: Valitse yksi palikka. Käytä sille sanaa. Tyhjennä esinevalinta ennen seuraavaa palikkaa.
+      - level: 2
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+      - level: 3
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+    invariants:
+      - Jokainen sanan käyttökerta kohdistuu yhteen todelliseen merkkiin, jokainen merkki saa täsmälleen yhden
+        käyttökerran.
+      - Lukusanan arvo, saman sanan uudelleenkäyttö eri merkeille ja sanojen järjestys eivät ratkaise tämän
+        juuritavoitteen onnistumista.
+      - Yksi ensimmäinen kohdistus näytetään kirjattuna apuna. Oppilas jatkaa loput itse ja voi muokata
+        myös annettua paria; jo käsiteltyjä merkkejä ei estetä valitsemasta.
+      - Koko suomenkielinen sanavalikoima säilyy sekoitettuna ja toistettavana. Vihjeen tai tuen jälkeen
+        onnistuminen ei ole itsenäistä näyttöä.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävän suljettu correspondence-predikaatti erottaa sanan käyttökertojen
+          täsmälleen-kerran-kohdistuksen lukusanojen järjestyksestä. Sanavalikoima ja rajattu lukumääräalue
+          ovat projektin representaatioratkaisuja, eivät OPH:n tarkkoja vaatimuksia.
+        status: hypothesis
+  - id: M-NUM-1TO1-GUIDED-TARKISTUS
+    kc_ids:
+      - M-NUM-1TO1
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: support
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske nämä palikat. Tarkista lopuksi, tuliko jokainen mukaan kerran.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: correspondence
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Palikat
+      objectLabel: Palikka
+      countRange:
+        - 3
+        - 5
+      layout: row
+      context: kohdistus-ohjattu-tarkistus
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-1TO1-HYP-KOHDISTUS
+        detect: observed:correspondence
+    hints:
+      - level: 1
+        text: Valitse yksi palikka. Käytä sille sanaa. Tyhjennä esinevalinta ennen seuraavaa palikkaa.
+      - level: 2
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+      - level: 3
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+    invariants:
+      - Jokainen sanan käyttökerta kohdistuu yhteen todelliseen merkkiin, jokainen merkki saa täsmälleen yhden
+        käyttökerran.
+      - Lukusanan arvo, saman sanan uudelleenkäyttö eri merkeille ja sanojen järjestys eivät ratkaise tämän
+        juuritavoitteen onnistumista.
+      - Kaikki esineiden käyntijärjestykset ovat sallittuja. Kohdistuksia ei tuoteta automaattisesti eikä jo
+        käsiteltyjä merkkejä estetä valitsemasta.
+      - Koko suomenkielinen sanavalikoima säilyy sekoitettuna ja toistettavana. Vihjeen tai tuen jälkeen
+        onnistuminen ei ole itsenäistä näyttöä.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävän suljettu correspondence-predikaatti erottaa sanan käyttökertojen
+          täsmälleen-kerran-kohdistuksen lukusanojen järjestyksestä. Sanavalikoima ja rajattu lukumääräalue
+          ovat projektin representaatioratkaisuja, eivät OPH:n tarkkoja vaatimuksia.
+        status: hypothesis
+  - id: M-NUM-1TO1-INDEP-OMA-REITTI
+    kc_ids:
+      - M-NUM-1TO1
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: "Nyt itse: laske palikat. Valitse itse aloituspaikka."
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: correspondence
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Palikat
+      objectLabel: Palikka
+      countRange:
+        - 3
+        - 8
+      layout: row
+      context: kohdistus-oma-reitti
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-1TO1-HYP-KOHDISTUS
+        detect: observed:correspondence
+    hints:
+      - level: 1
+        text: Valitse yksi palikka. Käytä sille sanaa. Tyhjennä esinevalinta ennen seuraavaa palikkaa.
+      - level: 2
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+      - level: 3
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+    invariants:
+      - Jokainen sanan käyttökerta kohdistuu yhteen todelliseen merkkiin, jokainen merkki saa täsmälleen yhden
+        käyttökerran.
+      - Lukusanan arvo, saman sanan uudelleenkäyttö eri merkeille ja sanojen järjestys eivät ratkaise tämän
+        juuritavoitteen onnistumista.
+      - Kaikki esineiden käyntijärjestykset ovat sallittuja. Kohdistuksia ei tuoteta automaattisesti eikä jo
+        käsiteltyjä merkkejä estetä valitsemasta.
+      - Koko suomenkielinen sanavalikoima säilyy sekoitettuna ja toistettavana. Vihjeen tai tuen jälkeen
+        onnistuminen ei ole itsenäistä näyttöä.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävän suljettu correspondence-predikaatti erottaa sanan käyttökertojen
+          täsmälleen-kerran-kohdistuksen lukusanojen järjestyksestä. Sanavalikoima ja rajattu lukumääräalue
+          ovat projektin representaatioratkaisuja, eivät OPH:n tarkkoja vaatimuksia.
+        status: hypothesis
+  - id: M-NUM-1TO1-INDEP-HUOLELLINEN
+    kc_ids:
+      - M-NUM-1TO1
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske palikat niin, ettei yksikään jää väliin.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: correspondence
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Palikat
+      objectLabel: Palikka
+      countRange:
+        - 3
+        - 8
+      layout: row
+      context: kohdistus-uusi-rivi
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-1TO1-HYP-KOHDISTUS
+        detect: observed:correspondence
+    hints:
+      - level: 1
+        text: Valitse yksi palikka. Käytä sille sanaa. Tyhjennä esinevalinta ennen seuraavaa palikkaa.
+      - level: 2
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+      - level: 3
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+    invariants:
+      - Jokainen sanan käyttökerta kohdistuu yhteen todelliseen merkkiin, jokainen merkki saa täsmälleen yhden
+        käyttökerran.
+      - Lukusanan arvo, saman sanan uudelleenkäyttö eri merkeille ja sanojen järjestys eivät ratkaise tämän
+        juuritavoitteen onnistumista.
+      - Kaikki esineiden käyntijärjestykset ovat sallittuja. Kohdistuksia ei tuoteta automaattisesti eikä jo
+        käsiteltyjä merkkejä estetä valitsemasta.
+      - Koko suomenkielinen sanavalikoima säilyy sekoitettuna ja toistettavana. Vihjeen tai tuen jälkeen
+        onnistuminen ei ole itsenäistä näyttöä.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävän suljettu correspondence-predikaatti erottaa sanan käyttökertojen
+          täsmälleen-kerran-kohdistuksen lukusanojen järjestyksestä. Sanavalikoima ja rajattu lukumääräalue
+          ovat projektin representaatioratkaisuja, eivät OPH:n tarkkoja vaatimuksia.
+        status: hypothesis
+  - id: M-NUM-1TO1-TRANSFER-HAJALLA
+    kc_ids:
+      - M-NUM-1TO1
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: challenge
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Palikat ovat nyt eri paikoissa. Laske nekin, jokainen vain kerran.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: layout_change
+        baselineIndependent: M-NUM-1TO1-INDEP-OMA-REITTI
+        from: row
+        to: scatter
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: correspondence
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Palikat
+      objectLabel: Palikka
+      countRange:
+        - 3
+        - 8
+      layout: scatter
+      context: kohdistus-hajallaan
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-1TO1-HYP-KOHDISTUS
+        detect: observed:correspondence
+    hints:
+      - level: 1
+        text: Valitse yksi palikka. Käytä sille sanaa. Tyhjennä esinevalinta ennen seuraavaa palikkaa.
+      - level: 2
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+      - level: 3
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+    invariants:
+      - Jokainen sanan käyttökerta kohdistuu yhteen todelliseen merkkiin, jokainen merkki saa täsmälleen yhden
+        käyttökerran.
+      - Lukusanan arvo, saman sanan uudelleenkäyttö eri merkeille ja sanojen järjestys eivät ratkaise tämän
+        juuritavoitteen onnistumista.
+      - Kaikki esineiden käyntijärjestykset ovat sallittuja. Kohdistuksia ei tuoteta automaattisesti eikä jo
+        käsiteltyjä merkkejä estetä valitsemasta.
+      - Koko suomenkielinen sanavalikoima säilyy sekoitettuna ja toistettavana. Vihjeen tai tuen jälkeen
+        onnistuminen ei ole itsenäistä näyttöä.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävän suljettu correspondence-predikaatti erottaa sanan käyttökertojen
+          täsmälleen-kerran-kohdistuksen lukusanojen järjestyksestä. Sanavalikoima ja rajattu lukumääräalue
+          ovat projektin representaatioratkaisuja, eivät OPH:n tarkkoja vaatimuksia.
+        status: hypothesis
+  - id: M-NUM-1TO1-DELAYED-OMA-SEURANTA
+    kc_ids:
+      - M-NUM-1TO1
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Muistatko tavan? Laske nämä palikat.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: correspondence
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Palikat
+      objectLabel: Palikka
+      countRange:
+        - 3
+        - 8
+      layout: row
+      context: kohdistus-myohainen-paluu
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-1TO1-HYP-KOHDISTUS
+        detect: observed:correspondence
+    hints:
+      - level: 1
+        text: Valitse yksi palikka. Käytä sille sanaa. Tyhjennä esinevalinta ennen seuraavaa palikkaa.
+      - level: 2
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+      - level: 3
+        text: Katso omia sanojasi ja esinevalintojasi. Tuliko jokainen palikka mukaan vain kerran?
+    invariants:
+      - Jokainen sanan käyttökerta kohdistuu yhteen todelliseen merkkiin, jokainen merkki saa täsmälleen yhden
+        käyttökerran.
+      - Lukusanan arvo, saman sanan uudelleenkäyttö eri merkeille ja sanojen järjestys eivät ratkaise tämän
+        juuritavoitteen onnistumista.
+      - Kaikki esineiden käyntijärjestykset ovat sallittuja. Kohdistuksia ei tuoteta automaattisesti eikä jo
+        käsiteltyjä merkkejä estetä valitsemasta.
+      - Koko suomenkielinen sanavalikoima säilyy sekoitettuna ja toistettavana. Vihjeen tai tuen jälkeen
+        onnistuminen ei ole itsenäistä näyttöä.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tehtävän suljettu correspondence-predikaatti erottaa sanan käyttökertojen
+          täsmälleen-kerran-kohdistuksen lukusanojen järjestyksestä. Sanavalikoima ja rajattu lukumääräalue
+          ovat projektin representaatioratkaisuja, eivät OPH:n tarkkoja vaatimuksia.
+        status: hypothesis
+misconceptions:
+  - id: M-NUM-1TO1-HYP-KOHDISTUS
+    description: "Kohdistusten kattavuus tai yksikäsitteisyys ei vastauksessa toteudu: kohde voi jäädä ilman
+      kohdistusta, saada useita kohdistuksia tai käyttökerta voi kohdistua useaan kohteeseen. Tämä on
+      havaintohypoteesi, ei päätelmä oppilaan toiminnan syystä."
+    evidence_patterns:
+      - kind: interaction_pattern
+        when: Hyvin muodostetun vastauksen deterministinen havainto observed:correspondence; sanojen järjestys ei
+          kuulu tähän havaintoon.
+    feedback_strategy:
+      conceptual_prompt: Katso omaa laskuasi. Jäikö jokin palikka väliin tai tuliko sama palikka mukaan kahdesti?
+      representation: Sama sanavalikoima ja omat kohdistukset. Ei automaattista merkkien lukitsemista, laskettua
+        määrää tai seuraavan kohteen osoitusta.
+    repair_targets:
+      - M-NUM-1TO1
+    status: hypothesis
+differentiation:
+  support_variants:
+    step_chunking: Ohjatussa harjoittelussa erotellaan kohteen valinta, sanan valinta ja oman kohdistuksen
+      tarkastelu. Itsenäisen tehtävän kohdemääräaluetta tai onnistumisehtoa ei madalleta.
+    hint_availability: Ensimmäisessä ohjatussa tehtävässä tehdään yksi kohdistus yhdessä ennen oppijan jatkoa. Toisessa
+      ohjatussa tehtävässä tätä aloitusta ei anneta. Vihjeet ja virhepalaute saavat näyttää tarvittavan
+      osavaiheen tai analogisen mallin; apu kirjataan ennen näyttämistä eikä tuota itsenäistä näyttöä.
+    text_density: Lyhyt toimintaohje; suomenkieliset lukusanat voidaan kuunnella erikseen paikallisena toistona.
+      Muu oppituntiteksti ei ole luvattu kuunneltavaksi.
+    alternate_representation: Tunnistettavat merkit sekä nykyiset valinta- ja näppäimistötoiminnot. Sanapankki on
+      kaikissa tehtävissä kokonainen ja sekoitettu.
+    reduced_motion: Kohdistus ei vaadi liikkuvan esineen seuraamista. Nykyinen vähennetyn liikkeen tuki säilyttää
+      saman tavoitteen.
+  challenge_variants:
+    reduced_scaffolding: Sama predikaatti ilman ohjattua harjoittelua; ei uusia oikeellisuusehtoja tai sanojen
+      järjestysvaatimusta.
+    transfer_novelty: Rivi vaihtuu hajanaiseksi asetteluksi samalla kolmesta kahdeksaan ulottuvalla
+      kohdemääräalueella. Uusi nimi tai siemen ei yksin ole siirto.
+    acceleration_probe: Kaksi itsenäistä diagnostista pohjaa sallii nopean etenemisen; itsenäinen vähimmäisnäyttö
+      ja siirto ovat silti pakolliset.
+    learner_block:
+      type: reflection
+      content:
+        kind: enumeration_counting_method_v1
+        section: challenge
+representations:
+  - id: M-NUM-1TO1-REP-MERKIT
+    type: diagram
+    purpose: Näytä kaikki erottuvat kohteet ilman lukumäärän kertovaa numerointia tai automaattisia laskentamerkkejä.
+    domain_bindings:
+      - objects.id
+      - objects.mark
+      - objects.x
+      - objects.y
+  - id: M-NUM-1TO1-REP-KOHDISTUKSET
+    type: ordered_trace
+    purpose: Säilytä oppilaan valitsemat sanan käyttökerrat ja niiden kohteet muokattavana vastauksena. Tämä ei
+      määrää oikeaa käyntijärjestystä.
+    domain_bindings:
+      - tokens.id
+      - tokens.label
+      - response.acts.word
+      - response.acts.targets
+  - id: M-NUM-1TO1-JOURNEY-v1
+    kind: learning_journey_v1
+    chapter: Rannan valmistelut
+    companion: Aava
+    capability: correspondence_pairs_v1
+    purpose: Aavan retkimerkit pitää laskea. Jokainen mukaan kerran.
+    consequence: Retkimerkit on laskettu yhdessä.
+    instruction: Osoita esine ja valitse sille lukusana.
+    model:
+      kind: counting_v1
+      count: 3
+    retrieval:
+      kind: closed_episode_retrieval_v1
+      claim: correspondence
+  - id: v7-evidence-compatibility
+    kind: v7_evidence_compatibility_v1
+    sourceCommit: 0b2a791918f472cf8ba61eede095a6a578adeab6
+    sourceContentHash: a92fba26d9b65c9c52cc4af2217af28625b90994cf1c208e1b4976b5ad4d6726
+    allowedChanges: [additive_journey, lesson_wording]
+simulation_specs: []
+requires_capabilities:
+  - rich_text
+  - draggable_objects
+  - diagram
+  - hint_ladder
+  - read_aloud_hook
+  - reduced_motion_variant
+provenance:
+  curriculum:
+    - source_id: PROD01-OPH-MATH12-S2
+      claim: "ePerusteet 419550, matematiikka 466344, vuosiluokkakokonaisuus 466963, S2 469266, kuvaus.fi-kappaleet
+        1–2: lukumäärien laskemisen ja lukusanojen yhteyden laaja opetussuunnitelmayhteys. Erillinen atominen
+        kohdistustavoite ja tarkka arviointitapa ovat pedagogista projektijohdosta, eivät OPH:n määräys."
+      status: verified
+  pedagogy:
+    - source_id: PROD01-OU-COUNTING-PRINCIPLES
+      claim: OpenLearnin Week 1, 1.1, Activity 1, Discussion -kohdan toinen luetelmakohta käsittelee sanan ja
+        viitatun kohteen vastaavuutta. Eriytetty juuritavoitteen pisteytys ei ole lähteen empiirisesti
+        validoima menetelmä.
+      status: verified
+    - source_id: PROJECT-BATCH01-POLICY-v0.1
+      claim: Kolme itsenäistä onnistumista kahdesta tehtäväpohjasta, kaksi diagnostista pohjaa, pakollinen siirto ja
+        aikaisintaan 24 tunnin viivästetty kaksi onnistumista ovat tämän erän projektipolitiikkaa. Niitä ei
+        esitetä tutkimuksen vahvistamina vakioina.
+      status: hypothesis
+  domain:
+    - source_id: PROD01-OU-COUNTING-PRINCIPLES
+      claim: OpenLearnin Activity 1 / Discussion, luetelmakohta 2 tukee lukusanojen kohdistamista kohteisiin. Tässä
+        kohdistuksen sanan käyttökerta ja kohteen identiteetti erotetaan järjestyspredikaatista.
+      status: verified
+    - source_id: PROJECT-ENUMERATION-v0.1
+      claim: Suomenkielinen sanavalikoima yhdestä kymmeneen, kolmesta kahdeksaan ulottuvat itsenäiset kohdemäärät,
+        oppilaan käyttökertajälki, asettelusiirto ja observed:correspondence-hypoteesi ovat rajattuja
+        projektin mallinnus- ja arviointivalintoja. Uusi sisältö tarvitsee erillisen riippumattoman
+        tarkastuksen.
+      status: hypothesis
+validation:
+  schema: pending
+  graph_refs: pending
+  domain_truth: pending
+  item_invariants: pending
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: implemented

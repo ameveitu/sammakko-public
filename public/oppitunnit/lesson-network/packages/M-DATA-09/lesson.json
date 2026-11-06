@@ -1,0 +1,562 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-DATA-09",
+  "revision": 17,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "lesson.css",
+      "sha256": "0bfe5768a9cdf3a3a09f897f0fe3dd255da82537f818c566a82798ac98261494"
+    },
+    {
+      "path": "scope.svg",
+      "sha256": "2dae4276bd975efba48741de7d5091c3ccc59239081016e633ee9236dc7d20f7"
+    },
+    {
+      "path": "shared/aava/map.png",
+      "sha256": "49b47a345fa26f9017acb1672d1b7d6d4fe0dcd511e756c693b731269579ebe9"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.amstat.org/docs/default-source/amstat-documents/gaiseiiprek-12_full.pdf",
+      "title": "Pre-K–12 Guidelines for Assessment and Instruction in Statistics Education II (GAISE II): A Framework for Statistics and Data Science Education",
+      "organization": "American Statistical Association; writing committee co-chairs Anna Bargagliotti and Christine Franklin",
+      "retrievedAt": "2026-10-29",
+      "retrievedSections": "PDFp3 copyright; LevelA collect/consider data and preparation before collecting; secondary-data discussion",
+      "usageRestrictions": "©2020 American Statistical Association. All rights reserved; reproduction requires written permission. Concepts inform original design; no copied tables, figures, survey questions or long passages.",
+      "adopted": [
+        "Keruutapa suunnitellaan kysymykseen sopivaksi; myös valmista aineistoa voi käyttää."
+      ],
+      "rejected": [
+        "Tutkimuksen yhtä järjestystä ei esitetä kaikkien tutkimusten lakina; tyhjän lomakkeen valmistelu ennen keruuta ei ole virhe."
+      ]
+    },
+    {
+      "url": "https://base-prod.rspb-prod.magnolia-platform.com/author/dam/jcr%3A3157c6f3-6d22-4e75-b352-6a1e76a93c89",
+      "title": "How to take part — Big Schools’ Birdwatch2026 (English page of bilingual PDF)",
+      "organization": "Royal Society for the Protection of Birds (RSPB)",
+      "retrievedAt": "2026-10-29",
+      "retrievedSections": "English PDFp1 steps and teaching hint; dated2026 resource",
+      "usageRestrictions": "No permissive reuse licence identified. Photo credit Ben Andrew/rspb-images.com. Treat as copyrighted; no artwork/worksheet copied. Historical protocol example, not current campaign instructions or proposed participation.",
+      "adopted": [
+        "Määrittele, lasketaanko samanaikaisia yksilöitä vai havaintokertoja; älä laske toistuvaa yksilöä automaattisesti uutena."
+      ],
+      "rejected": [
+        "Ei lajintunnistusvaatimusta, ruokintaa, kampanjaliittymistä tai tulosten lähettämistä; lähteen2026 päivämääriä ei esitetä nykyohjeena."
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+      "note": "Source frozen after author checks; independent final review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+      "note": "Source frozen after author checks; independent final review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+      "note": "No human review or child validation."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+      "note": "Scoped stale-feedback repair and regressions passed; main independent re-review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+      "note": "Scoped stale-feedback repair and regressions passed; main independent re-review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+      "note": "No human validation."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+      "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B03/data-independent-review.json. Human/learner effectiveness and release approval remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@49cfedf3f441609587c76bbc7ecb7011b0bcc4ff66e993121a7936c77c87607a",
+      "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B03/data-independent-review.json. Human/learner effectiveness and release approval remain pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@6c6cf764e162c8d86a665d9fd30ea1a5dcefed314196db6e5f15c502b1d0596d",
+      "note": "LR04-B03: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@6c6cf764e162c8d86a665d9fd30ea1a5dcefed314196db6e5f15c502b1d0596d",
+      "note": "LR04-B03: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@6c6cf764e162c8d86a665d9fd30ea1a5dcefed314196db6e5f15c502b1d0596d",
+      "note": "LR04-B03: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@dcec0838354a1863688c67226e76b9ef71a35f023bbcc7ed65ab7425565b172f",
+      "note": "LR04 source workbench framing: given question/figure kept together; response and deliberate planning/model disclosures laid out separately. Current delta review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@dcec0838354a1863688c67226e76b9ef71a35f023bbcc7ed65ab7425565b172f",
+      "note": "LR04 source workbench framing: given question/figure kept together; response and deliberate planning/model disclosures laid out separately. Current delta review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@dcec0838354a1863688c67226e76b9ef71a35f023bbcc7ed65ab7425565b172f",
+      "note": "LR04 source workbench framing: given question/figure kept together; response and deliberate planning/model disclosures laid out separately. Current delta review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@ca5ae9e6063cd7fbc2c92d8739b6ad5e4fb5774c3411a2ebc1f67ead778d275e",
+      "note": "LR04 framing: planning introduction retained within deliberate planning disclosure; current source review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@ca5ae9e6063cd7fbc2c92d8739b6ad5e4fb5774c3411a2ebc1f67ead778d275e",
+      "note": "LR04 framing: planning introduction retained within deliberate planning disclosure; current source review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@ca5ae9e6063cd7fbc2c92d8739b6ad5e4fb5774c3411a2ebc1f67ead778d275e",
+      "note": "LR04 framing: planning introduction retained within deliberate planning disclosure; current source review pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@41cb6c72454cffac4a28c34c69d7de0e7e57da4e650e1b9e9bfc9361e359c49e",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@41cb6c72454cffac4a28c34c69d7de0e7e57da4e650e1b9e9bfc9361e359c49e",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@41cb6c72454cffac4a28c34c69d7de0e7e57da4e650e1b9e9bfc9361e359c49e",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@eda9afa758a8aaabe80dee4d1bffd9e1e6ae6ad7097d52679d1b6715fc169c25",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@eda9afa758a8aaabe80dee4d1bffd9e1e6ae6ad7097d52679d1b6715fc169c25",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@eda9afa758a8aaabe80dee4d1bffd9e1e6ae6ad7097d52679d1b6715fc169c25",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@86753fee9839431ab12c7d03bd92c080413bf0a9fd06890c83ff655fd9c07214",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@86753fee9839431ab12c7d03bd92c080413bf0a9fd06890c83ff655fd9c07214",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@86753fee9839431ab12c7d03bd92c080413bf0a9fd06890c83ff655fd9c07214",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@32754c2156c8651dc94d036d6444661300a5a51884928bc2bbf5ff48275775fc",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@32754c2156c8651dc94d036d6444661300a5a51884928bc2bbf5ff48275775fc",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@32754c2156c8651dc94d036d6444661300a5a51884928bc2bbf5ff48275775fc",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@f9e44029133a8ae4655d57279cbf5e3b0ebe0d0e6d702bc7c524fe0f5b61c581",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@f9e44029133a8ae4655d57279cbf5e3b0ebe0d0e6d702bc7c524fe0f5b61c581",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@f9e44029133a8ae4655d57279cbf5e3b0ebe0d0e6d702bc7c524fe0f5b61c581",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@f16f4014a50ba00f4c76921aca908cdd6e2736292ac60eecf94732a3e275a985",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@f16f4014a50ba00f4c76921aca908cdd6e2736292ac60eecf94732a3e275a985",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@f16f4014a50ba00f4c76921aca908cdd6e2736292ac60eecf94732a3e275a985",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@9623c017d0168159cb6ba9ab3b7e0b81e58b399a1350172609e81063f0229485",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@9623c017d0168159cb6ba9ab3b7e0b81e58b399a1350172609e81063f0229485",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@9623c017d0168159cb6ba9ab3b7e0b81e58b399a1350172609e81063f0229485",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "16@d140985258938b78b321a09eb2c18143549e944fe936690bf338817980265040",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "16@d140985258938b78b321a09eb2c18143549e944fe936690bf338817980265040",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "16@d140985258938b78b321a09eb2c18143549e944fe936690bf338817980265040",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "17@a4980cc18e0a69829e8a3a1a1fe11afcdcab7d99a4338508d27aa08bfc2e0257",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Wording and feedback changes reviewed. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "17@a4980cc18e0a69829e8a3a1a1fe11afcdcab7d99a4338508d27aa08bfc2e0257",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Keruusuunnitelma vastaa rajattua kysymystä; alue, hetki, kerrat ja kirjaustapa säilyvät. Kuvat ja kirjaukset ovat samassa harjoituksessa; suunnitelman ja havaintovihkon nimetyt paneelit avataan tietoisesti. Puuttuva havainto ei ole 0 eikä lintukäyntien summa eri yksilöiden määrä. Fyysistä tutkimustaitoa ei päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Wording and feedback changes reviewed. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "17@a4980cc18e0a69829e8a3a1a1fe11afcdcab7d99a4338508d27aa08bfc2e0257",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M-DATA-09",
+    "liteContentRevision": "lite181-2026-10-27",
+    "liteNodeRevision": "audit1-2026-10-28",
+    "families": [
+      "method",
+      "fix",
+      "order",
+      "steps",
+      "compare",
+      "transfer"
+    ],
+    "familyTaskKinds": {
+      "method": "choice",
+      "fix": "choice",
+      "order": "choice",
+      "steps": "place",
+      "compare": "choice",
+      "transfer": "choice"
+    },
+    "sourceHashes": {
+      "src/content/saari2.ts": "bf9e657f3e4f975cbdafd9c8b5c891d789ffd4e98be7126ee438096f7d9f5c6e",
+      "src/content/dataanim.ts": "a8c997f90dc9e53b2c9925984b6c1e5a4c0b24969dea0800fc0d68f407aa2fcd",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715"
+    },
+    "registryCheck": {
+      "entryPoint": "src/content/index.ts",
+      "motionMap": "src/content/motionsims.ts",
+      "inSimMap": false,
+      "note": "Actual registry and SIMS map inspected during prep. No sim family for these IDs. Immutable source hashes rechecked before authorship."
+    },
+    "inventory": "alignment.md",
+    "reconciliation": "alignment.md#reconciliation-for-opus",
+    "status": "authored_comparison_independent_review_pending",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "launch1-2026-11-01",
+      "validRevisions": [
+        "launch1-2026-11-01",
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/dataanim.ts": "0389357a65aec379a6fdd75d9301c509ae5bc8b4373551707ff3fa82355fc745",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/saari2.ts": "98fb2fb855d272e91d93e194a98c3d401c2b784a2d364a87f434dadbe2604ec1",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "3-6",
+    "teacherObjective": "Tiedon järjestelmällinen kerääminen",
+    "childGoal": "Sovin kysymykseen sopivan keruutavan ja kirjaan jokaisen sovitun kerran.",
+    "sourceGraphRevision": "d547e9ebfbd8ca1737abe40be34e9ace53ea773e",
+    "sourceGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "canonicalSourceBasis": "direct_curriculum",
+    "canonicalCurriculumRefs": [
+      "OPH-POPS2014-MATH-VL3-6-S5"
+    ],
+    "canonicalNodeKind": "concept",
+    "canonicalMasteryRole": "atomic",
+    "canonicalEntryRole": "none",
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-DATA-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "requiredPrerequisites": [
+      {
+        "id": "M-DATA-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-DATA-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "strongSupport": [
+      {
+        "id": "M-TH-07",
+        "relation_type": "process_support",
+        "strength": "strong",
+        "rationale": "M-TH-07 on tämän osaamiskohteen välitön välttämätön esitieto. v0.2: ei käytetä kovana avausporttina, koska kyse on prosessi-/representaatiotuesta."
+      }
+    ],
+    "assumed": [
+      "M-DATA-01 canonical required collection prerequisite. M-TH-07 remains strong process_support.",
+      "Day/moment labels and observation counts are supplied; no clock-reading task. A fixed reference window is a design choice appropriate to the proposed question."
+    ],
+    "scope": "Annettuun kysymykseen sopivan keruusuunnitelman rakentaminen ja kolmen keksityn kuvahavainnon kirjaaminen. Rajaus, ajankohta, kertojen kattavuus ja yksi kirjaus/kerta tarkistetaan. Vaihtoehtoinen kysymys hyväksyy toisen rajauksen. Ei kellonlukua, ulkoista tutkimusta tai lintulajien tunnistamista.",
+    "evidenceLimits": "The notebook operates on supplied synthetic records; it cannot establish physical fieldwork, actual compliance, population abundance, causal explanation, retention or human validation. Kaikki ruututoiminta on matalan kynnyksen harjoittelua. Ei tallennusta, osaamistilan ansaitsemista tai ihmiskatselmuksen väitettä.",
+    "interaction": "Three revisitable labelled synthetic snapshots and an editable in-memory observation notebook; not live temporal simulation.",
+    "assetProvenance": [
+      {
+        "path": "lesson.css",
+        "origin": "Original local scoped stylesheet."
+      },
+      {
+        "path": "scope.svg",
+        "origin": "Original subject SVG authored for this KC on2026-10-29; counts and corresponding representations verified by own domain tests."
+      },
+      {
+        "path": "shared/aava/map.png",
+        "origin": "Unchanged supplied shared v2 actual transparent PNG. Generated raster interpretation of user character, not a newly hand-drawn original. Referenced, never duplicated/redrawn in package."
+      }
+    ],
+    "sequence": [
+      "Konkreettinen tarkoitus ja lyhyt lapsen tavoite",
+      "Kaksi selitettyä esimerkkiä ennen harjoittelua, virhekäsitys ja siirto",
+      "Ennustus ja vapaaehtoinen tuki",
+      "KC:n oma rakentava tai lukemista harjoittava toiminta ja täsmällinen palaute",
+      "Lisäpohdinta, opettajan/offline-ohje ja lähtökysymys"
+    ],
+    "moduleContract": "Self-contained no-import module. Component-owned delegated click/input/change listeners, each detached on dispose. Checked feedback has a semantic state key; native edits of owned answer fields neutralize it until explicit recheck. No timers/global listeners. Native fieldset pause blocks edits; resume catches programmatic value changes made while paused. Reset clears state without adding handlers.",
+    "researchNote": "research.md"
+  },
+  "extensions": {
+    "reportedPreliminaryFinding": {
+      "reportedBy": "Main relayed Helmholtz independent preliminary review",
+      "issue": "Complete notebook plus a trailing sparse-array hole could return success.",
+      "correction": "Dense record-list validation at both checkNotebook and recordVisit boundaries, including missing slots and undefined/null records.",
+      "regression": "Trailing/middle/leading holes and explicit undefined/null reject; valid dense complete records still accepted."
+    },
+    "authorChecks": {
+      "date": "2026-10-29",
+      "scope": "Only DATA04/DATA09 checked-feedback invalidation; DATA05 and other sources unchanged.",
+      "sourceStable": true,
+      "reportedEvidence": {
+        "path": "evidence/production/B03/feedback-stale-reproductions.json",
+        "sha256": "618aafe7b3dc2116177ef626793e7ee4b7052a7d1dde7bfbf444231102362698"
+      },
+      "pureTests": {
+        "command": "node --test lesson-network/packages/M-DATA-04/tests.mjs lesson-network/packages/M-DATA-09/tests.mjs",
+        "result": "passed",
+        "testCases": 11
+      },
+      "browserRegression": {
+        "command": "LESSON_PREVIEW_URL=http://127.0.0.1:4200/ node --test lesson-network/packages/M-DATA-04/tests.mjs lesson-network/packages/M-DATA-09/tests.mjs",
+        "result": "passed",
+        "totalCasesIncludingPure": 13,
+        "browserCases": 2,
+        "engine": "Actual headless Chromium against isolated source composition",
+        "checks": [
+          "Exact native Cards3→9 and protocol mat→desk reproductions",
+          "Semantic quantity/header/category/protocol/draft changes neutralize checked feedback",
+          "Returning to correct values does not automatically restore checked feedback",
+          "DATA04 row reorder preserves semantic truth",
+          "Unrelated input events do not affect component feedback",
+          "Pause ignores edit events; resume neutralizes changed data",
+          "One click/input/change listener each, all zero after double dispose; reset adds none"
+        ]
+      },
+      "lint": {
+        "command": "./node_modules/.bin/eslint lesson-network/packages/M-DATA-04/lesson.mjs lesson-network/packages/M-DATA-04/tests.mjs lesson-network/packages/M-DATA-09/lesson.mjs lesson-network/packages/M-DATA-09/tests.mjs",
+        "result": "passed"
+      },
+      "contract": "Isolated package/module/CSS/hash validation passed for the two changed packages only.",
+      "independentReview": "Main re-review/rebuild pending",
+      "humanValidation": "Not performed or claimed"
+    },
+    "authorChecksHistory": [
+      {
+        "appliesToContentRevision": "2@e41cf76cf70b98232cef45cb06efb9a854e070c04d24e218d3dd96fd3654b4f2",
+        "checks": {
+          "date": "2026-10-29",
+          "sourceStable": true,
+          "pureTests": {
+            "command": "node --test lesson-network/packages/M-DATA-04/tests.mjs lesson-network/packages/M-DATA-05/tests.mjs lesson-network/packages/M-DATA-09/tests.mjs",
+            "result": "passed",
+            "testCasesAcrossThreePackages": 13,
+            "coverage": [
+              "Row permutations/equal values/zero-vs-blank construction",
+              "Wrong row counts despite matching sum",
+              "SVG observation counts and geometry boundaries",
+              "Literal table lookup and optional ungraded tracing",
+              "162 question/protocol combinations",
+              "Notebook missing/zero/duplicate/replacement/scope/time handling",
+              "Sparse-record regression at both boundaries"
+            ]
+          },
+          "sourceContract": "Passed isolated loadPackages/composePackage including actual asset hashes, CSS validation and module syntax/dependency validation. Only these three packages loaded.",
+          "browser": {
+            "engine": "Installed Playwright Chromium headless",
+            "phone": "390x844",
+            "desktop": "1280x900",
+            "context": "Current shared shell CSS plus source-owned local styles and actual modules, in isolated temporary composition; no live/shared build.",
+            "checks": [
+              "Actual table construction, equal quantities, reversal and missing/zero feedback",
+              "Reading answers accepted without row tracing, repeated values and unknown",
+              "Both systematic questions, protocol construction and record replacement/zero/missing visit",
+              "Keyboard Enter",
+              "Native controls at least44px",
+              "All source/dynamic images loaded",
+              "No horizontal overflow",
+              "Pause/reset/resume",
+              "Double dispose and fresh remount without duplicate actions",
+              "No-JS static explanations",
+              "No page JS errors"
+            ],
+            "harness": "/tmp/b03-mill-browser.mjs",
+            "previewPreparation": "/tmp/b03-mill-preview.mjs",
+            "practiceScreenshotsVisuallyInspected": true,
+            "remainingAuthorQA": "Read-only inspection of full-page phone/desktop screenshots after freeze; report any new finding before editing."
+          },
+          "independentReview": "Pending; preliminary DATA09 hole finding fixed, not a whole-lesson approval.",
+          "humanReview": "Not performed",
+          "integration": "Main owns build, shared status, independent acceptance and Git."
+        }
+      }
+    ],
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B03",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

@@ -1,0 +1,796 @@
+# Batch-01 authored design; independent content review and pilot acceptance remain pending.
+schema_version: 0.1.0
+kc_id: M-NUM-02
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Laskennan viimeinen lukusana kertoo koko joukon lukumäärän
+  subject: mathematics
+  grade_band: 1-2
+  mastery_role: atomic
+  node_kind: concept
+  source_basis: pedagogically_derived
+  concept_path:
+    - Matematiikka
+    - Luvut ja laskutoimitukset
+    - Lukukäsite
+    - Kardinaliteetti
+  curriculum_refs:
+    - OPH-POPS2014-MATH-VL1-2-S2
+  prerequisite_snapshot:
+    hard:
+      - M-NUM-01
+    strong: []
+    helpful: []
+teaching_model:
+  learning_goal: Oppilas käyttää oikein tehdyn laskennan viimeistä lukusanaa vastauksena montako-kysymykseen ja
+    osoittaa sen tarkoittavan laskettuja esineitä eikä vain viimeisenä osoitettua esinettä. Rajatussa
+    tehtävässä tämä näkyy uudesta jäsenvalinnasta saman joukon uudelleenjärjestelyn jälkeen.
+  learner_facing_goal: Osaan näyttää, mitä laskuni viimeinen lukusana tarkoittaa, kun vastaan kysymykseen montako.
+  core_idea: "Laskemisen aikana sana kohdistetaan yhteen esineeseen kerrallaan. Kun laskeminen on valmis,
+    viimeinen sana kertoo laskettujen esineiden lukumäärän: se ei ole vain viimeisen esineen nimi. Tässä
+    harjoituksessa esineiden paikat vaihtuvat, mutta esineitä ei lisätä eikä poisteta."
+  success_evidence:
+    - Oppilas muodostaa ensin oikean integroidun laskentajonon ja vahvistaa sen alkuperäisessä asettelussa.
+    - Oppilas käynnistää saman jäsenjoukon todellisen uudelleenjärjestelyn vahvistetun laskennan jälkeen.
+    - Oppilas valitsee vasta sen jälkeen raportin sanan ja osoittaa erikseen sen tarkoittamat todelliset
+      esineet; jäsenvalintaa ei kopioida laskennan viimeisestä kohteesta.
+    - Raportin sana vastaa oikean laskennan viimeistä sanaa ja oppilaan jäsenvalinta kattaa täsmälleen
+      lasketut esineet.
+    - Itsenäinen, siirto- ja viivästetty näyttö edellyttävät koko rajattua laskenta–järjestelyn vaihto–tuore
+      raportti -ketjua. Pelkkä lukusanan toistaminen ei riitä.
+  boundaries:
+    in_scope:
+      - Oman laskennan koostaminen paikallisesti kuunneltavilla suomen lukusanoilla ja näkyvien esineiden
+        valinnoilla.
+      - Kolmesta kuuteen erillistä näkyvää merkkiesinettä; lukusanavalikoima säilyy kokonaisena yhdestä
+        kymmeneen.
+      - Samojen todellisten jäsenten raportointi vahvistetun laskennan ja uudelleenjärjestelyn jälkeen.
+      - Rivistä eri kohtiin aseteltuihin merkkeihin siirtyvä rajattu asettelusiirto sekä myöhempi tueton
+        kertaus.
+    out_of_scope:
+      - Yleinen määrän säilyvyyden tai kardinaalisen ymmärryksen kattava arviointi.
+      - Anna tietty määrä -tehtävät, esineiden lisääminen tai poistaminen, seuraajaluvun laskeminen ja muu
+        aritmetiikka.
+      - Spontaanin suullisen lukusanatuotannon, ääntämisen tai numeromerkkien osaamisen arviointi.
+      - Integraatiotehtävän perusteella myönnettävä M-NUM-01:n tai sen lasten hallinta.
+      - Jäsenvalinnan oikean vastauksen tarjoava koko joukon valinta tai valitse kaikki -oikotie.
+  prerequisite_assumptions:
+    - kc_id: M-NUM-01
+      expected_level: Nykyinen itsenäisesti osoitettu osaaminen
+  conceptual_invariants:
+    - Alkuperäisen ja uudelleenjärjestetyn asettelun esinejäsenet ja identiteetit ovat samat.
+    - Raportin jäsenvalinta on erillinen laskennan kohdevalinnasta ja alkaa tyhjänä.
+    - Laskentajonon muutos mitätöi sen vahvistuksen ja raportin; asettelun vaihto mitätöi raportin. Vanha
+      raportti ei muutu tuoreeksi pelkällä asettelun vaihdolla.
+    - Kohteiden eri vierailujärjestykset ovat sallittuja, mutta oikea lukusanajono ja kertakattavuus tarvitaan
+      samassa vahvistetussa laskennassa.
+    - Vähintään kaksi esinettä tarvitaan erottamaan viimeinen esine laskettujen esineiden jäsenjoukosta; tämä
+      paketti käyttää kolmesta kuuteen esinettä.
+  likely_confusions:
+    - M-NUM-02-OBS-COUNT-TRACE
+    - M-NUM-02-OBS-REPORT-WORD
+    - M-NUM-02-OBS-REPORT-SCOPE
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+    - DIAGNOSTIC
+    - ORIENT
+    - WORKED_EXAMPLE
+    - EXPLAIN
+    - GUIDED_PRACTICE
+    - INDEPENDENT_PRACTICE
+    - TRANSFER_CHECK
+    - MASTERY_GATE
+  fast_path:
+    enabled: true
+    diagnostic_requirement: Vaadittujen esitietojen nykyinen itsenäinen osaaminen on osoitettu. Kaksi erillistä tuetonta diagnostista tehtäväpohjaa
+      onnistuu ja tuottaa keskisen tavoitteen tagit. Opetus voidaan ohittaa, mutta itsenäiset minimit ja uusi
+      siirtotehtävä jäävät pakollisiksi.
+    transfer_confirmation: required
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Havainnoi nykyistä keskistä tavoitetta ilman ennakkoon näytettyä vastausta. Yhdistetty virhe ei
+        käynnistä lapsikohtaista pakko-ohjausta.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-02-DIAG-MERKKIEN-MERKITYS
+              - M-NUM-02-DIAG-KUVAPOYTA
+    ORIENT:
+      purpose: Tee tehtävän tavoite ja valintojen merkitys ymmärrettäväksi ennen mallia.
+      blocks:
+        - type: explanatory_text
+          content: "Loikka on laskenut retkimerkit. Hän osoitti lopuksi yhtä merkkiä, mutta kysymys oli: montako merkkiä
+            laskettiin? Nyt tutkit, mitä viimeinen sana tarkoittaa vastauksessa. Esineitä ei vaihdeta toisiin,
+            vaikka niiden paikat muuttuvat."
+    WORKED_EXAMPLE:
+      purpose: Näytä pieni erillinen opetusesimerkki ja selitä, mihin havainto perustuu. Esimerkkiä ei lasketa
+        oppilaan evidenssiksi.
+      blocks:
+        - type: worked_example
+          content:
+            problem: Pienessä harjoitusesimerkissä laskija osoittaa kiveä sanalla yksi ja käpyä sanalla kaksi. Laskeminen
+              on valmis.
+            steps:
+              - Laskennan aikana sana kaksi osui käpyyn, koska se laskettiin viimeisenä.
+              - Kysymykseen montako esinettä laskettiin sana kaksi tarkoittaa kiven ja kävyn yhteistä
+                lukumäärää. Se ei ole kävyn nimi.
+              - Kun kiven ja kävyn paikat vaihdetaan, molemmat samat esineet ovat edelleen mukana. Laskija
+                vastaa uudessa asettelussa sanalla kaksi ja osoittaa kiven sekä kävyn.
+            note: Tämä esimerkki koskee näitä samoja laskettuja esineitä. Siinä ei lisätä, poisteta eikä tehdä esineistä
+              uutta määrää.
+        - type: comparison
+          content:
+            cases:
+              - label: Osoitus laskemisen aikana
+                text: Jokainen lukusanan käyttökerta liittyy silloin valittuun esineeseen.
+              - label: Vastaus laskemisen jälkeen
+                text: Viimeinen lukusana kertoo, montako esinettä laskussa oli mukana. Yhden esineen osoittaminen viimeiseksi
+                  ei tee sanasta sen nimeä.
+            note: Jäsenvalinnan tarkoitus on näyttää, mitä tarkoitat vastauksellasi. Pelkkä sanan valitseminen tai
+              paikkojen vaihtaminen ei näytä sitä.
+    EXPLAIN:
+      purpose: Yhdistä matemaattinen ajatus oppilaan itse ohjaamaan toimintaan antamatta tehtäväkohtaista vastausta.
+      blocks:
+        - type: explanatory_text
+          content: Tee ensin oma laskusi ja paina Vahvista laskujono. Vaihda sitten esineiden järjestystä. Vastaa
+            uudessa asettelussa valitsemalla sana ja osoittamalla esineet vastauksen omassa esinevalinnassa.
+            Voit osoittaa yhden, useita tai olla osoittamatta esineitä. Valitse itse; toimintopainikkeet eivät
+            kerro vastauksen oikeellisuutta. Jos muokkaat laskujonoa, vahvista laskusi uudelleen
+            alkuperäisessä asettelussa ja vaihda järjestys ennen uutta vastausta.
+    GUIDED_PRACTICE:
+      purpose: Harjoittele rajattua tavoitetta; tämän vaiheen ja pyydettyjen vihjeiden avulla saatu onnistuminen
+        pysyy tuettuna.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-02-GUIDED-SANAN-TARKOITUS
+    INDEPENDENT_PRACTICE:
+      purpose: Kerää kolme tuetonta onnistumista vähintään kahdesta tehtäväpohjasta. Kukin onnistuminen osoittaa
+        koko keskisen tavoitteen.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-02-INDEP-RETKIRYHMA
+              - M-NUM-02-INDEP-ASKARTELUSARJA
+    TRANSFER_CHECK:
+      purpose: Sovella samaa tavoitetta aidosti kaksiulotteisessa asettelussa. Pelkkä uusi tarina tai uusi siemen ei
+        ole siirtonäyttö.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-02-TRANSFER-MERKIT-ALUSTALLA
+    MASTERY_GATE:
+      purpose: Reflektio ei ole pisteytetty näyttö. Hallinta ratkaistaan vain määritetyistä itsenäisistä, siirto- ja
+        viivästetyistä tapahtumista.
+      blocks:
+        - type: reflection
+          content: Mitä eroa on sillä, että osoitat yhtä esinettä laskemisen aikana, ja sillä, mitä viimeinen lukusana
+            tarkoittaa vastauksessa montako? Voit perustella myös ääneen.
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+    fast_path_confirmation_tags:
+      - count_cardinality
+      - count_same_set_rearranged
+    execution_policy: Kaksi erillistä tuetonta diagnoosia voi ohittaa opetuksen. Vaadittujen esitietojen
+      nykyinen itsenäinen osaaminen, itsenäiset minimit ja siirtovahvistus tarkistetaan silti normaalisti.
+    pass_rule: Molemmat diagnoosit onnistuvat keskisen tavoitteen koko predikaatissa. Epäonnistuminen ei yksin
+      paikanna lapsen puutetta.
+  independent:
+    minimum_successes: 3
+    template_diversity: 2
+    diagnostic_credit:
+      kind: equivalent_count_diagnostics_v1
+      diagnostic_templates: [M-NUM-02-DIAG-MERKKIEN-MERKITYS, M-NUM-02-DIAG-KUVAPOYTA]
+      independent_templates: [M-NUM-02-INDEP-RETKIRYHMA, M-NUM-02-INDEP-ASKARTELUSARJA]
+    max_supported_attempts_counted: 0
+    required_tags:
+      - count_cardinality
+      - count_same_set_rearranged
+  transfer:
+    required: true
+    minimum_successes: 1
+    novel_context_required: true
+  delayed:
+    required: true
+    minimum_successes: 2
+    minimum_delay_hours: 24
+    reuse_templates:
+      - M-NUM-02-INDEP-RETKIRYHMA
+    required_tags:
+      - count_cardinality
+      - count_same_set_rearranged
+    required_contexts: []
+    earliest_delay_policy: Aikaisintaan 24 tuntia todellisesta osaamisen saavuttamisesta. Seuraavalla kelpoisella
+      kerralla sekä tämän paketin oma viivästetty tavoitetehtävä että aiemmin harjoiteltu itsenäinen
+      tehtäväpohja tuottavat uutta tuetonta näyttöä.
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+    - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+      evidence_tags:
+        - count_cardinality
+        - count_same_set_rearranged
+      rule: Myöhempi tueton onnistuminen koko tämän KC:n tavoitteessa voi poistaa aktiivisen havaintomerkinnän. Tämä
+        ei vahvista selitystä alkuperäisen virheen syystä eikä myönnä lapsi-KC:n osaamista.
+    - misconception_id: M-NUM-02-OBS-REPORT-WORD
+      evidence_tags:
+        - count_cardinality
+        - count_same_set_rearranged
+      rule: Myöhempi tueton onnistuminen koko tämän KC:n tavoitteessa voi poistaa aktiivisen havaintomerkinnän. Tämä
+        ei vahvista selitystä alkuperäisen virheen syystä eikä myönnä lapsi-KC:n osaamista.
+    - misconception_id: M-NUM-02-OBS-REPORT-SCOPE
+      evidence_tags:
+        - count_cardinality
+        - count_same_set_rearranged
+      rule: Myöhempi tueton onnistuminen koko tämän KC:n tavoitteessa voi poistaa aktiivisen havaintomerkinnän. Tämä
+        ei vahvista selitystä alkuperäisen virheen syystä eikä myönnä lapsi-KC:n osaamista.
+items:
+  - id: M-NUM-02-DIAG-MERKKIEN-MERKITYS
+    kc_ids:
+      - M-NUM-02
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske merkit ja vahvista laskujonosi. Vaihda sitten esineiden järjestystä. Valitse sana ja osoita
+        esineet vastauksessa kysymykseen montako.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: cardinality
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Retken merkit
+      objectLabel: Retkimerkki
+      countRange:
+        - 3
+        - 6
+      layout: row
+      context: Retken merkit ovat valmiina laskettaviksi.
+      rearrange: true
+    misconception_rules:
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:correspondence
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:stable_order
+      - misconception_id: M-NUM-02-OBS-REPORT-WORD
+        detect: observed:total
+      - misconception_id: M-NUM-02-OBS-REPORT-SCOPE
+        detect: observed:referent
+    hints:
+      - level: 1
+        text: "Pysähdy. Missä vaiheessa oma työsi on: laskemisessa vai laskemisen jälkeisessä vastauksessa?"
+      - level: 2
+        text: "Tarkista oma toimintasi: laskujonon vahvistus tehdään ennen järjestyksen vaihtoa. Uudessa asettelussa
+          vastauksen sana ja esinevalinta tehdään erikseen."
+      - level: 3
+        text: Mieti, mitä viimeinen lukusana kertoo montako-kysymykseen vastattaessa. Puhuuko vastauksesi vain
+          viimeksi osoitetusta esineestä vai niistä esineistä, jotka laskit?
+    invariants:
+      - Vahvistettu laskenta, sen jälkeinen todellinen järjestyksen vaihto ja tuore erillinen sana- ja
+        jäsenraportti vaaditaan yhdessä.
+      - Raportin jäsenet ovat todellisia esine-ID:itä; viimeisen kohteen kopio ei korvaa omaa jäsenvalintaa.
+      - Muokkaus tai asettelun vaihto ei saa hyväksilukea vanhaa raporttia.
+      - Sanat ja jäsenet eivät tule automaattisesti valituiksi; virheellinen tai vajaa vastaus pysyy
+        mahdollisena.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän cardinality-predikaatti, paikallisten suomenkielisten sanapolettien valintojen tulkinta
+          ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen sisältö
+          vaatii oman arvionsa.
+  - id: M-NUM-02-DIAG-KUVAPOYTA
+    kc_ids:
+      - M-NUM-02
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Tee kuvamerkeistä oma laskusi ja vahvista se. Vaihda järjestys. Vastaa kysymykseen montako
+        valitsemalla sana ja osoittamalla esineet.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: cardinality
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Pöydän kuvamerkit
+      objectLabel: Kuvamerkki
+      countRange:
+        - 3
+        - 6
+      layout: row
+      context: Loikka tutkii pöydällä olevia kuviomerkkejä.
+      rearrange: true
+    misconception_rules:
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:correspondence
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:stable_order
+      - misconception_id: M-NUM-02-OBS-REPORT-WORD
+        detect: observed:total
+      - misconception_id: M-NUM-02-OBS-REPORT-SCOPE
+        detect: observed:referent
+    hints:
+      - level: 1
+        text: "Pysähdy. Missä vaiheessa oma työsi on: laskemisessa vai laskemisen jälkeisessä vastauksessa?"
+      - level: 2
+        text: "Tarkista oma toimintasi: laskujonon vahvistus tehdään ennen järjestyksen vaihtoa. Uudessa asettelussa
+          vastauksen sana ja esinevalinta tehdään erikseen."
+      - level: 3
+        text: Mieti, mitä viimeinen lukusana kertoo montako-kysymykseen vastattaessa. Puhuuko vastauksesi vain
+          viimeksi osoitetusta esineestä vai niistä esineistä, jotka laskit?
+    invariants:
+      - Vahvistettu laskenta, sen jälkeinen todellinen järjestyksen vaihto ja tuore erillinen sana- ja
+        jäsenraportti vaaditaan yhdessä.
+      - Raportin jäsenet ovat todellisia esine-ID:itä; viimeisen kohteen kopio ei korvaa omaa jäsenvalintaa.
+      - Muokkaus tai asettelun vaihto ei saa hyväksilukea vanhaa raporttia.
+      - Sanat ja jäsenet eivät tule automaattisesti valituiksi; virheellinen tai vajaa vastaus pysyy
+        mahdollisena.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän cardinality-predikaatti, paikallisten suomenkielisten sanapolettien valintojen tulkinta
+          ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen sisältö
+          vaatii oman arvionsa.
+  - id: M-NUM-02-GUIDED-SANAN-TARKOITUS
+    kc_ids:
+      - M-NUM-02
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Harjoittele laskemisen jälkeistä vastausta. Tee lasku, vahvista laskujono ja vaihda järjestys
+        ennen sanan ja esineiden valintaa.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: cardinality
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Harjoituksen merkit
+      objectLabel: Kuvamerkki
+      countRange:
+        - 3
+        - 6
+      layout: row
+      context: Harjoittele rauhassa samoilla esineillä. Vihjeen saa pyytää itse.
+      rearrange: true
+    misconception_rules:
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:correspondence
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:stable_order
+      - misconception_id: M-NUM-02-OBS-REPORT-WORD
+        detect: observed:total
+      - misconception_id: M-NUM-02-OBS-REPORT-SCOPE
+        detect: observed:referent
+    hints:
+      - level: 1
+        text: "Pysähdy. Missä vaiheessa oma työsi on: laskemisessa vai laskemisen jälkeisessä vastauksessa?"
+      - level: 2
+        text: "Tarkista oma toimintasi: laskujonon vahvistus tehdään ennen järjestyksen vaihtoa. Uudessa asettelussa
+          vastauksen sana ja esinevalinta tehdään erikseen."
+      - level: 3
+        text: Mieti, mitä viimeinen lukusana kertoo montako-kysymykseen vastattaessa. Puhuuko vastauksesi vain
+          viimeksi osoitetusta esineestä vai niistä esineistä, jotka laskit?
+    invariants:
+      - Vahvistettu laskenta, sen jälkeinen todellinen järjestyksen vaihto ja tuore erillinen sana- ja
+        jäsenraportti vaaditaan yhdessä.
+      - Raportin jäsenet ovat todellisia esine-ID:itä; viimeisen kohteen kopio ei korvaa omaa jäsenvalintaa.
+      - Muokkaus tai asettelun vaihto ei saa hyväksilukea vanhaa raporttia.
+      - Sanat ja jäsenet eivät tule automaattisesti valituiksi; virheellinen tai vajaa vastaus pysyy
+        mahdollisena.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän cardinality-predikaatti, paikallisten suomenkielisten sanapolettien valintojen tulkinta
+          ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen sisältö
+          vaatii oman arvionsa.
+  - id: M-NUM-02-INDEP-RETKIRYHMA
+    kc_ids:
+      - M-NUM-02
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske retkimerkit ja vahvista laskujono. Vaihda esineiden järjestys. Vastaa sitten valitsemalla
+        sana ja osoittamalla esineet.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: cardinality
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Loikan retkimerkit
+      objectLabel: Retkimerkki
+      countRange:
+        - 3
+        - 6
+      layout: row
+      context: Loikan retkimerkit ovat aluksi rivissä. Laskun vahvistamisen jälkeen saat vaihtaa niiden järjestystä.
+      rearrange: true
+    misconception_rules:
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:correspondence
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:stable_order
+      - misconception_id: M-NUM-02-OBS-REPORT-WORD
+        detect: observed:total
+      - misconception_id: M-NUM-02-OBS-REPORT-SCOPE
+        detect: observed:referent
+    hints:
+      - level: 1
+        text: "Pysähdy. Missä vaiheessa oma työsi on: laskemisessa vai laskemisen jälkeisessä vastauksessa?"
+      - level: 2
+        text: "Tarkista oma toimintasi: laskujonon vahvistus tehdään ennen järjestyksen vaihtoa. Uudessa asettelussa
+          vastauksen sana ja esinevalinta tehdään erikseen."
+      - level: 3
+        text: Mieti, mitä viimeinen lukusana kertoo montako-kysymykseen vastattaessa. Puhuuko vastauksesi vain
+          viimeksi osoitetusta esineestä vai niistä esineistä, jotka laskit?
+    invariants:
+      - Vahvistettu laskenta, sen jälkeinen todellinen järjestyksen vaihto ja tuore erillinen sana- ja
+        jäsenraportti vaaditaan yhdessä.
+      - Raportin jäsenet ovat todellisia esine-ID:itä; viimeisen kohteen kopio ei korvaa omaa jäsenvalintaa.
+      - Muokkaus tai asettelun vaihto ei saa hyväksilukea vanhaa raporttia.
+      - Sanat ja jäsenet eivät tule automaattisesti valituiksi; virheellinen tai vajaa vastaus pysyy
+        mahdollisena.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän cardinality-predikaatti, paikallisten suomenkielisten sanapolettien valintojen tulkinta
+          ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen sisältö
+          vaatii oman arvionsa.
+  - id: M-NUM-02-INDEP-ASKARTELUSARJA
+    kc_ids:
+      - M-NUM-02
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske kuvamerkit, vahvista laskujono ja vaihda järjestys. Mitä esineitä laskusi viimeinen sana
+        tarkoittaa vastauksessa montako? Valitse sana ja osoita esineet.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: cardinality
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Askartelun kuvamerkit
+      objectLabel: Kuvamerkki
+      countRange:
+        - 3
+        - 6
+      layout: row
+      context: Askartelupöydän kuvamerkit on asetettu riviin. Tehtävässä tarkastellaan samoja merkkejä myös
+        järjestyksen vaihdon jälkeen.
+      rearrange: true
+    misconception_rules:
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:correspondence
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:stable_order
+      - misconception_id: M-NUM-02-OBS-REPORT-WORD
+        detect: observed:total
+      - misconception_id: M-NUM-02-OBS-REPORT-SCOPE
+        detect: observed:referent
+    hints:
+      - level: 1
+        text: "Pysähdy. Missä vaiheessa oma työsi on: laskemisessa vai laskemisen jälkeisessä vastauksessa?"
+      - level: 2
+        text: "Tarkista oma toimintasi: laskujonon vahvistus tehdään ennen järjestyksen vaihtoa. Uudessa asettelussa
+          vastauksen sana ja esinevalinta tehdään erikseen."
+      - level: 3
+        text: Mieti, mitä viimeinen lukusana kertoo montako-kysymykseen vastattaessa. Puhuuko vastauksesi vain
+          viimeksi osoitetusta esineestä vai niistä esineistä, jotka laskit?
+    invariants:
+      - Vahvistettu laskenta, sen jälkeinen todellinen järjestyksen vaihto ja tuore erillinen sana- ja
+        jäsenraportti vaaditaan yhdessä.
+      - Raportin jäsenet ovat todellisia esine-ID:itä; viimeisen kohteen kopio ei korvaa omaa jäsenvalintaa.
+      - Muokkaus tai asettelun vaihto ei saa hyväksilukea vanhaa raporttia.
+      - Sanat ja jäsenet eivät tule automaattisesti valituiksi; virheellinen tai vajaa vastaus pysyy
+        mahdollisena.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän cardinality-predikaatti, paikallisten suomenkielisten sanapolettien valintojen tulkinta
+          ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen sisältö
+          vaatii oman arvionsa.
+  - id: M-NUM-02-TRANSFER-MERKIT-ALUSTALLA
+    kc_ids:
+      - M-NUM-02
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske alustalla olevat merkit ja vahvista laskujono. Vaihda järjestys. Vastaa kysymykseen montako
+        valitsemalla sana ja osoittamalla esineet.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: layout_change
+        baselineIndependent: M-NUM-02-INDEP-RETKIRYHMA
+        from: row
+        to: scatter
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: cardinality
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Alustan merkit
+      objectLabel: Kuvamerkki
+      countRange:
+        - 3
+        - 6
+      layout: scatter
+      context: Merkit ovat aluksi eri kohdissa alustaa. Tehtävän esineet pysyvät samoina järjestyksen vaihdossa.
+      rearrange: true
+    misconception_rules:
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:correspondence
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:stable_order
+      - misconception_id: M-NUM-02-OBS-REPORT-WORD
+        detect: observed:total
+      - misconception_id: M-NUM-02-OBS-REPORT-SCOPE
+        detect: observed:referent
+    hints:
+      - level: 1
+        text: "Pysähdy. Missä vaiheessa oma työsi on: laskemisessa vai laskemisen jälkeisessä vastauksessa?"
+      - level: 2
+        text: "Tarkista oma toimintasi: laskujonon vahvistus tehdään ennen järjestyksen vaihtoa. Uudessa asettelussa
+          vastauksen sana ja esinevalinta tehdään erikseen."
+      - level: 3
+        text: Mieti, mitä viimeinen lukusana kertoo montako-kysymykseen vastattaessa. Puhuuko vastauksesi vain
+          viimeksi osoitetusta esineestä vai niistä esineistä, jotka laskit?
+    invariants:
+      - Vahvistettu laskenta, sen jälkeinen todellinen järjestyksen vaihto ja tuore erillinen sana- ja
+        jäsenraportti vaaditaan yhdessä.
+      - Raportin jäsenet ovat todellisia esine-ID:itä; viimeisen kohteen kopio ei korvaa omaa jäsenvalintaa.
+      - Muokkaus tai asettelun vaihto ei saa hyväksilukea vanhaa raporttia.
+      - Sanat ja jäsenet eivät tule automaattisesti valituiksi; virheellinen tai vajaa vastaus pysyy
+        mahdollisena.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän cardinality-predikaatti, paikallisten suomenkielisten sanapolettien valintojen tulkinta
+          ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen sisältö
+          vaatii oman arvionsa.
+  - id: M-NUM-02-DELAY-MITAE-SANA-TARKOITTAA
+    kc_ids:
+      - M-NUM-02
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske merkit ja vahvista oma laskujonosi. Vaihda järjestys. Valitse sitten vastauksesi sana ja
+        osoita esineet.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: cardinality
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Uuden kerran merkit
+      objectLabel: Kuvamerkki
+      countRange:
+        - 3
+        - 6
+      layout: row
+      context: Uudella harjoituskerralla tarkastelet uutta merkkijoukkoa.
+      rearrange: true
+    misconception_rules:
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:correspondence
+      - misconception_id: M-NUM-02-OBS-COUNT-TRACE
+        detect: observed:stable_order
+      - misconception_id: M-NUM-02-OBS-REPORT-WORD
+        detect: observed:total
+      - misconception_id: M-NUM-02-OBS-REPORT-SCOPE
+        detect: observed:referent
+    hints:
+      - level: 1
+        text: "Pysähdy. Missä vaiheessa oma työsi on: laskemisessa vai laskemisen jälkeisessä vastauksessa?"
+      - level: 2
+        text: "Tarkista oma toimintasi: laskujonon vahvistus tehdään ennen järjestyksen vaihtoa. Uudessa asettelussa
+          vastauksen sana ja esinevalinta tehdään erikseen."
+      - level: 3
+        text: Mieti, mitä viimeinen lukusana kertoo montako-kysymykseen vastattaessa. Puhuuko vastauksesi vain
+          viimeksi osoitetusta esineestä vai niistä esineistä, jotka laskit?
+    invariants:
+      - Vahvistettu laskenta, sen jälkeinen todellinen järjestyksen vaihto ja tuore erillinen sana- ja
+        jäsenraportti vaaditaan yhdessä.
+      - Raportin jäsenet ovat todellisia esine-ID:itä; viimeisen kohteen kopio ei korvaa omaa jäsenvalintaa.
+      - Muokkaus tai asettelun vaihto ei saa hyväksilukea vanhaa raporttia.
+      - Sanat ja jäsenet eivät tule automaattisesti valituiksi; virheellinen tai vajaa vastaus pysyy
+        mahdollisena.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän cardinality-predikaatti, paikallisten suomenkielisten sanapolettien valintojen tulkinta
+          ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen sisältö
+          vaatii oman arvionsa.
+misconceptions:
+  - id: M-NUM-02-OBS-COUNT-TRACE
+    description: Vahvistetun laskennan kohdistus tai sanajärjestys ei täytä yhteisen laskentajonon ehtoa. Havainto
+      ei paikanna syytä M-NUM-01:een eikä kumpaankaan sen lapsista.
+    evidence_patterns:
+      - kind: domain_observation
+        when: observed:correspondence
+      - kind: domain_observation
+        when: observed:stable_order
+    feedback_strategy:
+      conceptual_prompt: "Palaa omaan laskentaasi: mitä teit esineiden ja sanojen kanssa? Tarvittaessa voit muokata
+        laskujonoasi ja tehdä vahvistuksen sekä järjestyksen vaihdon uudelleen."
+      interpretation_limit: Havaintokoodi on rajattu tuotoksen tai toimintoketjun poikkeama. Selitys oppilaan
+        ajattelusta on hypoteesi; yhdestä vastauksesta ei tehdä lapsikohtaista diagnoosia.
+    repair_targets: []
+    status: hypothesis
+  - id: M-NUM-02-OBS-REPORT-WORD
+    description: Raportin sana puuttuu tai ei vastaa oikean laskennan viimeistä sanaa. Tulos on havainto
+      raportista, ei varma selitys oppilaan ajattelusta.
+    evidence_patterns:
+      - kind: domain_observation
+        when: observed:total
+    feedback_strategy:
+      conceptual_prompt: Mitä tarkoitat valitsemallasi sanalla vastauksessa montako? Tarkastele omaa laskuasi ja
+        mieti vastausta uudelleen.
+      interpretation_limit: Havaintokoodi on rajattu tuotoksen tai toimintoketjun poikkeama. Selitys oppilaan
+        ajattelusta on hypoteesi; yhdestä vastauksesta ei tehdä lapsikohtaista diagnoosia.
+    repair_targets: []
+    status: hypothesis
+  - id: M-NUM-02-OBS-REPORT-SCOPE
+    description: Jäsenvalinta tai vastauksen ajallinen ketju ei täytä raportin ehtoa. Sama havaintokoodi voi
+      tarkoittaa esimerkiksi osajoukkoa, puuttuvaa raporttia tai vanhaa vahvistusta; siitä ei päätellä
+      yksittäistä virhekäsitystä.
+    evidence_patterns:
+      - kind: domain_observation
+        when: observed:referent
+    feedback_strategy:
+      conceptual_prompt: Vahvistitko laskusi ennen järjestyksen vaihtamista? Valitsitko vastauksen sanan ja
+        osoititko tarkoittamasi esineet sen jälkeen uudessa asettelussa?
+      interpretation_limit: Havaintokoodi on rajattu tuotoksen tai toimintoketjun poikkeama. Selitys oppilaan
+        ajattelusta on hypoteesi; yhdestä vastauksesta ei tehdä lapsikohtaista diagnoosia.
+    repair_targets: []
+    status: hypothesis
+differentiation:
+  support_variants:
+    step_chunking: "Jäsennä työ rauhallisesti: oma laskenta, laskujonon vahvistus, järjestyksen vaihto ja oma
+      vastaus uudessa asettelussa. Pysähdy pohtimaan, mitä viimeisellä sanalla tarkoitat. Sana ja esinevalinta
+      tehdään erikseen eikä niitä täytetä puolestasi."
+    hint_availability: Kolme oppilaan pyytämää sanallista vihjetasoa. Vihje kirjautuu tuetuksi ennen
+      paljastamista, eikä sen avulla tehty vastaus tuota itsenäistä näyttöä.
+    text_density: Yksi lyhyt toimintajakso kerrallaan. Sanavalikoiman toisto on oppilaan käynnistämää paikallista
+      kuuntelua, ei tehtävätekstin automaattista lukua.
+    worked_example_depth: Opetuksen erillinen pieni esimerkki on tarkasteltavissa ennen ohjattua harjoitusta.
+      Tuotoksen oikeaa jonoa tai jäsenvalintaa ei täytetä tehtävään.
+    representation_boundary: Sama tavoite ja sama rajattu esinejoukko säilyvät; ei automaattista seuraavaa sanaa
+      tai kohdetta, laskumerkintöjä, valitse kaikki -oikotietä eikä valmista lukumäärää.
+    reduced_motion: Työ onnistuu näppäimistöllä ilman animaatiota tai aikarajaa. Laaja ruudunlukija- tai
+      nonvisuaalisen oppimistavoitteen vastaavuus ei ole tällä sisällöllä hyväksytty.
+  challenge_variants:
+    learner_prompt: Aloittaisitko laskemisen eri esineestä, jos saisit valita uudelleen? Perustele, voiko eri
+      esine jäädä viimeiseksi ja mitä viimeinen lukusana silloin kertoo samoista esineistä. Esineitä ei lisätä
+      eikä poisteta.
+    reduced_scaffolding: Oppilas perustelee oman reittinsä ja tarkistustapansa; sama pieni lukumääräalue ja tavoite pysyvät.
+    alternate_solution_compare: Vertaa kahta mahdollista laskennan aloitusesinettä. Erota viimeinen laskettu esine
+      ja viimeisen sanan merkitys montako-vastauksessa.
+    assessment_limit: Pohdintaa ei pisteytetä eikä sen tekstiä käytetä hallinta-, syy- tai lapsievidenssinä.
+      Haaste ei lisää numeroaluetta eikä uusia KC-tavoitteita.
+representations:
+  - id: M-NUM-02-REP-ENUMERATION
+    type: diagram
+    purpose: Esitä tehtävän omat näkyvät esineet ja oppilaan itse muodostama laskenta ilman vastauksen etukäteistä
+      näyttämistä.
+    domain_bindings:
+      - domain.objects
+      - domain.rearranged
+      - response.actions
+  - id: M-NUM-02-JOURNEY
+    kind: learning_journey_v1
+    capability: cardinality_report_v1
+    chapter: Retken valmistelut
+    companion: Aava
+    purpose: Aava pakkaa retkimerkit. Selvitetään, montako niitä on.
+    consequence: Retkimerkkien määrä on tarkistettu.
+    instruction: Lasketaan merkit ja näytetään, mitä viimeinen lukusana tarkoittaa.
+    model: {kind: cardinality_v1, count: 4}
+    retrieval: {kind: closed_episode_retrieval_v1, claim: cardinality}
+  - id: v7-evidence-compatibility
+    kind: v7_evidence_compatibility_v1
+    sourceCommit: 0b2a791918f472cf8ba61eede095a6a578adeab6
+    sourceContentHash: 3a45060009764f67e16cd61841ef93c41349ade0cf2c2a72ae20b565367338e3
+    allowedChanges: [additive_journey, lesson_wording]
+requires_capabilities:
+  - rich_text
+  - worked_example
+  - ordering
+  - draggable_objects
+  - diagram
+  - hint_ladder
+  - read_aloud_hook
+  - reduced_motion_variant
+provenance:
+  curriculum:
+    - source_id: PROD01-OPH-MATH12-S2
+      claim: Hyväksytty S2-paikannin rajaa vuosiluokkien 1–2 lukukäsitteen, lukumäärien laskemisen ja lukujonojen
+        opetuksen alueen. Viite ei määrää tätä KC-jakoa, numeroaluetta, esitietograafia tai näytön rajoja.
+      status: verified
+  pedagogy:
+    - source_id: ATKINSON-RENKL-MERRILL-2003
+      claim: Erillinen ratkaistu esimerkki ja oman toiminnan selittäminen ovat yleisesti perusteltuja
+        opetusratkaisuja aiemman rajatun lähdehyväksynnän mukaisesti; lähde ei vahvista tämän paketin
+        tehokkuutta.
+      status: verified
+    - source_id: CAST-UDL-3
+      claim: Esitystapojen ja toiminnan esteiden tarkastelu on yleinen suunnitteluperiaate. Tämän paketin
+        ruudunlukija- ja nonvisuaalista vastaavuutta tai täyttä saavutettavuutta ei tämän perusteella
+        hyväksytä.
+      status: verified
+    - source_id: PROJECT-BATCH01-POLICY-v0.1
+      claim: Kolme itsenäistä onnistumista, kaksi tehtäväpohjaa, kaksi diagnoosia, keskisen tavoitteen tagit,
+        siirtovaatimus, kahden onnistumisen viivästetty näyttö aikaisintaan 24 tunnissa ja kolmen–kuuden
+        esineen alue ovat projektin suunnitteluratkaisuja, eivät tutkimuksesta johdettuja vakioita.
+    - source_id: PROJECT-BATCH01-POLICY-v0.1
+      claim: Havaittujen virhekoodien nimeäminen ja palautteen käyttö ovat tämän paketin arviointihypoteeseja.
+        Koodit eivät ole validoituja selityksiä tietyn lapsitaidon puuttumisesta.
+      status: hypothesis
+  domain:
+    - source_id: PROD01-OU-COUNTING-PRINCIPLES
+      claim: OpenLearnin hyväksytyn Discussion-kohdan kolmas ja neljäs luetelmakohta kuvaavat viimeisen lukusanan
+        merkitystä lasketun joukon määrälle sekä kohteiden laskemisjärjestyksen vaihtamista. Tämä ei validoi
+        laajaa säilyvyysteoriaa tai projektin digitaalista koetta.
+      status: verified
+    - source_id: PROJECT-ENUMERATION-v0.1
+      claim: Rajattu äärellinen esinejoukko, suomenkielisten valittujen sanapolettien koostaminen, tarkat
+        predikaatit ja hyväksytty toimintoketju ovat determinististä projektin formalisaatiota. Ne eivät väitä
+        spontaania suullista tuottamista, yleistä kardinaalista ymmärrystä tai oppimisvaikuttavuutta.
+validation:
+  schema: pass
+  graph_refs: pass
+  domain_truth: pass
+  item_invariants: pass
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: designed

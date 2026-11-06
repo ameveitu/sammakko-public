@@ -1,0 +1,62 @@
+schema_version: '0.1'
+kind: scoped_source_registry_supplement
+approval_scope: citation_only_and_explicit_project_design_not_content_approval
+report: reports/autonomous-52/B02/source-and-content-design.md
+verification_note: Reuses the dated 2026-10-26 primary-source audit; this addition makes no new fetch, curriculum-graph approval, learner-effect or release claim.
+sources:
+  - id: PROJECT-ATTRIBUTE-COMPARISON-v1
+    type: project_formalization
+    title: Nimetyn ominaisuuden vertailu ja suoran listan pituus
+    publisher: Sammakko
+    status: project_design
+    applies_to: [M-TH-01, M-MEAS-02]
+    locators:
+      - packages/domain/attribute-comparison.ts
+      - packages/learning/attribute-journey-model.ts
+      - reports/autonomous-52/B02/attribute-transfer-consult.md
+      - reports/autonomous-52/B02/attribute-transfer-implementation.md
+    supported_claim: Rajattu sama/eri-ominaisuus, väärän parin korjaaminen sekä suoran listan pituuden säilyminen ja muuttuminen. Kattavuudet, onnistumiskynnykset, viiveet ja käyttöliittymän tulkinta ovat projektisuunnittelua.
+    limits: Ei yleisen ajattelun, koko suurekäsitteen, spontaanin selittämisen, ei-visuaalisen vastaavuuden tai oppimistehon osoitus. Soveltamistehtävien pedagoginen riittävyys on arvioitava; tekninen oikeellisuus ei ole oppijatutkimus.
+  - id: PROD03-OPH-MATH-S1
+    type: curriculum_authority
+    title: Matematiikan ajattelun taidot, vuosiluokat 1–2 ja 3–6
+    publisher: Opetushallitus / ePerusteet
+    url: https://eperusteet.opintopolku.fi/eperusteet-service/api/perusteet/419550/kaikki
+    status: verified_citation_scoped
+    applies_to: [M-TH-01]
+    locator:
+      basis_id: 419550
+      subject_id: 466344
+      subject_bands: [466963, 466962]
+      content_ids: [469265, 469269]
+      field: kuvaus.fi
+    verification:
+      reused_report: reports/autonomous-52/B02/source-and-content-design.md
+      date: '2026-10-26'
+      response_bytes: 9222036
+      sha256: 7692dcef834d7ab175a1053e40abff6c016bc12003b4a7fdf4b64370c7696d94
+      fresh_fetch_this_authoring_task: false
+    supported_claim: Yhtäläisyyksien ja erojen havaitsemisen sekä vertailun kansallinen sisältöalue.
+    limits: Ei juuri tämän KC-jaon, annettujen muotojen, kahden ominaisuuden, korjaustehtävän, onnistumiskynnyksen tai vaikuttavuuden normatiivinen hyväksyntä.
+  - id: PROD03-OPH-MATH12-S3
+    type: curriculum_authority
+    title: Matematiikan geometria ja mittaaminen, vuosiluokat 1–2
+    publisher: Opetushallitus / ePerusteet
+    url: https://eperusteet.opintopolku.fi/eperusteet-service/api/perusteet/419550/kaikki
+    status: verified_citation_scoped
+    applies_to: [M-MEAS-02]
+    locator:
+      basis_id: 419550
+      subject_id: 466344
+      subject_band_id: 466963
+      content_id: 469267
+      field: kuvaus.fi
+      html_paragraph: 3
+    verification:
+      reused_report: reports/autonomous-52/B02/source-and-content-design.md
+      date: '2026-10-26'
+      response_bytes: 9222036
+      sha256: 7692dcef834d7ab175a1053e40abff6c016bc12003b4a7fdf4b64370c7696d94
+      fresh_fetch_this_authoring_task: false
+    supported_claim: Pituus nimettynä suureena mittaamisen sisältöalueella.
+    limits: Ei jäykkien tai yhdistettyjen muunnosten algoritmin, koko suurekäsitteen kattavuuden, arviointikynnyksen, 24h-vakion tai sovelluksen tehokkuuden hyväksyntä. Aiemman PROD01-tietueen soveltamisalaa ei muuteta.

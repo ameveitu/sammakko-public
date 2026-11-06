@@ -1,0 +1,3 @@
+# Research/design —2026-10-29
+
+NCETM secondary teacher guide p2 andp10 differentiates specificunknown value from objectlabels, and says to build symbols in familiar mathematical situations. IES guide20 overview recommends solvedexample analysis and structure, with minimal evidence for these two recommendations. Neither validates this younger adapted lesson. Adopt concrete fixed-but-not-yet-known quantity, compare zero/two-digit cases; reject borrowing secondary equation manipulation as prerequisite. Original Finnish prose and diagrams; no copied figures. The arithmetic in example1 is modelled support, not the target checked response.

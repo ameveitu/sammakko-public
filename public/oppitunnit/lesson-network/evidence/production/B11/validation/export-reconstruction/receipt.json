@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "createdAfterSeal": true,
+  "notInsideOriginalSealedZIP": true,
+  "archive": "/Users/aikuiset/Documents/Codex/2026-10-24/e/outputs/Sammakko/exports/Sammakko_181_B11_127of181.zip",
+  "archiveSHA256": "a6f5ff8cef8203215c6fd7499c8d8f018042699cff155405d0e0c302a0d102d4",
+  "sourceRevision": "10f60f41f49f8fac87d1c7216bed4813b90850f0",
+  "CRC": "PASS",
+  "manifestHashesVerified": 9366,
+  "network": 690,
+  "networkChecks": 337479,
+  "sourceTests": {
+    "tests": 572,
+    "pass": 572,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "technicalChecked": 127,
+  "exporterTests": 5,
+  "commands": [
+    {
+      "command": [
+        "npm",
+        "ci",
+        "--offline"
+      ],
+      "exitCode": 0,
+      "seconds": 1.352,
+      "stdout": "01-stdout.txt",
+      "stderr": "01-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/build.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 11.842,
+      "stdout": "02-stdout.txt",
+      "stderr": "02-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/verify.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 6.286,
+      "stdout": "03-stdout.txt",
+      "stderr": "03-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/check-package-tests.mjs",
+        "B11",
+        "reconstruction-sammakko-B11-reconstruction-r1"
+      ],
+      "exitCode": 0,
+      "seconds": 12.88,
+      "stdout": "04-stdout.txt",
+      "stderr": "04-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/production-status.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 3.651,
+      "stdout": "05-stdout.txt",
+      "stderr": "05-stderr.txt"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "lesson-network/test-export.py"
+      ],
+      "exitCode": 0,
+      "seconds": 1.346,
+      "stdout": "06-stdout.txt",
+      "stderr": "06-stderr.txt"
+    }
+  ],
+  "scope": "Six actual commands reused with zero exits; only postcondition inventory corrected from stale B10 expected330246 to sealed B11 expected337479. No source/test/assertion in project changed; no suite rerun solely to repackage.",
+  "originalPostconditionFailure": "Original runner retained330246 after actual B11 verify337479; failed runner/source preserved separately. All six commands had succeeded before stale count assertion.",
+  "originalWorkdir": "/tmp/sammakko-B11-reconstruction-r1",
+  "reconstructionSourceHashVerified": true
+}

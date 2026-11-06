@@ -1,0 +1,905 @@
+# AUTHORED_SOURCE_PENDING_REVIEW — ei admissionia, node-DONEa tai ihmishyväksyntää.
+# Tavoiterajaus tarvitsee riippumattoman sisältö-/ainearvion; ks. provenance/domain.
+schema_version: 0.1.0
+kc_id: SCI-ENV-OBSERVE-01
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Havainnon tekeminen ilmiöstä tai kohteesta
+  subject: science
+  grade_band: 1-2
+  mastery_role: atomic
+  node_kind: foundation
+  concept_path:
+    - Ympäristöoppi / luonnontieteellinen perusta
+    - Tutkimisen taidot
+    - Havainnointi
+  source_basis: pedagogically_derived
+  curriculum_refs:
+    - ENV12-T5-T13
+  prerequisite_snapshot:
+    hard: []
+    strong: []
+    helpful: []
+teaching_model:
+  learning_goal: Oppilas tunnistaa annettua kuvaa tai järjestettyä kuvaparia vastaavan havaintoväitteen
+    kolmesta lauseesta. Ydin koskee näkyvyyttä ja paikkaa, sovellus kahden näytetyn paikan vertailua.
+    Erillisen sisältö-/ainearvioijan pitää hyväksyä tämä rajaus suhteessa laajaan havainnon tekemisen
+    tavoitteeseen ennen solmun valmistumislaskentaa.
+  learner_facing_goal: Löydän merkinnän, jonka voin tarkistaa kuvasta.
+  core_idea: "Kuvasta voi tarkistaa näkyvän asian. Mahdollinen syy on eri väite: kuva ei aina kerro, mikä
+    sen aiheutti."
+  success_evidence:
+    - "Neljä tuetonta ydinvalintaa kahdesta pohjasta: vasen, oikea, pallo näkyy ja palloa ei näy tässä
+      kuvassa."
+    - Kaksi tuetonta soveltamisvalintaa kattavat samat ja eri näytetyt paikat; väri tai yksi ruutu ei
+      korvaa vertailua.
+    - "Vähintään24h myöhemmin neljän uuden valinnan edustava näyte: yksi sijainti, yksi näkyvyys ja
+      molemmat kuvaparisuhteet. Ei kaikkien neljän ydinluokan erillistä säilymisnäyttöä."
+  boundaries:
+    in_scope:
+      - "Atomic/foundation-juuri ilman esitietoja: yksi paikallisesti nimetty pallo ja pystysuora merkki,
+        ei laskemista tai muotojen nimeämistä."
+      - Annettuun näkyvään aineistoon sidotun väitteen tunnistus. Unsupported-syy ei ole kuvalla
+        todistettu vääräksi.
+      - Näkyvyys koskee tätä kokonaista rajattua kuvaa. Kuvaparin paikkavertailu koskee vain kahta
+        näytettyä paikkaa.
+    out_of_scope:
+      - Spontaani suullinen tai kirjallinen havainnon tuottaminen, luonnossa tutkimisen koko taito,
+        yleinen tieteellinen päättely tai koko ENV12-T5-T13-tavoitealue.
+      - Ei näy tässä ei tarkoita, ettei palloa ole muualla. Sama paikka kahdessa ruudussa ei todista,
+        ettei pallo liikkunut välillä.
+      - Ei nopeus-, kesto-, liikkeenmuutos-, nimeämis- tai laskemistaitojen hyvitystä eikä automaattista
+        integraation tai muiden KC:iden hallintaa.
+      - Väri ainoana arvioitavana ominaisuutena tai valmis ei-visuaalinen vastaavuus.
+  prerequisite_assumptions: []
+  conceptual_invariants:
+    - Oppija valitsee ja vahvistaa; järjestelmä antaa kuvat, sanat ja vaihtoehdot mutta ei oikeaa
+      päätöstä.
+    - Samat validoidut näkyvät faktat ohjaavat rendererin ja graderin toimintaa. Ei piilotettua syyfaktaa
+      tai LLM-oraclea.
+    - Malli, vihje ja paljastettu vastaus säilyvät apu-/altistushistoriassa. Tuettu tarina ei anna
+      hallintaa.
+    - ACK:n jälkeen vihkoon tulee todellinen valinta; väärää lausetta ei vaihdeta salaa oikeaksi.
+  likely_confusions:
+    - SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+    - SCI-ENV-OBSERVE-01-OBS-SYY
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+    - DIAGNOSTIC
+    - ORIENT
+    - WORKED_EXAMPLE
+    - GUIDED_PRACTICE
+    - FADED_EXAMPLE
+    - INDEPENDENT_PRACTICE
+    - TRANSFER_CHECK
+    - MASTERY_GATE
+  fast_path:
+    enabled: false
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Kaksi lyhyttä havaintoa, ei diagnoosia lapsen ajattelusta.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - SCI-ENV-OBSERVE-01-DIAG-PAIKKA
+              - SCI-ENV-OBSERVE-01-DIAG-NAKYVYYS
+    ORIENT:
+      purpose: Aava kokoaa Loikan kanssa retken havaintovihkoa. Kirjataan ensin kuvasta tarkistettava asia ja
+        jätetään syy myöhempää tutkimista varten.
+      blocks:
+        - type: explanatory_text
+          content: Autetaan Aavaa valitsemaan vihkoon merkintä. Tässä on pallo ja tässä pystysuora merkki.
+            Katsotaan, mitä kuva näyttää.
+    WORKED_EXAMPLE:
+      purpose: Neljä tyypitettyä yhden ruudun mallia. Ei ratkaistua kuvaparia ennen aitoa soveltamista.
+      blocks:
+        - type: worked_example
+          content:
+            title: Pallo merkin vasemmalla puolella
+            steps:
+              - Aava näyttää pallon ja merkin. Hän tarkistaa niiden paikat ja valitsee vasemman puolen
+                lauseen.
+              - Oikean puolen lause ei sovi tähän kuvaan. Tuuli voi olla mahdollinen syy, mutta kuva ei
+                kerro sitä.
+        - type: worked_example
+          content:
+            title: Uusi kuva tarkistetaan uudestaan
+            steps:
+              - Nyt pallo on oikealla ja kortit eri järjestyksessä. Aava ei kopioi edellistä
+                vasen-vastausta.
+              - Aava valitsee uuden kuvan tukeman oikean puolen lauseen.
+        - type: worked_example
+          content:
+            title: Pallo näkyy
+            steps:
+              - Aava katsoo koko kuvaa. Pallo on näkyvissä.
+              - Pallo näkyy tässä kuvassa on tarkistettavissa aineistosta; syytä ei tarvitse arvata.
+        - type: worked_example
+          content:
+            title: Palloa ei näy tässä kuvassa
+            steps:
+              - Aava katsoo koko rajattua kuvaa. Palloa ei näy.
+              - Hän valitsee tämän näkyvyyslauseen. Emme väitä, ettei palloa ole muualla tai että tuuli
+                olisi todistettu vääräksi.
+    GUIDED_PRACTICE:
+      purpose: Yksi päätös kerrallaan neljän mallin järjestyksessä. Pyydetty ratkaisu-/vertailumalli on
+        kirjattavaa tukea.
+      blocks:
+        - type: explanatory_text
+          content: Katso kuvaa. Vertaa lauseita siihen. Saat pyytää Aavan apua ennen virhettä.
+        - type: question
+          content:
+            item_refs:
+              - SCI-ENV-OBSERVE-01-GUIDE-PAIKKA-1
+              - SCI-ENV-OBSERVE-01-GUIDE-PAIKKA-2
+              - SCI-ENV-OBSERVE-01-GUIDE-NAKYVYYS-1
+              - SCI-ENV-OBSERVE-01-GUIDE-NAKYVYYS-2
+    FADED_EXAMPLE:
+      purpose: Poista Aavan valinta ja ratkaisua osoittava korostus. Säilytä kuva, tavalliset kohdenimet ja ohje.
+      blocks:
+        - type: explanatory_text
+          content: Nyt valitset itse. Kuva jää näkyviin. Voit vaihtaa valintaa ja pyytää apua.
+        - type: question
+          content:
+            item_refs:
+              - SCI-ENV-OBSERVE-01-FADE-PAIKKA
+              - SCI-ENV-OBSERVE-01-FADE-NAKYVYYS
+    INDEPENDENT_PRACTICE:
+      purpose: Neljä omaa puhdasta havaintoa, kaikki neljä ydinluokkaa.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - SCI-ENV-OBSERVE-01-CORE-PAIKKA
+              - SCI-ENV-OBSERVE-01-CORE-NAKYVYYS
+    TRANSFER_CHECK:
+      purpose: Aava tarvitsee merkinnän kahdesta järjestetystä kuvasta. Verrataan molempia paikkoja samaan
+        referenssiin, ei väriä tai oletettua syytä.
+      blocks:
+        - type: explanatory_text
+          content: "Vihkoon tuli kaksi kuvaa: ensin ja myöhemmin. Katso molemmat ja valitse niiden tukema lause."
+        - type: question
+          content:
+            item_refs:
+              - SCI-ENV-OBSERVE-01-APP-KUVAPARI
+    MASTERY_GATE:
+      purpose: Tarkistettu kuvamerkintä auttaa jatkamaan vihkoa. Se ei osoita säilynyttä tai yleistä tiedetaitoa.
+      blocks:
+        - type: explanatory_text
+          content: Aava voi säilyttää tarkistetun merkinnän Loikan kanssa. Syytä voidaan tutkia myöhemmin.
+    DELAYED_REVIEW:
+      purpose: Uusi myöhempi näyte; ajan kuluminen tai vihkon avaaminen ei ole näyttöä.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - SCI-ENV-OBSERVE-01-LATER-PAIKKA
+              - SCI-ENV-OBSERVE-01-LATER-NAKYVYYS
+              - SCI-ENV-OBSERVE-01-LATER-KUVAPARI
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+  independent:
+    minimum_successes: 4
+    template_diversity: 2
+    required_tags:
+      - scene_side_left
+      - scene_side_right
+      - scene_presence_visible
+      - scene_presence_absent
+    max_supported_attempts_counted: 0
+  transfer:
+    required: true
+    minimum_successes: 2
+    novel_context_required: true
+    required_tags:
+      - scene_position_changed
+      - scene_position_unchanged
+  delayed:
+    required: true
+    minimum_successes: 4
+    minimum_delay_hours: 24
+    required_tags:
+      - scene_observation_side
+      - scene_observation_presence
+      - scene_position_changed
+      - scene_position_unchanged
+    required_contexts: []
+    earliest_delay_policy: "Vähintään24 tuntia hankinnan jälkeen uusi puhdas näyte: yksi sijainti, yksi
+      näkyvyys ja molemmat kuvaparisuhteet. Pelkkä kellon kuluminen, tuki tai tarinan valmistuminen ei
+      kelpaa."
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+    - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+      evidence_tags:
+        - scene_observation_resolved
+      rule: Virheen jälkeen uusi oma tueton kuvan tukema valinta. Tämä sulkee tehtäväkohtaisen havaintolipun,
+        ei todista lapsen ajattelun syytä.
+    - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+      evidence_tags:
+        - scene_observation_resolved
+      rule: Uusi oma tueton aineiston tukema valinta virheen jälkeen. Ei väitettä yleisen syypäättelyn
+        korjaamisesta tai tuulen epätotuudesta.
+items:
+  - id: SCI-ENV-OBSERVE-01-DIAG-PAIKKA
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Mitä näet? Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: side
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Katso palloa ja merkkiä. Mikä kuva sopii?
+      - level: 2
+        text: Kuvasta voi tarkistaa paikan, mutta se ei kerro tuulen toimintaa. Voit pyytää Aavan mallin; se on
+          tukea.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-DIAG-NAKYVYYS
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Mitä näet? Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: presence
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Katso koko rajattua kuvaa. Näkyykö siinä pallo?
+      - level: 2
+        text: Ei näy tässä kuvassa ei tarkoita, ettei palloa ole muualla. Pyydä tarvittaessa Aavan malli; silloin
+          vastaus on tuettu.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-GUIDE-PAIKKA-1
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Mitä näet? Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: side
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Katso palloa ja merkkiä. Mikä kuva sopii?
+      - level: 2
+        text: Kuvasta voi tarkistaa paikan, mutta se ei kerro tuulen toimintaa. Voit pyytää Aavan mallin; se on
+          tukea.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-GUIDE-PAIKKA-2
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Mitä näet? Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: side
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Katso palloa ja merkkiä. Mikä kuva sopii?
+      - level: 2
+        text: Kuvasta voi tarkistaa paikan, mutta se ei kerro tuulen toimintaa. Voit pyytää Aavan mallin; se on
+          tukea.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-GUIDE-NAKYVYYS-1
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Mitä näet? Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: presence
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Katso koko rajattua kuvaa. Näkyykö siinä pallo?
+      - level: 2
+        text: Ei näy tässä kuvassa ei tarkoita, ettei palloa ole muualla. Pyydä tarvittaessa Aavan malli; silloin
+          vastaus on tuettu.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-GUIDE-NAKYVYYS-2
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Mitä näet? Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: presence
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Katso koko rajattua kuvaa. Näkyykö siinä pallo?
+      - level: 2
+        text: Ei näy tässä kuvassa ei tarkoita, ettei palloa ole muualla. Pyydä tarvittaessa Aavan malli; silloin
+          vastaus on tuettu.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-FADE-PAIKKA
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Mitä näet? Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: side
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Katso palloa ja merkkiä. Mikä kuva sopii?
+      - level: 2
+        text: Kuvasta voi tarkistaa paikan, mutta se ei kerro tuulen toimintaa. Voit pyytää Aavan mallin; se on
+          tukea.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-FADE-NAKYVYYS
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Mitä näet? Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: presence
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Katso koko rajattua kuvaa. Näkyykö siinä pallo?
+      - level: 2
+        text: Ei näy tässä kuvassa ei tarkoita, ettei palloa ole muualla. Pyydä tarvittaessa Aavan malli; silloin
+          vastaus on tuettu.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-CORE-PAIKKA
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Mitä näet? Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: side
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Katso palloa ja merkkiä. Mikä kuva sopii?
+      - level: 2
+        text: Kuvasta voi tarkistaa paikan, mutta se ei kerro tuulen toimintaa. Voit pyytää Aavan mallin; se on
+          tukea.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-CORE-NAKYVYYS
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Mitä näet? Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: presence
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Katso koko rajattua kuvaa. Näkyykö siinä pallo?
+      - level: 2
+        text: Ei näy tässä kuvassa ei tarkoita, ettei palloa ole muualla. Pyydä tarvittaessa Aavan malli; silloin
+          vastaus on tuettu.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-APP-KUVAPARI
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: challenge
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Katso molemmat kuvat. Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: position_change
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Vertaa molempia kuvia saman pysyvän merkin rinnalla.
+      - level: 2
+        text: Väri voi vaihtua paikan säilyessä. Paikka voi vaihtua samalla merkkipuolella. Aavan vertailumalli
+          on pyydettävää tukea.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+      - Sama objekti, referenssi ja kuvakulma molemmissa ruuduissa. Samat näytetyt paikat eivät todista
+        jatkuvaa liikkumattomuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-LATER-PAIKKA
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Mitä näet? Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: side
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Katso palloa ja merkkiä. Mikä kuva sopii?
+      - level: 2
+        text: Kuvasta voi tarkistaa paikan, mutta se ei kerro tuulen toimintaa. Voit pyytää Aavan mallin; se on
+          tukea.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-LATER-NAKYVYYS
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Mitä näet? Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: presence
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Katso koko rajattua kuvaa. Näkyykö siinä pallo?
+      - level: 2
+        text: Ei näy tässä kuvassa ei tarkoita, ettei palloa ole muualla. Pyydä tarvittaessa Aavan malli; silloin
+          vastaus on tuettu.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-LATER-KUVAPARI
+    kc_ids:
+      - SCI-ENV-OBSERVE-01
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: scene_observation_task_v1
+      instruction: Katso molemmat kuvat. Valitse merkintä.
+      access: fixed_scene_visual_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: scene_observation_predicate_v1
+    parameter_model:
+      kind: scene_observation_v1
+      focus: position_change
+    misconception_rules:
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+        detect: observed:contradicted
+      - misconception_id: SCI-ENV-OBSERVE-01-OBS-SYY
+        detect: observed:unsupported
+    hints:
+      - level: 1
+        text: Vertaa molempia kuvia saman pysyvän merkin rinnalla.
+      - level: 2
+        text: Väri voi vaihtua paikan säilyessä. Paikka voi vaihtua samalla merkkipuolella. Aavan vertailumalli
+          on pyydettävää tukea.
+    invariants:
+      - Kaikki kolme korttia ja tyhjä vastaus pysyvät mahdollisina. Oikeaa korttia ei esivalita tai
+        lukita.
+      - Kuvan tukema, kuvan kanssa ristiriidassa oleva ja tästä aineistosta ratkaisematon väite erotetaan
+        domainissa; syytuen puute ei tarkoita epätotuutta.
+      - Paikat ja värit eivät määrää oikeaa option-ID:tä. Ei KC-haaraa tai tekstistä pääteltyä totuutta.
+      - Sama objekti, referenssi ja kuvakulma molemmissa ruuduissa. Samat näytetyt paikat eivät todista
+        jatkuvaa liikkumattomuutta.
+    provenance:
+      - source_id: PROJECT-SCENE-OBSERVATION-v1
+        claim: Alkuperäinen suljettuun kuvafaktaan perustuva tehtävä. Ei vapaan havaintoraportin, yleisen
+          syypäättelyn tai oppimistehon osoitus.
+        status: hypothesis
+misconceptions:
+  - id: SCI-ENV-OBSERVE-01-OBS-RISTIRIITA
+    description: Vahvistettu lause on ristiriidassa nimenomaisesti esitettyjen kuvafaktojen kanssa. Ei lapsen
+      havaintokyvyn tai lukutaidon diagnoosia.
+    evidence_patterns:
+      - kind: observed_contradicted
+        when: Kelvollinen vahvistettu valinta saa domainilta contradicted-virheen, ei tyhjänä tai
+          vahvistamattomana.
+    feedback_strategy:
+      conceptual_prompt: Katsotaan kuvaa uudelleen. Tarkista pallon ja merkin paikat tai näkyykö pallo tässä
+        kuvassa. Valittu lause ei vielä vastaa kuvan näyttämää asiaa.
+      representation: Pyydettävä Aavan vertailumalli on tukea.
+    repair_targets:
+      - SCI-ENV-OBSERVE-01
+    status: hypothesis
+  - id: SCI-ENV-OBSERVE-01-OBS-SYY
+    description: Valinta lisää tuulen syyksi, jota kuvat eivät tue eivätkä kumoa. Ei yleistä lapsen
+      syypäättelydiagnoosia.
+    evidence_patterns:
+      - kind: observed_unsupported
+        when: Kelvollinen vahvistettu valinta saa domainilta unsupported-virheen.
+    feedback_strategy:
+      conceptual_prompt: Tuuli voi olla mahdollinen selitys, mutta kuva ei kerro syytä. Valitse asia, jonka
+        voit tarkistaa kuvasta.
+      representation: Aineiston tarkistava malli on tukea eikä muuta syyväitettä epätodeksi.
+    repair_targets:
+      - SCI-ENV-OBSERVE-01
+    status: hypothesis
+differentiation:
+  support_variants:
+    step_chunking: Yksi kuva tai rinnakkainen kuvapari ja kolme lyhyttä suurta korttia samassa työalueessa.
+      Kohdenimet ja suuntasanat opetetaan paikallisesti.
+    hints: Apua saa ennen virhettä. Malli, ACK ja vihje säilyvät apuhistoriassa; sama paljastettu vastaus ei
+      ole uusi tueton näyttö.
+    fading: Ratkaisukorostus, Aavan valinta ja johtopäätös poistuvat. Kuva, nimet ja lyhyt ohje jäävät.
+    access: Näppäimistö ja pysäytyskuvat/reduced motion. Ääni valinnainen ja aluksi pois; ei kuulokuittausta
+      tai suullisen tuoton väitettä. Vastauksen antava alt-teksti on arvioitavan tiedon tukea. Ei
+      valmista ei-visuaalisen reitin vastaavuutta.
+  challenge_variants:
+    learner_prompt: "Loikka arvelee: pallo on eri värinen, joten se vaihtoi paikkaa. Aava vertaa paikkoja
+      samaan merkkiin. Voiko väri vaihtua paikan säilyessä?"
+    harder_reasoning: Paikka voi vaihtua myös samalla merkkipuolella. Samat näytetyt paikat eivät todista
+      jatkuvaa liikkumattomuutta. Ei suurempia lukuja, selityslomaketta tai yleisen tieteellisen
+      selityksen arviointia.
+representations:
+  - id: SCI-ENV-OBSERVE-01-JOURNEY
+    kind: learning_journey_v1
+    capability: scene_observation_v1
+    chapter: Aavan havaintovihko
+    companion: Aava
+    purpose: Valitaan Aavan vihkoon kuva retkeltä.
+    consequence: Kuva on Aavan vihkossa.
+    instruction: Katso kuvaa. Valitse siihen sopiva merkintä.
+    model:
+      kind: scene_observation_examples_v1
+      examples:
+        - spec:
+            kind: scene_observation_v1
+            focus: side
+          seed: 1
+        - spec:
+            kind: scene_observation_v1
+            focus: side
+          seed: 8
+        - spec:
+            kind: scene_observation_v1
+            focus: presence
+          seed: 3
+        - spec:
+            kind: scene_observation_v1
+            focus: presence
+          seed: 10
+    guidedSequence:
+      itemRefs:
+        - SCI-ENV-OBSERVE-01-GUIDE-PAIKKA-1
+        - SCI-ENV-OBSERVE-01-GUIDE-PAIKKA-2
+        - SCI-ENV-OBSERVE-01-GUIDE-NAKYVYYS-1
+        - SCI-ENV-OBSERVE-01-GUIDE-NAKYVYYS-2
+    retrieval:
+      kind: closed_episode_retrieval_v1
+      claim: scene_observation
+simulation_specs: []
+requires_capabilities:
+  - rich_text
+  - diagram
+  - worked_example
+  - single_choice
+  - hint_ladder
+  - reduced_motion_variant
+provenance:
+  curriculum:
+    - source_id: PROD04-OPH-ENV12-OBSERVATION
+      claim: "B03/observation-source-audit.md: virallinen peruste419550, ympäristöoppi428820,
+        vuosiluokkakokonaisuus428830 ->428780, luokat1–2, T5–T13. Suoraan havainnointia koskee T6 469290
+        ja kuvia T13 469297. Sisältöalue ei hyväksy koko tavoitealueen tai tämän tunnistusreitin
+        kattavuutta."
+      status: verified
+  pedagogy:
+    - source_id: PROJECT-SCENE-OBSERVATION-v1
+      claim: Aavan vihkotarve, neljä mallia, paikallinen sanasto, pyydettävä apu, häivytys ja kuvaparisovellus
+        ovat alkuperäistä kokeilematonta projektisuunnittelua.4/2-ydin,2 soveltamista ja4/24h-näyte eivät
+        ole empiirisiä tutkimusvakioita.
+      status: hypothesis
+    - source_id: PROJECT-SCENE-OBSERVATION-v1
+      claim: R13/ACS Middle School Chemistry1.1 on vain historiallisen kortin inspiraatio, ei tämän1–2-luokkien
+        tehtävän empiirinen tai OPS-tuki. Ei ACS-tekstin/kuvien kopioita.
+      status: hypothesis
+  domain:
+    - source_id: PROJECT-SCENE-OBSERVATION-v1
+      claim: Suljettu samaan näkyvään sceneen sidottu predikaatti erottaa entailed/contradicted/unsupported. Ei
+        vapaata kuvantunnistusta, syyteoriaa tai LLM-oraclea.
+      status: hypothesis
+    - source_id: PROJECT-SCENE-OBSERVATION-v1
+      claim: "REVIEWER-NEEDED OBJECTIVE NARROWING: laaja jäädytetty havainnon tekeminen toteutetaan tässä
+        annetun visuaalisen havaintoväitteen tunnistamisena. Erillisen sisältö-/ainearvioijan on
+        hyväksyttävä rajaus ennen engineering-complete-laskentaa; kirjoittaja ei anna omaa riippumatonta
+        hyväksyntää."
+      status: hypothesis
+validation:
+  schema: pending
+  graph_refs: pending
+  domain_truth: pending
+  item_invariants: pending
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: draft

@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="lesson.css">
+<div class="b12" data-alg06>
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/aava/curious.png" width="56" height="56" alt="Aava"><p><strong>Aavan kaksi samanlaista pussia ja 3 nappia ovat 11. Kokeile x:ää.</strong></p></div>
+</section>
+
+
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<fieldset><legend>Kokeile pussin samaa lukua</legend><div class="picture" data-picture><img src="guess-start.svg" width="340" height="174" alt="Kaksi pussia, kummassakin kokeiltu3 nappia, sekä3 irtonappia. Vasen9, oikea11: eri suuret."></div><p class="readout" data-readout>x + x + 3 = 11. Kun x on 3, vasen on 9 ja oikea 11. Kokeiltu luku ei vielä sovi.</p><button type="button" data-action="more" data-primary>Kasvata x:ää yhdellä</button><details data-lesson-role="teaching-step"><summary>Toinen tilanne tai oma kokeilu</summary><div class="fields"><label>Mallin tilanne<select data-model-case><option value="bags" selected>2 pussia + 3 = 11</option><option value="reverse">1 pussi + 4 = 9</option><option value="transfer">3 rasiaa + 2 = 14</option><option value="zero">2 tyhjää pussia = 0</option></select></label><label>Kokeiltava x (0–9)<input data-guess type="text" inputmode="numeric" maxlength="2" value="3" autocomplete="off"></label></div><button type="button" data-action="less">Kokeile yhtä pienempää x:ää</button><button type="button" data-action="model-reset">Malli alkuun</button></details></fieldset>
+</section>
+
+
+<nav class="anchors" aria-label="Oppitunnin kohdat" data-lesson-role="metadata"><a href="#alg-examples">Mikä tekee tästä yhtälön?</a><a href="#alg-practice">Kokeile itse</a><a href="#alg-exit">Lopuksi</a></nav>
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<details id="alg-examples" data-lesson-role="teaching-step"><summary>Mikä tekee tästä yhtälön?</summary><h2>= ja tuntematon kuuluvat yhteen</h2><figure data-lesson-role="worked-example"><img src="guess-end.svg" width="340" height="174" alt="Kaksi neljän napin pussia ja kolme irrallista, yhteensä11."><figcaption><strong>x + x + 3 = 11</strong> sisältää =-merkin ja tuntemattoman x:n. Kun x on 4, <strong>4 + 4 + 3 = 11</strong>. Silloin kokeiltu luku on ratkaisu. Jokainen samanlainen pussi tarkoittaa samaa x:ää.</figcaption></figure><h3>Tuntematon saa olla myös oikealla</h3><figure data-lesson-role="worked-example"><img src="reverse.svg" width="340" height="174" alt="Yksi viiden napin pussi ja neljä irtonappia. Vasen9, oikea9."><figcaption><strong>9 = x + 4</strong> kertoo saman yhteyden kuin x + 4 = 9. Kun x on 5, puolet ovat yhtä suuret. = ei käske sijoittamaan vastausta aina loppuun.</figcaption></figure><p>Väärä kokeilu ei poista yhtälöä. Jos 9 = x + 4 ja kokeilet x = 6, saat 9 ≠ 10. Luku 6 ei ole ratkaisu; alkuperäinen yhtälö on silti sama.</p></details>
+</section>
+
+
+
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<section data-lesson-role="question"><p data-lesson-role="question"><strong>Mieti:</strong> onko x + 4 jo yhtälö?</p><details data-lesson-role="answer"><summary>Katso perustelu</summary><p>Siitä puuttuu = ja toinen puoli: se on lauseke. Merkinnässä 5 + 4 = 9 taas on vain tunnettuja lukuja. Tässä oppitunnissa etsimme nimenomaan yhtälöitä, joissa on tuntematon.</p></details></section>
+</section>
+
+
+
+
+<section id="alg-practice">
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<h2>Kokeile itse</h2><fieldset><legend>Tunnista merkinnän rakenne</legend><label>Merkintä<input data-expression type="text" maxlength="140" value="x + 3 = 8" autocomplete="off"></label><label>Mitä merkinnässä on?<select data-class><option value="" selected>Valitse</option><option value="unknown">= ja tuntematon: tuntemattoman sisältävä yhtälö</option><option value="numeric">= ja vain tunnettuja lukuja</option><option value="expression">Lauseke: = puuttuu</option></select></label><button type="button" data-action="classify">Tarkista rakenne</button><details data-lesson-role="teaching-step"><summary>Kokeiltavia merkintöjä</summary><p>x + 3 = 8; 8 = x + 3; x − 2 = 4; x + 3; 5 + 3 = 8; 5 + 3 = 9. Onko rakenne eri asia kuin se, onko lukuväite tosi?</p></details></fieldset>
+</section>
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<fieldset><legend>Sama ratkaisuyhteys</legend><label>Tilanne<select data-task><option value="bags" selected>Kaksi pussia ja kolme</option><option value="reverse">Pussi ja neljä</option><option value="transfer">Uusi tilanne: rasiat</option><option value="zero">Tyhjät pussit</option></select></label><p data-question>Kaksi samanlaista pussia ja kolme irtonappia: yhteensä 11. Kirjoita yhtälö, jolla on sama ratkaisu.</p><label>Yhtälö<input data-equation type="text" maxlength="140" autocomplete="off"></label><button type="button" data-action="check">Tarkista yhteys</button><output data-feedback data-verdict="neutral" aria-live="polite">Tarkista, kun olet valmis.</output><details data-lesson-role="hint"><summary>Tarvitsen vihjeen</summary><p>Kirjoita kumpikin pussi x:nä, lisäksi 3 ja koko 11. Voit vaihtaa puolet tai ryhmitellä osia. Tässä tarkistuksessa myös ratkaisumuoto, kuten x = 4, käy, kun se vastaa valittua tilannetta.</p></details></fieldset>
+</section>
+</section>
+
+
+
+
+<section data-teaching-step="7" data-lesson-role="teaching-step">
+<h2>Uusi tilanne: kolme rasiaa</h2><p>Kolme samanlaista rasiaa ja 2 irtomerkkiä sisältävät yhteensä 14 merkkiä: <strong>x + x + x + 2 = 14</strong>. Kun yhdessä rasiassa on 4, vasen on 4 + 4 + 4 + 2 = 14. Merkintä x + 3 + 2 = 14 sekoittaisi rasioiden määrän ja yhden rasian sisällön.</p>
+</section>
+
+
+
+
+
+<section data-teaching-step="8" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Lisää tutkittavaa</summary><p>Merkinnässä x − x = 0 on = ja tuntematon. Kokeile x:n paikalle 0, 3 ja 8. Jokainen toimii: yhtälöllä ei aina ole vain yhtä ratkaisua. Pelkkä = ja x eivät lupaa yksikäsitteistä ratkaisua.</p></details>
+</section>
+
+
+
+
+
+<section data-teaching-step="9" data-lesson-role="teaching-step">
+<p id="alg-exit" data-lesson-role="question"><strong>Lopuksi:</strong> kumpi sisältää sekä =-merkin että tuntemattoman: x + 2 vai 7 = x + 2? Miten kokeilisit, sopiiko x = 5?</p>
+</section>
+
+
+<details class="b12-teacher" data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p>Luokat 3–6. Vaadittu AND: M-ALG-04 ja M-ALG-05. Tässä rajaus on tuntemattoman sisältävä yhtälö; myös pelkkää numeerista yhtäsuuruutta kutsutaan matematiikassa yhtälöksi. Emme opeta, että kaikki yhtälöt vaativat x:n. Rakenne, luvun sijoituksen totuus ja ratkaisujen määrä erotetaan.</p><p>Kokoa samanlaiset pussit irtomerkeillä, merkitse tuntematon määrä x:llä ja vertaa kokonaismääriä. Kuvassa ei väitetä fyysistä massatasapainoa. Sama x tarkoittaa aina samaa lukua. Malli sallii 0–9, tilanteet ovat rajattuja kokonaislukutilanteita.</p><p>Tekstimuoto tukee x:ää, kokonaislukuvakioita 0–99, +/−, skalaarikertolaskua (2x, 2*x tai 2×x), sulkuja ja enintään yhtä =-merkkiä. Ei jakoa, potensseja, muita kirjaimia tai yleistä algebralaskinta. Luokittelu perustuu rakenteeseen myös silloin, kun lukuväite on epätosi tai x:t kumoutuvat. Yhteystarkistus hyväksyy samaratkaisuisten lineaaristen yhtälöiden ryhmittelyt, puolenvaihdon ja ratkaisumuodon; se ei väitä todistavansa koko tarinan merkintärakenteen itsenäistä rakentamista. Identiteetti x − x = 0 ei kuvaa yhden määrätyn pussiluvun tilannetta. Vihjeet ovat apua, ei oppilashistoriaa tai muodollista hallintapäätöstä.</p></details><noscript data-lesson-role="metadata"><p>Esimerkit ja alkukuva toimivat ilman JavaScriptiä. Tee kirjoituskokeilut paperilla; muuttuvat ruudun ohjeet ja tarkistukset tarvitsevat JavaScriptin.</p></noscript></div>

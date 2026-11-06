@@ -1,0 +1,66 @@
+{
+  "_source": "OpenAI viralliset dokumentit: developers.openai.com/api/docs/pricing, /docs/guides/image-generation, /docs/models/gpt-image-2.5-flare, /reference/resources/images/methods/edit",
+  "_verified": "2026-11-01",
+  "_note": "Hinnat USD / 1M tokenia (Standard). Batch-API on puolet halvempi. gpt-image-1 suljettiin 2026-10-23. Tarkista hinnat ennen isoja ajoja.",
+  "default": "gpt-image-2.5-flare",
+  "aliases": {
+    "flare": "gpt-image-2.5-flare",
+    "sunburst": "gpt-image-2.5-sunburst",
+    "2": "gpt-image-2",
+    "mini": "gpt-image-1-mini"
+  },
+  "models": {
+    "gpt-image-2.5-flare": {
+      "textIn": 5, "imageIn": 8, "imageOut": 30,
+      "qualities": ["low", "medium", "high", "xhigh", "max", "auto"],
+      "customSizes": true, "transparency": "yes",
+      "use": "Nopea ja laadukas arkikäyttö (oletus)"
+    },
+    "gpt-image-2.5-sunburst": {
+      "textIn": 5, "imageIn": 8, "imageOut": 30,
+      "qualities": ["low", "medium", "high", "xhigh", "max", "auto"],
+      "customSizes": true, "transparency": "yes",
+      "use": "Tarkin editointi: hahmon muokkaus referenssistä, inpainting"
+    },
+    "gpt-image-2": {
+      "textIn": 5, "imageIn": 8, "imageOut": 30,
+      "qualities": ["low", "medium", "high", "auto"],
+      "customSizes": true, "transparency": "preview",
+      "use": "Edellinen sukupolvi"
+    },
+    "gpt-image-1.5": {
+      "textIn": 5, "imageIn": 8, "imageOut": 32,
+      "qualities": ["low", "medium", "high", "auto"],
+      "customSizes": false, "transparency": "yes",
+      "use": "Vanha; poistuu 2026-12-01 (kolmannen osapuolen tieto)"
+    },
+    "gpt-image-1-mini": {
+      "textIn": 2, "imageIn": 2.5, "imageOut": 8,
+      "qualities": ["low", "medium", "high", "auto"],
+      "customSizes": false, "transparency": "yes",
+      "use": "Halpa luonnostelu"
+    }
+  },
+  "perImageUsdAt1024": {
+    "_note": "gpt-image-2:n virallinen esimerkkitaulukko 1024x1024. 2.5-malleille OpenAI ei julkaise kiinteitä tokenimääriä, joten xhigh/max ovat varovaisia oletuksia (2x ja 4x high). auto lasketaan kuin high.",
+    "low": 0.006,
+    "medium": 0.053,
+    "high": 0.211,
+    "xhigh": 0.422,
+    "max": 0.844,
+    "auto": 0.211
+  },
+  "inputImageTokensEstimate": 6000,
+  "limits": {
+    "maxEdge": 3840,
+    "multipleOf": 16,
+    "maxRatio": 3,
+    "minPixels": 655360,
+    "maxPixels": 8294400,
+    "experimentalAbove": "2560x1440",
+    "standardSizes": ["1024x1024", "1536x1024", "1024x1536"],
+    "maxN": 10,
+    "maxInputImages": 16,
+    "promptMaxChars": 32000
+  }
+}

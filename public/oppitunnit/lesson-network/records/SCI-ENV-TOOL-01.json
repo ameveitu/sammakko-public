@@ -1,0 +1,617 @@
+{
+  "kcId": "SCI-ENV-TOOL-01",
+  "pagePath": "lessons/SCI-ENV-TOOL-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "SCI-ENV-TOOL-01",
+  "canonicalNode": {
+    "id": "SCI-ENV-TOOL-01",
+    "subject": "science",
+    "grade_band": "1-2",
+    "topic_area": "Tutkimisen taidot",
+    "parent_concept": "Välineet",
+    "title": "Yksinkertaisen tutkimus- tai mittausvälineen käyttäminen",
+    "short_description": "Yksinkertaisen tutkimus- tai mittausvälineen käyttäminen",
+    "node_kind": "procedure",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "ENV12-T5-T13"
+    ],
+    "relations": [
+      {
+        "id": "SCI-ENV-SAFE-01",
+        "relation_type": "safety_gate",
+        "strength": "required",
+        "rationale": "Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite."
+      },
+      {
+        "id": "SCI-ENV-OBSERVE-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Havainnointi tukee välineen tarkoituksenmukaista käyttöä."
+      }
+    ],
+    "prerequisite_groups": [],
+    "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+    "foundation_entry": false,
+    "zero_required_indegree": true,
+    "status": "candidate",
+    "entry_role": "domain_entry",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Ympäristöoppi / luonnontieteellinen perusta",
+      "Tutkimisen taidot",
+      "Välineet"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "SCI-ENV-SAFE-01",
+      "targetKCId": "SCI-ENV-TOOL-01",
+      "relationType": "safety_gate",
+      "strength": "required",
+      "rationale": "Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "SCI-ENV-OBSERVE-01",
+      "targetKCId": "SCI-ENV-TOOL-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Havainnointi tukee välineen tarkoituksenmukaista käyttöä.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "SCI-ENV-TOOL-01",
+      "targetKCId": "SCI-ENV-EXP-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Välinetaidot tukevat kokeilua.",
+      "sourceRelationIndex": 3
+    },
+    {
+      "sourceKCId": "SCI-ENV-TOOL-01",
+      "targetKCId": "SCI-ENV-MEAS-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "SCI-ENV-TOOL-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "SCI-ENV-TOOL-01",
+      "targetKCId": "CHEM79-LAB-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Perustyövälineen käyttö on taidollinen ydinesitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/SCI-ENV-TOOL-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.globe.gov/documents/348830/55900551/SPMagnifyThat_FINAL13NOV2018.pdf/0ba66742-f78d-4f02-9860-20101b111661",
+        "title": "Magnify That — A Learning Activity for Discoveries at Willow Creek",
+        "organization": "The GLOBE Program / University Corporation for Atmospheric Research",
+        "retrievedAt": "2026-10-29",
+        "usageRestrictions": "PDF explicitly ©2018 University Corporation for Atmospheric Research, All Rights Reserved. No worksheets, storybook, figures or wording copied. General tool-use ideas inform original examples only.",
+        "adopted": [
+          "Samaa tuttua kohdetta katsotaan ensin ilman lasia ja sitten lasin läpi.",
+          "Etäisyyttä muutetaan rauhassa, jotta yksityiskohtia voi erottaa; suurentaminen muuttaa näkymää."
+        ],
+        "rejected": [
+          "Suola/sokeri, irralliset pienet rakeet, itse leikattava katseluikkuna ja senttimetrivaatimus jätetty pois.",
+          "Todellista optiikkaa tai samaa sopivaa etäisyyttä kaikille välineille ei päätellä kolmiasentoisesta kuvamallista."
+        ],
+        "verification": "PDF purpose, K–4 band, teacher notes pp.1–3, focusing and original copyright read. Grades1–2 adaptation is project design."
+      },
+      {
+        "url": "https://www.acs.org/education/celebrating-chemistry-editions/science-safety-tips.html",
+        "title": "Science Safety Tips",
+        "organization": "American Chemical Society",
+        "retrievedAt": "2026-10-29",
+        "usageRestrictions": "ACS copyright policy https://www.acs.org/copyright.html retrieved 2026-10-29: copyrighted, public reuse/adaptation generally requires permission beyond permitted uses. Only general safety principles corroborate our independently written lesson; no copied text, illustration or activity.",
+        "adopted": [
+          "Koko ohje ja aikuisen lupa ennen työtä.",
+          "Tehtävän omat ohjeet ratkaisevat suojautumisen; aikuinen ohjaa työtä."
+        ],
+        "rejected": [
+          "Kemiallisia aktiviteetteja tai ruokaa ei oteta tämän paperitehtävän sisällöksi.",
+          "Suojalaseja ei kuvata jokaisen paperin katselun pakolliseksi varusteeksi."
+        ],
+        "verification": "Before/During/After and activity-specific guidance read directly. No Finnish legal-standard or efficacy claim."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@71f0a0151a8b1a8c5901af872f54b9c1925ab90c5252bcb9c04c849f7f4f5c9e",
+        "note": "Authored notes and technical self-check only; independent review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+        "note": "Bounded geometry correction and six scoped tests; independent re-review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+        "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B02/review.md. Human/learner effectiveness and release approval remain pending."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@71f0a0151a8b1a8c5901af872f54b9c1925ab90c5252bcb9c04c849f7f4f5c9e",
+        "note": "No human review or child testing performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+        "note": "No human review performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "SCI-ENV-TOOL-01",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "magnifier.svg",
+        "sha256": "2669a98c9090b37a4d0e26577538b13f65734ef4d7140eaa596e06357e654f63"
+      },
+      {
+        "path": "fabric.svg",
+        "sha256": "b117aa64e66cfe7c64136ce5eabcae5212e40ae42aa13641d6247f9e8911ab13"
+      },
+      {
+        "path": "shared/loikka/curious.png",
+        "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.globe.gov/documents/348830/55900551/SPMagnifyThat_FINAL13NOV2018.pdf/0ba66742-f78d-4f02-9860-20101b111661",
+        "title": "Magnify That — A Learning Activity for Discoveries at Willow Creek",
+        "organization": "The GLOBE Program / University Corporation for Atmospheric Research",
+        "retrievedAt": "2026-10-29",
+        "usageRestrictions": "PDF explicitly ©2018 University Corporation for Atmospheric Research, All Rights Reserved. No worksheets, storybook, figures or wording copied. General tool-use ideas inform original examples only.",
+        "adopted": [
+          "Samaa tuttua kohdetta katsotaan ensin ilman lasia ja sitten lasin läpi.",
+          "Etäisyyttä muutetaan rauhassa, jotta yksityiskohtia voi erottaa; suurentaminen muuttaa näkymää."
+        ],
+        "rejected": [
+          "Suola/sokeri, irralliset pienet rakeet, itse leikattava katseluikkuna ja senttimetrivaatimus jätetty pois.",
+          "Todellista optiikkaa tai samaa sopivaa etäisyyttä kaikille välineille ei päätellä kolmiasentoisesta kuvamallista."
+        ],
+        "verification": "PDF purpose, K–4 band, teacher notes pp.1–3, focusing and original copyright read. Grades1–2 adaptation is project design."
+      },
+      {
+        "url": "https://www.acs.org/education/celebrating-chemistry-editions/science-safety-tips.html",
+        "title": "Science Safety Tips",
+        "organization": "American Chemical Society",
+        "retrievedAt": "2026-10-29",
+        "usageRestrictions": "ACS copyright policy https://www.acs.org/copyright.html retrieved 2026-10-29: copyrighted, public reuse/adaptation generally requires permission beyond permitted uses. Only general safety principles corroborate our independently written lesson; no copied text, illustration or activity.",
+        "adopted": [
+          "Koko ohje ja aikuisen lupa ennen työtä.",
+          "Tehtävän omat ohjeet ratkaisevat suojautumisen; aikuinen ohjaa työtä."
+        ],
+        "rejected": [
+          "Kemiallisia aktiviteetteja tai ruokaa ei oteta tämän paperitehtävän sisällöksi.",
+          "Suojalaseja ei kuvata jokaisen paperin katselun pakolliseksi varusteeksi."
+        ],
+        "verification": "Before/During/After and activity-specific guidance read directly. No Finnish legal-standard or efficacy claim."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@71f0a0151a8b1a8c5901af872f54b9c1925ab90c5252bcb9c04c849f7f4f5c9e",
+        "note": "Authored notes and technical self-check only; independent review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@71f0a0151a8b1a8c5901af872f54b9c1925ab90c5252bcb9c04c849f7f4f5c9e",
+        "note": "Authored notes and technical self-check only; independent review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@71f0a0151a8b1a8c5901af872f54b9c1925ab90c5252bcb9c04c849f7f4f5c9e",
+        "note": "No human review or child testing performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+        "note": "Bounded geometry correction and six scoped tests; independent re-review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+        "note": "Bounded geometry correction and six scoped tests; independent re-review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+        "note": "No human review performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+        "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B02/review.md. Human/learner effectiveness and release approval remain pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+        "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B02/review.md. Human/learner effectiveness and release approval remain pending."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "SCI-ENV-TOOL-01",
+      "liteContentRevision": "lite181-2026-10-27",
+      "liteNodeRevision": "audit1-2026-10-28",
+      "families": [
+        "tool",
+        "use",
+        "read",
+        "tare",
+        "pick",
+        "transfer"
+      ],
+      "sourceDirectory": "lesson-network/authority/production-181-v2/lite",
+      "sourceHashes": {
+        "src/content/saari2.ts": "bf9e657f3e4f975cbdafd9c8b5c891d789ffd4e98be7126ee438096f7d9f5c6e",
+        "src/content/toolanim.ts": "192aeac1100af4f3408ed9a5c98689a9d5e76592476ef188c305f2002e443bc7",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715"
+      },
+      "registryCheck": {
+        "entryPoint": "src/content/index.ts",
+        "motionOverrides": "src/content/motionsims.ts",
+        "inSimMap": false,
+        "effectiveFamilies": [
+          "tool",
+          "use",
+          "read",
+          "tare",
+          "pick",
+          "transfer"
+        ],
+        "note": "No assigned ID is present in SIMS; audit node revision remains effective. Family inventory taken from current source branches, not stale coverage tables."
+      },
+      "inventory": "alignment.md",
+      "reconciliation": "alignment.md#reconciliation-for-opus",
+      "status": "authored_comparison_independent_review_pending"
+    },
+    "planning": {
+      "gradeBand": "1-2",
+      "teacherObjective": "Yksinkertaisen tutkimus- tai mittausvälineen käyttäminen",
+      "childGoal": "Kohdistan suurennuslasin ja etsin selkeän näkymän.",
+      "sourceGraphRevision": "d547e9ebfbd8ca1737abe40be34e9ace53ea773e",
+      "sourceGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "canonicalSourceBasis": "direct_curriculum",
+      "canonicalCurriculumRefs": [
+        "ENV12-T5-T13"
+      ],
+      "canonicalNodeKind": "procedure",
+      "canonicalEntryRole": "domain_entry",
+      "canonicalMasteryRole": "atomic",
+      "canonicalOperationalGate": false,
+      "canonicalPrerequisiteGroups": [],
+      "requiredPrerequisites": [
+        {
+          "id": "SCI-ENV-SAFE-01",
+          "relation_type": "safety_gate",
+          "strength": "required",
+          "rationale": "Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite."
+        }
+      ],
+      "strongSupport": [
+        {
+          "id": "SCI-ENV-OBSERVE-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Havainnointi tukee välineen tarkoituksenmukaista käyttöä."
+        }
+      ],
+      "assumed": [
+        "Valmis A/B-merkki voidaan yhdistää kuvan kohtaan osoittamalla; kirjainten nimeämistä ei testata.",
+        "Kuvan yksityiskohtien erottaminen on tuettu tekstivastineella; havainnointi on vahva tuki."
+      ],
+      "scope": "Tutkimusvälineeksi valitaan suurennuslasi. Kohdistus, näkymän säätö ja saman kohteen vertaaminen ennen ja jälkeen suurentamisen. Yksiköitä, asteikon lukua tai vähennyslaskua ei edellytetä.",
+      "evidenceLimits": "Kuvamalli ei todenna fyysistä välineen käsittelyä, näkemistä, oikeaa polttoväliä tai turvallisuutta. Selkeä malliasento on opetuksellinen sopimus, ei optiikan simulaatio. Ei pysyvyyden tai itsenäisyyden väitettä, ei tallennusta, pisteitä tai osaamispalkintoja.",
+      "assetProvenance": [
+        {
+          "path": "magnifier.svg",
+          "origin": "Original subject SVG authored for this KC on 2026-10-29. No external figures copied."
+        },
+        {
+          "path": "fabric.svg",
+          "origin": "Original subject SVG authored for this KC on 2026-10-29. No external figures copied."
+        },
+        {
+          "path": "shared/loikka/curious.png",
+          "origin": "Supplied shared v2 transparent PNG referenced byte-for-byte. Generated raster interpretation of user character, not claimed hand-drawn. No duplication within the package, redraw or new pose."
+        }
+      ],
+      "sequence": [
+        "Merkityksellinen kysymys ja konkreettinen toiminta aikuisen kanssa",
+        "Kaksi selitettyä esimerkkiä: virhekäsitys ja siirto",
+        "Ennustus tai mietintätauko",
+        "Rakentava harjoitus ja tarkistettava oma tulos",
+        "Vapaa tuki ja lisäpohdinta",
+        "Opettajan ohje ja lähtökysymys"
+      ],
+      "interactionContract": "Self-contained module. Root scoped to host.closest(#lesson-body) and own lesson selector; one delegated listener, no timers/imports/audio/storage. Pause/resume native fieldset, reset only state, dispose detaches listener. Text alternatives provide supported visual access, not independent physical evidence.",
+      "researchNote": "research.md"
+    },
+    "extensions": {
+      "technicalValidation": {
+        "date": "2026-10-29",
+        "pureTests": {
+          "command": "node --test lesson-network/packages/SCI-ENV-SAFE-01/tests.mjs lesson-network/packages/SCI-ENV-TOOL-01/tests.mjs lesson-network/packages/M-DATA-01/tests.mjs",
+          "result": "passed",
+          "testCasesAcrossAssignedPackages": 9,
+          "details": "Includes all 64 observation subsets for both topics, all 12 tool location/focus states and every order of emergency protection cards."
+        },
+        "packageContract": "Passed loadPackages/composePackage in isolated root containing assigned packages only; declared asset SHA-256 verified.",
+        "browser": {
+          "engine": "Installed Playwright Chromium, headless",
+          "phone": "390x844",
+          "desktop": "1280x900",
+          "context": "Temporary source composition, current shell CSS, direct mount of actual modules; not a shared build.",
+          "checks": [
+            "all declared/dynamic image loads",
+            "specific correct/incorrect constructive feedback",
+            "keyboard Enter",
+            "native target height greater than 44px",
+            "no horizontal overflow",
+            "pause/reset/resume",
+            "dispose idempotent and remount without duplicate actions",
+            "static examples without JavaScript",
+            "no page JS errors"
+          ],
+          "screenshotInspection": "Full phone pages and practice views visually inspected; data-card SVGs changed to small declared SVG images to respect shared shell width rule.",
+          "harness": "/tmp/b02-mill-browser.mjs",
+          "previewPreparation": "/tmp/b02-mill-preview.mjs"
+        },
+        "independentReview": "pending",
+        "humanReview": "not_performed",
+        "integration": "Main owns shared build, independent review and production status.",
+        "appliesToContentRevision": "1@71f0a0151a8b1a8c5901af872f54b9c1925ab90c5252bcb9c04c849f7f4f5c9e"
+      },
+      "boundedMagnificationCorrection": {
+        "date": "2026-10-29",
+        "revision": 2,
+        "scope": "Only SCI-ENV-TOOL-01 feature-preservation correction. No body, fabric.svg, shared stylesheet or other package changed.",
+        "changes": [
+          "Dynamic base/zoom both have four dots.",
+          "Dynamic fabric base/zoom both have two horizontal and two vertical threads with matching colours.",
+          "Static magnifier and dynamic scenes use the same feature geometry in translated groups with uniform scale 2.5, including radii and strokes."
+        ],
+        "pureTests": {
+          "command": "node --test lesson-network/packages/SCI-ENV-TOOL-01/tests.mjs",
+          "result": "passed",
+          "testCases": 6,
+          "coverage": "All existing location/focus states plus rendered SVG feature counts, world-coordinate position scaling, circle radius, thread width, orientation, colour and static asset geometry."
+        },
+        "browser": "Earlier revision1 browser checks are historical; bounded revision2 verification is source geometry and package contract. Main handles renewed spatial/UI integration review."
+      }
+    },
+    "contentHash": "041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+    "contentRevision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@71f0a0151a8b1a8c5901af872f54b9c1925ab90c5252bcb9c04c849f7f4f5c9e",
+          "note": "Authored notes and technical self-check only; independent review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+          "note": "Bounded geometry correction and six scoped tests; independent re-review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+          "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B02/review.md. Human/learner effectiveness and release approval remain pending."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@71f0a0151a8b1a8c5901af872f54b9c1925ab90c5252bcb9c04c849f7f4f5c9e",
+          "note": "No human review or child testing performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+          "note": "No human review performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@71f0a0151a8b1a8c5901af872f54b9c1925ab90c5252bcb9c04c849f7f4f5c9e",
+          "note": "Authored notes and technical self-check only; independent review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+          "note": "Bounded geometry correction and six scoped tests; independent re-review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@041bdee8018cca752d583d5bae1ecdf1fda397c536ba8d27cad2f7b53581a640",
+          "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B02/review.md. Human/learner effectiveness and release approval remain pending."
+        }
+      ]
+    }
+  },
+  "outputHash": "122c68b0c5f6d0614e6d40f008df49fe9c5a0a7cf85c07f3bb969385d29683a0",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "122c68b0c5f6d0614e6d40f008df49fe9c5a0a7cf85c07f3bb969385d29683a0",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

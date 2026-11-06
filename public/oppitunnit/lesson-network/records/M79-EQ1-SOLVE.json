@@ -1,0 +1,939 @@
+{
+  "kcId": "M79-EQ1-SOLVE",
+  "pagePath": "lessons/M79-EQ1-SOLVE.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M79-EQ1-SOLVE",
+  "canonicalNode": {
+    "id": "M79-EQ1-SOLVE",
+    "subject": "mathematics",
+    "grade_band": "7-9",
+    "topic_area": "S3 Algebra",
+    "parent_concept": "Ensimmäisen asteen yhtälö",
+    "title": "Ensimmäisen asteen yhtälön ratkaiseminen tasapainoperiaatteella",
+    "short_description": "Ensimmäisen asteen yhtälön ratkaiseminen tasapainoperiaatteella",
+    "node_kind": "procedure",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "M79-S3"
+    ],
+    "relations": [
+      {
+        "id": "M79-EQ1-FORM",
+        "relation_type": "representation_support",
+        "strength": "strong",
+        "rationale": "Yhtälön muodostaminen tukee soveltamista mutta annetun yhtälön ratkaiseminen ei edellytä sitä."
+      },
+      {
+        "id": "M-ALG-08",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "M-ALG-08 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      },
+      {
+        "id": "M79-INT-ADD",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "M79-INT-ADD tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      },
+      {
+        "id": "M79-INT-MUL",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "M79-INT-MUL tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      },
+      {
+        "id": "M-ALG-06",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "Yhtälön käsite tarvitaan."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-ALG-06"
+        ],
+        "rationale": "Yhtälön tunnistaminen on hard prerequisite; operaatiotaidot ovat vahvaa/dynaamista tukea."
+      }
+    ],
+    "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "status": "candidate",
+    "dynamic_prerequisite_rule": "requires_arithmetic_operations_present_in_equation_item",
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "S3 Algebra",
+      "Ensimmäisen asteen yhtälö"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M79-EQ1-FORM",
+      "targetKCId": "M79-EQ1-SOLVE",
+      "relationType": "representation_support",
+      "strength": "strong",
+      "rationale": "Yhtälön muodostaminen tukee soveltamista mutta annetun yhtälön ratkaiseminen ei edellytä sitä.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ALG-08",
+      "targetKCId": "M79-EQ1-SOLVE",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-ALG-08 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M79-INT-ADD",
+      "targetKCId": "M79-EQ1-SOLVE",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-INT-ADD tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M79-INT-MUL",
+      "targetKCId": "M79-EQ1-SOLVE",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-INT-MUL tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 3
+    },
+    {
+      "sourceKCId": "M-ALG-06",
+      "targetKCId": "M79-EQ1-SOLVE",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Yhtälön käsite tarvitaan.",
+      "sourceRelationIndex": 4
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M79-EQ1-SOLVE",
+      "targetKCId": "M79-EQ1-CHECK",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-EQ1-SOLVE on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-EQ1-SOLVE",
+      "targetKCId": "M79-SYSTEM-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Yhden yhtälön ratkaisutaito tukee, mutta yhtälöparin yhteisen ratkaisun käsitteen voi esitellä ennen täyttä fluenssia.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-EQ1-SOLVE",
+      "targetKCId": "M79-SYSTEM-ALG",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M79-EQ1-SOLVE",
+      "targetKCId": "M79-INEQ-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Yhtälöratkaisu tukee epäyhtälön ratkaisemista, mutta ei ole käsitteen hard prerequisite.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-EQ1-SOLVE",
+      "targetKCId": "M79-PROP-SOLVE",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M79-EQ1-SOLVE",
+      "targetKCId": "M79-LINE-GRAPH",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M79-EQ1-SOLVE",
+      "targetKCId": "M79-PYTH-CALC",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M79-EQ1-SOLVE",
+      "targetKCId": "M79-ZERO-GRAPH",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M79-EQ1-SOLVE",
+      "targetKCId": "M79-ZERO-CALC",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M79-EQ1-SOLVE",
+      "targetKCId": "PHY79-SPEED-REARR",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M79-EQ1-SOLVE",
+      "targetKCId": "PHY79-OHM",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-ALG-06"
+      ],
+      "rationale": "Yhtälön tunnistaminen on hard prerequisite; operaatiotaidot ovat vahvaa/dynaamista tukea."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": "requires_arithmetic_operations_present_in_equation_item",
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M79-EQ1-SOLVE/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/7/algebra/linear-expressions-and-equations/",
+        "title": "Linear expressions and equations: Year7 planning tool",
+        "organization": "Education Services Australia / Mathematics Hub",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML explanation, misconceptions and home activities read; linked videos/PDF/tools not executed.",
+        "adopted": "Quantities before symbolic operations; balance for nonnegative physical analogies; undo operations and independently verify by substitution.",
+        "rejected": "Do not import natural-number-only domain into signed Lite solving; explicit nonzero condition added. Historical marketplace narrative/extension typography not reproduced. No copied tasks/prose/figures or Finnish curriculum/efficacy claim.",
+        "licence": "Commonwealth CC BY4.0 unless otherwise indicated; logos/trademarks and third-party material excluded.",
+        "licenceURL": "https://www.mathematicshub.edu.au/terms-of-use/"
+      },
+      {
+        "url": "https://tasks.illustrativemathematics.org/content-standards/6/EE/B/5",
+        "title": "6.EE.B.5: solutions and substitution",
+        "organization": "Illustrative Mathematics",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary standard and exact page rights footer read; linked task ZIP not downloaded.",
+        "adopted": "Test a proposed value in both sides of the original equation; candidate testing is distinct from solving.",
+        "rejected": "No translated task/prose or copied figure. Not a Finnish age mapping or learner validation.",
+        "licence": "CC BY-NC-SA4.0 International, exact page footer; no publication/licence clearance.",
+        "licenceURL": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      {
+        "url": "https://tasks.illustrativemathematics.org/content-standards/tasks/613",
+        "title": "Same solutions?",
+        "organization": "Illustrative Mathematics",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary task/commentary/solutions and rights footer read.",
+        "adopted": "Compare solution sets and reversible transformations; distinguish a successful substitution from general equivalence.",
+        "rejected": "New Finnish situations/equations/vectors; no task list/solution table copied. /pages/about inaccessible; rights use retrieved specific footer. No efficacy claim.",
+        "licence": "CC BY-NC-SA4.0 International, exact page footer.",
+        "licenceURL": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@2f69c122096f1ae815d3e597f511785d1a367c9b7817603062b351b7435cb147",
+        "note": "B14 Newton author QA is not independent approval. Descartes different-author review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@b58832b7f2d7e265c276c899b5c1baa3716ea1d3c1fd18f80b62c3905259ef36",
+        "note": "B14 per-host sibling root r2; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+        "note": "B14 current-model/transform readback and documented nesting r3; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+        "note": "Independent B14 Descartes source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/Descartes-on-Newton/current-r3/ready.json. Technical synthetic scope; not learner validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@2f69c122096f1ae815d3e597f511785d1a367c9b7817603062b351b7435cb147",
+        "note": "Not performed; no learner/efficacy/manual acceptance."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@b58832b7f2d7e265c276c899b5c1baa3716ea1d3c1fd18f80b62c3905259ef36",
+        "note": "No human review performed; root repair is technical author QA."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+        "note": "No human review performed; root repair is technical author QA."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M79-EQ1-SOLVE",
+    "revision": 3,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "example1.svg",
+        "sha256": "a83a9ece8ada40be8220fbb2d63678340b8fc030241857d379f41c729a1d5a23"
+      },
+      {
+        "path": "example2.svg",
+        "sha256": "f9d8eb92adbc5f870e29a5c9f90fd885b1b065bd0b7d82d7bb28859a87163e93"
+      },
+      {
+        "path": "example3.svg",
+        "sha256": "fb493cff489b29f4acd12b1af72448a0490daab53dd501c78269adf00cc6d1e9"
+      },
+      {
+        "path": "initial.svg",
+        "sha256": "6bed2222fa71d31474251efb486f82fde7c20621467bdcf46e0fa4c3adb49d56"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "d657489ed5ec9087e574e0e33902d754f35737aa9db7e01695a8ab6511ab0337"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/7/algebra/linear-expressions-and-equations/",
+        "title": "Linear expressions and equations: Year7 planning tool",
+        "organization": "Education Services Australia / Mathematics Hub",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML explanation, misconceptions and home activities read; linked videos/PDF/tools not executed.",
+        "adopted": "Quantities before symbolic operations; balance for nonnegative physical analogies; undo operations and independently verify by substitution.",
+        "rejected": "Do not import natural-number-only domain into signed Lite solving; explicit nonzero condition added. Historical marketplace narrative/extension typography not reproduced. No copied tasks/prose/figures or Finnish curriculum/efficacy claim.",
+        "licence": "Commonwealth CC BY4.0 unless otherwise indicated; logos/trademarks and third-party material excluded.",
+        "licenceURL": "https://www.mathematicshub.edu.au/terms-of-use/"
+      },
+      {
+        "url": "https://tasks.illustrativemathematics.org/content-standards/6/EE/B/5",
+        "title": "6.EE.B.5: solutions and substitution",
+        "organization": "Illustrative Mathematics",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary standard and exact page rights footer read; linked task ZIP not downloaded.",
+        "adopted": "Test a proposed value in both sides of the original equation; candidate testing is distinct from solving.",
+        "rejected": "No translated task/prose or copied figure. Not a Finnish age mapping or learner validation.",
+        "licence": "CC BY-NC-SA4.0 International, exact page footer; no publication/licence clearance.",
+        "licenceURL": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      {
+        "url": "https://tasks.illustrativemathematics.org/content-standards/tasks/613",
+        "title": "Same solutions?",
+        "organization": "Illustrative Mathematics",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary task/commentary/solutions and rights footer read.",
+        "adopted": "Compare solution sets and reversible transformations; distinguish a successful substitution from general equivalence.",
+        "rejected": "New Finnish situations/equations/vectors; no task list/solution table copied. /pages/about inaccessible; rights use retrieved specific footer. No efficacy claim.",
+        "licence": "CC BY-NC-SA4.0 International, exact page footer.",
+        "licenceURL": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@2f69c122096f1ae815d3e597f511785d1a367c9b7817603062b351b7435cb147",
+        "note": "B14 Newton author QA is not independent approval. Descartes different-author review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@2f69c122096f1ae815d3e597f511785d1a367c9b7817603062b351b7435cb147",
+        "note": "B14 Newton author QA is not independent approval. Descartes different-author review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@2f69c122096f1ae815d3e597f511785d1a367c9b7817603062b351b7435cb147",
+        "note": "Not performed; no learner/efficacy/manual acceptance."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@b58832b7f2d7e265c276c899b5c1baa3716ea1d3c1fd18f80b62c3905259ef36",
+        "note": "B14 per-host sibling root r2; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@b58832b7f2d7e265c276c899b5c1baa3716ea1d3c1fd18f80b62c3905259ef36",
+        "note": "B14 per-host sibling root r2; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@b58832b7f2d7e265c276c899b5c1baa3716ea1d3c1fd18f80b62c3905259ef36",
+        "note": "No human review performed; root repair is technical author QA."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+        "note": "B14 current-model/transform readback and documented nesting r3; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+        "note": "B14 current-model/transform readback and documented nesting r3; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+        "note": "No human review performed; root repair is technical author QA."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+        "note": "Independent B14 Descartes source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/Descartes-on-Newton/current-r3/ready.json. Technical synthetic scope; not learner validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+        "note": "Independent B14 Descartes canonical/Lite/source boundaries reviewed for current revision; frozen roles/prerequisite groups preserved. lesson-network/evidence/production/B14/reviews/Descartes-on-Newton/current-r3/ready.json"
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M79-EQ1-SOLVE",
+      "sourceBuild": "audit1-2026-10-28",
+      "sourceHashes": {
+        "src/content/written.ts": "58ee93036fb7417e8324072db5be810426a99db346c23ef0651c9525a9bfd0c6",
+        "src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+        "src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+        "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+      },
+      "actualTaskFamilies": {
+        "both": {
+          "kind": "numeric",
+          "seed": 1,
+          "phase": "guided",
+          "prompt": "5x + 9 = 2x + 12",
+          "hint": "Poista ensin pussit toiselta puolelta.",
+          "explanation": "Vähennetään 2x: 3x + 9 = 12. Vähennetään 9: 3x = 3. x = 1.",
+          "registry": {
+            "node": "M79-EQ1-SOLVE",
+            "tag": "both",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M79-INT-ADD",
+              "M79-INT-SUB",
+              "M79-INT-DIV"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M79-INT-DIV",
+              "M79-INT-SUB"
+            ],
+            "rule": "requires_arithmetic_operations_present_in_equation_item",
+            "source": [
+              "families.ts M79-EQ1-SOLVE/*"
+            ]
+          }
+        },
+        "moves": {
+          "kind": "sort",
+          "seed": 4,
+          "phase": "guided",
+          "prompt": "Yhtälö 3x + 2 = 5. Lajittele siirrot: säilyykö tasapaino?",
+          "hint": "Kysy jokaisesta siirrosta: tehdäänkö molemmille puolille täsmälleen sama?",
+          "explanation": "Yhtälö säilyy tosena, kun molemmille puolille tehdään sama lisäys, vähennys, kerto tai jako.",
+          "registry": {
+            "node": "M79-EQ1-SOLVE",
+            "tag": "moves",
+            "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+            "assumed": [
+              "M79-INT-ADD",
+              "M79-INT-SUB",
+              "M79-INT-DIV"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M79-INT-DIV",
+              "M79-INT-SUB"
+            ],
+            "rule": "requires_arithmetic_operations_present_in_equation_item",
+            "source": [
+              "families.ts M79-EQ1-SOLVE/*"
+            ]
+          }
+        },
+        "one": {
+          "kind": "numeric",
+          "seed": 7,
+          "phase": "guided",
+          "prompt": "x + 15 = 10",
+          "hint": "Vähennä 15 molemmilta puolilta.",
+          "explanation": "Vähennetään molemmilta puolilta 15: x = 10 − 15 = −5.",
+          "registry": {
+            "node": "M79-EQ1-SOLVE",
+            "tag": "one",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M79-INT-ADD",
+              "M79-INT-SUB",
+              "M79-INT-DIV"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M79-INT-DIV",
+              "M79-INT-SUB"
+            ],
+            "rule": "requires_arithmetic_operations_present_in_equation_item",
+            "source": [
+              "families.ts M79-EQ1-SOLVE/*"
+            ]
+          }
+        },
+        "two": {
+          "kind": "numeric",
+          "seed": 12,
+          "phase": "guided",
+          "prompt": "4x + 12 = 0",
+          "hint": "Poista ensin vakio, sitten jaa kertoimella.",
+          "explanation": "Vähennetään 12: 4x = −12. Jaetaan 4:lla: x = −3.",
+          "registry": {
+            "node": "M79-EQ1-SOLVE",
+            "tag": "two",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M79-INT-DIV",
+              "M79-INT-ADD",
+              "M79-INT-SUB"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M79-INT-DIV",
+              "M79-INT-SUB"
+            ],
+            "rule": "requires_arithmetic_operations_present_in_equation_item",
+            "source": [
+              "families.ts M79-EQ1-SOLVE/*",
+              "scope manifest M79-EQ1-SOLVE/two"
+            ]
+          }
+        },
+        "transfer": {
+          "kind": "numeric",
+          "seed": 1,
+          "phase": "transfer",
+          "prompt": "Pyöräilijä ajaa 18 km tunnissa. Kuinka monessa tunnissa hän ajaa 36 km? Ratkaise yhtälö 36 = 18t.",
+          "hint": "Jaa molemmat puolet 18:lla, niin t jää yksin.",
+          "explanation": "Jaetaan molemmat puolet 18:lla: t = 36 : 18 = 2.",
+          "registry": {
+            "node": "M79-EQ1-SOLVE",
+            "tag": "transfer",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M79-INT-ADD",
+              "M79-INT-SUB",
+              "M79-INT-DIV"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M79-INT-DIV",
+              "M79-INT-SUB"
+            ],
+            "rule": "requires_arithmetic_operations_present_in_equation_item",
+            "source": [
+              "families.ts M79-EQ1-SOLVE/*"
+            ]
+          }
+        }
+      },
+      "demoSummaries": [
+        {
+          "say": "Kolme pussia ja 2 kiloa on yhtä paljon kuin 14 kiloa. Otetaan molemmilta puolilta 2 kiloa, sitten jaetaan kolmeen yhtä suureen osaan. Yhtälö kirjoitetaan rivi riviltä samaan tahtiin.",
+          "kind": "animation",
+          "duration": 12.6
+        },
+        {
+          "say": "Pusseja on molemmilla puolilla. Otetaan ensin kaksi pussia pois molemmilta, sitten 1 kilo, ja lopuksi jaetaan kolmella.",
+          "kind": "animation",
+          "duration": 14.999999999999998
+        },
+        {
+          "say": "Jos yhtälössä on miinus, lisätään molemmille puolille. Tasapaino säilyy, kun molemmille puolille tehdään sama.",
+          "kind": "static",
+          "duration": null
+        }
+      ],
+      "reconciliation": "Actual one/two/both/moves and constant-speed transfer read, including signed two-step solutions. Exact rational values and constructive solving preserved; arbitrary affine equivalence explorer and numeric solution tests do not claim the learner performed balance steps. Generic zero guard corrects Lite moves explanation missing reversible nonzero condition. Default positive model shows removal then equal division, negative values only symbolic; no negative physical masses."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M79-EQ1-SOLVE",
+        "subject": "mathematics",
+        "grade_band": "7-9",
+        "topic_area": "S3 Algebra",
+        "parent_concept": "Ensimmäisen asteen yhtälö",
+        "title": "Ensimmäisen asteen yhtälön ratkaiseminen tasapainoperiaatteella",
+        "short_description": "Ensimmäisen asteen yhtälön ratkaiseminen tasapainoperiaatteella",
+        "node_kind": "procedure",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "M79-S3"
+        ],
+        "relations": [
+          {
+            "id": "M79-EQ1-FORM",
+            "relation_type": "representation_support",
+            "strength": "strong",
+            "rationale": "Yhtälön muodostaminen tukee soveltamista mutta annetun yhtälön ratkaiseminen ei edellytä sitä."
+          },
+          {
+            "id": "M-ALG-08",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "M-ALG-08 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+          },
+          {
+            "id": "M79-INT-ADD",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "M79-INT-ADD tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+          },
+          {
+            "id": "M79-INT-MUL",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "M79-INT-MUL tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+          },
+          {
+            "id": "M-ALG-06",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "Yhtälön käsite tarvitaan."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-ALG-06"
+            ],
+            "rationale": "Yhtälön tunnistaminen on hard prerequisite; operaatiotaidot ovat vahvaa/dynaamista tukea."
+          }
+        ],
+        "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "status": "candidate",
+        "dynamic_prerequisite_rule": "requires_arithmetic_operations_present_in_equation_item",
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "S3 Algebra",
+          "Ensimmäisen asteen yhtälö"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-ALG-06"
+          ],
+          "rationale": "Yhtälön tunnistaminen on hard prerequisite; operaatiotaidot ovat vahvaa/dynaamista tukea."
+        }
+      ],
+      "role": "atomic",
+      "gradeBand": "7-9",
+      "teacherObjective": "Ensimmäisen asteen yhtälön ratkaiseminen tasapainoperiaatteella",
+      "studentObjective": "Aava etsii tuntemattoman. Tee sama sallittu muutos yhtälön molemmille puolille.",
+      "additionalHardGates": [],
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "crossKCAssumptions": "Actual canonical required groups only. Supplied arithmetic/geometry support explained; no new hardgate. Dynamic arithmetic rule remains as actualregistry.",
+      "entry": "Compact body; unchanged shared presentation chrome; model/state/action within844 design target.",
+      "evidenceLimits": "Local current mathematical response only; no independent/retained/formal mastery or efficacy/human approval."
+    },
+    "extensions": {
+      "productionBatch": "B14",
+      "author": "Newton",
+      "humanReview": "not_performed",
+      "independentReview": "pending_Descartes",
+      "simulationType": "solve_exact_affine_equation_steps",
+      "limits": "Exact BigInt rational affine math; reject variable/zero division and nonlinear terms. WeakMap perroot cleanup/reenable. input/change/Check current visible values. No runtime oracle.",
+      "assetProvenance": "Supplied namedPNG unchanged; own original mathSVG.",
+      "sourcePreview": "Author isolated source-only fullcurrent shell designQA; not combined163 actualnative.",
+      "rootSelectionRepair": "B14 P2: own loader host uses preceding article; per-root owner unchanged, sibling roots independent. Native red/green regression. No domain/body/CSS/asset change.",
+      "currentVisibleReadbackRepair": "R3: all dependent actions and lifecycle pause/resume reconcile selected model; optional transform retires stale output when its own inputs change. Independent valid practice feedback unaffected. Nesting guard supports documented12 parentheses, rejects13. No math-answer/body/CSS/SVG change."
+    },
+    "contentHash": "56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+    "contentRevision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@2f69c122096f1ae815d3e597f511785d1a367c9b7817603062b351b7435cb147",
+          "note": "B14 Newton author QA is not independent approval. Descartes different-author review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@b58832b7f2d7e265c276c899b5c1baa3716ea1d3c1fd18f80b62c3905259ef36",
+          "note": "B14 per-host sibling root r2; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+          "note": "B14 current-model/transform readback and documented nesting r3; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+          "note": "Independent B14 Descartes source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/Descartes-on-Newton/current-r3/ready.json. Technical synthetic scope; not learner validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@2f69c122096f1ae815d3e597f511785d1a367c9b7817603062b351b7435cb147",
+          "note": "Not performed; no learner/efficacy/manual acceptance."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@b58832b7f2d7e265c276c899b5c1baa3716ea1d3c1fd18f80b62c3905259ef36",
+          "note": "No human review performed; root repair is technical author QA."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+          "note": "No human review performed; root repair is technical author QA."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+          "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@2f69c122096f1ae815d3e597f511785d1a367c9b7817603062b351b7435cb147",
+          "note": "B14 Newton author QA is not independent approval. Descartes different-author review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@b58832b7f2d7e265c276c899b5c1baa3716ea1d3c1fd18f80b62c3905259ef36",
+          "note": "B14 per-host sibling root r2; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+          "note": "B14 current-model/transform readback and documented nesting r3; Descartes independent delta review pending. Exact old math/body/CSS/assets reused, no author selfapproval."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "3@56b1da91aa1108591cc688921b88ea853ff3468921302260baa8f236ff4577ca",
+          "note": "Independent B14 Descartes canonical/Lite/source boundaries reviewed for current revision; frozen roles/prerequisite groups preserved. lesson-network/evidence/production/B14/reviews/Descartes-on-Newton/current-r3/ready.json"
+        }
+      ]
+    }
+  },
+  "outputHash": "6104bf3ced4b71629759f2f50458133c14ec998e6357f9ce22c678b65bf7b423",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "6104bf3ced4b71629759f2f50458133c14ec998e6357f9ce22c678b65bf7b423",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

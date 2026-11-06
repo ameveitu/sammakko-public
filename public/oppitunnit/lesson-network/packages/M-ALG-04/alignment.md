@@ -1,0 +1,3 @@
+# Lite reconciliation
+
+Lite saari2.ts M-ALG-04 teaches add/bag/sub/times/moves plus transfer using formal balance transformations. Canonical strongrelation toM-ARITH-01 explicitly permits concrete introduction before fullsymbolmastery. This introductory lesson follows that boundary and doesnotclaim that its choicepractice reproduces the broader Lite solvingcompetence. Before linking to times, offer M-MULTAB-LOW/M-MULDIV-01 support as actualfamilies.ts declares. Do not silently lower Lite outcomes or mutate it. Suggested Opus reconciliation: separate the initial unknownconcept exposure from later equationoperation demands; no current codebug inferred.

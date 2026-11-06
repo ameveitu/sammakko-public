@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "source_review_after_actual_browser_failure",
+  "at": "2026-11-03T14:34:28.964Z",
+  "reviewer": "ChatGPT root with independent browser and content review",
+  "decision": "reviewed_with_stated_limits",
+  "humanValidation": "pending",
+  "previous": "docs/ux/reviews/context-refinement-20261103.json",
+  "failedBrowserRun": {
+    "commit": "25f96b14fcafb50f113bf0802e21a8cfc9811f15",
+    "url": "https://github.com/ameveitu/Sammakko/actions/runs/41652477855",
+    "artifactId": 13238452742,
+    "receiptSha256": "c64ae129013e3c065c5cc80cb072e9f9db6f5ec67a5834e756b02be32aaef21b",
+    "passed": false,
+    "stageRows": 2828,
+    "disclosureRows": 1434,
+    "resetRows": 362,
+    "defaultStageFailures": 2,
+    "disclosureFailures": 7,
+    "resetFailures": 0,
+    "pageErrors": 0,
+    "sourceUnchanged": true
+  },
+  "findings": [
+    "The SCI-ENV-RECORD-01 stage-8 closed editor disclosure below the three-column task added 81px/50px of overflow at 1280x720/1024x768.",
+    "Seven ADD/MULTAB disclosure measurements ran before the queued native toggle transferred the source. Dynamic control indices changed between scrolling and measurement. Expanded pre-transfer overflow was zero, while the later screenshot contained the tall model."
+  ],
+  "changes": [
+    "Keep the notebook editor and existing hint in one responsive support row within the presentation task; open support spans the available width. Preserve input controls, all model content and a single lesson scrolling surface.",
+    "Wait for actual context source attachment and the existing two-frame reveal before measuring controls. Wait for borrowed source removal after closing before reading the next index. Preserve every existing assertion, timeout, lesson and browser scope.",
+    "Bind lesson-flow.js in the broad browser receipt alongside the other runtime sources."
+  ],
+  "sourceSha256": {
+    "public/oppitunnit/lesson-network/packages/SCI-ENV-RECORD-01/body.html": "9655ce144cb900c8d0002ae517cc79fb8c7c2b35284a3aab3a622cdeae9bf5db",
+    "public/oppitunnit/lesson-network/packages/SCI-ENV-RECORD-01/lesson.css": "e4f01001ba533008e6469783255c2f709898f4032ebfd08bc376f7b49e460005",
+    "public/oppitunnit/lesson-network/packages/SCI-ENV-RECORD-01/lesson.mjs": "99a51567a79916729ae48bdd264212bfb8feffb7e49426e0794af4c04e4fb76b",
+    "docs/releases/launch/lessons/batch-browser.mjs": "1f2833639c1d162ac2b2743188bd72600f5f428143aecb2108db76ec5ddbdd32"
+  },
+  "from": "15@b0eaaf580d24ca3a5f3e79a16fe2fd2902a01bb70abf36937390b2e729398676",
+  "to": "16@2c6e895fb01e88c199d437703b46402e3d65458115dfd31e95dbc77831967d4c",
+  "validation": "Source projection, current source-bound review checks and focused content tests are rerun before push. The corrected candidate must pass the complete existing GitHub Actions pipeline, including the new 96 publication browser cases; the failed run is not success evidence."
+}

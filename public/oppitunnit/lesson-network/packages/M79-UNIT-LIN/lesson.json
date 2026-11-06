@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M79-UNIT-LIN",
+  "revision": 15,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "initial.svg",
+      "sha256": "8b83e5d3d6d529deee371f9cf8f50a11641d0b61f11ad807173c1cc0df237d6a"
+    },
+    {
+      "path": "example.svg",
+      "sha256": "aafb198597d2041370496ac74ff5d3d05ea0e941ff88dbc515d999618009a68d"
+    },
+    {
+      "path": "transfer.svg",
+      "sha256": "37b8976601ba21a9edf1f45a210bff937ba3e6180ce9bb5c2a72342af02ceb70"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "30e446b75b3b2145c814595e904262c8989616b464812fd4eb62e8d00c7d8562"
+    },
+    {
+      "path": "shared/loikka/map.png",
+      "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "title": "NIST Guide to the SI — Chapter4 / Table5",
+      "organization": "NIST",
+      "accessed": "2026-10-29",
+      "inspected": "SI decimal prefix factors from kilo through milli; metre as linear length, with NIST copyright page separately inspected.",
+      "usageRestrictions": "NIST employee works generally outside US copyright under17USC105; foreign copyright and third-party/SRD exceptions remain. https://www.nist.gov/open/license. Only numeric definitions used; no tables, logos or prose copied; not a blanket worldwide licence.",
+      "adopted": "Convert by exact powers of10 while preserving the same length. Reject area, volume, mass and time units in this finite linear-unit model.",
+      "limitations": "Definitions corroborate units, not pedagogy efficacy. No all-prefix or arbitrary dimension support claimed."
+    },
+    {
+      "url": "https://learning.cambridgeinternational.org/classroom/course/section.php?id=32655",
+      "title": "Unit conversions — teaching unit overview",
+      "organization": "Cambridge University Press & Assessment",
+      "accessed": "2026-10-29",
+      "inspected": "Public guest overview/video transcript on proportional reasoning versus memorised conversion rules; copyright footer.",
+      "usageRestrictions": "Page footer ©2026 Cambridge University Press & Assessment; no reuse licence observed. Terms URL https://www.cambridgeinternational.org/footer/terms-and-conditions/ was inaccessible; record limitation. Only independent conceptual takeaway; no source task, transcript, worksheet or illustration copied.",
+      "adopted": "Keep the measured quantity visible and justify a conversion by its multiplicative relationship; include reverse verification.",
+      "limitations": "Guest overview only, no claims to having run embedded video or read its complete teaching pack. No imported lesson efficacy or new prerequisite gate."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@a1791fb5170f9fd6f60a86ee3635450d64960ef1a147ac5480201321fbe76eba",
+      "note": "Author source freeze awaits different-author independent review. No author selfapproval."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@a1791fb5170f9fd6f60a86ee3635450d64960ef1a147ac5480201321fbe76eba",
+      "note": "Author source freeze awaits different-author independent review. No author selfapproval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@a1791fb5170f9fd6f60a86ee3635450d64960ef1a147ac5480201321fbe76eba",
+      "note": "No human/learner/efficacy/manualAXS approval."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@a56ef580d459f8a4cc927403ab06457406c8e50a23efb3473b60e8e2f9aa324f",
+      "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@a56ef580d459f8a4cc927403ab06457406c8e50a23efb3473b60e8e2f9aa324f",
+      "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@a56ef580d459f8a4cc927403ab06457406c8e50a23efb3473b60e8e2f9aa324f",
+      "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@060b6e6e8028b905fe92e7d52dd547843e45f0f4691bdf1d84e360d29d60f232",
+      "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@060b6e6e8028b905fe92e7d52dd547843e45f0f4691bdf1d84e360d29d60f232",
+      "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@060b6e6e8028b905fe92e7d52dd547843e45f0f4691bdf1d84e360d29d60f232",
+      "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@060b6e6e8028b905fe92e7d52dd547843e45f0f4691bdf1d84e360d29d60f232",
+      "note": "Independent B14 parent source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/parent-on-Descartes/review-closed.json. Technical synthetic scope; not learner validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@060b6e6e8028b905fe92e7d52dd547843e45f0f4691bdf1d84e360d29d60f232",
+      "note": "Independent B14 parent canonical/Lite/source boundaries reviewed for current revision; frozen roles/prerequisite groups preserved. lesson-network/evidence/production/B14/reviews/parent-on-Descartes/review-closed.json"
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@060b6e6e8028b905fe92e7d52dd547843e45f0f4691bdf1d84e360d29d60f232",
+      "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@9d74f2fddf05acfa375d8ea1d067ee237b9e2e8c986abe87b93c594cc39d15b6",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@9d74f2fddf05acfa375d8ea1d067ee237b9e2e8c986abe87b93c594cc39d15b6",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@9d74f2fddf05acfa375d8ea1d067ee237b9e2e8c986abe87b93c594cc39d15b6",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@6989ea68a6ecdc4711e7a9157be7a06ea42517ca8ecf48c8e68a792fd48921a7",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@6989ea68a6ecdc4711e7a9157be7a06ea42517ca8ecf48c8e68a792fd48921a7",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@6989ea68a6ecdc4711e7a9157be7a06ea42517ca8ecf48c8e68a792fd48921a7",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@701095c3f2546fa334c8561702a674fc650c7638533ddab93345114d4e07ede8",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@701095c3f2546fa334c8561702a674fc650c7638533ddab93345114d4e07ede8",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@701095c3f2546fa334c8561702a674fc650c7638533ddab93345114d4e07ede8",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@f758f6eab1a9550283f685e7e68aec2818f16e13b66b173075b8fe707e240519",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@f758f6eab1a9550283f685e7e68aec2818f16e13b66b173075b8fe707e240519",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@f758f6eab1a9550283f685e7e68aec2818f16e13b66b173075b8fe707e240519",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@7601aeeb90a51ff5d0da64e513b999991a041d179efa1cd7e45393d062af8901",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@7601aeeb90a51ff5d0da64e513b999991a041d179efa1cd7e45393d062af8901",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@7601aeeb90a51ff5d0da64e513b999991a041d179efa1cd7e45393d062af8901",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@f1d81fc3c23916a77730dea59813e8a778373131796e3e6a1018c0ca5f66e744",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@f1d81fc3c23916a77730dea59813e8a778373131796e3e6a1018c0ca5f66e744",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@f1d81fc3c23916a77730dea59813e8a778373131796e3e6a1018c0ca5f66e744",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@726c36ca2f061fc3c0f1f08a0ad548f6dfecb744e4e6c47c1afac10f6171f276",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@726c36ca2f061fc3c0f1f08a0ad548f6dfecb744e4e6c47c1afac10f6171f276",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@726c36ca2f061fc3c0f1f08a0ad548f6dfecb744e4e6c47c1afac10f6171f276",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@78bd8ccdf6a7ff2459c97bc10f062ca1ed9ac83f578f83c033b11938cc1c0771",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@78bd8ccdf6a7ff2459c97bc10f062ca1ed9ac83f578f83c033b11938cc1c0771",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@78bd8ccdf6a7ff2459c97bc10f062ca1ed9ac83f578f83c033b11938cc1c0771",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@e8d9296c33de17457f3fa1b154149d02ad1db3e4b8bee6bb6922b2f16e75c43f",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@e8d9296c33de17457f3fa1b154149d02ad1db3e4b8bee6bb6922b2f16e75c43f",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@e8d9296c33de17457f3fa1b154149d02ad1db3e4b8bee6bb6922b2f16e75c43f",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@4761cf7b8346a94b38c0643698b65170b908263a9cb0526817fb97089dd4b970",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@4761cf7b8346a94b38c0643698b65170b908263a9cb0526817fb97089dd4b970",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Sama pituus varmennetaan myös takaisinmuunnoksella. Täysi yksikköketju perustelee kertoimen; 0 ja tarkka 1/3 säilyvät rajattuina lisätapauksina. Oma muunnoskysymys ja vastaus ovat yhdessä, vapaata muunninta käytetään tietoisena tukena. Pinta-/kuutiokertoimiin ei yleistetä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@4761cf7b8346a94b38c0643698b65170b908263a9cb0526817fb97089dd4b970",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M79-UNIT-LIN",
+    "sourceBuild": "lite181-2026-10-27 immutable production-181-v2 snapshot",
+    "sourceRevision": "audit1-2026-10-28",
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "authority/production-181-v2/lite/src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+      "authority/production-181-v2/lite/src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+      "authority/production-181-v2/lite/src/content/neganim.ts": "38429c827f5637f57b054cade85b40cc9f36396e27cee3d79e99e526b89766a4",
+      "authority/production-181-v2/lite/src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/features.ts": "8ddef5451be9d011297f5d32b1ab0d869a1e132d608bd30f679b8e2d900884c5",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+    },
+    "families": [
+      "cmm",
+      "transfer",
+      "stairs",
+      "kmm",
+      "mcm",
+      "mmm"
+    ],
+    "inventory": {
+      "goal": "Opit muuntamaan pituusyksiköitä desimaaliluvuilla: askel yksikköportaissa siirtää pilkkua yhden paikan.",
+      "intro": "Pituusyksiköt desimaaliluvuilla: pilkku siirtyy, kun yksikkö vaihtuu.",
+      "reward": "Muunnat pituuksia desimaaleilla!",
+      "revision": "audit1-2026-10-28",
+      "demos": [
+        {
+          "say": "Yksikköportaat: km, hm, dam, m, dm, cm, mm. Jokainen askel alas kertoo kymmenellä. Metristä senttimetriin on kaksi askelta alas, joten pilkku siirtyy kaksi paikkaa oikealle: 1,25 m = 125 cm.",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function"
+        },
+        {
+          "say": "Ylöspäin jaetaan. Millimetristä metriin on kolme askelta ylös: pilkku siirtyy kolme paikkaa vasemmalle, ja eteen tulee nolla: 450 mm = 0,45 m.",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function"
+        },
+        {
+          "say": "Kilometristä metriin on kolme askelta alas. Numeroita ei riitä, joten tyhjiin paikkoihin tulee nollia: 2,3 km = 2300 m.",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function"
+        }
+      ],
+      "items": {
+        "cmm": {
+          "say": "5 cm = □ m",
+          "task": {
+            "kind": "numeric",
+            "answer": 0.05,
+            "unit": "m",
+            "whyAt": {
+              "500": "Pilkku siirtyi väärään suuntaan. Metrejä tulee vähemmän kuin senttejä.",
+              "0.5": "Tuo on desimetreinä. Metriin on kaksi askelta ylös.",
+              "0.005": "Siirsit pilkkua kolme paikkaa. Senttimetristä metriin on vain kaksi askelta."
+            }
+          },
+          "hint": "Senttimetristä metriin on kaksi askelta ylös: pilkku kaksi paikkaa vasemmalle.",
+          "explain": "5 : 100 = 0,05.",
+          "registry": {
+            "node": "M79-UNIT-LIN",
+            "tag": "cmm",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-DEC-08",
+              "M-UNIT-02"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-DEC-08",
+              "M-UNIT-02"
+            ],
+            "source": [
+              "families.ts M79-UNIT-LIN/*"
+            ]
+          }
+        },
+        "transfer": {
+          "say": "Kumpi matka on pidempi: 0,6 km vai 550 m?",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "text": "0,6 km"
+              },
+              {
+                "text": "Yhtä pitkät"
+              },
+              {
+                "text": "550 m"
+              }
+            ],
+            "answer": 0,
+            "why": [
+              null,
+              "0,6 km = 600 m, ei 550 m.",
+              "0,6 km = 600 m, joten 550 m on lyhyempi."
+            ],
+            "cols": 1
+          },
+          "hint": "Muunna ensin 0,6 km metreiksi: kolme askelta alas.",
+          "explain": "0,6 km = 600 m > 550 m.",
+          "registry": {
+            "node": "M79-UNIT-LIN",
+            "tag": "transfer",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [
+              "M-DEC-08",
+              "M-UNIT-02"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-DEC-08",
+              "M-UNIT-02"
+            ],
+            "source": [
+              "families.ts M79-UNIT-LIN/*"
+            ]
+          }
+        },
+        "stairs": {
+          "say": "Porraspeli: millä kertoimella muunnos tehdään? Vedä oikea kerroin jokaiseen muunnokseen.",
+          "task": {
+            "kind": "place",
+            "slots": [
+              {
+                "id": "s0",
+                "text": "dm → cm"
+              },
+              {
+                "id": "s1",
+                "text": "km → m"
+              },
+              {
+                "id": "s2",
+                "text": "mm → m"
+              }
+            ],
+            "tokens": [
+              {
+                "id": "v0",
+                "text": "· 10"
+              },
+              {
+                "id": "x",
+                "text": ": 100"
+              },
+              {
+                "id": "v2",
+                "text": ": 1000"
+              },
+              {
+                "id": "v1",
+                "text": "· 1000"
+              }
+            ],
+            "answer": {
+              "s0": "v0",
+              "s1": "v1",
+              "s2": "v2"
+            },
+            "why": {
+              "s0": "Yksi askel alas: · 10.",
+              "s1": "km → hm → dam → m: kolme askelta alas, · 1000.",
+              "s2": "mm → cm → dm → m: kolme askelta ylös, : 1000."
+            }
+          },
+          "hint": "Laske askeleet portaissa km, hm, dam, m, dm, cm, mm. Alas kerrotaan, ylös jaetaan; joka askel on 10.",
+          "explain": "dm → cm: · 10, km → m: · 1000, mm → m: : 1000.",
+          "registry": {
+            "node": "M79-UNIT-LIN",
+            "tag": "stairs",
+            "outcome": "sijoittaa osat oikeille paikoille",
+            "assumed": [
+              "M-DEC-08",
+              "M-UNIT-02"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-DEC-08",
+              "M-UNIT-02"
+            ],
+            "source": [
+              "families.ts M79-UNIT-LIN/*"
+            ]
+          }
+        },
+        "kmm": {
+          "say": "1,1 km = □ m",
+          "task": {
+            "kind": "numeric",
+            "answer": 1100,
+            "unit": "m",
+            "whyAt": {
+              "11": "Siirsit pilkkua vain yhden paikan. Kilometrissä on 1000 metriä.",
+              "110": "Siirsit pilkkua vain kaksi paikkaa. Kilometristä metriin on kolme askelta.",
+              "0.0011": "Pilkku siirtyi väärään suuntaan. Metrejä tulee enemmän kuin kilometrejä."
+            }
+          },
+          "hint": "Kilometristä metriin on kolme askelta alas (km → hm → dam → m). Täytä tyhjät paikat nollilla.",
+          "explain": "1 km = 1000 m: 1,1 × 1000 = 1100.",
+          "registry": {
+            "node": "M79-UNIT-LIN",
+            "tag": "kmm",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-DEC-08",
+              "M-UNIT-02"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-DEC-08",
+              "M-UNIT-02"
+            ],
+            "source": [
+              "families.ts M79-UNIT-LIN/*"
+            ]
+          }
+        },
+        "mcm": {
+          "say": "1,19 m = □ cm",
+          "task": {
+            "kind": "numeric",
+            "answer": 119,
+            "unit": "cm",
+            "whyAt": {
+              "1190": "Siirsit pilkkua kolme paikkaa: se on millimetreiksi. Senttimetriin on kaksi askelta.",
+              "11.9": "Siirsit pilkkua vain yhden paikan. Metristä senttiin on kaksi askelta (m → dm → cm).",
+              "0.0119": "Pilkku siirtyi väärään suuntaan. Senttimetrejä tulee enemmän kuin metrejä."
+            }
+          },
+          "hint": "Metristä senttimetriin on kaksi askelta alas: pilkku kaksi paikkaa oikealle.",
+          "explain": "1 m = 100 cm: 1,19 × 100 = 119.",
+          "registry": {
+            "node": "M79-UNIT-LIN",
+            "tag": "mcm",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-DEC-08",
+              "M-UNIT-02"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-DEC-08",
+              "M-UNIT-02"
+            ],
+            "source": [
+              "families.ts M79-UNIT-LIN/*"
+            ]
+          }
+        },
+        "mmm": {
+          "say": "180 mm = □ m",
+          "task": {
+            "kind": "numeric",
+            "answer": 0.18,
+            "unit": "m",
+            "whyAt": {
+              "18": "Tuo on senttimetreinä. Metriin on vielä kaksi askelta ylös.",
+              "180000": "Pilkku siirtyi väärään suuntaan. Metrejä tulee vähemmän kuin millimetrejä.",
+              "1.8": "Siirsit pilkkua vain kaksi paikkaa: se on desimetreiksi. Metriin on kolme askelta (mm → cm → dm → m)."
+            }
+          },
+          "hint": "Millimetristä metriin on kolme askelta ylös: pilkku kolme paikkaa vasemmalle.",
+          "explain": "1 m = 1000 mm: 180 : 1000 = 0,18.",
+          "registry": {
+            "node": "M79-UNIT-LIN",
+            "tag": "mmm",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-DEC-08",
+              "M-UNIT-02"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-DEC-08",
+              "M-UNIT-02"
+            ],
+            "source": [
+              "families.ts M79-UNIT-LIN/*"
+            ]
+          }
+        }
+      }
+    },
+    "comparison": "Retain mcm/mmm/kmm/cmm/stairs/transfer plus three stairScene demos. Extend with exact rational quantities, reverse verification and optional unsupported-unit rejection. Same-unit chain km/hm/dam/m/dm/cm/mm only; no dynamic feature expansion to mass/time/volume. Supply factor relationship instead of relying only on decimal-shift memory.",
+    "reconciliationForOpus": [
+      "COVERAGE omits stairs/place and actual three demos.",
+      "Actual registry M79-UNIT-LIN/* assumes M-DEC-08 and M-UNIT-02. Canonical hard prerequisite is onlyM-UNIT-02; decimal notation and exact factors are provided as support, not a new global gate.",
+      "features.ts broad conversion regexes are detection heuristics, not authority to teach time/mass/volume/cubic conversions here.",
+      "No rounding of 1/3m: exact output1000/3mm. A decimal approximation is labelled different."
+    ],
+    "runtimeOverlay": "index.ts registers ALGEBRA79_NODES, fills goals, sets revisionpolicy; no SIMS entry for these3. Actual family() resolves defaults and coverage+declarations; registry is not new canonical prerequisite authority.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/algebra79.ts": "dba08bcb491473c1e29dde39e66c894631fc4ad96ddee5339eef2a2dbf7a1b6b",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/features.ts": "674518dd106c0bfa3f379e19c95a557de2eac361f86ec097eb2598dcbe86b181",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/neganim.ts": "38429c827f5637f57b054cade85b40cc9f36396e27cee3d79e99e526b89766a4",
+        "src/content/phyanim.ts": "419fc83a164c4799543edf6f4dc72021abe3d6ee5fc74d719b70d53243bab7ad",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6"
+      },
+      "historicalNonLiteReferences": [
+        "reference/inputs/canonical-690-graph.json"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M79-UNIT-LIN",
+      "subject": "mathematics",
+      "grade_band": "7-9",
+      "topic_area": "S5 Geometria",
+      "parent_concept": "Yksiköt",
+      "title": "Pituusyksiköiden muunnosten varmentaminen ja laajentaminen",
+      "short_description": "Pituusyksiköiden muunnosten varmentaminen ja laajentaminen",
+      "node_kind": "procedure",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "M79-S5"
+      ],
+      "relations": [
+        {
+          "id": "M-UNIT-02",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-UNIT-02 on ydinesitieto tälle osaamiskohteelle."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-UNIT-02"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate",
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "S5 Geometria",
+        "Yksiköt"
+      ]
+    },
+    "gradeBand": "7-9",
+    "role": "atomic",
+    "teacherObjective": "Muuntaa ja varmentaa saman pituuden km…mm-yksiköissä kertomalla tai jakamalla tarkalla yksikkösuhteella; säilyttää suureen ja tarkistaa takaisin.",
+    "childGoal": "Varmennan saman pituuden eri yksiköissä.",
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-UNIT-02"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "requiredPrerequisites": [
+      {
+        "id": "M-UNIT-02",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-UNIT-02 on ydinesitieto tälle osaamiskohteelle."
+      }
+    ],
+    "strongSupport": [],
+    "additionalHardGates": [],
+    "scope": "Linear nonnegative lengths only; unitskm,hm,dam,m,dm,cm,mm. Optional converter source value0…1000000 inclusive, decimal numerator max18digits/9decimalplaces or fraction max18digits in numerator and denominator, totaltext≤96. Exact reducedBigInt rational truth, not IEEE rounded answers. No scientific notation, expressions, approximate decimals or dimension inference.",
+    "interaction": "Original finite models with independent optional stepping/play/pause/reset/end; direct structured response, no mandatory model/support. Visible prompt and values reread on input/change and everyCheck. Model changes do not erase unrelated task feedback. Invalid selection is rejected without default substitution.",
+    "feedback": "Task or visible answer edits invalidate that task verdict. Model-only/support/view changes preserve unrelated task result. Exact dense primitive-string arrays; missing/holes/undefined/symbol/extra properties rejected. Graph row order freely permutes equivalent pointsets. Optional converter has separate current-premise feedback.",
+    "lifecycle": "Per-root WeakMap owner; replacement disposes old3listeners and owned interval; old API inert, paused reset stays disabled; no storage/network/mastery/history.",
+    "evidenceLimits": "Author implementation and synthetic local checks; not independent content approval, human/learner or efficacy validation. Process practice constructs requested finite graph points; not full graphing mastery. Integration practices ORDER+DIST jointly, no atom mastery inference.",
+    "assetProvenance": "Original mathematical SVG and Finnish text. Exact unmodified user-supplied v2 PNG, not redrawn or asserted hand-drawn. Static named mascot outside measurement geometry.",
+    "curriculumVsDesign": "Frozen canonical exact role/sourcebasis/groups retained. Foreignprimarymaterial corroborates ideas and definitions, not new Finnish OPS requirement or targetlearner evidence."
+  },
+  "extensions": {
+    "researchNote": "research.md",
+    "alignmentNote": "alignment.md",
+    "tests": "tests.mjs",
+    "author": "Descartes",
+    "batch": "B14",
+    "authorScope": "Only assigned new3 source; all151 sources/shared/generated/status/mainbuild/Git remain parent-owned.",
+    "reviewStatus": "Independent parent review pending exact sourcefreeze; no selfapproval.",
+    "feedbackContractSHA256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+    "browserQA": "browser-qa.mjs",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B09",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

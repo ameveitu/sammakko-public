@@ -1,0 +1,114 @@
+<link rel="stylesheet" href="lesson.css"><div class="b10-route">
+
+
+
+
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/loikka/map.png" width="80" height="80" alt="Loikka katsoo reittikarttaa."><p>Loikka kokeilee pitkää askelta.</p></div><p data-entry-goal><strong>Tunnistan samanpituiset askeleet ja jatkan lukujonoa.</strong></p>
+</section>
+
+
+
+
+
+
+
+
+<section data-route-lab>
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<section class="explore"><h2>Sama askel joka kerta</h2><div class="diagram" data-model></div><p data-caption>Valitse askel.</p><div class="actions" data-entry-primary><button type="button" data-action="step">Yksi askel</button></div><details data-route-tools data-lesson-role="teaching-step"><summary>Reitti ja toisto</summary><p>Paina yhtä askelta tai valitse toinen reitti. Saat kokeilla heti.</p><label>Reitti<select data-model-case><option value="even">Nollasta kaksi kerrallaan</option><option value="odd">Yhdestä kaksi kerrallaan</option><option value="five">Viisi kerrallaan</option><option value="ten">Kymmenen kerrallaan</option><option value="three">Kahdesta kolme kerrallaan</option></select></label><div class="actions"><button type="button" data-action="play">Toista reitti</button><button type="button" data-action="stop">Pysäytä</button><button type="button" data-action="start">Alkuun</button></div><label hidden><input type="checkbox" data-groups> Näytä samanlaiset merkkiryhmät</label><div class="diagram" data-model-groups hidden></div></details></section>
+</section>
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<h3>Kaksi kerrallaan myös yhdestä</h3><p><strong>1, 3, 5, 7, 9.</strong> Jokainen luku on kaksi edellistä suurempi. Tasavälinen jono voi alkaa muualtakin kuin nollasta.</p><img src="example.svg" width="360" height="170" alt="Yhtä pitkät kahden yksikön askeleet lukusuoralla: 1, 3, 5, 7, 9.">
+</section>
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<h3>Kasvava jono ei aina ole tasavälinen</h3><p><strong>1, 2, 4, 7</strong> kasvaa ensin yhden, sitten kaksi ja sitten kolme. Askeleet eivät ole samanpituiset. <strong>0, 5, 10, 15, 20</strong> taas kasvaa joka kerta viisi.</p><img src="transfer.svg" width="360" height="170" alt="Lukusuoralla yhtä pitkät viiden askeleet nollasta lukuun 20.">
+</section>
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Mieti:</strong> jono on 2, 5, 8. Onko seuraava luku 9 vai 11?</p><details data-lesson-role="answer"><summary>Katso ajatus</summary><p>11. Jokainen askel lisää kolme, joten kahdeksasta jatketaan kolme eteenpäin. Pelkkä seuraavan suuremman luvun valitseminen ei säilytä sääntöä.</p></details>
+</section>
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step" data-audience-coupled data-audience-columns>
+<div data-visual-column><h2>Kokeile oma vastaus</h2><label>Tehtävä<select data-task><option value="even">0, 2, 4, …</option><option value="odd">1, 3, 5, …</option><option value="five">5, 10, 15, …</option><option value="ten">0, 10, 20, …</option><option value="rule">Etsi askelen koko</option><option value="unequal">Kasvavatko samoin?</option><option value="equal">Tarkista tasavälisyys</option><option value="gap">Uuden reitin aukko</option></select></label><p data-question data-lesson-role="question">Joka askel on kaksi. Kirjoita kaksi seuraavaa lukua.</p><div class="diagram" data-given></div></div>
+<div data-response-column><div data-number-fields class="fields"><label>Vastaus tai seuraava luku<input data-value="0" type="text" inputmode="numeric" maxlength="2" autocomplete="off"></label><label data-second-wrap>Sitä seuraava luku<input data-value="1" type="text" inputmode="numeric" maxlength="2" autocomplete="off"></label></div><label data-yesno-wrap hidden>Vastauksesi<select data-yesno><option value="">Valitse</option><option value="yes">Kyllä</option><option value="no">Ei</option></select></label><div data-hit-wrap class="choices" hidden><label><input type="checkbox" data-hit="1"> 1</label><label><input type="checkbox" data-hit="2"> 2</label><label><input type="checkbox" data-hit="3"> 3</label><label><input type="checkbox" data-hit="4"> 4</label><label><input type="checkbox" data-hit="5"> 5</label><label><input type="checkbox" data-hit="6"> 6</label><label><input type="checkbox" data-hit="7"> 7</label><label><input type="checkbox" data-hit="8"> 8</label><label><input type="checkbox" data-hit="9"> 9</label><label><input type="checkbox" data-hit="10"> 10</label><label><input type="checkbox" data-hit="11"> 11</label><label><input type="checkbox" data-hit="12"> 12</label></div><button type="button" data-action="check">Tarkista</button><output data-feedback data-verdict="neutral" aria-live="polite">Tarkista, kun olet valmis.</output><details data-lesson-role="hint"><summary>Apua</summary><p>Katso kahta peräkkäistä lukua. Kuinka monta yhden väliä niiden väliin jää? Tarkista sama väli seuraavassakin kohdassa. Malli ja säännön sanat saa pitää näkyvissä.</p></details></div>
+</section>
+
+
+
+
+<noscript data-lesson-role="metadata"><p>Vuorovaikutteinen kokeilu tarvitsee JavaScriptin. Voit tutkia yllä olevia esimerkkejä ja vastata paperille. Tarkistettu paikallinen vastaus ei tallennu henkilöhistoriaan.</p></noscript></section>
+
+
+
+
+
+
+
+
+<section data-teaching-step="10" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Tutki lisää</summary><p>Vertaa reittejä 0, 2, 4, 6 ja 1, 3, 5, 7. Askelen koko on sama, mutta lähtöpaikka on eri. Kaikki tasaväliset jonot eivät ole saman luvun nollasta alkavia monikertajonoja.</p></details>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="11" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lopuksi:</strong> Jatka samalla askeleella: 3, 6, 9, … Mikä on askelen koko?</p>
+</section>
+
+
+
+
+
+
+<details class="teacher" data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p>Vaihda reittiä: mikä pysyy samana?</p><p class="smallnote">Lukusuoran yhden numerovälin pituus pysyy samana. Osoitin näyttää paikan; liike ei mittaa fyysistä hyppyä. Ei automaattista toistoa.</p><p>Luokat 1–2. Vaadittu esitieto on M-NUM-07. Numerot, askelsääntö ja mallin sanat annetaan tässä; ei uutta puhe-, esineiden nimeämis- tai laskutoimitusmerkkien porttia. Aikuinen voi lukea. Tuki ja malli ovat vapaaehtoisia.</p><p>Piirrä yhden välein numeroitu polku. Näytä yhtä suuri kahden tai viiden väli eri kohdista. Tee myös jono, jossa väli vaihtuu. Tarkista välit, älä vain sitä, kasvavatko luvut.</p><p>Tuettu tunnistus ja kahden luvun jatko eivät osoita kaikkien lukujonojen sääntöjen hallintaa tai kertotaulumuistia. Tässä tasavälisyys tarkoittaa samaa positiivista lisäystä; ei kaikkia matemaattisia jonoja eikä negatiivisia lukuja. Paikallinen harjoitus ei myönnä formaalia peli- tai prosessihallintaa, henkilökohtaista osaamismerkintää tai oppilaan itsenäisyysarviota. Ei tallennusta, aikarajaa tai vaikuttavuusväitettä.</p></details></div>

@@ -1,0 +1,8 @@
+# ENV-PHY-MOTION-01 — actual Lite/canonical reconciliation
+
+Complete science.ts773–845 NodeSpec: two duoScene demos, which/faster/still/describe and start-from-rest strip transfer. Read motion/swimScene/duoScene helpers127–265 and motionsims75–84 overlay with index SIM_SHARE guided.6/independent.35/retrieval.5/transfer0. Explicit audit1 persists. Audit558–561 read; COVERAGE omits faster and keeps older metadata. We preserve simultaneous observation and change, but actually combine two report fields per lane in one event, including return-to-start and different constant speeds. Playback precedes optional static reminder; no static-only motion inference, force cause, speed arithmetic or time-skill hard gate. No shared legacy semantic-choice helper extension.
+
+Canonical node and exact required groups are retained in metadata; other509 scaffolds untouched. Source hashes bind the actual immutable reading. Index GOALS fallback and per-node audit revision distinguished from stale COVERAGE. PHY wildcard incidental decimal metadata read; other targets have no own family declaration. Model/record numbers are supplied examples, not observations made by the learner. Any proposed Lite correction is only recorded here for Opus; Lite is not edited.
+
+Integration requires both frozen atomic ancestors in one AND group; our report couples observed movement and change for each same lane/event without formal mastery claims.
+Both semantic commit types, strict selector domains, exact/dense data and visible-answer checking belong to this module. Support/replay/reordering preserves valid responses when meaning is unchanged. Different independent source/pedagogy/native review and actual main integration remain pending.

@@ -1,0 +1,718 @@
+{
+  "kind": "verified_input_facts_for_assignment_not_generated_site_results",
+  "canonical_sha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "kc_count": 690,
+  "catalogue_counts": [
+    {
+      "catalogue": "Math_KC_Catalog_1_6_v0.4",
+      "count": 266
+    },
+    {
+      "catalogue": "Math_KC_Catalog_7_9_v0.2",
+      "count": 173
+    },
+    {
+      "catalogue": "Science_KC_Foundation_1_6_v0.2",
+      "count": 63
+    },
+    {
+      "catalogue": "Physics_KC_Catalog_7_9_v0.2",
+      "count": 95
+    },
+    {
+      "catalogue": "Chemistry_KC_Catalog_7_9_v0.2",
+      "count": 93
+    }
+  ],
+  "subjects": {
+    "mathematics": 439,
+    "science": 63,
+    "physics": 95,
+    "chemistry": 93
+  },
+  "node_kinds": {
+    "foundation": 8,
+    "process_skill": 80,
+    "representation": 57,
+    "integration": 72,
+    "concept": 288,
+    "procedure": 185
+  },
+  "mastery_roles": {
+    "atomic": 479,
+    "process": 128,
+    "integration": 72,
+    "operational": 10,
+    "placeholder": 1
+  },
+  "relation_count": 1287,
+  "relations_by_type_strength": {
+    "process_support:strong": 61,
+    "representation_support:strong": 42,
+    "prerequisite:required": 859,
+    "prerequisite:strong": 307,
+    "safety_gate:required": 15,
+    "prerequisite:helpful": 3
+  },
+  "cross_subject_relations": 127,
+  "prerequisite_group_count": 599,
+  "nodes_with_groups": 597,
+  "all_of_count": 587,
+  "any_of_count": 12,
+  "multi_group_ids": [
+    "M-ALG-08",
+    "M-SCALE-02"
+  ],
+  "dynamic_rule_count": 18,
+  "dynamic_entry_count": 48,
+  "foundation_entry_count": 7,
+  "zero_required_indegree_flag_count": 93,
+  "no_recorded_top_relations_count": 10,
+  "no_direct_dependents_count": 178,
+  "dangling_ids": [],
+  "duplicate_source_target_pairs": 0,
+  "self_edges": 0,
+  "required_prerequisite_only_acyclic": true,
+  "full_network_is_acyclic": false,
+  "full_network_cyclic_components": [
+    [
+      "CHEM79-ATOM-01",
+      "CHEM79-ELEMENT"
+    ]
+  ],
+  "lite181_count": 181,
+  "outside_lite181_count": 509,
+  "navigation_fixtures": [
+    {
+      "kcId": "M-NUM-01",
+      "topRelations": [
+        {
+          "id": "M-NUM-STABLE-ORDER",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-NUM-01 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-STABLE-ORDER vaaditaan kokonaisuuden hallintaan."
+        },
+        {
+          "id": "M-NUM-1TO1",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-NUM-01 on v0.2:ssa integraationoodi; atominen alitaito M-NUM-1TO1 vaaditaan kokonaisuuden hallintaan."
+        }
+      ],
+      "bottomRelations": [
+        {
+          "sourceKCId": "M-NUM-01",
+          "targetKCId": "M-NUM-02",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "M-NUM-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+          "sourceRelationIndex": 0
+        },
+        {
+          "sourceKCId": "M-NUM-01",
+          "targetKCId": "M-MEAS-01",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "M-NUM-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+          "sourceRelationIndex": 1
+        }
+      ],
+      "prerequisiteGroups": [
+        {
+          "all_of": [
+            "M-NUM-STABLE-ORDER",
+            "M-NUM-1TO1"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "nodeKind": "integration",
+      "masteryRole": "integration",
+      "entryRole": "none",
+      "foundationEntry": false,
+      "dynamicRule": null,
+      "integrationOf": [
+        "M-NUM-STABLE-ORDER",
+        "M-NUM-1TO1"
+      ],
+      "splitChildren": [
+        "M-NUM-STABLE-ORDER",
+        "M-NUM-1TO1"
+      ]
+    },
+    {
+      "kcId": "M-MEAS-00",
+      "topRelations": [
+        {
+          "id": "M-TH-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Yleinen vertailutaito tukee mitattavien ominaisuuksien suoraa vertaamista, mutta ei ole hard gate."
+        }
+      ],
+      "bottomRelations": [
+        {
+          "sourceKCId": "M-MEAS-00",
+          "targetKCId": "M-MEAS-01",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto.",
+          "sourceRelationIndex": 0
+        },
+        {
+          "sourceKCId": "M-MEAS-00",
+          "targetKCId": "M-MEAS-02",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto.",
+          "sourceRelationIndex": 0
+        },
+        {
+          "sourceKCId": "M-MEAS-00",
+          "targetKCId": "M-MEAS-05",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto.",
+          "sourceRelationIndex": 0
+        },
+        {
+          "sourceKCId": "M-MEAS-00",
+          "targetKCId": "M-MEAS-08",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto.",
+          "sourceRelationIndex": 0
+        },
+        {
+          "sourceKCId": "M-MEAS-00",
+          "targetKCId": "M-TIME-01",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MEAS-00 on tämän osaamiskohteen välitön välttämätön esitieto.",
+          "sourceRelationIndex": 0
+        }
+      ],
+      "prerequisiteGroups": [],
+      "nodeKind": "foundation",
+      "masteryRole": "atomic",
+      "entryRole": "foundation",
+      "foundationEntry": true,
+      "dynamicRule": null,
+      "integrationOf": null,
+      "splitChildren": null
+    },
+    {
+      "kcId": "M-TH-08",
+      "topRelations": [],
+      "bottomRelations": [
+        {
+          "sourceKCId": "M-TH-08",
+          "targetKCId": "M79-LOGIC-01",
+          "relationType": "process_support",
+          "strength": "strong",
+          "rationale": "M-TH-08 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+          "sourceRelationIndex": 1
+        }
+      ],
+      "prerequisiteGroups": [],
+      "nodeKind": "process_skill",
+      "masteryRole": "process",
+      "entryRole": "dynamic",
+      "foundationEntry": false,
+      "dynamicRule": "requires_any_two_mastered_content_nodes",
+      "integrationOf": null,
+      "splitChildren": null
+    },
+    {
+      "kcId": "SCI-ENV-TOOL-01",
+      "topRelations": [
+        {
+          "id": "SCI-ENV-SAFE-01",
+          "relation_type": "safety_gate",
+          "strength": "required",
+          "rationale": "Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite."
+        },
+        {
+          "id": "SCI-ENV-OBSERVE-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Havainnointi tukee välineen tarkoituksenmukaista käyttöä."
+        }
+      ],
+      "bottomRelations": [
+        {
+          "sourceKCId": "SCI-ENV-TOOL-01",
+          "targetKCId": "SCI-ENV-EXP-01",
+          "relationType": "prerequisite",
+          "strength": "strong",
+          "rationale": "Välinetaidot tukevat kokeilua.",
+          "sourceRelationIndex": 3
+        },
+        {
+          "sourceKCId": "SCI-ENV-TOOL-01",
+          "targetKCId": "SCI-ENV-MEAS-01",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "SCI-ENV-TOOL-01 on ydinesitieto tälle osaamiskohteelle.",
+          "sourceRelationIndex": 0
+        },
+        {
+          "sourceKCId": "SCI-ENV-TOOL-01",
+          "targetKCId": "CHEM79-LAB-01",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "Perustyövälineen käyttö on taidollinen ydinesitieto.",
+          "sourceRelationIndex": 1
+        }
+      ],
+      "prerequisiteGroups": [],
+      "nodeKind": "procedure",
+      "masteryRole": "atomic",
+      "entryRole": "domain_entry",
+      "foundationEntry": false,
+      "dynamicRule": null,
+      "integrationOf": null,
+      "splitChildren": null
+    },
+    {
+      "kcId": "M-ALG-08",
+      "topRelations": [
+        {
+          "id": "M-ALG-07",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-ALG-07 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-ADD-SUB-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-ADD-SUB-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-MULDIV-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MULDIV-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "bottomRelations": [
+        {
+          "sourceKCId": "M-ALG-08",
+          "targetKCId": "M79-PCT-BASE",
+          "relationType": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-ALG-08 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+          "sourceRelationIndex": 2
+        },
+        {
+          "sourceKCId": "M-ALG-08",
+          "targetKCId": "M79-EQ1-SOLVE",
+          "relationType": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-ALG-08 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+          "sourceRelationIndex": 1
+        }
+      ],
+      "prerequisiteGroups": [
+        {
+          "all_of": [
+            "M-ALG-07"
+          ],
+          "rationale": "Yhtälön ja ratkaisun testaamisen perusidea tarvitaan."
+        },
+        {
+          "any_of": [
+            "M-ADD-SUB-01",
+            "M-MULDIV-01"
+          ],
+          "rationale": "Yksinkertainen yhtälö voi kuulua additiiviseen tai multiplikatiiviseen perheeseen; molempien masteryä ei tarvita ennen aloittamista."
+        }
+      ],
+      "nodeKind": "procedure",
+      "masteryRole": "atomic",
+      "entryRole": "none",
+      "foundationEntry": false,
+      "dynamicRule": null,
+      "integrationOf": null,
+      "splitChildren": null
+    },
+    {
+      "kcId": "M-SCALE-02",
+      "topRelations": [
+        {
+          "id": "M-SCALE-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-SCALE-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-MUL-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MUL-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-DIV-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-DIV-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "bottomRelations": [],
+      "prerequisiteGroups": [
+        {
+          "all_of": [
+            "M-SCALE-01"
+          ],
+          "rationale": "Mittakaavan suhde on ydin."
+        },
+        {
+          "any_of": [
+            "M-MUL-01",
+            "M-DIV-01"
+          ],
+          "rationale": "Suurennos ja pienennös käyttävät eri operaatioperheitä; molempia ei tarvitse hallita ennen yhden suunnan harjoittelua."
+        }
+      ],
+      "nodeKind": "concept",
+      "masteryRole": "atomic",
+      "entryRole": "none",
+      "foundationEntry": false,
+      "dynamicRule": null,
+      "integrationOf": null,
+      "splitChildren": null
+    },
+    {
+      "kcId": "M-COORD-01",
+      "topRelations": [
+        {
+          "id": "M-COORD-READ-Q1",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-COORD-01 on v0.2:ssa integraationoodi; atominen alitaito M-COORD-READ-Q1 vaaditaan kokonaisuuden hallintaan."
+        },
+        {
+          "id": "M-COORD-PLOT-Q1",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-COORD-01 on v0.2:ssa integraationoodi; atominen alitaito M-COORD-PLOT-Q1 vaaditaan kokonaisuuden hallintaan."
+        }
+      ],
+      "bottomRelations": [
+        {
+          "sourceKCId": "M-COORD-01",
+          "targetKCId": "M-COORD-02",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "M-COORD-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+          "sourceRelationIndex": 0
+        }
+      ],
+      "prerequisiteGroups": [
+        {
+          "all_of": [
+            "M-COORD-READ-Q1",
+            "M-COORD-PLOT-Q1"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "nodeKind": "integration",
+      "masteryRole": "integration",
+      "entryRole": "none",
+      "foundationEntry": false,
+      "dynamicRule": null,
+      "integrationOf": [
+        "M-COORD-READ-Q1",
+        "M-COORD-PLOT-Q1"
+      ],
+      "splitChildren": [
+        "M-COORD-READ-Q1",
+        "M-COORD-PLOT-Q1"
+      ]
+    },
+    {
+      "kcId": "PHY79-UNIT-CONV",
+      "topRelations": [
+        {
+          "id": "PHY79-QTY-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "M-UNIT-02",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-UNIT-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        },
+        {
+          "id": "M-UNIT-03",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-UNIT-03 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        },
+        {
+          "id": "M-UNIT-04",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-UNIT-04 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        },
+        {
+          "id": "M-UNIT-05",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-UNIT-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        },
+        {
+          "id": "M79-UNIT-LIN",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M79-UNIT-LIN tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "bottomRelations": [
+        {
+          "sourceKCId": "PHY79-UNIT-CONV",
+          "targetKCId": "PHY79-SPEED-MIXED",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "PHY79-UNIT-CONV on ydinesitieto tälle osaamiskohteelle.",
+          "sourceRelationIndex": 1
+        }
+      ],
+      "prerequisiteGroups": [
+        {
+          "all_of": [
+            "PHY79-QTY-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "nodeKind": "procedure",
+      "masteryRole": "atomic",
+      "entryRole": "none",
+      "foundationEntry": false,
+      "dynamicRule": "requires_quantity_specific_unit_conversion_skill_for_item_instance",
+      "integrationOf": null,
+      "splitChildren": null
+    },
+    {
+      "kcId": "CHEM79-CHANGE-PHYS",
+      "topRelations": [
+        {
+          "id": "ENV-CHEM-STATECHANGE-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "ENV-CHEM-STATECHANGE-01 on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "ENV-CHEM-BURN-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "ENV-CHEM-BURN-01 on ydinesitieto tälle osaamiskohteelle."
+        }
+      ],
+      "bottomRelations": [
+        {
+          "sourceKCId": "CHEM79-CHANGE-PHYS",
+          "targetKCId": "CHEM79-REACTION-01",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "CHEM79-CHANGE-PHYS on ydinesitieto tälle osaamiskohteelle.",
+          "sourceRelationIndex": 0
+        }
+      ],
+      "prerequisiteGroups": [
+        {
+          "any_of": [
+            "ENV-CHEM-STATECHANGE-01",
+            "ENV-CHEM-BURN-01"
+          ],
+          "rationale": "Vertailu voidaan aloittaa joko tutusta fysikaalisesta muutoksesta tai tutusta kemiallisesta muutoksesta; molempien masteryä ei vaadita etukäteen."
+        }
+      ],
+      "nodeKind": "concept",
+      "masteryRole": "atomic",
+      "entryRole": "none",
+      "foundationEntry": false,
+      "dynamicRule": null,
+      "integrationOf": null,
+      "splitChildren": null
+    },
+    {
+      "kcId": "CHEM79-ELEMENT",
+      "topRelations": [
+        {
+          "id": "CHEM79-PURE-MIX",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "CHEM79-PURE-MIX on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina."
+        },
+        {
+          "id": "CHEM79-MODEL-01",
+          "relation_type": "representation_support",
+          "strength": "strong",
+          "rationale": "CHEM79-MODEL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        },
+        {
+          "id": "ENV-CHEM-MATERIAL-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "ENV-CHEM-MATERIAL-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina."
+        },
+        {
+          "id": "CHEM79-ATOM-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "CHEM79-ATOM-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina."
+        }
+      ],
+      "bottomRelations": [
+        {
+          "sourceKCId": "CHEM79-ELEMENT",
+          "targetKCId": "CHEM79-ATOM-01",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "CHEM79-ELEMENT on ydinesitieto tälle osaamiskohteelle.",
+          "sourceRelationIndex": 0
+        },
+        {
+          "sourceKCId": "CHEM79-ELEMENT",
+          "targetKCId": "CHEM79-PERIODIC-01",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "CHEM79-ELEMENT on ydinesitieto tälle osaamiskohteelle.",
+          "sourceRelationIndex": 0
+        },
+        {
+          "sourceKCId": "CHEM79-ELEMENT",
+          "targetKCId": "CHEM79-COMPOUND",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "CHEM79-ELEMENT on ydinesitieto tälle osaamiskohteelle.",
+          "sourceRelationIndex": 0
+        },
+        {
+          "sourceKCId": "CHEM79-ELEMENT",
+          "targetKCId": "CHEM79-SYMBOL",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "CHEM79-ELEMENT on ydinesitieto tälle osaamiskohteelle.",
+          "sourceRelationIndex": 0
+        },
+        {
+          "sourceKCId": "CHEM79-ELEMENT",
+          "targetKCId": "CHEM79-CARBON",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "CHEM79-ELEMENT on ydinesitieto tälle osaamiskohteelle.",
+          "sourceRelationIndex": 0
+        }
+      ],
+      "prerequisiteGroups": [],
+      "nodeKind": "concept",
+      "masteryRole": "atomic",
+      "entryRole": "dynamic",
+      "foundationEntry": false,
+      "dynamicRule": "may_enter_from_pure_substance_classification_or_atomic_model_context",
+      "integrationOf": null,
+      "splitChildren": null
+    },
+    {
+      "kcId": "CHEM79-ATOM-01",
+      "topRelations": [
+        {
+          "id": "CHEM79-ELEMENT",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "CHEM79-ELEMENT on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "CHEM79-MODEL-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "CHEM79-MODEL-01 on ydinesitieto tälle osaamiskohteelle."
+        }
+      ],
+      "bottomRelations": [
+        {
+          "sourceKCId": "CHEM79-ATOM-01",
+          "targetKCId": "PHY79-RAD-PARTICLE",
+          "relationType": "prerequisite",
+          "strength": "helpful",
+          "rationale": "CHEM79-ATOM-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.",
+          "sourceRelationIndex": 2
+        },
+        {
+          "sourceKCId": "CHEM79-ATOM-01",
+          "targetKCId": "CHEM79-ELEMENT",
+          "relationType": "prerequisite",
+          "strength": "strong",
+          "rationale": "CHEM79-ATOM-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.",
+          "sourceRelationIndex": 3
+        },
+        {
+          "sourceKCId": "CHEM79-ATOM-01",
+          "targetKCId": "CHEM79-ATOM-NUCLEUS",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "CHEM79-ATOM-01 on ydinesitieto tälle osaamiskohteelle.",
+          "sourceRelationIndex": 0
+        },
+        {
+          "sourceKCId": "CHEM79-ATOM-01",
+          "targetKCId": "CHEM79-COMPOUND",
+          "relationType": "prerequisite",
+          "strength": "required",
+          "rationale": "CHEM79-ATOM-01 on ydinesitieto tälle osaamiskohteelle.",
+          "sourceRelationIndex": 1
+        }
+      ],
+      "prerequisiteGroups": [
+        {
+          "all_of": [
+            "CHEM79-ELEMENT",
+            "CHEM79-MODEL-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "nodeKind": "concept",
+      "masteryRole": "atomic",
+      "entryRole": "none",
+      "foundationEntry": false,
+      "dynamicRule": null,
+      "integrationOf": null,
+      "splitChildren": null
+    },
+    {
+      "kcId": "CHEM79-ORG-GROUP",
+      "topRelations": [
+        {
+          "id": "CHEM79-CARBON-COMPOUND",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "CHEM79-CARBON-COMPOUND on ydinesitieto tälle osaamiskohteelle."
+        }
+      ],
+      "bottomRelations": [],
+      "prerequisiteGroups": [
+        {
+          "all_of": [
+            "CHEM79-CARBON-COMPOUND"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "nodeKind": "concept",
+      "masteryRole": "placeholder",
+      "entryRole": "none",
+      "foundationEntry": false,
+      "dynamicRule": "local_curriculum_profile_selects_one_organic_compound_group",
+      "integrationOf": null,
+      "splitChildren": null
+    }
+  ]
+}

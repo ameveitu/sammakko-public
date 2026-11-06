@@ -1,0 +1,116 @@
+## Lopullinen181-toimitus varmennettu —2026-10-30
+
+Lähde0bd5a544cc62db62131a40b8a46c92c5da15db8d; exports/Sammakko_181_B16_181of181.zip50,107,150tavua, SHA256a044ef41d64504e397ec0ee84189817e1a245f3b864d7ebf41bce274950e114b. CRC,13218manifestitiedoston tiivisteet ja eristetty rekonstruointi PASS: cachedoffline npmci,690sivua/370691tarkistusta,181technical_checked/0remaining,63uutta riippuvuustestiä ja5exporteritestiä. Alkuperäinen1033testin suoritus varmennettu lähde-/lokitiivisteistä; koko suitea tai selainta ei uusittu pakkaamisen vuoksi. Alkuperäisrepo/bootstrap ja verkkoyhteys estettiin käyttöjärjestelmän sandboxilla rekonstruoinnissa. B14/B15/B16ZIPit säilyvät muuttumattomina.
+
+Koko pieneni1,836,568tavua B15:stä, mutta50MBtavoite ylittyy107150tavulla. PakattuZIP,155554064tavun purettu sisältö, lähde, staattinen sivusto ja selaimen lataus ovat eri mittareita; ensilatauksenHTTPsiirto/fullOfflineasennus mittaamatta. Kokoraportti ja koneinventaario: lesson-network/evidence/production/B16/validation/export-reconstruction/ . Tämä sinetöinnin jälkeinen näyttö on erillinen, ei takautuvasti alkuperäisenZIPin sisällä.
+
+181valtuutuksen tuotanto päättynyt, STOP. Muut509pysyvät pohjina. Ei ihmisoppilaan ymmärrys-/vaikuttavuus-/pilotti-/fullmanualAXS-/VoiceOver-/lisenssi-/Lite-/public hyväksyntää. AiempiB15:n luettelonulkopuolisten erittäin pitkien rate-API-lukujen SVG-labelP3 säilyy avoimena. Alla historia.
+
+## Valtuutettu 181-joukko valmis teknisesti — 2026-10-30
+
+181/181 valittua oppituntiluonnosta on teknisesti tarkistettu. Viimeisen6:n eri tekijöiden nykyversio-/actual181-katselmukset suljettu, ei avoimiaB/H/P2-löydöksiä. Lopullinen lähdesidottu regressio 1033/1033,0virhettä/ohitusta/peruutusta/todoa;690sivun koonti ja370691rakenne-/linkkitarkistusta, lint/typecheck PASS. Vain uuden6:n12yleistä selaimen näkymää; vanhojen175:n919toimitettua tiedostoa/350tietoriviä ja24yhteistä/fixture-lähdettä ennallaan, aiempi näyttö käytetty uudelleen ilman vanhojen selausta.702vanhaa kuittiobjektia säilyy+6uutta=708kumulatiivista kuittia,181oppituntia.
+
+Korjattu ajantasainen desimaalijakolaskun opastus, kaikkien nykyisten syötepremissien sovitus kuvaajassa ja lähekkäisten pisteiden nimien luettavuus. Alkuperäiset virheet/kuitit säilyvät ja muuttumaton katselmusnäyttö on rajatusti uudelleenkäytetty. AiempiB15:n luettelonulkopuolisten ääriarvoisten rate-API-lukujen SVG-tekstin P3-raja säilyy avoimena; ei nykyisen malliluettelon vika.690graafi,52slice52/82/63,legacy12/52 ja henkilökohtainen historia ennallaan.
+
+Näyttö: lesson-network/evidence/production/B16/completion.json, REPORT_FI.md, REPRODUCE_FI.md ja validation/current-postreview-r1/receipt.json. Jäljellä vain lopullisen181lähde+reviewZIPin sinetöinti ja tuore eristetty rekonstruointi; sitten STOP tämän tuotantovaltuutuksen lopussa. Muut509sisällöttömiä pohjia. Ei oppilas-/ihmis-/vaikuttavuus-/pilotti-/täydellisenmanualAXS-/VoiceOver-/oikeus-/Lite-/public-gatehyväksyntää. Initiallearnertransfer/fullOffline edelleen mittaamatta. Alla historia.
+
+## B15 valmis:175/181 teknisesti tarkistettu — 2026-10-29
+
+12 uuden oppitunnin eri tekijän nykyversion ja actual175-katselmukset suljettu; ei avoimiaB/H/P2-löydöksiä.970/970 lähdesidottua testiä,690 sivun koonti/366734 rakenne- ja linkkitarkistusta, lint/typecheck ja vainnew12/24 yleistä selaintarkistusta PASS. Vanhoja163 sivua ei ajettu uudelleen selaimessa:837 toimitettua tiedostoa ja326 tietoriviä täsmäävät sinetöityynB14:ään,24 shared/fixture-lähdettä ennallaan.690vanhaa kuittiobjektia+12uutta=702kumulatiivista,175oppituntia. P3 jää avoimeksi vain rate-API:n luettelon ulkopuolisten erittäin pitkien lukujen SVG-tekstille; nykyiset14mallia56vaihetta kunnossa. Näyttö B15/completion.json, REPORT_FI.md ja validation/current-postreview-r1/receipt.json.
+
+Jäljellä6. Sinetöi175lähde+reviewZIP, tarkista tuore rekonstruointi ja JATKA181:een ilman tavallista katselmointiodotusta.509 muuta pohjina;690graafi/52slice/legacy12/52 ennallaan. Ei oppilas-/ihmis-/vaikuttavuus-/fullmanualAXS-/VoiceOver-/licence-/Lite-/public-gatehyväksyntää. Alla historia.
+
+## B14 valmis: 163/181 teknisesti tarkistettu — 2026-10-29
+
+12 uutta lähdeomisteista oppituntia on eri tekijän nykyisille versioille katselmoitu. Lähdesidottu regressio 859/859 ilman virheitä tai ohituksia; 690 sivun rakennus ja 359511 rakenne-/linkkitarkistusta läpäisty. Lint/typecheck ja uusien 12 sivun 24 yleistä selaimen puhelin-/työpöytänäkymää läpäisty. Erilliset nykyisen sisällön opetus-, laskenta-, toiminta- ja elinkaarikatselmukset on sidottu lähteisiin.
+
+Vanhojen 151 oppitunnin selainta ei ajettu uudelleen: 753 toimitettavaa tiedostoa ja 302 aiempaa tietoriviä täsmäävät sinetöityyn B13-versioon. Kaikki 678 vanhaa kuittiobjektia säilyivät; lisättiin vain 12 uutta. Kumulatiivisia kuittiobjekteja on 690, mutta valmiita oppitunteja on 163. Korjaukset koskivat uusien mallien syötteitä/saavutettavuustilaa, suomenkielisiä valikoita, moduulien oman isännän eristystä ja palautteen ajantasaisuutta. Kolmen testin tekijävaiheen katselmoimattomuusoletus korjattiin erillisellä vahvemmalla hyväksymättömän/katselmoidun/vanhentuneen version fixture-kokeella; alkuperäinen epäonnistunut kuitti säilyy. Oppituntien arviointiehtoja ei heikennetty.
+
+Näyttö: `lesson-network/evidence/production/B14/completion.json`, `REPORT_FI.md`, `prior-reuse-after-final163.json` ja lähdekuitti `validation/current-postreview-r2/receipt.json`. Jäljellä 18 valittua. B14:n sinetöity lähde126b6b38f3f8401c1958a5aa9d60e3c196ff51b7, ZIP47,912,718bytes SHA45ec8dbbd42a32aaa49d5c19d92d6c030ce933cb045a8b7274fe08d6d068d6be ja puhdas rekonstruointi on tarkistettu. Postsealnäyttö on erikseen B14/validation/export-reconstruction-hakemistossa. B15:n seuraavat 12 ovat lähdekohtaisessa tuotannossa kohti175:tä; sen jälkeen viimeiset6 kohti181:tä ilman tavallista katselmointiodotusta. Muut 509 pysyvät pohjina. Jäädytetty 690 graafi, 52 solmun slice ja legacy-peli 12/52 säilyvät. Ihmisen/oppilaan ymmärtämistä, vaikuttavuutta, täydellistä manuaalista saavutettavuutta/VoiceOveria, julkaisulisenssiä, Lite-siltaa tai julkisia reittejä ei ole hyväksytty. Alla olevat erätilat ovat historiaa.
+
+## B13 valmis: 151/181 teknisesti tarkistettu — 2026-10-29
+
+12 uutta oppituntia on katselmoitu eri tekijän toimesta nykyisille täsmällisille lähteille. Lähdesidottu regressio 737/737 ilman virheitä tai ohituksia; koko 690 sivun rakennus ja 352052 rakenne-/linkkitarkistusta läpäisty. Lint ja typecheck läpäisty. Uusien 12 sivun 24 yleistä selaimen puhelin-/työpöytänäkymää sekä erilliset uuden sisällön toiminta- ja opetuskatselmukset läpäisty.
+
+Käyttäjän tarkennus on toteutettu: vanhojen 139 oppitunnin selainta ei ajettu uudelleen. 671 toimitettavaa tiedostoa ja 278 aiempaa tietoriviä täsmäävät sinetöityyn B12-versioon; aiempi lähdesidottu näyttö pysyy kelvollisena. Kaikki 666 vanhaa kuittiobjektia säilyivät ja vain 12 uutta lisättiin. SPEED-CALC-aloituksen taukomallin P2 korjattiin ja suljettiin riippumattomasti. Näyttö: `lesson-network/evidence/production/B13/completion.json`, `REPORT_FI.md` ja `prior-reuse-after-final151.json`.
+
+Jäljellä 30 valittua. Seuraavaksi lähde+näyttö-ZIP ja rekonstruointitarkistus, sitten seuraava generoitu erä ilman tavallista odotusta. Muut 509 pysyvät pohjina. Jäädytetty 690 graafi, 52 solmun slice ja legacy-peli 12/52 säilyvät. Ihmisen/oppilaan ymmärtämistä, oppimisvaikutusta, täydellistä manuaalista saavutettavuutta, julkaisulisenssiä, Lite-siltaa tai julkisia reittejä ei ole hyväksytty. Alla olevat erätilat ovat historiaa.
+
+## B12 valmis:139/181 technical_checked — 2026-10-29
+
+12 uutta oppituntiluonnosta on eri tekijän nykyisille täsmällisille lähteille katselmoitu. Lopullinen lähdesidottu ajo652/652 ilman virheitä/ohituksia;690 sivun rakennus ja344333 rakennetarkistusta;278 toteutunutta natiiviselaimen näkymää ja erillinen fixture-selain PASS. Lint/typecheck exit0. Alkuperäiset löydökset ja527 vanhaa kuittiobjektia säilyivät;139 nykyistä kuittia lisättiin. Aiemman127 sisältöversiot,690-graafi,52-slice ja legacy-peli12/52 pysyvät ennallaan. Näyttö: lesson-network/evidence/production/B12/completion.json ja REPORT_FI.md.
+
+Jäljellä42 valittua. Lähde+näyttö-ZIPin sinetöinti ja puhdas rekonstruointi seuraavaksi, sitten jatkuu seuraava generoitu erä ilman tavallista odotusta. Käyttäjän tarkennus: jatkossa selaimessa uudet/muuttuneet tunnit ja jaetun muutoksen vaikutusalue; muuttumattomien aiempi näyttö käytetään uudelleen. B12:n jo päättynyt278-ajo säilyy, sitä ei uusita. Koko690:n rakenne/linkit tarkistetaan edelleen. Ihmiskatselmus/oppimisteho/manualAXS/licence/Lite/publicURLs pysyvät avoimina portteina, muut509 pohjina.
+
+## B11 valmis:127/181 technical_checked — 2026-10-29
+
+12 uutta lähdeomisteista HTML-oppituntia on eri tekijän rajatusti katselmoitu ja lopullisesti teknisesti tarkistettu. Kaikkien127 lähdesidottu testiajo572/572 ilman virheitä/ohituksia;690 sivun rakennus337479 tarkistuksella;254 natiiviselaimen puhelin-/työpöytänäkymää ja erillinen opettaja-/esitystilan fixture-selain PASS. Behavior→onnistuva loppurakennus→verkon tarkistus; build-status verified. Lint/typecheck exit0. Historialliset epäonnistumiset, kaikki aiemmat115 sisältöversiot ja400 vanhaa kuittiobjektia säilyivät. Lisättiin127 nykyistä lähdesidottua kuittia. Näyttö ja rajaukset: lesson-network/evidence/production/B11/completion.json ja REPORT_FI.md.
+
+Jäljellä54 valittua. Seuraava vaihe on kompakti lähde+näyttö-ZIP, puhdas rekonstruointi ja välitön seuraava generoitu erä kohti181:tä. Muut509 ovat pohjia;690-graafi,52-slice ja legacy-peli12/52 säilyvät. Ihmiskatselmus/oppilasymmärrys/oppimisteho, täydellinen manuaalinen saavutettavuus, Lite-silta, julkiset reitit ja julkaisulisenssi eivät ole hyväksyttyjä.
+
+## B10 completed:115/181 technical_checked — 2026-10-29
+
+12 new standalone lessons and all115 current delivery/source receipts verified. Final494/494 tests (zero failures/skips),690page build/330246 structural checks,230 actual phone/desktop views, current teacher/presentation/no-JS fixture browser, behavior/lint/typecheck PASS. Different-author exact source/native scopes closed. Prior103 contentRevisions unchanged; shared presentation and expanded executable-source receipt binding independently reviewed (ADR-0036); ARITH01 valid inverse rejection repaired by generic relation semantics across5 contexts. Original failures/history preserved. See lesson-network/evidence/production/B10/completion.json and REPORT_FI.md.
+
+Remaining66 selected lessons; other509 remain scaffolds. Frozen690graph/52slice and legacy-game12/52 unchanged. Human/learner comprehension, efficacy, full manual accessibility, public endpoints, Litebridge and release licence holds remain unverified. This is technical acceptance only. NEXT:seal committed-source compact115 reviewZIP, verify fresh reconstruction, report and CONTINUE next generated12 toward181. Earlier entries below are historical.
+
+## B10 active; verified B09 source/export checkpoint — 2026-10-29
+
+Completed103/181 technical_checked standalone lessons at source94c6f76db065292679e8dc7f04c402d63b4b3672. Compact source+reviewZIP `exports/Sammakko_181_B09_103of181_compact.zip`:46,154,258bytes,SHA2563f8f1a7a56340914538c637d79199ca4d86ce595ae7f70860c757b59d52ddb28. Fresh extraction/install/build690/network323952/source-bound430tests/status103/export5 PASS. Post-seal receipts and separate SIZE_AUDIT under B09/validation/compact-export-reconstruction; not claimed inside sealedZIP. Full61MB originalZIP and optional binary evidence remain preserved.
+
+B10 next12 is IMPLEMENTATION_ACTIVE, not complete: ADDFACT10,ARITH01,COORDPLOTQ1,COORDREADQ1,DEC02,DIVFACT01,MENTAL01,MULTABALL,NEG01,NUM08,NUMEQUALSTEPSEQ,NUMMULTIPLEINTRO (canonical M-IDs in B10/PLAN.md). Four authors have disjoint package scopes; main owns integration/reviews/actual compiled paths/currentproof. Current lesson-status accepted count remains103; newly published draft files do not confer acceptance. Continue without ordinary external wait toward exact181. Other509/frozen690/52slice/legacy-game12/52 and human/release holds unchanged.
+
+## B09 completed: 103/181 technically checked — 2026-10-29
+
+12 new standalone lessons and three bounded revisions passed exact different-author synthetic review, final post-review source-bound430/430 tests (zero failures/skips),690-page build and323952 structural checks. Actions83, ingestion703, module/attack/behavior/lifecycle and fixture teacher/no-JS browser regression PASS; lint/typecheck exit0. Actual compiled103 global206 views; new12practice36 views plus15 supplemental distinct-control/playback views, revised speed3 and entry-pilot6. Original failures and harness diagnosis retained. `lesson-network/evidence/production/B09/completion.json` binds scope/versions and distinguishes author QA from independent review.
+
+Astra10/B07 reference comparison is complete: keep current content/checkers, selectively bring free exploration earlier in MEAS04/TIME03. Current speed/graph/zero-answer readback defects are fixed and independently closed. Prior88 content versions unchanged; onlythree intended prior revisions. Frozen690graph/52slice and legacy-game12/52 remain unchanged; other509 are empty scaffolds. Technical_checked is not human/learner validation, efficacy, manual accessibility or release approval. Runtime links/Litebridge/licence holds remain.
+
+Next: seal compact committed-source103 ZIP, reconstruct/verify it separately, report and CONTINUE next generated12 toward181. Current source checkpoint103 is technically checked; latest sealed ZIP stays correctedB08/91 until new export succeeds. Earlier entries below are historical.
+
+## Post-export verification — 2026-10-29
+
+Corrected B08 ZIP source `5b1492f` freshly reconstructed: install/build690/network319082/tests361/status91/export regressions5 PASS. Receipt: `lesson-network/evidence/production/B08/validation/corrected-export-reconstruction/receipt.json` (created after sealing, delivered separately). Original failed artifact preserved. Latest user requests comparison to additional lesson material before package continuation; its file/link was not visible, clarification requested. Preserve B09 drafts and assigned reviews; no unseen-material rewrite or new acceptance.
+
+## B08 verification correction validated — 2026-10-29
+
+91/181 published technical DRAFT lessons;90 remain. Corrected current suite361/361 (357 package +4 verification),319082 network checks/690pages, exact990 site files unchanged. Independent lifecycle and receipt reviews closed their P2/P3 findings; five portable export regressions pass. Original sealed B08 post-review result was354/357, not357/357; original ZIP/logs/reports remain preserved. See `lesson-network/evidence/production/B08/VERIFICATION_CORRIGENDUM.md` for the correction and source-bound proofs. Human/learner/release holds unchanged. Next commit/export/fresh reconstruction of corrected91, then CONTINUE B09. Preserved B09 uncommitted drafts are outside this published checkpoint; no new lesson acceptance is implied. Entries below describe historical milestones; this correction supersedes their final post-review test claim.
+
+181 lesson production B08:91/181 technically checked drafts,90 selected remain;509 unfilled scaffolds. All690 navigation verified (319082 checks),357 package tests,83 action tests,703 preservation checks,182 native Chromium views plusall12 new practice paths andfixture/no-JS PASS. Separate exact-current synthetic reviews closed after CSS/premise visibility, unit-path and ten-dot label repairs; prior evidence preserved. Human/learner/manual access, efficacy and release/licensing/link holds remain open. See lesson-network/evidence/production/B08/completion.json. CONTINUE B09 after compact export.
+
+181 lesson production B07:79/181 technically checked drafts,102 selected remain;509 unfilled scaffolds. All690 navigation verified (315053 checks),297 package tests,83 action tests,703 preservation checks,158 native Chromium views plusall12 new practice paths andfixture/no-JS PASS. Independent synthetic exact-current scopes closed; externalSVG P2 and clippedcaption P3 repaired/rechecked with historypreserved. Human/learner/manual access, efficacy and release/licensing/link holds remain open. See lesson-network/evidence/production/B07/completion.json. CONTINUE B08 after compact export.
+
+181 lesson production B06:67/181 technically checked drafts,114 selected remain;509 unfilled scaffolds. All690 navigation verified (311826 checks),245 package tests,83 action tests,703 preservation checks,134 native Chromium views plus12 actual practice paths and fixture/no-JS PASS. Independent synthetic current scopes closed; human/learner/manual access and release/licensing/link holds remain open. See lesson-network/evidence/production/B06/completion.json. CONTINUE B07 after export.
+
+181 lesson production B05:55/181 technically checked drafts,126 selected remain;509 unfilled scaffolds. All690 navigation verified (307821 checks),188 package tests,83 action tests,703 preservation checks,110 native Chromium views plus12 new interaction flows/fixture tests PASS. Independent synthetic source and current compiled closures complete; finite-axis feedback, event consistency, strict selector keys and optional keyboard focus corrected. Human/learner/manual access and release/licensing/link holds remain open. See lesson-network/evidence/production/B05/completion.json. CONTINUE B06 after export.
+
+181 lesson production B04:43/181 technically checked drafts,138 selected remain;509 unfilled scaffolds. All690 navigation verified (303004 checks),134 package tests,83 action tests,703 preservation checks,86 native Chromium views plus12 new interaction flows/fixture tests PASS. Independent synthetic reviews closed; human/learner/manual access and release/licensing/link holds remain open. See lesson-network/evidence/production/B04/completion.json and PRODUCTION_181_RESUME.md. CONTINUE next12 after export; no ordinary stop.
+
+181 lesson production B03:31/181 technically checked drafts,150 selected remain;509 unfilled scaffolds. All690 navigation verified,82 package tests/83 action tests/703 preservation checks/62 Chromium views and all12new interaction paths PASS; independent synthetic findings closed. Human/learner, nonvisual/manual access and release/licensing/runtime-link holds remain open. See lesson-network/evidence/production/B03/completion.json and PRODUCTION_181_RESUME.md. CONTINUE next12 after export; no ordinary stop.
+
+181 lesson production B02:19/181 technically checked draft lessons,162 selected pending;509 other scaffolds untouched. All690 navigation verified (294209 checks);37 package tests,83 game-action tests,703 ingestion checks,38 Chromium views, actual12new-practice/fixture lifecycle, lint/typecheck pass. Independent synthetic reviews closed after magnification, same-whole, pause/sparse-input and CSS-boundary corrections. Human/learner review and release holds remain open. Evidence: lesson-network/evidence/production/B02/. CONTINUE B03 after compact export.
+
+181 lesson production B01: 7/181 technically checked draft lessons,174 selected pending;509 other scaffolds untouched. All690 navigation verified. Independent synthetic reviews closed, human/learner testing pending. Exact evidence: lesson-network/lesson-status.json and evidence/production/B01/. Continue nextbatch per PRODUCTION_181_RESUME.md; no ordinary stop.
+
+CURRENT AUTHORITY 2026-10-29: user explicitly invoked prompts/SOL_181_LESSON_PRODUCTION.txt after completed Phase1.1 (07d4bc2). Produce exactly181 selected lessons autonomously in reviewed batches; preserve690 graph/navigation and509 pending scaffolds. Read lesson-network/authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt and lesson-network/PRODUCTION_181_RESUME.md. Earlier stop/await instructions below are historical and superseded.
+
+Phase 1.1 technically complete: lesson-network/PHASE1_1_REPORT.md and evidence/phase1_1/completion.json. Normal690 pending; two technical fixtures isolated;181 pedagogical production awaits the user's separate prompt.
+
+CURRENT ASSIGNMENT 2026-10-29: implement and prove lesson-network Phase 1.1 from the user-supplied v2 handover. See lesson-network/authority/phase1_1/SOL_PHASE1_1_PROMPT.txt and lesson-network/AUTHORING.md. The user explicitly defers the 181-lesson production prompt until this path is proved; the ZIP combined-start continuation does not override that message. No pedagogical production now. Preserve all prior sources/statuses. Earlier assignments below are historical.
+
+# Active task board — 2026-10-28
+
+Current assignment supersedes the production queue below: the separate 690-page lesson-network Phase 1 foundation is implemented and verified; the self-contained export has passed isolated reconstruction. Phase 1 is complete; no content work follows automatically. See lesson-network/REPORT.md. Earlier KC content tasks remain preserved and suspended pending a new content handover.
+
+## Historical 52-node status — suspended by the Phase 1 assignment
+
+12/52 bounded completions. M-NUM-03 remains private validation, not a completion. Machine-readable IDs/evidence: AUTONOMOUS_52_STATE.json; graph-derived order and AND/OR groups: WORKING_SLICE_TASK_BOARD.yaml. Do not duplicate or infer completion from file existence.
+
+- DONE within scoped engineering criteria: existing10 plus SCI-ENV-OBSERVE-01 and M-NUM-QTY-NUMERAL. See observation-acceptance.json and quantity-numeral-acceptance.json.
+- DONE scoped: M-NUM-QTY-NUMERAL —2078 unit and86native, independent contract/UI review closed; human/release gates pending.
+- IN_PROGRESS: M-NUM-03 — triad domain/compiler/runtime/disclosure/recall/UI wired; reviewed13-template source admitted only for private validation. Preserve3 actual prerequisite associations and integration-only evidence. Independent73/73 runtime review and source/DOM teaching review are closed within scope. Native19 passed the original authored journey with clean independent/transfer/delayed evidence; the scoped rendered review is recorded at `reports/autonomous-52/B03/triad-native19-rendered-review.md`. Attempts01–18 remain preserved as historical failures/experiments, with native10 explicitly non-acceptance. Target-learner and full nonvisual accessibility review remain before acceptance.
+- THEN: M-ADD-01, M-MUL-01, M-DIV-02 — concrete sets/equal groups/quotitive division, deterministic truth, simple core first.
+- B03 completion: optional taught word/multistep extensions with real extra prerequisites, useful earlier saved result, actual native/UI/evidence checks, independent scoped review, coherent commit and compact16 export.
+- B04 authorized: SCI-ENV-RECORD-DATA-01, SCI-ENV-PRESENT-DATA-01, M-TIME-01, M-TIME-03, ENV-PHY-MOTION-OBS-01, ENV-PHY-MOTION-CHANGE-01; respect generated required ancestry. Export22 and stop at that target.
+
+Keep Game Studio UI/playtest, short Finnish, large controls, quiet/reduced-motion access and optional audio. Historical evidence cleanup already committed9aa81e1; no Git history rewrite. Exporter layout3 and external archive cadence remain. Human learner/accessibility/licensing/efficacy/release/full52-review gates are not engineering completions.

@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="lesson.css"/>
+<div class="newton15" data-b15-newton>
+
+<section data-teaching-step="1" data-lesson-role="teaching-step" data-audience-coupled>
+<div class="intro"><img src="shared/aava/curious.png" alt="Aava miettii puuttuvaa määrää" width="44" height="44"/><p>Aavalla on 405 merkkiä. Hän antaa 178 pois. Miten vähennät, kun kymmenten kohdalla on nolla?</p></div>
+<p><strong>Vähennä allekkain ja ymmärrä vaihto.</strong></p>
+<div data-explore><button data-action="step" disabled>Seuraava askel</button></div>
+<div data-model><img src="initial.svg" alt="Alkutilanne: mallin ensimmäinen vaihe" width="320" height="190"/></div><p data-caption>Kohdista samanarvoiset numerot: ykköset ykkösten alle. Aloita oikealta.</p>
+
+
+<details data-tools data-lesson-role="teaching-step"><summary>Mallit ja toisto</summary>
+<label>Valitse esimerkki<select data-model-case disabled><option value="zero">Nollan yli: 405 − 178</option><option value="two">Kaksi vaihtoa: 352 − 178</option><option value="cascade">Kolmen paikan yli: 1000 − 1</option><option value="plain">Ilman vaihtoa: 654 − 321</option><option value="same">Tulos nolla: 100 − 100</option><option value="custom">Omat luvut</option></select></label>
+<div data-custom hidden><label>Ylempi luku<input data-a type="text" inputmode="text" disabled/></label><label>Alempi luku<input data-b type="text" inputmode="text" disabled/></label><p>Omat luvut: kokonaisluvut 0–9999. Myös tuloksen on oltava 0–9999. Vähennyksessä ylempi vähintään alempi.</p></div>
+<div class="buttons"><button data-action="play" disabled>Toista</button><button data-action="stop" disabled>Pysäytä</button><button data-action="model-reset" disabled>Alkuun</button></div><p>Yksi askel näyttää yhden päätelmän tai yksiköiden vaihdon. Toisto etenee vain käynnistettäessä; voit pysäyttää tai askeltaa itse.</p></details>
+</section>
+
+<noscript data-lesson-role="metadata"><p>Ilman JavaScriptiä näet alkukuvan ja alla olevat selitykset. Käytä paperia; tarkistuspainikkeet eivät toimi.</p></noscript>
+<nav aria-label="Oppitunnin osat" data-lesson-role="metadata"><a href="#n15-examples">Selitykset</a><a href="#n15-practice">Kokeile</a><a href="#n15-teacher">Opettajalle</a></nav>
+
+<section id="n15-examples" data-lesson-role="worked-example"><section data-teaching-step="3-1" data-lesson-role="worked-example"><h2>Esimerkit ja perustelut</h2><h2>Vaihda yksikköä, säilytä määrä</h2><p>Kohdista samanarvoiset numerot. Vähennä aina alempi luku ylemmästä. Aloita ykkösistä. Jos yksiköitä ei riitä, vaihda yksi suurempi yksikkö kymmeneksi seuraavaksi pienemmäksi.</p></section>
+<section data-teaching-step="3-2" data-lesson-role="worked-example"><h3>Esimerkki 1: 352 − 178</h3><p>Vaihda yksi kymppi ykkösiksi: 3 sataa, 4 kymppiä, 12 ykköstä on yhä 352. Ykköset: 12 − 8 = 4. Nyt kymppejä on 4, ei enää 5.</p><p>Vaihda yksi sata kymmeneksi kympiksi: käytössä on 2 sataa, 14 kymppiä ja 12 ykköstä. Kymmenet: 14 − 7 = 7. Sadat: 2 − 1 = 1. Tulos 174. Tarkistus: 174 + 178 = 352.</p></section>
+<section data-teaching-step="3-3" data-lesson-role="worked-example"><h3>Esimerkki 2: nollan yli</h3><p>405 − 178: 0 kymppiä ei riitä vaihtoon. Ensin 1 sata → 10 kymppiä, sitten 1 kymppi → 10 ykköstä. Nyt 3 sataa + 9 kymppiä + 15 ykköstä = 405. Vähennä 15 − 8 = 7, 9 − 7 = 2 ja 3 − 1 = 2. Tulos 227.</p></section>
+<section data-teaching-step="3-4" data-lesson-role="worked-example"><h3>Vaihtoketju</h3><p>1000 − 1: tuhannen esitys 9 sataa + 9 kymppiä + 10 ykköstä on yhä 1000. Yhden poistamisen jälkeen jää 999. Malli näyttää jokaisen vaihdon erikseen.</p><p><strong>Väärinkäsitys:</strong> numerokohtainen ”aina pienempi suuremmasta” vaihtaa tehtävää. 360 − 195 ei ole 235, vaan 165. Tarkistus 165 + 195 = 360 paljastaa eron.</p>
+<figure data-lesson-role="worked-example"><img src="example1.svg" alt="Ensimmäisen mallin loppuvaihe" width="320" height="190"/><figcaption>Ensimmäisen mallin valmis tarkistus. Alkukuva on oppitunnin alussa.</figcaption></figure>
+<figure data-lesson-role="worked-example"><img src="example2.svg" alt="Toisen mallin loppuvaihe" width="320" height="190"/><figcaption>Toinen selitetty tapaus valmiina. Voit tutkia sen vaiheita mallivalikosta.</figcaption></figure></section></section>
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<section id="n15-practice"><h2>Kokeile ja tarkista</h2><p>405 − 178: jos sata vaihtuu kymmeneksi kympiksi ja yksi kymppi ykkösiksi, montako kymppiä jää?</p>
+<label>Tehtävä<select data-task disabled><option value="column">Laske 352 − 178. Voit vastata suoraan tai käyttää allekkainlaskua.</option><option value="zero">Laske 405 − 178.</option><option value="cascade">Laske 1000 − 1.</option><option value="step">352 − 178: mikä numero tulee vastauksen ykkösiin vaihdon jälkeen?</option><option value="needs">352 − 178: mitkä sarakkeet tarvitsevat lisää yksiköitä vaihdolla? Vastaa joka sarakkeesta.</option><option value="flip">Loikka sai 360 − 195 = 235 ottamalla aina pienemmän numeron suuremmasta. Anna oikea erotus ja korjaus.</option><option value="check">Tarkista 352 − 178 yhteenlaskulla. Mikä luku sopii: □ + 178 = 352?</option><option value="hundred">Laske 100 − 1.</option><option value="same">Laske 100 − 100.</option><option value="transfer">Verstaalla oli 701 naulaa. Niistä käytettiin 499. Montako jäi?</option></select></label>
+<p data-question>Ensimmäinen tehtävä: Laske 352 − 178. Voit vastata suoraan tai käyttää allekkainlaskua.</p><div data-fields></div><button data-action="check" disabled>Tarkista</button><p data-feedback data-result="neutral" aria-live="polite">JavaScript käynnistää tarkistuksen. Voit myös ratkaista tehtävän paperilla.</p>
+<details data-lesson-role="hint"><summary>Vapaaehtoinen apu</summary><p>Merkitse jokaisen vaihdon jälkeen käytettävissä olevat yksiköt. Kerro ääneen tai mielessäsi: yksi sata vastaa kymmentä kymppiä. Puhuminen ei ole pakollista.</p><p data-hint>Vaihda tarvittaessa suurempi yksikkö kymmeneksi pienemmäksi.</p></details>
+<p>Voit vastata suoraan millä tahansa oikealla menetelmällä. Lukukenttä hyväksyy samanarvoisen kokonaisluvun, desimaalin tai murtoluvun (esim. 8,0 tai 16/2). Enintään 128 merkkiä; ei laskulausekkeita tai eksponenttimuotoa.</p></section>
+</section>
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Lisäkokeilu</summary><p>Vertaa 1000 − 999 ja 1000 − 1. Molemmat voi laskea myös erotusta täydentämällä. Milloin päässälasku on allekkainlaskua kätevämpi?</p></details>
+</section>
+
+<details id="n15-teacher" data-lesson-role="teacher-note"><summary>Opettajalle, rajat ja paperitehtävä</summary>
+<p>Tavoite: Kirjallinen vähennyslaskualgoritmi. Vuosiluokat 3–6 kanonisen graafin mukaan. Esitiedot: paikkajärjestelmä ja vastaava yhteen- tai vähennyslasku sataan. Pidä sarakkeen lukuyksikkö näkyvänä.</p>
+<p>Pyydä selitys määristä, älä vain numeroiden siirtämisestä. Älä pakota kirjallista algoritmia, jos päässälasku on tilanteessa selkeämpi. Malli ja esimerkit tukevat päättelyä; suora oikea tulos ei kerro käytettyä menetelmää.</p>
+<p>Paikallinen palaute koskee tätä vastausta, ei itsenäisyyttä, pysyvyyttä tai formaalia hallintaa. Ei henkilökohtaista historiaa, tallennusta tai ulkoista laskentapalvelua. Ei väitettä oppimistuloksista. Julkisten oppilasreittien toimivuutta ei varmenneta tässä.</p>
+<p>Malli ei mittaa fyysistä liikettä tai ajankäyttöä; toiston 0,9 sekuntia on esitystahti. Suuri teksti ja oma askellus ovat käytettävissä. Täyttä manuaalista saavutettavuutta tai oppilaskokeilua ei ole tehty.</p>
+<p>Rakenna 105 nipuista ja irtomerkeistä. Poista 18 vaihtamalla ensin sata kymmeneksi kympiksi ja yksi kymppi irtomerkeiksi. Tarkista, että 87 + 18 = 105.</p><p><strong>Poistumiskysymys:</strong> Laske 502 − 187 ja tarkista yhteenlaskulla. Selitä, miksi nolla kymmenten paikalla ei estä vähennystä.</p></details>
+</div>

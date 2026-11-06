@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="lesson.css"/>
+<div class="newton15" data-b15-newton>
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/aava/curious.png" alt="Aava miettii puuttuvaa määrää" width="44" height="44"/><p>Aava tietää lopputuloksen 15. Mikä luku oli ennen lisäystä 7? Päättele takaisin ja tarkista.</p></div>
+<p><strong>Etsi puuttuva luku yhdestä laskusta.</strong></p>
+<div data-explore><button data-action="step" disabled>Seuraava askel</button></div>
+<div data-model><img src="initial.svg" alt="Alkutilanne: mallin ensimmäinen vaihe" width="320" height="125"/></div><p data-caption>□ + 7 = 15. Mitä tiedät, mitä etsit?</p>
+</section>
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<details data-tools data-lesson-role="teaching-step"><summary>Mallit ja toisto</summary>
+<label>Valitse esimerkki<select data-model-case disabled><option value="add">Lisäys: □ + 7 = 15</option><option value="mul">Kertominen: 4 × □ = 28</option><option value="part">Puuttuva osa: 18 − □ = 11</option><option value="zero">Nolla ratkaisuna: □ + 9 = 9</option><option value="divide">Jakaminen: □ : 3 = 6</option><option value="fraction">Lisäkokeilu: 2 × □ = 3</option><option value="custom">Omat luvut</option></select></label>
+<div data-custom hidden><label>Lasku<select data-op><option value="add">□ + luku = tulos</option><option value="subtract">□ − luku = tulos</option><option value="subtrahend">luku − □ = tulos</option><option value="multiply">luku × □ = tulos</option><option value="divide">□ : luku = tulos</option></select></label><label>Tunnettu luku<input data-a type="text" inputmode="text" disabled/></label><label>Tunnettu tulos<input data-b type="text" inputmode="text" disabled/></label><p>Omat luvut: kokonaisluvut 0–9999. Tuntematon 0–9999, myös murtoluku. Kerroin ja jakaja vähintään 1.</p></div>
+<div class="buttons"><button data-action="play" disabled>Toista</button><button data-action="stop" disabled>Pysäytä</button><button data-action="model-reset" disabled>Alkuun</button></div><p>Yksi askel näyttää yhden päätelmän tai yksiköiden vaihdon. Toisto etenee vain käynnistettäessä; voit pysäyttää tai askeltaa itse.</p></details>
+</section>
+
+<noscript data-lesson-role="metadata"><p>Ilman JavaScriptiä näet alkukuvan ja alla olevat selitykset. Käytä paperia; tarkistuspainikkeet eivät toimi.</p></noscript>
+<nav aria-label="Oppitunnin osat" data-lesson-role="metadata"><a href="#n15-examples">Selitykset</a><a href="#n15-practice">Kokeile</a><a href="#n15-teacher">Opettajalle</a></nav>
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<details id="n15-examples" data-lesson-role="worked-example"><summary>Esimerkit ja perustelut</summary><h2>Käänteinen lasku auttaa päättelemään</h2><p>Ruutu on tuntematon luku. Yhtäsuuruusmerkki kertoo, että puolilla on sama arvo. Yhtälö on ehto, ei käsky laskea vain vasemmalta oikealle.</p><h3>Esimerkki 1: lisäys kumotaan</h3><p>□ + 7 = 15: koko määrä 15 koostuu tuntemattomasta osasta ja osasta 7. Puuttuva osa on 15 − 7 = 8. Tarkistus: 8 + 7 = 15.</p><h3>Esimerkki 2: yhtä suuret osat</h3><p>4 × □ = 28: neljä yhtä suurta osaa on yhteensä 28. Yksi osa on 28 : 4 = 7. Tarkistus: 4 × 7 = 28. Voit käyttää myös tuntemaasi kertolaskua.</p><h3>Huomaa tuntemattoman paikka</h3><p>18 − □ = 11 kysyy poistettua osaa, joten □ = 18 − 11 = 7. Sen sijaan □ − 6 = 9 kysyy alkumäärää: 9 + 6 = 15. Pelkkä miinusmerkki ei määrää ratkaisulaskua.</p><p><strong>Väärinkäsitys:</strong> 15 + 7 ei kumoa lisäystä 7, vaan jatkaa sitä. Sijoita ehdotuksesi takaisin: toimiiko alkuperäinen yhtälö?</p>
+<figure data-lesson-role="worked-example"><img src="example1.svg" alt="Ensimmäisen mallin loppuvaihe" width="320" height="125"/><figcaption>Ensimmäisen mallin valmis tarkistus. Alkukuva on oppitunnin alussa.</figcaption></figure>
+<figure data-lesson-role="worked-example"><img src="example2.svg" alt="Toisen mallin loppuvaihe" width="320" height="125"/><figcaption>Toinen selitetty tapaus valmiina. Voit tutkia sen vaiheita mallivalikosta.</figcaption></figure></details>
+</section>
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<section id="n15-practice"><h2>Kokeile ja tarkista</h2><p>Jos □ + 7 = 15 vaihtuu muotoon □ + 7 = 16, miten tuntematon muuttuu? Päättele ennen mallia.</p>
+<label>Tehtävä<select data-task disabled><option value="add">□ + 7 = 15. Mikä luku sopii ruutuun?</option><option value="mul">4 × □ = 28. Mikä luku sopii ruutuun?</option><option value="part">18 − □ = 11. Kuinka suuri osa poistettiin?</option><option value="minus">□ − 6 = 9. Mikä luku oli alussa?</option><option value="zero">□ + 9 = 9. Mikä luku lisättiin?</option><option value="divide">□ : 3 = 6. Mikä luku jaettiin?</option><option value="undoAdd">Kone lisää 5. Mikä lasku samalla luvulla 5 palauttaa alkuperäisen luvun?</option><option value="undoMul">Kone kertoo luvulla 4. Mikä lasku samalla luvulla 4 kumoaa tämän?</option><option value="undoDiv">Kone jakaa luvulla 3. Mikä lasku samalla luvulla 3 palauttaa lähtöluvun?</option><option value="transfer">Aava lisää pussiin 6 helmeä. Nyt pussissa on 19. Montako oli alussa?</option><option value="fraction">Lisäkokeilu: 2 × □ = 3. Myös murtoluku sopii.</option></select></label>
+<p data-question>Ensimmäinen tehtävä: □ + 7 = 15. Mikä luku sopii ruutuun?</p><div data-fields></div><button data-action="check" disabled>Tarkista</button><p data-feedback data-result="neutral" aria-live="polite">JavaScript käynnistää tarkistuksen. Voit myös ratkaista tehtävän paperilla.</p>
+<details data-lesson-role="hint"><summary>Vapaaehtoinen apu</summary><p>Piirrä koko määrä ja sen tunnettu osa. Tai etsi sopiva luku tutusta yhteen- tai kertolaskusta. Voit vastata suoraan ilman mallin avaamista.</p><p data-hint>Vähennä lopputuloksesta lisätty 7.</p></details>
+<p>Voit vastata suoraan millä tahansa oikealla menetelmällä. Lukukenttä hyväksyy samanarvoisen kokonaisluvun, desimaalin tai murtoluvun (esim. 8,0 tai 16/2). Enintään 128 merkkiä; ei laskulausekkeita tai eksponenttimuotoa.</p></section>
+</section>
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Lisäkokeilu</summary><p>Kokeile mallia 2 × □ = 3. Miksi vastaus 1,5 eli 3/2 toimii? Nollalla kertomista ei voi yleisesti kumota jakamalla: 0 × □ = 0 ei yksilöi lukua, ja 0 × □ = 3 ei toteudu.</p></details>
+</section>
+
+<details id="n15-teacher" data-lesson-role="teacher-note"><summary>Opettajalle, rajat ja paperitehtävä</summary>
+<p>Tavoite: Yksinkertaisen yhtälön ratkaiseminen päättelemällä. Vuosiluokat 3–6 kanonisen graafin mukaan. Esitieto: ehdotetun ratkaisun testaaminen sekä additiivinen TAI multiplikatiivinen laskuperhe; molempia ei vaadita aloitukseen. Tarjoa tarvittava tuki muille laskuperheille.</p>
+<p>Pyydä selitys määristä, älä vain numeroiden siirtämisestä. Älä pakota kirjallista algoritmia, jos päässälasku on tilanteessa selkeämpi. Malli ja esimerkit tukevat päättelyä; suora oikea tulos ei kerro käytettyä menetelmää.</p>
+<p>Paikallinen palaute koskee tätä vastausta, ei itsenäisyyttä, pysyvyyttä tai formaalia hallintaa. Ei henkilökohtaista historiaa, tallennusta tai ulkoista laskentapalvelua. Ei väitettä oppimistuloksista. Julkisten oppilasreittien toimivuutta ei varmenneta tässä.</p>
+<p>Malli ei mittaa fyysistä liikettä tai ajankäyttöä; toiston 0,9 sekuntia on esitystahti. Suuri teksti ja oma askellus ovat käytettävissä. Täyttä manuaalista saavutettavuutta tai oppilaskokeilua ei ole tehty.</p>
+<p>Piilota osa 15 laskumerkistä kuppiin ja jätä 7 näkyviin. Päätelkää piilossa oleva määrä. Näytä lopuksi kaikki ja tarkistakaa. Kertolaskussa käytä yhtä suuria ryhmiä.</p><p><strong>Poistumiskysymys:</strong> Päättele 20 − □ = 13 ja tarkista. Millä tavoin se eroaa yhtälöstä □ − 13 = 20?</p></details>
+</div>

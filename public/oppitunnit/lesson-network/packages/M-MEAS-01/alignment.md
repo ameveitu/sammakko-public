@@ -1,0 +1,14 @@
+# M-MEAS-01 — actual Lite and canonical alignment
+
+Canonical title: Mittaaminen suureen vertaamisena sovittuun yksikköön. Grade1-2, procedure/atomic. Graph SHA17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb. Exact required/strong relationships are copied without promotion in lesson.json planning.
+
+NodeSpec.id=M-MEAS-01; source measure.ts; stop=Klemmarimittari; node rev/validRevs audit1-2026-10-28. Global CONTENT_REV lite181-2026-10-27 is fallback only. Imported Lite remains immutable.
+
+Two demos layScene(5) and layScene(4,1), equal units from start/end, deliberately missing one interval. count: n3..8, unitsArt, spoken-number choice with low/high-count whys, optional point/count hint. lay: n3..8, iterate task and start/end hint. judge: n4..6, choose valid equal units against two sampled gap/overlap/mixed-size errors with specific whys. transfer: shifted ribbons a3..6,b=a±1/2, same22px reference unit, count to compare. kit.cases uses all three base families in guided/independent/retrieval and transfer separately. unitsArt and layScene add decorative margins around visible pieces; this source uses touching full unit rectangles. ui.iterate auto-positions/counts pieces and speaks: our source omits forced speech, adds controlled placement repair, and states assisted placement limits. Audit row14 and detailed M-MEAS-01 correction read. COVERAGE omits lay and uses stale global revision. No own families.ts DECL/coverage row and no SIMS entry; index goal filled from GOALS, node audit revision retained.
+
+## Authored treatment
+Length-only procedure. Concrete equal blocks→accurate tiled picture→number and named unit. Worked4 units; gap misconception; transfer3-unit card; optional same6 small/3 large-unit discussion. Practice covers exact physical intervals in any piece-ID order. No fractions, cm conversion or curve measurement demanded.
+
+Pedagogy, concrete example, original precise diagrams, misconception and transfer precede or accompany supported practice. Optional supports do not become evidence gates. All on-screen objects are deterministic models, not learner physical observations. Exact source hashes and primary-source adopted/rejected decisions are in lesson.json. No efficacy/human validation, persistence, score, mastery, route/public deployment approval is claimed.
+
+INTERACTION_FEEDBACK_CONTRACT: old correct and incorrect feedback retires on semantic edits; equivalent piece identity/order, control order or visual guides preserve truth. Returning to a prior answer still needs explicit recheck. Exact shape, dense required indices, missing/extra/invalid/duplicate entries and conservation are checked; interface failure never gives success. Self-contained mount lifecycle owns3delegated listeners, no timers/imports; reset adds none, dispose removes all. Tests/QA remain pending until author freeze.

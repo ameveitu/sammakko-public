@@ -1,0 +1,712 @@
+# Batch-01 authored design; independent content review and pilot acceptance remain pending.
+schema_version: 0.1.0
+kc_id: M-NUM-01
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Kohteiden laskeminen yksi yhteen -vastaavuudella
+  subject: mathematics
+  grade_band: 1-2
+  mastery_role: integration
+  node_kind: integration
+  source_basis: direct_curriculum
+  concept_path:
+    - Matematiikka
+    - Luvut ja laskutoimitukset
+    - Lukukäsite
+    - Laskemisen periaatteet
+  curriculum_refs:
+    - OPH-POPS2014-MATH-VL1-2-S2
+  prerequisite_snapshot:
+    hard:
+      - M-NUM-STABLE-ORDER
+      - M-NUM-1TO1
+    strong: []
+    helpful: []
+teaching_model:
+  learning_goal: "Oppilas yhdistää jo itsenäisesti osoitetut lukusanojen järjestyksen ja yksi yhteen -vastaavuuden taidot samaan
+    omaan laskentaan: jokaiselle esineelle kohdistuu täsmälleen yksi lukusana ja laskujono etenee
+    suomenkielisessä järjestyksessä yhdestä alkaen."
+  learner_facing_goal: Osaan laskea merkit niin, että lukusanat ja esineisiin osoittaminen kulkevat yhdessä.
+  core_idea: "Laskemisessa pidetään yhtä aikaa huolta kahdesta asiasta: missä järjestyksessä lukusanat tulevat
+    ja mille esineelle kukin sana kohdistuu. Kumpikaan onnistuminen yksin ei vielä näytä niiden yhdistämistä."
+  success_evidence:
+    - Oppilas muodostaa yhden yhteisen järjestetyn laskentajonon, jossa ovat sekä valitut sanat että niiden
+      esinekohteet.
+    - Jokainen tehtävän esine esiintyy jonossa kerran, ja jokaiseen sanaan liittyy yksi esine.
+    - Sanat ovat samassa jonossa tavanomaisessa suomenkielisessä järjestyksessä yhdestä alkaen; esineiden
+      vierailujärjestyksen saa valita itse.
+    - Kolme tuetonta onnistumista vähintään kahdesta tehtäväpohjasta, erillinen asettelun siirtotehtävä ja
+      myöhempi viivästetty näyttö arvioidaan tämän KC:n omana evidenssinä.
+    - Onnistuminen osoittaa tässä käyttöliittymässä koostettua laskentaa, ei spontaania suullista tuottamista
+      eikä alitaitojen KC:iden uutta hallintaa.
+  boundaries:
+    in_scope:
+      - Oman laskennan koostaminen paikallisesti kuunneltavilla suomen lukusanoilla ja näkyvien esineiden
+        valinnoilla.
+      - Kolmesta kuuteen erillistä näkyvää merkkiesinettä; lukusanavalikoima säilyy kokonaisena yhdestä
+        kymmeneen.
+      - Lukusanojen järjestyksen ja kertakattavan kohdistamisen osoittaminen samassa omassa laskentajonossa.
+      - Rivistä eri kohtiin aseteltuihin merkkeihin siirtyvä rajattu asettelusiirto sekä myöhempi tueton
+        kertaus.
+    out_of_scope:
+      - Pelkkä lopputuloksen valinta laskentajonon sijasta.
+      - Kardinaliteetin erillinen jäsenjoukkoraportti tai sen hyväksilukeminen tälle integraatiolle.
+      - Lukusanan ja numeromerkin yhdistäminen, lukusanojen kirjoittaminen tai suullisen ääntämisen arviointi.
+      - Yhden yhdistetyn virhevastauksen perusteella pakotettu ohjaus tiettyyn lapsi-KC:hen.
+  prerequisite_assumptions:
+    - kc_id: M-NUM-STABLE-ORDER
+      expected_level: Nykyinen itsenäisesti osoitettu osaaminen
+    - kc_id: M-NUM-1TO1
+      expected_level: Nykyinen itsenäisesti osoitettu osaaminen
+  conceptual_invariants:
+    - Sanajonon ja kohdevalintojen on kuuluttava samaan oppilaan tuottamaan laskentaan.
+    - Oikea lukusanojen jono ei korjaa puuttuvaa tai toistettua esinettä. Kaikkien esineiden kattaminen ei
+      korjaa sanojen järjestysvirhettä.
+    - Molempien vaadittujen juurten nykyinen itsenäisesti osoitettu osaaminen on edellytys, mutta se ei korvaa erillistä
+      yhdistämisnäyttöä.
+    - Integraatiotehtävä ei myönnä alitaitojen osaamista eikä yksin paikanna epäonnistumisen syytä.
+  likely_confusions:
+    - M-NUM-01-OBS-ASSIGNMENT
+    - M-NUM-01-OBS-WORD-ORDER
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+    - DIAGNOSTIC
+    - ORIENT
+    - WORKED_EXAMPLE
+    - EXPLAIN
+    - GUIDED_PRACTICE
+    - INDEPENDENT_PRACTICE
+    - TRANSFER_CHECK
+    - MASTERY_GATE
+  fast_path:
+    enabled: true
+    diagnostic_requirement: Vaadittujen esitietojen nykyinen itsenäinen osaaminen on osoitettu. Kaksi erillistä tuetonta diagnostista tehtäväpohjaa
+      onnistuu ja tuottaa keskisen tavoitteen tagit. Opetus voidaan ohittaa, mutta itsenäiset minimit ja uusi
+      siirtotehtävä jäävät pakollisiksi.
+    transfer_confirmation: required
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Havainnoi nykyistä keskistä tavoitetta ilman ennakkoon näytettyä vastausta. Yhdistetty virhe ei
+        käynnistä lapsikohtaista pakko-ohjausta.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-01-DIAG-RETKIMERKIT
+              - M-NUM-01-DIAG-ASKARTELU
+    ORIENT:
+      purpose: Tee tehtävän tavoite ja valintojen merkitys ymmärrettäväksi ennen mallia.
+      blocks:
+        - type: explanatory_text
+          content: Loikka merkitsee metsäretken lähtöpaikan kuvamerkeillä. Tunnet jo lukusanojen järjestyksen ja osaat
+            pitää huolta esineistä. Nyt saat ne toimimaan yhdessä samassa laskussa. Voit kuunnella sanoja
+            erikseen. Kuuntelu ei lisää sanaa vastaukseen; Käytä lisää sanan juuri senhetkiseen
+            esinevalintaasi.
+    WORKED_EXAMPLE:
+      purpose: Näytä pieni erillinen opetusesimerkki ja selitä, mihin havainto perustuu. Esimerkkiä ei lasketa
+        oppilaan evidenssiksi.
+      blocks:
+        - type: worked_example
+          content:
+            problem: Harjoitusesimerkissä on kivi ja käpy. Ne ovat kaksi erillistä esinettä.
+            steps:
+              - Valitsen kiven ja käytän sanaa yksi. Poistan sitten oman esinevalintani.
+              - Valitsen kävyn ja käytän sanaa kaksi. Tallentunut jono on yksi → kivi, kaksi → käpy.
+              - "Tarkistan kaksi asiaa: esineet tulivat mukaan kerran ja sanat etenivät järjestyksessä.
+                Kumpikin asia näkyy samassa jonossa."
+            note: Voisin aloittaa kävystä. Silloin ensimmäinen sana liittyisi käpyyn ja seuraava kiveen. Esineiden muoto
+              ei määrää niiden laskentajärjestystä.
+        - type: comparison
+          content:
+            cases:
+              - label: Sanat järjestyksessä, esineessä palataan uudelleen
+                text: Laskija voi käyttää sanoja yksi ja kaksi mutta osoittaa molemmilla kerroilla samaa esinettä. Sanajono ei
+                  yksin osoita, että toinen esine laskettiin.
+              - label: Esineet mukana, sana toistuu
+                text: Laskija voi osoittaa kiveä ja käpyä kumpaakin kerran mutta käyttää molemmilla kerroilla sanaa yksi.
+                  Esineiden kattaminen ei yksin osoita tavallista laskujonoa.
+            note: Esimerkit auttavat tarkistamaan omaa toimintaa. Ne eivät kerro, mikä alitaito joltakin oppilaalta
+              puuttuu.
+    EXPLAIN:
+      purpose: Yhdistä matemaattinen ajatus oppilaan itse ohjaamaan toimintaan antamatta tehtäväkohtaista vastausta.
+      blocks:
+        - type: explanatory_text
+          content: Valitse laskemisellesi reitti, jota pystyt seuraamaan. Käytä yhtä esinevalintaa ja yhtä lukusanaa
+            kerrallaan. Huolehdi sekä esineiden mukanaolosta että sanojen järjestyksestä. Näet oman laskentasi
+            sanajonossa ja voit muuttaa sitä ennen lähettämistä.
+    GUIDED_PRACTICE:
+      purpose: Harjoittele rajattua tavoitetta; tämän vaiheen ja pyydettyjen vihjeiden avulla saatu onnistuminen
+        pysyy tuettuna.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-01-GUIDED-YHTEINEN-JONO
+    INDEPENDENT_PRACTICE:
+      purpose: Kerää kolme tuetonta onnistumista vähintään kahdesta tehtäväpohjasta. Kukin onnistuminen osoittaa
+        koko keskisen tavoitteen.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-01-INDEP-REITTIMERKIT
+              - M-NUM-01-INDEP-KUVAKORTIT
+    TRANSFER_CHECK:
+      purpose: Sovella samaa tavoitetta aidosti kaksiulotteisessa asettelussa. Pelkkä uusi tarina tai uusi siemen ei
+        ole siirtonäyttö.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-01-TRANSFER-HAJAUTETUT-MERKIT
+    MASTERY_GATE:
+      purpose: Reflektio ei ole pisteytetty näyttö. Hallinta ratkaistaan vain määritetyistä itsenäisistä, siirto- ja
+        viivästetyistä tapahtumista.
+      blocks:
+        - type: reflection
+          content: Miten pidit esineet ja lukusanat yhdessä? Voisitko aloittaa toisesta esineestä ja noudattaa silti
+            samoja laskemisen sääntöjä? Voit kertoa ajatuksen myös ääneen.
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+    fast_path_confirmation_tags:
+      - count_integrated
+    execution_policy: Kaksi erillistä tuetonta diagnoosia voi ohittaa opetuksen. Vaadittujen esitietojen
+      nykyinen itsenäinen osaaminen, itsenäiset minimit ja siirtovahvistus tarkistetaan silti normaalisti.
+    pass_rule: Molemmat diagnoosit onnistuvat keskisen tavoitteen koko predikaatissa. Epäonnistuminen ei yksin
+      paikanna lapsen puutetta.
+  independent:
+    minimum_successes: 3
+    template_diversity: 2
+    diagnostic_credit:
+      kind: equivalent_count_diagnostics_v1
+      diagnostic_templates: [M-NUM-01-DIAG-RETKIMERKIT, M-NUM-01-DIAG-ASKARTELU]
+      independent_templates: [M-NUM-01-INDEP-REITTIMERKIT, M-NUM-01-INDEP-KUVAKORTIT]
+    max_supported_attempts_counted: 0
+    required_tags:
+      - count_integrated
+  transfer:
+    required: true
+    minimum_successes: 1
+    novel_context_required: true
+  delayed:
+    required: true
+    minimum_successes: 2
+    minimum_delay_hours: 24
+    reuse_templates:
+      - M-NUM-01-INDEP-REITTIMERKIT
+    required_tags:
+      - count_integrated
+    required_contexts: []
+    earliest_delay_policy: Aikaisintaan 24 tuntia todellisesta osaamisen saavuttamisesta. Seuraavalla kelpoisella
+      kerralla sekä tämän paketin oma viivästetty tavoitetehtävä että aiemmin harjoiteltu itsenäinen
+      tehtäväpohja tuottavat uutta tuetonta näyttöä.
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+    - misconception_id: M-NUM-01-OBS-ASSIGNMENT
+      evidence_tags:
+        - count_integrated
+      rule: Myöhempi tueton onnistuminen koko tämän KC:n tavoitteessa voi poistaa aktiivisen havaintomerkinnän. Tämä
+        ei vahvista selitystä alkuperäisen virheen syystä eikä myönnä lapsi-KC:n osaamista.
+    - misconception_id: M-NUM-01-OBS-WORD-ORDER
+      evidence_tags:
+        - count_integrated
+      rule: Myöhempi tueton onnistuminen koko tämän KC:n tavoitteessa voi poistaa aktiivisen havaintomerkinnän. Tämä
+        ei vahvista selitystä alkuperäisen virheen syystä eikä myönnä lapsi-KC:n osaamista.
+items:
+  - id: M-NUM-01-DIAG-RETKIMERKIT
+    kc_ids:
+      - M-NUM-01
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske lähtöpaikan kuvamerkit omalla tavallasi ja tallenna laskentasi sanajonoon.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: integrated_count
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Lähtöpaikan kuvamerkit
+      objectLabel: Kuvamerkki
+      countRange:
+        - 3
+        - 6
+      layout: row
+      context: Retken lähtöpaikalla on kuvamerkkejä. Laske kuvissa näkyvät erilliset merkit.
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-01-OBS-ASSIGNMENT
+        detect: observed:correspondence
+      - misconception_id: M-NUM-01-OBS-WORD-ORDER
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Pysähdy tarkastelemaan omaa laskentaasi. Mitä aiot tehdä seuraavaksi?
+      - level: 2
+        text: "Katso yksi tallentunut pari: mikä sana siinä on ja mihin esineeseen se kohdistuu?"
+      - level: 3
+        text: Tarkista oma laskusi sekä esineiden että sanojen kannalta. Jokaiselle esineelle kuuluu yksi sana, ja
+          sanojen tulee edetä tavallisessa laskujärjestyksessä.
+    invariants:
+      - Täsmälleen yksi sanan käyttökerta yhtä esinettä kohti ja kaikki esineet kerran.
+      - Samat käyttökerrat muodostavat tavallisen lukusanajonon; osaehtojen erilliset onnistumiset eivät riitä.
+      - Kaikki esineiden vierailujärjestykset ovat sallittuja.
+      - Kohteita ja sanoja ei valita automaattisesti.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän integrated_count-predikaatti, paikallisten suomenkielisten sanapolettien valintojen
+          tulkinta ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen
+          sisältö vaatii oman arvionsa.
+  - id: M-NUM-01-DIAG-ASKARTELU
+    kc_ids:
+      - M-NUM-01
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske pöydällä olevat kuviomerkit. Näytä laskentasi esinevalinnoilla ja sanoilla.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: integrated_count
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Askartelupöydän kuviomerkit
+      objectLabel: Kuviomerkki
+      countRange:
+        - 3
+        - 6
+      layout: row
+      context: Askartelupöydän kuviomerkit odottavat laskemista.
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-01-OBS-ASSIGNMENT
+        detect: observed:correspondence
+      - misconception_id: M-NUM-01-OBS-WORD-ORDER
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Pysähdy tarkastelemaan omaa laskentaasi. Mitä aiot tehdä seuraavaksi?
+      - level: 2
+        text: "Katso yksi tallentunut pari: mikä sana siinä on ja mihin esineeseen se kohdistuu?"
+      - level: 3
+        text: Tarkista oma laskusi sekä esineiden että sanojen kannalta. Jokaiselle esineelle kuuluu yksi sana, ja
+          sanojen tulee edetä tavallisessa laskujärjestyksessä.
+    invariants:
+      - Täsmälleen yksi sanan käyttökerta yhtä esinettä kohti ja kaikki esineet kerran.
+      - Samat käyttökerrat muodostavat tavallisen lukusanajonon; osaehtojen erilliset onnistumiset eivät riitä.
+      - Kaikki esineiden vierailujärjestykset ovat sallittuja.
+      - Kohteita ja sanoja ei valita automaattisesti.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän integrated_count-predikaatti, paikallisten suomenkielisten sanapolettien valintojen
+          tulkinta ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen
+          sisältö vaatii oman arvionsa.
+  - id: M-NUM-01-GUIDED-YHTEINEN-JONO
+    kc_ids:
+      - M-NUM-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Harjoittele kuvamerkkien laskemista. Voit pysähtyä katsomaan omaa sanajonoasi ja pyytää
+        tarvittaessa vihjeen.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: integrated_count
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Harjoituksen kuvamerkit
+      objectLabel: Kuvamerkki
+      countRange:
+        - 3
+        - 6
+      layout: row
+      context: Nämä kuvamerkit ovat harjoittelua varten. Saat valita laskemisen reitin.
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-01-OBS-ASSIGNMENT
+        detect: observed:correspondence
+      - misconception_id: M-NUM-01-OBS-WORD-ORDER
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Pysähdy tarkastelemaan omaa laskentaasi. Mitä aiot tehdä seuraavaksi?
+      - level: 2
+        text: "Katso yksi tallentunut pari: mikä sana siinä on ja mihin esineeseen se kohdistuu?"
+      - level: 3
+        text: Tarkista oma laskusi sekä esineiden että sanojen kannalta. Jokaiselle esineelle kuuluu yksi sana, ja
+          sanojen tulee edetä tavallisessa laskujärjestyksessä.
+    invariants:
+      - Täsmälleen yksi sanan käyttökerta yhtä esinettä kohti ja kaikki esineet kerran.
+      - Samat käyttökerrat muodostavat tavallisen lukusanajonon; osaehtojen erilliset onnistumiset eivät riitä.
+      - Kaikki esineiden vierailujärjestykset ovat sallittuja.
+      - Kohteita ja sanoja ei valita automaattisesti.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän integrated_count-predikaatti, paikallisten suomenkielisten sanapolettien valintojen
+          tulkinta ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen
+          sisältö vaatii oman arvionsa.
+  - id: M-NUM-01-INDEP-REITTIMERKIT
+    kc_ids:
+      - M-NUM-01
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske Loikan reittimerkit ja tallenna oma laskentasi.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: integrated_count
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Loikan reittimerkit
+      objectLabel: Reittimerkki
+      countRange:
+        - 3
+        - 6
+      layout: row
+      context: Loikan polun alkua varten valmistetut kuviomerkit ovat rivissä. Jokainen erillinen kuva on laskettava
+        merkki.
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-01-OBS-ASSIGNMENT
+        detect: observed:correspondence
+      - misconception_id: M-NUM-01-OBS-WORD-ORDER
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Pysähdy tarkastelemaan omaa laskentaasi. Mitä aiot tehdä seuraavaksi?
+      - level: 2
+        text: "Katso yksi tallentunut pari: mikä sana siinä on ja mihin esineeseen se kohdistuu?"
+      - level: 3
+        text: Tarkista oma laskusi sekä esineiden että sanojen kannalta. Jokaiselle esineelle kuuluu yksi sana, ja
+          sanojen tulee edetä tavallisessa laskujärjestyksessä.
+    invariants:
+      - Täsmälleen yksi sanan käyttökerta yhtä esinettä kohti ja kaikki esineet kerran.
+      - Samat käyttökerrat muodostavat tavallisen lukusanajonon; osaehtojen erilliset onnistumiset eivät riitä.
+      - Kaikki esineiden vierailujärjestykset ovat sallittuja.
+      - Kohteita ja sanoja ei valita automaattisesti.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän integrated_count-predikaatti, paikallisten suomenkielisten sanapolettien valintojen
+          tulkinta ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen
+          sisältö vaatii oman arvionsa.
+  - id: M-NUM-01-INDEP-KUVAKORTIT
+    kc_ids:
+      - M-NUM-01
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske pöydän kuvakortit. Esitä laskentasi omassa sanajonossasi.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: integrated_count
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Pöydän kuvakortit
+      objectLabel: Kuvakortti
+      countRange:
+        - 3
+        - 6
+      layout: row
+      context: Loikka tarkistaa askartelupöydän kuvakortteja. Kortit on asetettu riviin tarkistusta varten.
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-01-OBS-ASSIGNMENT
+        detect: observed:correspondence
+      - misconception_id: M-NUM-01-OBS-WORD-ORDER
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Pysähdy tarkastelemaan omaa laskentaasi. Mitä aiot tehdä seuraavaksi?
+      - level: 2
+        text: "Katso yksi tallentunut pari: mikä sana siinä on ja mihin esineeseen se kohdistuu?"
+      - level: 3
+        text: Tarkista oma laskusi sekä esineiden että sanojen kannalta. Jokaiselle esineelle kuuluu yksi sana, ja
+          sanojen tulee edetä tavallisessa laskujärjestyksessä.
+    invariants:
+      - Täsmälleen yksi sanan käyttökerta yhtä esinettä kohti ja kaikki esineet kerran.
+      - Samat käyttökerrat muodostavat tavallisen lukusanajonon; osaehtojen erilliset onnistumiset eivät riitä.
+      - Kaikki esineiden vierailujärjestykset ovat sallittuja.
+      - Kohteita ja sanoja ei valita automaattisesti.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän integrated_count-predikaatti, paikallisten suomenkielisten sanapolettien valintojen
+          tulkinta ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen
+          sisältö vaatii oman arvionsa.
+  - id: M-NUM-01-TRANSFER-HAJAUTETUT-MERKIT
+    kc_ids:
+      - M-NUM-01
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Laske alustalle asetellut kuviomerkit ja tallenna laskentasi.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: layout_change
+        baselineIndependent: M-NUM-01-INDEP-REITTIMERKIT
+        from: row
+        to: scatter
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: integrated_count
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Alustan kuviomerkit
+      objectLabel: Kuviomerkki
+      countRange:
+        - 3
+        - 6
+      layout: scatter
+      context: Kuviomerkit on aseteltu alustalle eri kohtiin.
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-01-OBS-ASSIGNMENT
+        detect: observed:correspondence
+      - misconception_id: M-NUM-01-OBS-WORD-ORDER
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Pysähdy tarkastelemaan omaa laskentaasi. Mitä aiot tehdä seuraavaksi?
+      - level: 2
+        text: "Katso yksi tallentunut pari: mikä sana siinä on ja mihin esineeseen se kohdistuu?"
+      - level: 3
+        text: Tarkista oma laskusi sekä esineiden että sanojen kannalta. Jokaiselle esineelle kuuluu yksi sana, ja
+          sanojen tulee edetä tavallisessa laskujärjestyksessä.
+    invariants:
+      - Täsmälleen yksi sanan käyttökerta yhtä esinettä kohti ja kaikki esineet kerran.
+      - Samat käyttökerrat muodostavat tavallisen lukusanajonon; osaehtojen erilliset onnistumiset eivät riitä.
+      - Kaikki esineiden vierailujärjestykset ovat sallittuja.
+      - Kohteita ja sanoja ei valita automaattisesti.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän integrated_count-predikaatti, paikallisten suomenkielisten sanapolettien valintojen
+          tulkinta ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen
+          sisältö vaatii oman arvionsa.
+  - id: M-NUM-01-DELAY-PALUU-LASKENTAAN
+    kc_ids:
+      - M-NUM-01
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_count_task_v1
+      instruction: Palaa laskemiseen ja laske näkyvät merkit ilman opastusta. Tallenna oma laskentasi.
+      access: local_finnish_tokens_v1
+      assistance:
+        kind: none
+      novelty:
+        kind: none
+    truth_model:
+      kind: finite_count_predicate_v1
+      objective: integrated_count
+    parameter_model:
+      kind: object_set_v1
+      lexicon: fi-1-10-v1
+      setLabel: Uuden retken merkit
+      objectLabel: Kuvamerkki
+      countRange:
+        - 3
+        - 6
+      layout: row
+      context: Uutta retkeä varten otetaan esiin uusi joukko kuvamerkkejä.
+      rearrange: false
+    misconception_rules:
+      - misconception_id: M-NUM-01-OBS-ASSIGNMENT
+        detect: observed:correspondence
+      - misconception_id: M-NUM-01-OBS-WORD-ORDER
+        detect: observed:stable_order
+    hints:
+      - level: 1
+        text: Pysähdy tarkastelemaan omaa laskentaasi. Mitä aiot tehdä seuraavaksi?
+      - level: 2
+        text: "Katso yksi tallentunut pari: mikä sana siinä on ja mihin esineeseen se kohdistuu?"
+      - level: 3
+        text: Tarkista oma laskusi sekä esineiden että sanojen kannalta. Jokaiselle esineelle kuuluu yksi sana, ja
+          sanojen tulee edetä tavallisessa laskujärjestyksessä.
+    invariants:
+      - Täsmälleen yksi sanan käyttökerta yhtä esinettä kohti ja kaikki esineet kerran.
+      - Samat käyttökerrat muodostavat tavallisen lukusanajonon; osaehtojen erilliset onnistumiset eivät riitä.
+      - Kaikki esineiden vierailujärjestykset ovat sallittuja.
+      - Kohteita ja sanoja ei valita automaattisesti.
+    provenance:
+      - source_id: PROJECT-ENUMERATION-v0.1
+        claim: Tämän tehtävän integrated_count-predikaatti, paikallisten suomenkielisten sanapolettien valintojen
+          tulkinta ja virhekoodit ovat ADR-0009:n rajattu deterministinen projektimalli; tehtäväkohtainen
+          sisältö vaatii oman arvionsa.
+misconceptions:
+  - id: M-NUM-01-OBS-ASSIGNMENT
+    description: Yhteisessä laskentajonossa esineisiin kohdistaminen ei täytä kertakattavuuden ehtoa. Tämä
+      havainto ei yksin kerro virheen syytä eikä diagnosoi M-NUM-1TO1:n säilynyttä osaamista.
+    evidence_patterns:
+      - kind: domain_observation
+        when: observed:correspondence
+    feedback_strategy:
+      conceptual_prompt: Tarkastele omaa sanajonoasi. Mihin esineeseen kukin käyttämäsi sana kohdistui?
+      interpretation_limit: Havaintokoodi on rajattu tuotoksen tai toimintoketjun poikkeama. Selitys oppilaan
+        ajattelusta on hypoteesi; yhdestä vastauksesta ei tehdä lapsikohtaista diagnoosia.
+    repair_targets: []
+    status: hypothesis
+  - id: M-NUM-01-OBS-WORD-ORDER
+    description: Yhteisen laskentajonon sanat eivät muodosta tavallista järjestystä. Tämä ei yksin diagnosoi
+      M-NUM-STABLE-ORDER:n osaamista erillään esineiden seuraamisesta.
+    evidence_patterns:
+      - kind: domain_observation
+        when: observed:stable_order
+    feedback_strategy:
+      conceptual_prompt: Kuuntele haluamiasi sanoja erikseen ja tarkastele itse muodostamaasi jonoa. Etenikö se
+        tarkoittamassasi järjestyksessä?
+      interpretation_limit: Havaintokoodi on rajattu tuotoksen tai toimintoketjun poikkeama. Selitys oppilaan
+        ajattelusta on hypoteesi; yhdestä vastauksesta ei tehdä lapsikohtaista diagnoosia.
+    repair_targets: []
+    status: hypothesis
+differentiation:
+  support_variants:
+    step_chunking: Pysähdy ennen seuraavaa sanaa. Mieti erikseen, mihin esineeseen aiot osoittaa ja mitä sanaa
+      aiot käyttää. Tarkista sitten oma tallentunut parisi. Tuki ei valitse esinettä eikä sanaa puolestasi.
+    hint_availability: Kolme oppilaan pyytämää sanallista vihjetasoa. Vihje kirjautuu tuetuksi ennen
+      paljastamista, eikä sen avulla tehty vastaus tuota itsenäistä näyttöä.
+    text_density: Yksi lyhyt toimintajakso kerrallaan. Sanavalikoiman toisto on oppilaan käynnistämää paikallista
+      kuuntelua, ei tehtävätekstin automaattista lukua.
+    worked_example_depth: Opetuksen erillinen pieni esimerkki on tarkasteltavissa ennen ohjattua harjoitusta.
+      Tuotoksen oikeaa jonoa tai jäsenvalintaa ei täytetä tehtävään.
+    representation_boundary: Sama tavoite ja sama rajattu esinejoukko säilyvät; ei automaattista seuraavaa sanaa
+      tai kohdetta, laskumerkintöjä, valitse kaikki -oikotietä eikä valmista lukumäärää.
+    reduced_motion: Työ onnistuu näppäimistöllä ilman animaatiota tai aikarajaa. Laaja ruudunlukija- tai
+      nonvisuaalisen oppimistavoitteen vastaavuus ei ole tällä sisällöllä hyväksytty.
+  challenge_variants:
+    learner_prompt: Kuvittele, että aloittaisit laskemisen toisesta merkistä. Miten voisit perustella, että sekä
+      esineisiin kohdistaminen että lukusanojen järjestys pysyvät kunnossa? Käytä samaa pientä merkkijoukkoa.
+    reduced_scaffolding: Oppilas perustelee oman reittinsä ja tarkistustapansa; sama pieni lukumääräalue ja tavoite pysyvät.
+    alternate_solution_compare: Vertaa kahta mahdollista laskureittiä. Perustele, miten kummassakin näkyvät sekä
+      sanajärjestys että esineiden kertakattavuus.
+    assessment_limit: Pohdintaa ei pisteytetä eikä sen tekstiä käytetä hallinta-, syy- tai lapsievidenssinä.
+      Haaste ei lisää numeroaluetta eikä uusia KC-tavoitteita.
+representations:
+  - id: M-NUM-01-REP-ENUMERATION
+    type: diagram
+    purpose: Esitä tehtävän omat näkyvät esineet ja oppilaan itse muodostama laskenta ilman vastauksen etukäteistä
+      näyttämistä.
+    domain_bindings:
+      - domain.objects
+      - response.acts
+  - id: M-NUM-01-JOURNEY-v1
+    kind: learning_journey_v1
+    chapter: Rannan valmistelut
+    companion: Aava
+    capability: integrated_pairs_v1
+    supportedPreview:
+      kind: counting_with_model_v1
+    purpose: Aava pakkaa retkimerkit. Lasketaan sanoilla ja osoittamalla.
+    consequence: Retkimerkkien pakkaamista on harjoiteltu yhdessä.
+    instruction: Osoita esine. Valitse seuraava lukusana.
+    model:
+      kind: counting_v1
+      count: 3
+    retrieval:
+      kind: closed_episode_retrieval_v1
+      claim: integrated_count
+  - id: v7-evidence-compatibility
+    kind: v7_evidence_compatibility_v1
+    sourceCommit: 0b2a791918f472cf8ba61eede095a6a578adeab6
+    sourceContentHash: cd0c69728d84a0097279c2ae020f14890565ebb63cb329e1135bc3058d833eaa
+    allowedChanges: [additive_journey, lesson_wording]
+requires_capabilities:
+  - rich_text
+  - worked_example
+  - ordering
+  - draggable_objects
+  - diagram
+  - hint_ladder
+  - read_aloud_hook
+  - reduced_motion_variant
+provenance:
+  curriculum:
+    - source_id: PROD01-OPH-MATH12-S2
+      claim: Hyväksytty S2-paikannin rajaa vuosiluokkien 1–2 lukukäsitteen, lukumäärien laskemisen ja lukujonojen
+        opetuksen alueen. Viite ei määrää tätä KC-jakoa, numeroaluetta, esitietograafia tai näytön rajoja.
+      status: verified
+  pedagogy:
+    - source_id: ATKINSON-RENKL-MERRILL-2003
+      claim: Erillinen ratkaistu esimerkki ja oman toiminnan selittäminen ovat yleisesti perusteltuja
+        opetusratkaisuja aiemman rajatun lähdehyväksynnän mukaisesti; lähde ei vahvista tämän paketin
+        tehokkuutta.
+      status: verified
+    - source_id: CAST-UDL-3
+      claim: Esitystapojen ja toiminnan esteiden tarkastelu on yleinen suunnitteluperiaate. Tämän paketin
+        ruudunlukija- ja nonvisuaalista vastaavuutta tai täyttä saavutettavuutta ei tämän perusteella
+        hyväksytä.
+      status: verified
+    - source_id: PROJECT-BATCH01-POLICY-v0.1
+      claim: Kolme itsenäistä onnistumista, kaksi tehtäväpohjaa, kaksi diagnoosia, keskisen tavoitteen tagit,
+        siirtovaatimus, kahden onnistumisen viivästetty näyttö aikaisintaan 24 tunnissa ja kolmen–kuuden
+        esineen alue ovat projektin suunnitteluratkaisuja, eivät tutkimuksesta johdettuja vakioita.
+    - source_id: PROJECT-BATCH01-POLICY-v0.1
+      claim: Havaittujen virhekoodien nimeäminen ja palautteen käyttö ovat tämän paketin arviointihypoteeseja.
+        Koodit eivät ole validoituja selityksiä tietyn lapsitaidon puuttumisesta.
+      status: hypothesis
+  domain:
+    - source_id: PROD01-OU-COUNTING-PRINCIPLES
+      claim: OpenLearnin hyväksytyn Discussion-kohdan ensimmäinen ja toinen luetelmakohta kuvaavat lukusanojen
+        järjestystä ja sanan liittämistä esineeseen. Projektin kahden juuren ja yhteisen integraation
+        pisteytys ei ole lähteen empiirinen tulos.
+      status: verified
+    - source_id: PROJECT-ENUMERATION-v0.1
+      claim: Rajattu äärellinen esinejoukko, suomenkielisten valittujen sanapolettien koostaminen, tarkat
+        predikaatit ja hyväksytty toimintoketju ovat determinististä projektin formalisaatiota. Ne eivät väitä
+        spontaania suullista tuottamista, yleistä kardinaalista ymmärrystä tai oppimisvaikuttavuutta.
+validation:
+  schema: pass
+  graph_refs: pass
+  domain_truth: pass
+  item_invariants: pass
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: designed

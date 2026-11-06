@@ -1,0 +1,42 @@
+/* Sammakko visual polish — homepage hero layer (VP02, static). Decorative only:
+   pointer-events none, aria-hidden in markup, no layout shift (absolutely positioned
+   inside the hero, behind its content). html[data-vp=off] restores the original look. */
+.vp-stage{display:none}
+html:not([data-vp=off]) main{overflow-x:clip}
+html:not([data-vp=off]) .hero{position:relative;isolation:isolate}
+html:not([data-vp=off]) .vp-stage{display:block;position:absolute;z-index:-1;top:0;bottom:0;left:calc(50% - 50vw);width:100vw;overflow:hidden;pointer-events:none;user-select:none}
+/* Warm morning light behind the island, very soft so the paper stays the reading surface. */
+.vp-stage::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 46% 60% at 74% 34%,#fbe7ad66 0,#fbe7ad26 45%,transparent 72%)}
+/* The painted shore band: open water behind the island, kept away from the text column. */
+.vp-sea{position:absolute;left:0;right:0;bottom:0;aspect-ratio:3/1;background:url("shore-band.webp") center bottom/100% auto no-repeat;
+  -webkit-mask-image:linear-gradient(90deg,#000 0,#000 calc(50% - 650px),transparent calc(50% - 610px),transparent 44%,#000 60%),linear-gradient(180deg,transparent 0,#000 30%);
+  -webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,#000 0,#000 calc(50% - 650px),transparent calc(50% - 610px),transparent 44%,#000 60%),linear-gradient(180deg,transparent 0,#000 30%);mask-composite:intersect}
+.vp-sea canvas{position:absolute;left:38%;bottom:0;width:62%;height:62%;display:block}
+/* Reeds bend from the root: left in the outer margin, a mirrored clump behind the island's right edge. */
+.vp-reeds,.vp-grass{position:absolute;bottom:-30px;aspect-ratio:360/547;background:url("reeds.webp") center bottom/contain no-repeat;transform-origin:50% 100%}
+.vp-reeds{left:calc(50vw - 600px - 118px);width:104px}
+.vp-grass{right:-14px;width:96px;transform:scaleX(-1)}
+/* Motion starts only through the lifecycle controller; static/no-JS stays still. */
+.vp-stage:is([data-vp-motion=running],[data-vp-motion=paused]) .vp-reeds{animation:vp-reed-sway 4.6s ease-in-out infinite;animation-play-state:paused}
+.vp-stage:is([data-vp-motion=running],[data-vp-motion=paused]) .vp-grass{animation:vp-grass-sway 3.9s ease-in-out -1.4s infinite;animation-play-state:paused}
+.vp-stage[data-vp-motion=running] :is(.vp-reeds,.vp-grass){animation-play-state:running}
+@keyframes vp-reed-sway{0%,100%{transform:skewX(-3deg)}40%{transform:skewX(6deg)}62%{transform:skewX(3.5deg)}}
+@keyframes vp-grass-sway{0%,100%{transform:scaleX(-1) skewX(3deg)}45%{transform:scaleX(-1) skewX(-6deg)}66%{transform:scaleX(-1) skewX(-3deg)}}
+html.calm-chars .vp-reeds{animation:none!important;transform:none}
+html.calm-chars .vp-grass{animation:none!important;transform:scaleX(-1)}
+@media(prefers-reduced-motion:reduce){.vp-reeds{animation:none!important;transform:none}.vp-grass{animation:none!important;transform:scaleX(-1)}}
+/* The left reeds need an outer margin beside the 1200px column; the right clump needs the two-column hero. */
+@media(max-width:1359px){.vp-reeds{display:none}}
+@media(max-width:1023px){.vp-grass{display:none}}
+@media(min-width:1600px){.vp-reeds{left:calc(50vw - 600px - 170px);width:150px}.vp-grass{width:128px}}
+/* Narrow screens: the hero stacks, so the water sits under the island only, never under text. */
+@media(max-width:760px){
+  .vp-sea{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 35%);mask-image:linear-gradient(180deg,transparent 0,#000 35%);aspect-ratio:2/1;background-size:auto 100%}
+  .vp-stage::before{background:radial-gradient(ellipse 80% 30% at 60% 72%,#fbe7ad55 0,transparent 70%)}
+  .vp-reeds,.vp-grass{display:none}
+}
+/* The small caption under the island now sits over painted water: give it a paper backing so its
+   contrast stays what it was on plain paper (≈5.6:1). */
+html:not([data-vp=off]) .map-caption{left:auto;right:6%;padding:3px 12px;border-radius:999px;background:#f7f3e7f2}
+@media print{.vp-stage{display:none!important}}
+

@@ -1,0 +1,94 @@
+schema_version: "0.1"
+kind: scoped_source_registry_supplement
+batch: production-02-association
+approval_scope: citation_only_and_explicit_project_design_not_content_approval
+report: reports/autonomous-52/B02/source-and-content-design.md
+report_sha256: c7715dd62eeaffeefaf3ef93df84d503685137ab040688a2da4a7ee3ee9111fd
+verification_note: Reuses the same-day primary-source audit explicitly bound
+  above; no new fetch, broad approval, empirical threshold or release permission
+  is asserted.
+sources:
+  - id: PROJECT-ASSOCIATION-v1
+    type: project_formalization
+    title: Rajattu kaksisuuntainen vastaavuusprosessi, mallikansi ja muistihakuraja
+    publisher: Sammakko
+    status: project_design
+    applies_to:
+      - M-NUM-WORD-NUMERAL
+      - M-NUM-QTY-WORD
+    locators:
+      - packages/domain/association.ts
+      - packages/learning/association-policy.ts
+      - packages/content/association-deck.ts
+      - packages/learning/association-delivery.ts
+      - packages/learning/retrieval.ts
+      - reports/autonomous-52/B02/association-taught-path-consult.md
+      - reports/autonomous-52/B02/association-deck-independent-review.md
+    supported_claim: Äärellinen saman arvon vastaavuus molemmissa suunnissa,
+      vahvistettu oma valinta, todellinen eri arvoisen alkuparin korjaus, koko
+      vaaditun faktajoukon kaksisuuntainen mallikansi ja muuttumaton raakaa apua
+      säilyttävä oppimishistoria. Process-rooli, sanallinen pääsy,
+      case-kattavuus ja 3/2/4/24h-kynnykset ovat projektin sopimuksia.
+    limits: Ei empiirinen vaikuttavuustutkimus, itsenäinen hyväksyntä näille
+      kahdelle pack-draftille tai lupa ihmiskokeeseen/julkaisuun. Mallin
+      toimitus, tuettu vastaus ja closure eivät myönnä myönteistä
+      taitoevidenssiä. Viivästetty neljän tapauksen näyte ei todista kaikkien
+      faktojen säilymistä.
+    primary_guidance_reused:
+      - source: R01
+        url: https://ies.ed.gov/ncee/wwc/PracticeGuide/26
+        reviewed: 2026-10-26 HTML recommendations 1–3, as bound in source_report
+        node_mapping:
+          M-NUM-WORD-NUMERAL: Näkyvä sana–merkintä-parimalli, lyhyt kieli ja tuen
+            vähentäminen ennen omaa valintaa.
+          M-NUM-QTY-WORD: Koko ryhmän ja sanan parimalli sekä oma tarkistus ilman
+            tarjottua numerovälivastausta.
+        limits: K–6-tuen käytäntöopas; ei näiden digitaalisten tehtävien tai tarkkojen
+          kynnysten validointi. PDF-menetelmiä ei väitetä luetuiksi.
+      - source: R02
+        url: https://www.ncetm.org.uk/classroom-resources/ey-cardinality-and-counting/
+        reviewed: 2026-10-26 HTML introduction, counting/tagging, last number, Numeral
+          meanings and Conservation, as bound in source_report
+        node_mapping:
+          M-NUM-WORD-NUMERAL: Vain merkintöjen esitysten rinnakkainen opetussuunnittelun
+            tuki; sana–merkintä-alueen normiviite on OPH.
+          M-NUM-QTY-WORD: Koko määrän sanallinen merkitys ja asettelun erottaminen
+            määrästä; ei Give-N:n lisäämistä tähän sopimukseen.
+        limits: Alkuperäinen opetusresurssi, ei sovelluksen vaikutuskoe; ei spontaanin
+          suullisen tuotannon validointi.
+  - id: PROD02-OPH-MATH12-S2
+    type: curriculum_authority
+    title: "Matematiikka, vuosiluokat 1–2: S2 Luvut ja laskutoimitukset"
+    publisher: Opetushallitus / ePerusteet
+    url: https://eperusteet.opintopolku.fi/eperusteet-service/api/perusteet/419550/kaikki
+    status: verified_citation_scoped
+    classification: verified_source_scope_from_dated_primary_audit
+    applies_to:
+      - M-NUM-WORD-NUMERAL
+      - M-NUM-QTY-WORD
+    locator:
+      basis_id: 419550
+      subject_id: 466344
+      subject_band_id: 466963
+      band_definition_id: 428780
+      content_id: 469266
+      field: kuvaus.fi
+      html_paragraphs:
+        - 1
+        - 2
+      adjacent_objective_id: 469445
+      adjacent_objective_label: T6
+    verification:
+      reused_report: reports/autonomous-52/B02/source-and-content-design.md
+      access: direct_origin_http_200_reported_2026-10-26
+      response_bytes: 9222036
+      sha256: 7692dcef834d7ab175a1053e40abff6c016bc12003b4a7fdf4b64370c7696d94
+      global_version_timestamp: 1789464097140
+      publication_utc: 2026-09-15T09:21:37.140Z
+      fresh_fetch_this_authoring_task: false
+    supported_claim: Vuosiluokkien 1–2 määrä–lukusana–numeromerkintä-yhteyksien ja
+      lukujen käyttötapojen kansallinen sisältöalue.
+    limits: Ei juuri tämän KC-jaon, kaksisuuntaisuuden process-roolin, sanareitin,
+      20/8 tapauksen, lukualueen, esitietovälttämättömyyden,
+      onnistumiskynnysten, 24h-säännön tai vaikuttavuuden normatiivinen
+      hyväksyntä. PROD01-recordin applies_to-luetteloa ei muuteta.

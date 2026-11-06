@@ -1,0 +1,25 @@
+SAMMAKKO — MANDATORY VISUAL COMPARISON AFTER EVERY ASSET CREATION OR CHANGE
+
+Why: the user liked the textured concept sheet but rejected the simpler SVG assets shipped afterwards. A pleasing preview must be the same artwork as the runtime files, not a separate illustration.
+
+Visual references, in order:
+1. assets/reference/approved-style-concept.png: the successful illustrated library in the conversation.
+2. assets/reference/aava-and-sun-original.jpg and loikka-original.jpg: user-drawn identities.
+3. Current actual PNG base poses and qa/STYLE_COMPARISON.png.
+
+Aava: yellow duckling, orange rounded double-lobed beak, expressive large eye, dark blue hand-drawn outline, gentle yellow pencil fill, small feet. Include the lower horizontal swimming silhouette separately from standing. Do not use Aava's graphic for Sulka.
+Loikka: blue frog, broad soft face and smile, two raised expressive eyes, small rounded body, visible hands/feet, pencil texture and friendly proportions. Not a flat geometric icon, not a muscular humanoid, not a green generic frog.
+
+After generating, editing, background removal, slicing, normalizing, atlas packing, resizing or integration:
+- Compare ACTUAL output pixels with reference, not only a proposed prompt or tool success message.
+- Inspect expression, silhouette, head/body ratio, eye size and highlights, mouth/beak character, palette, texture and framing.
+- Inspect 64/96/128/192px game-size frames. Keep eyes and smile readable.
+- Composite over light and dark scenes; reject text fragments, cut-off limbs, opaque boxes, matte halos or ghost pixels.
+- Inspect a full cycle for baseline drift, scale pumping, accidental jumps and pose-order errors. Align with a shared scale and explicit anchors; do not individually fit each pose until the body changes size between frames.
+- Generate the comparison board from the exact shipped images. Keep the raw generation and previous version for traceability.
+- Record concrete pass/correction-needed observations. This is an agent inspection, not proof of user approval or child engagement.
+- If a replacement is worse, retain the prior better asset. Do not publish the failed candidate merely because generation succeeded.
+
+Reuse the supplied raster art without geometric simplification. Do not claim unsupported poses. Current runtime assets are 12 Aava poses and 12 Loikka poses, plus 9 props. Derived idle/bob/blink movement is deliberately lightweight key-pose animation. Create genuinely missing actions in a future targeted sheet using the same reference, then apply this gate again.
+
+In lessons, prefer named introductions and meaningful reactions. Keep mascots away from measured diagrams and response targets. Let the teacher stop decorative motion. Simulation time and evidence records must never depend on mascot animations.

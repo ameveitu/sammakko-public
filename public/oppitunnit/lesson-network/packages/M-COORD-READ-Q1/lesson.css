@@ -1,0 +1,39 @@
+.fn-lesson { --fn-ink: #173f36; --fn-blue: #276f99; color: var(--fn-ink); max-width: 46rem; margin: auto; }
+.fn-lesson .opening { display: flex; align-items: center; gap: .6rem; }
+.fn-lesson .opening img { width: 72px; height: 72px; flex: 0 0 72px; }
+.fn-lesson .opening p { margin: .3rem 0; }
+.fn-lesson h2 { font-size: 1.5rem; line-height: 1.25; }
+.fn-lesson h3 { font-size: 1.15rem; }
+.fn-lesson nav { display: flex; gap: .5rem; flex-wrap: wrap; margin: .5rem 0; }
+.fn-lesson nav a { min-height: 44px; display: inline-flex; align-items: center; padding: .3rem .5rem; }
+.fn-lesson fieldset { min-width: 0; border: 0; border-bottom: 1px solid #a0b6aa; margin: .5rem 0; padding: .5rem 0 1rem; }
+.fn-lesson label { display: flex; flex-direction: column; gap: .3rem; margin: .5rem 0; }
+.fn-lesson input, .fn-lesson select { max-width: 100%; min-height: 44px; font: inherit; }
+.fn-lesson input { width: 7rem; }
+.fn-lesson input[type="checkbox"] { width: 44px; height: 44px; }
+.fn-lesson button { min-width: 44px; min-height: 44px; margin: .25rem .3rem .25rem 0; white-space: normal; }
+.fn-lesson .primary { background: #236952; color: white; }
+.fn-lesson .actions, .fn-lesson .pair { display: flex; flex-wrap: wrap; gap: .4rem; }
+.fn-lesson svg, .fn-lesson figure img { width: 100%; max-width: 26rem; height: auto; display: block; }
+.fn-lesson figure { margin: .75rem 0; }
+.fn-lesson [data-grid] { max-width: 26rem; }
+.fn-lesson [data-feedback] { display: block; padding: .6rem; border-left: 4px solid #789a8a; margin: .6rem 0; min-height: 2rem; }
+.fn-lesson [data-result="correct"] { border-color: #24794e; }
+.fn-lesson [data-result="retry"], .fn-lesson [data-result="invalid"] { border-color: #a45825; }
+.fn-lesson details { border-top: 1px solid #a0b6aa; padding: .6rem 0; }
+.fn-lesson :focus-visible { outline: 3px solid #a45825; outline-offset: 3px; }
+
+/* Compact own teaching entry; shared presentation chrome stays owned by main. */
+.fn-lesson .opening { font-size: 1rem; line-height: 1.4; margin: .15rem 0; }
+.fn-lesson .opening img { width: 40px; height: 40px; flex-basis: 40px; }
+.fn-lesson .entry-core { font-size: 1rem; line-height: 1.4; margin: .2rem 0; padding: .2rem 0 .5rem; }
+.fn-lesson .entry-core > legend { font-size: 1rem; }
+.fn-lesson .entry-core > p { margin: .25rem 0; }
+.fn-lesson .entry-core > [data-grid] { max-width: 18rem; }
+.fn-lesson .entry-core .pair { gap: .6rem; }
+.fn-lesson .entry-core .pair label { flex-direction: row; align-items: center; margin: .25rem 0; }
+.fn-lesson .entry-core .pair input { width: 3.5rem; }
+.fn-lesson .entry-core > [data-feedback] { font-size: 1rem; line-height: 1.4; padding: .4rem; margin: .3rem 0; }
+.fn-lesson .entry-core > button { font-size: 1rem; padding: .45rem .65rem; margin-top: .2rem; margin-bottom: .2rem; }
+.fn-lesson .entry-core > .actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem; margin: .2rem 0; }
+.fn-lesson .entry-core > .actions button { font-size: 1rem; margin: 0; padding: .4rem; }

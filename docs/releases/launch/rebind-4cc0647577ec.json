@@ -1,0 +1,929 @@
+{
+  "kind": "source_binding_carry_forward",
+  "base": "581fe5e",
+  "by": "Claude (audio session, user-authorized 2026-11-02)",
+  "reason": "Lite audio: segment playback in the audio player (lite/src/audio/player.ts, ui/speech.ts); no lesson content, engine or generator change",
+  "at": "2026-11-02T14:25:17.246Z",
+  "liteGeneratorSha256": {
+    "from": "659420f8c0fe53fd534534081a68aa4661cf58e5784fec7b9cd4c262e99866ab",
+    "to": "4cc0647577ec2adb60042752ffe45e37655abda952a6a41d5c969b050b853822"
+  },
+  "changedLitePaths": [
+    "lite/src/audio/player.ts",
+    "lite/src/ui/speech.ts"
+  ],
+  "checks": [
+    "lesson generator inputs unchanged",
+    "lite/src/content and lite/src/engine unchanged",
+    "Lite changes limited to the audio layer and its call sites",
+    "per node: body.html, lesson.mjs and assets unchanged; lesson.json differs only by revision and currentSource binding"
+  ],
+  "boundary": "Carries the existing software decisions; grants no new content, technical or human approval. Human validation remains pending.",
+  "nodes": [
+    {
+      "kc": "M-GEO-01",
+      "from": "6@264a9b972cdfe7d1d469e4c0a27df31d83f9249ada81d6cebeb1f4b9c1f654af",
+      "to": "7@3b2d42985db6ae8b590a98a18ea23aba668e6e2222a6faa722f73c6291a5931a"
+    },
+    {
+      "kc": "M-REP-04",
+      "from": "6@ade318481b0a4b501943b0ac1c219e20a6be81862b0f39b4004a03a147369304",
+      "to": "7@a26e4b1dcb185736475761cd46cb661ddcdd5bc267f220276a1e9b81d523593e"
+    },
+    {
+      "kc": "M-TH-08",
+      "from": "7@a5898472981dc5ccbf166c5743efef83682b687798e72d4fdc3850b94ed2b8eb",
+      "to": "8@79664d223fd8e929cd6e7046fa558ee1c0d826eef5cb962458b4103b3fba9dbd"
+    },
+    {
+      "kc": "SCI-ENV-SAFE-01",
+      "from": "7@9b05662921c37df99a7b723cf7b8a4ed0f3b99b25e7c3ac047d584ebc279a3d4",
+      "to": "8@2e5848c7e86f0e1531d4bddda00a25302792214711c1b481a85509b306496496"
+    },
+    {
+      "kc": "M-GEO-04",
+      "from": "8@cb6ad02914d2d64e2841039990649399e0aaae94b8ba9ea06f0adb66b5c473cf",
+      "to": "9@5b76155bd1b0f90ab0f8da4ad04f2b330f306ec092360fadc1a642abe83505a3"
+    },
+    {
+      "kc": "M-NUM-1TO1",
+      "from": "8@eff74a530cb02d70c70d23574de65d037c4798f1ebf184ccfc08fb95e90f8d8c",
+      "to": "9@79ec413a89a9a20e890c995d7dde394416e7e199cba224880adf9113090b1a8e"
+    },
+    {
+      "kc": "M-SYM-01",
+      "from": "10@3be4e013c6162d86ac4072da1d42ecabac13626d602dff0f760a434a42ae0cf1",
+      "to": "11@15185c8f9e45681a07f60a6c7f1e87bbde8503781af731e05777f5a822b15e55"
+    },
+    {
+      "kc": "M-NUM-STABLE-ORDER",
+      "from": "6@6e6b587fd574cd70da9949e09caf016ca740b5fb66fd82c83a2f0725ec40c5fb",
+      "to": "7@8ee6c86de80f27e6d7af8de4a6caff8e27eb9f46b901ae6e88eebdeaa8b4e0d1"
+    },
+    {
+      "kc": "M-NUM-WORD-NUMERAL",
+      "from": "6@1261c7c04b86844125fb58476e45d69714bc469b72026c0293a41254fc51af70",
+      "to": "7@8fc5a1dd09a060b161bac7f523f2499b3a6830b373c14d14315edc201705efe4"
+    },
+    {
+      "kc": "M-TH-01",
+      "from": "6@27a4571e0d199e701ef4d2d62033d55263d7aa22357abd78e7f54d0c02e33f10",
+      "to": "7@609633d80158034fcc76ca9254963e471f8c55dd0f88da035135d6ae9b9ca811"
+    },
+    {
+      "kc": "M-TH-02",
+      "from": "6@0c8d3222091ffd39f3ea08ee345cbea5d0117902a9db41cbf3e71abd4f98bca3",
+      "to": "7@6b270210d14cb7a688767b3cf703ecd8ada3a3e6780bc0d7896c99b024dd9ef6"
+    },
+    {
+      "kc": "M-TH-03",
+      "from": "7@8fbcc99ced1f8d8758870dd12301556990e4894cccfa9508b1f3f372708643f5",
+      "to": "8@7d042515edd88920725221d3f04294eed13777624bc725cad83d66572664975e"
+    },
+    {
+      "kc": "M-TH-04",
+      "from": "6@271f133ae08f73a57e218cd6c5a12d832eca7ee5ee93871777651b106fcc2105",
+      "to": "7@cf1362c4366050ce80de3a452ab597895d72efc50ab883779f56ffe7ded0d436"
+    },
+    {
+      "kc": "M-WORK-01",
+      "from": "7@2d83f1cc52718bf43ec2533c9116c68db6fec6ff501fe8aa2b1fdfd8b4032aa6",
+      "to": "8@919c16d4d326825fa37350396c8992a29847389400175314e4108cabfcd7a10b"
+    },
+    {
+      "kc": "M-MEAS-00",
+      "from": "7@7cb6204da8a6d07e7cd729d3ceeb152a4ab8b2b961bd21bcf36adb8d73d258c9",
+      "to": "8@b247939a509c4a38254878162b2bf97c05ec641bbe0a7a9811abde91717cebb6"
+    },
+    {
+      "kc": "M-TH-07",
+      "from": "7@ce225c62d17a5cdeb6ad34290b270483bfad9b407a4bfca970532c445c5faf37",
+      "to": "8@63e89b44eab2703533b035bd84b617291380fe5ac4c1cf1e8aec435bb1ea8b99"
+    },
+    {
+      "kc": "M79-LOGIC-01",
+      "from": "8@96bdcea849ba4d001dc1f848aec82352e587087e86770e839425f65b33c93502",
+      "to": "9@a77c69df0dbfee8f1c03a9558472d542b71c94e436baca406e56e8baf42a0b11"
+    },
+    {
+      "kc": "SCI-ENV-OBSERVE-01",
+      "from": "6@25a2ba68d8743a69193390ac87c4ceb7c29ca07528c9b21caf3db9c2ee8d3824",
+      "to": "7@7ac3a89d410bb0ee8b54c5197d5acecca8339007a3cb26725c6443cdd87037fc"
+    },
+    {
+      "kc": "M-MEAS-02",
+      "from": "10@f8119abb1e4c954f07f11374596483fce7d5425cf443caf8bc0eec483b89acca",
+      "to": "11@c4879407d17f45b09a5eb22ad73cb1c424502263a0ba7510d934508dbfc7bd9d"
+    },
+    {
+      "kc": "M-TIME-01",
+      "from": "7@648df58bb64b5c36ed5d70abaf71dd7a7664598d399063d8f6ac10874f5d19e9",
+      "to": "8@5e5c3df101dfe3eaa450eab881bdc173c7058ba77f11fab6cc2ea6db9a2762b6"
+    },
+    {
+      "kc": "M-NUM-01",
+      "from": "6@683ce0f3d08827021725a830ff7b1af8119e2382e091a4179f510c94bc75bce1",
+      "to": "7@82c4426670ccb828ad8ca3f7b959e13c580edd0e5c84b9c2fb13e08ecc20af3d"
+    },
+    {
+      "kc": "ENV-PHY-MOTION-OBS-01",
+      "from": "6@a3e24cc27481fdf6eed20f568c2b2905c058e6b39ea1ba87645cf27a3dcb8301",
+      "to": "7@9262d1305dcedae0260ac5ee29e2596c0edfee782e15c9d280f4d1d8d072ef71"
+    },
+    {
+      "kc": "M-TIME-03",
+      "from": "11@69504f1fd4a998e843200a2eb2714a59fa1d1241191697cf3a8a2242c7b715e7",
+      "to": "12@507903a123c7f73fec624962389806c081a95c3f9a38432bdeeaa6ae52ce6a96"
+    },
+    {
+      "kc": "M-MEAS-01",
+      "from": "7@eeb5141674dac3e267c8c7f8eeddf8c54a9e56080d64d203f06ccdbaf37f45d0",
+      "to": "8@ef7457b6c9765cc6bafee9c9b53372b7c03ea9ebdcc6e0383a10080f21233b29"
+    },
+    {
+      "kc": "M-NUM-02",
+      "from": "6@97bad654bfc1ab96b8521990e9423cc5d1f0f8b05c38eb79f3477e9330802ecf",
+      "to": "7@1d4be78be10f0e8c908a9b3085eb948a0f8d119496d468b20753e249b9078795"
+    },
+    {
+      "kc": "M-NUM-17",
+      "from": "6@bccd4719f3e842366491ad5b9f118c31edfa5cb7ab5eafd9fa721d1fdcbdd1dc",
+      "to": "7@c95ec57f26730c00350f444226d403782d1f87b49f37197d58987a4e428798d6"
+    },
+    {
+      "kc": "ENV-PHY-MOTION-CHANGE-01",
+      "from": "8@31fff711a0fd70e947685e2db782db370b5410b41632bfa52ae393e3333277af",
+      "to": "9@bcafeacf11578e09f34efb374ee0d484d8beae981f42b33c100faef66d483cab"
+    },
+    {
+      "kc": "M-ADD-01",
+      "from": "9@66395b29ee3ad0ef3b96cbf4243708541edd0d4eaf01be45bc33682741c39259",
+      "to": "10@03aee056b4c9a306abbe407997233d2c10222bada83e0c4a829124b4020532b0"
+    },
+    {
+      "kc": "M-NUM-QTY-NUMERAL",
+      "from": "6@2a8eac434975397f11d9c54311774b038698503a198f4cb68bf8ceefa2721daa",
+      "to": "7@cc153aaddce89d8aabac60697992eddc9597d2142f61bffa7e05b57f32b3d0e5"
+    },
+    {
+      "kc": "M-NUM-QTY-WORD",
+      "from": "7@52bc5fefe3329b5eda6b27f2186b73ec25e49fd8fcd8f8a15c304e70bd8dc227",
+      "to": "8@96cffca13bfb7cc0b300a4d8725db7e4e9cdaed1536fb743cbcbd1265a169cff"
+    },
+    {
+      "kc": "ENV-PHY-MOTION-01",
+      "from": "6@fd5c9ce74a41aaddecca8ebd3e568c4edf530ac2dda3b2b29a2a8a1e87782cf4",
+      "to": "7@fd07e8c84e8bc3e8c1dddf2355a915d298f2b1d9326071ad3e27f34a3f030be3"
+    },
+    {
+      "kc": "M-NUM-03",
+      "from": "7@f0b792997eefe26e73adf8a1d17baf18636cf52de17068f06d0c2153abe7eb3b",
+      "to": "8@40ea9d5b53105b0da8684397d2c05f8858194718afa95e3a827e448c771b0b04"
+    },
+    {
+      "kc": "M-NUM-18",
+      "from": "7@1cd2f781b27c6b989e4cb2177b65cf8cad0589e1df8a5cb729d2512ff56f3d99",
+      "to": "8@45d82e17e86c483b1576dcb433b32b516a7324f9555199e155b0f54703df1682"
+    },
+    {
+      "kc": "PHY79-MOTION-REF",
+      "from": "8@57ccfcbddff40d79990ec27902884c59530bebb7fae0b0a170906c47f15d16a2",
+      "to": "9@5304a673369773210c2554577eac22aa0bfa2fd9c229ca4afc2d56ac6b3c0e36"
+    },
+    {
+      "kc": "M-NUM-07",
+      "from": "6@9add629f98d1c09a0f2b1f5aa8d82143cd30349499f3436bd966bbd7b4a413bd",
+      "to": "7@d3be2d87c3d199d01a2cc882cb606da09ae40ce726c5b711b0c0f9be1276b65f"
+    },
+    {
+      "kc": "M-NUM-08",
+      "from": "8@b0008718967aa9a5c0470c6e1558b78c6428419b38b57e2b592c5d23ce357824",
+      "to": "9@680019dd8c2cd5ab25a0219fb9e6562e230e2b1faf747e3959d43f9dfd781b16"
+    },
+    {
+      "kc": "M-NUM-10",
+      "from": "6@30bea6821fe5a0f09695072f6611a20f4bce9415e7e20b2cfae0112ee836dda9",
+      "to": "7@b809b60718c93e078b6a4fd7ee23fe6178890f3e635737af224c1171e0056a96"
+    },
+    {
+      "kc": "M-TIME-02",
+      "from": "12@aa4fdf01d7809dab512ccecaffb6a1217a37c13b8c4fa5e968ba08ae8cc23b3d",
+      "to": "13@01293742097ae14ee0ed5416525f137efe6ce84ea478d046a247206f99229c6c"
+    },
+    {
+      "kc": "M-NUM-14",
+      "from": "6@33803ae054b02c117b4ed8a6b40915af8df2273ab6e5c737f39e65c550d38090",
+      "to": "7@811b91715406484f41ff1dbe4665a013a4390ba0e9a7c684e96933c33025171b"
+    },
+    {
+      "kc": "PHY79-QTY-CONCEPT",
+      "from": "7@929b492618b180688d07b19ca4b318682fdae8dfcd81dcdd299aa61ff452d856",
+      "to": "8@c4f20a1bcfc9637f9119e2bab5f880bd62afde5591ed19358ebc6cd7dcb26a7e"
+    },
+    {
+      "kc": "PHY79-NUMVALUE",
+      "from": "6@2c049bef7c20da7b235275808044e52110d5dbdf3134be490585e46535041036",
+      "to": "7@9acd4d3970c077e93ad6f57776e347a061e4a1f36234395a971682fcba3a707c"
+    },
+    {
+      "kc": "PHY79-UNIT-CONCEPT",
+      "from": "7@e12adb9190c651d22529ed067a99cce3ba1c0f90e875243b01e36e846b1e90c6",
+      "to": "8@d379f2d7e0d981a61567bd64f110ea6cac99d8a860f63dadb407987d89ab3631"
+    },
+    {
+      "kc": "PHY79-QTY-01",
+      "from": "6@a2512ee27c17d58579d4d01229e4441fd4a5d9a4d1516c22fc7e96e33dac3c21",
+      "to": "7@689cb9074509fca6284be3ff47e1e3e5f3f32b8d658074fd12bd2b3171c457da"
+    },
+    {
+      "kc": "PHY79-DIST-TIME",
+      "from": "15@2ab0c72b9d25e9e963d82a655fa2d1e02b2a43a178884e49f27f26ae9f7e4446",
+      "to": "16@f04e00d59c649b69377e32b3a7b0257f5db9021cb7b71839ce8b9475d5e92549"
+    },
+    {
+      "kc": "M-NUM-EQUALSTEP-SEQ",
+      "from": "9@533440cd70d5ab4ce72025569104ab2d2bfc04069a9b73ea87ad3d231a02ac16",
+      "to": "10@e21e1b8519524b74f64c44f44a1b893863694d31ec14b5b5e96a79a10c5aad1e"
+    },
+    {
+      "kc": "M-NUM-MULTIPLE-INTRO",
+      "from": "9@2dc1c262cb13c79b33825f73c3e19163b5cac8df4f93f8fb485b75b02e454c8e",
+      "to": "10@ab5d0ecbcf5cae52cd9922fd9b2a689a0091e748b3f7e5542db781b2d165ea5d"
+    },
+    {
+      "kc": "M-NUM-16",
+      "from": "6@c57b9b4173982d563f4e975f06d431de64d1adfaf7ace5a7e88b8b589604e621",
+      "to": "7@c069022d60ee37104f4ce8b8e8dc9c9c528f256c7bd9a2a8064d5a856a832fb3"
+    },
+    {
+      "kc": "M-MUL-01",
+      "from": "7@18667d626c29734b2b7d289b7ffa16bc0720f08b38a2aacfb7ef2b48bdc61fdb",
+      "to": "8@93adccb51e59f5adae2834de8c740b4d1c0b3eb22390a81e69a598943cfc8da5"
+    },
+    {
+      "kc": "M-MULTAB-LOW",
+      "from": "7@65082f52c44851771d1cc76cd29330a445a0333fe82e385371d4580f324ea6a7",
+      "to": "8@9b691e1ce65ea4d47a1ad774c044bd2c14931abe0dca65245c989ed8e6fecd6f"
+    },
+    {
+      "kc": "M-DIV-02",
+      "from": "6@32a16dfe45d8be03d2b08e7020d58f392fbb455695201f0a2cee1022eb996a01",
+      "to": "7@7e05a2977da8061e62798247b59bdeb66c887c13876da420d8f06cc85dddc51c"
+    },
+    {
+      "kc": "M-MULTAB-HIGH",
+      "from": "7@03947be178d51e6f2702308bd29afb8e75399c3da1483f72c6727de5dca7d38d",
+      "to": "8@cbdf8fa8316c2f9365e2363c562204f762b8effcd1ca249eb3613f0ae47850dc"
+    },
+    {
+      "kc": "M-MULTAB-ALL",
+      "from": "9@da62fa5f972f449e7cb3a9b3cf2cfd09b0d81a5866bab83865528d800471dc51",
+      "to": "10@427a01a7f956e8f8ca2b75bb081e58e54f006bd749e68658503b024382a74a62"
+    },
+    {
+      "kc": "M-MULTREL-01",
+      "from": "6@2b643af5a2b6676cd27588552a048b1a3d38f8ffc74bd063267ae40e0f08d578",
+      "to": "7@56a5e0dfcad19d1e2d0b3102cb0528790927568f6896ef64cea450ba5cf1e74f"
+    },
+    {
+      "kc": "PHY79-SPEED-CONCEPT",
+      "from": "8@3d542bd23c39abb344ebbc6d681787de264c2488b041134d584a6109cd1691a4",
+      "to": "9@526ae94da11c4ce2c813f48029b35da8237e6422ec8ba97bf7341ba64aa1f74c"
+    },
+    {
+      "kc": "PHY79-ACCEL-CONCEPT",
+      "from": "6@243f06daa5f7c5521cd3f8100afe8eb08e84108b8300da42fe73c4fb4e14fbac",
+      "to": "7@815ef7778806c180b934d4f04229487db03da649d9c2e99345e0b43675963ce1"
+    },
+    {
+      "kc": "SCI-ENV-PRESENT-DATA-01",
+      "from": "7@c15b8aba8fc8f4292e30f0fc26520b5b38cb474f96770ce5ea55854416ccb87c",
+      "to": "8@5af27cb6f10a5c2b2c5fd4af464e1f37216df1e54cd64bbd1a83923a73d2b949"
+    },
+    {
+      "kc": "SCI-ENV-RECORD-DATA-01",
+      "from": "7@4e7ba9972c0b5a0c51cbe7bbc04142ec173d3a2172f49bfbb36708b33c4cda4c",
+      "to": "8@d9162a334dd38a2cdc4a934be8fb9fb835bbd5dd2cb9e7b159ab223902bdc6b5"
+    },
+    {
+      "kc": "SCI-ENV-RECORD-01",
+      "from": "11@dfbcd0d0724ebe4256cb8192c261f9e4df80c7e29b43c1c2a985c186c9c46e16",
+      "to": "12@914f7cce99ecc1ef5bdccacaed7333d6c92622305a4a25c5322fe66f81553766"
+    },
+    {
+      "kc": "M-NUM-06",
+      "from": "7@8fcc7fd09ba0089ac206562d173518aa18e9ed1d76ac1dc48c0bd259328b5823",
+      "to": "8@9f95d4c3e9b0dc48a5c36f1156963ed1559c7f79df1d0762a41d7222b74dc0aa"
+    },
+    {
+      "kc": "M-PLACE-01",
+      "from": "6@03f5493e1f76eb5fc7e587bc9b89d774cee7995d514dfe96cccca94cca5539f3",
+      "to": "7@d86507d0d0716250c24dc166196138a65a0580f38d5d6a347ae90149f2257984"
+    },
+    {
+      "kc": "M-PLACE-02",
+      "from": "7@8db9b6c4ebe268403b6c7685181d163c4f04eb57f80e9a1a0e8b83bc604294f9",
+      "to": "8@d91cff0a8e859bd51f4693a0625b493179c0aa7fc2ec389c6d98b15fa2d12fd8"
+    },
+    {
+      "kc": "M-PLACE-03",
+      "from": "6@57f97410e64c1a57505913b23c131b92a0f0072bb773615d42cf02685d2b4de9",
+      "to": "7@da9b2f2c97f45f0eb169a119ae27c8debfc523e2ca7f9c4d2e4942e4fde0b0ed"
+    },
+    {
+      "kc": "M-MENTAL-01",
+      "from": "7@322f1e068a43096023a61537ee0b3275d0edb06190976546893419fedc175181",
+      "to": "8@f7ef83cda7ffb513f8e2b70cbbab3976bf9c123c71e7df5aff60060f64a709ad"
+    },
+    {
+      "kc": "M-SUB-01",
+      "from": "7@293a3ab75993be121ae3dcde983a7e07f4e92743d3d06ad27cebaa2e575b4eac",
+      "to": "8@527c9311f1ee2ff7d2d26ab14fdc4493691efb5de9ac9dc899bb37470af0d3dd"
+    },
+    {
+      "kc": "M-ADD-SUB-01",
+      "from": "6@67dc8ace725dda4fc61f64f4ec2f3a59d24e7286dcf0074492b23f0dfd5341a3",
+      "to": "7@4d47f11df36fc5873f7abec86fba4956d1540e0d26eab21c5510e167acdcf003"
+    },
+    {
+      "kc": "M-ADD-FACT-10",
+      "from": "9@9824621e7feaaf13194b2d2f7eb779c462242ffc402c7871e65a62a18dde6707",
+      "to": "10@1a88e6dfc1301ea302cba8bf9629e85089168f1d55bb012f86e33cda56710647"
+    },
+    {
+      "kc": "M-DIV-01",
+      "from": "6@808b2d552b49a15ed5a3dab66cc7a57cc1ccde82dc057959f41c257ebb019728",
+      "to": "7@a650eea94617a983fd29d926aff4673b8c7785c713cef4830288cf65fad7e29d"
+    },
+    {
+      "kc": "M-SUB-FACT-10",
+      "from": "7@2277359991057d7c318511836914e91232d7bafa77babd8c116d76447c5f1b7b",
+      "to": "8@0fad4e6ccb2609752b56fb914d2ddfb20f15a28914e90e4d50c502e2005969f6"
+    },
+    {
+      "kc": "M-ADD-FACT-01",
+      "from": "8@b6419d2ff3c092049d172947c4b006d3d248ef42a81cf628213d4cb644c05719",
+      "to": "9@976bcc435f610c611428aecfc764938a776a9fb020f0d174d4cf6bf84f031155"
+    },
+    {
+      "kc": "M-DIVIS-01",
+      "from": "6@93219a82430daf8fb187f6d9fa028731200a550ba2106ae04b4527469e6d096d",
+      "to": "7@635425402fb7a538378b1a678e7440e9fea4afe88ed668036df03a02187d1244"
+    },
+    {
+      "kc": "M-MULDIV-01",
+      "from": "6@309ae52bf45019d0995ed22ee914187fd64887ae55b32b01d1274bce96849d83",
+      "to": "7@ec2cdd85fc65f52d7d6232b8ee8f68994fd32cf6c0580fba70b7752f7055a0af"
+    },
+    {
+      "kc": "M-ADD-20",
+      "from": "6@bef3131cc256fdd54080843d439cc91ed5924275273443c4f3c70e59cb082a25",
+      "to": "7@2cfbadbc22250bd0897959d437729be5f0e62d2284ef7c7f14478068802b00e3"
+    },
+    {
+      "kc": "M-DIV-FACT-01",
+      "from": "7@35d600cd788eca0d5c0a56b752084d18bd0e4a4636d3359e8ecc851f7b82af45",
+      "to": "8@a4687f389ffe990ac09f675a554fef7acab88724d9045bc4d97d39d8f3425fdd"
+    },
+    {
+      "kc": "M-FRAC-01",
+      "from": "6@5bbc8ceacec1c57486cb5e868ae6cd67236d11f7e915891b8d4baaae33446bd6",
+      "to": "7@fbf041bee1894fcd24d5be4c412f8bd8437dcd6d690e7c12548874bffcd1409f"
+    },
+    {
+      "kc": "M-SUB-20",
+      "from": "6@ccaba639667652523fdddb690b786bd7bea912f7363552ee0331d889af19a7ae",
+      "to": "7@1ea641bc3a29aad3e79237951600fed048c704351e910e7eb9da18b9a60f9988"
+    },
+    {
+      "kc": "M-ADD-100",
+      "from": "7@c90c16a432335396b74b85c1e4e6827a6b7da9bbab08ae3832b541520f85ce5a",
+      "to": "8@aec263a902aa013f5cc143f934e7f228e3d2ce11de9a3d56af231ebafc7e2994"
+    },
+    {
+      "kc": "M-SUB-100",
+      "from": "7@fe7c4b4f9251119d6244b0fb050c0c57dfde31084b1708989211bdaf955bfa33",
+      "to": "8@bb163797c2aebe87309244d6018ef86cc811b2a028fbe66b145fbedf77a1cb0a"
+    },
+    {
+      "kc": "M-GEO-02",
+      "from": "7@e288cd2ab7831cef17aba0ce09767488cee14de3360233bb1804e1110159a716",
+      "to": "8@f378ba4fc2bb62eddbaa6391c006d31258cdfc8a14f59971af78ab5c1441db7d"
+    },
+    {
+      "kc": "M-MEAS-03",
+      "from": "8@d7a33b77f7599b9e134fb36ef95f854cc9259fac757f8508028154a4853d1892",
+      "to": "9@d3e531dd0ea436d51e959cfa890f52239c641ca7cfbea1787db00f69d3beacc8"
+    },
+    {
+      "kc": "M-MEAS-04",
+      "from": "12@ed7e64bd6e602b983ddc2ffdb3d358b14734abdc55188ad9efcbd97530c73e2d",
+      "to": "13@e8c44afb1ca3479c5315b507513f5d555984bf256d6b84a1d987517b3aa90174"
+    },
+    {
+      "kc": "M-GMEAS-01",
+      "from": "8@8e8eac0c366a8d8dda0ba5a517188fa4218ad8b98b213aa1ee82c8bfec1574ca",
+      "to": "9@0f643248c0f857f4b1e21faefd43bb46ff54636aff39734a97f26cf603a965a6"
+    },
+    {
+      "kc": "M-MEAS-05",
+      "from": "7@b0d3f8850153f163b6bff07bce8122e677c40bbf3425f55d10e200fb11173086",
+      "to": "8@e2bc9c249675abcf97a7526fbc187ec6d2356ba3d1948c1fb9e2c1f4090e2172"
+    },
+    {
+      "kc": "M-MEAS-06",
+      "from": "6@f7d0af13e94adf20b30dd87ad9526242ce2568e72030936204499b7109b65f6a",
+      "to": "7@81958e782729beddbbde5d1806c9182bcb93d888decb355b033ac8da54a5bc73"
+    },
+    {
+      "kc": "M-MEAS-08",
+      "from": "7@1d5b75c4c12fd5e39b9b46fe71c5420f633f8e40a3b71924fd7a5818822e620b",
+      "to": "8@06b86885312e210b0bc7c7858ab12e15162df550ca35652fef75af8cd54d5cfe"
+    },
+    {
+      "kc": "M-MEAS-09",
+      "from": "6@28d648133a70a411fa796e7a8a8fceee328a237bb806624575fe03eadddd2f4d",
+      "to": "7@c05135815d792162728c29f62a0aab0fd0cf4bb4e3c82f84e0ed93da3bfd256b"
+    },
+    {
+      "kc": "M-DATA-01",
+      "from": "7@69969bb2b0790a68cb45988e77aae219e0fc5f815def284f375fa7fea4ee77b4",
+      "to": "8@32afb0a20a1d7aa4064f08e11b9e3f7777967a68bc3e9ba26c8d46f39c3c07c4"
+    },
+    {
+      "kc": "M-DATA-02",
+      "from": "7@9fe20aaab5da1c8e5179495f15be54a21e7d887bc66db5457a48c66a57840863",
+      "to": "8@93c8792e68692238e46c27918a9174f3e67d5fd257cadc497f21c714ddaa44da"
+    },
+    {
+      "kc": "M-DATA-03",
+      "from": "7@da5921b66eb8a312a214974b6aa7c18e5a5758dcb06e374556aacc544f703934",
+      "to": "8@f0402fc78814afeabc4315e10086599425cb4096ad31e996d4ea8c4f1ce168cd"
+    },
+    {
+      "kc": "M-DATA-05",
+      "from": "6@2ed03c2f01fc35c5d0c575d2ac208f3eeea213a59d5361e95ca93a07dd061305",
+      "to": "7@892c73ac0ba689c2294b13c884815dade354e2b7f0e6fe90bc3d94f92d75d714"
+    },
+    {
+      "kc": "M-DATA-04",
+      "from": "7@c3db9e5a04e2a7d1e6437f3ffffff5bb1778fb47d560632dde2250227da831d4",
+      "to": "8@b11391cb8e434efac8987312fe27e2a692f772ef8be755fdba9c44a320a7f6c6"
+    },
+    {
+      "kc": "M-SYM-PLUS",
+      "from": "8@fe4db5ca2251e2d2e7a6e66363e49e82d0aa6fae99083efe1ec159262077d2a4",
+      "to": "9@014165cc259bee25b3a0cb376e66eedffa9553f5cd03ab1b9c0b16f16c6198eb"
+    },
+    {
+      "kc": "M-SYM-MINUS",
+      "from": "8@2832dd3315e928a0e1100f54d6f90659a01652794a517621a6c360dce2aa2d4a",
+      "to": "9@64119f12483870d215557cdb072917438b8481495f0c45b6e5d43a5ecf29bb6c"
+    },
+    {
+      "kc": "M-SYM-EQUAL",
+      "from": "6@59d9cf1ccac37d43b0aa7e2264d16393fa2e1e654504f6807399a60c4856383c",
+      "to": "7@e8a6f67107e95e40a16fca3f6cbb57af1acbca4aec916d05094ba9f767b1df50"
+    },
+    {
+      "kc": "M-ARITH-01",
+      "from": "12@0b0558b34ae3be83ca09a44c0af514ecbc77035bb7e2ff8d8d25e5af8d0a668b",
+      "to": "13@e1f70252e675249b360cb0ad38f5667f0c2a52525854da70b3c7247eeb37fcc2"
+    },
+    {
+      "kc": "M-MUL-02",
+      "from": "7@ba6f4e2c9a64d325f95a40abf42dc7a7b0a63e00a9ecb8373caf421df4bafda4",
+      "to": "8@e402ebb18835b344acf42aa6a0bf0a6456a5b62b6d9ab95947814909984488b2"
+    },
+    {
+      "kc": "M-EXPR-01",
+      "from": "6@6074dc162434730597d0dc811d6e7d00aa31abea5d5c23d3796b57e9b1920bbb",
+      "to": "7@7a85ea14eaf4b1f31a6e30f577a26d22150de11af7cfc4fba0de31232befd71b"
+    },
+    {
+      "kc": "SCI-ENV-TOOL-01",
+      "from": "7@34e0aae72f1b1e0fea4d35d1be4d285ed69699e525e240da0ceaabe7ce2dd6a0",
+      "to": "8@667949c0cdb50da881a0a66d9b1d6fae7f59a893114cb7920c2b111fbc0876ae"
+    },
+    {
+      "kc": "M-PLACE-04",
+      "from": "7@d9a92e9e19849f7da9c4d875a13c735ed000010f299bbde50dcb8656184cc0b2",
+      "to": "8@c5263fca0659c8b896f525da3bc5f18314760c3cb342ebfa737b7ff0ba58124c"
+    },
+    {
+      "kc": "M-PLACE-05",
+      "from": "8@5de75dc5174d462612722bb12463e7cb565dd0d66db6da6b56cc1f7acfdf8546",
+      "to": "9@0a87f0371feae2d14c6c898a3dbf6a352d558b39881912eed8f2c91e30c7dc3b"
+    },
+    {
+      "kc": "M-NEG-01",
+      "from": "8@82e4fcfde63f92fd81589770b80b2602f2133c9f14303698bfa292e80248816b",
+      "to": "9@95cff21c1f7b45f1c4b7e93a96437cadcdfcfed276037df8e9b53c17a736baef"
+    },
+    {
+      "kc": "M-WRADD",
+      "from": "7@86275c8aecbf725ba74df549506d4025681da8719001f7fa4bfe848187f0a246",
+      "to": "8@f836323cb31ab921d09a0d8d2651ad1898f88f7893a46f8aed6a410ff5b5f0c6"
+    },
+    {
+      "kc": "M-WRDIV",
+      "from": "6@9d679be9bf774eabec014a168a5446836a117adb0f23b710d16023629950d5f9",
+      "to": "7@d77188180140931aec19daea7972cbd7befa8b4a9cfe336c7ee717eb978bf1c9"
+    },
+    {
+      "kc": "M-WRMUL",
+      "from": "6@5b6fee62281fe64ad3115196903f38545487d9862c43ee0c5a17ca27aa069986",
+      "to": "7@28e3b3e1f82c78e25aa387412bd5108b9f507f0f597a8360a0453eb02bb44a04"
+    },
+    {
+      "kc": "M-WRSUB",
+      "from": "7@b0983a7858eabebb22c3cf9ae06bc9e950d06aecab95cfd85d7e19f8ff0260c2",
+      "to": "8@b2ef2bc3e839d93bfc42e8bfdffd5c7b592515ac5d27e59df5cab48b18187eb4"
+    },
+    {
+      "kc": "M-NEG-02",
+      "from": "6@284586a0e1560e5f12ce8f3e43fcd8be5f806149941b42d9510cbd0c33836595",
+      "to": "7@3c2f2388ccaa8de936bed96face3f73d117b16ec0544a3da524a43135f6fbffc"
+    },
+    {
+      "kc": "M-NEG-03",
+      "from": "6@854323467bdb6e4feb960c65a4567bee35e5c2d321ee0e3a4dd9e7dd948055e7",
+      "to": "7@422f4b538a5d260ea9400324af40d535576180d3acc74cadf437836b2293398a"
+    },
+    {
+      "kc": "M-FRAC-02",
+      "from": "6@3a0439050d453abf6a8680e272181d019a2c024431ca1f15e446c405f7b0245d",
+      "to": "7@53d9f46edc5bef815df1e117f3d0b9ee43ef1d54ccc7c3eaa21fe145d3e2abec"
+    },
+    {
+      "kc": "M-DEC-01",
+      "from": "7@4edc3494193a60e17f4f70a8363036ff9a99db87d4c2e4fc97cedb5d99539bfa",
+      "to": "8@67c2618a4050432e39facd090d2deb65625649f225a3fb8900f7c72a84d52095"
+    },
+    {
+      "kc": "M-FRAC-06",
+      "from": "8@845f38116ab9ac590a779ebb649f3b1fdc55caa177ff04ba1e528da32ad223c2",
+      "to": "9@e0b58cf1922d35bab202c1bf1bb253bd33f97ef0f4faf0a10a1519867356c03f"
+    },
+    {
+      "kc": "M-DEC-02",
+      "from": "8@9e827eb4e7dc57023ca4e26ee73bb4257d47e8da1628ef42ee8de46776373285",
+      "to": "9@a96646be200db47c67e5851717135e6979a317f7dca41c010f3988ab9a9340bd"
+    },
+    {
+      "kc": "M-FRAC-03",
+      "from": "9@f1c30a17ed4f41c292268e56a46dbe5ae38b3a5f1406ff93e910414045108dba",
+      "to": "10@cb71c60b61398ccdf6e06572486895aca23b2847a87e8a3cb7daf0c610fca65f"
+    },
+    {
+      "kc": "M-FRAC-08",
+      "from": "8@3c0ceb2a7adfa5204f03d682b1ccdc612b957e6c028c4d4953792059b9cfb2db",
+      "to": "9@f53503abf8a6760197b79f19f5dca98850d8ffcb635858ae996d853b96af19e1"
+    },
+    {
+      "kc": "M-DEC-03",
+      "from": "7@ea80a38570306c8aaf433ae1b8555c870825270607549ff719c69c4b8f132fe0",
+      "to": "8@7faf978e3a69219dd7d5a6409e1080f45ea98164af6f084c50a4c47841a48d18"
+    },
+    {
+      "kc": "M-FRAC-05",
+      "from": "7@cbf3e6bd76c320eef49015ebb219c19a6f1011b647b5027b15485151caa3b231",
+      "to": "8@cd523ccf4b81cd947ebb372bc98ba3d17055db740fd677fa2245ba40f0eac688"
+    },
+    {
+      "kc": "M-FRAC-11",
+      "from": "7@0af697edf73c64cc3ff9ce84c8e2c110b8094c94c5269516d49144a3a4243c9d",
+      "to": "8@d73abd4de8eb4975a0a1e9216aeec7393ec1f788379950fa8400e2fb3838b20a"
+    },
+    {
+      "kc": "M-FRAC-12",
+      "from": "7@6e9f332bfe15185df591f6da1446e10bc76a395156115d8e2a47e288d691fb27",
+      "to": "8@27167ac5769ba71ce2c05b23991d62bdb1a20a138531e897fd62326eae91e8b8"
+    },
+    {
+      "kc": "M79-RECIP-01",
+      "from": "6@3eddd9ecbdf969c7d743064158a0d0342db9da31d5544cb0c8409c3a1ba0efc1",
+      "to": "7@2cd0e47a107d35dbe4f31b6de3f2f500c15f7d49893b12f2d2b684bc3624c4fb"
+    },
+    {
+      "kc": "M-DEC-DECOMPOSE",
+      "from": "6@f5285cbfa92eec6a325e2070fb01f07a16cee4f4a33e1c3484ec50981c84be38",
+      "to": "7@4ebce7d231336952b1d18e043d03de19fc3b93a683f15c9973ff383517cb277d"
+    },
+    {
+      "kc": "M-DEC-READ",
+      "from": "7@41b6360449b2f6212bbd9f0c1af335bd8bb60f24d089e8a59704b234db2cbdae",
+      "to": "8@6b6410632c889e03bb82a3c5c4a687f085caf025d2654c0dedd1b68c1bf77061"
+    },
+    {
+      "kc": "M-DEC-WRITE",
+      "from": "7@67862671c7694042d1338d34b403503941543d7560c9e1a0936afbb4f841cf11",
+      "to": "8@9bd10782130f249d35ba0214ccec7f21e372d32cabb0a4e8de0aa2c368e5ea05"
+    },
+    {
+      "kc": "M-FRAC-15",
+      "from": "8@975ec676d38a2400bf1ee8922e29f4e17f04ca5cd2a7796003afe9c62575beff",
+      "to": "9@f1200b762293769c4bc47bb219a654ca82d91db6e35cf7947cc4acbee93885a0"
+    },
+    {
+      "kc": "M-DEC-04",
+      "from": "7@8a021b4e109c2b969794c4f38390e40af764c2aff9271d8b4a7fd2e5fc0f1749",
+      "to": "8@2216a5d2ecd43e320f37ab083b3cd6a48dde7f6bba0826bd511193d80d78190f"
+    },
+    {
+      "kc": "M-ALG-04",
+      "from": "6@935684f9e2c1e9dcb89267d72ef1c55ca2a4142be240e9361fa2fbec4dd94bd5",
+      "to": "7@5836d786e7829e1361e3be98242d72387d5e5c08ebbe5db2e2f12dd7bc8393c5"
+    },
+    {
+      "kc": "M-DEC-08",
+      "from": "8@f17109b46399b0a772e0be8a8dfb414d78dfbfaf579657a792b1a7f10e71e97e",
+      "to": "9@593523ad9fd0e436efcc44758a8822e495fe60fc18b89a578ffce185349e1e45"
+    },
+    {
+      "kc": "M-DEC-09",
+      "from": "8@2a6dbe7a4997514032770590e46c1b80790fcb3afd0310db1038c0bab6757369",
+      "to": "9@dce8c70574588941bf48f769d9c46e50b82de6cc4b79b96cec8a754e44fa746b"
+    },
+    {
+      "kc": "M-DEC-ADD",
+      "from": "8@f6343c5c37f877962c3112423eb9f0633e1d77576995a746478a001631e5aebc",
+      "to": "9@87e1277341174dc968ba81db9818a8fc534796f2adf958081502a42651daa99f"
+    },
+    {
+      "kc": "M-ALG-05",
+      "from": "7@ee5f7dcd4a118fa13e1d7f30739b8f4e84750f1214924f74cb90f8fbbbf241df",
+      "to": "8@7793e0d44263e3fa177aaef4453a674d0244d4da7c9ea042b13b6b443b3f5004"
+    },
+    {
+      "kc": "M79-VAR-UNKNOWN",
+      "from": "6@8d1a80d84fd4b15d96bd10f65b71c96e7f47f39a91369c972e3ff10bb4f86a9e",
+      "to": "7@7b757528b3a50540ab71ca4ed5346a2a54bf6e51115a12596b21107ed0ca71fe"
+    },
+    {
+      "kc": "M79-VAR-VARYING",
+      "from": "8@484c0ab2dd35966f7d1e3220e739a1f1a2389a6875e87ca5ea7a0fc9a3263eb4",
+      "to": "9@328996b0cbee6c7301d8178649123890b8dd5a0a505d813c8209d83777b500e1"
+    },
+    {
+      "kc": "M-ALG-06",
+      "from": "6@938c54dfd69894048df18647d7a84fed01a2f8300c9912438e4b8ad00c7bf6c2",
+      "to": "7@f42546aaa81937afce311238ed710e5645a63818bb40c8da12788ce74411158a"
+    },
+    {
+      "kc": "M79-VAR-01",
+      "from": "8@ee87329bfea9af36f3a8b8adec3844cb6530efb23ddeaf94cd6b30f3cb329939",
+      "to": "9@8fdf94708288887a0f76015a147d57303c0901eb3d22251e6313b4b834d36a28"
+    },
+    {
+      "kc": "M-ALG-07",
+      "from": "8@7dd496cfcbbaf71eb470747275705eb408d77d8528944965a788b2373833a9d9",
+      "to": "9@9d9e7b94e503303504b279d0c50b075908357657e2e4e1c3047ed58a1c90eeaf"
+    },
+    {
+      "kc": "M79-EXPR-EVAL",
+      "from": "6@0868c47ce30c631f75d7aad340ac679d60142219efedab73136c6b39a3dddcee",
+      "to": "7@a15a651c7ee9bfec3bd1b11ed77a433571de68dafc5d84f3774dd4fa77f932bb"
+    },
+    {
+      "kc": "M79-EXPR-FORM",
+      "from": "6@b60796f285b6bddf9efc510f430641680119838f6169e0b514157384b43fe231",
+      "to": "7@6c95dcdca1038417b84449fdaf6bcefafcf32dd2fa77326f08adce9cc829cc20"
+    },
+    {
+      "kc": "M-ALG-08",
+      "from": "6@fe8a311cf5396a974d55a88abb5e66b5f861defa51db8dd7b946a474335ab816",
+      "to": "7@db9de4cc928f9d785dd3ac5cc9ae7f72a0bc1785f1ef40b42452559c04a1a9f5"
+    },
+    {
+      "kc": "M-UNIT-01",
+      "from": "7@df5103a30d77ca25a081f177d3df09e2d87f25860c6ac9a94d5b83e2b536d6cf",
+      "to": "8@076ef9815ef3adf74d88af73eba7e53b2fddfa3a39c42d364acab2d710a4c41e"
+    },
+    {
+      "kc": "M79-EQ1-FORM",
+      "from": "8@72cbb15f64ca494330409ddfaac6400dbab160d40895cbcda6382ffd20e1b6fb",
+      "to": "9@05c152ad9d57749cec8623f6b8861f873991fa1bdb89a9ea98a2b89a55ff4a4a"
+    },
+    {
+      "kc": "M-UNIT-02",
+      "from": "6@ff47ac46548777cb86771b7bde4e10a09cb174681f31b063f7948977625ac110",
+      "to": "7@ee8b89616802005774ed73608f774dabc7f18fb11201e10f37e839353b0f8010"
+    },
+    {
+      "kc": "M-UNIT-03",
+      "from": "6@89ce57491c3f2d3bcd12ee03714268df7b8745a8f27f8ed148cccf42795e9482",
+      "to": "7@c9b3b515dc8a324b6d444d36a1727d892ecdb243495cc85ec997e498a719f84b"
+    },
+    {
+      "kc": "M-UNIT-04",
+      "from": "6@f59107f0ed1294ecc33183720b440cee02a8fa465a88c6464fce1a28f72949f8",
+      "to": "7@aab7adfc1f4cc41acc8a2bfcf68bc45e44c82a28e0084a1fbb19762df5f6d1f4"
+    },
+    {
+      "kc": "M-UNIT-05",
+      "from": "8@592aac050970f3fa09cdb2dd6009b76d3e38b846337f0d589f9c69ee97c86597",
+      "to": "9@50de8ef9032bff25f3d4f338a79a1db873b2f478310795b41333c3d591af8a0a"
+    },
+    {
+      "kc": "PHY79-SPEED-UNIT",
+      "from": "6@e5a5a66d45bad4276d4b81445e9b9e243a1591f361fad4ceb4b4b4e3975b74d6",
+      "to": "7@450b9effdd8dd7f0a8bcf01d7b00bdf2a9b148d61d01ec7539b4b96ce333c82a"
+    },
+    {
+      "kc": "M-DATA-09",
+      "from": "10@32754c2156c8651dc94d036d6444661300a5a51884928bc2bbf5ff48275775fc",
+      "to": "11@2683440416faadeba97046a552bacca90e83fc1fcd12c23d8b85729a11193a8f"
+    },
+    {
+      "kc": "M-DATA-10",
+      "from": "6@9302b88707e765f0634ae778c541f73242fcb772ffe55bc91f3baed8c18dfd96",
+      "to": "7@74ce57af99ddec18484a0f171798fd64d8d6014e8503e6d3d261baead8f13511"
+    },
+    {
+      "kc": "M-COORD-READ-Q1",
+      "from": "7@ddda379677d72a7fe71d1f56736d8aabf0f721d0f0336a759a8c2290cf8cf101",
+      "to": "8@cae34e559a4a45fb9e3e74ae48feb4f6807950bb2174d15fb284bbe87e85b59c"
+    },
+    {
+      "kc": "M-COORD-PLOT-Q1",
+      "from": "7@e208c7f2a45100394aa077ad254fd91e0a587ce1626f99c1b4d9cff8c19d2fe1",
+      "to": "8@d2f538e2c8a8979eb7162b7a2f066120995bf49cf185db0ceb698e79ca01bf7c"
+    },
+    {
+      "kc": "M-COORD-01",
+      "from": "6@c8232fc002796d63df375843731ffbbde646baaedab8d3f78407dc4a4ea4b7cd",
+      "to": "7@c12b122b620c8dfa87ec248b993a723a2111675101e546ea180a1c1018d91dbc"
+    },
+    {
+      "kc": "M-COORD-02",
+      "from": "7@729638415349cecaa1be2c439843943409021e140f7618e1e3dd38a696433e80",
+      "to": "8@5841c77055812a206a11d2929bb4e3be94651f78d0fc00848744557a3768cf62"
+    },
+    {
+      "kc": "SCI-ENV-MEAS-01",
+      "from": "7@8e59ec4896f9b96acf35f8c19d5b7cb24ea9989ab09745f770889c60f4c82bde",
+      "to": "8@9c7b4ef53b9301d2fb9ff79597cc748c2fc69103a97ffebb2b46acd782cff310"
+    },
+    {
+      "kc": "SCI-ENV-DATA-01",
+      "from": "6@808dec57edb15612fd6fcf2eb637d3ff3c6bf9169d601d2d41d4f4a82d55093d",
+      "to": "7@b2835b1561ddbcf518736d58977b6d7df1368c3e8373bb3d013822576165e53d"
+    },
+    {
+      "kc": "PHY79-DATA-01",
+      "from": "7@bc92a3daf477510c576293b8926d72c084b4e8f2d69a7a635bdade24ef7d5554",
+      "to": "8@1105f13ea97fb45d56df75716974372e6b4f1c80f131678b19dc42af79f712df"
+    },
+    {
+      "kc": "M79-FRAC-MUL",
+      "from": "12@d888b9f28aa2cde1af77d9572d55c64238d079aba9c1b5e8283d602cf3f3b524",
+      "to": "13@93bd13b970bf4f27d8e182917141dfc38713aebd20b7091b6c6d8a80b04231e5"
+    },
+    {
+      "kc": "M79-FRAC-DIV",
+      "from": "10@eda3759bdeeb49f8ef4f43e4a8959718734f31c0ed6a53c20598d3fab1e85aee",
+      "to": "11@00afb092f15e53827ea46f507063c0867dacf9b0ca1337be9313bab4dde32aab"
+    },
+    {
+      "kc": "M79-DEC-DIV",
+      "from": "7@988f8494036674dad3381068bc71c9d8f4438ff45b719eb1ab4c4b2af857849b",
+      "to": "8@0c4caeda4fadf878c2b64d5b16b1deabb677b86ba561e1b776dfa0d27eb736f8"
+    },
+    {
+      "kc": "M79-PROP-01",
+      "from": "10@f28036ba6b95fe548a432a1a1a8a49ae2867f803f641decc670268b7284a30a2",
+      "to": "11@47b782dea72e912131d68e5055743adab89b7dbf9ab9a082d114ba503f65bf04"
+    },
+    {
+      "kc": "PHY79-SPEED-CALC",
+      "from": "7@c0eed5d468489df73688901bea5086f483db6a10051a45f4c0e467bdcff9d091",
+      "to": "8@671140a156c25c82e97068773aef98e0115f5248e912dc945077bad97d72e801"
+    },
+    {
+      "kc": "M79-DEP-01",
+      "from": "7@467f875f86b557e75ac8bae7bdbf02b3c87ce5081c43e1a8b00f07d7421e91a0",
+      "to": "8@8bb800478b08156f0556db839fffa2b497024d4ae5839b0043bd7916ac0ff1a2"
+    },
+    {
+      "kc": "M79-FUNC-01",
+      "from": "7@9369af81d08d151bad79674b06c7f3fd3e8cbdd42ece0346b6b5909437eada2d",
+      "to": "8@cd9bfcf61d67c3352b8f5ecaaec68110597c4271c4aac386e8a51797206c711a"
+    },
+    {
+      "kc": "M79-FUNC-TABLE",
+      "from": "7@7efcf643c9fd2f4cdf95b18b5ec3e7e06a8db64d6a19a1164a682d6644196f37",
+      "to": "8@bd342e2e763c23ab8430f5ce4999c968f8a03e7bd49deaac7b7a3c9c8a01e3c8"
+    },
+    {
+      "kc": "M79-FUNC-GRAPH",
+      "from": "8@3bf52209888292717c6286c4ae352afe924efb68c61a8fe18d3f3ea34550a81a",
+      "to": "9@c677dc8ffa27d7c01e0477ecd2caefde42a45dde4970c219afc1d41c27a77564"
+    },
+    {
+      "kc": "PHY79-GRAPH-01",
+      "from": "8@c5de9f25658e6814e40ca9857bcd8047c85848564aafd75bc028d26c4da9cd6d",
+      "to": "9@fb749bd2e3f7614eebd7400548ee8370e87eb07af7798be14abcbb6fe317c47c"
+    },
+    {
+      "kc": "PHY79-VT-GRAPH",
+      "from": "6@1e2fe8d920a03f6b9b65987182a2b8caf31c84acb1b811f7e6607b7b07a4171f",
+      "to": "7@32c2581a329517f3a05cc5a351770bd69711a1159da71f7d8b2b3165efa2913d"
+    },
+    {
+      "kc": "M79-UNIT-LIN",
+      "from": "8@7601aeeb90a51ff5d0da64e513b999991a041d179efa1cd7e45393d062af8901",
+      "to": "9@98066b6f64d2e544e5f21fcf81e26e8a1970c99183b237fc7a234d0d4d4db421"
+    },
+    {
+      "kc": "PHY79-UNIT-CONV",
+      "from": "13@72b1f89c5b6e13ae17a4188f8000d02d414b06cf2dc7b5fa1024a192df3a2042",
+      "to": "14@5b68c03a106ac15824c153ca17116023a09e60b0196a3ae8dea923eab57d53c6"
+    },
+    {
+      "kc": "PHY79-SPEED-MIXED",
+      "from": "7@5167a8dc8169c2304f13918282a2f7b8dc18cf5ef8bd6c9b7164fa28c3b5c742",
+      "to": "8@9e92b19c22ee9490bbcf9c8594930c554a58bdaa7cda48e6ddbf52f85e5e9ca7"
+    },
+    {
+      "kc": "M79-INT-ORDER",
+      "from": "6@c503d49da89882248b3eca8b7835a0be220d6ff35065d78731d70d6f37fba0b4",
+      "to": "7@88d2aa57575dcb5a3f8e4aecf27bdddb5826914c105715dced305269eebbb0f3"
+    },
+    {
+      "kc": "M79-INT-DIST",
+      "from": "6@f332a059f72ffa4b2aab613e152a99c81b5b8f26db933da9d821d2447d254b5b",
+      "to": "7@21461680a02855cc374f5a7a708c7a80066b3cd9c4d4f1c1ae22e66d6ea37561"
+    },
+    {
+      "kc": "M79-INT-01",
+      "from": "8@732c7d5b48cf1f866946d1827cdd4212992379875730d83e38976cf4c6a6ed6c",
+      "to": "9@14f2f6d9d4d89ec601763380b82f916379918d90d76264272679488bfbd6bae5"
+    },
+    {
+      "kc": "M79-INT-ADD",
+      "from": "7@c6e571fb26970c111441b8883646f963d1b410877929b2151e0b13f1abeea65e",
+      "to": "8@889817f16e4cdddac7a0f5dbf8785e2f0f2bdf234e024d549fc2101b0e31b33a"
+    },
+    {
+      "kc": "M79-INT-MUL",
+      "from": "6@a1235de8e924ec74fc19236cdc1e9d6efd7653abf95ad5605a98cc6be8116d31",
+      "to": "7@baa2066c0bd0c70df09b5d383509b1a6db4b19ecaa342f6d7fde8f9f4ab231ee"
+    },
+    {
+      "kc": "M79-EQ1-SOLVE",
+      "from": "8@11c1af9d9008d9e2c38e6e7a94406c5e57c74aec7788fedaf54226f0768e7c4b",
+      "to": "9@2c8da34b642d58ccc7f3ca7a552e3e86b56719ce756fc7a1f420d59108f7148b"
+    },
+    {
+      "kc": "PHY79-SPEED-REARR",
+      "from": "7@53a3afca27db0a3c6b8185f7ed5a3f5e5f492c615a82d8b3d6f041f63397ce55",
+      "to": "8@5a80027eca93d3b6538530bedd5096c058a9208c6843249a4b2d329e4227614d"
+    },
+    {
+      "kc": "M79-LINE-GRAPH",
+      "from": "7@8e6297582a346ec4dfcd11d1a5540ea2fd33867aaff537e7f40f49226d59e7d6",
+      "to": "8@dee6223b1df9c2e8032737b97e3ce6b427de5b0ab03cbb0a7ad893dac95c09b5"
+    },
+    {
+      "kc": "M79-SLOPE",
+      "from": "7@381ce45f799f617390b4fa859a08c795d8eaca93243810979d281008e2722fcd",
+      "to": "8@d2056524b33ecb491869750def69f5434b43b92fed458b58a0f560bd210843f1"
+    },
+    {
+      "kc": "PHY79-ST-GRAPH",
+      "from": "6@1925da821eba14f87737825d0bbe029d6851fa46218371bb43b6f5fe0f2ca985",
+      "to": "7@871d02c2700c631f49e0a283f9f95fc98421600d4286db2ced2caca4e52c9fab"
+    },
+    {
+      "kc": "PHY79-ACCEL-MOTION-GRAPH",
+      "from": "8@5ee1a0a9cf3207e876d3b501f963a7490e7f95c7a36aa0e0185e953b25c10b2e",
+      "to": "9@03da0eb59bd283411cdce0c506321d8026289fb42f2847cca806edfd885a9564"
+    },
+    {
+      "kc": "PHY79-ACCEL-VT-GRAPH",
+      "from": "8@6e3ea6ff6edaabb6f894951021b12cb988756f0a0fb928ab5d1879ac4f0920c1",
+      "to": "9@1fbdcd53c81afa29971282d350582ce3791d8c9af31476718345fa80b22554e8"
+    },
+    {
+      "kc": "PHY79-ACCEL-GRAPH",
+      "from": "8@977d4357fd4a82655e1df8508087cc5ce0b1fbd17ee5798d2ac2c471767027a4",
+      "to": "9@d5cdb1c3307e61bac447907061c0ecd5e7afa77260f954cb9f302dcff29f01e4"
+    },
+    {
+      "kc": "M79-INT-DIV",
+      "from": "7@50dd3f9999993559d9e3a839aed6e48a3091bf11dd96b7b31fffea6f1506f163",
+      "to": "8@254e4126becad8d93f37eafde564f13b6cb4a2af0631808a08f5fdbc9a676140"
+    },
+    {
+      "kc": "M79-INT-SUB",
+      "from": "6@7bde49878a6ff8cbb623123a43f7fff9a58ed3674ae3d38e49c4453367d0cffe",
+      "to": "7@748748ba461a3e00de3fc8e07ff7f8b5f4a88f9ec1a314e9ff0bd8a9aa489ca3"
+    },
+    {
+      "kc": "PHY79-ACCEL-CALC",
+      "from": "6@4431bd27d8ebe113d083a18502705523d3968d3a4db171ac9f0764ee2c0d469c",
+      "to": "7@7fc866bdbb43086e3a99e2b6e908c8fa163c3203ef04b24014d07b7f23acf27e"
+    }
+  ]
+}

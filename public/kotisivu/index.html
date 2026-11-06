@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fi" data-saaristo="loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2a2440">
+  <title>Sammakko — pieni oivallus, suuri seikkailu</title>
+  <meta name="description" content="Sammakko on matematiikan ja luonnontieteiden oppimispeli. 181 aihetta Aavan ja Loikan matkassa, suoraan selaimessa ilman tiliä.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sammakko — hulluttelulaboratorio">
+  <meta property="og:description" content="Pieni oivallus, suuri seikkailu. Heitä kivi, laske pomput ja lähde Aavan kanssa oppimisen saaristoon.">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/brand.css">
+  <link rel="stylesheet" href="/assets/saaristo/saaristo.css">
+  <link rel="preload" href="/assets/saaristo/sky.webp" as="image" type="image/webp" crossorigin>
+  <script src="/assets/site.js" defer></script>
+  <script type="module" src="/assets/saaristo/saaristo.js"></script>
+</head>
+<body class="saaristo-page">
+<a class="skip-link" href="#main">Siirry sisältöön</a>
+<div class="saaristo-stage" data-saaristo-stage aria-hidden="true">
+  <img class="saaristo-fallback" src="/assets/art/hero-island.webp" alt="" width="1536" height="1024" decoding="async" fetchpriority="high">
+</div>
+<div class="saaristo-pops" data-saaristo-pops aria-hidden="true"></div>
+<div class="saaristo-throwzone" data-throwzone aria-hidden="true"><span>Pyyhkäise<br>ylös</span></div>
+<header class="saaristo-header" data-site-navigation="1">
+  <a class="saaristo-brand" href="/" aria-label="Sammakko - etusivu"><img src="/lite/characters/aava/wave.png" alt="" width="36" height="36"><span>Sammakko<small>Hulluttelulaboratorio</small></span></a>
+  <div class="saaristo-actions">
+    <nav id="site-nav" class="saaristo-nav" aria-label="Päänavigaatio">
+      <a href="/" aria-current="page">Etusivu</a>
+      <a href="/oppimisverkko/">Oppimisverkko</a>
+      <a href="/whitepaper/">Whitepaper</a>
+      <a href="/tietoa/">Tietoa</a>
+    </nav>
+    <button class="saaristo-chip saaristo-menu" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false"><span class="saaristo-chip-label">Valikko</span> <span aria-hidden="true">☰</span></button>
+    <button class="saaristo-chip" type="button" data-saaristo-sound aria-pressed="true" title="Tuuli kaislikossa ja laineiden liplatus"><span aria-hidden="true">♪</span> <span class="saaristo-chip-label">Äänimaisema</span></button>
+    <button class="saaristo-chip" type="button" data-saaristo-pause aria-pressed="false"><span aria-hidden="true">Ⅱ</span> <span class="saaristo-chip-label">Pysäytä liike</span></button>
+  </div>
+</header>
+<main id="main">
+  <section class="saaristo-hero" aria-labelledby="saaristo-title">
+    <p class="saaristo-eyebrow"><span aria-hidden="true">✦</span> Matematiikkaa ja luonnontieteitä · leikkien</p>
+    <h1 id="saaristo-title" data-saaristo-headline>Pieni oivallus.<br><span>Suuri seikkailu.</span></h1>
+    <p class="saaristo-lead">Sammakko on oppimispeli, jossa harjoitellaan 181 matematiikan ja luonnontieteiden aihetta Aavan ja Loikan matkassa. Se aukeaa suoraan selaimessa, ilman tiliä ja asennusta.</p>
+    <div class="saaristo-actions saaristo-hero-actions">
+      <a class="saaristo-button" data-lite-entry="start" href="/lite/">Avaa Sammakko Lite <span aria-hidden="true">→</span></a>
+      <a class="saaristo-button is-ghost" href="#kivi">Heitä kivi <span aria-hidden="true">↓</span></a>
+    </div>
+    <p class="saaristo-hint">Lampi herää, kun sitä koskettaa.</p>
+  </section>
+
+  <section class="saaristo-section" id="kivi" aria-labelledby="kivi-title">
+    <div class="saaristo-panel saaristo-throw">
+      <p class="saaristo-eyebrow">Laskemisen leikki</p>
+      <h2 id="kivi-title">Heitä kivi.<br>Laske pomput.</h2>
+      <p>Matala kulma ja reipas vauhti saavat kiven pomppimaan. Jokainen pomppu saa oman numeronsa: yksi, kaksi, kolme… Pyyhkäise ylös kuvan vasemmasta laidasta, niin heität itse. Napauta lumpeita, niin Loikka hyppää niille. Raahaa Aavaa vedessä tai säikäytä hänet lentoon.</p>
+      <div class="saaristo-score" role="group" aria-label="Kiven pompput">
+        <div><strong data-skip-count>0</strong><span>pomppua</span></div>
+        <div><strong data-skip-best>0</strong><span>paras heitto</span></div>
+      </div>
+      <div class="saaristo-actions">
+        <button class="saaristo-button" type="button" data-throw>Heitä kivi <span aria-hidden="true">↗</span></button>
+        <button class="saaristo-button is-ghost" type="button" data-loikka-hop>Loikka, hyppää! <span aria-hidden="true">🐸</span></button>
+      </div>
+      <p class="saaristo-live" data-saaristo-live aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section class="saaristo-section" aria-labelledby="how-title">
+    <div class="saaristo-panel">
+      <p class="saaristo-eyebrow">Aava näyttää suuntaa</p>
+      <h2 id="how-title">Katso. Kokeile. Oivalla.</h2>
+      <ol class="saaristo-steps">
+        <li><img src="/assets/art/book-48.png" srcset="/assets/art/book-48.png 1x, /assets/art/book-96.png 2x" alt="" width="40" height="40" loading="lazy" decoding="async"><span><b>Ota ilmiö käsiin.</b><small>Katso esimerkki, kuuntele ohje tai tutki kuvaa. Yksi asia kerrallaan.</small></span></li>
+        <li><img src="/assets/art/lightbulb-48.png" srcset="/assets/art/lightbulb-48.png 1x, /assets/art/lightbulb-96.png 2x" alt="" width="40" height="40" loading="lazy" decoding="async"><span><b>Kokeile omalla tavalla.</b><small>Vastaa, vertaile ja pyydä tarvittaessa apua. Selitys auttaa palaamaan asian äärelle.</small></span></li>
+        <li><img src="/assets/art/check-48.png" srcset="/assets/art/check-48.png 1x, /assets/art/check-96.png 2x" alt="" width="40" height="40" loading="lazy" decoding="async"><span><b>Palaa ja huomaa.</b><small>Jatka kartalla ja kertaa myöhemmin. Hyvä yritys on alku keskustelulle.</small></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="saaristo-section" aria-labelledby="aava-title">
+    <div class="saaristo-panel saaristo-companion">
+      <img src="/lite/characters/aava/map.png" alt="Aava, keltainen ankanpoikanen, pitää karttaa." width="128" height="128" loading="lazy">
+      <p class="saaristo-eyebrow">Pieni ankanpoikanen, monta kysymystä</p>
+      <h2 id="aava-title">“Katsotaanko vielä yhdessä?”</h2>
+      <p>Aava kutsuu tutkimaan ja yrittämään. Hänen kanssaan ei tarvitse osata valmiiksi. Loikka auttaa reitin varrella, ja saarten välille syntyy yhteyksiä, kun tutut taidot kohtaavat uuden kysymyksen.</p>
+      <div class="saaristo-actions"><a class="saaristo-button is-ghost" data-lite-entry="workshop" href="/lite/#paja">Avaa Lentopaja <span aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+
+  <section class="saaristo-section" aria-labelledby="adults-title">
+    <div class="saaristo-panel">
+      <p class="saaristo-eyebrow">Aikuiselle ja opettajalle</p>
+      <h2 id="adults-title">Iloinen maailma.<br>Perusteltu rakenne.</h2>
+      <div class="saaristo-fact"><strong>181</strong><span>sisältötarkistettua aihetta Lite-harjoittelussa. 3D-Saaristossa voit lisäksi tutkia kehitteillä olevia aiheita.</span></div>
+      <p>Aiheet kuuluvat 690 osaamiskohteen oppimisverkkoon, jossa näkyy, mitä kukin taito vaatii ja mihin se johtaa. Kerromme avoimesti, mitä nykyinen versio tekee ja mitä vasta tutkitaan.</p>
+      <ul class="saaristo-faq">
+        <li><details><summary>Tarvitaanko tili tai asennus?</summary><p>Ei. Lite avautuu selaimessa. Harjoittelun historia tallentuu tämän selaimen paikalliseen tallennukseen, eikä se siirry automaattisesti toiseen laitteeseen.</p></details></li>
+        <li><details><summary>Kenelle Sammakko on tarkoitettu?</summary><p>Lite sisältää matematiikan, ympäristöopin ja fysiikan aiheita eri vaiheisiin. Nuoren oppijan kanssa aikuinen voi lukea ohjeita, kysyä perusteluja ja pitää taukoja.</p></details></li>
+        <li><details><summary>Mitä kartan edistyminen kertoo?</summary><p>Se kuvaa tämän version sääntöjen mukaan tallennettua harjoittelua. Se ei ole arvosana tai diagnoosi. Ohjeen avulla ratkaistu tehtävä ja itsenäinen vastaus erotetaan toisistaan.</p></details></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="saaristo-section" aria-labelledby="lab-title">
+    <div class="saaristo-panel saaristo-lab">
+      <p class="saaristo-eyebrow">Hulluttelulaboratorio</p>
+      <h2 id="lab-title">Mistä taika on tehty?</h2>
+      <p>Jokainen kerros on oma pieni kokeilunsa. Kytke niitä päälle ja pois, niin näet, mitä kukin tekee.</p>
+      <ul class="saaristo-modules">
+        <li><label><input type="checkbox" checked data-hulluttelu="vesi"><span><b>Elävä vesi</b><small>Aaltosimulaatio näytönohjaimella: jokainen kosketus on pieni rengas.</small></span></label></li>
+        <li><label><input type="checkbox" checked data-hulluttelu="ruoho"><span><b>Huojuva ruoho</b><small>Tuhansia korsia, joita tuuli ja osoitin taivuttavat.</small></span></label></li>
+        <li><label><input type="checkbox" checked data-hulluttelu="kaislat"><span><b>Kaislanippu</b><small>Rantakaislat ja osmankäämit, jotka antavat tietä osoittimelle.</small></span></label></li>
+        <li><label><input type="checkbox" checked data-hulluttelu="tulikarpaset"><span><b>Tulikärpäset</b><small>Hehkuvia valopisteitä saaren yllä.</small></span></label></li>
+        <li><label><input type="checkbox" checked data-hulluttelu="kivet"><span><b>Kivien lingotus</b><small>Pieni fysiikka: painovoima, kulma ja vauhti.</small></span></label></li>
+        <li><label><input type="checkbox" checked data-hulluttelu="kirjaimet"><span><b>Tähtikirjaimet</b><small>Otsikko tuhansina pisteinä, jotka väistävät ja palaavat.</small></span></label></li>
+        <li><label><input type="checkbox" checked data-hulluttelu="parvi"><span><b>Tulikärpäsparvi (WebGPU)</b><small data-parvi-note>Kymmeniä tuhansia tulikärpäsiä, jotka seuraavat osoitinta ja pakenevat kiven loisketta.</small></span></label></li>
+        <li class="is-coming" aria-label="Seuraava kokeilu on tulossa"><span><b>Seuraava hulluttelu</b><small>Tähän paikkaan mahtuu uusi kokeilu.</small></span></li>
+      </ul>
+      <p class="saaristo-small">Saari on muotoiltu Blenderissä, taivas maalattu kuvageneraattorilla ja näkymä piirretty three.js-kirjastolla. Liikettä voi vähentää käyttöjärjestelmän asetuksista tai Pysäytä liike -napista.</p>
+    </div>
+  </section>
+
+  <section class="saaristo-section saaristo-exit" aria-labelledby="exit-title">
+    <div class="saaristo-panel saaristo-closing">
+      <img src="/lite/characters/aava/swim.png" alt="Aava ui kohti seuraavaa saarta." width="112" height="112" loading="lazy">
+      <p class="saaristo-eyebrow">Seuraava saari odottaa</p>
+      <h2 id="exit-title">Mitä tänään oivalletaan?</h2>
+      <div class="saaristo-actions"><a class="saaristo-button" data-lite-entry="start" href="/lite/">Avaa Sammakko Lite <span aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+</main>
+<footer class="saaristo-footer"><span>Sammakko™ · © 2026 Veikko Tuominen</span><a href="/tietoa/#yhteystiedot">Tekijä ja yhteys</a></footer>
+</body>
+</html>

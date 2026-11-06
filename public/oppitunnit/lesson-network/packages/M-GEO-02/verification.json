@@ -1,0 +1,142 @@
+{
+  "kind": "author_self_check",
+  "kcId": "M-GEO-02",
+  "date": "2026-10-29",
+  "contentRevision": "1@187a9540b02de2df4fd228d5102bf9fd0d2a0a60dd38d8a217ea329765ae5908",
+  "status": "source_stable_for_independent_review",
+  "independentReview": "pending_main_integrator",
+  "humanReview": "not_performed",
+  "packageValidator": "PASS; exact original validator with only directory enumeration scoped to these four assigned IDs; no build or live outputs changed",
+  "pureTests": "node --test lesson-network/packages/M-GEO-02/tests.mjs; 2 test cases PASS per package, 8 total for four",
+  "lint": "scoped ESLint PASS",
+  "browser": {
+    "engine": "real Playwright Chromium headless",
+    "composition": "Temporary source composition with actual shared shell CSS and loader; source-owned PNG references served by symlink, no artwork copies; no main build",
+    "widths": [
+      320,
+      390,
+      1280
+    ],
+    "runs": [
+      {
+        "id": "M-GEO-02",
+        "viewport": {
+          "width": 320,
+          "height": 800
+        },
+        "init": {
+          "overflow": false,
+          "images": [
+            {
+              "src": "../shared/loikka/curious.png",
+              "loaded": true
+            },
+            {
+              "src": "../content/M-GEO-02/shelf-directions.svg",
+              "loaded": true
+            }
+          ],
+          "storage": 0
+        },
+        "after": {
+          "overflow": false,
+          "storage": 0
+        },
+        "errors": []
+      },
+      {
+        "id": "M-GEO-02",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "init": {
+          "overflow": false,
+          "images": [
+            {
+              "src": "../shared/loikka/curious.png",
+              "loaded": true
+            },
+            {
+              "src": "../content/M-GEO-02/shelf-directions.svg",
+              "loaded": true
+            }
+          ],
+          "storage": 0
+        },
+        "after": {
+          "overflow": false,
+          "storage": 0
+        },
+        "errors": []
+      },
+      {
+        "id": "M-GEO-02",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "init": {
+          "overflow": false,
+          "images": [
+            {
+              "src": "../shared/loikka/curious.png",
+              "loaded": true
+            },
+            {
+              "src": "../content/M-GEO-02/shelf-directions.svg",
+              "loaded": true
+            }
+          ],
+          "storage": 0
+        },
+        "after": {
+          "overflow": false,
+          "storage": 0
+        },
+        "errors": []
+      }
+    ],
+    "interactionResult": "Each matching practice and specific wrong-feedback branch exercised by actual clicks. pause/resume/reset/dispose, reset twice, remount, duplicate mount replacing prior instance passed.",
+    "storageResult": "localStorage empty before and after; source has no storage, network, award or mastery mechanism",
+    "screenshots": [
+      {
+        "width": 320,
+        "path": "/tmp/sammakko-b02-author/screens/M-GEO-02-320-work.png",
+        "sha256": "06d789cc8c84c95b4718ffe839260cae442758f7ba7906ebaf886e22752fc0e4"
+      },
+      {
+        "width": 390,
+        "path": "/tmp/sammakko-b02-author/screens/M-GEO-02-390-work.png",
+        "sha256": "4d1eb9b8191d9d5631d753abe21a843f080fb5ec779801400da77b5df10bb90c"
+      },
+      {
+        "width": 1280,
+        "path": "/tmp/sammakko-b02-author/screens/M-GEO-02-1280-work.png",
+        "sha256": "4427c1d85708e54a6c6aba41ec4263cfb9df6e984b3948ad9677d0586cff1dcf"
+      }
+    ],
+    "harnessTemporaryPath": "/tmp/sammakko-b02-author/browser.mjs",
+    "harnessSha256": "e44609e13c3647e52e8c38b91461d6fe330a7933ddd1274d3e87ffff0dccadc7",
+    "limitations": "Scoped source preview, not integrated690 build/navigation/release check. Not human or learner testing."
+  },
+  "assets": [
+    {
+      "path": "shelf-directions.svg",
+      "sha256": "cada21ac8101ac343842a878fd4253d3b47a30dc735d6e6556dea1bab5353d97"
+    },
+    {
+      "path": "shared/loikka/curious.png",
+      "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "71e673e29b7656f0c514b3db6407b74cfca295766d4a4f9e397a4659c4a252ba"
+    }
+  ],
+  "limits": [
+    "Vasen/oikea tarkoittaa tässä aivan viereistä paikkaa samalla hyllyllä ja ylä/ala suoraan kohdalla olevaa paikkaa.",
+    "Välissä tarkoittaa tässä kirjojen rajaamaa alahyllyn paikkaa; ei yleistä sääntöä että välissä on täsmälleen puolivälissä tai kummankin vieressä.",
+    "Toiminta ei osoita suunnistusta, kaikkien katselukulmien hallintaa tai liikkumistaitoa oikeassa ympäristössä."
+  ]
+}

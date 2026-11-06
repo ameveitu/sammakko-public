@@ -1,0 +1,71 @@
+{
+  "asset": "Sulka 3D candidate",
+  "status": "unapproved early local candidate, no runtime replacement",
+  "license": "Private repository source; no redistribution license granted.",
+  "source_sha256": {
+    "lite/src/ui/art.ts": "b6af99075a9d3dd71e5cca5b049c6922116b933c24938bbb0fc1206ac43b808a"
+  },
+  "source_detail": "sulka() SVG in art.ts; attached masterplan, visual plan and eepos define the character role.",
+  "authoring": "Procedural Blender candidate; no external provider.",
+  "forward": "Blender +X / glTF +X; glTF +Y up, metres, ground origin.",
+  "clips": [
+    "gentle-nod",
+    "gesture",
+    "idle",
+    "walk"
+  ],
+  "budgets": {
+    "triangles_max_exclusive": 20000,
+    "bones_max_exclusive": 24,
+    "glb_bytes_max_exclusive": 3000000
+  },
+  "glb_sha256": "5a57e690d7cb546fbbb43f59231d5b63730004dbd45ce394d659c68049363db2",
+  "measured": {
+    "bytes": 364904,
+    "triangles": 8406,
+    "bounds_blender_m": [
+      [
+        -0.3799999952316284,
+        -0.4399995505809784,
+        2.7478170849803973e-09
+      ],
+      [
+        0.6799998879432678,
+        0.439999520778656,
+        2.0299997329711914
+      ]
+    ],
+    "bones": [
+      "root",
+      "body",
+      "arm_1",
+      "arm_-1",
+      "neck",
+      "head",
+      "leg_1",
+      "foot_1",
+      "leg_-1",
+      "foot_-1"
+    ],
+    "actions": [
+      "gentle-nod",
+      "gesture",
+      "idle",
+      "walk"
+    ],
+    "checks": {
+      "nod_tip_moves_down": true,
+      "budget_pass": true,
+      "walk_root_fixed": true,
+      "walk_one_foot_contact": true,
+      "walk_stance_foot_stationary": true
+    }
+  },
+  "walk_scope": "In-place walk: root fixed and stance foot horizontal positions verified at each integer frame.",
+  "external_uris": [],
+  "external_source_provenance": {
+    "description": "User-supplied Sammakko Lite 690 completion package ZIP; masterplan, visual plan and eepos describe Sulka role.",
+    "filename": "2-Sammakko_Lite_690_viimeistelypaketti.zip",
+    "sha256": "0e0d38fed3679ed96025da013c5c1105d2b0215f0ec5730714d7a0e3538779a9"
+  }
+}

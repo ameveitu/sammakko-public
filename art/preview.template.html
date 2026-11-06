@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sammakko-grafiikkapaketti</title>
+<style>
+  :root { --paper: #f7f3e7; --ink: #173f3b; --line: #244868; --muted: #5f6f6b; --card: #fffdf7; --edge: #e2dccb; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.5 system-ui, sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; } h2 { margin: 36px 0 12px; font-size: 19px; }
+  p.note { color: var(--muted); margin: 0 0 16px; }
+  .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--edge); border-radius: 12px; padding: 10px; text-align: center; }
+  .card small { display: block; color: var(--muted); font-size: 12px; }
+  .stage { height: 150px; position: relative; overflow: hidden; background: linear-gradient(#fffdf7 70%, #eee6cf 70%); border-radius: 8px; }
+  .stage img { position: absolute; left: 50%; bottom: 0; width: 150px; height: 150px; margin-left: -75px; transform-origin: 50% 93%; }
+  .tex { height: 150px; border-radius: 8px; background-size: 128px 128px; }
+  .bg img { width: 100%; border-radius: 8px; display: block; }
+  .icon img { width: 72px; height: 72px; }
+  .score { font-weight: 600; } .ok { color: #2d7a3e; } .warn { color: #a05a00; }
+  .bggrid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  label { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sammakko-grafiikkapaketti</h1>
+  <p class="note">Paikallinen esikatselu. Avainasentoanimaatiot pyörivät samalla ajoituksella kuin Litessä. Uudet asennot ovat kansiossa <code>art/characters/</code>, kaanonin asennot kansiossa <code>lite/public/characters/</code>.</p>
+  <label><input type="checkbox" id="mirror"> Peilaa (hahmo katsoo vasemmalle)</label>
+  <div id="anims"></div>
+  <h2>Tekstuurit (2×2-toisto)</h2><div class="grid" id="tex"></div>
+  <h2>Taustat</h2><div class="grid bggrid" id="bgs"></div>
+  <h2>Kuvakkeet</h2><div class="grid" id="icons"></div>
+</main>
+<script>
+const DATA = /*DATA*/null;
+const M = /*MANIFEST*/null;
+const el = (t, a = {}, ...k) => { const e = document.createElement(t); Object.assign(e, a); e.append(...k); return e; };
+const anims = document.getElementById('anims');
+const players = [];
+for (const [actor, seqs] of Object.entries(DATA.anim)) {
+  anims.append(el('h2', { textContent: actor === 'aava' ? 'Aava – uudet animaatiot' : 'Loikka – uudet animaatiot' }));
+  const g = el('div', { className: 'grid' }); anims.append(g);
+  for (const [name, s] of Object.entries(seqs)) {
+    const img = el('img', { alt: `${actor} ${name}` });
+    const poses = [...new Set(s.frames.map((f) => f.pose))];
+    const scores = poses.map((p) => M.characters[actor]?.[p]?.score).filter(Boolean);
+    const sc = scores.length ? Math.min(...scores) : null;
+    const missing = poses.filter((p) => !DATA.urls[actor][p]);
+    g.append(el('div', { className: 'card' }, el('div', { className: 'stage' }, img), el('strong', { textContent: name }),
+      el('small', { innerHTML: missing.length ? `<span class="warn">puuttuu: ${missing.join(', ')}</span>` : sc ? `heikoin ruutu <span class="score ${sc >= 85 ? 'ok' : 'warn'}">${sc}</span>` : 'kaanon' })));
+    players.push({ actor, s, img, i: 0, t: 0 });
+  }
+}
+let last = performance.now();
+function tick(now) {
+  const dt = now - last; last = now;
+  const mir = document.getElementById('mirror').checked ? -1 : 1;
+  for (const p of players) {
+    p.t += dt;
+    const f = p.s.frames[p.i];
+    if (p.t >= f.ms) { p.t = 0; p.i = p.i + 1 < p.s.frames.length ? p.i + 1 : (p.s.loop ? 0 : (p.wait = (p.wait || 0) + 1, p.wait > 2 ? (p.wait = 0, 0) : p.i)); }
+    const g = p.s.frames[p.i];
+    const u = DATA.urls[p.actor][g.pose];
+    if (u && !p.img.src.endsWith(u)) p.img.src = u;
+    p.img.style.transform = `translateY(${g.dy * 150 / 256}px) rotate(${g.rot}deg) scaleX(${mir})`;
+  }
+  requestAnimationFrame(tick);
+}
+requestAnimationFrame(tick);
+const rel = (f) => '../' + f;
+for (const [n, t] of Object.entries(M.textures)) document.getElementById('tex').append(el('div', { className: 'card' },
+  el('div', { className: 'tex', style: `background-image:url(${rel(t.file)})` }), el('strong', { textContent: n }),
+  el('small', { innerHTML: `saumaluku <span class="score ${t.seamless ? 'ok' : 'warn'}">${t.seamScore}</span>` })));
+for (const [n, b] of Object.entries(M.backgrounds)) document.getElementById('bgs').append(el('div', { className: 'card bg' }, el('img', { src: rel(b.file), alt: n, loading: 'lazy' }), el('strong', { textContent: n })));
+for (const [n, i] of Object.entries(M.icons)) document.getElementById('icons').append(el('div', { className: 'card icon' }, el('img', { src: rel(i.file), alt: n }), el('small', { textContent: n })));
+</script>
+</body>
+</html>

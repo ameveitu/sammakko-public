@@ -1,0 +1,1424 @@
+# AUTHORED_DESIGN_PENDING_IMPLEMENTATION_REVIEW — ei canonical/runtime-admissionia.
+# Scoped-lähdeviitteet ja tyypitetty guided/model/episode-deklaraatio; main validoi normaalireitin.
+schema_version: 0.1.0
+kc_id: M-TH-01
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Yhtäläisyyksien ja erojen havaitseminen
+  subject: mathematics
+  grade_band: 1-6
+  mastery_role: atomic
+  node_kind: foundation
+  concept_path:
+    - Matematiikka
+    - Ajattelun taidot
+    - Vertailu
+  source_basis: direct_curriculum
+  curriculum_refs:
+    - OPH-POPS2014-MATH-VL1-2-S1
+    - OPH-POPS2014-MATH-VL3-6-S1
+  prerequisite_snapshot:
+    hard: []
+    strong: []
+    helpful: []
+teaching_model:
+  learning_goal: "Oppilas havaitsee yhtäläisyyden tai eron annetun muoto- tai kokokriteerin mukaan. Ydin
+    kattaa kaikki neljä muoto/koko × sama/eri -yhdistelmää. Rajattu sovellus paikantaa kahdesta parista
+    sääntöä rikkovan ja korjaa sen valitsemalla kumppanin kolmesta: muoto–sama sekä koko–eri.
+    Atomic/foundation-rooli ja esitiedoton juuri säilyvät. Ei vapaan luokittelun tai yleisen
+    päättelytaidon väitettä."
+  learner_facing_goal: Löydän merkin sen ominaisuuden mukaan, jota nyt tarvitaan.
+  core_idea: Pyydetty ominaisuus ratkaisee. Sama väri ei takaa samaa muotoa, eikä sama muoto takaa samaa kokoa.
+  success_evidence:
+    - "Tueton oma valinta jokaisesta neljästä yhdistelmästä: muoto–sama, muoto–eri, koko–sama ja
+      koko–eri. Neljä onnistumista ja neljä pohjaa ovat tässä vähimmäisprojektiraja, eivät
+      tutkimusvakio."
+    - "Kaksi omaa tuetonta soveltamishavaintoa: muoto–sama- ja koko–eri-parikorjaus. Molemmat
+      edellyttävät oikeaa virheparia ja korvaajaa. Näyttö ei kata kaikkia neljää parikorjausyhdistelmää;
+      pyydetty apu tai tuettu korjaus ei täytä sitä."
+    - Myöhempi neljän päätöksen näyte sisältää muoto/koko ja sama/eri. Yksi virhe ei selitä väärän
+      strategian syytä.
+  boundaries:
+    in_scope:
+      - Yksi nimetty ominaisuus kerrallaan. Muotoina ympyrä, neliö ja kolmio; koko on saman perusmuodon
+        tasainen suurennos.
+      - Väri on häiriötekijä, ei ainoa ratkaiseva tai välittävä vihje.
+      - Rajattu sovellus paikantaa yhden sääntöä rikkovan parin kahdesta ja valitsee sille korvaavan
+        merkin kolmesta. Toteutettu domain-operaatio ei vielä hyväksy journeyä, oppimistulosta tai
+        julkaisua.
+    out_of_scope:
+      - Muotojen nimeäminen, piirtäminen, vapaa luokittelusäännön löytäminen tai yleisen ajattelukyvyn
+        arvio.
+      - Eri muotoisten pinta-alojen, massojen tai korkeuksien vertailu. Ei piilotettua
+        numerotaitovaatimusta.
+      - Pelkästä tarinan, värin tai paikan vaihtumisesta päätelty yleinen siirtovaikutus.
+      - "Kaikkien neljän yhdistelmän parikorjaushallinta: siirtonäyte kattaa vain muoto–sama ja koko–eri.
+        Täysi tuotantoreitti odottaa mainin integraatiota."
+  prerequisite_assumptions: []
+  conceptual_invariants:
+    - "Jäädytetty juurisolmu: ei vaadittuja esitietoja eikä M-MEAS-00:n tai muotojen nimien piilotettua
+      testiä."
+    - Sääntö jää näkyviin myös itsenäisessä tehtävässä. Sen poistaminen vaihtaisi tavoitetta.
+    - Oppija tuottaa vaihtoehtovalinnan. Järjestelmä antaa säännön ja kohteet, mutta ei oikeaa valintaa.
+  likely_confusions:
+    - M-TH-01-OBS-SUHDE
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+    - DIAGNOSTIC
+    - ORIENT
+    - WORKED_EXAMPLE
+    - GUIDED_PRACTICE
+    - FADED_EXAMPLE
+    - INDEPENDENT_PRACTICE
+    - TRANSFER_CHECK
+    - MASTERY_GATE
+  fast_path:
+    enabled: false
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Kaksi havaintoa annetusta muotosäännöstä; puuttuva havainto avaa mallin, ei diagnoosia.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-TH-01-DIAG-SAMA
+              - M-TH-01-DIAG-ERI
+    ORIENT:
+      purpose: Aava valmistelee Loikan reittitaulun merkkejä. Tarvitaan pyydetyn muodon ja koon mukaisia
+        samanlaisia ja erilaisia merkkejä.
+      blocks:
+        - type: explanatory_text
+          content: Autetaan Aavaa tarkistamaan merkit. Katso ohjeesta, verrataanko muotoa vai kokoa ja etsitäänkö
+            samaa vai eriä.
+    WORKED_EXAMPLE:
+      purpose: Näytä kaikki neljä kriteeriä alkuperäisillä esimerkeillä. Muoto ja koko ovat molemmat ydintä,
+        eivät toistensa siirtotehtäviä.
+      blocks:
+        - type: worked_example
+          content:
+            givens:
+              kind: attribute_comparison_task_v1
+              context: Aavan samanmuotoinen jatkomerkki
+              operator: select_attribute
+              attribute: shape
+              relation: same
+              reference:
+                id: reference
+                shape: circle
+                size: 2
+                colour: blue
+                geometry:
+                  kind: circle
+                  cx: 6
+                  cy: 6
+                  r: 6
+              candidates:
+                - id: choice-1
+                  shape: circle
+                  size: 3
+                  colour: blue
+                  geometry:
+                    kind: circle
+                    cx: 6
+                    cy: 6
+                    r: 6
+                - id: choice-2
+                  shape: square
+                  size: 2
+                  colour: blue
+                  geometry:
+                    kind: rect
+                    x: 0
+                    y: 0
+                    width: 12
+                    height: 12
+                - id: choice-3
+                  shape: triangle
+                  size: 4
+                  colour: plum
+                  geometry:
+                    kind: polygon
+                    points:
+                      - - 6
+                        - 0
+                      - - 12
+                        - 12
+                      - - 0
+                        - 12
+            steps:
+              - Mallissa on pieni sininen ympyrä. Vaihtoehtoina ovat suurempi sininen ympyrä, sininen
+                neliö ja luumunvärinen kolmio.
+              - Aava seuraa reunaa. Ympyrä on edelleen samaa muotoa, vaikka koko vaihtuu.
+            conclusion: Aava valitsee suuremman ympyrän; samanvärinen neliö ei täytä muotosääntöä.
+            implementation_boundary: Alkuperäiset työvaiheet ja tarkat domain-givens vastaavat tämän draftin
+              attribute_examples_v1-mallin core-esimerkkejä. Helperin matemaattinen validointi ei hyväksy
+              rendererin, tuen tai altistuksen normaalia reittiä; ne ja sisältöarvio kuuluvat mainin
+              integraatioon.
+        - type: worked_example
+          content:
+            givens:
+              kind: attribute_comparison_task_v1
+              context: Aavan erimuotoinen varoitusmerkki
+              operator: select_attribute
+              attribute: shape
+              relation: different
+              reference:
+                id: reference
+                shape: circle
+                size: 2
+                colour: blue
+                geometry:
+                  kind: circle
+                  cx: 6
+                  cy: 6
+                  r: 6
+              candidates:
+                - id: choice-1
+                  shape: square
+                  size: 3
+                  colour: blue
+                  geometry:
+                    kind: rect
+                    x: 0
+                    y: 0
+                    width: 12
+                    height: 12
+                - id: choice-2
+                  shape: circle
+                  size: 2
+                  colour: blue
+                  geometry:
+                    kind: circle
+                    cx: 6
+                    cy: 6
+                    r: 6
+                - id: choice-3
+                  shape: circle
+                  size: 4
+                  colour: plum
+                  geometry:
+                    kind: circle
+                    cx: 6
+                    cy: 6
+                    r: 6
+            steps:
+              - Malli on pieni sininen ympyrä. Valittavana on suurempi neliö sekä kaksi ympyrää.
+              - Nyt pyydetään eri muotoa. Aava vertaa reunaa eikä vain toista edellistä ympyrävalintaa.
+            conclusion: Neliö on eri muotoa. Sama ja eri johtavat tässä eri valintaan.
+            implementation_boundary: Alkuperäiset työvaiheet ja tarkat domain-givens vastaavat tämän draftin
+              attribute_examples_v1-mallin core-esimerkkejä. Helperin matemaattinen validointi ei hyväksy
+              rendererin, tuen tai altistuksen normaalia reittiä; ne ja sisältöarvio kuuluvat mainin
+              integraatioon.
+        - type: worked_example
+          content:
+            givens:
+              kind: attribute_comparison_task_v1
+              context: Aavan merkin koon vertailumalli
+              operator: select_attribute
+              attribute: size
+              relation: same
+              reference:
+                id: reference
+                shape: circle
+                size: 2
+                colour: blue
+                geometry:
+                  kind: circle
+                  cx: 6
+                  cy: 6
+                  r: 6
+              candidates:
+                - id: choice-1
+                  shape: circle
+                  size: 2
+                  colour: blue
+                  geometry:
+                    kind: circle
+                    cx: 6
+                    cy: 6
+                    r: 6
+                - id: choice-2
+                  shape: circle
+                  size: 3
+                  colour: blue
+                  geometry:
+                    kind: circle
+                    cx: 6
+                    cy: 6
+                    r: 6
+                - id: choice-3
+                  shape: circle
+                  size: 4
+                  colour: plum
+                  geometry:
+                    kind: circle
+                    cx: 6
+                    cy: 6
+                    r: 6
+            steps:
+              - Aavan malli on pieni ympyrä. Kaikki vaihtoehdot ovat ympyröitä, joten muoto ei ratkaise
+                tätä kertaa.
+              - "Aava vertaa kokoja ja valitsee yhtä suuren ympyrän. Pelkkä sama väri ei riitä: myös
+                toinen, suurempi vaihtoehto on samanvärinen."
+            conclusion: Samankokoinen merkki sopii mallin kokoiseen paikkaan. Suurempi samanmuotoinen merkki ei täytä
+              kokokriteeriä.
+            implementation_boundary: Alkuperäiset työvaiheet ja tarkat domain-givens vastaavat tämän draftin
+              attribute_examples_v1-mallin core-esimerkkejä. Helperin matemaattinen validointi ei hyväksy
+              rendererin, tuen tai altistuksen normaalia reittiä; ne ja sisältöarvio kuuluvat mainin
+              integraatioon.
+        - type: worked_example
+          content:
+            givens:
+              kind: attribute_comparison_task_v1
+              context: Aavan merkin koon vertailumalli
+              operator: select_attribute
+              attribute: size
+              relation: different
+              reference:
+                id: reference
+                shape: circle
+                size: 4
+                colour: blue
+                geometry:
+                  kind: circle
+                  cx: 6
+                  cy: 6
+                  r: 6
+              candidates:
+                - id: choice-1
+                  shape: circle
+                  size: 2
+                  colour: blue
+                  geometry:
+                    kind: circle
+                    cx: 6
+                    cy: 6
+                    r: 6
+                - id: choice-2
+                  shape: circle
+                  size: 4
+                  colour: blue
+                  geometry:
+                    kind: circle
+                    cx: 6
+                    cy: 6
+                    r: 6
+                - id: choice-3
+                  shape: circle
+                  size: 4
+                  colour: plum
+                  geometry:
+                    kind: circle
+                    cx: 6
+                    cy: 6
+                    r: 6
+            steps:
+              - Aavan malli on suuri ympyrä. Vaihtoehtoina on pieni ympyrä ja kaksi mallin kokoista
+                ympyrää.
+              - Nyt etsitään eri kokoa. Aava valitsee pienemmän; pelkkä suurimman merkin valinta olisi
+                väärin.
+              - Toisessa harjoituksessa eri kokoinen voi olla suurempi. Eri ei tarkoita aina pientä tai
+                aina suurta.
+            conclusion: "Eri koko vertaa malliin: pienempikin voi olla oikea. Väri saa vaihdella."
+            implementation_boundary: Alkuperäiset työvaiheet ja tarkat domain-givens vastaavat tämän draftin
+              attribute_examples_v1-mallin core-esimerkkejä. Helperin matemaattinen validointi ei hyväksy
+              rendererin, tuen tai altistuksen normaalia reittiä; ne ja sisältöarvio kuuluvat mainin
+              integraatioon.
+    GUIDED_PRACTICE:
+      purpose: Harjoittele kaikkia neljää kriteeriä. Apu ohjaa relevanttiin ominaisuuteen eikä vaihda
+        tavoitetta nimeämiseksi.
+      blocks:
+        - type: explanatory_text
+          content: "Aava näyttää ensin ohjeen: muoto vai koko? Sama vai eri? Katso sitten vertailumerkkiä."
+        - type: explanatory_text
+          content: "Muototehtävässä seuraa reunaa ja tarkista jokainen vaihtoehto. Kokotehtävässä muoto on sama:
+            vertaa, onko merkki mallin kokoinen, pienempi vai suurempi. Valitse vasta sitten."
+        - type: explanatory_text
+          content: Saat pyytää Aavan mallin tai vertailukorostuksen ennen virhettä. Avun jälkeen tämä vastaus on
+            harjoittelua.
+        - type: question
+          content:
+            item_refs:
+              - M-TH-01-GUIDE-SAMA
+              - M-TH-01-GUIDE-ERI
+              - M-TH-01-GUIDE-KOKO-SAMA
+              - M-TH-01-GUIDE-KOKO-ERI
+    FADED_EXAMPLE:
+      purpose: Poista ratkaisunuoli, Aavan valinta ja vastauslause kaikissa neljässä kriteerissä. Sääntö ja
+        vertailumerkki säilyvät.
+      blocks:
+        - type: explanatory_text
+          content: Nyt valitset itse. Ohje ja vertailumerkki jäävät näkyviin; Aavan ratkaisu poistuu. Saat silti
+            pyytää apua.
+        - type: question
+          content:
+            item_refs:
+              - M-TH-01-FADE-SAMA
+              - M-TH-01-FADE-ERI
+              - M-TH-01-FADE-KOKO-SAMA
+              - M-TH-01-FADE-KOKO-ERI
+    INDEPENDENT_PRACTICE:
+      purpose: Oma valinta ja vahvistus ilman reunakorostusta, ratkaisuesimerkkiä tai automaattista korjausta.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-TH-01-CORE-SAMA
+              - M-TH-01-CORE-ERI
+              - M-TH-01-CORE-KOKO-SAMA
+              - M-TH-01-CORE-KOKO-ERI
+    TRANSFER_CHECK:
+      purpose: Aava tarkistaa valmiiksi tehdyt merkkiparit. Pelkän yhden merkin vastaavuuden sijaan oppija
+        paikantaa virheen ja korjaa juuri sen kahdessa rajatussa tapauksessa.
+      blocks:
+        - type: explanatory_text
+          content: Aavan merkkipareissa on korjattavaa. Katso näkyvä sääntö, valitse sitä rikkova pari ja sille
+            uusi kumppani. Voit muuttaa valintoja ennen Valmis-painiketta.
+        - type: question
+          content:
+            item_refs:
+              - M-TH-01-APP-KORJAA-MUOTO-SAMA
+              - M-TH-01-APP-KORJAA-KOKO-ERI
+    MASTERY_GATE:
+      purpose: Seuraus koskee tarkistettua merkkipäätöstä. Tuettu reitti voi edistää tarinaa ilman
+        hallintahyvitystä.
+      blocks:
+        - type: explanatory_text
+          content: Aava voi jatkaa reittitaulun merkkien järjestämistä Loikan kanssa.
+    DELAYED_REVIEW:
+      purpose: "Uuden retken neljä tuetonta päätöstä: molemmat ominaisuudet ja suhteet; ei kaikkien tilanteiden
+        säilymisnäyttö."
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-TH-01-LATER-1
+              - M-TH-01-LATER-2
+              - M-TH-01-LATER-3
+              - M-TH-01-LATER-4
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+  independent:
+    minimum_successes: 4
+    template_diversity: 4
+    required_tags:
+      - attribute_shape_same
+      - attribute_shape_different
+      - attribute_size_same
+      - attribute_size_different
+    max_supported_attempts_counted: 0
+  transfer:
+    required: true
+    minimum_successes: 2
+    novel_context_required: true
+    required_tags:
+      - attribute_repair_shape_same
+      - attribute_repair_size_different
+  delayed:
+    required: true
+    minimum_successes: 4
+    minimum_delay_hours: 24
+    required_tags:
+      - attribute_shape_same
+      - attribute_shape_different
+      - attribute_size_same
+      - attribute_size_different
+    required_contexts: []
+    earliest_delay_policy: "Vähintään 24 tuntia hankinnan jälkeen: uusi tueton vastaus jokaiseen vaadittuun
+      havaintoluokkaan. Ajan kuluminen tai mallin katsominen ei ole näyttöä."
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+    - misconception_id: M-TH-01-OBS-SUHDE
+      evidence_tags:
+        - attribute_shape_same
+        - attribute_shape_different
+        - attribute_size_same
+        - attribute_size_different
+      rule: Uudet tuettomat onnistumiset kaikista nimetyistä havaintoluokista. Virhehavainnon ajonaikainen
+        sidonta on vielä toteutettava; tästä tekstistä ei myönnetä poistumista.
+    - misconception_id: M-TH-01-OBS-KORJAUSKOHDE
+      evidence_tags:
+        - attribute_repair_shape_same
+        - attribute_repair_size_different
+      rule: Uudet tuettomat ja aidosti novel-soveltamispäätökset molemmista rajatuista parikorjaustapauksista.
+        Väärään pariin osunut oikea korvaaja tai yhden tapauksen toisto ei riitä.
+items:
+  - id: M-TH-01-DIAG-SAMA
+    kc_ids:
+      - M-TH-01
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse samanmuotoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan ensimmäinen merkkipari
+      operator: select_attribute
+      attribute: shape
+      relation: same
+    hints:
+      - level: 1
+        text: "Katso, mitä verrataan: muotoa. Tarkastele reunaa; väri tai suurempi koko ei ratkaise muotoa."
+      - level: 2
+        text: Vertaa jokaista vaihtoehtoa malliin. Sama pyytää saman muodon, eri pyytää muun muodon. Voit pyytää
+          Aavan mallin; silloin tämä on harjoittelua.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-DIAG-ERI
+    kc_ids:
+      - M-TH-01
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse erimuotoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan toinen merkkipari
+      operator: select_attribute
+      attribute: shape
+      relation: different
+    hints:
+      - level: 1
+        text: "Katso, mitä verrataan: muotoa. Tarkastele reunaa; väri tai suurempi koko ei ratkaise muotoa."
+      - level: 2
+        text: Vertaa jokaista vaihtoehtoa malliin. Sama pyytää saman muodon, eri pyytää muun muodon. Voit pyytää
+          Aavan mallin; silloin tämä on harjoittelua.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-GUIDE-SAMA
+    kc_ids:
+      - M-TH-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse samanmuotoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Reittitaulun samanmuotoiset merkit
+      operator: select_attribute
+      attribute: shape
+      relation: same
+    hints:
+      - level: 1
+        text: "Katso, mitä verrataan: muotoa. Tarkastele reunaa; väri tai suurempi koko ei ratkaise muotoa."
+      - level: 2
+        text: Vertaa jokaista vaihtoehtoa malliin. Sama pyytää saman muodon, eri pyytää muun muodon. Voit pyytää
+          Aavan mallin; silloin tämä on harjoittelua.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-GUIDE-ERI
+    kc_ids:
+      - M-TH-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse erimuotoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Reittitaulun erimuotoinen merkki
+      operator: select_attribute
+      attribute: shape
+      relation: different
+    hints:
+      - level: 1
+        text: "Katso, mitä verrataan: muotoa. Tarkastele reunaa; väri tai suurempi koko ei ratkaise muotoa."
+      - level: 2
+        text: Vertaa jokaista vaihtoehtoa malliin. Sama pyytää saman muodon, eri pyytää muun muodon. Voit pyytää
+          Aavan mallin; silloin tämä on harjoittelua.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-FADE-SAMA
+    kc_ids:
+      - M-TH-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse samanmuotoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Muotovertailu ilman korostusta
+      operator: select_attribute
+      attribute: shape
+      relation: same
+    hints:
+      - level: 1
+        text: "Katso, mitä verrataan: muotoa. Tarkastele reunaa; väri tai suurempi koko ei ratkaise muotoa."
+      - level: 2
+        text: Vertaa jokaista vaihtoehtoa malliin. Sama pyytää saman muodon, eri pyytää muun muodon. Voit pyytää
+          Aavan mallin; silloin tämä on harjoittelua.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-FADE-ERI
+    kc_ids:
+      - M-TH-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse erimuotoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Eri muodon oma valinta
+      operator: select_attribute
+      attribute: shape
+      relation: different
+    hints:
+      - level: 1
+        text: "Katso, mitä verrataan: muotoa. Tarkastele reunaa; väri tai suurempi koko ei ratkaise muotoa."
+      - level: 2
+        text: Vertaa jokaista vaihtoehtoa malliin. Sama pyytää saman muodon, eri pyytää muun muodon. Voit pyytää
+          Aavan mallin; silloin tämä on harjoittelua.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-CORE-SAMA
+    kc_ids:
+      - M-TH-01
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse samanmuotoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Reittitaulun samanmuotoiset merkit
+      operator: select_attribute
+      attribute: shape
+      relation: same
+    hints:
+      - level: 1
+        text: "Katso, mitä verrataan: muotoa. Tarkastele reunaa; väri tai suurempi koko ei ratkaise muotoa."
+      - level: 2
+        text: Vertaa jokaista vaihtoehtoa malliin. Sama pyytää saman muodon, eri pyytää muun muodon. Voit pyytää
+          Aavan mallin; silloin tämä on harjoittelua.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-CORE-ERI
+    kc_ids:
+      - M-TH-01
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse erimuotoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Reittitaulun erimuotoinen merkki
+      operator: select_attribute
+      attribute: shape
+      relation: different
+    hints:
+      - level: 1
+        text: "Katso, mitä verrataan: muotoa. Tarkastele reunaa; väri tai suurempi koko ei ratkaise muotoa."
+      - level: 2
+        text: Vertaa jokaista vaihtoehtoa malliin. Sama pyytää saman muodon, eri pyytää muun muodon. Voit pyytää
+          Aavan mallin; silloin tämä on harjoittelua.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-LATER-1
+    kc_ids:
+      - M-TH-01
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse samanmuotoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Uuden retken pyydetyn ominaisuuden tarkistus
+      operator: select_attribute
+      attribute: shape
+      relation: same
+    hints:
+      - level: 1
+        text: "Katso, mitä verrataan: muotoa. Tarkastele reunaa; väri tai suurempi koko ei ratkaise muotoa."
+      - level: 2
+        text: Vertaa jokaista vaihtoehtoa malliin. Sama pyytää saman muodon, eri pyytää muun muodon. Voit pyytää
+          Aavan mallin; silloin tämä on harjoittelua.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-LATER-2
+    kc_ids:
+      - M-TH-01
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse erimuotoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Uuden retken pyydetyn ominaisuuden tarkistus
+      operator: select_attribute
+      attribute: shape
+      relation: different
+    hints:
+      - level: 1
+        text: "Katso, mitä verrataan: muotoa. Tarkastele reunaa; väri tai suurempi koko ei ratkaise muotoa."
+      - level: 2
+        text: Vertaa jokaista vaihtoehtoa malliin. Sama pyytää saman muodon, eri pyytää muun muodon. Voit pyytää
+          Aavan mallin; silloin tämä on harjoittelua.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-LATER-3
+    kc_ids:
+      - M-TH-01
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse samankokoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Uuden retken pyydetyn ominaisuuden tarkistus
+      operator: select_attribute
+      attribute: size
+      relation: same
+    hints:
+      - level: 1
+        text: Nyt verrataan kokoa. Muoto on vaihtoehdoissa sama; vertaa, kuinka suuri merkki on malliin nähden.
+      - level: 2
+        text: Sama koko tarkoittaa yhtä suurta merkkiä. Eri koko voi olla pienempi tai suurempi. Pyydä Aavan
+          vertailumalli tarvittaessa; se on tukea.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-LATER-4
+    kc_ids:
+      - M-TH-01
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse merkki, jonka koko on eri.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Uuden retken pyydetyn ominaisuuden tarkistus
+      operator: select_attribute
+      attribute: size
+      relation: different
+    hints:
+      - level: 1
+        text: Nyt verrataan kokoa. Muoto on vaihtoehdoissa sama; vertaa, kuinka suuri merkki on malliin nähden.
+      - level: 2
+        text: Sama koko tarkoittaa yhtä suurta merkkiä. Eri koko voi olla pienempi tai suurempi. Pyydä Aavan
+          vertailumalli tarvittaessa; se on tukea.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-GUIDE-KOKO-SAMA
+    kc_ids:
+      - M-TH-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse samankokoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan merkin koon tarkistus
+      operator: select_attribute
+      attribute: size
+      relation: same
+    hints:
+      - level: 1
+        text: "Nyt verrataan kokoa. Merkit ovat samanmuotoisia. Vertaa jokaista merkkiä malliin: onko se yhtä
+          suuri vai eri kokoinen?"
+      - level: 2
+        text: Sama koko tarkoittaa yhtä suurta merkkiä. Eri koko voi olla pienempi tai suurempi; suurin ei aina
+          ole oikea. Pyydä tarvittaessa Aavan vertailumalli. Se on tukea.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-GUIDE-KOKO-ERI
+    kc_ids:
+      - M-TH-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse merkki, jonka koko on eri.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan merkin koon tarkistus
+      operator: select_attribute
+      attribute: size
+      relation: different
+    hints:
+      - level: 1
+        text: "Nyt verrataan kokoa. Merkit ovat samanmuotoisia. Vertaa jokaista merkkiä malliin: onko se yhtä
+          suuri vai eri kokoinen?"
+      - level: 2
+        text: Sama koko tarkoittaa yhtä suurta merkkiä. Eri koko voi olla pienempi tai suurempi; suurin ei aina
+          ole oikea. Pyydä tarvittaessa Aavan vertailumalli. Se on tukea.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-FADE-KOKO-SAMA
+    kc_ids:
+      - M-TH-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse samankokoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan merkin koon tarkistus
+      operator: select_attribute
+      attribute: size
+      relation: same
+    hints:
+      - level: 1
+        text: "Nyt verrataan kokoa. Merkit ovat samanmuotoisia. Vertaa jokaista merkkiä malliin: onko se yhtä
+          suuri vai eri kokoinen?"
+      - level: 2
+        text: Sama koko tarkoittaa yhtä suurta merkkiä. Eri koko voi olla pienempi tai suurempi; suurin ei aina
+          ole oikea. Pyydä tarvittaessa Aavan vertailumalli. Se on tukea.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-FADE-KOKO-ERI
+    kc_ids:
+      - M-TH-01
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse merkki, jonka koko on eri.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan merkin koon tarkistus
+      operator: select_attribute
+      attribute: size
+      relation: different
+    hints:
+      - level: 1
+        text: "Nyt verrataan kokoa. Merkit ovat samanmuotoisia. Vertaa jokaista merkkiä malliin: onko se yhtä
+          suuri vai eri kokoinen?"
+      - level: 2
+        text: Sama koko tarkoittaa yhtä suurta merkkiä. Eri koko voi olla pienempi tai suurempi; suurin ei aina
+          ole oikea. Pyydä tarvittaessa Aavan vertailumalli. Se on tukea.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-CORE-KOKO-SAMA
+    kc_ids:
+      - M-TH-01
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse samankokoinen merkki.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan merkin koon tarkistus
+      operator: select_attribute
+      attribute: size
+      relation: same
+    hints:
+      - level: 1
+        text: "Nyt verrataan kokoa. Merkit ovat samanmuotoisia. Vertaa jokaista merkkiä malliin: onko se yhtä
+          suuri vai eri kokoinen?"
+      - level: 2
+        text: Sama koko tarkoittaa yhtä suurta merkkiä. Eri koko voi olla pienempi tai suurempi; suurin ei aina
+          ole oikea. Pyydä tarvittaessa Aavan vertailumalli. Se on tukea.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-CORE-KOKO-ERI
+    kc_ids:
+      - M-TH-01
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse merkki, jonka koko on eri.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan merkin koon tarkistus
+      operator: select_attribute
+      attribute: size
+      relation: different
+    hints:
+      - level: 1
+        text: "Nyt verrataan kokoa. Merkit ovat samanmuotoisia. Vertaa jokaista merkkiä malliin: onko se yhtä
+          suuri vai eri kokoinen?"
+      - level: 2
+        text: Sama koko tarkoittaa yhtä suurta merkkiä. Eri koko voi olla pienempi tai suurempi; suurin ei aina
+          ole oikea. Pyydä tarvittaessa Aavan vertailumalli. Se on tukea.
+    invariants:
+      - Pyydetty ominaisuus ja sama/eri-sääntö pysyvät näkyvissä. Vastaus ei ole ominaisuuden nimen
+        tuottamista.
+      - Kolme vaihtoehtoa saa valita ja vaihtaa ennen vahvistusta. Ei oikean vastauksen esivalintaa,
+        korjaavaa lukkoa tai väriin sidottua arviointia.
+      - Vaihtoehtopaikat vaihtelevat. Oikeellisuus tulee kohteiden ominaisuuksista, ei tekstilapusta tai
+        tarinasta.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+  - id: M-TH-01-APP-KORJAA-MUOTO-SAMA
+    kc_ids:
+      - M-TH-01
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: challenge
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse sääntöä rikkova pari ja korvaava merkki. Muodon pitää olla sama.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan reittitaulun parien tarkistus
+      operator: repair_attribute_pair
+      attribute: shape
+      relation: same
+    hints:
+      - level: 1
+        text: Katso molemmat parit. Vertaa kummankin parin kumppanin muotoa sen omaan vertailumerkkiin. Älä päätä
+          pelkän värin perusteella.
+      - level: 2
+        text: Valitse sääntöä rikkova pari ja sille samanmuotoinen korvaava merkki. Oikea korvaaja jo kunnossa
+          olevaan pariin ei korjaa virhettä. Voit pyytää Aavan mallin; se on tukea.
+    invariants:
+      - Kaksi paria, täsmälleen yksi samaa muotoa koskeva virhe ja kolme korvaajaa. Oppija tuottaa sekä
+        pairId- että replacementId-valinnan.
+      - Korvattava kumppani vaihtuu vain oppijan valitsemaan pariin; vertailumerkki pysyy. Väärän parin
+        tai väärän korvaajan saa vahvistaa.
+      - Viallisen parin paikka ja korvaajan paikka vaihtelevat. Ei virheparin korostusta, automaattista
+        paikannusta tai esivalintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen soveltamistehtävä toteutetun tiukan attribuutti-API:n mukaan. Tagi tulee todellisesta
+          onnistuneesta domain-päätöksestä; novelty vaatii normaalin core-scope-resolverin ja
+          altistussäännöt, ei purpose/context-väitettä.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+      - misconception_id: M-TH-01-OBS-KORJAUSKOHDE
+        detect: observed:wrong_pair
+  - id: M-TH-01-APP-KORJAA-KOKO-ERI
+    kc_ids:
+      - M-TH-01
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: challenge
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Valitse sääntöä rikkova pari ja korvaava merkki. Koon pitää olla eri.
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan vaihtomerkkien parien tarkistus
+      operator: repair_attribute_pair
+      attribute: size
+      relation: different
+    hints:
+      - level: 1
+        text: Katso molemmista pareista, ovatko vertailumerkki ja kumppani eri kokoisia. Muoto pysyy samana; väri
+          ei ratkaise.
+      - level: 2
+        text: Pari, jossa merkit ovat yhtä suuria, tarvitsee vaihdon. Vertaa kolmea korvaajaa valitun parin
+          vertailumerkkiin. Eri koko voi olla pienempi tai suurempi. Mallin pyytäminen on tukea.
+    invariants:
+      - Kokosääntö käyttää samanmuotoisten merkkien tasaista suurennosta. Ei epäselvää eri muotojen
+        pinta-ala-/korkeusvertailua.
+      - Oppija paikantaa virheparin ja valitsee korvaajan. Toisen parin muokkaaminen tai pelkkä erilainen
+        väri ei täytä päätöstä.
+      - Yksi onnistuminen tuottaa vain koko–eri-parikorjauksen havaintoa, ei kaikkien neljän
+        parikorjausyhdistelmän hallintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen soveltamistehtävä toteutetun tiukan attribuutti-API:n mukaan. Tagi tulee todellisesta
+          onnistuneesta domain-päätöksestä; novelty vaatii normaalin core-scope-resolverin ja
+          altistussäännöt, ei purpose/context-väitettä.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-TH-01-OBS-SUHDE
+        detect: observed:comparison
+      - misconception_id: M-TH-01-OBS-KORJAUSKOHDE
+        detect: observed:wrong_pair
+misconceptions:
+  - id: M-TH-01-OBS-SUHDE
+    description: Vahvistettu valinta ei täytä ominaisuus/sama-eri-sääntöä. Väriin, paikkaan tai kokoon
+      tukeutuminen on tutkittava vaihtoehtoinen selitys, ei lapsidiagnoosi.
+    evidence_patterns:
+      - kind: committed_relation_error
+        when: Domain palauttaa comparison-virheen vahvistetusta valinnasta. Tyhjä tai vahvistamaton tila ei ole
+          sama havainto.
+    feedback_strategy:
+      conceptual_prompt: Verrataan vielä ohjeen ominaisuutta malliin. Pelkkä sama väri tai tuttu paikka ei ratkaise.
+      representation: Pyydettäessä näytettävä ominaisuuden vertailumalli on tukea.
+    repair_targets:
+      - M-TH-01
+    status: hypothesis
+  - id: M-TH-01-OBS-KORJAUSKOHDE
+    description: Vahvistettu parikorjaus kohdistuu jo kelvolliseen pariin; alkuperäinen sääntöä rikkova pari
+      jää korjaamatta. Havainto kuvaa valittua kohdetta, ei lapsen tarkkaavuutta tai diagnoosia.
+    evidence_patterns:
+      - kind: committed_wrong_pair
+        when: Domain palauttaa wrong_pair-virheen. Pelkkä tyhjä tai vahvistamaton tila ei ole tämä havainto.
+    feedback_strategy:
+      conceptual_prompt: Tarkistetaan ensin molemmat parit näkyvän säännön mukaan. Valitse se pari, jossa
+        kumppani ei täytä sääntöä. Korvaava merkki kuuluu juuri siihen pariin.
+      representation: Pyydettäessä näytettävä viallisen parin vertailu on tukea eikä seuraava sama vastaus
+        muutu itsenäiseksi.
+    repair_targets:
+      - M-TH-01
+    status: hypothesis
+differentiation:
+  support_variants:
+    one_decision: Yksi malli, kolme vaihtoehtoa ja lyhyt sääntö yhdessä työtilassa. Suuret kohteet; valintaa
+      saa vaihtaa ennen vahvistusta.
+    fading: Ohjauksessa reunan vertailu ja Aavan perustelu; häivytyksessä ne poistuvat. purpose:guided ei
+      yksin kirjaa käytettyä apua.
+    support_boundary: Adapteri hyväksyy vain assistance:none. Opetustuki ja sen altistuskirjaus tarvitsevat
+      sidonnan; älä lisää korostuskenttää tai kuittaa tukea itsenäiseksi.
+    access: Ääriviivat erottavat muodot. Valinnainen kielituki ei vaadi kuulemisen kuittausta. Ei väitettä
+      ei-visuaalisesta vastaavuudesta.
+  challenge_variants:
+    learner_prompt: Loikka sanoo, että parit ovat kunnossa, koska merkit ovat samanvärisiä. Tarkista ne Aavan
+      näkyvän muoto- tai kokokriteerin mukaan ja korjaa sääntöä rikkova pari.
+    harder_reasoning: Paikannus ja korvaajan valinta ovat kaksi eri päätöstä. Suurempia lukuja tai muotojen
+      nimien tuottamista ei tarvita.
+    capability_boundary: Parikorjaus käyttää nyt toteutettua repair_attribute_pair-operaatiota; varsinaiset
+      mallin, tuen, altistuksen, rendererin ja journey-kompilaation sidonnat kuuluvat mainille. Ei
+      hidden-rule-luokittelua tai kaikkien neljän korjausyhdistelmän väitettä.
+representations:
+  - id: M-TH-01-JOURNEY
+    kind: learning_journey_v1
+    capability: attribute_comparison_v1
+    chapter: Aavan reittimerkit
+    companion: Aava
+    purpose: Aava tarvitsee Loikan reittitaululle pyydetyn muodon ja koon mukaiset merkit sekä ehjät merkkiparit.
+    consequence: Aavan reittimerkkien ominaisuudet ja kaksi rajattua parikorjausta on tarkistettu.
+    instruction: Katso, mitä ominaisuutta ja suhdetta pyydetään. Tee oma valinta.
+    model:
+      kind: attribute_examples_v1
+      examples:
+        - spec:
+            kind: attribute_comparison_v1
+            context: Reittitaulun samanmuotoiset merkit
+            operator: select_attribute
+            attribute: shape
+            relation: same
+          seed: 81
+        - spec:
+            kind: attribute_comparison_v1
+            context: Reittitaulun erimuotoinen merkki
+            operator: select_attribute
+            attribute: shape
+            relation: different
+          seed: 81
+        - spec:
+            kind: attribute_comparison_v1
+            context: Aavan merkin koon tarkistus
+            operator: select_attribute
+            attribute: size
+            relation: same
+          seed: 81
+        - spec:
+            kind: attribute_comparison_v1
+            context: Aavan merkin koon tarkistus
+            operator: select_attribute
+            attribute: size
+            relation: different
+          seed: 18
+    retrieval:
+      kind: closed_episode_retrieval_v1
+      claim: attribute_comparison
+    guidedSequence:
+      itemRefs:
+        - M-TH-01-GUIDE-SAMA
+        - M-TH-01-GUIDE-ERI
+        - M-TH-01-GUIDE-KOKO-SAMA
+        - M-TH-01-GUIDE-KOKO-ERI
+simulation_specs: []
+requires_capabilities:
+  - rich_text
+  - diagram
+  - worked_example
+  - single_choice
+  - hint_ladder
+  - reduced_motion_variant
+provenance:
+  curriculum:
+    - source_id: PROD03-OPH-MATH-S1
+      claim: "B02-perheraportissa 2026-10-26 suoraan luetut paikantimet: peruste419550 / matematiikka466344 /
+        kokonaisuus466963 / S1 469265 sekä kokonaisuus466962 / S1 469269 / kuvaus.fi. Yhtäläisyyksien ja
+        erojen sekä vertailun sisältöalue; ei tehtävärajausten tai kynnysten normihyväksyntä.
+        PROD01-soveltamisaloja ei laajenneta. Tämä scoped-viite käyttää aiempaa päivättyä lähdeauditia;
+        tässä työssä ei tehty uutta verkkohakua eikä annettu sisältöhyväksyntää."
+      status: verified
+  pedagogy:
+    - source_id: ATKINSON-RENKL-MERRILL-2003
+      claim: Aiemmin tarkistetun abstraktin rajattu peruste mallista omaan ratkaisuun siirtymiselle. Ei tämän
+        tehtävän vaikutuskoetta, vaikutuskokoa tai yleistä siirtovaikutusta.
+      status: verified
+    - source_id: CAST-UDL-3
+      claim: Esityksen ja toiminnan esteiden tarkastelun suunnittelukehys; ei tämän visuaalisen tehtävän
+        täydellisen saavutettavuuden hyväksyntä.
+      status: verified
+    - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+      claim: Selkeä malli, pyydettävä tuki ja sen poistaminen ovat B02-perheraportin R01/R03-ohjeista tehtyä
+        projektisovitusta. Havaintomäärät, pohjien moninaisuus ja 24 tunnin viive ovat projektivalintoja,
+        eivät tutkimusvakioita.
+      status: hypothesis
+  domain:
+    - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+      claim: attribute_comparison_v1 rajaa geometrian, sallitut operaatiot ja oikeellisuuden. Tämän uuden
+        projektiviitteen rekisterilisäys on ehdotus, ei hyväksyntä.
+      status: hypothesis
+validation:
+  schema: pending
+  graph_refs: pending
+  domain_truth: pending
+  item_invariants: pending
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: draft

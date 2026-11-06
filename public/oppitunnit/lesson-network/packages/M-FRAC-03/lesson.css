@@ -1,0 +1,19 @@
+[data-role-lesson], [data-equivalent-lesson], [data-symmetry-lesson] { margin: 1.5rem 0; }
+[data-model], [data-comparison], [data-before], [data-after] { max-width: 26rem; margin: 1rem auto; }
+[data-role-lesson] select, [data-equivalent-lesson] select, [data-symmetry-lesson] select { width: 100%; max-width: 28rem; }
+[data-equivalent-lesson] input[type="text"] { width: 7rem; max-width: 100%; }
+[data-progress], [data-fold] { width: 100%; max-width: 28rem; }
+[data-result="correct"] { border-left: 4px solid #245f4c; padding-left: .6rem; }
+[data-result="retry"] { border-left: 4px solid #a34d13; padding-left: .6rem; }
+[data-axis-board] { display: flex; flex-wrap: wrap; gap: .5rem; }
+[data-axis-board] button { width: 9rem; margin: 0; padding: .4rem; font-size: .9rem; }
+[data-axis-board] svg { width: 100%; height: auto; display: block; }
+[aria-pressed="true"] { background: #dcebd3; border-color: #245f4c; }
+.mirror-grid { display: grid; max-width: 24rem; margin: 1rem auto; gap: 0; }
+.vertical-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.horizontal-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.mirror-grid button, .mirror-grid .source-cell { min-width: 0; min-height: 44px; margin: 0; padding: .15rem; border: 1px solid #728078; border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+.mirror-grid .source-cell { background: #fffaf0; color: #183e36; }
+.mirror-grid .marked { background: #245f4c; color: white; }
+.vertical-grid button:nth-child(6n+4) { border-left: 4px dashed #a63e38; }
+.horizontal-grid button:nth-child(13), .horizontal-grid button:nth-child(14), .horizontal-grid button:nth-child(15), .horizontal-grid button:nth-child(16) { border-top: 4px dashed #a63e38; }

@@ -1,0 +1,395 @@
+{
+  "schema": "sammakko-art-runtime/1",
+  "sourceManifest": "art/manifest.json",
+  "sourceManifestSha256": "784ba0d6627a3b4a3bb45b6fa73895d9cf5f79c55f50bebdf3ea5a6686786dd5",
+  "selectedActions": {
+    "aava": [
+      "think",
+      "point",
+      "read",
+      "celebrate"
+    ],
+    "loikka": [
+      "think",
+      "point"
+    ]
+  },
+  "sequenceFile": "art/runtime-sequences.json",
+  "sequenceSha256": "427af803014a38f9496beb981865b759a89ab6bbc06fe56320339c3ad032852e",
+  "images": [
+    {
+      "file": "art/derived/backgrounds/forest-clearing.webp",
+      "sha256": "fe6d3b0f4398589018780418a52c98a98caeacf04b9ad222072b68d0904781fb",
+      "bytes": 196250,
+      "width": 1536,
+      "height": 1024,
+      "source": "art/backgrounds/forest-clearing.jpg",
+      "sourceSha256": "63705b903ef47c3e9052cea52f64a87ae6ea048ff177013b614c050d82e648a5",
+      "operation": {
+        "resize": null,
+        "format": "webp",
+        "quality": 80
+      }
+    },
+    {
+      "file": "art/derived/backgrounds/hero-island.webp",
+      "sha256": "f41660a80481836b2a5eb2454da6503f68115e089ad658d4059cbb5e819cca97",
+      "bytes": 100554,
+      "width": 1536,
+      "height": 1024,
+      "source": "art/backgrounds/hero-island.jpg",
+      "sourceSha256": "581cfb9b1e7840f71f01b535859b0464badd2e1d3c4b3350fc88b680699bf534",
+      "operation": {
+        "resize": null,
+        "format": "webp",
+        "quality": 80
+      }
+    },
+    {
+      "file": "art/derived/backgrounds/lake-shore.webp",
+      "sha256": "548ad4f731a7bbea233dbbc958e7497617c1dd0b176c7aa99ff24a67ac6d8259",
+      "bytes": 185330,
+      "width": 1536,
+      "height": 1024,
+      "source": "art/backgrounds/lake-shore.jpg",
+      "sourceSha256": "75e9a4c6e16e2cac3d8c1cece82e4fcc08f845bcc0f37fed31bc6f9d791ac9ac",
+      "operation": {
+        "resize": null,
+        "format": "webp",
+        "quality": 80
+      }
+    },
+    {
+      "file": "art/derived/backgrounds/night-pond.webp",
+      "sha256": "4798e6beb2d50bc328d8ddb29a3c05c150247604bf1bdf776af9cb9753b2d02b",
+      "bytes": 239572,
+      "width": 1536,
+      "height": 1024,
+      "source": "art/backgrounds/night-pond.jpg",
+      "sourceSha256": "9df0d0e388ebb5a6785021c22e54d86c2ad3d34e25d0fa71e910bc7e2cdd631e",
+      "operation": {
+        "resize": null,
+        "format": "webp",
+        "quality": 80
+      }
+    },
+    {
+      "file": "public/kotisivu/assets/art/hero-island.webp",
+      "sha256": "f41660a80481836b2a5eb2454da6503f68115e089ad658d4059cbb5e819cca97",
+      "bytes": 100554,
+      "width": 1536,
+      "height": 1024,
+      "source": "art/backgrounds/hero-island.jpg",
+      "sourceSha256": "581cfb9b1e7840f71f01b535859b0464badd2e1d3c4b3350fc88b680699bf534",
+      "operation": {
+        "format": "webp",
+        "quality": 80
+      }
+    },
+    {
+      "file": "lite/public/art/backgrounds/lake-shore.webp",
+      "sha256": "548ad4f731a7bbea233dbbc958e7497617c1dd0b176c7aa99ff24a67ac6d8259",
+      "bytes": 185330,
+      "width": 1536,
+      "height": 1024,
+      "source": "art/backgrounds/lake-shore.jpg",
+      "sourceSha256": "75e9a4c6e16e2cac3d8c1cece82e4fcc08f845bcc0f37fed31bc6f9d791ac9ac",
+      "operation": {
+        "format": "webp",
+        "quality": 80
+      }
+    },
+    {
+      "file": "lite/public/art/textures/water.webp",
+      "sha256": "d252c472c97b0130330597788e9d984ee4c5988358d2cdedcc08b06de73f6381",
+      "bytes": 5624,
+      "width": 256,
+      "height": 256,
+      "source": "art/textures/water.png",
+      "sourceSha256": "cdaa25d6df799485e8c4b685a96c49b316463c0b2387e5e1e33123aec7969f8a",
+      "operation": {
+        "resize": 256,
+        "format": "webp",
+        "quality": 72
+      }
+    },
+    {
+      "file": "lite/public/art/textures/sand.webp",
+      "sha256": "0b68b9c521ff7e384dd584b14cb2678e69e41f6978d43b22034dd6eb2d84d1b1",
+      "bytes": 4128,
+      "width": 256,
+      "height": 256,
+      "source": "art/textures/sand.png",
+      "sourceSha256": "d1a2ef85a32c42f478249e848a9e088d871717ebae5210a199b31892b644889f",
+      "operation": {
+        "resize": 256,
+        "format": "webp",
+        "quality": 72
+      }
+    },
+    {
+      "file": "lite/public/art/textures/grass.webp",
+      "sha256": "e9625adf40cbfa237dca557844eafabdf5afcb467f658abf63982b724db0d0e8",
+      "bytes": 9324,
+      "width": 256,
+      "height": 256,
+      "source": "art/textures/grass.png",
+      "sourceSha256": "b6b4a748dba68c91751cfd15eb9a61531006b1de25795f0c6bbffd8d2e485986",
+      "operation": {
+        "resize": 256,
+        "format": "webp",
+        "quality": 72
+      }
+    },
+    {
+      "file": "public/kotisivu/assets/art/book-48.png",
+      "sha256": "67d4f37cd6965e31e8eebff9df98f2db43b229894d40ae86000e71e60bd7d095",
+      "bytes": 1961,
+      "width": 48,
+      "height": 48,
+      "source": "art/icons/book.png",
+      "sourceSha256": "974f1957878589e050dde2a7bbf7fbd43e93e38768184a68b76548ede83bebce",
+      "operation": {
+        "resize": 48,
+        "format": "png",
+        "quality": null
+      }
+    },
+    {
+      "file": "public/kotisivu/assets/art/book-96.png",
+      "sha256": "0dd0dd6d90968ab2742743472a90a8737019f731db202c6017a27a84378d8a5b",
+      "bytes": 3671,
+      "width": 96,
+      "height": 96,
+      "source": "art/icons/book.png",
+      "sourceSha256": "974f1957878589e050dde2a7bbf7fbd43e93e38768184a68b76548ede83bebce",
+      "operation": {
+        "resize": 96,
+        "format": "png",
+        "quality": null
+      }
+    },
+    {
+      "file": "public/kotisivu/assets/art/lightbulb-48.png",
+      "sha256": "6fbbe72d32556c08790bc06a1474d411994c1bc8ec3902a250db08b5137527f6",
+      "bytes": 1962,
+      "width": 48,
+      "height": 48,
+      "source": "art/icons/lightbulb.png",
+      "sourceSha256": "100aa5b6db3d4eee1647a1fe06eabcdd092b47e9e23be1fe801aa5ac545b602f",
+      "operation": {
+        "resize": 48,
+        "format": "png",
+        "quality": null
+      }
+    },
+    {
+      "file": "public/kotisivu/assets/art/lightbulb-96.png",
+      "sha256": "9cd8c35569041e1cbadead3171ef64d2a9b0524b90d2d125dcfab9c30cb8128e",
+      "bytes": 3362,
+      "width": 96,
+      "height": 96,
+      "source": "art/icons/lightbulb.png",
+      "sourceSha256": "100aa5b6db3d4eee1647a1fe06eabcdd092b47e9e23be1fe801aa5ac545b602f",
+      "operation": {
+        "resize": 96,
+        "format": "png",
+        "quality": null
+      }
+    },
+    {
+      "file": "public/kotisivu/assets/art/check-48.png",
+      "sha256": "7680df7f8b085c9c59b59ec048160037fb31dbba830869ec3a797d457bd12c8f",
+      "bytes": 2064,
+      "width": 48,
+      "height": 48,
+      "source": "art/icons/check.png",
+      "sourceSha256": "7982cfba99bb97f807feb81468c9bcf7da27671fa593ab7cdb7a2627feb7d502",
+      "operation": {
+        "resize": 48,
+        "format": "png",
+        "quality": null
+      }
+    },
+    {
+      "file": "public/kotisivu/assets/art/check-96.png",
+      "sha256": "ae714d865132209d6e8797e929740947bce6a8f34fa6a723a43809d765e6d463",
+      "bytes": 4087,
+      "width": 96,
+      "height": 96,
+      "source": "art/icons/check.png",
+      "sourceSha256": "7982cfba99bb97f807feb81468c9bcf7da27671fa593ab7cdb7a2627feb7d502",
+      "operation": {
+        "resize": 96,
+        "format": "png",
+        "quality": null
+      }
+    },
+    {
+      "file": "lite/public/art/characters/aava/celebrate.png",
+      "sha256": "18de77b10234f82bb5539038a1fab20b161dd56a0102bf09c2e5f1285f1142d1",
+      "bytes": 43705,
+      "width": 256,
+      "height": 256,
+      "source": "art/characters/aava/celebrate.png",
+      "sourceSha256": "18de77b10234f82bb5539038a1fab20b161dd56a0102bf09c2e5f1285f1142d1",
+      "operation": {
+        "format": "png",
+        "copy": true
+      }
+    },
+    {
+      "file": "lite/public/art/characters/aava/crouch.png",
+      "sha256": "0762a2b3710d5b2369e58a2d6e431e38d27d56d82f572a4c33c6aa0267b13060",
+      "bytes": 45779,
+      "width": 256,
+      "height": 256,
+      "source": "art/characters/aava/crouch.png",
+      "sourceSha256": "0762a2b3710d5b2369e58a2d6e431e38d27d56d82f572a4c33c6aa0267b13060",
+      "operation": {
+        "format": "png",
+        "copy": true
+      }
+    },
+    {
+      "file": "lite/public/art/characters/aava/flap_01.png",
+      "sha256": "e29d4942a687fcda91c6f280c834042cb463824d0720e106a0c57ed0a09e2eb9",
+      "bytes": 45966,
+      "width": 256,
+      "height": 256,
+      "source": "art/characters/aava/flap_01.png",
+      "sourceSha256": "e29d4942a687fcda91c6f280c834042cb463824d0720e106a0c57ed0a09e2eb9",
+      "operation": {
+        "format": "png",
+        "copy": true
+      }
+    },
+    {
+      "file": "lite/public/art/characters/aava/flap_02.png",
+      "sha256": "99314daf85af8514134edd0950aaad2bf73d4f19c8d39dab6b77827341f608c9",
+      "bytes": 46565,
+      "width": 256,
+      "height": 256,
+      "source": "art/characters/aava/flap_02.png",
+      "sourceSha256": "99314daf85af8514134edd0950aaad2bf73d4f19c8d39dab6b77827341f608c9",
+      "operation": {
+        "format": "png",
+        "copy": true
+      }
+    },
+    {
+      "file": "lite/public/art/characters/aava/point.png",
+      "sha256": "b7465eb8ab67a87b3e63d47e8837377178dbf47a6025eea89940ff951d8d7eed",
+      "bytes": 45890,
+      "width": 256,
+      "height": 256,
+      "source": "art/characters/aava/point.png",
+      "sourceSha256": "b7465eb8ab67a87b3e63d47e8837377178dbf47a6025eea89940ff951d8d7eed",
+      "operation": {
+        "format": "png",
+        "copy": true
+      }
+    },
+    {
+      "file": "lite/public/art/characters/aava/read.png",
+      "sha256": "c6ec4d06c5e8f6eca44ea8896d48b804e19c63657c81a2ea73706a4a4faeaaad",
+      "bytes": 43100,
+      "width": 256,
+      "height": 256,
+      "source": "art/characters/aava/read.png",
+      "sourceSha256": "c6ec4d06c5e8f6eca44ea8896d48b804e19c63657c81a2ea73706a4a4faeaaad",
+      "operation": {
+        "format": "png",
+        "copy": true
+      }
+    },
+    {
+      "file": "lite/public/art/characters/aava/think.png",
+      "sha256": "caf39973c4830be41807bea7c6b31b9062aa8de8893d08c36910c5a2507be1a5",
+      "bytes": 45686,
+      "width": 256,
+      "height": 256,
+      "source": "art/characters/aava/think.png",
+      "sourceSha256": "caf39973c4830be41807bea7c6b31b9062aa8de8893d08c36910c5a2507be1a5",
+      "operation": {
+        "format": "png",
+        "copy": true
+      }
+    },
+    {
+      "file": "lite/public/art/characters/loikka/point.png",
+      "sha256": "f62e626e5fff9ad55c4693c59ac8c3378596f491738a90d19996ac18d4a38a14",
+      "bytes": 63397,
+      "width": 256,
+      "height": 256,
+      "source": "art/characters/loikka/point.png",
+      "sourceSha256": "f62e626e5fff9ad55c4693c59ac8c3378596f491738a90d19996ac18d4a38a14",
+      "operation": {
+        "format": "png",
+        "copy": true
+      }
+    },
+    {
+      "file": "lite/public/art/characters/loikka/think.png",
+      "sha256": "4b72a2d491324dfcd12d92e9bcb02f3345324e6c0e59de89c690afba49b31e38",
+      "bytes": 62251,
+      "width": 256,
+      "height": 256,
+      "source": "art/characters/loikka/think.png",
+      "sourceSha256": "4b72a2d491324dfcd12d92e9bcb02f3345324e6c0e59de89c690afba49b31e38",
+      "operation": {
+        "format": "png",
+        "copy": true
+      }
+    }
+  ],
+  "reserve": {
+    "character2x": "all24",
+    "actions": {
+      "aava": [
+        "flap",
+        "jump",
+        "run",
+        "sad",
+        "sit",
+        "sleep",
+        "surprised"
+      ],
+      "loikka": [
+        "celebrate",
+        "read",
+        "sad",
+        "sit",
+        "sleep",
+        "surprised",
+        "swim"
+      ]
+    },
+    "textures": [
+      "water-deep",
+      "night-water",
+      "paper",
+      "path",
+      "wood"
+    ],
+    "backgrounds": [
+      "forest-clearing",
+      "night-pond"
+    ],
+    "icons": [
+      "heart",
+      "leaf",
+      "lock",
+      "map-pin",
+      "shell",
+      "star",
+      "trophy"
+    ]
+  },
+  "budgets": {
+    "heroBytes": 204800,
+    "mapTexturesBytes": 122880,
+    "actionNewPosesBytes": 204800,
+    "iconBytes": 12288
+  }
+}

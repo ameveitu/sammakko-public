@@ -1,0 +1,529 @@
+{
+  "kcId": "M-WRMUL",
+  "pagePath": "lessons/M-WRMUL.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-WRMUL",
+  "canonicalNode": {
+    "id": "M-WRMUL",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Kirjallinen laskeminen",
+    "title": "Kirjallinen kertolaskualgoritmi",
+    "short_description": "Kirjallinen kertolaskualgoritmi",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-MULTAB-ALL",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MULTAB-ALL on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-PLACE-05",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-PLACE-05 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-MULTAB-ALL",
+          "M-PLACE-05"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Kirjallinen laskeminen"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-MULTAB-ALL",
+      "targetKCId": "M-WRMUL",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MULTAB-ALL on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-PLACE-05",
+      "targetKCId": "M-WRMUL",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-PLACE-05 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-WRMUL",
+      "targetKCId": "M-CALC-STRAT",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-WRMUL tukee olennaisesti oppimista, mutta puute voidaan korjata noodin sisällä.",
+      "sourceRelationIndex": 3
+    },
+    {
+      "sourceKCId": "M-WRMUL",
+      "targetKCId": "M-DEC-08",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Desimaalikertolaskun idea voidaan rakentaa skaalaus-/ryhmämalleilla ennen kirjallista algoritmia.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-MULTAB-ALL",
+        "M-PLACE-05"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-WRMUL/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "NCETM2.14 — Multiplication: partitioning leading to short multiplication",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-214-multiplication-partitioning-leading-to-short-multiplication/",
+        "accessed": "2026-10-29",
+        "read": "ActualHTML61–69: distributivity, alignment, right-to-left computation and regrouping at ten or more; guide/representations links not opened.",
+        "adopted": "Show place-valued partial products, then digit×multiplier plus incoming carry, not multiplied carry.",
+        "rejected": "No copied Dienes/array figures or source wording. No efficacy or fullprocedure claim from final product.",
+        "licence": "NCETM copyrightHTML55–57 retrieved2026-10-29: default Crown/OGL unless otherwise stated; acknowledge source/copyright and applicable author; if author name/contact given, contact and obtain permission for their material. Third-party rights remain. No PDF/slides/art copied or downloaded."
+      },
+      {
+        "title": "Oak National Academy — Multiply a3-digit by a1-digit number with one or two regroups",
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/multiplication-by-partitioning-leading-to-short-multiplication-3-by-1-digit/lessons/multiply-a-3-digit-by-a-1-digit-number-with-one-or-two-regroups",
+        "accessed": "2026-10-29",
+        "read": "ActualHTML418–446: expanded/short layouts, misalignment, unitising and licence read.",
+        "adopted": "Make the unit of carry explicit, compare partial products with compact columns.",
+        "rejected": "Do not inherit literal greater-than10/100/1000 shortcut wording: exactly10 also requires regrouping; tens digit×factor is in tens. Our invariant total>=10 plus unit labels handles exactthreshold and zeros. No copied source images/prose.",
+        "licence": "Actual lesson licence states ©Oak National Academy2025, OGL3 except otherwise stated; Collection2 terms linked. No video/slides/PDF or source figures/text imported; original Finnish examples and SVG."
+      },
+      {
+        "title": "Department for Education — Mathematics programmes of study (England)",
+        "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+        "accessed": "2026-10-29",
+        "read": "Actual officialHTML139–145,370–376,475–484,610–623 and rights80–83 read, updated2021. No appendixPDF downloaded.",
+        "adopted": "Relate objects, representations and inverse checks; progress from parts to written methods, exact answers before extension.",
+        "rejected": "Foreign comparison, not Finnish grade mandate or fresh OPH verification. No source tasks copied; no coverage of all Year5/6 multi-digit algorithms claimed.",
+        "licence": "©Crown2021, OGL3 except otherwise stated; identified third-party rights require permission. Original Finnish text/diagrams, facts corroborated only."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+    "history": [
+      {
+        "kind": "content",
+        "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+        "state": "reviewed",
+        "note": "Independent B13 parent source/domain/teaching and scoped native review closed; lesson-network/evidence/production/B13/reviews/parent-Carver/review-closed.json. Technical synthetic scope, not learner validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+    "history": [
+      {
+        "kind": "human",
+        "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+        "state": "pending",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-WRMUL",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "example.svg",
+        "sha256": "0ea39615bbb477bbeb29dda6025c5fca3bb18678890d3903531a02822beda5b2"
+      },
+      {
+        "path": "initial.svg",
+        "sha256": "b0fc8b3aa8a1659d246b15af456e5be59424755c2fd40aa6c27478b52b73717e"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "0d2af65d54204da5948009a7dcfbc71b56607f3f413157896c38c337d92207e8"
+      },
+      {
+        "path": "parts.svg",
+        "sha256": "8f012fdd7a53f0a464ad9745bdbc049af0bc6146c190c2360118a9da8082b8ee"
+      },
+      {
+        "path": "transfer.svg",
+        "sha256": "8ea9dcaa09fc7fd57750ad618719fa6f005bf5cb72687031d744a57ea98cfbf8"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "title": "NCETM2.14 — Multiplication: partitioning leading to short multiplication",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-214-multiplication-partitioning-leading-to-short-multiplication/",
+        "accessed": "2026-10-29",
+        "read": "ActualHTML61–69: distributivity, alignment, right-to-left computation and regrouping at ten or more; guide/representations links not opened.",
+        "adopted": "Show place-valued partial products, then digit×multiplier plus incoming carry, not multiplied carry.",
+        "rejected": "No copied Dienes/array figures or source wording. No efficacy or fullprocedure claim from final product.",
+        "licence": "NCETM copyrightHTML55–57 retrieved2026-10-29: default Crown/OGL unless otherwise stated; acknowledge source/copyright and applicable author; if author name/contact given, contact and obtain permission for their material. Third-party rights remain. No PDF/slides/art copied or downloaded."
+      },
+      {
+        "title": "Oak National Academy — Multiply a3-digit by a1-digit number with one or two regroups",
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/multiplication-by-partitioning-leading-to-short-multiplication-3-by-1-digit/lessons/multiply-a-3-digit-by-a-1-digit-number-with-one-or-two-regroups",
+        "accessed": "2026-10-29",
+        "read": "ActualHTML418–446: expanded/short layouts, misalignment, unitising and licence read.",
+        "adopted": "Make the unit of carry explicit, compare partial products with compact columns.",
+        "rejected": "Do not inherit literal greater-than10/100/1000 shortcut wording: exactly10 also requires regrouping; tens digit×factor is in tens. Our invariant total>=10 plus unit labels handles exactthreshold and zeros. No copied source images/prose.",
+        "licence": "Actual lesson licence states ©Oak National Academy2025, OGL3 except otherwise stated; Collection2 terms linked. No video/slides/PDF or source figures/text imported; original Finnish examples and SVG."
+      },
+      {
+        "title": "Department for Education — Mathematics programmes of study (England)",
+        "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study",
+        "accessed": "2026-10-29",
+        "read": "Actual officialHTML139–145,370–376,475–484,610–623 and rights80–83 read, updated2021. No appendixPDF downloaded.",
+        "adopted": "Relate objects, representations and inverse checks; progress from parts to written methods, exact answers before extension.",
+        "rejected": "Foreign comparison, not Finnish grade mandate or fresh OPH verification. No source tasks copied; no coverage of all Year5/6 multi-digit algorithms claimed.",
+        "licence": "©Crown2021, OGL3 except otherwise stated; identified third-party rights require permission. Original Finnish text/diagrams, facts corroborated only."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+        "state": "reviewed",
+        "note": "Independent B13 parent source/domain/teaching and scoped native review closed; lesson-network/evidence/production/B13/reviews/parent-Carver/review-closed.json. Technical synthetic scope, not learner validation."
+      },
+      {
+        "kind": "alignment",
+        "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+        "state": "reviewed",
+        "note": "Independent B13 parent canonical/Lite/source boundaries reviewed; lesson-network/evidence/production/B13/reviews/parent-Carver/review-closed.json. Frozen graph/required groups retained."
+      },
+      {
+        "kind": "human",
+        "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+        "state": "pending",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-WRMUL",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "inventory": {
+        "definition": "written.ts363–428",
+        "objective": "Kirjallinen kertolasku moninumeroisella luvulla ja yksinumeroisella kertojalla; osatulot, muisti, nollat.",
+        "families": [
+          "check",
+          "step",
+          "column",
+          "partial",
+          "parts",
+          "transfer"
+        ],
+        "demos": [
+          "Neljä kertaa kaksisataakolmekymmentäkuusi: luku pilkotaan osiin, kaksisataa, kolmekymmentä ja kuusi. Jokainen osa kerrotaan neljällä, ja osat lasketaan yhteen.",
+          "Allekkain sama tehdään oikealta: neljä kertaa kuusi on kaksikymmentäneljä. Neljä kirjoitetaan, kaksi muistiin. Muistinumero lisätään vasta kertomisen jälkeen.",
+          "Kahdeksan kertaa viisikymmentäseitsemän: kahdeksan kertaa seitsemän on viisikymmentäkuusi, kuusi alas ja viisi muistiin. Kahdeksan kertaa viisi on neljäkymmentä, plus viisi on neljäkymmentäviisi."
+        ],
+        "media": "writtenanim.ts214–297 partsMulScene and mulColumnScene, 3demos4×236/column236×4/57×8.",
+        "hintsTransfer": "Actual say/task/hint/explain and registry rows sampled128seeds×4phases; fullsource read before design. Teaching text is original, not cloneofgenerateditems.",
+        "registry": "Explicit owngoal and AUDIT_REV; indexregistry/familycoverage/motionoverlay read. NoSIMS override for these3.",
+        "audit": "Historicalaudit corrected is not learner/humanapproval; incompleteCOVERAGE compared against actualexecutableNodeSpec.",
+        "reconciliation": "Actualparts construction family omitted in oldCOVERAGE; registry saysstep checks carry but actualstep asks resulting tensdigit afteraddingcarry. Standalone checkWork constructs written digit+carry, finalproductonly notprocedure. PartsSVG uses labelledvaluecards, no falseproportionalarea."
+      },
+      "sourceHashes": {
+        "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+        "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2",
+        "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+        "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+        "evidence/production/B11/AUTHORING_HOST_CLARIFICATION_FI.md": "9cf96652028cf9f4a78589b283d9a4dc5981e993ad2300f539f1028aa6f86c7d",
+        "evidence/production/B12/REPAIR_NOTES_FI.md": "a4ea9405c36008d6b390bbb0019a89e2814a9100ccfab86a33d11e72531ea2a5",
+        "authority/production-181-v2/lite/src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+        "authority/production-181-v2/lite/src/content/written.ts": "58ee93036fb7417e8324072db5be810426a99db346c23ef0651c9525a9bfd0c6",
+        "authority/production-181-v2/lite/src/content/writtenanim.ts": "96ae626bce755998b6ed390f84ee21f16ac0fdb22dac12c40021b9432f1b65bc",
+        "authority/production-181-v2/lite/src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "authority/production-181-v2/lite/src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+        "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "authority/production-181-v2/lite/src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "authority/production-181-v2/lite/src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+        "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "authority/production-181-v2/lite/src/content/world.ts": "c350e4f517d6aa23729ee958ec8b933abc828da41956e12a9da04a49b94e4704",
+        "authority/production-181-v2/lite/src/content/features.ts": "8ddef5451be9d011297f5d32b1ab0d869a1e132d608bd30f679b8e2d900884c5",
+        "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+      },
+      "authority": "Actualcanonical/Lite family/media source preferred over incomplete coverage summary. ExistingLiteunapprovedcomparison, unchanged."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-WRMUL",
+        "subject": "mathematics",
+        "grade_band": "3-6",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Kirjallinen laskeminen",
+        "title": "Kirjallinen kertolaskualgoritmi",
+        "short_description": "Kirjallinen kertolaskualgoritmi",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL3-6-S2"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-MULTAB-ALL",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-MULTAB-ALL on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-PLACE-05",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-PLACE-05 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-MULTAB-ALL",
+              "M-PLACE-05"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Kirjallinen laskeminen"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-MULTAB-ALL",
+            "M-PLACE-05"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "role": "atomic",
+      "gradeBand": "3-6",
+      "teacherObjective": "Yhdistää paikkakohtaiset osatulot oikealta vasemmalle etenevään algoritmiin; kertoo ja vasta sitten lisää edellisen paikan muistin.",
+      "childGoal": "Kerron osat ja säilytän muistin.",
+      "additionalHardGates": [],
+      "scope": "Integern0–999, multiplier0–9. Exact naturalproduct<=8991. No multidigit multiplier or decimal algorithm claimed.",
+      "sourceVsDesign": "Frozen Finnishcurriculumrefs inherited; not freshlyOPHverified. One targeted primarycluster retrieval2026-10-29 and explicit rights reading, not freshqueryperKC. OriginalFinnishsequence/models/examples/inputgrammar projectdesign, no efficacy inference.",
+      "evidenceLimits": "Tulos tarkistaa vain tulon. Vapaa kahden luvun sarakevastaus harjoittelee yhtä välivaihetta annetulla sisääntulevalla muistilla, ei varmista koko algoritmin rakentamista. No personal formalhistory/rubric/mastery, mandatoryspeech/audio/naming/speed/modelclickpath. Offline teacher actions are suggestions, not observed outcomes."
+    },
+    "extensions": {
+      "productionBatch": "B13",
+      "author": "Carver",
+      "simulationType": "manual_deterministic_value_conserving_procedural_states_no_physical_clock",
+      "mascotProvenance": "ActualsuppliedPNG byteexact; generated rasterreinterpretation of userart, no newhanddrawnclaim.",
+      "interaction": "Bothinput/change andcentral currentvisible readback/contextsync beforeCheck/Step/ResetModel. Finalandwork dependentverdicts retire separately; independentmodel/help invariant. WeakMappercontentroot withsafeowner replacement; pause/reset/resume/dispose3listeners, no timer/RAF/network/storage.",
+      "independentReview": "pending_Feynman",
+      "humanReview": "not_performed",
+      "authorQA": "Ownpure/adversarial/source and isolatedrealfullshell sourcepreview pending; parentactual151 pending. No selfapproval."
+    },
+    "contentHash": "36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+    "contentRevision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+      "history": [
+        {
+          "kind": "content",
+          "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+          "state": "reviewed",
+          "note": "Independent B13 parent source/domain/teaching and scoped native review closed; lesson-network/evidence/production/B13/reviews/parent-Carver/review-closed.json. Technical synthetic scope, not learner validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+      "history": [
+        {
+          "kind": "human",
+          "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+          "state": "pending",
+          "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+      "history": [
+        {
+          "kind": "alignment",
+          "revision": "1@36781bcaf449511b81e88421cbccf8704c570ddfad2da9262c25fd41d226ef61",
+          "state": "reviewed",
+          "note": "Independent B13 parent canonical/Lite/source boundaries reviewed; lesson-network/evidence/production/B13/reviews/parent-Carver/review-closed.json. Frozen graph/required groups retained."
+        }
+      ]
+    }
+  },
+  "outputHash": "9c7a6b2f810cba5bb3db4865b6987c26f0824d9414f5847a63b2088cb2f7c779",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "9c7a6b2f810cba5bb3db4865b6987c26f0824d9414f5847a63b2088cb2f7c779",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

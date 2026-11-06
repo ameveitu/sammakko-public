@@ -1,0 +1,38 @@
+[data-divis] fieldset, [data-measure] fieldset, [data-multiply] fieldset { min-width: 0; margin: 1rem 0; padding: .75rem; border: 2px solid #738f7f; }
+[data-divis] label, [data-measure] label, [data-multiply] label { display: block; margin: .65rem 0; }
+[data-divis] select, [data-measure] select, [data-multiply] select, [data-divis] input, [data-measure] input, [data-multiply] input { max-width: 100%; min-height: 44px; font: inherit; }
+[data-divis] button, [data-measure] button, [data-multiply] button { min-height: 44px; min-width: 44px; white-space: normal; margin: .3rem .3rem .3rem 0; }
+[data-divis] svg, [data-measure] svg, [data-multiply] svg { display: block; width: 100%; height: auto; }
+[data-divis] [data-feedback], [data-measure] [data-feedback], [data-multiply] [data-feedback] { display: block; margin: .8rem 0; padding: .7rem; border-left: 4px solid #597c6e; }
+[data-divis] [data-verdict="correct"], [data-measure] [data-verdict="correct"], [data-multiply] [data-verdict="correct"] { border-color: #26764d; }
+[data-divis] [data-verdict="retry"], [data-measure] [data-verdict="retry"], [data-multiply] [data-verdict="retry"] { border-color: #985521; }
+[data-measure] input[type="checkbox"] { width: 44px; height: 44px; vertical-align: middle; }
+
+/* LR04 frame second pass: layout/spacing only. */
+.audience [data-measure] fieldset{margin:.2rem 0}
+.audience [data-measure] fieldset>[data-picture]{grid-row:1 / span 6;align-self:center}
+.audience [data-measure] fieldset>[data-action="add"]{grid-column:1;grid-row:7}
+.audience [data-measure] fieldset>[data-action="remove"]{grid-column:1;grid-row:8}
+.audience [data-measure] [data-feedback]{margin:.2rem 0;padding:.4rem}
+
+.audience [data-measure] fieldset{padding:.2rem .8rem;margin:.1rem 0}
+
+/* Projector follow-up: preserve labels, model geometry and 44px controls. */
+.audience [data-measure] label { margin: 0; }
+
+/* Projector control layout; outer display:grid is supplied only by the desktop shell. */
+.audience [data-measure] fieldset{grid-template-columns:minmax(0,1.2fr) repeat(2,minmax(0,1fr));gap:.3rem 1rem;align-items:start}
+.audience [data-measure] fieldset>[data-current-measure]{grid-column:1;grid-row:1}
+.audience [data-measure] fieldset>p:nth-of-type(2){grid-column:1;grid-row:2}
+.audience [data-measure] fieldset>[data-picture]{grid-column:1;grid-row:3 / span 3;align-self:start}
+.audience [data-measure] fieldset>[data-action="add"]{grid-column:1;grid-row:6}
+.audience [data-measure] fieldset>[data-action="remove"]{grid-column:1;grid-row:7}
+.audience [data-measure] fieldset>label:has([data-case]){grid-column:2;grid-row:1}
+.audience [data-measure] fieldset>label:has([data-unit]){grid-column:2;grid-row:2}
+.audience [data-measure] fieldset>p:nth-of-type(3){grid-column:2;grid-row:3}
+.audience [data-measure] fieldset>[data-positions]{grid-column:2;grid-row:4 / span 4;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,8rem),1fr));gap:.3rem}
+.audience [data-measure] fieldset>label:has([data-value]){grid-column:3;grid-row:1}
+.audience [data-measure] fieldset>label:has([data-report-unit]){grid-column:3;grid-row:2}
+.audience [data-measure] fieldset>[data-action="check"]{grid-column:3;grid-row:3}
+.audience [data-measure] fieldset>[data-feedback]{grid-column:3;grid-row:4}
+.audience [data-measure] fieldset>details{grid-column:3;grid-row:5}

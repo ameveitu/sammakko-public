@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="lesson.css"><div class="g15" data-graph15>
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/aava/curious.png" width="48" height="48" alt="Aava"><p>Aava: Tutkitaan Loikan nopeutta.</p></div><p data-goal><strong>Luen viivasta kiihtyvyyden.</strong></p>
+</section>
+
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<fieldset data-lesson-role="worked-example"><legend>Nopeuden muutos</legend><div class="actions"><button type="button" data-action="play" aria-pressed="false">Toista</button><button type="button" data-action="pause">Tauko</button></div><p data-model-legend>1. Loikka (yhtenäinen)</p><div data-model-view><img src="initial.svg" alt="Likiarvot: mallin kello 0 s. Loikka: paikka 0 m, nopeus 0 m/s. Suora kulkureitti on kuvan yläosassa, sen alla koko laskettu nopeus–aika-kuvaaja."></div><p data-readout>Likiarvot: mallin kello 0 s. Loikka: paikka 0 m, nopeus 0 m/s.</p><p data-run-state>Toisto tauolla</p><p>Kuvaajan viiva näyttää koko sovitun mallin. Liikkuva piste seuraa kelloa. Kulkureitille jää merkki kerran sekunnissa.</p><details data-lesson-role="teaching-step"><summary>Vaihda mallia tai tutki aikaa</summary><label>Malli<select data-model><option value="increase" selected>Lähtö ja kasvavat välit</option><option value="decrease">Jarrutus ja lyhenevät välit</option><option value="steady">Tasaiset välit</option><option value="rest">Paikallaan, kello käy</option><option value="phases">Kasvaa, pysyy, pienenee</option><option value="higher">Korkeus vai nopeuden muutos?</option><option value="clock">Aikaväli kellon keskeltä</option></select></label><label>Mallin aika (s)<input data-time type="text" inputmode="decimal" maxlength="128" value="0"></label><p data-model-description>Mallin aika0–4s. Askel1s, ajanmerkit1s välein. Koko toisto4ruutusekuntia.</p><div class="actions"><button type="button" data-action="step">Askel 1 s</button><button type="button" data-action="end">Näytä loppu</button><button type="button" data-action="restart">Malli alkuun</button></div><p>Tauko pysäyttää katselun, ei muuta laskettua liikettä. Loppukuva ei itsessään tarkoita fyysistä pysähdystä. Tämä on laskettu malli, ei tehty mittaus. Näyttölukemat pyöristyvät enintään 3 desimaaliin; vastauksen totuutta ei pyöristetä. Aikakenttä tukee enintään 6 merkitsevää desimaalipaikkaa.</p><div class="table" data-model-table><table><caption>Kellon tasaiset 1 sekunnin välit; x on paikka ja v nopeus.</caption><thead><tr><th scope="col">t (s)</th><th scope="col">Loikka x (m)</th><th scope="col">Loikka v (m/s)</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td><td>0</td></tr><tr><th scope="row">1</th><td>1</td><td>2</td></tr><tr><th scope="row">2</th><td>4</td><td>4</td></tr><tr><th scope="row">3</th><td>9</td><td>6</td></tr><tr><th scope="row">4</th><td>16</td><td>8</td></tr></tbody></table></div></details></fieldset>
+
+
+
+<p>Vertaa nopeuden muutosta samassa ajassa.</p>
+</section>
+
+
+
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Pohdi ensin:</strong> Voiko nopeampi kappale kiihtyä hitaammin?</p>
+</section>
+
+
+<nav aria-label="Oppitunnin kohdat" data-lesson-role="metadata"><a href="#examples">Esimerkit</a><a href="#practice">Kokeile itse</a></nav>
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<details id="examples" data-lesson-role="worked-example"><summary>Mistä tämän huomaa?</summary><h2>Nopeuden muutos, ei pelkkä korkeus</h2><p>Loikan nopeus kasvaa 0 → 8 m/s ajassa4s. Yhdessä sekunnissa nopeuteen tulee2m/s lisää.</p><p>Kiihtyvyys on nopeuden muutos jaettuna kuluneella ajalla: <strong>(8 − 0) / (4 − 0) = 2 m/s²</strong>. Suoran jyrkkyys pysyy samana.</p><figure data-lesson-role="worked-example"><img src="example.svg" alt="Ratkaistu nopeuskuvaaja: nopeus0m/s alussa ja8m/s neljän sekunnin kohdalla."><figcaption>8m/s on loppunopeus. 2m/s² kertoo nopeuden muutoksesta sekuntia kohti.</figcaption></figure><h3>Korkeammalla ei tarkoita suurempaa kiihtyvyyttä</h3><p>Aavan nopeus kasvaa 6 → 10 m/s. Loikan nopeus kasvaa 0 → 8 m/s samassa4sekunnissa. Aavan viiva on ylempänä, mutta Loikan viiva on jyrkempi.</p><p>Loikan kiihtyvyys on8/4 = <strong>2m/s²</strong>, Aavan4/4 = <strong>1m/s²</strong>. Vertaa muutoksia samassa ajassa.</p><figure data-lesson-role="worked-example"><img src="contrast.svg" alt="Ratkaistu vertailu: Loikan nopeus0→8m/s, Aavan6→10m/s neljässä sekunnissa."><figcaption>Ylempi viiva kertoo tässä suuremmasta nopeudesta, jyrkempi suuremmasta kiihtyvyydestä.</figcaption></figure><h3>Vaakaviiva ei ole aina lepoa</h3><p>Kun nopeus pysyy4m/s:ssa, kiihtyvyys on0 ja Loikka liikkuu. Nollanopeudessa se on paikallaan. Jarrutusmallissa nopeus pienenee8→0m/s: muutos on−8m/s, joten kiihtyvyys on−2m/s².</p></details>
+</section>
+
+
+
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<section id="practice" data-audience-columns><div data-response-column><h2>Kokeile itse</h2><p data-question>Nopeus on hetkellä 2 s 6 m/s ja hetkellä 6 s 14 m/s. Laske välin keskimääräinen kiihtyvyys.</p><fieldset data-answer-fields><label>Keskimääräinen kiihtyvyys (m/s²)<input data-answer type="text" inputmode="text" maxlength="128" autocomplete="off"></label></fieldset><button type="button" data-action="check">Tarkista</button><output data-feedback data-result="neutral" aria-live="polite">Tarkista, kun olet valmis.</output><p>Tehtävällä on oma kuvaajansa. Voit vastata suoraan tai palata esimerkkiin ja käyttää apua. Ylemmän mallin katsominen ei ole pakollista.</p></div><div data-visual-column><label>Tehtävä<select data-task><option value="read">Tapaus A: kiihtyvyyden lasku</option><option value="positive">Tapaus B: kiihtyvyyden merkki</option><option value="negative">Tapaus C: kiihtyvyyden merkki</option><option value="zero">Tapaus D: kiihtyvyyden merkki</option><option value="compare">Tapaus E: kahden kuvaajan vertailu</option><option value="phases">Tapaus F: kolme aikaväliä</option><option value="clock" selected>Tapaus G: kiihtyvyyden lasku</option><option value="mean_zero">Tapaus H: koko aikaväli</option></select></label><p data-task-legend>Loikka</p><div data-task-view><img src="practice-initial.svg" alt="Tämän tehtävän oma nimetty nopeus–aika-kuvaaja. Arvot saa myös taulukkona."></div><details data-lesson-role="hint"><summary>Ajattelun tueksi</summary><p data-task-help>Nopeuden muutos on 14 − 6 = 8 m/s. Aikaa kuluu 6 − 2 = 4 s, ei 6 s.</p></details><details data-lesson-role="teaching-step"><summary>Kuvaajan tiedot taulukkona</summary><div class="table" data-task-table><table><caption>Kellon tasaiset 1 sekunnin välit; x on paikka ja v nopeus.</caption><thead><tr><th scope="col">t (s)</th><th scope="col">Loikka x (m)</th><th scope="col">Loikka v (m/s)</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td><td>2</td></tr><tr><th scope="row">1</th><td>3</td><td>4</td></tr><tr><th scope="row">2</th><td>8</td><td>6</td></tr><tr><th scope="row">3</th><td>15</td><td>8</td></tr><tr><th scope="row">4</th><td>24</td><td>10</td></tr><tr><th scope="row">5</th><td>35</td><td>12</td></tr><tr><th scope="row">6</th><td>48</td><td>14</td></tr><tr><th scope="row">7</th><td>63</td><td>16</td></tr><tr><th scope="row">8</th><td>80</td><td>18</td></tr></tbody></table></div></details></div></section>
+</section>
+
+
+
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<details data-lesson-role="worked-example"><summary>Vertaa uuteen tilanteeseen</summary><h2>Sama päätenopeus, eri tapahtumat välissä</h2><p>Loikan nopeus kasvaa ensin0→8m/s, pysyy hetken8m/s:ssa ja pienenee sitten nollaan. Nousu kertoo positiivisesta, vaakasuora nollasta ja lasku negatiivisesta kiihtyvyydestä.</p><figure data-lesson-role="worked-example"><img src="transfer.svg" alt="Ratkaistu nopeus–aika-kuvaaja:0→8m/s välillä0–2s,8m/s välillä2–4s,8→0m/s välillä4–6s."><figcaption>Koko välin keskimääräinen kiihtyvyys on0, mutta nopeus muuttui välin sisällä.</figcaption></figure><p>Kello2s→6s tarkoittaa4sekunnin väliä. Loppulukema6s ei yksin ole kulunut aika. Laske sekä nopeuden että ajan muutos.</p></details>
+</section>
+
+
+<details class="teacher" data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p>Luokat 7–9. Kanoninen rooli process säilyy; pakollinen esitieto on PHY79-ACCEL-CONCEPT. Harjoitellaan nopeuden muutoksen ja viivan jyrkkyyden tulkintaa, merkin erottamista ja nimettyjä aikavälejä. Numeerinen keskimääräinen kiihtyvyys esitellään tässä pienillä luvuilla; se ei yksin osoita koko kuvaajanlukuprosessin hallintaa.</p><p>Piirtäkää samaa suoraviivaista kävelyä kuvaava paikka–aika- ja nopeus–aika-kuva. Kirjatkaa paikka yhtä pitkien aikavälien päätteissä. Pyytäkää perustelemaan, miksi vaakaviiva nollan yläpuolella tarkoittaa liikettä ja miksi kellon alkuhetki vähennetään loppuhetkestä. Ruutumalli ei todista oikean fyysisen mittauksen osaamista.</p><p>Malli kulkee suoralla oikealle, lähtöpaikka on 0 m ja suunnattu nopeus on vähintään0. Tässä rajauksessa paikka ja kuljettu matka ovat samat; yleisesti ne ovat eri suureita. Nopeus on paloittain lineaarinen ajan funktio. Paikka saadaan sen täsmällisestä integraalista, ja kuvaajan toisen asteen osat piirretään täsmällisinä Bézier-kaaren osina. Vaiheen vaihtumiskohdassa erisuuntaisten kiihtyvyyksien yhteistä hetkellistä derivaattaa ei väitetä tunnetuksi. Näissä tehtävissä käytetään ilmoitetun välin muutosta.</p><p>Vain nimetyt äärelliset mallit, metrit ja sekunnit, ilmoitetut alueet, akselit, askel, yhden sekunnin ajanmerkit ja toistonopeus. Tuntematon malli, yksikkö, ohjaus tai arvo ei korvaudu oletuksella. Negatiiviset nopeudet, suunnanvaihdot, voimat ja 2D-radat eivät kuulu tähän toteutukseen. Negatiivinen kiihtyvyys ei yleisesti tarkoita vauhdin pienenemistä muissa suunnissa.</p><p>Paikallinen palaute koskee nykyistä matalan kynnyksen harjoitusta. Ei henkilökohtaista historiaa, formaalia itsenäistä/viivästettyä näyttöä tai koko prosessin arviointirubriikkia. Esimerkki, vihje ja taulukko ovat tukea. Ei pakollista puhetta, kuuntelua, nimeämistä, aikarajaa tai tiettyä klikkausreittiä. Oppilasymmärrystä, vaikuttavuutta, täydellistä manuaalista saavutettavuutta ja julkaisuoikeuksia ei ole hyväksytty.</p></details>
+
+
+<section data-teaching-step="7" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lopuksi:</strong> Miksi suuri nopeus ei tarkoita suurta kiihtyvyyttä? Mitä tarvitset kuvaajan jyrkkyyden laskemiseen?</p>
+</section>
+
+
+<noscript data-lesson-role="metadata"><p>Alkukuva, tekstit, ratkaistut esimerkit ja taulukot toimivat ilman JavaScriptiä. Voit tehdä tehtävän paperille. Liike ja paikallinen Tarkista-toiminto tarvitsevat JavaScriptin.</p></noscript></div>

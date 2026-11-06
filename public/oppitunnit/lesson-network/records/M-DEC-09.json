@@ -1,0 +1,959 @@
+{
+  "kcId": "M-DEC-09",
+  "pagePath": "lessons/M-DEC-09.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-DEC-09",
+  "canonicalNode": {
+    "id": "M-DEC-09",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Desimaalilukulaskut",
+    "title": "Desimaaliluvun jakaminen luonnollisella luvulla",
+    "short_description": "Desimaaliluvun jakaminen luonnollisella luvulla",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-DEC-04",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-DEC-04 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-WRDIV",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Desimaalijakolaskun idea voidaan rakentaa jakamistilanteilla ennen kirjallista algoritmia."
+      },
+      {
+        "id": "M-DIV-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "Jakolaskun vähintään yksi merkitysrakenne tarvitaan."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-DEC-04",
+          "M-DIV-01"
+        ],
+        "rationale": "Desimaalimerkintä + jakolaskun merkitys ovat ydin."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Desimaalilukulaskut"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-DEC-04",
+      "targetKCId": "M-DEC-09",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DEC-04 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-WRDIV",
+      "targetKCId": "M-DEC-09",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Desimaalijakolaskun idea voidaan rakentaa jakamistilanteilla ennen kirjallista algoritmia.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M-DEC-09",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Jakolaskun vähintään yksi merkitysrakenne tarvitaan.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-DEC-09",
+      "targetKCId": "M79-DEC-DIV",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Desimaaliluvun jakaminen luonnollisella luvulla toimii pohjana.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-DEC-04",
+        "M-DIV-01"
+      ],
+      "rationale": "Desimaalimerkintä + jakolaskun merkitys ovat ydin."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-DEC-09/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-5-unit-6-calculating-with-decimal-fractions/",
+        "title": "Calculating with decimal fractions",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual HTML learning outcomes read, including named decimal units, mental/column calculation and measure connections. Linked slides/PDF/video not retrieved.",
+        "usageRestrictions": "Actual NCETM copyright HTML read2026-10-29: Crown/OGL default unless stated, attribution and named-author permission caveat. Oak lesson HTML states©Oak2025/OGL3.0 except exceptions. Conceptual comparison only; no teacher slides, worksheets, video, source prose or figures copied. No overall release/licence clearance.",
+        "adopted": "Use equal sharing and unbundling, then verify by the inverse multiplication. Retain precise units and exact fractions when no finite decimal gives equality.",
+        "rejected": "Do not remove the comma without tracking named units, require formal short division, silently round a recurring quotient, divide byzero or infer actual pouring competence from a diagram.",
+        "scopeLimits": "Conceptual comparator; frozen Finnish graph supplies grade/role/groups. No efficacy or learner validation claim."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/copyright/",
+        "title": "Copyright",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual copyright HTML55–57 read; acknowledgement and author-specific caveat.",
+        "usageRestrictions": "Actual NCETM copyright HTML read2026-10-29: Crown/OGL default unless stated, attribution and named-author permission caveat. Oak lesson HTML states©Oak2025/OGL3.0 except exceptions. Conceptual comparison only; no teacher slides, worksheets, video, source prose or figures copied. No overall release/licence clearance.",
+        "adopted": "Credit retrieved source and preserve exceptions in research note.",
+        "rejected": "No blanket licence grant to project, mascots or third-party resources."
+      },
+      {
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/calculating-with-decimal-fractions/lessons/divide-decimal-fractions-by-1-digit-numbers",
+        "title": "Divide decimal fractions by 1-digit numbers",
+        "organization": "Oak National Academy",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual HTML learning outcome, key points, misconception, teacher tip and licence lines418–443 read. Slides/video/worksheet not accessed.",
+        "usageRestrictions": "Actual NCETM copyright HTML read2026-10-29: Crown/OGL default unless stated, attribution and named-author permission caveat. Oak lesson HTML states©Oak2025/OGL3.0 except exceptions. Conceptual comparison only; no teacher slides, worksheets, video, source prose or figures copied. No overall release/licence clearance.",
+        "adopted": "Name the small unit and keep its scale through the operation; optional known-fact support.",
+        "rejected": "No copied quiz/diagrams; no formal-algorithm or times-table fluency gate, no assumption of decimal-divisor scope."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@9ed3dbddd72d5187c461ab20e0e9f20eb6baf91df84bf659a78daa3e82d48e84",
+        "note": "Author source draft. Newton different-author review and parent actual175integration are pending. No human/learner review performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+        "note": "r2 bounded current-model/dispose reconciliation. Prior findings and reviews retained; Newton targeted rereview pending; no humanreview."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+        "note": "Independent B15 Newton current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Newton-on-Feynman-ready-current.json. Synthetic technical scope, not learner validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@9ed3dbddd72d5187c461ab20e0e9f20eb6baf91df84bf659a78daa3e82d48e84",
+        "note": "Author source draft. Newton different-author review and parent actual175integration are pending. No human/learner review performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+        "note": "r2 bounded current-model/dispose reconciliation. Prior findings and reviews retained; Newton targeted rereview pending; no humanreview."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+        "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-DEC-09",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "initial.svg",
+        "sha256": "dc83beb727833bdaff79ec47fddfdf849ecb4d8bff3e55f232c5d8894080e7e6"
+      },
+      {
+        "path": "example1.svg",
+        "sha256": "4cf2eb426fff94ac29e9c0f142a859fe8e4b7406c3ad9050010a2f4a919fee18"
+      },
+      {
+        "path": "example2.svg",
+        "sha256": "a1c083f0431395cbdd151cf1d01c9338b59b7f23bba7ecbf030e69104194b267"
+      },
+      {
+        "path": "example3.svg",
+        "sha256": "57fef7a217081c832261971d803a46c192d7c276f3d3dfec66b32c3b8d23b14a"
+      },
+      {
+        "path": "example4.svg",
+        "sha256": "ac544798814001d313c7da0ebf1539b4cab1f66495ebc35ad21ae4ad3c94b28d"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "1ad2135a7dbf899a8c8ede27c4ad651eb09bb8b1a635ca2fd8fe19ce99f63322"
+      },
+      {
+        "path": "shared/loikka/curious.png",
+        "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-5-unit-6-calculating-with-decimal-fractions/",
+        "title": "Calculating with decimal fractions",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual HTML learning outcomes read, including named decimal units, mental/column calculation and measure connections. Linked slides/PDF/video not retrieved.",
+        "usageRestrictions": "Actual NCETM copyright HTML read2026-10-29: Crown/OGL default unless stated, attribution and named-author permission caveat. Oak lesson HTML states©Oak2025/OGL3.0 except exceptions. Conceptual comparison only; no teacher slides, worksheets, video, source prose or figures copied. No overall release/licence clearance.",
+        "adopted": "Use equal sharing and unbundling, then verify by the inverse multiplication. Retain precise units and exact fractions when no finite decimal gives equality.",
+        "rejected": "Do not remove the comma without tracking named units, require formal short division, silently round a recurring quotient, divide byzero or infer actual pouring competence from a diagram.",
+        "scopeLimits": "Conceptual comparator; frozen Finnish graph supplies grade/role/groups. No efficacy or learner validation claim."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/copyright/",
+        "title": "Copyright",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual copyright HTML55–57 read; acknowledgement and author-specific caveat.",
+        "usageRestrictions": "Actual NCETM copyright HTML read2026-10-29: Crown/OGL default unless stated, attribution and named-author permission caveat. Oak lesson HTML states©Oak2025/OGL3.0 except exceptions. Conceptual comparison only; no teacher slides, worksheets, video, source prose or figures copied. No overall release/licence clearance.",
+        "adopted": "Credit retrieved source and preserve exceptions in research note.",
+        "rejected": "No blanket licence grant to project, mascots or third-party resources."
+      },
+      {
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/calculating-with-decimal-fractions/lessons/divide-decimal-fractions-by-1-digit-numbers",
+        "title": "Divide decimal fractions by 1-digit numbers",
+        "organization": "Oak National Academy",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual HTML learning outcome, key points, misconception, teacher tip and licence lines418–443 read. Slides/video/worksheet not accessed.",
+        "usageRestrictions": "Actual NCETM copyright HTML read2026-10-29: Crown/OGL default unless stated, attribution and named-author permission caveat. Oak lesson HTML states©Oak2025/OGL3.0 except exceptions. Conceptual comparison only; no teacher slides, worksheets, video, source prose or figures copied. No overall release/licence clearance.",
+        "adopted": "Name the small unit and keep its scale through the operation; optional known-fact support.",
+        "rejected": "No copied quiz/diagrams; no formal-algorithm or times-table fluency gate, no assumption of decimal-divisor scope."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@9ed3dbddd72d5187c461ab20e0e9f20eb6baf91df84bf659a78daa3e82d48e84",
+        "note": "Author source draft. Newton different-author review and parent actual175integration are pending. No human/learner review performed."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@9ed3dbddd72d5187c461ab20e0e9f20eb6baf91df84bf659a78daa3e82d48e84",
+        "note": "Author source draft. Newton different-author review and parent actual175integration are pending. No human/learner review performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@9ed3dbddd72d5187c461ab20e0e9f20eb6baf91df84bf659a78daa3e82d48e84",
+        "note": "Author source draft. Newton different-author review and parent actual175integration are pending. No human/learner review performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+        "note": "r2 bounded current-model/dispose reconciliation. Prior findings and reviews retained; Newton targeted rereview pending; no humanreview."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+        "note": "r2 bounded current-model/dispose reconciliation. Prior findings and reviews retained; Newton targeted rereview pending; no humanreview."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+        "note": "r2 bounded current-model/dispose reconciliation. Prior findings and reviews retained; Newton targeted rereview pending; no humanreview."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+        "note": "Independent B15 Newton current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Newton-on-Feynman-ready-current.json. Synthetic technical scope, not learner validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+        "note": "Independent B15 Newton canonical/Lite/source boundary review: roles/groups preserved, no new hardgates. lesson-network/evidence/production/B15/reviews/Newton-on-Feynman-ready-current.json"
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+        "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+      }
+    ],
+    "alignment": {
+      "sourceRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "nodeSpec": "M-DEC-09",
+      "sourceHashes": {
+        "authority/production-181-v2/lite/src/content/decimals.ts": "7ada1da383cb235ec320e4f4da2150c79ddb02fcd5334874a5c59fd05ae8c21e",
+        "authority/production-181-v2/lite/src/content/decanim.ts": "714c5d2eccee47d74d6ff7d67c04de3a5ccda3cc2b1551005396773d36af4d24",
+        "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "authority/production-181-v2/lite/src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+        "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "authority/production-181-v2/lite/src/engine/rng.ts": "b92772fa78848c5e31599e70d19d33a8eb9944e72b4d37a603cfa53b618855b0",
+        "authority/production-181-v2/lite/src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+        "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da",
+        "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+        "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+        "evidence/production/B14/AUTHORING_HOST_AND_REUSE_FI.md": "ab0aced739d5b415543c0e8c00d8c471af8419b44088a48384156318728d4e5e"
+      },
+      "inventory": {
+        "revision": "audit1-2026-10-28",
+        "validRevs": [
+          "audit1-2026-10-28"
+        ],
+        "intro": "Sukeltajat jakavat saaliin tasan. Jokainen saa yhtä paljon.",
+        "goal": "Opit jakamaan desimaaliluvun kokonaisluvulla sekä luvuilla 10, 100 ja 1000.",
+        "rewardNotAdopted": "Jaat desimaalilukuja tasan ja siirrät pilkkua oikein!",
+        "demos": [
+          {
+            "index": 0,
+            "say": "4,8 jaetaan kahdelle lautaselle. Ensin neljä kokonaista: kumpikin saa kaksi. Sitten kahdeksan kymmenesosaa: kumpikin saa neljä. Vastaus 2,4.",
+            "animation": {
+              "width": 320,
+              "height": 290,
+              "duration": 9.7,
+              "label": "4,8 : 2 = 2,4",
+              "frames": [
+                {
+                  "t": 0,
+                  "caption": "4,8 on 4 kokonaista ja 8 kymmenesosaa. Jaetaan 2 lautaselle.",
+                  "frameSHA256": "f216a2db35e72155d34dd0ecc0c2de3699678f9497d211f7c4d517cf3ed8d539"
+                },
+                {
+                  "t": 4.85,
+                  "caption": "Sitten kymmenesosat: 8 : 2 → jokainen saa 4.",
+                  "frameSHA256": "3f7249703e8d64cd2e0160ae1b9ba185cd5d306df3451967d18118b1b85fde61"
+                },
+                {
+                  "t": 9.7,
+                  "caption": "Jokainen saa 2 kokonaista ja 4 kymmenesosaa: 2,4. Tarkistus: 2 × 2,4 = 4,8.",
+                  "frameSHA256": "0007b67c0d34061b59c91d4b73652ffb600d90d5624e3d7644e3fbfe85326404"
+                }
+              ]
+            }
+          },
+          {
+            "index": 1,
+            "say": "5,4 jaetaan kolmelle. Kokonaisia riittää yksi jokaiselle, kaksi jää yli. Ne vaihdetaan kahdeksikymmeneksi kymmenesosaksi: kymmenesosia on nyt 24. Jokainen saa kahdeksan. Vastaus 1,8.",
+            "animation": {
+              "width": 320,
+              "height": 290,
+              "duration": 12.450000000000001,
+              "label": "5,4 : 3 = 1,8",
+              "frames": [
+                {
+                  "t": 0,
+                  "caption": "5,4 on 5 kokonaista ja 4 kymmenesosaa. Jaetaan 3 lautaselle.",
+                  "frameSHA256": "8e2d8df5227f3e668e4fcbd0972393c63a8b5068dd86ad1c26c5a85a022242ef"
+                },
+                {
+                  "t": 6.2250000000000005,
+                  "caption": "Sitten kymmenesosat: 24 : 3 → jokainen saa 8.",
+                  "frameSHA256": "57708d0dfc8980e22b6af717ce58347a2bd0be9c39fa7c354e9d6b605443dc00"
+                },
+                {
+                  "t": 12.450000000000001,
+                  "caption": "Jokainen saa 1 kokonaisen ja 8 kymmenesosaa: 1,8. Tarkistus: 3 × 1,8 = 5,4.",
+                  "frameSHA256": "4eea60646a9a987452fe6121d1cad3f5ce989715990ebbeec3c6f107b0a55d01"
+                }
+              ]
+            }
+          },
+          {
+            "index": 2,
+            "say": "Kun jaetaan sadalla, pilkku pysyy ja jokainen numero siirtyy kaksi paikkaa oikealle eli pienemmäksi. Ykkösten paikalle tulee nolla.",
+            "animation": {
+              "width": 320,
+              "height": 250,
+              "duration": 7.9,
+              "label": "45 ÷ 100 = 0,45",
+              "frames": [
+                {
+                  "t": 0,
+                  "caption": "Pilkku (punainen piste) pysyy paikallaan. Jakaminen luvulla 100 siirtää jokaista numeroa 2 paikkaa oikealle.",
+                  "frameSHA256": "bd2f8ed6bf3114f9ad26ec3cfe6269a0ee1b7940e5cd417eac515c6731f99ce8"
+                },
+                {
+                  "t": 3.95,
+                  "caption": "Pilkun ja numeroiden väliin jääneet tyhjät paikat täytetään nollilla.",
+                  "frameSHA256": "7acb0984f4455bde3f1faff630aaa5f6001a6ef6e02568e18e26487395b2f0a7"
+                },
+                {
+                  "t": 7.9,
+                  "caption": "45 ÷ 100 = 0,45.",
+                  "frameSHA256": "3de0c08bda1d9027dfd93b426841d7b0ecd37ce8c97b5365c479bc244bfa2c77"
+                }
+              ]
+            }
+          }
+        ],
+        "byPhase": {
+          "guided": {
+            "money": 134,
+            "steps": 120,
+            "share": 131,
+            "tens": 127
+          },
+          "independent": {
+            "money": 134,
+            "steps": 120,
+            "share": 131,
+            "tens": 127
+          },
+          "transfer": {
+            "transfer": 512
+          },
+          "retrieval": {
+            "money": 134,
+            "steps": 120,
+            "share": 131,
+            "tens": 127
+          }
+        },
+        "sample": {
+          "money": {
+            "phase": "guided",
+            "seed": 1,
+            "say": "2 sukeltajaa jakaa 2,4 euroa tasan. Paljonko kukin saa?",
+            "task": {
+              "kind": "numeric",
+              "answer": 1.2,
+              "unit": "€"
+            },
+            "hint": "Jaa ensin kokonaiset eurot. Yli jääneet eurot vaihdetaan senteiksi ja jaetaan.",
+            "explain": "2,4 € : 2 = 1,2 €."
+          },
+          "steps": {
+            "phase": "guided",
+            "seed": 4,
+            "say": "Jaetaan 6,8 helmikiloa 4 sukeltajalle. Vedä luvut oikeisiin kohtiin. Yksi kortti jää yli.",
+            "task": {
+              "kind": "place",
+              "slots": [
+                {
+                  "id": "a",
+                  "text": "kokonaisia jokaiselle"
+                },
+                {
+                  "id": "b",
+                  "text": "kokonaisia jää yli"
+                },
+                {
+                  "id": "c",
+                  "text": "kymmenesosia vaihdon jälkeen"
+                },
+                {
+                  "id": "d",
+                  "text": "kymmenesosia jokaiselle"
+                }
+              ],
+              "tokens": [
+                {
+                  "id": "n2",
+                  "text": "2"
+                },
+                {
+                  "id": "n1",
+                  "text": "1"
+                },
+                {
+                  "id": "n7",
+                  "text": "7"
+                },
+                {
+                  "id": "n28",
+                  "text": "28"
+                },
+                {
+                  "id": "n8",
+                  "text": "8"
+                }
+              ],
+              "answer": {
+                "a": "n1",
+                "b": "n2",
+                "c": "n28",
+                "d": "n7"
+              },
+              "why": {
+                "a": "6 : 4 → 1 jokaiselle.",
+                "b": "6 − 4 = 2.",
+                "c": "2 kokonaista = 20 kymmenesosaa, ja 8 kymmenesosaa oli jo: 28.",
+                "d": "28 : 4 = 7."
+              }
+            },
+            "hint": "Yksi kokonainen = 10 kymmenesosaa. Lisää vaihdetut kymmenesosat niihin, jotka oli jo.",
+            "explain": "6,8 : 4 = 1,7."
+          },
+          "share": {
+            "phase": "guided",
+            "seed": 7,
+            "say": "5,8 : 2 = ?",
+            "task": {
+              "kind": "numeric",
+              "answer": 2.9
+            },
+            "hint": "Jaa ensin kokonaiset, sitten kymmenesosat.",
+            "explain": "5,8 : 2 = 2,9. Tarkistus: 2 × 2,9 = 5,8."
+          },
+          "tens": {
+            "phase": "guided",
+            "seed": 12,
+            "say": "76 : 100 = ?",
+            "task": {
+              "kind": "choice",
+              "options": [
+                {
+                  "big": "0,076"
+                },
+                {
+                  "big": "0,76"
+                },
+                {
+                  "big": "7,6"
+                }
+              ],
+              "answer": 1,
+              "why": [
+                "Siirsit yhden paikan liikaa.",
+                null,
+                "Siirsit yhden paikan liian vähän."
+              ]
+            },
+            "hint": "Pilkku pysyy, numerot siirtyvät 2 paikkaa oikealle. Luku pienenee.",
+            "explain": "Jakaminen luvulla 100 siirtää jokaista numeroa 2 paikkaa pienemmäksi: 0,76."
+          },
+          "transfer": {
+            "phase": "transfer",
+            "seed": 1,
+            "say": "Helmilauta on 62 senttiä pitkä. Kirjoita pituus metreinä. Metrissä on 100 senttiä.",
+            "task": {
+              "kind": "numeric",
+              "answer": 0.62,
+              "unit": "m",
+              "whyAt": {
+                "6.2": "Jaoit kymmenellä. Metrissä on 100 senttiä, joten jaa sadalla."
+              }
+            },
+            "hint": "Jaa sadalla: numerot siirtyvät kaksi paikkaa oikealle.",
+            "explain": "62 : 100 = 0,62. 62 cm = 0,62 m."
+          }
+        },
+        "families": {
+          "money": {
+            "node": "M-DEC-09",
+            "tag": "money",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "steps": {
+            "node": "M-DEC-09",
+            "tag": "steps",
+            "outcome": "sijoittaa osat oikeille paikoille",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "share": {
+            "node": "M-DEC-09",
+            "tag": "share",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "tens": {
+            "node": "M-DEC-09",
+            "tag": "tens",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "transfer": {
+            "node": "M-DEC-09",
+            "tag": "transfer",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [
+              "Metrissä on 100 senttiä on kerrottu."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "families.ts M-DEC-09/transfer"
+            ]
+          }
+        },
+        "itemsSampled": 2048,
+        "registry": "index.ts read: own AUDIT_REV retained; own goal retained; no target key in SIMS; family declarations actual runtime merge sampled."
+      },
+      "exactFamilyNames": [
+        "money",
+        "steps",
+        "share",
+        "tens",
+        "transfer"
+      ],
+      "registry": "index.ts: DECIMAL_NODES merged, own AUDIT_REV/goal retained; no targetSIMS overlay. families.ts runtime declarations sampled.",
+      "audit": "LESSON_AUDIT rows102–104 and critique/correction sections714–725: column alignment/carry, equal groups/place shifts, sharing/exchange. Historical audit counts are claims of that source, not this package validation.",
+      "comparison": "share/money and steps become equal sharing with a reversible whole-to-tenths exchange. tens retained by finite fixed-place charts; cm/m transfer supplies100. Optional1/3 goes beyond Lite terminating examples, labelled and exact.",
+      "limitations": "Frozen canonical decimal divided by natural number; amount0–999 with≤3decimal places; divisor1–1000. Zero divisor explicitly invalid including0/0. Same quantity units after sharing; cm→m explicit100 conversion only. Exact fraction output, no decimal divisor.",
+      "correctedMismatch": "Generalise Lite positive models honestly to0/1; exact arithmetic replaces Number/round; never claim that multiplying always grows/dividing always shrinks."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-DEC-09",
+        "subject": "mathematics",
+        "grade_band": "3-6",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Desimaalilukulaskut",
+        "title": "Desimaaliluvun jakaminen luonnollisella luvulla",
+        "short_description": "Desimaaliluvun jakaminen luonnollisella luvulla",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL3-6-S2"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-DEC-04",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-DEC-04 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-WRDIV",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "Desimaalijakolaskun idea voidaan rakentaa jakamistilanteilla ennen kirjallista algoritmia."
+          },
+          {
+            "id": "M-DIV-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "Jakolaskun vähintään yksi merkitysrakenne tarvitaan."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-DEC-04",
+              "M-DIV-01"
+            ],
+            "rationale": "Desimaalimerkintä + jakolaskun merkitys ovat ydin."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Desimaalilukulaskut"
+        ]
+      },
+      "gradeBand": "3-6",
+      "teacherObjective": "Desimaaliluvun jakaminen luonnollisella luvulla",
+      "childGoal": "Jaa yhtä suuriin osiin.",
+      "role": "atomic",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-DEC-04",
+            "M-DIV-01"
+          ],
+          "rationale": "Desimaalimerkintä + jakolaskun merkitys ovat ydin."
+        }
+      ],
+      "strongSupport": [
+        {
+          "id": "M-WRDIV",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Desimaalijakolaskun idea voidaan rakentaa jakamistilanteilla ennen kirjallista algoritmia."
+        }
+      ],
+      "additionalHardGates": [],
+      "assumed": [
+        "Named decimal units and whole-number operation meaning from frozen parents.",
+        "Supplied measure unit facts in transfer; no extra time/conversion gate."
+      ],
+      "scope": "Frozen canonical decimal divided by natural number; amount0–999 with≤3decimal places; divisor1–1000. Zero divisor explicitly invalid including0/0. Same quantity units after sharing; cm→m explicit100 conversion only. Exact fraction output, no decimal divisor.",
+      "evidenceLimits": "Local deterministic checked practice with optional model/help. No persistence, formal rubric, retained/independent/mastery/human/efficacy evidence.",
+      "assetProvenance": "Original mathematical SVGs generated from current exact model; supplied unchanged shared PNG, actual hash. User-supplied raster reinterpretation, not claimed handdrawn or public-domain.",
+      "feedbackContractSHA256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "interaction": "Distinct equal-groups/sharing/place-value models; explicit step and rewind, no decorative autoplay. Direct answer practice includes editable visible operands, exact equivalent fractions, both event types and noevent Check; supported conversion factors fixed/validated.",
+      "hostOwnership": "Own immediately preceding article, per-root WeakMap disposes prior owner; sameKC sibling isolation; old API inert; paused reset stays disabled;3 listener functions cleaned; no timers/frames.",
+      "supportLimits": "Model/help can show worked results; no extra independent credit inferred. Reconcile current answer before every action/lifecycle/early return, preserve unchanged valid model/help use."
+    },
+    "extensions": {
+      "productionBatch": "B15",
+      "simulationType": "equal-share-exchange",
+      "noRuntimeImports": true,
+      "noPersistence": true,
+      "executionLimits": "Finite illustrative models use exact configured quantity states. SVG fractional pixel geometry is depiction only; BigInt rational calculations decide correctness. Practice operand/domain bounds explicit; no expression evaluation/decimal divisors/rounding. Native sourcepreview separate from actual175."
+    },
+    "contentHash": "6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+    "contentRevision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@9ed3dbddd72d5187c461ab20e0e9f20eb6baf91df84bf659a78daa3e82d48e84",
+          "note": "Author source draft. Newton different-author review and parent actual175integration are pending. No human/learner review performed."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+          "note": "r2 bounded current-model/dispose reconciliation. Prior findings and reviews retained; Newton targeted rereview pending; no humanreview."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+          "note": "Independent B15 Newton current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Newton-on-Feynman-ready-current.json. Synthetic technical scope, not learner validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@9ed3dbddd72d5187c461ab20e0e9f20eb6baf91df84bf659a78daa3e82d48e84",
+          "note": "Author source draft. Newton different-author review and parent actual175integration are pending. No human/learner review performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+          "note": "r2 bounded current-model/dispose reconciliation. Prior findings and reviews retained; Newton targeted rereview pending; no humanreview."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+          "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@9ed3dbddd72d5187c461ab20e0e9f20eb6baf91df84bf659a78daa3e82d48e84",
+          "note": "Author source draft. Newton different-author review and parent actual175integration are pending. No human/learner review performed."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+          "note": "r2 bounded current-model/dispose reconciliation. Prior findings and reviews retained; Newton targeted rereview pending; no humanreview."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@6d2969700a1fc257c2e57c9c3f1e577fa667058f6690b9b9b43644f46f897cba",
+          "note": "Independent B15 Newton canonical/Lite/source boundary review: roles/groups preserved, no new hardgates. lesson-network/evidence/production/B15/reviews/Newton-on-Feynman-ready-current.json"
+        }
+      ]
+    }
+  },
+  "outputHash": "81a3c10f526cc8f4878c4e80dfe186bb1f7221d477e04dcf02686d262e352e27",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "81a3c10f526cc8f4878c4e80dfe186bb1f7221d477e04dcf02686d262e352e27",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

@@ -1,0 +1,594 @@
+{
+  "kcId": "SCI-ENV-RECORD-01",
+  "pagePath": "lessons/SCI-ENV-RECORD-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "SCI-ENV-RECORD-01",
+  "canonicalNode": {
+    "id": "SCI-ENV-RECORD-01",
+    "subject": "science",
+    "grade_band": "1-2",
+    "topic_area": "Tutkimisen taidot",
+    "parent_concept": "Tulosten kirjaaminen",
+    "title": "Havaintojen taltioiminen ja esittäminen",
+    "short_description": "Havaintojen taltioiminen ja esittäminen",
+    "node_kind": "integration",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "ENV12-T5-T13"
+    ],
+    "relations": [
+      {
+        "id": "SCI-ENV-RECORD-DATA-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-RECORD-DATA-01 vaaditaan kokonaisuuden hallintaan."
+      },
+      {
+        "id": "SCI-ENV-PRESENT-DATA-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-PRESENT-DATA-01 vaaditaan kokonaisuuden hallintaan."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "SCI-ENV-RECORD-DATA-01",
+          "SCI-ENV-PRESENT-DATA-01"
+        ],
+        "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+      }
+    ],
+    "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: SCI-ENV-RECORD-DATA-01, SCI-ENV-PRESENT-DATA-01. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "status": "candidate_refactored_integration",
+    "entry_role": "none",
+    "mastery_role": "integration",
+    "split_children": [
+      "SCI-ENV-RECORD-DATA-01",
+      "SCI-ENV-PRESENT-DATA-01"
+    ],
+    "integration_of": [
+      "SCI-ENV-RECORD-DATA-01",
+      "SCI-ENV-PRESENT-DATA-01"
+    ],
+    "dynamic_prerequisite_rule": null,
+    "concept_path": [
+      "Ympäristöoppi / luonnontieteellinen perusta",
+      "Tutkimisen taidot",
+      "Tulosten kirjaaminen"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "SCI-ENV-RECORD-DATA-01",
+      "targetKCId": "SCI-ENV-RECORD-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-RECORD-DATA-01 vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "SCI-ENV-PRESENT-DATA-01",
+      "targetKCId": "SCI-ENV-RECORD-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-PRESENT-DATA-01 vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "SCI-ENV-RECORD-01",
+      "targetKCId": "SCI-ENV-DATA-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "SCI-ENV-RECORD-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "SCI-ENV-RECORD-DATA-01",
+        "SCI-ENV-PRESENT-DATA-01"
+      ],
+      "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/SCI-ENV-RECORD-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "OPH Perusopetuksen opetussuunnitelman perusteet2014, ympäristöoppi1–2",
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "retrieval": "Targeted original2014 PDF text read: T6 PDF131/printed132 observations and presentation; S4 PDF132/printed133 motion. Revisited2026-10-29. No current-amendment certification.",
+        "use": "Frozen canonical ENV12 bundled source references and concrete observation→description/representation. Integration is the frozen graph role, not an independently proved assessment design.",
+        "licence": "Normative comparison only; no external figures/text copied or relicensing assumption.",
+        "accessed": "2026-10-29"
+      },
+      {
+        "title": "Department for Education, KS1 working scientifically",
+        "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study",
+        "retrieval": "KS1 introduction and working-scientifically requirements/guidance read, including lines116–140;2026-10-29.",
+        "use": "Experience observable phenomena, support early reading, record and communicate in varied ways. England is comparable, not Finnish normative mapping.",
+        "licence": "Government text linked/paraphrased; no figures/worksheet reuse.",
+        "accessed": "2026-10-29"
+      },
+      {
+        "title": "Primary Science Teaching Trust — Enquiry Skills",
+        "url": "https://pstt.org.uk/resources/enquiry-skills/",
+        "retrieval": "HTML overview, recording and interpreting/communicating distinctions and usage rules read2026-10-29; no linked PDF reading claimed.",
+        "use": "Keep observation, recording and communicating distinct while joining their meaning in the integration task.",
+        "licence": "PSTT2019 symbols have educational credit/modification restrictions. No symbols/artwork imported.",
+        "accessed": "2026-10-29"
+      },
+      {
+        "title": "Primary Connections — Forces are fun, Year1 overview",
+        "url": "https://primaryconnections.org.au/teaching-sequences/year-1/forces-fun",
+        "retrieval": "HTML overview, inquiry/communication alignment and science-journal preparation paragraphs read2026-10-29.",
+        "use": "Connect observed events, a notebook and communicated information; adapt representation and participation. Force-specific investigations and physical-participation requirements omitted.",
+        "licence": "Page states CC BY-NC-SA4 except exceptions/credits. Ideas compared, no source artwork/prose/code imported; not a blanket project licence.",
+        "accessed": "2026-10-29"
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": {
+      "task_id": "KC-CLOSURE-SCI-ENV-RECORD-01",
+      "kc_id": "SCI-ENV-RECORD-01",
+      "production_order": 47,
+      "mastery_role": "integration",
+      "node_kind": "integration",
+      "status": "PENDING_IMPLEMENTATION",
+      "content_file": null,
+      "prerequisites": [
+        {
+          "all_of": [
+            "SCI-ENV-RECORD-DATA-01",
+            "SCI-ENV-PRESENT-DATA-01"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "validation": {
+        "schema": "pending_autonomous_adventure_review",
+        "graph_refs": "pending_autonomous_adventure_review",
+        "domain_truth": "pending_autonomous_adventure_review",
+        "item_invariants": "pending_autonomous_adventure_review",
+        "pedagogy_review": "pending_autonomous_adventure_review",
+        "subject_review": "pending_autonomous_adventure_review",
+        "accessibility_review": "pending_autonomous_adventure_review",
+        "runtime_smoke": "pending_autonomous_adventure_review"
+      },
+      "historical_status": "DEFERRED_UNTIL_CALIBRATION",
+      "autonomous_evidence": [],
+      "historical_validation": {
+        "schema": "pending",
+        "graph_refs": "pending",
+        "domain_truth": "pending",
+        "item_invariants": "pending",
+        "pedagogy_review": "pending",
+        "subject_review": "pending",
+        "accessibility_review": "pending",
+        "runtime_smoke": "pending"
+      }
+    }
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+    "history": [
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/observe-independent-current-source.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+        "note": "No actual human/learner validation has occurred."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "SCI-ENV-RECORD-01",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "chain.svg",
+        "sha256": "5c5078557f4273fb274ce9c6c88dd81ba0117eb2b1e9b2968d8ddc7867d939de"
+      },
+      {
+        "path": "shared/loikka/map.png",
+        "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "bc5c81c60d7b082487fff807aa64b98dff7583888c5efccd09d0b23f9891aab4"
+      }
+    ],
+    "research": [
+      {
+        "title": "OPH Perusopetuksen opetussuunnitelman perusteet2014, ympäristöoppi1–2",
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "retrieval": "Targeted original2014 PDF text read: T6 PDF131/printed132 observations and presentation; S4 PDF132/printed133 motion. Revisited2026-10-29. No current-amendment certification.",
+        "use": "Frozen canonical ENV12 bundled source references and concrete observation→description/representation. Integration is the frozen graph role, not an independently proved assessment design.",
+        "licence": "Normative comparison only; no external figures/text copied or relicensing assumption.",
+        "accessed": "2026-10-29"
+      },
+      {
+        "title": "Department for Education, KS1 working scientifically",
+        "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study",
+        "retrieval": "KS1 introduction and working-scientifically requirements/guidance read, including lines116–140;2026-10-29.",
+        "use": "Experience observable phenomena, support early reading, record and communicate in varied ways. England is comparable, not Finnish normative mapping.",
+        "licence": "Government text linked/paraphrased; no figures/worksheet reuse.",
+        "accessed": "2026-10-29"
+      },
+      {
+        "title": "Primary Science Teaching Trust — Enquiry Skills",
+        "url": "https://pstt.org.uk/resources/enquiry-skills/",
+        "retrieval": "HTML overview, recording and interpreting/communicating distinctions and usage rules read2026-10-29; no linked PDF reading claimed.",
+        "use": "Keep observation, recording and communicating distinct while joining their meaning in the integration task.",
+        "licence": "PSTT2019 symbols have educational credit/modification restrictions. No symbols/artwork imported.",
+        "accessed": "2026-10-29"
+      },
+      {
+        "title": "Primary Connections — Forces are fun, Year1 overview",
+        "url": "https://primaryconnections.org.au/teaching-sequences/year-1/forces-fun",
+        "retrieval": "HTML overview, inquiry/communication alignment and science-journal preparation paragraphs read2026-10-29.",
+        "use": "Connect observed events, a notebook and communicated information; adapt representation and participation. Force-specific investigations and physical-participation requirements omitted.",
+        "licence": "Page states CC BY-NC-SA4 except exceptions/credits. Ideas compared, no source artwork/prose/code imported; not a blanket project licence.",
+        "accessed": "2026-10-29"
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/observe-independent-current-source.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/observe-independent-current-source.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+        "note": "No actual human/learner validation has occurred."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "SCI-ENV-RECORD-01",
+      "sourceBuild": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "actualFamilies": [
+        "build",
+        "count",
+        "check",
+        "transfer"
+      ],
+      "inventory": "alignment.md",
+      "reconciliation": "alignment.md",
+      "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "sourceHashes": {
+        "src/content/science.ts": "b72eb983d570fda14794825e6f0210f4ef599fea039a431d817f32c25b7f9a58",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/content/world.ts": "c350e4f517d6aa23729ee958ec8b933abc828da41956e12a9da04a49b94e4704",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/engine/motion.ts": "7b2851bee0927ba383462ea8d24b7f2a8467c82b581fd519efdb4b4566365451",
+        "src/engine/graph.ts": "8bcdc3d7cafed82fd8d2a0a7dd69a547f2e70d6d2a87834f110164d4fe4b24d9",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+        "src/ui/motion.ts": "1a3598c501e33fda21af3b42e86d0ddfef91fc4d67de15754159eaa5f98f19cc",
+        "src/ui/art.ts": "aa26c0ba183a3fe0e87a07ffd6e274de68a53fcb63d784a8a8b5135081eee52f",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+      },
+      "registry": {
+        "sourceBuild": "lite181-2026-10-27",
+        "perNodeRevision": "audit1-2026-10-28",
+        "validRevisions": [
+          "audit1-2026-10-28"
+        ],
+        "motionFallbackRevision": "motion1-2026-10-27 not replacing explicit audit revision",
+        "goals": "GOALS fills missing NodeSpec goal. Motion goal says speed-up/slow-down but actual family set has no slow-down branch.",
+        "casePhases": "cases chooses named base branches in guided/independent/retrieval, dedicated transfer; no guidedTags restriction for either.",
+        "simulationShares": {
+          "guided": 0.6,
+          "independent": 0.35,
+          "retrieval": 0.5,
+          "transfer": 0
+        },
+        "scope": "SIMS affects motion-change only; no record override. Index comment every-retrieval conflicts with executable0.5.",
+        "familyRegistry": "No own DECL or manifest demand rows; default choice/place outcomes; empty assumed/supplied/coTaught/support/incidental and null dynamic rule. No formal outcome inference."
+      },
+      "audit": {
+        "row": 69,
+        "detail": "trip+count→presentation demos, new count placement, animated check"
+      }
+    },
+    "planning": {
+      "gradeBand": "1-2",
+      "teacherObjective": "Oppilas säilyttää tiedon merkityksen mallihavainnosta oman kirjauksen kautta esitykseen ja korjaa ketjun virheen.",
+      "childGoal": "Yhdistän oman kirjauksen ja esityksen samaan havaintoon.",
+      "canonical": {
+        "id": "SCI-ENV-RECORD-01",
+        "subject": "science",
+        "grade_band": "1-2",
+        "topic_area": "Tutkimisen taidot",
+        "parent_concept": "Tulosten kirjaaminen",
+        "title": "Havaintojen taltioiminen ja esittäminen",
+        "short_description": "Havaintojen taltioiminen ja esittäminen",
+        "node_kind": "integration",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "ENV12-T5-T13"
+        ],
+        "relations": [
+          {
+            "id": "SCI-ENV-RECORD-DATA-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-RECORD-DATA-01 vaaditaan kokonaisuuden hallintaan."
+          },
+          {
+            "id": "SCI-ENV-PRESENT-DATA-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-PRESENT-DATA-01 vaaditaan kokonaisuuden hallintaan."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "SCI-ENV-RECORD-DATA-01",
+              "SCI-ENV-PRESENT-DATA-01"
+            ],
+            "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+          }
+        ],
+        "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: SCI-ENV-RECORD-DATA-01, SCI-ENV-PRESENT-DATA-01. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "status": "candidate_refactored_integration",
+        "entry_role": "none",
+        "mastery_role": "integration",
+        "split_children": [
+          "SCI-ENV-RECORD-DATA-01",
+          "SCI-ENV-PRESENT-DATA-01"
+        ],
+        "integration_of": [
+          "SCI-ENV-RECORD-DATA-01",
+          "SCI-ENV-PRESENT-DATA-01"
+        ],
+        "dynamic_prerequisite_rule": null,
+        "concept_path": [
+          "Ympäristöoppi / luonnontieteellinen perusta",
+          "Tutkimisen taidot",
+          "Tulosten kirjaaminen"
+        ]
+      },
+      "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "prerequisiteGroups": [
+        {
+          "all_of": [
+            "SCI-ENV-RECORD-DATA-01",
+            "SCI-ENV-PRESENT-DATA-01"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "requiredPrerequisites": [
+        {
+          "id": "SCI-ENV-RECORD-DATA-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-RECORD-DATA-01 vaaditaan kokonaisuuden hallintaan."
+        },
+        {
+          "id": "SCI-ENV-PRESENT-DATA-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-PRESENT-DATA-01 vaaditaan kokonaisuuden hallintaan."
+        }
+      ],
+      "strongSupport": [],
+      "assumptions": [
+        "Adult reading/pointing support allowed; no required speech or object-name confirmation.",
+        "Motion: no clock, seconds or speed-unit calculation. Recording: small0–3 counts and digits taught/supported where used."
+      ],
+      "interaction": "source-to-own-notebook-to-assembled-presentation",
+      "evidenceLimits": [
+        "Authored/given model observations, not invented real child field records.",
+        "Supported practice, not independence/retention/human validation or formal mastery.",
+        "Canonical integration/atomic role retained; screen correctness does not change formal evidence state."
+      ],
+      "feedbackContract": "Correct→edit wrong/incomplete→neutral→retry→repair→correct; helper and information-preserving format/order do not invalidate unchanged semantics.",
+      "scope": "Given names/layout/legend and current notebook cards; not free chart design or certification of real data collection."
+    },
+    "extensions": {
+      "authoredOn": "2026-10-29",
+      "assignment": "B05 explicit GO after B04sealed e3a470a2d0cb05aedabc7631e6e5d60e93525d73; only assigned2",
+      "reviewStatus": "Source frozen after author pure/domain/lint checks. Independent reviewer and exact55 integrated native browser QA pending. Human validation not performed.",
+      "sourceNotes": {
+        "research.md": "273f2d6f3291d7395f58cae621c4d9673f6e2d8c087f1be7be318116faabd9d7",
+        "alignment.md": "7f98d4b50d5f83858ec9080ed1f717a092781013bd9cfed585aaea7bf23e69b4",
+        "tests.mjs": "d326ff28e1ad687cf17d6c1bc2f9a614ed7d16077756147e50f5e3fbfd40dc62",
+        "browser.mjs": "4d05a085690ad46a8191ee6a4914a907310b0eb7e71f46440645a4a2a34aace3"
+      },
+      "licence": "Original text/SVG/model; unchanged supplied PNG; owner licensing retained."
+    },
+    "contentHash": "3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+    "contentRevision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+      "history": [
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+          "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/observe-independent-current-source.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+          "note": "No actual human/learner validation has occurred."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@3b813046a7ba0ca595d9bcda7eaa5ce1e7a252b87f18e14a81cadeca0835854c",
+          "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/observe-independent-current-source.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "c7c4a41b93ef4bd000f4aaee0149e79c38114bc91ab064097b7257335a0563a1",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "11d3317a750966172cc4a893c14e2189026fb95bfa97e932cb5bfd884eb026ed",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "c7c4a41b93ef4bd000f4aaee0149e79c38114bc91ab064097b7257335a0563a1",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

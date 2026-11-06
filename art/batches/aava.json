@@ -1,0 +1,89 @@
+{
+ "_ohje": "Aavan uudet avainasennot alkuperäisistä PNG:istä (sunburst edit). Aja repojuuresta: node tools/imagegen/imagegen.mjs batch art/batches/aava.json [--live]",
+ "defaults": {
+  "model": "sunburst",
+  "quality": "medium",
+  "size": "1024x1024",
+  "background": "transparent",
+  "n": 2,
+  "template": "edit-keep-character",
+  "character": [
+   "aava"
+  ],
+  "out": "../_raw/aava",
+  "image": [
+   "../../lite/public/characters/aava/idle.png",
+   "../../lite/public/characters/aava/wave.png",
+   "../../lite/public/characters/aava/walk_02.png",
+   "../../lite/public/characters/aava/curious.png"
+  ]
+ },
+ "jobs": [
+  {
+   "name": "aava-think",
+   "vars": {
+    "change": "pose only: Aava stands thinking, one wing tip raised to her cheek, eye looking up, small thoughtful expression, side profile facing right, beak closed"
+   }
+  },
+  {
+   "name": "aava-sleep",
+   "vars": {
+    "change": "pose only: Aava sits on the ground asleep, eye closed as a small downward curve, head slightly lowered, wings folded, side profile facing right, beak closed"
+   }
+  },
+  {
+   "name": "aava-sad",
+   "vars": {
+    "change": "pose only: Aava stands a little sad, head and tail drooping slightly, eye looking down, wings hanging, side profile facing right, beak closed"
+   }
+  },
+  {
+   "name": "aava-surprised",
+   "vars": {
+    "change": "pose only: Aava is surprised, eye wide open, body leaning back slightly, both wings lifted out to the sides, side profile facing right, beak closed"
+   }
+  },
+  {
+   "name": "aava-point",
+   "vars": {
+    "change": "pose only: Aava stands and points forward to the right with one wing stretched out straight, side profile facing right, beak closed"
+   }
+  },
+  {
+   "name": "aava-read",
+   "vars": {
+    "change": "pose only: Aava stands holding a small open blue book in front of her with both wings, eye looking at the book, side profile facing right, beak closed"
+   }
+  },
+  {
+   "name": "aava-sit",
+   "vars": {
+    "change": "pose only: Aava sits calmly on the ground, legs tucked under the body, content and relaxed, side profile facing right, beak closed"
+   }
+  },
+  {
+   "name": "aava-run_01",
+   "vars": {
+    "change": "pose only: Aava runs fast, body leaning forward, front leg stretched far forward and back leg pushed far back, wings slightly back, side profile facing right, beak closed"
+   }
+  },
+  {
+   "name": "aava-run_02",
+   "vars": {
+    "change": "pose only: Aava runs fast, body leaning forward, both legs gathered under the body mid-stride, wings slightly back, side profile facing right, beak closed"
+   }
+  },
+  {
+   "name": "aava-flap_01",
+   "vars": {
+    "change": "pose only: Aava flutters her wings, both wings raised high up above the back, feet on the ground, side profile facing right, beak closed"
+   }
+  },
+  {
+   "name": "aava-flap_02",
+   "vars": {
+    "change": "pose only: Aava flutters her wings, both wings pushed down low at the sides, feet on the ground, side profile facing right, beak closed"
+   }
+  }
+ ]
+}

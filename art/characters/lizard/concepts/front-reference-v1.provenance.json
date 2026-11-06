@@ -1,0 +1,66 @@
+{
+  "file": "sisi-front-ref-tongue-20261105-164028-1.png",
+  "sha256": "1fda10413d52c80a1c7e85727ca1e34083c12626d0bd71b206583ccd1d1ea9c8",
+  "bytes": 2266576,
+  "createdAt": "2026-11-05T14:39:56.670Z",
+  "tool": "sammakko-imagegen 1.0.0",
+  "keySource": "keychain",
+  "endpoint": "images/edits",
+  "requestId": "req_b77651e0afef4724a5b715001519bf27",
+  "model": "gpt-image-2.5-sunburst",
+  "preset": null,
+  "params": {
+    "size": "1024x1536",
+    "quality": "high",
+    "background": "auto",
+    "output_format": "png",
+    "output_compression": null,
+    "n": 2,
+    "moderation": "auto"
+  },
+  "returned": {
+    "size": "1024x1536",
+    "quality": "high",
+    "background": "opaque",
+    "output_format": "png"
+  },
+  "prompt": "Image 1 is a front view of the lizard Sisi; image 2 is the original side view (identity reference). Edit ONLY the mouth of image 1: remove the cat-like 'w' mouth and nose. Instead the mouth is a simple short gently curved closed line low on the muzzle, and from its middle a thin dark-red forked tongue pokes out toward the viewer exactly like the forked tongue in image 2 (thin, same color as in image 2, with a small Y-shaped fork at the tip, seen from the front so it hangs slightly down and the fork is visible). Keep everything else in image 1 pixel-identical: same pose, same eyes, lids, cheeks, body, belly, arms, feet, tail, colors, outline, size, framing and ivory background.",
+  "promptParts": [
+    {
+      "from": "cli",
+      "text": "Image 1 is a front view of the lizard Sisi; image 2 is the original side view (identity reference). Edit ONLY the mouth of image 1: remove the cat-like 'w' mouth and nose. Instead the mouth is a simple short gently curved closed line low on the muzzle, and from its middle a thin dark-red forked tongue pokes out toward the viewer exactly like the forked tongue in image 2 (thin, same color as in image 2, with a small Y-shaped fork at the tip, seen from the front so it hangs slightly down and the fork is visible). Keep everything else in image 1 pixel-identical: same pose, same eyes, lids, cheeks, body, belly, arms, feet, tail, colors, outline, size, framing and ivory background."
+    }
+  ],
+  "inputs": [
+    {
+      "file": "tools/imagegen/out/sisi-front-ref-20261105-163937-3.png",
+      "sha256": "499301399395da266fd75eb1aed085b510dd7b0e0742a2452017ce23b7a2bb3e"
+    },
+    {
+      "file": "art/characters/lizard/concepts/sleepy-lizard-v1.png",
+      "sha256": "ccd162a58cb1b436340d2488f419b22de5fb9fa485299083e21069806784a72d"
+    }
+  ],
+  "mask": null,
+  "cost": {
+    "estimateUsd": 0.72986,
+    "actualUsd": 0.133402,
+    "usage": {
+      "input_tokens": 6530,
+      "input_tokens_details": {
+        "image_tokens": 6144,
+        "text_tokens": 386
+      },
+      "output_tokens": 2744,
+      "output_tokens_details": {
+        "image_tokens": 2744,
+        "text_tokens": 0
+      },
+      "total_tokens": 9274
+    },
+    "imagesInRequest": 2,
+    "note": "actualUsd koskee koko pyyntöä"
+  },
+  "seconds": 32,
+  "license": "OpenAI-ehdot: tuotos kuuluu käyttäjälle; tarkista README:n lisenssiosio ennen julkaisua."
+}

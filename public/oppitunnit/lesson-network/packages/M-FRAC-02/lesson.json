@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-FRAC-02",
+  "revision": 13,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "whole-and-notation.svg",
+      "sha256": "51fa0f4b3ee835d79bddd37f68915424b29f8268691a1c3029ad4bede6c55e97"
+    },
+    {
+      "path": "different-shape-quarters.svg",
+      "sha256": "07eac43d0abf0559abe1776e9a1000b4da917f1af43651fadf6ddbce7c42720b"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "d3707da4c5913160a99be711d03e2d04ff114f3c89f05f424b28141bb269e9a7"
+    }
+  ],
+  "research": [
+    {
+      "title": "Opetushallitus — Perusopetuksen opetussuunnitelman perusteet2014, mathematics1–2 S3 and3–6 S2",
+      "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+      "accessed": "2026-10-29",
+      "retrieval": "Official OPH portal opened; clicked original2014 document. PDF extracted text inspected at PDFindex128 (printed129) and PDFindex235 (printed236). No full473-page reading or current-amendment certification.",
+      "licence": "Official normative text used for comparison and canonical-reference corroboration. No diagram/text copying, no relicensing assumption. Frozen canonical graph remains unchanged; portal directs current versions to ePerusteet.",
+      "use": "Anchor broad3–6 fraction-concept scope; one bounded part-whole lesson is not the entire fraction curriculum."
+    },
+    {
+      "title": "NCETM — Preparing for fractions: the part–whole relationship",
+      "url": "https://www.ncetm.org.uk/classroom-resources/primm-301-preparing-for-fractions-the-part-whole-relationship/",
+      "accessed": "2026-10-29",
+      "retrieval": "Official HTML opened, introduction and teaching points1–4 read.",
+      "licence": "Compare pedagogical ideas only. No external figures, worksheet prose, slides or code copied; planned text and SVGs original. General site licence does not override named-author/third-party exceptions. Copyright page checked separately.",
+      "use": "Name the whole first and distinguish equal/unequal partitions. Revisit required M-FRAC-01 rather than assume pupils infer the whole from a drawing."
+    },
+    {
+      "title": "NCETM — Non-unit fractions: identifying, representing and comparing",
+      "url": "https://www.ncetm.org.uk/classroom-resources/primm-303-non-unit-fractions-identifying-representing-and-comparing/",
+      "accessed": "2026-10-29",
+      "retrieval": "Official HTML opened, teaching points1–8 inspected. No claim of reading the linked teacher-guide PDF.",
+      "licence": "Compare pedagogical ideas only. No external figures, worksheet prose, slides or code copied; planned text and SVGs original. General site licence does not override named-author/third-party exceptions.",
+      "use": "Relate more than one selected unit part to written notation; defer comparison, repeated-addition operations and full number-line work from this narrow lesson."
+    },
+    {
+      "title": "NCETM — Teaching for Mastery Year3, printedp19 Fractions",
+      "url": "https://www.ncetm.org.uk/media/oaqfcvjq/mastery_assessment_y3.pdf",
+      "accessed": "2026-10-29",
+      "retrieval": "Official PDF extracted text read at PDFindex18 (printed19) and adjacent fraction-question text. Screenshot requested but no actual screenshot pixels inspected; do not claim visual review or copy source figures.",
+      "licence": "Text ©Crown Copyright2015; illustration/design ©Oxford University Press2015. No external figures/phrasing reused; NCETM general site terms do not imply illustration reuse rights.",
+      "use": "Use equal area, not congruence, as area-part criterion. Add an original optional four-part square/triangle counterexample; keep other fraction topics and formal assessment separate."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@77e2e742c92212975a852f908ba69239ec7b2b70e353745bb9f51765c69683a8",
+      "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B03/spatial-independent-review.json. Human/learner effectiveness and release approval remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@77e2e742c92212975a852f908ba69239ec7b2b70e353745bb9f51765c69683a8",
+      "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B03/spatial-independent-review.json. Human/learner effectiveness and release approval remain pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@77e2e742c92212975a852f908ba69239ec7b2b70e353745bb9f51765c69683a8",
+      "note": "No actual human or learner validation has occurred."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@77981a7e1ebbf3c48723e40316e23c4a0da89f2a573cd10031b7c90aed0a1ca0",
+      "note": "LR04-B04: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@77981a7e1ebbf3c48723e40316e23c4a0da89f2a573cd10031b7c90aed0a1ca0",
+      "note": "LR04-B04: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@77981a7e1ebbf3c48723e40316e23c4a0da89f2a573cd10031b7c90aed0a1ca0",
+      "note": "LR04-B04: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@0c080d8362db7f4e1bb5a238d1c1cf9f3c9c057565a345e811649b4c7f283035",
+      "note": "LR04-B04 root delta: remove pre-counted six flags from read context; previous current-source record retained, new source delta review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@0c080d8362db7f4e1bb5a238d1c1cf9f3c9c057565a345e811649b4c7f283035",
+      "note": "LR04-B04 root delta: remove pre-counted six flags from read context; previous current-source record retained, new source delta review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@0c080d8362db7f4e1bb5a238d1c1cf9f3c9c057565a345e811649b4c7f283035",
+      "note": "LR04-B04 root delta: remove pre-counted six flags from read context; previous current-source record retained, new source delta review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@1093f8ca9328449d642bcfb9774aee2cccf68c64dc97a263a7ab0fbd01fe4e2a",
+      "note": "LR04 author delta: separate nested reflection into an explicit question stage; previous pending source retained."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@1093f8ca9328449d642bcfb9774aee2cccf68c64dc97a263a7ab0fbd01fe4e2a",
+      "note": "LR04 author delta: separate nested reflection into an explicit question stage; previous pending source retained."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@1093f8ca9328449d642bcfb9774aee2cccf68c64dc97a263a7ab0fbd01fe4e2a",
+      "note": "LR04 author delta: separate nested reflection into an explicit question stage; previous pending source retained."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@b85f090d9ed6bca9ff47baf50a03dd865357379c9d186fc04c44a558421414ec",
+      "note": "LR04 projector source framing: original text/owner roots retained, compound teaching stages separated; current independent review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@b85f090d9ed6bca9ff47baf50a03dd865357379c9d186fc04c44a558421414ec",
+      "note": "LR04 projector source framing: original text/owner roots retained, compound teaching stages separated; current independent review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@b85f090d9ed6bca9ff47baf50a03dd865357379c9d186fc04c44a558421414ec",
+      "note": "LR04 projector source framing: original text/owner roots retained, compound teaching stages separated; current independent review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@5896c2efe6576f4824fd1af0cf39a4856e06ba8785d2c4c6e8025b182b3bd626",
+      "note": "LR04 source workbench framing: given question/figure kept together; response and deliberate planning/model disclosures laid out separately. Current delta review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@5896c2efe6576f4824fd1af0cf39a4856e06ba8785d2c4c6e8025b182b3bd626",
+      "note": "LR04 source workbench framing: given question/figure kept together; response and deliberate planning/model disclosures laid out separately. Current delta review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@5896c2efe6576f4824fd1af0cf39a4856e06ba8785d2c4c6e8025b182b3bd626",
+      "note": "LR04 source workbench framing: given question/figure kept together; response and deliberate planning/model disclosures laid out separately. Current delta review pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@3a4d1bd08b85ee936e44a02c10066a6c71b2e9bfc9269722f408c6e3338e8f89",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@3a4d1bd08b85ee936e44a02c10066a6c71b2e9bfc9269722f408c6e3338e8f89",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@3a4d1bd08b85ee936e44a02c10066a6c71b2e9bfc9269722f408c6e3338e8f89",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@204d7b7fd5162f51d9ed5e6d0072b9c6eed4466fdb48999ed1f24e6696dda527",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@204d7b7fd5162f51d9ed5e6d0072b9c6eed4466fdb48999ed1f24e6696dda527",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@204d7b7fd5162f51d9ed5e6d0072b9c6eed4466fdb48999ed1f24e6696dda527",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@d7ddd693d1e177c1142edbfeecd97cb7ec99777f1586e92d3a50ac3ea5c8faed",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@d7ddd693d1e177c1142edbfeecd97cb7ec99777f1586e92d3a50ac3ea5c8faed",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@d7ddd693d1e177c1142edbfeecd97cb7ec99777f1586e92d3a50ac3ea5c8faed",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@3a0439050d453abf6a8680e272181d019a2c024431ca1f15e446c405f7b0245d",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@3a0439050d453abf6a8680e272181d019a2c024431ca1f15e446c405f7b0245d",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@3a0439050d453abf6a8680e272181d019a2c024431ca1f15e446c405f7b0245d",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@971f16ae5b0a54018ef0a166266c059a49ac8b81ff35a1ed6d59c268efe55386",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@971f16ae5b0a54018ef0a166266c059a49ac8b81ff35a1ed6d59c268efe55386",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@971f16ae5b0a54018ef0a166266c059a49ac8b81ff35a1ed6d59c268efe55386",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@2a25843a2430d044b67276dee74274bbe8fb6b054e319c616ef01a1bad5a6e31",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@2a25843a2430d044b67276dee74274bbe8fb6b054e319c616ef01a1bad5a6e31",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@2a25843a2430d044b67276dee74274bbe8fb6b054e319c616ef01a1bad5a6e31",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@304784658e16af57c02aaf4204fcf652ca743b4b9f0d42b9e1a21c32dd8f18f9",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@304784658e16af57c02aaf4204fcf652ca743b4b9f0d42b9e1a21c32dd8f18f9",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@304784658e16af57c02aaf4204fcf652ca743b4b9f0d42b9e1a21c32dd8f18f9",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@5d6af4035e8b6e29c6da4df25964641ca34c1a88cb0ee72ed03888cb2a30b254",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@5d6af4035e8b6e29c6da4df25964641ca34c1a88cb0ee72ed03888cb2a30b254",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@5d6af4035e8b6e29c6da4df25964641ca34c1a88cb0ee72ed03888cb2a30b254",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@e815b9b20caaeec76cd862083de2d3d17957f1355b44e6161552bc3f172ca4ec",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@e815b9b20caaeec76cd862083de2d3d17957f1355b44e6161552bc3f172ca4ec",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Kokonainen ja tasasuuret osat säilyvät eksplisiittisinä; erimuotoisten mutta samanpinta-alaisten osien esimerkki on matemaattisesti kelvollinen. Osaohjain ja oma merkintä pysyvät koherentteina. Harjoituskuvan saavutettavuusteksti kuvaa merkityt osat paljastamatta valmista murtoarvoa; täydellistä saavutettavuushyväksyntää ei tästä päätellä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@e815b9b20caaeec76cd862083de2d3d17957f1355b44e6161552bc3f172ca4ec",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M-FRAC-02",
+    "sourceBuild": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "validRevisions": [
+      "audit1-2026-10-28"
+    ],
+    "sourceFile": "authority/production-181-v2/lite/src/content/saari2.ts",
+    "actualFamilies": [
+      "name",
+      "trap",
+      "shade",
+      "build",
+      "transfer"
+    ],
+    "familyMapping": {
+      "name": "choice: read shaded area in pie/bar, denominator3–8; reject unshaded count and complement",
+      "trap": "choice yes/no: equal quarters vs widths0.4,0.2,0.25,0.15 with first0.4 shaded",
+      "shade": "choice: select a/b shaded pie, denominators4–7",
+      "build": "place: numerator/denominator tokens with unused unshaded-count token; absent from stale COVERAGE row",
+      "transfer": "choice: fraction of explicitly named4–6 flag set"
+    },
+    "demoAnimationsRead": [
+      "fracanim.ts:nameScene",
+      "fracanim.ts:fracWords"
+    ],
+    "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "liteGraphRevision": "551d6a2ebd541a30785040cee458ca49132a0756e313ce45f1799ed2d6a7be11",
+    "registry": {
+      "casePhases": "cases samples all named branches in guided/independent/retrieval; transfer uses separate branch; no guidedTags restriction.",
+      "goalOverlay": "GOALS supplies missing FRAC02 goal; GEO04 goal is explicit.",
+      "motionOverlay": "No SIMS overlay for either assigned KC.",
+      "familyOverlay": "No own DECL or scope coverage target rows; default choice/sort/place outcomes, empty assumed/supplied/coTaught/support/incidental; null dynamic rule.",
+      "limit": "Default registry does not establish canonical competence or justify task-context demands."
+    },
+    "audit": {
+      "path": "authority/production-181-v2/lite/audit/LESSON_AUDIT.md",
+      "row": 111,
+      "state": "tehty / korjattu",
+      "meaning": "Historical synthetic self-audit only; no learner or human approval. Actual current branches take precedence over stale COVERAGE.md."
+    },
+    "correctionsAndExtensions": [
+      "Explicit whole, count all equal parts before selected parts, reverse notation/model tasks, set-whole named for transfer.",
+      "Construct any valid shading subset, represent returned fraction, allow equivalent-valued expressions without mislabelling them mathematically wrong.",
+      "No blanket rule that unequal remaining cuts preclude a selected quarter; justify actual selected size.",
+      "Any valid subset accepted; numerically equivalent notation accepted with truthful count-scope explanation."
+    ],
+    "sourceHashes": {
+      "src/content/saari2.ts": "bf9e657f3e4f975cbdafd9c8b5c891d789ffd4e98be7126ee438096f7d9f5c6e",
+      "src/content/thinking.ts": "11f9eaa036c8e9d1092aed4b3d57dd8c6aa7885440b3b83ccd888968fa27981d",
+      "src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+      "src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+      "src/content/fracanim.ts": "b95b23255f75dfd3e88a4eba904e22d9cee75d2f756e4125824658488eac3ac1",
+      "src/content/geoanim.ts": "a2f1b00f4c94c2451d7c6306154976eee4a13ccebe833bd970f7924c377c73a7",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/content/audit.ts": "d9891d42eb739a4b65f8e80e4d24eda700f76e136a2fbc149e1965c3a4d69995",
+      "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+    },
+    "reconciliation": "alignment.md",
+    "runtimeRoutePolicy": "No external pupil routes authored. Only shared verified resolver may expose game links.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "launch1-2026-11-01",
+      "validRevisions": [
+        "audit1-2026-10-28",
+        "launch1-2026-11-01"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/audit.ts": "8877a26bb3939ee8f2639cc43fd2d1073bcde07aedc917b29d6b931321dd5783",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/fracanim.ts": "b95b23255f75dfd3e88a4eba904e22d9cee75d2f756e4125824658488eac3ac1",
+        "src/content/geoanim.ts": "45e47c6e0f1d4a46e76bd8f2bf35eaea52e37f8b8fbaa83295d6d2e388cda5fc",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/parts.ts": "806680eedb06693374837d9488532f84cd4c905ca9415cae83e4e855d78f9a7e",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/content/saari2.ts": "98fb2fb855d272e91d93e194a98c3d401c2b784a2d364a87f434dadbe2604ec1",
+        "src/content/thinking.ts": "dda8350f2465409a3c785e0c39418a0155c0734b2ab42bee7fc3e0f14ffb68de",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "3-6",
+    "teacherObjective": "Oppilas yhdistää nimetyn kokonaisen tasajaon ja valittujen osien määrän kuvan ja merkinnän välillä sekä rakentaa annetun merkinnän mukaisen mallin.",
+    "childGoal": "Yhdistän kuvan ja murtolukumerkinnän. Näytän kokonaisen ja valitut osat.",
+    "hook": "Aava merkitsee retkikyltin nauhasta varatun osan: miten toinen lukija näkee saman määrän kuvasta ja merkinnästä?",
+    "canonical": {
+      "id": "M-FRAC-02",
+      "subject": "mathematics",
+      "grade_band": "3-6",
+      "topic_area": "Luvut ja laskutoimitukset",
+      "parent_concept": "Murtoluku",
+      "title": "Murtoluku yhtä suurten osien lukumäärän kuvaajana",
+      "short_description": "Murtoluku yhtä suurten osien lukumäärän kuvaajana",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL3-6-S2"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "concept",
+      "relations": [
+        {
+          "id": "M-FRAC-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-FRAC-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-FRAC-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Luvut ja laskutoimitukset",
+        "Murtoluku"
+      ]
+    },
+    "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "prerequisiteGroups": [
+      {
+        "all_of": [
+          "M-FRAC-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "requiredPrerequisites": [
+      {
+        "id": "M-FRAC-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-FRAC-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "strongSupport": [],
+    "assumptions": [
+      "M-FRAC-01:n kokonainen ja yhtä suuret osat palautetaan alussa.",
+      "Numeroiden1–6 ja pienten määrien laskemista käytetään; aikuisen lukutuki on sallittu. Niistä ei lisätä uusia graafilukkoja.",
+      "Murtolukumerkintä opetetaan; M-FRAC-03:n erillistä termien hallintaa tai murtolukulaskua ei oleteta.",
+      "Lippujen tapauksessa kokonainen on näkyvästi nimetty kuuden lipun joukko, ei lipun pinta-ala."
+    ],
+    "limits": [
+      "Pienet murto-osat yhdestä nimetystä kokonaisesta; ei laskutoimituksia, prosentteja tai sekalukuja.",
+      "Ekvivalentti vastaus hyväksytään samana määränä, mutta siitä ei päätellä juuri kuvan osien laskemista.",
+      "Näytön osavalinta ei osoita fyysistä jakamista, piirtämistä, pysyvää tai itsenäistä osaamista.",
+      "Lisätutkimuksen saman pinta-alan erimuotoiset neljäsosat eivät edellytä pinta-alakaavojen osaamista."
+    ],
+    "concreteToRepresentation": "Käsin tutkittava kokonainen/kuvio → alkuperäinen kuva → oma ohjattava tutkiminen ja toiminta → perusteltu palaute.",
+    "interaction": "controlled-whole-part-sequence-and-constructive-shading",
+    "learnerAction": "Oppilas yhdistää nimetyn kokonaisen tasajaon ja valittujen osien määrän kuvan ja merkinnän välillä sekä rakentaa annetun merkinnän mukaisen mallin.",
+    "optionalHelp": "body.html:n Apua-kohdat, lisätutkimus, opettajan offline-ohje ja osoittamalla vastattava loppukysymys.",
+    "evidenceLimit": "Low-stakes supported practice only. No persistence, mastery awards, independent-performance or learning-efficacy inference."
+  },
+  "extensions": {
+    "simulationType": "controlled-whole-part-sequence-and-constructive-shading",
+    "authoredOn": "2026-10-29",
+    "assignment": "B03 assigned M-FRAC-02,M-GEO-04 only; user GO after B02sealed9b4b944",
+    "licence": "Original text/SVG; owner reserves licensing decision. Supplied shared PNG unchanged.",
+    "reviewStatus": "Author self-check only; main integration and different independent reviewer pending; human review not performed.",
+    "pureTestCommand": "node --test lesson-network/packages/M-FRAC-02/tests.mjs",
+    "sourceNotes": {
+      "research.md": "3d88998cbb00a101b5cf7e32eae0dc635efb6a6903ac9418c3314adc46afb36b",
+      "alignment.md": "03a695dae94493e9defa3886d24199b0799cd8d1cb5f4c5db0291042b73fa4f7",
+      "tests.mjs": "1a1e60be9d4586f5f2808002b5b782da4ae24f0ecde9a826f2d622907819b03a"
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B04",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

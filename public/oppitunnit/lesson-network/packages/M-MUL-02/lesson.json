@@ -1,0 +1,1403 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-MUL-02",
+  "revision": 14,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "lesson.css",
+      "sha256": "2597327aaf3ba92f3b589b3b78db310e3cfc8630380b6d9a70f9e6af1a4c171d"
+    },
+    {
+      "path": "example.svg",
+      "sha256": "f98dfc94a38c1ba1392fa201d78e90a344ed08b19c2c73a77b30adad4d8cba10"
+    },
+    {
+      "path": "transfer.svg",
+      "sha256": "fac1cdb1da3dba6dad136e959b982c58804400118ebcbf12d6014224afcf9b56"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    }
+  ],
+  "research": [
+    {
+      "title": "Oak: Represent equal groups as repeated addition and multiplication",
+      "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks1/units/grouping-objects-in-different-ways-and-relating-to-multiplication/lessons/represent-equal-groups-as-repeated-addition-and-multiplication",
+      "accessed": "2026-10-29",
+      "designTakeaway": "Relate every factor to the given groups and group size. Ask pupils to write a two-factor expression rather than infer expression construction from a numeric total. No table-recall gate.",
+      "adopted": "Concrete equal groups → repeated addition → written multiplication, without requiring total.",
+      "rejected": "No compulsory stages, speech or memorised product. Reordering factors is accepted explicitly for the total-expression task.",
+      "usageRestrictions": "© Oak National Academy Limited2025, OGL3.0 except stated exceptions; https://www.thenational.academy/legal/terms-and-conditions . Linked original paraphrase and original diagrams only. No copied slide/worksheet/photo/mascot. No video or downloaded slide inspection claimed."
+    },
+    {
+      "title": "NCETM: Multiplying by10 – is it OK to just put a zero?",
+      "url": "https://www.ncetm.org.uk/features/multiplying-by-10-is-it-ok-to-just-put-a-zero/",
+      "accessed": "2026-10-29",
+      "designTakeaway": "Connect symbols to the grouping model; avoid procedural tricks or an answer-only success claim. Place-value reasoning supports explicit meaning, not an efficacy claim.",
+      "adopted": "Representations explain factors; no trick-based or timed answer gate.",
+      "rejected": "No claim that a single constructed expression demonstrates fluency, retention or general mastery.",
+      "usageRestrictions": "NCETM copyright https://www.ncetm.org.uk/copyright/ describes Crown copyright/OGL with thirdparty exceptions and attribution conditions. Original brief paraphrase; no figures, photos or slides copied."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@e836717edaea1de74cce08369b94f2a22af7fbb28acdf99a2a932b8a53ee0a72",
+      "note": "B11 author draft; Carver different-author review and combined actual127 verification pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@e836717edaea1de74cce08369b94f2a22af7fbb28acdf99a2a932b8a53ee0a72",
+      "note": "B11 author draft; Carver different-author review and combined actual127 verification pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@e836717edaea1de74cce08369b94f2a22af7fbb28acdf99a2a932b8a53ee0a72",
+      "note": "No human or learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@9f2a907f4caacefa10905e89d0bdbdc194ef4340031fb4f5b473db2c7463f3a8",
+      "note": "B11 r2 current-context repair; Carver exact-r2 review and main actual127 verification pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@9f2a907f4caacefa10905e89d0bdbdc194ef4340031fb4f5b473db2c7463f3a8",
+      "note": "B11 r2 current-context repair; Carver exact-r2 review and main actual127 verification pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@9f2a907f4caacefa10905e89d0bdbdc194ef4340031fb4f5b473db2c7463f3a8",
+      "note": "No human or learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "2@9f2a907f4caacefa10905e89d0bdbdc194ef4340031fb4f5b473db2c7463f3a8",
+      "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "2@9f2a907f4caacefa10905e89d0bdbdc194ef4340031fb4f5b473db2c7463f3a8",
+      "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@9f2a907f4caacefa10905e89d0bdbdc194ef4340031fb4f5b473db2c7463f3a8",
+      "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@6704d57e85754acd3e29a0f915b76c89004141373d9267a5adce2dd7ea76df96",
+      "note": "LR04-B05: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@6704d57e85754acd3e29a0f915b76c89004141373d9267a5adce2dd7ea76df96",
+      "note": "LR04-B05: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@6704d57e85754acd3e29a0f915b76c89004141373d9267a5adce2dd7ea76df96",
+      "note": "LR04-B05: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@b9bd9a4a145deb097711db69ef1f5c88065fafdcc53b75f29f2a25d7ff931d6e",
+      "note": "LR04 author delta: separate nested reflection into an explicit question stage; previous pending source retained."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@b9bd9a4a145deb097711db69ef1f5c88065fafdcc53b75f29f2a25d7ff931d6e",
+      "note": "LR04 author delta: separate nested reflection into an explicit question stage; previous pending source retained."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@b9bd9a4a145deb097711db69ef1f5c88065fafdcc53b75f29f2a25d7ff931d6e",
+      "note": "LR04 author delta: separate nested reflection into an explicit question stage; previous pending source retained."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@5024d66f327aed853b0f153e01da4d20f683d3d25509e46734427ae289ccb783",
+      "note": "LR04 projector source framing: original text/owner roots retained, compound teaching stages separated; current independent review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@5024d66f327aed853b0f153e01da4d20f683d3d25509e46734427ae289ccb783",
+      "note": "LR04 projector source framing: original text/owner roots retained, compound teaching stages separated; current independent review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@5024d66f327aed853b0f153e01da4d20f683d3d25509e46734427ae289ccb783",
+      "note": "LR04 projector source framing: original text/owner roots retained, compound teaching stages separated; current independent review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@0c4dd88cc3926447bda87f5a88ae406a5ad81098818c3128666c05f7f741305b",
+      "note": "LR04 projector framing: given scenario/question separated from response controls into two visible columns; all owner selectors and question information retained. No math or font scaling changes."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@0c4dd88cc3926447bda87f5a88ae406a5ad81098818c3128666c05f7f741305b",
+      "note": "LR04 projector framing: given scenario/question separated from response controls into two visible columns; all owner selectors and question information retained. No math or font scaling changes."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@0c4dd88cc3926447bda87f5a88ae406a5ad81098818c3128666c05f7f741305b",
+      "note": "LR04 projector framing: given scenario/question separated from response controls into two visible columns; all owner selectors and question information retained. No math or font scaling changes."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@3e3a6d1f518d69af4125bae00d5b11ddb7c11a1950f8a4f31822c8ab1056f9d6",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@3e3a6d1f518d69af4125bae00d5b11ddb7c11a1950f8a4f31822c8ab1056f9d6",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@3e3a6d1f518d69af4125bae00d5b11ddb7c11a1950f8a4f31822c8ab1056f9d6",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@2d062b087342b82096be759908bbfc020e487dac077ea618a7ff3a86ca86f726",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@2d062b087342b82096be759908bbfc020e487dac077ea618a7ff3a86ca86f726",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@2d062b087342b82096be759908bbfc020e487dac077ea618a7ff3a86ca86f726",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@e5de1844a4dccafc346ad42c12cea5018c836d7a92200e7f0865c4f2cf86f72c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@e5de1844a4dccafc346ad42c12cea5018c836d7a92200e7f0865c4f2cf86f72c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@e5de1844a4dccafc346ad42c12cea5018c836d7a92200e7f0865c4f2cf86f72c",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@ba6f4e2c9a64d325f95a40abf42dc7a7b0a63e00a9ecb8373caf421df4bafda4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@ba6f4e2c9a64d325f95a40abf42dc7a7b0a63e00a9ecb8373caf421df4bafda4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@ba6f4e2c9a64d325f95a40abf42dc7a7b0a63e00a9ecb8373caf421df4bafda4",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@298b4e01b309ef405cdc394cb9f8b7c81445c26e0d982bc328a4a102ad123acf",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@298b4e01b309ef405cdc394cb9f8b7c81445c26e0d982bc328a4a102ad123acf",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@298b4e01b309ef405cdc394cb9f8b7c81445c26e0d982bc328a4a102ad123acf",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@ed66561c5dd53adb826d28ec85a39a9785d4754a2454c14824f84d421a88141e",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@ed66561c5dd53adb826d28ec85a39a9785d4754a2454c14824f84d421a88141e",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@ed66561c5dd53adb826d28ec85a39a9785d4754a2454c14824f84d421a88141e",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@a2f8a278fb8ad59f393fb98c5773d4710d8e19ee746e0660e4e1ca934136122e",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@a2f8a278fb8ad59f393fb98c5773d4710d8e19ee746e0660e4e1ca934136122e",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@a2f8a278fb8ad59f393fb98c5773d4710d8e19ee746e0660e4e1ca934136122e",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@0e952392d5fd031449f888d55d949dbd0105a650b886d1c14124624284cf23a3",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@0e952392d5fd031449f888d55d949dbd0105a650b886d1c14124624284cf23a3",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@0e952392d5fd031449f888d55d949dbd0105a650b886d1c14124624284cf23a3",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@4e2a4ce7e570471615cb6a89481dc12f1ad6467f7192678e993317a90e6fa7bb",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@4e2a4ce7e570471615cb6a89481dc12f1ad6467f7192678e993317a90e6fa7bb",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Ryhmien määrä ja yhden ryhmän koko pysyvät erillisinä. Harjoituksen oma kysymys ja vastauskenttä ovat yhdessä, mallin katsominen on erillistä tukea. Standalone hyväksyy vaihdannaisuuden; Liten järjestetty tekijärivi on dokumentoidusti kapeampi esitystehtävä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@4e2a4ce7e570471615cb6a89481dc12f1ad6467f7192678e993317a90e6fa7bb",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M-MUL-02",
+    "liteContentRevision": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "validRevisions": [
+      "audit1-2026-10-28"
+    ],
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2",
+      "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+      "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "EVENT_COMMIT_REVIEW_B05.md": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+      "authority/production-181-v2/ASSETS.md": "bdccb0695c27382d99f8831077adf2f247b1bb168018bc5f829c510df3792c48",
+      "authority/production-181-v2/STYLE_REVIEW_FI.md": "aed7c1ba925e0743dc8f4d78b26cf875c5595e3afb39e0d3cd679f881b1683a4",
+      "authority/production-181-v2/ASSET_STYLE_GATE.txt": "fb5a31989b7ac7ad3f2e4f875ca86ea2f224821de09fa5eb4371fc3f36239fb7",
+      "authority/production-181-v2/lite/src/content/saari1.ts": "0f0722dc20192b7414d481efe1b66251b3f8665baf07b107fb5be7872b0c0a25",
+      "authority/production-181-v2/lite/src/content/placeanim.ts": "d6f1284272675a8b78d62649f3b9e3490a7d324df139f292986f533cee803f99",
+      "authority/production-181-v2/lite/src/content/numbers.ts": "2ff4cae1816ea1d61ec938361a8306dc9a24d6e893f67895a390a83b7ae1c4d5",
+      "authority/production-181-v2/lite/src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+      "authority/production-181-v2/lite/src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+      "authority/production-181-v2/lite/src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da",
+      "shared/loikka/map.png": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6",
+      "shared/aava/curious.png": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    "actualFamilies": {
+      "story": {
+        "taskKind": "choice",
+        "seed": 1,
+        "phase": "guided",
+        "say": "Lautalla on 2 penkkiä. Jokaisella istuu 4 sammakkoa. Mikä lasku kertoo, montako sammakkoa lautalla on?",
+        "hint": "Penkit ovat ryhmiä. Montako ryhmää, ja montako sammakkoa kussakin?",
+        "explain": "2 penkkiä, joilla jokaisella 4: 2 × 4 = 8.",
+        "task": {
+          "kind": "choice",
+          "options": [
+            {
+              "big": "2 × 4"
+            },
+            {
+              "big": "2 + 4"
+            },
+            {
+              "big": "4 − 2"
+            }
+          ],
+          "answer": 0,
+          "why": [
+            null,
+            "2 + 4 laskee vain yhden penkin sammakot ja penkit yhteen. Jokaisella 2 penkillä istuu 4.",
+            "Kukaan ei lähde lautalta, joten vähennyslasku ei sovi. Penkit ovat yhtä suuria ryhmiä."
+          ]
+        },
+        "registry": {
+          "node": "M-MUL-02",
+          "tag": "story",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "none"
+        }
+      },
+      "write": {
+        "taskKind": "build",
+        "seed": 4,
+        "phase": "guided",
+        "say": "Kirjoita lyhyesti kertolaskuna: 4 + 4 + 4.",
+        "hint": "Ensin ryhmien määrä (montako lukua 4 on), sitten ×, sitten ryhmän koko.",
+        "explain": "4 + 4 + 4 = 3 × 4 = 12.",
+        "task": {
+          "kind": "build",
+          "mode": "seq",
+          "target": "3 × 4",
+          "tokens": [
+            "12",
+            "4",
+            "7",
+            "3",
+            "×",
+            "+"
+          ],
+          "max": 3,
+          "whyAt": {
+            "3 + 4": "3 + 4 = 7. Se lisää luvun 4 vain kerran. Käytä kertomerkkiä ×.",
+            "4 × 3": "4 × 3 tarkoittaa 3 + 3 + 3 + 3. Tulos on sama, mutta tässä luku 4 toistuu 3 kertaa: ensin 3.",
+            "3 × 12": "12 on jo vastaus. Kertolaskuun tulee ryhmän koko 4."
+          }
+        },
+        "registry": {
+          "node": "M-MUL-02",
+          "tag": "write",
+          "outcome": "rakentaa lausekkeen tai yhtälön merkkipaloista (samanarvoiset muodot hyväksytään)",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "animation",
+          "duration": 9.5,
+          "width": 320,
+          "height": 200,
+          "label": "4 + 4 + 4 = 3 × 4"
+        }
+      },
+      "sum": {
+        "taskKind": "choice",
+        "seed": 7,
+        "phase": "guided",
+        "say": "Mikä kertolasku tarkoittaa samaa kuin 9 + 9?",
+        "hint": "Laske, montako kertaa luku 9 toistuu.",
+        "explain": "Luku 9 toistuu 2 kertaa: 2 × 9 = 18.",
+        "task": {
+          "kind": "choice",
+          "options": [
+            {
+              "big": "2 × 9"
+            },
+            {
+              "big": "2 + 9"
+            },
+            {
+              "big": "9 × 9"
+            }
+          ],
+          "answer": 0,
+          "why": [
+            null,
+            "2 + 9 = 11, mutta summa on 18. Lukua 9 ei lisätä vain kerran.",
+            "9 × 9 tarkoittaisi, että lukuja 9 on 9 kappaletta. Laske plussalaskun luvut: niitä on 2."
+          ]
+        },
+        "registry": {
+          "node": "M-MUL-02",
+          "tag": "sum",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "none"
+        }
+      },
+      "picture": {
+        "taskKind": "choice",
+        "seed": 12,
+        "phase": "guided",
+        "say": "Mikä kertolasku sopii kuvaan?",
+        "hint": "Laske ensin rivit. Sitten laske, montako simpukkaa on yhdessä rivissä.",
+        "explain": "2 riviä, joissa jokaisessa 4: 2 × 4.",
+        "task": {
+          "kind": "choice",
+          "options": [
+            {
+              "big": "2 + 4"
+            },
+            {
+              "big": "2 × 4"
+            },
+            {
+              "big": "2 × 8"
+            }
+          ],
+          "answer": 1,
+          "why": [
+            "2 + 4 = 6, mutta simpukoita on 8. Rivejä ja rivin pituutta ei lasketa yhteen.",
+            null,
+            "8 on kaikkien simpukoiden määrä. Yhdessä rivissä on vain 4."
+          ]
+        },
+        "registry": {
+          "node": "M-MUL-02",
+          "tag": "picture",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "static",
+          "html": "<svg viewBox=\"0 0 122.39999999999999 67.19999999999999\" width=\"100%\" role=\"img\" aria-label=\"2 riviä, 4 jokaisessa\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.799999999999997 26.999999999999996 Q19.799999999999997 0.5999999999999943 31.799999999999997 26.999999999999996Z\" fill=\"#f2b58e\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M19.799999999999997 26.999999999999996 L19.799999999999997 13.799999999999997 M13.799999999999997 26.999999999999996 L17.4 14.999999999999996 M25.799999999999997 26.999999999999996 L22.199999999999996 14.999999999999996\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M35.39999999999999 26.999999999999996 Q47.39999999999999 0.5999999999999943 59.39999999999999 26.999999999999996Z\" fill=\"#f2b58e\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M47.39999999999999 26.999999999999996 L47.39999999999999 13.799999999999997 M41.39999999999999 26.999999999999996 L44.99999999999999 14.999999999999996 M53.39999999999999 26.999999999999996 L49.79999999999999 14.999999999999996\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M63 26.999999999999996 Q75 0.5999999999999943 87 26.999999999999996Z\" fill=\"#f2b58e\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M75 26.999999999999996 L75 13.799999999999997 M69 26.999999999999996 L72.6 14.999999999999996 M81 26.999999999999996 L77.4 14.999999999999996\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M90.6 26.999999999999996 Q102.6 0.5999999999999943 114.6 26.999999999999996Z\" fill=\"#f2b58e\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M102.6 26.999999999999996 L102.6 13.799999999999997 M96.6 26.999999999999996 L100.19999999999999 14.999999999999996 M108.6 26.999999999999996 L105 14.999999999999996\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M7.799999999999997 54.599999999999994 Q19.799999999999997 28.19999999999999 31.799999999999997 54.599999999999994Z\" fill=\"#f2b58e\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M19.799999999999997 54.599999999999994 L19.799999999999997 41.39999999999999 M13.799999999999997 54.599999999999994 L17.4 42.599999999999994 M25.799999999999997 54.599999999999994 L22.199999999999996 42.599999999999994\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M35.39999999999999 54.599999999999994 Q47.39999999999999 28.19999999999999 59.39999999999999 54.599999999999994Z\" fill=\"#f2b58e\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M47.39999999999999 54.599999999999994 L47.39999999999999 41.39999999999999 M41.39999999999999 54.599999999999994 L44.99999999999999 42.599999999999994 M53.39999999999999 54.599999999999994 L49.79999999999999 42.599999999999994\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M63 54.599999999999994 Q75 28.19999999999999 87 54.599999999999994Z\" fill=\"#f2b58e\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M75 54.599999999999994 L75 41.39999999999999 M69 54.599999999999994 L72.6 42.599999999999994 M81 54.599999999999994 L77.4 42.599999999999994\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M90.6 54.599999999999994 Q102.6 28.19999999999999 114.6 54.599999999999994Z\" fill=\"#f2b58e\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/><path d=\"M102.6 54.599999999999994 L102.6 41.39999999999999 M96.6 54.599999999999994 L100.19999999999999 42.599999999999994 M108.6 54.599999999999994 L105 42.599999999999994\" stroke=\"#c97c55\" stroke-width=\"1.2000000000000002\"/></svg>"
+        }
+      },
+      "transfer": {
+        "taskKind": "choice",
+        "seed": 1,
+        "phase": "transfer",
+        "say": "Aavalla on 5 kukkapenkkiä, joissa jokaisessa on 2 kukkaa. Hän kirjoitti 2 + 5. Kertooko lasku, montako kukkaa on kaikkiaan?",
+        "hint": "Kuvittele penkit riveinä. Saako rivistön kääntää?",
+        "explain": "Oikea lasku on 5 × 2 = 10.",
+        "task": {
+          "kind": "choice",
+          "options": [
+            {
+              "text": "Kyllä"
+            },
+            {
+              "text": "Ei"
+            }
+          ],
+          "answer": 1,
+          "why": [
+            "2 + 5 = 7, mutta kukkia on 10. Penkkejä ja kukkia ei lasketa yhteen.",
+            null
+          ],
+          "cols": 2
+        },
+        "registry": {
+          "node": "M-MUL-02",
+          "tag": "transfer",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "none"
+        }
+      }
+    },
+    "actualDemos": [
+      {
+        "say": "Neljä pussia, joissa jokaisessa kolme marjaa. Pitkästi: kolme plus kolme plus kolme plus kolme. Lyhyesti: neljä kertaa kolme.",
+        "kind": "animation",
+        "duration": 10.5,
+        "width": 320,
+        "height": 200,
+        "label": "3 + 3 + 3 + 3 = 4 × 3",
+        "snapshots": [
+          {
+            "time": 0,
+            "caption": "Pussit, joissa jokaisessa on kolme.",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "time": 0.2625,
+            "caption": "Pussit, joissa jokaisessa on kolme.",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "time": 0.525,
+            "caption": "Yksi pussi: 3",
+            "sha256": "731ca47af17ea45b13d09e995d16c3f66fd9d289a2f7d8ba1e728f0996db9eea"
+          },
+          {
+            "time": 0.7875,
+            "caption": "Yksi pussi: 3",
+            "sha256": "dee9545ff3d825fa2dc842f0c34017f1b02319fff57d4b991a58424601522a85"
+          },
+          {
+            "time": 1.05,
+            "caption": "Yksi pussi: 3",
+            "sha256": "560e28c395057ce66e283067280dbd3e32d3c5e481d1d6803cbbc30ed51e91bd"
+          },
+          {
+            "time": 1.3125,
+            "caption": "Yksi pussi: 3",
+            "sha256": "cc93ec3f30ee4aa0fe0178109dee3dc828c2f27e5a787e2d541e5001e2ceb9bc"
+          },
+          {
+            "time": 1.575,
+            "caption": "Kaksi pussia: 3 + 3",
+            "sha256": "e3f66856109dd3584d09ed25b8a6b8631befa26c2468eae96d8c496d1cc18ed7"
+          },
+          {
+            "time": 1.8375,
+            "caption": "Kaksi pussia: 3 + 3",
+            "sha256": "fbda0683f1d62935eb50978dc28d7e89fd3da50287a82d067dac1d7c81e3e05f"
+          },
+          {
+            "time": 2.1,
+            "caption": "Kaksi pussia: 3 + 3",
+            "sha256": "6b5efc9292ef362e310ddb49a83b19c03959316f90459b548651a43f955c9592"
+          },
+          {
+            "time": 2.3625,
+            "caption": "Kaksi pussia: 3 + 3",
+            "sha256": "b99b4c2363b2057fd3dd15a8d3c4ea9498b6e31ca167c0d6b47c971b3513e42d"
+          },
+          {
+            "time": 2.625,
+            "caption": "Kolme pussia: 3 + 3 + 3",
+            "sha256": "b3861feb93c6d7ededed2818b8f0b44b83d279daa49f64d10562c6d88a11c01b"
+          },
+          {
+            "time": 2.8875,
+            "caption": "Kolme pussia: 3 + 3 + 3",
+            "sha256": "c0e63d8c2a3364e71cab4824e2fa95bdd4ec79c269802d8487be904eecf77be1"
+          },
+          {
+            "time": 3.15,
+            "caption": "Kolme pussia: 3 + 3 + 3",
+            "sha256": "0e889ffc77f4d2f7a1e37cd9548a142ca9bf51288ba93e34a910df00113888bb"
+          },
+          {
+            "time": 3.4125,
+            "caption": "Kolme pussia: 3 + 3 + 3",
+            "sha256": "8a049b8d6fea6959385ee1903abe3f5062194ff28c1484836668e946e453c519"
+          },
+          {
+            "time": 3.675,
+            "caption": "Neljä pussia: 3 + 3 + 3 + 3",
+            "sha256": "1668dd29ae98aaf94fc2709f768b5477f217595aa101cc33bc6983166778cda9"
+          },
+          {
+            "time": 3.9375,
+            "caption": "Neljä pussia: 3 + 3 + 3 + 3",
+            "sha256": "a5e77ee7ac3703afe318ddd19a4d6384fd300084e7b3f521472b5f214c558eb4"
+          },
+          {
+            "time": 4.2,
+            "caption": "Neljä pussia: 3 + 3 + 3 + 3",
+            "sha256": "c0f7e9b266f0921403cd6741a350d5f2fd847bbd4585805a27e4374a0f618b21"
+          },
+          {
+            "time": 4.4625,
+            "caption": "Neljä pussia: 3 + 3 + 3 + 3",
+            "sha256": "c0f7e9b266f0921403cd6741a350d5f2fd847bbd4585805a27e4374a0f618b21"
+          },
+          {
+            "time": 4.725,
+            "caption": "Neljä pussia: 3 + 3 + 3 + 3",
+            "sha256": "c0f7e9b266f0921403cd6741a350d5f2fd847bbd4585805a27e4374a0f618b21"
+          },
+          {
+            "time": 4.9875,
+            "caption": "Luku 3 toistuu neljä kertaa.",
+            "sha256": "1a04d72bef748bb831169b8b80791995f58a8febce15839a7fa26b5232114ef2"
+          },
+          {
+            "time": 5.25,
+            "caption": "Luku 3 toistuu neljä kertaa.",
+            "sha256": "19556a7a8af297669197f39ff994359ec9f5ca6552951e6e8fb32c1eb1751366"
+          },
+          {
+            "time": 5.5125,
+            "caption": "Luku 3 toistuu neljä kertaa.",
+            "sha256": "d531efa2f3fe36c62f72cb8d18e0054a170419a5556be2b6356abc8d41a53326"
+          },
+          {
+            "time": 5.775,
+            "caption": "Luku 3 toistuu neljä kertaa.",
+            "sha256": "d531efa2f3fe36c62f72cb8d18e0054a170419a5556be2b6356abc8d41a53326"
+          },
+          {
+            "time": 6.0375,
+            "caption": "Luku 3 toistuu neljä kertaa.",
+            "sha256": "d531efa2f3fe36c62f72cb8d18e0054a170419a5556be2b6356abc8d41a53326"
+          },
+          {
+            "time": 6.3,
+            "caption": "Luku 3 toistuu neljä kertaa.",
+            "sha256": "d531efa2f3fe36c62f72cb8d18e0054a170419a5556be2b6356abc8d41a53326"
+          },
+          {
+            "time": 6.5625,
+            "caption": "Lyhyesti: 4 × 3. Ensin ryhmien määrä, sitten ryhmän koko.",
+            "sha256": "3157290db66307f8b7b5cfefe4eff3b841de0ff40c85bccff8c2339b21cfbfef"
+          },
+          {
+            "time": 6.825,
+            "caption": "Lyhyesti: 4 × 3. Ensin ryhmien määrä, sitten ryhmän koko.",
+            "sha256": "a81a39c71ff8ffe3c6a203a80cb8125b29edbbdf6bac899d030898e4b00d2a07"
+          },
+          {
+            "time": 7.0875,
+            "caption": "Lyhyesti: 4 × 3. Ensin ryhmien määrä, sitten ryhmän koko.",
+            "sha256": "d9fd650cf758333f72efb3827eb5ec2fb6b4cd2e26c30e1679c507d23b25bef1"
+          },
+          {
+            "time": 7.35,
+            "caption": "Lyhyesti: 4 × 3. Ensin ryhmien määrä, sitten ryhmän koko.",
+            "sha256": "fd6ed1433e623531f761b0b37c582a244220948b40e184b9f19749c972a096f1"
+          },
+          {
+            "time": 7.6125,
+            "caption": "Lyhyesti: 4 × 3. Ensin ryhmien määrä, sitten ryhmän koko.",
+            "sha256": "fd6ed1433e623531f761b0b37c582a244220948b40e184b9f19749c972a096f1"
+          },
+          {
+            "time": 7.875,
+            "caption": "Lyhyesti: 4 × 3. Ensin ryhmien määrä, sitten ryhmän koko.",
+            "sha256": "fd6ed1433e623531f761b0b37c582a244220948b40e184b9f19749c972a096f1"
+          },
+          {
+            "time": 8.1375,
+            "caption": "3 + 3 + 3 + 3 = 4 × 3 = 12.",
+            "sha256": "8ecbf21ada08e4fd1f50f15e6daf64476d6aea1c19a36f934d95dfd1b1aee26d"
+          },
+          {
+            "time": 8.4,
+            "caption": "3 + 3 + 3 + 3 = 4 × 3 = 12.",
+            "sha256": "8ecbf21ada08e4fd1f50f15e6daf64476d6aea1c19a36f934d95dfd1b1aee26d"
+          },
+          {
+            "time": 8.6625,
+            "caption": "3 + 3 + 3 + 3 = 4 × 3 = 12.",
+            "sha256": "8ecbf21ada08e4fd1f50f15e6daf64476d6aea1c19a36f934d95dfd1b1aee26d"
+          },
+          {
+            "time": 8.925,
+            "caption": "3 + 3 + 3 + 3 = 4 × 3 = 12.",
+            "sha256": "8ecbf21ada08e4fd1f50f15e6daf64476d6aea1c19a36f934d95dfd1b1aee26d"
+          },
+          {
+            "time": 9.1875,
+            "caption": "3 + 3 + 3 + 3 = 4 × 3 = 12.",
+            "sha256": "8ecbf21ada08e4fd1f50f15e6daf64476d6aea1c19a36f934d95dfd1b1aee26d"
+          },
+          {
+            "time": 9.45,
+            "caption": "3 + 3 + 3 + 3 = 4 × 3 = 12.",
+            "sha256": "8ecbf21ada08e4fd1f50f15e6daf64476d6aea1c19a36f934d95dfd1b1aee26d"
+          },
+          {
+            "time": 9.7125,
+            "caption": "3 + 3 + 3 + 3 = 4 × 3 = 12.",
+            "sha256": "8ecbf21ada08e4fd1f50f15e6daf64476d6aea1c19a36f934d95dfd1b1aee26d"
+          },
+          {
+            "time": 9.975,
+            "caption": "3 + 3 + 3 + 3 = 4 × 3 = 12.",
+            "sha256": "8ecbf21ada08e4fd1f50f15e6daf64476d6aea1c19a36f934d95dfd1b1aee26d"
+          },
+          {
+            "time": 10.2375,
+            "caption": "3 + 3 + 3 + 3 = 4 × 3 = 12.",
+            "sha256": "8ecbf21ada08e4fd1f50f15e6daf64476d6aea1c19a36f934d95dfd1b1aee26d"
+          },
+          {
+            "time": 10.5,
+            "caption": "3 + 3 + 3 + 3 = 4 × 3 = 12.",
+            "sha256": "8ecbf21ada08e4fd1f50f15e6daf64476d6aea1c19a36f934d95dfd1b1aee26d"
+          }
+        ]
+      },
+      {
+        "say": "Kertolaskussa ensin tulee ryhmien määrä, sitten montako jokaisessa ryhmässä on.",
+        "kind": "animation",
+        "duration": 8.5,
+        "width": 320,
+        "height": 200,
+        "label": "6 + 6 = 2 × 6",
+        "snapshots": [
+          {
+            "time": 0,
+            "caption": "Pussit, joissa jokaisessa on kuusi.",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "time": 0.2125,
+            "caption": "Pussit, joissa jokaisessa on kuusi.",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "time": 0.425,
+            "caption": "Pussit, joissa jokaisessa on kuusi.",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "time": 0.6375,
+            "caption": "Yksi pussi: 6",
+            "sha256": "99975d65f26afc5aab1c76317471a357d20333dce59e558c31813624a5ecb6c4"
+          },
+          {
+            "time": 0.85,
+            "caption": "Yksi pussi: 6",
+            "sha256": "2574e74f8808930b4bf4be6ecf1b1d1bbef88c287e97b8cefdfb875dda365baf"
+          },
+          {
+            "time": 1.0625,
+            "caption": "Yksi pussi: 6",
+            "sha256": "cd944e7865b5e426860bac82f24c2bb10f5469862f280d215beda5e3db956342"
+          },
+          {
+            "time": 1.275,
+            "caption": "Yksi pussi: 6",
+            "sha256": "aafc4fe2b41c524fd3015c8cfcee2ef2d9cdaf3ea33ff8a41268ee6bdbffca95"
+          },
+          {
+            "time": 1.4875,
+            "caption": "Yksi pussi: 6",
+            "sha256": "aafc4fe2b41c524fd3015c8cfcee2ef2d9cdaf3ea33ff8a41268ee6bdbffca95"
+          },
+          {
+            "time": 1.7,
+            "caption": "Kaksi pussia: 6 + 6",
+            "sha256": "67eb0544e7ae4e1207aa60a5315156e3d1f8c799000f77397e86799793d8d4c2"
+          },
+          {
+            "time": 1.9125,
+            "caption": "Kaksi pussia: 6 + 6",
+            "sha256": "72c04317f66eb6371dea6e6f8788e6497f98a56275f320d0f0e8cf5eebcf84ed"
+          },
+          {
+            "time": 2.125,
+            "caption": "Kaksi pussia: 6 + 6",
+            "sha256": "692d879329672d9ad2951fe6019f96e12d876ccee9837017d0b0ee792de6474c"
+          },
+          {
+            "time": 2.3375,
+            "caption": "Kaksi pussia: 6 + 6",
+            "sha256": "b14a798f19e516a4530ad936beca96c8d1e145bb9f4d347a90fa2a5ade7e347d"
+          },
+          {
+            "time": 2.55,
+            "caption": "Kaksi pussia: 6 + 6",
+            "sha256": "b14a798f19e516a4530ad936beca96c8d1e145bb9f4d347a90fa2a5ade7e347d"
+          },
+          {
+            "time": 2.7625,
+            "caption": "Kaksi pussia: 6 + 6",
+            "sha256": "b14a798f19e516a4530ad936beca96c8d1e145bb9f4d347a90fa2a5ade7e347d"
+          },
+          {
+            "time": 2.975,
+            "caption": "Luku 6 toistuu kaksi kertaa.",
+            "sha256": "e48f445e038a8c7f3bc203c1b04a8def67ec33f4e0520dbd6659adcc7bc8b08f"
+          },
+          {
+            "time": 3.1875,
+            "caption": "Luku 6 toistuu kaksi kertaa.",
+            "sha256": "744b14774c55ba97303d04d9b517304c94f3a8d79c4f1d94ffacf08581e30e83"
+          },
+          {
+            "time": 3.4,
+            "caption": "Luku 6 toistuu kaksi kertaa.",
+            "sha256": "d30a31b12f593e080ba08fb0ce5ec08cacf9b091bc78ed9aac9091c1c8bd35a5"
+          },
+          {
+            "time": 3.6125,
+            "caption": "Luku 6 toistuu kaksi kertaa.",
+            "sha256": "6e0d587b58347bfcb7b4c7c53cd5e52b97238b5cf219684c744757273dc6b27c"
+          },
+          {
+            "time": 3.825,
+            "caption": "Luku 6 toistuu kaksi kertaa.",
+            "sha256": "6e0d587b58347bfcb7b4c7c53cd5e52b97238b5cf219684c744757273dc6b27c"
+          },
+          {
+            "time": 4.0375,
+            "caption": "Luku 6 toistuu kaksi kertaa.",
+            "sha256": "6e0d587b58347bfcb7b4c7c53cd5e52b97238b5cf219684c744757273dc6b27c"
+          },
+          {
+            "time": 4.25,
+            "caption": "Luku 6 toistuu kaksi kertaa.",
+            "sha256": "6e0d587b58347bfcb7b4c7c53cd5e52b97238b5cf219684c744757273dc6b27c"
+          },
+          {
+            "time": 4.4625,
+            "caption": "Luku 6 toistuu kaksi kertaa.",
+            "sha256": "6e0d587b58347bfcb7b4c7c53cd5e52b97238b5cf219684c744757273dc6b27c"
+          },
+          {
+            "time": 4.675,
+            "caption": "Lyhyesti: 2 × 6. Ensin ryhmien määrä, sitten ryhmän koko.",
+            "sha256": "41ce2302f904693a381792e50e024ad1fdfd47ec164e752dd5c114fb1d95d0e7"
+          },
+          {
+            "time": 4.8875,
+            "caption": "Lyhyesti: 2 × 6. Ensin ryhmien määrä, sitten ryhmän koko.",
+            "sha256": "6894eeb5f33460bb25b36482e5cd585a0dcef8e6cc510085e1e4475a65507964"
+          },
+          {
+            "time": 5.1,
+            "caption": "Lyhyesti: 2 × 6. Ensin ryhmien määrä, sitten ryhmän koko.",
+            "sha256": "e54a23cf8b0496040a5fea8e2d9f43facbab3c27339b11bbd44270193f59ff6f"
+          },
+          {
+            "time": 5.3125,
+            "caption": "Lyhyesti: 2 × 6. Ensin ryhmien määrä, sitten ryhmän koko.",
+            "sha256": "aa24335da1090fd2ad4fcf8a86145c1c7c4d3e0f615a2976cbd1b645dd82181a"
+          },
+          {
+            "time": 5.525,
+            "caption": "Lyhyesti: 2 × 6. Ensin ryhmien määrä, sitten ryhmän koko.",
+            "sha256": "aa24335da1090fd2ad4fcf8a86145c1c7c4d3e0f615a2976cbd1b645dd82181a"
+          },
+          {
+            "time": 5.7375,
+            "caption": "Lyhyesti: 2 × 6. Ensin ryhmien määrä, sitten ryhmän koko.",
+            "sha256": "aa24335da1090fd2ad4fcf8a86145c1c7c4d3e0f615a2976cbd1b645dd82181a"
+          },
+          {
+            "time": 5.95,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          },
+          {
+            "time": 6.1625,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          },
+          {
+            "time": 6.375,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          },
+          {
+            "time": 6.5875,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          },
+          {
+            "time": 6.8,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          },
+          {
+            "time": 7.0125,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          },
+          {
+            "time": 7.225,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          },
+          {
+            "time": 7.4375,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          },
+          {
+            "time": 7.65,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          },
+          {
+            "time": 7.8625,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          },
+          {
+            "time": 8.075,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          },
+          {
+            "time": 8.2875,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          },
+          {
+            "time": 8.5,
+            "caption": "6 + 6 = 2 × 6 = 12.",
+            "sha256": "facedaac9051aa50fc56b8268eed9a78abbd08e5063ddacf29daa5bf2ef646c3"
+          }
+        ]
+      },
+      {
+        "say": "Rivistö on samanlainen: rivit ovat ryhmiä. Kolme riviä, joissa viisi: kolme kertaa viisi.",
+        "kind": "animation",
+        "duration": 6.800000000000001,
+        "width": 300,
+        "height": 152,
+        "label": "3 riviä, joissa 5",
+        "snapshots": [
+          {
+            "time": 0,
+            "caption": "Rivistö: jokaisessa rivissä on viisi.",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "time": 0.17,
+            "caption": "Rivistö: jokaisessa rivissä on viisi.",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "time": 0.34,
+            "caption": "Rivistö: jokaisessa rivissä on viisi.",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "time": 0.51,
+            "caption": "Rivistö: jokaisessa rivissä on viisi.",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "time": 0.68,
+            "caption": "Rivi 1: viisi…",
+            "sha256": "67623c92253216c964e778c0fc2c1e95306c92b537bebfaff7b3853185b0d6fe"
+          },
+          {
+            "time": 0.85,
+            "caption": "Rivi 1: viisi…",
+            "sha256": "8be101edacc9d3106eb509395db6d9840d005551e0d84dfa2a3e90a5f1f440da"
+          },
+          {
+            "time": 1.02,
+            "caption": "Rivi 1: viisi…",
+            "sha256": "7e94ea27a1112b4c57ac095071e026bbad8d5a7166d2c583956bcd8f8a641d91"
+          },
+          {
+            "time": 1.1900000000000002,
+            "caption": "Rivi 1: viisi…",
+            "sha256": "68831b07e38d8cc168586c36871dcc2a449662264fcaad2c70dbcf7d83c1165b"
+          },
+          {
+            "time": 1.36,
+            "caption": "Rivi 1: viisi…",
+            "sha256": "3e8ba2ac33c9b1814cb6d36c7e78f70445e7329df1b9c6d127186125cf63bf50"
+          },
+          {
+            "time": 1.53,
+            "caption": "Rivi 1: viisi…",
+            "sha256": "3e8ba2ac33c9b1814cb6d36c7e78f70445e7329df1b9c6d127186125cf63bf50"
+          },
+          {
+            "time": 1.7,
+            "caption": "Rivi 2: kymmenen…",
+            "sha256": "3e8ba2ac33c9b1814cb6d36c7e78f70445e7329df1b9c6d127186125cf63bf50"
+          },
+          {
+            "time": 1.8700000000000003,
+            "caption": "Rivi 2: kymmenen…",
+            "sha256": "edd081f11dda933ab8ebb2176571b1bccd6e40392cab1b7bfabed7f836b12148"
+          },
+          {
+            "time": 2.04,
+            "caption": "Rivi 2: kymmenen…",
+            "sha256": "4938933d7eb4e58c4880a210a82ae985582f2b2017a6bc0091460da2acfba001"
+          },
+          {
+            "time": 2.21,
+            "caption": "Rivi 2: kymmenen…",
+            "sha256": "af0962ec81df7cebc12912ccd86b90df1f925147259c79305678591d38fe6d32"
+          },
+          {
+            "time": 2.3800000000000003,
+            "caption": "Rivi 2: kymmenen…",
+            "sha256": "87322c038a9e3d56f048830ffa7e20d2e99586dbc2b0f23f74bdc73f74f588c6"
+          },
+          {
+            "time": 2.5500000000000003,
+            "caption": "Rivi 2: kymmenen…",
+            "sha256": "87322c038a9e3d56f048830ffa7e20d2e99586dbc2b0f23f74bdc73f74f588c6"
+          },
+          {
+            "time": 2.72,
+            "caption": "Rivi 2: kymmenen…",
+            "sha256": "87322c038a9e3d56f048830ffa7e20d2e99586dbc2b0f23f74bdc73f74f588c6"
+          },
+          {
+            "time": 2.89,
+            "caption": "Rivi 3: viisitoista…",
+            "sha256": "94ecaf447ffd6c7b782b41d05bae980b7bd5f2d4fd5d3b6d41bba3ac639cf1e8"
+          },
+          {
+            "time": 3.06,
+            "caption": "Rivi 3: viisitoista…",
+            "sha256": "23bf7bf05e5214acfe0d3ecb2a2373cbc157195ec2a00fa9be106d9e3c549592"
+          },
+          {
+            "time": 3.2300000000000004,
+            "caption": "Rivi 3: viisitoista…",
+            "sha256": "6113e8c84e34b3daac78ecb22784b7e2d2556da79a7d7555fe38142677511792"
+          },
+          {
+            "time": 3.4,
+            "caption": "Rivi 3: viisitoista…",
+            "sha256": "bfedf43caffde521ba6138c2473c900af5de1a179a0334031f31bf4ddeb4f26b"
+          },
+          {
+            "time": 3.5700000000000003,
+            "caption": "Rivi 3: viisitoista…",
+            "sha256": "2d377ae3605e1a88230c0c39d70424e55eb226f87544a6ba7f12ec73bd19c354"
+          },
+          {
+            "time": 3.7400000000000007,
+            "caption": "Rivi 3: viisitoista…",
+            "sha256": "2d377ae3605e1a88230c0c39d70424e55eb226f87544a6ba7f12ec73bd19c354"
+          },
+          {
+            "time": 3.91,
+            "caption": "Rivi 3: viisitoista…",
+            "sha256": "2d377ae3605e1a88230c0c39d70424e55eb226f87544a6ba7f12ec73bd19c354"
+          },
+          {
+            "time": 4.08,
+            "caption": "Rivi 3: viisitoista…",
+            "sha256": "2d377ae3605e1a88230c0c39d70424e55eb226f87544a6ba7f12ec73bd19c354"
+          },
+          {
+            "time": 4.250000000000001,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "0d43511254cc2d87156440f8d2302e63a9e78a7452f7fddf4271af6fcabf3056"
+          },
+          {
+            "time": 4.42,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "90a2939378c492bb612674ebd9b430b59935d1a2831dae4a1a560240eca7b360"
+          },
+          {
+            "time": 4.590000000000001,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "613bf1fccd6d83dd8fcbcc4697684a1934d7cf416a948738c9ffbae122d19aba"
+          },
+          {
+            "time": 4.760000000000001,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          },
+          {
+            "time": 4.930000000000001,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          },
+          {
+            "time": 5.1000000000000005,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          },
+          {
+            "time": 5.2700000000000005,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          },
+          {
+            "time": 5.44,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          },
+          {
+            "time": 5.610000000000001,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          },
+          {
+            "time": 5.78,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          },
+          {
+            "time": 5.950000000000001,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          },
+          {
+            "time": 6.12,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          },
+          {
+            "time": 6.290000000000001,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          },
+          {
+            "time": 6.460000000000001,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          },
+          {
+            "time": 6.630000000000001,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          },
+          {
+            "time": 6.8,
+            "caption": "Kolme riviä, joissa jokaisessa viisi: 3 × 5 = 15.",
+            "sha256": "bafe8ec268e2a8c5d315fa9e17e829ac2a1fe795663e167d86ce322dea3c2313"
+          }
+        ]
+      },
+      {
+        "say": "Varo: neljä plus kolme on vain seitsemän. Se laskee pussit ja yhden pussin marjat yhteen, ei kaikkia marjoja.",
+        "kind": "static",
+        "html": "<div class=\"formula\">4 + 3 = 7<br>4 × 3 = 12</div>"
+      }
+    ],
+    "actualGoal": "Opit kirjoittamaan yhtä suurten ryhmien tilanteen kertolaskuksi.",
+    "intro": "Aava kirjoittaa eväsluettelon lyhyesti: kertolaskuna.",
+    "rawRewardNotEndorsed": "Kirjoitat ryhmät lyhyesti kertolaskuna!",
+    "reconciliation": "Write-family enforces groups-first canonical string while transfer accepts commutation. Own task explicitly asks total-expression using the two given factors; both orders accepted, unrelated equal products not accepted. Correct construction does not certify recall/mastery.",
+    "limits": "Bounded local practice, optional support, no pupil persistence or formal mastery.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/facts.ts": "a696f7fd77cf6de59eae08d4fac0791a04f35065352415b1fac9c1fdb377c3c9",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/numbers.ts": "6db9ad2c369c3111be19409d6b3da02f990c08ec8841c122081d5487d066f5af",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/content/placeanim.ts": "d6f1284272675a8b78d62649f3b9e3490a7d324df139f292986f533cee803f99",
+        "src/content/saari1.ts": "02d96b3ff18fcb8a560eb0ceaebe438caaa33cf518ced1c277ba70793d030bb6",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [
+        "AUTHORING.md",
+        "EVENT_COMMIT_REVIEW_B05.md",
+        "INTERACTION_FEEDBACK_CONTRACT.md",
+        "authority/production-181-v2/ASSETS.md",
+        "authority/production-181-v2/ASSET_STYLE_GATE.txt",
+        "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt",
+        "authority/production-181-v2/STYLE_REVIEW_FI.md",
+        "reference/inputs/canonical-690-graph.json",
+        "reference/inputs/mvp-scope-181.json",
+        "shared/aava/curious.png",
+        "shared/loikka/map.png"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M-MUL-02",
+      "subject": "mathematics",
+      "grade_band": "1-2",
+      "topic_area": "Luvut ja laskutoimitukset",
+      "parent_concept": "Kertolasku",
+      "title": "Kertolaskutilanteen kirjoittaminen kertolaskulausekkeeksi",
+      "short_description": "Kertolaskutilanteen kirjoittaminen kertolaskulausekkeeksi",
+      "source_basis": "pedagogically_derived",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL1-2-S2"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "procedure",
+      "relations": [
+        {
+          "id": "M-MUL-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MUL-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-ARITH-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-ARITH-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-MUL-01",
+            "M-ARITH-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Luvut ja laskutoimitukset",
+        "Kertolasku"
+      ]
+    },
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-MUL-01",
+          "M-ARITH-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "role": "atomic",
+    "gradeBand": "1-2",
+    "teacherObjective": "Kertolaskutilanteen kirjoittaminen kertolaskulausekkeeksi",
+    "studentObjective": "Kirjoitan yhtä suuret ryhmät kertolaskuna.",
+    "requiredPrerequisites": [
+      {
+        "all_of": [
+          "M-MUL-01",
+          "M-ARITH-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "crossKCAssumptions": "Equal groups and operation signs are the declared two prerequisites; factor notation introduced explicitly, no result recall prerequisite.",
+    "range": "Authored groups2–5 and size0–7; two one-digit factors0–9 in parser. Both orders of exact given factors allowed; no arbitrary expression evaluation.",
+    "entry": "Purposeful current SVG/state +44px first control in existing full shared presentation shell; no local header rules.",
+    "design": "Cream paper, green labelled value cards and blue math markers; named supplied Aava PNG supports context. No decorative movement; optional finite model playback.",
+    "evidenceLimit": "Writing/placement is low-stakes supported technical practice, not independent retained mastery or physical investigation."
+  },
+  "extensions": {
+    "productionBatch": "B11",
+    "author": "Newton",
+    "simulationType": "equal_groups_to_repeated_sum_to_constructed_expression",
+    "independentReview": "pending_Carver",
+    "humanReview": "not_performed",
+    "sharedShellChanged": false,
+    "sourcePreviewLimit": "Disposable clone of current full shell composed with own frozen candidate source; not main combined127 build.",
+    "contextRepair": {
+      "finding": "Carver exactr1 P2: silent task selection used new rule but left old visible question/given and field mode.",
+      "change": "Separate current-context draw from answer clearing. Explicit Check redraws selected task/question/given/field mode before reading values, preserving typed answers. No mathematics/controls/CSS/body/assets/research change.",
+      "regression": "Silent select task + current answer -> Check must agree on verdict AND visible question/field mode/given. Prior input/change and unsupported checks retained.",
+      "history": "Exactr1 sources and Carver native repro retained under fresh tmp history; no r1 pass relabelledr2."
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B05",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

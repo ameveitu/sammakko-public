@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="lesson.css"><div class="b13" data-b13-unit>
+
+
+
+
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/aava/curious.png" width="56" height="56" alt="Aava tutkii liikettä."><p>Aava yhdistää mittanauhan ja kellon yksiköt.</p></div><p data-goal><strong>Muodostan nopeuden yksikön matkan ja ajan yksiköistä.</strong></p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<fieldset><legend>Matkan yksikkö jaettuna ajan yksiköllä</legend><div data-view><img src="initial.svg" width="360" height="146" alt="Mallin todellinen alkutila t=0; piste on paikassa0. Tarkat yksiköt näkyvät kuvassa ja tekstissä."></div><p data-readout>Aika 0 s. Paikka 0 m. Kuljettu 0 m. Hetkellinen suunnattu nopeus 3 m/s.</p><div class="actions" data-primary><button data-action="play" type="button">Toista</button><button data-action="pause" type="button">Tauko</button><button data-action="step" type="button">Askel</button></div><p data-run-state>Toisto tauolla</p><details data-lesson-role="teaching-step"><summary>Mallin valinta ja ajan tarkastelu</summary><label>Malli<select data-model><option value="start">Metrit ja sekunnit</option><option value="kmh">Kilometrit ja tunnit</option><option value="cmmin">Senttimetrit ja minuutit</option><option value="mmin">Metrit ja minuutit</option><option value="rest">Nollakin saa yksikön</option></select></label><label>Mallin aika<input data-time value="0" type="text" inputmode="decimal" maxlength="128"></label><p data-range-note>Aika0–4 s. Koko jakson toisto kestää6ruutusekuntia; mallin kello näyttää s.</p><div class="actions"><button data-action="model-reset" type="button">Malli alkuun</button><button data-action="end" type="button">Näytä loppu</button></div><p>Askel siirtää neljäsosan mallin koko ajasta. Tauko pysäyttää toiston, ei lisää taukoa fyysiseen malliin. Loppukuva ei tarkoita fyysistä jarrutusta. Mittari on laskettu, ei oikean laitteen mittaus. Näyttö pyöristää lukemat enintään kolmeen desimaaliin.</p><div data-table><table><caption>Sama malli viidellä ajanhetkellä. Ei vaadi toiston katsomista.</caption><thead><tr><th>t (s)</th><th>x (m)</th><th>s (m)</th><th>v (m/s)</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>3</td></tr><tr><td>1</td><td>3</td><td>3</td><td>3</td></tr><tr><td>2</td><td>6</td><td>6</td><td>3</td></tr><tr><td>3</td><td>9</td><td>9</td><td>3</td></tr><tr><td>4</td><td>12</td><td>12</td><td>3</td></tr></tbody></table></div></details></fieldset>
+</section>
+
+
+
+
+
+
+<nav aria-label="Oppitunnin kohdat" data-lesson-role="metadata"><a href="#practice">Kokeile itse</a><a href="#examples">Esimerkit</a></nav>
+
+
+
+
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<details id="examples" data-lesson-role="teaching-step"><summary>Mistä tämä nähdään?</summary><h2>Luvut ja yksiköt jaetaan erikseen</h2><p>Mittanauhalla saadaan12 m, kellolla4 s. Kun matka jaetaan ajalla, luvut antavat12/4=3. Yksiköt antavat m/s. Yhdessä <strong>3 m/s</strong>: tasaisessa mallissa joka sekunti kuljetaan3metriä. Kauttaviiva ei tarkoita kertomista.</p><h3>Sama rakenne eri mittayksiköillä</h3><p>120 km ja2 h antavat60 km/h. Matkan yksikkö km jää jaettavaksi ja ajan yksikkö h jakajaksi. <strong>h/km</strong> kuvaisi aikaa matkaa kohti, ei kysyttyä nopeutta. Pelkkä km on matkan yksikkö.</p><img src="example.svg" width="360" height="146" alt="Valmis kilometrimalli hetkellä2 h: paikka120 km; tasainen nopeus60 km/h."><figcaption>Valmis esimerkki. Mallin2tuntia esitetään toistossa6ruutusekunnissa.</figcaption><h3>Etanan oma mittaus</h3><p>30 cm viidessä minuutissa antaa30/5=6 ja cm/min. Ei tarvitse ensin muuttaa metreiksi ja sekunneiksi. Tasaisessa mallissa6 cm/min tarkoittaa6senttimetriä minuutissa.</p><p><strong>Ennakoi:</strong> jos kohde ei liiku4sekunnissa, katoaako nopeuden yksikkö? Ei:0 m/4 s=0 m/s.</p></details>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<section id="practice"><h2>Kokeile itse</h2><label>Tehtävä<select data-task><option value="start">Tehtävä A</option><option value="kmh">Tehtävä B</option><option value="cmmin" selected>Tehtävä C</option><option value="mmin">Tehtävä D</option><option value="rest">Tehtävä E</option><option value="transfer">Tehtävä F</option></select></label><p data-question data-lesson-role="question">Etanan matka on 30 cm ja aika 5 min. Kirjoita nopeuden yksikkö näistä mittayksiköistä.</p><label>Johdettu nopeuden yksikkö<input data-answer type="text" inputmode="text" maxlength="128" autocomplete="off" placeholder="esim. m/s"></label><button type="button" data-action="check">Tarkista</button><output data-feedback data-result="neutral" aria-live="polite">Tarkista, kun olet valmis.</output><details data-lesson-role="hint"><summary>Ajattelun tueksi</summary><p>Kirjoita matkan yksikkö ensin ja ajan yksikkö sen alle: m/s, km/h, cm/min tai m/min tilanteen mukaan. Myös m·s⁻¹ tai m s^-1 tarkoittaa m/s. Tuettu kirjoitusasu käyttää näitä yksikkömerkkejä; sanoja ei tarvitse kirjoittaa tai lausua. Jos käytät toista nopeusyksikköä, se voi olla muunnettavissa mutta tehtävä pyytää annettuja yksiköitä.</p></details><p>Tehtävän tiedot riittävät vastaamiseen. Malli on erillinen vapaaehtoinen tutkimus, eikä toistoa tarvitse katsoa loppuun.</p></section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Lisää tutkittavaa</summary><p>Muuntaminen on eri vaihe kuin yksikön johtaminen. Kun tarvitaan muunnos:1 m/s =3600 m/1 h =3,6 km/h, koska1 h=3600 s ja1000 m=1 km. Tässä esityksessä sekunnin matka toistetaan3600kertaa tunnissa. Käänteinen muunnos jakaa3,6:lla.</p><p>Yksiköt cm/min ja m/s kuvaavat samaa suurelajia, mutta niissä sama lukuarvo ei merkitse samaa vauhtia. Harjoitus pyytää käyttämään annettuja mittayksiköitä ilman muunnosta. Malli ei vaihda niitä salaa.</p><img src="transfer.svg" width="360" height="146" alt="Valmis senttimetrimalli hetkellä5 min: paikka30 cm; nopeus6 cm/min."><figcaption>Senttimetrit ja minuutit pysyvät samoina koko mallissa.</figcaption></details>
+</section>
+
+
+
+
+
+
+<details data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p>Luokat7–9. Kanoninen rooli atomic. Tavoite: Johtaa nopeuden yksikön matkan yksikkö/ajan yksikkö ja tulkitsee per-merkinnän. Ei edellytä muuntokertoimen muistamista. Required-esitietoryhmät säilyvät: PHY79-SPEED-CONCEPT, PHY79-QTY-01. Vahvat tuet eivät muutu lisäporteiksi.</p><p>Kirjoita matkan lukuarvo ja yksikkö omalle kortille ja ajan tiedot toiselle. Muodosta niiden osamäärä. Vaihda vain mittayksiköitä, selitä tarvittavat muuntokertoimet. Nopeus0 saa saman yksikön kuin muu nopeus. Palojen vakioliike on idealisoitu.</p><p>Tämä sivu toteuttaa viisi nimettyä tasaista yksiulotteista liikettä yksikköpareissa m/s,km/h,cm/min,m/min. Jokaisessa mallissa yksiköt säilyvät samoina; aika on2 h,4 s tai3tai5 min mallin mukaan. Ei kitkaa,2D-kaarteita, mielivaltaista reittiä tai käyttäjän tuomaa mallikuvausta. Puuttuva tai tukematon valinta ei korvaudu oletuksella. Fyysinen pysähdys on mallin nollanopeusjakso; Toiston Tauko on vain katselun ohjaus. Mallin aika ja ruutuaika ovat erilliset. Kuljettu matka on aina ei-negatiivinen, suunnattu paikka/nopeus voi olla negatiivinen. Tämä esittää matemaattisen idealisoinnin, ei toteutettua koetta.</p><p>Vastaus on paikallinen matalan panoksen harjoitus. Avun käyttö tai mallin katselu ei osoita itsenäistä, viivästettyä tai formaalia hallintaa. Ei oppijahistoriaa, verkkotallennusta, aikarajaa, pakollista puhetta, nimeämistä tai kuuntelua. Ihmis-/oppilas-/oppimisteho-/manuaalinen saavutettavuus- tai julkaisuhyväksyntä ei synny tästä tarkistuksesta.</p></details>
+
+
+
+
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lopuksi:</strong> Mittaa matka metreinä ja aika minuutteina. Miten johdat nopeuden yksikön ja miten luet sen sanallisesti?</p>
+</section>
+
+
+
+
+
+
+<noscript data-lesson-role="metadata"><p>Alkukuva on mallin t=0. Valmiiksi merkityt esimerkit ja tekstit toimivat ilman JavaScriptiä. Liike ja paikallinen tarkistus tarvitsevat JavaScriptin. Voit käyttää taulukkoa, paperia tai oikeaa vaunua aikuisen kanssa.</p></noscript></div>

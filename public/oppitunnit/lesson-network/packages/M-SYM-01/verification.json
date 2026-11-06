@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "AUTHOR_R2_CORRECTION_CHECKED_INDEPENDENT_CLOSURE_PENDING",
+  "contentRevision": "2@60776b6a21eb3308ad38df6cc84115f28e8ddaf0c107164977056252b8cae467",
+  "dateUTC": "2026-10-29T01:50:40.754Z",
+  "corrections": [
+    "B05-SPATIAL-01 P2: full valid4-axis set is still accepted and now reports all found;14 nonempty proper subsets remain accepted and report further axes.",
+    "B05-SPATIAL-02 P3: both triangle-side candidates describe one-sided paper in visible caption and SVG aria text, false-axis verdict preserved."
+  ],
+  "checks": {
+    "pure": {
+      "status": "PASS",
+      "testGroups": 7,
+      "command": "node --test lesson-network/packages/M-SYM-01/tests.mjs",
+      "log": "/tmp/sammakko-B05-author/symmetry-r2/pure.log"
+    },
+    "exactReviewerP2Regression": {
+      "status": "PASS",
+      "command": "node /tmp/sammakko-B05-spatial-independent/known-defect-regression.mjs",
+      "log": "/tmp/sammakko-B05-author/symmetry-r2/reviewer-regression.log",
+      "scriptSha256": "a4e812f8e60a5eaa331d05bf56838f64346a523ea5e879d9c8b08686176c3832",
+      "limit": "Author executed the unchanged reviewer test; this is not reviewer closure."
+    },
+    "scopedLint": "PASS SYM01 module/tests",
+    "isolatedPackageContract": "PASS original loadPackages/composePackage against temporary root containing onlySYM01r2",
+    "nativeCompiledBrowser": "PENDING main integration of exactr2, then targeted Feynman rereview; no r1 execution relabelledr2"
+  },
+  "unchanged": [
+    "body.html",
+    "alignment.md",
+    "research.md",
+    "lesson.css",
+    "axes.svg"
+  ],
+  "limits": [
+    "Only SYM01 module/tests/revision/test binding/review-history/verification changed. No geometry, valid acceptance, CSS, original SVG, PNG or other package edits.",
+    "Oldr1 evidence retained separately; no independent self-approval or human/learner validation."
+  ]
+}

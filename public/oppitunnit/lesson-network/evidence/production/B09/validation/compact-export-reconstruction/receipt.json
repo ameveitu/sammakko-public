@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "createdAfterSeal": true,
+  "notInsideOriginalSealedZIP": true,
+  "archive": "/Users/aikuiset/Documents/Codex/2026-10-24/e/outputs/Sammakko/exports/Sammakko_181_B09_103of181_compact.zip",
+  "inventory": {
+    "zipBytes": 46154258,
+    "uncompressedBytes": 95051082,
+    "files": 7786,
+    "compressionMethods": {
+      "8": 7786
+    },
+    "manifestFiles": 7784,
+    "sourceRevision": "94c6f76db065292679e8dc7f04c402d63b4b3672",
+    "sha256": "3f8f1a7a56340914538c637d79199ca4d86ce595ae7f70860c757b59d52ddb28",
+    "extracted": "/var/folders/5_/9spkk87514d17y3nq1rtxv3w0000gn/T/sammakko-B09-compact-reconstruct-vbx4fec8",
+    "noGitOrExistingNodeModules": true
+  },
+  "commands": [
+    {
+      "command": [
+        "npm",
+        "ci",
+        "--offline"
+      ],
+      "exitCode": 0,
+      "stdout": "01-stdout.txt",
+      "stderr": "01-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/build.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "02-stdout.txt",
+      "stderr": "02-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/verify.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "03-stdout.txt",
+      "stderr": "03-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/check-package-tests.mjs",
+        "B09",
+        "extracted-compact-r1"
+      ],
+      "exitCode": 0,
+      "stdout": "04-stdout.txt",
+      "stderr": "04-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/production-status.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "05-stdout.txt",
+      "stderr": "05-stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "lesson-network/test-export.py"
+      ],
+      "exitCode": 0,
+      "stdout": "06-stdout.txt",
+      "stderr": "06-stderr.txt"
+    }
+  ],
+  "scope": "Fresh extraction, locked cached dependency install,690 rebuild/network323952, source-bound430tests,103 status and5 exporter tests. Existing native receipts reused; no redundant browser rerun solely to repackage source."
+}

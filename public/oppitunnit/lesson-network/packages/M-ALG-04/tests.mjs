@@ -1,0 +1,2 @@
+import assert from 'node:assert/strict';import{cases,missing,interpretation}from './lesson.mjs';
+assert.equal(missing(7,3),4);assert.equal(missing(3,3),0);for(const c of cases)if(c.total!==undefined)assert.equal(missing(c.total,c.visible),c.hidden);assert.equal(interpretation('amount'),true);for(const wrong of ['zero','name','guess'])assert.equal(interpretation(wrong),false);assert.throws(()=>missing(2,3));assert.equal(cases[2].hidden,12);console.log('PASS unknown is not automatically zero, whole numeral may contain two digits, fixed case quantities');

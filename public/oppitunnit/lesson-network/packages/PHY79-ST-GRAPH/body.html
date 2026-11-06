@@ -1,0 +1,121 @@
+<link rel="stylesheet" href="lesson.css"><div class="phys14" data-physics14>
+
+
+
+
+
+
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/aava/curious.png" width="48" height="48" alt="Aava"><p>Aava ja Loikka kulkevat. Aava pitää tauon.</p></div><p data-goal><strong>Luen liikkeen matka–aika-kuvaajasta.</strong></p><p>Tauolla kuljettu matka ei kasva.</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<fieldset data-lesson-role="worked-example"><legend>Matka ja kellonaika</legend><p data-model-legend>1. Loikka (yhtenäinen) · 2. Aava (katko)</p><div class="actions" data-entry-primary><button type="button" data-action="play" aria-pressed="false">Toista</button><button type="button" data-action="pause">Tauko</button></div><div data-model-view><img src="initial.svg" alt="Mallin aika 0 s. Loikka: kuljettu matka 0 m. Aava: kuljettu matka 0 m. Viiva näyttää koko nimetyn malliaineiston; piste valitun ajan."></div><p data-readout>Mallin aika 0 s. Loikka: kuljettu matka 0 m. Aava: kuljettu matka 0 m.</p><p data-run-state>Toisto tauolla</p><details data-lesson-role="teaching-step"><summary>Vaihda mallia tai tutki aikaa</summary><label>Malli<select data-model><option value="journey" selected>Matka ja tauko</option><option value="flat">Tauko keskellä matkaa</option><option value="steady">Suora kuvaaja</option><option value="return">Eri pystyakseli: etäisyys lähdöstä</option></select></label><label>Mallin aika, s<input data-time type="text" inputmode="decimal" value="0" maxlength="128"></label><p data-model-description>Mallin aika 0–10 s. Askel 2 s. Koko toisto 10 ruutusekuntia. Yläreunassa on suora kulkureitti, alla kuvaaja.</p><div class="actions"><button type="button" data-action="step">Askel 2 s</button><button type="button" data-action="end">Näytä loppu</button><button type="button" data-action="restart">Malli alkuun</button></div><p>Viivat näyttävät koko malliaineiston. Pisteet seuraavat mallin kelloa. Tauko pysäyttää katselun: se ei lisää fyysiseen liikkeeseen taukoa. Loppukuva ei itsessään tarkoita fyysistä pysähdystä. Tämä on laskettu malli, ei oikea mittaus. Näytön lukemat pyöristetään enintään 3 desimaaliin; tarkistuksen totuutta ei pyöristetä. Aikakenttä tukee desimaalilukua enintään 6 desimaalilla.</p><div data-model-table><table><caption>Matka ja tauko. Kuljettu matka s (m).</caption><thead><tr><th scope="col">Aika (s)</th><th scope="col">Loikka</th><th scope="col">Aava</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td><td>0</td></tr><tr><th scope="row">4</th><td>12</td><td>20</td></tr><tr><th scope="row">6</th><td>18</td><td>20</td></tr><tr><th scope="row">10</th><td>30</td><td>28</td></tr></tbody></table></div></details></fieldset>
+</section>
+
+
+
+
+
+
+
+
+<nav aria-label="Oppitunnin kohdat" data-lesson-role="metadata"><a href="#practice">Kokeile itse</a><a href="#examples">Esimerkit</a></nav>
+
+
+
+
+
+
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<details id="examples" data-lesson-role="teaching-step"><summary>Mistä tämän huomaa?</summary><h2>Seuraa yhtä aikaväliä</h2><p>Välillä 0–4 s Aava kulkee 20 m ja Loikka 12 m. Aava kulkee nopeammin: hänen viivansa nousee jyrkemmin.</p><h3>Korkeampi ei aina ole nopeampi</h3><p>Välillä 4–6 s Aavan matka pysyy 20 metrissä. Hän lepää. Loikka jatkaa 3 m/s, vaikka hänen viivansa on vielä alempana. Vertaa viivan nousua, älä vain korkeutta.</p><img src="example.svg" alt="Ratkaistun mallin hetki 5 s: Aavan kuljettu matka20m ja Loikan15m. Aava lepää; Loikka liikkuu."><figcaption>Ratkaistu vertailu: hetkellä 5 s ylempi piste ei liiku nopeammin.</figcaption><h3>Nopeus kahdesta kohdasta</h3><p>Toinen suora näyttää 40 m ajassa 10 s. Nopeus on 40 m / 10 s = <strong>4 m/s</strong>. Sekunteja ei kerrota matkalla.</p><img src="contrast.svg" alt="Ratkaistu suoran mallin loppu:10s ja40m."><figcaption>Suoran jyrkkyys: matkan kasvu jaettuna kuluneella ajalla.</figcaption></details>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<section id="practice"><h2>Kokeile itse</h2><label>Tehtävä<select data-task><option value="read" selected>Tehtävä A</option><option value="pause">Tehtävä B</option><option value="higher">Tehtävä C</option><option value="start">Tehtävä D</option><option value="story">Tehtävä E</option><option value="transfer">Tehtävä F</option></select></label><p data-question data-lesson-role="question">Viiva on suora. Lue kuvaajasta Loikan nopeus, m/s.</p><p data-task-legend>Loikka</p><div data-task-view><img src="practice-initial.svg" alt="Tämän tehtävän oma nimetty kuvaaja. Samat täsmälliset arvot löytyvät avattavasta taulukosta."></div><fieldset data-answer-fields><label>Keskinopeus tällä välillä (m/s)<input data-answer type="text" inputmode="text" maxlength="128" autocomplete="off"></label></fieldset><button type="button" data-action="check">Tarkista</button><output data-feedback data-result="neutral" aria-live="polite">Tarkista, kun olet valmis.</output><div data-practice-support><details data-lesson-role="hint"><summary>Ajattelun tueksi</summary><p data-task-help>Valitse kaksi kohtaa. Laske matkan kasvu ja jaa kuluneella ajalla. Lopun korkeus yksin on matka, ei nopeus.</p></details><details data-lesson-role="teaching-step"><summary>Kuvaajan tiedot taulukkona</summary><div data-task-table><table><caption>Suora kuvaaja. Kuljettu matka s (m).</caption><thead><tr><th scope="col">Aika (s)</th><th scope="col">Loikka</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td></tr><tr><th scope="row">10</th><td>40</td></tr></tbody></table></div><p>Tehtävällä on oma kuvaajansa. Ylempää mallia voi tutkia erikseen, eikä sen katsominen tai toistaminen ole pakollista. Voit käyttää apua ja taulukkoa; ne ovat tukea, eivät itsenäisen hallinnan näyttö.</p></details></div></section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Vertaa toiseen tilanteeseen</summary><h2>Mitä pystyakselilla on?</h2><p>Kuljettu matka kasvaa myös palatessa. Sen kuvaaja ei yksin kerro liikkeen suuntaa. Yläreunan suoralla reitillä suunta on tässä mallissa erikseen sovittu oikealle.</p><p>Lisämallin pystyakselilla on sen sijaan <strong>etäisyys lähtöpaikasta</strong>. Kun Aava kulkee takaisin, etäisyys pienenee. Hänen kulkemansa kokonaismatka silti kasvaa.</p><img src="transfer.svg" alt="Erikseen nimetty etäisyys lähtöpaikasta: paluun lopussa etäisyys0m ja kuljettu matka40m."><figcaption>Ratkaistu paluu: etäisyys lähtöön 0 m, kuljettu matka 40 m. Laskeva viiva ei kuvaa alamäkeä.</figcaption></details>
+</section>
+
+
+
+
+
+
+
+
+<details class="teacher" data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p>Luokat 7–9. Kanoninen rooli process säilyy. Tavoitteena on tulkita akselit ja aikavälit, erottaa lepo ja liike sekä lukea nopeus. Yksittäinen oikea luku ei osoita koko kuvaajanlukuprosessin hallintaa. Pakolliset esitiedot ovat PHY79-SPEED-CONCEPT ja PHY79-GRAPH-01; vahvoja tukia ei muuteta porteiksi.</p><p>Piirrä matka–aika-kuvaaja rauhallisesta kävelystä ja tauosta. Kerro, mitä akselien luvut tarkoittavat. Älä piirrä maaston muotoa liikkeen kuvaajan tilalle. Mittaus ja mallikuva ovat eri asioita.</p><p>Vain nimetyt äärelliset mallit metreissä ja sekunneissa. Akselit, alueet, kulkusuunta, lähtöpaikka, askel ja katselunopeus on ilmoitettu mallissa. Kuljetun matkan mallin oikealle kulkeminen on erikseen sovittu; kuvaaja ei yksin määrää suuntaa. Tuntematon tai epätuettu arvo ei korvaudu oletuksella. Ruudun piste on yksi mitattava kohta suoralla, ei kuva maastosta tai hahmon koosta. Ei 2D-reittejä, voimia tai mielivaltaista käyttäjän antamaa simulaatiota.</p><p>Paikallinen palaute koskee vain nykyisiä vastauksia. Ei formaalia oppijahistoriaa, hallintapäätöstä, viivästettyä näyttöä tai riippumatonta prosessirubriikkia. Vihje, esimerkki ja taulukko ovat tukea. Ei aikarajaa, pakollista puhetta, kuuntelua, nimeämistä tai tiettyä klikkausreittiä. Lukuvastauksessa hyväksytään samanarvoinen desimaaliluku tai kokonaislukujen murtoluku, myös etunollat, merkit ja nolla. Ei laskulausekkeita tai hiljaista pyöristystä. Enintään 128 merkkiä/kenttä.</p></details>
+
+
+
+
+
+
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lopuksi:</strong> Voiko paluu kasvattaa kuljettua matkaa? Mistä kuvaajasta näet etäisyyden lähtöpaikkaan?</p>
+</section>
+
+
+
+
+
+
+
+
+<noscript data-lesson-role="metadata"><p>Alkukuva ja tämän tehtävän kuvaaja ovat nimettyä malliaineistoa. Esimerkkikuvat on merkitty ratkaistuiksi. Ilman JavaScriptiä voit lukea tekstit ja taulukot sekä vastata paperilla. Liike ja paikallinen tarkistus tarvitsevat JavaScriptin.</p></noscript></div>

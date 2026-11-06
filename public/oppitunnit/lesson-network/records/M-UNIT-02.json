@@ -1,0 +1,892 @@
+{
+  "kcId": "M-UNIT-02",
+  "pagePath": "lessons/M-UNIT-02.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-UNIT-02",
+  "canonicalNode": {
+    "id": "M-UNIT-02",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Geometria ja mittaaminen",
+    "parent_concept": "Yksikkömuunnos",
+    "title": "Yleisimpien pituusyksiköiden muuntaminen",
+    "short_description": "Yleisimpien pituusyksiköiden muuntaminen",
+    "source_basis": "assessment_refined",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S4",
+      "OPH-MATH-VL6-ASSESSMENT-SUPPORT"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-MEAS-03",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MEAS-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-UNIT-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-UNIT-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-MEAS-03",
+          "M-UNIT-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Geometria ja mittaaminen",
+      "Yksikkömuunnos"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-MEAS-03",
+      "targetKCId": "M-UNIT-02",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MEAS-03 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-UNIT-01",
+      "targetKCId": "M-UNIT-02",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-UNIT-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-UNIT-02",
+      "targetKCId": "M-SCALE-03",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-UNIT-02 tukee olennaisesti oppimista, mutta puute voidaan korjata noodin sisällä.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-UNIT-02",
+      "targetKCId": "M79-UNIT-LIN",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-UNIT-02 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-UNIT-02",
+      "targetKCId": "PHY79-UNIT-CONV",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-UNIT-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-UNIT-02",
+      "targetKCId": "PHY79-SPEED-UNIT",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-UNIT-02 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-MEAS-03",
+        "M-UNIT-01"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-UNIT-02/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/6/measurement/metric-units-and-using-instruments/",
+        "title": "Metric units and using instruments: Year6 planning tool",
+        "organization": "Education Services Australia / Mathematics Hub",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML explanation, misconceptions and practical suggestions read; linked activities/PDF/video not executed.",
+        "adopted": "Same quantity across units, contextual magnitude checks, place-value reasoning before shortcuts, separate capacity from current contained volume.",
+        "rejected": "Not Finnish curriculum authority or evidence of lesson efficacy. Correct the page wording that calls gram a base unit and its inconsistent negative-power typography via independent dimensional derivation and NIST. No copied tasks/prose/figures.",
+        "licence": "Commonwealth material CC BY4.0 unless otherwise indicated; excludes logos/trademarks/third-party material.",
+        "licenceURL": "https://www.mathematicshub.edu.au/terms-of-use/"
+      },
+      {
+        "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+        "title": "Metric(SI)Prefixes",
+        "organization": "NIST",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML prefix table and kilogram historical exception read.",
+        "adopted": "Exact powers10 and full intermediate prefix positions, kilogram remains SI base mass despite gram-prefix convention.",
+        "rejected": "No imported graphics, pronunciation gate or foreign spelling requirement.",
+        "usageRestrictions": "NIST employee non-SRD works generally not copyrighted in USA; foreign/third-party/SRD exceptions per https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications. Conceptual factual corroboration only; original Finnish vectors/code. No licence gate approval."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@1dc46e42c88f2c765bd8b21cbde92d7c5a0789a8c6c4bfb93ba26d24b621b97b",
+        "note": "B13 author current source; separate Carver independent review pending. Author QA is not selfapproval."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "note": "B13 author candidate, fresh current source validation; independent Carver review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+      },
+      {
+        "kind": "content",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "state": "reviewed",
+        "note": "Independent B13 Feynman source/domain/teaching and scoped native review closed; lesson-network/evidence/production/B13/reviews/Feynman-on-Newton-raw-snapshot.json. Technical synthetic scope, not learner validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@1dc46e42c88f2c765bd8b21cbde92d7c5a0789a8c6c4bfb93ba26d24b621b97b",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "note": "Not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+      },
+      {
+        "kind": "human",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "state": "pending",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-UNIT-02",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "back.svg",
+        "sha256": "2629ed004899c9ce31df96ac79d33e7eba1280c2885332662845472bddb5385e"
+      },
+      {
+        "path": "example.svg",
+        "sha256": "f38dcc504b2f9dafd91be7161a31454eb3c074a416b94ceb570217c3e491f012"
+      },
+      {
+        "path": "initial.svg",
+        "sha256": "3f5684760cf7fabf0f5d064ba6c9d61ac0082b1c3d3778cde7dd73666328c784"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "1263ea6a34daa4b741027b6db6cf54cb135a42cc6607711c5afa6b3f93e6df82"
+      },
+      {
+        "path": "transfer.svg",
+        "sha256": "7c97cff99244bbf92878eb60a1c2bd348ca7d90807f8cd7f23af2791d4747798"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/6/measurement/metric-units-and-using-instruments/",
+        "title": "Metric units and using instruments: Year6 planning tool",
+        "organization": "Education Services Australia / Mathematics Hub",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML explanation, misconceptions and practical suggestions read; linked activities/PDF/video not executed.",
+        "adopted": "Same quantity across units, contextual magnitude checks, place-value reasoning before shortcuts, separate capacity from current contained volume.",
+        "rejected": "Not Finnish curriculum authority or evidence of lesson efficacy. Correct the page wording that calls gram a base unit and its inconsistent negative-power typography via independent dimensional derivation and NIST. No copied tasks/prose/figures.",
+        "licence": "Commonwealth material CC BY4.0 unless otherwise indicated; excludes logos/trademarks/third-party material.",
+        "licenceURL": "https://www.mathematicshub.edu.au/terms-of-use/"
+      },
+      {
+        "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+        "title": "Metric(SI)Prefixes",
+        "organization": "NIST",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML prefix table and kilogram historical exception read.",
+        "adopted": "Exact powers10 and full intermediate prefix positions, kilogram remains SI base mass despite gram-prefix convention.",
+        "rejected": "No imported graphics, pronunciation gate or foreign spelling requirement.",
+        "usageRestrictions": "NIST employee non-SRD works generally not copyrighted in USA; foreign/third-party/SRD exceptions per https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications. Conceptual factual corroboration only; original Finnish vectors/code. No licence gate approval."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@1dc46e42c88f2c765bd8b21cbde92d7c5a0789a8c6c4bfb93ba26d24b621b97b",
+        "note": "B13 author current source; separate Carver independent review pending. Author QA is not selfapproval."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@1dc46e42c88f2c765bd8b21cbde92d7c5a0789a8c6c4bfb93ba26d24b621b97b",
+        "note": "B13 author current source; separate Carver independent review pending. Author QA is not selfapproval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@1dc46e42c88f2c765bd8b21cbde92d7c5a0789a8c6c4bfb93ba26d24b621b97b",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "note": "B13 author candidate, fresh current source validation; independent Carver review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "note": "B13 author candidate, fresh current source validation; independent Carver review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "note": "Not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+      },
+      {
+        "kind": "content",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "state": "reviewed",
+        "note": "Independent B13 Feynman source/domain/teaching and scoped native review closed; lesson-network/evidence/production/B13/reviews/Feynman-on-Newton-raw-snapshot.json. Technical synthetic scope, not learner validation."
+      },
+      {
+        "kind": "alignment",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "state": "reviewed",
+        "note": "Independent B13 Feynman canonical/Lite/source boundaries reviewed; lesson-network/evidence/production/B13/reviews/Feynman-on-Newton-raw-snapshot.json. Frozen graph/required groups retained."
+      },
+      {
+        "kind": "human",
+        "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+        "state": "pending",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-UNIT-02",
+      "sourceBuild": "audit1-2026-10-28",
+      "sourceHashes": {
+        "src/content/saari1.ts": "0f0722dc20192b7414d481efe1b66251b3f8665baf07b107fb5be7872b0c0a25",
+        "src/content/unitanim.ts": "269139fefb1e63bc26778caaca5b6ae19c393ec881dbd9cfd29ab24b05d5c518",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+      },
+      "actualTaskFamilies": {
+        "mm-cm-4": {
+          "kind": "numeric",
+          "seed": 1,
+          "phase": "guided",
+          "prompt": "20 mm = □ cm",
+          "hint": "Pienemmästä isompaan yksikköön: luku pienenee, joten jaetaan.",
+          "explanation": "1 cm = 10 mm, joten 20 mm = 20 : 10 = 2 cm.",
+          "registry": {
+            "node": "M-UNIT-02",
+            "tag": "mm-cm-4",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01"
+            ],
+            "source": [
+              "families.ts M-UNIT-02/*"
+            ]
+          }
+        },
+        "sense": {
+          "kind": "sort",
+          "seed": 2,
+          "phase": "guided",
+          "prompt": "Onko mitta järkevä? Lajittele: järkevä tai ei järkevä. Muunnoksen jälkeen tämä arvio paljastaa monta virhettä.",
+          "hint": "Vertaa tuttuun: 1 cm on sormen leveys, 1 kg on maitopurkki, 1 dl on pieni kuppi.",
+          "explanation": "Ovi 2 m on järkevä; Kirjan paksuus on oikeasti noin 3 cm; Muurahainen on oikeasti noin 5 mm; Koulumatka 2 km on järkevä.",
+          "registry": {
+            "node": "M-UNIT-02",
+            "tag": "sense",
+            "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01"
+            ],
+            "source": [
+              "families.ts M-UNIT-02/*"
+            ]
+          }
+        },
+        "match": {
+          "kind": "place",
+          "seed": 4,
+          "phase": "guided",
+          "prompt": "Yhdistä samat määrät: vedä jokaisen määrän alle sama määrä toisessa yksikössä. Yksi kortti jää yli.",
+          "hint": "Isosta pieneen kerrotaan, pienestä isoon jaetaan. Laske portaat.",
+          "explanation": "160 mm = 16 cm, 1 km = 1000 m, 900 cm = 9 m. 1,6 cm jäi yli.",
+          "registry": {
+            "node": "M-UNIT-02",
+            "tag": "match",
+            "outcome": "sijoittaa osat oikeille paikoille",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01"
+            ],
+            "source": [
+              "families.ts M-UNIT-02/*"
+            ]
+          }
+        },
+        "cm-m-3": {
+          "kind": "numeric",
+          "seed": 6,
+          "phase": "guided",
+          "prompt": "100 cm = □ m",
+          "hint": "Pienemmästä isompaan yksikköön: luku pienenee, joten jaetaan.",
+          "explanation": "1 m = 100 cm, joten 100 cm = 100 : 100 = 1 m.",
+          "registry": {
+            "node": "M-UNIT-02",
+            "tag": "cm-m-3",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01"
+            ],
+            "source": [
+              "families.ts M-UNIT-02/*"
+            ]
+          }
+        },
+        "m-cm-0": {
+          "kind": "numeric",
+          "seed": 7,
+          "phase": "guided",
+          "prompt": "1 m = □ cm",
+          "hint": "Isommasta pienempään yksikköön: luku kasvaa, joten kerrotaan.",
+          "explanation": "1 m = 100 cm, joten 1 m = 1 × 100 = 100 cm.",
+          "registry": {
+            "node": "M-UNIT-02",
+            "tag": "m-cm-0",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01"
+            ],
+            "source": [
+              "families.ts M-UNIT-02/*"
+            ]
+          }
+        },
+        "cm-mm-1": {
+          "kind": "numeric",
+          "seed": 8,
+          "phase": "guided",
+          "prompt": "26 cm = □ mm",
+          "hint": "Isommasta pienempään yksikköön: luku kasvaa, joten kerrotaan.",
+          "explanation": "1 cm = 10 mm, joten 26 cm = 26 × 10 = 260 mm.",
+          "registry": {
+            "node": "M-UNIT-02",
+            "tag": "cm-mm-1",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01"
+            ],
+            "source": [
+              "families.ts M-UNIT-02/*"
+            ]
+          }
+        },
+        "km-m-2": {
+          "kind": "numeric",
+          "seed": 12,
+          "phase": "guided",
+          "prompt": "1 km = □ m",
+          "hint": "Isommasta pienempään yksikköön: luku kasvaa, joten kerrotaan.",
+          "explanation": "1 km = 1000 m, joten 1 km = 1 × 1000 = 1000 m.",
+          "registry": {
+            "node": "M-UNIT-02",
+            "tag": "km-m-2",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01"
+            ],
+            "source": [
+              "families.ts M-UNIT-02/*"
+            ]
+          }
+        },
+        "transfer": {
+          "kind": "numeric",
+          "seed": 1,
+          "phase": "transfer",
+          "prompt": "Lankku on 5 m pitkä. Siitä sahataan 20 cm:n paloja. Montako palaa saadaan?",
+          "hint": "Muunna ensin lankku senttimetreiksi, sitten jaa palan pituudella.",
+          "explanation": "5 m = 500 cm. 500 cm : 20 cm = 25.",
+          "registry": {
+            "node": "M-UNIT-02",
+            "tag": "transfer",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01"
+            ],
+            "source": [
+              "families.ts M-UNIT-02/*"
+            ]
+          }
+        }
+      },
+      "demoSummaries": [
+        {
+          "say": "Isosta yksiköstä pieneen: luku kasvaa, koska pieniä yksiköitä tarvitaan enemmän. m → cm: jokainen porras alas kertoo kymmenellä.",
+          "kind": "animation",
+          "duration": 6.5
+        },
+        {
+          "say": "Desimaaliluku muuntuu samalla tavalla: 2,5 m → cm. Numerot siirtyvät, pilkku pysyy.",
+          "kind": "animation",
+          "duration": 6.5
+        },
+        {
+          "say": "Pienestä isoon: jaetaan. cm → m: jokainen porras ylös jakaa kymmenellä. Tarkista aina, onko vastaus järkevän kokoinen.",
+          "kind": "animation",
+          "duration": 6.5
+        }
+      ],
+      "reconciliation": "Actual conversion/sense/match/transfer read. Scalar conversion and3field equivalent quantities kept; measured-value same/different checks distinguish exact equality from fallible real-world typical-size guessing. Optional physical estimation remains teacher observed. Independent local exact arithmetic corrects finite decimal rounding in reference generator; no Lite edits."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-UNIT-02",
+        "subject": "mathematics",
+        "grade_band": "3-6",
+        "topic_area": "Geometria ja mittaaminen",
+        "parent_concept": "Yksikkömuunnos",
+        "title": "Yleisimpien pituusyksiköiden muuntaminen",
+        "short_description": "Yleisimpien pituusyksiköiden muuntaminen",
+        "source_basis": "assessment_refined",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL3-6-S4",
+          "OPH-MATH-VL6-ASSESSMENT-SUPPORT"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-MEAS-03",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-MEAS-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-UNIT-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-UNIT-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-MEAS-03",
+              "M-UNIT-01"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Geometria ja mittaaminen",
+          "Yksikkömuunnos"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-MEAS-03",
+            "M-UNIT-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "role": "atomic",
+      "gradeBand": "3-6",
+      "teacherObjective": "Yleisimpien pituusyksiköiden muuntaminen",
+      "studentObjective": "Aava tarvitsee nauhan senttimetreinä. Muunna sama pituus.",
+      "additionalHardGates": [],
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "requiredPrerequisites": [
+        {
+          "all_of": [
+            "M-MEAS-03",
+            "M-UNIT-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "crossKCAssumptions": "Multiplication/division factors supplied; decimal/fraction meanings explained, no new hard gate. Volume cubic relation locally explained; practical measurement not inferred from screen.",
+      "entry": "Concise supplied namedPNG; meaningful fixed same-quantity model+state and44pxstep within phone844. No header/chrome overrides.",
+      "evidenceLimits": "Local current supported response only; optional help, no formal mastery/learner efficacy/retention or personal history."
+    },
+    "extensions": {
+      "productionBatch": "B13",
+      "author": "Newton",
+      "humanReview": "not_performed",
+      "independentReview": "pending_Carver",
+      "simulationType": "exact_dimension_specific_unit_renaming_and_conserved_grouping",
+      "limits": "Own3delegated listeners and650ms bounded presentation interval, ownerWeakMapdisposesprevious and initializescontrols; currentinput/change/noeventCheckStepPlayconverterreadback; help/modelinvariant practicefeedback. No physical fluid/time simulation; no runtime oracle.",
+      "assetProvenance": "User supplied actual namedRGBA PNG unchanged; original exact mathematical SVG, static initial exactly current live model0.",
+      "sourcePreview": "Author isolated fullshellpreview only, not actual combined151.",
+      "exactAnswerFormat": "Normalized nonnegative rational value, raw128, ordinary signed decimal/grouped digits or signed fraction, precision18+9 after harmless zeros removed. Negativezero and double-negative fractions represent supported nonnegative values; truly negative values/zerodenominator rejected. No rounding."
+    },
+    "contentHash": "d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+    "contentRevision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@1dc46e42c88f2c765bd8b21cbde92d7c5a0789a8c6c4bfb93ba26d24b621b97b",
+          "note": "B13 author current source; separate Carver independent review pending. Author QA is not selfapproval."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+          "note": "B13 author candidate, fresh current source validation; independent Carver review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+          "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+        },
+        {
+          "kind": "content",
+          "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+          "state": "reviewed",
+          "note": "Independent B13 Feynman source/domain/teaching and scoped native review closed; lesson-network/evidence/production/B13/reviews/Feynman-on-Newton-raw-snapshot.json. Technical synthetic scope, not learner validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@1dc46e42c88f2c765bd8b21cbde92d7c5a0789a8c6c4bfb93ba26d24b621b97b",
+          "note": "No human/learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+          "note": "Not performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+          "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+        },
+        {
+          "kind": "human",
+          "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+          "state": "pending",
+          "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@1dc46e42c88f2c765bd8b21cbde92d7c5a0789a8c6c4bfb93ba26d24b621b97b",
+          "note": "B13 author current source; separate Carver independent review pending. Author QA is not selfapproval."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+          "note": "B13 author candidate, fresh current source validation; independent Carver review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+          "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+        },
+        {
+          "kind": "alignment",
+          "revision": "1@d0e366739e61e1bb0314820e917b44492af25842c924da2012482a4abcc6d28f",
+          "state": "reviewed",
+          "note": "Independent B13 Feynman canonical/Lite/source boundaries reviewed; lesson-network/evidence/production/B13/reviews/Feynman-on-Newton-raw-snapshot.json. Frozen graph/required groups retained."
+        }
+      ]
+    }
+  },
+  "outputHash": "702e6788ceec10321dd2a92ff969b94b1760835f20ebec7dae47eb65910d0178",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "702e6788ceec10321dd2a92ff969b94b1760835f20ebec7dae47eb65910d0178",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

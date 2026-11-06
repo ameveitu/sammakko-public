@@ -1,0 +1,419 @@
+{
+  "kind": "software_source_and_delta_review",
+  "reviewer": "ChatGPT, Sammakko 2026-11-06 software delta review",
+  "reviewedAgainst": "d6541b167554604402ce583751b075995f30e6bc",
+  "baseMain": "2ea2a040179e55fbd80379105907b6db1a3477dd",
+  "sourceBindings": {
+    "previous": {
+      "liteGeneratorSha256": "863685ef206c4667e838cf25e6ad550a4e87b6d96dbd25d6aff85781d79db0f3",
+      "lessonGeneratorSha256": "7e46b03da0fd63ec2eabb6ead8225f57a7924b8e19c683a9eabb74844fbee284"
+    },
+    "current": {
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "lessonGeneratorSha256": "6763c8deb5cacc3c895737d700c0d30f5f5a1ebb20f9d9247b3a018fdd2d9055"
+    }
+  },
+  "scope": {
+    "standalonePackages": 181,
+    "classicLite": 181,
+    "islandDraftsExcluded": 509,
+    "humanValidation": "pending"
+  },
+  "checks": {
+    "standalone": "The complete authored packages tree was identical at review base and incoming main (Git tree 5f11f9d605c6170e22b3503e0fa8c64912a8ccd0). For every updated package the body, module and declared assets are unchanged. Incoming alignment metadata was synchronized to the current Lite inputs.",
+    "htmlShell": "Compared release-bound navigation and manifest sources: tagline, visibility of direct lesson-library links, Saaristo landing header and menu-height selector changed. Same 181 lesson-to-Lite IDs; the runtime manifest updated six KC revisions.",
+    "candidateIntegration": "Reviewed narrow-layout Saaristo styles and the shared audio guard for missing Finnish number-word recordings. The 509 additional draft exercises have a separate scope.",
+    "generatorSample": {
+      "protocol": "Sorted classic KC IDs; guided, independent, transfer, retrieval; independent RNG seeds 0–127; ordered [id,phase,seed,JSON.stringify(item)] hashed with SHA-256. This excludes draw functions and production UI rendering.",
+      "cases": 92672,
+      "changedFromReview": 3168,
+      "changedTopics": 25,
+      "perNodeIdentical": 156,
+      "reviewBaseDigest": "6f4c04a1bdc2da0540849058c5f27d1972f023df7d9ef7b7ce1026a72c050a45",
+      "snapshotIntroduction": "f10584b9860dee6394d9283ec55f2bc95a5de114",
+      "snapshotIntroductionAndBaseMainDigest": "460ef1fa471342fa849dc4557375a20410cd9e4ec83563a4d8cb9a4c39a17dc8",
+      "differencesBetweenThoseTwo": 0,
+      "candidateDigest": "443fb548767938c84670ec45101e45fa3d58912d669d537705e11c68e538f76a",
+      "changedFromBaseMain": 84
+    },
+    "mathematicalSpotChecks": {
+      "protocol": "Compared text, cards and numeric inputs against decimal place-value digits, time multiplied by 60, constant-speed proportion, quotient, divisor scaling, quotient comparison and unique value-equivalence. Four phases, seeds 0–127.",
+      "passingChecks": {
+        "M-DEC-04/givenDigits": 512,
+        "M-DEC-04/digitAndNumberAgreement": 2173,
+        "M-DEC-08/hoursToMinutes": 128,
+        "M79-PROP-01/ratio": 128,
+        "M79-DEC-DIV/quotientOrScaledDivisor": 317,
+        "M79-DEC-DIV/divisionComparison": 111,
+        "M79-DEC-DIV/uniqueEquivalentIntegerDivisor": 252
+      },
+      "originalAmbiguousMatchingSlots": 90,
+      "remainingAmbiguousMatchingSlots": 0
+    },
+    "browser": {
+      "engine": "Headless Chromium 153.0.8010.0, Linux",
+      "test": "lite/launch-tests/scope.spec.ts",
+      "build": "Vite production build, static HTTP, reduced motion, deterministic seed",
+      "scenarios": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "topics": 181,
+          "uiObservations": 1068,
+          "observedTopicsByStage": {
+            "intro": 181,
+            "demo-0": 181,
+            "guided": 181,
+            "independent": 181
+          },
+          "uncaughtBrowserErrors": 0,
+          "httpFailures": 0
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "topics": 181,
+          "uiObservations": 1068,
+          "observedTopicsByStage": {
+            "intro": 181,
+            "demo-0": 181,
+            "guided": 181,
+            "independent": 181
+          },
+          "uncaughtBrowserErrors": 0,
+          "httpFailures": 0
+        }
+      ],
+      "boundary": "Observed the real UI, images, answer controls and navigation without answering or recording attempts. No human playtest.",
+      "revisionCheck": "The full sweep used the corrected question generator and final Saaristo CSS. After assigning division-match2-2026-11-06 to the same generator, M79-DEC-DIV was separately rebuilt and rerun at both viewports with the final runtime manifest."
+    }
+  },
+  "changedTopics": [
+    {
+      "kc": "ENV-PHY-MOTION-01",
+      "changes": 52,
+      "fields": {
+        "hint": 52
+      },
+      "taskFields": {},
+      "before": "c9861a47b2c8ff22a242605ee4cd99db0d91ca65a599354daff5b98b0ef579f1",
+      "after": "92c52f8ed94eaa60dce0162b379b5e6f6addc8fd50979ddcb2f7f72cb3b2c9fa",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-ALG-08",
+      "changes": 84,
+      "fields": {
+        "task": 84
+      },
+      "taskFields": {
+        "whyAt": 84
+      },
+      "before": "8407d569857169908bf59b633723b9e05c7f0d4cc609f5d1d4fbd972a77a0063",
+      "after": "3a7ed7cec207c72af07258371551e4dd2f3450eebe3dca36b7b7a8b04f8c4c15",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-DATA-04",
+      "changes": 189,
+      "fields": {
+        "say": 189,
+        "hint": 105
+      },
+      "taskFields": {},
+      "before": "65355239d0a9ff3749935e527119dad731f532c3e46e2abbd691fe706d36347d",
+      "after": "92bdca30e4cab421e807359900f27f0fae469ad901cdde8f388eafd2b662bddf",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-DATA-09",
+      "changes": 39,
+      "fields": {
+        "task": 39
+      },
+      "taskFields": {
+        "options": 39
+      },
+      "before": "5c4f68c0194d4b204c386d418b4f3143521bdc8a6a5eac7491c15cbc05996afc",
+      "after": "3f0157eea69c42718b08360a20b1d5ef1371449ad5505c5def0e773b3b2a05a8",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-DEC-04",
+      "changes": 512,
+      "fields": {
+        "say": 512,
+        "task": 512,
+        "hint": 512
+      },
+      "taskFields": {
+        "slots": 512,
+        "tokens": 512,
+        "answer": 512,
+        "why": 512
+      },
+      "before": "4b447fcfb887c3af01e2617bbed128e1e5643e0c8613288fd2d22d53fe5416d5",
+      "after": "cde7a8793d0ab9163d6960c742c75597f6d8e74abe75719a9fe75129cb956cf8",
+      "assessment": "The guided decimal assembly keeps the given numeral or words in the prompt and drops the redundant matching card. Selected digits and reconstructed numeral were cross-checked against that prompt."
+    },
+    {
+      "kc": "M-DEC-08",
+      "changes": 98,
+      "fields": {
+        "say": 98,
+        "task": 98,
+        "explain": 98
+      },
+      "taskFields": {
+        "answer": 98
+      },
+      "before": "c3b4bd68245dfdcde44e7160082b7d697795fb1351489150aa71fd76e55e533f",
+      "after": "feb01c2dde20e0d6dce43eb386f862c9bdc4acc1eef710703c6277c56dd480e0",
+      "assessment": "Transfer questions use easier half-hour inputs. Independently recomputed minutes from the learner-facing prompt."
+    },
+    {
+      "kc": "M-DEC-09",
+      "changes": 84,
+      "fields": {
+        "hint": 84
+      },
+      "taskFields": {},
+      "before": "226488a5b3cdaa9f1f3b41fd79de2b90f250a572bf17c36589dcbb01bdecc549",
+      "after": "fb29a5b88e6ee9d0637010c2c864b6301ce30fa26f89f98153ba464cf113bfaf",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-DEC-DECOMPOSE",
+      "changes": 128,
+      "fields": {
+        "say": 128
+      },
+      "taskFields": {},
+      "before": "e14a28caeadc10bc464c9a2387003451680eab1fb88297ea2eddf77a7ae31878",
+      "after": "47351adab03a4baab97dc624f6d0c7684141c5c00d70bc8581f42058500fea37",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-DIV-01",
+      "changes": 105,
+      "fields": {
+        "say": 105
+      },
+      "taskFields": {},
+      "before": "1a31a0fc9c029ff1b991b2f32e1bb090e6e8a9dac236c30e4f96ed1bf64b77ae",
+      "after": "6535550c35f63e0d00fbd55e792e13ad39da2b8c024a66ee9be68d558a20f2ab",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-DIV-02",
+      "changes": 135,
+      "fields": {
+        "say": 135
+      },
+      "taskFields": {},
+      "before": "934a5a3d7a39c21b50521d5365a025c584e5314c1a78cde817b2202624bccfb0",
+      "after": "20ec736e0fa76145bf4aef3030528b7db95524a9982c08647e230741aaa59911",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-FRAC-01",
+      "changes": 105,
+      "fields": {
+        "explain": 105
+      },
+      "taskFields": {},
+      "before": "54c5503bd8076c6b284bb75c41d9fdf9354dd19b6c139cc7a1410303e87d885c",
+      "after": "18279f3723f268052a270f34171fd228fd4654af248857500bcd2a1e9868a0db",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-FRAC-03",
+      "changes": 111,
+      "fields": {
+        "task": 111
+      },
+      "taskFields": {
+        "why": 111
+      },
+      "before": "171c15bbc7f4475a66e363217a3e4aa6d8233cf2628eb2e78d40da476de69965",
+      "after": "47bb928939401c6a9615a21a1a94c84c7527154e8cf332a8ca7fd92807060936",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-MEAS-00",
+      "changes": 6,
+      "fields": {
+        "explain": 6
+      },
+      "taskFields": {},
+      "before": "bba6b6d737beb547d26e982835ca0f7efeb8eb38017d48c44ca4828942904347",
+      "after": "15292ce3ba1cd9223724ead14df405e9dbb23e9f70b550303c14ba8b73c044ec",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-MEAS-08",
+      "changes": 105,
+      "fields": {
+        "explain": 105
+      },
+      "taskFields": {},
+      "before": "14de56f507c63b396a0286cb61dd46ef90f6f7b1454803b9d282670e7a36a2de",
+      "after": "7d25258c23e180e601d097836b7d198aa9b76bea79b626f25649ea33a1766a6f",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-MULTREL-01",
+      "changes": 239,
+      "fields": {
+        "task": 239
+      },
+      "taskFields": {
+        "why": 239
+      },
+      "before": "0eed4fbb4296479c4b2867148987b3b7e794ddb633edc2a4fd00dd88ba42c6d9",
+      "after": "dc1768db13917357a50dbe48bb39be5919f8a5d68434817037d66032e9e87ec2",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-NUM-10",
+      "changes": 99,
+      "fields": {
+        "task": 99
+      },
+      "taskFields": {
+        "why": 99
+      },
+      "before": "0f3501e2016fa22613bb8ecbec13d60c36a495472d35c2b13bd3d21250801dd3",
+      "after": "3136207a23f71e40450c9e9c0566cb4baef781894e14e0d3f97340342ad5067c",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-SUB-01",
+      "changes": 96,
+      "fields": {
+        "task": 96
+      },
+      "taskFields": {
+        "why": 96
+      },
+      "before": "3c7988b0cf9546b9dd3d2801b07884a4e938dea3c4176d5440270ca888b42bb4",
+      "after": "a5dd4e7835375fac8f205791dffadc9539a625cef7e7f5622b13e25d5d277296",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M-TIME-03",
+      "changes": 42,
+      "fields": {
+        "task": 42
+      },
+      "taskFields": {
+        "why": 42
+      },
+      "before": "44df9536b7446054841fde26e1f0d4c94886eb416073c9fa0e43537f7d39b17e",
+      "after": "8ef439b6e2a86db98e75f9c3382cf9aa96032507ffc659c1e657841fe20c45e8",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M79-DEC-DIV",
+      "changes": 401,
+      "fields": {
+        "say": 317,
+        "task": 401,
+        "explain": 401,
+        "hint": 143
+      },
+      "taskFields": {
+        "answer": 294,
+        "whyAt": 317,
+        "slots": 84,
+        "tokens": 84,
+        "why": 84,
+        "unit": 128
+      },
+      "before": "5106a78e954d219e3612a53a29432b6ff357bd96917ebd119635870d5db3b11a",
+      "after": "fcefc2033a7bd5a92f9051b2226c2db317b795b50f5bf50f46064f1988105a39",
+      "assessment": "Easier decimal divisors and quotients. Reviewed division and equivalent-card answers. Disjoint quotients repair the case in which two different labels gave the same correct quotient."
+    },
+    {
+      "kc": "M79-DEP-01",
+      "changes": 128,
+      "fields": {
+        "explain": 128
+      },
+      "taskFields": {},
+      "before": "6ba3e6862d8bbba451eee594868639ca2ff70953840f2fd84c37a135a8a383ad",
+      "after": "46a46fa5ecb38b2d3224a598b7bb291afaf9c2525638edf9bfcccafd2b09b537",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M79-FUNC-01",
+      "changes": 54,
+      "fields": {
+        "explain": 54
+      },
+      "taskFields": {},
+      "before": "5c9f6a673cd43591b742d6be7a2d4b0a7cd21301829b3fe71a55d0ba9df4925f",
+      "after": "66e6ab0df1abcf550ca44e0d3ec9b9c86c26841bfbef286775465d0f65c4ce3a",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "M79-PROP-01",
+      "changes": 128,
+      "fields": {
+        "say": 128,
+        "task": 128,
+        "explain": 128,
+        "hint": 128
+      },
+      "taskFields": {
+        "answer": 127,
+        "whyAt": 128
+      },
+      "before": "b9d6bb95b11529b64be8e520ab2c03660d8525dbfb58ec062d162baa9ecbd1ef",
+      "after": "c1c69c1c8dc7503aeedab0ef85447963ac4715c6c98428cba50452642db162c9",
+      "assessment": "Transfer uses easier proportional distances and times. Independently recomputed the requested distance from the learner-facing quantities."
+    },
+    {
+      "kc": "SCI-ENV-DATA-01",
+      "changes": 84,
+      "fields": {
+        "explain": 84
+      },
+      "taskFields": {},
+      "before": "e705b9c87520bf1d934c2102adc400f51b64fe48b2cec2afc1c74ffb7fc81c40",
+      "after": "8a6a2c82e17718e53bc7570ebef99bc0e61d7daece8a33b79be2e28407f5d870",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    },
+    {
+      "kc": "SCI-ENV-RECORD-01",
+      "changes": 123,
+      "fields": {
+        "task": 123
+      },
+      "taskFields": {
+        "cols": 123
+      },
+      "before": "cd8bea837c49c9bf144f9a22f6f2d84c190730257cfcd522587b30bd5821d8a9",
+      "after": "f18de118d1110f0013c9c6a469dbe0fc3b1ba7debccd02ac204ca82809306d28",
+      "assessment": "Narrower arrangement of the answer cards; the keyed response and record interpretation remain stable."
+    },
+    {
+      "kc": "SCI-ENV-TOOL-01",
+      "changes": 21,
+      "fields": {
+        "task": 21
+      },
+      "taskFields": {
+        "why": 21
+      },
+      "before": "81de5726f802888e01ddb3db82eb705bbf773d94abe91eb905f24e6e3b816963",
+      "after": "c35cef32a707d39152ad3dcd59f1293ebd4760e7b146949bd52552490b1721ba",
+      "assessment": "Reviewed wording in the learner prompt, explanation, option text or feedback. Correct answers retain the earlier values."
+    }
+  ],
+  "boundary": "Revision-specific software review. No teacher or learner studies, curriculum certification, accessibility sign-off, server deployment or approval of the 509 development exercises."
+}

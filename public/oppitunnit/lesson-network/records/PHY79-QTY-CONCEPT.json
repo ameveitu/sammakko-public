@@ -1,0 +1,671 @@
+{
+  "kcId": "PHY79-QTY-CONCEPT",
+  "pagePath": "lessons/PHY79-QTY-CONCEPT.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "PHY79-QTY-CONCEPT",
+  "canonicalNode": {
+    "id": "PHY79-QTY-CONCEPT",
+    "subject": "physics",
+    "grade_band": "7-9",
+    "topic_area": "S1 Luonnontieteellinen tutkimus",
+    "parent_concept": "Suureet ja yksiköt",
+    "title": "Fysikaalisen suureen käsitteen ymmärtäminen",
+    "short_description": "Fysikaalisen suureen käsitteen ymmärtäminen",
+    "node_kind": "concept",
+    "source_basis": "pedagogically_derived",
+    "curriculum_refs": [
+      "PHY79-S1",
+      "PHY79-ASSESS"
+    ],
+    "relations": [
+      {
+        "id": "M-MEAS-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MEAS-01 on ydinesitieto tälle osaamiskohteelle."
+      },
+      {
+        "id": "M-NUM-14",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-MEAS-01"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "evidence_notes": "v0.2-refaktorissa erotettu noodista PHY79-QTY-01 itsenäiseksi evidenssikohteeksi.",
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "status": "candidate_refactored",
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "split_from": "PHY79-QTY-01",
+    "concept_path": [
+      "Fysiikka",
+      "S1 Luonnontieteellinen tutkimus",
+      "Suureet ja yksiköt"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-MEAS-01",
+      "targetKCId": "PHY79-QTY-CONCEPT",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MEAS-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-NUM-14",
+      "targetKCId": "PHY79-QTY-CONCEPT",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "PHY79-QTY-CONCEPT",
+      "targetKCId": "PHY79-QTY-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-QTY-CONCEPT vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "PHY79-QTY-CONCEPT",
+      "targetKCId": "PHY79-NUMVALUE",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Fysikaalisen suureen käsite tarvitaan tämän erotteluun.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "PHY79-QTY-CONCEPT",
+      "targetKCId": "PHY79-UNIT-CONCEPT",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Fysikaalisen suureen käsite tarvitaan tämän erotteluun.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-MEAS-01"
+      ],
+      "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/PHY79-QTY-CONCEPT/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "JCGM VIM3 §1.1 — quantity",
+        "url": "https://jcgm.bipm.org/vim/en/1.1.html",
+        "accessed": "2026-10-29",
+        "read": "Definition and notes2,5,6.",
+        "adopted": "Quantity is a property with magnitude, expressed using number/reference.",
+        "rejected": "Not the instrument, bare numeral, object name or a universal visible-unit requirement.",
+        "usageRestrictions": "Normative comparison; original paraphrase and illustrations, no protected tables copied."
+      },
+      {
+        "title": "JCGM VIM3 §1.19 — quantity value",
+        "url": "https://jcgm.bipm.org/vim/en/1.19.html",
+        "accessed": "2026-10-29",
+        "read": "Definition, examples and note1 including dimension-one values.",
+        "adopted": "Separate property from its value and allow dimension-one values without an explicit printed unit.",
+        "limitations": "Conceptual simplification; no calibration or uncertainty certification.",
+        "usageRestrictions": "Original paraphrase/diagrams only."
+      },
+      {
+        "title": "JCGM VIM3 §1.30 — nominal property",
+        "url": "https://jcgm.bipm.org/vim/en/1.30.html",
+        "accessed": "2026-10-29",
+        "read": "Definition, examples, notes and informative2013 colour annotation.",
+        "adopted": "Distinguish a nominal description/code from a magnitude without blanket claims that colour/shape cannot be studied quantitatively.",
+        "rejected": "Lite notQtyScene whole-category denial based on four unsuitable instruments.",
+        "usageRestrictions": "Original paraphrase only; no source graphics copied."
+      },
+      {
+        "title": "BIPM — SI Brochure concise summary, updated2026",
+        "url": "https://www.bipm.org/en/publications/si-brochure",
+        "accessed": "2026-10-29",
+        "read": "Official2026 landing page and linked concise summary Table1 quantity/unit relationships; full brochure not claimed read.",
+        "adopted": "Use accurate property/unit examples, including length/metre, mass/kilogram, time/second.",
+        "limitations": "No unit-definition memorization or conversion requirement.",
+        "usageRestrictions": "Landing page CC BY4. No copied source figures; supplied PNG rights separate."
+      },
+      {
+        "title": "OPH — Perusopetuksen opetussuunnitelman perusteet2014",
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "accessed": "2026-10-29",
+        "read": "Targeted2014 PDF passages: ENV1–2 S4 PDF132; ENV3–6 T4–T6 PDF239; physics7–9 S1 PDF389. Not a complete current-amendment review.",
+        "treatment": "Broad observation/inquiry/recording context. Exact frozen DAG/roles and project controls are not prescriptions.",
+        "usageRestrictions": "©OPH; paraphrase only, no source figures reused."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": {
+      "task_id": "KC-15-PHY79-QTY-CONCEPT",
+      "kc_id": "PHY79-QTY-CONCEPT",
+      "mastery_role": "atomic",
+      "node_kind": "concept",
+      "status": "PENDING_IMPLEMENTATION",
+      "content_file": null,
+      "prerequisites": [
+        {
+          "all_of": [
+            "M-MEAS-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "validation": {
+        "schema": "pending_autonomous_adventure_review",
+        "graph_refs": "pending_autonomous_adventure_review",
+        "domain_truth": "pending_autonomous_adventure_review",
+        "item_invariants": "pending_autonomous_adventure_review",
+        "pedagogy_review": "pending_autonomous_adventure_review",
+        "subject_review": "pending_autonomous_adventure_review",
+        "accessibility_review": "pending_autonomous_adventure_review",
+        "runtime_smoke": "pending_autonomous_adventure_review"
+      },
+      "production_order": 15,
+      "historical_status": "DEFERRED_UNTIL_CALIBRATION",
+      "autonomous_evidence": [],
+      "historical_validation": {
+        "schema": "pending",
+        "graph_refs": "pending",
+        "domain_truth": "pending",
+        "item_invariants": "pending",
+        "pedagogy_review": "pending",
+        "subject_review": "pending",
+        "accessibility_review": "pending",
+        "runtime_smoke": "pending"
+      }
+    }
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@890277c496b9a76208f7797129484c8ea8d2d96c42f56a3f95a1ea1696d936d7",
+        "note": "Author checks completed; separate independent review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+        "note": "Revision2 fixes valid XML for external SVG; independent/main native closure pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@890277c496b9a76208f7797129484c8ea8d2d96c42f56a3f95a1ea1696d936d7",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "PHY79-QTY-CONCEPT",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "length.svg",
+        "sha256": "114f797af264704c75b2b06431371be4092d21b4a2cc0b3625f58a4317f3ef6c"
+      },
+      {
+        "path": "mass.svg",
+        "sha256": "572af89193a328ee51f4423df56957755ad9275d655f1e8ccce7f9a079eefc91"
+      },
+      {
+        "path": "shared/loikka/curious.png",
+        "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "bc809c8408678de636be1eb6b9fb3ca48e57d5546a826fbc846783ef8b548578"
+      }
+    ],
+    "research": [
+      {
+        "title": "JCGM VIM3 §1.1 — quantity",
+        "url": "https://jcgm.bipm.org/vim/en/1.1.html",
+        "accessed": "2026-10-29",
+        "read": "Definition and notes2,5,6.",
+        "adopted": "Quantity is a property with magnitude, expressed using number/reference.",
+        "rejected": "Not the instrument, bare numeral, object name or a universal visible-unit requirement.",
+        "usageRestrictions": "Normative comparison; original paraphrase and illustrations, no protected tables copied."
+      },
+      {
+        "title": "JCGM VIM3 §1.19 — quantity value",
+        "url": "https://jcgm.bipm.org/vim/en/1.19.html",
+        "accessed": "2026-10-29",
+        "read": "Definition, examples and note1 including dimension-one values.",
+        "adopted": "Separate property from its value and allow dimension-one values without an explicit printed unit.",
+        "limitations": "Conceptual simplification; no calibration or uncertainty certification.",
+        "usageRestrictions": "Original paraphrase/diagrams only."
+      },
+      {
+        "title": "JCGM VIM3 §1.30 — nominal property",
+        "url": "https://jcgm.bipm.org/vim/en/1.30.html",
+        "accessed": "2026-10-29",
+        "read": "Definition, examples, notes and informative2013 colour annotation.",
+        "adopted": "Distinguish a nominal description/code from a magnitude without blanket claims that colour/shape cannot be studied quantitatively.",
+        "rejected": "Lite notQtyScene whole-category denial based on four unsuitable instruments.",
+        "usageRestrictions": "Original paraphrase only; no source graphics copied."
+      },
+      {
+        "title": "BIPM — SI Brochure concise summary, updated2026",
+        "url": "https://www.bipm.org/en/publications/si-brochure",
+        "accessed": "2026-10-29",
+        "read": "Official2026 landing page and linked concise summary Table1 quantity/unit relationships; full brochure not claimed read.",
+        "adopted": "Use accurate property/unit examples, including length/metre, mass/kilogram, time/second.",
+        "limitations": "No unit-definition memorization or conversion requirement.",
+        "usageRestrictions": "Landing page CC BY4. No copied source figures; supplied PNG rights separate."
+      },
+      {
+        "title": "OPH — Perusopetuksen opetussuunnitelman perusteet2014",
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "accessed": "2026-10-29",
+        "read": "Targeted2014 PDF passages: ENV1–2 S4 PDF132; ENV3–6 T4–T6 PDF239; physics7–9 S1 PDF389. Not a complete current-amendment review.",
+        "treatment": "Broad observation/inquiry/recording context. Exact frozen DAG/roles and project controls are not prescriptions.",
+        "usageRestrictions": "©OPH; paraphrase only, no source figures reused."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@890277c496b9a76208f7797129484c8ea8d2d96c42f56a3f95a1ea1696d936d7",
+        "note": "Author checks completed; separate independent review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@890277c496b9a76208f7797129484c8ea8d2d96c42f56a3f95a1ea1696d936d7",
+        "note": "Author checks completed; separate independent review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@890277c496b9a76208f7797129484c8ea8d2d96c42f56a3f95a1ea1696d936d7",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+        "note": "Revision2 fixes valid XML for external SVG; independent/main native closure pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+        "note": "Revision2 fixes valid XML for external SVG; independent/main native closure pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "PHY79-QTY-CONCEPT",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "inventory": "alignment.md",
+      "reconciliation": "alignment.md",
+      "sourceHashes": {
+        "src/content/science.ts": "b72eb983d570fda14794825e6f0210f4ef599fea039a431d817f32c25b7f9a58",
+        "src/content/physics.ts": "835ad69dd95f622adcb6050ab63d00a4477d64425545dd1b8af5a4892f978430",
+        "src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "actualFamilies": [
+        "pick",
+        "tool",
+        "unitVs",
+        "sort",
+        "transfer"
+      ]
+    },
+    "planning": {
+      "gradeBand": "7-9",
+      "role": "atomic",
+      "canonical": {
+        "id": "PHY79-QTY-CONCEPT",
+        "subject": "physics",
+        "grade_band": "7-9",
+        "topic_area": "S1 Luonnontieteellinen tutkimus",
+        "parent_concept": "Suureet ja yksiköt",
+        "title": "Fysikaalisen suureen käsitteen ymmärtäminen",
+        "short_description": "Fysikaalisen suureen käsitteen ymmärtäminen",
+        "node_kind": "concept",
+        "source_basis": "pedagogically_derived",
+        "curriculum_refs": [
+          "PHY79-S1",
+          "PHY79-ASSESS"
+        ],
+        "relations": [
+          {
+            "id": "M-MEAS-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-MEAS-01 on ydinesitieto tälle osaamiskohteelle."
+          },
+          {
+            "id": "M-NUM-14",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-MEAS-01"
+            ],
+            "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+          }
+        ],
+        "evidence_notes": "v0.2-refaktorissa erotettu noodista PHY79-QTY-01 itsenäiseksi evidenssikohteeksi.",
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "status": "candidate_refactored",
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "split_from": "PHY79-QTY-01",
+        "concept_path": [
+          "Fysiikka",
+          "S1 Luonnontieteellinen tutkimus",
+          "Suureet ja yksiköt"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-MEAS-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "strongSupport": [
+        {
+          "id": "M-NUM-14",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-NUM-14 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "teacherObjective": "Fysikaalisen suureen käsitteen ymmärtäminen",
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "sourceBasis": "pedagogically_derived",
+      "childGoal": "Tunnistan, mitä ominaisuutta mitataan.",
+      "evidenceLimits": "Supported supplied model/record work, no independent physical proficiency, retention/mastery, human/learner or efficacy claim. No personal records.",
+      "curriculumVsDesign": "Frozen roles/grade/AND prerequisites retained. Primary comparisons support content, not project DAG/controls/thresholds. Historical2014 OPH passages targeted, no current normative completeness certification.",
+      "assetProvenance": "Original local domain diagrams; supplied shared raster PNG unchanged, not asserted hand-drawn or relicensed."
+    },
+    "extensions": {
+      "productionBatch": "B07",
+      "humanReview": "not_performed",
+      "independentReview": "pending_other_agent",
+      "researchNote": "research.md",
+      "alignmentNote": "alignment.md",
+      "simulationType": "measured_property_and_value_model",
+      "privacy": "Only transient local synthetic practice state. No storage/network/telemetry/personal observations.",
+      "feedback": "Both semantic input/change and explicit current visible answer; independent instructional support preserves valid verdicts."
+    },
+    "contentHash": "0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+    "contentRevision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@890277c496b9a76208f7797129484c8ea8d2d96c42f56a3f95a1ea1696d936d7",
+          "note": "Author checks completed; separate independent review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+          "note": "Revision2 fixes valid XML for external SVG; independent/main native closure pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@890277c496b9a76208f7797129484c8ea8d2d96c42f56a3f95a1ea1696d936d7",
+          "note": "No human/learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+          "note": "No human/learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+          "note": "No actual human/target-learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@890277c496b9a76208f7797129484c8ea8d2d96c42f56a3f95a1ea1696d936d7",
+          "note": "Author checks completed; separate independent review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+          "note": "Revision2 fixes valid XML for external SVG; independent/main native closure pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@0e1251c1f4c898562183c3268f634c4a890bd7aa32b5488ada1e9e2bb20b840b",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    }
+  },
+  "outputHash": "9925df28a674e6c57326e821fdc446d5a86f2e3620f932d6382568f8e96c342f",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "60da4989cbb40ab0e278b09da27079a5877b8b704c7cbca3a9bde4c6b5a26046",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "9925df28a674e6c57326e821fdc446d5a86f2e3620f932d6382568f8e96c342f",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

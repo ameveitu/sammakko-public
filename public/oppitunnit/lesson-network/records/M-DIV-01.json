@@ -1,0 +1,711 @@
+{
+  "kcId": "M-DIV-01",
+  "pagePath": "lessons/M-DIV-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-DIV-01",
+  "canonicalNode": {
+    "id": "M-DIV-01",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Jakolasku",
+    "title": "Ositusjako: määrä jaetaan annettuun määrään yhtä suuria ryhmiä",
+    "short_description": "Ositusjako: määrä jaetaan annettuun määrään yhtä suuria ryhmiä",
+    "source_basis": "assessment_refined",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2",
+      "OPH-MATH-VL6-ASSESSMENT-SUPPORT"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "concept",
+    "relations": [
+      {
+        "id": "M-NUM-17",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Puolittaminen on yksi ositusjaon erikoistapaus, ei yleisen ositusjaon välttämätön esitieto."
+      },
+      {
+        "id": "M-MUL-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Kertolasku helpottaa yhteyden rakentamista, mutta ositusjako voidaan esitellä jakamistilanteena ennen kertolaskun hallintaa."
+      },
+      {
+        "id": "M-NUM-02",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "Jaettava määrä pitää hahmottaa lukumääränä."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-NUM-02"
+        ],
+        "rationale": "Yleisen ositusjaon vähimmäisesitieto on lukumäärän hallinta."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Jakolasku"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-NUM-17",
+      "targetKCId": "M-DIV-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Puolittaminen on yksi ositusjaon erikoistapaus, ei yleisen ositusjaon välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-MUL-01",
+      "targetKCId": "M-DIV-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Kertolasku helpottaa yhteyden rakentamista, mutta ositusjako voidaan esitellä jakamistilanteena ennen kertolaskun hallintaa.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-NUM-02",
+      "targetKCId": "M-DIV-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Jaettava määrä pitää hahmottaa lukumääränä.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M-MULDIV-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DIV-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M-DIVIS-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DIV-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M-FRAC-16",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DIV-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M-DEC-09",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Jakolaskun vähintään yksi merkitysrakenne tarvitaan.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M-PCT-05",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Prosenttiarvo voidaan ratkaista usealla menetelmällä; jakolasku ei ole jokaisen variantin hard path.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M-SCALE-02",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DIV-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M-UNIT-05",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Aikayksikkömuunnoksessa käytettävä operaatio riippuu muunnossuunnasta.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M-STAT-04",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Keskiarvon tasauksen käsite voidaan ensin ymmärtää toiminnallisesti; jakolasku tarvitaan numeeriseen menetelmään.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M-STAT-05",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Keskiarvon numeerinen lasku tarvitsee jakamisen merkityksen.",
+      "sourceRelationIndex": 4
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M79-INT-DIV",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DIV-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "M79-PCT-BASE",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-DIV-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "PHY79-SPEED-CALC",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-DIV-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "PHY79-ACCEL-CALC",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-DIV-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-DIV-01",
+      "targetKCId": "PHY79-POWER-CALC",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-DIV-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-NUM-02"
+      ],
+      "rationale": "Yleisen ositusjaon vähimmäisesitieto on lukumäärän hallinta."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-DIV-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "title": "Perusopetuksen opetussuunnitelman perusteet2014, matematiikka1–2",
+        "organization": "Opetushallitus",
+        "retrievedAt": "2026-10-29",
+        "read": "Original2014 PDF127–129, printed128–130; S2/S3 and T10.",
+        "usageRestrictions": "©OPH; paraphrase only, no external figures/long passages or blanket open licence assumption. No current-amendment compliance claim.",
+        "adoptedIdeas": "Concrete preparation for division; use canonical sharing refinement.",
+        "rejectedIdeas": "Do not attribute project DAG ordering, exact UI, split concept labels or age-specific task numbers directly to OPH."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-206-structures-quotitive-and-partitive-division/",
+        "title": "Structures: quotitive and partitive division, Spine2 Topic2.6",
+        "organization": "NCETM / Etio",
+        "retrievedAt": "2026-10-29",
+        "read": "HTML introduction and teaching points1–5. Full teacher-guide PDF could not be opened by web tool (content too large); not claimed read.",
+        "usageRestrictions": "NCETM Crown/OGL policy with attribution/author caveat; PD material used as conceptual reference, no source diagrams or text copied.",
+        "adoptedIdeas": "Known total and number of recipients; ask unknown amount per share.",
+        "rejectedIdeas": "Do not import multiplication/skip-counting as new hard gates. Core stays exactly divisible; leftovers, zero and formal generalizations only optional bounded discussion.",
+        "licenceUrl": "https://www.ncetm.org.uk/copyright/"
+      },
+      {
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks1/units/introduction-to-division-structures/lessons/explain-that-objects-can-be-shared-equally",
+        "title": "Explain that objects can be shared equally",
+        "organization": "Oak National Academy",
+        "retrievedAt": "2026-10-29",
+        "read": "HTML learning points, misconception, teacher tip and licence; slides/video not read.",
+        "usageRestrictions": "©Oak2025 OGL3.0 except where stated, Collection2 terms. No borrowed slides/art/text.",
+        "adoptedIdeas": "Describe each number in its sharing context; use manipulatives before a labelled division expression.",
+        "rejectedIdeas": "Do not require tallying, known multiplication facts or introduce all division as sharing. Allow any final fair distribution and any valid action order."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+    "history": [
+      {
+        "kind": "content",
+        "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+        "state": "pending",
+        "note": "Author source and pure checks complete; independent review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/measure-division-independent-review.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+    "history": [
+      {
+        "kind": "human",
+        "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+        "state": "pending",
+        "note": "No human/learner validation performed or claimed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-DIV-01",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "lesson.css",
+        "sha256": "25ee9e7689c4670265aaca2c9f77b622b87ee3d2bd83ad8318218d047725dd75"
+      },
+      {
+        "path": "worked.svg",
+        "sha256": "bd8f2aa9b4abf5faef845eaccbf652ed878f22258714f0ca5c34efc5d073ad15"
+      },
+      {
+        "path": "unequal.svg",
+        "sha256": "7c89d528e45a3bf17ef51455a28b78519d81462fd63c477ccb5e3aa4df00f9c2"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "title": "Perusopetuksen opetussuunnitelman perusteet2014, matematiikka1–2",
+        "organization": "Opetushallitus",
+        "retrievedAt": "2026-10-29",
+        "read": "Original2014 PDF127–129, printed128–130; S2/S3 and T10.",
+        "usageRestrictions": "©OPH; paraphrase only, no external figures/long passages or blanket open licence assumption. No current-amendment compliance claim.",
+        "adoptedIdeas": "Concrete preparation for division; use canonical sharing refinement.",
+        "rejectedIdeas": "Do not attribute project DAG ordering, exact UI, split concept labels or age-specific task numbers directly to OPH."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-206-structures-quotitive-and-partitive-division/",
+        "title": "Structures: quotitive and partitive division, Spine2 Topic2.6",
+        "organization": "NCETM / Etio",
+        "retrievedAt": "2026-10-29",
+        "read": "HTML introduction and teaching points1–5. Full teacher-guide PDF could not be opened by web tool (content too large); not claimed read.",
+        "usageRestrictions": "NCETM Crown/OGL policy with attribution/author caveat; PD material used as conceptual reference, no source diagrams or text copied.",
+        "adoptedIdeas": "Known total and number of recipients; ask unknown amount per share.",
+        "rejectedIdeas": "Do not import multiplication/skip-counting as new hard gates. Core stays exactly divisible; leftovers, zero and formal generalizations only optional bounded discussion.",
+        "licenceUrl": "https://www.ncetm.org.uk/copyright/"
+      },
+      {
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks1/units/introduction-to-division-structures/lessons/explain-that-objects-can-be-shared-equally",
+        "title": "Explain that objects can be shared equally",
+        "organization": "Oak National Academy",
+        "retrievedAt": "2026-10-29",
+        "read": "HTML learning points, misconception, teacher tip and licence; slides/video not read.",
+        "usageRestrictions": "©Oak2025 OGL3.0 except where stated, Collection2 terms. No borrowed slides/art/text.",
+        "adoptedIdeas": "Describe each number in its sharing context; use manipulatives before a labelled division expression.",
+        "rejectedIdeas": "Do not require tallying, known multiplication facts or introduce all division as sharing. Allow any final fair distribution and any valid action order."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+        "state": "pending",
+        "note": "Author source and pure checks complete; independent review pending."
+      },
+      {
+        "kind": "alignment",
+        "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+        "state": "pending",
+        "note": "Author source and pure checks complete; independent review pending."
+      },
+      {
+        "kind": "human",
+        "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+        "state": "pending",
+        "note": "No human/learner validation performed or claimed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/measure-division-independent-review.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/measure-division-independent-review.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-DIV-01",
+      "sourceFile": "authority/production-181-v2/lite/src/content/ranta2.ts",
+      "nodeRevision": "audit1-2026-10-28",
+      "validRevs": [
+        "audit1-2026-10-28"
+      ],
+      "sourceBuild": "lite181-2026-10-27",
+      "stop": "Reilu jako",
+      "actualFamilies": [
+        "deal",
+        "fair",
+        "share",
+        "story",
+        "transfer"
+      ],
+      "actualTaskKinds": [
+        "choice",
+        "pack"
+      ],
+      "motionOverlay": null,
+      "familyRegistry": "No own DECL/activity-use override; bounded defaults inspected.",
+      "sourceHashes": {
+        "src/content/ranta2.ts": "28d8f7b08205a7e5be0c2087c85e256e609578e83a9e6e714a1ee8573ff47fc6",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "inventory": "Exact frozen objective is PARTITIVE sharing: known total and number of recipients, unknown each share. Two roundRobin demos:6 objects to3 then2 recipients. deal: k2..4,per2..4,total=k×per, finite pile picture, choices distinguish recipient count/whole/one-too-many; hint round robin, repeated-addition explanation. fair: three plates, equal per2..4 versus shuffled unequal counts, compare shares. share: pack k2..4,g=per2..4,pile=k×per, constructive allocation. story: k2/3,per2..5, fish/duckling context, distinguish subtracting recipient count from sharing. transfer: k2..4,per2..4 asks original whole from equal shares; optional reverse connection here, no new multiplication gate. roundRobin shows finite pile and one-at-a-time movement. ui.pack has per-bag buttons, undo and locked submit. engine.check pack only checks findIndex against target g: empty/short all-matching arrays can succeed by inspection; our exact dense k-field counts and conservation validator rejects these. Audit row26; COVERAGE omits share and uses stale global rev. No own family declarations and no SIMS overlay. index fills GOALS and retains audit1 revision.",
+      "comparison": "alignment.md",
+      "limitations": "Supported model actions are narrower than physical action or independent/deferred understanding."
+    },
+    "planning": {
+      "gradeBand": "1-2",
+      "teacherObjective": "Ositusjako: määrä jaetaan annettuun määrään yhtä suuria ryhmiä",
+      "childGoal": "Jaa koko määrä tasan annettujen alustojen kesken ja selvitä yhden alustan osuus.",
+      "canonical": {
+        "id": "M-DIV-01",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Jakolasku",
+        "title": "Ositusjako: määrä jaetaan annettuun määrään yhtä suuria ryhmiä",
+        "short_description": "Ositusjako: määrä jaetaan annettuun määrään yhtä suuria ryhmiä",
+        "source_basis": "assessment_refined",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2",
+          "OPH-MATH-VL6-ASSESSMENT-SUPPORT"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "concept",
+        "relations": [
+          {
+            "id": "M-NUM-17",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "Puolittaminen on yksi ositusjaon erikoistapaus, ei yleisen ositusjaon välttämätön esitieto."
+          },
+          {
+            "id": "M-MUL-01",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "Kertolasku helpottaa yhteyden rakentamista, mutta ositusjako voidaan esitellä jakamistilanteena ennen kertolaskun hallintaa."
+          },
+          {
+            "id": "M-NUM-02",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "Jaettava määrä pitää hahmottaa lukumääränä."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-NUM-02"
+            ],
+            "rationale": "Yleisen ositusjaon vähimmäisesitieto on lukumäärän hallinta."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Jakolasku"
+        ]
+      },
+      "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-NUM-02"
+          ],
+          "rationale": "Yleisen ositusjaon vähimmäisesitieto on lukumäärän hallinta."
+        }
+      ],
+      "required": [
+        {
+          "id": "M-NUM-02",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "Jaettava määrä pitää hahmottaa lukumääränä."
+        }
+      ],
+      "strongSupport": [
+        {
+          "id": "M-NUM-17",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Puolittaminen on yksi ositusjaon erikoistapaus, ei yleisen ositusjaon välttämätön esitieto."
+        },
+        {
+          "id": "M-MUL-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Kertolasku helpottaa yhteyden rakentamista, mutta ositusjako voidaan esitellä jakamistilanteena ennen kertolaskun hallintaa."
+        }
+      ],
+      "assumed": [
+        "Small whole-number quantities/digits are supported; adult may read text.",
+        "No shape/object naming, speech confirmation or arbitrary counting taps.",
+        "Unit size/group size/recipient-count meanings are explicitly introduced."
+      ],
+      "scope": "Concept/atomic role retained. Fixed recipients and finite total. Learner constructs equal complete shares in any action order, then reports one share.6/3 each2,8/2 each4,8/4 each2. Whole-used and equal-shares both checked, optional assisted round explicitly disclosed. Not quotition or fraction assessment.",
+      "evidenceLimits": [
+        "Deterministic on-screen model only; no physical handling/observation certification.",
+        "Optional help allowed; no inference of independent strategy, retention, efficacy or mastery.",
+        "No storage, personal history, awards or verified public pupil link."
+      ],
+      "assetProvenance": [
+        {
+          "path": "worked.svg",
+          "origin": "Original subject SVG authored from the deterministic local geometry; no source figures or mascot redraw."
+        },
+        {
+          "path": "unequal.svg",
+          "origin": "Original subject SVG authored from the deterministic local geometry; no source figures or mascot redraw."
+        },
+        {
+          "path": "shared/aava/curious.png",
+          "origin": "Supplied actual transparent shared PNG; byte-identical reference, no duplication/redraw, owner licensing retained."
+        }
+      ],
+      "moduleContract": "Self-contained no imports/timers; root closest(#lesson-body), component-owned click/input/change; pause, resume catches pending native answer changes, reset no handlers, dispose removes all3.",
+      "feedbackContract": "INTERACTION_FEEDBACK_CONTRACT.md; semantic state signatures; guide/order invariance; recheck after both positive/negative verdict edits."
+    },
+    "extensions": {
+      "productionBatch": "B05",
+      "authoredOn": "2026-10-29",
+      "authorChecks": {
+        "status": "source_frozen_author_checks_complete",
+        "sourceStable": true,
+        "pureTests": "12/12 PASS across assigned3; exhaustive bounded states, conservation, geometry, dense/extra/invalid guards",
+        "scopedLint": "PASS",
+        "sourceContract": "PASS own-only isolated loadPackages; no shared build",
+        "integratedNativeBrowser": "PENDING main55 build",
+        "humanValidation": "Not performed or claimed"
+      },
+      "reconciliation": "alignment.md",
+      "sourceNotes": {
+        "alignment.md": "b361800bd9c8e4d11b810a865ca3a6cda0f13ae69f83e3b75295d53323fdad53",
+        "research.md": "6e467f5365c2795de90bfbb2e3970a26d27d3542b8c8f61091ca3d3854cffa20",
+        "tests.mjs": "94474913618d48528b988daac4273640d57b08041c5d92cfba0027fb09b60aed"
+      }
+    },
+    "contentHash": "3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+    "contentRevision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+      "history": [
+        {
+          "kind": "content",
+          "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+          "state": "pending",
+          "note": "Author source and pure checks complete; independent review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+          "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/measure-division-independent-review.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+      "history": [
+        {
+          "kind": "human",
+          "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+          "state": "pending",
+          "note": "No human/learner validation performed or claimed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+      "history": [
+        {
+          "kind": "alignment",
+          "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+          "state": "pending",
+          "note": "Author source and pure checks complete; independent review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@3c846d33ba721466bf8bd34cbe9715c4359cd14523170195840ae5f9cb0be963",
+          "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/measure-division-independent-review.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "f39d7d0661a6b08444822c54eb602219923c45cbb269a0266a9bd3f9683dbaa3",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "f39d7d0661a6b08444822c54eb602219923c45cbb269a0266a9bd3f9683dbaa3",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

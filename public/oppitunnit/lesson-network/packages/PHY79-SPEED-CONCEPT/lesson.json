@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "kcId": "PHY79-SPEED-CONCEPT",
+  "revision": 16,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "comparison.svg",
+      "sha256": "e8d70250d58a5a77c4ba1ed32dbaa3500eda65e782988252be556d77b69ab056"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    {
+      "path": "shared/loikka/map.png",
+      "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://openstax.org/books/physics/pages/2-2-speed-and-velocity",
+      "title": "Physics 2.2 Speed and Velocity",
+      "organization": "OpenStax / Rice University",
+      "accessed": "2026-10-29",
+      "treatment": "Keskinopeuden vertailu koko matkan ja koko ajan perusteella; pysähdysaika ja hetkellisen vauhdin ero.",
+      "comparison": "Adopt original whole-trip counterexample; reject advanced vector treatment as outside this KC.",
+      "ageContext": "Secondary physics reference; Finnish concise lesson adapted to grades7–9.",
+      "usage": "Conceptual reference only; no text or figures copied. Book licence must be checked independently before any verbatim reuse.",
+      "limitation": "Does not demonstrate efficacy of our scenario or UI."
+    },
+    {
+      "url": "https://phet.colorado.edu/en/simulations/legacy/moving-man",
+      "title": "The Moving Man",
+      "organization": "University of Colorado Boulder / PhET",
+      "accessed": "2026-10-29",
+      "treatment": "Candidate control/observe comparison reference.",
+      "comparison": "Official landingpage retrieved, but dynamic teaching content was not readable in fetched page; do not claim full teacher-guide inspection or clone simulation. Original step/pause controls are a project design choice.",
+      "usage": "No assets or source copied; reference only.",
+      "limitation": "Legacy simulation not executed; no efficacy extrapolation."
+    },
+    {
+      "url": "https://www.oph.fi/fi/koulutus-ja-tutkinnot/perusopetuksen-opetussuunnitelman-perusteet",
+      "title": "Perusopetuksen opetussuunnitelman perusteet",
+      "organization": "Opetushallitus",
+      "accessed": "2026-10-29",
+      "treatment": "Identifies authoritative national curriculum via ePerusteet.",
+      "comparison": "KC placement retained from pinned canonical S5 mapping; this overview does not independently prove exact item thresholds or our sequencing.",
+      "usage": "Link/reference only; no copied curriculum text.",
+      "limitation": "Canonical KC mapping is project graph provenance; not newly approved by OPH."
+    },
+    {
+      "url": "https://phet.colorado.edu/assets/virtual-workshop/Interactive_Lecture_Demonstrations.pdf",
+      "title": "Interactive Lecture Demonstrations — Interpreting Representations",
+      "organization": "PhET Interactive Simulations / University of Colorado Boulder",
+      "accessed": "2026-10-29",
+      "treatment": "Predict representation before observing the Moving Man simulation.",
+      "comparison": "Adopt explicit prediction then controllable observation; reject importing position/velocity graphs and negative motion into this first ratio-concept lesson. Our straight-track trip examples are original, not the document’s numeric graph.",
+      "usage": "Document identifies CC-BY with required modified-from attribution for modifications; no document text, graphs or assets copied here. Do not generalize that licence to every PhET asset.",
+      "limitation": "Activity is a teaching-design comparator, not evidence of our learners or implementation efficacy."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@bcf158470561204cf237220a6eb18a4cc2479cc1efc0c1ccfaed22f8532232b6",
+      "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B01/review.md. Human/learner effectiveness and release approval remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@bcf158470561204cf237220a6eb18a4cc2479cc1efc0c1ccfaed22f8532232b6",
+      "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B01/review.md. Human/learner effectiveness and release approval remain pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@bcf158470561204cf237220a6eb18a4cc2479cc1efc0c1ccfaed22f8532232b6",
+      "note": "No actual human or learner validation has occurred."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@7d9f0737e034f331849207b62a452a7dee4a7a9d801b407e91085998398294be",
+      "note": "Revision2 author repair; independent exact-current verification pending. Prior records preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@7d9f0737e034f331849207b62a452a7dee4a7a9d801b407e91085998398294be",
+      "note": "Revision2 author repair; independent exact-current verification pending. Prior records preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@7d9f0737e034f331849207b62a452a7dee4a7a9d801b407e91085998398294be",
+      "note": "No human/learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "2@7d9f0737e034f331849207b62a452a7dee4a7a9d801b407e91085998398294be",
+      "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/speed-independent-r2.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "2@7d9f0737e034f331849207b62a452a7dee4a7a9d801b407e91085998398294be",
+      "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/speed-independent-r2.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@45e21d0f2aad17bb0ca89fb16ae729e7630953d8a00472c401410e0d80b23114",
+      "note": "LR03 changed source roles and teaching steps. Prior review retained as history; independent current-source and human/classroom review remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@45e21d0f2aad17bb0ca89fb16ae729e7630953d8a00472c401410e0d80b23114",
+      "note": "LR03 changed source roles and teaching steps. Prior review retained as history; independent current-source and human/classroom review remain pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@45e21d0f2aad17bb0ca89fb16ae729e7630953d8a00472c401410e0d80b23114",
+      "note": "LR03 changed source roles and teaching steps. Prior review retained as history; independent current-source and human/classroom review remain pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@ce724733fae9222f2951bae3ae35268e67ee69ead0e5190d99ec932ee6dbebe9",
+      "note": "LR03 source-role and projector-stage layout updated. Independent content/alignment and real human/classroom review remain pending; historical evidence retained."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@ce724733fae9222f2951bae3ae35268e67ee69ead0e5190d99ec932ee6dbebe9",
+      "note": "LR03 source-role and projector-stage layout updated. Independent content/alignment and real human/classroom review remain pending; historical evidence retained."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@ce724733fae9222f2951bae3ae35268e67ee69ead0e5190d99ec932ee6dbebe9",
+      "note": "LR03 source-role and projector-stage layout updated. Independent content/alignment and real human/classroom review remain pending; historical evidence retained."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@4eb39008804e0ee55628a4883840f308ad7cf415eb21ab38cffb7149cd566f96",
+      "note": "LR03 final source roles, neutral practice names/ARIA, projector layout and current Lite binding require independent current-source review. Historical evidence retained; human/classroom review remains pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@4eb39008804e0ee55628a4883840f308ad7cf415eb21ab38cffb7149cd566f96",
+      "note": "LR03 final source roles, neutral practice names/ARIA, projector layout and current Lite binding require independent current-source review. Historical evidence retained; human/classroom review remains pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@4eb39008804e0ee55628a4883840f308ad7cf415eb21ab38cffb7149cd566f96",
+      "note": "LR03 final source roles, neutral practice names/ARIA, projector layout and current Lite binding require independent current-source review. Historical evidence retained; human/classroom review remains pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@ad57319570bcfe016150c3239826a83142f9eaf9640acce658a46afdbfeb6b80",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@ad57319570bcfe016150c3239826a83142f9eaf9640acce658a46afdbfeb6b80",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@ad57319570bcfe016150c3239826a83142f9eaf9640acce658a46afdbfeb6b80",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@f1ffb5ba1972a1fc0efd14129021dde049b5abc64c383b9e52530a00764ccf40",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@f1ffb5ba1972a1fc0efd14129021dde049b5abc64c383b9e52530a00764ccf40",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@f1ffb5ba1972a1fc0efd14129021dde049b5abc64c383b9e52530a00764ccf40",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@2cbf171a0a43c2a7463f30b0b04f15c8d39160820349c1cc4de953ea51223d65",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@2cbf171a0a43c2a7463f30b0b04f15c8d39160820349c1cc4de953ea51223d65",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@2cbf171a0a43c2a7463f30b0b04f15c8d39160820349c1cc4de953ea51223d65",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@3d542bd23c39abb344ebbc6d681787de264c2488b041134d584a6109cd1691a4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@3d542bd23c39abb344ebbc6d681787de264c2488b041134d584a6109cd1691a4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@3d542bd23c39abb344ebbc6d681787de264c2488b041134d584a6109cd1691a4",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@20e6ed4435243b5f4e4f224dcfb368f4fe06678e861f364aafba464960d6bafe",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@20e6ed4435243b5f4e4f224dcfb368f4fe06678e861f364aafba464960d6bafe",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@20e6ed4435243b5f4e4f224dcfb368f4fe06678e861f364aafba464960d6bafe",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@473effba87cc39c3b97ec63e4acca6bae9a23d64f80ea31b8e506d7fbc20f696",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@473effba87cc39c3b97ec63e4acca6bae9a23d64f80ea31b8e506d7fbc20f696",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@473effba87cc39c3b97ec63e4acca6bae9a23d64f80ea31b8e506d7fbc20f696",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@397916a1ce305e728fd636c9738d69c93fb32dfd620959f189e17f3e96aa22de",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@397916a1ce305e728fd636c9738d69c93fb32dfd620959f189e17f3e96aa22de",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@397916a1ce305e728fd636c9738d69c93fb32dfd620959f189e17f3e96aa22de",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@72c4b62df86109da53c384eae6b7b4c0da9120c657df814a09d6a5e8ef9d1377",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@72c4b62df86109da53c384eae6b7b4c0da9120c657df814a09d6a5e8ef9d1377",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@72c4b62df86109da53c384eae6b7b4c0da9120c657df814a09d6a5e8ef9d1377",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@9bfa7504ce24fa4b818e67118aaf1b8b0d2e66238fe7fa1118bed16b1d1cc15d",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@9bfa7504ce24fa4b818e67118aaf1b8b0d2e66238fe7fa1118bed16b1d1cc15d",
+      "note": "Launch software review by ChatGPT phase3–4 integration and independent source/runtime review: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Phase3–4 2026-11-03: reviewed source-authored inline contexts, current-stage model configuration, state restoration and disclosure boundaries. Existing mathematical goals and exact181 scope remain; only explicit check actions produce response feedback. Software/source assessment only; browser evidence is the exact pushed SHA CI and human validation remains pending. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@9bfa7504ce24fa4b818e67118aaf1b8b0d2e66238fe7fa1118bed16b1d1cc15d",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "16@8c5959e494041ab949d3834713e26d91db8d032f8e7c6f3fb88c303d472a4e32",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "16@8c5959e494041ab949d3834713e26d91db8d032f8e7c6f3fb88c303d472a4e32",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Keskinopeus käyttää koko matkaa ja koko aikaa, myös pysähdysaikaa.8/2 ja12/3 ovat molemmat4m/s. Pidempi matka ei yksin osoita suurempaa nopeutta. Myöhemmät vertailu- ja taukovalinnat linkitettiin malliin; lähtökysymyksen3m/s ratkaisu pysyy suljettuna. Sama matka lyhyemmässä ajassa ja pidempi matka samassa ajassa erotetaan; myös samat suhteet 8/2 ja 12/3 voivat antaa saman nopeuden. Koko tarkasteluaikaan kuuluva tauko on huomioitava. Vertailtavien liikkeiden tiedot ja vastaus kuuluvat yhteen; tulkintavaiheet sisältävät omat vertailuluvut. Nykyinen Lite vertaa samoja matkoja, aikoja ja suhdetta. Mallit koskevat annettuja yksiulotteisia etenemisiä; luokittelu ei osoita nopeuden omaa mittausta. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "16@8c5959e494041ab949d3834713e26d91db8d032f8e7c6f3fb88c303d472a4e32",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "NodeSpecId": "PHY79-SPEED-CONCEPT",
+    "liteBuildSHA256": "8c2dc3c64cc730a4eee24e3bf202359e1e792fe677632ed4faf651871fe1255b",
+    "contentRev": "lite181-2026-10-27",
+    "nodeRevSource": "src/content/audit-rev.ts AUDIT_REV",
+    "sources": [
+      "src/content/physics.ts:415",
+      "src/content/motionsims.ts",
+      "src/content/index.ts",
+      "src/content/families.ts:151",
+      "src/content/phyanim.ts",
+      "src/content/families.ts",
+      "audit/LESSON_AUDIT.md"
+    ],
+    "taskFamilies": [
+      "sameS",
+      "sameT",
+      "equal",
+      "rank",
+      "ratio (transfer)",
+      "sim (mixed into guided/independent/retrieval)"
+    ],
+    "inventory": {
+      "intro": "Kumpi nopeampi? compare trips using both quantities.",
+      "demo": "same20m times4/5s; same5s distances15/25m; per-second20m4s.",
+      "hints": "Read both distance and time; numeric decimal display incidental, comparison is target.",
+      "transfer": "ratio comparison remains base content when SIM_SHARE.transfer=0.",
+      "animations": "raceScene/perSecondScene and shared motion player; simulation version adds40m speed-target rally.",
+      "audit": "Per-lesson audit reports revisions/corrected demos; not independently accepted or learner tested."
+    },
+    "inherited": "Distance/time comparison, m/s language, sameS/sameT/equal families.",
+    "extended": "Explicit whole-trip stopped-time example distinguishes average from moving-only speed.",
+    "corrected": "Avoid race winner as universal speed proxy for unequal distances; make complete-trips comparison explicit.",
+    "state": "pedagogical_review_pending",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "7-9",
+    "role": "atomic",
+    "teacherObjective": "Keskinopeuden ymmärtäminen matkan ja ajan suhteena",
+    "childGoal": "Osaan verrata matkaa käytettyyn aikaan.",
+    "scope": "Keskinopeuden merkitys; ei kaavamuunnosten sujuvuusarviointia eikä vektorinopeutta.",
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "PHY79-DIST-TIME"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "strongSupport": [
+      "M-MULTREL-01"
+    ],
+    "assumed": "Metri, sekunti, matka ja aika (PHY79-DIST-TIME). Jakaminen havainnollistetaan yhtä aikayksikköä kohti; ei piilossa desimaalilaskentavaatimusta.",
+    "evidenceLimits": "Practice is feedback for interpretation only; no mastery, retained recall or physical measurement claim.",
+    "simulation": "Deterministic straight tracks, x=distance*min(t/movingDuration,1); mean includes full own-trip duration including stop. One common playback clock starts both trips; each trip timer caps at own completion. Stopping early after a completed trip is distinct from the authored in-trip pause. Playback seconds equal simulation seconds; no decorative animation clock.",
+    "assetProvenance": "Supplied v2 generated raster reinterpretations from user package, unchanged pixels; original SVG diagram created here. No automatic licence assignment.",
+    "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb"
+  },
+  "extensions": {
+    "productionBatch": "B01",
+    "simulationType": "deterministic_1d_motion",
+    "practiceSelectors": {
+      "lab": "[data-speed-lab]",
+      "step": "[data-speed-action=step]",
+      "answer": "[data-speed-answer]"
+    },
+    "humanReview": "not_performed",
+    "comparisonCorrection": {
+      "sourceArchiveSha256": "ba487d6ebf45035efaee1a435f0ae36536f68079a249006dfb6fc7a49de05494",
+      "finding": "Current case selector input-only/readback mismatch independently reproduced; both semantic events and visible readback now govern checking and controls.",
+      "scope": "Case synchronization only; authored trips, units, comparisons, static representations and teaching boundaries unchanged.",
+      "status": "author_done_independent_review_pending"
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR03",
+      "method": "source-role-and-step-calibration",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

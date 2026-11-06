@@ -1,0 +1,852 @@
+# Private validation admission; node acceptance remains pending.
+schema_version: 0.1.0
+kc_id: M-NUM-03
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Lukumäärän, lukusanan ja numeromerkinnän yhdistäminen
+  subject: mathematics
+  grade_band: 1-2
+  mastery_role: integration
+  node_kind: integration
+  concept_path:
+    - Matematiikka
+    - Luvut ja laskutoimitukset
+    - Lukukäsite
+    - Lukumäärän representaatiot
+  source_basis: direct_curriculum
+  curriculum_refs:
+    - OPH-POPS2014-MATH-VL1-2-S2
+  prerequisite_snapshot:
+    hard:
+      - M-NUM-QTY-WORD
+      - M-NUM-QTY-NUMERAL
+      - M-NUM-WORD-NUMERAL
+    strong: []
+    helpful: []
+teaching_model:
+  learning_goal: Oppilas yhdistää määrän, numeromerkin ja kirjoitetun lukusanan samaan kokonaisuuteen.
+    Annetusta esitysmuodosta valitaan molemmat puuttuvat esitysmuodot; yhden parin onnistuminen ei
+    riitä.
+  learner_facing_goal: Löydän rasiaan numeron ja sanan.
+  core_idea: Ryhmä, numero ja sana voivat kertoa saman määrän.
+  success_evidence:
+    - Valitsee molemmat puuttuvat kortit oikein ryhmästä3, numerosta4 ja sanasta viisi lähtien.
+    - Korjaa ryhmän3 molemmat aidosti väärät laput itsenäisesti.
+    - Vastaa myöhemmin kolmeen uuteen integroituun tehtävään ilman tukea.
+  boundaries:
+    in_scope:
+      - Määrät3–5, numeromerkit ja suomen lukusanat. Kussakin tehtävässä yksi annettu esitysmuoto ja
+        kaksi omaa valintaa.
+      - Kolme eri lähtökohtaa sekä aidosti väärän lappukokonaisuuden korjaaminen.
+    out_of_scope:
+      - Esitietojen automaattinen myöntäminen integroidusta vastauksesta.
+      - Laskutoimitukset, määrän rakentaminen tyhjästä, käsin kirjoittaminen, pakollinen puhe tai
+        sanojen ääntäminen.
+      - Kaikkien lukujen, arvojen ja esityssuuntien kattava hallinta. Kolme tapausta on MVP:n rajattu
+        näyte.
+  prerequisite_assumptions:
+    - kc_id: M-NUM-QTY-WORD
+      expected_level: Nykyisen politiikan mukainen todellinen yhteensopiva hankintanäyttö; kaikki kolme
+        required-esitietoa. Ei lisättyä kalenteriodotusta.
+    - kc_id: M-NUM-QTY-NUMERAL
+      expected_level: Nykyisen politiikan mukainen todellinen yhteensopiva hankintanäyttö; kaikki kolme
+        required-esitietoa. Ei lisättyä kalenteriodotusta.
+    - kc_id: M-NUM-WORD-NUMERAL
+      expected_level: Nykyisen politiikan mukainen todellinen yhteensopiva hankintanäyttö; kaikki kolme
+        required-esitietoa. Ei lisättyä kalenteriodotusta.
+  conceptual_invariants:
+    - Molempien valintojen on kerrottava annettu määrä. Ensimmäinen valinta ei ratkaise toista
+      automaattisesti.
+    - Oma vastaus koskee vain integraatiota; ristiriita ei osoita yksittäistä virheen syytä tai
+      esitietopuutetta.
+    - Malli ja vihje ovat tukea. Oma fakta palautetaan vasta oikein tuetun kokonaisvastauksen ja
+      suljetun opetusjakson jälkeen uudessa tehtävässä.
+    - Mallin laajempi näkyvyys ei todista muiden faktojen harjoittelua.
+  likely_confusions:
+    - M-NUM-03-OBS-KOKONAISUUS
+items:
+  - id: M-NUM-03-DIAGNOSTIC-RYHMA
+    kc_ids:
+      - M-NUM-03
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Valitse ryhmälle numero ja sana.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: quantity
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 3
+      optionCount: 3
+      layout: scatter
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Laske ryhmä rauhassa. Etsi samaa määrää kertovat kortit.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+  - id: M-NUM-03-DIAGNOSTIC-NUMERO
+    kc_ids:
+      - M-NUM-03
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Valitse numerolle ryhmä ja sana.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: numeral
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 4
+      optionCount: 3
+      layout: scatter
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Katso annettua numeroa. Etsi samaa määrää kertova ryhmä ja sana.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+  - id: M-NUM-03-DIAGNOSTIC-SANA
+    kc_ids:
+      - M-NUM-03
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Valitse sanalle ryhmä ja numero.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: word
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 5
+      optionCount: 3
+      layout: scatter
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Katso annettua sanaa. Etsi samaa määrää kertova ryhmä ja numero.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+  - id: M-NUM-03-GUIDED-RYHMA
+    kc_ids:
+      - M-NUM-03
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Valitse ryhmälle numero ja sana.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: quantity
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 3
+      optionCount: 3
+      layout: row
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Laske ryhmä rauhassa. Etsi samaa määrää kertovat kortit.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+  - id: M-NUM-03-GUIDED-NUMERO
+    kc_ids:
+      - M-NUM-03
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Valitse numerolle ryhmä ja sana.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: numeral
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 4
+      optionCount: 3
+      layout: row
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Katso annettua numeroa. Etsi samaa määrää kertova ryhmä ja sana.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+  - id: M-NUM-03-GUIDED-SANA
+    kc_ids:
+      - M-NUM-03
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Valitse sanalle ryhmä ja numero.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: word
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 5
+      optionCount: 3
+      layout: row
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Katso annettua sanaa. Etsi samaa määrää kertova ryhmä ja numero.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+  - id: M-NUM-03-INDEPENDENT-RYHMA
+    kc_ids:
+      - M-NUM-03
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Valitse ryhmälle numero ja sana.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: quantity
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 3
+      optionCount: 3
+      layout: scatter
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Laske ryhmä rauhassa. Etsi samaa määrää kertovat kortit.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+  - id: M-NUM-03-INDEPENDENT-NUMERO
+    kc_ids:
+      - M-NUM-03
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Valitse numerolle ryhmä ja sana.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: numeral
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 4
+      optionCount: 3
+      layout: scatter
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Katso annettua numeroa. Etsi samaa määrää kertova ryhmä ja sana.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+  - id: M-NUM-03-INDEPENDENT-SANA
+    kc_ids:
+      - M-NUM-03
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Valitse sanalle ryhmä ja numero.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: word
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 5
+      optionCount: 3
+      layout: scatter
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Katso annettua sanaa. Etsi samaa määrää kertova ryhmä ja numero.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+  - id: M-NUM-03-DELAYED_REVIEW-RYHMA
+    kc_ids:
+      - M-NUM-03
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Valitse ryhmälle numero ja sana.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: quantity
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 3
+      optionCount: 3
+      layout: scatter
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Laske ryhmä rauhassa. Etsi samaa määrää kertovat kortit.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+  - id: M-NUM-03-DELAYED_REVIEW-NUMERO
+    kc_ids:
+      - M-NUM-03
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Valitse numerolle ryhmä ja sana.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: numeral
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 4
+      optionCount: 3
+      layout: scatter
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Katso annettua numeroa. Etsi samaa määrää kertova ryhmä ja sana.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+  - id: M-NUM-03-DELAYED_REVIEW-SANA
+    kc_ids:
+      - M-NUM-03
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Valitse sanalle ryhmä ja numero.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: word
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 5
+      optionCount: 3
+      layout: scatter
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Katso annettua sanaa. Etsi samaa määrää kertova ryhmä ja numero.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+  - id: M-NUM-03-TRANSFER-LAPPUJEN-KORJAUS
+    kc_ids:
+      - M-NUM-03
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: number_representation_triad_prompt_v1
+      instruction: Vaihda molemmat laput ryhmään sopiviksi.
+      access: visual_optional_word_audio_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: number_representation_triad_predicate_v1
+    parameter_model:
+      kind: number_representation_triad_v1
+      lexicon: fi-1-10-v1
+      anchor: quantity
+      operator: repair
+      values:
+        - 3
+        - 4
+        - 5
+      cueValues:
+        - 3
+      optionCount: 3
+      layout: scatter
+      context: Retkirasian kaksi lappua
+    misconception_rules:
+      - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+        detect: observed:inconsistent
+    hints:
+      - level: 1
+        text: Laske ryhmä rauhassa. Etsi samaa määrää kertovat kortit.
+      - level: 2
+        text: Katsotaan ryhmä, numero ja sana yhdessä.
+    invariants:
+      - Kaikki vaihtoehdot ja keskeneräinen vastaus ovat mahdollisia.
+      - Yksi kokonaisvastauksen vahvistus, ei kahta esitietovastausta.
+    provenance:
+      - source_id: PROJECT-NUMBER-TRIAD-v1
+        claim: Rajattu kolmen esitysmuodon kokonaispäätös. Tapaukset ja kynnykset ovat projektipäätöksiä.
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+    - DIAGNOSTIC
+    - ORIENT
+    - WORKED_EXAMPLE
+    - GUIDED_PRACTICE
+    - FADED_EXAMPLE
+    - INDEPENDENT_PRACTICE
+    - TRANSFER_CHECK
+    - MASTERY_GATE
+  fast_path:
+    enabled: false
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Kokeile yhtä kokonaisuutta ensin.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-03-DIAGNOSTIC-RYHMA
+              - M-NUM-03-DIAGNOSTIC-NUMERO
+              - M-NUM-03-DIAGNOSTIC-SANA
+    ORIENT:
+      purpose: Aava merkitsee retkirasiat.
+      blocks:
+        - type: explanatory_text
+          content: Auta Aavaa merkitsemään rasiat. Ryhmä, numero ja sana kertovat saman määrän.
+    WORKED_EXAMPLE:
+      purpose: Näytä kolme ymmärrettävää kokonaisuutta.
+      blocks:
+        - type: worked_example
+          content: Katso ryhmää, numeroa ja sanaa. Ne kertovat saman määrän.
+    GUIDED_PRACTICE:
+      purpose: Valitse molemmat kortit näkyvän mallin avulla.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-03-GUIDED-RYHMA
+              - M-NUM-03-GUIDED-NUMERO
+              - M-NUM-03-GUIDED-SANA
+    FADED_EXAMPLE:
+      purpose: Kokeile ilman mallia; tämä on vielä harjoittelua.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-03-GUIDED-RYHMA
+              - M-NUM-03-GUIDED-NUMERO
+              - M-NUM-03-GUIDED-SANA
+    INDEPENDENT_PRACTICE:
+      purpose: Tee kolme omaa kokonaispäätöstä.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-03-INDEPENDENT-RYHMA
+              - M-NUM-03-INDEPENDENT-NUMERO
+              - M-NUM-03-INDEPENDENT-SANA
+    TRANSFER_CHECK:
+      purpose: Korjaa kaksi ristiriitaista lappua samalle ryhmälle.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-03-TRANSFER-LAPPUJEN-KORJAUS
+    MASTERY_GATE:
+      purpose: Tarkista koko vaadittu integraationäyttö.
+      blocks:
+        - type: reflection
+          content: Molemmat laput kuuluvat samaan rasiaan.
+    DELAYED_REVIEW:
+      purpose: Palaa myöhemmin kolmeen uuteen kokonaispäätökseen.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-03-DELAYED_REVIEW-RYHMA
+              - M-NUM-03-DELAYED_REVIEW-NUMERO
+              - M-NUM-03-DELAYED_REVIEW-SANA
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 1
+    fast_path_confirmation_tags: []
+    execution_policy: Yksi alkukartoitus. Fast path ei korvaa kolmea erillistä integraatiotapausta.
+    pass_rule: Vastaus kirjataan kokonaisena; vain molemmat oikeat valinnat ovat oikein.
+  independent:
+    minimum_successes: 3
+    template_diversity: 3
+    max_supported_attempts_counted: 0
+    required_tags:
+      - number_triad_resolved
+  transfer:
+    required: true
+    minimum_successes: 1
+    novel_context_required: true
+  delayed:
+    required: true
+    minimum_successes: 3
+    minimum_delay_hours: 24
+    reuse_templates: []
+    required_tags:
+      - number_triad_resolved
+    required_contexts: []
+    earliest_delay_policy: "Vähintään24h koko hankintanäytöstä ja myöhempi istunto: kolme uutta tuetonta
+      integraatiotapausta. Ajastus ja tapaukset ovat rajattuja projektipäätöksiä."
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+    - misconception_id: M-NUM-03-OBS-KOKONAISUUS
+      evidence_tags:
+        - number_triad_resolved
+      rule: Myöhempi tueton kokonaisvastaus poistaa paikallisen aktiivisen havaintomerkinnän, ei todista
+        aiemman virheen syytä.
+misconceptions:
+  - id: M-NUM-03-OBS-KOKONAISUUS
+    description: Vahvistetun ryhmän, numeron ja sanan välillä on ristiriita. Havainto ei yksilöi puuttuvaa
+      esitietoa.
+    evidence_patterns:
+      - kind: committed_integration_error
+        when: Molemmat kortit on valittu ja kokonaisuus vahvistettu, mutta kaikki kolme esitystä eivät kerro
+          samaa määrää.
+    feedback_strategy:
+      conceptual_prompt: Kaikki valinnat eivät vielä kerro samaa määrää. Katsotaan ne yhdessä.
+      representation: Näytä todellinen oma kokonaisuus; pyydetty ratkaistu malli kirjataan tueksi.
+    repair_targets:
+      - M-NUM-03
+    status: hypothesis
+differentiation:
+  support_variants:
+    step_chunking: Yksi annettu kortti, yksi valinta kerrallaan. Molemmat valinnat säilyvät muokattavina.
+    hint_availability: Apua saa ennen virhettä. Näkyvä kokonaismalli ja tuettu vastaus pysyvät tukena.
+    text_density: Lyhyt ohje; ryhmä ja isot numeromerkit. Kirjoitettu lukusana on tämän integraation tavoite-esitys.
+    reduced_motion: Staattiset kuvat, ei aikapainetta.
+    optional_audio: Sanan kuuntelu on erillinen vapaaehtoinen toiminto. Se ei valitse korttia eikä puhu
+      tuntemattoman ryhmän määrää tai numerovihjettä.
+  challenge_variants:
+    learner_prompt: Voisivatko kaksi lappua sopia toisiinsa mutta olla väärässä rasiassa?
+    reduced_scaffolding: Sama pieni määräalue. Ristiriidan korjaaminen vaatii koko ryhmän huomiointia.
+    assessment_limit: Pohdinta ei myönnä näyttöä eikä korvaa vaadittua omaa lappujen korjausta.
+representations:
+  - id: M-NUM-03-JOURNEY
+    kind: learning_journey_v1
+    capability: number_representation_triad_v1
+    chapter: Rasioiden laput
+    companion: Aava
+    purpose: Aava merkitsee retkirasiat. Autetaan yhdessä.
+    consequence: Rasian ryhmä, numero ja sana sopivat yhteen.
+    instruction: Etsitään rasiaan numero ja sana. Ne kertovat saman määrän.
+    model:
+      kind: number_triad_examples_v1
+      examples:
+        - spec:
+            kind: number_representation_triad_v1
+            lexicon: fi-1-10-v1
+            anchor: quantity
+            operator: match
+            values:
+              - 3
+              - 4
+              - 5
+            cueValues:
+              - 3
+            optionCount: 3
+            layout: row
+            context: Retkirasian kaksi lappua
+          seed: 0
+        - spec:
+            kind: number_representation_triad_v1
+            lexicon: fi-1-10-v1
+            anchor: numeral
+            operator: match
+            values:
+              - 3
+              - 4
+              - 5
+            cueValues:
+              - 4
+            optionCount: 3
+            layout: row
+            context: Retkirasian kaksi lappua
+          seed: 0
+        - spec:
+            kind: number_representation_triad_v1
+            lexicon: fi-1-10-v1
+            anchor: word
+            operator: match
+            values:
+              - 3
+              - 4
+              - 5
+            cueValues:
+              - 5
+            optionCount: 3
+            layout: row
+            context: Retkirasian kaksi lappua
+          seed: 0
+    guidedSequence:
+      itemRefs:
+        - M-NUM-03-GUIDED-RYHMA
+        - M-NUM-03-GUIDED-NUMERO
+        - M-NUM-03-GUIDED-SANA
+    retrieval:
+      kind: closed_episode_retrieval_v1
+      claim: number_triad
+simulation_specs: []
+requires_capabilities:
+  - rich_text
+  - diagram
+  - worked_example
+  - single_choice
+  - hint_ladder
+  - reduced_motion_variant
+provenance:
+  curriculum:
+    - source_id: PROD06-OPH-MATH12-NUMBER-TRIAD
+      claim: "419550/466344/466963/S2 469266 kappaleet1–2: määrän, lukusanan ja numeromerkinnän yhteyden
+        sisältöalue."
+      status: verified
+  pedagogy:
+    - source_id: PROJECT-NUMBER-TRIAD-v1
+      claim: Konkreettinen rasian merkintä, yksi valinta kerrallaan ja erillinen oma kokonaisvastaus ovat
+        projektin pedagoginen sovitus. Oppijaymmärrettävyys on vielä testaamaton hypoteesi.
+  domain:
+    - source_id: PROJECT-NUMBER-TRIAD-v1
+      claim: Kolmen esitysmuodon arvot ovat samat deterministisen lukusanaleksikon ja laskettavan joukon
+        perusteella. Tarkat tapausrajat ja24h ovat projektipäätöksiä.
+validation:
+  schema: pending
+  graph_refs: pending
+  domain_truth: pending
+  item_invariants: pending
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: draft

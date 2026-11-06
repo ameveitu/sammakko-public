@@ -1,0 +1,33 @@
+.vi-lesson { max-width: 48rem; }
+.vi-lesson h3 { margin-top: 1.5rem; }
+.vi-lesson > img { display: block; max-width: 100%; width: 26rem; height: auto; }
+.vi-lesson .lesson-intro { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.vi-lesson .lesson-intro img { flex: 0 0 96px; }
+.vi-lesson .lesson-intro h2 { flex: 1 1 12rem; }
+.vi-lesson fieldset { min-width: 0; margin: .8rem 0; padding: .8rem; border: 1px solid #9cb3a4; }
+.vi-lesson label { margin: .6rem 0; }
+.vi-lesson input[type="number"] { width: 100%; max-width: 10rem; min-width: 44px; }
+.vi-lesson select { width: 100%; max-width: 10rem; }
+.vi-lesson .vi-plan-grid { display: flex; flex-wrap: wrap; gap: .8rem; }
+.vi-lesson .vi-plan-grid fieldset { flex: 1 1 14rem; }
+.vi-lesson .vi-packs { display: flex; gap: .5rem; flex-wrap: wrap; }
+.vi-lesson .vi-bag { flex: 1 1 5rem; border: 2px solid #45685e; border-radius: .5rem; padding: .7rem; max-width: 12rem; }
+.vi-lesson .vi-bag strong, .vi-lesson .vi-bag span { display: block; }
+.vi-lesson .vi-bag span { color: #2d607c; font-size: 1.2rem; letter-spacing: .1rem; }
+.vi-lesson output { display: block; margin: .8rem 0; padding: .7rem; border-left: 4px solid #547466; background: #f8faf4; }
+.vi-lesson [data-verdict="correct"] { border-color: #237052; }
+.vi-lesson [data-verdict="retry"] { border-color: #9a4f24; }
+.vi-lesson button { min-width: 44px; min-height: 44px; }
+
+/* LR04 frame: both free plans remain beside the constrained order and shared check. */
+.audience .vi-lesson .vi-plan-grid fieldset{flex-basis:10rem;padding:.45rem;margin:.3rem 0}
+.audience .vi-lesson [data-response-column] fieldset{margin:.3rem 0;padding:.45rem}
+
+/* LR04 frame second pass: layout/spacing only. */
+.audience .vi-lesson output{margin:.2rem 0;padding:.35rem}
+.audience .vi-lesson [data-audience-columns]>button{align-self:start;justify-self:start}
+
+.audience .vi-lesson label{margin:.3rem 0}
+
+/* Current projector follow-up: layout and spacing, same readable controls. */
+.audience .vi-lesson{max-width:none}.audience .vi-lesson .vi-plan-grid{gap:.5rem}.audience .vi-lesson .vi-plan-grid fieldset{flex-basis:10rem}.audience .vi-lesson [data-audience-columns]{gap:1rem}

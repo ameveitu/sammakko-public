@@ -1,0 +1,7 @@
+# M-SUB-01 — primary comparison and design
+
+Primary NCETM pages were independently read in preparation and revisited at GO. HTML teaching points only; linked videos and teacher-guide PDFs not claimed read. Foreign early-years/Year1 guidance is conceptual comparison, not a new OPH mapping or lesson-efficacy finding. Original text and graphics only. NCETM default Crown/OGL attribution, named-author and third-party caveats checked at https://www.ncetm.org.uk/copyright/; that licence is not inferred for supplied mascot artwork.
+
+NCETM additive reduction https://www.ncetm.org.uk/classroom-resources/primm-106-additive-structures-introduction-to-augmentation-and-reduction/ motivates clear initial/change/remaining roles. NCETM strategies within10 https://www.ncetm.org.uk/classroom-resources/primm-107-addition-and-subtraction-strategies-within-10/ includes self-subtraction and zero removal. Adopt concrete reduction and meaningful zero. Reject a compulsory number-line method, all subtraction meanings or memorized facts as new gates.
+
+Project choices: one original collection and a clearly separate removed tray,5−2,4−4,6−3,7−2 and5−0. Removed items are not counted as remaining or destroyed. Any subset with requested size is valid. Direct numeric response is separate from model repair; no forced watching or unrelated tapping. Generated SVGs derive from the same deterministic renderer. Shared PNG is unchanged owner-supplied artwork, not a vector redraw. Author tests are synthetic technical checks, not human/learner or efficacy evidence.

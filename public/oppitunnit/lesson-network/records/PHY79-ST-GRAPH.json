@@ -1,0 +1,539 @@
+{
+  "kcId": "PHY79-ST-GRAPH",
+  "pagePath": "lessons/PHY79-ST-GRAPH.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "PHY79-ST-GRAPH",
+  "canonicalNode": {
+    "id": "PHY79-ST-GRAPH",
+    "subject": "physics",
+    "grade_band": "7-9",
+    "topic_area": "S5 Vuorovaikutus ja liike",
+    "parent_concept": "Liikekuvaajat",
+    "title": "Matka–aika-kuvaajan tulkitseminen liikkeen mallina",
+    "short_description": "Matka–aika-kuvaajan tulkitseminen liikkeen mallina",
+    "node_kind": "representation",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "PHY79-S5"
+    ],
+    "relations": [
+      {
+        "id": "PHY79-SPEED-CONCEPT",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle."
+      },
+      {
+        "id": "PHY79-GRAPH-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "PHY79-GRAPH-01 on ydinesitieto tälle osaamiskohteelle."
+      },
+      {
+        "id": "M79-SLOPE",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "M79-SLOPE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "PHY79-SPEED-CONCEPT",
+          "PHY79-GRAPH-01"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "status": "candidate",
+    "entry_role": "none",
+    "mastery_role": "process",
+    "concept_path": [
+      "Fysiikka",
+      "S5 Vuorovaikutus ja liike",
+      "Liikekuvaajat"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "PHY79-SPEED-CONCEPT",
+      "targetKCId": "PHY79-ST-GRAPH",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "PHY79-GRAPH-01",
+      "targetKCId": "PHY79-ST-GRAPH",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-GRAPH-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M79-SLOPE",
+      "targetKCId": "PHY79-ST-GRAPH",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-SLOPE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "PHY79-ST-GRAPH",
+      "targetKCId": "PHY79-ACCEL-MOTION-GRAPH",
+      "relationType": "representation_support",
+      "strength": "strong",
+      "rationale": "PHY79-ST-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "PHY79-ST-GRAPH",
+      "targetKCId": "PHY79-ACCEL-VT-GRAPH",
+      "relationType": "representation_support",
+      "strength": "strong",
+      "rationale": "PHY79-ST-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "PHY79-SPEED-CONCEPT",
+        "PHY79-GRAPH-01"
+      ],
+      "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/PHY79-ST-GRAPH/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "OpenStax Physics — Position vs. Time Graphs",
+        "url": "https://openstax.org/books/physics/pages/2-3-position-vs-time-graphs",
+        "accessed": "2026-10-29",
+        "read": "Primary textbook page inspected for generic mathematical/physical facts; not Finnish curriculum authority or evidence of this lesson efficacy.",
+        "licence": "Actual Physics preface body saysCCBY4 while currentfooter specifiesnoncommercial/sharealike restrictions. Rights not cleared; no prose,images,activities,assessments orbooklayout copied. Only genericfactcrosscheck; original authorizedLite/ownmath content. Publicrelease holds remain.",
+        "adopted": "Axis/quantity distinction, interval change/time and explicit one-dimensional model assumptions, expressed independently in originalFinnish and owncomputedSVG."
+      },
+      {
+        "title": "R. J. Beichner1994 — Testing student interpretation of kinematics graphs",
+        "url": "https://doi.org/10.1119/1.17449",
+        "accessed": "2026-10-29",
+        "read": "Original-paper abstract via university-hostedPDF and officialNCState bibliography inspected: graph-as-picture and slope/height difficulties in secondary/college populations.",
+        "licence": "AAPT1994copyright/subscription restrictions; no paperPDF,instrumentitems orquestiontext redistributed. Not an efficacy validation orpermissiontransfer.",
+        "adopted": "Project-derived counterexamples and separate physicaltrack/graph; no quantitative effect or targetlearner approval inferred."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": {
+      "task_id": "KC-38-PHY79-ST-GRAPH",
+      "kc_id": "PHY79-ST-GRAPH",
+      "mastery_role": "process",
+      "node_kind": "representation",
+      "status": "PENDING_IMPLEMENTATION",
+      "content_file": null,
+      "prerequisites": [
+        {
+          "all_of": [
+            "PHY79-SPEED-CONCEPT",
+            "PHY79-GRAPH-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "validation": {
+        "schema": "pending_autonomous_adventure_review",
+        "graph_refs": "pending_autonomous_adventure_review",
+        "domain_truth": "pending_autonomous_adventure_review",
+        "item_invariants": "pending_autonomous_adventure_review",
+        "pedagogy_review": "pending_autonomous_adventure_review",
+        "subject_review": "pending_autonomous_adventure_review",
+        "accessibility_review": "pending_autonomous_adventure_review",
+        "runtime_smoke": "pending_autonomous_adventure_review"
+      },
+      "production_order": 51,
+      "historical_status": "DEFERRED_UNTIL_CALIBRATION",
+      "autonomous_evidence": [],
+      "historical_validation": {
+        "schema": "pending",
+        "graph_refs": "pending",
+        "domain_truth": "pending",
+        "item_invariants": "pending",
+        "pedagogy_review": "pending",
+        "subject_review": "pending",
+        "accessibility_review": "pending",
+        "runtime_smoke": "pending"
+      }
+    }
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+    "history": [
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+        "note": "Independent B14 Feynman source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/Feynman-on-parent-physics/ready.json. Technical synthetic scope; not learner validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "PHY79-ST-GRAPH",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "lesson.css",
+        "sha256": "d15c47ef8c2e9e1368a18a8d0242e5c3deb8dc43995391f24d89745d0ebd13e6"
+      },
+      {
+        "path": "initial.svg",
+        "sha256": "73ec7e5932803746e74d585fea51a8d0d4a18f38df0b0b401c64cda23e825550"
+      },
+      {
+        "path": "practice-initial.svg",
+        "sha256": "89da5247a67b49b1c0d2920a05ac2533f7cedf00b2978a7741ab8ad84d25c4bd"
+      },
+      {
+        "path": "example.svg",
+        "sha256": "20f57bd94ce6279971d5c8bd3521c1bd790c45e41b97d46240e80c3fd29d3e81"
+      },
+      {
+        "path": "contrast.svg",
+        "sha256": "5879ea5ad4d5913e428e7ee09fd9f842dad5c7c6b9941532611eb152d0353194"
+      },
+      {
+        "path": "transfer.svg",
+        "sha256": "bbe6667f3cfc980d27e93f85bbd9fbb3da52dfb12750a0244102abe4993ab66a"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      },
+      {
+        "path": "shared/loikka/map.png",
+        "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+      }
+    ],
+    "research": [
+      {
+        "title": "OpenStax Physics — Position vs. Time Graphs",
+        "url": "https://openstax.org/books/physics/pages/2-3-position-vs-time-graphs",
+        "accessed": "2026-10-29",
+        "read": "Primary textbook page inspected for generic mathematical/physical facts; not Finnish curriculum authority or evidence of this lesson efficacy.",
+        "licence": "Actual Physics preface body saysCCBY4 while currentfooter specifiesnoncommercial/sharealike restrictions. Rights not cleared; no prose,images,activities,assessments orbooklayout copied. Only genericfactcrosscheck; original authorizedLite/ownmath content. Publicrelease holds remain.",
+        "adopted": "Axis/quantity distinction, interval change/time and explicit one-dimensional model assumptions, expressed independently in originalFinnish and owncomputedSVG."
+      },
+      {
+        "title": "R. J. Beichner1994 — Testing student interpretation of kinematics graphs",
+        "url": "https://doi.org/10.1119/1.17449",
+        "accessed": "2026-10-29",
+        "read": "Original-paper abstract via university-hostedPDF and officialNCState bibliography inspected: graph-as-picture and slope/height difficulties in secondary/college populations.",
+        "licence": "AAPT1994copyright/subscription restrictions; no paperPDF,instrumentitems orquestiontext redistributed. Not an efficacy validation orpermissiontransfer.",
+        "adopted": "Project-derived counterexamples and separate physicaltrack/graph; no quantitative effect or targetlearner approval inferred."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+        "note": "Independent B14 Feynman source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/Feynman-on-parent-physics/ready.json. Technical synthetic scope; not learner validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+        "note": "Independent B14 Feynman canonical/Lite/source boundaries reviewed for current revision; frozen roles/prerequisite groups preserved. lesson-network/evidence/production/B14/reviews/Feynman-on-parent-physics/ready.json"
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "PHY79-ST-GRAPH",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "actualFamilies": [
+        "read",
+        "story",
+        "steeper",
+        "flat",
+        "transfer",
+        "sim"
+      ],
+      "actualDemoCount": 2,
+      "sourceHashes": {
+        "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+        "authority/production-181-v2/lite/src/content/physics.ts": "835ad69dd95f622adcb6050ab63d00a4477d64425545dd1b8af5a4892f978430",
+        "authority/production-181-v2/lite/src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+        "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "authority/production-181-v2/lite/src/content/features.ts": "8ddef5451be9d011297f5d32b1ab0d869a1e132d608bd30f679b8e2d900884c5",
+        "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427"
+      },
+      "comparison": "RawPHYSICS_NODES plus directSIMS/registry/demos/audit inspected without importingpersonalstore. Actual source supersedes staleCOVERAGE summaries. STpathdoesnotimplydirection; VTsteadypositive is separatefromzero; exactlocaloperations replacequestion-specifictruth. No Lite source change."
+    },
+    "planning": {
+      "canonical": {
+        "id": "PHY79-ST-GRAPH",
+        "subject": "physics",
+        "grade_band": "7-9",
+        "topic_area": "S5 Vuorovaikutus ja liike",
+        "parent_concept": "Liikekuvaajat",
+        "title": "Matka–aika-kuvaajan tulkitseminen liikkeen mallina",
+        "short_description": "Matka–aika-kuvaajan tulkitseminen liikkeen mallina",
+        "node_kind": "representation",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "PHY79-S5"
+        ],
+        "relations": [
+          {
+            "id": "PHY79-SPEED-CONCEPT",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "PHY79-SPEED-CONCEPT on ydinesitieto tälle osaamiskohteelle."
+          },
+          {
+            "id": "PHY79-GRAPH-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "PHY79-GRAPH-01 on ydinesitieto tälle osaamiskohteelle."
+          },
+          {
+            "id": "M79-SLOPE",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "M79-SLOPE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "PHY79-SPEED-CONCEPT",
+              "PHY79-GRAPH-01"
+            ],
+            "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+          }
+        ],
+        "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "status": "candidate",
+        "entry_role": "none",
+        "mastery_role": "process",
+        "concept_path": [
+          "Fysiikka",
+          "S5 Vuorovaikutus ja liike",
+          "Liikekuvaajat"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "PHY79-SPEED-CONCEPT",
+            "PHY79-GRAPH-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "role": "process",
+      "gradeBand": "7-9",
+      "teacherObjective": "Tulkita matka–aika-kuvaajan aikavälit, lepo, nopeus ja korkeus/jyrkkyys sekä erottaa kuljettu matka etäisyydestä lähtöpaikkaan.",
+      "additionalHardGates": [],
+      "scope": "Finite declared1D linear timelines only. Origin,motion rule,units,axes,trackextent,step,playback/control contract explicit and validated. StaticSVG,table,modelstate andassessment use the same domain. Graph quantities distinguished; velocity models restrictednonnegative, no curves/forces/2D. Instantaneous boundaryrate uses followingsegment, lastendpoint precedingsegment; mathematical idealization, not realmeasurement.",
+      "sourceVsDesign": "Frozen curriculum labels inherited, not newly verifiedOPH approval. Mathematical facts independently checked; explanatory/pedagogical choices project-derived. Humancomprehension/efficacy/manualfullAXS/licence/public/Lite integration not performed.",
+      "evidenceLimits": "Process roles remain process: local chart reading/phase/rate construction is bounded practice, not wholeindependentprocessrubricmastery. Hints/examples/data tables andfeedback are support; no independent/delayedcredit, learnerhistory orruntime LLM."
+    },
+    "extensions": {
+      "productionBatch": "B14",
+      "author": "parent",
+      "simulationType": "selfcontained_finite_typed_linear_timeline_graph_and_closed_form_motion",
+      "modelDeclarationSource": "Bundled lesson.mjs MODELS; single executable declaration, no duplicate ignored metadata model. DEFAULT_MODEL references that catalog; unknown declarations rejected.",
+      "assessmentDeclarationSource": "Bundled TASKS generic operation contracts; unknown fields/operations or ambiguous single-trend intervals rejected. No KC-ID orquestion-specificruntime branch.",
+      "sharedRuntimeChanges": false,
+      "authorStageReview": "At authoring stage only; later current revision-bound reviews are authoritative, not this historical note.",
+      "humanReview": "not_performed",
+      "mascotProvenance": "Supplied Aava/Loikka PNGs reusedbyteexact; mathematicalSVG is original.",
+      "initialModel": "journey",
+      "authoringLimits": "Module locallybundled/noimports, noCSSurls/@rules, noexternal runtime assets. Modelclock input decimals<=6meaningful places; answers exactdecimal/integerfraction<=128chars, no silentrounding. No newformalprocess/rubric/runtimeorchestrator."
+    },
+    "contentHash": "b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+    "contentRevision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+      "history": [
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+          "note": "Independent B14 Feynman source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/Feynman-on-parent-physics/ready.json. Technical synthetic scope; not learner validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+          "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@b066d210406edac4cb6c98c3cde98e4261b7410d93c8d0e23387d9cf8d1615ea",
+          "note": "Independent B14 Feynman canonical/Lite/source boundaries reviewed for current revision; frozen roles/prerequisite groups preserved. lesson-network/evidence/production/B14/reviews/Feynman-on-parent-physics/ready.json"
+        }
+      ]
+    }
+  },
+  "outputHash": "f84439f2feb432368e3b5a24e4a495079e367b3ea6cd9a197efced4f18381a3e",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "313c833926038b01461563cadf6c587d28f85d2e1bf3612df75180a4a0f2e799",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "f84439f2feb432368e3b5a24e4a495079e367b3ea6cd9a197efced4f18381a3e",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

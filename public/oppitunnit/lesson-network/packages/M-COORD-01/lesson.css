@@ -1,0 +1,33 @@
+/* Own lesson surface only; shared header/presentation rules remain untouched. */
+.fn11 { --ink: #173f36; --accent: #236952; color: var(--ink); font-size: 1rem; line-height: 1.45; max-width: 46rem; margin: auto; }
+.fn11 .opening { display: flex; gap: .5rem; align-items: center; margin: .2rem 0; }
+.fn11 .opening img { width: 40px; height: 40px; flex: 0 0 40px; }
+.fn11 p { margin: .4rem 0; }
+.fn11 h2 { font-size: 1.3rem; line-height: 1.25; }
+.fn11 h3 { font-size: 1.1rem; }
+.fn11 fieldset { min-width: 0; border: 0; border-bottom: 1px solid #adbcaf; padding: .3rem 0 .7rem; margin: .3rem 0; }
+.fn11 legend { font-weight: 700; padding: 0; }
+.fn11 button, .fn11 input, .fn11 select { font: inherit; box-sizing: border-box; max-width: 100%; min-width: 44px; min-height: 44px; border: 1px solid #5e7f70; border-radius: .3rem; background: #fffefa; color: var(--ink); padding: .45rem; }
+.fn11 button { cursor: pointer; margin: .2rem .2rem .2rem 0; }
+.fn11 button:disabled { opacity: .55; cursor: default; }
+.fn11 .primary, .fn11 button[aria-pressed="true"] { background: var(--accent); color: white; }
+.fn11 .actions { display: flex; flex-wrap: wrap; gap: .3rem; }
+.fn11 .actions button { flex: 1; margin: .15rem 0; }
+.fn11 label { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin: .4rem 0; }
+.fn11 input { width: 6rem; }
+.fn11 .pair { display: flex; gap: .7rem; flex-wrap: wrap; }
+.fn11 .pair input { width: 3.5rem; }
+.fn11 svg, .fn11 figure img { display: block; width: 100%; height: auto; max-width: 20rem; }
+.fn11 [data-grid], .fn11 [data-model], .fn11 [data-example] { max-width: 18rem; }
+.fn11 figure { margin: .6rem 0; }
+.fn11 [data-feedback] { display: block; padding: .5rem; margin: .4rem 0; min-height: 2rem; border-left: 4px solid #758f80; background: #eef4ec; }
+.fn11 [data-result="correct"] { border-color: #236952; }
+.fn11 [data-result="retry"], .fn11 [data-result="invalid"] { border-color: #a34d28; }
+.fn11 details { border-top: 1px solid #b5c9bc; padding: .5rem 0; margin: .5rem 0; }
+.fn11 summary { min-height: 44px; display: list-item; cursor: pointer; padding: .4rem 0; }
+.fn11 nav { display: flex; flex-wrap: wrap; gap: .5rem; }
+.fn11 nav a { color: var(--accent); display: inline-flex; align-items: center; min-height: 44px; }
+.fn11 .places { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .3rem; max-width: 24rem; }
+.fn11 .places label { display: flex; flex-direction: column; align-items: stretch; text-align: center; }
+.fn11 .places input { width: 100%; }
+.fn11 :focus-visible { outline: 3px solid #a34d28; outline-offset: 3px; }

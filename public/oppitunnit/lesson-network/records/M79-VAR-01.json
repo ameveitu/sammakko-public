@@ -1,0 +1,808 @@
+{
+  "kcId": "M79-VAR-01",
+  "pagePath": "lessons/M79-VAR-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M79-VAR-01",
+  "canonicalNode": {
+    "id": "M79-VAR-01",
+    "subject": "mathematics",
+    "grade_band": "7-9",
+    "topic_area": "S3 Algebra",
+    "parent_concept": "Muuttuja",
+    "title": "Muuttujan käsite muuttuvana tai tuntemattomana lukuna",
+    "short_description": "Muuttujan käsite muuttuvana tai tuntemattomana lukuna",
+    "node_kind": "integration",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "M79-S3"
+    ],
+    "relations": [
+      {
+        "id": "M79-VAR-VARYING",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M79-VAR-01 on v0.2:ssa integraationoodi; atominen alitaito M79-VAR-VARYING vaaditaan kokonaisuuden hallintaan."
+      },
+      {
+        "id": "M79-VAR-UNKNOWN",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M79-VAR-01 on v0.2:ssa integraationoodi; atominen alitaito M79-VAR-UNKNOWN vaaditaan kokonaisuuden hallintaan."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M79-VAR-VARYING",
+          "M79-VAR-UNKNOWN"
+        ],
+        "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+      }
+    ],
+    "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: M79-VAR-VARYING, M79-VAR-UNKNOWN. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "status": "candidate_refactored_integration",
+    "entry_role": "none",
+    "mastery_role": "integration",
+    "split_children": [
+      "M79-VAR-VARYING",
+      "M79-VAR-UNKNOWN"
+    ],
+    "integration_of": [
+      "M79-VAR-VARYING",
+      "M79-VAR-UNKNOWN"
+    ],
+    "dynamic_prerequisite_rule": null,
+    "concept_path": [
+      "Matematiikka",
+      "S3 Algebra",
+      "Muuttuja"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M79-VAR-VARYING",
+      "targetKCId": "M79-VAR-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-VAR-01 on v0.2:ssa integraationoodi; atominen alitaito M79-VAR-VARYING vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-VAR-UNKNOWN",
+      "targetKCId": "M79-VAR-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-VAR-01 on v0.2:ssa integraationoodi; atominen alitaito M79-VAR-UNKNOWN vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M79-VAR-01",
+      "targetKCId": "M79-EXPR-EVAL",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-VAR-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-VAR-01",
+      "targetKCId": "M79-EXPR-FORM",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-VAR-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-VAR-01",
+      "targetKCId": "M79-INEQ-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Muuttujan käsite tarvitaan.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M79-VAR-01",
+      "targetKCId": "M79-DEP-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-VAR-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-VAR-01",
+      "targetKCId": "M79-FUNC-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-VAR-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M79-VAR-01",
+      "targetKCId": "M79-TERM-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-VAR-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-VAR-01",
+      "targetKCId": "M79-POLY-CONCEPT",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-VAR-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-VAR-01",
+      "targetKCId": "M79-SEQ-STRUCTURE",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-VAR-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M79-VAR-01",
+      "targetKCId": "M79-SEQ-RULE",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M79-VAR-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M79-VAR-VARYING",
+        "M79-VAR-UNKNOWN"
+      ],
+      "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M79-VAR-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/media/zeeniedj/ncetm_ks3_cc_1_4.pdf",
+        "title": "1.4 Simplifying and manipulating expressions, equations and formulae",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "inspected": "PDF s. 2, 5–6 ja 10–11: kirjaimen roolit, määrän ja esineen ero, sijoittaminen ja tilanteen rajoitus.",
+        "usageRestrictions": "NCETM:n copyright-sivu noudettu 2026-10-29: Crown Copyright / OGL oletuksena, lähde ja tekijä mainittava; nimetyn tekijän aineistolle mahdollinen erillinen lupa. PDF on opettajan ammatillisen kehityksen aineistoa, ei suoraan kopioitava oppitunti. Ei kuvien tai tehtävätekstin kopiointia.",
+        "adopted": "Kirjain nimetään luvuksi. Konkreettinen ryhmä erotetaan sen lukumäärästä. Tilanteen annettu ehto rajaa muuttujan arvoja.",
+        "rejected": "Ei esinekirjainopetusta tai väitettä, että jokainen yhtälö antaa yhden ratkaisun. Ei suoraa tehtävälainausta."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/media/wbylane0/ncetm_ks3_cc_2_2.pdf",
+        "title": "2.2 Solving linear equations",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "inspected": "PDF s. 2: muuttuva lauseke ja annetulla arvolla rajoitettu tuntematon, operaation ja tuloksen yhteys.",
+        "usageRestrictions": "NCETM:n copyright-sivu noudettu 2026-10-29: Crown Copyright / OGL oletuksena, lähde ja tekijä mainittava; nimetyn tekijän aineistolle mahdollinen erillinen lupa. PDF on opettajan ammatillisen kehityksen aineistoa, ei suoraan kopioitava oppitunti. Ei kuvien tai tehtävätekstin kopiointia.",
+        "adopted": "Sama pakkaussääntö saa kiinteän kokonaismäärän ehdon; tarkistetaan sijoittamalla sama ehdotus kaikkiin ryhmiin.",
+        "rejected": "Ei koko yhtälönratkaisumenetelmistöä tai yleistä yksi ratkaisu -sääntöä. Ei graafin käyttöä uutena pakollisena taitona."
+      },
+      {
+        "url": "https://link.springer.com/article/10.1007/s11858-026-01828-x",
+        "title": "Same variable, different values? A multilevel Latent Transition Analysis of students’ thinking about values of variables",
+        "organization": "Moons, Klingbeil, Drijvers ja Barzel; ZDM – Mathematics Education / Springer Nature",
+        "accessed": "2026-10-29",
+        "inspected": "Tiivistelmä, johdanto §1 ja Rights and permissions; ei koko menetelmä- tai tulososan arviointia.",
+        "usageRestrictions": "CC BY 4.0, tekijät/lähde/lisenssi mainittava ja muutokset ilmaistava; kolmannen osapuolen poikkeukset tarkistettava. Ei kuvia tai mittaria kopioitu.",
+        "adopted": "Sama kirjain saman kontekstin sisällä saa saman arvon. Eri kirjaimet saavat myös olla samansuuruisia.",
+        "rejected": "Ei tutkimuksen tulosten siirtoa tämän oppitunnin vaikuttavuus- tai diagnoosiväitteeksi. Ei aakkosarvojen tarpeetonta harjoitusta."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+    "history": [
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/algebra-independent-current-compiled.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+        "note": "No actual human/learner validation has occurred."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M79-VAR-01",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "one-quantity-two-roles.svg",
+        "sha256": "fa419667e8253d0d65f88458d513ad84def14d23d3a4400537aef9acd765fec2"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "26a2668e104aac5a54cc25a21bd190a64eee76b419881a407336d37493fe6d0e"
+      },
+      {
+        "path": "shared/loikka/curious.png",
+        "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/media/zeeniedj/ncetm_ks3_cc_1_4.pdf",
+        "title": "1.4 Simplifying and manipulating expressions, equations and formulae",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "inspected": "PDF s. 2, 5–6 ja 10–11: kirjaimen roolit, määrän ja esineen ero, sijoittaminen ja tilanteen rajoitus.",
+        "usageRestrictions": "NCETM:n copyright-sivu noudettu 2026-10-29: Crown Copyright / OGL oletuksena, lähde ja tekijä mainittava; nimetyn tekijän aineistolle mahdollinen erillinen lupa. PDF on opettajan ammatillisen kehityksen aineistoa, ei suoraan kopioitava oppitunti. Ei kuvien tai tehtävätekstin kopiointia.",
+        "adopted": "Kirjain nimetään luvuksi. Konkreettinen ryhmä erotetaan sen lukumäärästä. Tilanteen annettu ehto rajaa muuttujan arvoja.",
+        "rejected": "Ei esinekirjainopetusta tai väitettä, että jokainen yhtälö antaa yhden ratkaisun. Ei suoraa tehtävälainausta."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/media/wbylane0/ncetm_ks3_cc_2_2.pdf",
+        "title": "2.2 Solving linear equations",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "inspected": "PDF s. 2: muuttuva lauseke ja annetulla arvolla rajoitettu tuntematon, operaation ja tuloksen yhteys.",
+        "usageRestrictions": "NCETM:n copyright-sivu noudettu 2026-10-29: Crown Copyright / OGL oletuksena, lähde ja tekijä mainittava; nimetyn tekijän aineistolle mahdollinen erillinen lupa. PDF on opettajan ammatillisen kehityksen aineistoa, ei suoraan kopioitava oppitunti. Ei kuvien tai tehtävätekstin kopiointia.",
+        "adopted": "Sama pakkaussääntö saa kiinteän kokonaismäärän ehdon; tarkistetaan sijoittamalla sama ehdotus kaikkiin ryhmiin.",
+        "rejected": "Ei koko yhtälönratkaisumenetelmistöä tai yleistä yksi ratkaisu -sääntöä. Ei graafin käyttöä uutena pakollisena taitona."
+      },
+      {
+        "url": "https://link.springer.com/article/10.1007/s11858-026-01828-x",
+        "title": "Same variable, different values? A multilevel Latent Transition Analysis of students’ thinking about values of variables",
+        "organization": "Moons, Klingbeil, Drijvers ja Barzel; ZDM – Mathematics Education / Springer Nature",
+        "accessed": "2026-10-29",
+        "inspected": "Tiivistelmä, johdanto §1 ja Rights and permissions; ei koko menetelmä- tai tulososan arviointia.",
+        "usageRestrictions": "CC BY 4.0, tekijät/lähde/lisenssi mainittava ja muutokset ilmaistava; kolmannen osapuolen poikkeukset tarkistettava. Ei kuvia tai mittaria kopioitu.",
+        "adopted": "Sama kirjain saman kontekstin sisällä saa saman arvon. Eri kirjaimet saavat myös olla samansuuruisia.",
+        "rejected": "Ei tutkimuksen tulosten siirtoa tämän oppitunnin vaikuttavuus- tai diagnoosiväitteeksi. Ei aakkosarvojen tarpeetonta harjoitusta."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/algebra-independent-current-compiled.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/algebra-independent-current-compiled.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+        "note": "No actual human/learner validation has occurred."
+      }
+    ],
+    "alignment": {
+      "liteNodeId": "M79-VAR-01",
+      "liteSourceRevision": "audit1-2026-10-28",
+      "liteGlobalFallback": "lite181-2026-10-27",
+      "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "sourceHashes": {
+        "src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+        "src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "intro": "Kirjaimella on kaksi tehtävää. Yhtälössä se on piilossa oleva luku, säännössä se voi saada monta arvoa.",
+      "goal": "Opit erottamaan, onko kirjain yksi tuntematon luku vai muuttuva määrä. Sama kirjain tarkoittaa samassa lausekkeessa samaa lukua.",
+      "demoInventory": [
+        {
+          "say": "Kokeillaan samoja lukuja kahteen paikkaan. Yhtälössä x plus neljä on yhdeksän vain yksi luku toimii: viisi. Säännössä hinta on kolme n jokainen n kelpaa.",
+          "label": "x + 4 = 9 ja hinta = 3n",
+          "seconds": 11,
+          "finalCaption": "Yhtälössä kirjain on yksi tietty luku (5). Säännössä kirjain voi saada monta arvoa."
+        },
+        {
+          "say": "Kun samassa yhtälössä on kaksi x:ää, ne ovat sama luku. x plus x on kymmenen: kolme ja seitsemän ei käy, mutta viisi ja viisi käy. Eri kirjaimet a ja b saavat olla eri lukuja.",
+          "label": "x + x = 10",
+          "seconds": 13.3,
+          "finalCaption": "x + x = 10 vain, kun x = 5. Jos kirjaimet ovat eri, esimerkiksi a + b = 10, ne voivat olla 3 ja 7."
+        }
+      ],
+      "familyInventory": {
+        "same": {
+          "kind": "numeric",
+          "registry": {
+            "node": "M79-VAR-01",
+            "tag": "same",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "example": {
+            "say": "x + x = 6. Mikä luku x on?",
+            "task": {
+              "kind": "numeric",
+              "answer": 3,
+              "whyAt": {
+                "4": "Et voi vähentää x:ien määrää. 2x = 6, joten jaa 2:lla.",
+                "6": "6 on summa. Yksi x on vain osa siitä."
+              }
+            },
+            "explain": "Sama kirjain on sama luku: 2x = 6, joten x = 3.",
+            "hint": "Sama kirjain tarkoittaa samaa lukua. Mikä luku 2 kertaa on 6?",
+            "tag": "same"
+          }
+        },
+        "can": {
+          "kind": "choice",
+          "registry": {
+            "node": "M79-VAR-01",
+            "tag": "can",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "example": {
+            "say": "a + b = 8. Voiko a olla 4?",
+            "task": {
+              "kind": "choice",
+              "options": [
+                {
+                  "text": "Kyllä"
+                },
+                {
+                  "text": "Ei"
+                }
+              ],
+              "answer": 0,
+              "why": [
+                null,
+                "Voi: silloin b = 4. Eri kirjaimet voivat olla eri lukuja."
+              ],
+              "cols": 2
+            },
+            "hint": "Ovatko kirjaimet samat vai eri? Eri kirjaimet saavat olla eri lukuja.",
+            "explain": "Kyllä: 4 + 4 = 8. Eri kirjaimet voivat saada eri arvot.",
+            "tag": "can"
+          }
+        },
+        "roles": {
+          "kind": "sort",
+          "registry": {
+            "node": "M79-VAR-01",
+            "tag": "roles",
+            "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "example": {
+            "say": "Lajittele merkinnät: onko kirjain yksi tuntematon luku vai muuttuva määrä?",
+            "task": {
+              "kind": "sort",
+              "items": [
+                {
+                  "text": "n + n = 14"
+                },
+                {
+                  "text": "x + 4 = 9"
+                },
+                {
+                  "text": "5t = 20"
+                },
+                {
+                  "text": "matka = 5t"
+                },
+                {
+                  "text": "hinta = 3n"
+                }
+              ],
+              "cats": [
+                {
+                  "label": "Yksi luku 🔒"
+                },
+                {
+                  "label": "Monta arvoa 🔁"
+                }
+              ],
+              "answer": [
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "why": [
+                "Sama kirjain on sama luku: n = 7.",
+                "Yhtälö toteutuu vain, kun x = 5.",
+                "Vain t = 4 käy.",
+                "Aika t kuluu, ja matka muuttuu sen mukana.",
+                "Hinta riippuu määrästä n, joka voi olla mikä tahansa."
+              ]
+            },
+            "hint": "Yhtälö, jossa on annettu luku, toteutuu yhdellä luvulla. Sääntö toimii monella arvolla.",
+            "explain": "Yhtälössä kirjain on yksi luku, joka voidaan ratkaista. Säännössä kirjain voi saada monta arvoa.",
+            "tag": "roles"
+          }
+        },
+        "classify": {
+          "kind": "choice",
+          "registry": {
+            "node": "M79-VAR-01",
+            "tag": "classify",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [
+              "Kaava piiri = 4s on annettu."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-GMEAS-01"
+            ],
+            "source": [
+              "families.ts M79-VAR-01/classify"
+            ]
+          },
+          "example": {
+            "say": "Merkinnässä n + n = 14: onko kirjain yksi tuntematon luku vai muuttuva määrä?",
+            "scene": "[function]",
+            "task": {
+              "kind": "choice",
+              "options": [
+                {
+                  "text": "Yksi tuntematon luku"
+                },
+                {
+                  "text": "Muuttuva määrä"
+                }
+              ],
+              "answer": 0,
+              "why": [
+                null,
+                "Yhtälö toteutuu vain yhdellä luvulla."
+              ],
+              "cols": 1
+            },
+            "hint": "Onko merkinnässä =-merkki ja luku, jonka pitää täsmätä? Vai kertooko se säännön, joka toimii monella arvolla?",
+            "explain": "Yhtälössä kirjain on yksi tietty luku, joka voidaan ratkaista.",
+            "tag": "classify"
+          }
+        },
+        "transfer": {
+          "kind": "choice",
+          "registry": {
+            "node": "M79-VAR-01",
+            "tag": "transfer",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [
+              "Kaava piiri = 4s on annettu."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-GMEAS-01"
+            ],
+            "source": [
+              "families.ts M79-VAR-01/transfer"
+            ]
+          },
+          "example": {
+            "say": "Neliön piiri on 4s, ja tämän neliön piiri on 12 cm. Onko s tässä yksi tuntematon luku vai muuttuva määrä?",
+            "task": {
+              "kind": "choice",
+              "options": [
+                {
+                  "text": "Yksi tuntematon luku"
+                },
+                {
+                  "text": "Muuttuva määrä"
+                }
+              ],
+              "answer": 0,
+              "why": [
+                null,
+                "Piiri on annettu: 4s = 12 toteutuu vain yhdellä luvulla."
+              ],
+              "cols": 1
+            },
+            "hint": "Onko piirin pituus annettu? Silloin s on yksi tietty sivu.",
+            "explain": "4s = 12, joten s = 3: yksi luku.",
+            "tag": "transfer"
+          }
+        }
+      },
+      "phaseDispatch": "kit.cases: guided/independent/retrieval samasta nimetystä perhejoukosta; transfer omasta generaattorista. 256 siementä/phase, yhteensä 1024 per KC. Ei uuden oppitunnin vaikuttavuustesti.",
+      "registryOverlay": "index.ts yhdistää ALGEBRA79B_NODES ja täydentää GOALS-puutteet; molemmilla oma audit1-revisio ja tavoite. SIMS ei sisällä kumpaakaan KC:tä. families.ts yhdistää manifestin ja node/*/tag-deklaraatiot; effective family()-rivit inventoitu. Dynaamista kanonista sääntöä ei ole.",
+      "audit": "LESSON_AUDIT: roolien rinnakkaiset kokeilut roleScene ja saman kirjaimen sameLetterScene sekä roles-sort ja same-whyAt lisätty. COVERAGE ei sisällä roles-sort-perhettä ja näyttää vanhan fallback-revision; todellinen audit1-lähde ratkaisee.",
+      "comparison": [
+        "Sama kolmen yhtä suuren ryhmän sääntö K=3n kahdessa roolissa. Vapaat suunnitelmat n kokonaisluvuista 0–6; annetut tilaukset 12 ja 15.",
+        "Tarkistus vaatii kaksi eri pätevää vapaata suunnitelmaa JA tilaukseen sopivan tuntemattoman; kumpikaan vanhempi ei yksin riitä.",
+        "Neljä yhtä pitkää sivua ja annettu P=4s siirtävät roolieron geometriaan selitettynä, ilman mittausta ruudulta. Yhtälöiden ratkaisumäärän yleistäminen torjutaan."
+      ],
+      "limitations": [
+        "Lite-demojen ja tehtävien lähdekatselmus ei ole hyväksyntä. Alkuperäistä Liteä ei muutettu.",
+        "Roolien luokittelu tai yhden tuntemattoman ratkaiseminen ei yksin osoita kanonista integraatiota. Oma työ soveltaa molempia; ei muodollista näyttömerkintää."
+      ]
+    },
+    "planning": {
+      "gradeBand": "7-9",
+      "canonicalRole": {
+        "node_kind": "integration",
+        "mastery_role": "integration",
+        "entry_role": "none",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "M79-S3"
+        ],
+        "integration_of": [
+          "M79-VAR-VARYING",
+          "M79-VAR-UNKNOWN"
+        ],
+        "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: M79-VAR-VARYING, M79-VAR-UNKNOWN. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä."
+      },
+      "teacherObjective": "Soveltaa samaa lukumäärää sekä muuttuvana määränä että annetulla kokonaismäärällä rajattuna tuntemattomana; pitää saman kirjaimen merkityksen yhtenäisenä.",
+      "childGoal": "Käytän samaa määrää vapaassa suunnitelmassa ja annetun tilauksen tuntemattomana.",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M79-VAR-VARYING",
+            "M79-VAR-UNKNOWN"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "required": [
+        {
+          "id": "M79-VAR-VARYING",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M79-VAR-01 on v0.2:ssa integraationoodi; atominen alitaito M79-VAR-VARYING vaaditaan kokonaisuuden hallintaan."
+        },
+        {
+          "id": "M79-VAR-UNKNOWN",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M79-VAR-01 on v0.2:ssa integraationoodi; atominen alitaito M79-VAR-UNKNOWN vaaditaan kokonaisuuden hallintaan."
+        }
+      ],
+      "strongSupport": [],
+      "assumed": [
+        "Molemmat kanoniset vanhemmat AND-ryhmänä. Kolmen saman luvun summa ja jako kolmeen selitetään. Siirrossa neliön neljä yhtä pitkää sivua ja P=4s annetaan; ei uutta hard gatea."
+      ],
+      "scope": [
+        "Sama kolmen yhtä suuren ryhmän sääntö K=3n kahdessa roolissa. Vapaat suunnitelmat n kokonaisluvuista 0–6; annetut tilaukset 12 ja 15.",
+        "Tarkistus vaatii kaksi eri pätevää vapaata suunnitelmaa JA tilaukseen sopivan tuntemattoman; kumpikaan vanhempi ei yksin riitä.",
+        "Neljä yhtä pitkää sivua ja annettu P=4s siirtävät roolieron geometriaan selitettynä, ilman mittausta ruudulta. Yhtälöiden ratkaisumäärän yleistäminen torjutaan."
+      ],
+      "feedbackContract": [
+        "Vapaan suunnitelman n/K-muokkaus nollaa suunnitelmapalautteen ja yhteispalautteen; tilauksen palaute säilyy.",
+        "Tuntemattoman ehdotuksen tai annetun tilausmäärän vaihto nollaa tilauspalautteen ja yhteispalautteen; suunnitelmapalaute säilyy.",
+        "Vapaa kuvamalli on apu, ei vastauksen tila: sen muutos ei nollaa mitään tarkistettua vastausta.",
+        "B05 addendum: both input and change commit semantic answers consistently; explicit checks use the visible answer. Truth-preserving model/reorder controls retain dependent-feedback boundaries."
+      ],
+      "deterministicValidation": "Täsmälliset tiheät paritaulukot, pituudet, jokaisen indeksin omistus, tyypit, äärelliset kokonaisluvut, sallittu alue ja kaikki vaaditut osat tarkistetaan. Ei merkkijono-/taulukkoavainten epäsuoraa muunnosta. Vaihtoehtoiset pätevät järjestykset/arvot sallitaan.",
+      "evidenceLimits": [
+        "Paikallinen matalan panoksen opetustarkistus; ei tallennusta, oppijahistoriaa, mastery-palkintoa, itsenäisyyden tai säilymisen mittausta.",
+        "Ei ihmis-, lapsi- tai opettajavalidointia eikä vaikuttavuusväitettä.",
+        "Kanoninen luokka-aste on 7–9, ei 7–9 vuoden ikäväite; pienet kokonaisluvut ovat käsitteellinen tuki."
+      ],
+      "assetProvenance": [
+        {
+          "path": "one-quantity-two-roles.svg",
+          "origin": "Tämän paketin oma koodina piirretty alkuperäinen matemaattinen SVG 2026-10-29; ei lähdekuvan jäljennös eikä maskotti."
+        },
+        {
+          "path": "shared/loikka/curious.png",
+          "origin": "Käyttäjän toimittama shared-PNG, viitattu alkuperäisin tavuin. Ei uudelleenpiirtoa, kopiointia pakettiin, rasterimuokkausta tai uutta hyväksyntäväitettä."
+        }
+      ]
+    },
+    "extensions": {
+      "authorBatch": "B05",
+      "sourceInspectionDate": "2026-10-29",
+      "feedbackContractSha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "interactionQA": "browser.mjs targets real compiled site, exact contentRevision. Separate author source-harness results are labeled as source-only.",
+      "eventCommitReview": {
+        "addendum": "EVENT_COMMIT_REVIEW_B05.md",
+        "sha256": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+        "previousContentRevision": "1@8f041fd4a5bb1a4d58cc927405d9664f95a67fba09e758c82dcccec410061caa",
+        "correction": "Shared component dispatch for numeric answers, target and independent exploration on input and change; explicit check uses visible answers and target.",
+        "regression": "browser.mjs eventCommitRegression covers each event alone, stale success/retry, blank/repair and invariant controls; pure/domain functions unchanged.",
+        "limits": "Single-event commits are synthetic consistency regressions. Ordinary browser flows tested separately; no actual learner/assistive-technology incident inferred. No-event immediate invalidation or disabled-field mutation is not claimed. Explicit checking nevertheless reads the visible answer.",
+        "compiledQA": "PENDING main exact r2 build; no r1 native result promoted."
+      }
+    },
+    "contentHash": "a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+    "contentRevision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+      "history": [
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+          "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/algebra-independent-current-compiled.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+          "note": "No actual human/learner validation has occurred."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@a73505989781edd2837fbff7b22dbc442ff405960703869deb7c51292c13e2c9",
+          "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/algebra-independent-current-compiled.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "c44df2d549b5aaf49935d997cd8c21c3c37bc3bbd2be990b157674fe52e52dd8",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "c44df2d549b5aaf49935d997cd8c21c3c37bc3bbd2be990b157674fe52e52dd8",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

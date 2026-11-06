@@ -1,0 +1,7 @@
+# PHY79-QTY-CONCEPT — actual Lite/canonical reconciliation
+
+Complete physics.ts154–201, QTYS/NOT_QTY, measureScene68–89/notQtyScene92–118 and audit912–920 read. Families pick/tool/unitVs/sort/transfer with incidental decimals (not arithmetic). No SIMS overlay; audit1 explicit. We retain property vs instrument/value/unit distinction and correct concrete representations. We reject blanket “colour is not quantity because four instruments fail” and a universal printed-unit requirement, using VIM distinctions instead. No new unit-conversion/lukuarvo hard gate or legacy semantic-choice expansion; one property question applied to supported concrete situations.
+
+Canonical node and exact required groups are retained in metadata; other509 scaffolds untouched. Source hashes bind the actual immutable reading. Index GOALS fallback and per-node audit revision distinguished from stale COVERAGE. PHY wildcard incidental decimal metadata read; other targets have no own family declaration. Model/record numbers are supplied examples, not observations made by the learner. Any proposed Lite correction is only recorded here for Opus; Lite is not edited.
+
+Both semantic commit types, strict selector domains, exact/dense data and visible-answer checking belong to this module. Support/replay/reordering preserves valid responses when meaning is unchanged. Different independent source/pedagogy/native review and actual main integration remain pending.

@@ -1,0 +1,586 @@
+{
+  "kcId": "M-GMEAS-01",
+  "pagePath": "lessons/M-GMEAS-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-GMEAS-01",
+  "canonicalNode": {
+    "id": "M-GMEAS-01",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Geometria",
+    "parent_concept": "Piiri",
+    "title": "Kuvion piirin ymmärtäminen reunaviivan kokonaispituudeksi",
+    "short_description": "Kuvion piirin ymmärtäminen reunaviivan kokonaispituudeksi",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S4"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "concept",
+    "relations": [
+      {
+        "id": "M-MEAS-04",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MEAS-04 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-ADD-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-MEAS-04",
+          "M-ADD-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Geometria",
+      "Piiri"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-MEAS-04",
+      "targetKCId": "M-GMEAS-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MEAS-04 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-GMEAS-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-GMEAS-01",
+      "targetKCId": "M79-POLY-PERIM",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-GMEAS-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-MEAS-04",
+        "M-ADD-01"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-GMEAS-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-216-multiplicative-contexts-area-and-perimeter-1/",
+        "title": "Multiplicative contexts: area and perimeter1",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "perKC": [
+          "M-GMEAS-01"
+        ],
+        "actuallyInspected": "Public HTML intro and all6 teaching points; no linked PDF/worksheet claim.",
+        "adopted": "Perimeter as complete boundary distance, summed side lengths in linear units. Contrast boundary with interior.",
+        "rejectedOrLimited": "No compulsory area multiplication, inverse division or regular-polygon formula gate for this concept.",
+        "usageRestrictions": "NCETM default Crown/OGL acknowledgement and named-author/third-party exceptions; copyright endpoint genuinely retrieved earlier2026-10-29 in same production session. No figures/task text imported; PD is not a ready-made lesson to lift."
+      },
+      {
+        "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/area-and-perimeter-of-rectangles/5637199361.p",
+        "title": "Area and perimeter of rectangles",
+        "organization": "New Zealand Ministry of Education / Tāhūrangi",
+        "accessed": "2026-10-29",
+        "perKC": [
+          "M-GMEAS-01"
+        ],
+        "actuallyInspected": "Public resource overview, prerequisites, questions3/4 and supporting guidance. No attached PDF/image imported.",
+        "adopted": "Attend to attribute/unit and repeated opposite sides; compare shapes with same perimeter.",
+        "rejectedOrLimited": "Its acceleration/fluency assessment and fraction/multiplication prerequisites are broader than frozen KC; do not reject additive perimeter methods or import half-unit demands.",
+        "usageRestrictions": "No general reproduction permission verified from inspected page. Conceptual comparison only, no copied images/prose/resources."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+        "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/perimeter-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+        "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-GMEAS-01",
+    "revision": 3,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "rectangle.svg",
+        "sha256": "09cc00cdc46ced8169d0f29253c6e8e9a5c15f25c615c277ac9640f1abb88184"
+      },
+      {
+        "path": "elbow.svg",
+        "sha256": "7d1c4319a66b757fe1fae36515df95750f003e32232e674ae2d5f3d019b4f63b"
+      },
+      {
+        "path": "garden.svg",
+        "sha256": "ae0bff1393a2989eb8e0b54e42486a910d84d7bf94c8116980c9e8f414a37ac5"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "c98608a39fae0a97b45fb8d056da7273fbf3e5d4b5aa6563518b290e77d8bfbf"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-216-multiplicative-contexts-area-and-perimeter-1/",
+        "title": "Multiplicative contexts: area and perimeter1",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "perKC": [
+          "M-GMEAS-01"
+        ],
+        "actuallyInspected": "Public HTML intro and all6 teaching points; no linked PDF/worksheet claim.",
+        "adopted": "Perimeter as complete boundary distance, summed side lengths in linear units. Contrast boundary with interior.",
+        "rejectedOrLimited": "No compulsory area multiplication, inverse division or regular-polygon formula gate for this concept.",
+        "usageRestrictions": "NCETM default Crown/OGL acknowledgement and named-author/third-party exceptions; copyright endpoint genuinely retrieved earlier2026-10-29 in same production session. No figures/task text imported; PD is not a ready-made lesson to lift."
+      },
+      {
+        "url": "https://newzealandcurriculum.tahurangi.education.govt.nz/area-and-perimeter-of-rectangles/5637199361.p",
+        "title": "Area and perimeter of rectangles",
+        "organization": "New Zealand Ministry of Education / Tāhūrangi",
+        "accessed": "2026-10-29",
+        "perKC": [
+          "M-GMEAS-01"
+        ],
+        "actuallyInspected": "Public resource overview, prerequisites, questions3/4 and supporting guidance. No attached PDF/image imported.",
+        "adopted": "Attend to attribute/unit and repeated opposite sides; compare shapes with same perimeter.",
+        "rejectedOrLimited": "Its acceleration/fluency assessment and fraction/multiplication prerequisites are broader than frozen KC; do not reject additive perimeter methods or import half-unit demands.",
+        "usageRestrictions": "No general reproduction permission verified from inspected page. Conceptual comparison only, no copied images/prose/resources."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+        "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+        "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+        "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/perimeter-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/perimeter-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ],
+    "alignment": {
+      "liteNodeId": "M-GMEAS-01",
+      "liteRevision": "audit1-2026-10-28",
+      "liteValidRevs": [
+        "audit1-2026-10-28"
+      ],
+      "liteSource": "src/content/added181.ts:128–189",
+      "liteInventory": {
+        "source": "src/content/added181.ts:128–189",
+        "rev": "audit1-2026-10-28",
+        "goalOwn": true,
+        "intro": "Lentopajan siiven reunaan liimataan nauha. Kuinka pitkä nauha tarvitaan?",
+        "demos": [
+          "perimScene rectangle4×2 P12cm",
+          "perimScene cellBoundary4-cell L P10cm, counttrue",
+          "perimScene triangle3-4-5 P12cm"
+        ],
+        "families": [
+          {
+            "tag": "rect",
+            "task": "numeric",
+            "range": "a2..7,b1..4,P6..22cm",
+            "hintsExplain": "Opposite sides; add4 lengths. whyAt half-circuit and noncolliding area value."
+          },
+          {
+            "tag": "grid",
+            "task": "numeric",
+            "range": "4 fixed cell sets, P10/10/12/14cm",
+            "hintsExplain": "Unit boundary edges only; includes concave shapes, not interior grid lines."
+          },
+          {
+            "tag": "same",
+            "task": "sort",
+            "range": "P1=10/12,P2=14/16,4 rectangles",
+            "hintsExplain": "Same perimeter can occur for different side pairs; every row explained."
+          },
+          {
+            "tag": "meaning",
+            "task": "choice",
+            "range": "a3..5,b2..3",
+            "hintsExplain": "Boundary vs filled interior; perimeter like fence/tape."
+          },
+          {
+            "tag": "transfer",
+            "task": "numeric",
+            "range": "triangle sides3/4/5,5/5/6,4/4/4,6/8/10; sum12/16/12/24m",
+            "hintsExplain": "All3 sides; no need identify arbitrary shape names to calculate."
+          }
+        ],
+        "audit": "Detailed657–659 adds trace/unroll, same sorting and whyAt; COVERAGE omits same, reports2demos not3 and stale global rev.",
+        "mediaLimits": "cellBoundary maps a single simple connected boundary. perimScene may use different U for original and straightened LU; do not silently copy visual scale shrink. Preserve common unit or explicitly label separate view scale.",
+        "registry": "Explicit own audit1 NodeSpec goal, globalfallbacklite181-2026-10-27. kit.cases all named ordinary families guided/independent/retrieval, separate transfer. No SIMS overlay, no explicit target families.ts declarations or manifest activity-use rows; default outcomes and no dynamic rule on canonical nodes.",
+        "rawNodeSpec": "raw-lite-nodes.json#M-GMEAS-01"
+      },
+      "sourceBindings": {
+        "lite": {
+          "src/content/added181.ts": "1fb1c7ec3aa12bf340768c7d87afdb5b3b5550323bb28f83fbe5c3fc33cbf236",
+          "src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+          "src/content/written.ts": "58ee93036fb7417e8324072db5be810426a99db346c23ef0651c9525a9bfd0c6",
+          "src/content/perimanim.ts": "3096ce4c1af80f5f87b308e0adacce90629d24b562caa1d2c08b283cadf91099",
+          "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+          "src/content/multanim.ts": "0c73fffe77065728a3412fdaea24c469cd4fbf75315127f6247ead1de108c535",
+          "src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+          "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+          "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+          "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+          "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+          "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+          "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+          "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+          "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+          "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+          "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+          "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+          "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715"
+        },
+        "canonicalGraph": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+        "contracts": {
+          "content.mjs": "c4636c6188731667a1b86f7a11a80cd20af9fc37fe824dcb75835d86688bb1c4",
+          "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+          "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+          "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2"
+        }
+      },
+      "inheritedAndExtended": "Lite rect/grid/meaning ja yhteisen piirin idea opetetaan esimerkeillä. Transfer metreinä annettuun kolmion aitaan.",
+      "corrections": "PerimScene käyttää U ja LU eri asteikkoja; oma malli käyttää samaa mittakaavaa reitillä ja suoralla nauhalla. Ei kopioitua laajempaa pinta-ala-/kertolaskuedellytystä. Declared points/labels and all coordinate pairs are deeply frozen; imported model geometry cannot drift from static asset through accidental mutation.",
+      "comparisonAndLimitations": "Lite same on lajittelu; tässä sama piiri eri muodoilla on selitetty vertailu ja valinnainen tutkimus, ei lajittelusuorituksen arviointi. Ei kaikkien Lite satunnaisgeneraattorien kattamista yhdellä rajatulla harjoituksella.",
+      "implementedInteraction": "Alkuperäiset kortin ja L-muodon SVG:t; suljettu reitti, jälki ja suoristettu nauha samalla 18 px / malliyksikkö -asteikolla. Kolme annettua mallia, luku+yksikkö -vastaus. Automaattinen jäljitys 2 malliyksikköä/toistosekunti, ei väitettä todellisesta liikkumisnopeudesta. Pysäytys/askel/alku. Valinnainen jäljitys ei muuta vastaussääntöä.",
+      "formalRuntimeBoundary": "Standalone source-owned lesson; no KC-specific semantic-choice/game branches, no formal process evidence, personal mastery, persistence, runtime/content graph migration or verified public learner URL."
+    },
+    "planning": {
+      "gradeBand": "3-6",
+      "teacherObjective": "Kuvion piirin ymmärtäminen reunaviivan kokonaispituudeksi",
+      "childGoal": "Tunnistan piirin koko reunan pituudeksi ja lasken sen sivuista.",
+      "canonicalNodeKind": "concept",
+      "canonicalEntryRole": "none",
+      "canonicalMasteryRole": "atomic",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-MEAS-04",
+            "M-ADD-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "strongSupport": [],
+      "assumed": [
+        {
+          "id": "M-MEAS-04",
+          "use": "Pituusyksiköiden peräkkäisyys ja sama yksikkö."
+        },
+        {
+          "id": "M-ADD-01",
+          "use": "Annettujen sivupituuksien yhteenlasku."
+        }
+      ],
+      "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "curriculumRefs": [
+        "OPH-POPS2014-MATH-VL3-6-S4"
+      ],
+      "canonicalFactsVsDesign": "Luokka, tavoite ja suhteet ovat jäädytetyn kanonisen graafin tietoja. Valitut esimerkit, rajatut mallit ja palaute ovat tämän projektin suunnitteluratkaisuja, eivät OPH:n määräämä oppituntijärjestys tai vaikuttavuusnäyttö.",
+      "scope": "Koko suljettu reuna, myös koveran kuvion mutkat; sivujen yhteenlasku, pituusyksikkö, sama piiri eri muodoilla. Ei pinta-alan laskemista tai pakollista kertolaskukaavaa. Harjoitus pyytää kokonaislukua sivujen annetussa yksikössä; oikea yksikkömuunnos ei ole matemaattisesti väärä, mutta muunnosten arviointi ei kuulu tähän rajaukseen.",
+      "evidenceLimits": "Ruudun cm/m ovat mallin annettuja pituuksia, eivät fyysisiä näyttömittoja. Oikea vastaus ei todista käytettyä reittiä, itsenäistä mittaamista, pysyvyyttä tai pinta-alan osaamista.",
+      "assetProvenance": [
+        {
+          "path": "rectangle.svg",
+          "sha256": "09cc00cdc46ced8169d0f29253c6e8e9a5c15f25c615c277ac9640f1abb88184",
+          "origin": "Original project-authored SVG geometry from this package selfcontained model, or scoped CSS; no external figure copied."
+        },
+        {
+          "path": "elbow.svg",
+          "sha256": "7d1c4319a66b757fe1fae36515df95750f003e32232e674ae2d5f3d019b4f63b",
+          "origin": "Original project-authored SVG geometry from this package selfcontained model, or scoped CSS; no external figure copied."
+        },
+        {
+          "path": "garden.svg",
+          "sha256": "ae0bff1393a2989eb8e0b54e42486a910d84d7bf94c8116980c9e8f414a37ac5",
+          "origin": "Original project-authored SVG geometry from this package selfcontained model, or scoped CSS; no external figure copied."
+        },
+        {
+          "path": "lesson.css",
+          "sha256": "c98608a39fae0a97b45fb8d056da7273fbf3e5d4b5aa6563518b290e77d8bfbf",
+          "origin": "Original project-authored SVG geometry from this package selfcontained model, or scoped CSS; no external figure copied."
+        },
+        {
+          "path": "shared/aava/curious.png",
+          "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2",
+          "origin": "User-supplied actual transparent PNG; unchanged shared singlecopy, generated raster interpretation, not claimed handdrawn original or new licensing grant."
+        }
+      ]
+    },
+    "extensions": {
+      "authorBatch": "B08",
+      "authorScope": "Mill own3 only",
+      "interactionFeedbackContract": "Both native input and change commit semantic question/answer changes; explicit check reads visible fields. Unchanged help/model truth may preserve prior verdict. Root-scoped listeners cleaned by dispose; reset respects pause.",
+      "authorChecks": "Synthetic author technical checks are external QA receipts; independent and human review remain pending.",
+      "revision2Reason": "Main different-author review: given-unit whole-number response contract made explicit; declared model geometry deeply frozen. No table package changes.",
+      "stylesheetInclusionCorrection": "Main actual compiled sourceP2: declared CSS was not referenced by body. Authored local stylesheet link now explicit. Source preview no longer injects the package stylesheet independently. Actual stylesheet request and computed properties required in author QA.",
+      "primaryPremiseCorrection": "Current primary question derives and displays every side length with its given unit, before optional tracing. No earlier-example memory or opening help required for basic problem data."
+    },
+    "contentHash": "7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+    "contentRevision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+          "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/perimeter-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+          "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+          "note": "No actual human/target-learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+          "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "3@7b1d530f89f86b0368548475a210a731498cfecfe1c650b74c9b0fe1ad4c334f",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/perimeter-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    }
+  },
+  "outputHash": "546f44171a1de0e98ab15af1cb8ec4cd43a0936d7f68475526088ddc93533fe7",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "546f44171a1de0e98ab15af1cb8ec4cd43a0936d7f68475526088ddc93533fe7",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

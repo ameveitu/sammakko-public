@@ -1,0 +1,1693 @@
+{
+  "schemaVersion": 1,
+  "kcId": "PHY79-SPEED-MIXED",
+  "state": "draft",
+  "revision": 14,
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "lesson.css",
+      "sha256": "219778325bf284a7d8a679e9ce99749c9be6f3d2fd1d502d885ac0e10dbb22b4"
+    },
+    {
+      "path": "initial.svg",
+      "sha256": "e3100b965b822a6d7c8b64d3351b764d73640c2d102c187bb8f4d8a5e73f0b7c"
+    },
+    {
+      "path": "example1.svg",
+      "sha256": "7c9e9ecd85aa69b374a9e8e91d08294724a89f0960a521beead45e772c692731"
+    },
+    {
+      "path": "example2.svg",
+      "sha256": "cb187c5ac45e9bcbf27a155d1be07d3720e618eb94c1b484cb1250eb40cc16de"
+    },
+    {
+      "path": "example3.svg",
+      "sha256": "e09c065cef451c41e21c096de53267c6a32a512b9267f9a5721fc38be5d2bd19"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-5-units-outside-si",
+      "title": "NIST Guide to the SI, Chapter5: Units outside the SI",
+      "organization": "NIST",
+      "accessed": "2026-10-29",
+      "retrieval": "Actual HTML Table6 read:1min=60s,1h=3600s.",
+      "usageRestrictions": "NIST rights HTML actually read2026-10-29: employee works/Technical Series US copyright exception, foreign-rights grant, attribution and third-party exceptions. Only unit facts and own derivation used, no protected figures/prose. Oak HTML ©OakNationalAcademy2026, OGL3.0 except stated exceptions/Collection2terms; no slides, worksheets, video or copied expressive content. No overall release/licence clearance.",
+      "adopted": "Use exact minute/hour facts in visible premises. Metres/seconds refer to the same distance/time quantities.",
+      "rejected": "No base100 minute conversion; no copying table/graphics; no independent measurement claim.",
+      "scopeLimits": "Conceptual primary comparator; frozen Finnish canonical graph supplies grade/role/prerequisites. Unit normalization and exact conversion; no truncated physicalrun."
+    },
+    {
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors",
+      "title": "NIST Guide to the SI, AppendixB: Conversion Factors",
+      "organization": "NIST",
+      "accessed": "2026-10-29",
+      "retrieval": "Actual HTML B.1/B.2/B.3 read, including multiply/divide conversionfactor direction and exact-versus-rounded distinction.",
+      "usageRestrictions": "NIST rights HTML actually read2026-10-29: employee works/Technical Series US copyright exception, foreign-rights grant, attribution and third-party exceptions. Only unit facts and own derivation used, no protected figures/prose. Oak HTML ©OakNationalAcademy2026, OGL3.0 except stated exceptions/Collection2terms; no slides, worksheets, video or copied expressive content. No overall release/licence clearance.",
+      "adopted": "Derive1000/3600=5/18 exactly; dimensioned conversion preserves quantity. Derive inverse18/5=3.6.",
+      "rejected": "Rounded decimal conversion factor as answer oracle; display rounding that awards a different exact quantity.",
+      "scopeLimits": "Conceptual primary comparator; frozen Finnish canonical graph supplies grade/role/prerequisites. Unit normalization and exact conversion; no truncated physicalrun."
+    },
+    {
+      "url": "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/moving-by-force/lessons/calculating-speed",
+      "title": "Calculating speed",
+      "organization": "Oak National Academy",
+      "accessed": "2026-10-29",
+      "retrieval": "Actual teacher HTML keylearning points418–444 andlicence447–449 inspected. No linked teaching files/video retrieved.",
+      "usageRestrictions": "NIST rights HTML actually read2026-10-29: employee works/Technical Series US copyright exception, foreign-rights grant, attribution and third-party exceptions. Only unit facts and own derivation used, no protected figures/prose. Oak HTML ©OakNationalAcademy2026, OGL3.0 except stated exceptions/Collection2terms; no slides, worksheets, video or copied expressive content. No overall release/licence clearance.",
+      "adopted": "Meaning of per-second first; proportional distance=speed×time relation before inverse calculation. Qualify constant speed in examples.",
+      "rejected": "Formula triangle as sole teaching; mph outside declared domain; staged quiz/speed gate; no copied activity or efficacy claim.",
+      "scopeLimits": "Conceptual primary comparator; frozen Finnish canonical graph supplies grade/role/prerequisites. Unit normalization and exact conversion; no truncated physicalrun."
+    },
+    {
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "title": "Copyright, Fair Use, and Licensing Statements for SRD, Data, Software, and Technical Series Publications",
+      "organization": "NIST",
+      "accessed": "2026-10-29",
+      "retrieval": "Actual rights HTML sections Other Data/Works and Technical Series, lines142–150 and175–176 read.",
+      "usageRestrictions": "NIST rights HTML actually read2026-10-29: employee works/Technical Series US copyright exception, foreign-rights grant, attribution and third-party exceptions. Only unit facts and own derivation used, no protected figures/prose. Oak HTML ©OakNationalAcademy2026, OGL3.0 except stated exceptions/Collection2terms; no slides, worksheets, video or copied expressive content. No overall release/licence clearance.",
+      "adopted": "Attribute source of unit facts and preserve third-party/foreign-rights caveats in source notes.",
+      "rejected": "Blanket claim that every source resource or project asset is public domain.",
+      "scopeLimits": "Conceptual primary comparator; frozen Finnish canonical graph supplies grade/role/prerequisites. Unit normalization and exact conversion; no truncated physicalrun."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@13491e2ce1bea0a801f23e6a3582c15c973b984e94c8155e39effe7bb8cfcc0d",
+      "note": "Author draft; Newton different-author review and parent actual175 integration pending. No human/learner review."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@13491e2ce1bea0a801f23e6a3582c15c973b984e94c8155e39effe7bb8cfcc0d",
+      "note": "Author draft; Newton different-author review and parent actual175 integration pending. No human/learner review."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@13491e2ce1bea0a801f23e6a3582c15c973b984e94c8155e39effe7bb8cfcc0d",
+      "note": "Author draft; Newton different-author review and parent actual175 integration pending. No human/learner review."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@13491e2ce1bea0a801f23e6a3582c15c973b984e94c8155e39effe7bb8cfcc0d",
+      "note": "Independent B15 Descartes current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Descartes-on-rate-ready-current.json. Synthetic technical scope, not learner validation. Nonblocking P3: extreme programmatic values outside shippedfinitecatalog can overflow SVGlabels; documented boundary remains open, not an authored task defect."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@13491e2ce1bea0a801f23e6a3582c15c973b984e94c8155e39effe7bb8cfcc0d",
+      "note": "Independent B15 Descartes canonical/Lite/source boundary review: roles/groups preserved, no new hardgates. lesson-network/evidence/production/B15/reviews/Descartes-on-rate-ready-current.json"
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@13491e2ce1bea0a801f23e6a3582c15c973b984e94c8155e39effe7bb8cfcc0d",
+      "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@c1b61f026ea614ed5a878de8b0947138e5c8e8bde9d6676820f12b70e353a327",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@c1b61f026ea614ed5a878de8b0947138e5c8e8bde9d6676820f12b70e353a327",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@c1b61f026ea614ed5a878de8b0947138e5c8e8bde9d6676820f12b70e353a327",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@c211443837142f4686453b17ca6bf7aaf67fdc6b5adcf7ca0ea3ea3e30579e7f",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@c211443837142f4686453b17ca6bf7aaf67fdc6b5adcf7ca0ea3ea3e30579e7f",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@c211443837142f4686453b17ca6bf7aaf67fdc6b5adcf7ca0ea3ea3e30579e7f",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@7235a91b210d5acfdbf54651acb12ea9aa5c63209d18ee246ebf53d298f1b5e0",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@7235a91b210d5acfdbf54651acb12ea9aa5c63209d18ee246ebf53d298f1b5e0",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@7235a91b210d5acfdbf54651acb12ea9aa5c63209d18ee246ebf53d298f1b5e0",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@b97c91239abdcc1a72cc958d0a34439d064ce7c1fd9e6dcfa457c7938c047c3b",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@b97c91239abdcc1a72cc958d0a34439d064ce7c1fd9e6dcfa457c7938c047c3b",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@b97c91239abdcc1a72cc958d0a34439d064ce7c1fd9e6dcfa457c7938c047c3b",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@65a7940130e98d1f665528cb53746f96cd6a40fbe496fa1641d43e2ebc6194ba",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@65a7940130e98d1f665528cb53746f96cd6a40fbe496fa1641d43e2ebc6194ba",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@65a7940130e98d1f665528cb53746f96cd6a40fbe496fa1641d43e2ebc6194ba",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@4c971ba6f5a9615ba62f239798c15b32359e0e124a38a5b6ef3c088026d9ec4b",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@4c971ba6f5a9615ba62f239798c15b32359e0e124a38a5b6ef3c088026d9ec4b",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@4c971ba6f5a9615ba62f239798c15b32359e0e124a38a5b6ef3c088026d9ec4b",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@2af54ae5595b16a9ccc608b759fb67804c13a8ea4244cae9302510b886056cc1",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@2af54ae5595b16a9ccc608b759fb67804c13a8ea4244cae9302510b886056cc1",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@2af54ae5595b16a9ccc608b759fb67804c13a8ea4244cae9302510b886056cc1",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@7fbd34d1a54fca83de2c5681b8f396baece32788639faee2724c63a09ddb4f77",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@7fbd34d1a54fca83de2c5681b8f396baece32788639faee2724c63a09ddb4f77",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@7fbd34d1a54fca83de2c5681b8f396baece32788639faee2724c63a09ddb4f77",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@5167a8dc8169c2304f13918282a2f7b8dc18cf5ef8bd6c9b7164fa28c3b5c742",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@5167a8dc8169c2304f13918282a2f7b8dc18cf5ef8bd6c9b7164fa28c3b5c742",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@5167a8dc8169c2304f13918282a2f7b8dc18cf5ef8bd6c9b7164fa28c3b5c742",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@185d2477aab89eafc757d6c1a5c247205eefacf9fc5f15c859b70df31cc7efe9",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@185d2477aab89eafc757d6c1a5c247205eefacf9fc5f15c859b70df31cc7efe9",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@185d2477aab89eafc757d6c1a5c247205eefacf9fc5f15c859b70df31cc7efe9",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@254f63b253b48117e5dd2b1c636f894b32a6e17c14ea50f5eb4d1d6c320ba66e",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@254f63b253b48117e5dd2b1c636f894b32a6e17c14ea50f5eb4d1d6c320ba66e",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@254f63b253b48117e5dd2b1c636f894b32a6e17c14ea50f5eb4d1d6c320ba66e",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@f99e5d5f440a668ff4390a5d6523c45ea51c3577aa992492e5e9e9c66e6e361b",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@f99e5d5f440a668ff4390a5d6523c45ea51c3577aa992492e5e9e9c66e6e361b",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@f99e5d5f440a668ff4390a5d6523c45ea51c3577aa992492e5e9e9c66e6e361b",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@b32bdfff5181e135fdc8e988a04aee8cdb6622eb2b44c55008f0a136beae1de5",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@b32bdfff5181e135fdc8e988a04aee8cdb6622eb2b44c55008f0a136beae1de5",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@b32bdfff5181e135fdc8e988a04aee8cdb6622eb2b44c55008f0a136beae1de5",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@ded4a8727d4362f8375558b992afcb3f87ad747e6caeb13f9bb6e3f89fe4f0de",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@ded4a8727d4362f8375558b992afcb3f87ad747e6caeb13f9bb6e3f89fe4f0de",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: 1,2 km / 4 min = 1200 m / 240 s = 5 m/s, ja 18 km/h = 5 m/s. Minuutissa on 60 sekuntia; tarkka 1 km/h = 5/18 m/s erotetaan pyöristämisestä. Korjasin mallin ja tapausvalinnan samaan vaiheeseen. Tehtävä A–H -otsikot ovat neutraaleja; niiden muutos ei muuttanut annettuja arvoja, odotuksia tai tarkistinta. Nykyinen Lite muuntaa matkan/ajan ja vertailee m/s–km/h-nopeuksia. Lessonin tarkat murtoluvut ovat lisätukea nykyisen Liten pääosin siisteille arvoille. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@ded4a8727d4362f8375558b992afcb3f87ad747e6caeb13f9bb6e3f89fe4f0de",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "sourceRevision": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "validRevisions": [
+      "audit1-2026-10-28"
+    ],
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2",
+      "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+      "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "EVENT_COMMIT_REVIEW_B05.md": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+      "authority/production-181-v2/ASSETS.md": "bdccb0695c27382d99f8831077adf2f247b1bb168018bc5f829c510df3792c48",
+      "authority/production-181-v2/STYLE_REVIEW_FI.md": "aed7c1ba925e0743dc8f4d78b26cf875c5595e3afb39e0d3cd679f881b1683a4",
+      "authority/production-181-v2/ASSET_STYLE_GATE.txt": "fb5a31989b7ac7ad3f2e4f875ca86ea2f224821de09fa5eb4371fc3f36239fb7",
+      "authority/production-181-v2/lite/src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+      "authority/production-181-v2/lite/src/content/physics.ts": "835ad69dd95f622adcb6050ab63d00a4477d64425545dd1b8af5a4892f978430",
+      "authority/production-181-v2/lite/src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+    },
+    "inventory": {
+      "canonical": {
+        "id": "PHY79-SPEED-MIXED",
+        "subject": "physics",
+        "grade_band": "7-9",
+        "topic_area": "S5 Vuorovaikutus ja liike",
+        "parent_concept": "Nopeus",
+        "title": "Nopeuslasku sekayksiköillä yksiköt ensin yhtenäistäen",
+        "short_description": "Nopeuslasku sekayksiköillä yksiköt ensin yhtenäistäen",
+        "node_kind": "procedure",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "PHY79-S5"
+        ],
+        "relations": [
+          {
+            "id": "PHY79-SPEED-CALC",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "PHY79-SPEED-CALC on ydinesitieto tälle osaamiskohteelle."
+          },
+          {
+            "id": "PHY79-UNIT-CONV",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "PHY79-UNIT-CONV on ydinesitieto tälle osaamiskohteelle."
+          },
+          {
+            "id": "PHY79-SPEED-UNIT",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "PHY79-SPEED-UNIT on ydinesitieto tälle osaamiskohteelle."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "PHY79-SPEED-CALC",
+              "PHY79-UNIT-CONV",
+              "PHY79-SPEED-UNIT"
+            ],
+            "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+          }
+        ],
+        "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "status": "candidate",
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Fysiikka",
+          "S5 Vuorovaikutus ja liike",
+          "Nopeus"
+        ]
+      },
+      "goal": "Opit muuntamaan matkan ja ajan sopiviin yksiköihin ennen nopeuden laskemista sekä vaihtamaan m/s ja km/h kertoimella 3,6.",
+      "goalOrigin": "NodeSpec.goal",
+      "nodeRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "globalFallback": "lite181-2026-10-27",
+      "motionOverlay": true,
+      "intro": "Mittaukset tulivat eri yksiköissä. Ensin yhtenäistetään, sitten lasketaan.",
+      "reward": "Yksiköt ensin, sitten lasku. Hienoa!",
+      "families": {
+        "kmh": {
+          "taskKind": "numeric",
+          "seed": 1,
+          "phase": "guided",
+          "say": "1 m/s = 3,6 km/h. Muunna 18 km/h yksikköön m/s.",
+          "hint": "km/h-luku on 3,6 kertaa suurempi kuin m/s-luku. Jaa 3,6:lla.",
+          "explain": "18 / 3,6 = 5, joten nopeus on 5 m/s.",
+          "task": {
+            "kind": "numeric",
+            "answer": 5,
+            "unit": "m/s",
+            "whyAt": {
+              "18": "Luku on vielä km/h-yksikössä. Jaa 3,6:lla.",
+              "64.8": "Kerroit 3,6:lla. Kohti m/s:ää luku pienenee: jaa."
+            }
+          },
+          "registry": {
+            "node": "PHY79-SPEED-MIXED",
+            "tag": "kmh",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M79-DEC-DIV"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M79-DEC-DIV"
+            ],
+            "source": [
+              "scope manifest PHY79-SPEED-MIXED/kmh"
+            ]
+          },
+          "media": {
+            "kind": "none"
+          }
+        },
+        "ready": {
+          "taskKind": "sort",
+          "seed": 4,
+          "phase": "guided",
+          "say": "Nopeus lasketaan yksikössä m/s. Lajittele mittaukset: voiko heti jakaa, vai pitääkö ensin muuntaa?",
+          "hint": "m/s vaatii matkan metreinä ja ajan sekunteina.",
+          "explain": "Vain metrit ja sekunnit voi jakaa suoraan, kun tulos halutaan yksikössä m/s.",
+          "task": {
+            "kind": "sort",
+            "items": [
+              {
+                "text": "120 m, 8 s"
+              },
+              {
+                "text": "600 m, 2 min"
+              },
+              {
+                "text": "45 m, 9 s"
+              },
+              {
+                "text": "1,2 km, 60 s"
+              }
+            ],
+            "cats": [
+              {
+                "label": "Valmis: jaa heti ✓"
+              },
+              {
+                "label": "Muunna ensin 🔁"
+              }
+            ],
+            "answer": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "why": [
+              "Metrit ja sekunnit: jaa heti.",
+              "Aika on minuutteina: 2 min = 120 s ensin.",
+              "Metrit ja sekunnit: jaa heti.",
+              "Matka on kilometreinä: 1,2 km = 1200 m ensin."
+            ]
+          },
+          "registry": {
+            "node": "PHY79-SPEED-MIXED",
+            "tag": "ready",
+            "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "none"
+          }
+        },
+        "kmMin": {
+          "taskKind": "numeric",
+          "seed": 7,
+          "phase": "guided",
+          "say": "1 km = 1000 m, 1 min = 60 s. Juoksija kulki 0,6 km ajassa 5 min. Laske nopeus yksikössä m/s.",
+          "hint": "Muunna ensin matka metreiksi ja aika sekunneiksi, sitten jaa.",
+          "explain": "0,6 km = 600 m ja 5 min = 300 s. v = 600 m / 300 s = 2 m/s.",
+          "task": {
+            "kind": "numeric",
+            "answer": 2,
+            "unit": "m/s",
+            "whyAt": {
+              "120": "Minuutit jäivät muuntamatta: 600 m / 5 = 120. Muunna 5 min sekunneiksi.",
+              "1.2": "Minuutissa on 60 sekuntia, ei 100.",
+              "0.002": "Kilometrit jäivät muuntamatta. Muunna matka ensin metreiksi.",
+              "0.12": "Kumpikaan yksikkö ei ole muunnettu. Tulos olisi km/min, ei m/s."
+            }
+          },
+          "registry": {
+            "node": "PHY79-SPEED-MIXED",
+            "tag": "kmMin",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "none"
+          }
+        },
+        "mMin": {
+          "taskKind": "numeric",
+          "seed": 12,
+          "phase": "guided",
+          "say": "1 min = 60 s. Pyöräilijä kulki 480 m ajassa 4 min. Laske nopeus yksikössä m/s.",
+          "hint": "Muunna ensin 4 min sekunneiksi.",
+          "explain": "4 min = 240 s. v = 480 m / 240 s = 2 m/s.",
+          "task": {
+            "kind": "numeric",
+            "answer": 2,
+            "unit": "m/s",
+            "whyAt": {
+              "120": "Jaoit minuuteilla: tulos on metriä minuutissa. Muunna 4 min = 240 s.",
+              "1.2": "Minuutissa on 60 sekuntia, ei 100."
+            }
+          },
+          "registry": {
+            "node": "PHY79-SPEED-MIXED",
+            "tag": "mMin",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "none"
+          }
+        },
+        "transfer": {
+          "taskKind": "choice",
+          "seed": 1,
+          "phase": "transfer",
+          "say": "1 m/s = 3,6 km/h. Kumpi on nopeampi: 15 m/s vai 36 km/h?",
+          "hint": "Muunna 15 m/s ensin km/h:ksi: kerro 3,6:lla.",
+          "explain": "15 m/s = 54 km/h, joten 15 m/s on nopeampi.",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "text": "15 m/s"
+              },
+              {
+                "text": "36 km/h"
+              },
+              {
+                "text": "Yhtä nopeat"
+              }
+            ],
+            "answer": 0,
+            "why": [
+              null,
+              "15 m/s = 54 km/h, ja se on enemmän kuin 36 km/h. Suurempi luku ei kerro mitään, jos yksiköt ovat eri.",
+              "15 m/s = 54 km/h, ei 36 km/h."
+            ],
+            "cols": 3
+          },
+          "registry": {
+            "node": "PHY79-SPEED-MIXED",
+            "tag": "transfer",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "none"
+          }
+        }
+      },
+      "phaseCounts": {
+        "guided": 128,
+        "independent": 128,
+        "retrieval": 128,
+        "transfer": 128
+      },
+      "demos": [
+        {
+          "say": "Juoksija kulki 1,2 km ajassa 4 min. Nopeus halutaan yksikössä m/s, joten ensin matka metreiksi: 1,2 km on 1200 m.",
+          "kind": "animation",
+          "duration": 7,
+          "width": 320,
+          "height": 200,
+          "label": "1,2 km = 1200 m",
+          "snapshots": [
+            {
+              "time": 0,
+              "caption": "Muunnetaan 1,2 km. Yksi km on 1000 m.",
+              "sha256": "2bce67ae7939cff72f0c347fb502bdaad314f9ab109e46bda201dec708cac45d"
+            },
+            {
+              "time": 0.175,
+              "caption": "Muunnetaan 1,2 km. Yksi km on 1000 m.",
+              "sha256": "2bce67ae7939cff72f0c347fb502bdaad314f9ab109e46bda201dec708cac45d"
+            },
+            {
+              "time": 0.35,
+              "caption": "Muunnetaan 1,2 km. Yksi km on 1000 m.",
+              "sha256": "2bce67ae7939cff72f0c347fb502bdaad314f9ab109e46bda201dec708cac45d"
+            },
+            {
+              "time": 0.525,
+              "caption": "Muunnetaan 1,2 km. Yksi km on 1000 m.",
+              "sha256": "2bce67ae7939cff72f0c347fb502bdaad314f9ab109e46bda201dec708cac45d"
+            },
+            {
+              "time": 0.7,
+              "caption": "Muunnetaan 1,2 km. Yksi km on 1000 m.",
+              "sha256": "3128cf0f38da264e457ea989b619b8f4c4cf380e85fdff3f3d3d0177b8cb8473"
+            },
+            {
+              "time": 0.875,
+              "caption": "Muunnetaan 1,2 km. Yksi km on 1000 m.",
+              "sha256": "fe6f47003a200b159118c20958c3bfad4a3affaf52be7525bd0316bb84ffee21"
+            },
+            {
+              "time": 1.05,
+              "caption": "Muunnetaan 1,2 km. Yksi km on 1000 m.",
+              "sha256": "d75395c449186b977b68808f698658b8ed5c3bd7ee54904bf970b977a70fabf8"
+            },
+            {
+              "time": 1.225,
+              "caption": "Muunnetaan 1,2 km. Yksi km on 1000 m.",
+              "sha256": "c0611d3efbd52455981d4fe00b59a24d8409cdc820e2e36177c500dffdf6faa7"
+            },
+            {
+              "time": 1.4,
+              "caption": "0. km: 1000 m lisää.",
+              "sha256": "3d2bede096d6896a0a9c57ce02d47c652279c69870dae03f27ee208b76ecbbc7"
+            },
+            {
+              "time": 1.575,
+              "caption": "1. km: 1000 m lisää.",
+              "sha256": "81d26dae4ed6cef50dba3485a6aa8e7e5029852548828fc9c553a08f2b5dde1e"
+            },
+            {
+              "time": 1.75,
+              "caption": "1. km: 1000 m lisää.",
+              "sha256": "4c411b80426ea94f7f4bc3ffa848869c77211f9eb90f1c7c2d95731f58bff943"
+            },
+            {
+              "time": 1.925,
+              "caption": "1. km: 1000 m lisää.",
+              "sha256": "709d31be15a1deb28f947d6910042120a79ebe0a554fff2f2b3c697de35b7e98"
+            },
+            {
+              "time": 2.1,
+              "caption": "1. km: 1000 m lisää.",
+              "sha256": "709d31be15a1deb28f947d6910042120a79ebe0a554fff2f2b3c697de35b7e98"
+            },
+            {
+              "time": 2.275,
+              "caption": "1. km: 1000 m lisää.",
+              "sha256": "709d31be15a1deb28f947d6910042120a79ebe0a554fff2f2b3c697de35b7e98"
+            },
+            {
+              "time": 2.45,
+              "caption": "1. km: 1000 m lisää.",
+              "sha256": "709d31be15a1deb28f947d6910042120a79ebe0a554fff2f2b3c697de35b7e98"
+            },
+            {
+              "time": 2.625,
+              "caption": "Vielä 0,2 km = 200 m.",
+              "sha256": "6f793d2c2a598d57677df0d58736409f2ed7d1a4fe92db3aeb0697cd466a52ec"
+            },
+            {
+              "time": 2.8,
+              "caption": "Vielä 0,2 km = 200 m.",
+              "sha256": "f3de01e9c5fb9488cdd7bff10f66e7785f5a3ffd2d0a480491300ceadc672eda"
+            },
+            {
+              "time": 2.975,
+              "caption": "Vielä 0,2 km = 200 m.",
+              "sha256": "50ad3060f3b997e4a829a605629ee455e6662efef2204c6961422131e2ffce6e"
+            },
+            {
+              "time": 3.15,
+              "caption": "Vielä 0,2 km = 200 m.",
+              "sha256": "fdf9cad8318814c1ad65f49f7af0abe23e6eae9bf9488e312292cd02e76498ab"
+            },
+            {
+              "time": 3.325,
+              "caption": "Vielä 0,2 km = 200 m.",
+              "sha256": "fdf9cad8318814c1ad65f49f7af0abe23e6eae9bf9488e312292cd02e76498ab"
+            },
+            {
+              "time": 3.5,
+              "caption": "Vielä 0,2 km = 200 m.",
+              "sha256": "fdf9cad8318814c1ad65f49f7af0abe23e6eae9bf9488e312292cd02e76498ab"
+            },
+            {
+              "time": 3.675,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "b2c9a6bcc554ffadcf74b2b6291cfa7ce154faa387f857046395c71c88e95547"
+            },
+            {
+              "time": 3.85,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "92446a696a673eae60bf8a16230952e4fc29c2e49e7d99d891f277df2f2cc6c4"
+            },
+            {
+              "time": 4.025,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "3340752f9c7ec3b96fd6a58df8113939d7ad43c70d5e97f8276f4769771681b9"
+            },
+            {
+              "time": 4.2,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 4.375,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 4.55,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 4.725,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 4.9,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 5.075,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 5.25,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 5.425,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 5.6,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 5.775,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 5.95,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 6.125,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 6.3,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 6.475,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 6.65,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 6.825,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            },
+            {
+              "time": 7,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 1,2 km = 1200 m.",
+              "sha256": "292f1cf6c67c13a7c1432a52a5528ca382dbd919fdbc7a18aabc748d81fd6b49"
+            }
+          ]
+        },
+        {
+          "say": "Sitten aika sekunneiksi: jokaisessa minuutissa on 60 sekuntia. 4 min = 240 s.",
+          "kind": "animation",
+          "duration": 9.200000000000001,
+          "width": 320,
+          "height": 200,
+          "label": "4 min = 240 s",
+          "snapshots": [
+            {
+              "time": 0,
+              "caption": "Muunnetaan 4 min. Yksi min on 60 s.",
+              "sha256": "1bb79eca34411321656b1533054607548deac455d74f4f96be40c84b02466345"
+            },
+            {
+              "time": 0.23000000000000004,
+              "caption": "Muunnetaan 4 min. Yksi min on 60 s.",
+              "sha256": "1bb79eca34411321656b1533054607548deac455d74f4f96be40c84b02466345"
+            },
+            {
+              "time": 0.4600000000000001,
+              "caption": "Muunnetaan 4 min. Yksi min on 60 s.",
+              "sha256": "1bb79eca34411321656b1533054607548deac455d74f4f96be40c84b02466345"
+            },
+            {
+              "time": 0.6900000000000001,
+              "caption": "Muunnetaan 4 min. Yksi min on 60 s.",
+              "sha256": "2bd43ee75561b3659fb1ee1b3184c4c48ecd0f62d4a6aa465fd1b5ed030f4951"
+            },
+            {
+              "time": 0.9200000000000002,
+              "caption": "Muunnetaan 4 min. Yksi min on 60 s.",
+              "sha256": "968870b5a6bf529861b0c050ac77326e091c0ea62eef6dcef52b5691e1c5d822"
+            },
+            {
+              "time": 1.1500000000000001,
+              "caption": "Muunnetaan 4 min. Yksi min on 60 s.",
+              "sha256": "20878eff3aadf742daf3d5f382d0779e3656aacf7e1e392ff9002b83ec55eef6"
+            },
+            {
+              "time": 1.3800000000000001,
+              "caption": "Muunnetaan 4 min. Yksi min on 60 s.",
+              "sha256": "c5b4ce6864a93c2aa1b53269d5cc63bd403ec3593bd20107ed292f28f7fedb8f"
+            },
+            {
+              "time": 1.61,
+              "caption": "1. min: 60 s lisää.",
+              "sha256": "ea51f659f572ddf49d5bf52bafcf980ca91be87376c7dabfa62f907049a6fc5c"
+            },
+            {
+              "time": 1.8400000000000003,
+              "caption": "1. min: 60 s lisää.",
+              "sha256": "d7f558c6020c941881352ca1785233f6a3b136d6ed74a2743c627f53678d33fb"
+            },
+            {
+              "time": 2.0700000000000003,
+              "caption": "1. min: 60 s lisää.",
+              "sha256": "086eb11d128b4dd0ac5e46062d4e2c3b09b99fe79a36bb12f651dc5f9be7c6ea"
+            },
+            {
+              "time": 2.3000000000000003,
+              "caption": "1. min: 60 s lisää.",
+              "sha256": "086eb11d128b4dd0ac5e46062d4e2c3b09b99fe79a36bb12f651dc5f9be7c6ea"
+            },
+            {
+              "time": 2.5300000000000002,
+              "caption": "2. min: 60 s lisää.",
+              "sha256": "1640959697c6ccbadddafcdca716076e802eac9baf10d7f413faa9a008b5cf4e"
+            },
+            {
+              "time": 2.7600000000000002,
+              "caption": "2. min: 60 s lisää.",
+              "sha256": "6ebc6cbc7bcd63d3d63dc22f672763b19ff3aa6de6168dc5f4d5237655db92f9"
+            },
+            {
+              "time": 2.99,
+              "caption": "2. min: 60 s lisää.",
+              "sha256": "7da9952c01bd0ccc1dfe06e2fcac92d5a888f64eeb52c5480d0ba22c3c1d054d"
+            },
+            {
+              "time": 3.22,
+              "caption": "2. min: 60 s lisää.",
+              "sha256": "f7761f38de9a0dee73a408c2e5d7fd1483e57c080ad5f9ee924a12eca1a498e1"
+            },
+            {
+              "time": 3.4500000000000006,
+              "caption": "2. min: 60 s lisää.",
+              "sha256": "f7761f38de9a0dee73a408c2e5d7fd1483e57c080ad5f9ee924a12eca1a498e1"
+            },
+            {
+              "time": 3.6800000000000006,
+              "caption": "3. min: 60 s lisää.",
+              "sha256": "e39a59575af0203fe6f1050573980247c59be037cf416dd2fa42cd8435d386c1"
+            },
+            {
+              "time": 3.91,
+              "caption": "3. min: 60 s lisää.",
+              "sha256": "a57b50a6dd15b16ac332c8d7903870f105e60cd869dc94d208168a8ed7b68249"
+            },
+            {
+              "time": 4.140000000000001,
+              "caption": "3. min: 60 s lisää.",
+              "sha256": "f45240d06e76b58c07d02dc7cc09772faf360203b3a2055b8eee3215cfdd96b1"
+            },
+            {
+              "time": 4.37,
+              "caption": "3. min: 60 s lisää.",
+              "sha256": "f45240d06e76b58c07d02dc7cc09772faf360203b3a2055b8eee3215cfdd96b1"
+            },
+            {
+              "time": 4.6000000000000005,
+              "caption": "3. min: 60 s lisää.",
+              "sha256": "f45240d06e76b58c07d02dc7cc09772faf360203b3a2055b8eee3215cfdd96b1"
+            },
+            {
+              "time": 4.83,
+              "caption": "4. min: 60 s lisää.",
+              "sha256": "3f521ca7ba99de243059b4e43424cf0e037824992b93d31524a3ef6b57d70336"
+            },
+            {
+              "time": 5.0600000000000005,
+              "caption": "4. min: 60 s lisää.",
+              "sha256": "a294da422933936826c02293f7a03deb21d75a9d988413f4c96ed1606b744a53"
+            },
+            {
+              "time": 5.290000000000001,
+              "caption": "4. min: 60 s lisää.",
+              "sha256": "117d8b151538b28f01835f28c5623d1aabb2adfdb54e16346ab4cbe27ac5f365"
+            },
+            {
+              "time": 5.5200000000000005,
+              "caption": "4. min: 60 s lisää.",
+              "sha256": "117d8b151538b28f01835f28c5623d1aabb2adfdb54e16346ab4cbe27ac5f365"
+            },
+            {
+              "time": 5.750000000000001,
+              "caption": "4. min: 60 s lisää.",
+              "sha256": "117d8b151538b28f01835f28c5623d1aabb2adfdb54e16346ab4cbe27ac5f365"
+            },
+            {
+              "time": 5.98,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "5756942915afc6b7379d02ede19c2250e42beecbb61aa4acab54c30b5e5237a6"
+            },
+            {
+              "time": 6.210000000000001,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "09da09539c404292003f11dd5051b9689b2158473c839439d191ee475eb102d4"
+            },
+            {
+              "time": 6.44,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            },
+            {
+              "time": 6.67,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            },
+            {
+              "time": 6.900000000000001,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            },
+            {
+              "time": 7.130000000000001,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            },
+            {
+              "time": 7.360000000000001,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            },
+            {
+              "time": 7.590000000000001,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            },
+            {
+              "time": 7.82,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            },
+            {
+              "time": 8.05,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            },
+            {
+              "time": 8.280000000000001,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            },
+            {
+              "time": 8.510000000000002,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            },
+            {
+              "time": 8.74,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            },
+            {
+              "time": 8.970000000000002,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            },
+            {
+              "time": 9.200000000000001,
+              "caption": "Isosta yksiköstä pieneen kerrotaan: 4 min = 240 s.",
+              "sha256": "20ec73f077eb6c407f134f7756b8b364a40457ecded84c368c2c2f5ab73da1c9"
+            }
+          ]
+        },
+        {
+          "say": "Nyt yksiköt sopivat yhteen. 1200 m jaettuna 240 s: luvuista 5, yksiköistä m/s. Juoksijan nopeus on 5 m/s.",
+          "kind": "animation",
+          "duration": 10,
+          "width": 320,
+          "height": 200,
+          "label": "1200 m / 240 s = 5 m/s",
+          "snapshots": [
+            {
+              "time": 0,
+              "caption": "Nopeus on matka jaettuna ajalla: 1200 m jaettuna 240 s.",
+              "sha256": "857bfde5d4cd070152b0530ea7f25624829af9ac11a8741b549387d51ecaad35"
+            },
+            {
+              "time": 0.25,
+              "caption": "Nopeus on matka jaettuna ajalla: 1200 m jaettuna 240 s.",
+              "sha256": "20a216fbedd5e3b596f27f575c54c278e102b6a60f932203fe0d0040de86180b"
+            },
+            {
+              "time": 0.5,
+              "caption": "Nopeus on matka jaettuna ajalla: 1200 m jaettuna 240 s.",
+              "sha256": "a3dc3bd2b405910a1aa3b22f05ea355ad3e43b438f7654d9dc287f2ec90a92ae"
+            },
+            {
+              "time": 0.75,
+              "caption": "Nopeus on matka jaettuna ajalla: 1200 m jaettuna 240 s.",
+              "sha256": "de7ee32dc694573a59e0ea79ab1921d331264e4e2c0379ff1643e7102fcbe8f5"
+            },
+            {
+              "time": 1,
+              "caption": "Nopeus on matka jaettuna ajalla: 1200 m jaettuna 240 s.",
+              "sha256": "3769a2f13bd4fdffeb5c2ba1fb0247c24246d835a7c663d80eb3285c6e7ab559"
+            },
+            {
+              "time": 1.25,
+              "caption": "Nopeus on matka jaettuna ajalla: 1200 m jaettuna 240 s.",
+              "sha256": "3769a2f13bd4fdffeb5c2ba1fb0247c24246d835a7c663d80eb3285c6e7ab559"
+            },
+            {
+              "time": 1.5,
+              "caption": "Luvut jaetaan: 1200 / 240 = 5.",
+              "sha256": "b8cf99d9eabfedf38946f5583ee38d09db02364966a6fa8e8e8c7daee46c526c"
+            },
+            {
+              "time": 1.75,
+              "caption": "Luvut jaetaan: 1200 / 240 = 5.",
+              "sha256": "eff863d7ca05c3de67a2104bea70c2dbd56f3d004a066b0e1ad01350f62437bf"
+            },
+            {
+              "time": 2,
+              "caption": "Luvut jaetaan: 1200 / 240 = 5.",
+              "sha256": "d028a200a63439763fae9a7d3abdaade5fd82eb906a3663adea5967e0c407d00"
+            },
+            {
+              "time": 2.25,
+              "caption": "Luvut jaetaan: 1200 / 240 = 5.",
+              "sha256": "765563360350936cc2a44535f8db4d235cc3772aeb7056d27ad645370b998d36"
+            },
+            {
+              "time": 2.5,
+              "caption": "Luvut jaetaan: 1200 / 240 = 5.",
+              "sha256": "81d2fa268f1edf5a4e746c0fc9da1f85835b209ca47081f25769f7a5d3d13a32"
+            },
+            {
+              "time": 2.75,
+              "caption": "Luvut jaetaan: 1200 / 240 = 5.",
+              "sha256": "81d2fa268f1edf5a4e746c0fc9da1f85835b209ca47081f25769f7a5d3d13a32"
+            },
+            {
+              "time": 3,
+              "caption": "Yksiköt jaetaan myös: m jaettuna s on m/s.",
+              "sha256": "81d2fa268f1edf5a4e746c0fc9da1f85835b209ca47081f25769f7a5d3d13a32"
+            },
+            {
+              "time": 3.25,
+              "caption": "Yksiköt jaetaan myös: m jaettuna s on m/s.",
+              "sha256": "15ef65855921acf515a4fa8ba011fd1508f935389b7c21e56aa331f0be059cca"
+            },
+            {
+              "time": 3.5,
+              "caption": "Yksiköt jaetaan myös: m jaettuna s on m/s.",
+              "sha256": "da86e829d259fdf772e00aaa65d7c581ba08b283a15a605faf97b4becdf508e9"
+            },
+            {
+              "time": 3.75,
+              "caption": "Yksiköt jaetaan myös: m jaettuna s on m/s.",
+              "sha256": "e87e97d5e15f0215c459eae5bc965253d6a906c787a40f66ca9eb105521d4f07"
+            },
+            {
+              "time": 4,
+              "caption": "Yksiköt jaetaan myös: m jaettuna s on m/s.",
+              "sha256": "f98e16909e37fdd0cc34816572b25712c1fedbdb4bbbed3cf42a299e4139b7f1"
+            },
+            {
+              "time": 4.25,
+              "caption": "Yksiköt jaetaan myös: m jaettuna s on m/s.",
+              "sha256": "f98e16909e37fdd0cc34816572b25712c1fedbdb4bbbed3cf42a299e4139b7f1"
+            },
+            {
+              "time": 4.5,
+              "caption": "Yksiköt jaetaan myös: m jaettuna s on m/s.",
+              "sha256": "f98e16909e37fdd0cc34816572b25712c1fedbdb4bbbed3cf42a299e4139b7f1"
+            },
+            {
+              "time": 4.75,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "c85718b7ea4ceff3a2947c4765e76c169d9702cab33260f63364747d458af1c5"
+            },
+            {
+              "time": 5,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "8236c581a7909140d73d053835b8d2bf4042b2150a8043140552c2cc6d0f456b"
+            },
+            {
+              "time": 5.25,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "ca85ba2aea0fd9e89df23ed58a36ea6548a26e62aec1ecbfa4e7b2305506cac3"
+            },
+            {
+              "time": 5.5,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "ca85ba2aea0fd9e89df23ed58a36ea6548a26e62aec1ecbfa4e7b2305506cac3"
+            },
+            {
+              "time": 5.75,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "ca85ba2aea0fd9e89df23ed58a36ea6548a26e62aec1ecbfa4e7b2305506cac3"
+            },
+            {
+              "time": 6,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "ca85ba2aea0fd9e89df23ed58a36ea6548a26e62aec1ecbfa4e7b2305506cac3"
+            },
+            {
+              "time": 6.25,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "d71c1c67ce51d991dd6ed319310c976e7c52d1b3cadd83af333a4f1d94e4c6bf"
+            },
+            {
+              "time": 6.5,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "fefdc4a4402e3eba1ab4f0341b72677ff1f062722531d333ac9bd3e8578966fc"
+            },
+            {
+              "time": 6.75,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 7,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 7.25,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 7.5,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 7.75,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 8,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 8.25,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 8.5,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 8.75,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 9,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 9.25,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 9.5,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 9.75,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            },
+            {
+              "time": 10,
+              "caption": "Luku ja yksikkö yhdessä: 5 m/s. Kauttaviiva luetaan \"joka\" tai \"per\": 5 metriä sekunnissa.",
+              "sha256": "14f8c38758a7a2120240bed54064ba74c9e95c5004c87b5cb73fa535b6f000ad"
+            }
+          ]
+        },
+        {
+          "say": "Miksi 1 m/s on 3,6 km/h? Loikka etenee metrin joka sekunti. Tunnissa on 3600 sekuntia, joten tunnissa kertyy 3600 metriä eli 3,6 kilometriä.",
+          "kind": "animation",
+          "duration": 11.5,
+          "width": 320,
+          "height": 206,
+          "label": "1 m/s = 3,6 km/h",
+          "snapshots": [
+            {
+              "time": 0,
+              "caption": "Loikka etenee yhden metrin joka sekunti. Kelataan kelloa eteenpäin tunnin verran.",
+              "sha256": "f738cd562dd66ca01119a3e4c6c494e98d4ace6fad1f2910ba14209163ecd876"
+            },
+            {
+              "time": 0.2875,
+              "caption": "Loikka etenee yhden metrin joka sekunti. Kelataan kelloa eteenpäin tunnin verran.",
+              "sha256": "f738cd562dd66ca01119a3e4c6c494e98d4ace6fad1f2910ba14209163ecd876"
+            },
+            {
+              "time": 0.575,
+              "caption": "Loikka etenee yhden metrin joka sekunti. Kelataan kelloa eteenpäin tunnin verran.",
+              "sha256": "f738cd562dd66ca01119a3e4c6c494e98d4ace6fad1f2910ba14209163ecd876"
+            },
+            {
+              "time": 0.8625,
+              "caption": "Loikka etenee yhden metrin joka sekunti. Kelataan kelloa eteenpäin tunnin verran.",
+              "sha256": "f738cd562dd66ca01119a3e4c6c494e98d4ace6fad1f2910ba14209163ecd876"
+            },
+            {
+              "time": 1.15,
+              "caption": "1 s: 1 m.",
+              "sha256": "e58ce5e103dfd32154a84357bdb1eba81d41045074113b88e78a72132a573e13"
+            },
+            {
+              "time": 1.4375,
+              "caption": "2 s: 2 m.",
+              "sha256": "db3efb6b0cac6604ae5da9f1f89b7e634a721683ad41a667f52d172471b19b6f"
+            },
+            {
+              "time": 1.725,
+              "caption": "2 s: 2 m.",
+              "sha256": "982842e75f2a29c3cff0e5c3a934e037a7c4160d0a544845c6f932e4d4a65704"
+            },
+            {
+              "time": 2.0125,
+              "caption": "4 s: 4 m.",
+              "sha256": "f1b84871e44520e39d8f17ac6d8dbc743fde5d0cb6507727cce46edb8a020b80"
+            },
+            {
+              "time": 2.3,
+              "caption": "5 s: 5 m.",
+              "sha256": "df5be985869f5580869c5703b2c1d6776f89ef6df0882ce97da557cd7a63064f"
+            },
+            {
+              "time": 2.5875,
+              "caption": "7 s: 7 m.",
+              "sha256": "ed9525d6dcb627d2eacfa34d90de8aa55db301065e26b05318eb16d869f33042"
+            },
+            {
+              "time": 2.875,
+              "caption": "11 s: 11 m.",
+              "sha256": "45c1aa7fd87a33ad8b77f5dc9c22a02a55fe941714859e93e26a99fef3c30dbe"
+            },
+            {
+              "time": 3.1625,
+              "caption": "15 s: 15 m.",
+              "sha256": "20e9cf19077ecf550c3aefe41ac4f3d083c6ee4e3b175887b954d70a79743871"
+            },
+            {
+              "time": 3.45,
+              "caption": "22 s: 22 m.",
+              "sha256": "21184ecebc5451c4c0d9dd708a2bfa578d1ca040bab4c8a7a662871f2270a382"
+            },
+            {
+              "time": 3.7375,
+              "caption": "31 s: 31 m.",
+              "sha256": "e595337752598221fa9509d5d08948bbb00fed2cb318f6e60aeeff3bc77205d0"
+            },
+            {
+              "time": 4.025,
+              "caption": "45 s: 45 m.",
+              "sha256": "8582588d56c784fbefd070df63ab6a090b108b7e6e3c20aef7dfa5ef2a742da0"
+            },
+            {
+              "time": 4.3125,
+              "caption": "1 min 5 s: jo 65 m.",
+              "sha256": "8903649294ba06b5803eac998195cdadc8ae494791d89003ba5ec51bc67bc89e"
+            },
+            {
+              "time": 4.6,
+              "caption": "1 min 33 s: jo 93 m.",
+              "sha256": "4cdfb13e01f9f17670b67cbec22cfe533916c0425adf0cfaec13ca23a1406198"
+            },
+            {
+              "time": 4.8875,
+              "caption": "2 min 14 s: jo 134 m.",
+              "sha256": "0a99172bffbdb24298e6ad0256dda536718f9050eca5ae92d0de84502b9da7e6"
+            },
+            {
+              "time": 5.175,
+              "caption": "3 min 12 s: jo 192 m.",
+              "sha256": "1b5e09677f72bd473a5b7cdd724d3f6b7f96a86f22bac3fa9d0eaf21cd433e67"
+            },
+            {
+              "time": 5.4625,
+              "caption": "4 min 36 s: jo 276 m.",
+              "sha256": "c2f6c8250b4060ad624ed75e9dba6818d769cbdff1426bb0cff3cc9617d60a78"
+            },
+            {
+              "time": 5.75,
+              "caption": "6 min 37 s: jo 397 m.",
+              "sha256": "c2893fb0c46017293fa61339e5aecb20c629ca65ae3ea80b8737a988257f7ab3"
+            },
+            {
+              "time": 6.0375,
+              "caption": "9 min 30 s: jo 570 m.",
+              "sha256": "278b8b588f499e0631cb5b496bc88b265885061aa65b1af30123fe6fd15f8bd9"
+            },
+            {
+              "time": 6.325,
+              "caption": "13 min 39 s: jo 819 m.",
+              "sha256": "d4a18d49c840b5935338cd7ca3922735aeba7c1a2d640aad1233e23a77fd6e61"
+            },
+            {
+              "time": 6.6125,
+              "caption": "19 min 37 s: jo 1177 m.",
+              "sha256": "f2cda872ee9843c36a6cb75268a36e04038902188f02915df70b02cbc7f7e1dc"
+            },
+            {
+              "time": 6.9,
+              "caption": "28 min 11 s: jo 1691 m.",
+              "sha256": "560e75c7b50aa63574f2681015bf696395eabcb28ce7e5f9a90e027a26838104"
+            },
+            {
+              "time": 7.1875,
+              "caption": "40 min 28 s: jo 2428 m.",
+              "sha256": "bc1aa8c7c41c5ca5f8c091e0b1f0dfa7343829a3ade38b6b138be365430d8ceb"
+            },
+            {
+              "time": 7.475,
+              "caption": "58 min 8 s: jo 3488 m.",
+              "sha256": "87b756b908744496e21ce9d2322fdd2f44df2f398ed9ed092c9718c761f66a31"
+            },
+            {
+              "time": 7.7625,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "2f744767f46341d5bbb68343e6d33a636e3b9d96badf0e322627773be2481630"
+            },
+            {
+              "time": 8.05,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "009f6b68e1bf205f9bbd16f90f73638a315bb14fea29217d4e91bca14706d375"
+            },
+            {
+              "time": 8.3375,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "94a1f2c7f5bdf15e7218516ea7148be44b7a56e2d045a09faba5a54f9550bfd4"
+            },
+            {
+              "time": 8.625,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "94a1f2c7f5bdf15e7218516ea7148be44b7a56e2d045a09faba5a54f9550bfd4"
+            },
+            {
+              "time": 8.9125,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "94a1f2c7f5bdf15e7218516ea7148be44b7a56e2d045a09faba5a54f9550bfd4"
+            },
+            {
+              "time": 9.2,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "94a1f2c7f5bdf15e7218516ea7148be44b7a56e2d045a09faba5a54f9550bfd4"
+            },
+            {
+              "time": 9.4875,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "94a1f2c7f5bdf15e7218516ea7148be44b7a56e2d045a09faba5a54f9550bfd4"
+            },
+            {
+              "time": 9.775,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "94a1f2c7f5bdf15e7218516ea7148be44b7a56e2d045a09faba5a54f9550bfd4"
+            },
+            {
+              "time": 10.0625,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "94a1f2c7f5bdf15e7218516ea7148be44b7a56e2d045a09faba5a54f9550bfd4"
+            },
+            {
+              "time": 10.35,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "94a1f2c7f5bdf15e7218516ea7148be44b7a56e2d045a09faba5a54f9550bfd4"
+            },
+            {
+              "time": 10.6375,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "94a1f2c7f5bdf15e7218516ea7148be44b7a56e2d045a09faba5a54f9550bfd4"
+            },
+            {
+              "time": 10.925,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "94a1f2c7f5bdf15e7218516ea7148be44b7a56e2d045a09faba5a54f9550bfd4"
+            },
+            {
+              "time": 11.2125,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "94a1f2c7f5bdf15e7218516ea7148be44b7a56e2d045a09faba5a54f9550bfd4"
+            },
+            {
+              "time": 11.5,
+              "caption": "Tunnissa on 3600 sekuntia, joten metrejä tulee 3600 eli 3,6 km. Siksi 1 m/s on 3,6 km/h: km/h-luku on 3,6 kertaa suurempi.",
+              "sha256": "94a1f2c7f5bdf15e7218516ea7148be44b7a56e2d045a09faba5a54f9550bfd4"
+            }
+          ]
+        }
+      ],
+      "itemsSampled": 512,
+      "provenance": "Subset of preserved parent actual sampler, read actual rawLite by this author too. No pretend reretrieval or rerun.",
+      "originalInventorySHA256": "1823093df8e194f0275dd532a4546019c86d2fc8a8b48011f0402a0142719edd"
+    },
+    "comparison": "Retain actual kmMin/mMin/kmh/ready and compare transfer meaning; replace sort-only with controllable unit-flow calculation plus direct quantity answer. SIMS guided.6/independent.35/retrieval.5/transfer0 dynamic overlay does not make standalone practice gameevidence. Oval400m truncated60s may omit fulltrip; not copied.",
+    "limitations": "Original Finnish prose/figures. No copied source animations, no physical clock, no formal mastery/rubric or efficacy proof.",
+    "auditInventory": "Actual LESSON_AUDIT at984–992: Criticizes unexplained3.6, missing numerical error feedback and comparison explanations. Describes convScene km→m/min→s,unitBuildScene1200/240,hourScene1m/s→3.6km/h,ready sorting,whyAt and transfer rationales; original validation claims are historical Lite evidence, not new lesson approval.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/phyanim.ts": "419fc83a164c4799543edf6f4dc72021abe3d6ee5fc74d719b70d53243bab7ad",
+        "src/content/physics.ts": "2318f77c54ed6bc5fd2956f1f7342e3169d8e276e86d878be0196a261b0b8412",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [
+        "AUTHORING.md",
+        "EVENT_COMMIT_REVIEW_B05.md",
+        "INTERACTION_FEEDBACK_CONTRACT.md",
+        "authority/production-181-v2/ASSETS.md",
+        "authority/production-181-v2/ASSET_STYLE_GATE.txt",
+        "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt",
+        "authority/production-181-v2/STYLE_REVIEW_FI.md",
+        "reference/inputs/canonical-690-graph.json",
+        "reference/inputs/mvp-scope-181.json"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "PHY79-SPEED-MIXED",
+      "subject": "physics",
+      "grade_band": "7-9",
+      "topic_area": "S5 Vuorovaikutus ja liike",
+      "parent_concept": "Nopeus",
+      "title": "Nopeuslasku sekayksiköillä yksiköt ensin yhtenäistäen",
+      "short_description": "Nopeuslasku sekayksiköillä yksiköt ensin yhtenäistäen",
+      "node_kind": "procedure",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "PHY79-S5"
+      ],
+      "relations": [
+        {
+          "id": "PHY79-SPEED-CALC",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "PHY79-SPEED-CALC on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "PHY79-UNIT-CONV",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "PHY79-UNIT-CONV on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "PHY79-SPEED-UNIT",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "PHY79-SPEED-UNIT on ydinesitieto tälle osaamiskohteelle."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "PHY79-SPEED-CALC",
+            "PHY79-UNIT-CONV",
+            "PHY79-SPEED-UNIT"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate",
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Fysiikka",
+        "S5 Vuorovaikutus ja liike",
+        "Nopeus"
+      ]
+    },
+    "gradeBand": "7-9",
+    "teacherObjective": "Nopeuslasku sekayksiköillä yksiköt ensin yhtenäistäen",
+    "childGoal": "Laske nopeus sopivissa yksiköissä.",
+    "role": "atomic",
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "PHY79-SPEED-CALC",
+          "PHY79-UNIT-CONV",
+          "PHY79-SPEED-UNIT"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "strongSupport": [],
+    "additionalHardGates": [],
+    "assumed": [
+      "Frozen required groups retained. All unit factors supplied visibly. M79-DEC-DIV is optional calculation support, not a new hardgate."
+    ],
+    "scope": "Finite provided quantities, lengthm/km/cm andtimes/min/h normalize tospeedm/s/km/h. Comparison converts both speeds. Exact rational answers, no rounded credit. No instantaneous-speed inference or truncated oval trip.",
+    "evidenceLimits": "Local exact checked practice; optional worked models/help. No persistence, independent/retention/mastery/learner/human/efficacy evidence.",
+    "assetProvenance": "Original mathematical SVGs generated from exact typed quantities; supplied unchanged shared PNG actualhash, no redraw/duplication.",
+    "feedbackContractSHA256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+    "interaction": "Separate model/practice. Both input/change and every dependent action/lifecycle read current visible task/answer/model; noevent Check readback. Preserve unchanged valid verdict through help/model only. Perhost ownprecedingarticle/perrootWeakMap,3listeners removed, remount active, oldAPIinert, no timers/frames.",
+    "modelContract": "exact_rate_rewrite controls step/restart only,4didactic states. No ignored timeline/axis metadata. Strict supported operation-specific fields/units/bounds; undefined cases explicit."
+  },
+  "extensions": {
+    "productionBatch": "B15",
+    "noRuntimeImports": true,
+    "noPersistence": true,
+    "simulationType": "exact-dimensional-rate-calculation",
+    "executionLimits": "Finite presets/direct exact answers. BigInt rational oracle, fractions remain exact; no roundedcredit. Pixel segments illustrate proportions, do not decide truth. No physical measurements or clock.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B10",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

@@ -1,0 +1,968 @@
+# B02 private IN_PROGRESS content; independent pack/personal/native review pending, not a completed node.
+schema_version: 0.1.0
+kc_id: M-NUM-WORD-NUMERAL
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Lukusanan yhdistäminen sitä vastaavaan numeromerkintään
+  subject: mathematics
+  grade_band: 1-2
+  mastery_role: process
+  node_kind: representation
+  concept_path:
+    - Matematiikka
+    - Luvut ja laskutoimitukset
+    - Lukumäärän representaatiot
+  source_basis: pedagogically_derived
+  curriculum_refs:
+    - OPH-POPS2014-MATH-VL1-2-S2
+  prerequisite_snapshot:
+    hard: []
+    strong:
+      - M-NUM-STABLE-ORDER
+    helpful: []
+teaching_model:
+  learning_goal: Oppilas yhdistää lukusanat yksi–kymmenen numeromerkintöihin 1–10
+    ja merkinnät samoihin sanoihin. Rajattu process-näyttö vaatii oman tuettoman
+    päätöksen jokaisessa 20 suunta/arvo-tapauksessa, ei vain kolmea onnistunutta
+    valintaa.
+  learner_facing_goal: Löydän lukusanalle numerolapun ja numerolapulle sanan.
+  core_idea: Sana neljä ja merkintä 4 ovat saman luvun eri esityksiä. Kortin
+    paikka tai sanan pituus ei muuta yhteyttä. Toiseen suuntaan katsominen on
+    oma tehtävä, vaikka faktapari on sama.
+  success_evidence:
+    - "Tekee oman vahvistetun parivalinnan jokaiselle arvolle 1–10 sanasta
+      merkintään sekä merkinnästä sanaan: yhteensä 20 erillistä vaadittua
+      tapausta."
+    - Vähintään kolme tuetonta onnistumista ja kaksi itsenäistä pohjaa säilyvät
+      vähimmäisehtoina koko tapauskattavuuden lisäksi.
+    - Korjaa aidosti eri arvoisen parin myös ensimmäisestä opetetusta faktasta
+      yksi/1 molemmissa suunnissa; pelkkä väärän parin hylkääminen ei riitä.
+    - Myöhemmin vähintään 24 tunnin jälkeen yhdistää arvot yksi/1 ja kymmenen/10
+      molemmissa suunnissa neljällä uudella tuetolla havainnolla. Näyte ei
+      todista kaikkien kymmenen faktan säilymistä.
+  boundaries:
+    in_scope:
+      - Suomenkielisten annettujen lukusanojen ja tavallisten pystyasentoisten
+        numeromerkintöjen 1–10 vastaavuus molempiin suuntiin. Merkintä 10 kuuluu
+        rajaukseen ilman paikkajärjestelmätehtävää.
+      - Tyypitetty koko faktajoukon mallikansi molempiin suuntiin, tuettu
+        matching-harjoittelu, oma parivalinta, rajattu virheparin korjaus ja
+        myöhempi näyte.
+    out_of_scope:
+      - Lukumäärän laskeminen, numeromerkkien kirjoittaminen, lukusanojen
+        oma-aloitteinen suullinen tuottaminen, ääntäminen tai lukunopeuden
+        arviointi.
+      - Laaja numeerinen lukutaito, paikkajärjestelmän hallinta, määrän ja
+        numeromerkin yhteys tai M-NUM-03-integraation hallinnan myöntäminen.
+      - Mallin näkemisestä, maailman valmistumisesta, tuetusta onnistumisesta
+        tai käänteisen suunnan näyttämisestä päätelty myönteinen tapausnäyttö.
+  prerequisite_assumptions:
+    - kc_id: M-NUM-STABLE-ORDER
+      expected_level: Strong-tuki, ei pääsyn tai itsenäisen arvioinnin required-ehto.
+        Ei uusia kovia esitietoja.
+  conceptual_invariants:
+    - Jokaisen faktaparin molemmat suunnat vaativat oman itsenäisen vastauksen,
+      vaikka opetuksen altistustieto on faktakohtaisesti kaksisuuntainen.
+    - Vain oppijan itse vahvistama oikea vaihtoehto tuottaa tämän suunnan ja
+      arvon havaintoa.
+    - Koko 20 tapauksen vaatimus säilyy process-roolina; atomista pisteytystä
+      tai lapsi-KC:n automaattista hyvitystä ei tehdä.
+    - Opetus/faded support ja tuettu korjaus ovat apua; uusi siemen, korttien
+      paikka tai nimilappu ei poista historiaa.
+  likely_confusions:
+    - M-NUM-WORD-NUMERAL-OBS-PARI
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+    - DIAGNOSTIC
+    - ORIENT
+    - WORKED_EXAMPLE
+    - GUIDED_PRACTICE
+    - FADED_EXAMPLE
+    - INDEPENDENT_PRACTICE
+    - TRANSFER_CHECK
+    - MASTERY_GATE
+  fast_path:
+    enabled: false
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Katso molemmista suunnista, millaista tukea tarvitaan; alkukartoitus ei
+        korvaa prosessin täyttä näyttöä.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-WORD-NUMERAL-DIAG-SANALAPPU
+              - M-NUM-WORD-NUMERAL-DIAG-NUMEROLAPPU
+    ORIENT:
+      purpose: Anna numerolapuille arkinen käyttötarkoitus ilman esineiden määrän
+        laskemista.
+      blocks:
+        - type: explanatory_text
+          content: Loikka laittaa retkitarvikkeet numeroituihin säilytyspaikkoihin. Aavan
+            listassa luvut ovat sanoina. Autetaan heitä löytämään yhteen
+            kuuluvat laput.
+    WORKED_EXAMPLE:
+      purpose: Näytä jokaiseen kymmenestä faktasta todellinen pari molempiin suuntiin
+        tyypitetyn mallikannen kautta.
+      blocks:
+        - type: worked_example
+          content:
+            representation_ref: M-NUM-WORD-NUMERAL-JOURNEY
+            description: Aava yhdistää sanan yksi numerolappuun 1. Sitten hän lähtee lapusta
+              1 ja valitsee sanan yksi. Sama kaksisuuntainen malli näytetään
+              kannen kaikille arvoille. Mallin toimitus kirjataan vain oikeasti
+              näytettyjen parien osalta.
+    GUIDED_PRACTICE:
+      purpose: Anna oppijan valita itse tutuilla toiminnoilla; pyydetty näkyvä
+        tukipari vastaa juuri käsiteltävää faktaa.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-WORD-NUMERAL-GUIDED-SANASTA
+              - M-NUM-WORD-NUMERAL-GUIDED-MERKINNASTA
+    FADED_EXAMPLE:
+      purpose: Poista näkyvä tukipari ja esivalinta. Oppija tekee oman valinnan; vaihe
+        pysyy tuettuna harjoitteluna.
+      blocks:
+        - type: explanatory_text
+          content: Nyt mallipari menee piiloon. Katso annettua lappua ja valitse sen pari
+            itse. Apua saa yhä pyytää.
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-WORD-NUMERAL-GUIDED-SANASTA
+              - M-NUM-WORD-NUMERAL-GUIDED-MERKINNASTA
+    INDEPENDENT_PRACTICE:
+      purpose: Kerää aidot 20 tuetonta matching-päätöstä molemmista suunnista ilman
+        mallia tai oikean vastauksen korostusta.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-WORD-NUMERAL-INDEP-LAATIKON-OSOITE
+              - M-NUM-WORD-NUMERAL-INDEP-SANALISTA
+    TRANSFER_CHECK:
+      purpose: Korjaa oikeasti väärä yhteys. Ensimmäinen opetettu fakta vaaditaan
+        molemmista suunnista; kuvien vaihtuminen ei ole soveltamisnäyttö.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-WORD-NUMERAL-APPFIRST-SANALAPUN-KORJAUS
+              - M-NUM-WORD-NUMERAL-APPFIRST-MERKINNAN-KORJAUS
+    MASTERY_GATE:
+      purpose: Säilytä sana/merkintä-prosessin rajat ja tarinan onnistuminen erillään
+        hallinnasta.
+      blocks:
+        - type: reflection
+          content: Miksi numerolapun paikka ei kerro, mikä lukusana siihen kuuluu? Voit
+            miettiä tai kertoa ajatuksesi. Pohdintaa ei pisteytetä.
+    DELAYED_REVIEW:
+      purpose: Myöhempi neljän uuden havainnon edustava näyte arvoista yksi ja
+        kymmenen molempiin suuntiin.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-WORD-NUMERAL-DELAY-SANASTA
+              - M-NUM-WORD-NUMERAL-DELAY-MERKINNASTA
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+    fast_path_confirmation_tags:
+      - association_resolved
+    execution_policy: Kaksi alkukartoitusta auttaa valitsemaan tuen. Fast path on
+      pois käytöstä, eikä diagnoosi korvaa koko prosessin itsenäistä
+      tapauskattavuutta.
+    pass_rule: Molemmat vastaavuuspäätökset kirjataan todellisina havaintoina. Väärä
+      pari ei paikanna puutetta lapsi-KC:hen.
+  independent:
+    minimum_successes: 3
+    template_diversity: 2
+    max_supported_attempts_counted: 0
+    required_tags:
+      - association_resolved
+  transfer:
+    required: true
+    minimum_successes: 2
+    novel_context_required: true
+  delayed:
+    required: true
+    minimum_successes: 4
+    minimum_delay_hours: 24
+    reuse_templates: []
+    required_tags:
+      - association_resolved
+    required_contexts: []
+    earliest_delay_policy: Vähintään 24 tuntia koko hankintanäytön täyttymisestä;
+      myöhemmässä istunnossa tai toisen osaamiskohteen jälkeen neljä uutta
+      tuetonta havaintoa. Ensimmäinen ja viimeinen arvo molemmissa suunnissa
+      ovat rajattu näyte, eivät koko faktajoukon säilymisnäyttö. Ajastus ja
+      onnistumisrajat ovat projektipäätöksiä.
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+    - misconception_id: M-NUM-WORD-NUMERAL-OBS-PARI
+      evidence_tags:
+        - association_resolved
+      rule: Myöhempi tueton oikea relaatiopäätös poistaa tämän tehtäväkohtaisen
+        aktiivisen havaintomerkinnän nykyisessä politiikassa. Se ei vahvista
+        aiemman virheen syytä tai korvaa koko prosessin erikseen vaadittuja
+        tapauksia.
+items:
+  - id: M-NUM-WORD-NUMERAL-DIAG-SANALAPPU
+    kc_ids:
+      - M-NUM-WORD-NUMERAL
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse sanalle sopiva numerolappu.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: word_numeral
+      direction: forward
+      operator: match
+      values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+      optionCount: 3
+      context: Retkilaatikon sanallinen osoite
+    misconception_rules:
+      - misconception_id: M-NUM-WORD-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Etsimme samaa lukua tarkoittavia kortteja. Kortin paikka tai sanan pituus
+          ei ratkaise paria.
+      - level: 2
+        text: Katso tukena näytettävästä malliparista lukusana ja numerolappu yhdessä.
+          Valitse sitten itse. Tämä yritys tehdään avulla.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät
+        suunnasta. Oikeaa kumppania ei esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä
+        tapauskattavuutta.
+      - Sanat ja numerolaput tulevat samasta suomen yksi–kymmenen-sanastosta;
+        kirjoittamista tai ääntämistä ei arvioida.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen
+          suunnan ja arvon havaintoa. Prosessin muu tapauskattavuus ei synny
+          tästä automaattisesti.
+  - id: M-NUM-WORD-NUMERAL-DIAG-NUMEROLAPPU
+    kc_ids:
+      - M-NUM-WORD-NUMERAL
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse numerolapulle sopiva lukusana.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: word_numeral
+      direction: reverse
+      operator: match
+      values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+      optionCount: 3
+      context: Numerolapun sanallinen vastine
+    misconception_rules:
+      - misconception_id: M-NUM-WORD-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Etsimme samaa lukua tarkoittavia kortteja. Kortin paikka tai sanan pituus
+          ei ratkaise paria.
+      - level: 2
+        text: Katso tukena näytettävästä malliparista lukusana ja numerolappu yhdessä.
+          Valitse sitten itse. Tämä yritys tehdään avulla.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät
+        suunnasta. Oikeaa kumppania ei esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä
+        tapauskattavuutta.
+      - Sanat ja numerolaput tulevat samasta suomen yksi–kymmenen-sanastosta;
+        kirjoittamista tai ääntämistä ei arvioida.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen
+          suunnan ja arvon havaintoa. Prosessin muu tapauskattavuus ei synny
+          tästä automaattisesti.
+  - id: M-NUM-WORD-NUMERAL-GUIDED-SANASTA
+    kc_ids:
+      - M-NUM-WORD-NUMERAL
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: support
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse sanan pari. Malliparin saa pyytää avuksi.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: word_numeral
+      direction: forward
+      operator: match
+      values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+      optionCount: 3
+      context: Aavan kanssa tehty laatikkolappu
+    misconception_rules:
+      - misconception_id: M-NUM-WORD-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Etsimme samaa lukua tarkoittavia kortteja. Kortin paikka tai sanan pituus
+          ei ratkaise paria.
+      - level: 2
+        text: Katso tukena näytettävästä malliparista lukusana ja numerolappu yhdessä.
+          Valitse sitten itse. Tämä yritys tehdään avulla.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät
+        suunnasta. Oikeaa kumppania ei esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä
+        tapauskattavuutta.
+      - Sanat ja numerolaput tulevat samasta suomen yksi–kymmenen-sanastosta;
+        kirjoittamista tai ääntämistä ei arvioida.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen
+          suunnan ja arvon havaintoa. Prosessin muu tapauskattavuus ei synny
+          tästä automaattisesti.
+  - id: M-NUM-WORD-NUMERAL-GUIDED-MERKINNASTA
+    kc_ids:
+      - M-NUM-WORD-NUMERAL
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: support
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse numerolapun pari. Saat pyytää apua.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: word_numeral
+      direction: reverse
+      operator: match
+      values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+      optionCount: 3
+      context: Loikan kanssa tarkistettu sanalappu
+    misconception_rules:
+      - misconception_id: M-NUM-WORD-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Etsimme samaa lukua tarkoittavia kortteja. Kortin paikka tai sanan pituus
+          ei ratkaise paria.
+      - level: 2
+        text: Katso tukena näytettävästä malliparista lukusana ja numerolappu yhdessä.
+          Valitse sitten itse. Tämä yritys tehdään avulla.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät
+        suunnasta. Oikeaa kumppania ei esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä
+        tapauskattavuutta.
+      - Sanat ja numerolaput tulevat samasta suomen yksi–kymmenen-sanastosta;
+        kirjoittamista tai ääntämistä ei arvioida.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen
+          suunnan ja arvon havaintoa. Prosessin muu tapauskattavuus ei synny
+          tästä automaattisesti.
+  - id: M-NUM-WORD-NUMERAL-INDEP-LAATIKON-OSOITE
+    kc_ids:
+      - M-NUM-WORD-NUMERAL
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Mikä numerolappu tarkoittaa samaa lukua kuin sana?
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: word_numeral
+      direction: forward
+      operator: match
+      values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+      optionCount: 3
+      context: Säilytyspaikan oma lappu
+    misconception_rules:
+      - misconception_id: M-NUM-WORD-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Etsimme samaa lukua tarkoittavia kortteja. Kortin paikka tai sanan pituus
+          ei ratkaise paria.
+      - level: 2
+        text: Katso tukena näytettävästä malliparista lukusana ja numerolappu yhdessä.
+          Valitse sitten itse. Tämä yritys tehdään avulla.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät
+        suunnasta. Oikeaa kumppania ei esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä
+        tapauskattavuutta.
+      - Sanat ja numerolaput tulevat samasta suomen yksi–kymmenen-sanastosta;
+        kirjoittamista tai ääntämistä ei arvioida.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen
+          suunnan ja arvon havaintoa. Prosessin muu tapauskattavuus ei synny
+          tästä automaattisesti.
+  - id: M-NUM-WORD-NUMERAL-INDEP-SANALISTA
+    kc_ids:
+      - M-NUM-WORD-NUMERAL
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Mikä lukusana kuuluu tähän numerolappuun?
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: word_numeral
+      direction: reverse
+      operator: match
+      values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+      optionCount: 3
+      context: Loikan sanallinen säilytyslista
+    misconception_rules:
+      - misconception_id: M-NUM-WORD-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Etsimme samaa lukua tarkoittavia kortteja. Kortin paikka tai sanan pituus
+          ei ratkaise paria.
+      - level: 2
+        text: Katso tukena näytettävästä malliparista lukusana ja numerolappu yhdessä.
+          Valitse sitten itse. Tämä yritys tehdään avulla.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät
+        suunnasta. Oikeaa kumppania ei esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä
+        tapauskattavuutta.
+      - Sanat ja numerolaput tulevat samasta suomen yksi–kymmenen-sanastosta;
+        kirjoittamista tai ääntämistä ei arvioida.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen
+          suunnan ja arvon havaintoa. Prosessin muu tapauskattavuus ei synny
+          tästä automaattisesti.
+  - id: M-NUM-WORD-NUMERAL-APPFIRST-SANALAPUN-KORJAUS
+    kc_ids:
+      - M-NUM-WORD-NUMERAL
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: challenge
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Tämä pari ei täsmää. Valitse sanalle oikea uusi numerolappu.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: word_numeral
+      direction: forward
+      operator: repair
+      values:
+        - 1
+        - 2
+        - 3
+      optionCount: 3
+      context: Tarkistuspöydän sekoittuneet numerolaput
+    misconception_rules:
+      - misconception_id: M-NUM-WORD-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Etsimme samaa lukua tarkoittavia kortteja. Kortin paikka tai sanan pituus
+          ei ratkaise paria.
+      - level: 2
+        text: Katso tukena näytettävästä malliparista lukusana ja numerolappu yhdessä.
+          Valitse sitten itse. Tämä yritys tehdään avulla.
+    invariants:
+      - Alkupari on aidosti eri arvoinen. Oppija valitsee uuden kumppanin;
+        pelkkä parin eron huomaaminen ei riitä.
+      - Kolmesta vaihtoehdosta kaksi on väärin. Pelkkä alkuperäisen kumppanin
+        välttäminen ei anna ratkaisua.
+      - Sanat ja numerolaput tulevat samasta suomen yksi–kymmenen-sanastosta;
+        kirjoittamista tai ääntämistä ei arvioida.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Aidosti eri arvoisen alkuparin korjaus on tässä rajattu
+          soveltamisoperaatio. Ensimmäinen opetettu arvo vaaditaan molemmissa
+          suunnissa; uusi kuva tai tarinanimi ei korvaa sitä.
+  - id: M-NUM-WORD-NUMERAL-APPFIRST-MERKINNAN-KORJAUS
+    kc_ids:
+      - M-NUM-WORD-NUMERAL
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: challenge
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Tämä pari ei täsmää. Valitse numerolapulle uusi oikea lukusana.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: word_numeral
+      direction: reverse
+      operator: repair
+      values:
+        - 1
+        - 2
+        - 3
+      optionCount: 3
+      context: Palautuslistan väärä sanalappu
+    misconception_rules:
+      - misconception_id: M-NUM-WORD-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Etsimme samaa lukua tarkoittavia kortteja. Kortin paikka tai sanan pituus
+          ei ratkaise paria.
+      - level: 2
+        text: Katso tukena näytettävästä malliparista lukusana ja numerolappu yhdessä.
+          Valitse sitten itse. Tämä yritys tehdään avulla.
+    invariants:
+      - Alkupari on aidosti eri arvoinen. Oppija valitsee uuden kumppanin;
+        pelkkä parin eron huomaaminen ei riitä.
+      - Kolmesta vaihtoehdosta kaksi on väärin. Pelkkä alkuperäisen kumppanin
+        välttäminen ei anna ratkaisua.
+      - Sanat ja numerolaput tulevat samasta suomen yksi–kymmenen-sanastosta;
+        kirjoittamista tai ääntämistä ei arvioida.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Aidosti eri arvoisen alkuparin korjaus on tässä rajattu
+          soveltamisoperaatio. Ensimmäinen opetettu arvo vaaditaan molemmissa
+          suunnissa; uusi kuva tai tarinanimi ei korvaa sitä.
+  - id: M-NUM-WORD-NUMERAL-DELAY-SANASTA
+    kc_ids:
+      - M-NUM-WORD-NUMERAL
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse sanalle sopiva numerolappu.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: word_numeral
+      direction: forward
+      operator: match
+      values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+      optionCount: 3
+      context: Uuden kerran säilytyslaput
+    misconception_rules:
+      - misconception_id: M-NUM-WORD-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Etsimme samaa lukua tarkoittavia kortteja. Kortin paikka tai sanan pituus
+          ei ratkaise paria.
+      - level: 2
+        text: Katso tukena näytettävästä malliparista lukusana ja numerolappu yhdessä.
+          Valitse sitten itse. Tämä yritys tehdään avulla.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät
+        suunnasta. Oikeaa kumppania ei esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä
+        tapauskattavuutta.
+      - Sanat ja numerolaput tulevat samasta suomen yksi–kymmenen-sanastosta;
+        kirjoittamista tai ääntämistä ei arvioida.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen
+          suunnan ja arvon havaintoa. Prosessin muu tapauskattavuus ei synny
+          tästä automaattisesti.
+  - id: M-NUM-WORD-NUMERAL-DELAY-MERKINNASTA
+    kc_ids:
+      - M-NUM-WORD-NUMERAL
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse numerolapulle sopiva lukusana.
+      access: text_fi_tokens_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: word_numeral
+      direction: reverse
+      operator: match
+      values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+      optionCount: 3
+      context: Uuden kerran sanallinen lista
+    misconception_rules:
+      - misconception_id: M-NUM-WORD-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Etsimme samaa lukua tarkoittavia kortteja. Kortin paikka tai sanan pituus
+          ei ratkaise paria.
+      - level: 2
+        text: Katso tukena näytettävästä malliparista lukusana ja numerolappu yhdessä.
+          Valitse sitten itse. Tämä yritys tehdään avulla.
+    invariants:
+      - Vihjeen esitysmuoto ja vastausvaihtoehtojen esitysmuoto määräytyvät
+        suunnasta. Oikeaa kumppania ei esivalita.
+      - Vaihtoehtojen paikat vaihtuvat; samaa reunaa valitsemalla ei täytetä
+        tapauskattavuutta.
+      - Sanat ja numerolaput tulevat samasta suomen yksi–kymmenen-sanastosta;
+        kirjoittamista tai ääntämistä ei arvioida.
+    provenance:
+      - source_id: PROJECT-ASSOCIATION-v1
+        claim: Yksi oppijan itse vahvistama vastaavuuspäätös tuottaa vain kyseisen
+          suunnan ja arvon havaintoa. Prosessin muu tapauskattavuus ei synny
+          tästä automaattisesti.
+misconceptions:
+  - id: M-NUM-WORD-NUMERAL-OBS-PARI
+    description: Vahvistettu sana–numeromerkintä-pari ei vastaa samaa lukua.
+      Havainto voi sopia esimerkiksi paikan tai merkin ulkoasun seuraamiseen,
+      mutta syytä tai oppijan ominaisuutta ei päätellä.
+    evidence_patterns:
+      - kind: committed_relation_error
+        when: Oppija vahvistaa vaihtoehdon, joka ei vastaa vihjeen arvoa. Keskeneräistä
+          tai vahvistamatonta vastausta ei nimetä tällä havainnolla.
+    feedback_strategy:
+      conceptual_prompt: Nämä laput eivät vielä tarkoita samaa lukua. Katsotaan tämän
+        luvun sana ja numeromerkintä yhdessä. Sen jälkeen saat kokeilla itse
+        uudestaan.
+      representation: Näytä pyydettäessä nykyiseen faktaan sidottu tyypitetty
+        mallipari. Se on tukea; väärä vastaus tai tarjottu malli ei muutu
+        itsenäiseksi näytöksi.
+    repair_targets:
+      - M-NUM-WORD-NUMERAL
+    status: hypothesis
+differentiation:
+  support_variants:
+    step_chunking: Yksi vihje ja yksi parivalinta kerrallaan. Aluksi koko mallikansi
+      näyttää samat faktat molempiin suuntiin.
+    hint_availability: Avun voi pyytää ennen virhettä. Nykyiseen faktaan sidottu
+      valmis tukipari on apua ja pysyy sellaisena lokissa.
+    text_density: Lyhyt suomenkielinen toimintaohje, suuret kortit; ei nimeämistä,
+      kirjoituslomaketta tai kuulokuittausta.
+    representation_boundary: Tekstisanan tunnistus on esitetyn reitin näyttö.
+      Valinnainen sanan nimiluku ei osoita spontaania puhetta tai kuulemista.
+    reduced_motion: Parin voi näyttää paikallaan; liike ja aikaraja eivät ole tavoite.
+    optional_audio: Ääni on valinnainen ja aluksi pois. Tekstireitti toimii ilman
+      puhepalvelua tai kuulemisen kuittausta. Sanan nimiluku ei ole oppijan
+      spontaania puhetta eikä kuulemisen havainto.
+  challenge_variants:
+    learner_prompt: "Loikka sanoo: vaihdan aina vain eri lapun kuin alussa. Aava
+      näyttää kolme vaihtoehtoa, joista kaksi on väärin. Miksi eri lappu ei
+      yksin riitä? Näytä lopuksi oikea pari ja tarkista se myös toiseen
+      suuntaan."
+    reduced_scaffolding: Ei annettua malliparia. Sama 1–10-alue säilyy; vaikeus
+      tulee yhteyden tarkistamisesta eikä suuremmista luvuista.
+    assessment_limit: Pohdintaa ei pisteytetä; korjausnäyttö syntyy vain tuetun
+      predikaatin mukaisesta omasta valinnasta.
+    transfer_novelty: Matchingista siirrytään todellisen eri arvoisen parin
+      korjaamiseen. Korttien nimi tai järjestys ei korvaa uutta operaatiota.
+representations:
+  - id: M-NUM-WORD-NUMERAL-PROCESS
+    kind: finite_association_process_v1
+    relation: word_numeral
+    independent_cases:
+      - direction: forward
+        value: 1
+      - direction: forward
+        value: 2
+      - direction: forward
+        value: 3
+      - direction: forward
+        value: 4
+      - direction: forward
+        value: 5
+      - direction: forward
+        value: 6
+      - direction: forward
+        value: 7
+      - direction: forward
+        value: 8
+      - direction: forward
+        value: 9
+      - direction: forward
+        value: 10
+      - direction: reverse
+        value: 1
+      - direction: reverse
+        value: 2
+      - direction: reverse
+        value: 3
+      - direction: reverse
+        value: 4
+      - direction: reverse
+        value: 5
+      - direction: reverse
+        value: 6
+      - direction: reverse
+        value: 7
+      - direction: reverse
+        value: 8
+      - direction: reverse
+        value: 9
+      - direction: reverse
+        value: 10
+    application_cases:
+      - direction: forward
+        value: 1
+      - direction: reverse
+        value: 1
+    delayed_cases:
+      - direction: forward
+        value: 1
+      - direction: forward
+        value: 10
+      - direction: reverse
+        value: 1
+      - direction: reverse
+        value: 10
+  - id: M-NUM-WORD-NUMERAL-JOURNEY
+    kind: learning_journey_v1
+    capability: finite_association_v1
+    chapter: Retken säilytyslaput
+    companion: Loikka
+    purpose: Loikka tarvitsee numerolaput Aavan sanalliselle säilytyslistalle.
+    consequence: Säilytyspaikkojen sanalaput ja numerolaput on yhdistetty.
+    instruction: Valitse lapulle samaa lukua tarkoittava pari.
+    model:
+      kind: association_deck_v1
+      lexicon: fi-1-10-v1
+      relation: word_numeral
+      entries:
+        - value: 1
+          alternatives:
+            - 1
+            - 2
+            - 10
+        - value: 2
+          alternatives:
+            - 2
+            - 1
+            - 3
+        - value: 3
+          alternatives:
+            - 3
+            - 2
+            - 4
+        - value: 4
+          alternatives:
+            - 4
+            - 3
+            - 7
+        - value: 5
+          alternatives:
+            - 5
+            - 4
+            - 6
+        - value: 6
+          alternatives:
+            - 6
+            - 9
+            - 3
+        - value: 7
+          alternatives:
+            - 7
+            - 4
+            - 8
+        - value: 8
+          alternatives:
+            - 8
+            - 7
+            - 9
+        - value: 9
+          alternatives:
+            - 9
+            - 6
+            - 10
+        - value: 10
+          alternatives:
+            - 10
+            - 1
+            - 9
+    retrieval:
+      kind: closed_association_facts_v2
+      claim: association
+simulation_specs: []
+requires_capabilities:
+  - rich_text
+  - diagram
+  - worked_example
+  - single_choice
+  - hint_ladder
+  - reduced_motion_variant
+provenance:
+  curriculum:
+    - source_id: PROD02-OPH-MATH12-S2
+      claim: Perusteen 419550 matematiikan 466344 vuosiluokkakokonaisuuden 466963
+        S2-sisältö 469266, kuvaus.fi kappaleet 1–2, sisältää lukumäärän,
+        lukusanan ja numeromerkinnän yhteyden. Tämä on alueviite, ei normi
+        kaksisuuntaiselle 20 tapauksen prosessille.
+      status: verified
+  pedagogy:
+    - source_id: ATKINSON-RENKL-MERRILL-2003
+      claim: Aiemmin tarkistetun abstraktin rajattu tuki mallista kohti omaa ratkaisua
+        siirtymiselle. Mallikansi ja sen toimituspolitiikka ovat
+        projektisovitus, eivät tutkimuksen toistaminen tai kaukosiirron näyttö.
+      status: verified
+    - source_id: CAST-UDL-3
+      claim: Esityksen ja toiminnan esteiden tarkastelu tavoitetta säilyttäen; ei
+        tämän tekstin/äänen reittien vastaavuuden tai täyden saavutettavuuden
+        hyväksyntää.
+      status: verified
+    - source_id: PROJECT-ASSOCIATION-v1
+      claim: "B02-perheraportin R01-ohjeiden alkuperäinen projektisovitus: näkyvä
+        mallipari, oikeasti pyydettävä tuki ja mallin poistaminen ennen omaa
+        tarkistusta. Kolme onnistumista, kaksi pohjaa, 20 tapausta sekä
+        4/24h-näyte ovat projektipäätöksiä."
+  domain:
+    - source_id: PROJECT-ASSOCIATION-v1
+      claim: Rajattu process-rooli, suomen sanat/merkinnät 1–10, jokaisen suunnan
+        erillinen matching-havainto, todellinen eri arvoinen repair ja
+        tyypitetty koko faktajoukon opetus. Ei automaattista lapsi- tai
+        integraatiohyvitystä eikä spontaanin puheen väitettä.
+validation:
+  schema: pending
+  graph_refs: pending
+  domain_truth: pending
+  item_invariants: pending
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: draft

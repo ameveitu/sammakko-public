@@ -1,0 +1,658 @@
+{
+  "schemaVersion": 1,
+  "kcId": "SCI-ENV-MEAS-01",
+  "revision": 14,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "lesson.css",
+      "sha256": "56ad2b24079d4680c7aa81d56b6ecdaa6eb8a96acb268f043a8ab4816f521f60"
+    },
+    {
+      "path": "ruler-zero.svg",
+      "sha256": "cd59f4f96c2111e914f89e24ab4b7d36837ebe250c86c4013b274ab027e2c3c6"
+    },
+    {
+      "path": "thermometer.svg",
+      "sha256": "c372445d3a7abc5ca624fc18c057b9994a036c3ece5f68b92e02d2fd8f6a76b5"
+    },
+    {
+      "path": "practice-start.svg",
+      "sha256": "80d95aba3b5782ce1191a328322543795af0ed9bd4cd238bf4ded26a059504f6"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    {
+      "path": "shared/loikka/curious.png",
+      "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+      "title": "Perusopetuksen opetussuunnitelman perusteet 2014",
+      "organization": "Opetushallitus",
+      "retrievedAt": "2026-10-29",
+      "kcIds": [
+        "SCI-ENV-MEAS-01"
+      ],
+      "section": "14.4.5, T5, printed p.240 (PDF index239); assessment description p.244",
+      "usageRestrictions": "PDF © Opetushallitus. Consulted and paraphrased; no copied figures or long passages; no blanket open reuse licence assumed.",
+      "adoptedIdeas": "T5 contextual investigation, measuring with equipment and documenting; source corroboration for the canonical procedure.",
+      "rejectedIdeas": "No invented mandate for this exact simulation or grade-by-grade sequence; no claim to audit subsequent amendments.",
+      "sourceRole": "Finnish curriculum basis as used by the canonical graph"
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study",
+      "title": "National curriculum in England: science programmes of study",
+      "organization": "Department for Education, England",
+      "retrievedAt": "2026-10-29",
+      "kcIds": [
+        "SCI-ENV-MEAS-01"
+      ],
+      "section": "Working scientifically, lower/upper key stage2",
+      "usageRestrictions": "© Crown copyright2015, Open Government Licence3.0 except identified third-party material. Conceptual comparison only.",
+      "adoptedIdeas": "Lower KS2 equipment/standard units in contextual enquiries; upper KS2 repeat readings when appropriate.",
+      "rejectedIdeas": "Not Finnish curriculum authority; no inference that matching model responses prove practical procedure.",
+      "sourceRole": "International primary educational comparator"
+    },
+    {
+      "url": "https://www.ncetm.org.uk/classroom-resources/ey-measures/",
+      "title": "Measures",
+      "organization": "NCETM / Etio, funded by DfE",
+      "retrievedAt": "2026-10-29",
+      "kcIds": [
+        "SCI-ENV-MEAS-01"
+      ],
+      "section": "Introduction and equal units",
+      "usageRestrictions": "NCETM copyright page (retrieved same date) states Crown copyright/OGL unless otherwise stated; attribution and named-author permission conditions. No content/image reproduction.",
+      "adoptedIdeas": "Name the measured attribute before tool/unit; equal unit intervals connect concrete length to number.",
+      "rejectedIdeas": "Early Years progression is optional support, not a grade3–6 standard or evidence of effectiveness.",
+      "licenceUrl": "https://www.ncetm.org.uk/copyright/"
+    },
+    {
+      "url": "https://www.thenational.academy/teachers/lessons/measure-length-using-a-ruler",
+      "title": "Measure length using a ruler",
+      "organization": "Oak National Academy",
+      "retrievedAt": "2026-10-29",
+      "kcIds": [
+        "SCI-ENV-MEAS-01"
+      ],
+      "section": "Key learning points and common misconception",
+      "usageRestrictions": "Page identifies © Oak National Academy Limited2025, OGL3.0 except otherwise stated, Collection2 terms. No downloaded or copied media.",
+      "adoptedIdeas": "Explicitly compare ruler edge and zero; show corrected positioning before practice.",
+      "rejectedIdeas": "Do not generalize the claim about numbered cm to every instrument; count equal intervals. KeyStage1 context used as support only."
+    },
+    {
+      "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks1/units/sense-of-measure-capacity-volume-and-mass/lessons/temperature",
+      "title": "Temperature (Year2 Maths)",
+      "organization": "Oak National Academy",
+      "retrievedAt": "2026-10-29",
+      "kcIds": [
+        "SCI-ENV-MEAS-01"
+      ],
+      "section": "Key learning points and common misconception",
+      "usageRestrictions": "Consulted public lesson page as conceptual comparator. No images/slides/text reproduced; do not infer licence for separate assets.",
+      "adoptedIdeas": "Scales can advance in different amounts; read labels and equal divisions instead of just coloured-column height.",
+      "rejectedIdeas": "Not a temperature-difference calculation or full thermal science lesson. Year2 presentation not copied."
+    },
+    {
+      "url": "https://www.thenational.academy/teachers/lessons/thermometers-and-data-loggers",
+      "title": "Thermometers and data loggers (Year4 Science)",
+      "organization": "Oak National Academy",
+      "retrievedAt": "2026-10-29",
+      "kcIds": [
+        "SCI-ENV-MEAS-01"
+      ],
+      "section": "Learning outcome, teacher tip, equipment, safety guidance",
+      "usageRestrictions": "Page identifies © Oak National Academy Limited2026, OGL3.0 except otherwise stated, Collection2 terms. No copied media.",
+      "adoptedIdeas": "Ambient-air temperature is measurable; connect instrument reading to recording.",
+      "rejectedIdeas": "Heat-as-temperature wording not adopted; hot/cold water and glass handling excluded. No data logger operation assessed."
+    },
+    {
+      "url": "https://www.metlink.org/resource/measuring-temperature-keeping-warm/",
+      "title": "Measuring Temperature; Keeping Warm",
+      "organization": "Royal Meteorological Society / MetLink; page reproduced with Met Office permission",
+      "retrievedAt": "2026-10-29",
+      "kcIds": [
+        "SCI-ENV-MEAS-01"
+      ],
+      "section": "Activity one and activity two",
+      "usageRestrictions": "No general reuse licence found on retrieved resource page; Met Office permission is specific to that site. Conceptual paraphrase only; no worksheet/slide copying.",
+      "adoptedIdeas": "Upper-primary thermometer scales followed by real observations at stated place/time; room-air extension and separate teacher observation.",
+      "rejectedIdeas": "Hot-water experiments and hourly outdoor series excluded for scope/safety; no assumption that virtual readings replace equipment use."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@2342d6a199987f6f17a8792e6ef93beade4bb48112a57f283db9087cdb715776",
+      "note": "Author checks passed for this source revision; independent main review pending. Shared H1 phone wrapping recorded."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@2342d6a199987f6f17a8792e6ef93beade4bb48112a57f283db9087cdb715776",
+      "note": "Author checks passed for this source revision; independent main review pending. Shared H1 phone wrapping recorded."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@2342d6a199987f6f17a8792e6ef93beade4bb48112a57f283db9087cdb715776",
+      "note": "No human validation performed or claimed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@2342d6a199987f6f17a8792e6ef93beade4bb48112a57f283db9087cdb715776",
+      "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/measure-independent-review.json. Human/learner efficacy and release approval remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@2342d6a199987f6f17a8792e6ef93beade4bb48112a57f283db9087cdb715776",
+      "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/measure-independent-review.json. Human/learner efficacy and release approval remain pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@20d3cb486bfd8f77f6ddfc4699cc265e4ada17970c897f6ed3799bb472f0e371",
+      "note": "LR04-B11: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@20d3cb486bfd8f77f6ddfc4699cc265e4ada17970c897f6ed3799bb472f0e371",
+      "note": "LR04-B11: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@20d3cb486bfd8f77f6ddfc4699cc265e4ada17970c897f6ed3799bb472f0e371",
+      "note": "LR04-B11: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@f5e6388287573c90b4a9ecf3fb5e4e517eebfad8522eff38ed6781808776b7ca",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@f5e6388287573c90b4a9ecf3fb5e4e517eebfad8522eff38ed6781808776b7ca",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@f5e6388287573c90b4a9ecf3fb5e4e517eebfad8522eff38ed6781808776b7ca",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@f3fbd10a08ed8c993b1cb960abe74fc229f7a40c14343c5b2a0f2d5a78a658ec",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@f3fbd10a08ed8c993b1cb960abe74fc229f7a40c14343c5b2a0f2d5a78a658ec",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@f3fbd10a08ed8c993b1cb960abe74fc229f7a40c14343c5b2a0f2d5a78a658ec",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@1fee267a54ab119b155bf47493938f97851c9e8120a0445f594588c7fbbd6799",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@1fee267a54ab119b155bf47493938f97851c9e8120a0445f594588c7fbbd6799",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@1fee267a54ab119b155bf47493938f97851c9e8120a0445f594588c7fbbd6799",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@c1a31736a50dc3aa112e68ca36596cdbd6312576c36d83225caeaa3329f8ce4e",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@c1a31736a50dc3aa112e68ca36596cdbd6312576c36d83225caeaa3329f8ce4e",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@c1a31736a50dc3aa112e68ca36596cdbd6312576c36d83225caeaa3329f8ce4e",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@756d5ee867a4dbcbf38d2ebdcd26ce5dfb02b5131a15438bce9f6a2a78253528",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@756d5ee867a4dbcbf38d2ebdcd26ce5dfb02b5131a15438bce9f6a2a78253528",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@756d5ee867a4dbcbf38d2ebdcd26ce5dfb02b5131a15438bce9f6a2a78253528",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@901d4e0f27002c61c6dc7f1a2772ebcea5e326042810aebebb3ab6019a280e58",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@901d4e0f27002c61c6dc7f1a2772ebcea5e326042810aebebb3ab6019a280e58",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@901d4e0f27002c61c6dc7f1a2772ebcea5e326042810aebebb3ab6019a280e58",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@8e59ec4896f9b96acf35f8c19d5b7cb24ea9989ab09745f770889c60f4c82bde",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@8e59ec4896f9b96acf35f8c19d5b7cb24ea9989ab09745f770889c60f4c82bde",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@8e59ec4896f9b96acf35f8c19d5b7cb24ea9989ab09745f770889c60f4c82bde",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@88d9266061f994f92d6c7bec7ebd0034835e9d5d5b9df04158835eb8baf1692c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@88d9266061f994f92d6c7bec7ebd0034835e9d5d5b9df04158835eb8baf1692c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@88d9266061f994f92d6c7bec7ebd0034835e9d5d5b9df04158835eb8baf1692c",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@7de70fbd52d87c309626692e7c61188f8f69a9564e48adfd8a75acc96540d9d3",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@7de70fbd52d87c309626692e7c61188f8f69a9564e48adfd8a75acc96540d9d3",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@7de70fbd52d87c309626692e7c61188f8f69a9564e48adfd8a75acc96540d9d3",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@fb37696d1f5d1d6c4f5f9463fa2e0773915551448209d10f9b00c9ac47d6acff",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@fb37696d1f5d1d6c4f5f9463fa2e0773915551448209d10f9b00c9ac47d6acff",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@fb37696d1f5d1d6c4f5f9463fa2e0773915551448209d10f9b00c9ac47d6acff",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@18b79c759e82b5e827be374a033eea55c887029885f87986a97d636ecb621039",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@18b79c759e82b5e827be374a033eea55c887029885f87986a97d636ecb621039",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@18b79c759e82b5e827be374a033eea55c887029885f87986a97d636ecb621039",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@c03293f0b578a6e0e45c2c837db69ad7f7a475a4c666f5a65709f66a8a82cf40",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@c03293f0b578a6e0e45c2c837db69ad7f7a475a4c666f5a65709f66a8a82cf40",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Väline, nollan kohdistus, asteikkoväli sekä tuloksen luku/yksikkö erotetaan. 2 °C:n asteikkovälin esimerkki ehkäisee jokainen viiva=1-oletuksen. Harjoituksen kuva ja tuloskentät ovat yhdessä; poikkeava mittaustulos tarkistetaan alkuperäiset merkinnät säilyttäen. Ruudun kuva ei ole fyysinen mittanormaali. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@c03293f0b578a6e0e45c2c837db69ad7f7a475a4c666f5a65709f66a8a82cf40",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "liteNodeId": "SCI-ENV-MEAS-01",
+    "liteStop": "Tarkka mittaaja",
+    "globalContentRevision": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "validRevisions": [
+      "audit1-2026-10-28"
+    ],
+    "families": [
+      "toolUnit",
+      "unit",
+      "repeat",
+      "scale",
+      "fit",
+      "transfer"
+    ],
+    "taskKinds": [
+      "choice",
+      "numeric",
+      "place"
+    ],
+    "registryOverlay": "None for this ID; verified no SIMS entry. index fills GOALS and preserves audit revision.",
+    "audit": "LESSON_AUDIT row125: tehty/korjattu, unit-fit/repeat/scale-read + thermometer/unit place. Historical synthetic claim, not human acceptance.",
+    "inventoryDiscrepancy": "COVERAGE lists three base tags, only choice and two demos at global revision; actual audited NodeSpec has five base families, choice/numeric/place and three demos.",
+    "sourceFiles": [
+      {
+        "path": "authority/production-181-v2/lite/src/content/saari2.ts",
+        "sha256": "bf9e657f3e4f975cbdafd9c8b5c891d789ffd4e98be7126ee438096f7d9f5c6e"
+      },
+      {
+        "path": "authority/production-181-v2/lite/src/content/toolanim.ts",
+        "sha256": "192aeac1100af4f3408ed9a5c98689a9d5e76592476ef188c305f2002e443bc7"
+      },
+      {
+        "path": "authority/production-181-v2/lite/src/content/pics.ts",
+        "sha256": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711"
+      },
+      {
+        "path": "authority/production-181-v2/lite/src/content/families.ts",
+        "sha256": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903"
+      },
+      {
+        "path": "authority/production-181-v2/lite/src/content/goals.ts",
+        "sha256": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e"
+      },
+      {
+        "path": "authority/production-181-v2/lite/src/content/kit.ts",
+        "sha256": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad"
+      },
+      {
+        "path": "authority/production-181-v2/lite/src/content/index.ts",
+        "sha256": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8"
+      },
+      {
+        "path": "authority/production-181-v2/lite/src/content/motionsims.ts",
+        "sha256": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba"
+      },
+      {
+        "path": "authority/production-181-v2/lite/src/content/audit-rev.ts",
+        "sha256": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f"
+      },
+      {
+        "path": "authority/production-181-v2/lite/src/engine/types.ts",
+        "sha256": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533"
+      },
+      {
+        "path": "authority/production-181-v2/lite/audit/LESSON_AUDIT.md",
+        "sha256": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b"
+      },
+      {
+        "path": "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md",
+        "sha256": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      {
+        "path": "authority/production-181-v2/lite/COVERAGE.md",
+        "sha256": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427"
+      },
+      {
+        "path": "authority/production-181-v2/lite/SOL_INTEGRATION.md",
+        "sha256": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+      },
+      {
+        "path": "authority/production-181-v2/lite/reference/scope-addendum-181.json",
+        "sha256": "877dde86f7eb127813c84646dcbdb2d30448eec6b6542b5fdbc9483aee14204f"
+      }
+    ],
+    "comparison": "See alignment.md: full intro/demo/generators/hints/explain inventory, observed-vs-claimed procedure and reconciliation notes.",
+    "limitations": "This lesson supports virtual alignment, attribute/unit choice and scale reading; teacher observes physical measurement separately.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "reference/scope-addendum-181.json": "877dde86f7eb127813c84646dcbdb2d30448eec6b6542b5fdbc9483aee14204f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/content/saari2.ts": "98fb2fb855d272e91d93e194a98c3d401c2b784a2d364a87f434dadbe2604ec1",
+        "src/content/toolanim.ts": "192aeac1100af4f3408ed9a5c98689a9d5e76592476ef188c305f2002e443bc7",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "3-6",
+    "teacherObjective": "Mittauksen tekeminen tarkoituksenmukaisella välineellä",
+    "childGoal": "Valitse sopiva väline, tarkista asteikko ja ilmoita mittaustulos lukuna ja yksikkönä.",
+    "canonicalNodeKind": "procedure",
+    "canonicalMasteryRole": "atomic",
+    "canonicalEntryRole": "none",
+    "canonicalCurriculumRefs": [
+      "ENV36-T4-T18"
+    ],
+    "canonicalGraph": {
+      "path": "reference/inputs/canonical-690-graph.json",
+      "sha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb"
+    },
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "SCI-ENV-TOOL-01"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "required": [
+      {
+        "id": "SCI-ENV-TOOL-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "SCI-ENV-TOOL-01 on ydinesitieto tälle osaamiskohteelle."
+      }
+    ],
+    "strongSupport": [
+      {
+        "id": "SCI-ENV-OBSERVE-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "SCI-ENV-OBSERVE-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      }
+    ],
+    "assumed": [
+      "Reads small non-negative whole numbers, can enter a number; teacher may read text aloud.",
+      "Equal interval meaning, cm/mm relation and °C introduced within lesson; no decimal/negative arithmetic required.",
+      "Optional multiplication and endpoint subtraction are explained, not hard gates or scored content."
+    ],
+    "scope": "A concrete-to-representational measurement procedure: align ruler zero for 6cm/4cm model length, interpret18°C with2-degree ticks, record number/unit. Two worked examples5cm and14°C, misconception/prediction, safe real-strip follow-up.",
+    "evidenceLimits": [
+      "Virtual result does not certify handling a ruler/thermometer, physical safety or actual observation.",
+      "Optional guide may be used; no independent-performance, mastery, retention or efficacy inference.",
+      "No persistence, personal history, awards or verified runtime game links."
+    ],
+    "assetProvenance": [
+      {
+        "path": "shared/aava/curious.png",
+        "origin": "Supplied shared actual transparent PNG, byte-identical reuse; generated reinterpretation of user character references; no redraw/duplicate or inferred open licence."
+      },
+      {
+        "path": "shared/loikka/curious.png",
+        "origin": "Supplied shared actual transparent PNG, byte-identical reuse; generated reinterpretation of user character references; no redraw/duplicate or inferred open licence."
+      },
+      {
+        "path": "ruler-zero.svg",
+        "origin": "Original mathematical/scientific SVG authored for this KC; no borrowed figures or mascot vectors."
+      },
+      {
+        "path": "thermometer.svg",
+        "origin": "Original mathematical/scientific SVG authored for this KC; no borrowed figures or mascot vectors."
+      },
+      {
+        "path": "practice-start.svg",
+        "origin": "Original mathematical/scientific SVG authored for this KC; no borrowed figures or mascot vectors."
+      }
+    ],
+    "moduleContract": "No imports; mount(host) uses host.closest(#lesson-body), component-local click/input/change, no timers/storage. Pause fieldset; resume semantic invalidation; reset no handler duplication; dispose removes all3. Optional guide is truth-preserving.",
+    "feedbackContract": "Exact INTERACTION_FEEDBACK_CONTRACT.md. Correct and incorrect checked feedback invalidates on owned semantic native edits; returning to old state needs explicit existing recheck. Exact response record rejects missing/extra/invalid/array/sparse forms; no all-answer array interface."
+  },
+  "extensions": {
+    "authorChecks": {
+      "date": "2026-10-29",
+      "sourceStable": true,
+      "scope": "Only SCI-ENV-MEAS-01 package. No shared code, state, build, generated output or Git changes.",
+      "pureTests": {
+        "command": "node --test lesson-network/packages/SCI-ENV-MEAS-01/tests.mjs",
+        "result": "passed",
+        "cases": 7
+      },
+      "browserRegression": {
+        "command": "LESSON_PREVIEW_URL=http://127.0.0.1:4204/ node --test lesson-network/packages/SCI-ENV-MEAS-01/tests.mjs",
+        "engine": "Actual headless Chromium against isolated source composition",
+        "result": "passed",
+        "cases": 1,
+        "totalWithPure": 8,
+        "covered": [
+          "Correct→wrong/incomplete→neutral→check retry→repair→explicit correct recheck",
+          "Native input and change; quantity/unit/tool/zero/case semantics",
+          "Equivalent cm/mm responses; zero-start procedural feedback distinguished from endpoint difference",
+          "Truth-preserving optional guide retains feedback; unrelated events ignored",
+          "All3cases; pause ignores synthetic events and disables controls; resume invalidates changed answer",
+          "Repeated reset adds no handlers; double dispose removes all3owned listeners"
+        ]
+      },
+      "visualQA": {
+        "viewports": [
+          390,
+          1280
+        ],
+        "caseViews": 6,
+        "noJavaScript": "Worked examples and opened teacher/offline details readable; practice controls disabled",
+        "componentResult": "No lesson overflow, clipped SVG text, failed images, console errors or visible control heights under44px",
+        "art": "Supplied shared PNGs unchanged, no decorative animation; subject geometry original. Agent inspection, not human acceptance.",
+        "notes": "Thermometer enlarged for phone reading. Actual label/column geometry verified by pure tests and SVG text bounds in Chromium.",
+        "observationFile": "/tmp/B04-scimeasure-browser-observations.json",
+        "observationSha256": "96a46afb806711188a80b8128d787d384e7fe01be5ec3d872cfa6eb0e19da7f4",
+        "knownShellFinding": "At390px the unbroken canonical shell H1 word tarkoituksenmukaisella causes18px horizontal overflow. Lesson body itself fits. Shell owned by main; no shared CSS edited."
+      },
+      "lint": {
+        "command": "./node_modules/.bin/eslint lesson-network/packages/SCI-ENV-MEAS-01/lesson.mjs lesson-network/packages/SCI-ENV-MEAS-01/tests.mjs",
+        "result": "passed"
+      },
+      "contract": "Isolated loadPackages/composePackage package identity, own module, assets/hashes and CSS passed; no shared build.",
+      "review": "Main independent synthetic review and integration pending",
+      "humanValidation": "Not performed or claimed"
+    },
+    "notes": [
+      "research.md",
+      "alignment.md",
+      "tests.mjs"
+    ],
+    "reconciliation": {
+      "path": "alignment.md",
+      "openForLiteOwner": [
+        "Stale COVERAGE inventory",
+        "Avoid treating awkward equivalent units as mathematically wrong",
+        "Preserve original discrepant readings and investigate cause before exclusion",
+        "Reward wording exceeds virtual evidence"
+      ]
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B11",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

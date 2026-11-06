@@ -1,0 +1,197 @@
+{
+ "_ohje": "Maailman tekstuurit, taustat ja UI-kuvakkeet (flare). Aja repojuuresta: node tools/imagegen/imagegen.mjs batch art/batches/world.json [--live]",
+ "defaults": {
+  "model": "flare",
+  "out": "../_raw/world"
+ },
+ "jobs": [
+  {
+   "name": "tex-water",
+   "preset": "texture",
+   "prompt": "calm light teal lake water (#c9e3df base) with a few soft pale cream ripple strokes",
+   "vars": {
+    "subject": "calm light teal lake water (#c9e3df base) with a few soft pale cream ripple strokes",
+    "look": "soft colored-pencil and wax-crayon texture with visible grainy strokes, flat gentle colors, children's picture-book style, no outlines"
+   }
+  },
+  {
+   "name": "tex-water-deep",
+   "preset": "texture",
+   "prompt": "deeper blue-teal lake water (#8fc3c4 base) with soft lighter ripple strokes",
+   "vars": {
+    "subject": "deeper blue-teal lake water (#8fc3c4 base) with soft lighter ripple strokes",
+    "look": "soft colored-pencil and wax-crayon texture with visible grainy strokes, flat gentle colors, children's picture-book style, no outlines"
+   }
+  },
+  {
+   "name": "tex-grass",
+   "preset": "texture",
+   "prompt": "soft sage-green meadow grass (#a7b681 base) with small darker grass strokes",
+   "vars": {
+    "subject": "soft sage-green meadow grass (#a7b681 base) with small darker grass strokes",
+    "look": "soft colored-pencil and wax-crayon texture with visible grainy strokes, flat gentle colors, children's picture-book style, no outlines"
+   }
+  },
+  {
+   "name": "tex-sand",
+   "preset": "texture",
+   "prompt": "warm pale beach sand (#e8d4a2 base) with tiny grain dots",
+   "vars": {
+    "subject": "warm pale beach sand (#e8d4a2 base) with tiny grain dots",
+    "look": "soft colored-pencil and wax-crayon texture with visible grainy strokes, flat gentle colors, children's picture-book style, no outlines"
+   }
+  },
+  {
+   "name": "tex-paper",
+   "preset": "texture",
+   "prompt": "warm off-white drawing paper (#f7f3e7) with very subtle paper fibre texture",
+   "vars": {
+    "subject": "warm off-white drawing paper (#f7f3e7) with very subtle paper fibre texture",
+    "look": "soft colored-pencil and wax-crayon texture with visible grainy strokes, flat gentle colors, children's picture-book style, no outlines"
+   }
+  },
+  {
+   "name": "tex-path",
+   "preset": "texture",
+   "prompt": "light earthy dirt path (#d8c08e base) with small pebbles",
+   "vars": {
+    "subject": "light earthy dirt path (#d8c08e base) with small pebbles",
+    "look": "soft colored-pencil and wax-crayon texture with visible grainy strokes, flat gentle colors, children's picture-book style, no outlines"
+   }
+  },
+  {
+   "name": "tex-wood",
+   "preset": "texture",
+   "prompt": "pale honey-colored wooden planks running horizontally, soft grain lines",
+   "vars": {
+    "subject": "pale honey-colored wooden planks running horizontally, soft grain lines",
+    "look": "soft colored-pencil and wax-crayon texture with visible grainy strokes, flat gentle colors, children's picture-book style, no outlines"
+   }
+  },
+  {
+   "name": "tex-night-water",
+   "preset": "texture",
+   "prompt": "dark navy night lake water (#22446a base) with soft lighter blue ripple strokes and tiny star reflections",
+   "vars": {
+    "subject": "dark navy night lake water (#22446a base) with soft lighter blue ripple strokes and tiny star reflections",
+    "look": "soft colored-pencil and wax-crayon texture with visible grainy strokes, flat gentle colors, children's picture-book style, no outlines"
+   }
+  },
+  {
+   "name": "bg-hero-island",
+   "preset": "background",
+   "prompt": "a small sunny island with a sandy beach and a few round bushes in a calm lake, morning light. Use the soft palette: water #c9e3df, sand #e8d4a2, grass #a7b681, paper sky #f7f3e7, sun #f5ce65.",
+   "vars": {
+    "subject": "a small sunny island with a sandy beach and a few round bushes in a calm lake, morning light. Use the soft palette: water #c9e3df, sand #e8d4a2, grass #a7b681, paper sky #f7f3e7, sun #f5ce65.",
+    "space": "the left half"
+   }
+  },
+  {
+   "name": "bg-lake-shore",
+   "preset": "background",
+   "prompt": "a calm lake shore with reeds, a small wooden jetty and gentle hills far away. Use the soft palette: water #c9e3df, sand #e8d4a2, grass #a7b681, paper sky #f7f3e7, sun #f5ce65.",
+   "vars": {
+    "subject": "a calm lake shore with reeds, a small wooden jetty and gentle hills far away. Use the soft palette: water #c9e3df, sand #e8d4a2, grass #a7b681, paper sky #f7f3e7, sun #f5ce65.",
+    "space": "the upper third"
+   }
+  },
+  {
+   "name": "bg-forest-clearing",
+   "preset": "background",
+   "prompt": "a friendly sunny forest clearing with round trees and a small pond. Use the soft palette: water #c9e3df, sand #e8d4a2, grass #a7b681, paper sky #f7f3e7, sun #f5ce65.",
+   "vars": {
+    "subject": "a friendly sunny forest clearing with round trees and a small pond. Use the soft palette: water #c9e3df, sand #e8d4a2, grass #a7b681, paper sky #f7f3e7, sun #f5ce65.",
+    "space": "the center"
+   }
+  },
+  {
+   "name": "bg-night-pond",
+   "preset": "background",
+   "prompt": "a calm pond at night with a big round moon, stars and soft blue tones",
+   "vars": {
+    "subject": "a calm pond at night with a big round moon, stars and soft blue tones",
+    "space": "the upper third"
+   }
+  },
+  {
+   "name": "icon-star",
+   "preset": "icon",
+   "prompt": "a golden reward star",
+   "vars": {
+    "subject": "a golden reward star"
+   }
+  },
+  {
+   "name": "icon-heart",
+   "preset": "icon",
+   "prompt": "a soft pink heart",
+   "vars": {
+    "subject": "a soft pink heart"
+   }
+  },
+  {
+   "name": "icon-check",
+   "preset": "icon",
+   "prompt": "a green check mark in a round badge",
+   "vars": {
+    "subject": "a green check mark in a round badge"
+   }
+  },
+  {
+   "name": "icon-lock",
+   "preset": "icon",
+   "prompt": "a small closed padlock",
+   "vars": {
+    "subject": "a small closed padlock"
+   }
+  },
+  {
+   "name": "icon-map-pin",
+   "preset": "icon",
+   "prompt": "a red map pin",
+   "vars": {
+    "subject": "a red map pin"
+   }
+  },
+  {
+   "name": "icon-book",
+   "preset": "icon",
+   "prompt": "a small closed blue book",
+   "vars": {
+    "subject": "a small closed blue book"
+   }
+  },
+  {
+   "name": "icon-lightbulb",
+   "preset": "icon",
+   "prompt": "a glowing yellow lightbulb idea",
+   "vars": {
+    "subject": "a glowing yellow lightbulb idea"
+   }
+  },
+  {
+   "name": "icon-trophy",
+   "preset": "icon",
+   "prompt": "a small golden trophy cup",
+   "vars": {
+    "subject": "a small golden trophy cup"
+   }
+  },
+  {
+   "name": "icon-shell",
+   "preset": "icon",
+   "prompt": "a pretty pink seashell collectible",
+   "vars": {
+    "subject": "a pretty pink seashell collectible"
+   }
+  },
+  {
+   "name": "icon-leaf",
+   "preset": "icon",
+   "prompt": "a single green lily pad leaf",
+   "vars": {
+    "subject": "a single green lily pad leaf"
+   }
+  }
+ ]
+}

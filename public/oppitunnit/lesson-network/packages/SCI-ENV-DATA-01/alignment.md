@@ -1,0 +1,7 @@
+# SCI-ENV-DATA-01 — actual Lite/canonical reconciliation
+
+Complete science.ts621–690 NodeSpec: dataScene demos[3,5,2]/[4,1,6], fill/table/most/total and chart transfer. Read dataScene356–405 and audit547–549. Actual fill constructs table; old COVERAGE omits it. We retain construction and repair, contextualize source notes by day/place/time/unit, allow duplicate values/zero/missing and row reordering. Transfer uses supplied cm records, so strong measurement support stays nonmandatory. No false inference of unique frogs from across-day totals. All records explicitly fictional; chart recognition/total arithmetic are not new gates.
+
+Canonical node and exact required groups are retained in metadata; other509 scaffolds untouched. Source hashes bind the actual immutable reading. Index GOALS fallback and per-node audit revision distinguished from stale COVERAGE. PHY wildcard incidental decimal metadata read; other targets have no own family declaration. Model/record numbers are supplied examples, not observations made by the learner. Any proposed Lite correction is only recorded here for Opus; Lite is not edited.
+
+Both semantic commit types, strict selector domains, exact/dense data and visible-answer checking belong to this module. Support/replay/reordering preserves valid responses when meaning is unchanged. Different independent source/pedagogy/native review and actual main integration remain pending.

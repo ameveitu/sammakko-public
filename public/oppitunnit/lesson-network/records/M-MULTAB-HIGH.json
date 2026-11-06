@@ -1,0 +1,606 @@
+{
+  "kcId": "M-MULTAB-HIGH",
+  "pagePath": "lessons/M-MULTAB-HIGH.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-MULTAB-HIGH",
+  "canonicalNode": {
+    "id": "M-MULTAB-HIGH",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Kertotaulut",
+    "title": "Kertotaulufaktat 6–9",
+    "short_description": "Kertotaulufaktat 6–9",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "concept",
+    "relations": [
+      {
+        "id": "M-MUL-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MUL-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-MULTAB-LOW",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "6–9-taulujen oppiminen ei loogisesti edellytä 1–5-taulujen täydellistä masteryä."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-MUL-01"
+        ],
+        "rationale": "Kertolaskun merkitys tarvitaan; alempien taulujen sujuvuus tukee."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Kertotaulut"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-MUL-01",
+      "targetKCId": "M-MULTAB-HIGH",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MUL-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-MULTAB-LOW",
+      "targetKCId": "M-MULTAB-HIGH",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "6–9-taulujen oppiminen ei loogisesti edellytä 1–5-taulujen täydellistä masteryä.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-MULTAB-HIGH",
+      "targetKCId": "M-MULTAB-ALL",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MULTAB-HIGH on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-MUL-01"
+      ],
+      "rationale": "Kertolaskun merkitys tarvitaan; alempien taulujen sujuvuus tukee."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-MULTAB-HIGH/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-207-times-tables-2-4-and-8-and-the-relationship-between-them/",
+        "title": "Times tables:2,4 and8, and the relationship between them",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "perKC": [
+          "M-MULTAB-LOW",
+          "M-MULTAB-HIGH"
+        ],
+        "actuallyInspected": "Public HTML intro/5 teaching points, no linked PDFs.",
+        "adopted": "Connect2→4 and4→8 by doubling corresponding groups, with common group size.",
+        "rejectedOrLimited": "Foreign Year3 placement does not override Finnish LOW1–2; divisibility/halving/inverse tasks not new prerequisites.",
+        "usageRestrictions": "NCETM default Crown/OGL acknowledgement and named-author/third-party exceptions; copyright endpoint genuinely retrieved earlier2026-10-29 in same production session. No figures/task text imported; PD is not a ready-made lesson to lift."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-208-times-tables-3-6-and-9-and-the-relationship-between-them/",
+        "title": "Times tables:3,6 and9, and the relationship between them",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "perKC": [
+          "M-MULTAB-HIGH",
+          "M-MULTAB-LOW"
+        ],
+        "actuallyInspected": "Public HTML intro/6 teaching points; LOW uses only3-row/adjacent-product idea.",
+        "adopted": "Relate target products to equal-row blocks/adjacent multiples. Supply useful anchor values when fluency is not assumed.",
+        "rejectedOrLimited": "Do not infer all facts mastered from finite page or add division/divisibility gates.",
+        "usageRestrictions": "NCETM default Crown/OGL acknowledgement and named-author/third-party exceptions; copyright endpoint genuinely retrieved earlier2026-10-29 in same production session. No figures/task text imported; PD is not a ready-made lesson to lift."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-209-times-tables-7-and-patterns-withinacross-times-tables/",
+        "title": "Times tables:7 and patterns within/across times tables",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "perKC": [
+          "M-MULTAB-HIGH"
+        ],
+        "actuallyInspected": "Public HTML intro/4 teaching points.",
+        "adopted": "Include7 rather than allowing6/8/9 shortcuts to stand for all6–9 facts; relate adjacent products by one whole group.",
+        "rejectedOrLimited": "Odd/even generalisations, square-number taxonomy and divisibility are optional broader content, not core demands.",
+        "usageRestrictions": "NCETM default Crown/OGL acknowledgement and named-author/third-party exceptions; copyright endpoint genuinely retrieved earlier2026-10-29 in same production session. No figures/task text imported; PD is not a ready-made lesson to lift."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+        "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/inverse-tables-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+        "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-MULTAB-HIGH",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "split.svg",
+        "sha256": "6bafd8f724426a01fe17376decf714f6d24c390ba50a33c141a28a65c26a0f66"
+      },
+      {
+        "path": "minus.svg",
+        "sha256": "743769aa25e832f3f3f71178526b95c3af9c07baeeb573522e4c472fae41dd5a"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "c98608a39fae0a97b45fb8d056da7273fbf3e5d4b5aa6563518b290e77d8bfbf"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-207-times-tables-2-4-and-8-and-the-relationship-between-them/",
+        "title": "Times tables:2,4 and8, and the relationship between them",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "perKC": [
+          "M-MULTAB-LOW",
+          "M-MULTAB-HIGH"
+        ],
+        "actuallyInspected": "Public HTML intro/5 teaching points, no linked PDFs.",
+        "adopted": "Connect2→4 and4→8 by doubling corresponding groups, with common group size.",
+        "rejectedOrLimited": "Foreign Year3 placement does not override Finnish LOW1–2; divisibility/halving/inverse tasks not new prerequisites.",
+        "usageRestrictions": "NCETM default Crown/OGL acknowledgement and named-author/third-party exceptions; copyright endpoint genuinely retrieved earlier2026-10-29 in same production session. No figures/task text imported; PD is not a ready-made lesson to lift."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-208-times-tables-3-6-and-9-and-the-relationship-between-them/",
+        "title": "Times tables:3,6 and9, and the relationship between them",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "perKC": [
+          "M-MULTAB-HIGH",
+          "M-MULTAB-LOW"
+        ],
+        "actuallyInspected": "Public HTML intro/6 teaching points; LOW uses only3-row/adjacent-product idea.",
+        "adopted": "Relate target products to equal-row blocks/adjacent multiples. Supply useful anchor values when fluency is not assumed.",
+        "rejectedOrLimited": "Do not infer all facts mastered from finite page or add division/divisibility gates.",
+        "usageRestrictions": "NCETM default Crown/OGL acknowledgement and named-author/third-party exceptions; copyright endpoint genuinely retrieved earlier2026-10-29 in same production session. No figures/task text imported; PD is not a ready-made lesson to lift."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-209-times-tables-7-and-patterns-withinacross-times-tables/",
+        "title": "Times tables:7 and patterns within/across times tables",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "perKC": [
+          "M-MULTAB-HIGH"
+        ],
+        "actuallyInspected": "Public HTML intro/4 teaching points.",
+        "adopted": "Include7 rather than allowing6/8/9 shortcuts to stand for all6–9 facts; relate adjacent products by one whole group.",
+        "rejectedOrLimited": "Odd/even generalisations, square-number taxonomy and divisibility are optional broader content, not core demands.",
+        "usageRestrictions": "NCETM default Crown/OGL acknowledgement and named-author/third-party exceptions; copyright endpoint genuinely retrieved earlier2026-10-29 in same production session. No figures/task text imported; PD is not a ready-made lesson to lift."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+        "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+        "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+        "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/inverse-tables-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/inverse-tables-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ],
+    "alignment": {
+      "liteNodeId": "M-MULTAB-HIGH",
+      "liteRevision": "audit1-2026-10-28",
+      "liteValidRevs": [
+        "audit1-2026-10-28"
+      ],
+      "liteSource": "src/content/written.ts:264–313",
+      "liteInventory": {
+        "source": "src/content/written.ts:264–313",
+        "rev": "audit1-2026-10-28",
+        "goalOwn": true,
+        "intro": "Verstaan seinällä on kertotaulut. Isot taulut saa pienistä, kun tietää tempun.",
+        "demos": [
+          "trickScene(9,7):10rows minus1row",
+          "trickScene(6,7):5rows plus1row",
+          "trickScene(8,6):double4rows",
+          "trickScene(7,8):5rows plus2rows"
+        ],
+        "families": [
+          {
+            "tag": "nine",
+            "task": "numeric",
+            "range": "k3..9,product27..81",
+            "hintsExplain": "10k−k, common remove1/remove9 errors. whyAt10k−9 coincides with correct81 at k9 but numeric success priority protects correct answer; do not copy a negative-feedback key for correct answer."
+          },
+          {
+            "tag": "six",
+            "task": "numeric",
+            "range": "k3..9,product18..54",
+            "hintsExplain": "5k+k, exclude collision5k+6=6k whenk6."
+          },
+          {
+            "tag": "trick",
+            "task": "choice",
+            "range": "a6/8/9;k4..9 excludingk=a and8×4",
+            "hintsExplain": "Numerically equivalent strategy accepted ifnotdistractor; sourceavoids equal alternative collisions. No free strategy evidence."
+          },
+          {
+            "tag": "fact",
+            "task": "choice",
+            "range": "a6..9,b3..9,product18..81",
+            "hintsExplain": "Known5/4/10 row blocks; addfactor and neighboring product feedback."
+          },
+          {
+            "tag": "transfer",
+            "task": "numeric",
+            "range": "given4k,k3..9;ask8k,product24..72",
+            "hintsExplain": "Double whole known4k, not add4 or one k row."
+          }
+        ],
+        "audit": "Detailed662–664 adds7demo, trick family andwhyAt; COVERAGE omits trick, says2demos not4 andstaleglobalrevision.",
+        "mediaLimits": "trickScene addition/deletion changes counted set; removed nine row remains ghosted at15percentopacity. New model must distinguish excluded row from active9rows, conserve IDs and not count ghost as target.",
+        "registry": "Explicit own audit1 NodeSpec goal, globalfallbacklite181-2026-10-27. kit.cases all named ordinary families guided/independent/retrieval, separate transfer. No SIMS overlay, no explicit target families.ts declarations or manifest activity-use rows; default outcomes and no dynamic rule on canonical nodes.",
+        "rawNodeSpec": "raw-lite-nodes.json#M-MULTAB-HIGH"
+      },
+      "sourceBindings": {
+        "lite": {
+          "src/content/added181.ts": "1fb1c7ec3aa12bf340768c7d87afdb5b3b5550323bb28f83fbe5c3fc33cbf236",
+          "src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+          "src/content/written.ts": "58ee93036fb7417e8324072db5be810426a99db346c23ef0651c9525a9bfd0c6",
+          "src/content/perimanim.ts": "3096ce4c1af80f5f87b308e0adacce90629d24b562caa1d2c08b283cadf91099",
+          "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+          "src/content/multanim.ts": "0c73fffe77065728a3412fdaea24c469cd4fbf75315127f6247ead1de108c535",
+          "src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+          "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+          "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+          "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+          "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+          "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+          "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+          "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+          "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+          "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+          "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+          "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+          "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715"
+        },
+        "canonicalGraph": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+        "contracts": {
+          "content.mjs": "c4636c6188731667a1b86f7a11a80cd20af9fc37fe824dcb75835d86688bb1c4",
+          "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+          "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+          "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2"
+        }
+      },
+      "inheritedAndExtended": "Lite kaikki neljä trickScene esimerkkiä vastaavina selityksinä: 6=5+1,7=5+2,8=4+4,9=10−1. fact/nine/six sekä annetusta4k⇒8k-transfer.",
+      "corrections": "Lite nine whyAt[10k−9] osuu oikeaan vastaukseen k=9; moottorin success-prioriteetti suojaa sitä, mutta oma tarkistus varmistaa oikean arvon aina ensin. Poistettu rivi ei jää samanarvoiseksi haamupistejoukoksi: yliviivaus ja aktiivisten määrä eksplisiittiset.",
+      "comparisonAndLimitations": "Lite trick on strategian tunnistamisvalinta; oma malli laajentaa sallittuihin vaihtoehtoisiin jakoihin. Tuotetun laskustrategian hallintaa ei päätellä numerovastauksesta. Kaikki välitulot saa katsoa; alempien taulujen muistia ei salaa vaadita.",
+      "implementedInteraction": "Kaikki 260 sisäistä rivijakoa sallitaan. 5+1,5+2,4+4 annettuina esimerkkeinä; oppija saa vaihtaa jakoa. 10-rivin malli erottelee mukana olevat pisteet yliviivatuista poistetuista, samoilla identiteeteillä. Osatulot annetaan avussa; LOW ei ole kova portti.",
+      "formalRuntimeBoundary": "Standalone source-owned lesson; no KC-specific semantic-choice/game branches, no formal process evidence, personal mastery, persistence, runtime/content graph migration or verified public learner URL."
+    },
+    "planning": {
+      "gradeBand": "3-6",
+      "teacherObjective": "Kertotaulufaktat 6–9",
+      "childGoal": "Päättelen 6–9-taulujen vastauksia yhtä suurista riveistä.",
+      "canonicalNodeKind": "concept",
+      "canonicalEntryRole": "none",
+      "canonicalMasteryRole": "atomic",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-MUL-01"
+          ],
+          "rationale": "Kertolaskun merkitys tarvitaan; alempien taulujen sujuvuus tukee."
+        }
+      ],
+      "strongSupport": [
+        {
+          "id": "M-MULTAB-LOW",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "6–9-taulujen oppiminen ei loogisesti edellytä 1–5-taulujen täydellistä masteryä."
+        }
+      ],
+      "assumed": [
+        {
+          "id": "M-MUL-01",
+          "use": "Kertolaskun yhtä suurten ryhmien merkitys."
+        }
+      ],
+      "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "curriculumRefs": [
+        "OPH-POPS2014-MATH-VL3-6-S2"
+      ],
+      "canonicalFactsVsDesign": "Luokka, tavoite ja suhteet ovat jäädytetyn kanonisen graafin tietoja. Valitut esimerkit, rajatut mallit ja palaute ovat tämän projektin suunnitteluratkaisuja, eivät OPH:n määräämä oppituntijärjestys tai vaikuttavuusnäyttö.",
+      "scope": "Neljä taulua, toinen tekijä 1–10: 40 tuettua laskua. Kahden riviosan summat, kymmenestä kokonaisten rivien poisto; myös 7-taulu ja 4→8-tuplaus.",
+      "evidenceLimits": "Numerovastaus ei osoita tietyn hajotelman rakentamista, täydellistä sujuvuutta, fyysistä poistamista tai pysyvää muistamista. Valittu mallijako ei ole arvioitava algoritmipakko.",
+      "assetProvenance": [
+        {
+          "path": "split.svg",
+          "sha256": "6bafd8f724426a01fe17376decf714f6d24c390ba50a33c141a28a65c26a0f66",
+          "origin": "Original project-authored SVG geometry from this package selfcontained model, or scoped CSS; no external figure copied."
+        },
+        {
+          "path": "minus.svg",
+          "sha256": "743769aa25e832f3f3f71178526b95c3af9c07baeeb573522e4c472fae41dd5a",
+          "origin": "Original project-authored SVG geometry from this package selfcontained model, or scoped CSS; no external figure copied."
+        },
+        {
+          "path": "lesson.css",
+          "sha256": "c98608a39fae0a97b45fb8d056da7273fbf3e5d4b5aa6563518b290e77d8bfbf",
+          "origin": "Original project-authored SVG geometry from this package selfcontained model, or scoped CSS; no external figure copied."
+        },
+        {
+          "path": "shared/aava/curious.png",
+          "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2",
+          "origin": "User-supplied actual transparent PNG; unchanged shared singlecopy, generated raster interpretation, not claimed handdrawn original or new licensing grant."
+        }
+      ]
+    },
+    "extensions": {
+      "authorBatch": "B08",
+      "authorScope": "Mill own3 only",
+      "interactionFeedbackContract": "Both native input and change commit semantic question/answer changes; explicit check reads visible fields. Unchanged help/model truth may preserve prior verdict. Root-scoped listeners cleaned by dispose; reset respects pause.",
+      "authorChecks": "Synthetic author technical checks are external QA receipts; independent and human review remain pending.",
+      "stylesheetInclusionCorrection": "Main actual compiled sourceP2: declared CSS was not referenced by body. Authored local stylesheet link now explicit. Source preview no longer injects the package stylesheet independently. Actual stylesheet request and computed properties required in author QA."
+    },
+    "contentHash": "f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+    "contentRevision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+          "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/inverse-tables-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+          "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+          "note": "No actual human/target-learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+          "note": "Current revision after notified stylesheet inclusion correction; current different-author/human reviews pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@f1da88ca5b1ccbf2cda8ee73326720cd7996ed43a8376bb9e4362603cb8877f8",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B08/inverse-tables-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    }
+  },
+  "outputHash": "71dc6352d09c6874a059ec83203df2b0129782ae12065c8b12cd4d4f27fa56cb",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "71dc6352d09c6874a059ec83203df2b0129782ae12065c8b12cd4d4f27fa56cb",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

@@ -1,0 +1,1914 @@
+{
+  "format": "sammakko-autonomous-52-state-v1",
+  "authority": "authority/autonomous-52-v1/SOL_MASTER_PROMPT.md",
+  "baseline_head": "0b2a791918f472cf8ba61eede095a6a578adeab6",
+  "current_source_head": "0c13ef7440c5a86a994ede5b3df0f511e194ac06",
+  "status": "CONTINUOUS_PRIVATE_IMPLEMENTATION_ACTIVE",
+  "current_task": "B03 M-NUM-03 private native19 passed; final regression and acceptance reconciliation pending",
+  "current_batch": {
+    "id": "B03",
+    "target_ids": [
+      "SCI-ENV-OBSERVE-01",
+      "M-NUM-QTY-NUMERAL",
+      "M-NUM-03",
+      "M-ADD-01",
+      "M-MUL-01",
+      "M-DIV-02"
+    ],
+    "target_completed_count": 6,
+    "status": "TWO_OF_SIX_COMPLETE_THIRD_NATIVE_PENDING",
+    "internal_checkpoints": [
+      "Close SE-H1 and independently review before acceptance",
+      "Preserve observation work; inspect low-reading mobile journey",
+      "Quantity–numeral process and three-representation integration retain objectives",
+      "Deterministic arithmetic; optional taught extensions do not replace core application",
+      "Export at16 and continue authorized B04 through22 after internal validation"
+    ]
+  },
+  "expected_node_ids": [
+    "M-MEAS-00",
+    "M-NUM-1TO1",
+    "M-NUM-STABLE-ORDER",
+    "M-NUM-WORD-NUMERAL",
+    "M-TH-01",
+    "SCI-ENV-OBSERVE-01",
+    "M-MEAS-02",
+    "M-TIME-01",
+    "M-NUM-01",
+    "ENV-PHY-MOTION-OBS-01",
+    "M-TIME-03",
+    "M-MEAS-01",
+    "M-NUM-02",
+    "ENV-PHY-MOTION-CHANGE-01",
+    "PHY79-QTY-CONCEPT",
+    "M-ADD-01",
+    "M-DIV-02",
+    "M-NUM-QTY-NUMERAL",
+    "M-NUM-QTY-WORD",
+    "ENV-PHY-MOTION-01",
+    "PHY79-NUMVALUE",
+    "PHY79-UNIT-CONCEPT",
+    "M-MUL-01",
+    "M-NUM-03",
+    "PHY79-MOTION-REF",
+    "PHY79-QTY-01",
+    "M-MULTREL-01",
+    "M-NUM-07",
+    "M-NUM-14",
+    "PHY79-DIST-TIME",
+    "M-NUM-EQUALSTEP-SEQ",
+    "M-NUM-MULTIPLE-INTRO",
+    "PHY79-SPEED-CONCEPT",
+    "M-NUM-16",
+    "PHY79-ACCEL-CONCEPT",
+    "PHY79-SPEED-CALC",
+    "PHY79-SPEED-UNIT",
+    "PHY79-ACCEL-CALC",
+    "PHY79-ACCEL-MOTION-GRAPH",
+    "PHY79-ACCEL-VT-GRAPH",
+    "PHY79-SPEED-REARR",
+    "PHY79-ACCEL-GRAPH",
+    "PHY79-UNIT-CONV",
+    "PHY79-SPEED-MIXED",
+    "SCI-ENV-PRESENT-DATA-01",
+    "SCI-ENV-RECORD-DATA-01",
+    "SCI-ENV-RECORD-01",
+    "SCI-ENV-DATA-01",
+    "PHY79-DATA-01",
+    "PHY79-GRAPH-01",
+    "PHY79-ST-GRAPH",
+    "PHY79-VT-GRAPH"
+  ],
+  "unique_complete_ids": [
+    "M-MEAS-00",
+    "M-MEAS-01",
+    "M-MEAS-02",
+    "M-NUM-01",
+    "M-NUM-02",
+    "M-NUM-1TO1",
+    "M-NUM-QTY-NUMERAL",
+    "M-NUM-QTY-WORD",
+    "M-NUM-STABLE-ORDER",
+    "M-NUM-WORD-NUMERAL",
+    "M-TH-01",
+    "SCI-ENV-OBSERVE-01"
+  ],
+  "playable_but_evidence_incomplete_ids": [],
+  "blocked_ids": [],
+  "nodes": [
+    {
+      "kc_id": "ENV-PHY-MOTION-01",
+      "title_fi": "Liikkeen ja liikkeen muutoksen havainnointi",
+      "mastery_role": "integration",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "ENV-PHY-MOTION-CHANGE-01",
+      "title_fi": "Liikkeen muutoksen havainnointi",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "ENV-PHY-MOTION-OBS-01",
+      "title_fi": "Liikkeen havainnointi",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "M-ADD-01",
+      "title_fi": "Yhteenlasku kahden määrän yhdistämisenä",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "M-DIV-02",
+      "title_fi": "Sisältöjako: selvitetään montako annettua ryhmää määrään mahtuu",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "M-MEAS-00",
+      "title_fi": "Mitattavien ominaisuuksien suora vertaaminen",
+      "mastery_role": "atomic",
+      "status": "ENGINEERING_COMPLETE",
+      "evidence": [
+        {
+          "path": "reports/autonomous-52/B02/ten-node-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/journeys/astra-ten/M-MEAS-00.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/astra-current-reconciliation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R01-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R02-access-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R03-R04-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R05-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-activation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-action-cost-current.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R07-scene-rationale.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R08-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R09-R10-export.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/process-content-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/PC-M2-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-retrieval-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-render-main-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/transfer-coverage-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/TEACHING_REVIEW_PROTOCOL.md"
+        }
+      ],
+      "accepted_route": "Visual direct length comparison: selected reference operation, actual geometry/length, attribute identification, and text-only rope/delayed method choice. Not free fine-motor placement or all quantities.",
+      "human_review": "PENDING_UNEXECUTED",
+      "release_readiness": "NOT_RELEASE_READY",
+      "held_alternatives": [
+        "Manual/nonvisual/full accessibility equivalence",
+        "Human learner understanding and efficacy",
+        "Richer literal world manipulation than the current prepared art/caption",
+        "Manual/nonvisual equivalence and actual target-learner comprehension are unverified",
+        "Guided-page density and long map navigation require human review; no zero-scroll claim"
+      ],
+      "review_media": {
+        "screens": {
+          "purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-purpose.png",
+          "purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-purpose-1280.png",
+          "model-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-model-1.png",
+          "model-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-model-1-1280.png",
+          "guided-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-supported.png",
+          "guided-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-supported-1280.png",
+          "independent-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-check-0.png",
+          "independent-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-check-0-1280.png",
+          "outcome-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-acquired.png",
+          "outcome-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-acquired-1280.png",
+          "faded-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-faded.png",
+          "help-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-help.png",
+          "help-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-help-1280.png",
+          "error-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-wrong-method-feedback.png",
+          "error-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-wrong-method-feedback-1280.png",
+          "delayed-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-M-MEAS-00-due-answer-0.png",
+          "delayed-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-M-MEAS-00-due-answer-0-1280.png",
+          "application-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/length-check-3.png"
+        },
+        "journey": "reports/autonomous-52/B02/journeys/astra-ten/M-MEAS-00.json"
+      }
+    },
+    {
+      "kc_id": "M-MEAS-01",
+      "title_fi": "Mittaaminen suureen vertaamisena sovittuun yksikköön",
+      "mastery_role": "atomic",
+      "status": "ENGINEERING_COMPLETE",
+      "evidence": [
+        {
+          "path": "reports/autonomous-52/B02/ten-node-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/journeys/astra-ten/M-MEAS-01.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/astra-current-reconciliation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R01-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R02-access-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R03-R04-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R05-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-activation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-action-cost-current.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R07-scene-rationale.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R08-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R09-R10-export.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/process-content-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/PC-M2-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-retrieval-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-render-main-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/transfer-coverage-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/TEACHING_REVIEW_PROTOCOL.md"
+        }
+      ],
+      "accepted_route": "Visual whole-unit construction with actual learner-selected starts, gaps/overlap/omitted report possible; own count word/unit, genuine changed-unit application, earned AND prerequisites, support/fading/current independent and later observations; one initial mobile scroll may be needed.",
+      "human_review": "PENDING_UNEXECUTED",
+      "release_readiness": "NOT_RELEASE_READY",
+      "held_alternatives": [
+        "M2 manual/nonvisual equivalence and full accessibility",
+        "Human target-learner understanding and efficacy",
+        "Broader quantities, fractional units and physical measurement accuracy",
+        "A second differently sized construction unit (only given-unit construction supported)",
+        "Manual/nonvisual equivalence and actual target-learner comprehension are unverified",
+        "Guided-page density and long map navigation require human review; no zero-scroll claim"
+      ],
+      "review_media": {
+        "screens": {
+          "entry-map-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-initial-prerequisite-map-390.png",
+          "entry-map-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-initial-prerequisite-map-1280.png",
+          "model-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-model-2-390.png",
+          "model-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-model-2-1280.png",
+          "guided-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-guided-answer-390.png",
+          "guided-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-guided-answer-1280.png",
+          "faded-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-faded-answer-390.png",
+          "faded-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-faded-answer-1280.png",
+          "independent-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-fresh-core-answer-390.png",
+          "independent-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-fresh-core-answer-1280.png",
+          "work-area-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-complete-work-area-viewport-390.png",
+          "work-area-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-complete-work-area-viewport-1280.png",
+          "application-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-unit-length-change-application-390.png",
+          "application-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-unit-length-change-application-1280.png",
+          "error-feedback-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-supported-error-390.png",
+          "error-feedback-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-supported-error-1280.png",
+          "outcome-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-acquired-390.png",
+          "outcome-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-acquired-1280.png",
+          "later-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-M-MEAS-01-due-answer-1-390.png",
+          "later-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/units/units-M-MEAS-01-due-answer-1-1280.png"
+        },
+        "journey": "reports/autonomous-52/B02/journeys/astra-ten/M-MEAS-01.json"
+      }
+    },
+    {
+      "kc_id": "M-MEAS-02",
+      "title_fi": "Pituuden ymmärtäminen suureeksi",
+      "mastery_role": "atomic",
+      "status": "ENGINEERING_COMPLETE",
+      "evidence": [
+        {
+          "path": "reports/autonomous-52/B02/ten-node-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/journeys/astra-ten/M-MEAS-02.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/astra-current-reconciliation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R01-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R02-access-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R03-R04-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R05-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-activation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-action-cost-current.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R07-scene-rationale.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R08-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R09-R10-export.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/process-content-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/PC-M2-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-retrieval-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-render-main-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/transfer-coverage-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/TEACHING_REVIEW_PROTOCOL.md"
+        }
+      ],
+      "accepted_route": "Visual end-to-end length as an object property: actually earned direct-comparison/named-attribute prerequisite plus own invariance, shortening/lengthening, composed change and later observations. ADR0030 bounded scope; no unprompted identification or all-quantity understanding claim.",
+      "review_media": {
+        "screens": {
+          "acquired-last-required-tag-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/acquired-last-required-tag-1280.png",
+          "acquired-last-required-tag-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/acquired-last-required-tag-390.png",
+          "acquired-offline-reloaded-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/acquired-offline-reloaded-1280.png",
+          "acquired-offline-reloaded-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/acquired-offline-reloaded-390.png",
+          "acquired-world-preferences-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/acquired-world-preferences-1280.png",
+          "acquired-world-preferences-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/acquired-world-preferences-390.png",
+          "application-own-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/application-own-1-1280.png",
+          "application-own-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/application-own-1-390.png",
+          "application-own-2-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/application-own-2-1280.png",
+          "application-own-2-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/application-own-2-390.png",
+          "application-own-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/application-own-3-1280.png",
+          "application-own-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/application-own-3-390.png",
+          "core-own-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/core-own-1-1280.png",
+          "core-own-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/core-own-1-390.png",
+          "core-own-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/core-own-3-1280.png",
+          "core-own-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/core-own-3-390.png",
+          "faded-own-choice-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/faded-own-choice-1280.png",
+          "faded-own-choice-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/faded-own-choice-390.png",
+          "guided-durable-help-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/guided-durable-help-1280.png",
+          "guided-durable-help-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/guided-durable-help-390.png",
+          "guided-own-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/guided-own-1-1280.png",
+          "guided-own-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/guided-own-1-390.png",
+          "guided-own-2-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/guided-own-2-1280.png",
+          "guided-own-2-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/guided-own-2-390.png",
+          "guided-own-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/guided-own-3-1280.png",
+          "guided-own-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/guided-own-3-390.png",
+          "guided-wrong-consumed-feedback-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/guided-wrong-consumed-feedback-1280.png",
+          "guided-wrong-consumed-feedback-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/guided-wrong-consumed-feedback-390.png",
+          "initial-missing-length-prerequisite-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/initial-missing-length-prerequisite-1280.png",
+          "initial-missing-length-prerequisite-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/initial-missing-length-prerequisite-390.png",
+          "initial-purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/initial-purpose-1280.png",
+          "initial-purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/initial-purpose-390.png",
+          "initial-worked-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/initial-worked-1-1280.png",
+          "initial-worked-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/initial-worked-1-390.png",
+          "initial-worked-2-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/initial-worked-2-1280.png",
+          "initial-worked-2-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/initial-worked-2-390.png",
+          "initial-worked-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/initial-worked-3-1280.png",
+          "initial-worked-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/initial-worked-3-390.png",
+          "later-own-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/later-own-1-1280.png",
+          "later-own-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/later-own-1-390.png",
+          "later-own-2-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/later-own-2-1280.png",
+          "later-own-2-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/later-own-2-390.png",
+          "later-own-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/later-own-3-1280.png",
+          "later-own-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/later-own-3-390.png",
+          "later-own-4-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/later-own-4-1280.png",
+          "later-own-4-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/later-own-4-390.png",
+          "length-prerequisite-actually-earned-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/length-prerequisite-actually-earned-1280.png",
+          "length-prerequisite-actually-earned-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/length-prerequisite-actually-earned-390.png",
+          "retained-map-reloaded-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/retained-map-reloaded-1280.png",
+          "retained-map-reloaded-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/retained-map-reloaded-390.png",
+          "retained-technical-clock-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/retained-technical-clock-1280.png",
+          "retained-technical-clock-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/retained-technical-clock-390.png",
+          "reteach-purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/reteach-purpose-1280.png",
+          "reteach-purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/reteach-purpose-390.png",
+          "reteach-worked-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/reteach-worked-1-1280.png",
+          "reteach-worked-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/reteach-worked-1-390.png",
+          "reteach-worked-2-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/reteach-worked-2-1280.png",
+          "reteach-worked-2-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/reteach-worked-2-390.png",
+          "reteach-worked-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/reteach-worked-3-1280.png",
+          "reteach-worked-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/length-change/reteach-worked-3-390.png"
+        },
+        "journey": "reports/autonomous-52/B02/journeys/astra-ten/M-MEAS-02.json"
+      },
+      "human_review": "PENDING_UNEXECUTED",
+      "release_readiness": "NOT_RELEASE_READY",
+      "held_alternatives": [
+        "Manual/nonvisual equivalence and actual target-learner comprehension are unverified",
+        "Guided-page density and long map navigation require human review; no zero-scroll claim",
+        "Unprompted property identification, curved/deformable objects and all-quantity/general conservation claims; explicit ADR0030 scope decision"
+      ]
+    },
+    {
+      "kc_id": "M-MUL-01",
+      "title_fi": "Kertolasku yhtä suurten ryhmien toistumisena",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "M-MULTREL-01",
+      "title_fi": "Multiplikatiivinen vertailu: x kertaa niin paljon",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "M-NUM-01",
+      "title_fi": "Kohteiden laskeminen yksi yhteen -vastaavuudella",
+      "mastery_role": "integration",
+      "status": "ENGINEERING_COMPLETE",
+      "evidence": [
+        {
+          "path": "reports/autonomous-52/B02/ten-node-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/journeys/astra-ten/M-NUM-01.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/astra-current-reconciliation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R01-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R02-access-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R03-R04-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R05-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-activation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-action-cost-current.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R07-scene-rationale.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R08-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R09-R10-export.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/process-content-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/PC-M2-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-retrieval-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-render-main-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/transfer-coverage-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/TEACHING_REVIEW_PROTOCOL.md"
+        }
+      ],
+      "accepted_route": "Integrated object coverage and conventional sequence in learner-composed pairs, both prerequisite roots evidence-earned, structural scatter application and actual later-check route.",
+      "human_review": "PENDING_UNEXECUTED",
+      "release_readiness": "NOT_RELEASE_READY",
+      "held_alternatives": [
+        "Manual/nonvisual/full accessibility equivalence",
+        "Human learner understanding and efficacy",
+        "Richer literal world manipulation than the current prepared art/caption",
+        "Manual/nonvisual equivalence and actual target-learner comprehension are unverified",
+        "Guided-page density and long map navigation require human review; no zero-scroll claim"
+      ],
+      "review_media": {
+        "screens": {
+          "purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-purpose.png",
+          "purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-purpose-1280.png",
+          "model-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-model-1.png",
+          "model-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-model-1-1280.png",
+          "guided-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-guided-answer.png",
+          "guided-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-guided-answer-1280.png",
+          "independent-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-check-0.png",
+          "independent-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-check-0-1280.png",
+          "outcome-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-acquired.png",
+          "outcome-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-acquired-1280.png",
+          "faded-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-faded.png",
+          "help-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-help.png",
+          "help-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-help-1280.png",
+          "error-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-error.png",
+          "error-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-error-1280.png",
+          "application-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/integrated-check-3.png"
+        },
+        "journey": "reports/autonomous-52/B02/journeys/astra-ten/M-NUM-01.json"
+      }
+    },
+    {
+      "kc_id": "M-NUM-02",
+      "title_fi": "Laskennan viimeinen lukusana kertoo koko joukon lukumäärän",
+      "mastery_role": "atomic",
+      "status": "ENGINEERING_COMPLETE",
+      "evidence": [
+        {
+          "path": "reports/autonomous-52/B02/ten-node-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/journeys/astra-ten/M-NUM-02.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/astra-current-reconciliation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R01-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R02-access-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R03-R04-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R05-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-activation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-action-cost-current.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R07-scene-rationale.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R08-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R09-R10-export.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/process-content-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/PC-M2-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-retrieval-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-render-main-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/transfer-coverage-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/TEACHING_REVIEW_PROTOCOL.md"
+        }
+      ],
+      "accepted_route": "Own conventional count, committed initial layout, actual same-member rearrangement, own total word and individual member report; real evidence-earned M-NUM-01 prerequisite, supported/faded/core/application and later checks.",
+      "human_review": "PENDING_UNEXECUTED",
+      "release_readiness": "NOT_RELEASE_READY",
+      "held_alternatives": [
+        "Broad cardinal understanding beyond this specified conjunction",
+        "Manual/nonvisual/full accessibility equivalence",
+        "Human learner understanding, age suitability and efficacy",
+        "Literal bag manipulation beyond prepared art/caption",
+        "Manual/nonvisual equivalence and actual target-learner comprehension are unverified",
+        "Guided-page density and long map navigation require human review; no zero-scroll claim"
+      ],
+      "review_media": {
+        "screens": {
+          "purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-purpose.png",
+          "purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-purpose-1280.png",
+          "model-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-model-6.png",
+          "model-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-model-6-1280.png",
+          "guided-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-guided-answer.png",
+          "guided-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-guided-answer-1280.png",
+          "faded-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-faded-answer.png",
+          "faded-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-faded-answer-1280.png",
+          "independent-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-check-0.png",
+          "independent-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-check-0-1280.png",
+          "error-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-last-object-feedback.png",
+          "error-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-last-object-feedback-1280.png",
+          "outcome-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-acquired.png",
+          "outcome-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/cardinality-acquired-1280.png"
+        },
+        "journey": "reports/autonomous-52/B02/journeys/astra-ten/M-NUM-02.json"
+      }
+    },
+    {
+      "kc_id": "M-NUM-03",
+      "title_fi": "Lukumäärän, lukusanan ja numeromerkinnän yhdistäminen",
+      "mastery_role": "integration",
+      "status": "IN_PROGRESS",
+      "evidence": [
+        {
+          "path": "DECISIONS/ADR-0034-number-representation-triad.md"
+        },
+        {
+          "path": "reports/autonomous-52/B03/number-triad-runtime-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B03/number-triad-teaching-contract-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B03/receipts/number-triad-core-check05-binding.json"
+        },
+        {
+          "path": "reports/autonomous-52/B03/receipts/number-triad-native19-results.json"
+        },
+        {
+          "path": "reports/autonomous-52/B03/receipts/number-triad-native19-binding.json"
+        },
+        {
+          "path": "reports/autonomous-52/B03/triad-native19-rendered-review.md"
+        }
+      ],
+      "held_alternatives": [
+        "Target-learner understanding and full nonvisual accessibility review pending before node acceptance",
+        "Licensing, pilot, efficacy and release review remain open"
+      ]
+    },
+    {
+      "kc_id": "M-NUM-07",
+      "title_fi": "Lukujonon jatkaminen eteenpäin",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "M-NUM-14",
+      "title_fi": "Luvun käyttäminen mittaustuloksen ilmaisemiseen",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "M-NUM-16",
+      "title_fi": "Tasavälisen lukujonon ja monikerran alun tunnistaminen",
+      "mastery_role": "integration",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "M-NUM-1TO1",
+      "title_fi": "Yhden lukusanan kohdistaminen kuhunkin laskettavaan kohteeseen",
+      "mastery_role": "atomic",
+      "status": "ENGINEERING_COMPLETE",
+      "evidence": [
+        {
+          "path": "reports/autonomous-52/B02/ten-node-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/journeys/astra-ten/M-NUM-1TO1.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/astra-current-reconciliation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R01-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R02-access-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R03-R04-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R05-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-activation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-action-cost-current.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R07-scene-rationale.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R08-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R09-R10-export.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/process-content-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/PC-M2-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-retrieval-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-render-main-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/transfer-coverage-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/TEACHING_REVIEW_PROTOCOL.md"
+        }
+      ],
+      "accepted_route": "One-to-one execution with learner-composed object/word pairs from supplied vocabulary; default tap/count support separate. No stable-order, cardinality or oral-production award.",
+      "human_review": "PENDING_UNEXECUTED",
+      "release_readiness": "NOT_RELEASE_READY",
+      "held_alternatives": [
+        "Manual/nonvisual/full accessibility equivalence",
+        "Human learner understanding and efficacy",
+        "Richer literal world manipulation than the current prepared art/caption",
+        "Manual/nonvisual equivalence and actual target-learner comprehension are unverified",
+        "Guided-page density and long map navigation require human review; no zero-scroll claim"
+      ],
+      "review_media": {
+        "screens": {
+          "purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-purpose.png",
+          "purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-purpose-1280.png",
+          "model-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-model-1.png",
+          "model-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-model-1-1280.png",
+          "guided-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-guided-answer.png",
+          "guided-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-guided-answer-1280.png",
+          "independent-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-check-0.png",
+          "independent-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-check-0-1280.png",
+          "outcome-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-acquired.png",
+          "outcome-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-acquired-1280.png",
+          "faded-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-faded.png",
+          "exploration-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-touch-supported.png",
+          "bridge-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-bridge-commit-autoclear.png",
+          "help-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-keyboard-help.png",
+          "help-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-keyboard-help-1280.png",
+          "error-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/pair-empty-faded-feedback.png",
+          "error-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/pair-empty-faded-feedback-1280.png",
+          "application-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/correspondence-check-3.png"
+        },
+        "journey": "reports/autonomous-52/B02/journeys/astra-ten/M-NUM-1TO1.json"
+      }
+    },
+    {
+      "kc_id": "M-NUM-EQUALSTEP-SEQ",
+      "title_fi": "Tasavälisen lukujonon tunnistaminen ja jatkaminen",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "M-NUM-MULTIPLE-INTRO",
+      "title_fi": "Monikerran käsitteen alku",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "M-NUM-QTY-NUMERAL",
+      "title_fi": "Lukumäärän yhdistäminen sitä vastaavaan numeromerkintään",
+      "mastery_role": "process",
+      "status": "ENGINEERING_COMPLETE",
+      "evidence": [
+        {
+          "path": "reports/autonomous-52/B03/quantity-numeral-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B03/quantity-numeral-contract-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B03/quantity-numeral-teaching-ui-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B03/quantity-numeral-source-audit.md"
+        },
+        {
+          "path": "reports/autonomous-52/B03/quantity-numeral-human-review.md"
+        }
+      ],
+      "accepted_route": "Prepared visible quantities3–6 ↔ decimal numerals, eight directional cases, actual wrong-pair repair and delayed sample; not number-word production, Give-N, three-representation integration or real learner efficacy.",
+      "human_review": "PENDING_UNEXECUTED",
+      "held_alternatives": [
+        "Target-learner comprehension and efficacy untested",
+        "Manual/nonvisual accessibility and full VoiceOver review pending",
+        "Bidirectional mobile model6 needs vertical scrolling",
+        "Optional taught word/multistep extensions and actual cross-encounter saved-result reuse remain batch16 work",
+        "Licensing/pilot/release/completed52 review holds remain"
+      ]
+    },
+    {
+      "kc_id": "M-NUM-QTY-WORD",
+      "title_fi": "Lukumäärän yhdistäminen sitä vastaavaan lukusanaan",
+      "mastery_role": "process",
+      "status": "ENGINEERING_COMPLETE",
+      "evidence": [
+        {
+          "path": "reports/autonomous-52/B02/ten-node-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/journeys/astra-ten/M-NUM-QTY-WORD.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/astra-current-reconciliation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R01-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R02-access-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R03-R04-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R05-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-activation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-action-cost-current.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R07-scene-rationale.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R08-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R09-R10-export.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/process-content-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/PC-M2-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-retrieval-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-render-main-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/transfer-coverage-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/TEACHING_REVIEW_PROTOCOL.md"
+        }
+      ],
+      "accepted_route": "Visual 3–6 quantity/word matching in both directions, all8 authored cases, actual repair and four later sample cases after evidence-earned cardinality. No Give-N, oral production or expanded number range.",
+      "review_media": {
+        "screens": {
+          "acquired-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/acquired-1280.png",
+          "acquired-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/acquired-390.png",
+          "acquired-world-prefs-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/acquired-world-prefs-1280.png",
+          "acquired-world-prefs-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/acquired-world-prefs-390.png",
+          "actual-prerequisites-earned-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/actual-prerequisites-earned-1280.png",
+          "actual-prerequisites-earned-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/actual-prerequisites-earned-390.png",
+          "application-forward-replacement-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/application-forward-replacement-1280.png",
+          "application-forward-replacement-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/application-forward-replacement-390.png",
+          "application-forward-wrong-initial-selected-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/application-forward-wrong-initial-selected-1280.png",
+          "application-forward-wrong-initial-selected-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/application-forward-wrong-initial-selected-390.png",
+          "application-reverse-replacement-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/application-reverse-replacement-1280.png",
+          "application-reverse-replacement-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/application-reverse-replacement-390.png",
+          "application-reverse-wrong-initial-selected-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/application-reverse-wrong-initial-selected-1280.png",
+          "application-reverse-wrong-initial-selected-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/application-reverse-wrong-initial-selected-390.png",
+          "core-choice-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/core-choice-1-1280.png",
+          "core-choice-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/core-choice-1-390.png",
+          "core-choice-8-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/core-choice-8-1280.png",
+          "core-choice-8-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/core-choice-8-390.png",
+          "faded-own-choice-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/faded-own-choice-1280.png",
+          "faded-own-choice-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/faded-own-choice-390.png",
+          "fresh-core-empty-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/fresh-core-empty-1280.png",
+          "fresh-core-empty-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/fresh-core-empty-390.png",
+          "guided-own-choice-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/guided-own-choice-1280.png",
+          "guided-own-choice-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/guided-own-choice-390.png",
+          "guided-wrong-actual-pair-feedback-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/guided-wrong-actual-pair-feedback-1280.png",
+          "guided-wrong-actual-pair-feedback-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/guided-wrong-actual-pair-feedback-390.png",
+          "guided-wrong-hinted-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/guided-wrong-hinted-1280.png",
+          "guided-wrong-hinted-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/guided-wrong-hinted-390.png",
+          "initial-both-directions-0-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/initial-both-directions-0-1280.png",
+          "initial-both-directions-0-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/initial-both-directions-0-390.png",
+          "initial-both-directions-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/initial-both-directions-3-1280.png",
+          "initial-both-directions-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/initial-both-directions-3-390.png",
+          "initial-purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/initial-purpose-1280.png",
+          "initial-purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/initial-purpose-390.png",
+          "initial-required-cardinality-map-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/initial-required-cardinality-map-1280.png",
+          "initial-required-cardinality-map-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/initial-required-cardinality-map-390.png",
+          "later-forward-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/later-forward-3-1280.png",
+          "later-forward-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/later-forward-3-390.png",
+          "later-forward-6-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/later-forward-6-1280.png",
+          "later-forward-6-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/later-forward-6-390.png",
+          "later-reverse-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/later-reverse-3-1280.png",
+          "later-reverse-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/later-reverse-3-390.png",
+          "later-reverse-6-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/later-reverse-6-1280.png",
+          "later-reverse-6-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/later-reverse-6-390.png",
+          "retained-map-reloaded-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/retained-map-reloaded-1280.png",
+          "retained-map-reloaded-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/retained-map-reloaded-390.png",
+          "retained-technical-clock-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/retained-technical-clock-1280.png",
+          "retained-technical-clock-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/retained-technical-clock-390.png",
+          "reteach-both-directions-0-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/reteach-both-directions-0-1280.png",
+          "reteach-both-directions-0-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/reteach-both-directions-0-390.png",
+          "reteach-both-directions-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/reteach-both-directions-3-1280.png",
+          "reteach-both-directions-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/reteach-both-directions-3-390.png",
+          "reteach-purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/reteach-purpose-1280.png",
+          "reteach-purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/quantity-word/reteach-purpose-390.png"
+        },
+        "journey": "reports/autonomous-52/B02/journeys/astra-ten/M-NUM-QTY-WORD.json"
+      },
+      "human_review": "PENDING_UNEXECUTED",
+      "release_readiness": "NOT_RELEASE_READY",
+      "held_alternatives": [
+        "Manual/nonvisual equivalence and actual target-learner comprehension are unverified",
+        "Guided-page density and long map navigation require human review; no zero-scroll claim"
+      ]
+    },
+    {
+      "kc_id": "M-NUM-STABLE-ORDER",
+      "title_fi": "Lukusanojen käyttäminen vakaassa järjestyksessä",
+      "mastery_role": "atomic",
+      "status": "ENGINEERING_COMPLETE",
+      "evidence": [
+        {
+          "path": "reports/autonomous-52/B02/ten-node-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/journeys/astra-ten/M-NUM-STABLE-ORDER.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/astra-current-reconciliation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R01-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R02-access-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R03-R04-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R05-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-activation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-action-cost-current.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R07-scene-rationale.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R08-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R09-R10-export.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/process-content-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/PC-M2-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-retrieval-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-render-main-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/transfer-coverage-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/TEACHING_REVIEW_PROTOCOL.md"
+        }
+      ],
+      "accepted_route": "Learner-reconstructed conventional sequence from full reusable vocabulary, followed by unassisted after-word continuation and genuine later-check route. No spontaneous speech claim.",
+      "human_review": "PENDING_UNEXECUTED",
+      "release_readiness": "NOT_RELEASE_READY",
+      "held_alternatives": [
+        "Manual/nonvisual/full accessibility equivalence",
+        "Human learner understanding and efficacy",
+        "Richer literal world manipulation than the current prepared art/caption",
+        "Manual/nonvisual equivalence and actual target-learner comprehension are unverified",
+        "Guided-page density and long map navigation require human review; no zero-scroll claim"
+      ],
+      "review_media": {
+        "screens": {
+          "purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-purpose.png",
+          "purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-purpose-1280.png",
+          "model-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-model-1.png",
+          "model-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-model-1-1280.png",
+          "guided-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-guided-answer.png",
+          "guided-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-guided-answer-1280.png",
+          "independent-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-check-0.png",
+          "independent-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-check-0-1280.png",
+          "outcome-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-acquired.png",
+          "outcome-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-acquired-1280.png",
+          "faded-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-faded.png",
+          "help-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-help.png",
+          "help-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-help-1280.png",
+          "error-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-error.png",
+          "error-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-error-1280.png",
+          "application-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B01/stable-check-3.png"
+        },
+        "journey": "reports/autonomous-52/B02/journeys/astra-ten/M-NUM-STABLE-ORDER.json"
+      }
+    },
+    {
+      "kc_id": "M-NUM-WORD-NUMERAL",
+      "title_fi": "Lukusanan yhdistäminen sitä vastaavaan numeromerkintään",
+      "mastery_role": "process",
+      "status": "ENGINEERING_COMPLETE",
+      "evidence": [
+        {
+          "path": "reports/autonomous-52/B02/ten-node-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/journeys/astra-ten/M-NUM-WORD-NUMERAL.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/astra-current-reconciliation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R01-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R02-access-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R03-R04-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R05-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-activation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-action-cost-current.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R07-scene-rationale.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R08-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R09-R10-export.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/process-content-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/PC-M2-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-retrieval-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-render-main-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/transfer-coverage-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/TEACHING_REVIEW_PROTOCOL.md"
+        }
+      ],
+      "accepted_route": "Visual 1–10 word/numeral matching in both directions, all20 authored cases, actual first-fact repair and four later sample cases. No spontaneous speech, writing or all-number retention claim.",
+      "review_media": {
+        "screens": {
+          "acquired-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/acquired-1280.png",
+          "acquired-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/acquired-390.png",
+          "acquired-world-prefs-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/acquired-world-prefs-1280.png",
+          "acquired-world-prefs-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/acquired-world-prefs-390.png",
+          "application-forward-replacement-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/application-forward-replacement-1280.png",
+          "application-forward-replacement-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/application-forward-replacement-390.png",
+          "application-forward-wrong-initial-selected-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/application-forward-wrong-initial-selected-1280.png",
+          "application-forward-wrong-initial-selected-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/application-forward-wrong-initial-selected-390.png",
+          "application-reverse-replacement-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/application-reverse-replacement-1280.png",
+          "application-reverse-replacement-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/application-reverse-replacement-390.png",
+          "application-reverse-wrong-initial-selected-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/application-reverse-wrong-initial-selected-1280.png",
+          "application-reverse-wrong-initial-selected-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/application-reverse-wrong-initial-selected-390.png",
+          "core-choice-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/core-choice-1-1280.png",
+          "core-choice-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/core-choice-1-390.png",
+          "core-choice-20-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/core-choice-20-1280.png",
+          "core-choice-20-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/core-choice-20-390.png",
+          "faded-own-choice-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/faded-own-choice-1280.png",
+          "faded-own-choice-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/faded-own-choice-390.png",
+          "fresh-core-empty-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/fresh-core-empty-1280.png",
+          "fresh-core-empty-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/fresh-core-empty-390.png",
+          "guided-own-choice-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/guided-own-choice-1280.png",
+          "guided-own-choice-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/guided-own-choice-390.png",
+          "guided-wrong-actual-pair-feedback-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/guided-wrong-actual-pair-feedback-1280.png",
+          "guided-wrong-actual-pair-feedback-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/guided-wrong-actual-pair-feedback-390.png",
+          "guided-wrong-hinted-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/guided-wrong-hinted-1280.png",
+          "guided-wrong-hinted-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/guided-wrong-hinted-390.png",
+          "initial-both-directions-0-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/initial-both-directions-0-1280.png",
+          "initial-both-directions-0-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/initial-both-directions-0-390.png",
+          "initial-both-directions-9-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/initial-both-directions-9-1280.png",
+          "initial-both-directions-9-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/initial-both-directions-9-390.png",
+          "initial-purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/initial-purpose-1280.png",
+          "initial-purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/initial-purpose-390.png",
+          "later-forward-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/later-forward-1-1280.png",
+          "later-forward-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/later-forward-1-390.png",
+          "later-forward-10-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/later-forward-10-1280.png",
+          "later-forward-10-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/later-forward-10-390.png",
+          "later-reverse-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/later-reverse-1-1280.png",
+          "later-reverse-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/later-reverse-1-390.png",
+          "later-reverse-10-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/later-reverse-10-1280.png",
+          "later-reverse-10-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/later-reverse-10-390.png",
+          "retained-map-reloaded-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/retained-map-reloaded-1280.png",
+          "retained-map-reloaded-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/retained-map-reloaded-390.png",
+          "retained-technical-clock-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/retained-technical-clock-1280.png",
+          "retained-technical-clock-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/retained-technical-clock-390.png",
+          "reteach-both-directions-0-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/reteach-both-directions-0-1280.png",
+          "reteach-both-directions-0-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/reteach-both-directions-0-390.png",
+          "reteach-both-directions-9-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/reteach-both-directions-9-1280.png",
+          "reteach-both-directions-9-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/reteach-both-directions-9-390.png",
+          "reteach-purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/reteach-purpose-1280.png",
+          "reteach-purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/process-personal/word-numeral/reteach-purpose-390.png"
+        },
+        "journey": "reports/autonomous-52/B02/journeys/astra-ten/M-NUM-WORD-NUMERAL.json"
+      },
+      "human_review": "PENDING_UNEXECUTED",
+      "release_readiness": "NOT_RELEASE_READY",
+      "held_alternatives": [
+        "Manual/nonvisual equivalence and actual target-learner comprehension are unverified",
+        "Guided-page density and long map navigation require human review; no zero-scroll claim"
+      ]
+    },
+    {
+      "kc_id": "M-TH-01",
+      "title_fi": "Yhtäläisyyksien ja erojen havaitseminen",
+      "mastery_role": "atomic",
+      "status": "ENGINEERING_COMPLETE",
+      "evidence": [
+        {
+          "path": "reports/autonomous-52/B02/ten-node-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/journeys/astra-ten/M-TH-01.json"
+        },
+        {
+          "path": "reports/autonomous-52/B02/astra-current-reconciliation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R01-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R02-access-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R03-R04-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R05-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-activation.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R06-action-cost-current.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R07-scene-rationale.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R08-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/R09-R10-export.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/process-content-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/PC-M2-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-retrieval-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/attribute-render-main-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/transfer-coverage-independent-review.md"
+        },
+        {
+          "path": "reports/autonomous-52/B02/TEACHING_REVIEW_PROTOCOL.md"
+        }
+      ],
+      "accepted_route": "Named shape/size same/different comparison in all4 cases and the two authored locate-and-replace pair repairs. No unrestricted classification or general reasoning claim.",
+      "review_media": {
+        "screens": {
+          "acquired-last-required-tag-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/acquired-last-required-tag-1280.png",
+          "acquired-last-required-tag-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/acquired-last-required-tag-390.png",
+          "acquired-offline-reloaded-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/acquired-offline-reloaded-1280.png",
+          "acquired-offline-reloaded-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/acquired-offline-reloaded-390.png",
+          "acquired-world-preferences-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/acquired-world-preferences-1280.png",
+          "acquired-world-preferences-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/acquired-world-preferences-390.png",
+          "application-own-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/application-own-1-1280.png",
+          "application-own-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/application-own-1-390.png",
+          "application-own-2-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/application-own-2-1280.png",
+          "application-own-2-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/application-own-2-390.png",
+          "application-shape-same-wrong-pair-draft-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/application-shape-same-wrong-pair-draft-1280.png",
+          "application-shape-same-wrong-pair-draft-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/application-shape-same-wrong-pair-draft-390.png",
+          "application-size-different-wrong-pair-draft-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/application-size-different-wrong-pair-draft-1280.png",
+          "application-size-different-wrong-pair-draft-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/application-size-different-wrong-pair-draft-390.png",
+          "core-own-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/core-own-1-1280.png",
+          "core-own-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/core-own-1-390.png",
+          "core-own-4-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/core-own-4-1280.png",
+          "core-own-4-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/core-own-4-390.png",
+          "faded-own-choice-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/faded-own-choice-1280.png",
+          "faded-own-choice-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/faded-own-choice-390.png",
+          "guided-durable-help-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/guided-durable-help-1280.png",
+          "guided-durable-help-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/guided-durable-help-390.png",
+          "guided-own-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/guided-own-1-1280.png",
+          "guided-own-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/guided-own-1-390.png",
+          "guided-own-2-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/guided-own-2-1280.png",
+          "guided-own-2-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/guided-own-2-390.png",
+          "guided-own-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/guided-own-3-1280.png",
+          "guided-own-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/guided-own-3-390.png",
+          "guided-own-4-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/guided-own-4-1280.png",
+          "guided-own-4-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/guided-own-4-390.png",
+          "guided-wrong-consumed-feedback-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/guided-wrong-consumed-feedback-1280.png",
+          "guided-wrong-consumed-feedback-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/guided-wrong-consumed-feedback-390.png",
+          "initial-purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/initial-purpose-1280.png",
+          "initial-purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/initial-purpose-390.png",
+          "initial-worked-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/initial-worked-1-1280.png",
+          "initial-worked-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/initial-worked-1-390.png",
+          "initial-worked-2-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/initial-worked-2-1280.png",
+          "initial-worked-2-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/initial-worked-2-390.png",
+          "initial-worked-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/initial-worked-3-1280.png",
+          "initial-worked-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/initial-worked-3-390.png",
+          "initial-worked-4-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/initial-worked-4-1280.png",
+          "initial-worked-4-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/initial-worked-4-390.png",
+          "later-own-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/later-own-1-1280.png",
+          "later-own-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/later-own-1-390.png",
+          "later-own-2-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/later-own-2-1280.png",
+          "later-own-2-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/later-own-2-390.png",
+          "later-own-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/later-own-3-1280.png",
+          "later-own-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/later-own-3-390.png",
+          "later-own-4-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/later-own-4-1280.png",
+          "later-own-4-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/later-own-4-390.png",
+          "retained-map-reloaded-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/retained-map-reloaded-1280.png",
+          "retained-map-reloaded-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/retained-map-reloaded-390.png",
+          "retained-technical-clock-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/retained-technical-clock-1280.png",
+          "retained-technical-clock-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/retained-technical-clock-390.png",
+          "reteach-purpose-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/reteach-purpose-1280.png",
+          "reteach-purpose-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/reteach-purpose-390.png",
+          "reteach-worked-1-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/reteach-worked-1-1280.png",
+          "reteach-worked-1-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/reteach-worked-1-390.png",
+          "reteach-worked-2-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/reteach-worked-2-1280.png",
+          "reteach-worked-2-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/reteach-worked-2-390.png",
+          "reteach-worked-3-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/reteach-worked-3-1280.png",
+          "reteach-worked-3-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/reteach-worked-3-390.png",
+          "reteach-worked-4-1280": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/reteach-worked-4-1280.png",
+          "reteach-worked-4-390": "reports/autonomous-52/B02/native/astra-product-native05/autonomous-52/B02/attribute-personal/shape-size/reteach-worked-4-390.png"
+        },
+        "journey": "reports/autonomous-52/B02/journeys/astra-ten/M-TH-01.json"
+      },
+      "human_review": "PENDING_UNEXECUTED",
+      "release_readiness": "NOT_RELEASE_READY",
+      "held_alternatives": [
+        "Manual/nonvisual equivalence and actual target-learner comprehension are unverified",
+        "Guided-page density and long map navigation require human review; no zero-scroll claim"
+      ]
+    },
+    {
+      "kc_id": "M-TIME-01",
+      "title_fi": "Ajan ymmärtäminen mitattavana suureena",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "M-TIME-03",
+      "title_fi": "Aikayksiköiden ja keston yhteyden ymmärtäminen",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-ACCEL-CALC",
+      "title_fi": "Keskimääräisen kiihtyvyyden laskeminen nopeuden muutoksesta ja ajasta",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-ACCEL-CONCEPT",
+      "title_fi": "Kiihtyvyyden ymmärtäminen nopeuden muutoksena ajassa",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-ACCEL-GRAPH",
+      "title_fi": "Muuttuvan liikkeen tunnistaminen liike- ja nopeuskuvaajista",
+      "mastery_role": "integration",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-ACCEL-MOTION-GRAPH",
+      "title_fi": "Muuttuvan liikkeen tunnistaminen paikka–aika- tai liikekuvaajasta",
+      "mastery_role": "process",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-ACCEL-VT-GRAPH",
+      "title_fi": "Muuttuvan liikkeen tunnistaminen nopeus–aika-kuvaajasta",
+      "mastery_role": "process",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-DATA-01",
+      "title_fi": "Mittaustulosten kokoaminen taulukkoon",
+      "mastery_role": "process",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-DIST-TIME",
+      "title_fi": "Matkan ja ajan tunnistaminen liikkeen mitattaviksi suureiksi",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-GRAPH-01",
+      "title_fi": "Mittaustulosten esittäminen kuvaajana",
+      "mastery_role": "process",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-MOTION-REF",
+      "title_fi": "Liikkeen kuvaaminen suhteessa valittuun tarkastelukohteeseen",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-NUMVALUE",
+      "title_fi": "Suureen lukuarvon erottaminen suureesta ja yksiköstä",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-QTY-01",
+      "title_fi": "Fysikaalisen suureen, lukuarvon ja yksikön erottaminen",
+      "mastery_role": "integration",
+      "status": "LEGACY_IMPLEMENTATION_REQUIRES_ADVENTURE_REVIEW",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-QTY-CONCEPT",
+      "title_fi": "Fysikaalisen suureen käsitteen ymmärtäminen",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-SPEED-CALC",
+      "title_fi": "Keskinopeuden laskeminen v=s/t",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-SPEED-CONCEPT",
+      "title_fi": "Keskinopeuden ymmärtäminen matkan ja ajan suhteena",
+      "mastery_role": "atomic",
+      "status": "LEGACY_IMPLEMENTATION_REQUIRES_ADVENTURE_REVIEW",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-SPEED-MIXED",
+      "title_fi": "Nopeuslasku sekayksiköillä yksiköt ensin yhtenäistäen",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-SPEED-REARR",
+      "title_fi": "Matkan tai ajan ratkaiseminen nopeussuhteesta",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-SPEED-UNIT",
+      "title_fi": "Nopeuden yksikön johtaminen matkan ja ajan yksiköistä",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-ST-GRAPH",
+      "title_fi": "Matka–aika-kuvaajan tulkitseminen liikkeen mallina",
+      "mastery_role": "process",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-UNIT-CONCEPT",
+      "title_fi": "Fysikaalisen yksikön roolin ymmärtäminen",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-UNIT-CONV",
+      "title_fi": "Yksikkömuunnoksen tekeminen ennen fysikaalista laskua",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "PHY79-VT-GRAPH",
+      "title_fi": "Nopeus–aika-kuvaajan tulkitseminen tasaisessa ja muuttuvassa liikkeessä",
+      "mastery_role": "process",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "SCI-ENV-DATA-01",
+      "title_fi": "Mittausten ja havaintojen kokoaminen aineistoksi",
+      "mastery_role": "process",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "SCI-ENV-OBSERVE-01",
+      "title_fi": "Havainnon tekeminen ilmiöstä tai kohteesta",
+      "mastery_role": "atomic",
+      "status": "ENGINEERING_COMPLETE",
+      "evidence": [
+        {
+          "path": "reports/autonomous-52/B03/observation-acceptance.json"
+        },
+        {
+          "path": "reports/autonomous-52/B03/OBSERVATION_CURRENT_REVIEW.md"
+        }
+      ],
+      "acceptance_scope": "Visual recognition of evidence-supported observations; not free description, general science mastery or efficacy.",
+      "human_review": "PENDING"
+    },
+    {
+      "kc_id": "SCI-ENV-PRESENT-DATA-01",
+      "title_fi": "Havaintojen esittäminen tarkoituksenmukaisella tavalla",
+      "mastery_role": "process",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "SCI-ENV-RECORD-01",
+      "title_fi": "Havaintojen taltioiminen ja esittäminen",
+      "mastery_role": "integration",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    },
+    {
+      "kc_id": "SCI-ENV-RECORD-DATA-01",
+      "title_fi": "Havaintojen taltioiminen",
+      "mastery_role": "atomic",
+      "status": "PENDING_IMPLEMENTATION",
+      "evidence": []
+    }
+  ],
+  "exports": [
+    {
+      "batch_id": "B01",
+      "cumulative_complete": 4,
+      "file": "Sammakko_52_Review_B01_285ea5ed12d74b46a18e108d5f0e5c7df9bbfb3d.zip",
+      "new_unique_complete_ids": [
+        "M-MEAS-00",
+        "M-NUM-01",
+        "M-NUM-1TO1",
+        "M-NUM-STABLE-ORDER"
+      ],
+      "sha256": "8ac0d1500cacbeedb70594cdb724c005dc53512838858ae5196ebdff8f2ada7e",
+      "source_commit": "285ea5ed12d74b46a18e108d5f0e5c7df9bbfb3d",
+      "source_tree": "28ae1a2035ff8bfe2914c7d25b4ce543cf91e741",
+      "unique_complete_ids": [
+        "M-MEAS-00",
+        "M-NUM-01",
+        "M-NUM-1TO1",
+        "M-NUM-STABLE-ORDER"
+      ],
+      "relative_path": "exports/Sammakko_52_Review_B01_285ea5ed12d74b46a18e108d5f0e5c7df9bbfb3d.zip",
+      "bytes": 190621117,
+      "verification": "tools/export_review.py completed0: cleanGit-tree/path/CRC/payload/sourcebytes/media/hash checks, outerSHA independently rechecked",
+      "implementation_milestone": "ed006ab6a3fca5945891ce9d3bd6fd46519e2c4d"
+    },
+    {
+      "batch_id": "B02",
+      "checkpoint_kind": "FOCUSED_SHARED_CAPABILITY",
+      "checkpoint_reason": "User-requested B02 WIP: current source and reports; native and broader independent acceptance pending",
+      "cumulative_complete": 5,
+      "file": "Sammakko_52_Review_B02_218e5df37e1a6b11491a81310630187d9188b5e4.zip",
+      "new_unique_complete_ids": [
+        "M-NUM-02"
+      ],
+      "next_export_after_cumulative": 10,
+      "sha256": "9663510e51cb58a5a56a8a1b72841c1dd203870e12cf24c602d6852364dd7925",
+      "source_commit": "218e5df37e1a6b11491a81310630187d9188b5e4",
+      "source_tree": "12dadb977b58cd12e9ea0f933308ebd5b4c53ff3",
+      "unique_complete_ids": [
+        "M-MEAS-00",
+        "M-NUM-01",
+        "M-NUM-02",
+        "M-NUM-1TO1",
+        "M-NUM-STABLE-ORDER"
+      ],
+      "relative_path": "exports/Sammakko_52_Review_B02_218e5df37e1a6b11491a81310630187d9188b5e4.zip",
+      "bytes": 262875114,
+      "verification": "exporter completed0: clean commit/tree/exact included source bytes, paths/CRC/media/payload hashes verified; outer SHA256 independently rehashed",
+      "scope": "USER_REQUESTED_FOCUSED_WIP:5/52complete;1499source testsPASS234unchanged inputs; latest native/broader review PENDING, not batch acceptance",
+      "continue_after_export": true
+    },
+    {
+      "batch_id": "B02",
+      "checkpoint_kind": "REGULAR_CADENCE",
+      "checkpoint_reason": null,
+      "cumulative_complete": 10,
+      "file": "Sammakko_52_Review_B02_d547e9ebfbd8ca1737abe40be34e9ace53ea773e.zip",
+      "new_unique_complete_ids": [
+        "M-MEAS-01",
+        "M-MEAS-02",
+        "M-NUM-QTY-WORD",
+        "M-NUM-WORD-NUMERAL",
+        "M-TH-01"
+      ],
+      "next_export_after_cumulative": 10,
+      "sha256": "16e486b7fdc30d4eda9f236c4c7b3a141dbe99db082f686aac6a526930410607",
+      "source_commit": "d547e9ebfbd8ca1737abe40be34e9ace53ea773e",
+      "source_tree": "f5308636a6538edf78a128aee036b4f7aca89492",
+      "unique_complete_ids": [
+        "M-MEAS-00",
+        "M-MEAS-01",
+        "M-MEAS-02",
+        "M-NUM-01",
+        "M-NUM-02",
+        "M-NUM-1TO1",
+        "M-NUM-QTY-WORD",
+        "M-NUM-STABLE-ORDER",
+        "M-NUM-WORD-NUMERAL",
+        "M-TH-01"
+      ],
+      "relative_path": "exports/Sammakko_52_Review_B02_d547e9ebfbd8ca1737abe40be34e9ace53ea773e.zip",
+      "bytes": 438650761,
+      "verification": "Exporter exit0: complete paths/CRC/payload/source/media/hash verification; independent streaming outer SHA256 matches sidecar",
+      "continue_after_export": true,
+      "next_scheduled_export_after_cumulative": 16
+    }
+  ],
+  "next_export_after_cumulative": 16,
+  "continue_after_review_export": true,
+  "last_passing_source_bound_validation": {
+    "check": "reports/autonomous-52/B03/receipts/observation-check03-binding.json",
+    "nativeFull": "reports/autonomous-52/B03/receipts/observation-native-all01-binding.json",
+    "finalUi": "reports/autonomous-52/B03/receipts/scene-native05-binding.json",
+    "acceptance": "reports/autonomous-52/B03/observation-acceptance.json",
+    "quantityNumeralAcceptance": "reports/autonomous-52/B03/quantity-numeral-acceptance.json",
+    "triadContractCheck": "reports/autonomous-52/B03/receipts/number-triad-core-check05-binding.json",
+    "triadFullRegression": "reports/autonomous-52/B03/receipts/triad-full-regression-segmented.json"
+  },
+  "open_human_release_holds": [
+    "Human teaching/target-learner understanding",
+    "Manual accessibility/nonvisual equivalence",
+    "Licensing/pilot/efficacy/full-slice review"
+  ],
+  "next_actions": [
+    "Complete final full regression and reconcile private admission boundary receipts",
+    "Complete target-learner and full nonvisual accessibility review, then decide M-NUM-03 acceptance before opening the next KC",
+    "After acceptance, complete M-ADD-01, M-MUL-01, M-DIV-02",
+    "Deliver optional taught extensions and actual saved-result reuse separately from core progression",
+    "Full/native checkpoint16, compact export, continue authorized17–22"
+  ],
+  "stop_reason": null,
+  "open_engineering_findings": [
+    {
+      "id": "TEN-LIMIT-1",
+      "status": "OPEN_SCOPED_LIMIT_NOT_BLOCKING_PRIVATE_ENGINEERING",
+      "scope": "Written Finnish word access",
+      "evidence": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+    },
+    {
+      "id": "TEN-LIMIT-2",
+      "status": "OPEN_SCOPED_LIMIT_NOT_BLOCKING_PRIVATE_ENGINEERING",
+      "scope": "Guided-page density and map depth",
+      "evidence": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+    },
+    {
+      "id": "TEN-LIMIT-3",
+      "status": "OPEN_SCOPED_LIMIT_NOT_BLOCKING_PRIVATE_ENGINEERING",
+      "scope": "Bounded small static visual consequences",
+      "evidence": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+    },
+    {
+      "id": "TEN-LIMIT-4",
+      "status": "OPEN_SCOPED_LIMIT_NOT_BLOCKING_PRIVATE_ENGINEERING",
+      "scope": "Legacy semantic-choice coupling, no new expansion",
+      "evidence": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+    },
+    {
+      "id": "TEN-LIMIT-5",
+      "status": "OPEN_SCOPED_LIMIT_NOT_BLOCKING_PRIVATE_ENGINEERING",
+      "scope": "Manual/nonvisual/learner/efficacy/licensing/pilot/release/full52 review holds",
+      "evidence": "reports/autonomous-52/B02/CURRENT_REVIEW.md"
+    }
+  ],
+  "compatibility": {
+    "scope": "Append-only raw history unchanged; prior-policy proofs preserved. R06 is an explicit authored assessment change, not a prose compatibility bridge.",
+    "evidence": [
+      "DECISIONS/ADR-0028-exact-prerequisite-prose-compatibility.md",
+      "DECISIONS/ADR-0029-equivalent-count-diagnostics.md",
+      "DECISIONS/ADR-0030-bounded-attribute-journeys.md"
+    ]
+  },
+  "resume_history": {
+    "path": "reports/autonomous-52/B01/resume-history-before-first-export.md",
+    "sha256": "c49e22cdf47bfc252fda315a129ecf310ddead36f9139b2ec3378f9c9b38606f",
+    "scope": "exact pre-consolidation chronological record; current resume supersedes its next-action instructions",
+    "before_deck_checkpoint": "reports/autonomous-52/B02/resume-history-before-deck-acceptance.md",
+    "before_simple_core_batch": {
+      "id": "B03",
+      "target_ids": [
+        "SCI-ENV-OBSERVE-01",
+        "M-TIME-01",
+        "ENV-PHY-MOTION-OBS-01",
+        "M-TIME-03",
+        "ENV-PHY-MOTION-CHANGE-01",
+        "PHY79-QTY-CONCEPT"
+      ],
+      "target_completed_count": 6,
+      "status": "FIRST_OBSERVATION_NODE_IN_PROGRESS",
+      "internal_checkpoints": [
+        "Bounded deterministic scene/proposition operation before first pack",
+        "Independent shared-contract and current learner-path review",
+        "Full regression/native and next regular source+review ZIP at16"
+      ]
+    }
+  },
+  "validation_receipts": [
+    {
+      "binding": "reports/autonomous-52/B02/receipts/astra-product-check14-binding.json"
+    },
+    {
+      "binding": "reports/autonomous-52/B02/receipts/astra-product-native06-binding.json"
+    },
+    {
+      "path": "reports/autonomous-52/B02/ten-node-acceptance.json"
+    },
+    {
+      "path": "reports/autonomous-52/B02/R09-R10-export.md"
+    }
+  ],
+  "policy_versions": {
+    "current_by_kc": {
+      "M-NUM-02": "calibration-0.8.0",
+      "PHY79-SPEED-CONCEPT": "calibration-0.7.0",
+      "M-NUM-STABLE-ORDER": "calibration-0.8.0",
+      "M-NUM-1TO1": "calibration-0.8.0",
+      "M-NUM-01": "calibration-0.8.0",
+      "M-MEAS-00": "calibration-0.8.0",
+      "PHY79-QTY-01": "calibration-0.7.0",
+      "M-MEAS-01": "calibration-0.8.0"
+    },
+    "raw_journal_formats": [
+      "0.4.0",
+      "0.5.0",
+      "0.6.0",
+      "0.7.0",
+      "0.8.0"
+    ],
+    "raw_format_note": "Accepted storage shapes are not automatic current mastery compatibility. Frozen proofs/current hashes and raw assistance holds still govern.",
+    "prerequisite_readiness": "prerequisite-readiness-v1",
+    "simulation_descriptor": "uniform-motion-v1",
+    "typed_journey": "learning_journey_v1",
+    "M-NUM-02": "calibration-0.8.0"
+  },
+  "batches": [
+    {
+      "id": "B01",
+      "status": "EXPORTED_ENGINEERING_SCOPED",
+      "target_ids": [
+        "M-MEAS-00",
+        "M-NUM-1TO1",
+        "M-NUM-STABLE-ORDER",
+        "M-NUM-01"
+      ],
+      "unique_complete_count": 4,
+      "export_source_commit": "285ea5ed12d74b46a18e108d5f0e5c7df9bbfb3d"
+    },
+    {
+      "id": "B02",
+      "status": "EXPORTED_ENGINEERING_SCOPED",
+      "target_ids": [
+        "M-NUM-WORD-NUMERAL",
+        "M-TH-01",
+        "M-MEAS-02",
+        "M-MEAS-01",
+        "M-NUM-02",
+        "M-NUM-QTY-WORD"
+      ],
+      "unique_complete_count": 10,
+      "evidence": "reports/autonomous-52/B02/ten-node-acceptance.json",
+      "export_source_commit": "d547e9ebfbd8ca1737abe40be34e9ace53ea773e"
+    }
+  ],
+  "opened_node_ids": [
+    "M-MEAS-00",
+    "M-MEAS-01",
+    "M-MEAS-02",
+    "M-NUM-01",
+    "M-NUM-02",
+    "M-NUM-03",
+    "M-NUM-1TO1",
+    "M-NUM-QTY-NUMERAL",
+    "M-NUM-QTY-WORD",
+    "M-NUM-STABLE-ORDER",
+    "M-NUM-WORD-NUMERAL",
+    "M-TH-01",
+    "PHY79-QTY-01",
+    "PHY79-SPEED-CONCEPT",
+    "SCI-ENV-OBSERVE-01"
+  ],
+  "capability_milestone_commit": "50375ac3fd3d1b3c84da168e468a369d069240e5",
+  "active_review_authority": "authority/simple-core-next-batches-v1/OVERNIGHT_22_AMENDMENT.md",
+  "historical_state": {
+    "path": "reports/autonomous-52/B02/history-before-ten/AUTONOMOUS_52_STATE.json",
+    "note": "Preserves all prior WIP, capability, finding, validation and checkpoint dispositions with their original scope."
+  },
+  "implementation_milestone_commit": "da2963e83509513763befa6bde3914dd70268395",
+  "authorized_checkpoint_target": 22,
+  "next_batch_plan": {
+    "id": "B04",
+    "target_ids": [
+      "SCI-ENV-RECORD-DATA-01",
+      "SCI-ENV-PRESENT-DATA-01",
+      "M-TIME-01",
+      "M-TIME-03",
+      "ENV-PHY-MOTION-OBS-01",
+      "ENV-PHY-MOTION-CHANGE-01"
+    ],
+    "status": "AUTHORIZED_AFTER_B03_VALIDATION"
+  }
+}

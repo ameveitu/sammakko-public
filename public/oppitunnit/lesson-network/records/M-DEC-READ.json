@@ -1,0 +1,683 @@
+{
+  "kcId": "M-DEC-READ",
+  "pagePath": "lessons/M-DEC-READ.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-DEC-READ",
+  "canonicalNode": {
+    "id": "M-DEC-READ",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Desimaalimerkintä",
+    "title": "Desimaaliluvun lukeminen",
+    "short_description": "Desimaaliluvun lukeminen",
+    "source_basis": "pedagogically_derived",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S2",
+      "OPH-MATH-VL6-ASSESSMENT-SUPPORT"
+    ],
+    "evidence_notes": "v0.2-refaktorissa erotettu noodista M-DEC-04 itsenäiseksi evidenssikohteeksi.",
+    "status": "candidate_refactored",
+    "node_kind": "representation",
+    "relations": [
+      {
+        "id": "M-DEC-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-DEC-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-DEC-02",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-DEC-02 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-DEC-03",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-DEC-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-DEC-01",
+          "M-DEC-02",
+          "M-DEC-03"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "process",
+    "split_from": "M-DEC-04",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Desimaalimerkintä"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-DEC-01",
+      "targetKCId": "M-DEC-READ",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DEC-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-DEC-02",
+      "targetKCId": "M-DEC-READ",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DEC-02 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-DEC-03",
+      "targetKCId": "M-DEC-READ",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DEC-03 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-DEC-READ",
+      "targetKCId": "M-DEC-04",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DEC-04 on v0.2:ssa integraationoodi; atominen alitaito M-DEC-READ vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-DEC-01",
+        "M-DEC-02",
+        "M-DEC-03"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-DEC-READ/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "Oak National Academy — Read and write numbers with up to3 decimal places",
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/use-knowledge-of-decimals-to-solve-problems-in-different-contexts-length/lessons/read-and-write-numbers-with-up-to-3-decimal-places",
+        "accessed": "2026-10-29",
+        "read": "Actual primaryHTML learning/keypoints/misconception/teacher tip and licence416–448, public quiz text corroborates multiple equivalent parts. No slides/video/PDF downloaded. One shared cluster search, not three separate searches.",
+        "adopted": "Connect the same whole, decimal place chart and number words; teach zero placeholders and equivalent units, not reading by string length alone.",
+        "rejected": "No English decimal point for Finnish display, compulsory speech, imported Year5 mandate, copied exercises or inferred learner efficacy.",
+        "licence": "Inspected page states ©Oak2025 OGL3 except otherwise stated. No source prose/art/slides copied; original Finnish examples/diagrams/code."
+      },
+      {
+        "title": "NCETM1.24 — Composition and calculation: hundredths and thousandths",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-124-composition-and-calculation-hundredths-and-thousandths/",
+        "accessed": "2026-10-29",
+        "read": "ActualHTML introduction and teachingpoints1–8 lines61–77. CopyrightHTML55–57 independently inspected at https://www.ncetm.org.uk/copyright/. Guide/representation downloads not opened.",
+        "adopted": "Fixed-whole equal partitions and additive place-value composition; ten hundredths make a tenth and thousandths extend the same structure.",
+        "rejected": "Column algorithms, rounding and timed mastery claims outside these three boundaries; no mandatory one-method response.",
+        "licence": "NCETM default Crown/OGL subject to attribution and named-author/third-party exceptions. Conceptual comparison only; no protected figures/long text copied."
+      },
+      {
+        "title": "Kielitoimiston ohjepankki — Luvut ja numerot: desimaaliluvut",
+        "url": "https://kielitoimistonohjepankki.fi/ohje/luvut-ja-numerot-desimaaliluvut/",
+        "accessed": "2026-10-29",
+        "read": "ActualHTML10–43 Finnish decimal notation/place labels and footer91–94. Linked licence opened: https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fi .",
+        "adopted": "Finnish display uses comma; whole part and decimal part remain distinct. Digital point input is a permitted input accommodation, not the recommended Finnish display convention.",
+        "rejected": "No fullsource reproduction, translation/adaptation of protected prose or claim that language guidance proves teaching effectiveness.",
+        "licence": "©Kotimaisten kielten keskus2026; linked CC BY-NC-ND4.0. No reproduction/derivative permission assumed. Only notation facts corroborated; lesson prose, examples and SVG are original."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@c2b0d672d9499221b05f77a9a53290bb3e0d85870b5411a4d7d23609b75bb4fa",
+        "note": "B12 author source draft; Euler different-author and main actual139 native pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@356896b58dbd0faadcdb2cb2ee367b64f68086b6561c154779588a09f67c4a92",
+        "note": "B12 author source draft; Euler different-author and main actual139 native pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+        "note": "B12 author terminology-only r2; Descartes narrow independent delta and current compiled native pending. Prior r1 review remains historical."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+        "note": "B12 different-author exact current source/native scope closed. Full fileSET/SHA before metadata and preserved failures/closures: evidence/production/B12/review-bindings-before-metadata.json. No human/release approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@c2b0d672d9499221b05f77a9a53290bb3e0d85870b5411a4d7d23609b75bb4fa",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@356896b58dbd0faadcdb2cb2ee367b64f68086b6561c154779588a09f67c4a92",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+        "note": "No human or learner review performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+        "note": "Not performed. Synthetic technical review is not target-learner validation/efficacy."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-DEC-READ",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "lesson.css",
+        "sha256": "b713ace09ffa544fddf3a02bf1994ba2788a1ef96b27c839ab6149a264cc9e55"
+      },
+      {
+        "path": "initial.svg",
+        "sha256": "968fe672c341389dbc27d39168a193c6baa2003930b532c2dba4115275dda976"
+      },
+      {
+        "path": "example.svg",
+        "sha256": "968fe672c341389dbc27d39168a193c6baa2003930b532c2dba4115275dda976"
+      },
+      {
+        "path": "transfer.svg",
+        "sha256": "e487f46e411d0b7f901ae3b0922365cc98a4daa7565f114ff18535f99576b914"
+      },
+      {
+        "path": "whole.svg",
+        "sha256": "89d9c222298182f49773ccce9f1fc1b144e8af9e95fc86311c6c5ba37361f3ee"
+      },
+      {
+        "path": "shared/loikka/map.png",
+        "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+      }
+    ],
+    "research": [
+      {
+        "title": "Oak National Academy — Read and write numbers with up to3 decimal places",
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/use-knowledge-of-decimals-to-solve-problems-in-different-contexts-length/lessons/read-and-write-numbers-with-up-to-3-decimal-places",
+        "accessed": "2026-10-29",
+        "read": "Actual primaryHTML learning/keypoints/misconception/teacher tip and licence416–448, public quiz text corroborates multiple equivalent parts. No slides/video/PDF downloaded. One shared cluster search, not three separate searches.",
+        "adopted": "Connect the same whole, decimal place chart and number words; teach zero placeholders and equivalent units, not reading by string length alone.",
+        "rejected": "No English decimal point for Finnish display, compulsory speech, imported Year5 mandate, copied exercises or inferred learner efficacy.",
+        "licence": "Inspected page states ©Oak2025 OGL3 except otherwise stated. No source prose/art/slides copied; original Finnish examples/diagrams/code."
+      },
+      {
+        "title": "NCETM1.24 — Composition and calculation: hundredths and thousandths",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-124-composition-and-calculation-hundredths-and-thousandths/",
+        "accessed": "2026-10-29",
+        "read": "ActualHTML introduction and teachingpoints1–8 lines61–77. CopyrightHTML55–57 independently inspected at https://www.ncetm.org.uk/copyright/. Guide/representation downloads not opened.",
+        "adopted": "Fixed-whole equal partitions and additive place-value composition; ten hundredths make a tenth and thousandths extend the same structure.",
+        "rejected": "Column algorithms, rounding and timed mastery claims outside these three boundaries; no mandatory one-method response.",
+        "licence": "NCETM default Crown/OGL subject to attribution and named-author/third-party exceptions. Conceptual comparison only; no protected figures/long text copied."
+      },
+      {
+        "title": "Kielitoimiston ohjepankki — Luvut ja numerot: desimaaliluvut",
+        "url": "https://kielitoimistonohjepankki.fi/ohje/luvut-ja-numerot-desimaaliluvut/",
+        "accessed": "2026-10-29",
+        "read": "ActualHTML10–43 Finnish decimal notation/place labels and footer91–94. Linked licence opened: https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fi .",
+        "adopted": "Finnish display uses comma; whole part and decimal part remain distinct. Digital point input is a permitted input accommodation, not the recommended Finnish display convention.",
+        "rejected": "No fullsource reproduction, translation/adaptation of protected prose or claim that language guidance proves teaching effectiveness.",
+        "licence": "©Kotimaisten kielten keskus2026; linked CC BY-NC-ND4.0. No reproduction/derivative permission assumed. Only notation facts corroborated; lesson prose, examples and SVG are original."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@c2b0d672d9499221b05f77a9a53290bb3e0d85870b5411a4d7d23609b75bb4fa",
+        "note": "B12 author source draft; Euler different-author and main actual139 native pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@c2b0d672d9499221b05f77a9a53290bb3e0d85870b5411a4d7d23609b75bb4fa",
+        "note": "B12 author source draft; Euler different-author and main actual139 native pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@c2b0d672d9499221b05f77a9a53290bb3e0d85870b5411a4d7d23609b75bb4fa",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@356896b58dbd0faadcdb2cb2ee367b64f68086b6561c154779588a09f67c4a92",
+        "note": "B12 author source draft; Euler different-author and main actual139 native pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@356896b58dbd0faadcdb2cb2ee367b64f68086b6561c154779588a09f67c4a92",
+        "note": "B12 author source draft; Euler different-author and main actual139 native pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@356896b58dbd0faadcdb2cb2ee367b64f68086b6561c154779588a09f67c4a92",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+        "note": "B12 author terminology-only r2; Descartes narrow independent delta and current compiled native pending. Prior r1 review remains historical."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+        "note": "B12 author terminology-only r2; Descartes narrow independent delta and current compiled native pending. Prior r1 review remains historical."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+        "note": "No human or learner review performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+        "note": "B12 different-author exact current source/native scope closed. Full fileSET/SHA before metadata and preserved failures/closures: evidence/production/B12/review-bindings-before-metadata.json. No human/release approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+        "note": "B12 different-author exact current source/native scope closed. Full fileSET/SHA before metadata and preserved failures/closures: evidence/production/B12/review-bindings-before-metadata.json. No human/release approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+        "note": "Not performed. Synthetic technical review is not target-learner validation/efficacy."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-DEC-READ",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "inventory": {
+        "definition": "decimals.ts234–302",
+        "objective": "Communicate decimal value through whole/fraction meaning and Finnish reading. Frozen role process preserved.",
+        "families": [
+          "tenths",
+          "hundredths",
+          "unit",
+          "fromWords",
+          "transfer"
+        ],
+        "demos": [
+          "3,7 read",
+          "3,07 read",
+          "2,45 read"
+        ],
+        "media": "decanim.ts174–224 readScene whole/fraction grouping, finalwrittenplace unit and caption.",
+        "hintsTransfer": "Trailing digits as one count, placeholder0; sort names from1/2/3decimal places, reversefromWords recognition, euro/cent reading.",
+        "registry": "Own AUDIT_REV; explicit owngoal; no familyDECL or SIMS override. Features/goals/world and original response types read.",
+        "audit": "LESSON_AUDIT123,697–699 historical only. COVERAGE omits unit and says2demos vs actual3.",
+        "reconciliation": "Replace onlyrecognition with independently constructed whole/count/unit meaning. Explicitly accept equivalent names for3,500/3,5. Do not force all valid readings into lastwrittenplace name; grammar/speech/audio/fluency not certified by three-field local response. Text-only and optional adult reading remain available."
+      },
+      "sourceHashes": {
+        "authority/production-181-v2/lite/src/content/decimals.ts": "7ada1da383cb235ec320e4f4da2150c79ddb02fcd5334874a5c59fd05ae8c21e",
+        "authority/production-181-v2/lite/src/content/decanim.ts": "714c5d2eccee47d74d6ff7d67c04de3a5ccda3cc2b1551005396773d36af4d24",
+        "authority/production-181-v2/lite/src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+        "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "authority/production-181-v2/lite/src/content/features.ts": "8ddef5451be9d011297f5d32b1ab0d869a1e132d608bd30f679b8e2d900884c5",
+        "authority/production-181-v2/lite/src/content/world.ts": "c350e4f517d6aa23729ee958ec8b933abc828da41956e12a9da04a49b94e4704",
+        "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da",
+        "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+        "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2",
+        "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+        "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+        "evidence/production/B11/AUTHORING_HOST_CLARIFICATION_FI.md": "9cf96652028cf9f4a78589b283d9a4dc5981e993ad2300f539f1028aa6f86c7d"
+      },
+      "authority": "Actual executable NodeSpec/media/families/audit preferred over incomplete COVERAGE. Existing Lite is unapproved comparison material, not evidence of child efficacy."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-DEC-READ",
+        "subject": "mathematics",
+        "grade_band": "3-6",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Desimaalimerkintä",
+        "title": "Desimaaliluvun lukeminen",
+        "short_description": "Desimaaliluvun lukeminen",
+        "source_basis": "pedagogically_derived",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL3-6-S2",
+          "OPH-MATH-VL6-ASSESSMENT-SUPPORT"
+        ],
+        "evidence_notes": "v0.2-refaktorissa erotettu noodista M-DEC-04 itsenäiseksi evidenssikohteeksi.",
+        "status": "candidate_refactored",
+        "node_kind": "representation",
+        "relations": [
+          {
+            "id": "M-DEC-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-DEC-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-DEC-02",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-DEC-02 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-DEC-03",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-DEC-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-DEC-01",
+              "M-DEC-02",
+              "M-DEC-03"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "process",
+        "split_from": "M-DEC-04",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Desimaalimerkintä"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-DEC-01",
+            "M-DEC-02",
+            "M-DEC-03"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "role": "process",
+      "gradeBand": "3-6",
+      "teacherObjective": "Harjoittelee lukemisen merkityksen muodostamista, kokonaisosa, osien määrä ja yksikkö; kolme kenttää eivät ole puheen tai koko lukuprosessin arvio.",
+      "childGoal": "Luen luvun niin, että osien koko säilyy.",
+      "additionalHardGates": [],
+      "scope": "Nonnegative0..9,999, exact integer thousandths. Display Finnishcomma. Rawplainnumberinput max128characters; normalized atmost3nonzero decimal places, harmless extra zeros accepted. No approximation, exponent, fraction expression or arbitrary natural language parser.",
+      "sourceVsDesign": "Frozen Finnish curriculum refs inherited, not freshly OPH-revalidated. Primary cluster teaching/language sources compared once2026-10-29. Sequence, controlled steps, examples, finite inputgrammar and checks project-authored, no efficacy claim.",
+      "evidenceLimits": "No formal rubric/personal mastery state. READ checked meaningfields not fulloral reading; WRITE typed production not fullprocess/dictation/handwriting validation. No audio, names, compulsory modelclicks or speed gate. Teacher/offline observation suggested, not performed."
+    },
+    "extensions": {
+      "productionBatch": "B12",
+      "author": "Carver",
+      "simulationType": "manual_deterministic_place_value_states_no_time_or_physics_claim",
+      "mascotProvenance": "Actual supplied PNG byte-exact; generated raster reinterpretation, not newly hand-drawn original. Not inside a measured diagram.",
+      "sharedCSSChanges": false,
+      "interaction": "Bothinput/change; current premise/fields reread and context drawn before Check. Dependent semantic edits retire verdict; independent model/help invariant. Root-ownedWeakMap, pausedreset, remountinitialenables and dispose3listeners; no timers/RAF/network/storage.",
+      "independentReview": "pending_Euler",
+      "humanReview": "not_performed",
+      "authorQA": "Own pure/adversarial/source and isolated fullshell preview only; main actual139/native and different-author review pending."
+    },
+    "contentHash": "438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+    "contentRevision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@c2b0d672d9499221b05f77a9a53290bb3e0d85870b5411a4d7d23609b75bb4fa",
+          "note": "B12 author source draft; Euler different-author and main actual139 native pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@356896b58dbd0faadcdb2cb2ee367b64f68086b6561c154779588a09f67c4a92",
+          "note": "B12 author source draft; Euler different-author and main actual139 native pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+          "note": "B12 author terminology-only r2; Descartes narrow independent delta and current compiled native pending. Prior r1 review remains historical."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+          "note": "B12 different-author exact current source/native scope closed. Full fileSET/SHA before metadata and preserved failures/closures: evidence/production/B12/review-bindings-before-metadata.json. No human/release approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@c2b0d672d9499221b05f77a9a53290bb3e0d85870b5411a4d7d23609b75bb4fa",
+          "note": "No human/learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@356896b58dbd0faadcdb2cb2ee367b64f68086b6561c154779588a09f67c4a92",
+          "note": "No human/learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+          "note": "No human or learner review performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+          "note": "Not performed. Synthetic technical review is not target-learner validation/efficacy."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@c2b0d672d9499221b05f77a9a53290bb3e0d85870b5411a4d7d23609b75bb4fa",
+          "note": "B12 author source draft; Euler different-author and main actual139 native pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@356896b58dbd0faadcdb2cb2ee367b64f68086b6561c154779588a09f67c4a92",
+          "note": "B12 author source draft; Euler different-author and main actual139 native pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+          "note": "B12 author terminology-only r2; Descartes narrow independent delta and current compiled native pending. Prior r1 review remains historical."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@438d0f43beb4d6280b43da3f344cdc23c916877e1b47b6f07c7caea0a828d0dd",
+          "note": "B12 different-author exact current source/native scope closed. Full fileSET/SHA before metadata and preserved failures/closures: evidence/production/B12/review-bindings-before-metadata.json. No human/release approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "ce4a1af5a177dfe4249f32f87c6092583dc619f8e59c4301c2c8dafe8a4f4e36",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "ce4a1af5a177dfe4249f32f87c6092583dc619f8e59c4301c2c8dafe8a4f4e36",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

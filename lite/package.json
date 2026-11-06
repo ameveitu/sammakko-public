@@ -1,0 +1,30 @@
+{
+  "name": "sammakko-lite",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "check": "tsc --noEmit && vitest run",
+    "e2e": "playwright test",
+    "ci": "tsc --noEmit && vitest run && vite build && cmp dist/lite-runtime.json public/lite-runtime.json && playwright test",
+    "assets:saaristo": "node tools/sync-saaristo-assets.mjs",
+    "catalog:check": "node tools/build-journey.mjs --check",
+    "expedition:status": "node tools/expedition-status.mjs",
+    "predev": "npm run assets:saaristo && npm run assets:characters",
+    "prebuild": "npm run assets:saaristo && npm run assets:characters && npm run catalog:check",
+    "assets:characters": "node tools/sync-character-models.mjs",
+    "finale:render": "node tools/render-finale.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "typescript": "6.0.3",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  }
+}

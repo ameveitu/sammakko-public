@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "reviewed_commit": "d475715339169463354e91f260c8c305db91a50a",
+  "source_paths_relative_to": "sammakko-lite-181",
+  "evidence_paths_relative_to": "evidence unless otherwise stated",
+  "priority_definitions": {
+    "P1": "Fix before the stated affected pilot/upgrade use",
+    "P2": "Bounded correctness, reporting or usability repair"
+  },
+  "findings": [
+    {
+      "id": "L181-01",
+      "priority": "P1",
+      "title": "Expanded-form generator crashes on equal digits",
+      "status": "confirmed",
+      "observed": "Seed 1529 generates 7777; every digit swap preserves the value, find returns undefined, and destructuring throws. A 100000-seed probe found 34 crashes. Production map navigation reproduced the TypeError.",
+      "reproduction": {
+        "kc": "M-PLACE-05",
+        "phase": "independent",
+        "seed": 1529,
+        "generated_number": 7777
+      },
+      "minimum_correction": "Guarantee a valid non-equivalent distractor fallback and explicitly test equal-digit boundaries 1111 through 9999. Preserve the old seed 127 fix.",
+      "sources": [
+        "src/content/written.ts:67"
+      ],
+      "evidence": [
+        "content-place-crash.mjs",
+        "browser-181-targeted.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-02",
+      "priority": "P1",
+      "title": "Numerically valid alternatives are rejected",
+      "status": "confirmed",
+      "observed": "M-TH-08 seed 27 offers 4:2 and 4−2 for half of 4; seed 64 offers 3×6 and 2×3+2×6 for 18 cells. The alternate correct numerical result is rejected by both checker and actual lesson UI.",
+      "reproduction": {
+        "kc": "M-TH-08",
+        "phase": "independent",
+        "cases": [
+          {
+            "seed": 27,
+            "tag": "fracDiv",
+            "alternate": "4 − 2"
+          },
+          {
+            "seed": 64,
+            "tag": "areaMul",
+            "alternate": "2 × 3 + 2 × 6"
+          }
+        ]
+      },
+      "minimum_correction": "Prevent numeric collisions, accept justified alternatives, or explicitly ask for structural modeling with truthful feedback about numerical equivalence.",
+      "sources": [
+        "src/content/thinking.ts:578",
+        "src/content/thinking.ts:586"
+      ],
+      "evidence": [
+        "content-domain-probe.json",
+        "browser-181-targeted.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-03",
+      "priority": "P1",
+      "title": "Novice duration and motion teaching remains static-first",
+      "status": "confirmed",
+      "observed": "All 21 mapped demos are unchanged and have zero shared-player steps. Random simulation shares do not guarantee an experiential introduction. Static-only M-TIME-03 completion and a static-only guided propeller grant were reproduced.",
+      "reproduction": {
+        "kc": "M-TIME-03",
+        "guided_seeds": [
+          1,
+          5
+        ],
+        "independent_seeds": [
+          1,
+          5,
+          2
+        ],
+        "transfer_seed": 1,
+        "result": "checked:true; no shared-player items",
+        "production_game_repro": "guided seed1 twice -> propeller part"
+      },
+      "minimum_correction": "Author explicit novice event/replay/explanation/practice sequences with meaningful family tags; preserve direct expert entry and purposeful later static tasks. Repair retained incompatible graph pairs and retrieval dispatch.",
+      "sources": [
+        "src/content/index.ts:36",
+        "src/content/measure.ts:264",
+        "src/content/science.ts:262",
+        "src/content/physics.ts:217",
+        "src/ui/lesson.ts:157",
+        "src/ui/lesson.ts:217"
+      ],
+      "evidence": [
+        "motion-game-audit-results.json",
+        "browser-181-complete-game.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-04",
+      "priority": "P1",
+      "title": "Oval geometry and run ending misrepresent the asked journey",
+      "status": "confirmed",
+      "observed": "Equal model lap quarters render as 107.2 px and 165.886 px, causing apparent speed changes. No separate cumulative-distance ruler is rendered. All3/6-lap SPEED-MIXED scenarios stop at60s although their correct durations are120–300s.",
+      "reproduction": {
+        "kc": "PHY79-SPEED-MIXED",
+        "fixture": "10m/s,400m lap,3 laps",
+        "expected_seconds": 120,
+        "shown_end_seconds": 60,
+        "shown_distance_m": 600
+      },
+      "minimum_correction": "Use actual drawn arc-length parameterization, add unrolled cumulative distance and show a physically complete asked journey or an explicitly partial preview with a correct full-journey representation.",
+      "sources": [
+        "src/engine/motion.ts:76",
+        "src/ui/motion.ts:71",
+        "src/content/motionsims.ts:141"
+      ],
+      "evidence": [
+        "motion-game-audit-results.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-05",
+      "priority": "P1",
+      "title": "Notebook saves an unperformed trial and immediately shows stale state",
+      "status": "confirmed",
+      "observed": "Choosing 4 m/s and recording at 0 s saves20m/5s before Start. Immediate notebook says no runs because it uses stale game state. Navigation/reload reveals the fabricated result. No KC attempt is minted by this record.",
+      "reproduction": {
+        "path": "installed chassis -> test track ->4m/s -> record without Start",
+        "watch": "0s",
+        "stored": {
+          "v": 4,
+          "L": 20,
+          "secs": 5
+        }
+      },
+      "minimum_correction": "Save actual completed trial snapshots. Label predictions separately. Prevent never-started/partial/reset runs from masquerading as observations and refresh notebook immediately.",
+      "sources": [
+        "src/ui/paja.ts:258",
+        "src/ui/paja.ts:315"
+      ],
+      "evidence": [
+        "browser-181-game.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-06",
+      "priority": "P1",
+      "title": "Recognition-only paths still earn production claims",
+      "status": "confirmed",
+      "observed": "Six strengthened KCs can reach checked without their production family. family.limit is not consumed by evidence derivation or adult/export outcomes. Expression formation can award writing ability after four multiple choices.",
+      "reproduction": {
+        "kc": "M79-EXPR-FORM",
+        "independent_seeds": [
+          1,
+          7,
+          2
+        ],
+        "transfer_seed": 1,
+        "all_task_kinds": "choice",
+        "result": "checked:true",
+        "other_confirmed": [
+          "M79-EQ1-FORM",
+          "M-DATA-02",
+          "M-TH-07",
+          "M-WRADD",
+          "M79-FRAC-DIV"
+        ]
+      },
+      "minimum_correction": "Require a relevant bounded production check before the production claim, or expose the narrower observed outcome in reward, adult summary and export. Preserve lightweight progression and raw attempts.",
+      "sources": [
+        "src/engine/evidence.ts:104",
+        "src/content/families.ts:85",
+        "src/main.ts:196"
+      ],
+      "evidence": [
+        "state-focused-results.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-07",
+      "priority": "P1",
+      "title": "Zero-warning family coverage misses real demands",
+      "status": "confirmed",
+      "observed": "Coordinate plotting is undeclared in a symmetry transfer; a centimetre factor only in post-answer feedback is marked supplied; division/unit demand detection misses120:60. Broad prefix matching and unrelated supplied strings can falsely clear requirements.",
+      "reproduction": {
+        "cases": [
+          {
+            "kc": "M-SYM-01",
+            "phase": "transfer",
+            "seed": 0
+          },
+          {
+            "kc": "M-DEC-WRITE",
+            "phase": "transfer",
+            "seed": 0
+          },
+          {
+            "kc": "M-UNIT-05",
+            "phase": "independent",
+            "seed": 1,
+            "tag": "back"
+          }
+        ]
+      },
+      "minimum_correction": "Use explicit instance/domain contracts, before-answer supplied facts, demonstrated outcomes and relevant in-scope support. Distinguish context_knowledge from co-taught. Supplement contracts with detectors; report detector output separately from semantic coverage.",
+      "sources": [
+        "src/content/families.ts",
+        "src/content/features.ts:74",
+        "src/content/audit.ts:55"
+      ],
+      "evidence": [
+        "content-domain-probe.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-08",
+      "priority": "P1",
+      "title": "First migration loses old possessions from expanded chapters",
+      "status": "confirmed",
+      "observed": "The old177 eligible prize is recalculated using new181 chapter membership. Completed mitat, veistamo and piirakka prizes disappear when new KCs are unknown. Raw attempts remain; persisted181 parts were not lost in this probe.",
+      "reproduction": {
+        "old_revision": "lite177-2026-10-27",
+        "fixture": "all old chapter members checked; no game field",
+        "affected_prizes": [
+          "prize:mitat",
+          "prize:veistamo",
+          "prize:piirakka"
+        ]
+      },
+      "minimum_correction": "Snapshot historical ownership under the old eligibility contract. Preserve assisted historical progress distinctly. Do not invent new mission or KC evidence.",
+      "sources": [
+        "src/game/index.ts:20",
+        "src/content/world.ts:65",
+        "src/engine/store.ts:202"
+      ],
+      "evidence": [
+        "state-focused-results.json"
+      ],
+      "gate": "Before upgrading existing177 saves"
+    },
+    {
+      "id": "L181-09",
+      "priority": "P2",
+      "title": "Adult success ratio mixes neutral process omissions and familiar replay",
+      "status": "confirmed",
+      "observed": "Actual counting UI with two earlier independent successes, one neutral correct-total/process-incomplete response and its familiar retry displays3/4 independent. Engine streak correctly stays2.",
+      "reproduction": {
+        "kc": "M-NUM-1TO1",
+        "seed": 7,
+        "phase": "independent",
+        "math": true,
+        "proc": false,
+        "followup_replay": true,
+        "adult_text": "3/4 itsenäistä"
+      },
+      "minimum_correction": "Aggregate fresh assessment separately from process-incomplete and familiar replay attempts.",
+      "sources": [
+        "src/main.ts:239"
+      ],
+      "evidence": [
+        "count-procedure-browser-results.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-10",
+      "priority": "P2",
+      "title": "Assisted mission completion may be labelled direct",
+      "status": "confirmed",
+      "observed": "Historical checked direct KC plus any correct current non-replay attempt can classify a guided demo/hint success as direct after quick failures.",
+      "reproduction": {
+        "mission": "m-runko",
+        "direct_kc": "M-MUL-01",
+        "prior_checked": true,
+        "during_mission": [
+          "two quick failures",
+          "guided correct with demo and hint"
+        ],
+        "observed_route": "direct"
+      },
+      "minimum_correction": "Record the actual route and help used in the current mission while retaining the same appropriate reward.",
+      "sources": [
+        "src/game/state.ts:102",
+        "src/ui/lesson.ts:311"
+      ],
+      "evidence": [
+        "state-focused-results.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-11",
+      "priority": "P2",
+      "title": "Tester deferral events use the real learner stream",
+      "status": "confirmed",
+      "observed": "Synthetic deferral is ignored by store.deferred; a real deferral leaks into tester recommendations. Real attempts are not overwritten.",
+      "reproduction": {
+        "tester": true,
+        "synthetic_defer_result": false,
+        "real_only_defer_result": true
+      },
+      "minimum_correction": "Apply the active real/test stream predicate to events as well as attempts.",
+      "sources": [
+        "src/engine/store.ts:221"
+      ],
+      "evidence": [
+        "state-focused-results.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-12",
+      "priority": "P2",
+      "title": "Direct workshop entry omits storage notices",
+      "status": "confirmed",
+      "observed": "The map/adult flow warns about nonpersistent or repaired storage; the new workshop shell only renders its tester notice. Implementation report already acknowledges this.",
+      "reproduction": {
+        "path": "#paja",
+        "condition": "writes unavailable or save repaired"
+      },
+      "minimum_correction": "Reuse the common storage notice on workshop/relevant game surfaces; make backup wording conditional on actual backup success.",
+      "sources": [
+        "src/main.ts:71",
+        "src/ui/paja.ts:351"
+      ],
+      "evidence": [
+        "REGRESSION_RECONCILIATION.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-13",
+      "priority": "P2",
+      "title": "Arrival-time domain exceeds basic-clock support and has invalid distractors",
+      "status": "confirmed",
+      "observed": "TIME02 teaches00/30 minutes with hours1–12. UNIT05 arrival transfer uses35/40/45/50-minute starts, rollover and hours up to15. Both wrong options always have invalid minutes65–95. UNIT05 has one relevant rollover demo, so the context is not wholly untaught.",
+      "reproduction": {
+        "kc": "M-UNIT-05",
+        "phase": "transfer",
+        "seed": 0,
+        "question": "10.35 +30min",
+        "correct": "11.05",
+        "wrong": [
+          "10.65",
+          "11.65"
+        ]
+      },
+      "minimum_correction": "Teach and declare the bounded actual clock context; use plausible valid clock-time distractors. No additional canonical time KC was established as necessary.",
+      "sources": [
+        "src/content/added181.ts:188",
+        "src/content/saari1.ts:500",
+        "src/content/saari1.ts:509"
+      ],
+      "evidence": [
+        "content-domain-probe.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-14",
+      "priority": "P2",
+      "title": "Separate SVG scaling weakens the intended size comparison",
+      "status": "confirmed",
+      "observed": "Nominal32/44/56 shapes are independently normalized to width100%. At390 and 1280px, each SVG renders300px tall on its own row. The contrast is largely normalized and requires scrolling; shapes are not literally identical in visible size.",
+      "reproduction": {
+        "kc": "M-TH-02",
+        "phase": "transfer",
+        "seed": 0,
+        "viewports": [
+          390,
+          1280
+        ]
+      },
+      "minimum_correction": "Use a shared reference coordinate system/scale for the compared shapes, with all relevant examples visible together where practical.",
+      "sources": [
+        "src/content/thinking.ts:268",
+        "src/content/parts.ts:115",
+        "src/ui/style.css:238"
+      ],
+      "evidence": [
+        "browser-181-targeted.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    },
+    {
+      "id": "L181-15",
+      "priority": "P2",
+      "title": "A drive-to-check-time task lacks a time instrument",
+      "status": "confirmed",
+      "observed": "The SPEED-REARR simulation asks the learner to check by driving but shows only track/ruler/speedometer, without a stopwatch or timeline. Its arithmetic remains answerable.",
+      "reproduction": {
+        "kc": "PHY79-SPEED-REARR",
+        "family": "sim"
+      },
+      "minimum_correction": "Provide a usable time readout/reveal for the promised verification, optionally after the prediction.",
+      "sources": [
+        "src/content/motionsims.ts:130"
+      ],
+      "evidence": [
+        "motion-game-audit-results.json"
+      ],
+      "gate": "Before the relevant pedagogical pilot path"
+    }
+  ],
+  "observations_not_defects": [
+    {
+      "id": "UX-01",
+      "observation": "Lentopaja entry is below three world cards",
+      "proposal": "Expose workshop and direct-topic choices early; test discoverability"
+    },
+    {
+      "id": "UX-02",
+      "observation": "Construction rewards are partly connected to generic lesson completion",
+      "proposal": "Add one or two direct measured/built world actions, not181 bespoke games"
+    },
+    {
+      "id": "UX-03",
+      "observation": "Flight auto-arrives after about 5.61/7.64 s even without input",
+      "proposal": "Test control understanding and wing-choice salience; safe arrival is intentional"
+    }
+  ]
+}

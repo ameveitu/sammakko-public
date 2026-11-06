@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "kcId": "ENV-PHY-MOTION-OBS-01",
+  "revision": 13,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "reference.svg",
+      "sha256": "dd9f8a0262900e87d06ee2f34de94e180603cf1a500966f970a92dcde714b8c4"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "8f4d2e5e58244e4096c99080a54cc03eaa8c2e433f2ae70ad57b55e7b6e1708b"
+    }
+  ],
+  "research": [
+    {
+      "title": "Opetushallitus — Perusopetuksen opetussuunnitelman perusteet2014, ympäristöoppi1–2",
+      "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+      "retrieval": "Targeted extracted text at PDF130–132, printed131–133: T5 questions, T6 observations and presentation, S4 movement. Original2014 text, not current amendment certification.",
+      "use": "Frozen bundled ENV12 references; concrete observation and varied representations.",
+      "usage": "Normative comparison; original Finnish prose and SVG, no external figures or relicensing claim.",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "Department for Education — Science programmes of study, KS1 working scientifically",
+      "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study",
+      "retrieval": "KS1 introduction and working-scientifically requirements/guidance read in preparation on2026-10-29.",
+      "use": "Concrete enquiry with supported recording and communication; comparable only, not Finnish normative authority.",
+      "usage": "Government text linked/paraphrased only; no external figures/worksheets reused.",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "Primary Science Teaching Trust — Enquiry Skills",
+      "url": "https://pstt.org.uk/resources/enquiry-skills/",
+      "retrieval": "HTML overview, skill descriptions and usage rules read; linked PDF not read.",
+      "use": "Observe, record and interpret/communicate are distinct actions.",
+      "usage": "PSTT2019 symbols have educational-use/credit and modification restrictions. No symbols or source artwork imported.",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "Primary Connections — Making things move, Foundation lesson1",
+      "url": "https://primaryconnections.org.au/teaching-sequences/foundation/make-it-move/lesson-1-making-things-move",
+      "retrieval": "Targeted HTML learning goals, introducing movement, core ideas and journal/table links read; linked downloads not read.",
+      "use": "Begin with experienced/observed change; adapt participation. Journal/table relationship also informs data lessons. Broader force/body/shape activities omitted.",
+      "usage": "Ideas compared only; no figures/resource sheets/prose copied and no broad licence or efficacy assumption.",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@569b6b192b0db82577d9699d96bd690f3595db21eea5a72dc72e6398569509df",
+      "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/observe-independent-review.json. Human/learner efficacy and release approval remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@569b6b192b0db82577d9699d96bd690f3595db21eea5a72dc72e6398569509df",
+      "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/observe-independent-review.json. Human/learner efficacy and release approval remain pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@569b6b192b0db82577d9699d96bd690f3595db21eea5a72dc72e6398569509df",
+      "note": "No actual human or learner validation has occurred."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@42653133ba25471da8a366b6ec7140925788c4918907685705cbcc242fb268ae",
+      "note": "LR04-B01: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@42653133ba25471da8a366b6ec7140925788c4918907685705cbcc242fb268ae",
+      "note": "LR04-B01: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@42653133ba25471da8a366b6ec7140925788c4918907685705cbcc242fb268ae",
+      "note": "LR04-B01: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@06bb7a0d18640c544a999cc58a168fcea54af057f0421100ea90e309b16aafd7",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@06bb7a0d18640c544a999cc58a168fcea54af057f0421100ea90e309b16aafd7",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@06bb7a0d18640c544a999cc58a168fcea54af057f0421100ea90e309b16aafd7",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@c98c3ffbd4295bd6e31e6effb7d91507769e5a3572ff44ee3e8ed7d9fc2e0038",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@c98c3ffbd4295bd6e31e6effb7d91507769e5a3572ff44ee3e8ed7d9fc2e0038",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@c98c3ffbd4295bd6e31e6effb7d91507769e5a3572ff44ee3e8ed7d9fc2e0038",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@57b6349289bc93f90645005c2ef85a08cc4a3696f7e40825363aecb4d85916bf",
+      "note": "Graceful source freeze after bounded framing/lifecycle/AX/cross-step changes. Latest exact-source independent acceptance and human review remain pending. Historical evidence retained."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@57b6349289bc93f90645005c2ef85a08cc4a3696f7e40825363aecb4d85916bf",
+      "note": "Graceful source freeze after bounded framing/lifecycle/AX/cross-step changes. Latest exact-source independent acceptance and human review remain pending. Historical evidence retained."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@57b6349289bc93f90645005c2ef85a08cc4a3696f7e40825363aecb4d85916bf",
+      "note": "Graceful source freeze after bounded framing/lifecycle/AX/cross-step changes. Latest exact-source independent acceptance and human review remain pending. Historical evidence retained."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@91dcd4823ed65e0b027b9205d9e755e6df8ac7bebc082b1a2213095b1c71e5de",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@91dcd4823ed65e0b027b9205d9e755e6df8ac7bebc082b1a2213095b1c71e5de",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@91dcd4823ed65e0b027b9205d9e755e6df8ac7bebc082b1a2213095b1c71e5de",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@097aba7182f4617b96f9a1a1632d9e64c0c469d7515db8e16334ab632d51f7e5",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@097aba7182f4617b96f9a1a1632d9e64c0c469d7515db8e16334ab632d51f7e5",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@097aba7182f4617b96f9a1a1632d9e64c0c469d7515db8e16334ab632d51f7e5",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@ff30485d132034f38b3546729ced252d6c2db20465f3e0b8f86f879168edce50",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@ff30485d132034f38b3546729ced252d6c2db20465f3e0b8f86f879168edce50",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@ff30485d132034f38b3546729ced252d6c2db20465f3e0b8f86f879168edce50",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@a3e24cc27481fdf6eed20f568c2b2905c058e6b39ea1ba87645cf27a3dcb8301",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@a3e24cc27481fdf6eed20f568c2b2905c058e6b39ea1ba87645cf27a3dcb8301",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@a3e24cc27481fdf6eed20f568c2b2905c058e6b39ea1ba87645cf27a3dcb8301",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@0f4e816fba9eea5fc6aaa747dbae8425365d2529699aaa6821f82cd2b0c679bc",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@0f4e816fba9eea5fc6aaa747dbae8425365d2529699aaa6821f82cd2b0c679bc",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@0f4e816fba9eea5fc6aaa747dbae8425365d2529699aaa6821f82cd2b0c679bc",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@d2484f017ddf8d63a1b053672039404183fa1c4eacbfea82ea5aa97ec954b801",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@d2484f017ddf8d63a1b053672039404183fa1c4eacbfea82ea5aa97ec954b801",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@d2484f017ddf8d63a1b053672039404183fa1c4eacbfea82ea5aa97ec954b801",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@42e86b6c3e9f5487e06f86dbd0eb9799c2e0f94b20e76511895877c76278fe2e",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@42e86b6c3e9f5487e06f86dbd0eb9799c2e0f94b20e76511895877c76278fe2e",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@42e86b6c3e9f5487e06f86dbd0eb9799c2e0f94b20e76511895877c76278fe2e",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@8b22680a55c834e543b13e2d79dba1544e297b7dbe6f92191d94179ae0e1a991",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@8b22680a55c834e543b13e2d79dba1544e297b7dbe6f92191d94179ae0e1a991",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@8b22680a55c834e543b13e2d79dba1544e297b7dbe6f92191d94179ae0e1a991",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@49a26a7d1619c67e5f6099e7cfe76da478d907613dee4d26659472ce6456e873",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@49a26a7d1619c67e5f6099e7cfe76da478d907613dee4d26659472ce6456e873",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Paikan vaihtuminen erotetaan värin vaihtumisesta; lähtöön palaaminen ei tee koko tapahtumaa liikkumattomaksi. Neutraalit Tapahtuma A–E -nimet korvaavat vastauksen kertoneet otsikot. Havaittava tapahtuma ja siihen vastaaminen ovat yhdessä. Liikkeen katsomista voi tukea vaiheistuksella ilman, että valinnan nimi paljastaa tuloksen. Nykyisen Liten liikehavainnot vastaavat näitä erotteluja. Kuvan luokittelu ei osoita luokkahuoneessa tehtyä omaa havaintoa tai sanallista perustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@49a26a7d1619c67e5f6099e7cfe76da478d907613dee4d26659472ce6456e873",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "ENV-PHY-MOTION-OBS-01",
+    "sourceBuild": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "actualFamilies": [
+      "moved",
+      "still",
+      "colour",
+      "spot",
+      "sim",
+      "transfer"
+    ],
+    "sourceFile": "authority/production-181-v2/lite/src/content/science.ts",
+    "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "reconciliation": "alignment.md",
+    "auditRow": 71,
+    "motionOverlay": {
+      "guided": 0.6,
+      "independent": 0.35,
+      "retrieval": 0.5,
+      "transfer": 0,
+      "comment": "Index comment says every retrieval, executable value is .5; retain executable truth. Per-node audit revision retained."
+    },
+    "sourceHashes": {
+      "src/content/science.ts": "b72eb983d570fda14794825e6f0210f4ef599fea039a431d817f32c25b7f9a58",
+      "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "src/content/world.ts": "c350e4f517d6aa23729ee958ec8b933abc828da41956e12a9da04a49b94e4704",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "src/engine/graph.ts": "8bcdc3d7cafed82fd8d2a0a7dd69a547f2e70d6d2a87834f110164d4fe4b24d9",
+      "src/engine/motion.ts": "7b2851bee0927ba383462ea8d24b7f2a8467c82b581fd519efdb4b4566365451",
+      "src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+      "src/ui/motion.ts": "1a3598c501e33fda21af3b42e86d0ddfef91fc4d67de15754159eaa5f98f19cc",
+      "src/ui/art.ts": "aa26c0ba183a3fe0e87a07ffd6e274de68a53fcb63d784a8a8b5135081eee52f",
+      "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+    },
+    "familyRegistry": "No own DECL/scope rows; defaults are bounded task outcomes, not proof of competence.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/science.ts": "932b67922c6d8a4993ba66a98e14e8b2a6e1787a002e8f7bbeadc3c573a3cfc3",
+        "src/content/world.ts": "0c66cc7b41c914e8ebd6e3848d842ba12930a8ef78ca8c2564d5f3a509959f5a",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/engine/graph.ts": "8bcdc3d7cafed82fd8d2a0a7dd69a547f2e70d6d2a87834f110164d4fe4b24d9",
+        "src/engine/motion.ts": "5204500f68d9c8e66fee7caf689e778fa347008383fe87a1e60e978f20ca3a83",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+        "src/ui/art.ts": "b6af99075a9d3dd71e5cca5b049c6922116b933c24938bbb0fc1206ac43b808a",
+        "src/ui/motion.ts": "b7392e9ed572102ae8fe9304bd19e4e69a413c28cad211747f44468b089fd3a4"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "1-2",
+    "teacherObjective": "Oppilas seuraa paikan muuttumista kiinteään vertailukohtaan nähden, myös lähtöpaikkaan palatessa.",
+    "childGoal": "Seuraan kohteen paikkaa koko esityksen ajan.",
+    "canonical": {
+      "id": "ENV-PHY-MOTION-OBS-01",
+      "subject": "science",
+      "grade_band": "1-2",
+      "topic_area": "Fysiikan alkutiedot",
+      "parent_concept": "Liike",
+      "title": "Liikkeen havainnointi",
+      "short_description": "Liikkeen havainnointi",
+      "node_kind": "concept",
+      "source_basis": "pedagogically_derived",
+      "curriculum_refs": [
+        "ENV12-S4"
+      ],
+      "relations": [
+        {
+          "id": "SCI-ENV-OBSERVE-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "Liikkeen havainnointi perustuu yleiseen havainnointitaitoon."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "SCI-ENV-OBSERVE-01"
+          ],
+          "rationale": "Yleinen havainnointi on ydinesitieto."
+        }
+      ],
+      "evidence_notes": "v0.2-refaktorissa erotettu noodista ENV-PHY-MOTION-01 itsenäiseksi evidenssikohteeksi.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate_refactored",
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "split_from": "ENV-PHY-MOTION-01",
+      "concept_path": [
+        "Ympäristöoppi / luonnontieteellinen perusta",
+        "Fysiikan alkutiedot",
+        "Liike"
+      ]
+    },
+    "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "prerequisiteGroups": [
+      {
+        "all_of": [
+          "SCI-ENV-OBSERVE-01"
+        ],
+        "rationale": "Yleinen havainnointi on ydinesitieto."
+      }
+    ],
+    "requiredPrerequisites": [
+      {
+        "id": "SCI-ENV-OBSERVE-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "Liikkeen havainnointi perustuu yleiseen havainnointitaitoon."
+      }
+    ],
+    "strongSupport": [],
+    "interaction": "manual-start-continuous-kinematic-observation",
+    "assumptions": [
+      "SCI-ENV-OBSERVE-01 revisited; adult reading/pointing help allowed.",
+      "Small quantities0–3 and digits are supported where used; no new graph gate.",
+      "All names/legend/place bindings taught in worked examples."
+    ],
+    "limits": [
+      "Authored/given model observations only; no invented child observation.",
+      "Supported low-stakes practice, no independence/retention/mastery or efficacy inference.",
+      "Screen interaction does not certify actual physical observation, data collection or offline communication."
+    ],
+    "optionalHelp": "Body includes help, concrete/offline examples, enrichment and exit question.",
+    "feedbackContract": "INTERACTION_FEEDBACK_CONTRACT.md; correct→edit→neutral→wrong check→repair→correct; equivalent row order/view preserves semantics.",
+    "evidenceLimit": "No storage, score, rewards, analytics or human validation."
+  },
+  "extensions": {
+    "simulationType": "manual-start-continuous-kinematic-observation",
+    "authoredOn": "2026-10-29",
+    "assignment": "B04 explicit GO after B03sealed7c58cd2; exactly these3 assigned packages",
+    "reviewStatus": "Author source/domain/browser self-check complete. Source stable; different independent reviewer and main integration pending. No human validation.",
+    "licence": "Original text/SVG; supplied shared PNG unchanged; owner licensing decision retained.",
+    "sourceNotes": {
+      "research.md": "96a50b3f4dcf3f043a007e9ab3037eadfa36de15c19a642b77b547b356c39948",
+      "alignment.md": "6352999e1c53f5b3d6513a37553cb4628bccebcf05bfb4e0cad6fb67045a4a6c",
+      "tests.mjs": "3774b145520b7dab6ebdf79d397eedacc2b3b943d7ce3bdf22b1c6f1e979fdc8",
+      "browser.mjs": "cef8e9ba3486417236872f5b0d3e8fc0393c671279d911ed6180db6ad2b7538d"
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B01",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

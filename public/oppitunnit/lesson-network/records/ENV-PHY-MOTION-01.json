@@ -1,0 +1,612 @@
+{
+  "kcId": "ENV-PHY-MOTION-01",
+  "pagePath": "lessons/ENV-PHY-MOTION-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "ENV-PHY-MOTION-01",
+  "canonicalNode": {
+    "id": "ENV-PHY-MOTION-01",
+    "subject": "science",
+    "grade_band": "1-2",
+    "topic_area": "Fysiikan alkutiedot",
+    "parent_concept": "Liike",
+    "title": "Liikkeen ja liikkeen muutoksen havainnointi",
+    "short_description": "Liikkeen ja liikkeen muutoksen havainnointi",
+    "node_kind": "integration",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "ENV12-S4"
+    ],
+    "relations": [
+      {
+        "id": "ENV-PHY-MOTION-OBS-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "ENV-PHY-MOTION-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-MOTION-OBS-01 vaaditaan kokonaisuuden hallintaan."
+      },
+      {
+        "id": "ENV-PHY-MOTION-CHANGE-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "ENV-PHY-MOTION-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-MOTION-CHANGE-01 vaaditaan kokonaisuuden hallintaan."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "ENV-PHY-MOTION-OBS-01",
+          "ENV-PHY-MOTION-CHANGE-01"
+        ],
+        "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+      }
+    ],
+    "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: ENV-PHY-MOTION-OBS-01, ENV-PHY-MOTION-CHANGE-01. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "status": "candidate_refactored_integration",
+    "entry_role": "none",
+    "mastery_role": "integration",
+    "split_children": [
+      "ENV-PHY-MOTION-OBS-01",
+      "ENV-PHY-MOTION-CHANGE-01"
+    ],
+    "integration_of": [
+      "ENV-PHY-MOTION-OBS-01",
+      "ENV-PHY-MOTION-CHANGE-01"
+    ],
+    "dynamic_prerequisite_rule": null,
+    "concept_path": [
+      "Ympäristöoppi / luonnontieteellinen perusta",
+      "Fysiikan alkutiedot",
+      "Liike"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "ENV-PHY-MOTION-OBS-01",
+      "targetKCId": "ENV-PHY-MOTION-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "ENV-PHY-MOTION-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-MOTION-OBS-01 vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "ENV-PHY-MOTION-CHANGE-01",
+      "targetKCId": "ENV-PHY-MOTION-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "ENV-PHY-MOTION-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-MOTION-CHANGE-01 vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "ENV-PHY-MOTION-01",
+      "targetKCId": "ENV-PHY-CAUSE-MOTION-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "ENV-PHY-MOTION-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "ENV-PHY-MOTION-01",
+      "targetKCId": "ENV-PHY-FORCE-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "ENV-PHY-MOTION-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "ENV-PHY-MOTION-01",
+      "targetKCId": "ENV-PHY-ENERGYFORM-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "ENV-PHY-MOTION-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "ENV-PHY-MOTION-01",
+      "targetKCId": "PHY79-RAD-PARTICLE",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "ENV-PHY-MOTION-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "ENV-PHY-MOTION-01",
+      "targetKCId": "PHY79-KINETIC",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "ENV-PHY-MOTION-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "ENV-PHY-MOTION-01",
+      "targetKCId": "PHY79-MOTION-REF",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "ENV-PHY-MOTION-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "ENV-PHY-MOTION-01",
+      "targetKCId": "PHY79-FORCE-MOTION",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "ENV-PHY-MOTION-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "ENV-PHY-MOTION-OBS-01",
+        "ENV-PHY-MOTION-CHANGE-01"
+      ],
+      "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/ENV-PHY-MOTION-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "OPH — Perusopetuksen opetussuunnitelman perusteet2014",
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "accessed": "2026-10-29",
+        "read": "Targeted2014 PDF passages: ENV1–2 S4 PDF132; ENV3–6 T4–T6 PDF239; physics7–9 S1 PDF389. Not a complete current-amendment review.",
+        "treatment": "Broad observation/inquiry/recording context. Exact frozen DAG/roles and project controls are not prescriptions.",
+        "usageRestrictions": "©OPH; paraphrase only, no source figures reused."
+      },
+      {
+        "title": "Primary Connections / Australian Academy of Science — Forces are fun",
+        "url": "https://primaryconnections.org.au/teaching-sequences/year-1/forces-fun",
+        "accessed": "2026-10-29",
+        "read": "Public Year1 overview and lesson progression; no full linked-pack/video reading claimed.",
+        "adopted": "Describe observed motion and direction/change through experience before interpreting representations.",
+        "rejected": "No inferred force cause from prescribed trajectories or compulsory physical/race performance.",
+        "limitations": "Foreign conceptual comparison; not Finnish mandate or project efficacy proof.",
+        "usageRestrictions": "Page CC BY-NC-SA4 except credited exceptions. Ideas only; no source artwork or prose copied."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": {
+      "task_id": "KC-20-ENV-PHY-MOTION-01",
+      "kc_id": "ENV-PHY-MOTION-01",
+      "mastery_role": "integration",
+      "node_kind": "integration",
+      "status": "PENDING_IMPLEMENTATION",
+      "content_file": null,
+      "prerequisites": [
+        {
+          "all_of": [
+            "ENV-PHY-MOTION-OBS-01",
+            "ENV-PHY-MOTION-CHANGE-01"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "validation": {
+        "schema": "pending_autonomous_adventure_review",
+        "graph_refs": "pending_autonomous_adventure_review",
+        "domain_truth": "pending_autonomous_adventure_review",
+        "item_invariants": "pending_autonomous_adventure_review",
+        "pedagogy_review": "pending_autonomous_adventure_review",
+        "subject_review": "pending_autonomous_adventure_review",
+        "accessibility_review": "pending_autonomous_adventure_review",
+        "runtime_smoke": "pending_autonomous_adventure_review"
+      },
+      "production_order": 20,
+      "historical_status": "DEFERRED_UNTIL_CALIBRATION",
+      "autonomous_evidence": [],
+      "historical_validation": {
+        "schema": "pending",
+        "graph_refs": "pending",
+        "domain_truth": "pending",
+        "item_invariants": "pending",
+        "pedagogy_review": "pending",
+        "subject_review": "pending",
+        "accessibility_review": "pending",
+        "runtime_smoke": "pending"
+      }
+    }
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+        "note": "Author checks completed; separate independent review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "ENV-PHY-MOTION-01",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "worked.svg",
+        "sha256": "8794484b7fb765e409f96c4635335e5ffb4ee01b8496d18ed30c739bdc45ad23"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "bc809c8408678de636be1eb6b9fb3ca48e57d5546a826fbc846783ef8b548578"
+      }
+    ],
+    "research": [
+      {
+        "title": "OPH — Perusopetuksen opetussuunnitelman perusteet2014",
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "accessed": "2026-10-29",
+        "read": "Targeted2014 PDF passages: ENV1–2 S4 PDF132; ENV3–6 T4–T6 PDF239; physics7–9 S1 PDF389. Not a complete current-amendment review.",
+        "treatment": "Broad observation/inquiry/recording context. Exact frozen DAG/roles and project controls are not prescriptions.",
+        "usageRestrictions": "©OPH; paraphrase only, no source figures reused."
+      },
+      {
+        "title": "Primary Connections / Australian Academy of Science — Forces are fun",
+        "url": "https://primaryconnections.org.au/teaching-sequences/year-1/forces-fun",
+        "accessed": "2026-10-29",
+        "read": "Public Year1 overview and lesson progression; no full linked-pack/video reading claimed.",
+        "adopted": "Describe observed motion and direction/change through experience before interpreting representations.",
+        "rejected": "No inferred force cause from prescribed trajectories or compulsory physical/race performance.",
+        "limitations": "Foreign conceptual comparison; not Finnish mandate or project efficacy proof.",
+        "usageRestrictions": "Page CC BY-NC-SA4 except credited exceptions. Ideas only; no source artwork or prose copied."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+        "note": "Author checks completed; separate independent review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+        "note": "Author checks completed; separate independent review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "ENV-PHY-MOTION-01",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "inventory": "alignment.md",
+      "reconciliation": "alignment.md",
+      "sourceHashes": {
+        "src/content/science.ts": "b72eb983d570fda14794825e6f0210f4ef599fea039a431d817f32c25b7f9a58",
+        "src/content/physics.ts": "835ad69dd95f622adcb6050ab63d00a4477d64425545dd1b8af5a4892f978430",
+        "src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "actualFamilies": [
+        "which",
+        "faster",
+        "still",
+        "describe",
+        "transfer",
+        "sim overlay(.6/.35/.5/0)"
+      ]
+    },
+    "planning": {
+      "gradeBand": "1-2",
+      "role": "integration",
+      "canonical": {
+        "id": "ENV-PHY-MOTION-01",
+        "subject": "science",
+        "grade_band": "1-2",
+        "topic_area": "Fysiikan alkutiedot",
+        "parent_concept": "Liike",
+        "title": "Liikkeen ja liikkeen muutoksen havainnointi",
+        "short_description": "Liikkeen ja liikkeen muutoksen havainnointi",
+        "node_kind": "integration",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "ENV12-S4"
+        ],
+        "relations": [
+          {
+            "id": "ENV-PHY-MOTION-OBS-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "ENV-PHY-MOTION-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-MOTION-OBS-01 vaaditaan kokonaisuuden hallintaan."
+          },
+          {
+            "id": "ENV-PHY-MOTION-CHANGE-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "ENV-PHY-MOTION-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-MOTION-CHANGE-01 vaaditaan kokonaisuuden hallintaan."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "ENV-PHY-MOTION-OBS-01",
+              "ENV-PHY-MOTION-CHANGE-01"
+            ],
+            "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+          }
+        ],
+        "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: ENV-PHY-MOTION-OBS-01, ENV-PHY-MOTION-CHANGE-01. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "status": "candidate_refactored_integration",
+        "entry_role": "none",
+        "mastery_role": "integration",
+        "split_children": [
+          "ENV-PHY-MOTION-OBS-01",
+          "ENV-PHY-MOTION-CHANGE-01"
+        ],
+        "integration_of": [
+          "ENV-PHY-MOTION-OBS-01",
+          "ENV-PHY-MOTION-CHANGE-01"
+        ],
+        "dynamic_prerequisite_rule": null,
+        "concept_path": [
+          "Ympäristöoppi / luonnontieteellinen perusta",
+          "Fysiikan alkutiedot",
+          "Liike"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "ENV-PHY-MOTION-OBS-01",
+            "ENV-PHY-MOTION-CHANGE-01"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "strongSupport": [],
+      "teacherObjective": "Liikkeen ja liikkeen muutoksen havainnointi",
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "sourceBasis": "direct_curriculum",
+      "childGoal": "Yhdistän havainnot liikkeestä ja sen muutoksesta.",
+      "evidenceLimits": "Supported supplied model/record work, no independent physical proficiency, retention/mastery, human/learner or efficacy claim. No personal records.",
+      "curriculumVsDesign": "Frozen roles/grade/AND prerequisites retained. Primary comparisons support content, not project DAG/controls/thresholds. Historical2014 OPH passages targeted, no current normative completeness certification.",
+      "assetProvenance": "Original local domain diagrams; supplied shared raster PNG unchanged, not asserted hand-drawn or relicensed."
+    },
+    "extensions": {
+      "productionBatch": "B07",
+      "humanReview": "not_performed",
+      "independentReview": "pending_other_agent",
+      "researchNote": "research.md",
+      "alignmentNote": "alignment.md",
+      "simulationType": "integrated_shared_time_motion_report",
+      "privacy": "Only transient local synthetic practice state. No storage/network/telemetry/personal observations.",
+      "feedback": "Both semantic input/change and explicit current visible answer; independent instructional support preserves valid verdicts."
+    },
+    "contentHash": "0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+    "contentRevision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+          "note": "Author checks completed; separate independent review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+          "note": "No human/learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+          "note": "No actual human/target-learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+          "note": "Author checks completed; separate independent review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@0af721166e4abd54bb0789b99d928e4276112173664e5b7df59a973dd96ef06a",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    }
+  },
+  "outputHash": "37114b3a2efc515ccdcd11f70f6219633848d1c4736753ad6a529f2d4fd9f5ec",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "41c081829e7ab67165277b245977bd1d8368c8509cd0bc10de28468667cbea6c",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "37114b3a2efc515ccdcd11f70f6219633848d1c4736753ad6a529f2d4fd9f5ec",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

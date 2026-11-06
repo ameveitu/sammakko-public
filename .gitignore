@@ -1,0 +1,32 @@
+node_modules/
+dist/
+.DS_Store
+*.tsbuildinfo
+**/exports/
+.build/
+/.vite/
+
+# Lesson site is generated from canonical packages; deliver the checked CI artifact.
+public/oppitunnit/lesson-network/site/
+
+# Salaisuudet: OpenAI-avain säilytetään vain macOS Keychainissa (ks. tools/imagegen/README.md).
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.key
+# Kuvageneraattorin luonnokset ja kokeilut; valitut kuvat kopioidaan käsin kohteeseen.
+tools/imagegen/out/
+
+# Local browser diagnostics; representative current review images are under docs/releases.
+/.playwright-cli/
+/output/
+# Grafiikkapaketin raakakuvat (1024 px) pysyvät paikallisina; sivutiedostot (.png.json) versioidaan
+art/_raw/**/*.png
+art/_pilot/
+art/characters-3d/**/*.blend1
+
+# Local Python bytecode
+__pycache__/
+*.py[cod]

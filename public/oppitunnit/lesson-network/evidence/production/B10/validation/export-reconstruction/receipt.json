@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "createdAfterSeal": true,
+  "notInsideOriginalSealedZIP": true,
+  "archive": "/Users/aikuiset/Documents/Codex/2026-10-24/e/outputs/Sammakko/exports/Sammakko_181_B10_115of181.zip",
+  "inventory": {
+    "zipBytes": 35217393,
+    "uncompressedBytes": 96182268,
+    "files": 8445,
+    "compressionMethods": {
+      "8": 8445
+    },
+    "manifestFiles": 8443,
+    "sourceRevision": "2c3a726544e465fcf7ca18f16bcb9bb85f77ef30",
+    "sha256": "7cb4e6f6c92565ffe793d3ca1c3330b8237ac9b5fcb6f65666b0b475187d4397",
+    "extracted": "/var/folders/5_/9spkk87514d17y3nq1rtxv3w0000gn/T/sammakko-B10-reconstruct-mqsj85h8",
+    "noGitOrExistingNodeModules": true
+  },
+  "commands": [
+    {
+      "command": [
+        "npm",
+        "ci",
+        "--offline"
+      ],
+      "exitCode": 0,
+      "stdout": "01-stdout.txt",
+      "stderr": "01-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/build.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "02-stdout.txt",
+      "stderr": "02-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/verify.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "03-stdout.txt",
+      "stderr": "03-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/check-package-tests.mjs",
+        "B10",
+        "extracted-r1"
+      ],
+      "exitCode": 0,
+      "stdout": "04-stdout.txt",
+      "stderr": "04-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/production-status.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "05-stdout.txt",
+      "stderr": "05-stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "lesson-network/test-export.py"
+      ],
+      "exitCode": 0,
+      "stdout": "06-stdout.txt",
+      "stderr": "06-stderr.txt"
+    }
+  ],
+  "scope": "Fresh extraction, locked cached dependency install,690 rebuild/network330246, source-bound494tests,115 status and5 exporter tests. Existing native receipts reused; no redundant browser rerun solely to repackage source."
+}

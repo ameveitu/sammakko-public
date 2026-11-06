@@ -1,0 +1,142 @@
+{
+  "kind": "author_self_check",
+  "kcId": "M-FRAC-01",
+  "date": "2026-10-29",
+  "contentRevision": "1@f2ec2d000b30a3ee288b7f447d63d968709d6d9255881ae39183d7b5b20c8b1a",
+  "status": "source_stable_for_independent_review",
+  "independentReview": "pending_main_integrator",
+  "humanReview": "not_performed",
+  "packageValidator": "PASS; exact original validator with only directory enumeration scoped to these four assigned IDs; no build or live outputs changed",
+  "pureTests": "node --test lesson-network/packages/M-FRAC-01/tests.mjs; 2 test cases PASS per package, 8 total for four",
+  "lint": "scoped ESLint PASS",
+  "browser": {
+    "engine": "real Playwright Chromium headless",
+    "composition": "Temporary source composition with actual shared shell CSS and loader; source-owned PNG references served by symlink, no artwork copies; no main build",
+    "widths": [
+      320,
+      390,
+      1280
+    ],
+    "runs": [
+      {
+        "id": "M-FRAC-01",
+        "viewport": {
+          "width": 320,
+          "height": 800
+        },
+        "init": {
+          "overflow": false,
+          "images": [
+            {
+              "src": "../shared/aava/curious.png",
+              "loaded": true
+            },
+            {
+              "src": "../content/M-FRAC-01/equal-parts.svg",
+              "loaded": true
+            }
+          ],
+          "storage": 0
+        },
+        "after": {
+          "overflow": false,
+          "storage": 0
+        },
+        "errors": []
+      },
+      {
+        "id": "M-FRAC-01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "init": {
+          "overflow": false,
+          "images": [
+            {
+              "src": "../shared/aava/curious.png",
+              "loaded": true
+            },
+            {
+              "src": "../content/M-FRAC-01/equal-parts.svg",
+              "loaded": true
+            }
+          ],
+          "storage": 0
+        },
+        "after": {
+          "overflow": false,
+          "storage": 0
+        },
+        "errors": []
+      },
+      {
+        "id": "M-FRAC-01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "init": {
+          "overflow": false,
+          "images": [
+            {
+              "src": "../shared/aava/curious.png",
+              "loaded": true
+            },
+            {
+              "src": "../content/M-FRAC-01/equal-parts.svg",
+              "loaded": true
+            }
+          ],
+          "storage": 0
+        },
+        "after": {
+          "overflow": false,
+          "storage": 0
+        },
+        "errors": []
+      }
+    ],
+    "interactionResult": "Each matching practice and specific wrong-feedback branch exercised by actual clicks. pause/resume/reset/dispose, reset twice, remount, duplicate mount replacing prior instance passed.",
+    "storageResult": "localStorage empty before and after; source has no storage, network, award or mastery mechanism",
+    "screenshots": [
+      {
+        "width": 320,
+        "path": "/tmp/sammakko-b02-author/screens/M-FRAC-01-320-work.png",
+        "sha256": "505b39ec8938f1fc0bedb7b517b59b4f67b64401f65d2b4b425072a1e1dd6a9c"
+      },
+      {
+        "width": 390,
+        "path": "/tmp/sammakko-b02-author/screens/M-FRAC-01-390-work.png",
+        "sha256": "221f6431a9f1a22c73deb84fa8080fc3eb807aa72aff9d1b42081d82bb434fc9"
+      },
+      {
+        "width": 1280,
+        "path": "/tmp/sammakko-b02-author/screens/M-FRAC-01-1280-work.png",
+        "sha256": "183551b05187d9cd1cf935982627c9b0718f74a9731a3c6cdeb9866a1b71be46"
+      }
+    ],
+    "harnessTemporaryPath": "/tmp/sammakko-b02-author/browser.mjs",
+    "harnessSha256": "e44609e13c3647e52e8c38b91461d6fe330a7933ddd1274d3e87ffff0dccadc7",
+    "limitations": "Scoped source preview, not integrated690 build/navigation/release check. Not human or learner testing."
+  },
+  "assets": [
+    {
+      "path": "equal-parts.svg",
+      "sha256": "3d4b2191d8cf10ed9f60e551f0a2f31dd7c6b16cd5a8106b1e4202f282dd9bb5"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "6c0e841d58afba7187534648a63a0262b0dfca8b94ef8c225ed03086a95bcc00"
+    }
+  ],
+  "limits": [
+    "Ruudulla rakennettu rajallinen suikalemalli ei osoita mielivaltaisen kuvion tasajakoa eikä fyysistä leikkaamistaitoa.",
+    "Ei muodollista murtolukumerkintää, murtolukulaskua tai jakolaskualgoritmia.",
+    "Ei pisteitä, tallennusta tai osaamispäätelmää; opettaja havainnoi erikseen."
+  ]
+}

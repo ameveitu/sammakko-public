@@ -1,0 +1,76 @@
+{
+ "_ohje": "Elävä maalaus (VP05): maailmojen taustamaalaukset. Tyylireferenssi on hyväksytty art/backgrounds/hero-island.jpg; hahmoja ei generoida (ne tulevat hyväksytyistä PNG-kuvista). Tärkeä sisältö on kuvan vasemmassa ja oikeassa viidenneksessä, koska keskellä on sovelluksen lukusarake. Raakakuvat menevät git-ignoroituun kansioon tools/imagegen/out/visual-polish/world/, sivutiedostot kopioidaan tools/visual-polish/provenance/. Aja repojuuresta: node tools/imagegen/imagegen.mjs batch tools/visual-polish/batches/world.json [--live] Päivä- ja iltaversio tehdään samasta sommitelmasta: toinen syntyy muokkaamalla hyväksyttyä ensimmäistä (ensimmäinen syötekuva), jotta näyttämöpaikat pysyvät samoina. Aja yksittäinen työ: --only <nimi>.",
+ "defaults": {
+  "model": "sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "n": 2,
+  "template": "background",
+  "out": "../../imagegen/out/visual-polish/world",
+  "image": [
+   "../../../art/backgrounds/hero-island.jpg"
+  ]
+ },
+ "jobs": [
+  {
+   "name": "vpw-saari-ilta",
+   "size": "2560x1440",
+   "vars": {
+    "subject": "a wide panoramic view of a calm Finnish lake archipelago on a warm summer evening at dusk, in exactly the same hand-drawn coloured-pencil style, dark blue outline weight and paper grain as the reference image. Sky in the upper 45%: a soft gradient from warm peach and apricot just above the horizon to dusty lavender and then deep evening blue at the very top, with four or five tiny pale first stars near the top corners only. A low golden sun half-set on the horizon just right of the centre, with a long calm shimmering golden reflection path on the water below it. Water fills the lower 55%: calm turquoise water turning lavender-blue towards the horizon, with a few short light wave dashes. LEFT EDGE (only the left fifth of the image, top to bottom): a tall shore with dark green pine trees on pink granite rocks; at the bottom-left a big flat smooth granite rock slab reaching into the water, with three large round green lily pads and one white water lily floating in the shallow water just right of it; tall green reeds and brown cattails along the waterline. RIGHT EDGE (only the right fifth of the image): a small rocky island with a red-and-white wooden lighthouse and a tiny orange pennant flag on its roof, a short grey wooden jetty reaching left into the water at about two thirds of the image height, and four lily pads floating in open water near the bottom-right corner. CENTRE (the middle three fifths): only open calm water and evening sky, with two very small distant low islands on the horizon line and nothing else",
+    "space": "the middle three fifths of the image"
+   }
+  },
+  {
+   "name": "vpw-saari-paiva",
+   "size": "2560x1440",
+   "image": [
+    "../../imagegen/out/visual-polish/world/vpw-saari-ilta-20261104-123013-1.png",
+    "../../../art/backgrounds/hero-island.jpg"
+   ],
+   "vars": {
+    "subject": "exactly the same scene and composition as the first input image: the same tall pine shore on pink granite rocks with reeds, cattails, the big flat rock slab, three lily pads and one white water lily on the left; the same small rocky island with the red-and-white wooden lighthouse, tiny orange pennant, short grey wooden jetty and four lily pads on the right; the same two very small distant islands on the horizon. Repaint it as a bright clear summer midday in the same hand-drawn coloured-pencil style, dark blue outline weight and paper grain as the second reference image. Sky: clear light summer blue, paler near the horizon, with three or four small soft white fair-weather clouds; no stars, no sunset colours and no sun in the picture (the sun is high above, out of frame). Water: bright clear turquoise with soft light-blue wave dashes and a few small white sparkles, no golden reflection path. Keep every shore object exactly where it is in the first image, with the same horizon height, the same outlines and the same size, so the two pictures line up when laid on top of each other",
+    "space": "the middle three fifths of the image"
+   }
+  },
+  {
+   "name": "vpw-ranta-paiva",
+   "size": "2560x1440",
+   "vars": {
+    "subject": "a wide panoramic view of a small calm Finnish forest lake shore on a fresh bright summer morning, in exactly the same hand-drawn coloured-pencil style, dark blue outline weight and paper grain as the reference image. Sky in the upper 45%: clear pale morning blue, lighter and slightly warm near the horizon, with two or three small soft white clouds. A thin soft white morning mist lies low over the far water along the horizon. Water fills the lower 55%: calm turquoise lake water, lighter towards the horizon, with a few short light wave dashes. LEFT EDGE (only the left fifth of the image, top to bottom): white-trunked birch trees and one big spruce on a grassy bank; a small curved light sandy beach at the waterline with a small unfinished raft of four tied wooden logs lying on the sand; one big smooth round grey boulder standing in the shallow water just right of the beach; three large round green lily pads floating in the water at the bottom-left; green reeds along the waterline. RIGHT EDGE (only the right fifth of the image): a grassy bank with a few pine trees and rounded bushes; a short old wooden plank jetty on posts reaching left into the water at about two thirds of the image height, with a small red wooden rowing boat tied to it; three flat stepping stones in the shallow water; four lily pads floating near the bottom-right corner; tall reeds and cattails along the waterline. CENTRE (the middle three fifths): only open calm water and morning sky, with the far wooded shore of the lake as a very low soft blue-green line on the horizon and nothing else",
+    "space": "the middle three fifths of the image"
+   }
+  },
+  {
+   "name": "vpw-lab-paiva",
+   "size": "2560x1440",
+   "vars": {
+    "subject": "a wide panoramic view of a calm lily pond with a small outdoor nature science station on a bright summer day, in exactly the same hand-drawn coloured-pencil style, dark blue outline weight and paper grain as the reference image. Sky in the upper 45%: clear light summer blue with three small soft white clouds. Water fills the lower 55%: calm turquoise pond water with a few short light wave dashes. LEFT EDGE (only the left fifth of the image, top to bottom): a small cosy wooden research hut with a green roof and two small square windows, built on stilts over the water at the shore; a brass weather vane and a little cup anemometer on its roof; a short wooden ladder from the hut down to a small floating wooden platform; one tall thin striped red-and-white measuring pole standing in the water (stripes only, no numbers or letters); green reeds along the waterline; three large round lily pads and one flat grey rock in the water at the bottom-left. RIGHT EDGE (only the right fifth of the image): a long low wooden boardwalk running along the shore at about two thirds of the image height, its planks painted with evenly spaced coloured stripe markers like a jumping-contest track (no numbers, no letters); at its end a small wooden stand with a brass telescope on a tripod and a striped orange windsock on a pole; birch trees and rounded bushes behind it; four lily pads floating near the bottom-right corner. CENTRE (the middle three fifths): only open calm pond water and summer sky, with the far shore as a very low soft green line on the horizon and nothing else",
+    "space": "the middle three fifths of the image"
+   }
+  },
+  {
+   "name": "vpw-ranta-ilta",
+   "size": "2560x1440",
+   "image": [
+    "../../imagegen/out/visual-polish/world/vpw-ranta-paiva-20261104-164730-2.png",
+    "../../../art/backgrounds/hero-island.jpg"
+   ],
+   "vars": {
+    "subject": "exactly the same lake shore scene and composition as the first input image: the same birches, spruce, sandy beach with the log raft, round grey boulder, reeds and three lily pads on the left; the same pines, wooden jetty, red rowing boat, stepping stones, cattails and lily pads on the right; the same low far wooded shore on the horizon. Repaint it as a warm calm summer evening at dusk in the same hand-drawn coloured-pencil style, dark blue outline weight and paper grain as the second reference image. Sky: a soft gradient from warm peach and apricot just above the horizon to dusty lavender and then deep evening blue at the very top, with four or five tiny pale first stars near the top corners only and no clouds. A low golden sun half-set on the horizon just right of the centre, with a long calm shimmering golden reflection path on the water below it. Water: calm turquoise turning lavender-blue towards the horizon, with a few short light wave dashes. Trees and shores keep their colours but in warmer, softer evening light. The low mist over the far water glows faintly pink. Keep every shore object exactly where it is in the first image, with the same horizon height, the same outlines and the same size, so the two pictures line up when laid on top of each other",
+    "space": "the middle three fifths of the image"
+   }
+  },
+  {
+   "name": "vpw-lab-ilta",
+   "size": "2560x1440",
+   "image": [
+    "../../imagegen/out/visual-polish/world/vpw-lab-paiva-20261104-164810-1.png",
+    "../../../art/backgrounds/hero-island.jpg"
+   ],
+   "vars": {
+    "subject": "exactly the same pond science station scene and composition as the first input image: the same wooden hut on stilts with its weather vane, anemometer, ladder and floating platform, the striped measuring pole, reeds, rock and lily pads on the left; the same striped boardwalk, telescope on its tripod, windsock, birches, rocks and lily pads on the right; the same low far shore and small island on the horizon. Repaint it as a warm calm summer evening at dusk in the same hand-drawn coloured-pencil style, dark blue outline weight and paper grain as the second reference image. Sky: a soft gradient from warm peach and apricot just above the horizon to dusty lavender and then deep evening blue at the very top, with four or five tiny pale first stars near the top corners only and no clouds. A low golden sun half-set on the horizon just right of the centre, with a long calm shimmering golden reflection path on the water below it. Water: calm turquoise turning lavender-blue towards the horizon, with a few short light wave dashes. Trees and shores keep their colours but in warmer, softer evening light. The two small hut windows glow warm yellow from a lamp inside. Keep every shore object exactly where it is in the first image, with the same horizon height, the same outlines and the same size, so the two pictures line up when laid on top of each other",
+    "space": "the middle three fifths of the image"
+   }
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+schema_version: "0.1"
+kind: scoped_source_registry_supplement
+approval_scope: citation_only_and_explicit_project_design_not_content_approval
+report: reports/autonomous-52/B03/observation-source-audit.md
+verification_note: Viralliset kohdat luettu2026-10-26 tämän solmun auditissa. Lähdetuki ja project_design
+  eivät hyväksy tavoiterajausta, pedagogiikkaa, vaikuttavuutta tai julkaisua.
+sources:
+  - id: PROD04-OPH-ENV12-OBSERVATION
+    type: curriculum_authority
+    title: "Ympäristöoppi1–2: havainnointi ja kuvien ymmärtäminen T5–T13-alueella"
+    publisher: Opetushallitus / ePerusteet
+    url: https://eperusteet.opintopolku.fi/eperusteet-service/api/perusteet/419550/kaikki
+    status: verified_citation_scoped
+    applies_to:
+      - SCI-ENV-OBSERVE-01
+    locator:
+      basis_id: 419550
+      subject_id: 428820
+      subject_band_id: 428830
+      year_band_definition_id: 428780
+      years:
+        - 1
+        - 2
+      frozen_curriculum_ref: ENV12-T5-T13
+      objective_field: tavoite.fi
+      objective_ids:
+        T5: 466669
+        T6: 469290
+        T7: 469291
+        T8: 469292
+        T9: 469293
+        T10: 469294
+        T11: 469295
+        T12: 469296
+        T13: 469297
+      direct_scope_objectives:
+        - T6
+        - T13
+      context_content_ids:
+        - 469261
+        - 469262
+      content_field: kuvaus.fi
+      assessment_id: 428796
+      assessment_field: teksti.fi
+    verification:
+      date: 2026-10-26
+      access: direct_origin_http_200
+      read_utc: 2026-10-26T18:20:18.298329+00:00
+      response_bytes: 9222036
+      sha256: 7692dcef834d7ab175a1053e40abff6c016bc12003b4a7fdf4b64370c7696d94
+      publication_utc: 2026-09-15T09:21:37.140Z
+      global_version_timestamp: 1789464097140
+      fresh_fetch_for_this_audit: true
+      audit: reports/autonomous-52/B03/observation-source-audit.md
+    supported_claim: Kansallinen1–2-luokkien tavoitealue sisältää havaintojen tekemisen ja yksinkertaisten
+      kuvien ymmärtämisen ympäristön esityksinä. T5–T13 on laaja baseline-viite, ei tämän tehtävän
+      täyskatettu yhdeksän tavoitteen näyttö.
+    limits: Ei KC-jaon, tunnistusreitin tavoiterajauksen, kolmen kortin, onnistumis-/viivekynnysten,
+      syyontologian tai oppimistehon normihyväksyntä. Ei paikallisen OPS:n, spontaanin puheen tai koko
+      luonnontieteellisen päättelyn hyväksyntä. Ei ACS-aineistoa tai kuva-/tehtävälisenssiä;
+      PROD01–PROD03-scopeja ei laajenneta.
+  - id: PROJECT-SCENE-OBSERVATION-v1
+    type: project_formalization
+    title: Rajattu kuvafakta ja havaintoväitteen tunnistaminen
+    publisher: Sammakko
+    status: project_design
+    applies_to:
+      - SCI-ENV-OBSERVE-01
+    locators:
+      - packages/domain/scene-observation.ts
+      - packages/items/scene-observation.ts
+      - packages/items/scene-observation-novelty.ts
+      - packages/learning/scene-observation-journey-model.ts
+      - content-design/autonomous-52/SCI-ENV-OBSERVE-01.md
+      - reports/autonomous-52/B03/observation-source-audit.md
+      - reports/autonomous-52/B03/scene-domain-implementation.md
+    supported_claim: Alkuperäinen näkyvyyden/puolen sekä kahden näytetyn paikan vertailu. Mallit, tuki,
+      häivytys,4 puhdasta ydinhavaintoa/2 pohjaa,2 soveltamista ja4 myöhempää/24h ovat
+      projektisuunnittelua.
+    limits: Ei empiirinen primary-tutkimus, oppimistulos, yleinen siirtovaikutus, spontaani havainnon tuotto
+      tai täysi ei-visuaalinen vastaavuus. Unsupported syy ei ole epätosi; sama kuvapaikka ei osoita
+      jatkuvaa liikkumattomuutta. Tavoitteen tunnistusrajaus tarvitsee erillisen sisältö-/ainearvion.
+      Lähdetietue ei aktivoi canonical-pakettia tai hyväksy kirjoittajan sisältöä riippumattomasti.

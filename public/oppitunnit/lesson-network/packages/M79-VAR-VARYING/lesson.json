@@ -1,0 +1,646 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M79-VAR-VARYING",
+  "revision": 15,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "diagram.svg",
+      "sha256": "0607b8db8d0da87444eea9af7a8fa569746cfb4e465d3d9a9d3ecbbb314f7464"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "3596041606a9edab7aa05c0cc845911598b62cfb51ac4986515ca57fcb6eb58c"
+    },
+    {
+      "path": "shared/aava/map.png",
+      "sha256": "49b47a345fa26f9017acb1672d1b7d6d4fe0dcd511e756c693b731269579ebe9"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.ncetm.org.uk/media/zeeniedj/ncetm_ks3_cc_1_4.pdf",
+      "title": "1.4 Simplifying and manipulating expressions, equations and formulae — Key Stage 3",
+      "organization": "NCETM",
+      "retrieved": "2026-10-29",
+      "inspectedSections": "PDF pages2,5–6,10; key ideas1.4.1.4 and1.4.1.6; letter-role discussion and fruit-salad-algebra warning. Targeted PDF text, not whole-document/video viewing.",
+      "usageRestrictions": "Crown copyright; inspected NCETM copyright page https://www.ncetm.org.uk/copyright/: default Crown/OGL with attribution and named-author/third-party conditions. PDF warns professional-development material is not designed to be directly lifted as lessons. Original paraphrases, contexts, diagrams and code only; no source figures copied.",
+      "adopted": [
+        "Make the allowed input range and covarying quantities explicit."
+      ],
+      "rejected": [
+        "Do not conflate a letter with an object, or import symbol manipulation."
+      ]
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s11858-026-01828-x",
+      "title": "Same variable, different values? A multilevel Latent Transition Analysis of students’ thinking about values of variables",
+      "organization": "Filip Moons, Katrin Klingbeil, Paul Drijvers and Bärbel Barzel; ZDM – Mathematics Education / Springer Nature",
+      "retrieved": "2026-10-29",
+      "inspectedSections": "Publisher HTML abstract, introduction and rights notice. Published2026-08-28; discovered through the2025 article, actually opened. No whole-paper/methods review claimed.",
+      "usageRestrictions": "Article CC BY4.0 with attribution, link and changes indication; third-party exceptions apply. No article figures, test items or long source passages reused.",
+      "adopted": [
+        "Keep the same chosen value across occurrences within each instance."
+      ],
+      "rejected": [
+        "Do not assume a letter has one permanent value across separate trials."
+      ]
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s10649-025-10428-7",
+      "title": "The omnipresence of the Letter-as-Object misconception: a multilevel Latent Transition Analysis on understanding variables",
+      "organization": "Katrin Klingbeil and Filip Moons; Educational Studies in Mathematics / Springer Nature",
+      "retrieved": "2026-10-29",
+      "inspectedSections": "Publisher HTML abstract, introduction variable-role definitions, rights-and-permissions. No full-methods or intervention-efficacy review claimed.",
+      "usageRestrictions": "Article CC BY4.0 with attribution, link and changes indication; third-party material subject to credit lines. No figures, test items, or long quotations reused.",
+      "adopted": [
+        "State quantity, number and unit separately in the price model."
+      ],
+      "rejected": [
+        "Do not claim letters always mean numbers in every branch of mathematics."
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@0370858fc5b5940fd1c867d482abf59afbe25f726546d3a59b7b4f12788716cb",
+      "note": "Author technical checks passed; independent review pending on this exact content revision. No author self-approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@0370858fc5b5940fd1c867d482abf59afbe25f726546d3a59b7b4f12788716cb",
+      "note": "Author technical checks passed; independent review pending on this exact content revision. No author self-approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@0370858fc5b5940fd1c867d482abf59afbe25f726546d3a59b7b4f12788716cb",
+      "note": "No human or learner testing performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+      "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/algebra-independent-closure.json. Human/learner efficacy and release approval remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+      "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/algebra-independent-closure.json. Human/learner efficacy and release approval remain pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+      "note": "No actual human or learner validation has occurred."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@b72702ebf655011ee1b8835faed73bb69558876a96822c894d84102f8a30785b",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@b72702ebf655011ee1b8835faed73bb69558876a96822c894d84102f8a30785b",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@b72702ebf655011ee1b8835faed73bb69558876a96822c894d84102f8a30785b",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@a77911bc664bea448f6a21169b935b4f638b98a0e521af0a05d2ee3932447086",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@a77911bc664bea448f6a21169b935b4f638b98a0e521af0a05d2ee3932447086",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@a77911bc664bea448f6a21169b935b4f638b98a0e521af0a05d2ee3932447086",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@c4fea60ae8078d815267c3cc48c041e317705bcd2d3e4b5ced95df6947c4bbfc",
+      "note": "Current source follow-up: coherent visible teaching steps and projector layout. Historical reviews retained; current source/browser gates required. Human review remains pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@c4fea60ae8078d815267c3cc48c041e317705bcd2d3e4b5ced95df6947c4bbfc",
+      "note": "Current source follow-up: coherent visible teaching steps and projector layout. Historical reviews retained; current source/browser gates required. Human review remains pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@c4fea60ae8078d815267c3cc48c041e317705bcd2d3e4b5ced95df6947c4bbfc",
+      "note": "Current source follow-up: coherent visible teaching steps and projector layout. Historical reviews retained; current source/browser gates required. Human review remains pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@b25fcd734de1a612ce74d612d8913dbfe99d6a4507a848a2dd17ccbcff2af0a0",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@b25fcd734de1a612ce74d612d8913dbfe99d6a4507a848a2dd17ccbcff2af0a0",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@b25fcd734de1a612ce74d612d8913dbfe99d6a4507a848a2dd17ccbcff2af0a0",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@5ced57055c6d5d1a4718d3fb22ab78684c549cfc993301b8f7fb67a9393e5c83",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@5ced57055c6d5d1a4718d3fb22ab78684c549cfc993301b8f7fb67a9393e5c83",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@5ced57055c6d5d1a4718d3fb22ab78684c549cfc993301b8f7fb67a9393e5c83",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@64e60ad50917b8325c126cb8f6eb59f331a666e6920338e2dfc942af1518c6f9",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@64e60ad50917b8325c126cb8f6eb59f331a666e6920338e2dfc942af1518c6f9",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@64e60ad50917b8325c126cb8f6eb59f331a666e6920338e2dfc942af1518c6f9",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@484c0ab2dd35966f7d1e3220e739a1f1a2389a6875e87ca5ea7a0fc9a3263eb4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@484c0ab2dd35966f7d1e3220e739a1f1a2389a6875e87ca5ea7a0fc9a3263eb4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@484c0ab2dd35966f7d1e3220e739a1f1a2389a6875e87ca5ea7a0fc9a3263eb4",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@ac2cc125c5811427894a368e5ef2b4eae4f50eee55e378404484294083fa6da4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@ac2cc125c5811427894a368e5ef2b4eae4f50eee55e378404484294083fa6da4",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@ac2cc125c5811427894a368e5ef2b4eae4f50eee55e378404484294083fa6da4",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@f68eb412357bc19b08120a125a41bd055aab466667d9ec276f39f9aa474c9e7a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@f68eb412357bc19b08120a125a41bd055aab466667d9ec276f39f9aa474c9e7a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@f68eb412357bc19b08120a125a41bd055aab466667d9ec276f39f9aa474c9e7a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@36f5e6cdedefbd5644167de73632075c021a8cdec99a123dd807772d77c8ea8f",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@36f5e6cdedefbd5644167de73632075c021a8cdec99a123dd807772d77c8ea8f",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@36f5e6cdedefbd5644167de73632075c021a8cdec99a123dd807772d77c8ea8f",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@25d2cfbede57008d8ba70688c4e544a07a0f81186ee7f734849d47441bfe5976",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@25d2cfbede57008d8ba70688c4e544a07a0f81186ee7f734849d47441bfe5976",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@25d2cfbede57008d8ba70688c4e544a07a0f81186ee7f734849d47441bfe5976",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@cbbbe8c06a9213e5ddbd2c22325ef26d56c411a2218ca8862b339d412d410f49",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@cbbbe8c06a9213e5ddbd2c22325ef26d56c411a2218ca8862b339d412d410f49",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Annettu h=4+2n-malli erottaa muuttujan, riippuvan arvon ja mallin sisäiset vakiot. Vähenevä 12 − n-siirto ehkäisee aina-kasvaa-yleistyksen. Tutkimuskuva ja valittu ennustekysymys pysyvät rinnakkain, valmiin laskun avaaminen on tukea. Projektorin pieni ylivuoto korjattu marginaaleilla. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@cbbbe8c06a9213e5ddbd2c22325ef26d56c411a2218ca8862b339d412d410f49",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M79-VAR-VARYING",
+    "sourceBuild": "lite181-2026-10-27 immutable production-181-v2 snapshot",
+    "sourceRevision": "audit1-2026-10-28",
+    "sourceFiles": {
+      "src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+      "src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+      "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+      "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+    },
+    "families": [
+      "fill",
+      "which",
+      "grow",
+      "step",
+      "transfer"
+    ],
+    "inventory": {
+      "goal": "Opit, että kirjain voi kertoa määrän, joka muuttuu: kun n kasvaa, myös lausekkeen arvo muuttuu.",
+      "intro": "Laboratorion kioskissa yksi jäätelö maksaa 2 €. Hinta riippuu jäätelöiden määrästä n.",
+      "reward": "Ymmärrät, miten lausekkeen arvo muuttuu, kun muuttuja muuttuu!",
+      "demos": [
+        {
+          "say": "Hinta on kaksi kertaa n euroa. Katso, kun n kasvaa yksi kerrallaan: jokainen jäätelö tuo kaksi euroa lisää, ja taulukko täyttyy.",
+          "label": "2n, kun n kasvaa",
+          "seconds": 12.7,
+          "finalCaption": "Kun n kasvaa yhdellä, hinta kasvaa 2 €. Luku 2 pysyy samana; vain n muuttuu."
+        },
+        {
+          "say": "Taksissa on aloitusmaksu neljä euroa ja kolme euroa jokaiselta kilometriltä: kolme n plus neljä. Kun n kasvaa, hinta kasvaa kolme euroa kerrallaan, mutta aloitusmaksu pysyy samana.",
+          "label": "3n + 4, kun n kasvaa",
+          "seconds": 12.7,
+          "finalCaption": "Kun n kasvaa yhdellä, hinta kasvaa 3 €. Luku 3 pysyy samana, samoin 4; vain n muuttuu."
+        }
+      ],
+      "families": {
+        "fill": {
+          "kind": "numeric",
+          "hint": "Sijoita n = 2: 2 · 2 + 1. Tai lisää 2 edelliseen riviin.",
+          "explain": "Kun n = 2: 2 · 2 + 1 = 5."
+        },
+        "which": {
+          "kind": "choice",
+          "hint": "Mikä kirjain kertoo ajan? Muuttuuko luku, joka on kirjoitettu numeroin?",
+          "explain": "t kasvaa koko ajan, ja matka 2t kasvaa sen mukana. Luku 2 pysyy samana."
+        },
+        "grow": {
+          "kind": "place",
+          "hint": "Sijoita jokainen n vuorollaan: 3 kertaa n, sitten + 1.",
+          "explain": "n = 4: 13, n = 5: 16, n = 6: 19. Kun n kasvaa yhdellä, arvo kasvaa 3."
+        },
+        "step": {
+          "kind": "numeric",
+          "hint": "Katso taulukosta, paljonko arvo kasvaa rivistä seuraavaan.",
+          "explain": "Jokainen uusi tuote maksaa 2 €: 2(n + 1) = 2n + 2."
+        },
+        "transfer": {
+          "kind": "numeric",
+          "hint": "Mikä osa hinnasta muuttuu, kun matka pitenee yhden kilometrin? Mikä pysyy?",
+          "explain": "Yksi kilometri lisää tuo 2 € lisää. Aloitusmaksu 4 € pysyy samana."
+        }
+      }
+    },
+    "registry": {
+      "fill": {
+        "node": "M79-VAR-VARYING",
+        "tag": "fill",
+        "outcome": "kirjoittaa luvun",
+        "assumed": [
+          "M79-EXPR-EVAL",
+          "M-MULTAB-ALL"
+        ],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {},
+        "support": [
+          "M79-EXPR-EVAL"
+        ],
+        "source": [
+          "families.ts M79-VAR-VARYING/fill"
+        ]
+      },
+      "which": {
+        "node": "M79-VAR-VARYING",
+        "tag": "which",
+        "outcome": "valitsee oikean vaihtoehdon",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {},
+        "support": [],
+        "source": [
+          "oletus"
+        ]
+      },
+      "grow": {
+        "node": "M79-VAR-VARYING",
+        "tag": "grow",
+        "outcome": "sijoittaa osat oikeille paikoille",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {},
+        "support": [],
+        "source": [
+          "oletus"
+        ]
+      },
+      "step": {
+        "node": "M79-VAR-VARYING",
+        "tag": "step",
+        "outcome": "kirjoittaa luvun",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {},
+        "support": [],
+        "source": [
+          "oletus"
+        ]
+      },
+      "transfer": {
+        "node": "M79-VAR-VARYING",
+        "tag": "transfer",
+        "outcome": "kirjoittaa luvun",
+        "assumed": [],
+        "supplied": [],
+        "coTaught": [],
+        "incidental": {},
+        "support": [],
+        "source": [
+          "oletus"
+        ]
+      }
+    },
+    "runtimeOverlay": "index.ts collects ALGEBRA79_NODES/ALGEBRA79B_NODES, fills missing goals, applies NodeSpec revision policy. None of these IDs in SIMS. kit.cases transfer separate; other phases reuse generator pool. Registry merges manifest coverage plus node/wildcard/tag declarations.",
+    "comparison": "Inherit varyScene link between changing count, fixed coefficient/base and table. Actual families step/fill/which/grow/transfer; COVERAGE misses grow and second demo. Main path avoids speed/time assumption in which. Supply substitution support rather than hard-gate EXPR-EVAL; acknowledge fill registry and extra arithmetic in grow/transfer. Add decreasing transfer and avoid only n changes caption, because dependent amount changes too.",
+    "reconciliationForOpus": [
+      "COVERAGE omits grow/place and second varyScene demo.",
+      "Caption only n changes needs qualification: coefficients/base stay fixed, but dependent amount also changes.",
+      "which invokes a time/speed model; main authored path uses count/cost and decreasing remaining quantity. Growth of input need not imply growth of every expression.",
+      "Registry fill assumption EXPR-EVAL/M-MULTAB-ALL is content support. Comparable arithmetic is also used in grow/transfer even with default registry. Do not silently add canonical required edges."
+    ],
+    "limits": "Annettu kokonaislukumalli: tulostetilauksen hinta h=4+2n, n0–6; siirtona jäljellä olevat12−n korttia. Ei yleistä riippuvuuden tunnistamista havaintodatan perusteella, jatkuvan ajan animaatiota tai todellisten hintojen väitettä.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+        "src/content/algebra79.ts": "dba08bcb491473c1e29dde39e66c894631fc4ad96ddee5339eef2a2dbf7a1b6b",
+        "src/content/algebra79b.ts": "2cb8b4e292009053a217f710c067ef8fb9b7b33a3205c127fe622f3886e7ac3b",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "7-9",
+    "teacherObjective": "Muuttujan ymmärtäminen muuttuvana suureena",
+    "lessonObjective": "Tulkita kirjain muuttuvan suureen lukuarvoksi, seurata kahden suureen vaihtelua annetulla säännöllä ja erottaa vakio-osat muuttuvista arvoista.",
+    "childGoal": "Vaihdan määrää ja selitän, mikä muuttuu ja mikä pysyy samana.",
+    "canonicalNodeKind": "concept",
+    "canonicalMasteryRole": "atomic",
+    "canonicalEntryRole": "none",
+    "canonicalDynamicPrerequisiteRule": null,
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-ALG-04"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "requiredPrerequisites": [
+      {
+        "id": "M-ALG-04",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-ALG-04 on ydinesitieto tälle osaamiskohteelle."
+      }
+    ],
+    "strongSupport": [
+      {
+        "id": "M-ALG-05",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "M-ALG-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      }
+    ],
+    "assumed": [
+      "Yhteen- ja vähennyslasku sekä2:n kertotaulu; sijoituslasku näytettävissä tukena. M79-EXPR-EVAL ei uusi kanoninen kova portti.",
+      "Ei nopeuden, kellonajan tai kuvaajan lukemisen vaatimusta."
+    ],
+    "canonicalGraph": {
+      "path": "reference/inputs/canonical-690-graph.json",
+      "sha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "sourceCommit": "d547e9ebfbd8ca1737abe40be34e9ace53ea773e",
+      "sourceBasis": "pedagogically_derived",
+      "curriculumRefs": [
+        "M79-S3"
+      ]
+    },
+    "scope": "Annettu kokonaislukumalli: tulostetilauksen hinta h=4+2n, n0–6; siirtona jäljellä olevat12−n korttia. Ei yleistä riippuvuuden tunnistamista havaintodatan perusteella, jatkuvan ajan animaatiota tai todellisten hintojen väitettä.",
+    "evidenceLimits": "All plans, numerical bounds, contexts and controls are project design. Canonical concept/atomic role retained. No practice recognition/choice is described as free construction or independent long-term understanding; no human efficacy claim.",
+    "interaction": {
+      "action": "Explore the current n using plus/minus controls0–6; the picture and computed price update. There is no direct exploration selector or live table. A separate prediction panel names its own target n and rule; enter its predicted quantity, check, and optionally reveal the calculation. Transfer uses remaining count12−n.",
+      "checkedMeaning": "Check predicted quantity against explicit current target/rule, with feedback for omitted fixed fee, concatenation, wrong neighbouring row or increment vs total confusion. Computed exploration is support, not independent arithmetic evidence.",
+      "domain": "n integer0–6 in price core,0–12 in remaining count transfer. h4+2n, r12−n. Any arbitrary input jump uses exact difference, not always+2. Zero items has4€ because the example explicitly includes the reserved base charge.",
+      "feedback": "Editing a prediction or its separate target/rule neutralizes that panel feedback. Changing the demonstration n preserves a fixed independent prediction target. Optional fixed-fee highlighting leaves the answer and verdict unchanged.",
+      "tests": [
+        "All n0..6 price results and n0..12 remaining results; increases and decreases.",
+        "For every from/to in0..6, price difference2*(to−from); arbitrary jumps must not be described as+2.",
+        "Full checked cycle correct→editwrong→support→retry→repair→support→correct for each panel.",
+        "Rule/context/target changes aftercorrect clear only dependent feedback. View-only help leaves verdict.",
+        "Blank/nonnumeric/noninteger/out-of-domain entries reject; controls clamp at stated limits.",
+        "No time or playback-rate claim, storage or counting/naming gate. Pause/reset/dispose/remount."
+      ]
+    },
+    "curriculumVsDesign": "Canonical facts imported unchanged. Foreign primary guidance/research is conceptual corroboration, not new Finnish OPS mapping, human review or lesson efficacy. Contexts/values/controls are original project design.",
+    "feedbackContract": {
+      "path": "INTERACTION_FEEDBACK_CONTRACT.md",
+      "sha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "semanticBoundary": "Editing a prediction or its separate target/rule neutralizes that panel feedback. Changing the demonstration n preserves a fixed independent prediction target. Optional fixed-fee highlighting leaves the answer and verdict unchanged."
+    },
+    "assetProvenance": [
+      {
+        "path": "diagram.svg",
+        "origin": "Original subject SVG and mathematical coordinates authored2026-10-29; no source figure reused."
+      },
+      {
+        "path": "lesson.css",
+        "origin": "Scoped local presentation, no external or escaped dependency."
+      },
+      {
+        "path": "shared/aava/map.png",
+        "origin": "Unmodified user-supplied raster v2 interpretation; named static96×96. Not asserted hand-drawn original; no redraw/duplication."
+      }
+    ],
+    "reviewStatus": "Author isolated source/domain/browser checks passed. Independent content/domain/alignment review and human validation remain pending."
+  },
+  "extensions": {
+    "researchNote": "research.md",
+    "alignmentNote": "alignment.md",
+    "tests": "tests.mjs",
+    "browserQA": "browser.mjs",
+    "authorization": "Explicit main B04 GO after B03 source7c58cd2. Own only these3 packages.",
+    "preparation": "Actual targeted2026-10-29 retrieval and source/media preparation reused; hashes rechecked at GO. No fabricated fresh perKC retrieval.",
+    "lifecycle": "Self-contained module; delegated own-root listeners, no timers/storage/network. pause/reset preserve disabled controls; dispose removes listeners; remount disposes prior own instance.",
+    "domainBoundary": "All learner work is low-stakes local feedback; no persistence, mastery awards or assessment evidence claims.",
+    "authorTechnicalChecks": {
+      "date": "2026-10-29",
+      "pureTests": 4,
+      "isolatedSchema": "Only this own package copied into a temporary root with actual declared shared assets; loadPackages passed. No broad package load or main build.",
+      "browser": {
+        "id": "M79-VAR-VARYING",
+        "status": "PASS_AUTHOR_SOURCE_QA",
+        "views": [
+          {
+            "width": 390,
+            "constructionAndRepair": true,
+            "correctAndRetryEditFeedback": true,
+            "viewOnlyPreservesVerdict": true,
+            "images": true,
+            "controls44": true,
+            "noOverflow": true,
+            "lifecycle": true
+          },
+          {
+            "width": 1280,
+            "constructionAndRepair": true,
+            "correctAndRetryEditFeedback": true,
+            "viewOnlyPreservesVerdict": true,
+            "images": true,
+            "controls44": true,
+            "noOverflow": true,
+            "lifecycle": true
+          }
+        ],
+        "staticTeaching": true,
+        "pageErrors": [],
+        "limits": "Isolated source composition; no live690 build, independent content approval, learner/human testing or efficacy claim."
+      },
+      "actualVisualInspection": "Actual original diagrams and practice states viewed at390px; full1280px pages viewed. Named supplied PNGs loaded,44px controls, no horizontal overflow.",
+      "feedback": "Real correct→edit→support→retry→repair→support→correct paths, earlier-retry edits, and view-only preservation passed.",
+      "domain": "All20 input counts×31 predictions, arbitrary up/down jumps, zero counts, numeric domains, string normalisation and finite model geometry tested.",
+      "humanValidation": false,
+      "mainBuild": false
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B09",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# M-DATA-10 — research and design, 2026-10-29
+
+Read actual saari2.ts857..940, twoWayScene/dataanim291..327, families (no KC-specific overlay), index registry, goals97, source audit157 and types. The existing listToTable/cell/shape/fill/transfer families include both one-way and two-way tasks; no motion overlay applies. Treat the supplied audit as unapproved history.
+
+Compared primary Cambridge NRICH https://nrich.maths.org/problems/sorting-numbers-1 and the original EEF guidance https://files.eric.ed.gov/fulltext/ED612294.pdf . Two-criterion sorting informs explicit row/column meanings; purposeful representation and feedback inform list→cell→count. We do not import number-property prerequisites, source diagrams or pupil quotations. EEF's landing-page open returned a cache miss; the original authored report was retrieved via the US Department of Education ERIC archive, not a third-party summary. No stronger or lesson-specific evidence is claimed.
+
+Project choices: complete fictional2×2 lists, eight/six records, repeated counts, zero group, one manual step per record and four own count entries. The list's completeness is stated; an unobserved group in a real study would not automatically be zero. All counts derive from record identity and both attributes. Transposition preserves semantic keys and values. Demo checkmarks record processed observations only, never mastery. Original illustration uses the same eight observations and3,2,1,2 matrix. No external artwork/prose copied; supplied Loikka art is unchanged.
+
+This process construction is broader than prepared-table recognition but still supplies the structure. It does not establish general unaided table design, real-world data collection, independent competence or retention. Guidance links do not establish Finnish curriculum mapping; frozen canonical source remains authoritative. Human review pending.

@@ -1,0 +1,50 @@
+{
+  "_ohje": "Avainasentosarjat samassa muodossa kuin lite/src/ui/sprite-data.ts (pose, ms, dy, rot). Ruutu 256x256, jalat (128,238). Asento etsitään ensin art/characters/<hahmo>/, sitten kaanonista lite/public/characters/<hahmo>/.",
+  "frame": 256,
+  "anchor": { "x": 128, "y": 238 },
+  "sequences": {
+    "aava": {
+      "jump": { "loop": false, "frames": [
+        { "pose": "idle", "ms": 150, "dy": 0, "rot": 0 }, { "pose": "crouch", "ms": 180, "dy": 0, "rot": 0 },
+        { "pose": "jump", "ms": 280, "dy": -22, "rot": 0 }, { "pose": "land", "ms": 180, "dy": 0, "rot": 0 },
+        { "pose": "idle", "ms": 300, "dy": 0, "rot": 0 } ] },
+      "celebrate": { "loop": false, "frames": [
+        { "pose": "idle", "ms": 120, "dy": 0, "rot": 0 }, { "pose": "crouch", "ms": 140, "dy": 0, "rot": 0 },
+        { "pose": "celebrate", "ms": 420, "dy": -10, "rot": 0 }, { "pose": "flap_01", "ms": 150, "dy": -6, "rot": 0 },
+        { "pose": "flap_02", "ms": 150, "dy": -2, "rot": 0 }, { "pose": "flap_01", "ms": 150, "dy": -4, "rot": 0 },
+        { "pose": "celebrate", "ms": 500, "dy": 0, "rot": 0 }, { "pose": "idle", "ms": 300, "dy": 0, "rot": 0 } ] },
+      "run": { "loop": true, "frames": [
+        { "pose": "run_01", "ms": 130, "dy": 0, "rot": 0 }, { "pose": "run_02", "ms": 130, "dy": -4, "rot": 0 } ] },
+      "flap": { "loop": true, "frames": [
+        { "pose": "flap_01", "ms": 140, "dy": -2, "rot": 0 }, { "pose": "flap_02", "ms": 140, "dy": 0, "rot": 0 } ] },
+      "think": { "loop": true, "frames": [
+        { "pose": "think", "ms": 2200, "dy": 0, "rot": 0 }, { "pose": "think", "ms": 600, "dy": 0, "rot": 2 } ] },
+      "sleep": { "loop": true, "frames": [
+        { "pose": "sleep", "ms": 1600, "dy": 0, "rot": 0 }, { "pose": "sleep", "ms": 1600, "dy": 2, "rot": 0 } ] },
+      "sad": { "loop": false, "frames": [
+        { "pose": "idle", "ms": 200, "dy": 0, "rot": 0 }, { "pose": "sad", "ms": 1400, "dy": 2, "rot": 0 }, { "pose": "idle", "ms": 300, "dy": 0, "rot": 0 } ] },
+      "surprised": { "loop": false, "frames": [
+        { "pose": "idle", "ms": 100, "dy": 0, "rot": 0 }, { "pose": "surprised", "ms": 180, "dy": -8, "rot": -3 },
+        { "pose": "surprised", "ms": 700, "dy": 0, "rot": 0 }, { "pose": "idle", "ms": 300, "dy": 0, "rot": 0 } ] },
+      "point": { "loop": false, "frames": [
+        { "pose": "idle", "ms": 150, "dy": 0, "rot": 0 }, { "pose": "point", "ms": 1400, "dy": 0, "rot": 0 }, { "pose": "idle", "ms": 300, "dy": 0, "rot": 0 } ] },
+      "read": { "loop": true, "frames": [
+        { "pose": "read", "ms": 2400, "dy": 0, "rot": 0 }, { "pose": "read", "ms": 400, "dy": 1, "rot": 0 } ] },
+      "sit": { "loop": true, "frames": [
+        { "pose": "sit", "ms": 2400, "dy": 0, "rot": 0 }, { "pose": "sit", "ms": 600, "dy": 1, "rot": 0 } ] }
+    },
+    "loikka": {
+      "celebrate": { "loop": false, "frames": [
+        { "pose": "crouch", "ms": 140, "dy": 0, "rot": 0 }, { "pose": "celebrate", "ms": 500, "dy": -12, "rot": 0 },
+        { "pose": "celebrate", "ms": 400, "dy": 0, "rot": 0 }, { "pose": "idle", "ms": 300, "dy": 0, "rot": 0 } ] },
+      "think": { "loop": true, "frames": [ { "pose": "think", "ms": 2200, "dy": 0, "rot": 0 }, { "pose": "think", "ms": 600, "dy": 0, "rot": -2 } ] },
+      "sleep": { "loop": true, "frames": [ { "pose": "sleep", "ms": 1600, "dy": 0, "rot": 0 }, { "pose": "sleep", "ms": 1600, "dy": 2, "rot": 0 } ] },
+      "sad": { "loop": false, "frames": [ { "pose": "sad", "ms": 1400, "dy": 2, "rot": 0 }, { "pose": "idle", "ms": 300, "dy": 0, "rot": 0 } ] },
+      "surprised": { "loop": false, "frames": [ { "pose": "surprised", "ms": 180, "dy": -8, "rot": 0 }, { "pose": "surprised", "ms": 700, "dy": 0, "rot": 0 }, { "pose": "idle", "ms": 300, "dy": 0, "rot": 0 } ] },
+      "point": { "loop": false, "frames": [ { "pose": "point", "ms": 1400, "dy": 0, "rot": 0 }, { "pose": "idle", "ms": 300, "dy": 0, "rot": 0 } ] },
+      "read": { "loop": true, "frames": [ { "pose": "read", "ms": 2400, "dy": 0, "rot": 0 }, { "pose": "read", "ms": 400, "dy": 1, "rot": 0 } ] },
+      "sit": { "loop": true, "frames": [ { "pose": "sit", "ms": 2400, "dy": 0, "rot": 0 }, { "pose": "sit", "ms": 600, "dy": 1, "rot": 0 } ] },
+      "swim": { "loop": true, "frames": [ { "pose": "swim", "ms": 500, "dy": 0, "rot": 0 }, { "pose": "swim", "ms": 500, "dy": 3, "rot": 2 } ] }
+    }
+  }
+}

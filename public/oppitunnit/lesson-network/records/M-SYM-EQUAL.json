@@ -1,0 +1,663 @@
+{
+  "kcId": "M-SYM-EQUAL",
+  "pagePath": "lessons/M-SYM-EQUAL.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-SYM-EQUAL",
+  "canonicalNode": {
+    "id": "M-SYM-EQUAL",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Matemaattiset symbolit",
+    "title": "Yhtäsuuruusmerkin merkityksen ymmärtäminen",
+    "short_description": "Yhtäsuuruusmerkin merkityksen ymmärtäminen",
+    "source_basis": "pedagogically_derived",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2"
+    ],
+    "evidence_notes": "v0.2-refaktorissa erotettu noodista M-ARITH-01 itsenäiseksi evidenssikohteeksi.",
+    "status": "candidate_refactored",
+    "node_kind": "concept",
+    "relations": [
+      {
+        "id": "M-NUM-03",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-NUM-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-NUM-03"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "split_from": "M-ARITH-01",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Matemaattiset symbolit"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-NUM-03",
+      "targetKCId": "M-SYM-EQUAL",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-NUM-03 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-SYM-EQUAL",
+      "targetKCId": "M-ARITH-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ARITH-01 on v0.2:ssa integraationoodi; atominen alitaito M-SYM-EQUAL vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-NUM-03"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-SYM-EQUAL/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-101-comparison-of-quantities-and-measures/",
+        "title": "Comparison of quantities and measures",
+        "accessed": "2026-10-29",
+        "read": "HTML Introduction and Teaching Points1–3 (lines61–71).",
+        "perKC": [
+          "M-SYM-EQUAL"
+        ],
+        "usageRestrictions": "Copyright policy https://www.ncetm.org.uk/copyright/ read: default Crown/OGL subject to exceptions and attribution; named-author permissions caveat. No figures/prose/code copied.",
+        "adopted": "Compare set quantities and express equality; keep measured attributes separate from cardinality.",
+        "limitations": "English KS1 guidance, not Finnish requirements or a learner study. Linked guide, slides and video not retrieved."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-1-unit-6-additive-structures/",
+        "title": "Additive structures",
+        "accessed": "2026-10-29",
+        "read": "HTML Learning outcomes1–19 (lines66–87), especially1–4,7–13.",
+        "perKC": [
+          "M-SYM-EQUAL"
+        ],
+        "usageRestrictions": "NCETM copyright policy above independently read. Original Finnish explanations, examples and diagrams only.",
+        "adopted": "Distinguish combining from change stories; allow commuted addends; equality relates parts and whole.",
+        "limitations": "Page lists classroom slides; did not download/read slides. Four-week unit is not an atomic lesson duration or Finnish mandate."
+      },
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/1/number/addition-and-subtraction/",
+        "title": "Addition and subtraction: Year1 Planning tool",
+        "accessed": "2026-10-29",
+        "read": "HTML Expected level of development, Teaching and learning summary, student outcomes and misconceptions (lines50–79); Learning from home introduction/examples88–104.",
+        "perKC": [
+          "M-SYM-EQUAL"
+        ],
+        "usageRestrictions": "https://www.mathematicshub.edu.au/terms-of-use/ read: Commonwealth material CC BY4.0 unless stated; logos/trademarks/third-party material excluded. No copied figures/prose.",
+        "adopted": "Connect concrete sets, language and symbols; permit different valid methods; vary equation sides and contexts; avoid always-larger/smaller claims with zero.",
+        "limitations": "Australian AC9M1N04 planning guidance, not Finnish statutory curriculum or independent efficacy evidence; no linked resources/media read."
+      },
+      {
+        "url": "https://nrich.maths.org/articles/getting-balance-right?tab=teacher",
+        "title": "Getting the Balance Right — Ems Lord",
+        "accessed": "2026-10-29",
+        "read": "HTML opening misconception, stages1–3 and conclusion (lines79–107,124); references located.",
+        "perKC": [
+          "M-SYM-EQUAL"
+        ],
+        "usageRestrictions": "https://nrich.maths.org/terms-and-conditions read: Cambridge copyright, restricted study/classroom copying, no web mirroring; use citation and original design only.",
+        "adopted": "Use small equivalent quantities with unknown on either side and both sides composed; address answering with the left total.",
+        "limitations": "Teaching article reporting research; original cited studies not retrieved. Stages are not assigned to learners or used as mastery/history. Large compensation calculations are beyond this atomic scope. No linked activities/figures copied."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+        "note": "AUTHOR source checks only; different-author independent synthetic review pending. Not self-approved."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+        "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/symbols-independent-r2.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+        "note": "No real human/learner review performed. Human review remains pending."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-SYM-EQUAL",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "five.svg",
+        "sha256": "f140a2ede27d9e6806d32ea39729be8969336e30ddd233ae6393caf4c1a94270"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "85896e74f5ef03b1849f3ee17d5b770ca2a5da35f2c1964f136990be9452f92f"
+      },
+      {
+        "path": "parts.svg",
+        "sha256": "48f8879db9cf032b8f006ff2369059bfbfcdbd104b88b1b7d44be7189f3cdd5c"
+      },
+      {
+        "path": "start.svg",
+        "sha256": "064fb4a2afae72e58c1496ce7e0b79d413bf96d46ae76ae1036ee8dafe66a629"
+      },
+      {
+        "path": "too-many.svg",
+        "sha256": "8e21df7f2fa8e44e04fb111283086e7db46276a3e84d6657b3be6223b9f8847c"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-101-comparison-of-quantities-and-measures/",
+        "title": "Comparison of quantities and measures",
+        "accessed": "2026-10-29",
+        "read": "HTML Introduction and Teaching Points1–3 (lines61–71).",
+        "perKC": [
+          "M-SYM-EQUAL"
+        ],
+        "usageRestrictions": "Copyright policy https://www.ncetm.org.uk/copyright/ read: default Crown/OGL subject to exceptions and attribution; named-author permissions caveat. No figures/prose/code copied.",
+        "adopted": "Compare set quantities and express equality; keep measured attributes separate from cardinality.",
+        "limitations": "English KS1 guidance, not Finnish requirements or a learner study. Linked guide, slides and video not retrieved."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-1-unit-6-additive-structures/",
+        "title": "Additive structures",
+        "accessed": "2026-10-29",
+        "read": "HTML Learning outcomes1–19 (lines66–87), especially1–4,7–13.",
+        "perKC": [
+          "M-SYM-EQUAL"
+        ],
+        "usageRestrictions": "NCETM copyright policy above independently read. Original Finnish explanations, examples and diagrams only.",
+        "adopted": "Distinguish combining from change stories; allow commuted addends; equality relates parts and whole.",
+        "limitations": "Page lists classroom slides; did not download/read slides. Four-week unit is not an atomic lesson duration or Finnish mandate."
+      },
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/1/number/addition-and-subtraction/",
+        "title": "Addition and subtraction: Year1 Planning tool",
+        "accessed": "2026-10-29",
+        "read": "HTML Expected level of development, Teaching and learning summary, student outcomes and misconceptions (lines50–79); Learning from home introduction/examples88–104.",
+        "perKC": [
+          "M-SYM-EQUAL"
+        ],
+        "usageRestrictions": "https://www.mathematicshub.edu.au/terms-of-use/ read: Commonwealth material CC BY4.0 unless stated; logos/trademarks/third-party material excluded. No copied figures/prose.",
+        "adopted": "Connect concrete sets, language and symbols; permit different valid methods; vary equation sides and contexts; avoid always-larger/smaller claims with zero.",
+        "limitations": "Australian AC9M1N04 planning guidance, not Finnish statutory curriculum or independent efficacy evidence; no linked resources/media read."
+      },
+      {
+        "url": "https://nrich.maths.org/articles/getting-balance-right?tab=teacher",
+        "title": "Getting the Balance Right — Ems Lord",
+        "accessed": "2026-10-29",
+        "read": "HTML opening misconception, stages1–3 and conclusion (lines79–107,124); references located.",
+        "perKC": [
+          "M-SYM-EQUAL"
+        ],
+        "usageRestrictions": "https://nrich.maths.org/terms-and-conditions read: Cambridge copyright, restricted study/classroom copying, no web mirroring; use citation and original design only.",
+        "adopted": "Use small equivalent quantities with unknown on either side and both sides composed; address answering with the left total.",
+        "limitations": "Teaching article reporting research; original cited studies not retrieved. Stages are not assigned to learners or used as mastery/history. Large compensation calculations are beyond this atomic scope. No linked activities/figures copied."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+        "note": "AUTHOR source checks only; different-author independent synthetic review pending. Not self-approved."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+        "note": "AUTHOR source checks only; different-author independent synthetic review pending. Not self-approved."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+        "note": "No real human/learner review performed. Human review remains pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+        "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/symbols-independent-r2.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+        "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/symbols-independent-r2.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-SYM-EQUAL",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "taskFamilies": [
+        "trueFalse",
+        "fillLeft",
+        "plates",
+        "level",
+        "transfer"
+      ],
+      "actualInventory": {
+        "lines": "ranta2.ts235–300; countanim.ts622–656; audit/LESSON_AUDIT.md361–363",
+        "goalOverlay": "Opit, että yhtä suuri -merkki tarkoittaa: molemmilla puolilla on yhtä paljon.",
+        "stop": "Tasapainokivi",
+        "introMeaning": "Keinulauta suorassa kun yhtä paljon.",
+        "rewardMeaning": "Kummallakin puolella yhtä paljon.",
+        "demos": [
+          "balanceScene([5],[4],1): 5=4+1",
+          "balanceScene([3,1],[2],2):3+1=2+2",
+          "balanceScene([3,1],[2],4):3+1≠2+4"
+        ],
+        "families": {
+          "trueFalse": "Left/right/same expression forms; a1..5,b1..4; correct or result off by1.",
+          "fillLeft": "Box left of = must equal a+b; deduplicated non-sum alternatives.",
+          "plates": "Choose matching equal counts vs n and n±1.",
+          "level": "Balance task left[a,b],right[c]; learner adds stones to right."
+        },
+        "transfer": "a2..4,b1..3,c1..a+b-1; fill a+b=c+box. Distractors whole left sum and all visible numbers added.",
+        "hints": "Count both sides; box equals other side; counts of both plates; level/transfer left total and amount already on right.",
+        "exposure": "Models show answers and error example. Balance changes continuously reveal comparative state; no independent mastery claim.",
+        "reconcile": [
+          "Bare stone-count-to-weight claim lacks explicit equal masses in Lite intro/demo/caption; use quantity panels and one-to-one pairs.",
+          "Maintain equality as symmetric relation, including number=number, result on left, and two composed sides.",
+          "Co-teach small composition with pictures; do not add PLUS/ADD/SUB/ARITH required gates."
+        ],
+        "canonical": {
+          "id": "M-SYM-EQUAL",
+          "subject": "mathematics",
+          "grade_band": "1-2",
+          "topic_area": "Luvut ja laskutoimitukset",
+          "parent_concept": "Matemaattiset symbolit",
+          "title": "Yhtäsuuruusmerkin merkityksen ymmärtäminen",
+          "short_description": "Yhtäsuuruusmerkin merkityksen ymmärtäminen",
+          "source_basis": "pedagogically_derived",
+          "curriculum_refs": [
+            "OPH-POPS2014-MATH-VL1-2-S2"
+          ],
+          "evidence_notes": "v0.2-refaktorissa erotettu noodista M-ARITH-01 itsenäiseksi evidenssikohteeksi.",
+          "status": "candidate_refactored",
+          "node_kind": "concept",
+          "relations": [
+            {
+              "id": "M-NUM-03",
+              "relation_type": "prerequisite",
+              "strength": "required",
+              "rationale": "M-NUM-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+            }
+          ],
+          "prerequisite_groups": [
+            {
+              "all_of": [
+                "M-NUM-03"
+              ],
+              "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+            }
+          ],
+          "foundation_entry": false,
+          "zero_required_indegree": false,
+          "foundation_entry_rationale": null,
+          "entry_role": "none",
+          "mastery_role": "atomic",
+          "split_from": "M-ARITH-01",
+          "concept_path": [
+            "Matematiikka",
+            "Luvut ja laskutoimitukset",
+            "Matemaattiset symbolit"
+          ]
+        },
+        "liteNode": {
+          "id": "M-SYM-EQUAL",
+          "title": "Yhtäsuuruusmerkin merkityksen ymmärtäminen",
+          "subject": "mathematics",
+          "grade": "1-2",
+          "kind": "concept",
+          "role": "atomic",
+          "entry": "none",
+          "foundation": false,
+          "dynamic": null,
+          "groups": [
+            {
+              "all": [
+                "M-NUM-03"
+              ]
+            }
+          ],
+          "rel": [
+            {
+              "id": "M-NUM-03",
+              "type": "prerequisite",
+              "strength": "required"
+            }
+          ],
+          "soft": [],
+          "curriculum": [
+            "OPH-POPS2014-MATH-VL1-2-S2"
+          ],
+          "original": true
+        },
+        "familyDeclarations": "No specific DECL key or data.coverage target overlays. Defaults apply; build outcome is token construction, choice outcome is selection, balance outcome claims equal weight.",
+        "nodeRevision": "audit1-2026-10-28",
+        "globalContentRevision": "lite181-2026-10-27",
+        "motionOverlay": "SIMS only covers mapped motion/time IDs; no override for these3."
+      },
+      "sourceHashes": {
+        "src/content/ranta2.ts": "28d8f7b08205a7e5be0c2087c85e256e609578e83a9e6e714a1ee8573ff47fc6",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/audit.ts": "d9891d42eb739a4b65f8e80e4d24eda700f76e136a2fbc149e1965c3a4d69995",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/engine/graph.ts": "8bcdc3d7cafed82fd8d2a0a7dd69a547f2e70d6d2a87834f110164d4fe4b24d9",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427"
+      },
+      "inherited": "Atomic symbol meaning, small pictured quantities, concrete-to-symbol transition, support and fresh context. Supplied character PNG only; Lite vector mascots not copied.",
+      "extended": "Editable quantity model, whole-side comparison, composed sides, reversible side order and spacing, new button context.",
+      "reconciliation": [
+        "Bare stone-count-to-weight claim lacks explicit equal masses in Lite intro/demo/caption; use quantity panels and one-to-one pairs.",
+        "Maintain equality as symmetric relation, including number=number, result on left, and two composed sides.",
+        "Co-teach small composition with pictures; do not add PLUS/ADD/SUB/ARITH required gates."
+      ],
+      "frozenLite": "Read-only source; no suggested correction applied.",
+      "bridge": "Teacher-network resolver owns deployed Lite/full actions. No route/deployment or game mastery asserted."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-SYM-EQUAL",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Matemaattiset symbolit",
+        "title": "Yhtäsuuruusmerkin merkityksen ymmärtäminen",
+        "short_description": "Yhtäsuuruusmerkin merkityksen ymmärtäminen",
+        "source_basis": "pedagogically_derived",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2"
+        ],
+        "evidence_notes": "v0.2-refaktorissa erotettu noodista M-ARITH-01 itsenäiseksi evidenssikohteeksi.",
+        "status": "candidate_refactored",
+        "node_kind": "concept",
+        "relations": [
+          {
+            "id": "M-NUM-03",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-NUM-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-NUM-03"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "split_from": "M-ARITH-01",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Matemaattiset symbolit"
+        ]
+      },
+      "canonicalSource": "reference/inputs/canonical-690-graph.json",
+      "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "gradeBand": "1-2",
+      "teacherObjective": "Yhtäsuuruusmerkin merkityksen ymmärtäminen",
+      "childGoal": "Tunnistan ja teen yhtä suuria määriä merkin = molemmin puolin.",
+      "required": [
+        {
+          "all_of": [
+            "M-NUM-03"
+          ]
+        }
+      ],
+      "strongSupport": [],
+      "additionalHardGates": [],
+      "coTaughtAssumptions": "Small quantities and their compositions are fully pictured/explained. Arithmetic fluency and other symbol lessons are not eligibility gates. Text can be read by an adult, no speech response or forced object tapping.",
+      "instructionalForm": "Editable quantity model, whole-side comparison, composed sides, reversible side order and spacing, new button context.",
+      "stageAccess": "Immediate useful action, optional explanation, practice and exit with free local anchor links. No forced step progression.",
+      "predictions": "An optional thinking pause precedes the model action; no prediction used as mastery evidence.",
+      "evidenceLimits": "Low-stakes current-state support only. Model/hint/exposure not independent. No delayed retention, formal mastery, physical skill, learner history or efficacy claim. Equality model reveals relation live and is explicitly supported practice.",
+      "offline": "Teacher notes offer physical counters/pairing and state limits of screen activity.",
+      "contentAndHumanReview": "Pending separate independent content/alignment review and real human/learner review. Author checks are not those reviews.",
+      "primaryComparisons": "Independently retrieved primary HTML pages and policy sections2026-10-29; referenced slides/videos/original studies not claimed read. Frozen curriculum_refs are project provenance, not current Finnish legal requirements.",
+      "comparisonClosure": "evidence/production/B09/astra10-comparison/COMPARISON_DECISIONS_FI.md, read2026-10-29. Selective early model, short purpose and free anchors adopted; no Astra runtime copied.",
+      "visualThesis": "Open teaching workspace: exact quantity drawing, one immediate action, limited chrome; unchanged supplied raster art.",
+      "motion": "Manual finite steps only; no autonomous clock, animation loop or decorative mascot movement. Pause disables interaction without advancing; reset restores start.",
+      "feedbackContract": {
+        "path": "INTERACTION_FEEDBACK_CONTRACT.md",
+        "sha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+        "eventCommitGuidance": "EVENT_COMMIT_REVIEW_B05.md",
+        "eventCommitSha256": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+        "semanticEdits": "Both input and change commit and retire dependent positive/negative verdict. Explicit check reads visible current values.",
+        "invariantEdits": "Separate model step/help does not change a practice expression. Equality side/spacing changes preserve relation and a valid verdict."
+      }
+    },
+    "extensions": {
+      "batch": "B09",
+      "authorScope": "Only this KC source package; integration and independent review by main/different author.",
+      "artProvenance": "Supplied v2 generated PNG reinterpretation of user identities, not claimed hand-drawn original. Unmodified existing pose SHA matches shared source and current package references. No asset generation.",
+      "numericTruth": "Deterministic bounded pure functions; no eval, LLM checking or UI-provided correctness defaults.",
+      "licenceRelease": "Inherited human, licence, learner, accessibility, efficacy, deployment and release holds remain open."
+    },
+    "contentHash": "aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+    "contentRevision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+          "note": "AUTHOR source checks only; different-author independent synthetic review pending. Not self-approved."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+          "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/symbols-independent-r2.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+          "note": "No real human/learner review performed. Human review remains pending."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+          "note": "AUTHOR source checks only; different-author independent synthetic review pending. Not self-approved."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@aec006f4f1c21a14361ec4e12933f6e4295d98c912cf492f6a62f04f7bcc3c38",
+          "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/symbols-independent-r2.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+        }
+      ]
+    }
+  },
+  "outputHash": "1ac47706a6a863c21bfd27654f120ca4c3bcdf7d5b54d4cb761aba411c4e0344",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "1ac47706a6a863c21bfd27654f120ca4c3bcdf7d5b54d4cb761aba411c4e0344",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

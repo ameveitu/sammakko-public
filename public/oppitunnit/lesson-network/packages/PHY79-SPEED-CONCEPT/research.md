@@ -1,0 +1,5 @@
+# Research and design — 2026-10-29
+
+See lesson.json research records for retrieved sources and limitations. OpenStax supports whole-distance / whole-time; the PhET landing page was retrieved but legacy simulation/teacher guide was not inspected. Original examples and diagrams are project-authored, not copied. Aava/Loikka supplied PNGs unchanged. Body separates instantaneous moving speed from whole-trip mean using a stop; numeric checks are deterministic and tested in tests.mjs.
+
+A second readable PhET primary comparison was retrieved: Interactive Lecture Demonstrations (official virtual-workshop PDF). It uses prediction before simulated observation and graph interpretation. This lesson adopts the prediction/observation relationship but keeps representations to straight distance tracks and own-trip clocks. It does not copy its graph or require negative velocity/acceleration. The legacy Moving Man landing page remains marked limited retrieval rather than pretending its teacher guide was inspected.

@@ -1,0 +1,1425 @@
+{
+  "schemaVersion": 1,
+  "kcId": "PHY79-SPEED-REARR",
+  "state": "draft",
+  "revision": 14,
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "lesson.css",
+      "sha256": "219778325bf284a7d8a679e9ce99749c9be6f3d2fd1d502d885ac0e10dbb22b4"
+    },
+    {
+      "path": "initial.svg",
+      "sha256": "d61bc2b06ac6bef2c25ee75ac6dfeb6789d45c07cf3ee73de720034215abbb0f"
+    },
+    {
+      "path": "example1.svg",
+      "sha256": "146f1b997365f1d7365cdc92168e6b538c9011b664b784abab93f1a765c3f1e7"
+    },
+    {
+      "path": "example2.svg",
+      "sha256": "cf17b4e76f4c2dcf4a4a81d4fd151aacf47f42dc37c10fc516105677102b6dcb"
+    },
+    {
+      "path": "example3.svg",
+      "sha256": "ef9b25a8f9f1e878f87e8bfebeb95db27f88621847e1cdaa7e9c697c04f21efd"
+    },
+    {
+      "path": "shared/loikka/map.png",
+      "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-5-units-outside-si",
+      "title": "NIST Guide to the SI, Chapter5: Units outside the SI",
+      "organization": "NIST",
+      "accessed": "2026-10-29",
+      "retrieval": "Actual HTML Table6 read:1min=60s,1h=3600s.",
+      "usageRestrictions": "NIST rights HTML actually read2026-10-29: employee works/Technical Series US copyright exception, foreign-rights grant, attribution and third-party exceptions. Only unit facts and own derivation used, no protected figures/prose. Oak HTML ©OakNationalAcademy2026, OGL3.0 except stated exceptions/Collection2terms; no slides, worksheets, video or copied expressive content. No overall release/licence clearance.",
+      "adopted": "Use exact minute/hour facts in visible premises. Metres/seconds refer to the same distance/time quantities.",
+      "rejected": "No base100 minute conversion; no copying table/graphics; no independent measurement claim.",
+      "scopeLimits": "Conceptual primary comparator; frozen Finnish canonical graph supplies grade/role/prerequisites. Distance portions precede multiplication/inverse; optional fractional division support."
+    },
+    {
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors",
+      "title": "NIST Guide to the SI, AppendixB: Conversion Factors",
+      "organization": "NIST",
+      "accessed": "2026-10-29",
+      "retrieval": "Actual HTML B.1/B.2/B.3 read, including multiply/divide conversionfactor direction and exact-versus-rounded distinction.",
+      "usageRestrictions": "NIST rights HTML actually read2026-10-29: employee works/Technical Series US copyright exception, foreign-rights grant, attribution and third-party exceptions. Only unit facts and own derivation used, no protected figures/prose. Oak HTML ©OakNationalAcademy2026, OGL3.0 except stated exceptions/Collection2terms; no slides, worksheets, video or copied expressive content. No overall release/licence clearance.",
+      "adopted": "Derive1000/3600=5/18 exactly; dimensioned conversion preserves quantity. Derive inverse18/5=3.6.",
+      "rejected": "Rounded decimal conversion factor as answer oracle; display rounding that awards a different exact quantity.",
+      "scopeLimits": "Conceptual primary comparator; frozen Finnish canonical graph supplies grade/role/prerequisites. Distance portions precede multiplication/inverse; optional fractional division support."
+    },
+    {
+      "url": "https://www.thenational.academy/teachers/programmes/science-secondary-ks3/units/moving-by-force/lessons/calculating-speed",
+      "title": "Calculating speed",
+      "organization": "Oak National Academy",
+      "accessed": "2026-10-29",
+      "retrieval": "Actual teacher HTML keylearning points418–444 andlicence447–449 inspected. No linked teaching files/video retrieved.",
+      "usageRestrictions": "NIST rights HTML actually read2026-10-29: employee works/Technical Series US copyright exception, foreign-rights grant, attribution and third-party exceptions. Only unit facts and own derivation used, no protected figures/prose. Oak HTML ©OakNationalAcademy2026, OGL3.0 except stated exceptions/Collection2terms; no slides, worksheets, video or copied expressive content. No overall release/licence clearance.",
+      "adopted": "Meaning of per-second first; proportional distance=speed×time relation before inverse calculation. Qualify constant speed in examples.",
+      "rejected": "Formula triangle as sole teaching; mph outside declared domain; staged quiz/speed gate; no copied activity or efficacy claim.",
+      "scopeLimits": "Conceptual primary comparator; frozen Finnish canonical graph supplies grade/role/prerequisites. Distance portions precede multiplication/inverse; optional fractional division support."
+    },
+    {
+      "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "title": "Copyright, Fair Use, and Licensing Statements for SRD, Data, Software, and Technical Series Publications",
+      "organization": "NIST",
+      "accessed": "2026-10-29",
+      "retrieval": "Actual rights HTML sections Other Data/Works and Technical Series, lines142–150 and175–176 read.",
+      "usageRestrictions": "NIST rights HTML actually read2026-10-29: employee works/Technical Series US copyright exception, foreign-rights grant, attribution and third-party exceptions. Only unit facts and own derivation used, no protected figures/prose. Oak HTML ©OakNationalAcademy2026, OGL3.0 except stated exceptions/Collection2terms; no slides, worksheets, video or copied expressive content. No overall release/licence clearance.",
+      "adopted": "Attribute source of unit facts and preserve third-party/foreign-rights caveats in source notes.",
+      "rejected": "Blanket claim that every source resource or project asset is public domain.",
+      "scopeLimits": "Conceptual primary comparator; frozen Finnish canonical graph supplies grade/role/prerequisites. Distance portions precede multiplication/inverse; optional fractional division support."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@b4a2e85ef612d2af45acd61a6ce471d63deb8be077bfa7d1f063fdb8ae940460",
+      "note": "Author draft; Newton different-author review and parent actual175 integration pending. No human/learner review."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@b4a2e85ef612d2af45acd61a6ce471d63deb8be077bfa7d1f063fdb8ae940460",
+      "note": "Author draft; Newton different-author review and parent actual175 integration pending. No human/learner review."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@b4a2e85ef612d2af45acd61a6ce471d63deb8be077bfa7d1f063fdb8ae940460",
+      "note": "Author draft; Newton different-author review and parent actual175 integration pending. No human/learner review."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@b4a2e85ef612d2af45acd61a6ce471d63deb8be077bfa7d1f063fdb8ae940460",
+      "note": "Independent B15 Descartes current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Descartes-on-rate-ready-current.json. Synthetic technical scope, not learner validation. Nonblocking P3: extreme programmatic values outside shippedfinitecatalog can overflow SVGlabels; documented boundary remains open, not an authored task defect."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@b4a2e85ef612d2af45acd61a6ce471d63deb8be077bfa7d1f063fdb8ae940460",
+      "note": "Independent B15 Descartes canonical/Lite/source boundary review: roles/groups preserved, no new hardgates. lesson-network/evidence/production/B15/reviews/Descartes-on-rate-ready-current.json"
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@b4a2e85ef612d2af45acd61a6ce471d63deb8be077bfa7d1f063fdb8ae940460",
+      "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@6a726d164b059ec9d5a0741e36b7599bcd65fa9638e852f60dc2b4a51b042760",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@6a726d164b059ec9d5a0741e36b7599bcd65fa9638e852f60dc2b4a51b042760",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@6a726d164b059ec9d5a0741e36b7599bcd65fa9638e852f60dc2b4a51b042760",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@bf83779c99bc958f1b92f4c9a8ae70008950847d04752787148a066144a03f75",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@bf83779c99bc958f1b92f4c9a8ae70008950847d04752787148a066144a03f75",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@bf83779c99bc958f1b92f4c9a8ae70008950847d04752787148a066144a03f75",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@2db8efe9779c9678a4bcf32746fd22cf63ef30299b3124b086a2119bcb4da8f8",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@2db8efe9779c9678a4bcf32746fd22cf63ef30299b3124b086a2119bcb4da8f8",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@2db8efe9779c9678a4bcf32746fd22cf63ef30299b3124b086a2119bcb4da8f8",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@71a86af5c4e91045070f90bc47fb8722539d69a68c1396a643df6f03763a83ca",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@71a86af5c4e91045070f90bc47fb8722539d69a68c1396a643df6f03763a83ca",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@71a86af5c4e91045070f90bc47fb8722539d69a68c1396a643df6f03763a83ca",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@ed39486ef09dc9af7912626f66a3eff251ae9189b826e6a43e0730c97acdc8b5",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@ed39486ef09dc9af7912626f66a3eff251ae9189b826e6a43e0730c97acdc8b5",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@ed39486ef09dc9af7912626f66a3eff251ae9189b826e6a43e0730c97acdc8b5",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@687d44a571d40fbe382af5fadc38610ca2a04e4fa00e8bf72065ac738a0d73c5",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@687d44a571d40fbe382af5fadc38610ca2a04e4fa00e8bf72065ac738a0d73c5",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@687d44a571d40fbe382af5fadc38610ca2a04e4fa00e8bf72065ac738a0d73c5",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@b1bf4e0559d6065f3c35a2a5e994c2758784eb61ce080c35a3eb3b361b801e4e",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@b1bf4e0559d6065f3c35a2a5e994c2758784eb61ce080c35a3eb3b361b801e4e",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@b1bf4e0559d6065f3c35a2a5e994c2758784eb61ce080c35a3eb3b361b801e4e",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@1ef26c1488d430e05b6e5ca21a3e08c7eb67cf717ca3dea81639545409abadb8",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@1ef26c1488d430e05b6e5ca21a3e08c7eb67cf717ca3dea81639545409abadb8",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@1ef26c1488d430e05b6e5ca21a3e08c7eb67cf717ca3dea81639545409abadb8",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@53a3afca27db0a3c6b8185f7ed5a3f5e5f492c615a82d8b3d6f041f63397ce55",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@53a3afca27db0a3c6b8185f7ed5a3f5e5f492c615a82d8b3d6f041f63397ce55",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@53a3afca27db0a3c6b8185f7ed5a3f5e5f492c615a82d8b3d6f041f63397ce55",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@472d892fa5b5fc73aa2c500986a747a368bee9e2682c60dab2afce14cb07903c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@472d892fa5b5fc73aa2c500986a747a368bee9e2682c60dab2afce14cb07903c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@472d892fa5b5fc73aa2c500986a747a368bee9e2682c60dab2afce14cb07903c",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@68340e946267634c044407443150d86f78a2ee0a36778988d7f831362a724b07",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@68340e946267634c044407443150d86f78a2ee0a36778988d7f831362a724b07",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@68340e946267634c044407443150d86f78a2ee0a36778988d7f831362a724b07",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@a170886ba64dce8c03d61a40450bb946bcac04a7271b23d2f3e3365445fdf707",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@a170886ba64dce8c03d61a40450bb946bcac04a7271b23d2f3e3365445fdf707",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@a170886ba64dce8c03d61a40450bb946bcac04a7271b23d2f3e3365445fdf707",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@e741c4c889e4621dd8f5b40178ab0fce5278005f7a3e8d7cab10f182a48fe82a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@e741c4c889e4621dd8f5b40178ab0fce5278005f7a3e8d7cab10f182a48fe82a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@e741c4c889e4621dd8f5b40178ab0fce5278005f7a3e8d7cab10f182a48fe82a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@b29e3680c092b79581582e98e4016f1ca769d4b80f7cbc4bf15aaa44e2d4f832",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@b29e3680c092b79581582e98e4016f1ca769d4b80f7cbc4bf15aaa44e2d4f832",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Matka saadaan v × t ja aika s / v. Nollanopeudella positiivinen tavoitematka on mahdoton; 0/0-tilanne ei yksilöi aikaa. 2,5 h tarkoittaa 2 h 30 min, ei 2 h 5 min. Korjasin mallin ja valitsimen samaan vaiheeseen. Neutraalit Tehtävä A–I -nimet eivät muuta tehtävien laskentaa; koko lähtötieto on vastauksen yhteydessä. Nykyinen Lite käsittelee tunnetun vakionopeuden matka/aika-laskuja ja desimaalista aikaa. Lessonin nollatapaukset ovat tätä laajempi käsitteellinen raja. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@b29e3680c092b79581582e98e4016f1ca769d4b80f7cbc4bf15aaa44e2d4f832",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "sourceRevision": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "validRevisions": [
+      "audit1-2026-10-28"
+    ],
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2",
+      "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+      "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "EVENT_COMMIT_REVIEW_B05.md": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+      "authority/production-181-v2/ASSETS.md": "bdccb0695c27382d99f8831077adf2f247b1bb168018bc5f829c510df3792c48",
+      "authority/production-181-v2/STYLE_REVIEW_FI.md": "aed7c1ba925e0743dc8f4d78b26cf875c5595e3afb39e0d3cd679f881b1683a4",
+      "authority/production-181-v2/ASSET_STYLE_GATE.txt": "fb5a31989b7ac7ad3f2e4f875ca86ea2f224821de09fa5eb4371fc3f36239fb7",
+      "authority/production-181-v2/lite/src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+      "authority/production-181-v2/lite/src/content/physics.ts": "835ad69dd95f622adcb6050ab63d00a4477d64425545dd1b8af5a4892f978430",
+      "authority/production-181-v2/lite/src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+    },
+    "inventory": {
+      "canonical": {
+        "id": "PHY79-SPEED-REARR",
+        "subject": "physics",
+        "grade_band": "7-9",
+        "topic_area": "S5 Vuorovaikutus ja liike",
+        "parent_concept": "Nopeus",
+        "title": "Matkan tai ajan ratkaiseminen nopeussuhteesta",
+        "short_description": "Matkan tai ajan ratkaiseminen nopeussuhteesta",
+        "node_kind": "procedure",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "PHY79-S5"
+        ],
+        "relations": [
+          {
+            "id": "PHY79-SPEED-CALC",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "PHY79-SPEED-CALC on ydinesitieto tälle osaamiskohteelle."
+          },
+          {
+            "id": "M79-EQ1-SOLVE",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "PHY79-SPEED-CALC"
+            ],
+            "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+          }
+        ],
+        "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "status": "candidate",
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Fysiikka",
+          "S5 Vuorovaikutus ja liike",
+          "Nopeus"
+        ]
+      },
+      "goal": "Opit laskemaan matkan (s = v · t) tai ajan (t = s / v), kun nopeus tunnetaan.",
+      "goalOrigin": "NodeSpec.goal",
+      "nodeRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "globalFallback": "lite181-2026-10-27",
+      "motionOverlay": true,
+      "intro": "Kun nopeus tiedetään, voidaan laskea matka tai aika.",
+      "reward": "Käännät nopeuden kaavan!",
+      "families": {
+        "time": {
+          "taskKind": "numeric",
+          "seed": 1,
+          "phase": "guided",
+          "say": "Vene kulkee 2 m/s. Kuinka kauan kestää 12 m matka?",
+          "hint": "Montako 2 metrin palaa mahtuu 12 metriin? Jaa matka nopeudella.",
+          "explain": "t = s / v = 12 m / 2 m/s = 6 s.",
+          "task": {
+            "kind": "numeric",
+            "answer": 6,
+            "unit": "s",
+            "whyAt": {
+              "10": "Vähensit. Aika saadaan jakamalla matka nopeudella.",
+              "24": "Kerroit. Aika saadaan jakamalla: t = s / v = 12 / 2.",
+              "0.16666666666666666": "Jaoit väärin päin. Matka jaetaan nopeudella: t = s / v."
+            }
+          },
+          "registry": {
+            "node": "PHY79-SPEED-REARR",
+            "tag": "time",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "none"
+          }
+        },
+        "which": {
+          "taskKind": "sort",
+          "seed": 2,
+          "phase": "guided",
+          "say": "Lajittele: kerrotaanko vai jaetaanko?",
+          "hint": "Kysytäänkö matkaa (kerro) vai aikaa (jaa)?",
+          "explain": "Matka = nopeus · aika. Aika = matka / nopeus.",
+          "task": {
+            "kind": "sort",
+            "items": [
+              {
+                "text": "9 m/s, 63 m: kuinka kauan?"
+              },
+              {
+                "text": "5 m/s, 20 m: kuinka kauan?"
+              },
+              {
+                "text": "8 m/s, 2 s: kuinka pitkälle?"
+              },
+              {
+                "text": "8 m/s, 3 s: kuinka pitkälle?"
+              }
+            ],
+            "cats": [
+              {
+                "label": "Kerro: s = v · t"
+              },
+              {
+                "label": "Jaa: t = s / v"
+              }
+            ],
+            "answer": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "why": [
+              "Aika kysytään: t = s / v = 63 / 9.",
+              "Aika kysytään: t = s / v = 20 / 5.",
+              "Matka kysytään: s = v · t = 8 · 2.",
+              "Matka kysytään: s = v · t = 8 · 3."
+            ]
+          },
+          "registry": {
+            "node": "PHY79-SPEED-REARR",
+            "tag": "which",
+            "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "none"
+          }
+        },
+        "dist": {
+          "taskKind": "numeric",
+          "seed": 7,
+          "phase": "guided",
+          "say": "Sammakko etenee 2 m/s. Kuinka pitkälle se etenee ajassa 9 s?",
+          "hint": "Joka sekunti tulee yhtä monta metriä. Kerro nopeus ajalla.",
+          "explain": "s = v · t = 2 m/s · 9 s = 18 m.",
+          "task": {
+            "kind": "numeric",
+            "answer": 18,
+            "unit": "m",
+            "whyAt": {
+              "11": "Laskit yhteen. Joka sekunti 2 m, ja sekunteja on 9: kerro.",
+              "4.5": "Jaoit. Matka saadaan kertomalla: s = v · t.",
+              "0.2222222222222222": "Jaoit. Matka saadaan kertomalla: s = v · t."
+            }
+          },
+          "registry": {
+            "node": "PHY79-SPEED-REARR",
+            "tag": "dist",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "media": {
+            "kind": "none"
+          }
+        },
+        "transfer": {
+          "taskKind": "numeric",
+          "seed": 1,
+          "phase": "transfer",
+          "say": "Juna kulkee 80 km/h. Kuinka kauan kestää 200 km matka?",
+          "hint": "Montako kertaa nopeus mahtuu matkaan? Jaa matka nopeudella; vastaus voi olla desimaaliluku.",
+          "explain": "t = s / v = 200 km / 80 km/h = 2,5 h.",
+          "task": {
+            "kind": "numeric",
+            "answer": 2.5,
+            "unit": "h",
+            "tolerance": 0.001,
+            "whyAt": {
+              "2": "Vastaus jäi kokonaislukuun. Laske loppuun: 2,5 h.",
+              "3": "80 km/h · 3 h = 240 km, liikaa. Laske tarkasti: 2,5 h.",
+              "16000": "Kerroit. Aika saadaan jakamalla: t = s / v.",
+              "0.4": "Jaoit väärin päin. t = s / v."
+            }
+          },
+          "registry": {
+            "node": "PHY79-SPEED-REARR",
+            "tag": "transfer",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M79-DEC-DIV"
+            ],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M79-DEC-DIV"
+            ],
+            "source": [
+              "families.ts PHY79-SPEED-REARR/transfer"
+            ]
+          },
+          "media": {
+            "kind": "none"
+          }
+        }
+      },
+      "phaseCounts": {
+        "guided": 128,
+        "independent": 128,
+        "retrieval": 128,
+        "transfer": 128
+      },
+      "demos": [
+        {
+          "say": "Loikka etenee 3 metriä joka sekunti. Kuinka pitkälle se pääsee 5 sekunnissa? Joka sekunti tulee 3 metrin pala, ja paloja on viisi: s = v · t = 3 · 5 = 15 m.",
+          "kind": "animation",
+          "duration": 10,
+          "width": 320,
+          "height": 196,
+          "label": "Loikka: 15 m 5 sekunnissa, 3 m/s",
+          "snapshots": [
+            {
+              "time": 0,
+              "caption": "Loikka etenee 3 m joka sekunti. Kuinka pitkälle 5 sekunnissa?",
+              "sha256": "0972d86e37a2659008a82c14285b7c2a784f27220689b98a80af6a33321924e6"
+            },
+            {
+              "time": 0.25,
+              "caption": "Loikka etenee 3 m joka sekunti. Kuinka pitkälle 5 sekunnissa?",
+              "sha256": "0972d86e37a2659008a82c14285b7c2a784f27220689b98a80af6a33321924e6"
+            },
+            {
+              "time": 0.5,
+              "caption": "Loikka etenee 3 m joka sekunti. Kuinka pitkälle 5 sekunnissa?",
+              "sha256": "0972d86e37a2659008a82c14285b7c2a784f27220689b98a80af6a33321924e6"
+            },
+            {
+              "time": 0.75,
+              "caption": "Loikka etenee 3 m joka sekunti. Kuinka pitkälle 5 sekunnissa?",
+              "sha256": "0972d86e37a2659008a82c14285b7c2a784f27220689b98a80af6a33321924e6"
+            },
+            {
+              "time": 1,
+              "caption": "Ensimmäinen sekunti käy…",
+              "sha256": "d310ca930e54c70c91c0904fe3b29425f76fc7dee1d9cc45369af4e6df701b75"
+            },
+            {
+              "time": 1.25,
+              "caption": "Ensimmäinen sekunti käy…",
+              "sha256": "8f738aee38eb0d62ad6ffcc18cbb0efdcb065009146d3acb90c8b7c5561d4c96"
+            },
+            {
+              "time": 1.5,
+              "caption": "Ensimmäinen sekunti käy…",
+              "sha256": "6812a099e93eede3c8cf61745e1432d00738f6efa5c9eba9f1141fb6b4508ba9"
+            },
+            {
+              "time": 1.75,
+              "caption": "Ensimmäinen sekunti käy…",
+              "sha256": "3458580e1795b4b98fffd6c714b5ea6ee66aa942446b56063db49c46a84e58f2"
+            },
+            {
+              "time": 2,
+              "caption": "1 s kulunut: 1 samanlaista 3 metrin palaa.",
+              "sha256": "33b069ff52748b02ddcddd358816ce978de3f380562b24eb0e8effd6cacd9efc"
+            },
+            {
+              "time": 2.25,
+              "caption": "1 s kulunut: 1 samanlaista 3 metrin palaa.",
+              "sha256": "5bfedb14458fd3823baff378b975dd51da7de1e98b9bf275878795f1808150e6"
+            },
+            {
+              "time": 2.5,
+              "caption": "1 s kulunut: 1 samanlaista 3 metrin palaa.",
+              "sha256": "a898eec8d6ae74c6d3227767d1791b91aee5c53ef9677fbb9a7eaeff3bacd14d"
+            },
+            {
+              "time": 2.75,
+              "caption": "1 s kulunut: 1 samanlaista 3 metrin palaa.",
+              "sha256": "5e05d8c91e2a3c87bd35860be7138a705d055deb6304fad3fec3bbe646d2dcb3"
+            },
+            {
+              "time": 3,
+              "caption": "2 s kulunut: 2 samanlaista 3 metrin palaa.",
+              "sha256": "75790375e9b2206578be531b04b6725854fb4de082192a9e4a65149a36445d4c"
+            },
+            {
+              "time": 3.25,
+              "caption": "2 s kulunut: 2 samanlaista 3 metrin palaa.",
+              "sha256": "d9e1949fa60cc3e744ca926df476fad2ec1dedadf153a777316873ffe395dd94"
+            },
+            {
+              "time": 3.5,
+              "caption": "2 s kulunut: 2 samanlaista 3 metrin palaa.",
+              "sha256": "1d987c8ab8a939fcefb95eb0a111c591252579cd9a7b852652761f1862592295"
+            },
+            {
+              "time": 3.75,
+              "caption": "2 s kulunut: 2 samanlaista 3 metrin palaa.",
+              "sha256": "949c140c7516b6280c4eaa8a5ea6b081ebf220a82738f72a9ea56e44377ef219"
+            },
+            {
+              "time": 4,
+              "caption": "3 s kulunut: 3 samanlaista 3 metrin palaa.",
+              "sha256": "8c7ff754963e30c81c9c9b28f7a03d5bdd976ef4cba5fbe934ef9e8871e7ef00"
+            },
+            {
+              "time": 4.25,
+              "caption": "3 s kulunut: 3 samanlaista 3 metrin palaa.",
+              "sha256": "c2ffda65fef9d4a1f9d62da4c774074e959c109f7ef67704c596cdb18d8bd83b"
+            },
+            {
+              "time": 4.5,
+              "caption": "3 s kulunut: 3 samanlaista 3 metrin palaa.",
+              "sha256": "a4535069ea6972b5f9d761ccc255838f841d73d0e90dbb87e147ad5be60f3908"
+            },
+            {
+              "time": 4.75,
+              "caption": "3 s kulunut: 3 samanlaista 3 metrin palaa.",
+              "sha256": "4297399ef9cf3a57fb3763feab277b8bba0f375eee8737ae2593ddc5734e8f53"
+            },
+            {
+              "time": 5,
+              "caption": "4 s kulunut: 4 samanlaista 3 metrin palaa.",
+              "sha256": "7d81350b78c2bebfe46b9f049e295e7bb4313fd7b9d28b9665a6296e99c58cf1"
+            },
+            {
+              "time": 5.25,
+              "caption": "4 s kulunut: 4 samanlaista 3 metrin palaa.",
+              "sha256": "1dcc15d8bf91125091c91b9de37d32903297de0d51b46359527b5979311937c3"
+            },
+            {
+              "time": 5.5,
+              "caption": "4 s kulunut: 4 samanlaista 3 metrin palaa.",
+              "sha256": "e379b80459cf5a822a4a15c422c6e6f837592a951fcf2fc78fb6289ab0abe2a6"
+            },
+            {
+              "time": 5.75,
+              "caption": "4 s kulunut: 4 samanlaista 3 metrin palaa.",
+              "sha256": "4731a639450fe652171e656f939710dd498a807ac930806c14023d29c0be96e6"
+            },
+            {
+              "time": 6,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "40e923ff0809a32c8f337ff523a61980f0cd004a0753e3b3892b0153af3b76a3"
+            },
+            {
+              "time": 6.25,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "9f34adb97f1447c20558f89c8effa74b26544a987150362b4fca8b2e3f99db4a"
+            },
+            {
+              "time": 6.5,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "caac9c28e28e96cdaa57f5922e53c114f153768fd242401fceb1b3f6bb22c263"
+            },
+            {
+              "time": 6.75,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "57e5f11ede5af9b483d6d7118bef09a7952500314fe003b86876e752cd431d2c"
+            },
+            {
+              "time": 7,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            },
+            {
+              "time": 7.25,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            },
+            {
+              "time": 7.5,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            },
+            {
+              "time": 7.75,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            },
+            {
+              "time": 8,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            },
+            {
+              "time": 8.25,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            },
+            {
+              "time": 8.5,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            },
+            {
+              "time": 8.75,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            },
+            {
+              "time": 9,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            },
+            {
+              "time": 9.25,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            },
+            {
+              "time": 9.5,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            },
+            {
+              "time": 9.75,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            },
+            {
+              "time": 10,
+              "caption": "5 sekuntia, joka sekunti 3 m: matka on nopeus kertaa aika, 15 m.",
+              "sha256": "a6eeeec73f24ea57c3c8a96358f3fdfe1c16a4ed5a7fdabbd5b5c52510a997dd"
+            }
+          ]
+        },
+        {
+          "say": "Kuinka kauan kestää 16 metriä, kun vauhti on 4 m/s? Kello käy, kunnes maali tulee: 4 metrin paloja mahtuu neljä. t = s / v = 16 / 4 = 4 s.",
+          "kind": "animation",
+          "duration": 9,
+          "width": 320,
+          "height": 196,
+          "label": "Loikka: 16 m 4 sekunnissa, 4 m/s",
+          "snapshots": [
+            {
+              "time": 0,
+              "caption": "Loikka etenee 4 m joka sekunti. Kuinka kauan 16 metriin menee?",
+              "sha256": "6e9116d1eee853831cd8ff88207db9beb7aa8f45716590e4557f0d338be937da"
+            },
+            {
+              "time": 0.225,
+              "caption": "Loikka etenee 4 m joka sekunti. Kuinka kauan 16 metriin menee?",
+              "sha256": "6e9116d1eee853831cd8ff88207db9beb7aa8f45716590e4557f0d338be937da"
+            },
+            {
+              "time": 0.45,
+              "caption": "Loikka etenee 4 m joka sekunti. Kuinka kauan 16 metriin menee?",
+              "sha256": "6e9116d1eee853831cd8ff88207db9beb7aa8f45716590e4557f0d338be937da"
+            },
+            {
+              "time": 0.675,
+              "caption": "Loikka etenee 4 m joka sekunti. Kuinka kauan 16 metriin menee?",
+              "sha256": "6e9116d1eee853831cd8ff88207db9beb7aa8f45716590e4557f0d338be937da"
+            },
+            {
+              "time": 0.9,
+              "caption": "Loikka etenee 4 m joka sekunti. Kuinka kauan 16 metriin menee?",
+              "sha256": "6e9116d1eee853831cd8ff88207db9beb7aa8f45716590e4557f0d338be937da"
+            },
+            {
+              "time": 1.125,
+              "caption": "Ensimmäinen sekunti käy…",
+              "sha256": "9b0333a6e6c87094b845ebef8b4aa011fe685022cc581c604aa54970cdfc439d"
+            },
+            {
+              "time": 1.35,
+              "caption": "Ensimmäinen sekunti käy…",
+              "sha256": "eb64231e53a2535f2e7d4116bf8a1c39a2e01a7ae9db061dfc36bc296de577c3"
+            },
+            {
+              "time": 1.575,
+              "caption": "Ensimmäinen sekunti käy…",
+              "sha256": "f7a2e252c5287a3b1c2a5a0832e216faadfbd744ebb94f3c5bbe9b28c0aa4d36"
+            },
+            {
+              "time": 1.8,
+              "caption": "Ensimmäinen sekunti käy…",
+              "sha256": "8911dadad81d01ec40e6866c388968fa3797232e9b640378ae83c777542e750a"
+            },
+            {
+              "time": 2.025,
+              "caption": "1 s kulunut: 1 samanlaista 4 metrin palaa.",
+              "sha256": "b12637d672668a5fb165f24b8d0e5413e83cd6baeb042f2b416192f38eab5bac"
+            },
+            {
+              "time": 2.25,
+              "caption": "1 s kulunut: 1 samanlaista 4 metrin palaa.",
+              "sha256": "4ed70b5f877d5a8073cd261af06556cd0a6f90d60063be46e66f1f01899067bb"
+            },
+            {
+              "time": 2.475,
+              "caption": "1 s kulunut: 1 samanlaista 4 metrin palaa.",
+              "sha256": "d66b7f0029444155122b2d1a55916131a646a152047413556ee81a077bebde6f"
+            },
+            {
+              "time": 2.7,
+              "caption": "1 s kulunut: 1 samanlaista 4 metrin palaa.",
+              "sha256": "7488f17dd35c2b4ba80a406e2fe1579c1d064906208a06c06c2ea8c81d9d070d"
+            },
+            {
+              "time": 2.925,
+              "caption": "1 s kulunut: 1 samanlaista 4 metrin palaa.",
+              "sha256": "28b6cba4d08fd5faf681743bea5d53d6ff56c4edd9901ad25e2f301958ce975f"
+            },
+            {
+              "time": 3.15,
+              "caption": "2 s kulunut: 2 samanlaista 4 metrin palaa.",
+              "sha256": "a4048e50044e4024a639f26220dd38b6e2652bb313fee629796fe93c58f4b763"
+            },
+            {
+              "time": 3.375,
+              "caption": "2 s kulunut: 2 samanlaista 4 metrin palaa.",
+              "sha256": "25b87c6e294694108276476c1f4712f8f8ac8570f4f5c8d626c72e8a4fbd0827"
+            },
+            {
+              "time": 3.6,
+              "caption": "2 s kulunut: 2 samanlaista 4 metrin palaa.",
+              "sha256": "ca3fb361420999102c0a3a363332eb38a6d5d05017cf4c22add1d341c8c8ae85"
+            },
+            {
+              "time": 3.825,
+              "caption": "2 s kulunut: 2 samanlaista 4 metrin palaa.",
+              "sha256": "2d1b148218b9deb8b3cbe048b43103986c84ed47bc80da6058b70e1be23eed7e"
+            },
+            {
+              "time": 4.05,
+              "caption": "3 s kulunut: 3 samanlaista 4 metrin palaa.",
+              "sha256": "04382941dfdbd9045a0028bfb74c9ded744afdfed1489378f47b3a22abfeafca"
+            },
+            {
+              "time": 4.275,
+              "caption": "3 s kulunut: 3 samanlaista 4 metrin palaa.",
+              "sha256": "89cd3918b2f01436537a4c027978e6f02babd80adcaec1bd2a3e72e0d054d23a"
+            },
+            {
+              "time": 4.5,
+              "caption": "3 s kulunut: 3 samanlaista 4 metrin palaa.",
+              "sha256": "8d2d277d17d7b7a14eac3d2d2891d4b43a19a494a93e78a087ec7a52d3ef10ea"
+            },
+            {
+              "time": 4.725,
+              "caption": "3 s kulunut: 3 samanlaista 4 metrin palaa.",
+              "sha256": "1c8ea5f181ce2c4e1a9940db30fbe94faf125192138a645146d1d8380c8ffe2d"
+            },
+            {
+              "time": 4.95,
+              "caption": "3 s kulunut: 3 samanlaista 4 metrin palaa.",
+              "sha256": "51ff3e6567d22fbf9891cc39784537c6aaf0e80192d8434d82a67115d52ef41e"
+            },
+            {
+              "time": 5.175,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "733d1914b06c18970fcb27045667a13050f265446b2794b8b1c754dd8d4fae55"
+            },
+            {
+              "time": 5.4,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "56dcce02654a58377e1870357c89f8e5b219ff27dd98a981aa422b342a51e301"
+            },
+            {
+              "time": 5.625,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "5e9a4a6e665c6318da9cba3b0b58bf4c21450bf3aedb43f073b3765f6e14b5d0"
+            },
+            {
+              "time": 5.85,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "84a01195b072386ce768fd14ca0cc1a1d049b2dbef47e2f09de96f8a27d65204"
+            },
+            {
+              "time": 6.075,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 6.3,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 6.525,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 6.75,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 6.975,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 7.2,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 7.425,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 7.65,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 7.875,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 8.1,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 8.325,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 8.55,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 8.775,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            },
+            {
+              "time": 9,
+              "caption": "16 metriin mahtui 4 kpl 4 metrin paloja: aika on matka jaettuna nopeudella, 4 s.",
+              "sha256": "77100ea9112353402bb607d551a9d8be18b89d3a80ebe246ab92233f86574ff2"
+            }
+          ]
+        },
+        {
+          "say": "Kaavakolmio auttaa muistamaan. Peitä se suure, jonka haluat laskea. Vierekkäiset kerrotaan, päällekkäiset jaetaan.",
+          "kind": "animation",
+          "duration": 11.100000000000001,
+          "width": 320,
+          "height": 210,
+          "label": "Kaavakolmio",
+          "snapshots": [
+            {
+              "time": 0,
+              "caption": "Kaavakolmio: s ylhäällä, v ja t alhaalla. Peitä se, minkä haluat laskea.",
+              "sha256": "81c41a0bccc4c4fd7335d8b611be569932104ccbcd7f2b2d50c32e315bf6fd39"
+            },
+            {
+              "time": 0.2775,
+              "caption": "Kaavakolmio: s ylhäällä, v ja t alhaalla. Peitä se, minkä haluat laskea.",
+              "sha256": "81c41a0bccc4c4fd7335d8b611be569932104ccbcd7f2b2d50c32e315bf6fd39"
+            },
+            {
+              "time": 0.555,
+              "caption": "Kaavakolmio: s ylhäällä, v ja t alhaalla. Peitä se, minkä haluat laskea.",
+              "sha256": "81c41a0bccc4c4fd7335d8b611be569932104ccbcd7f2b2d50c32e315bf6fd39"
+            },
+            {
+              "time": 0.8325000000000001,
+              "caption": "Peitetään s (matka). v ja t ovat vierekkäin: kerro. s = v · t.",
+              "sha256": "92ff2caf35ddda0360a1e14061cc73a2bc1d744ef2c0a151b51dc23c45058021"
+            },
+            {
+              "time": 1.11,
+              "caption": "Peitetään s (matka). v ja t ovat vierekkäin: kerro. s = v · t.",
+              "sha256": "6cc477528e86ef343469ffdabc0ac07235910af44a6cab127d761091a851eaa0"
+            },
+            {
+              "time": 1.3875000000000002,
+              "caption": "Peitetään s (matka). v ja t ovat vierekkäin: kerro. s = v · t.",
+              "sha256": "725f0eba03655165f9119b0e2d6c7d1539db93c4223a1eac76860678261aff2c"
+            },
+            {
+              "time": 1.6650000000000003,
+              "caption": "Peitetään s (matka). v ja t ovat vierekkäin: kerro. s = v · t.",
+              "sha256": "7e14cd1f8bf0f8e11b8cb8c69010588252f50d4a36c957fc551d16407b33cda5"
+            },
+            {
+              "time": 1.9425000000000003,
+              "caption": "Peitetään s (matka). v ja t ovat vierekkäin: kerro. s = v · t.",
+              "sha256": "7e14cd1f8bf0f8e11b8cb8c69010588252f50d4a36c957fc551d16407b33cda5"
+            },
+            {
+              "time": 2.22,
+              "caption": "Peitetään s (matka). v ja t ovat vierekkäin: kerro. s = v · t.",
+              "sha256": "7e14cd1f8bf0f8e11b8cb8c69010588252f50d4a36c957fc551d16407b33cda5"
+            },
+            {
+              "time": 2.4975,
+              "caption": "Peitetään s (matka). v ja t ovat vierekkäin: kerro. s = v · t.",
+              "sha256": "7e14cd1f8bf0f8e11b8cb8c69010588252f50d4a36c957fc551d16407b33cda5"
+            },
+            {
+              "time": 2.7750000000000004,
+              "caption": "Peitetään s (matka). v ja t ovat vierekkäin: kerro. s = v · t.",
+              "sha256": "7e14cd1f8bf0f8e11b8cb8c69010588252f50d4a36c957fc551d16407b33cda5"
+            },
+            {
+              "time": 3.0525000000000007,
+              "caption": "Peitetään s (matka). v ja t ovat vierekkäin: kerro. s = v · t.",
+              "sha256": "e8cab7881a80cba31a8b414f7d17352977feae9638d6f3fd04ba791e938af392"
+            },
+            {
+              "time": 3.3300000000000005,
+              "caption": "Peitetään s (matka). v ja t ovat vierekkäin: kerro. s = v · t.",
+              "sha256": "d736dd1195a9d6b64245421ef765368f9c8aa71f876c57c3d14ea0b7e27ffb88"
+            },
+            {
+              "time": 3.6075000000000004,
+              "caption": "Peitetään t (aika). s on v:n päällä: jaa. t = s / v.",
+              "sha256": "e2a384ebcd19c425c8b7b4c7ee285112ec28b29cb905c5ead7512d1f1963bac4"
+            },
+            {
+              "time": 3.8850000000000007,
+              "caption": "Peitetään t (aika). s on v:n päällä: jaa. t = s / v.",
+              "sha256": "0df6579fd36a05e419965a00f51007ce607a10e61d1a68910c56e67a11613ab1"
+            },
+            {
+              "time": 4.1625000000000005,
+              "caption": "Peitetään t (aika). s on v:n päällä: jaa. t = s / v.",
+              "sha256": "d67ffa769ba25d0622089e1af8c7c95d3962588f5d9ab51c23a6dbd3bd4e7717"
+            },
+            {
+              "time": 4.44,
+              "caption": "Peitetään t (aika). s on v:n päällä: jaa. t = s / v.",
+              "sha256": "d67ffa769ba25d0622089e1af8c7c95d3962588f5d9ab51c23a6dbd3bd4e7717"
+            },
+            {
+              "time": 4.7175,
+              "caption": "Peitetään t (aika). s on v:n päällä: jaa. t = s / v.",
+              "sha256": "d67ffa769ba25d0622089e1af8c7c95d3962588f5d9ab51c23a6dbd3bd4e7717"
+            },
+            {
+              "time": 4.995,
+              "caption": "Peitetään t (aika). s on v:n päällä: jaa. t = s / v.",
+              "sha256": "d67ffa769ba25d0622089e1af8c7c95d3962588f5d9ab51c23a6dbd3bd4e7717"
+            },
+            {
+              "time": 5.272500000000001,
+              "caption": "Peitetään t (aika). s on v:n päällä: jaa. t = s / v.",
+              "sha256": "d67ffa769ba25d0622089e1af8c7c95d3962588f5d9ab51c23a6dbd3bd4e7717"
+            },
+            {
+              "time": 5.550000000000001,
+              "caption": "Peitetään t (aika). s on v:n päällä: jaa. t = s / v.",
+              "sha256": "d67ffa769ba25d0622089e1af8c7c95d3962588f5d9ab51c23a6dbd3bd4e7717"
+            },
+            {
+              "time": 5.827500000000001,
+              "caption": "Peitetään t (aika). s on v:n päällä: jaa. t = s / v.",
+              "sha256": "2f32647ede162d238e4eb3245d3898f8d05c69c6e2f635cd878b8ec799a2811c"
+            },
+            {
+              "time": 6.105000000000001,
+              "caption": "Peitetään v (nopeus). s on t:n päällä: jaa. v = s / t.",
+              "sha256": "556f3f9a9f54a3d53e3b1cbab0571b245be85b72ea271a1a9953dba03c83b773"
+            },
+            {
+              "time": 6.382500000000001,
+              "caption": "Peitetään v (nopeus). s on t:n päällä: jaa. v = s / t.",
+              "sha256": "99bad072312a108a09e5d26bc5825b587c055e5693104a278a1b3c263ae885da"
+            },
+            {
+              "time": 6.660000000000001,
+              "caption": "Peitetään v (nopeus). s on t:n päällä: jaa. v = s / t.",
+              "sha256": "c55886b55ad56e37e4dc630affc2ed41a3054db0d6b1227e7f10763ace7f41e0"
+            },
+            {
+              "time": 6.937500000000002,
+              "caption": "Peitetään v (nopeus). s on t:n päällä: jaa. v = s / t.",
+              "sha256": "c55886b55ad56e37e4dc630affc2ed41a3054db0d6b1227e7f10763ace7f41e0"
+            },
+            {
+              "time": 7.215000000000001,
+              "caption": "Peitetään v (nopeus). s on t:n päällä: jaa. v = s / t.",
+              "sha256": "c55886b55ad56e37e4dc630affc2ed41a3054db0d6b1227e7f10763ace7f41e0"
+            },
+            {
+              "time": 7.4925000000000015,
+              "caption": "Peitetään v (nopeus). s on t:n päällä: jaa. v = s / t.",
+              "sha256": "c55886b55ad56e37e4dc630affc2ed41a3054db0d6b1227e7f10763ace7f41e0"
+            },
+            {
+              "time": 7.770000000000001,
+              "caption": "Peitetään v (nopeus). s on t:n päällä: jaa. v = s / t.",
+              "sha256": "c55886b55ad56e37e4dc630affc2ed41a3054db0d6b1227e7f10763ace7f41e0"
+            },
+            {
+              "time": 8.047500000000001,
+              "caption": "Peitetään v (nopeus). s on t:n päällä: jaa. v = s / t.",
+              "sha256": "c55886b55ad56e37e4dc630affc2ed41a3054db0d6b1227e7f10763ace7f41e0"
+            },
+            {
+              "time": 8.325000000000001,
+              "caption": "Peitetään v (nopeus). s on t:n päällä: jaa. v = s / t.",
+              "sha256": "7f53d6b1e61135ff3fe78003da07a5ed3ccd29011089731dc6c7ec48b65a37a0"
+            },
+            {
+              "time": 8.602500000000001,
+              "caption": "Vierekkäin: kerro. Päällekkäin: jaa. Kolme kaavaa samasta kolmiosta.",
+              "sha256": "3816ac6cdd86e1d8104a6d95af7e8a0f46b41c87b5fcbee113d87b3301df0e0a"
+            },
+            {
+              "time": 8.88,
+              "caption": "Vierekkäin: kerro. Päällekkäin: jaa. Kolme kaavaa samasta kolmiosta.",
+              "sha256": "3816ac6cdd86e1d8104a6d95af7e8a0f46b41c87b5fcbee113d87b3301df0e0a"
+            },
+            {
+              "time": 9.157500000000002,
+              "caption": "Vierekkäin: kerro. Päällekkäin: jaa. Kolme kaavaa samasta kolmiosta.",
+              "sha256": "3816ac6cdd86e1d8104a6d95af7e8a0f46b41c87b5fcbee113d87b3301df0e0a"
+            },
+            {
+              "time": 9.435,
+              "caption": "Vierekkäin: kerro. Päällekkäin: jaa. Kolme kaavaa samasta kolmiosta.",
+              "sha256": "3816ac6cdd86e1d8104a6d95af7e8a0f46b41c87b5fcbee113d87b3301df0e0a"
+            },
+            {
+              "time": 9.712500000000002,
+              "caption": "Vierekkäin: kerro. Päällekkäin: jaa. Kolme kaavaa samasta kolmiosta.",
+              "sha256": "3816ac6cdd86e1d8104a6d95af7e8a0f46b41c87b5fcbee113d87b3301df0e0a"
+            },
+            {
+              "time": 9.99,
+              "caption": "Vierekkäin: kerro. Päällekkäin: jaa. Kolme kaavaa samasta kolmiosta.",
+              "sha256": "3816ac6cdd86e1d8104a6d95af7e8a0f46b41c87b5fcbee113d87b3301df0e0a"
+            },
+            {
+              "time": 10.267500000000002,
+              "caption": "Vierekkäin: kerro. Päällekkäin: jaa. Kolme kaavaa samasta kolmiosta.",
+              "sha256": "3816ac6cdd86e1d8104a6d95af7e8a0f46b41c87b5fcbee113d87b3301df0e0a"
+            },
+            {
+              "time": 10.545000000000002,
+              "caption": "Vierekkäin: kerro. Päällekkäin: jaa. Kolme kaavaa samasta kolmiosta.",
+              "sha256": "3816ac6cdd86e1d8104a6d95af7e8a0f46b41c87b5fcbee113d87b3301df0e0a"
+            },
+            {
+              "time": 10.822500000000002,
+              "caption": "Vierekkäin: kerro. Päällekkäin: jaa. Kolme kaavaa samasta kolmiosta.",
+              "sha256": "3816ac6cdd86e1d8104a6d95af7e8a0f46b41c87b5fcbee113d87b3301df0e0a"
+            },
+            {
+              "time": 11.100000000000001,
+              "caption": "Vierekkäin: kerro. Päällekkäin: jaa. Kolme kaavaa samasta kolmiosta.",
+              "sha256": "3816ac6cdd86e1d8104a6d95af7e8a0f46b41c87b5fcbee113d87b3301df0e0a"
+            }
+          ]
+        }
+      ],
+      "itemsSampled": 512,
+      "provenance": "Subset of preserved parent actual sampler, read actual rawLite by this author too. No pretend reretrieval or rerun.",
+      "originalInventorySHA256": "1823093df8e194f0275dd532a4546019c86d2fc8a8b48011f0402a0142719edd"
+    },
+    "comparison": "Retain actual dist/time/which and2.5h transfer; replace triangle-only mnemonic with proportional lengthparts. No assumed DEC-DIV gate. SIMS support explicit separate from own exact calculation steps.",
+    "limitations": "Original Finnish prose/figures. No copied source animations, no physical clock, no formal mastery/rubric or efficacy proof.",
+    "auditInventory": "Actual LESSON_AUDIT at984–992: Criticizes static formula card, missing multiplication/division meaning and unsupported2.5h transfer. Describes perSecondScene distance3m×5/time16m÷4,triangleScene and multiply/divide sort; original validation claims remain historical Lite evidence, not new lesson approval.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/phyanim.ts": "419fc83a164c4799543edf6f4dc72021abe3d6ee5fc74d719b70d53243bab7ad",
+        "src/content/physics.ts": "2318f77c54ed6bc5fd2956f1f7342e3169d8e276e86d878be0196a261b0b8412",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [
+        "AUTHORING.md",
+        "EVENT_COMMIT_REVIEW_B05.md",
+        "INTERACTION_FEEDBACK_CONTRACT.md",
+        "authority/production-181-v2/ASSETS.md",
+        "authority/production-181-v2/ASSET_STYLE_GATE.txt",
+        "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt",
+        "authority/production-181-v2/STYLE_REVIEW_FI.md",
+        "reference/inputs/canonical-690-graph.json",
+        "reference/inputs/mvp-scope-181.json"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "PHY79-SPEED-REARR",
+      "subject": "physics",
+      "grade_band": "7-9",
+      "topic_area": "S5 Vuorovaikutus ja liike",
+      "parent_concept": "Nopeus",
+      "title": "Matkan tai ajan ratkaiseminen nopeussuhteesta",
+      "short_description": "Matkan tai ajan ratkaiseminen nopeussuhteesta",
+      "node_kind": "procedure",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "PHY79-S5"
+      ],
+      "relations": [
+        {
+          "id": "PHY79-SPEED-CALC",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "PHY79-SPEED-CALC on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "M79-EQ1-SOLVE",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "PHY79-SPEED-CALC"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate",
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Fysiikka",
+        "S5 Vuorovaikutus ja liike",
+        "Nopeus"
+      ]
+    },
+    "gradeBand": "7-9",
+    "teacherObjective": "Matkan tai ajan ratkaiseminen nopeussuhteesta",
+    "childGoal": "Ratkaise puuttuva matka tai aika.",
+    "role": "atomic",
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "PHY79-SPEED-CALC"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "strongSupport": [
+      {
+        "id": "M79-EQ1-SOLVE",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "M79-EQ1-SOLVE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      }
+    ],
+    "additionalHardGates": [],
+    "assumed": [
+      "Frozen required groups retained. All unit factors supplied visibly. M79-DEC-DIV is optional calculation support, not a new hardgate."
+    ],
+    "scope": "Finite distance=speed×time andduration=distance/speed with explicit positive-divisor guard; zero-time/zero-distance/zero-speed boundaries and optional fractional transfer. No negative direction, physical clock or formal equation-solving mastery.",
+    "evidenceLimits": "Local exact checked practice; optional worked models/help. No persistence, independent/retention/mastery/learner/human/efficacy evidence.",
+    "assetProvenance": "Original mathematical SVGs generated from exact typed quantities; supplied unchanged shared PNG actualhash, no redraw/duplication.",
+    "feedbackContractSHA256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+    "interaction": "Separate model/practice. Both input/change and every dependent action/lifecycle read current visible task/answer/model; noevent Check readback. Preserve unchanged valid verdict through help/model only. Perhost ownprecedingarticle/perrootWeakMap,3listeners removed, remount active, oldAPIinert, no timers/frames.",
+    "modelContract": "exact_rate_rewrite controls step/restart only,4didactic states. No ignored timeline/axis metadata. Strict supported operation-specific fields/units/bounds; undefined cases explicit."
+  },
+  "extensions": {
+    "productionBatch": "B15",
+    "noRuntimeImports": true,
+    "noPersistence": true,
+    "simulationType": "exact-dimensional-rate-calculation",
+    "executionLimits": "Finite presets/direct exact answers. BigInt rational oracle, fractions remain exact; no roundedcredit. Pixel segments illustrate proportions, do not decide truth. No physical measurements or clock.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B10",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

@@ -1,0 +1,852 @@
+{
+  "kcId": "M-UNIT-03",
+  "pagePath": "lessons/M-UNIT-03.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-UNIT-03",
+  "canonicalNode": {
+    "id": "M-UNIT-03",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Geometria ja mittaaminen",
+    "parent_concept": "Yksikkömuunnos",
+    "title": "Yleisimpien massayksiköiden muuntaminen",
+    "short_description": "Yleisimpien massayksiköiden muuntaminen",
+    "source_basis": "assessment_refined",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S4",
+      "OPH-MATH-VL6-ASSESSMENT-SUPPORT"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-MEAS-06",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MEAS-06 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-UNIT-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-UNIT-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-MEAS-06",
+          "M-UNIT-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Geometria ja mittaaminen",
+      "Yksikkömuunnos"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-MEAS-06",
+      "targetKCId": "M-UNIT-03",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MEAS-06 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-UNIT-01",
+      "targetKCId": "M-UNIT-03",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-UNIT-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-UNIT-03",
+      "targetKCId": "PHY79-UNIT-CONV",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-UNIT-03 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-MEAS-06",
+        "M-UNIT-01"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-UNIT-03/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/6/measurement/metric-units-and-using-instruments/",
+        "title": "Metric units and using instruments: Year6 planning tool",
+        "organization": "Education Services Australia / Mathematics Hub",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML explanation, misconceptions and practical suggestions read; linked activities/PDF/video not executed.",
+        "adopted": "Same quantity across units, contextual magnitude checks, place-value reasoning before shortcuts, separate capacity from current contained volume.",
+        "rejected": "Not Finnish curriculum authority or evidence of lesson efficacy. Correct the page wording that calls gram a base unit and its inconsistent negative-power typography via independent dimensional derivation and NIST. No copied tasks/prose/figures.",
+        "licence": "Commonwealth material CC BY4.0 unless otherwise indicated; excludes logos/trademarks/third-party material.",
+        "licenceURL": "https://www.mathematicshub.edu.au/terms-of-use/"
+      },
+      {
+        "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+        "title": "Metric(SI)Prefixes",
+        "organization": "NIST",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML prefix table and kilogram historical exception read.",
+        "adopted": "Exact powers10 and full intermediate prefix positions, kilogram remains SI base mass despite gram-prefix convention.",
+        "rejected": "No imported graphics, pronunciation gate or foreign spelling requirement.",
+        "usageRestrictions": "NIST employee non-SRD works generally not copyrighted in USA; foreign/third-party/SRD exceptions per https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications. Conceptual factual corroboration only; original Finnish vectors/code. No licence gate approval."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@d4e3d20ccc28ddb7b6a8ba91535a758b1a6092c32999bde4a69ff05aad2ee8e6",
+        "note": "B13 author current source; separate Carver independent review pending. Author QA is not selfapproval."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "note": "B13 author candidate, fresh current source validation; independent Carver review pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+      },
+      {
+        "kind": "content",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "state": "reviewed",
+        "note": "Independent B13 Feynman source/domain/teaching and scoped native review closed; lesson-network/evidence/production/B13/reviews/Feynman-on-Newton-raw-snapshot.json. Technical synthetic scope, not learner validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@d4e3d20ccc28ddb7b6a8ba91535a758b1a6092c32999bde4a69ff05aad2ee8e6",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "note": "Not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+      },
+      {
+        "kind": "human",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "state": "pending",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-UNIT-03",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "back.svg",
+        "sha256": "2de51852381c0791e12c9be06faefd7d632864c20b3347acbe94c630acf03980"
+      },
+      {
+        "path": "example.svg",
+        "sha256": "83ee46a1ac8f6a357c242fc995efbb9ccf972be565b7c0f5d57d05025926ee39"
+      },
+      {
+        "path": "initial.svg",
+        "sha256": "a2d12e7ee0dff697ed8a8e74bdf84a1dc69a21e29314445e7d6c399acc492b54"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "1263ea6a34daa4b741027b6db6cf54cb135a42cc6607711c5afa6b3f93e6df82"
+      },
+      {
+        "path": "transfer.svg",
+        "sha256": "36177316c1a30c95ebb8bebba43072f3564dbafb8da9ae97e08f3c7a3e3d798d"
+      },
+      {
+        "path": "shared/loikka/map.png",
+        "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.mathematicshub.edu.au/planning-tool/6/measurement/metric-units-and-using-instruments/",
+        "title": "Metric units and using instruments: Year6 planning tool",
+        "organization": "Education Services Australia / Mathematics Hub",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML explanation, misconceptions and practical suggestions read; linked activities/PDF/video not executed.",
+        "adopted": "Same quantity across units, contextual magnitude checks, place-value reasoning before shortcuts, separate capacity from current contained volume.",
+        "rejected": "Not Finnish curriculum authority or evidence of lesson efficacy. Correct the page wording that calls gram a base unit and its inconsistent negative-power typography via independent dimensional derivation and NIST. No copied tasks/prose/figures.",
+        "licence": "Commonwealth material CC BY4.0 unless otherwise indicated; excludes logos/trademarks/third-party material.",
+        "licenceURL": "https://www.mathematicshub.edu.au/terms-of-use/"
+      },
+      {
+        "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+        "title": "Metric(SI)Prefixes",
+        "organization": "NIST",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML prefix table and kilogram historical exception read.",
+        "adopted": "Exact powers10 and full intermediate prefix positions, kilogram remains SI base mass despite gram-prefix convention.",
+        "rejected": "No imported graphics, pronunciation gate or foreign spelling requirement.",
+        "usageRestrictions": "NIST employee non-SRD works generally not copyrighted in USA; foreign/third-party/SRD exceptions per https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications. Conceptual factual corroboration only; original Finnish vectors/code. No licence gate approval."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@d4e3d20ccc28ddb7b6a8ba91535a758b1a6092c32999bde4a69ff05aad2ee8e6",
+        "note": "B13 author current source; separate Carver independent review pending. Author QA is not selfapproval."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@d4e3d20ccc28ddb7b6a8ba91535a758b1a6092c32999bde4a69ff05aad2ee8e6",
+        "note": "B13 author current source; separate Carver independent review pending. Author QA is not selfapproval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@d4e3d20ccc28ddb7b6a8ba91535a758b1a6092c32999bde4a69ff05aad2ee8e6",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "note": "B13 author candidate, fresh current source validation; independent Carver review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "note": "B13 author candidate, fresh current source validation; independent Carver review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "note": "Not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+      },
+      {
+        "kind": "content",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "state": "reviewed",
+        "note": "Independent B13 Feynman source/domain/teaching and scoped native review closed; lesson-network/evidence/production/B13/reviews/Feynman-on-Newton-raw-snapshot.json. Technical synthetic scope, not learner validation."
+      },
+      {
+        "kind": "alignment",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "state": "reviewed",
+        "note": "Independent B13 Feynman canonical/Lite/source boundaries reviewed; lesson-network/evidence/production/B13/reviews/Feynman-on-Newton-raw-snapshot.json. Frozen graph/required groups retained."
+      },
+      {
+        "kind": "human",
+        "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+        "state": "pending",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-UNIT-03",
+      "sourceBuild": "audit1-2026-10-28",
+      "sourceHashes": {
+        "src/content/saari1.ts": "0f0722dc20192b7414d481efe1b66251b3f8665baf07b107fb5be7872b0c0a25",
+        "src/content/unitanim.ts": "269139fefb1e63bc26778caaca5b6ae19c393ec881dbd9cfd29ab24b05d5c518",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+      },
+      "actualTaskFamilies": {
+        "kg-g-3": {
+          "kind": "numeric",
+          "seed": 1,
+          "phase": "guided",
+          "prompt": "1 kg = □ g",
+          "hint": "Isommasta pienempään yksikköön: luku kasvaa, joten kerrotaan.",
+          "explanation": "1 kg = 1000 g, joten 1 kg = 1 × 1000 = 1000 g.",
+          "registry": {
+            "node": "M-UNIT-03",
+            "tag": "kg-g-3",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01",
+              "M-MEAS-06"
+            ],
+            "source": [
+              "families.ts M-UNIT-03/*"
+            ]
+          }
+        },
+        "sense": {
+          "kind": "sort",
+          "seed": 2,
+          "phase": "guided",
+          "prompt": "Onko mitta järkevä? Lajittele: järkevä tai ei järkevä. Muunnoksen jälkeen tämä arvio paljastaa monta virhettä.",
+          "hint": "Vertaa tuttuun: 1 cm on sormen leveys, 1 kg on maitopurkki, 1 dl on pieni kuppi.",
+          "explanation": "Omena 150 g on järkevä; Polkupyörä on oikeasti noin 12 kg; Sokeripala on oikeasti noin 3 g; Kirje 20 g on järkevä.",
+          "registry": {
+            "node": "M-UNIT-03",
+            "tag": "sense",
+            "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01",
+              "M-MEAS-06"
+            ],
+            "source": [
+              "families.ts M-UNIT-03/*"
+            ]
+          }
+        },
+        "match": {
+          "kind": "place",
+          "seed": 4,
+          "phase": "guided",
+          "prompt": "Yhdistä samat määrät: vedä jokaisen määrän alle sama määrä toisessa yksikössä. Yksi kortti jää yli.",
+          "hint": "Isosta pieneen kerrotaan, pienestä isoon jaetaan. Laske portaat.",
+          "explanation": "1 kg = 1000 g, 5000 g = 5 kg, 5 t = 5000 kg. 10000 g jäi yli.",
+          "registry": {
+            "node": "M-UNIT-03",
+            "tag": "match",
+            "outcome": "sijoittaa osat oikeille paikoille",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01",
+              "M-MEAS-06"
+            ],
+            "source": [
+              "families.ts M-UNIT-03/*"
+            ]
+          }
+        },
+        "kg-g-0": {
+          "kind": "numeric",
+          "seed": 7,
+          "phase": "guided",
+          "prompt": "1 kg = □ g",
+          "hint": "Isommasta pienempään yksikköön: luku kasvaa, joten kerrotaan.",
+          "explanation": "1 kg = 1000 g, joten 1 kg = 1 × 1000 = 1000 g.",
+          "registry": {
+            "node": "M-UNIT-03",
+            "tag": "kg-g-0",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01",
+              "M-MEAS-06"
+            ],
+            "source": [
+              "families.ts M-UNIT-03/*"
+            ]
+          }
+        },
+        "t-kg-1": {
+          "kind": "numeric",
+          "seed": 9,
+          "phase": "guided",
+          "prompt": "5 t = □ kg",
+          "hint": "Isommasta pienempään yksikköön: luku kasvaa, joten kerrotaan.",
+          "explanation": "1 t = 1000 kg, joten 5 t = 5 × 1000 = 5000 kg.",
+          "registry": {
+            "node": "M-UNIT-03",
+            "tag": "t-kg-1",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01",
+              "M-MEAS-06"
+            ],
+            "source": [
+              "families.ts M-UNIT-03/*"
+            ]
+          }
+        },
+        "g-kg-2": {
+          "kind": "numeric",
+          "seed": 14,
+          "phase": "guided",
+          "prompt": "4000 g = □ kg",
+          "hint": "Pienemmästä isompaan yksikköön: luku pienenee, joten jaetaan.",
+          "explanation": "1 kg = 1000 g, joten 4000 g = 4000 : 1000 = 4 kg.",
+          "registry": {
+            "node": "M-UNIT-03",
+            "tag": "g-kg-2",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01",
+              "M-MEAS-06"
+            ],
+            "source": [
+              "families.ts M-UNIT-03/*"
+            ]
+          }
+        },
+        "transfer": {
+          "kind": "numeric",
+          "seed": 1,
+          "phase": "transfer",
+          "prompt": "Säkissä on 4 kg jauhoja. Ne pakataan 250 g:n pusseihin. Montako pussia saadaan?",
+          "hint": "Muunna ensin kilogrammat grammoiksi, sitten jaa pussin koolla.",
+          "explanation": "4 kg = 4000 g. 4000 g : 250 g = 16.",
+          "registry": {
+            "node": "M-UNIT-03",
+            "tag": "transfer",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [
+              "M-MUL-01",
+              "M-DIV-01"
+            ],
+            "supplied": [
+              "Yksikköportaat ja kerroin näkyvät tehtävässä."
+            ],
+            "coTaught": [],
+            "incidental": {},
+            "support": [
+              "M-UNIT-01",
+              "M-MEAS-06"
+            ],
+            "source": [
+              "families.ts M-UNIT-03/*"
+            ]
+          }
+        }
+      },
+      "demoSummaries": [
+        {
+          "say": "Isosta yksiköstä pieneen: luku kasvaa, koska pieniä yksiköitä tarvitaan enemmän. kg → g: jokainen porras alas kertoo kymmenellä.",
+          "kind": "animation",
+          "duration": 7.6000000000000005
+        },
+        {
+          "say": "Desimaaliluku muuntuu samalla tavalla: 2,5 kg → g. Numerot siirtyvät, pilkku pysyy.",
+          "kind": "animation",
+          "duration": 7.6000000000000005
+        },
+        {
+          "say": "Pienestä isoon: jaetaan. g → kg: jokainen porras ylös jakaa kymmenellä. Tarkista aina, onko vastaus järkevän kokoinen.",
+          "kind": "animation",
+          "duration": 7.6000000000000005
+        },
+        {
+          "say": "Leipurin työ: säkki kilogrammoina, pussit grammoina. Muunna ensin samaan yksikköön, sitten jaa.",
+          "kind": "animation",
+          "duration": 9.3
+        }
+      ],
+      "reconciliation": "Actual conversion/sense/match/transfer read. Scalar conversion and3field equivalent quantities kept; measured-value same/different checks distinguish exact equality from fallible real-world typical-size guessing. Optional physical estimation remains teacher observed. Independent local exact arithmetic corrects finite decimal rounding in reference generator; no Lite edits."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-UNIT-03",
+        "subject": "mathematics",
+        "grade_band": "3-6",
+        "topic_area": "Geometria ja mittaaminen",
+        "parent_concept": "Yksikkömuunnos",
+        "title": "Yleisimpien massayksiköiden muuntaminen",
+        "short_description": "Yleisimpien massayksiköiden muuntaminen",
+        "source_basis": "assessment_refined",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL3-6-S4",
+          "OPH-MATH-VL6-ASSESSMENT-SUPPORT"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-MEAS-06",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-MEAS-06 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-UNIT-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-UNIT-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-MEAS-06",
+              "M-UNIT-01"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Geometria ja mittaaminen",
+          "Yksikkömuunnos"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-MEAS-06",
+            "M-UNIT-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "role": "atomic",
+      "gradeBand": "3-6",
+      "teacherObjective": "Yleisimpien massayksiköiden muuntaminen",
+      "studentObjective": "Loikka pakkaa jauhoja. Vaihda yksikköä, säilytä massa.",
+      "additionalHardGates": [],
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "requiredPrerequisites": [
+        {
+          "all_of": [
+            "M-MEAS-06",
+            "M-UNIT-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "crossKCAssumptions": "Multiplication/division factors supplied; decimal/fraction meanings explained, no new hard gate. Volume cubic relation locally explained; practical measurement not inferred from screen.",
+      "entry": "Concise supplied namedPNG; meaningful fixed same-quantity model+state and44pxstep within phone844. No header/chrome overrides.",
+      "evidenceLimits": "Local current supported response only; optional help, no formal mastery/learner efficacy/retention or personal history."
+    },
+    "extensions": {
+      "productionBatch": "B13",
+      "author": "Newton",
+      "humanReview": "not_performed",
+      "independentReview": "pending_Carver",
+      "simulationType": "exact_dimension_specific_unit_renaming_and_conserved_grouping",
+      "limits": "Own3delegated listeners and650ms bounded presentation interval, ownerWeakMapdisposesprevious and initializescontrols; currentinput/change/noeventCheckStepPlayconverterreadback; help/modelinvariant practicefeedback. No physical fluid/time simulation; no runtime oracle.",
+      "assetProvenance": "User supplied actual namedRGBA PNG unchanged; original exact mathematical SVG, static initial exactly current live model0.",
+      "sourcePreview": "Author isolated fullshellpreview only, not actual combined151.",
+      "exactAnswerFormat": "Normalized nonnegative rational value, raw128, ordinary signed decimal/grouped digits or signed fraction, precision18+9 after harmless zeros removed. Negativezero and double-negative fractions represent supported nonnegative values; truly negative values/zerodenominator rejected. No rounding."
+    },
+    "contentHash": "678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+    "contentRevision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@d4e3d20ccc28ddb7b6a8ba91535a758b1a6092c32999bde4a69ff05aad2ee8e6",
+          "note": "B13 author current source; separate Carver independent review pending. Author QA is not selfapproval."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+          "note": "B13 author candidate, fresh current source validation; independent Carver review pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+          "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+        },
+        {
+          "kind": "content",
+          "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+          "state": "reviewed",
+          "note": "Independent B13 Feynman source/domain/teaching and scoped native review closed; lesson-network/evidence/production/B13/reviews/Feynman-on-Newton-raw-snapshot.json. Technical synthetic scope, not learner validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@d4e3d20ccc28ddb7b6a8ba91535a758b1a6092c32999bde4a69ff05aad2ee8e6",
+          "note": "No human/learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+          "note": "Not performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+          "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+        },
+        {
+          "kind": "human",
+          "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+          "state": "pending",
+          "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@d4e3d20ccc28ddb7b6a8ba91535a758b1a6092c32999bde4a69ff05aad2ee8e6",
+          "note": "B13 author current source; separate Carver independent review pending. Author QA is not selfapproval."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+          "note": "B13 author candidate, fresh current source validation; independent Carver review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+          "note": "User updated B13 reviewer rotation after author staging: Feynman reviews Newton3. Earlier Carver assignment in draft plan is superseded. No author selfapproval or human/learner validation."
+        },
+        {
+          "kind": "alignment",
+          "revision": "1@678eaae1795a6d2182a36dd3c6f33c24b799ac3e0eef8666262e72a6b757f2b1",
+          "state": "reviewed",
+          "note": "Independent B13 Feynman canonical/Lite/source boundaries reviewed; lesson-network/evidence/production/B13/reviews/Feynman-on-Newton-raw-snapshot.json. Frozen graph/required groups retained."
+        }
+      ]
+    }
+  },
+  "outputHash": "199ed02c0c974beeb7aff0182d67d53ccdc18e79815999843a3cffc5b4cacc13",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "199ed02c0c974beeb7aff0182d67d53ccdc18e79815999843a3cffc5b4cacc13",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

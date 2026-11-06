@@ -1,0 +1,936 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-NUM-06",
+  "revision": 14,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "before.svg",
+      "sha256": "cf442ae7a8f8dba44f7280296d3e65bb3c772399d660aa464a2c4f5f397445b0"
+    },
+    {
+      "path": "empty.svg",
+      "sha256": "9c48cd607c5ed06a2d56acebe449843c0576042df7ca07b72eb41acf8573b4a5"
+    },
+    {
+      "path": "ten.svg",
+      "sha256": "600d4ce4d9aab6390b4c956165451ad323767ab910acac6349f3722520924791"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "5e18f766324b50aef26527cd1ba9b0d9904c03f984a01672b4286a78e9159a8b"
+    }
+  ],
+  "research": [
+    {
+      "organization": "Opetushallitus",
+      "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+      "accessed": "2026-10-29",
+      "read": "Historical2014 PDF128/printed129 S1/S2 lines4331–4342; front copyright. Targeted section, not whole document/current amendments.",
+      "adopted": "Quantity–word–numeral connection, number sequences and comparison/order grounded in concrete models.",
+      "rejected": "Does not mandate this interface, exact finite examples, prerequisites or validated efficacy. Frozen canonical source_basis/relations remain facts.",
+      "usage": "©Opetushallitus; factual paraphrase/link only, no source figures or passages copied.",
+      "title": "Perusopetuksen opetussuunnitelman perusteet 2014",
+      "usageRestrictions": "©Opetushallitus; factual paraphrase/link only, no source figures or passages copied."
+    },
+    {
+      "organization": "NCETM",
+      "url": "https://www.ncetm.org.uk/classroom-resources/ey-cardinality-and-counting/",
+      "accessed": "2026-10-29",
+      "read": "Official HTML progression, especially sequence names, crossing19/20 and29/30, starting from different numbers, distinction between sequence and cardinal quantity; no downloads.",
+      "adopted": "Teach successive number names and boundary transitions with visible support; optional counting does not become required speech.",
+      "rejected": "No speech/count-tap test, backward-fluency assumption, EarlyYears label as Finnish grade mandate, or efficacy claim.",
+      "usage": "Conceptual comparison only; copyright page actually read https://www.ncetm.org.uk/copyright/ states Crown/OGL qualifications, attribution and named-author permission. No protected text/art copied.",
+      "title": "Cardinality and Counting",
+      "usageRestrictions": "Conceptual comparison only; copyright page actually read https://www.ncetm.org.uk/copyright/ states Crown/OGL qualifications, attribution and named-author permission. No protected text/art copied."
+    },
+    {
+      "organization": "Oak National Academy",
+      "url": "https://www.thenational.academy/teachers/lessons/introducing-zero",
+      "accessed": "2026-10-29",
+      "read": "Official HTML learning points, misconception, teacher tip, quiz context and licence; slides/video/worksheet/images not downloaded or watched.",
+      "adopted": "Link absence to number0 in multiple concrete contexts, distinguish spoken name and numeral. Use practical invitation optionally.",
+      "rejected": "Do not import zero-addition law, compulsory rhymes/speech, full backward fluency, supplied frog imagery or assessment claims.",
+      "usage": "Page states ©Oak2025/OGL3 except stated exceptions, Collection2 terms. Link/conceptual comparison; no exercise/art/prose copying.",
+      "title": "Introducing zero",
+      "usageRestrictions": "Page states ©Oak2025/OGL3 except stated exceptions, Collection2 terms. Link/conceptual comparison; no exercise/art/prose copying."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@aac9735c02c6004b9ab3df18f1bf7af1e8ddcfb5fbb0482bdc29b173336e5e4b",
+      "note": "Author source checks only; different-author review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@aac9735c02c6004b9ab3df18f1bf7af1e8ddcfb5fbb0482bdc29b173336e5e4b",
+      "note": "Author source checks only; different-author review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@aac9735c02c6004b9ab3df18f1bf7af1e8ddcfb5fbb0482bdc29b173336e5e4b",
+      "note": "No human/learner validation."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@a840370c7dcfc7a4f6bfb6fcd91c02d963f60b2770032ec1da08781d7564b7c9",
+      "note": "NUM06 r2: preserve current visible answer on explicit Check after a selector change without events. Different-author targeted re-review pending; normal input/change clearing and domain truth retained."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@a840370c7dcfc7a4f6bfb6fcd91c02d963f60b2770032ec1da08781d7564b7c9",
+      "note": "NUM06 r2: preserve current visible answer on explicit Check after a selector change without events. Different-author targeted re-review pending; normal input/change clearing and domain truth retained."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@a840370c7dcfc7a4f6bfb6fcd91c02d963f60b2770032ec1da08781d7564b7c9",
+      "note": "No human/learner validation."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "2@a840370c7dcfc7a4f6bfb6fcd91c02d963f60b2770032ec1da08781d7564b7c9",
+      "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/number06-independent-r2.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "2@a840370c7dcfc7a4f6bfb6fcd91c02d963f60b2770032ec1da08781d7564b7c9",
+      "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/number06-independent-r2.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@0f31b3acceb20f176cc8db21a70057c4696b754f2f23ecd6ebc9bbbea020d06f",
+      "note": "LR04-B01: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@0f31b3acceb20f176cc8db21a70057c4696b754f2f23ecd6ebc9bbbea020d06f",
+      "note": "LR04-B01: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@0f31b3acceb20f176cc8db21a70057c4696b754f2f23ecd6ebc9bbbea020d06f",
+      "note": "LR04-B01: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@5e64ab8fd2f548b1ad8833ab471bcfda555bd9cebe3f55973cef405281e4ae2d",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@5e64ab8fd2f548b1ad8833ab471bcfda555bd9cebe3f55973cef405281e4ae2d",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@5e64ab8fd2f548b1ad8833ab471bcfda555bd9cebe3f55973cef405281e4ae2d",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@2bbf2473034484084c3cf630a9273e6228a5112cd1ce846b24487e0679f88bd1",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@2bbf2473034484084c3cf630a9273e6228a5112cd1ce846b24487e0679f88bd1",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@2bbf2473034484084c3cf630a9273e6228a5112cd1ce846b24487e0679f88bd1",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@32744afa5ecf4e06b197b4607f68419c14ad58c42b1f039f451cbe4de794bb83",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@32744afa5ecf4e06b197b4607f68419c14ad58c42b1f039f451cbe4de794bb83",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@32744afa5ecf4e06b197b4607f68419c14ad58c42b1f039f451cbe4de794bb83",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@d6de156b495fd3bfc77537eb97ea903574fcc6b68f037e38ba83fa1e79afb928",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@d6de156b495fd3bfc77537eb97ea903574fcc6b68f037e38ba83fa1e79afb928",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@d6de156b495fd3bfc77537eb97ea903574fcc6b68f037e38ba83fa1e79afb928",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@ed64a468125bed23f2de3604be512be9f7a43f3efcf504f76bbaf184e7bfcb99",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@ed64a468125bed23f2de3604be512be9f7a43f3efcf504f76bbaf184e7bfcb99",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@ed64a468125bed23f2de3604be512be9f7a43f3efcf504f76bbaf184e7bfcb99",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@8fcc7fd09ba0089ac206562d173518aa18e9ed1d76ac1dc48c0bd259328b5823",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@8fcc7fd09ba0089ac206562d173518aa18e9ed1d76ac1dc48c0bd259328b5823",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@8fcc7fd09ba0089ac206562d173518aa18e9ed1d76ac1dc48c0bd259328b5823",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@29896ff002d5263d5415fcb48ba75d6c0a2c421add86d0a03d8d32a52814af6c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@29896ff002d5263d5415fcb48ba75d6c0a2c421add86d0a03d8d32a52814af6c",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@29896ff002d5263d5415fcb48ba75d6c0a2c421add86d0a03d8d32a52814af6c",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@839b4be19d1d96ca7e5760e3cdb76e843d38a263bc496bfb4d5fc65e4df1c359",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@839b4be19d1d96ca7e5760e3cdb76e843d38a263bc496bfb4d5fc65e4df1c359",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@839b4be19d1d96ca7e5760e3cdb76e843d38a263bc496bfb4d5fc65e4df1c359",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@c0e341489463bae056957663663bc25137f8fc80213476fac4360235a0cd41f1",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@c0e341489463bae056957663663bc25137f8fc80213476fac4360235a0cd41f1",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@c0e341489463bae056957663663bc25137f8fc80213476fac4360235a0cd41f1",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@9c84f23b26e8111868e3fa4e743fca76b8342eac4c8328c1768e3432019ff1f4",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@9c84f23b26e8111868e3fa4e743fca76b8342eac4c8328c1768e3432019ff1f4",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@9c84f23b26e8111868e3fa4e743fca76b8342eac4c8328c1768e3432019ff1f4",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@83935c29eb92a698c05ccd66d854be789ccefa154a92ed63f2c945ea643030c1",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@83935c29eb92a698c05ccd66d854be789ccefa154a92ed63f2c945ea643030c1",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Tyhjä joukko vastaa nollaa; nolla on luku eikä puuttuvan vastauksen synonyymi. Kaikkien esineiden poistaminen ja alaspäin yksi → nolla yhdistyvät käsitteeseen. Harjoituksen korin neutraali nimi ja esinekohtainen saavutettava rakenne eivät kerro valmista lukumäärää; tyhjän korin 'Ei yhtään: 0' -ratkaisu on poistettu harjoituskuvasta. Ratkaistu malli on nimetty malliksi. Nykyinen Lite käyttää tyhjää, pientä joukkoa, kaikkien poistamista ja laskevaa lukujonoa. Se ei väitä, että tyhjä vastauskenttä olisi sama kuin 0. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@83935c29eb92a698c05ccd66d854be789ccefa154a92ed63f2c945ea643030c1",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M-NUM-06",
+    "liteContentRevision": "lite181-2026-10-27",
+    "nodeRevision": null,
+    "validRevisions": null,
+    "goal": "Opit, että nolla tarkoittaa: ei yhtään.",
+    "goalOrigin": "GOALS fallback in index.ts",
+    "actualFamilies": {
+      "count": {
+        "taskKind": "choice",
+        "seed": 1,
+        "phase": "guided",
+        "say": "Montako marjaa rasiassa on?",
+        "hint": null,
+        "explain": "Rasia on tyhjä. Yhtään ei ole: nolla.",
+        "task": {
+          "kind": "choice",
+          "options": [
+            {
+              "big": "1",
+              "speak": "yksi"
+            },
+            {
+              "big": "10",
+              "speak": "kymmenen"
+            },
+            {
+              "big": "0",
+              "speak": "nolla"
+            }
+          ],
+          "answer": 2,
+          "why": [
+            "Rasiassa ei ole yhtään, ei edes yhtä.",
+            "Kymmenessä on nolla perässä, mutta se on iso luku.",
+            null
+          ]
+        },
+        "registry": {
+          "node": "M-NUM-06",
+          "tag": "count",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "static",
+          "html": "<svg viewBox=\"0 0 180 130\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"4\" y=\"4\" width=\"172\" height=\"100\" rx=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".35\" stroke-width=\"3\"/></svg>"
+        }
+      },
+      "takeAll": {
+        "taskKind": "choice",
+        "seed": 2,
+        "phase": "guided",
+        "say": "Lautasella on kolme marjaa. Loikka syö ne kaikki. Montako jää?",
+        "hint": null,
+        "explain": "Kaikki kolme syötiin, joten jäi nolla.",
+        "task": {
+          "kind": "choice",
+          "options": [
+            {
+              "big": "0",
+              "speak": "nolla"
+            },
+            {
+              "big": "1",
+              "speak": "yksi"
+            },
+            {
+              "big": "3",
+              "speak": "kolme"
+            }
+          ],
+          "answer": 0,
+          "why": [
+            null,
+            "Yksikään ei jäänyt.",
+            "Ne kaikki syötiin."
+          ]
+        },
+        "registry": {
+          "node": "M-NUM-06",
+          "tag": "takeAll",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "animation",
+          "duration": 5.700000000000001,
+          "width": 320,
+          "height": 150,
+          "label": "3 esinettä, joista Loikka syö 3"
+        }
+      },
+      "empty": {
+        "taskKind": "choice",
+        "seed": 7,
+        "phase": "guided",
+        "say": "Missä rasiassa ei ole yhtään?",
+        "hint": null,
+        "explain": "Tyhjässä rasiassa on nolla.",
+        "task": {
+          "kind": "choice",
+          "options": [
+            {
+              "art": "<svg viewBox=\"0 0 120 100\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"4\" y=\"4\" width=\"112\" height=\"70\" rx=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".35\" stroke-width=\"3\"/><circle cx=\"28.882973627249402\" cy=\"49.76843357235193\" r=\"11.700000000000001\" fill=\"#4a5bd4\"/><circle cx=\"24.982973627249404\" cy=\"45.86843357235193\" r=\"2.6\" fill=\"#fff\" opacity=\".6\"/><circle cx=\"24.576123331611356\" cy=\"16.566006568819283\" r=\"11.700000000000001\" fill=\"#4a5bd4\"/><circle cx=\"20.676123331611358\" cy=\"12.666006568819283\" r=\"2.6\" fill=\"#fff\" opacity=\".6\"/></svg>"
+            },
+            {
+              "art": "<svg viewBox=\"0 0 120 100\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"4\" y=\"4\" width=\"112\" height=\"70\" rx=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".35\" stroke-width=\"3\"/><circle cx=\"24.88987192598482\" cy=\"50.76056812312454\" r=\"11.700000000000001\" fill=\"#4a5bd4\"/><circle cx=\"20.989871925984822\" cy=\"46.860568123124544\" r=\"2.6\" fill=\"#fff\" opacity=\".6\"/></svg>"
+            },
+            {
+              "art": "<svg viewBox=\"0 0 120 100\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"4\" y=\"4\" width=\"112\" height=\"70\" rx=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".35\" stroke-width=\"3\"/></svg>"
+            }
+          ],
+          "answer": 2,
+          "why": [
+            "Tässä on jotain.",
+            "Tässä on jotain.",
+            null
+          ]
+        },
+        "registry": {
+          "node": "M-NUM-06",
+          "tag": "empty",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "none"
+        }
+      },
+      "transfer": {
+        "taskKind": "choice",
+        "seed": 1,
+        "phase": "transfer",
+        "say": "Loikka laskee hyppykiviä alaspäin: neljä, kolme, kaksi, yksi... Mikä luku tulee seuraavaksi?",
+        "hint": null,
+        "explain": "Yhden jälkeen alaspäin tulee nolla: kivi, jolla ei ole yhtään.",
+        "task": {
+          "kind": "choice",
+          "options": [
+            {
+              "big": "2",
+              "speak": "kaksi"
+            },
+            {
+              "big": "10",
+              "speak": "kymmenen"
+            },
+            {
+              "big": "0",
+              "speak": "nolla"
+            }
+          ],
+          "answer": 2,
+          "why": [
+            "Kaksi tuli jo. Alaspäin mennään pienempään.",
+            "Kymmenen on paljon. Alaspäin ykkösen jälkeen tulee nolla.",
+            null
+          ]
+        },
+        "registry": {
+          "node": "M-NUM-06",
+          "tag": "transfer",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "none"
+        }
+      }
+    },
+    "actualDemoInventory": [
+      {
+        "say": "Lautasella on kolme marjaa. Katso, kun Loikka syö ne yksi kerrallaan: kolme, kaksi, yksi…",
+        "kind": "animation",
+        "duration": 5.700000000000001,
+        "width": 320,
+        "height": 150,
+        "label": "3 esinettä, joista Loikka syö 3",
+        "snapshots": [
+          {
+            "time": 0,
+            "caption": "Lautasella on kolme.",
+            "sha256": "5c4901130ded19f70cd0b44ad3d5a44251c4584f96731968d3b3226e4ce244a4"
+          },
+          {
+            "time": 0.14250000000000002,
+            "caption": "Lautasella on kolme.",
+            "sha256": "5c4901130ded19f70cd0b44ad3d5a44251c4584f96731968d3b3226e4ce244a4"
+          },
+          {
+            "time": 0.28500000000000003,
+            "caption": "Lautasella on kolme.",
+            "sha256": "5c4901130ded19f70cd0b44ad3d5a44251c4584f96731968d3b3226e4ce244a4"
+          },
+          {
+            "time": 0.42750000000000005,
+            "caption": "Lautasella on kolme.",
+            "sha256": "5c4901130ded19f70cd0b44ad3d5a44251c4584f96731968d3b3226e4ce244a4"
+          },
+          {
+            "time": 0.5700000000000001,
+            "caption": "Lautasella on kolme.",
+            "sha256": "5c4901130ded19f70cd0b44ad3d5a44251c4584f96731968d3b3226e4ce244a4"
+          },
+          {
+            "time": 0.7125000000000001,
+            "caption": "Lautasella on kolme.",
+            "sha256": "5c4901130ded19f70cd0b44ad3d5a44251c4584f96731968d3b3226e4ce244a4"
+          },
+          {
+            "time": 0.8550000000000001,
+            "caption": "Lautasella on kolme.",
+            "sha256": "0e5b75eb711992596b619a3fa81c64d20652117ae3c04db6627234aae13086bc"
+          },
+          {
+            "time": 0.9975000000000002,
+            "caption": "Lautasella on kolme.",
+            "sha256": "a762527ed0e67dcf87443515353a1b359e1c720baea7184103d83e1f43f16c40"
+          },
+          {
+            "time": 1.1400000000000001,
+            "caption": "Lautasella on kolme.",
+            "sha256": "c667d54bce248d2bcdf6d9699a24b0211bbeb4ebd19178b4fcc266d5a758bb0a"
+          },
+          {
+            "time": 1.2825000000000002,
+            "caption": "Lautasella on kolme.",
+            "sha256": "5c64b12e66a204af6ebfb88d199c88100767465c367bfd448c31c3c15b4a1225"
+          },
+          {
+            "time": 1.4250000000000003,
+            "caption": "Lautasella on kolme.",
+            "sha256": "cf608fad7d4bfc240693fbc637683cec769b52f6fe5a89ad92804b71fe164137"
+          },
+          {
+            "time": 1.5675000000000003,
+            "caption": "Lautasella on kolme.",
+            "sha256": "42784d26c4821533617f5511a074ba047954f73722229e336258963f53d3cfda"
+          },
+          {
+            "time": 1.7100000000000002,
+            "caption": "Lautasella on kolme.",
+            "sha256": "42784d26c4821533617f5511a074ba047954f73722229e336258963f53d3cfda"
+          },
+          {
+            "time": 1.8525000000000003,
+            "caption": "Lautasella on kolme.",
+            "sha256": "42784d26c4821533617f5511a074ba047954f73722229e336258963f53d3cfda"
+          },
+          {
+            "time": 1.9950000000000003,
+            "caption": "Loikka söi yksi. Jäljellä kaksi.",
+            "sha256": "a8e44d66b8e9ed9da19cdd8792db4c28cef822736ef9a12bedf1ee692a31cad9"
+          },
+          {
+            "time": 2.1375,
+            "caption": "Loikka söi yksi. Jäljellä kaksi.",
+            "sha256": "93e94a7ab304f9a557ce382fad68284c8a1f61d82c1542bfbfc1d2e1996d4d13"
+          },
+          {
+            "time": 2.2800000000000002,
+            "caption": "Loikka söi yksi. Jäljellä kaksi.",
+            "sha256": "84f7b14a6fd403aae7155c46907806cc3fe854967b3e8a90525454ccc06e5455"
+          },
+          {
+            "time": 2.4225000000000003,
+            "caption": "Loikka söi yksi. Jäljellä kaksi.",
+            "sha256": "02df8b3229747f0d9a9578bddb1594d62f29bf0991ec7b136e85eeea3c816986"
+          },
+          {
+            "time": 2.5650000000000004,
+            "caption": "Loikka söi yksi. Jäljellä kaksi.",
+            "sha256": "45f90aeb9d2113ba5029bf33027c13b8bc39d6116f3ac641fe3dbe7a1fc33516"
+          },
+          {
+            "time": 2.7075000000000005,
+            "caption": "Loikka söi yksi. Jäljellä kaksi.",
+            "sha256": "45f90aeb9d2113ba5029bf33027c13b8bc39d6116f3ac641fe3dbe7a1fc33516"
+          },
+          {
+            "time": 2.8500000000000005,
+            "caption": "Loikka söi yksi. Jäljellä kaksi.",
+            "sha256": "45f90aeb9d2113ba5029bf33027c13b8bc39d6116f3ac641fe3dbe7a1fc33516"
+          },
+          {
+            "time": 2.9925000000000006,
+            "caption": "Loikka söi yksi. Jäljellä kaksi.",
+            "sha256": "45f90aeb9d2113ba5029bf33027c13b8bc39d6116f3ac641fe3dbe7a1fc33516"
+          },
+          {
+            "time": 3.1350000000000007,
+            "caption": "Loikka söi kaksi. Jäljellä yksi.",
+            "sha256": "b686e5a0cc976dc73f196ef2267c85e6467d88666bbbabe1fbbe298668cad909"
+          },
+          {
+            "time": 3.2775000000000007,
+            "caption": "Loikka söi kaksi. Jäljellä yksi.",
+            "sha256": "96de35e3f9a79d4ed8f7426506650d2ce108804ec3e6827798ef3f26a0b01f0b"
+          },
+          {
+            "time": 3.4200000000000004,
+            "caption": "Loikka söi kaksi. Jäljellä yksi.",
+            "sha256": "6e6b4c01d8d54c1f5b5ecb55f3eeaaaba8c660c79ec4a3483267ad248d04e486"
+          },
+          {
+            "time": 3.562500000000001,
+            "caption": "Loikka söi kaksi. Jäljellä yksi.",
+            "sha256": "81d91d0ac4decfa610da3791d505bb3d3d7d244f4690e0f9c11f4424259a2781"
+          },
+          {
+            "time": 3.7050000000000005,
+            "caption": "Loikka söi kaksi. Jäljellä yksi.",
+            "sha256": "9eeaace3b84722ca1dda880174478e65064a1d38b2a76f4db9f2b7ab10962c65"
+          },
+          {
+            "time": 3.847500000000001,
+            "caption": "Loikka söi kaksi. Jäljellä yksi.",
+            "sha256": "9eeaace3b84722ca1dda880174478e65064a1d38b2a76f4db9f2b7ab10962c65"
+          },
+          {
+            "time": 3.9900000000000007,
+            "caption": "Loikka söi kaksi. Jäljellä yksi.",
+            "sha256": "9eeaace3b84722ca1dda880174478e65064a1d38b2a76f4db9f2b7ab10962c65"
+          },
+          {
+            "time": 4.132500000000001,
+            "caption": "Loikka söi kolme. Jäljellä nolla.",
+            "sha256": "d85cdc320af294d2d77795871e063fa245a301babe49ef07e11bc73fcdbd1c50"
+          },
+          {
+            "time": 4.275,
+            "caption": "Loikka söi kolme. Jäljellä nolla.",
+            "sha256": "d85cdc320af294d2d77795871e063fa245a301babe49ef07e11bc73fcdbd1c50"
+          },
+          {
+            "time": 4.417500000000001,
+            "caption": "Loikka söi kolme. Jäljellä nolla.",
+            "sha256": "d85cdc320af294d2d77795871e063fa245a301babe49ef07e11bc73fcdbd1c50"
+          },
+          {
+            "time": 4.5600000000000005,
+            "caption": "Loikka söi kolme. Jäljellä nolla.",
+            "sha256": "d85cdc320af294d2d77795871e063fa245a301babe49ef07e11bc73fcdbd1c50"
+          },
+          {
+            "time": 4.702500000000001,
+            "caption": "Loikka söi kolme. Jäljellä nolla.",
+            "sha256": "d85cdc320af294d2d77795871e063fa245a301babe49ef07e11bc73fcdbd1c50"
+          },
+          {
+            "time": 4.845000000000001,
+            "caption": "Loikka söi kolme. Jäljellä nolla.",
+            "sha256": "d85cdc320af294d2d77795871e063fa245a301babe49ef07e11bc73fcdbd1c50"
+          },
+          {
+            "time": 4.987500000000001,
+            "caption": "Loikka söi kolme. Jäljellä nolla.",
+            "sha256": "d85cdc320af294d2d77795871e063fa245a301babe49ef07e11bc73fcdbd1c50"
+          },
+          {
+            "time": 5.130000000000001,
+            "caption": "Loikka söi kolme. Jäljellä nolla.",
+            "sha256": "d85cdc320af294d2d77795871e063fa245a301babe49ef07e11bc73fcdbd1c50"
+          },
+          {
+            "time": 5.272500000000001,
+            "caption": "Loikka söi kolme. Jäljellä nolla.",
+            "sha256": "d85cdc320af294d2d77795871e063fa245a301babe49ef07e11bc73fcdbd1c50"
+          },
+          {
+            "time": 5.415000000000001,
+            "caption": "Loikka söi kolme. Jäljellä nolla.",
+            "sha256": "d85cdc320af294d2d77795871e063fa245a301babe49ef07e11bc73fcdbd1c50"
+          },
+          {
+            "time": 5.557500000000001,
+            "caption": "Loikka söi kolme. Jäljellä nolla.",
+            "sha256": "d85cdc320af294d2d77795871e063fa245a301babe49ef07e11bc73fcdbd1c50"
+          },
+          {
+            "time": 5.700000000000001,
+            "caption": "Loikka söi kolme. Jäljellä nolla.",
+            "sha256": "d85cdc320af294d2d77795871e063fa245a301babe49ef07e11bc73fcdbd1c50"
+          }
+        ]
+      },
+      {
+        "say": "Nyt korissa ei ole yhtään marjaa. Yhtään ei ole: se on nolla. Numerona nolla kirjoitetaan näin.",
+        "kind": "static",
+        "html": "<svg viewBox=\"0 0 180 130\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"4\" y=\"4\" width=\"172\" height=\"100\" rx=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".35\" stroke-width=\"3\"/><text x=\"90\" y=\"124\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"800\" fill=\"currentColor\">0</text></svg>"
+      }
+    ],
+    "motionOverlay": false,
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2",
+      "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "EVENT_COMMIT_REVIEW_B05.md": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+      "authority/production-181-v2/ASSETS.md": "bdccb0695c27382d99f8831077adf2f247b1bb168018bc5f829c510df3792c48",
+      "authority/production-181-v2/STYLE_REVIEW_FI.md": "aed7c1ba925e0743dc8f4d78b26cf875c5595e3afb39e0d3cd679f881b1683a4",
+      "authority/production-181-v2/ASSET_STYLE_GATE.txt": "fb5a31989b7ac7ad3f2e4f875ca86ea2f224821de09fa5eb4371fc3f36239fb7",
+      "authority/production-181-v2/lite/src/content/ranta2.ts": "28d8f7b08205a7e5be0c2087c85e256e609578e83a9e6e714a1ee8573ff47fc6",
+      "authority/production-181-v2/lite/src/content/numbers.ts": "2ff4cae1816ea1d61ec938361a8306dc9a24d6e893f67895a390a83b7ae1c4d5",
+      "authority/production-181-v2/lite/src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+      "authority/production-181-v2/lite/src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+      "authority/production-181-v2/lite/src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+      "authority/production-181-v2/lite/src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+      "authority/production-181-v2/lite/src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da",
+      "shared/aava/curious.png": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2",
+      "shared/loikka/map.png": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+    },
+    "comparison": "alignment.md",
+    "state": "authored_different_author_review_pending",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "lite181-2026-10-27",
+      "validRevisions": [
+        "lite181-2026-10-27"
+      ],
+      "revisionPolicy": "all_previous_revisions_remain_valid",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/facts.ts": "a696f7fd77cf6de59eae08d4fac0791a04f35065352415b1fac9c1fdb377c3c9",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/numbers.ts": "6db9ad2c369c3111be19409d6b3da02f990c08ec8841c122081d5487d066f5af",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/content/ranta2.ts": "87944d2b01f0eeb53212fa1e9d86fa034c4b8db3a8fd0c572f7d74a462716020",
+        "src/engine/check.ts": "47db66a3f49e0ad81dbe6a44ef630f68c219ef1278b96b1d48e353ccb5d113c3",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+        "src/ui/widgets.ts": "ed38f173766820cfc9dafcf8ea95a57a8940afe50a36ad19f3b00f3193e56ede"
+      },
+      "historicalNonLiteReferences": [
+        "EVENT_COMMIT_REVIEW_B05.md",
+        "INTERACTION_FEEDBACK_CONTRACT.md",
+        "authority/production-181-v2/ASSETS.md",
+        "authority/production-181-v2/ASSET_STYLE_GATE.txt",
+        "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt",
+        "authority/production-181-v2/STYLE_REVIEW_FI.md",
+        "reference/inputs/canonical-690-graph.json",
+        "reference/inputs/mvp-scope-181.json",
+        "shared/aava/curious.png",
+        "shared/loikka/map.png"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "1-2",
+    "role": "atomic",
+    "teacherObjective": "Nollan ymmärtäminen lukumääränä ja lukuna",
+    "childGoal": "Tiedän, että nolla tarkoittaa: ei yhtään.",
+    "canonical": {
+      "id": "M-NUM-06",
+      "subject": "mathematics",
+      "grade_band": "1-2",
+      "topic_area": "Luvut ja laskutoimitukset",
+      "parent_concept": "Nolla",
+      "title": "Nollan ymmärtäminen lukumääränä ja lukuna",
+      "short_description": "Nollan ymmärtäminen lukumääränä ja lukuna",
+      "source_basis": "pedagogically_derived",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL1-2-S2"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "concept",
+      "relations": [
+        {
+          "id": "M-NUM-03",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-NUM-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-NUM-03"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Luvut ja laskutoimitukset",
+        "Nolla"
+      ]
+    },
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-NUM-03"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "required": [
+      {
+        "id": "M-NUM-03",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-NUM-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "strongSupport": [],
+    "sourceBasis": "pedagogically_derived",
+    "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "scope": "Givencounts0..5, optionaltencontrast10; direct response bounded0..10. No negatives, arithmetic fluency or general subtraction assessed.",
+    "assumed": "Only frozenM-NUM-03; no added graph gate",
+    "coTaught": [
+      "Numeral0 and wordnolla taught;10comparison supplied, no independent placevalue gate."
+    ],
+    "concreteToRepresentation": [
+      "Korissa ei ole yhtään. Se on nolla.",
+      "Nolla kirjoitetaan 0.",
+      "Tyhjä vastausruutu ei vielä kerro määrää. Kirjoita0, kun määrä on nolla."
+    ],
+    "help": "Watch last departure or inspect empty region; labels/wordnolla supplied. Separate support no automatic practice answer insertion.",
+    "offline": "Use a bowl and few counters, move all aside, then compare empty andone. On-screen correctness does not prove physical removal/counting.",
+    "exit": "Millä numerolla kirjoitat, ettei korissa ole yhtään?",
+    "evidenceLimits": "Supported absence↔quantity↔numeral concept, not independent field observation, physical emptying, oral recitation, general subtraction or personal mastery.",
+    "assetProvenance": "Original countablemath/dataSVG; suppliedbyte-identical sharedPNG. ExternalXML, nativeimage decode and real text/geometry bounds required. No mascot vectorredraw or unsupported pose."
+  },
+  "extensions": {
+    "productionBatch": "B09",
+    "title": "Zero as absence and a number",
+    "simulationType": "conserved_emptying_and_construct_empty_tray",
+    "independentReview": "pending_different_author",
+    "humanReview": "not_performed",
+    "timing": "900ms per illustrated transfer, fixed-size originalpieces; numbercaption at completed steps, motioncaption during transfer.",
+    "evidencePolicy": "Supported standalone practice only. No personal history/storage, efficacy, retention, independence, physicalskill or formalgame/mastery credit.",
+    "browserQA": "browser-qa.mjs author technical proof; main actual compiled-site run separate",
+    "researchReuse": "Exact current B09 primary cluster reading reused; no fabricated per-item search.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B01",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

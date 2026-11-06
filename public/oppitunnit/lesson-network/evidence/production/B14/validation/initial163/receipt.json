@@ -1,0 +1,88 @@
+{
+  "kind": "INITIAL163_DRAFT_BUILD_NOT_FINAL_ACCEPTANCE",
+  "normal690Build": true,
+  "wholeNetworkVerification": {
+    "validator": "independent-phase1/1",
+    "passed": true,
+    "structuralChecksPassed": true,
+    "allowPending": false,
+    "validationCounts": {
+      "verified": 690,
+      "pending_validation": 0,
+      "invalid": 0
+    },
+    "completionState": "verified",
+    "checks": 359511,
+    "failureCount": 0,
+    "coverage": {
+      "kc_count": 690,
+      "relation_count": 1287,
+      "subjects": {
+        "mathematics": 439,
+        "science": 63,
+        "physics": 95,
+        "chemistry": 93
+      },
+      "node_kinds": {
+        "foundation": 8,
+        "process_skill": 80,
+        "representation": 57,
+        "integration": 72,
+        "concept": 288,
+        "procedure": 185
+      },
+      "mastery_roles": {
+        "atomic": 479,
+        "process": 128,
+        "integration": 72,
+        "operational": 10,
+        "placeholder": 1
+      },
+      "relations_by_type_strength": {
+        "process_support:strong": 61,
+        "representation_support:strong": 42,
+        "prerequisite:required": 859,
+        "prerequisite:strong": 307,
+        "safety_gate:required": 15,
+        "prerequisite:helpful": 3
+      },
+      "cross_subject_relations": 127,
+      "prerequisite_group_count": 599,
+      "nodes_with_groups": 597,
+      "all_of_count": 587,
+      "any_of_count": 12,
+      "multi_group_ids": [
+        "M-ALG-08",
+        "M-SCALE-02"
+      ],
+      "dynamic_rule_count": 18,
+      "dynamic_entry_count": 48,
+      "foundation_entry_count": 7,
+      "zero_required_indegree_flag_count": 93,
+      "no_recorded_top_relations_count": 10,
+      "no_direct_dependents_count": 178,
+      "dangling_ids": [],
+      "duplicate_source_target_pairs": 0,
+      "self_edges": 0,
+      "required_prerequisite_only_acyclic": true,
+      "full_network_is_acyclic": false,
+      "full_network_cyclic_components": [
+        [
+          "CHEM79-ATOM-01",
+          "CHEM79-ELEMENT"
+        ]
+      ],
+      "lite181_count": 181,
+      "outside_lite181_count": 509
+    },
+    "failures": [],
+    "limits": [
+      "Static/data/hash audit only; browser layout, copying, idempotence and interrupted resume require separate execution review.",
+      "Scaffold verification is not pedagogical approval or endpoint verification.",
+      "--allow-pending may exit zero for structurally valid pending output; only passed:true certifies a complete verified set."
+    ]
+  },
+  "preReviewLintExitCode": 0,
+  "acceptedStill": 151,
+  "scope": "Initial freeze only; later authored root fixes require final rebuild and changedscope browser. Do not relabel as final current163."
+}

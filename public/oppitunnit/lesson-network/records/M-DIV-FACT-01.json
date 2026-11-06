@@ -1,0 +1,573 @@
+{
+  "kcId": "M-DIV-FACT-01",
+  "pagePath": "lessons/M-DIV-FACT-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-DIV-FACT-01",
+  "canonicalNode": {
+    "id": "M-DIV-FACT-01",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Jakolasku",
+    "title": "Helpon jakolaskun ratkaiseminen kertotaulun avulla",
+    "short_description": "Helpon jakolaskun ratkaiseminen kertotaulun avulla",
+    "source_basis": "pedagogically_derived",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-MULDIV-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MULDIV-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-MULTAB-LOW",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MULTAB-LOW on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-MULDIV-01",
+          "M-MULTAB-LOW"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Jakolasku"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-MULDIV-01",
+      "targetKCId": "M-DIV-FACT-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MULDIV-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-MULTAB-LOW",
+      "targetKCId": "M-DIV-FACT-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-MULTAB-LOW on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-DIV-FACT-01",
+      "targetKCId": "M-EXPR-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Jakolaskufaktat ovat tehtäväkohtainen tuki, eivät yleisen lausekkeen tulkinnan globaali ehto.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-DIV-FACT-01",
+      "targetKCId": "M-STAT-05",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Jakolaskufaktat tukevat, mutta keskiarvolaskun jakaminen voi olla tehtäväkohtaisesti tuettu.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-MULDIV-01",
+        "M-MULTAB-LOW"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-DIV-FACT-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "NCETM Division: KS1 structures overview",
+        "url": "https://www.ncetm.org.uk/classroom-resources/lv-division/",
+        "read": "ActualHTML53–73; grouping/sharing overview. Embedded videos not independently watched.",
+        "adopted": "Two different unknown quantities in sharing versus grouping.",
+        "rejected": "Do not infer physical sharing performance from screen answer.",
+        "accessed": "2026-10-29",
+        "licence": "NCETM/Etio primary education resource; no broad reuse licence inferred. No source prose, figures, videos or code copied.",
+        "usage": "Original Finnish text, numerical examples and SVG; conceptual comparison only.",
+        "limits": "Targeted source reading, not efficacy, Finnish curriculum approval or classroom validation."
+      },
+      {
+        "title": "NCETM2.10 Connecting multiplication/division and distributive law",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-210-connecting-multiplication-and-division-and-the-distributive-law/",
+        "read": "ActualHTML61–68 introduction and all3 teachingpoints.",
+        "adopted": "Multiplication commutation, division noncommutation, related known products.",
+        "rejected": "Formal distributive notation and later KS2 demands are not added as1–2 prerequisites.",
+        "accessed": "2026-10-29",
+        "licence": "NCETM/Etio primary education resource; no broad reuse licence inferred. No source prose, figures, videos or code copied.",
+        "usage": "Original Finnish text, numerical examples and SVG; conceptual comparison only.",
+        "limits": "Targeted source reading, not efficacy, Finnish curriculum approval or classroom validation."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@6b086dd8c09eac35f6366cc7065df1da9f484a5ff065025b5c57389de53a7375",
+        "note": "Author technical checks only. Different-author review assigned to Euler; no selfapproval."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+        "note": "R2 entry repair; exact Euler delta review and rebuilt main native closure pending. Author checks only."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+        "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/carver3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@6b086dd8c09eac35f6366cc7065df1da9f484a5ff065025b5c57389de53a7375",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+        "note": "No human or learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-DIV-FACT-01",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "lesson.css",
+        "sha256": "4fe9f4731a650644fbed1045e7402a3c5eec7031e11db6cba7a25c078ed9498f"
+      },
+      {
+        "path": "share.svg",
+        "sha256": "c1a86af17bd7c6539d724eabf15998d73a32e07d2eafed449155ca6b292512db"
+      },
+      {
+        "path": "groups.svg",
+        "sha256": "a25fe2f4e3657912f3b7c07d061fccfa0690bdc5b49741e32ba93165bc7efe9e"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "title": "NCETM Division: KS1 structures overview",
+        "url": "https://www.ncetm.org.uk/classroom-resources/lv-division/",
+        "read": "ActualHTML53–73; grouping/sharing overview. Embedded videos not independently watched.",
+        "adopted": "Two different unknown quantities in sharing versus grouping.",
+        "rejected": "Do not infer physical sharing performance from screen answer.",
+        "accessed": "2026-10-29",
+        "licence": "NCETM/Etio primary education resource; no broad reuse licence inferred. No source prose, figures, videos or code copied.",
+        "usage": "Original Finnish text, numerical examples and SVG; conceptual comparison only.",
+        "limits": "Targeted source reading, not efficacy, Finnish curriculum approval or classroom validation."
+      },
+      {
+        "title": "NCETM2.10 Connecting multiplication/division and distributive law",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-210-connecting-multiplication-and-division-and-the-distributive-law/",
+        "read": "ActualHTML61–68 introduction and all3 teachingpoints.",
+        "adopted": "Multiplication commutation, division noncommutation, related known products.",
+        "rejected": "Formal distributive notation and later KS2 demands are not added as1–2 prerequisites.",
+        "accessed": "2026-10-29",
+        "licence": "NCETM/Etio primary education resource; no broad reuse licence inferred. No source prose, figures, videos or code copied.",
+        "usage": "Original Finnish text, numerical examples and SVG; conceptual comparison only.",
+        "limits": "Targeted source reading, not efficacy, Finnish curriculum approval or classroom validation."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@6b086dd8c09eac35f6366cc7065df1da9f484a5ff065025b5c57389de53a7375",
+        "note": "Author technical checks only. Different-author review assigned to Euler; no selfapproval."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@6b086dd8c09eac35f6366cc7065df1da9f484a5ff065025b5c57389de53a7375",
+        "note": "Author technical checks only. Different-author review assigned to Euler; no selfapproval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@6b086dd8c09eac35f6366cc7065df1da9f484a5ff065025b5c57389de53a7375",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+        "note": "R2 entry repair; exact Euler delta review and rebuilt main native closure pending. Author checks only."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+        "note": "R2 entry repair; exact Euler delta review and rebuilt main native closure pending. Author checks only."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+        "note": "No human or learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+        "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/carver3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+        "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/carver3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-DIV-FACT-01",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "definition": "src/content/facts.ts:825–879",
+      "sourceHashes": {
+        "src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "taskFamilies": [
+        "fact",
+        "think",
+        "share",
+        "deal",
+        "transfer callback"
+      ],
+      "inventory": "alignment.md",
+      "inherited": "3: skipDivScene(20,5), shareRoundScene(12,3), inverse20:5↔5×4. All task/hint/explanation/transfer branches inspected.",
+      "corrected": "Do not repeat unrestricted division always shrinks / largest-number rule:8:1=8 and0:4=0 are valid. divisor0 explicitly unsupported. Model distinguishes quantity per person from number of groups.",
+      "extended": "Separate freely controllable model, all actual division answers produced numerically without mandatory distribution clicks. Inverse item fills factor, not only recognises expression.",
+      "overlay": "Actual index goal fallback/revision resolution read. No SIMS entry for these3; no target-specific family registry override. Strong-support defaults retained, no new gates."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-DIV-FACT-01",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Jakolasku",
+        "title": "Helpon jakolaskun ratkaiseminen kertotaulun avulla",
+        "short_description": "Helpon jakolaskun ratkaiseminen kertotaulun avulla",
+        "source_basis": "pedagogically_derived",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-MULDIV-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-MULDIV-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-MULTAB-LOW",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-MULTAB-LOW on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-MULDIV-01",
+              "M-MULTAB-LOW"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Jakolasku"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-MULDIV-01",
+            "M-MULTAB-LOW"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "role": "atomic",
+      "gradeBand": "1-2",
+      "strongSupport": [],
+      "teacherObjective": "Helpon jakolaskun ratkaiseminen kertotaulun avulla",
+      "childGoal": "Ratkaisen jaon tutun kertolaskun avulla.",
+      "scope": "Exact whole divisions with divisor1–10, total0–100 and quotient0–10. Child practice six named cases; not full division fact fluency or remainders.",
+      "assumedSupportedSupplied": "M-MULDIV-01 and M-MULTAB-LOW AND required; grouping pictures and unit labels supplied.",
+      "evidenceLimits": "Local low-stakes practice only; no personal mastery, full fluency, physical performance, retention or efficacy claim. No storage, telemetry or account.",
+      "assetProvenance": "Supplied v2 named RGBA PNGs unchanged. Original conceptual SVG shapes represent mathematical objects, not substitute mascots. Source author/style notes read."
+    },
+    "extensions": {
+      "productionBatch": "B10",
+      "independentReview": "pending_Euler",
+      "humanReview": "not_performed",
+      "authorChecks": "verification.json",
+      "simulationType": "discrete_equalsharing_or_grouping_steps_with_optional_owned_timer",
+      "interaction": "Both input/change, explicit current-visible readback/redraw beforecheck. Dependent response edits retire verdict; independent model/help do not.",
+      "design": "Game Studio UI/playtest applied: early nativeDOM model, optionalsecondarydetails, originalSVG, source-composition320/390/1280 author checks passed. Actual compiled115/native and different-author review pending; no new shared framework.",
+      "entryRepair": {
+        "finding": "Euler B10-CARVER-ENTRY-P2 actual115 r1 model/action separation.",
+        "scope": "Owned compact PNG hook, goal before current model; teaching paragraphs/examples/limits retained below. Model/readout/primary moved before optional advanced controls.",
+        "semantics": "Only mount DOM construction/order changes; pure domain/feedback/events/timers/lifecycle and supplied/static assets unchanged.",
+        "verification": "Candidate full-shell clone preflight required; actual main rebuilt r2 and Euler narrow review pending. No layout acceptance from prior functional native pass."
+      }
+    },
+    "contentHash": "a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+    "contentRevision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@6b086dd8c09eac35f6366cc7065df1da9f484a5ff065025b5c57389de53a7375",
+          "note": "Author technical checks only. Different-author review assigned to Euler; no selfapproval."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+          "note": "R2 entry repair; exact Euler delta review and rebuilt main native closure pending. Author checks only."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+          "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/carver3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@6b086dd8c09eac35f6366cc7065df1da9f484a5ff065025b5c57389de53a7375",
+          "note": "No human/learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+          "note": "No human or learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@6b086dd8c09eac35f6366cc7065df1da9f484a5ff065025b5c57389de53a7375",
+          "note": "Author technical checks only. Different-author review assigned to Euler; no selfapproval."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+          "note": "R2 entry repair; exact Euler delta review and rebuilt main native closure pending. Author checks only."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@a67d96599581663ab4d4b886a5b2cf0338937c14aa735a23f1f496d812710689",
+          "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/carver3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "25ef2a40e540beea1034730c1f6e90ce80a003769940aa7a88294f3552719679",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "25ef2a40e540beea1034730c1f6e90ce80a003769940aa7a88294f3552719679",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

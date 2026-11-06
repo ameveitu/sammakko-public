@@ -1,0 +1,567 @@
+schema_version: 0.1.0
+kc_id: M-MEAS-01
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Mittaaminen suureen vertaamisena sovittuun yksikköön
+  subject: mathematics
+  grade_band: 1-2
+  mastery_role: atomic
+  node_kind: procedure
+  concept_path: [Matematiikka, Geometria ja mittaaminen, Mittaamisen periaate]
+  source_basis: direct_curriculum
+  curriculum_refs: [OPH-POPS2014-MATH-VL1-2-S3]
+  prerequisite_snapshot:
+    hard: [M-MEAS-00, M-NUM-01]
+    strong: []
+    helpful: []
+teaching_model:
+  learning_goal: >-
+    Oppilas osaa mitata kuvattua suoraa pituutta vertaamalla sitä sovittuun
+    yksikköön: rakentaa samanpituisista mittapaloista koko pituuden kattavan
+    jonon ilman rakoja tai päällekkäisyyttä ja ilmoittaa tuloksen lukusanalla
+    sekä käytetyllä yksiköllä. Tämä on laajemman mittaamisen periaatteen
+    rajattu, kokonaisiin yksiköihin perustuva pituustoteutus.
+  learner_facing_goal: >-
+    Osaan selvittää suoran viivan pituuden sovitulla mittapalalla ja kertoa,
+    montako sellaista mittapalaa siihen mahtuu.
+  core_idea: >-
+    Mittauksessa lasketaan, montako kertaa sovittu samanpituinen yksikkö
+    kattaa mitattavan pituuden. Mittapalojen pitää alkaa viivan toisesta
+    päästä, liittyä pää päähän ja päättyä toiseen päähän. Pelkkä irrallisten
+    palojen lukumäärä ei vielä kerro pituutta. Mittaustulokseen kuuluu myös
+    tieto käytetystä yksiköstä.
+  success_evidence:
+    - Rakentaa itse yhtenäisen peiton koko mitattavalle viivalle sovitun kokoisista yksiköistä.
+    - Ei jätä välejä, peitä samaa kohtaa kahdesti eikä jatka viivan päiden ohi.
+    - Ilmoittaa peittoa vastaavan lukusanan ja valitsee tehtävässä sovitun yksikön.
+    - Tekee uuden mittauksen, kun yksikön pituus muuttuu mutta mitattava pituus säilyy.
+    - Osoittaa saman keskeisen menettelyn myöhemmässä, vähintään vuorokauden jälkeen tehtävässä kertauksessa.
+  boundaries:
+    in_scope:
+      - Idealisoitu suora pituus, joka peittyy kokonaan samanpituisilla kokonaisilla yksiköillä.
+      - Positiivinen mittaustulos suomen lukusanoilla yhdestä kymmeneen; itsenäisissä tehtävissä sama pituus mitataan kahdella eripituisella yksiköllä ja tulokset eroavat.
+      - Näkyvä mitattava viiva, erillinen sovittu mittapala ja oppilaan omat sijoitukset yhteisessä mittakaavassa.
+      - Visuaalinen vertailu ja näppäimistöllä tehtävä sijoittelu; lukusanojen kuuntelu edellyttää toimivaa paikallista suomenkielistä ääntä.
+    out_of_scope:
+      - Muiden suureiden, kuten massan, tilavuuden, ajan tai pinta-alan, mittaamisen hallinnan osoittaminen.
+      - Murto-osat, ylijäävä pituus, likiarvot, mittausepävarmuus ja fyysisten välineiden tarkkuus.
+      - Viivaimen asteikon lukeminen, numeroiden tunnistaminen, koordinaattilaskenta tai yksikkömuunnokset oppimistavoitteena.
+      - Lukusanan ääneen tuottamisen, ääntämisen, sujuvuuden tai kirjoittamisen arviointi.
+      - Ei-visuaalisen oppimisen vastaavuus, koko saavutettavuuden tai WCAG-vaatimusten täyttymisen osoittaminen ja pilotointivalmius.
+  prerequisite_assumptions:
+    - kc_id: M-MEAS-00
+      expected_level: Nykyinen itsenäisesti osoitettu suoran ominaisuusvertailun osaaminen vaaditaan ennen henkilökohtaista etenemistä.
+    - kc_id: M-NUM-01
+      expected_level: Nykyinen itsenäisesti osoitettu esineiden laskemisen yhdistetty osaaminen vaaditaan yhdessä M-MEAS-00:n kanssa; kumpikaan ei korvaa toista.
+  conceptual_invariants:
+    - Mitattava ominaisuus on tässä pituus, ei viivan sijainti tai väri.
+    - Yksikkö säilyy samanpituisena yhden mittauksen kaikissa sijoituksissa.
+    - Vierekkäiset yksiköt saavat jakaa päätepisteen, mutta eivät yhteistä pituusosuutta.
+    - Koko mitattava pituus on peitettävä; oikea lukusana ei korvaa puutteellista peittoa.
+    - Viivan siirtyminen ei muuta sen pituutta eikä sovitun yksikön pituutta.
+    - Saman pituuden mittaluku voi muuttua, kun yksikön pituus vaihtuu; tuloksia tulkitaan yhdessä yksikön kanssa.
+  likely_confusions: [M-MEAS-01-MIS-COVERAGE, M-MEAS-01-MIS-REPORT]
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+    - DIAGNOSTIC
+    - ORIENT
+    - PREDICT
+    - EXPLORE
+    - EXPLAIN
+    - GUIDED_PRACTICE
+    - INDEPENDENT_PRACTICE
+    - TRANSFER_CHECK
+    - MASTERY_GATE
+  fast_path:
+    enabled: true
+    diagnostic_requirement: Kaksi eri diagnostista tehtäväpohjaa oikein ilman tukea sekä measure_unit_iteration-näyttö; itsenäisen harjoittelun vaatimukset säilyvät.
+    transfer_confirmation: required
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Selvitä ennen opastusta, yhdistyykö oppilaan rakentama yksikköpeitto ilmoitettuun mittaustulokseen kahdessa pituudessa.
+      blocks:
+        - type: question
+          content:
+            item_refs: [M-MEAS-01-DIAG-NAUHA, M-MEAS-01-DIAG-REUNA]
+    ORIENT:
+      purpose: Liitä tuttu suora vertailu sovittuun mittapalaan ja yhteisesti ymmärrettävään tulokseen.
+      blocks:
+        - type: explanatory_text
+          content: {kind: enumeration_method_v1, method: unit_iteration, section: orient}
+    PREDICT:
+      purpose: Erota mittapalojen laskeminen mitattavan pituuden selvittämisestä ennen rakentamista.
+      blocks:
+        - type: reflection
+          content: {kind: enumeration_method_v1, method: unit_iteration, section: predict}
+    EXPLORE:
+      purpose: Anna oppilaan rakentaa ja tarkastella omaa peittoa; harjoituksen onnistuminen on tuettua harjoittelua.
+      blocks:
+        - type: explanatory_text
+          content: {kind: enumeration_method_v1, method: unit_iteration, section: guided}
+        - type: question
+          content:
+            item_refs: [M-MEAS-01-GUIDED-PEITTO]
+    EXPLAIN:
+      purpose: Sanoita kokeilun jälkeen yhtenäinen yksikköpeitto sekä lukusanan ja yksikön yhteinen merkitys.
+      blocks:
+        - type: worked_example
+          content: {kind: enumeration_example_v1, objective: unit_iteration, targetLength: 6, unitLength: 3}
+        - type: explanatory_text
+          content: {kind: enumeration_method_v1, method: unit_iteration, section: explain}
+    GUIDED_PRACTICE:
+      purpose: Yhdistä peiton rakentaminen erilliseen tulosilmoitukseen; pyydetty vihje ja harjoittelun tuki eivät ole itsenäistä näyttöä.
+      blocks:
+        - type: explanatory_text
+          content: {kind: enumeration_method_v1, method: unit_iteration, section: guided}
+        - type: question
+          content:
+            item_refs: [M-MEAS-01-GUIDED-TULOS]
+    INDEPENDENT_PRACTICE:
+      purpose: Kerää vähintään kolme tuetonta kokonaista mittausta vähintään kahdesta tehtäväpohjasta; pelkkä ilmoitus ei kelpaa näytöksi.
+      blocks:
+        - type: question
+          content:
+            item_refs: [M-MEAS-01-INDEP-NAUHA, M-MEAS-01-INDEP-REUNA]
+    TRANSFER_CHECK:
+      purpose: Mittaa samanpituinen viiva aidosti eripituisella sovitulla yksiköllä samassa koordinaattikehyksessä; uusi nimi ei yksin ole siirtovaikutusta.
+      blocks:
+        - type: question
+          content:
+            item_refs: [M-MEAS-01-TRANSFER-UUSI-YKSIKKO]
+    MASTERY_GATE:
+      purpose: Tee näkyväksi mittaamisen perustelu; pohdintaa ei pisteytetä eikä käytetä korvaamaan itsenäistä rakentamisnäyttöä.
+      blocks:
+        - type: reflection
+          content: >-
+            Miten voisit näyttää ystävälle, että mittauksesi peittää koko
+            viivan? Miksi tuloksesta pitää kertoa myös yksikkö? Mitä voi
+            muuttua tuloksessa, jos sama viiva mitataan pidemmällä palalla?
+            Voit vastata ääneen; pohdinta ei ole uusi arvioitava tehtävä.
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+    fast_path_confirmation_tags: [measure_unit_iteration]
+    execution_policy: Fast path skips teaching and guided work; independent minima and coverage remain required.
+    pass_rule: Kaksi eri diagnostista pohjaa oikein ilman tukea; molemmissa peitto ja tulos arvioidaan yhdessä.
+  independent:
+    minimum_successes: 3
+    template_diversity: 2
+    max_supported_attempts_counted: 0
+    required_tags: [measure_unit_iteration]
+  transfer:
+    required: true
+    minimum_successes: 1
+    novel_context_required: true
+  delayed:
+    required: true
+    minimum_successes: 2
+    minimum_delay_hours: 24
+    reuse_templates: [M-MEAS-01-INDEP-NAUHA]
+    required_tags: [measure_unit_iteration]
+    required_contexts: [Kertaus — suoran viivan mittaaminen, Suoran nauhan pituus]
+    earliest_delay_policy: >-
+      Aikaisintaan vuorokausi koko hankintanäytön täyttymisen jälkeen,
+      uudessa istunnossa tai välissä suoritetun toisen osaamiskohteen jälkeen.
+      Alkuperäinen kertauspohja ja uudelleen käytettävä itsenäinen ydinpohja
+      kattavat molemmat koko mittausmenettelyn ilman tukea.
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+    - misconception_id: M-MEAS-01-MIS-COVERAGE
+      evidence_tags: [measure_unit_iteration]
+      rule: Myöhempi tueton kokonainen mittaus osoittaa onnistuneen menettelyn; se ei todista aiemman virheen syytä.
+    - misconception_id: M-MEAS-01-MIS-REPORT
+      evidence_tags: [measure_unit_iteration]
+      rule: Myöhempi tueton mittaus sisältää sekä hyväksyttävän peiton että sitä vastaavan lukusanan ja yksikön.
+items:
+  - id: M-MEAS-01-DIAG-NAUHA
+    kc_ids: [M-MEAS-01]
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: unit_iteration_task_v1
+      instruction: Mittaa kuvassa näkyvän suoran nauhan pituus sovitulla mittapalalla. Rakenna mittauksesi ja ilmoita tulos lukusanalla sekä yksiköllä.
+      access: local_finnish_tokens_v1
+      assistance: {kind: none}
+      novelty: {kind: none}
+    truth_model: {kind: unit_iteration_predicate_v1}
+    parameter_model:
+      kind: equal_unit_line_v1
+      lexicon: fi-1-10-v1
+      targetLengthRange: [14, 14]
+      unitLength: 2
+      unitId: sovittu-mittapala
+      workspace: [0, 24]
+      context: Ennen harjoittelua — nauhan pituus
+    misconception_rules:
+      - {misconception_id: M-MEAS-01-MIS-COVERAGE, detect: 'observed:unit_coverage'}
+      - {misconception_id: M-MEAS-01-MIS-REPORT, detect: 'observed:unit_report'}
+    hints:
+      - {level: 1, text: Vertaa omaa mittaustasi koko viivaan. Mitä kohtia palat peittävät?}
+      - {level: 2, text: Tarkista palojen liittymiskohdat sekä viivan alku ja loppu.}
+    invariants: [Lukusana ja yksikkö eivät yksin riitä ilman hyväksyttävää oppilaan rakentamaa peittoa.]
+    provenance:
+      - {source_id: PROJECT-ENUMERATION-v0.1, claim: Arviointi käyttää tarkkaa kokonaisyksikköpeittoa ja erillistä tulosilmoitusta projektin rajatussa mallissa., status: hypothesis}
+  - id: M-MEAS-01-DIAG-REUNA
+    kc_ids: [M-MEAS-01]
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: unit_iteration_task_v1
+      instruction: Viiva näyttää suoran reunan pituuden. Mittaa se tämän tehtävän mittapalalla ja anna tuloksen lukusana sekä yksikkö.
+      access: local_finnish_tokens_v1
+      assistance: {kind: none}
+      novelty: {kind: none}
+    truth_model: {kind: unit_iteration_predicate_v1}
+    parameter_model:
+      kind: equal_unit_line_v1
+      lexicon: fi-1-10-v1
+      targetLengthRange: [10, 10]
+      unitLength: 2
+      unitId: sovittu-mittapala
+      workspace: [0, 24]
+      context: Ennen harjoittelua — reunan pituus
+    misconception_rules:
+      - {misconception_id: M-MEAS-01-MIS-COVERAGE, detect: 'observed:unit_coverage'}
+      - {misconception_id: M-MEAS-01-MIS-REPORT, detect: 'observed:unit_report'}
+    hints:
+      - {level: 1, text: Mitä sovittu mittapala ja mitattava viiva näyttävät?}
+      - {level: 2, text: Tarkista ensin sijoitukset ja sen jälkeen ilmoittamasi tulos.}
+    invariants: [Diagnostinen onnistuminen ei korvaa itsenäisen harjoittelun tai yksikön vaihtumisen näyttöä.]
+    provenance:
+      - {source_id: PROJECT-BATCH01-POLICY-v0.1, claim: Eri diagnostisten pohjien vaatimus ja vahvistustagi ovat projektin näyttöpolitiikkaa., status: hypothesis}
+  - id: M-MEAS-01-GUIDED-PEITTO
+    kc_ids: [M-MEAS-01]
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: support
+    prompt_model:
+      kind: unit_iteration_task_v1
+      instruction: Harjoittele yhtenäisen peiton rakentamista. Sijoita sovitut mittapalat viivan päästä päähän ja kerro mittaustulos lukusanalla sekä yksiköllä.
+      access: local_finnish_tokens_v1
+      assistance: {kind: none}
+      novelty: {kind: none}
+    truth_model: {kind: unit_iteration_predicate_v1}
+    parameter_model:
+      kind: equal_unit_line_v1
+      lexicon: fi-1-10-v1
+      targetLengthRange: [14, 14]
+      unitLength: 2
+      unitId: sovittu-mittapala
+      workspace: [0, 24]
+      context: Harjoitus — palojen liittymiskohdat
+    misconception_rules:
+      - {misconception_id: M-MEAS-01-MIS-COVERAGE, detect: 'observed:unit_coverage'}
+      - {misconception_id: M-MEAS-01-MIS-REPORT, detect: 'observed:unit_report'}
+    hints:
+      - {level: 1, text: Mistä viiva alkaa ja mihin se loppuu?}
+      - {level: 2, text: Vie ensimmäinen pala viivan alkuun. Seuraavan palan alku voi koskettaa edellisen loppua.}
+      - {level: 3, text: Etsi mahdollinen rako tai päällekkäinen osa ja siirrä paloja itse. Laske vasta tarkistetun peiton palat.}
+    invariants: [Harjoittelun ohjeistus ei ole itsenäistä näyttöä; guided-rooli säilyy.]
+    provenance:
+      - {source_id: PROD01-UTAS-UNIT-ITERATION, claim: Big Idea 2 — Understanding 2 kuvaa valitun yksikön toistamista ilman päällekkäisyyttä; suoran pituuden aukoton peitto on rajattu muodollinen sovellus., status: verified}
+  - id: M-MEAS-01-GUIDED-TULOS
+    kc_ids: [M-MEAS-01]
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: support
+    prompt_model:
+      kind: unit_iteration_task_v1
+      instruction: Tee harjoitusmittaus ja tarkista peitto. Ilmoita erikseen peittävien palojen määrää vastaava lukusana ja sovittu yksikkö.
+      access: local_finnish_tokens_v1
+      assistance: {kind: none}
+      novelty: {kind: none}
+    truth_model: {kind: unit_iteration_predicate_v1}
+    parameter_model:
+      kind: equal_unit_line_v1
+      lexicon: fi-1-10-v1
+      targetLengthRange: [10, 10]
+      unitLength: 2
+      unitId: sovittu-mittapala
+      workspace: [0, 24]
+      context: Harjoitus — tuloksen lukusana ja yksikkö
+    misconception_rules:
+      - {misconception_id: M-MEAS-01-MIS-COVERAGE, detect: 'observed:unit_coverage'}
+      - {misconception_id: M-MEAS-01-MIS-REPORT, detect: 'observed:unit_report'}
+    hints:
+      - {level: 1, text: Mitä tuloksesi lukusana kertoo ja millä mittasit?}
+      - {level: 2, text: Tarkista peitto uudelleen. Laske samanpituiset palat ja valitse niiden määrän lukusana sekä yksikkö.}
+    invariants: [Tuettu oikea tulos ei täytä itsenäisen hallinnan vaatimusta.]
+    provenance:
+      - {source_id: PROJECT-BATCH01-POLICY-v0.1, claim: Harjoittelun ja pyydettyjen vihjeiden erottaminen itsenäisestä näytöstä on projektipolitiikkaa., status: hypothesis}
+  - id: M-MEAS-01-INDEP-NAUHA
+    kc_ids: [M-MEAS-01]
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: unit_iteration_task_v1
+      instruction: Selvitä kuvassa olevan suoran nauhan pituus sovitulla mittapalalla. Rakenna oma mittauksesi ja ilmoita tuloksen lukusana sekä yksikkö.
+      access: local_finnish_tokens_v1
+      assistance: {kind: none}
+      novelty: {kind: none}
+    truth_model: {kind: unit_iteration_predicate_v1}
+    parameter_model:
+      kind: equal_unit_line_v1
+      lexicon: fi-1-10-v1
+      targetLengthRange: [12, 12]
+      unitLength: 2
+      unitId: sovittu-mittapala
+      workspace: [0, 24]
+      context: Suoran nauhan pituus
+    misconception_rules:
+      - {misconception_id: M-MEAS-01-MIS-COVERAGE, detect: 'observed:unit_coverage'}
+      - {misconception_id: M-MEAS-01-MIS-REPORT, detect: 'observed:unit_report'}
+    hints:
+      - {level: 1, text: Millä tavalla oma rakennelmasi vertaa viivan pituutta sovittuun mittapalaan?}
+      - {level: 2, text: Tarkista palojen rajat ja viivan päät. Vastaako ilmoittamasi tulos tarkistettua peittoa?}
+    invariants:
+      - Kiinteä pituus ja mittakaava eivät anna valmista peittoa tai mittaustulosta.
+      - Vihjettä käyttänyt vastaus pysyy tuettuna, vaikka peitto ja ilmoitus olisivat oikein.
+    provenance:
+      - {source_id: PROJECT-ENUMERATION-v0.1, claim: Oppilaan sijoitukset ja erillinen tulos arvioidaan samalla deterministisellä yksikköpredikaatilla., status: hypothesis}
+  - id: M-MEAS-01-INDEP-REUNA
+    kc_ids: [M-MEAS-01]
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: unit_iteration_task_v1
+      instruction: Viiva esittää suoran reunan pituutta. Vertaa sitä tässä tehtävässä näkyvään sovittuun mittapalaan, rakenna mittauksesi ja anna tuloksen lukusana sekä yksikkö.
+      access: local_finnish_tokens_v1
+      assistance: {kind: none}
+      novelty: {kind: none}
+    truth_model: {kind: unit_iteration_predicate_v1}
+    parameter_model:
+      kind: equal_unit_line_v1
+      lexicon: fi-1-10-v1
+      targetLengthRange: [12, 12]
+      unitLength: 3
+      unitId: sovittu-mittapala
+      workspace: [0, 24]
+      context: Suoran reunan pituus
+    misconception_rules:
+      - {misconception_id: M-MEAS-01-MIS-COVERAGE, detect: 'observed:unit_coverage'}
+      - {misconception_id: M-MEAS-01-MIS-REPORT, detect: 'observed:unit_report'}
+    hints:
+      - {level: 1, text: Mitä pituutta olet mittaamassa ja mikä on tässä sovittu yksikkö?}
+      - {level: 2, text: Tarkista koko peitto ja tulos. Pelkkien irrallisten palojen laskeminen ei riitä mittaukseksi.}
+    invariants:
+      - Sama kiinteä pituus ja työalue kuin toisessa itsenäisessä pohjassa, mutta sovitun yksikön pituus on eri ja mittaustulos muuttuu.
+      - Nauhan vaihtuminen reunaksi tai uusi sijainti ei ole novel_context-näyttöä.
+    provenance:
+      - {source_id: PROJECT-BATCH01-POLICY-v0.1, claim: Itsenäiset pohjat vaihtelevat yksikön todellista pituutta samassa kohdepituudessa; näyttöpolitiikan malliero ei perustu vain kontekstin nimeen eikä tuota novel_context-tagia., status: hypothesis}
+  - id: M-MEAS-01-TRANSFER-UUSI-YKSIKKO
+    kc_ids: [M-MEAS-01]
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: challenge
+    prompt_model:
+      kind: unit_iteration_task_v1
+      instruction: Mitattava viiva on samanpituinen kuin itsenäisissä tehtävissä, mutta sovittu mittapala on vaihtunut. Tee uusi mittaus tällä palalla ja ilmoita tuloksen lukusana sekä yksikkö.
+      access: local_finnish_tokens_v1
+      assistance: {kind: none}
+      novelty: {kind: unit_length_change, baselineIndependent: M-MEAS-01-INDEP-NAUHA}
+    truth_model: {kind: unit_iteration_predicate_v1}
+    parameter_model:
+      kind: equal_unit_line_v1
+      lexicon: fi-1-10-v1
+      targetLengthRange: [12, 12]
+      unitLength: 4
+      unitId: sovittu-mittapala
+      workspace: [0, 24]
+      context: Sama pituus — eri pituinen mittapala
+    misconception_rules:
+      - {misconception_id: M-MEAS-01-MIS-COVERAGE, detect: 'observed:unit_coverage'}
+      - {misconception_id: M-MEAS-01-MIS-REPORT, detect: 'observed:unit_report'}
+    hints:
+      - {level: 1, text: Vertaa nyt käytössä olevaa mittapalaa viivaan. Millaisen oman mittauksen rakennat sillä?}
+      - {level: 2, text: Tarkista uuden peiton liittymiskohdat ja päät ennen tuloksen ilmoittamista.}
+    invariants:
+      - Sama kiinteä kohdepituus ja työalue kuin jokaisessa itsenäisessä profiilissa; yksikön pituus eroaa kummankin itsenäisen pohjan yksiköstä.
+      - Yksikön nimi ja tunniste eivät tuota siirtovaikutusta; uutta tulosta ei anneta valmiina.
+    provenance:
+      - {source_id: PROJECT-ENUMERATION-v0.1, claim: Siirtoproksi vertaa todellista yksikön pituutta kaikkiin saman tavoitteen itsenäisiin profiileihin yhteisellä kiinteällä kohteella ja työalueella., status: hypothesis}
+  - id: M-MEAS-01-DELAYED-PEITTO-JA-TULOS
+    kc_ids: [M-MEAS-01]
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: unit_iteration_task_v1
+      instruction: Selvitä tämän suoran viivan pituus sovitulla mittapalalla. Rakenna mittauksesi ja ilmoita tuloksen lukusana sekä yksikkö.
+      access: local_finnish_tokens_v1
+      assistance: {kind: none}
+      novelty: {kind: none}
+    truth_model: {kind: unit_iteration_predicate_v1}
+    parameter_model:
+      kind: equal_unit_line_v1
+      lexicon: fi-1-10-v1
+      targetLengthRange: [15, 15]
+      unitLength: 3
+      unitId: sovittu-mittapala
+      workspace: [0, 24]
+      context: Kertaus — suoran viivan mittaaminen
+    misconception_rules:
+      - {misconception_id: M-MEAS-01-MIS-COVERAGE, detect: 'observed:unit_coverage'}
+      - {misconception_id: M-MEAS-01-MIS-REPORT, detect: 'observed:unit_report'}
+    hints:
+      - {level: 1, text: Miten voit verrata koko viivaa sovittuun mittapalaan?}
+      - {level: 2, text: Tarkista peitto ja sitä vastaava tulos. Vihjeen jälkeen onnistuminen on tuettua harjoittelua.}
+    invariants:
+      - Kertaus palauttaa keskeisen mittausmenettelyn, ei pelkkää siirtotehtävän muuttunutta yksikköä.
+      - Alkuperäisen kertauspohjan tulos eroaa uudelleen käytetyn ydinpohjan tuloksesta; samaa lukusanaa ei voi toistaa molempiin oikein.
+      - Säilynyt osaaminen edellyttää lisäksi uudelleen käytetyn ydinpohjan tuetonta onnistumista vaaditun viiveen jälkeen.
+    provenance:
+      - {source_id: PROJECT-BATCH01-POLICY-v0.1, claim: Vuorokauden viive ja alkuperäisen kertauspohjan sekä ydinpohjan kattaminen ovat projektin näyttöpolitiikkaa., status: hypothesis}
+misconceptions:
+  - id: M-MEAS-01-MIS-COVERAGE
+    description: >-
+      Havaittu yksikköpeitto ei täytä mallin ehtoja. Mukana voi olla rako,
+      päällekkäinen osa, puuttuva tai ylimääräinen pala taikka sijoitus viivan
+      päiden ulkopuolella. Havainto ei yksilöi virheen syytä eikä todista
+      puuttuvaa lapsitaitoa.
+    evidence_patterns:
+      - kind: interaction_pattern
+        when: 'observed:unit_coverage'
+    feedback_strategy:
+      conceptual_prompt: Mitä viivan osia omat mittapalasi peittävät? Tarkista koko pituus ja palojen liittymiskohdat.
+      representation: Säilytä oppilaan omat sijoitukset tarkasteltavina; älä anna valmista peittoa.
+    repair_targets: [M-MEAS-01]
+    status: hypothesis
+  - id: M-MEAS-01-MIS-REPORT
+    description: >-
+      Mittaustuloksen lukusana tai yksikkö puuttuu tai ei vastaa tämän mallin
+      oikeaa mittausta. Havainto ei yksin erota laskemisvirhettä, valintavirhettä
+      tai yksikön merkityksen epäselvyyttä.
+    evidence_patterns:
+      - kind: interaction_pattern
+        when: 'observed:unit_report'
+    feedback_strategy:
+      conceptual_prompt: Mitä lukusana kertoo ja millä mittapalalla mittasit? Vertaa ilmoitustasi omaan mittaukseesi.
+      representation: Pidä lukusana ja yksikkö oppilaan erillisinä valintoina; älä täytä kumpaakaan valmiiksi.
+    repair_targets: [M-MEAS-01]
+    status: hypothesis
+differentiation:
+  support_variants:
+    learner_prompt: Tarkastellaan ensin viivan päitä, sitten palojen liittymiskohtia ja lopuksi tuloksen lukusanaa sekä yksikköä.
+    step_chunking: Tarkastelukohteet voi käydä läpi yksi kerrallaan oppilaan omista sijoituksista; oikeita paikkoja ei aseteta puolesta.
+    hint_availability: Pyydettävät vihjeet ohjaavat tarkistamaan peittoa ja ilmoitusta; vihjealtistus säilyy tuettuna näyttönä.
+    worked_example_depth: Tyypitetty kuuden pituisen viivan ja kolmen pituisen yksikön esimerkki näyttää kaksi mittapalaa; sen tarkat arvot sitoutuvat samaan esitykseen ja paljastusmerkintään.
+    reduced_motion: Mittaaminen ei vaadi liikkuvan esityksen seuraamista tai nopeaa toimintaa.
+    access_scope: >-
+      Näkyvä geometria ja näppäimistösijoittelu ovat rajattu tarkasteltu reitti.
+      Lukusanoja voi kuunnella toimivalla paikallisella suomenkielisellä äänellä.
+      Tämä ei tarkoita koko oppitunnin ääneen lukemista. Sijaintien tekstitiedot
+      voivat vaatia numeroita ja laskemista; niiden ei väitetä tarjoavan
+      vastaavaa ei-visuaalista oppimisreittiä.
+  challenge_variants:
+    learner_block:
+      type: reflection
+      content: {kind: enumeration_method_v1, method: unit_iteration, section: challenge}
+    reduced_scaffolding: Ei tarkistusvaiheita tai vihjeitä valmiina itsenäisessä tehtävässä; sama tavoite ja vapaa sijoittelu säilyvät.
+    multi_step_reasoning: Vertaa yksikön valintaa ja sen vaikutusta palojen määrään saman pituuden mittauksessa; haaste ei perustu suurempiin lukuihin.
+    transfer_novelty: Aito yksikön pituuden muutos samassa kiinteässä kohteessa; kontekstin nimeäminen ei riitä.
+    acceleration_probe: Kaksi tuetonta diagnostista onnistumista voi ohittaa opetuksen, mutta itsenäisen näytön ja siirron vaatimukset säilyvät.
+representations:
+  - id: M-MEAS-01-REP-YHTEINEN-MITTAKAAVA
+    type: diagram
+    purpose: Näyttää mitattavan suoran pituuden ja sovitun yksikön samassa mittakaavassa ilman valmista peittoa tai tulosta.
+    domain_bindings: [target.start, target.end, unit.length, workspace]
+  - id: M-MEAS-01-REP-OMA-PEITTO
+    type: draggable_manipulative
+    purpose: Oppilas rakentaa omat yksikkösijoituksensa; myös rako ja päällekkäisyys ovat mahdollisia tarkasteltavia vastauksia.
+    domain_bindings: [unit.id, unit.length, placements, report.word, report.unitId]
+  - id: M-MEAS-01-JOURNEY
+    kind: learning_journey_v1
+    capability: unit_iteration_v1
+    chapter: Retken valmistelut
+    companion: Aava
+    purpose: Aava valmistelee Loikalle viirinauhan. Selvitetään pituus sovitulla mittapalalla.
+    consequence: Viirinauhan pituus on tarkistettu sovitulla mittapalalla.
+    instruction: Peitä nauha mittapaloilla ja valitse tuloksen sana sekä mittapala.
+    model: {kind: unit_iteration_v1, targetLength: 6, unitLength: 3, unitId: sovittu-mittapala, workspace: [0, 24]}
+    retrieval: {kind: conservative_situation_v1}
+  - id: v7-evidence-compatibility
+    kind: v7_evidence_compatibility_v1
+    sourceCommit: 0b2a791918f472cf8ba61eede095a6a578adeab6
+    sourceContentHash: 755feb5c8274006d5bdb252d47d3f7dd6c975e1c152b2144deeaa1fe18048051
+    allowedChanges: [additive_journey, lesson_wording]
+simulation_specs: []
+requires_capabilities:
+  - rich_text
+  - diagram
+  - draggable_objects
+  - worked_example
+  - hint_ladder
+  - reduced_motion_variant
+  - read_aloud_hook
+provenance:
+  curriculum:
+    - source_id: PROD01-OPH-MATH12-S3
+      claim: >-
+        ePerusteiden perusteen 419550 matematiikan vuosiluokkien 1–2
+        sisältöalue S3, sisältötunniste 469267, kuvaus.fi-kentän kolmas
+        kappale ja tavoite T10, tunniste 469449, tukevat mittaamisen
+        periaatteiden ja yksiköiden opetuksen yleistä sisältöalaa.
+        Tämä ei ole määräys juuri tämän mallin yksikköpeitosta, KC-jaosta,
+        numeroalueesta tai näyttörajoista; tarkka auditointi on
+        reports/production-01-provenance.md.
+      status: verified
+  pedagogy:
+    - source_id: PROJECT-BATCH01-POLICY-v0.1
+      claim: >-
+        Kaksi diagnostista pohjaa, vahvistustagi, vähintään kolme itsenäistä
+        onnistumista kahdesta pohjasta, muuttuneen yksikön siirtokoe,
+        vuorokauden vähimmäisviive ja vähintään kaksi keskeistä kertausta
+        ovat projektipolitiikkaa. Tarkat määrät tai tämän oppimisjärjestyksen
+        vaikuttavuus eivät seuraa ulkoisesta tutkimuksesta.
+      status: hypothesis
+    - source_id: PROJECT-BATCH01-POLICY-v0.1
+      claim: >-
+        Tukeminen, oman ennakkoajatuksen pohtiminen, tyypitetty esimerkki,
+        syiden selittäminen ja haastepohdinta ovat tämän paketin
+        opetussuunnittelua. Virhehavaintojen tulkinnat ovat hypoteeseja;
+        niistä ei tehdä pakotettua esitaitodiagnoosia.
+      status: hypothesis
+  domain:
+    - source_id: PROD01-UTAS-UNIT-ITERATION
+      claim: >-
+        University of Tasmania, Mathematics Pathways, Big Idea 2,
+        Understanding 1:n loppukappaleet ja Understanding 2:n alku sekä
+        mittaväliesimerkit tukevat valitun ominaisuuden mittaamista samana
+        säilyvää yksikköä toistamalla ilman päällekkäisyyttä. Understanding 4
+        kuvaa aukotonta peittoa pinta-alassa; sen soveltaminen tähän suoraan
+        pituuteen on rajattu muodollinen johdos, ei OPH-lainaus eikä
+        kokeellisesti todennettu oppimisjärjestys.
+      status: verified
+    - source_id: PROJECT-ENUMERATION-v0.1
+      claim: >-
+        Kokonaisiin yhtäpitkiin yksiköihin perustuva tarkka peitto sekä
+        lukusanan ja yksikön vastaavuus ovat ADR-0009:n rajattu
+        projektiformaalistus. Suomen lukusanojen esitys, positiivinen
+        yhden–kymmenen osamäärä ja yksikönvaihdon siirtoproksi eivät
+        osoita kaikkien suureiden mittaamista tai fyysistä tarkkuutta.
+      status: hypothesis
+    - source_id: PROJECT-BATCH01-POLICY-v0.1
+      claim: >-
+        Kiinteä ydinpituus, pieni positiivinen työalue ja visuaalisen sekä
+        näppäimistöreitin rajaus ovat projektin esitysvalintoja. M2:n
+        ei-visuaalinen koordinaatti- ja lukutaitosekoittuma jää ratkaisematta;
+        täyttä saavutettavuutta, WCAG-vastaavuutta tai pilotointivalmiutta
+        ei väitetä.
+      status: hypothesis
+validation:
+  schema: pass
+  graph_refs: pass
+  domain_truth: pending
+  item_invariants: pass
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: designed

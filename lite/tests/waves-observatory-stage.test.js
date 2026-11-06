@@ -1,0 +1,4 @@
+import {it,expect} from 'vitest';
+import * as THREE from 'three';
+import {mountWavesObservatoryStage} from '../src/world/waves-observatory-stage.js';
+it('keeps the prediction hidden and disposes the complete scene',()=>{const parent=new THREE.Group(),model={kind:'waves-observatory',title:'Valo',sourceX:0,objectX:4,screenX:10,sourceY:0,objectY:0,objectHalf:.5,shape:'round',context:'lamp'},a=mountWavesObservatoryStage(parent,model);expect(a.snapshot().observed).toBe(false);expect(a.snapshot()).not.toHaveProperty('observation');a.dispose();expect(parent.children).toHaveLength(0);const b=mountWavesObservatoryStage(parent,{...model,objectY:1,observation:{kind:'light',objectY:1,shadowLow:1.25,shadowHigh:3.75}});expect(b.snapshot()).toMatchObject({observed:true,observation:{shadowLow:1.25,shadowHigh:3.75}});b.dispose();expect(parent.children).toHaveLength(0);});

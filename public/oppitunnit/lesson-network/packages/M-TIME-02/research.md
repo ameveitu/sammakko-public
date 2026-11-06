@@ -1,0 +1,7 @@
+# M-TIME-02 — source comparison,2026-10-29
+
+Oak National Academy primary Year1 lesson (URL in lesson.json) specifically teaches the moving hour hand between two hours and the common half-hour naming error. Adopt continuous motion and explicit boundary examples; do not copy slides or transfer English “half past” to Finnish. Finnish3.30 is puoli neljä, not puoli kolme. The Finnish wording is project-authored conventional nomenclature, not an empirical result. Oak page states OGL3/©2025 with exceptions; no protected figures/text reused.
+
+NIST SP811 Chapter5 corroborates exact1h=60min. This is a definition supporting the model, not pedagogical evidence. Reject introducing metrological definitions to grades1–2. Own story, original SVG, controllable speed and practice are design decisions; no claim that this combination improves retention. Frozen OPH links and grade band remain inherited authority; not freshly inferred requirements.
+
+Lite added181.ts full/half/set/hands/departure families, continuous clockScene and clockArt, source families/features/goals/world and audit table reviewed during authoring. Audit “tehty/korjattu” is historical technical status, not learner acceptance. Own module supports whole/half naming and honest accelerated minute geometry; no Lite modification or game link activation. Actual supplied Aava PNG unchanged. No required speaking, listening or motor speed.

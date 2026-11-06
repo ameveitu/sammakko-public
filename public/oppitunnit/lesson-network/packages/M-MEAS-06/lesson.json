@@ -1,0 +1,620 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-MEAS-06",
+  "revision": 13,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "lesson.css",
+      "sha256": "775748600025e16b103a02a8da3b9c34fdf1dd88f84d5b3200e19f7cf91af23e"
+    },
+    {
+      "path": "equal-kilogram.svg",
+      "sha256": "6c4bb967e742dbffac2efd6495a3c56afaaaf22e7ddf38a754f89cc1f6d09e05"
+    },
+    {
+      "path": "one-each-unequal.svg",
+      "sha256": "856f248eb7bf05aa289b91ea13108f5fe9b74114ba938e4c6a223e771e305cf5"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+      "title": "Perusopetuksen opetussuunnitelman perusteet2014",
+      "organization": "Opetushallitus",
+      "retrievedAt": "2026-10-29",
+      "read": "PDF128/printed129 S3 and PDF129 functional methods; targeted passages, not current amendment audit.",
+      "usageRestrictions": "©OPH. Paraphrase/factual mapping only; no external artwork or long prose copied, no blanket open licence assumption.",
+      "adoptedIdeas": "Named unit pair in grades1–2, measurement principle and concrete tools.",
+      "rejectedIdeas": "Does not prescribe these exact tasks, DAG order, UI or competence claims."
+    },
+    {
+      "url": "https://www.oph.fi/sites/default/files/documents/matsku5_tuntikohatiset_ohjeet.pdf",
+      "title": "Matsku5 — tuntikohtaiset ohjeet",
+      "organization": "Opetushallitus",
+      "retrievedAt": "2026-10-29",
+      "read": "Targeted PDF5–7(length),8–9(capacity),10–11(mass),0-based. Workbook5 is not asserted to mean schoolgrade5.",
+      "usageRestrictions": "OPH-hosted teaching reference. No explicit open licence verified; ideas paraphrased only, no characters, story, figures or worksheets copied.",
+      "adoptedIdeas": "Compose same kilogram with different labelled masses.",
+      "rejectedIdeas": "Safety-pin handling, arbitrary object1g claims, mandatory large-number sums."
+    },
+    {
+      "url": "https://www.ncetm.org.uk/classroom-resources/ey-measures/",
+      "title": "Measures",
+      "organization": "NCETM / Etio",
+      "retrievedAt": "2026-10-29",
+      "read": "HTML introduction/equal units/conservation and attribute distinctions.",
+      "usageRestrictions": "Crown/OGL policy unless stated; attribution and named-author conditions at copyright URL. No source figures/prose reused.",
+      "licenceUrl": "https://www.ncetm.org.uk/copyright/",
+      "adoptedIdeas": "Mass is distinct from visible size.",
+      "rejectedIdeas": "Appearance-only mass answers."
+    },
+    {
+      "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-2-unit-14-sense-of-measure-capacity-volume-mass/",
+      "title": "Sense of measure — capacity, volume, mass",
+      "organization": "NCETM / Etio",
+      "retrievedAt": "2026-10-29",
+      "read": "Full teachingHTML53–113, practical units/quantity/capacity distinction, counterexamples to size assumptions. Page explicitly says no NCETM slides/PD material for this unit.",
+      "usageRestrictions": "Crown/OGL unless exceptions, named-author permission conditions; no figures copied.",
+      "licenceUrl": "https://www.ncetm.org.uk/copyright/",
+      "adoptedIdeas": "Practical reference masses and scale meaning.",
+      "rejectedIdeas": "Unit alone determines comparison for arbitrary numbers."
+    },
+    {
+      "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks1/units/sense-of-measure-capacity-volume-and-mass/lessons/mass-can-be-measured-in-grams-and-kilograms",
+      "title": "Mass can be measured in grams and kilograms",
+      "organization": "Oak National Academy",
+      "retrievedAt": "2026-10-29",
+      "read": "HTML outcome/points/scale misconception/tip/licence416–447; no slides/video read.",
+      "usageRestrictions": "©Oak2025 OGL3 except where stated, Collection2. Original diagrams/text only.",
+      "adoptedIdeas": "Unit benchmarks and matched scale ranges, supplied numeric support.",
+      "rejectedIdeas": "Unmeasured laptop/food item as exact1kg, dense circular scales or knowledge beyond100 as hard gate."
+    },
+    {
+      "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks1/units/sense-of-measure-capacity-volume-and-mass/lessons/compare-and-order-measurements-of-mass",
+      "title": "Compare and order measurements of mass",
+      "organization": "Oak National Academy",
+      "retrievedAt": "2026-10-29",
+      "read": "HTML same-unit comparison/size misconception/tip/licence416–447.",
+      "usageRestrictions": "©Oak2025 OGL3 except where stated, Collection2. No protected assets copied.",
+      "adoptedIdeas": "Larger object need not be heavier; compare equivalent-unit quantities.",
+      "rejectedIdeas": "Unqualified different-units shortcut:1000g=1kg and1500g>1kg remain valid."
+    },
+    {
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-concise-EN.pdf/2fda4656-e236-0fcb-3867-36ca74eea4e3?download=true&t=1780473467684&version=4.1",
+      "title": "SI concise summary, linked from SI Brochure2026 page",
+      "organization": "Bureau International des Poids et Mesures / CIPM-CCU",
+      "retrievedAt": "2026-10-29",
+      "read": "5-page summary targetedPDF2–3(prefixes,kilogram exception,litre symbols,quantity formatting); mainPDF request timedout and is not claimed read. Summary footer itself saysVersion4.01; URLversion4.1 not asserted as documentdate.",
+      "usageRestrictions": "BIPM landingpage states CC BY4.0; reference/attribution only; no tables/figures copied.",
+      "licenceUrl": "https://www.bipm.org/en/publications/si-brochure",
+      "adoptedIdeas": "kilo1000 and kg/g notation.",
+      "rejectedIdeas": "kg as force unit or demanding scientific definition."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@fcd9264b74c5516099dd85269962166023b2dbdf0bd680da68704ed639d2d49d",
+      "note": "Author source/domain checks complete; independent review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@fcd9264b74c5516099dd85269962166023b2dbdf0bd680da68704ed639d2d49d",
+      "note": "Author source/domain checks complete; independent review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@fcd9264b74c5516099dd85269962166023b2dbdf0bd680da68704ed639d2d49d",
+      "note": "No human/learner validation performed or claimed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@fcd9264b74c5516099dd85269962166023b2dbdf0bd680da68704ed639d2d49d",
+      "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/measure-units-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@fcd9264b74c5516099dd85269962166023b2dbdf0bd680da68704ed639d2d49d",
+      "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/measure-units-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@fcd9264b74c5516099dd85269962166023b2dbdf0bd680da68704ed639d2d49d",
+      "note": "No human or target-learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@e7075d578d7d1a064ea22a9aa1009d2da9b2caaa7df27b8943c1db62503f193e",
+      "note": "LR04-B05: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@e7075d578d7d1a064ea22a9aa1009d2da9b2caaa7df27b8943c1db62503f193e",
+      "note": "LR04-B05: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@e7075d578d7d1a064ea22a9aa1009d2da9b2caaa7df27b8943c1db62503f193e",
+      "note": "LR04-B05: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@84e5a5270bbcbc10106a53ef8ebec44aa80725d3346297028a2ee9dffd03fc21",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@84e5a5270bbcbc10106a53ef8ebec44aa80725d3346297028a2ee9dffd03fc21",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@84e5a5270bbcbc10106a53ef8ebec44aa80725d3346297028a2ee9dffd03fc21",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@aa577f854fe745365f2698a96abd100cf4cc78dfea75e71f1b56ad32f8758571",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@aa577f854fe745365f2698a96abd100cf4cc78dfea75e71f1b56ad32f8758571",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@aa577f854fe745365f2698a96abd100cf4cc78dfea75e71f1b56ad32f8758571",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@88f7837942f1fe173e18d903491992abdb55ee3d7007711c8a97bd418115f318",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@88f7837942f1fe173e18d903491992abdb55ee3d7007711c8a97bd418115f318",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@88f7837942f1fe173e18d903491992abdb55ee3d7007711c8a97bd418115f318",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@f7d0af13e94adf20b30dd87ad9526242ce2568e72030936204499b7109b65f6a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@f7d0af13e94adf20b30dd87ad9526242ce2568e72030936204499b7109b65f6a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@f7d0af13e94adf20b30dd87ad9526242ce2568e72030936204499b7109b65f6a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@f076600dec412694b9fa9138ca2e73600518070d10e220e1e6bd62d58ee84c0d",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@f076600dec412694b9fa9138ca2e73600518070d10e220e1e6bd62d58ee84c0d",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@f076600dec412694b9fa9138ca2e73600518070d10e220e1e6bd62d58ee84c0d",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@6c72665b3e2e07f0c85c0f4357e41a57cdb62146d13de4ec2ebf15cecf1e0afc",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@6c72665b3e2e07f0c85c0f4357e41a57cdb62146d13de4ec2ebf15cecf1e0afc",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@6c72665b3e2e07f0c85c0f4357e41a57cdb62146d13de4ec2ebf15cecf1e0afc",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@b14b1e63b03c794213af54dad35635b17a19e423472e5040cceafd4990e505da",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@b14b1e63b03c794213af54dad35635b17a19e423472e5040cceafd4990e505da",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@b14b1e63b03c794213af54dad35635b17a19e423472e5040cceafd4990e505da",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@3632fb9e656d5bcaf683a09966cd22bee16ec239cfbea55641f5d467d8a4487c",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@3632fb9e656d5bcaf683a09966cd22bee16ec239cfbea55641f5d467d8a4487c",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@3632fb9e656d5bcaf683a09966cd22bee16ec239cfbea55641f5d467d8a4487c",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@15aaf3f01c56fa01d77610c5e104cd89a2e07f6b55c67e4535196734cf42c392",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@15aaf3f01c56fa01d77610c5e104cd89a2e07f6b55c67e4535196734cf42c392",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Massaa ei päätellä esineiden lukumäärästä tai kuvakoosta. 1 kg = 1000 g sekä 2 × 500 g ja 10 × 100 g muodostavat saman massan. Tunnetut punnukset, tavoite ja vastaaminen ovat yhdessä. Kuvassa olevat punnukset ovat annettuja arvoja, eivät laitteen tekemä todellinen punnitus. Nykyinen Lite käyttää sopivan mittakaavan arviointia, kilo–gramma-muunnosta ja punnuksilla rakentamista. Arkiesineiden massat ovat noin-arvioita; yksikkövalinnan harjoitus ei tarkoita, että muita massayksiköitä olisi mahdoton käyttää. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@15aaf3f01c56fa01d77610c5e104cd89a2e07f6b55c67e4535196734cf42c392",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M-MEAS-06",
+    "sourceFile": "authority/production-181-v2/lite/src/content/ranta2.ts",
+    "nodeRevision": "audit1-2026-10-28",
+    "validRevs": [
+      "audit1-2026-10-28"
+    ],
+    "sourceBuild": "lite181-2026-10-27",
+    "stop": "Marjapunnitus",
+    "actualFamilies": [
+      "unit",
+      "estimate",
+      "thousand",
+      "scale",
+      "transfer"
+    ],
+    "actualTaskKinds": [
+      "choice",
+      "grams"
+    ],
+    "motionOverlay": null,
+    "familyRegistry": "index fills GOALS; none of assigned IDs in SIMS, no motion overlay. No own DECL or graph.coverage rows; family kind outcomes use defaults. Dynamic rule null.",
+    "inventory": {
+      "sourceFile": "authority/production-181-v2/lite/src/content/ranta2.ts",
+      "nodeRevision": "audit1-2026-10-28",
+      "validRevs": [
+        "audit1-2026-10-28"
+      ],
+      "sourceBuild": "lite181-2026-10-27",
+      "phaseRule": "cases: all named branches in guided/independent/retrieval, dedicated transfer; no guidedTags restriction",
+      "registry": "index fills GOALS; none of assigned IDs in SIMS, no motion overlay. No own DECL or graph.coverage rows; family kind outcomes use defaults. Dynamic rule null.",
+      "auditLimit": "Historical synthetic technical author reports only; no approval/efficacy implied. COVERAGE summaries omit new constructive families and retain stale global revision.",
+      "stop": "Marjapunnitus",
+      "icon": "🍎",
+      "goal": "Opit valitsemaan, punnitaanko grammoina vai kilogrammoina.",
+      "intro": "Marjat myydään painon mukaan. Kevyet asiat punnitaan grammoina, painavat kilogrammoina.",
+      "reward": "Kilo on tuhat grammaa: osaat punnita kuin kauppias!",
+      "nodeLines": "ranta2.ts824–891",
+      "families": [
+        "unit",
+        "estimate",
+        "thousand",
+        "scale",
+        "transfer"
+      ],
+      "taskKinds": [
+        "choice",
+        "grams"
+      ],
+      "demos": [
+        {
+          "say": "Berry about1g, dial barely moves",
+          "media": "onScaleScene(berry,1,...)"
+        },
+        {
+          "say": "Ten100g packs become1000g then visually exchange to1kg pack",
+          "media": "kiloScene()"
+        },
+        {
+          "say": "Litremilkcarton about1kg, labelled approximate",
+          "media": "onScaleScene(MILK,1000,...)"
+        }
+      ],
+      "items": {
+        "unit": "Berry/coin/pencil→g;potatoes/dog/person→kg, light/heavy categorical choice.",
+        "estimate": "Approximate milk1kg,apple150g,bicycle15kg,coin5g; body-weight/strength comparisons in distractors.",
+        "thousand": "k1..3, choose k*1000g versus k*100g/k*10g; supplied1kg1000g hint.",
+        "scale": "kg0/1 plus h200/300/500/700/800; target200..1800g, packs100/500/1000g. Learner constructs target; several decompositions possible.",
+        "transfer": "kg1/2 versus kg*1000±500g, compare with equality distractor."
+      },
+      "mediaInventory": [
+        "measureanim.packetArt label/shape by nominal pack mass",
+        "dialBody100g ticks,500g long ticks,1000g labels",
+        "kiloScene per-packet arrival/needle increment/equivalent swap",
+        "onScaleScene supplied approximate mass needle",
+        "widgets.grams adds/undo,max12packs,600msneedle interpolation,locked submit+say",
+        "check grams compares scalar target and under/over gap"
+      ],
+      "audit": {
+        "row": 56,
+        "detailLines": "LESSON_AUDIT450–452",
+        "coverageOmissions": [
+          "scale",
+          "third demo"
+        ]
+      },
+      "reconcile": [
+        "Use known labelled reference masses, not an unweighed berry/milk carton exact claim or personal lifting ability.",
+        "Mass differs from size or object count; heavy item can also be measured in grams. Both number and unit matter.",
+        "Model counterweights/labelled mass construction is not physical weighing; readout is supplied help.",
+        "Digital readout or clearly labelled reference balance avoids importing dense analogue-scale reading; no person-body comparisons."
+      ]
+    },
+    "comparison": "alignment.md",
+    "limitations": "Current authored lessons are drafts; author software tests do not establish real-world handling, strategy or human efficacy.",
+    "sourceHashes": {
+      "src/content/ranta2.ts": "28d8f7b08205a7e5be0c2087c85e256e609578e83a9e6e714a1ee8573ff47fc6",
+      "src/content/measureanim.ts": "e157bfeb17df885cc8a6392a55b9bd10f8078efb6f065bae2f0347b6270d6cf4",
+      "src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+      "src/engine/graph.ts": "8bcdc3d7cafed82fd8d2a0a7dd69a547f2e70d6d2a87834f110164d4fe4b24d9",
+      "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+      "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+      "src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+      "src/engine/motion.ts": "7b2851bee0927ba383462ea8d24b7f2a8467c82b581fd519efdb4b4566365451",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427"
+    },
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/measureanim.ts": "e157bfeb17df885cc8a6392a55b9bd10f8078efb6f065bae2f0347b6270d6cf4",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/content/ranta2.ts": "87944d2b01f0eeb53212fa1e9d86fa034c4b8db3a8fd0c572f7d74a462716020",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/engine/check.ts": "47db66a3f49e0ad81dbe6a44ef630f68c219ef1278b96b1d48e353ccb5d113c3",
+        "src/engine/graph.ts": "8bcdc3d7cafed82fd8d2a0a7dd69a547f2e70d6d2a87834f110164d4fe4b24d9",
+        "src/engine/motion.ts": "5204500f68d9c8e66fee7caf689e778fa347008383fe87a1e60e978f20ca3a83",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+        "src/ui/widgets.ts": "ed38f173766820cfc9dafcf8ea95a57a8940afe50a36ad19f3b00f3193e56ede"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "1-2",
+    "teacherObjective": "Kilogramma ja gramma massan yksikköinä",
+    "childGoal": "Tunnen gramman ja kilogramman. Kokoan saman massan eri punnuksilla.",
+    "canonical": {
+      "id": "M-MEAS-06",
+      "subject": "mathematics",
+      "grade_band": "1-2",
+      "topic_area": "Geometria ja mittaaminen",
+      "parent_concept": "Massayksiköt",
+      "title": "Kilogramma ja gramma massan yksikköinä",
+      "short_description": "Kilogramma ja gramma massan yksikköinä",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL1-2-S3"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "concept",
+      "relations": [
+        {
+          "id": "M-MEAS-05",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MEAS-05 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-MEAS-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MEAS-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-MEAS-05",
+            "M-MEAS-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Geometria ja mittaaminen",
+        "Massayksiköt"
+      ]
+    },
+    "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-MEAS-05",
+          "M-MEAS-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "required": [
+      {
+        "id": "M-MEAS-05",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MEAS-05 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-MEAS-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-MEAS-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "strongSupport": [],
+    "assumed": [
+      "Adult may read; ordinary quantity/counting support inherited through required ancestors.",
+      "Unit pair and model labels explicitly taught/supplied; no new arithmetic/reading gate.",
+      "No arbitrary object naming, speech confirmation or unrelated counting taps."
+    ],
+    "scope": "Gram/kilogram relation through given labelled reference masses; construct1000g in any valid order/decomposition against fixed1kg. Qualitative balance comparison, not force/torque or unintroduced circular-scale reading.",
+    "evidenceLimits": [
+      "Supported onscreen model only; no physical skill certification.",
+      "Optional support allowed; no independence, retention, formal mastery or efficacy inference.",
+      "No personal history, persistence, awards or verified public pupil game route."
+    ],
+    "assetProvenance": [
+      {
+        "path": "equal-kilogram.svg",
+        "origin": "Original subjectSVG generated from local deterministic geometry; no external art or mascot redraw."
+      },
+      {
+        "path": "one-each-unequal.svg",
+        "origin": "Original subjectSVG generated from local deterministic geometry; no external art or mascot redraw."
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "origin": "Supplied actual shared transparentPNG, unchanged reference; owner licensing retained."
+      }
+    ],
+    "readingDesign": "ShortFinnishlearner core, workedexamples beforepractice; secondary instructions/support/advanced/offline/teacherlimits in optionaldetails.",
+    "feedbackContract": "Owned semantic input+change, explicitcheckcurrentvisibleanswers; helper/unchangedquantity views preserve validverdict.",
+    "interaction": {
+      "kind": "reference-mass balance construction, distinct from ruler and pouring",
+      "state": "Strict casekey and exactdense array of allowed labelled masses100/500/1000g, boundednumber/sum; no unaccounted mass sources.",
+      "truth": "sumG=sum(packs); referenceG=1000; equality exact. Classify under/equal/over by total mass only. Equal-arm beam tilt qualitative bysign, not a calibrated force or torque magnitude.",
+      "motion": "If transition animated, one owned RAF/normalized progress drives all movingbeam/pan visuals. No falsely movingreference or unit-toggle mass change. Prefer short cancellable animation/no idle bounce. Check only settledstate or unambiguously currentcommitted model; no queue/timer leaks.",
+      "controls": [
+        "Lisää100g",
+        "Lisää500g",
+        "Lisää1kg",
+        "Poista viimeinen/clear",
+        "Tarkista",
+        "Optional supplied mass label aid"
+      ],
+      "check": "Correct iff valid complete mass equals target; under/over feedback in sameunit, no partial empty success. Multiple valid compositions accepted, no reportinglongsum requirement.",
+      "scope": "Meaning ofg/kg and equal1kg reference. No thousand-counting gate, dense analogue-scale test, decimal kg, generic conversions, liftingstrength or personal bodymass."
+    }
+  },
+  "extensions": {
+    "productionBatch": "B06",
+    "authoredOn": "2026-10-29",
+    "simulationType": "reversible qualitative reference-mass balance",
+    "sourceNotes": {
+      "alignment.md": "ec9e6eae789809d34a7bdc8786597b49147ed1548856e92b6f1170a974e147bb",
+      "research.md": "a32130aea331c18fb3e284e865aecc66b3701bb60c3ca63ff4eee3fae44879b3",
+      "tests.mjs": "beb8d821b3e542cd791cc645709e00e70079d3f3d5390c9f22a664a5929e22a2"
+    },
+    "authorChecks": {
+      "status": "source_ready_pending_independent_and_integration",
+      "sourceStable": true,
+      "pureTests": "12/12 assigned3 PASS",
+      "scopedLint": "PASS",
+      "isolatedSourceContract": "PASS own3 only; no shared build",
+      "browserQA": "Separate exactrevision external receipt; not human validation",
+      "humanValidation": "Not performed or claimed"
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B05",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

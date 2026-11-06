@@ -1,0 +1,37 @@
+/* Sammakko visual polish — Lite surroundings (VP04) and living painting (VP05). Only active while decor.js marks a
+   decorated surface on <html>; otherwise nothing here applies. The reading column keeps the
+   app's own background colour, so text contrast inside #app is unchanged. */
+#vp-decor,#vp-decor .vp-glints,#vp-decor .vp-reeds,#vp-decor .vp-world{display:none}
+@media (min-width:1000px){
+  html[data-vp-surface] body{background:transparent}
+  html[data-vp-surface] #vp-decor{display:block;position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;contain:strict}
+  .vp-col{position:absolute;top:0;bottom:0;left:50%;width:720px;margin-left:-360px;background:var(--bg)}
+  .vp-side{position:absolute;top:0;bottom:0;width:calc(50% - 360px);background-repeat:no-repeat;background-size:auto max(100%,780px)}
+  .vp-left{left:0;background-position:left top;-webkit-mask-image:linear-gradient(90deg,#000 0,#000 72%,transparent);mask-image:linear-gradient(90deg,#000 0,#000 72%,transparent)}
+  .vp-right{right:0;background-position:right top;-webkit-mask-image:linear-gradient(270deg,#000 0,#000 72%,transparent);mask-image:linear-gradient(270deg,#000 0,#000 72%,transparent)}
+  html[data-vp-surface=map] .vp-left,html[data-vp-surface=worlds] .vp-left,html[data-vp-surface=paja-shore] .vp-left{background-image:url("shore-left.webp")}
+  html[data-vp-surface=map] .vp-right,html[data-vp-surface=worlds] .vp-right,html[data-vp-surface^=paja] .vp-right{background-image:url("shore-right.webp")}
+  html[data-vp-surface=paja] .vp-left{background-image:url("workshop.webp")}
+  /* The mask stays still; only the inner glints translate/fade in the empty left margin. */
+  html[data-vp-motion] #vp-decor .vp-glints{display:block;position:absolute;top:0;bottom:0;left:0;width:calc(50% - 360px);opacity:.55;overflow:hidden;
+    -webkit-mask-image:linear-gradient(90deg,#000 0,#000 45%,transparent 70%);mask-image:linear-gradient(90deg,#000 0,#000 45%,transparent 70%)}
+  html[data-vp-motion] #vp-decor .vp-glints-light{position:absolute;inset:0;
+    background:radial-gradient(4px 1.5px at 20% 30%,#fff 60%,transparent),radial-gradient(5px 1.5px at 55% 52%,#fff 60%,transparent),radial-gradient(4px 1.5px at 35% 71%,#fff 60%,transparent),radial-gradient(5px 1.5px at 62% 18%,#fff 60%,transparent);
+    animation:vp-glint 14s ease-in-out infinite alternate}
+  @keyframes vp-glint{from{transform:translateX(-6px);opacity:.25}to{transform:translateX(8px);opacity:.6}}
+  /* Reeds stand at the foot of the left shore plate and sway only while glints may run. */
+  html:is([data-vp-surface=map],[data-vp-surface=worlds],[data-vp-surface=paja-shore]) #vp-decor .vp-reeds{display:block;position:absolute;bottom:-24px;left:calc(25% - 180px - 50px);width:100px;aspect-ratio:360/547;background:url("reeds.webp") center bottom/contain no-repeat;transform-origin:50% 100%}
+  html[data-vp-motion] #vp-decor .vp-reeds{animation:vp-reed-sway 4.6s ease-in-out infinite}
+  @keyframes vp-reed-sway{0%,100%{transform:skewX(-3deg)}40%{transform:skewX(6deg)}62%{transform:skewX(3.5deg)}}
+  /* VP05: the living painting replaces the plates while it is live; the column edge is feathered. */
+  html[data-vp-world] #vp-decor .vp-world{display:block;position:absolute;inset:0;width:100%;height:100%}
+  html[data-vp-world] #vp-decor :is(.vp-side,.vp-glints,.vp-reeds){display:none!important}
+  html[data-vp-world] .vp-col{box-shadow:0 0 30px 12px var(--bg)}
+  /* Dark theme: dim the paper-coloured plates so they sit back in the margins. */
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .vp-side{filter:brightness(.42) saturate(.8);opacity:.85}}
+}
+html.calm-chars #vp-decor .vp-glints{display:none!important}
+html.calm-chars #vp-decor .vp-reeds{animation:none!important}
+@media(prefers-reduced-motion:reduce){#vp-decor .vp-glints{display:none!important}#vp-decor .vp-glints-light,#vp-decor .vp-reeds{animation:none!important}}
+@media print{#vp-decor{display:none!important}#vp-decor .vp-glints-light{animation:none!important}}
+

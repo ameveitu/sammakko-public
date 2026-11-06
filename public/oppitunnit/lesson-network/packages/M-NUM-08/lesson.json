@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-NUM-08",
+  "revision": 15,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "lesson.css",
+      "sha256": "b6fcac22ff5de1739c5cfe1cb660dcc2f25d747434a06b7950ffe221b28d1f01"
+    },
+    {
+      "path": "example.svg",
+      "sha256": "45f2689ece794aee0bcd9f8b1422686c3c2ef5283f6ca47f13cfe67784118480"
+    },
+    {
+      "path": "transfer.svg",
+      "sha256": "dca88866e0ec26e50bcf44a9975ed10bba8f44fff131242d8d979aeb225ca0a2"
+    },
+    {
+      "path": "shared/loikka/map.png",
+      "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+    }
+  ],
+  "research": [
+    {
+      "title": "Matematiikkaa alkuopetuksessa – tukea lisätunnin toteuttamiseen",
+      "url": "https://www.oph.fi/fi/koulutus-ja-tutkinnot/matematiikkaa-alkuopetuksessa-tukea-lisatunnin-toteuttamiseen",
+      "accessed": "2026-10-29",
+      "designTakeaway": "Vary sequence starting points and distinguish sequence knowledge from cardinal total. Offer number support and concrete offline action; do not require spoken naming.",
+      "usageRestrictions": "© Opetushallitus2026. Link and original brief design paraphrase only; no copied images/slides/text. No broader reuse licence inferred."
+    },
+    {
+      "title": "Cardinality and Counting",
+      "url": "https://www.ncetm.org.uk/classroom-resources/ey-cardinality-and-counting/",
+      "accessed": "2026-10-29",
+      "designTakeaway": "Keep a sequence location distinct from a count of objects. Support backward boundary crossings and starts other than1. Group diagrams explicitly distinguish number of groups from number of equal units.",
+      "usageRestrictions": "NCETM copyright page https://www.ncetm.org.uk/copyright/ states Crown Copyright/OGL unless stated otherwise, with attribution/author conditions. Link and original paraphrase only; no site photographs or branded figures copied."
+    },
+    {
+      "title": "DfE Mathematics guidance: year1, 1NPV–1 and1NF–2",
+      "url": "https://assets.publishing.service.gov.uk/media/600952a5e90e073ed5001da7/Maths_guidance_year_1.pdf",
+      "accessed": "2026-10-29",
+      "designTakeaway": "Contrast odd-start constant steps with multiples from0. Show actual equally sized units in equal groups and explain both group count and total. Do not award multiplication-fact fluency from supported numeric answers.",
+      "usageRestrictions": "Crown copyright; linked official guidance via https://www.gov.uk/government/publications/teaching-mathematics-in-primary-schools (OGLv3 except noted thirdparty). No copied example wording/figures; original Finnish lessons and SVG."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@dd1eec109805c3d7f14bd04e8c798e3579b5843134e43e1c507e777263923658",
+      "note": "Author draft; different-author review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@dd1eec109805c3d7f14bd04e8c798e3579b5843134e43e1c507e777263923658",
+      "note": "Author draft; different-author review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@dd1eec109805c3d7f14bd04e8c798e3579b5843134e43e1c507e777263923658",
+      "note": "No human or learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@563307b73902938e11cef89131848bf1703dee18604b5ce38132f42a643308cd",
+      "note": "R2 entry repair; exact current Carver re-review and main compiled verification pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@563307b73902938e11cef89131848bf1703dee18604b5ce38132f42a643308cd",
+      "note": "R2 entry repair; exact current Carver re-review and main compiled verification pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@563307b73902938e11cef89131848bf1703dee18604b5ce38132f42a643308cd",
+      "note": "No human or learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@793780877e9a3691cd87ab95143ced5a017dc18794b656f2960cba3b810d9847",
+      "note": "R3 copy and isolated-fixture repair; exact current Carver re-review and main compiled verification pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@793780877e9a3691cd87ab95143ced5a017dc18794b656f2960cba3b810d9847",
+      "note": "R3 copy and isolated-fixture repair; exact current Carver re-review and main compiled verification pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@793780877e9a3691cd87ab95143ced5a017dc18794b656f2960cba3b810d9847",
+      "note": "No human or learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@793780877e9a3691cd87ab95143ced5a017dc18794b656f2960cba3b810d9847",
+      "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/newton3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@793780877e9a3691cd87ab95143ced5a017dc18794b656f2960cba3b810d9847",
+      "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/newton3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@ed36f68e40bc05e356d3aa31050ce246e546c646ad7112837215b6ff0bd8d0fc",
+      "note": "LR04-B01: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@ed36f68e40bc05e356d3aa31050ce246e546c646ad7112837215b6ff0bd8d0fc",
+      "note": "LR04-B01: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@ed36f68e40bc05e356d3aa31050ce246e546c646ad7112837215b6ff0bd8d0fc",
+      "note": "LR04-B01: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@13c8dc27ed20f5093c4ca5b339c38ccc716e216613b0f5e46b92919fc50c1e59",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@13c8dc27ed20f5093c4ca5b339c38ccc716e216613b0f5e46b92919fc50c1e59",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@13c8dc27ed20f5093c4ca5b339c38ccc716e216613b0f5e46b92919fc50c1e59",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@f1a3fc3ee6691f034ce3f92b25e13085d6d001a4e27480c0ea88d0690987911f",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@f1a3fc3ee6691f034ce3f92b25e13085d6d001a4e27480c0ea88d0690987911f",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@f1a3fc3ee6691f034ce3f92b25e13085d6d001a4e27480c0ea88d0690987911f",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@270c361daeca6d1ebdc1978e29e230e5ba8e90b8b0d07af21982624504ef1a04",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@270c361daeca6d1ebdc1978e29e230e5ba8e90b8b0d07af21982624504ef1a04",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@270c361daeca6d1ebdc1978e29e230e5ba8e90b8b0d07af21982624504ef1a04",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@8b42b09dcabbbe858c2706f2ba0b8333dbb00ef1098e8bcae3690a34c1d3a09f",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@8b42b09dcabbbe858c2706f2ba0b8333dbb00ef1098e8bcae3690a34c1d3a09f",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@8b42b09dcabbbe858c2706f2ba0b8333dbb00ef1098e8bcae3690a34c1d3a09f",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@0afa57550d303eadfcc0c6e62eb305b6a5c4bf689f73c32dda9d83eea613f403",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@0afa57550d303eadfcc0c6e62eb305b6a5c4bf689f73c32dda9d83eea613f403",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@0afa57550d303eadfcc0c6e62eb305b6a5c4bf689f73c32dda9d83eea613f403",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@b0008718967aa9a5c0470c6e1558b78c6428419b38b57e2b592c5d23ce357824",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@b0008718967aa9a5c0470c6e1558b78c6428419b38b57e2b592c5d23ce357824",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@b0008718967aa9a5c0470c6e1558b78c6428419b38b57e2b592c5d23ce357824",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@b45002cf1a7a3df2d77dea55c1b97facf3e2eb1b0def1ae184cdf76cf3325d00",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@b45002cf1a7a3df2d77dea55c1b97facf3e2eb1b0def1ae184cdf76cf3325d00",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@b45002cf1a7a3df2d77dea55c1b97facf3e2eb1b0def1ae184cdf76cf3325d00",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@559fffdad3ef0d6fc85d5cf4a66630b115ee2dcc43802aef4064306f0fa18447",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@559fffdad3ef0d6fc85d5cf4a66630b115ee2dcc43802aef4064306f0fa18447",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@559fffdad3ef0d6fc85d5cf4a66630b115ee2dcc43802aef4064306f0fa18447",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@8bcb3e3e60e3e683db65b3933344638ca35ec5029e7deb6b374e64c3613224a4",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@8bcb3e3e60e3e683db65b3933344638ca35ec5029e7deb6b374e64c3613224a4",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@8bcb3e3e60e3e683db65b3933344638ca35ec5029e7deb6b374e64c3613224a4",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@4088f959a30ddca85a349837948953a4273c64ef4cf1abf9e69f0fb975cbbc69",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@4088f959a30ddca85a349837948953a4273c64ef4cf1abf9e69f0fb975cbbc69",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@4088f959a30ddca85a349837948953a4273c64ef4cf1abf9e69f0fb975cbbc69",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@1c903e9dbf2f2b820da8cd8feabe2400663bda27b3505ea7890ca6073fcf784f",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@1c903e9dbf2f2b820da8cd8feabe2400663bda27b3505ea7890ca6073fcf784f",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Alaspäin edetään yksi kerrallaan; 21 → 20 → 19 tekee kymmenylityksen näkyväksi. Lähtöluku ei ole ensimmäinen tehty askel. Lukujonon kulloinenkin lähtötieto ja vastauskentät pysyvät samassa tehtävävaiheessa. Mallin vaiheistus ei jaa vastauskokonaisuutta eri ruutuihin. Nykyinen Lite jatkaa ja järjestää alaspäin kulkevaa jonoa. Tulos ei yksin osoita automatisoitunutta ääneen luettelemista. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@1c903e9dbf2f2b820da8cd8feabe2400663bda27b3505ea7890ca6073fcf784f",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M-NUM-08",
+    "liteContentRevision": "audit1-2026-10-28",
+    "validRevisions": [
+      "audit1-2026-10-28"
+    ],
+    "actualFamilies": {
+      "before": {
+        "taskKind": "choice",
+        "seed": 1,
+        "phase": "guided",
+        "say": "Mikä luku on juuri ennen lukua 3?",
+        "hint": "Laske taaksepäin luvusta 3 yksi askel.",
+        "explain": "Ennen lukua 3 tulee 2, joka on yhtä pienempi.",
+        "task": {
+          "kind": "choice",
+          "options": [
+            {
+              "big": "2",
+              "speak": "kaksi"
+            },
+            {
+              "big": "1",
+              "speak": "yksi"
+            },
+            {
+              "big": "4",
+              "speak": "neljä"
+            }
+          ],
+          "answer": 0,
+          "why": [
+            null,
+            "1 on kaksi pienempi. Juuri ennen tarkoittaa yhtä pienempää.",
+            "Se tulee luvun jälkeen."
+          ]
+        },
+        "registry": {
+          "node": "M-NUM-08",
+          "tag": "before",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "none"
+        }
+      },
+      "gap": {
+        "taskKind": "choice",
+        "seed": 4,
+        "phase": "guided",
+        "say": "Mikä luku puuttuu taaksepäin menevästä jonosta?",
+        "hint": "Lue jono ääneen alusta: mikä luku jää väliin?",
+        "explain": "15, 14, 13, 12.",
+        "task": {
+          "kind": "choice",
+          "options": [
+            {
+              "big": "16",
+              "speak": "kuusitoista"
+            },
+            {
+              "big": "11",
+              "speak": "yksitoista"
+            },
+            {
+              "big": "14",
+              "speak": "neljätoista"
+            }
+          ],
+          "answer": 2,
+          "why": [
+            "Jono pienenee: puuttuva on pienempi kuin 15.",
+            "11 tulisi vasta jonon lopussa.",
+            null
+          ]
+        },
+        "registry": {
+          "node": "M-NUM-08",
+          "tag": "gap",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "static",
+          "html": "<svg viewBox=\"0 0 274 90\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"38\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"38\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">15</text><ellipse cx=\"104\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"var(--sun)\"/><text x=\"104\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#3a2c00\">?</text><ellipse cx=\"170\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"170\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">13</text><ellipse cx=\"236\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"236\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">12</text><g>\n    <ellipse cx=\"38\" cy=\"27.15\" rx=\"13.65\" ry=\"7.15\" fill=\"#3e9b54\"/>\n    <ellipse cx=\"38\" cy=\"21.3\" rx=\"13\" ry=\"8.06\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"44.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"44.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"32.019999999999996\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"45.02\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"29.939999999999998\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <circle cx=\"46.06\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <path d=\"M32.15 21.95 Q38 27.15 43.85 21.95\" stroke=\"#1f4d2b\" stroke-width=\"1.04\" fill=\"none\" stroke-linecap=\"round\"/>\n  </g></svg>"
+        }
+      },
+      "next": {
+        "taskKind": "choice",
+        "seed": 7,
+        "phase": "guided",
+        "say": "Mikä luku tulee seuraavaksi, kun lasketaan taaksepäin?",
+        "hint": null,
+        "explain": "7, 6, 5, 4: joka kerta yksi vähemmän.",
+        "task": {
+          "kind": "choice",
+          "options": [
+            {
+              "big": "4",
+              "speak": "neljä"
+            },
+            {
+              "big": "6",
+              "speak": "kuusi"
+            },
+            {
+              "big": "8",
+              "speak": "kahdeksan"
+            }
+          ],
+          "answer": 0,
+          "why": [
+            null,
+            "Se luku on jo jonossa.",
+            "Jono pienenee, ei kasva."
+          ]
+        },
+        "registry": {
+          "node": "M-NUM-08",
+          "tag": "next",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "static",
+          "html": "<svg viewBox=\"0 0 274 90\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"38\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"38\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">7</text><ellipse cx=\"104\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"104\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">6</text><ellipse cx=\"170\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"#9aa3a8\"/><text x=\"170\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#fff\">5</text><ellipse cx=\"236\" cy=\"56\" rx=\"29\" ry=\"20\" fill=\"var(--sun)\"/><text x=\"236\" y=\"64\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"800\" fill=\"#3a2c00\">?</text><g>\n    <ellipse cx=\"38\" cy=\"27.15\" rx=\"13.65\" ry=\"7.15\" fill=\"#3e9b54\"/>\n    <ellipse cx=\"38\" cy=\"21.3\" rx=\"13\" ry=\"8.06\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"44.5\" cy=\"14.149999999999999\" r=\"4.42\" fill=\"#5cbf6c\"/>\n    <circle cx=\"31.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"44.5\" cy=\"13.89\" r=\"2.6\" fill=\"#fff\"/>\n    <circle cx=\"32.019999999999996\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"45.02\" cy=\"14.149999999999999\" r=\"1.3\" fill=\"#1b2a22\"/>\n    <circle cx=\"29.939999999999998\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <circle cx=\"46.06\" cy=\"20.65\" r=\"1.3\" fill=\"#f2a7a0\" opacity=\".7\"/>\n    <path d=\"M32.15 21.95 Q38 27.15 43.85 21.95\" stroke=\"#1f4d2b\" stroke-width=\"1.04\" fill=\"none\" stroke-linecap=\"round\"/>\n  </g></svg>"
+        }
+      },
+      "hop": {
+        "taskKind": "line",
+        "seed": 12,
+        "phase": "guided",
+        "say": "Loikka on luvussa 7 ja hyppää kolme kertaa yhden taaksepäin. Napauta, mihin hän päätyy.",
+        "hint": "Sano jokaisesta hypystä luku: 6, …",
+        "explain": "7, 6, 5, 4: 3 hyppyä taaksepäin.",
+        "task": {
+          "kind": "line",
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "answer": 4,
+          "whyAt": {
+            "5": "Lähtöluku 7 ei ole hyppy. Ensimmäinen hyppy vie lukuun 6.",
+            "7": "Loikka ei vielä hypännyt.",
+            "10": "Taaksepäin luvut pienenevät: hyppää vasemmalle."
+          }
+        },
+        "registry": {
+          "node": "M-NUM-08",
+          "tag": "hop",
+          "outcome": "merkitsee kohdan lukusuoralle",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "static",
+          "html": "<svg viewBox=\"0 0 330 104\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"8\" y1=\"70\" x2=\"322\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M326 70l-8 -5v10z\" fill=\"currentColor\"/><line x1=\"16\" y1=\"61\" x2=\"16\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"16\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"currentColor\">0</text><line x1=\"45.8\" y1=\"61\" x2=\"45.8\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"45.8\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">1</text><line x1=\"75.6\" y1=\"61\" x2=\"75.6\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"75.6\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">2</text><line x1=\"105.39999999999999\" y1=\"61\" x2=\"105.39999999999999\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"105.39999999999999\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">3</text><line x1=\"135.2\" y1=\"61\" x2=\"135.2\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"135.2\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">4</text><line x1=\"165\" y1=\"61\" x2=\"165\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"165\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">5</text><line x1=\"194.79999999999998\" y1=\"61\" x2=\"194.79999999999998\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"194.79999999999998\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">6</text><line x1=\"224.6\" y1=\"61\" x2=\"224.6\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"224.6\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">7</text><line x1=\"254.4\" y1=\"61\" x2=\"254.4\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"254.4\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">8</text><line x1=\"284.2\" y1=\"61\" x2=\"284.2\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"284.2\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">9</text><line x1=\"314\" y1=\"61\" x2=\"314\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"314\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">10</text><circle cx=\"224.6\" cy=\"56\" r=\"9\" fill=\"#5cbf6c\"/><circle cx=\"220.6\" cy=\"50\" r=\"3\" fill=\"#fff\"/><circle cx=\"228.6\" cy=\"50\" r=\"3\" fill=\"#fff\"/></svg>"
+        }
+      },
+      "transfer": {
+        "taskKind": "line",
+        "seed": 1,
+        "phase": "transfer",
+        "say": "Loikka on kivellä 15. Hän hyppää kolme kertaa yhden kiven taaksepäin. Mihin hän päätyy? Napauta lukusuoralta.",
+        "hint": "Laske hypyt sormilla ja sano jokaisen kiven numero.",
+        "explain": "15, 14, 13, 12. Loikka on kivellä 12.",
+        "task": {
+          "kind": "line",
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "answer": 12,
+          "labelEvery": 5,
+          "whyAt": {
+            "13": "Lähtökivi 15 ei ole hyppy. Ensimmäinen hyppy vie kivelle 14.",
+            "18": "Taaksepäin luvut pienenevät: vasemmalle."
+          }
+        },
+        "registry": {
+          "node": "M-NUM-08",
+          "tag": "transfer",
+          "outcome": "merkitsee kohdan lukusuoralle",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "media": {
+          "kind": "static",
+          "html": "<svg viewBox=\"0 0 330 104\" width=\"100%\" role=\"img\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"8\" y1=\"70\" x2=\"322\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M326 70l-8 -5v10z\" fill=\"currentColor\"/><line x1=\"16\" y1=\"61\" x2=\"16\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"16\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"800\" fill=\"currentColor\">0</text><line x1=\"30.9\" y1=\"65\" x2=\"30.9\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"45.8\" y1=\"65\" x2=\"45.8\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"60.699999999999996\" y1=\"65\" x2=\"60.699999999999996\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"75.6\" y1=\"65\" x2=\"75.6\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"90.5\" y1=\"61\" x2=\"90.5\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"90.5\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">5</text><line x1=\"105.39999999999999\" y1=\"65\" x2=\"105.39999999999999\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"120.3\" y1=\"65\" x2=\"120.3\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"135.2\" y1=\"65\" x2=\"135.2\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"150.1\" y1=\"65\" x2=\"150.1\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"165\" y1=\"61\" x2=\"165\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"165\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">10</text><line x1=\"179.9\" y1=\"65\" x2=\"179.9\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"194.79999999999998\" y1=\"65\" x2=\"194.79999999999998\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"209.70000000000002\" y1=\"65\" x2=\"209.70000000000002\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"224.6\" y1=\"65\" x2=\"224.6\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"239.5\" y1=\"61\" x2=\"239.5\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"239.5\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">15</text><line x1=\"254.4\" y1=\"65\" x2=\"254.4\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"269.29999999999995\" y1=\"65\" x2=\"269.29999999999995\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"284.2\" y1=\"65\" x2=\"284.2\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"299.09999999999997\" y1=\"65\" x2=\"299.09999999999997\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"314\" y1=\"61\" x2=\"314\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"314\" y=\"96\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"600\" fill=\"currentColor\">20</text><circle cx=\"239.5\" cy=\"56\" r=\"9\" fill=\"#5cbf6c\"/><circle cx=\"235.5\" cy=\"50\" r=\"3\" fill=\"#fff\"/><circle cx=\"243.5\" cy=\"50\" r=\"3\" fill=\"#fff\"/></svg>"
+        }
+      }
+    },
+    "demoCount": 3,
+    "comparison": "alignment.md",
+    "motionOverlay": false,
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2",
+      "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+      "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "EVENT_COMMIT_REVIEW_B05.md": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+      "authority/production-181-v2/ASSETS.md": "bdccb0695c27382d99f8831077adf2f247b1bb168018bc5f829c510df3792c48",
+      "authority/production-181-v2/STYLE_REVIEW_FI.md": "aed7c1ba925e0743dc8f4d78b26cf875c5595e3afb39e0d3cd679f881b1683a4",
+      "authority/production-181-v2/ASSET_STYLE_GATE.txt": "fb5a31989b7ac7ad3f2e4f875ca86ea2f224821de09fa5eb4371fc3f36239fb7",
+      "authority/production-181-v2/lite/src/content/numbers.ts": "2ff4cae1816ea1d61ec938361a8306dc9a24d6e893f67895a390a83b7ae1c4d5",
+      "authority/production-181-v2/lite/src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+      "authority/production-181-v2/lite/src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+      "authority/production-181-v2/lite/src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da",
+      "shared/loikka/map.png": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6",
+      "shared/aava/curious.png": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    "state": "author_draft_review_pending",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/facts.ts": "a696f7fd77cf6de59eae08d4fac0791a04f35065352415b1fac9c1fdb377c3c9",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/numbers.ts": "6db9ad2c369c3111be19409d6b3da02f990c08ec8841c122081d5487d066f5af",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [
+        "AUTHORING.md",
+        "EVENT_COMMIT_REVIEW_B05.md",
+        "INTERACTION_FEEDBACK_CONTRACT.md",
+        "authority/production-181-v2/ASSETS.md",
+        "authority/production-181-v2/ASSET_STYLE_GATE.txt",
+        "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt",
+        "authority/production-181-v2/STYLE_REVIEW_FI.md",
+        "reference/inputs/canonical-690-graph.json",
+        "reference/inputs/mvp-scope-181.json",
+        "shared/aava/curious.png",
+        "shared/loikka/map.png"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M-NUM-08",
+      "subject": "mathematics",
+      "grade_band": "1-2",
+      "topic_area": "Luvut ja laskutoimitukset",
+      "parent_concept": "Lukujono",
+      "title": "Lukujonon jatkaminen taaksepäin",
+      "short_description": "Lukujonon jatkaminen taaksepäin",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL1-2-S2"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "procedure",
+      "relations": [
+        {
+          "id": "M-NUM-07",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-NUM-07 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-NUM-07"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Luvut ja laskutoimitukset",
+        "Lukujono"
+      ]
+    },
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-NUM-07"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "gradeBand": "1-2",
+    "teacherObjective": "Lukujonon jatkaminen taaksepäin",
+    "childGoal": "Jatkan lukujonoa aina yhden pienempään lukuun.",
+    "role": "atomic",
+    "scope": "Tuettu luvun kirjoittaminen tai mallin katsominen ei osoita suullista lukujonosujuvuutta, vähennyslaskun yleistä hallintaa, fyysistä liikkumista tai muistamista. Nimettyjen tehtävien luvut ovat 0–30; ei nollan alittavia siirtoja.",
+    "assumed": [
+      "Only canonical M-NUM-07; words/numerals/rule explained in place."
+    ],
+    "concreteToRepresentation": "Free controlled route exploration, numeric affine path, explained examples, practice; equal groups show countable units where used.",
+    "help": "Optional model/worded scaffold; never automatically enters answer.",
+    "offline": "Kirjoita peräkkäiset luvut korteille ja kuljeta merkkiä yhden kortin verran kohti pienempää. Aikuinen voi lukea luvut. Tarkkaile erikseen, lasketaanko lähtöpaikka virheellisesti askeleeksi.",
+    "exit": "Loikka lähtee luvusta 10 ja tekee kaksi yhden siirtoa taaksepäin. Mihin se päätyy?",
+    "evidenceLimits": "Tuettu luvun kirjoittaminen tai mallin katsominen ei osoita suullista lukujonosujuvuutta, vähennyslaskun yleistä hallintaa, fyysistä liikkumista tai muistamista. Nimettyjen tehtävien luvut ovat 0–30; ei nollan alittavia siirtoja.",
+    "assetProvenance": "Original exact SVGs and unchanged user-supplied shared PNG. No protected figure copied; no new raster or licence grant."
+  },
+  "extensions": {
+    "productionBatch": "B10",
+    "author": "Newton",
+    "simulationType": "back_affine_numberline_and_standalone_practice",
+    "independentReview": "pending_different_author_Carver",
+    "humanReview": "not_performed",
+    "evidencePolicy": "Local technical practice; no learner persistence, formal mastery or efficacy.",
+    "timing": "900ms per illustrative step, completed-arrival captions; not a physical speed model.",
+    "uiDirection": {
+      "setting": "Loikka and Aava exploring a numbered shore path and equally filled trays",
+      "material": "quiet cream paper, green ink, restrained pond-blue action, supplied textured PNG hook",
+      "view": "2D affine numeric axis and exact counted group diagrams; native DOM controls",
+      "firstAction": "one step immediately available; no forced introduction or speech",
+      "motion": "only deliberate numeric marker motion, no decorative autoplay; optional play/stop/step/start; finite nonnegative routes",
+      "mobile": "single column, wrapping44px buttons, collapsed optional help/teacher details, diagrams retain metric geometry"
+    },
+    "sourcePreviewLimit": "Author native HTTP preview is not actual compiled115 integration.",
+    "entryRepair": {
+      "reason": "Actual compiled full-shell P2 entry: r1 diagram/caption below initial844 viewport.",
+      "scope": "Own body ordering, compact intro and control typography only; shared header chrome owned by main.",
+      "controls": "Primary step stays with current diagram/caption; route/play/stop/start and group support remain optional in disclosure.",
+      "preserved": "Canonical h1/draft/teacher/navigation, all examples/content/limits/math/module/lifecycle unchanged.",
+      "verification": "Actual current compiled shell after main r2 rebuild required; candidate clone/source preview is not acceptance."
+    },
+    "copyRepair": {
+      "reason": "Main-requested Finnish one-step singular and removal of redundant repeated hook, after independent review safe boundary.",
+      "scope": "Completed caption wording only; duplicate hook removed; equal-step unique route question retained in teacher details. No mathematical/control/layout/CSS changes.",
+      "testFixture": "Use central disposable pending→reviewed→stale lifecycle helper without assuming the copied real review is pending; verify fixture metadata restored byte-exact.",
+      "historicalEvidence": "Main actual r2 entry9/9 and interaction9/9 remain r2-only; actual rebuilt r3 affected entry verification and Carver exact-r3 review pending."
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B01",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

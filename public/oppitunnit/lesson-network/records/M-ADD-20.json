@@ -1,0 +1,557 @@
+{
+  "kcId": "M-ADD-20",
+  "pagePath": "lessons/M-ADD-20.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-ADD-20",
+  "canonicalNode": {
+    "id": "M-ADD-20",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Yhteenlasku",
+    "title": "Yhteenlasku lukualueella 0–20",
+    "short_description": "Yhteenlasku lukualueella 0–20",
+    "source_basis": "pedagogically_derived",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-ADD-FACT-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-ADD-FACT-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-ADD-FACT-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Yhteenlasku"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-ADD-FACT-01",
+      "targetKCId": "M-ADD-20",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-FACT-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-ADD-20",
+      "targetKCId": "M-ADD-100",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-20 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-ADD-FACT-01"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-ADD-20/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "NCETM1.11 Addition and subtraction: bridging10",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-111-addition-and-subtraction-bridging-10/",
+        "read": "Actual HTML teachingpoints61–70; downloads/slides not opened",
+        "adopted": "Join quantities, partition and make10; commutativity/associativity preserve sum.",
+        "rejected": "No prescribed token order, mandated taps, single strategy or fluency claim.",
+        "licence": "NCETM copyright actual HTML55–57 as above. Original Finnish lessons and diagrams.",
+        "accessed": "2026-10-29",
+        "usage": "Original finite code/SVG and Finnish prose only. Teaching comparator, no efficacy or Finnish curriculum approval."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@a212876905152412cf6a79864e8f109d445f018a350db39b8ab78ea01dac4ac9",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@43216de8e32530c786f861db0a7adce7eaa78ee86d0456dfd6a1aa57cb4069b8",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+        "note": "B12 different-author exact current source/native scope closed. Full fileSET/SHA before metadata and preserved failures/closures: evidence/production/B12/review-bindings-before-metadata.json. No human/release approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@a212876905152412cf6a79864e8f109d445f018a350db39b8ab78ea01dac4ac9",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@43216de8e32530c786f861db0a7adce7eaa78ee86d0456dfd6a1aa57cb4069b8",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+        "note": "Not performed. Synthetic technical review is not target-learner validation/efficacy."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-ADD-20",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "bridge.svg",
+        "sha256": "29a71207874df25eeebb53c9dbb18f177070eb5b881625d974478ae364f2db14"
+      },
+      {
+        "path": "join-start.svg",
+        "sha256": "fc36ef515f53dbb13c591baea690a931a76ff3b307463f707fd48bdf53d9c5ed"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "d2fbb6f375da1e66d9d08e5b1c0d09bb96df96875af0b1fe8befba71a565c607"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      },
+      {
+        "path": "teen.svg",
+        "sha256": "a1ff123510c77e971e6f349b0b44507097b1aba32dc2df623600d1d27ea1cbad"
+      }
+    ],
+    "research": [
+      {
+        "title": "NCETM1.11 Addition and subtraction: bridging10",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-111-addition-and-subtraction-bridging-10/",
+        "read": "Actual HTML teachingpoints61–70; downloads/slides not opened",
+        "adopted": "Join quantities, partition and make10; commutativity/associativity preserve sum.",
+        "rejected": "No prescribed token order, mandated taps, single strategy or fluency claim.",
+        "licence": "NCETM copyright actual HTML55–57 as above. Original Finnish lessons and diagrams.",
+        "accessed": "2026-10-29",
+        "usage": "Original finite code/SVG and Finnish prose only. Teaching comparator, no efficacy or Finnish curriculum approval."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@a212876905152412cf6a79864e8f109d445f018a350db39b8ab78ea01dac4ac9",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@a212876905152412cf6a79864e8f109d445f018a350db39b8ab78ea01dac4ac9",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@a212876905152412cf6a79864e8f109d445f018a350db39b8ab78ea01dac4ac9",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@43216de8e32530c786f861db0a7adce7eaa78ee86d0456dfd6a1aa57cb4069b8",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@43216de8e32530c786f861db0a7adce7eaa78ee86d0456dfd6a1aa57cb4069b8",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@43216de8e32530c786f861db0a7adce7eaa78ee86d0456dfd6a1aa57cb4069b8",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+        "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+        "note": "B12 different-author exact current source/native scope closed. Full fileSET/SHA before metadata and preserved failures/closures: evidence/production/B12/review-bindings-before-metadata.json. No human/release approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+        "note": "B12 different-author exact current source/native scope closed. Full fileSET/SHA before metadata and preserved failures/closures: evidence/production/B12/review-bindings-before-metadata.json. No human/release approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+        "note": "Not performed. Synthetic technical review is not target-learner validation/efficacy."
+      }
+    ],
+    "alignment": {
+      "build": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "nodeSpecId": "M-ADD-20",
+      "inventory": "facts469–513; countanim858–934; audit398–400",
+      "sourceHashes": {
+        "authority/production-181-v2/lite/src/content/numbers.ts": "2ff4cae1816ea1d61ec938361a8306dc9a24d6e893f67895a390a83b7ae1c4d5",
+        "authority/production-181-v2/lite/src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+        "authority/production-181-v2/lite/src/content/saari2.ts": "bf9e657f3e4f975cbdafd9c8b5c891d789ffd4e98be7126ee438096f7d9f5c6e",
+        "authority/production-181-v2/lite/src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "authority/production-181-v2/lite/src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+        "authority/production-181-v2/lite/src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+        "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "authority/production-181-v2/lite/src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+        "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427"
+      },
+      "overlay": "index full imports/ALL,goals fallback,defaultkit cases transfer separation; no target family/motion override",
+      "status": "Inherited executable concepts; original standalone content, no Lite edits or historical-test efficacy claims."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-ADD-20",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Yhteenlasku",
+        "title": "Yhteenlasku lukualueella 0–20",
+        "short_description": "Yhteenlasku lukualueella 0–20",
+        "source_basis": "pedagogically_derived",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-ADD-FACT-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-ADD-FACT-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-ADD-FACT-01"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Yhteenlasku"
+        ]
+      },
+      "canonicalGraphSHA256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "childGoal": "Yhdistän määrät ja tutkin, miten kymppi auttaa.",
+      "additionalHardGates": [],
+      "evidenceLimits": "Local untimed assisted practice only; no formal mastery, strategy proof from a scalar answer, learner history or efficacy."
+    },
+    "extensions": {
+      "author": "Euler",
+      "productionBatch": "B12",
+      "simulationType": "Manually controlled finite exact states, no clock/playback/frame loops.",
+      "humanReview": "not_performed",
+      "independentReview": "pending_Feynman",
+      "scope": "Owned new source only; isolated current-full-shell preview is not actual main139."
+    },
+    "contentHash": "50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+    "contentRevision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@a212876905152412cf6a79864e8f109d445f018a350db39b8ab78ea01dac4ac9",
+          "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@43216de8e32530c786f861db0a7adce7eaa78ee86d0456dfd6a1aa57cb4069b8",
+          "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+          "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+          "note": "B12 different-author exact current source/native scope closed. Full fileSET/SHA before metadata and preserved failures/closures: evidence/production/B12/review-bindings-before-metadata.json. No human/release approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@a212876905152412cf6a79864e8f109d445f018a350db39b8ab78ea01dac4ac9",
+          "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@43216de8e32530c786f861db0a7adce7eaa78ee86d0456dfd6a1aa57cb4069b8",
+          "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+          "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+          "note": "Not performed. Synthetic technical review is not target-learner validation/efficacy."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@a212876905152412cf6a79864e8f109d445f018a350db39b8ab78ea01dac4ac9",
+          "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@43216de8e32530c786f861db0a7adce7eaa78ee86d0456dfd6a1aa57cb4069b8",
+          "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+          "note": "Author source draft only. Different-author Feynman and actual main139 pending; no human/learner validation."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@50d008e25177b564026669f9a547f83c7d3ff5a32eb49a957bf9507fcba3aba8",
+          "note": "B12 different-author exact current source/native scope closed. Full fileSET/SHA before metadata and preserved failures/closures: evidence/production/B12/review-bindings-before-metadata.json. No human/release approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "0055dc7c5b1692503bf7a9a94a20c380bc5534e56ffd1bbb1ce65a0bb4b0728b",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "0055dc7c5b1692503bf7a9a94a20c380bc5534e56ffd1bbb1ce65a0bb4b0728b",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

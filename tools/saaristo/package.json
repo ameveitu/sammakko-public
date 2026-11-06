@@ -1,0 +1,14 @@
+{
+  "name": "sammakko-saaristo",
+  "private": true,
+  "description": "Builds the /saaristo/ experiment page bundle (public/kotisivu/assets/saaristo/saaristo.js).",
+  "type": "module",
+  "scripts": {
+    "island": "/Applications/Blender.app/Contents/MacOS/Blender -b --factory-startup -P blender/island.py -- --out ../../lite/src/world/saaristo/island-mesh.js",
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "rolldown": "1.2.15",
+    "three": "0.187.0"
+  }
+}

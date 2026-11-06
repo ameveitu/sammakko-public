@@ -1,0 +1,29 @@
+.b11-lesson { color:#183e36; max-width:46rem; margin:auto; --accent:#245f4c; }
+.b11-lesson .opening { display:flex; align-items:center; gap:.5rem; margin:0; font-size:1rem; line-height:1.35; }
+.b11-lesson .opening img { width:44px; height:44px; flex:0 0 44px; }
+.b11-lesson .opening p,.b11-lesson [data-goal] { margin:.2rem 0; }
+.b11-lesson fieldset { border:0; min-width:0; margin:.3rem 0; padding:0; }
+.b11-lesson legend { font-size:1rem; padding:0; }
+.b11-lesson [data-caption] { margin:.2rem 0; font-size:1rem; line-height:1.4; }
+.b11-lesson svg,.b11-lesson figure img { display:block; width:100%; height:auto; max-width:22rem; }
+.b11-lesson figure { margin:.6rem 0; }
+.b11-lesson label { display:flex; flex-direction:column; gap:.25rem; margin:.5rem 0; }
+.b11-lesson input,.b11-lesson select,.b11-lesson button { font:inherit; min-width:44px; min-height:44px; max-width:100%; }
+.b11-lesson button { background:#245f4c; color:#fff; border:1px solid #245f4c; border-radius:.3rem; padding:.45rem .65rem; margin:.15rem .2rem .15rem 0; white-space:normal; }
+.b11-lesson button:disabled { opacity:.65; }
+.b11-lesson input { width:14rem; padding:.35rem; border:1px solid #617d71; border-radius:.2rem; }
+.b11-lesson input[type=checkbox] { width:44px; height:44px; }
+.b11-lesson select { width:100%; }
+.b11-lesson .slots { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.5rem; }
+.b11-lesson .slots input { width:100%; box-sizing:border-box; }
+.b11-lesson details { border-top:1px solid #a4b9ae; padding:.55rem 0; margin:.3rem 0; }
+.b11-lesson summary,.b11-lesson nav a { min-height:44px; }
+.b11-lesson summary { cursor:pointer; }
+.b11-lesson nav { display:flex; flex-wrap:wrap; gap:.6rem; }
+.b11-lesson nav a { display:inline-flex; align-items:center; }
+.b11-lesson output { display:block; border-left:4px solid #708c7d; padding:.5rem; margin:.5rem 0; }
+.b11-lesson [data-result=correct] { border-color:#245f4c; }
+.b11-lesson [data-result=retry],.b11-lesson [data-result=invalid],.b11-lesson [data-result=missing] { border-color:#a45825; }
+.b11-lesson :focus-visible { outline:3px solid #a45825; outline-offset:3px; }
+.b11-lesson [hidden] { display:none; }
+.b11-lesson .sum { font-size:1.25rem; }

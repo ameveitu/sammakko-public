@@ -1,0 +1,121 @@
+<link rel="stylesheet" href="lesson.css"><div class="phys14" data-physics14>
+
+
+
+
+
+
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/loikka/map.png" width="48" height="48" alt="Loikka"><p>Loikka tarkkailee nopeuttaan kellon avulla.</p></div><p data-goal><strong>Luen nopeuden viivan korkeudesta.</strong></p><p>Vaakaviiva nollan yläpuolella: liike jatkuu.</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<fieldset data-lesson-role="worked-example"><legend>Nopeus näkyy korkeutena</legend><p data-model-legend>1. Loikka (yhtenäinen)</p><div class="actions" data-entry-primary><button type="button" data-action="play" aria-pressed="false">Toista</button><button type="button" data-action="pause">Tauko</button></div><div data-model-view><img src="initial.svg" alt="Mallin aika 0 s. Loikka: nopeus 0 m/s, kuljettu matka 0 m. Viiva näyttää koko nimetyn malliaineiston; piste valitun ajan."></div><p data-readout>Mallin aika 0 s. Loikka: nopeus 0 m/s, kuljettu matka 0 m.</p><p data-run-state>Toisto tauolla</p><details data-lesson-role="teaching-step"><summary>Vaihda mallia tai tutki aikaa</summary><label>Malli<select data-model><option value="phases" selected>Kasvaa, pysyy ja pienenee</option><option value="steady">Tasainen 10 m/s</option><option value="rest">Koko ajan paikallaan</option><option value="accel">Nopeus kasvaa</option><option value="decel">Nopeus pienenee</option><option value="offset">Uusi alkuarvo</option></select></label><label>Mallin aika, s<input data-time type="text" inputmode="decimal" value="0" maxlength="128"></label><p data-model-description>Mallin aika 0–10 s. Askel 2 s. Koko toisto 10 ruutusekuntia. Yläreunassa on suora kulkureitti, alla kuvaaja.</p><div class="actions"><button type="button" data-action="step">Askel 2 s</button><button type="button" data-action="end">Näytä loppu</button><button type="button" data-action="restart">Malli alkuun</button></div><p>Viivat näyttävät koko malliaineiston. Pisteet seuraavat mallin kelloa. Tauko pysäyttää katselun: se ei lisää fyysiseen liikkeeseen taukoa. Loppukuva ei itsessään tarkoita fyysistä pysähdystä. Tämä on laskettu malli, ei oikea mittaus. Näytön lukemat pyöristetään enintään 3 desimaaliin; tarkistuksen totuutta ei pyöristetä. Aikakenttä tukee desimaalilukua enintään 6 desimaalilla.</p><div data-model-table><table><caption>Kasvaa, pysyy ja pienenee. Nopeus v (m/s).</caption><thead><tr><th scope="col">Aika (s)</th><th scope="col">Loikka</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td></tr><tr><th scope="row">4</th><td>8</td></tr><tr><th scope="row">6</th><td>8</td></tr><tr><th scope="row">10</th><td>0</td></tr></tbody></table></div></details></fieldset>
+</section>
+
+
+
+
+
+
+
+
+<nav aria-label="Oppitunnin kohdat" data-lesson-role="metadata"><a href="#practice">Kokeile itse</a><a href="#examples">Esimerkit</a></nav>
+
+
+
+
+
+
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<details id="examples" data-lesson-role="teaching-step"><summary>Mistä tämän huomaa?</summary><h2>Lue sama ajanhetki</h2><p>Etsi aika vaaka-akselilta. Siirry viivalle ja lue pystyakselilta nopeus. Mallissa hetkellä 2 s nopeus on 4 m/s. Nämä kaksi lukua ovat eri suureita.</p><h3>Kolme vaihetta</h3><p>Aluksi nopeus kasvaa 0 → 8 m/s. Välillä 4–6 s se pysyy 8 m/s:ssa. Lopuksi nopeus pienenee nollaan. Suoran kulkureitin piste etenee, vaikka kuvaajan viiva välillä laskee.</p><img src="example.svg" alt="Ratkaistun monivaiheisen mallin hetki4s: nopeus8m/s, kuljettu matka16m."><figcaption>Ratkaistu mallin kohta: 4 s ja 8 m/s.</figcaption><h3>Vaakasuora ei aina ole lepo</h3><p>Toisessa mallissa nopeus on koko ajan 10 m/s. Viiva on vaakasuora ja Loikka liikkuu. Paikallaan ollessa nopeus olisi koko ajan <strong>0</strong>.</p><img src="contrast.svg" alt="Ratkaistu tasaisen liikkeen malli: vaakaviiva10m/s:ssa,10sekunnissa100m."><figcaption>Vaakaviiva 10 m/s:ssa tarkoittaa liikettä, nollassa lepoa.</figcaption></details>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<section id="practice"><h2>Kokeile itse</h2><label>Tehtävä<select data-task><option value="read" selected>Tehtävä A</option><option value="steady">Tehtävä B</option><option value="rest">Tehtävä C</option><option value="accel">Tehtävä D</option><option value="decel">Tehtävä E</option><option value="phases">Tehtävä F</option><option value="transfer">Tehtävä G</option></select></label><p data-question data-lesson-role="question">Mikä on Loikan nopeus hetkellä 2 s? Kirjoita m/s-luku.</p><p data-task-legend>Loikka</p><div data-task-view><img src="practice-initial.svg" alt="Tämän tehtävän oma nimetty kuvaaja. Samat täsmälliset arvot löytyvät avattavasta taulukosta."></div><fieldset data-answer-fields><label>Nopeus (m/s)<input data-answer type="text" inputmode="text" maxlength="128" autocomplete="off"></label></fieldset><button type="button" data-action="check">Tarkista</button><output data-feedback data-result="neutral" aria-live="polite">Tarkista, kun olet valmis.</output><div data-practice-support><details data-lesson-role="hint"><summary>Ajattelun tueksi</summary><p data-task-help>Etsi 2 s vaaka-akselilta. Siirry viivalle ja lue nopeus pystyakselilta. Aika ei ole nopeus.</p></details><details data-lesson-role="teaching-step"><summary>Kuvaajan tiedot taulukkona</summary><div data-task-table><table><caption>Kasvaa, pysyy ja pienenee. Nopeus v (m/s).</caption><thead><tr><th scope="col">Aika (s)</th><th scope="col">Loikka</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td></tr><tr><th scope="row">2</th><td>4</td></tr><tr><th scope="row">4</th><td>8</td></tr><tr><th scope="row">6</th><td>8</td></tr><tr><th scope="row">10</th><td>0</td></tr></tbody></table></div><p>Tehtävällä on oma kuvaajansa. Ylempää mallia voi tutkia erikseen, eikä sen katsominen tai toistaminen ole pakollista. Voit käyttää apua ja taulukkoa; ne ovat tukea, eivät itsenäisen hallinnan näyttö.</p></details></div></section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Vertaa toiseen tilanteeseen</summary><h2>Uusi alkuarvo</h2><p>Aavan nopeus alkaa 4 m/s:sta. Hetkellä 4 s se on 8 m/s. Älä käytä pelkkää ajan lukua tai kuvaajan loppulukemaa vastauksena.</p><img src="transfer.svg" alt="Ratkaistu uuden alkuarvon mallin hetki4s: nopeus8m/s."><figcaption>Ratkaistu esimerkki: aika 4 s ei tarkoita nopeutta 4 m/s.</figcaption><p>Tämän sivun mallit kulkevat suoralla positiiviseen suuntaan ja nopeudet ovat vähintään nolla. Laskeva nopeusviiva ei tarkoita alamäkeä tai paluuta.</p></details>
+</section>
+
+
+
+
+
+
+
+
+<details class="teacher" data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p>Luokat 7–9. Kanoninen rooli process säilyy. Harjoitellaan akselien, lukeman ja kolmen aikavälin tulkintaa. Yksi valinta ei todista koko prosessia. Pakolliset esitiedot ovat PHY79-SPEED-CONCEPT ja PHY79-GRAPH-01. Tämä ei vaadi numeerisen kiihtyvyyden laskua. Arviointivaihtoehto tasainen liike tarkoittaa tässä liikettä positiivisella nopeudella; se on erotettu yksiselitteisesti levosta.</p><p>Anna taulukko: nopeudet 0, 4, 8, 8, 4 ja 0 eri ajanhetkillä. Piirtäkää kuvaaja ja kertokaa, missä nopeus kasvaa, pysyy ja pienenee. Merkitkää lepo erikseen nollanopeudeksi. Ruutumalli ei ole tehty fyysinen mittaus.</p><p>Vain nimetyt äärelliset mallit metreissä ja sekunneissa. Akselit, alueet, kulkusuunta, lähtöpaikka, askel ja katselunopeus on ilmoitettu mallissa. Kuljetun matkan mallin oikealle kulkeminen on erikseen sovittu; kuvaaja ei yksin määrää suuntaa. Tuntematon tai epätuettu arvo ei korvaudu oletuksella. Ruudun piste on yksi mitattava kohta suoralla, ei kuva maastosta tai hahmon koosta. Ei 2D-reittejä, voimia tai mielivaltaista käyttäjän antamaa simulaatiota.</p><p>Paikallinen palaute koskee vain nykyisiä vastauksia. Ei formaalia oppijahistoriaa, hallintapäätöstä, viivästettyä näyttöä tai riippumatonta prosessirubriikkia. Vihje, esimerkki ja taulukko ovat tukea. Ei aikarajaa, pakollista puhetta, kuuntelua, nimeämistä tai tiettyä klikkausreittiä. Lukuvastauksessa hyväksytään samanarvoinen desimaaliluku tai kokonaislukujen murtoluku, myös etunollat, merkit ja nolla. Ei laskulausekkeita tai hiljaista pyöristystä. Enintään 128 merkkiä/kenttä.</p></details>
+
+
+
+
+
+
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lopuksi:</strong> Miten erotat kuvaajasta tasaisen liikkeen ja levon? Miksi laskeva viiva ei tässä ole alamäki?</p>
+</section>
+
+
+
+
+
+
+
+
+<noscript data-lesson-role="metadata"><p>Alkukuva ja tämän tehtävän kuvaaja ovat nimettyä malliaineistoa. Esimerkkikuvat on merkitty ratkaistuiksi. Ilman JavaScriptiä voit lukea tekstit ja taulukot sekä vastata paperilla. Liike ja paikallinen tarkistus tarvitsevat JavaScriptin.</p></noscript></div>

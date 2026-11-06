@@ -1,0 +1,885 @@
+{
+  "kcId": "M79-INT-01",
+  "pagePath": "lessons/M79-INT-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M79-INT-01",
+  "canonicalNode": {
+    "id": "M79-INT-01",
+    "subject": "mathematics",
+    "grade_band": "7-9",
+    "topic_area": "S2 Luvut",
+    "parent_concept": "Kokonaisluvut",
+    "title": "Kokonaislukujen järjestys ja etäisyys lukusuoralla",
+    "short_description": "Kokonaislukujen järjestys ja etäisyys lukusuoralla",
+    "node_kind": "integration",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "M79-S2"
+    ],
+    "relations": [
+      {
+        "id": "M79-INT-ORDER",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M79-INT-01 on v0.2:ssa integraationoodi; atominen alitaito M79-INT-ORDER vaaditaan kokonaisuuden hallintaan."
+      },
+      {
+        "id": "M79-INT-DIST",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M79-INT-01 on v0.2:ssa integraationoodi; atominen alitaito M79-INT-DIST vaaditaan kokonaisuuden hallintaan."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M79-INT-ORDER",
+          "M79-INT-DIST"
+        ],
+        "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+      }
+    ],
+    "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: M79-INT-ORDER, M79-INT-DIST. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "status": "candidate_refactored_integration",
+    "entry_role": "none",
+    "mastery_role": "integration",
+    "split_children": [
+      "M79-INT-ORDER",
+      "M79-INT-DIST"
+    ],
+    "integration_of": [
+      "M79-INT-ORDER",
+      "M79-INT-DIST"
+    ],
+    "dynamic_prerequisite_rule": null,
+    "concept_path": [
+      "Matematiikka",
+      "S2 Luvut",
+      "Kokonaisluvut"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M79-INT-ORDER",
+      "targetKCId": "M79-INT-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-INT-01 on v0.2:ssa integraationoodi; atominen alitaito M79-INT-ORDER vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-INT-DIST",
+      "targetKCId": "M79-INT-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-INT-01 on v0.2:ssa integraationoodi; atominen alitaito M79-INT-DIST vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M79-INT-01",
+      "targetKCId": "M79-INT-ADD",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-INT-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-INT-01",
+      "targetKCId": "M79-INT-SUB",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-INT-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-INT-01",
+      "targetKCId": "M79-INT-MUL",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-INT-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M79-INT-01",
+      "targetKCId": "M79-INT-DIV",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-INT-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M79-INT-01",
+      "targetKCId": "M79-OPPOSITE-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-INT-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M79-INT-01",
+      "targetKCId": "M79-ABS-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-INT-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M79-INT-ORDER",
+        "M79-INT-DIST"
+      ],
+      "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M79-INT-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.amsi.org.au/teacher_modules/Integer.html",
+        "title": "The Integers — TIMES Module15",
+        "organization": "AMSI / University of Melbourne ICE-EM",
+        "accessed": "2026-10-29",
+        "inspected": "Number-line order, opposites, crossing zero, positive/negative direction. PDF front matter pages1–2 read for rights.",
+        "usageRestrictions": "Resource-specific PDF © University of Melbourne/ICE-EM2010, CC BY-NC-ND3.0 (except stated material). No source figures, translated task/prose or derivative module copied. Original Finnish examples and vector geometry; no blanket CC BY claim.",
+        "adopted": "Use one line and equal unit intervals to separate left/right order from nonnegative separation. Same point gives zero.",
+        "limitations": "AMSI arithmetic module is broader than our integration objective; it does not verify this lesson or Finnish curriculum mapping."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@bf1542a006534ac0ef7b3bc476736f9d87f5b447a85ff5e63e3a1b26517af53b",
+        "note": "Author source freeze awaits different-author independent review. No author selfapproval."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@e4ceba21425f79c0a6f6a259bbc8e97098300e503339b60707d060d6b5a9cf3b",
+        "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+        "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+        "note": "Independent B14 parent source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/parent-on-Descartes/review-closed.json. Technical synthetic scope; not learner validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@bf1542a006534ac0ef7b3bc476736f9d87f5b447a85ff5e63e3a1b26517af53b",
+        "note": "No human/learner/efficacy/manualAXS approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@e4ceba21425f79c0a6f6a259bbc8e97098300e503339b60707d060d6b5a9cf3b",
+        "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+        "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M79-INT-01",
+    "revision": 3,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "initial.svg",
+        "sha256": "134932a8188511be3adc15197c045f05009c667ef0b7614ff78962f865bd0ba3"
+      },
+      {
+        "path": "example.svg",
+        "sha256": "af9f77db50a8d0434dbf64e220c14df93444c029b15b91a928285f3f9eb4183f"
+      },
+      {
+        "path": "transfer.svg",
+        "sha256": "83dcfef96b512cde758ab8c67a06f8cd761747f7220cb42d9cc21f6383481887"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "30e446b75b3b2145c814595e904262c8989616b464812fd4eb62e8d00c7d8562"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.amsi.org.au/teacher_modules/Integer.html",
+        "title": "The Integers — TIMES Module15",
+        "organization": "AMSI / University of Melbourne ICE-EM",
+        "accessed": "2026-10-29",
+        "inspected": "Number-line order, opposites, crossing zero, positive/negative direction. PDF front matter pages1–2 read for rights.",
+        "usageRestrictions": "Resource-specific PDF © University of Melbourne/ICE-EM2010, CC BY-NC-ND3.0 (except stated material). No source figures, translated task/prose or derivative module copied. Original Finnish examples and vector geometry; no blanket CC BY claim.",
+        "adopted": "Use one line and equal unit intervals to separate left/right order from nonnegative separation. Same point gives zero.",
+        "limitations": "AMSI arithmetic module is broader than our integration objective; it does not verify this lesson or Finnish curriculum mapping."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@bf1542a006534ac0ef7b3bc476736f9d87f5b447a85ff5e63e3a1b26517af53b",
+        "note": "Author source freeze awaits different-author independent review. No author selfapproval."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@bf1542a006534ac0ef7b3bc476736f9d87f5b447a85ff5e63e3a1b26517af53b",
+        "note": "Author source freeze awaits different-author independent review. No author selfapproval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@bf1542a006534ac0ef7b3bc476736f9d87f5b447a85ff5e63e3a1b26517af53b",
+        "note": "No human/learner/efficacy/manualAXS approval."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@e4ceba21425f79c0a6f6a259bbc8e97098300e503339b60707d060d6b5a9cf3b",
+        "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@e4ceba21425f79c0a6f6a259bbc8e97098300e503339b60707d060d6b5a9cf3b",
+        "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@e4ceba21425f79c0a6f6a259bbc8e97098300e503339b60707d060d6b5a9cf3b",
+        "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+        "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+        "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+        "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+        "note": "Independent B14 parent source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/parent-on-Descartes/review-closed.json. Technical synthetic scope; not learner validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+        "note": "Independent B14 parent canonical/Lite/source boundaries reviewed for current revision; frozen roles/prerequisite groups preserved. lesson-network/evidence/production/B14/reviews/parent-on-Descartes/review-closed.json"
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M79-INT-01",
+      "sourceBuild": "lite181-2026-10-27 immutable production-181-v2 snapshot",
+      "sourceRevision": "audit1-2026-10-28",
+      "sourceHashes": {
+        "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+        "authority/production-181-v2/lite/src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+        "authority/production-181-v2/lite/src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "authority/production-181-v2/lite/src/content/neganim.ts": "38429c827f5637f57b054cade85b40cc9f36396e27cee3d79e99e526b89766a4",
+        "authority/production-181-v2/lite/src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+        "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "authority/production-181-v2/lite/src/content/features.ts": "8ddef5451be9d011297f5d32b1ab0d869a1e132d608bd30f679b8e2d900884c5",
+        "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "authority/production-181-v2/lite/src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "families": [
+        "closer",
+        "transfer",
+        "land",
+        "jump",
+        "mid"
+      ],
+      "inventory": {
+        "goal": "Opit hyppimään lukusuoralla nollan yli, etsimään kahden luvun puolivälin ja päättelemään, kumpi luku on lähempänä.",
+        "intro": "Yhdistetään järjestys ja etäisyys: hypitään, verrataan ja etsitään puolivälejä.",
+        "reward": "Lukusuora on hallussasi!",
+        "revision": "audit1-2026-10-28",
+        "demos": [
+          {
+            "say": "Kohdasta −3 seitsemän askelta oikealle: ensin 3 askelta nollaan, sitten 4 lisää.",
+            "sceneKeys": [
+              "__anim"
+            ],
+            "sceneKind": "function"
+          },
+          {
+            "say": "Puoliväli: kaksi sammakkoa hyppää yhtä aikaa toisiaan kohti. Missä ne kohtaavat?",
+            "sceneKeys": [
+              "__anim"
+            ],
+            "sceneKind": "function"
+          }
+        ],
+        "items": {
+          "closer": {
+            "say": "Kumpi on lähempänä lukua −3: −7 vai 4?",
+            "task": {
+              "kind": "choice",
+              "options": [
+                {
+                  "big": "−7"
+                },
+                {
+                  "big": "4"
+                }
+              ],
+              "answer": 0,
+              "why": [
+                null,
+                "4 on 7 askeleen päässä, −7 vain 4."
+              ],
+              "cols": 2
+            },
+            "hint": "Laske askeleet luvusta −3 kumpaankin lukuun.",
+            "explain": "Etäisyydet: 4 ja 7. Lähempänä on −7.",
+            "registry": {
+              "node": "M79-INT-01",
+              "tag": "closer",
+              "outcome": "valitsee oikean vaihtoehdon",
+              "assumed": [],
+              "supplied": [],
+              "coTaught": [],
+              "incidental": {},
+              "support": [],
+              "source": [
+                "oletus"
+              ]
+            }
+          },
+          "transfer": {
+            "say": "Yöllä oli −9 °C ja iltapäivällä 1 °C. Kuinka monta astetta lämpötila nousi?",
+            "task": {
+              "kind": "numeric",
+              "answer": 10,
+              "unit": "°C",
+              "whyAt": {
+                "8": "Vähensit numerot toisistaan. Lämpötila nousi nollan yli, joten asteet lasketaan yhteen.",
+                "-10": "Lämpötila nousi, joten muutos on positiivinen."
+              }
+            },
+            "hint": "Laske asteet nollaan asti ja nollasta ylöspäin.",
+            "explain": "Nollaan 9 astetta ja siitä 1: 10 astetta.",
+            "registry": {
+              "node": "M79-INT-01",
+              "tag": "transfer",
+              "outcome": "kirjoittaa luvun",
+              "assumed": [],
+              "supplied": [],
+              "coTaught": [],
+              "incidental": {},
+              "support": [],
+              "source": [
+                "oletus"
+              ]
+            }
+          },
+          "land": {
+            "say": "Mihin sammakko päätyy? Yhdistä jokainen hyppy oikeaan paikkaan. Yksi lappu jää yli.",
+            "task": {
+              "kind": "place",
+              "slots": [
+                {
+                  "id": "s0",
+                  "text": "−1, 2 vasemmalle → ▢"
+                },
+                {
+                  "id": "s1",
+                  "text": "−5, 6 oikealle → ▢"
+                },
+                {
+                  "id": "s2",
+                  "text": "4, 8 vasemmalle → ▢"
+                }
+              ],
+              "tokens": [
+                {
+                  "id": "e2",
+                  "text": "−4"
+                },
+                {
+                  "id": "x",
+                  "text": "3"
+                },
+                {
+                  "id": "e0",
+                  "text": "−3"
+                },
+                {
+                  "id": "e1",
+                  "text": "1"
+                }
+              ],
+              "answer": {
+                "s0": "e0",
+                "s1": "e1",
+                "s2": "e2"
+              },
+              "why": {
+                "s0": "−1 − 2 = −3.",
+                "s1": "−5 + 6 = 1.",
+                "s2": "4 − 8 = −4."
+              }
+            },
+            "hint": "Oikealle luvut kasvavat, vasemmalle pienenevät. Kun ylität nollan, laske ensin askeleet nollaan.",
+            "explain": "Lappu 3 jää yli: siinä ensimmäisen hypyn tuloksen etumerkki on väärin.",
+            "registry": {
+              "node": "M79-INT-01",
+              "tag": "land",
+              "outcome": "sijoittaa osat oikeille paikoille",
+              "assumed": [],
+              "supplied": [],
+              "coTaught": [],
+              "incidental": {},
+              "support": [],
+              "source": [
+                "oletus"
+              ]
+            }
+          },
+          "jump": {
+            "say": "Aloita kohdasta −2 ja hyppää 8 askelta vasemmalle. Napauta, mihin päädyt.",
+            "task": {
+              "kind": "line",
+              "min": -10,
+              "max": 10,
+              "step": 1,
+              "answer": -10,
+              "labelEvery": 5,
+              "whyAt": {
+                "6": "Hyppäsit väärään suuntaan: vasemmalle tarkoittaa pienempiä lukuja.",
+                "-9": "Yksi askel jäi hyppäämättä. Laske askeleet uudelleen.",
+                "-11": "Yksi askel liikaa. Laske askeleet uudelleen."
+              }
+            },
+            "hint": "Laske 8 askelta vasemmalle kohdasta −2.",
+            "explain": "−2 − 8 = −10.",
+            "registry": {
+              "node": "M79-INT-01",
+              "tag": "jump",
+              "outcome": "merkitsee kohdan lukusuoralle",
+              "assumed": [],
+              "supplied": [],
+              "coTaught": [],
+              "incidental": {},
+              "support": [],
+              "source": [
+                "oletus"
+              ]
+            }
+          },
+          "mid": {
+            "say": "Mikä luku on lukujen −9 ja −1 puolivälissä?",
+            "task": {
+              "kind": "numeric",
+              "answer": -5,
+              "unit": "",
+              "whyAt": {
+                "4": "4 on puolet välin pituudesta, ei puoliväli. Lisää se pienempään lukuun −9.",
+                "8": "8 on koko välin pituus.",
+                "-10": "Laskit luvut yhteen, mutta et jakanut kahdella."
+              }
+            },
+            "hint": "Laske välin pituus askelina ja ota siitä puolet. Lähde pienemmästä luvusta.",
+            "explain": "Väli on 8 askelta, puolet siitä 4: −9 + 4 = −5.",
+            "registry": {
+              "node": "M79-INT-01",
+              "tag": "mid",
+              "outcome": "kirjoittaa luvun",
+              "assumed": [],
+              "supplied": [],
+              "coTaught": [],
+              "incidental": {},
+              "support": [],
+              "source": [
+                "oletus"
+              ]
+            }
+          }
+        }
+      },
+      "comparison": "Retain actual jump/mid/closer/land/transfer inventory and iceHops/midScene demos. Core canonical integration directly checks both ORDER and DIST for the same pair. Midpoint/closer and directional jumps remain optional explained extension, not a new hard gate. Same endpoints and reversed presentation distinguish order from displacement.",
+      "reconciliationForOpus": [
+        "Actual Lite goal widens canonical integration to midpoint/jumps/closer. Core here uses precisely canonical ORDER+DIST; optional midpoint is not required before direct answer.",
+        "COVERAGE omits land/place and two demos. Reward Lukusuora on hallussasi is not evidence of integrated or retained mastery."
+      ],
+      "runtimeOverlay": "index.ts registers ALGEBRA79_NODES, fills goals, sets revisionpolicy; no SIMS entry for these3. Actual family() resolves defaults and coverage+declarations; registry is not new canonical prerequisite authority."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M79-INT-01",
+        "subject": "mathematics",
+        "grade_band": "7-9",
+        "topic_area": "S2 Luvut",
+        "parent_concept": "Kokonaisluvut",
+        "title": "Kokonaislukujen järjestys ja etäisyys lukusuoralla",
+        "short_description": "Kokonaislukujen järjestys ja etäisyys lukusuoralla",
+        "node_kind": "integration",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "M79-S2"
+        ],
+        "relations": [
+          {
+            "id": "M79-INT-ORDER",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M79-INT-01 on v0.2:ssa integraationoodi; atominen alitaito M79-INT-ORDER vaaditaan kokonaisuuden hallintaan."
+          },
+          {
+            "id": "M79-INT-DIST",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M79-INT-01 on v0.2:ssa integraationoodi; atominen alitaito M79-INT-DIST vaaditaan kokonaisuuden hallintaan."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M79-INT-ORDER",
+              "M79-INT-DIST"
+            ],
+            "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+          }
+        ],
+        "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: M79-INT-ORDER, M79-INT-DIST. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "status": "candidate_refactored_integration",
+        "entry_role": "none",
+        "mastery_role": "integration",
+        "split_children": [
+          "M79-INT-ORDER",
+          "M79-INT-DIST"
+        ],
+        "integration_of": [
+          "M79-INT-ORDER",
+          "M79-INT-DIST"
+        ],
+        "dynamic_prerequisite_rule": null,
+        "concept_path": [
+          "Matematiikka",
+          "S2 Luvut",
+          "Kokonaisluvut"
+        ]
+      },
+      "gradeBand": "7-9",
+      "role": "integration",
+      "teacherObjective": "Yhdistää samalle kokonaislukuparille suuruusjärjestyksen ja ei-negatiivisen etäisyyden; erottaa etumerkin, kulkusuunnan ja välin pituuden.",
+      "childGoal": "Yhdistän lukujen järjestyksen ja välin pituuden.",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M79-INT-ORDER",
+            "M79-INT-DIST"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "requiredPrerequisites": [
+        {
+          "id": "M79-INT-ORDER",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M79-INT-01 on v0.2:ssa integraationoodi; atominen alitaito M79-INT-ORDER vaaditaan kokonaisuuden hallintaan."
+        },
+        {
+          "id": "M79-INT-DIST",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M79-INT-01 on v0.2:ssa integraationoodi; atominen alitaito M79-INT-DIST vaaditaan kokonaisuuden hallintaan."
+        }
+      ],
+      "strongSupport": [],
+      "additionalHardGates": [],
+      "scope": "Finite named endpoint pairs within−10…10. Unit intervals, nonnegative separation0…20, identical points allowed. Same model used for static SVG, stepped path and answers. Optional equal-distance reasoning does not implement a general signed-arithmetic assessment.",
+      "interaction": "Original finite models with independent optional stepping/play/pause/reset/end; direct structured response, no mandatory model/support. Visible prompt and values reread on input/change and everyCheck. Model changes do not erase unrelated task feedback. Invalid selection is rejected without default substitution.",
+      "feedback": "Task or visible answer edits invalidate that task verdict. Model-only/support/view changes preserve unrelated task result. Exact dense primitive-string arrays; missing/holes/undefined/symbol/extra properties rejected. Graph row order freely permutes equivalent pointsets. Optional converter has separate current-premise feedback.",
+      "lifecycle": "Per-root WeakMap owner; replacement disposes old3listeners and owned interval; old API inert, paused reset stays disabled; no storage/network/mastery/history.",
+      "evidenceLimits": "Author implementation and synthetic local checks; not independent content approval, human/learner or efficacy validation. Process practice constructs requested finite graph points; not full graphing mastery. Integration practices ORDER+DIST jointly, no atom mastery inference.",
+      "assetProvenance": "Original mathematical SVG and Finnish text. Exact unmodified user-supplied v2 PNG, not redrawn or asserted hand-drawn. Static named mascot outside measurement geometry.",
+      "curriculumVsDesign": "Frozen canonical exact role/sourcebasis/groups retained. Foreignprimarymaterial corroborates ideas and definitions, not new Finnish OPS requirement or targetlearner evidence."
+    },
+    "extensions": {
+      "researchNote": "research.md",
+      "alignmentNote": "alignment.md",
+      "tests": "tests.mjs",
+      "author": "Descartes",
+      "batch": "B14",
+      "authorScope": "Only assigned new3 source; all151 sources/shared/generated/status/mainbuild/Git remain parent-owned.",
+      "reviewStatus": "Independent parent review pending exact sourcefreeze; no selfapproval.",
+      "feedbackContractSHA256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "browserQA": "browser-qa.mjs"
+    },
+    "contentHash": "dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+    "contentRevision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@bf1542a006534ac0ef7b3bc476736f9d87f5b447a85ff5e63e3a1b26517af53b",
+          "note": "Author source freeze awaits different-author independent review. No author selfapproval."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@e4ceba21425f79c0a6f6a259bbc8e97098300e503339b60707d060d6b5a9cf3b",
+          "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+          "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+          "note": "Independent B14 parent source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/parent-on-Descartes/review-closed.json. Technical synthetic scope; not learner validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@bf1542a006534ac0ef7b3bc476736f9d87f5b447a85ff5e63e3a1b26517af53b",
+          "note": "No human/learner/efficacy/manualAXS approval."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@e4ceba21425f79c0a6f6a259bbc8e97098300e503339b60707d060d6b5a9cf3b",
+          "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+          "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+          "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@bf1542a006534ac0ef7b3bc476736f9d87f5b447a85ff5e63e3a1b26517af53b",
+          "note": "Author source freeze awaits different-author independent review. No author selfapproval."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@e4ceba21425f79c0a6f6a259bbc8e97098300e503339b60707d060d6b5a9cf3b",
+          "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+          "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "3@dac0c80f6b9c29d7bfee18b31885e2d663fcb40e064334221538e6059087bc9c",
+          "note": "Independent B14 parent canonical/Lite/source boundaries reviewed for current revision; frozen roles/prerequisite groups preserved. lesson-network/evidence/production/B14/reviews/parent-on-Descartes/review-closed.json"
+        }
+      ]
+    }
+  },
+  "outputHash": "99a2197c9db776e16d2d054aaeb808de3a26c09d67e9b57cdd5992a353b544f7",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "99a2197c9db776e16d2d054aaeb808de3a26c09d67e9b57cdd5992a353b544f7",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

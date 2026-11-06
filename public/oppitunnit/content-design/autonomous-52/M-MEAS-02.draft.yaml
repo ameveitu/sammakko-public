@@ -1,0 +1,1110 @@
+# AUTHORED_DESIGN_PENDING_IMPLEMENTATION_REVIEW — ei canonical/runtime-admissionia.
+# Scoped-lähdeviitteet ja tyypitetty guided/model/episode-deklaraatio; main validoi normaalireitin.
+schema_version: 0.1.0
+kc_id: M-MEAS-02
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Pituuden ymmärtäminen suureeksi
+  subject: mathematics
+  grade_band: 1-2
+  mastery_role: atomic
+  node_kind: concept
+  concept_path:
+    - Matematiikka
+    - Geometria ja mittaaminen
+    - Pituus
+  source_basis: pedagogically_derived
+  curriculum_refs:
+    - OPH-POPS2014-MATH-VL1-2-S3
+  prerequisite_snapshot:
+    hard:
+      - M-MEAS-00
+    strong: []
+    helpful: []
+teaching_model:
+  learning_goal: Oppilas vertaa listan päästä-päähän-pituutta ennen ja jälkeen jäykän siirron sekä
+    todellisen lyhennyksen/pidennyksen. Rajattu sovellus yhdistää 90 asteen käännön tekijöihin 1/2,1,2
+    samassa tehtäväpohjassa ja erottaa lyhyemmän, yhtä pitkän ja pidemmän lopputilan.
+    Atomic/concept-tulkinta ei osoita yksikkömittausta, kaikkia suureita tai ilman nimettyä kysymystä
+    tapahtuvaa pituuden tunnistamista.
+  learner_facing_goal: Huomaan, muuttuiko listan pituus vai vain sen paikka tai suunta.
+  core_idea: Pituus kuvaa listan matkaa päästä päähän. Jäykkä lista säilyy yhtä pitkänä siirrettäessä tai
+    käännettäessä. Oikea lyhennys tai jatkaminen muuttaa pituutta.
+  success_evidence:
+    - "Tuettomat lyhyempi/yhtä pitkä/pidempi-päätökset kaikista kolmesta ydintoiminnosta: siirto,
+      lyhennys ja pidennys."
+    - "Kolme omaa tuetonta ja aidosti novel-soveltamishavaintoa: kääntö+suhde lyhyempi, yhtä pitkä ja
+      pidempi. Yksi tehtäväpohja tuottaa kaikki kolme; sama luokka toistettuna ei täytä
+      required_tags-kattavuutta."
+    - Myöhempi neljän päätöksen näyte sisältää siirron, käännön ja molemmat aidot muutokset. Ei kaikkien
+      suureiden, fyysisen mittaustarkkuuden tai yleisen säilymiskäsitteen näyttöä.
+  boundaries:
+    in_scope:
+      - Jäykkä suora segmentti, yhteinen asteikko, näkyvät ennen/jälkeen-tilat ja kolme pituussuhdetta.
+      - Paikan muutos, 90 asteen kääntö sekä aidosti puolitettu tai kaksinkertaistettu pituus; ei
+        numeerista vastausta.
+    out_of_scope:
+      - Numeromittaus, yksiköt, yksikkömuunnos, pinta-ala, massa, tilavuus tai ajan suure.
+      - Mutkalle asetetun köyden kaaripituus, perspektiivi tai venyvän aineen fysiikka.
+      - Ominaisuuden tunnistamista mikä näistä on pituus ei arvioida kolmen suhteen valinnalla;
+        tavoitekattavuuden aukko säilyy.
+  prerequisite_assumptions:
+    - kc_id: M-MEAS-00
+      expected_level: Required-esitieto ja all_of-ryhmän ainoa jäsen. Itsenäinen näyttö vaatii ajantasaisen
+        yhteensopivan hallinnan; sitä ei myönnetä tästä taaksepäin.
+  conceptual_invariants:
+    - Molemmat kuvat säilyvät näkyvissä. Asteikko ei sovitu kumpaankin erikseen; myös vinon listan
+      akselit käyttävät samaa kerrointa.
+    - Oppija valitsee pituussuhteen. Järjestelmä antaa kuvat ja vastauslaatat mutta ei muunnoksen
+      tuomiota.
+    - Sekä säilyvä että aidosti muuttuva pituus vaaditaan. Aina yhtä pitkä ja kaikki liike muuttaa eivät
+      läpäise ydinkattavuutta.
+  likely_confusions:
+    - M-MEAS-02-OBS-PITUUSSUHDE
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+    - DIAGNOSTIC
+    - ORIENT
+    - WORKED_EXAMPLE
+    - GUIDED_PRACTICE
+    - FADED_EXAMPLE
+    - INDEPENDENT_PRACTICE
+    - TRANSFER_CHECK
+    - MASTERY_GATE
+  fast_path:
+    enabled: false
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Havaitse säilymisen ja aidon muutoksen ero ilman esitiedon uudelleenmyöntämistä.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-MEAS-02-DIAG-SIIRTO
+              - M-MEAS-02-DIAG-PIDENNYS
+    ORIENT:
+      purpose: Aava siirtää Loikan suoran listan pöydältä telineeseen. Hän tarkistaa, onko lista edelleen
+        samanpituinen vai tarvitseeko suunnitelmaa vaihtaa.
+      blocks:
+        - type: explanatory_text
+          content: Autetaan Aavaa tarkistamaan listan pituus ennen ja jälkeen.
+    WORKED_EXAMPLE:
+      purpose: Työstä siirto ja kaksi aitoa muutosta. Kääntö on mukana myöhemmässä rajatussa tarkistuksessa;
+        aito soveltamispankki puuttuu.
+      blocks:
+        - type: worked_example
+          content:
+            givens:
+              kind: attribute_comparison_task_v1
+              context: Aavan siirretty lista
+              operator: compare_length
+              scale:
+                kind: common_logical_scale_v1
+                unit: logical
+                svgUnitsPerUnit: 2
+              before:
+                kind: rigid_straight_segment_v1
+                id: target
+                colour: blue
+                start:
+                  x: 35
+                  y: 35
+                end:
+                  x: 43
+                  y: 35
+              after:
+                kind: rigid_straight_segment_v1
+                id: target
+                colour: blue
+                start:
+                  x: 40
+                  y: 30
+                end:
+                  x: 48
+                  y: 30
+              transformation:
+                kind: translation
+                dx: 5
+                dy: -5
+              options:
+                - id: choice-1
+                  relation: shorter
+                  label: Lyhyempi
+                - id: choice-2
+                  relation: equal
+                  label: Yhtä pitkä
+                - id: choice-3
+                  relation: longer
+                  label: Pidempi
+            steps:
+              - Aava siirtää koko listaa. Ennen- ja jälkeen-kuvat pysyvät rinnakkain samalla asteikolla.
+              - Aava vertaa matkaa listan päästä toiseen. Se on sama; vain paikka vaihtui.
+            conclusion: Aava valitsee yhtä pitkä. Paikan muutos ei pidentänyt listaa.
+            implementation_boundary: Alkuperäiset työvaiheet ja tarkat domain-givens vastaavat tämän draftin
+              attribute_examples_v1-mallin core-esimerkkejä. Helperin matemaattinen validointi ei hyväksy
+              rendererin, tuen tai altistuksen normaalia reittiä; ne ja sisältöarvio kuuluvat mainin
+              integraatioon.
+        - type: worked_example
+          content:
+            givens:
+              kind: attribute_comparison_task_v1
+              context: Aavan lyhennetty lista
+              operator: compare_length
+              scale:
+                kind: common_logical_scale_v1
+                unit: logical
+                svgUnitsPerUnit: 2
+              before:
+                kind: rigid_straight_segment_v1
+                id: target
+                colour: blue
+                start:
+                  x: 35
+                  y: 35
+                end:
+                  x: 43
+                  y: 35
+              after:
+                kind: rigid_straight_segment_v1
+                id: target
+                colour: blue
+                start:
+                  x: 35
+                  y: 35
+                end:
+                  x: 39
+                  y: 35
+              transformation:
+                kind: resize
+                numerator: 1
+                denominator: 2
+              options:
+                - id: choice-1
+                  relation: shorter
+                  label: Lyhyempi
+                - id: choice-2
+                  relation: equal
+                  label: Yhtä pitkä
+                - id: choice-3
+                  relation: longer
+                  label: Pidempi
+            steps:
+              - Jälkeen-listan pää jää alkuperäisen listan puoliväliin yhteisellä asteikolla.
+              - Aava vertaa näkyvien päiden välistä matkaa. Tämä on oikea lyhennys eikä koko listan
+                siirto.
+            conclusion: Aava valitsee lyhyempi. Oppijan ei tarvitse antaa numeroa.
+            implementation_boundary: Alkuperäiset työvaiheet ja tarkat domain-givens vastaavat tämän draftin
+              attribute_examples_v1-mallin core-esimerkkejä. Helperin matemaattinen validointi ei hyväksy
+              rendererin, tuen tai altistuksen normaalia reittiä; ne ja sisältöarvio kuuluvat mainin
+              integraatioon.
+        - type: worked_example
+          content:
+            givens:
+              kind: attribute_comparison_task_v1
+              context: Aavan jatkettu lista
+              operator: compare_length
+              scale:
+                kind: common_logical_scale_v1
+                unit: logical
+                svgUnitsPerUnit: 2
+              before:
+                kind: rigid_straight_segment_v1
+                id: target
+                colour: blue
+                start:
+                  x: 35
+                  y: 35
+                end:
+                  x: 43
+                  y: 35
+              after:
+                kind: rigid_straight_segment_v1
+                id: target
+                colour: blue
+                start:
+                  x: 35
+                  y: 35
+                end:
+                  x: 51
+                  y: 35
+              transformation:
+                kind: resize
+                numerator: 2
+                denominator: 1
+              options:
+                - id: choice-1
+                  relation: shorter
+                  label: Lyhyempi
+                - id: choice-2
+                  relation: equal
+                  label: Yhtä pitkä
+                - id: choice-3
+                  relation: longer
+                  label: Pidempi
+            steps:
+              - Lista alkaa samasta kohdasta, mutta loppupää ulottuu pidemmälle.
+              - Aava katsoo koko listan matkaa, ei vain alkupään pysymistä.
+            conclusion: Aava valitsee pidempi. Myös saman alun lista voi muuttaa pituuttaan.
+            implementation_boundary: Alkuperäiset työvaiheet ja tarkat domain-givens vastaavat tämän draftin
+              attribute_examples_v1-mallin core-esimerkkejä. Helperin matemaattinen validointi ei hyväksy
+              rendererin, tuen tai altistuksen normaalia reittiä; ne ja sisältöarvio kuuluvat mainin
+              integraatioon.
+    GUIDED_PRACTICE:
+      purpose: Aava kohdistaa huomion päihin. Pyydetty päällekkäisvertailu on tukea; sitä ei väitetä
+        nykyadapterin ominaisuudeksi.
+      blocks:
+        - type: explanatory_text
+          content: Aava näyttää kummastakin kuvasta listan alun ja lopun. Katso koko matkaa niiden välillä, älä
+            vain loppupään paikkaa.
+        - type: explanatory_text
+          content: Siirrossa molemmat päät liikkuvat yhdessä. Lyhennyksessä päiden väli pienenee; jatkamisessa se
+            kasvaa. Kuvat ovat samalla asteikolla ja saavat jäädä rinnakkain.
+        - type: explanatory_text
+          content: Vertaa itse ja valitse lyhyempi, yhtä pitkä tai pidempi. Tarvittaessa pyydä Aavan
+            päällekkäisvertailu tai mallivastaus; se on kirjattavaa tukea.
+        - type: question
+          content:
+            item_refs:
+              - M-MEAS-02-GUIDE-1
+              - M-MEAS-02-GUIDE-2
+              - M-MEAS-02-GUIDE-3
+    FADED_EXAMPLE:
+      purpose: Poista mallivastaus, vertailuhaamu ja ratkaisukorostus. Säilytä molemmat kuvat yhteisellä
+        asteikolla.
+      blocks:
+        - type: explanatory_text
+          content: Aavan vastaus ja vertailuhaamu poistuvat. Molemmat kuvat ja sama asteikko jäävät näkyviin. Tee
+            oma päätös; voit edelleen pyytää apua.
+        - type: question
+          content:
+            item_refs:
+              - M-MEAS-02-FADE-1
+              - M-MEAS-02-FADE-2
+              - M-MEAS-02-FADE-3
+    INDEPENDENT_PRACTICE:
+      purpose: Sama kysymys kaikille kolmelle suhteelle. Ei muunnosnimeä, laskettua loppupituutta tai oikean
+        vastauksen lukkoa.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-MEAS-02-CORE-1
+              - M-MEAS-02-CORE-2
+              - M-MEAS-02-CORE-3
+    TRANSFER_CHECK:
+      purpose: Aava tarkistaa eri suuntaan valmisteltuja listoja. Jokainen tapaus sisältää käännön ja aidon
+        säilymisen/lyhentymisen/pidentymisen; oppija vertaa todellisia kuvia.
+      blocks:
+        - type: explanatory_text
+          content: Aava tarkistaa telineeseen valmistellut listat. Katso listan pituutta ennen ja jälkeen ja tee
+            oma valinta.
+        - type: question
+          content:
+            item_refs:
+              - M-MEAS-02-APP-KAANNA-JA-VERTAA
+    MASTERY_GATE:
+      purpose: Seuraus on tarkistettu pituuspäätös valmistelussa, ei fyysisen telineen valmistus tai kaikkien
+        suureiden osaaminen.
+      blocks:
+        - type: explanatory_text
+          content: Aava voi jatkaa listan valmistelua Loikan kanssa tarkistetun pituuspäätöksen avulla.
+    DELAYED_REVIEW:
+      purpose: Uusi tueton ennen/jälkeen-näyte sisältää kaikki neljä operaatiota.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-MEAS-02-LATER-1
+              - M-MEAS-02-LATER-2
+              - M-MEAS-02-LATER-3
+              - M-MEAS-02-LATER-4
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+  independent:
+    minimum_successes: 3
+    template_diversity: 3
+    required_tags:
+      - length_translate
+      - length_shorter
+      - length_longer
+    max_supported_attempts_counted: 0
+  transfer:
+    required: true
+    minimum_successes: 3
+    novel_context_required: true
+    required_tags:
+      - length_rotate_then_resize_shorter
+      - length_rotate_then_resize_equal
+      - length_rotate_then_resize_longer
+  delayed:
+    required: true
+    minimum_successes: 4
+    minimum_delay_hours: 24
+    required_tags:
+      - length_translate
+      - length_rotate_90
+      - length_resize_shorter
+      - length_resize_longer
+    required_contexts: []
+    earliest_delay_policy: "Vähintään 24 tuntia hankinnan jälkeen: uusi tueton vastaus jokaiseen vaadittuun
+      havaintoluokkaan. Ajan kuluminen tai mallin katsominen ei ole näyttöä."
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+    - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+      evidence_tags:
+        - length_translate
+        - length_shorter
+        - length_longer
+      rule: Uudet tuettomat onnistumiset kaikista nimetyistä havaintoluokista. Virhehavainnon ajonaikainen
+        sidonta on vielä toteutettava; tästä tekstistä ei myönnetä poistumista.
+items:
+  - id: M-MEAS-02-DIAG-SIIRTO
+    kc_ids:
+      - M-MEAS-02
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan listan tarkistus
+      operator: compare_length
+      transformation: translate
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-DIAG-PIDENNYS
+    kc_ids:
+      - M-MEAS-02
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan listan tarkistus
+      operator: compare_length
+      transformation: resize_longer
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-GUIDE-1
+    kc_ids:
+      - M-MEAS-02
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan listan tarkistus
+      operator: compare_length
+      transformation: translate
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-GUIDE-2
+    kc_ids:
+      - M-MEAS-02
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan listan tarkistus
+      operator: compare_length
+      transformation: resize_shorter
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-GUIDE-3
+    kc_ids:
+      - M-MEAS-02
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan listan tarkistus
+      operator: compare_length
+      transformation: resize_longer
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-FADE-1
+    kc_ids:
+      - M-MEAS-02
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan listan tarkistus
+      operator: compare_length
+      transformation: translate
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-FADE-2
+    kc_ids:
+      - M-MEAS-02
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan listan tarkistus
+      operator: compare_length
+      transformation: resize_shorter
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-FADE-3
+    kc_ids:
+      - M-MEAS-02
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan listan tarkistus
+      operator: compare_length
+      transformation: resize_longer
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-CORE-1
+    kc_ids:
+      - M-MEAS-02
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan listan tarkistus
+      operator: compare_length
+      transformation: translate
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-CORE-2
+    kc_ids:
+      - M-MEAS-02
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan listan tarkistus
+      operator: compare_length
+      transformation: resize_shorter
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-CORE-3
+    kc_ids:
+      - M-MEAS-02
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan listan tarkistus
+      operator: compare_length
+      transformation: resize_longer
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-LATER-1
+    kc_ids:
+      - M-MEAS-02
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Uuden retken listan tarkistus
+      operator: compare_length
+      transformation: translate
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-LATER-2
+    kc_ids:
+      - M-MEAS-02
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Uuden retken listan tarkistus
+      operator: compare_length
+      transformation: rotate_90
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-LATER-3
+    kc_ids:
+      - M-MEAS-02
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Uuden retken listan tarkistus
+      operator: compare_length
+      transformation: resize_shorter
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-LATER-4
+    kc_ids:
+      - M-MEAS-02
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Uuden retken listan tarkistus
+      operator: compare_length
+      transformation: resize_longer
+    hints:
+      - level: 1
+        text: Katso matkaa listan päästä toiseen. Paikka tai pelkkä vaakasuuntainen leveys ei yksin kerro
+          pituutta.
+      - level: 2
+        text: Verrataan ennen- ja jälkeen-listaa samalla asteikolla. Voit pyytää Aavan vertailumallin; sen
+          näyttäminen tekee tästä harjoittelua.
+    invariants:
+      - Ennen- ja jälkeen-kuvilla on yhteinen mittakaava molemmilla akseleilla. Molemmat jäävät näkyviin.
+      - Sama neutraali kysymys ei nimeä muunnosta eikä kerro sen tulosta. Vastauslaattojen järjestys
+        vaihtelee.
+      - Ei numeromittausta, animaation muistamista tai automaattista oikeaa valintaa.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen tehtäväehdotus nykyisen attribuuttidomainin geometrian ja tiukan item-adapterin
+          mukaan; ei tuotantoadmissionia.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+  - id: M-MEAS-02-APP-KAANNA-JA-VERTAA
+    kc_ids:
+      - M-MEAS-02
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: challenge
+    prompt_model:
+      kind: attribute_comparison_task_v1
+      instruction: Vertaa listan pituutta ennen ja jälkeen. Onko se lyhyempi, yhtä pitkä vai pidempi?
+      access: outlined_svg_common_scale_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: attribute_comparison_predicate_v1
+    parameter_model:
+      kind: attribute_comparison_v1
+      context: Aavan telineeseen valmisteltujen listojen tarkistus
+      operator: compare_length
+      transformation: rotate_then_resize
+    hints:
+      - level: 1
+        text: Katso listan matkaa päästä päähän ennen ja jälkeen. Pelkkä suunnan vaihtuminen ei kerro, lyhenikö
+          tai pitenikö lista.
+      - level: 2
+        text: Vertaa päiden välistä matkaa samalla asteikolla. Lista voi kääntyä ja samalla aidosti lyhentyä,
+          säilyä tai pidentyä. Tarvittaessa Aavan vertailumalli on tukea.
+    invariants:
+      - Yksi ja sama tehtäväpohja tuottaa tekijät1/2,1,2 ja siten kaikki kolme lopullista pituussuhdetta.
+        Tekijää ei anneta oppijan laskutehtäväksi.
+      - Jokainen tapaus kääntyy90 astetta ja käyttää todellista validoitua väli- ja lopputilaa. Kääntö ei
+        itsessään muuta pituutta.
+      - Ennen/jälkeen sekä mahdollinen tuettu välitila käyttävät yhtä asteikkoa molemmilla akseleilla. Ei
+        itsenäistä panel-fit-skaalausta.
+      - Pohjan nimi, context, väri tai pyörimisen näkyminen ei kerro vastausluokkaa. Ei kolmea eri
+        tuomiota paljastavaa promptia.
+    provenance:
+      - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+        claim: Alkuperäinen soveltamistehtävä toteutetun tiukan attribuutti-API:n mukaan. Tagi tulee todellisesta
+          onnistuneesta domain-päätöksestä; novelty vaatii normaalin core-scope-resolverin ja
+          altistussäännöt, ei purpose/context-väitettä.
+        status: hypothesis
+    misconception_rules:
+      - misconception_id: M-MEAS-02-OBS-PITUUSSUHDE
+        detect: observed:comparison
+misconceptions:
+  - id: M-MEAS-02-OBS-PITUUSSUHDE
+    description: Vahvistettu pituussuhde ei vastaa todellista päästä-päähän-pituutta. Yksi virhe ei yksilöi
+      suunta-, paikka-, asteikko- tai kielistrategiaa.
+    evidence_patterns:
+      - kind: committed_relation_error
+        when: Kelvollisesta vahvistetusta vaihtoehdosta palautuu comparison. Tyhjä tai vahvistamaton vastaus ei
+          riitä.
+    feedback_strategy:
+      conceptual_prompt: Katsotaan molempia päitä ja verrataan niiden välistä matkaa samalla asteikolla. Pelkkä
+        paikka tai suunta ei ratkaise pituutta.
+      representation: Pyydettävä todellinen ennen/jälkeen-vertailu on tukea, ei uusi itsenäinen onnistuminen.
+    repair_targets:
+      - M-MEAS-02
+    status: hypothesis
+differentiation:
+  support_variants:
+    one_decision: Yksi kuvapari ja kolme suurta vastauslaattaa yhdessä työtilassa. Ei koordinaattisyöttöä tai
+      äänikuittausta.
+    fading: Mallivastaus, haamu ja ratkaisukorostus poistuvat. Kuvat ja yhteinen asteikko jäävät.
+    support_boundary: assistance:none ei toteuta päällekkäisvertailua eikä guided-altistuskirjausta.
+      Tarvitaan tyypitetty sidonta; purpose:guided ei yksin riitä.
+    access: Erilliset pysäytyskuvat sallivat reduced motion -reitin. Valinnainen kielituki ei ole suullinen
+      tuotos. M2_NONVISUAL_HOLD säilyy; tekstikoordinaatit eivät ratkaise vastaavuutta.
+  challenge_variants:
+    learner_prompt: "Loikka sanoo: jos loppupää siirtyy, lista pitenee. Aava näyttää kokonaan siirretyn
+      listan ja oikeasti jatketun listan. Kummassa koko lista siirtyi ja kummassa sen pituus muuttui?"
+    harder_reasoning: Vertaa kahta muutostapaa ja kumoa liian laaja sääntö. Ei suurempia lukuja tai
+      pakollista selityslomaketta.
+    capability_boundary: Toteutettu rotate_then_resize tuottaa käännettyjen säilyvien ja aidosti muuttuneiden
+      listojen vastatapaukset. Varsinaiset näyttö-, tuki-, altistus-, journey- ja replay-sidonnat ovat
+      mainin integraatiota; ei lisättyä semantic-choice-korviketta.
+representations:
+  - id: M-MEAS-02-JOURNEY
+    kind: learning_journey_v1
+    capability: attribute_comparison_v1
+    chapter: Listat telineeseen
+    companion: Aava
+    purpose: Aava valmistelee Loikan listoja telineeseen ja tarkistaa, muuttuiko listan pituus.
+    consequence: Aavan listojen pituuspäätökset on tarkistettu telineen valmistelua varten.
+    instruction: Vertaa listan pituutta ennen ja jälkeen. Tee oma valinta.
+    model:
+      kind: attribute_examples_v1
+      examples:
+        - spec:
+            kind: attribute_comparison_v1
+            context: Aavan listan tarkistus
+            operator: compare_length
+            transformation: translate
+          seed: 0
+        - spec:
+            kind: attribute_comparison_v1
+            context: Aavan listan tarkistus
+            operator: compare_length
+            transformation: resize_shorter
+          seed: 0
+        - spec:
+            kind: attribute_comparison_v1
+            context: Aavan listan tarkistus
+            operator: compare_length
+            transformation: resize_longer
+          seed: 0
+    retrieval:
+      kind: closed_episode_retrieval_v1
+      claim: attribute_comparison
+    guidedSequence:
+      itemRefs:
+        - M-MEAS-02-GUIDE-1
+        - M-MEAS-02-GUIDE-2
+        - M-MEAS-02-GUIDE-3
+simulation_specs: []
+requires_capabilities:
+  - rich_text
+  - diagram
+  - worked_example
+  - single_choice
+  - hint_ladder
+  - reduced_motion_variant
+provenance:
+  curriculum:
+    - source_id: PROD03-OPH-MATH12-S3
+      claim: "B02-perheraportissa 2026-10-26 suoraan luettu paikannin: peruste419550 / matematiikka466344 /
+        kokonaisuus466963 / S3 469267 / kuvaus.fi kappale3. Pituus kuuluu suureiden ja mittaamisen
+        sisältöalueeseen. Rigidin pituuden predikaatti ja KC-rajaus ovat pedagogisesti johdettuja, eivät
+        OPH:n testimääräys. PROD01-OPH-MATH12-S3:n soveltamisala pysyy vain M-MEAS-01:ssä. Tämä
+        scoped-viite käyttää aiempaa päivättyä lähdeauditia; tässä työssä ei tehty uutta verkkohakua eikä
+        annettu sisältöhyväksyntää."
+      status: verified
+  pedagogy:
+    - source_id: ATKINSON-RENKL-MERRILL-2003
+      claim: Aiemmin tarkistetun abstraktin rajattu peruste mallista omaan ratkaisuun siirtymiselle. Ei tämän
+        tehtävän vaikutuskoetta, vaikutuskokoa tai yleistä siirtovaikutusta.
+      status: verified
+    - source_id: CAST-UDL-3
+      claim: Esityksen ja toiminnan esteiden tarkastelun suunnittelukehys; ei tämän visuaalisen tehtävän
+        täydellisen saavutettavuuden hyväksyntä.
+      status: verified
+    - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+      claim: Selkeä malli, pyydettävä tuki ja sen poistaminen ovat B02-perheraportin R01/R03-ohjeista tehtyä
+        projektisovitusta. Havaintomäärät, pohjien moninaisuus ja 24 tunnin viive ovat projektivalintoja,
+        eivät tutkimusvakioita.
+      status: hypothesis
+  domain:
+    - source_id: PROJECT-ATTRIBUTE-COMPARISON-v1
+      claim: attribute_comparison_v1 rajaa geometrian, sallitut operaatiot ja oikeellisuuden. Tämän uuden
+        projektiviitteen rekisterilisäys on ehdotus, ei hyväksyntä.
+      status: hypothesis
+validation:
+  schema: pending
+  graph_refs: pending
+  domain_truth: pending
+  item_invariants: pending
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: draft

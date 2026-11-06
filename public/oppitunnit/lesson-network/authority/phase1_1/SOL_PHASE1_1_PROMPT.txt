@@ -1,0 +1,115 @@
+HANDOVER PATH NOTE
+The unchanged original Phase 1.1 task follows. Resolve its review-file names under phase1_1/: REVIEW_FI.txt, FINDINGS.json and ACCEPTANCE_CASES_PHASE1_1.json. Resolve repository source paths in the actual lesson-network repository. The full older baseline is sources/Sammakko_690_Phase1_reference.zip. Read START_HERE_SOL.txt only if the user invokes the combined two-stage handover; the Phase 1.1 task alone does not author pedagogical content.
+
+SAMMAKKO — PROVE INCREMENTAL LESSON INGESTION AND UPDATE
+Follow-up to the reviewed 690-KC Phase 1 scaffold
+28 October 2026
+
+OUTCOME
+
+Preserve the working 690-node static network and make it genuinely able to accept a lesson package one KC at a time. Prove this with noncurricular technical fixtures. Correct the review's concrete UI and verification issues. Do not start comparative pedagogical research or write the 690 actual lessons in this task.
+
+The review accepted the canonical graph/navigation foundation. Do not rebuild the catalogue, change KC IDs, remove typed relationships, force the full support graph into a DAG, or replace the whole system with an unnecessary CMS. Read REVIEW_FI.txt, FINDINGS.json and ACCEPTANCE_CASES_PHASE1_1.json, then inspect the existing source and repository instructions.
+
+The reviewed ZIP SHA-256 is 446d74f9b0dba9bf44a9f7db47ab3dd95c77fb28e8ba634bac4fb4651a3f8836. Its recorded source revision is 20f589ef1e076e4b2b7dcc18d183cbf6dfa02459. Recheck any newer source before applying the findings. Work in an isolated branch/worktree if applicable; preserve existing authored material and canonical inputs.
+
+SCOPE AND FAIR INTERPRETATION
+
+The original task deliberately left lesson content, research, curricular simulations and live deployment pending. Empty pages and unavailable game buttons are not themselves defects. The next step is an executable content boundary, not permission to invent curriculum or claim pedagogical approval.
+
+Current code accepts only null lesson bodies and empty research records, recreates records from defaults, and hardcodes the pending lesson body. Its renderer lifecycle is only metadata. Keep those protections for genuinely empty scaffolds while adding an explicit supported source-to-output path. Do not merely remove the protected-record assertion.
+
+1. AUTHORITATIVE CONTENT SOURCES
+
+Define one documented, machine-validated lesson package per canonical KC, separate from generated records/ and site/. Choose a small structure that follows repository conventions. A package may use structured blocks, an HTML body/fragment, or a combination; do not force all text and media into an opaque string or make authors edit the common generator for each lesson.
+
+The contract must identify:
+
+- canonical kcId;
+- schema revision and KC-specific content revision/hash;
+- content state, independently from scaffold validation;
+- body/composition entry and optional module entry;
+- local asset references and their integrity/revision;
+- research and citation references, still pending for noncurricular fixtures;
+- content review and human review states with the exact reviewed revision;
+- Lite alignment and referenced build/task-family revision where applicable;
+- the difference between unknown, not yet reviewed and not applicable.
+
+Separate authored sources, derived records, rendered pages and test evidence. Never silently discard supported planning/review/alignment fields. Unknown fields must be preserved by an explicit extension policy or rejected with an actionable error, not accepted then erased. Keep existing canonical/content-design drafts as references with their original statuses.
+
+Document the exact steps or command for a contributor/agent to add and update one KC package. A successful build must not promote pedagogical, human-review, endpoint or release states on its own.
+
+2. COMPOSE ACTUAL CONTENT INTO THE NETWORK
+
+Load the package, validate it, compose its body into the existing KC HTML page, and retain canonical title/identity, upstream/downstream links, group logic, teacher details and pending-state honesty.
+
+Empty KCs continue to render placeholders. Authored draft or technical-fixture pages render an unmistakable corresponding state. A real lesson later approved under the designated policy should not still display a hardcoded universal placeholder. Public index counts and teacher-integration entries must derive from actual per-KC states.
+
+Essential static identity, body text and navigation should remain useful without JavaScript. Keep separately addressable .html pages and deployment path-prefix support.
+
+3. PROVE STATIC AND INTERACTIVE PACKAGES WITHOUT WRITING CURRICULUM
+
+Create two small technical fixtures through the same ingestion path intended for real lessons:
+
+A. A heading, a short clearly labelled technical sentinel and an SVG/image asset.
+B. A clearly labelled technical control with observable state, reset and lifecycle handling.
+
+Use existing canonical IDs only as test hosts. Put the source fixtures in a test-only location or explicit fixture build mode. Do not add fake KCs, imply that the fixtures teach the named concepts, count them as approved lessons, or include them silently in ordinary classroom output. Keep the other nodes pending and preserve the standard 690-node identity set.
+
+Provide a small module loader and lifecycle dispatcher sufficient to prove mount, pause/resume where meaningful, reset and dispose. Support local assets and load a module only on the lesson that needs it. Ensure repeated reset/mount does not duplicate listeners, timers or render loops. Check how navigation and hidden pages stop active work.
+
+Do not build 690 simulations or install one renderer copy per page. A curricular Three.js scene is not required for this task. Leave a documented extension point for justified future WebGL modules; HTML/SVG or Canvas is sufficient for the technical proof.
+
+4. VERSIONING, UPDATE AND FAILURE BEHAVIOR
+
+Keep canonical graph revision, template version, per-KC content revision/hash and runtime build separate. Publish the relevant per-KC revision through lesson-manifest and teacher-integration.
+
+Review/alignment records must name the exact content version they refer to. When that content changes, retain historical review evidence but do not silently transfer its approval to the new revision. The system may support draft preview and later release policies; do not impose a new mandatory manual approval step for every KC or claim that existing approval covers changed content.
+
+Prove that changing only one KC package changes that KC's content revision and relevant rendered assets while other KC lesson outputs/content revisions remain stable. Shared indexes may update. Changing the common shell is a different operation and may legitimately update all pages.
+
+Make rebuild/resume safe. A malformed package or missing asset must produce a precise KC-specific error. Validate before replacing a last known good output or use a staging/promotion mechanism. Do not leave a page marked ready when its current build failed. Preserve authored inputs on failure. Retain the current useful canonical hash guards and idempotence behavior.
+
+5. VERIFY GAME ACTIONS SEMANTICALLY
+
+The shipped default runtime states are correct. The audit found that verify.mjs accepts fabricated ready metadata and an enabled visible link to #journey/WRONG-KC when record/manifests/hashes are mutually consistent.
+
+Extend validation so expected availability and exact URL are independently derived from deployment configuration and the selected runtime availability index. Check the rendered ordinary open/copy actions as well as records and manifests. Do not merely compare the same record to its copied manifest.
+
+Negative fixtures must include: wrong KC, missing/unverified endpoint marked ready, missing runtime index, unsupported Lite bridge, ordinary active action when unavailable, and local preview labelled classroom-ready. Keep source-known developer test links distinct from verified pupil links.
+
+Do not invent a new Lite route or perform game/evidence logic changes in this task. The separate runtime bridge remains a coordinated integration task unless the user's current repository assignment explicitly includes it.
+
+6. REPAIR THE TEACHER/PRESENTATION WORKFLOW
+
+Preserve top direct-support links and bottom direct-dependent links, but make presentation mode give priority to the lesson body. Compact or disclose detailed graph metadata; do not require scrolling through multiple viewports of duplicated prerequisite listings before teaching can begin. Keep all direct links available.
+
+Carry presentation mode when following lesson-network links. It is view state, not a learner profile. Preserve stable KC identity and the distinction between lesson URLs and game URLs.
+
+Make prerequisite navigation group-aware. All 12 any_of cases must show alternatives as alternatives, including reverse links where relevant. Raw canonical required strengths and rationales stay preserved in teacher/source details. The visible summary must respect AND across groups and OR within any_of. M-ALG-08 and M-SCALE-02 must be explicit acceptance examples.
+
+Fix index filter restoration: after search -> lesson -> browser Back, the actual input values, visible rows and count must agree. Reapply filters on initialization/pageshow or implement a coherent URL state strategy. Verify both a cached return and a recreated document when possible.
+
+Keep ordinary clipboard copying and its manual fallback working, and retain usable phone/desktop layout. This task does not add a full accessibility programme or the full Sammakko learner model.
+
+7. STANDALONE DELIVERY
+
+Make the documented export command work from a standalone extracted delivery, or document an explicit repository-only prerequisite. Prefer an explicit revision/original manifest fallback when Git is absent. If Git is used, verify the project root so an unrelated parent repository cannot provide provenance.
+
+Keep the output inspectable without the omitted historical game repository. Include exact build/check/serve/fixture-preview commands and a short authoring guide. Do not introduce publication or external communication as a requirement for local completion; follow the user's existing authorization for those actions.
+
+8. AUTONOMOUS EXECUTION AND ACCEPTANCE
+
+Finish the bounded implementation and all meaningful acceptance cases. Use small isolated fixtures; do not produce actual teaching material just to test the pipeline. Preserve all original graph coverage and fix common template errors centrally. Parallel workers should own disjoint files/packages; one owner manages shared schema/build interfaces.
+
+Deliver:
+
+- implementation and documented lesson package contract;
+- static and interactive technical fixtures in an explicit test mode;
+- the normal 690-page scaffold output and fixture preview output;
+- proof of add -> build -> preview -> edit -> rebuild -> verify;
+- revision-bound review/alignment states and honest manifests;
+- negative verification tests and the UI fixes;
+- concise completed/remaining report with no invented pupil/teacher evidence.
+
+Completion must demonstrate that an agent can add or revise one lesson package without editing the generator, losing authored information, disrupting other lessons or mislabelling readiness. Stop before the separate pedagogical content-production handover.

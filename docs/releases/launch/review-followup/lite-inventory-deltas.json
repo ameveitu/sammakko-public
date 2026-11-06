@@ -1,0 +1,919 @@
+{
+  "kind": "current-generated-inventory-comparison-not-human-play",
+  "baselineCommit": "b3ec78baf52b9449401125449bed2544200a09af",
+  "baselineLiteGeneratorSha256": "b2ce07f60bcab6868ec04684c214443b37bc6c520f607add571cbc65dc638c0e",
+  "currentLiteGeneratorSha256": "8ce85e4b0306b39a100f590f7e6d5023fb353eb92f637ec4740ff4a9b0d751bc",
+  "exact181": 181,
+  "generatedFamilySamples": 2416,
+  "allQuestionTaskAnswerDataUnchanged": true,
+  "reviewedChanges": "DIST-TIME character naming; ALG06 scoped goal and which hint plus the launch2 revision required by the item fingerprint contract. The ALG06 intro is source-bound separately in ALG06_DEFINITION_DELTA.json because it is outside this demo/sample inventory.",
+  "changedNodes": 2,
+  "rows": [
+    {
+      "kc": "PHY79-DIST-TIME",
+      "changes": {
+        "demo": {
+          "before": [
+            "Kokeillaan ensin yhdessä. Auto ajaa ja pysähtyy. Siirrä aikajanaa: kuinka monta sekuntia auto liikkui? Mieti ensin, mitä arvaat. Käynnistä, pysäytä ja toista niin monta kertaa kuin haluat.",
+            "Katsotaan vastaus: Auto liikkui 2 s ja seisoi sen jälkeen. Sekuntikello kävi silti eteenpäin.",
+            "Loikka loikkii radan. Mittanauha kulkee mukana ja näyttää matkan: 12 metriä. Sekuntikello käy samaan aikaan ja pysähtyy maalissa: 4 sekuntia. Matka s kertoo, kuinka pitkälle. Aika t kertoo, kuinka kauan.",
+            "Nyt kaksi sammakkoa. Loikka kulkee 12 metriä 4 sekunnissa, Aava 8 metriä 6 sekunnissa. Aava loikki kauemmin, mutta lyhyemmän matkan. Pidempi aika ei tarkoita pidempää matkaa."
+          ],
+          "after": [
+            "Kokeillaan ensin yhdessä. Auto ajaa ja pysähtyy. Siirrä aikajanaa: kuinka monta sekuntia auto liikkui? Mieti ensin, mitä arvaat. Käynnistä, pysäytä ja toista niin monta kertaa kuin haluat.",
+            "Katsotaan vastaus: Auto liikkui 2 s ja seisoi sen jälkeen. Sekuntikello kävi silti eteenpäin.",
+            "Loikka loikkii radan. Mittanauha kulkee mukana ja näyttää matkan: 12 metriä. Sekuntikello käy samaan aikaan ja pysähtyy maalissa: 4 sekuntia. Matka s kertoo, kuinka pitkälle. Aika t kertoo, kuinka kauan.",
+            "Nyt Loikka ja Aava. Loikka kulkee 12 metriä 4 sekunnissa, Aava 8 metriä 6 sekunnissa. Aava loikki kauemmin, mutta lyhyemmän matkan. Pidempi aika ei tarkoita pidempää matkaa."
+          ]
+        }
+      }
+    },
+    {
+      "kc": "M-ALG-06",
+      "changes": {
+        "liteRevision": {
+          "before": "launch1-2026-11-01",
+          "after": "launch2-2026-11-01"
+        },
+        "objective": {
+          "before": "Opit tunnistamaan yhtälön: siinä on yhtä suuri -merkki ja tuntematon.",
+          "after": "Opit tunnistamaan yhtälön, jossa on tuntematon."
+        },
+        "childGoal": {
+          "before": "Opit tunnistamaan yhtälön: siinä on yhtä suuri -merkki ja tuntematon.",
+          "after": "Opit tunnistamaan yhtälön, jossa on tuntematon."
+        },
+        "samples": {
+          "before": [
+            {
+              "phase": "guided",
+              "seed": 1,
+              "tag": "spot",
+              "kind": "sort",
+              "question": "Lajittele: onko tämä yhtälö, jossa on tuntematon?",
+              "hint": "Etsi kaksi asiaa: =-merkki ja x.",
+              "explanation": "Tässä etsitään sekä =-merkkiä että tuntematonta. Ilman =-merkkiä merkintä on lauseke. Myös vain lukuja sisältävä yhtäsuuruus on yhtälö, mutta siinä ei ole tuntematonta.",
+              "scenario": null,
+              "task": {
+                "kind": "sort",
+                "items": [
+                  {
+                    "big": "x + 2 = 8"
+                  },
+                  {
+                    "big": "9 + 9 = 18"
+                  },
+                  {
+                    "big": "8 = x + 2"
+                  },
+                  {
+                    "big": "x − 2 = 6"
+                  }
+                ],
+                "cats": [
+                  {
+                    "label": "Sisältää = ja tuntemattoman"
+                  },
+                  {
+                    "label": "Ei sisällä molempia"
+                  }
+                ],
+                "answer": [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "why": [
+                  "Yhtä suuri -merkki ja tuntematon x: yhtälö.",
+                  "Tämä on numeerinen yhtälö ilman tuntematonta.",
+                  "Tuntematon voi olla myös oikealla puolella. Tämä on yhtälö.",
+                  "Myös vähennyslaskussa voi olla tuntematon: yhtälö."
+                ]
+              }
+            },
+            {
+              "phase": "guided",
+              "seed": 4,
+              "tag": "check",
+              "kind": "choice",
+              "question": "Onko x = 3 yhtälön x + 4 = 7 ratkaisu?",
+              "hint": "Sijoita luku x:n paikalle ja laske.",
+              "explanation": "3 + 4 = 7. Puolet ovat yhtä suuret: ratkaisu.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "text": "Kyllä"
+                  },
+                  {
+                    "text": "Ei"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Kokeile: 3 + 4 = 7."
+                ],
+                "cols": 2
+              }
+            },
+            {
+              "phase": "guided",
+              "seed": 7,
+              "tag": "which",
+              "kind": "choice",
+              "question": "Mikä näistä on yhtälö, jossa on tuntematon?",
+              "hint": "Yhtälössä on kaksi asiaa: yhtä suuri -merkki ja tuntematon x.",
+              "explanation": "x + 2 = 11: kaksi yhtä suurta puolta ja tuntematon x.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "x + 2 = 11"
+                  },
+                  {
+                    "big": "x + 2"
+                  },
+                  {
+                    "big": "9 + 2 = 11"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Tästä puuttuu yhtä suuri -merkki ja toinen puoli.",
+                  "Tässä ei ole tuntematonta."
+                ]
+              }
+            },
+            {
+              "phase": "guided",
+              "seed": 12,
+              "tag": "fromBalance",
+              "kind": "choice",
+              "question": "Mikä yhtälö kuvaa vaakaa?",
+              "hint": "Kirjoita jokainen pussi x:nä, sitten paino, sitten =, sitten oikea puoli.",
+              "explanation": "Vasemmalla 3 pussia ja 1 kg, oikealla 13 kg.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "x + 1 = 13"
+                  },
+                  {
+                    "big": "x + x + x + 1 = 12"
+                  },
+                  {
+                    "big": "x + x + x + 1 = 13"
+                  }
+                ],
+                "answer": 2,
+                "why": [
+                  "Pusseja on useampi kuin yksi.",
+                  "Oikealla on koko paino.",
+                  null
+                ]
+              }
+            },
+            {
+              "phase": "independent",
+              "seed": 1,
+              "tag": "spot",
+              "kind": "sort",
+              "question": "Lajittele: onko tämä yhtälö, jossa on tuntematon?",
+              "hint": "Etsi kaksi asiaa: =-merkki ja x.",
+              "explanation": "Tässä etsitään sekä =-merkkiä että tuntematonta. Ilman =-merkkiä merkintä on lauseke. Myös vain lukuja sisältävä yhtäsuuruus on yhtälö, mutta siinä ei ole tuntematonta.",
+              "scenario": null,
+              "task": {
+                "kind": "sort",
+                "items": [
+                  {
+                    "big": "x + 2 = 8"
+                  },
+                  {
+                    "big": "9 + 9 = 18"
+                  },
+                  {
+                    "big": "8 = x + 2"
+                  },
+                  {
+                    "big": "x − 2 = 6"
+                  }
+                ],
+                "cats": [
+                  {
+                    "label": "Sisältää = ja tuntemattoman"
+                  },
+                  {
+                    "label": "Ei sisällä molempia"
+                  }
+                ],
+                "answer": [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "why": [
+                  "Yhtä suuri -merkki ja tuntematon x: yhtälö.",
+                  "Tämä on numeerinen yhtälö ilman tuntematonta.",
+                  "Tuntematon voi olla myös oikealla puolella. Tämä on yhtälö.",
+                  "Myös vähennyslaskussa voi olla tuntematon: yhtälö."
+                ]
+              }
+            },
+            {
+              "phase": "independent",
+              "seed": 4,
+              "tag": "check",
+              "kind": "choice",
+              "question": "Onko x = 3 yhtälön x + 4 = 7 ratkaisu?",
+              "hint": "Sijoita luku x:n paikalle ja laske.",
+              "explanation": "3 + 4 = 7. Puolet ovat yhtä suuret: ratkaisu.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "text": "Kyllä"
+                  },
+                  {
+                    "text": "Ei"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Kokeile: 3 + 4 = 7."
+                ],
+                "cols": 2
+              }
+            },
+            {
+              "phase": "independent",
+              "seed": 7,
+              "tag": "which",
+              "kind": "choice",
+              "question": "Mikä näistä on yhtälö, jossa on tuntematon?",
+              "hint": "Yhtälössä on kaksi asiaa: yhtä suuri -merkki ja tuntematon x.",
+              "explanation": "x + 2 = 11: kaksi yhtä suurta puolta ja tuntematon x.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "x + 2 = 11"
+                  },
+                  {
+                    "big": "x + 2"
+                  },
+                  {
+                    "big": "9 + 2 = 11"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Tästä puuttuu yhtä suuri -merkki ja toinen puoli.",
+                  "Tässä ei ole tuntematonta."
+                ]
+              }
+            },
+            {
+              "phase": "independent",
+              "seed": 12,
+              "tag": "fromBalance",
+              "kind": "choice",
+              "question": "Mikä yhtälö kuvaa vaakaa?",
+              "hint": "Kirjoita jokainen pussi x:nä, sitten paino, sitten =, sitten oikea puoli.",
+              "explanation": "Vasemmalla 3 pussia ja 1 kg, oikealla 13 kg.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "x + 1 = 13"
+                  },
+                  {
+                    "big": "x + x + x + 1 = 12"
+                  },
+                  {
+                    "big": "x + x + x + 1 = 13"
+                  }
+                ],
+                "answer": 2,
+                "why": [
+                  "Pusseja on useampi kuin yksi.",
+                  "Oikealla on koko paino.",
+                  null
+                ]
+              }
+            },
+            {
+              "phase": "transfer",
+              "seed": 1,
+              "tag": "transfer",
+              "kind": "choice",
+              "question": "3 samanlaista kalaa ja 1 kg jäätä painavat yhteensä 13 kg. Mikä yhtälö sopii, kun yksi kala painaa x kg?",
+              "hint": "Jokainen kala on x. 3 kalaa on 3 kertaa x eli 3x.",
+              "explanation": "3 kalaa: 3x. Lisäksi jää 1 kg. Yhteensä 13: 3x + 1 = 13.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "3x + 1 = 13"
+                  },
+                  {
+                    "big": "x + 3 + 1 = 13"
+                  },
+                  {
+                    "big": "3 + 1x = 13"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Kaloja on 3, joten x otetaan 3 kertaa.",
+                  "Kalat ja jää ovat menneet väärin päin."
+                ]
+              }
+            },
+            {
+              "phase": "retrieval",
+              "seed": 1,
+              "tag": "spot",
+              "kind": "sort",
+              "question": "Lajittele: onko tämä yhtälö, jossa on tuntematon?",
+              "hint": "Etsi kaksi asiaa: =-merkki ja x.",
+              "explanation": "Tässä etsitään sekä =-merkkiä että tuntematonta. Ilman =-merkkiä merkintä on lauseke. Myös vain lukuja sisältävä yhtäsuuruus on yhtälö, mutta siinä ei ole tuntematonta.",
+              "scenario": null,
+              "task": {
+                "kind": "sort",
+                "items": [
+                  {
+                    "big": "x + 2 = 8"
+                  },
+                  {
+                    "big": "9 + 9 = 18"
+                  },
+                  {
+                    "big": "8 = x + 2"
+                  },
+                  {
+                    "big": "x − 2 = 6"
+                  }
+                ],
+                "cats": [
+                  {
+                    "label": "Sisältää = ja tuntemattoman"
+                  },
+                  {
+                    "label": "Ei sisällä molempia"
+                  }
+                ],
+                "answer": [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "why": [
+                  "Yhtä suuri -merkki ja tuntematon x: yhtälö.",
+                  "Tämä on numeerinen yhtälö ilman tuntematonta.",
+                  "Tuntematon voi olla myös oikealla puolella. Tämä on yhtälö.",
+                  "Myös vähennyslaskussa voi olla tuntematon: yhtälö."
+                ]
+              }
+            },
+            {
+              "phase": "retrieval",
+              "seed": 4,
+              "tag": "check",
+              "kind": "choice",
+              "question": "Onko x = 3 yhtälön x + 4 = 7 ratkaisu?",
+              "hint": "Sijoita luku x:n paikalle ja laske.",
+              "explanation": "3 + 4 = 7. Puolet ovat yhtä suuret: ratkaisu.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "text": "Kyllä"
+                  },
+                  {
+                    "text": "Ei"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Kokeile: 3 + 4 = 7."
+                ],
+                "cols": 2
+              }
+            },
+            {
+              "phase": "retrieval",
+              "seed": 7,
+              "tag": "which",
+              "kind": "choice",
+              "question": "Mikä näistä on yhtälö, jossa on tuntematon?",
+              "hint": "Yhtälössä on kaksi asiaa: yhtä suuri -merkki ja tuntematon x.",
+              "explanation": "x + 2 = 11: kaksi yhtä suurta puolta ja tuntematon x.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "x + 2 = 11"
+                  },
+                  {
+                    "big": "x + 2"
+                  },
+                  {
+                    "big": "9 + 2 = 11"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Tästä puuttuu yhtä suuri -merkki ja toinen puoli.",
+                  "Tässä ei ole tuntematonta."
+                ]
+              }
+            },
+            {
+              "phase": "retrieval",
+              "seed": 12,
+              "tag": "fromBalance",
+              "kind": "choice",
+              "question": "Mikä yhtälö kuvaa vaakaa?",
+              "hint": "Kirjoita jokainen pussi x:nä, sitten paino, sitten =, sitten oikea puoli.",
+              "explanation": "Vasemmalla 3 pussia ja 1 kg, oikealla 13 kg.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "x + 1 = 13"
+                  },
+                  {
+                    "big": "x + x + x + 1 = 12"
+                  },
+                  {
+                    "big": "x + x + x + 1 = 13"
+                  }
+                ],
+                "answer": 2,
+                "why": [
+                  "Pusseja on useampi kuin yksi.",
+                  "Oikealla on koko paino.",
+                  null
+                ]
+              }
+            }
+          ],
+          "after": [
+            {
+              "phase": "guided",
+              "seed": 1,
+              "tag": "spot",
+              "kind": "sort",
+              "question": "Lajittele: onko tämä yhtälö, jossa on tuntematon?",
+              "hint": "Etsi kaksi asiaa: =-merkki ja x.",
+              "explanation": "Tässä etsitään sekä =-merkkiä että tuntematonta. Ilman =-merkkiä merkintä on lauseke. Myös vain lukuja sisältävä yhtäsuuruus on yhtälö, mutta siinä ei ole tuntematonta.",
+              "scenario": null,
+              "task": {
+                "kind": "sort",
+                "items": [
+                  {
+                    "big": "x + 2 = 8"
+                  },
+                  {
+                    "big": "9 + 9 = 18"
+                  },
+                  {
+                    "big": "8 = x + 2"
+                  },
+                  {
+                    "big": "x − 2 = 6"
+                  }
+                ],
+                "cats": [
+                  {
+                    "label": "Sisältää = ja tuntemattoman"
+                  },
+                  {
+                    "label": "Ei sisällä molempia"
+                  }
+                ],
+                "answer": [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "why": [
+                  "Yhtä suuri -merkki ja tuntematon x: yhtälö.",
+                  "Tämä on numeerinen yhtälö ilman tuntematonta.",
+                  "Tuntematon voi olla myös oikealla puolella. Tämä on yhtälö.",
+                  "Myös vähennyslaskussa voi olla tuntematon: yhtälö."
+                ]
+              }
+            },
+            {
+              "phase": "guided",
+              "seed": 4,
+              "tag": "check",
+              "kind": "choice",
+              "question": "Onko x = 3 yhtälön x + 4 = 7 ratkaisu?",
+              "hint": "Sijoita luku x:n paikalle ja laske.",
+              "explanation": "3 + 4 = 7. Puolet ovat yhtä suuret: ratkaisu.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "text": "Kyllä"
+                  },
+                  {
+                    "text": "Ei"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Kokeile: 3 + 4 = 7."
+                ],
+                "cols": 2
+              }
+            },
+            {
+              "phase": "guided",
+              "seed": 7,
+              "tag": "which",
+              "kind": "choice",
+              "question": "Mikä näistä on yhtälö, jossa on tuntematon?",
+              "hint": "Tässä etsitään yhtälöä, jossa on yhtä suuri -merkki ja tuntematon x.",
+              "explanation": "x + 2 = 11: kaksi yhtä suurta puolta ja tuntematon x.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "x + 2 = 11"
+                  },
+                  {
+                    "big": "x + 2"
+                  },
+                  {
+                    "big": "9 + 2 = 11"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Tästä puuttuu yhtä suuri -merkki ja toinen puoli.",
+                  "Tässä ei ole tuntematonta."
+                ]
+              }
+            },
+            {
+              "phase": "guided",
+              "seed": 12,
+              "tag": "fromBalance",
+              "kind": "choice",
+              "question": "Mikä yhtälö kuvaa vaakaa?",
+              "hint": "Kirjoita jokainen pussi x:nä, sitten paino, sitten =, sitten oikea puoli.",
+              "explanation": "Vasemmalla 3 pussia ja 1 kg, oikealla 13 kg.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "x + 1 = 13"
+                  },
+                  {
+                    "big": "x + x + x + 1 = 12"
+                  },
+                  {
+                    "big": "x + x + x + 1 = 13"
+                  }
+                ],
+                "answer": 2,
+                "why": [
+                  "Pusseja on useampi kuin yksi.",
+                  "Oikealla on koko paino.",
+                  null
+                ]
+              }
+            },
+            {
+              "phase": "independent",
+              "seed": 1,
+              "tag": "spot",
+              "kind": "sort",
+              "question": "Lajittele: onko tämä yhtälö, jossa on tuntematon?",
+              "hint": "Etsi kaksi asiaa: =-merkki ja x.",
+              "explanation": "Tässä etsitään sekä =-merkkiä että tuntematonta. Ilman =-merkkiä merkintä on lauseke. Myös vain lukuja sisältävä yhtäsuuruus on yhtälö, mutta siinä ei ole tuntematonta.",
+              "scenario": null,
+              "task": {
+                "kind": "sort",
+                "items": [
+                  {
+                    "big": "x + 2 = 8"
+                  },
+                  {
+                    "big": "9 + 9 = 18"
+                  },
+                  {
+                    "big": "8 = x + 2"
+                  },
+                  {
+                    "big": "x − 2 = 6"
+                  }
+                ],
+                "cats": [
+                  {
+                    "label": "Sisältää = ja tuntemattoman"
+                  },
+                  {
+                    "label": "Ei sisällä molempia"
+                  }
+                ],
+                "answer": [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "why": [
+                  "Yhtä suuri -merkki ja tuntematon x: yhtälö.",
+                  "Tämä on numeerinen yhtälö ilman tuntematonta.",
+                  "Tuntematon voi olla myös oikealla puolella. Tämä on yhtälö.",
+                  "Myös vähennyslaskussa voi olla tuntematon: yhtälö."
+                ]
+              }
+            },
+            {
+              "phase": "independent",
+              "seed": 4,
+              "tag": "check",
+              "kind": "choice",
+              "question": "Onko x = 3 yhtälön x + 4 = 7 ratkaisu?",
+              "hint": "Sijoita luku x:n paikalle ja laske.",
+              "explanation": "3 + 4 = 7. Puolet ovat yhtä suuret: ratkaisu.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "text": "Kyllä"
+                  },
+                  {
+                    "text": "Ei"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Kokeile: 3 + 4 = 7."
+                ],
+                "cols": 2
+              }
+            },
+            {
+              "phase": "independent",
+              "seed": 7,
+              "tag": "which",
+              "kind": "choice",
+              "question": "Mikä näistä on yhtälö, jossa on tuntematon?",
+              "hint": "Tässä etsitään yhtälöä, jossa on yhtä suuri -merkki ja tuntematon x.",
+              "explanation": "x + 2 = 11: kaksi yhtä suurta puolta ja tuntematon x.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "x + 2 = 11"
+                  },
+                  {
+                    "big": "x + 2"
+                  },
+                  {
+                    "big": "9 + 2 = 11"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Tästä puuttuu yhtä suuri -merkki ja toinen puoli.",
+                  "Tässä ei ole tuntematonta."
+                ]
+              }
+            },
+            {
+              "phase": "independent",
+              "seed": 12,
+              "tag": "fromBalance",
+              "kind": "choice",
+              "question": "Mikä yhtälö kuvaa vaakaa?",
+              "hint": "Kirjoita jokainen pussi x:nä, sitten paino, sitten =, sitten oikea puoli.",
+              "explanation": "Vasemmalla 3 pussia ja 1 kg, oikealla 13 kg.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "x + 1 = 13"
+                  },
+                  {
+                    "big": "x + x + x + 1 = 12"
+                  },
+                  {
+                    "big": "x + x + x + 1 = 13"
+                  }
+                ],
+                "answer": 2,
+                "why": [
+                  "Pusseja on useampi kuin yksi.",
+                  "Oikealla on koko paino.",
+                  null
+                ]
+              }
+            },
+            {
+              "phase": "transfer",
+              "seed": 1,
+              "tag": "transfer",
+              "kind": "choice",
+              "question": "3 samanlaista kalaa ja 1 kg jäätä painavat yhteensä 13 kg. Mikä yhtälö sopii, kun yksi kala painaa x kg?",
+              "hint": "Jokainen kala on x. 3 kalaa on 3 kertaa x eli 3x.",
+              "explanation": "3 kalaa: 3x. Lisäksi jää 1 kg. Yhteensä 13: 3x + 1 = 13.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "3x + 1 = 13"
+                  },
+                  {
+                    "big": "x + 3 + 1 = 13"
+                  },
+                  {
+                    "big": "3 + 1x = 13"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Kaloja on 3, joten x otetaan 3 kertaa.",
+                  "Kalat ja jää ovat menneet väärin päin."
+                ]
+              }
+            },
+            {
+              "phase": "retrieval",
+              "seed": 1,
+              "tag": "spot",
+              "kind": "sort",
+              "question": "Lajittele: onko tämä yhtälö, jossa on tuntematon?",
+              "hint": "Etsi kaksi asiaa: =-merkki ja x.",
+              "explanation": "Tässä etsitään sekä =-merkkiä että tuntematonta. Ilman =-merkkiä merkintä on lauseke. Myös vain lukuja sisältävä yhtäsuuruus on yhtälö, mutta siinä ei ole tuntematonta.",
+              "scenario": null,
+              "task": {
+                "kind": "sort",
+                "items": [
+                  {
+                    "big": "x + 2 = 8"
+                  },
+                  {
+                    "big": "9 + 9 = 18"
+                  },
+                  {
+                    "big": "8 = x + 2"
+                  },
+                  {
+                    "big": "x − 2 = 6"
+                  }
+                ],
+                "cats": [
+                  {
+                    "label": "Sisältää = ja tuntemattoman"
+                  },
+                  {
+                    "label": "Ei sisällä molempia"
+                  }
+                ],
+                "answer": [
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "why": [
+                  "Yhtä suuri -merkki ja tuntematon x: yhtälö.",
+                  "Tämä on numeerinen yhtälö ilman tuntematonta.",
+                  "Tuntematon voi olla myös oikealla puolella. Tämä on yhtälö.",
+                  "Myös vähennyslaskussa voi olla tuntematon: yhtälö."
+                ]
+              }
+            },
+            {
+              "phase": "retrieval",
+              "seed": 4,
+              "tag": "check",
+              "kind": "choice",
+              "question": "Onko x = 3 yhtälön x + 4 = 7 ratkaisu?",
+              "hint": "Sijoita luku x:n paikalle ja laske.",
+              "explanation": "3 + 4 = 7. Puolet ovat yhtä suuret: ratkaisu.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "text": "Kyllä"
+                  },
+                  {
+                    "text": "Ei"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Kokeile: 3 + 4 = 7."
+                ],
+                "cols": 2
+              }
+            },
+            {
+              "phase": "retrieval",
+              "seed": 7,
+              "tag": "which",
+              "kind": "choice",
+              "question": "Mikä näistä on yhtälö, jossa on tuntematon?",
+              "hint": "Tässä etsitään yhtälöä, jossa on yhtä suuri -merkki ja tuntematon x.",
+              "explanation": "x + 2 = 11: kaksi yhtä suurta puolta ja tuntematon x.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "x + 2 = 11"
+                  },
+                  {
+                    "big": "x + 2"
+                  },
+                  {
+                    "big": "9 + 2 = 11"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Tästä puuttuu yhtä suuri -merkki ja toinen puoli.",
+                  "Tässä ei ole tuntematonta."
+                ]
+              }
+            },
+            {
+              "phase": "retrieval",
+              "seed": 12,
+              "tag": "fromBalance",
+              "kind": "choice",
+              "question": "Mikä yhtälö kuvaa vaakaa?",
+              "hint": "Kirjoita jokainen pussi x:nä, sitten paino, sitten =, sitten oikea puoli.",
+              "explanation": "Vasemmalla 3 pussia ja 1 kg, oikealla 13 kg.",
+              "scenario": null,
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "x + 1 = 13"
+                  },
+                  {
+                    "big": "x + x + x + 1 = 12"
+                  },
+                  {
+                    "big": "x + x + x + 1 = 13"
+                  }
+                ],
+                "answer": 2,
+                "why": [
+                  "Pusseja on useampi kuin yksi.",
+                  "Oikealla on koko paino.",
+                  null
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

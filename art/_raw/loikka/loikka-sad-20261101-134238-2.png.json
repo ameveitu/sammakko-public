@@ -1,0 +1,78 @@
+{
+  "file": "loikka-sad-20261101-134238-2.png",
+  "sha256": "f80d8a2fbf763995002ea08b6032aabaf0881d233243745be1820b58a82ee7ba",
+  "bytes": 1064032,
+  "createdAt": "2026-11-01T11:42:23.804Z",
+  "tool": "sammakko-imagegen 1.0.0",
+  "keySource": "keychain",
+  "endpoint": "images/edits",
+  "requestId": "req_ed04eba88fd74b8b88fbe73c884445b5",
+  "model": "gpt-image-2.5-sunburst",
+  "preset": null,
+  "params": {
+    "size": "1024x1024",
+    "quality": "medium",
+    "background": "transparent",
+    "output_format": "png",
+    "output_compression": null,
+    "n": 2,
+    "moderation": "auto"
+  },
+  "returned": {
+    "size": "1024x1024",
+    "quality": "medium",
+    "background": "transparent",
+    "output_format": "png"
+  },
+  "prompt": "Character Loikka (must match the reference images exactly): a friendly sky-blue frog with a speckled, sparkly blue crayon texture. Two large round bulging eyes on top of the head with pale cream-yellow whites, dark pupils and a small highlight. Wide simple smile, soft pink blush on both cheeks, a pale light-blue oval belly patch, short arms and legs with round toe tips, standing upright. Deep-blue outline (#033d85) of even weight. Loikka is Aava's friend and sidekick.\n\nUse the first image as the exact reference for the character: keep the same proportions, colors, outline weight, eye style and crayon texture. Change only this: pose only: Loikka stands a little sad, shoulders down, small frown, eyes looking down, same front-facing view as the references. Keep the transparent background and empty margin around the character.",
+  "promptParts": [
+    {
+      "from": "character-loikka",
+      "text": "Character Loikka (must match the reference images exactly): a friendly sky-blue frog with a speckled, sparkly blue crayon texture. Two large round bulging eyes on top of the head with pale cream-yellow whites, dark pupils and a small highlight. Wide simple smile, soft pink blush on both cheeks, a pale light-blue oval belly patch, short arms and legs with round toe tips, standing upright. Deep-blue outline (#033d85) of even weight. Loikka is Aava's friend and sidekick."
+    },
+    {
+      "from": "edit-keep-character",
+      "text": "Use the first image as the exact reference for the character: keep the same proportions, colors, outline weight, eye style and crayon texture. Change only this: pose only: Loikka stands a little sad, shoulders down, small frown, eyes looking down, same front-facing view as the references. Keep the transparent background and empty margin around the character."
+    }
+  ],
+  "inputs": [
+    {
+      "file": "lite/public/characters/loikka/idle.png",
+      "sha256": "de2aa05fec754aee9d52cdcbc5b0488cf633f527d0507d0b3a7d517707289060"
+    },
+    {
+      "file": "lite/public/characters/loikka/wave.png",
+      "sha256": "cab852641aab700a077e7c6f2e940b9a88bb3772c76af26b322845f87b7491b4"
+    },
+    {
+      "file": "lite/public/characters/loikka/happy.png",
+      "sha256": "78871cfd1760663c4150acedc424b30fca408310906643a4d8aee9469fe0ec2e"
+    },
+    {
+      "file": "lite/public/characters/loikka/crouch.png",
+      "sha256": "5f6e1f029dafd7d0132c0ac2b60f15a28d113e86d9edac9a83c4d97f9447e5bf"
+    }
+  ],
+  "mask": null,
+  "cost": {
+    "estimateUsd": 0.299045,
+    "actualUsd": 0.044984,
+    "usage": {
+      "input_tokens": 2500,
+      "input_tokens_details": {
+        "image_tokens": 2048,
+        "text_tokens": 452
+      },
+      "output_tokens": 878,
+      "output_tokens_details": {
+        "image_tokens": 878,
+        "text_tokens": 0
+      },
+      "total_tokens": 3378
+    },
+    "imagesInRequest": 2,
+    "note": "actualUsd koskee koko pyyntöä"
+  },
+  "seconds": 15,
+  "license": "OpenAI-ehdot: tuotos kuuluu käyttäjälle; tarkista README:n lisenssiosio ennen julkaisua."
+}

@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="lesson.css"><div class="b13" data-b13-calc>
+
+
+
+
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/loikka/map.png" width="56" height="56" alt="Loikka tutkii liikettä."><p>Loikka selvittää, miten tauko vaikuttaa keskinopeuteen.</p></div><p data-goal><strong>Lasken koko matkan ja koko ajan avulla.</strong></p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<fieldset><legend>Myös tauolla kello käy</legend><div data-view><img src="initial.svg" width="360" height="146" alt="Mallin todellinen alkutila t=0; piste on paikassa0. Tarkat yksiköt näkyvät kuvassa ja tekstissä."></div><p data-readout>Aika 0 s. Paikka 0 m. Kuljettu 0 m. Hetkellinen suunnattu nopeus 4 m/s.</p><div class="actions" data-primary><button data-action="play" type="button">Toista</button><button data-action="pause" type="button">Tauko</button><button data-action="step" type="button">Askel</button></div><p data-run-state>Toisto tauolla</p><details data-lesson-role="teaching-step"><summary>Mallin valinta ja ajan tarkastelu</summary><label>Malli<select data-model><option value="start">12 metriä neljässä sekunnissa</option><option value="stop" selected>12 metriä ja tauko</option><option value="unequal">Eripituiset ajanjaksot</option><option value="return">Edestakainen matka</option><option value="cycle">Pyörämatka ja tauko</option><option value="rest">Koko ajan paikallaan</option></select></label><label>Mallin aika<input data-time value="0" type="text" inputmode="decimal" maxlength="128"></label><p data-range-note>Aika0–6 s. Koko jakson toisto kestää6ruutusekuntia; mallin kello näyttää s.</p><div class="actions"><button data-action="model-reset" type="button">Malli alkuun</button><button data-action="end" type="button">Näytä loppu</button></div><p>Askel siirtää neljäsosan mallin koko ajasta. Tauko pysäyttää toiston, ei lisää taukoa fyysiseen malliin. Loppukuva ei tarkoita fyysistä jarrutusta. Mittari on laskettu, ei oikean laitteen mittaus. Näyttö pyöristää lukemat enintään kolmeen desimaaliin.</p><div data-table><table><caption>Sama malli viidellä ajanhetkellä. Ei vaadi toiston katsomista.</caption><thead><tr><th>t (s)</th><th>x (m)</th><th>s (m)</th><th>v (m/s)</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>4</td></tr><tr><td>1,5</td><td>6</td><td>6</td><td>4</td></tr><tr><td>3</td><td>12</td><td>12</td><td>0</td></tr><tr><td>4,5</td><td>12</td><td>12</td><td>0</td></tr><tr><td>6</td><td>12</td><td>12</td><td>0</td></tr></tbody></table></div></details></fieldset>
+</section>
+
+
+
+
+
+
+<nav aria-label="Oppitunnin kohdat" data-lesson-role="metadata"><a href="#practice">Kokeile itse</a><a href="#examples">Esimerkit</a></nav>
+
+
+
+
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<details id="examples" data-lesson-role="teaching-step"><summary>Mistä tämä nähdään?</summary><h2>Yhtä paljon jokaisessa sekunnissa</h2><p>Anna leluvaunun kulkea12 m neljässä sekunnissa. Yksi tasainen vertailuvauhti jakaisi matkan neljään3 m osaan: 12 m /4 s =3 m/s. Tämä on keskinopeus, vaikka todellinen vaunu kulkisi välillä eri vauhtia.</p><h3>Kello käy tauollakin</h3><p>Loikka kulkee12 m kolmessa sekunnissa ja lepää sitten3 s. Kokonaismatka on12 m, kokonaisaika3 s+3 s=6 s. <strong>Keskinopeus =12 m/6 s=2 m/s.</strong> Liikkumisvaiheen4 m/s ei ole koko matkan keskinopeus.</p><img src="example.svg" width="360" height="146" alt="Valmis taukomalli hetkellä6 s: paikka12 m, kuljettu12 m ja hetkellinen nopeus0 m/s."><figcaption>Valmis loppukuva: tauolla paikka pysyi, mutta aika eteni.</figcaption><h3>Kahta nopeutta ei aina vain keskiarvoisteta</h3><p>2 m/s ajan2 s antaa4 m. 6 m/s ajan6 s antaa36 m. Koko matka40 m ja aika8 s: keskinopeus5 m/s. (2+6)/2=4 ei tässä kelpaa, koska eri vauhdeilla kuljettiin eri pituiset ajat.</p><p><strong>Ennakoi:</strong> palaatko lähtöpaikalle kulkematta matkaa? Tutki Edestakainen matka.</p></details>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<section id="practice"><h2>Kokeile itse</h2><label>Tehtävä<select data-task><option value="start">Tehtävä A</option><option value="stop" selected>Tehtävä B</option><option value="unequal">Tehtävä C</option><option value="return">Tehtävä D</option><option value="cycle">Tehtävä E</option><option value="rest">Tehtävä F</option></select></label><p data-question data-lesson-role="question">Loikka kulkee 12 m ajassa 3 s ja lepää 3 s. Laske keskinopeus koko 6 sekunnin ajalta, m/s.</p><label>Keskinopeus, tehtävässä annettu yksikkö<input data-answer type="text" inputmode="decimal" maxlength="128" autocomplete="off"></label><button type="button" data-action="check">Tarkista</button><output data-feedback data-result="neutral" aria-live="polite">Tarkista, kun olet valmis.</output><details data-lesson-role="hint"><summary>Ajattelun tueksi</summary><p>Kokoa ensin kaikki matkat ja kaikki ajat. Laske tauko aikaan. Käytä v=s/t. Paluumatkalla lisää myös takaisin kuljettu matka. Yksikkö on annetun matkan yksikkö/annetun ajan yksikkö. Malli on vapaaehtoinen erillinen esimerkki.</p></details><p>Tehtävän tiedot riittävät vastaamiseen. Malli on erillinen vapaaehtoinen tutkimus, eikä toistoa tarvitse katsoa loppuun.</p></section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Lisää tutkittavaa</summary><p>12 m oikealle ja12 m takaisin on24 m kuljettua matkaa. Kuudessa sekunnissa keskinopeus on24/6=4 m/s, vaikka paikka palaa nollaan. Siirtymään perustuva suunnattu keskinopeus olisi0/6=0 m/s. Tällä sivulla keskinopeus tarkoittaa kuljettu matka /koko aika.</p><img src="transfer.svg" width="360" height="146" alt="Valmis paluumalli hetkellä6 s: paikka0 m; kuljettu matka24 m."><figcaption>Älä sekoita loppupaikkaa ja kuljettua matkaa.</figcaption><p>Pyöräilijä ajaa6 km ajassa0,5 h ja lepää0,5 h. Puoli tuntia ja puoli tuntia on yhteensä1 h, joten keskinopeus6 km/h. Ajon aikainen12 km/h ei huomioi taukoa.</p></details>
+</section>
+
+
+
+
+
+
+<details data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p>Luokat7–9. Kanoninen rooli atomic. Tavoite: Laskee keskinopeuden kokonaismatka/kokonaisaika, tauot ja edestakaisen liikkeen kuljettu matka huomioiden; erottaa sen hetkellisestä vauhdista ja siirtymästä. Required-esitietoryhmät säilyvät: PHY79-SPEED-CONCEPT. Vahvat tuet eivät muutu lisäporteiksi.</p><p>Mittaa paperireitillä vaunun kulkema matka ja koko aika. Pidä tauko ennen kellon pysäytystä. Kuljettu matka ei vähene palatessa. Palojen rajalla nopeus vaihtuu mallissa välittömästi; se on laskuesimerkin idealisointi, ei realistinen jarrutusmalli.</p><p>Tämä sivu toteuttaa kuusi nimettyä yksiulotteista vakionopeusjaksoista koottua mallia. Käytetyt yksikköparit ovat m/s ja km/h; tauko on oma nollanopeusjaksonsa. Koko aika on mallista riippuen1 h tai4–8 s. Ei kitkaa,2D-kaarteita, mielivaltaista reittiä tai käyttäjän tuomaa mallikuvausta. Puuttuva tai tukematon valinta ei korvaudu oletuksella. Fyysinen pysähdys on mallin nollanopeusjakso; Toiston Tauko on vain katselun ohjaus. Mallin aika ja ruutuaika ovat erilliset. Kuljettu matka on aina ei-negatiivinen, suunnattu paikka/nopeus voi olla negatiivinen. Tämä esittää matemaattisen idealisoinnin, ei toteutettua koetta.</p><p>Vastaus on paikallinen matalan panoksen harjoitus. Avun käyttö tai mallin katselu ei osoita itsenäistä, viivästettyä tai formaalia hallintaa. Ei oppijahistoriaa, verkkotallennusta, aikarajaa, pakollista puhetta, nimeämistä tai kuuntelua. Ihmis-/oppilas-/oppimisteho-/manuaalinen saavutettavuus- tai julkaisuhyväksyntä ei synny tästä tarkistuksesta.</p></details>
+
+
+
+
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lopuksi:</strong> Kuljet10 m ajassa2 s ja odotat3 s. Mikä on keskinopeus koko ajalta? Miksi pelkän liikkumisajan käyttäminen antaisi eri vastauksen?</p>
+</section>
+
+
+
+
+
+
+<noscript data-lesson-role="metadata"><p>Alkukuva on mallin t=0. Valmiiksi merkityt esimerkit ja tekstit toimivat ilman JavaScriptiä. Liike ja paikallinen tarkistus tarvitsevat JavaScriptin. Voit käyttää taulukkoa, paperia tai oikeaa vaunua aikuisen kanssa.</p></noscript></div>

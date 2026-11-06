@@ -1,0 +1,111 @@
+{
+  "asset": "Aava 3D candidate",
+  "status": "sphere-pass build (ball head, head-roundness KPI), approved by the user for the game on 2026-11-06",
+  "license": "Private repository source; no redistribution license granted.",
+  "source_sha256": {
+    "lite/public/characters/aava/idle.png": "84675b1db8291223a553c76ceca0053553de9597667d16025a5580c92b423b83",
+    "tools/characters-3d/profile/aava_parts.py": "5fb8af2101dd8440ad5509b22d4c63f8a4344c8cbefa5989d9efd95e24c20086"
+  },
+  "authoring": "Profile-matched: part masks traced from the approved 2D drawing (tools/characters-3d/profile/<id>_parts.py), built and rigged in headless Blender by build_profile_character.py.",
+  "coordinates": "Blender +Z up; glTF export +Y up, meters, ground origin.",
+  "clips": [
+    "gentle-nod",
+    "idle",
+    "point",
+    "walk"
+  ],
+  "budgets": {
+    "triangles_max_exclusive": 20000,
+    "bones_max_exclusive": 20,
+    "glb_bytes_max_exclusive": 3000000
+  },
+  "glb_sha256": "69db51ebca5010ec381dbf8c8959bba4e29abbf4ce6d6dd98c15a9fbf4ee6f98",
+  "measured": {
+    "bytes": 535544,
+    "triangles": 15553,
+    "bones": [
+      "root",
+      "body",
+      "head",
+      "wing_1",
+      "wing_-1",
+      "leg_1",
+      "foot_1",
+      "leg_-1",
+      "foot_-1"
+    ],
+    "actions": [
+      "gentle-nod",
+      "idle",
+      "point",
+      "walk"
+    ],
+    "bounds_blender_m": [
+      [
+        -0.4997798502445221,
+        -0.3814713954925537,
+        0.0011871462920680642
+      ],
+      [
+        0.9485440254211426,
+        0.3814713954925537,
+        1.7011871337890625
+      ]
+    ],
+    "checks": {
+      "nod_tip_moves_down": true,
+      "budget_pass": true,
+      "root_fixed": true,
+      "feet_above_ground": true,
+      "one_foot_always_grounded": true,
+      "planted_foot_stationary": true
+    }
+  },
+  "walk_scope": "In-place walk: root fixed and stance-foot horizontal positions verified at each integer frame.",
+  "forward": "Blender +X; exported glTF +X (glTF +Y is up)",
+  "external_uris": [],
+  "revision": {
+    "id": "aava-3d-v3-profile-match",
+    "date": "2026-11-05",
+    "notes": "Silhouette, eye, lid, cheek, bill and tongue masks rebuilt from the 2D profile drawing; IoU in drawing_match. Outline normals are smoothed and stored as the outline_normal attribute; the runtime adds the navy outline. Walk legs alternate with one foot always planted."
+  },
+  "drawing_match": {
+    "profile": {
+      "silhouette": 0.9949,
+      "eye": 0.9987,
+      "eye_centre_px": 0.05,
+      "eye_white": 0.9982,
+      "eye_white_centre_px": 0.05,
+      "pupil": 0.9997,
+      "pupil_centre_px": 0.01,
+      "bill_upper": 0.9744,
+      "bill_upper_centre_px": 0.99,
+      "bill_lower": 0.9793,
+      "bill_lower_centre_px": 0.97,
+      "mouth": 0.8692,
+      "mouth_centre_px": 2.05,
+      "cheek": 1.0,
+      "cheek_centre_px": 0.0
+    }
+  },
+  "approval": {
+    "date": "2026-11-06",
+    "record": "art/characters-3d/APPROVAL-2026-11-06.json",
+    "deferred_polish": [
+      "Bill/mouth could be a little wider from the front.",
+      "Front-view body narrower than the board.",
+      "Small rust stubs between the bill lobes."
+    ]
+  },
+  "limits": [
+    "Front view is narrower than a round head and the eyes sit on the sides (deferred polish)."
+  ],
+  "build_tools_sha256": {
+    "tools/characters-3d/profile/build_profile_character.py": "c4c1230f2a4ced885f1d6852692cf7a30e994504c70ea5ae115aa3443661ce29",
+    "tools/characters-3d/profile/common.py": "4d6a2fd2435b3c1304bef1a02888830b97bbdb8b252d43e1085463893f493905",
+    "tools/characters-3d/profile/compare.py": "5a4234b1867570116fee7ba75aa32730a4c957358461cd775cdce07539378d0d",
+    "tools/characters-3d/profile/contact_sheet.py": "557c27e613bbe6c850710fdf14d0db2334d30924bb7d8254e7ca279269d08338",
+    "tools/characters-3d/toon_preview.py": "ad5edbc88aa354c538e9d4976066ba6ac48a1823db6dd5d4c541b97227763a90",
+    "lite/src/world/character-style.js": "71f2e553a5a5feea4388e3f06442c81c7f158c87b50754c3ca3b08169f8e7594"
+  }
+}

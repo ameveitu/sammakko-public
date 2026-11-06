@@ -1,0 +1,790 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M79-FUNC-GRAPH",
+  "revision": 15,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "initial.svg",
+      "sha256": "219e17442082cd2f0228598114836bbdf39b598d4dc4ab46177ada4cc1dae8fd"
+    },
+    {
+      "path": "example.svg",
+      "sha256": "a2ef1c932a6dc68de741017515fe46dbc41acbb508a8cb18f9899ed236c74436"
+    },
+    {
+      "path": "transfer.svg",
+      "sha256": "608e2498496cd8b670d615bf3883def4169c4f576772b3fece2b506e7cb55276"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "30e446b75b3b2145c814595e904262c8989616b464812fd4eb62e8d00c7d8562"
+    },
+    {
+      "path": "practice.svg",
+      "sha256": "615cdd4b0a1235f7a0685a27b719d4aab00f06af309a7f4b163cd0cff1547955"
+    },
+    {
+      "path": "shared/loikka/map.png",
+      "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://openstax.org/books/elementary-algebra-2e/pages/4-1-use-the-rectangular-coordinate-system",
+      "title": "4.1 Use the Rectangular Coordinate System",
+      "organization": "OpenStax / Rice University",
+      "accessed": "2026-10-29",
+      "inspected": "Ordered pairs, x-horizontal/y-vertical placement; verifying a pair by substitution and constructing a value table. Preface and art rights read separately.",
+      "usageRestrictions": "Book preface CC BY-NC-SA4.0; art has separate attribution conditions. No source prose, examples or figures copied. Original Finnish text, data and SVG. Reading is not release permission.",
+      "adopted": "Link a supplied rule, table row and coordinate through the same numeric pair; test swapped coordinates explicitly.",
+      "limitations": "College/prealgebra material corroborates mathematical representations; no Finnish7–9 efficacy claim or whole-book adoption."
+    },
+    {
+      "url": "https://openstax.org/books/college-algebra-2e/pages/3-1-functions-and-function-notation",
+      "title": "3.1 Functions and Function Notation",
+      "organization": "OpenStax / Rice University",
+      "accessed": "2026-10-29",
+      "inspected": "Function as single-valued relation, domain, table as complete or partial information; preface rights.",
+      "usageRestrictions": "College Algebra2e preface explicitly CC BY-NC-SA4.0; no figures or passage copied, no licensing approval.",
+      "adopted": "State the entire allowed input domain. Different x may share a y. A few plotted points do not justify arbitrary interpolation.",
+      "limitations": "Only foundational graph meaning adopted, not one-to-one/inverse-function or higher-algebra scope."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@d5c8387a5b967fe2b16677ed40e63ab6569d58bcc18d88b60f6ad3776cb00751",
+      "note": "Author source freeze awaits different-author independent review. No author selfapproval."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@d5c8387a5b967fe2b16677ed40e63ab6569d58bcc18d88b60f6ad3776cb00751",
+      "note": "Author source freeze awaits different-author independent review. No author selfapproval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@d5c8387a5b967fe2b16677ed40e63ab6569d58bcc18d88b60f6ad3776cb00751",
+      "note": "No human/learner/efficacy/manualAXS approval."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@4ce44ef28fa33d271c8e6af4cb3ccd927ec137ea7f28633dee274455086e5359",
+      "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@4ce44ef28fa33d271c8e6af4cb3ccd927ec137ea7f28633dee274455086e5359",
+      "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@4ce44ef28fa33d271c8e6af4cb3ccd927ec137ea7f28633dee274455086e5359",
+      "note": "Revision2 Finnish task-label repair; parent distinct-author closure pending. Human validation not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@8c49903e407b03f8f8c7fe702fa0ab122ebeae8a42c8c3111d058f66454aa5b7",
+      "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@8c49903e407b03f8f8c7fe702fa0ab122ebeae8a42c8c3111d058f66454aa5b7",
+      "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@8c49903e407b03f8f8c7fe702fa0ab122ebeae8a42c8c3111d058f66454aa5b7",
+      "note": "Revision3 own preceding-article root isolation repair. Parent distinct-author closure pending; human validation not performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@8c49903e407b03f8f8c7fe702fa0ab122ebeae8a42c8c3111d058f66454aa5b7",
+      "note": "Independent B14 parent source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/parent-on-Descartes/review-closed.json. Technical synthetic scope; not learner validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@8c49903e407b03f8f8c7fe702fa0ab122ebeae8a42c8c3111d058f66454aa5b7",
+      "note": "Independent B14 parent canonical/Lite/source boundaries reviewed for current revision; frozen roles/prerequisite groups preserved. lesson-network/evidence/production/B14/reviews/parent-on-Descartes/review-closed.json"
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@8c49903e407b03f8f8c7fe702fa0ab122ebeae8a42c8c3111d058f66454aa5b7",
+      "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@989d61090c045f5dd8722f316bf6eac61b0e142b2352214d5214616787a62ed0",
+      "note": "LR03 changed source roles and teaching steps. Prior review retained as history; independent current-source and human/classroom review remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@989d61090c045f5dd8722f316bf6eac61b0e142b2352214d5214616787a62ed0",
+      "note": "LR03 changed source roles and teaching steps. Prior review retained as history; independent current-source and human/classroom review remain pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@989d61090c045f5dd8722f316bf6eac61b0e142b2352214d5214616787a62ed0",
+      "note": "LR03 changed source roles and teaching steps. Prior review retained as history; independent current-source and human/classroom review remain pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@e99cd06f061d97ed8d0df7d61a570485c96f9b4ce22610eada14c73d5ee87a69",
+      "note": "LR03 source-role and projector-stage layout updated. Independent content/alignment and real human/classroom review remain pending; historical evidence retained."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@e99cd06f061d97ed8d0df7d61a570485c96f9b4ce22610eada14c73d5ee87a69",
+      "note": "LR03 source-role and projector-stage layout updated. Independent content/alignment and real human/classroom review remain pending; historical evidence retained."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@e99cd06f061d97ed8d0df7d61a570485c96f9b4ce22610eada14c73d5ee87a69",
+      "note": "LR03 source-role and projector-stage layout updated. Independent content/alignment and real human/classroom review remain pending; historical evidence retained."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@a19ed20cd090f1c4280d5d1916159cf41f8d82fa36fcee94cfd36b1b5959c107",
+      "note": "LR03 final source roles, neutral ARIA, projector layout and current Lite binding require independent review. Historical evidence retained; human/classroom review remains pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@a19ed20cd090f1c4280d5d1916159cf41f8d82fa36fcee94cfd36b1b5959c107",
+      "note": "LR03 final source roles, neutral ARIA, projector layout and current Lite binding require independent review. Historical evidence retained; human/classroom review remains pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@a19ed20cd090f1c4280d5d1916159cf41f8d82fa36fcee94cfd36b1b5959c107",
+      "note": "LR03 final source roles, neutral ARIA, projector layout and current Lite binding require independent review. Historical evidence retained; human/classroom review remains pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@afff43c4ea1fa0f7cb7618258c3d7c3045f6f647a201465e121c4391d70db53c",
+      "note": "LR03 final source roles, neutral practice names/ARIA, projector layout and current Lite binding require independent current-source review. Historical evidence retained; human/classroom review remains pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@afff43c4ea1fa0f7cb7618258c3d7c3045f6f647a201465e121c4391d70db53c",
+      "note": "LR03 final source roles, neutral practice names/ARIA, projector layout and current Lite binding require independent current-source review. Historical evidence retained; human/classroom review remains pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@afff43c4ea1fa0f7cb7618258c3d7c3045f6f647a201465e121c4391d70db53c",
+      "note": "LR03 final source roles, neutral practice names/ARIA, projector layout and current Lite binding require independent current-source review. Historical evidence retained; human/classroom review remains pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@a4df0c18303d3eb7c788b3907f44c1ae28d414e0f05be08dfd746287456fb720",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@a4df0c18303d3eb7c788b3907f44c1ae28d414e0f05be08dfd746287456fb720",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@a4df0c18303d3eb7c788b3907f44c1ae28d414e0f05be08dfd746287456fb720",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@c0cad6dcb1082cd0faa744d85552f422aaf964ec37e132abb00c2f6c016d738d",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@c0cad6dcb1082cd0faa744d85552f422aaf964ec37e132abb00c2f6c016d738d",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@c0cad6dcb1082cd0faa744d85552f422aaf964ec37e132abb00c2f6c016d738d",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@f2e738d03aae6691bb691984852d2f721de55d16754e14e68109dfb0c1111f3a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@f2e738d03aae6691bb691984852d2f721de55d16754e14e68109dfb0c1111f3a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@f2e738d03aae6691bb691984852d2f721de55d16754e14e68109dfb0c1111f3a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@3bf52209888292717c6286c4ae352afe924efb68c61a8fe18d3f3ea34550a81a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@3bf52209888292717c6286c4ae352afe924efb68c61a8fe18d3f3ea34550a81a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@3bf52209888292717c6286c4ae352afe924efb68c61a8fe18d3f3ea34550a81a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@0aaa47d4bc68b392a895ed6e4e8d796591dd647c7fb1de79328424c56d522a50",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@0aaa47d4bc68b392a895ed6e4e8d796591dd647c7fb1de79328424c56d522a50",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@0aaa47d4bc68b392a895ed6e4e8d796591dd647c7fb1de79328424c56d522a50",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@dc479381ae8dd04100c9a944936a0426f1086a62ddabb8ce10d47e95b3b622a4",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@dc479381ae8dd04100c9a944936a0426f1086a62ddabb8ce10d47e95b3b622a4",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@dc479381ae8dd04100c9a944936a0426f1086a62ddabb8ce10d47e95b3b622a4",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@df6f2ff3b66033b3c382997c2d55c6d623d9223b8244670d5e50dc8bbe0fa43d",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@df6f2ff3b66033b3c382997c2d55c6d623d9223b8244670d5e50dc8bbe0fa43d",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@df6f2ff3b66033b3c382997c2d55c6d623d9223b8244670d5e50dc8bbe0fa43d",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@2ea1be09958a666005a16131afbd34c0a11df3829e237110b9940f9bf90c2b94",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@2ea1be09958a666005a16131afbd34c0a11df3829e237110b9940f9bf90c2b94",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@2ea1be09958a666005a16131afbd34c0a11df3829e237110b9940f9bf90c2b94",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@e0d3c4164dc37dcd1a63b0d947dc2bf0bd9dabce0ccc193061556e9c00c8aeff",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@e0d3c4164dc37dcd1a63b0d947dc2bf0bd9dabce0ccc193061556e9c00c8aeff",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: y=2x−1 tuottaa annetut arvoparit; jatkuva suora perustellaan nimetyllä reaalivälillä, lippumäärien diskreetit pisteet jätetään yhdistämättä. Vakiofunktio sallii saman y:n eri x:ille. Harjoituskuva ei sisällä valmista pistejoukkoa, ja asteikko1/2 on ilmoitettu. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@e0d3c4164dc37dcd1a63b0d947dc2bf0bd9dabce0ccc193061556e9c00c8aeff",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M79-FUNC-GRAPH",
+    "sourceBuild": "lite181-2026-10-27 immutable production-181-v2 snapshot",
+    "sourceRevision": "launch1-2026-11-01",
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "authority/production-181-v2/lite/src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+      "authority/production-181-v2/lite/src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+      "authority/production-181-v2/lite/src/content/neganim.ts": "38429c827f5637f57b054cade85b40cc9f36396e27cee3d79e99e526b89766a4",
+      "authority/production-181-v2/lite/src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/features.ts": "8ddef5451be9d011297f5d32b1ab0d869a1e132d608bd30f679b8e2d900884c5",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+    },
+    "families": [
+      "match",
+      "transfer",
+      "onIt",
+      "plot",
+      "read"
+    ],
+    "inventory": {
+      "goal": "Opit piirtämään funktion kuvaajan arvotaulukosta ja lukemaan kuvaajalta y:n arvon.",
+      "intro": "Funktion jokainen pari (x, y) on piste koordinaatistossa. Pisteet yhdessä ovat kuvaaja.",
+      "reward": "Piirrät funktion kuvaajan!",
+      "revision": "audit1-2026-10-28",
+      "demos": [
+        {
+          "say": "Funktio y = 2x − 1. Jokainen taulukon rivi siirtyy koordinaatistoon: ensin x-akselia pitkin kohtaan x, sitten ylös tai alas y:n verran. Lopuksi pisteiden läpi piirretään suora.",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function"
+        },
+        {
+          "say": "Funktio y = −x + 2: kun x kasvaa, y pienenee. Pisteet laskevat oikealle, ja kuvaaja on laskeva suora.",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function"
+        }
+      ],
+      "items": {
+        "match": {
+          "say": "Mikä taulukko sopii kuvaajaan?",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "art": "<div class=\"table-wrap\"><table class=\"data\"><thead><tr><th>x</th><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td>y</td><td>1</td><td>3</td><td>5</td></tr></tbody></table></div>"
+              },
+              {
+                "art": "<div class=\"table-wrap\"><table class=\"data\"><thead><tr><th>x</th><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td>y</td><td>1</td><td>−1</td><td>−3</td></tr></tbody></table></div>"
+              },
+              {
+                "art": "<div class=\"table-wrap\"><table class=\"data\"><thead><tr><th>x</th><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td>y</td><td>−1</td><td>1</td><td>3</td></tr></tbody></table></div>"
+              }
+            ],
+            "answer": 0,
+            "why": [
+              null,
+              "Tässä suora kulkisi toiseen suuntaan.",
+              "Tässä suora leikkaisi y-akselin eri kohdassa."
+            ],
+            "cols": 1
+          },
+          "hint": "Katso ensin, missä kuvaaja leikkaa y-akselin (x = 0). Nouseeko vai laskeeko se?",
+          "explain": "Kuvaajasta: (0, 1), (1, 3), (2, 5).",
+          "registry": {
+            "node": "M79-FUNC-GRAPH",
+            "tag": "match",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "transfer": {
+          "say": "Keskiyöllä on 4 °C, ja lämpötila laskee 2 astetta tunnissa. Merkitse lämpötila hetkillä 0, 1 ja 2 tuntia (x = tunnit, y = °C).",
+          "task": {
+            "kind": "plot",
+            "xs": [
+              0,
+              1,
+              2
+            ],
+            "ys": [
+              4,
+              2,
+              0
+            ],
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -4,
+            "yMax": 4,
+            "xStep": 1,
+            "yStep": 1,
+            "xLabel": "x",
+            "yLabel": "y"
+          },
+          "hint": "Hetkellä 0 lämpötila on 4. Joka tunti vähennä 2.",
+          "explain": "Pisteet (0, 4), (1, 2), (2, 0).",
+          "registry": {
+            "node": "M79-FUNC-GRAPH",
+            "tag": "transfer",
+            "outcome": "piirtää pisteet kuvaajaan",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "onIt": {
+          "say": "Lajittele pisteet: ovatko ne funktion y = −2x − 1 kuvaajalla?",
+          "task": {
+            "kind": "sort",
+            "items": [
+              {
+                "text": "(0, −1)"
+              },
+              {
+                "text": "(1, −3)"
+              },
+              {
+                "text": "(2, −4)"
+              },
+              {
+                "text": "(−1, 1)"
+              },
+              {
+                "text": "(3, −2)"
+              }
+            ],
+            "cats": [
+              {
+                "label": "Kuvaajalla ✓"
+              },
+              {
+                "label": "Ei kuvaajalla ✗"
+              }
+            ],
+            "answer": [
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            "why": [
+              "Kun x = 0, y = −2 · 0 − 1 = −1. Piste on kuvaajalla.",
+              "Kun x = 1, y = −2 · 1 − 1 = −3. Piste on kuvaajalla.",
+              "Kun x = 2, y = −5, ei −4.",
+              "Kun x = −1, y = −2 · (−1) − 1 = 1. Piste on kuvaajalla.",
+              "Koordinaatit väärin päin: kun x = 3, y = −7."
+            ]
+          },
+          "hint": "Sijoita pisteen x sääntöön. Tuleeko pisteen y?",
+          "explain": "Piste on kuvaajalla täsmälleen silloin, kun sen koordinaatit toteuttavat säännön.",
+          "registry": {
+            "node": "M79-FUNC-GRAPH",
+            "tag": "onIt",
+            "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "plot": {
+          "say": "Merkitse funktion y = −2x + 1 pisteet, kun x on −1, 0 ja 1.",
+          "task": {
+            "kind": "plot",
+            "xs": [
+              -1,
+              0,
+              1
+            ],
+            "ys": [
+              3,
+              1,
+              -1
+            ],
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -4,
+            "yMax": 4,
+            "xStep": 1,
+            "yStep": 1,
+            "xLabel": "x",
+            "yLabel": "y"
+          },
+          "hint": "Laske ensin y jokaiselle x:lle. Piste (x, y): ensin vaakasuunnassa x, sitten pystysuunnassa y.",
+          "explain": "Pisteet (−1, 3), (0, 1), (1, −1).",
+          "registry": {
+            "node": "M79-FUNC-GRAPH",
+            "tag": "plot",
+            "outcome": "piirtää pisteet kuvaajaan",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "read": {
+          "say": "Kuvaajassa on funktio. Mikä on y:n arvo, kun x = 2?",
+          "task": {
+            "kind": "numeric",
+            "answer": -4,
+            "unit": "",
+            "whyAt": {
+              "0": "0 on y:n arvo kohdassa x = 0, ei kohdassa x = 2.",
+              "2": "Tämä on x:n arvo. Kysytään, millä korkeudella kuvaaja on.",
+              "4": "Tarkista suunta: onko piste x-akselin ylä- vai alapuolella?"
+            }
+          },
+          "hint": "Mene x-akselilla kohtaan 2 ja siitä suoraan ylös tai alas kuvaajalle.",
+          "explain": "Kohdasta x = 2 pystysuoraan kuvaajalle: y = −4.",
+          "registry": {
+            "node": "M79-FUNC-GRAPH",
+            "tag": "read",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        }
+      }
+    },
+    "comparison": "Retain actual plot/read/match/onIt/transfer and both rising/falling demos. Practice constructs three complete coordinate pairs, in any row order, and draws those learner points; it is not called freehand curve drawing. State all-real interval before connecting linear points, or finite ticket-count domain with unjoined dots. Cover constant many-to-one function. No inferred rule from sparse points.",
+    "reconciliationForOpus": [
+      "COVERAGE omits actual onIt/sort family and understates two graphPlotScene demos.",
+      "Lite graphPlotScene clips to fixed−4…4; first demo y=2x−1 atx=−1 gives−3 and at2 gives3: preserve truth but redraw labels larger, explicit scales and domain.",
+      "Continuous line is justified here by supplied affine rule on a stated real interval, not by points alone. Ticket domain is discrete; never connect its dots."
+    ],
+    "runtimeOverlay": "index.ts registers ALGEBRA79_NODES, fills goals, sets revisionpolicy; no SIMS entry for these3. Actual family() resolves defaults and coverage+declarations; registry is not new canonical prerequisite authority.",
+    "historicalSourceReference": {
+      "sourceBuild": "lite181-2026-10-27 immutable production-181-v2 snapshot",
+      "sourceRevision": "audit1-2026-10-28",
+      "note": "Supplied snapshot source hashes preserved separately from current launch source."
+    },
+    "validLiteRevisions": [
+      "launch1-2026-11-01",
+      "audit1-2026-10-28"
+    ],
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "launch1-2026-11-01",
+      "validRevisions": [
+        "launch1-2026-11-01",
+        "audit1-2026-10-28"
+      ],
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/algebra79.ts": "dba08bcb491473c1e29dde39e66c894631fc4ad96ddee5339eef2a2dbf7a1b6b",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/features.ts": "674518dd106c0bfa3f379e19c95a557de2eac361f86ec097eb2598dcbe86b181",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/neganim.ts": "38429c827f5637f57b054cade85b40cc9f36396e27cee3d79e99e526b89766a4",
+        "src/content/phyanim.ts": "419fc83a164c4799543edf6f4dc72021abe3d6ee5fc74d719b70d53243bab7ad",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6"
+      },
+      "change": "Existing per-node production gate covers correct non-guided plot/transfer construction; recognition-only families cannot alone satisfy it. Guided/revealed/replayed responses do not promote it. No claim of fully unaided performance.",
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "historicalNonLiteReferences": [
+        "reference/inputs/canonical-690-graph.json"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M79-FUNC-GRAPH",
+      "subject": "mathematics",
+      "grade_band": "7-9",
+      "topic_area": "S4 Funktiot",
+      "parent_concept": "Funktio",
+      "title": "Funktion esittäminen koordinaatistossa",
+      "short_description": "Funktion esittäminen koordinaatistossa",
+      "node_kind": "representation",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "M79-S4"
+      ],
+      "relations": [
+        {
+          "id": "M79-FUNC-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M79-FUNC-01 on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "M-COORD-02",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-COORD-02 on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "M79-FUNC-TABLE",
+          "relation_type": "representation_support",
+          "strength": "strong",
+          "rationale": "M79-FUNC-TABLE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M79-FUNC-01",
+            "M-COORD-02"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate",
+      "entry_role": "none",
+      "mastery_role": "process",
+      "concept_path": [
+        "Matematiikka",
+        "S4 Funktiot",
+        "Funktio"
+      ]
+    },
+    "gradeBand": "7-9",
+    "role": "process",
+    "teacherObjective": "Muodostaa annetusta säännöstä arvopareja ja esittää ne koordinaatistossa; ilmoittaa akselit, asteikon ja sallitut syötteet. Selittää, milloin pisteiden välinen suora kuuluu annettuun malliin.",
+    "childGoal": "Teen funktion arvopareista kuvaajan.",
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M79-FUNC-01",
+          "M-COORD-02"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "requiredPrerequisites": [
+      {
+        "id": "M79-FUNC-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M79-FUNC-01 on ydinesitieto tälle osaamiskohteelle."
+      },
+      {
+        "id": "M-COORD-02",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-COORD-02 on ydinesitieto tälle osaamiskohteelle."
+      }
+    ],
+    "strongSupport": [
+      {
+        "id": "M79-FUNC-TABLE",
+        "relation_type": "representation_support",
+        "strength": "strong",
+        "rationale": "M79-FUNC-TABLE tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      }
+    ],
+    "additionalHardGates": [],
+    "scope": "Four declared affine rules. Numeric x domain as named; no arbitrary expression parser. Visible graph window x−2…3,y−4…6; horizontal grid1,vertical grid2. Practice requires three named integer inputs and integer outputs; equivalent decimal/fraction forms accepted exactly. Whole graph creation/freehand curves are not measured.",
+    "interaction": "Original finite models with independent optional stepping/play/pause/reset/end; direct structured response, no mandatory model/support. Visible prompt and values reread on input/change and everyCheck. Model changes do not erase unrelated task feedback. Invalid selection is rejected without default substitution.",
+    "feedback": "Task or visible answer edits invalidate that task verdict. Model-only/support/view changes preserve unrelated task result. Exact dense primitive-string arrays; missing/holes/undefined/symbol/extra properties rejected. Graph row order freely permutes equivalent pointsets. Optional converter has separate current-premise feedback.",
+    "lifecycle": "Per-root WeakMap owner; replacement disposes old3listeners and owned interval; old API inert, paused reset stays disabled; no storage/network/mastery/history.",
+    "evidenceLimits": "Author implementation and synthetic local checks; not independent content approval, human/learner or efficacy validation. Process practice constructs requested finite graph points; not full graphing mastery. Integration practices ORDER+DIST jointly, no atom mastery inference.",
+    "assetProvenance": "Original mathematical SVG and Finnish text. Exact unmodified user-supplied v2 PNG, not redrawn or asserted hand-drawn. Static named mascot outside measurement geometry.",
+    "curriculumVsDesign": "Frozen canonical exact role/sourcebasis/groups retained. Foreignprimarymaterial corroborates ideas and definitions, not new Finnish OPS requirement or targetlearner evidence."
+  },
+  "extensions": {
+    "researchNote": "research.md",
+    "alignmentNote": "alignment.md",
+    "tests": "tests.mjs",
+    "author": "Descartes",
+    "batch": "B14",
+    "authorScope": "Only assigned new3 source; all151 sources/shared/generated/status/mainbuild/Git remain parent-owned.",
+    "reviewStatus": "Independent parent review pending exact sourcefreeze; no selfapproval.",
+    "feedbackContractSHA256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+    "browserQA": "browser-qa.mjs",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR03",
+      "method": "source-role-and-step-calibration",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

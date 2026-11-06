@@ -1,0 +1,43 @@
+.cb10 {--cb-accent:#245f4c;max-width:43rem;overflow-wrap:anywhere;}
+.cb10 .intro {display:flex;align-items:center;gap:.7rem;}
+.cb10 .intro img {width:76px;height:76px;flex:none;}
+.cb10 .intro p {margin:.2rem 0;}
+.cb10 fieldset {min-width:0;border:0;padding:0;margin:0;}
+.cb10 label {display:flex;flex-direction:column;gap:.3rem;margin:.7rem 0;}
+.cb10 select, .cb10 input[type="text"] {width:100%;min-width:0;max-width:100%;}
+.cb10 input[type="checkbox"] {align-self:flex-start;}
+.cb10 .buttons {display:flex;flex-wrap:wrap;gap:.3rem;}
+.cb10 button {max-width:100%;min-height:44px;}
+.cb10 output {display:block;min-height:3rem;margin:.6rem 0;}
+.cb10 [data-model-view], .cb10 [data-practice-view] {max-width:23rem;}
+.cb10 svg {display:block;width:100%;height:auto;}
+.cb10 figure {margin:1rem 0;max-width:23rem;}
+.cb10 figure img {display:block;max-width:100%;height:auto;}
+.cb10 [data-result="correct"] {border-left:4px solid var(--cb-accent);padding-left:.6rem;}
+.cb10 [data-result="retry"] {border-left:4px solid #ad641f;padding-left:.6rem;}
+
+/* B10 r2: own learner entry and model controls; no shared header selectors. */
+.cb10 .intro {gap:.6rem;margin:.3rem 0;}
+.cb10 .intro img {width:56px;height:56px;margin:0;}
+.cb10 .intro p {font-size:1rem;line-height:1.4;margin:.15rem 0;}
+.cb10 [data-entry-goal] {font-size:1rem;line-height:1.4;margin:.35rem 0;}
+.cb10 [data-model-view] {margin:.25rem 0;max-width:22rem;}
+.cb10 [data-model-readout] {font-size:1rem;line-height:1.4;margin:.25rem 0 .4rem;}
+.cb10 [data-entry-primary] {gap:.4rem;margin:.25rem 0;}
+.cb10 [data-entry-primary] button {font-size:1rem;line-height:1.4;min-height:44px;margin:0;}
+.cb10 [data-model-tools] {margin:.35rem 0 .5rem;}
+.cb10 [data-model-tools] > summary {font-size:1rem;line-height:1.4;min-height:44px;}
+.cb10 [data-model-tools] label {font-size:1rem;line-height:1.4;margin:.35rem 0;}
+.cb10 [data-model-tools] label:has(input[type="checkbox"]) {flex-direction:row;align-items:center;gap:.4rem;}
+.cb10 [data-model-tools] button {font-size:1rem;line-height:1.4;margin:0;}
+.cb10 [data-negative-lab] > fieldset > [data-model-view] {max-width:14rem;}
+.cb10 [data-tables-lab] > fieldset > [data-model-view] svg {max-height:15rem;}
+
+/* LR04 projector frame: preserve type size, remove surplus field spacing. */
+.audience .cb10 fieldset>h3{margin:.1rem 0}
+.audience .cb10 fieldset>details{margin:.15rem 0}
+
+/* Keep the primary temperature model readable beside its controls. */
+.audience .cb10 [data-negative-lab]>fieldset{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:.3rem 1.5rem;align-items:start}
+.audience .cb10 [data-negative-lab]>fieldset>[data-model-view]{grid-column:1;grid-row:1 / span 4;max-width:20rem}
+.audience .cb10 [data-negative-lab]>fieldset>[data-model-view] svg{max-height:350px}

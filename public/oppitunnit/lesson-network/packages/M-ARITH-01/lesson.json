@@ -1,0 +1,747 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-ARITH-01",
+  "revision": 19,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "arrival-picture.svg",
+      "sha256": "18f2cc3584b4cfd1f4d4c3fa63e45213742b01eaba04de010cdd1f3853e8d94f"
+    },
+    {
+      "path": "arrival-start.svg",
+      "sha256": "3644a481612bb3586b9633d4610229325bc46fbc4d20214b87fc5c4a92219e73"
+    },
+    {
+      "path": "arrival.svg",
+      "sha256": "40491ea3a95d7fcf8870e153e8ace316ff1857074aac60b4a7a9bf601fc815d8"
+    },
+    {
+      "path": "compare.svg",
+      "sha256": "c97b8d036e9ad82fdb9521598447778e6dd680b61acd9cdad86f78cd6957396f"
+    },
+    {
+      "path": "equal.svg",
+      "sha256": "9cb80064668079814c196c6e449991340918f42b69be11fa5945d95dc9116f1f"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "2af9be462b1cf941112674fdc3342aa82611e027fa43c171cfa93a3d46da0cf7"
+    },
+    {
+      "path": "remove.svg",
+      "sha256": "43edb096ab2cd6b28ceb91818c433bbb86292020d2dbdda1665c12ebc88101f3"
+    },
+    {
+      "path": "shared/loikka/curious.png",
+      "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-1-unit-6-additive-structures/",
+      "title": "Additive structures",
+      "organization": "NCETM",
+      "accessed": "2026-10-29",
+      "read": "HTML Learning Outcomes1–19, lines66–87.",
+      "adopted": "Parts/whole, narrative change, equations with equivalent quantities on either side, commuted addition.",
+      "usageRestrictions": "NCETM copyright page independently retrieved2026-10-29: default Crown/OGL unless stated, attribution and named-author permission/third-party exceptions. No figures, slides, code or protected prose copied.",
+      "limits": "HTML outcomes read, linked slides not downloaded. Not Finnish required wording or study of these lessons.",
+      "perKC": [
+        "M-ARITH-01"
+      ]
+    },
+    {
+      "url": "https://www.ncetm.org.uk/classroom-resources/primm-112-subtraction-as-difference/",
+      "title": "Subtraction as difference",
+      "organization": "NCETM",
+      "accessed": "2026-10-29",
+      "read": "HTML Introduction and Teaching Points1–4, lines61–72.",
+      "adopted": "Represent comparison as a difference between two unchanged quantities, alongside take-away.",
+      "usageRestrictions": "NCETM copyright page independently retrieved2026-10-29: default Crown/OGL unless stated, attribution and named-author permission/third-party exceptions. No figures, slides, code or protected prose copied.",
+      "limits": "Year2 conceptual comparison; no linked teacher guide/representations read and no learner-performance claim.",
+      "perKC": [
+        "M-ARITH-01"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@6f557bc34510cea53d66e938e4377f3245a8601ba48b49b007c2ce0b6f9e9e80",
+      "note": "Author checks only; independent Feynman review pending after source freeze. Not self-approved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@6f557bc34510cea53d66e938e4377f3245a8601ba48b49b007c2ce0b6f9e9e80",
+      "note": "Author checks only; independent Feynman review pending after source freeze. Not self-approved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@6f557bc34510cea53d66e938e4377f3245a8601ba48b49b007c2ce0b6f9e9e80",
+      "note": "No real human/learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@0fc691d45ad3764adca6666388b217b27e2741202ea9e71f8b11a14e457fdf11",
+      "note": "Author checks only; independent Feynman review pending after source freeze. Not self-approved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@0fc691d45ad3764adca6666388b217b27e2741202ea9e71f8b11a14e457fdf11",
+      "note": "Author checks only; independent Feynman review pending after source freeze. Not self-approved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@0fc691d45ad3764adca6666388b217b27e2741202ea9e71f8b11a14e457fdf11",
+      "note": "No real human/learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@7fa2768e0f521ea086ea7cef549f70fe2d96edf11ef6d4ac7bd8304983890585",
+      "note": "Author checks only; independent Feynman review pending after source freeze. Not self-approved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@7fa2768e0f521ea086ea7cef549f70fe2d96edf11ef6d4ac7bd8304983890585",
+      "note": "Author checks only; independent Feynman review pending after source freeze. Not self-approved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@7fa2768e0f521ea086ea7cef549f70fe2d96edf11ef6d4ac7bd8304983890585",
+      "note": "No real human/learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@c2944b759b82177735205e98c5cbed7cbf14c123eb0311c792bb2fb451ae7269",
+      "note": "Entry-only body revision after actual115 inspection; previous records retained. Different-author review not inherited; no human validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@c2944b759b82177735205e98c5cbed7cbf14c123eb0311c792bb2fb451ae7269",
+      "note": "Entry-only body revision after actual115 inspection; previous records retained. Different-author review not inherited; no human validation."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@c2944b759b82177735205e98c5cbed7cbf14c123eb0311c792bb2fb451ae7269",
+      "note": "Entry-only body revision after actual115 inspection; previous records retained. Different-author review not inherited; no human validation."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "5@6428fbcf396ba754ffaf9f378dccdb13bfa7aad51df61db857d52fd8111e307c",
+      "note": "Confirmed inverse-relation P2 fixed with shared parameterized part-whole predicate; author regressions only. Different-author review and human validation not self-granted."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "5@6428fbcf396ba754ffaf9f378dccdb13bfa7aad51df61db857d52fd8111e307c",
+      "note": "Confirmed inverse-relation P2 fixed with shared parameterized part-whole predicate; author regressions only. Different-author review and human validation not self-granted."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@6428fbcf396ba754ffaf9f378dccdb13bfa7aad51df61db857d52fd8111e307c",
+      "note": "Confirmed inverse-relation P2 fixed with shared parameterized part-whole predicate; author regressions only. Different-author review and human validation not self-granted."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "6@f70bcf24968ec62c239ec7e7ea9d414708c8ef8e1a368b47428caee8a4dc85aa",
+      "note": "Confirmed inverse-relation P2 fixed with shared parameterized part-whole predicate; author regressions only. Different-author review and human validation not self-granted."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "6@f70bcf24968ec62c239ec7e7ea9d414708c8ef8e1a368b47428caee8a4dc85aa",
+      "note": "Confirmed inverse-relation P2 fixed with shared parameterized part-whole predicate; author regressions only. Different-author review and human validation not self-granted."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@f70bcf24968ec62c239ec7e7ea9d414708c8ef8e1a368b47428caee8a4dc85aa",
+      "note": "Confirmed inverse-relation P2 fixed with shared parameterized part-whole predicate; author regressions only. Different-author review and human validation not self-granted."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "7@ec3734b6b0f1618f5b99341637ffc27c9c838e15415b3fccee13e73cab944b19",
+      "note": "Confirmed inverse-relation P2 fixed with shared parameterized part-whole predicate; author regressions only. Different-author review and human validation not self-granted."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "7@ec3734b6b0f1618f5b99341637ffc27c9c838e15415b3fccee13e73cab944b19",
+      "note": "Confirmed inverse-relation P2 fixed with shared parameterized part-whole predicate; author regressions only. Different-author review and human validation not self-granted."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@ec3734b6b0f1618f5b99341637ffc27c9c838e15415b3fccee13e73cab944b19",
+      "note": "Confirmed inverse-relation P2 fixed with shared parameterized part-whole predicate; author regressions only. Different-author review and human validation not self-granted."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@ec3734b6b0f1618f5b99341637ffc27c9c838e15415b3fccee13e73cab944b19",
+      "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/euler3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@ec3734b6b0f1618f5b99341637ffc27c9c838e15415b3fccee13e73cab944b19",
+      "note": "Different-author synthetic B10 exact-source and actual-compiled scoped review: lesson-network/evidence/production/B10/reviews/euler3-independent-final.json. All scoped P2 findings closed; no human/learner/efficacy or release approval."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "8@8a5d058cb0f56377cffec8c8427869023987add028018f32cf13489d1d3200e2",
+      "note": "LR04-B02: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "8@8a5d058cb0f56377cffec8c8427869023987add028018f32cf13489d1d3200e2",
+      "note": "LR04-B02: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@8a5d058cb0f56377cffec8c8427869023987add028018f32cf13489d1d3200e2",
+      "note": "LR04-B02: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "8@8cb6b9036acaa6bae19c83968b5151250ba6847964ebb2d4fb3d104fc7bf5cfd",
+      "note": "LR04 projector framing: given scenario/question separated from response controls into two visible columns; all owner selectors and question information retained. No math or font scaling changes."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "8@8cb6b9036acaa6bae19c83968b5151250ba6847964ebb2d4fb3d104fc7bf5cfd",
+      "note": "LR04 projector framing: given scenario/question separated from response controls into two visible columns; all owner selectors and question information retained. No math or font scaling changes."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@8cb6b9036acaa6bae19c83968b5151250ba6847964ebb2d4fb3d104fc7bf5cfd",
+      "note": "LR04 projector framing: given scenario/question separated from response controls into two visible columns; all owner selectors and question information retained. No math or font scaling changes."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@75d3bf0de9198841d11718fc3a7e195a51eda4c380137bdf0fd6685b4465b94b",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@75d3bf0de9198841d11718fc3a7e195a51eda4c380137bdf0fd6685b4465b94b",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@75d3bf0de9198841d11718fc3a7e195a51eda4c380137bdf0fd6685b4465b94b",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@b2517df330208a03472a166c372e18ce89a79484be208967cac78eb392651e54",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@b2517df330208a03472a166c372e18ce89a79484be208967cac78eb392651e54",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@b2517df330208a03472a166c372e18ce89a79484be208967cac78eb392651e54",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@bd5ce33b525e273683d1ab9c1c64843592727e36071b9321f7d823ecbc426677",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@bd5ce33b525e273683d1ab9c1c64843592727e36071b9321f7d823ecbc426677",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@bd5ce33b525e273683d1ab9c1c64843592727e36071b9321f7d823ecbc426677",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@0b0558b34ae3be83ca09a44c0af514ecbc77035bb7e2ff8d8d25e5af8d0a668b",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@0b0558b34ae3be83ca09a44c0af514ecbc77035bb7e2ff8d8d25e5af8d0a668b",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@0b0558b34ae3be83ca09a44c0af514ecbc77035bb7e2ff8d8d25e5af8d0a668b",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@98303483fea0e51cce167794f95c60ef3e84c51f237406b354db719a2c13e3e3",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@98303483fea0e51cce167794f95c60ef3e84c51f237406b354db719a2c13e3e3",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@98303483fea0e51cce167794f95c60ef3e84c51f237406b354db719a2c13e3e3",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@532f8dd9e5508fdb3cab19cb9bdae753dbcae336d9b1198290659aa3cc02e4c6",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@532f8dd9e5508fdb3cab19cb9bdae753dbcae336d9b1198290659aa3cc02e4c6",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@532f8dd9e5508fdb3cab19cb9bdae753dbcae336d9b1198290659aa3cc02e4c6",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "17@b8e617d354b8878aa5e92a3c834e27f294c0732316b4fcf7f0a1b0dbdfdb289e",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "17@b8e617d354b8878aa5e92a3c834e27f294c0732316b4fcf7f0a1b0dbdfdb289e",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "17@b8e617d354b8878aa5e92a3c834e27f294c0732316b4fcf7f0a1b0dbdfdb289e",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "18@459bf44b86425bcd495472644bef53b3bfdf7423b74919797fc1a88fe617532d",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "18@459bf44b86425bcd495472644bef53b3bfdf7423b74919797fc1a88fe617532d",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "18@459bf44b86425bcd495472644bef53b3bfdf7423b74919797fc1a88fe617532d",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "19@4f2196b254e6bdbba3804beee49c7d1b239a7eca829e74a1a933ed4b7f938962",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "19@4f2196b254e6bdbba3804beee49c7d1b239a7eca829e74a1a933ed4b7f938962",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Yhteenlaskun, poistamisen ja vertailun tilanteet erotetaan. Oma lauseke rakentuu samassa vaiheessa näkyvästä tehtävästä ja kuvasta; tarkistus hyväksyy tuetut samanarvoiset lausekkeet. Esimerkkien avaaminen on tukea, ei itsenäisen ratkaisun näyttöä. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "19@4f2196b254e6bdbba3804beee49c7d1b239a7eca829e74a1a933ed4b7f938962",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M-ARITH-01",
+    "nodeRevision": "audit1-2026-10-28",
+    "liteContentRevision": "lite181-2026-10-27",
+    "actualInventory": {
+      "nodeRevision": "audit1-2026-10-28",
+      "goalOverlay": "goals.ts60, supplied by index n.goal??=GOALS[id]: write with +,−,=.",
+      "intro": "Kolme kivimerkkiä valmiina; write complete number sentences.",
+      "rewardLimit": "Writing a supported sentence is not formal integration mastery.",
+      "demos": [
+        "signScene(kala,3,2,+)",
+        "signScene(kala,5,2,−)",
+        "translateScene words→symbols six eggs plus three now nine"
+      ],
+      "families": {
+        "missingSign": "Choice +/−/=; a3..7,b1..3 or1..a-1, explicit result.",
+        "story": "Choice whole equation from egg augmentation/removal; a4..7,b1..3.",
+        "trueFalse": "Choice truth of numerical relation a3..6,b1..3; false by±1 avoiding negative numbers.",
+        "write": "build/fact; a3..6,b1..3 filtered to distinguish roles; signScene reveal=false; target a op b=c. sameFact requires true equation with the same token bag, permitting order/side rearrangement; new lesson additionally accepts meaningful related fact-family equations."
+      },
+      "transfer": "Result-first c=a□b witha5..8,b1..3; choose operation. Hint reads numerical relation from right, no arithmetic extra hard gate.",
+      "audit": "LESSON_AUDIT370–372: static demos→sign/translate, feedback/hints/write fact.",
+      "reconciliation": [
+        "Extend explicit comparison-minus and two composed equal sides; Lite main demos emphasize change stories.",
+        "Accept equivalent supported order/grouping and correctly related fact-family equations. Pure result repetition is not constructed representation; feedback must distinguish numerical truth from missing pictured relationship.",
+        "No unqualified weight-balance model or global semantic renderer."
+      ],
+      "rawNodeSpec": {
+        "path": "src/content/ranta2.ts",
+        "text": "  {\n    id: 'M-ARITH-01', rev: AUDIT_REV, validRevs: [AUDIT_REV], stop: 'Merkkien kieli', icon: '🔣',\n    intro: 'Kolme kivimerkkiä on valmiina. Nyt niillä kirjoitetaan kokonaisia laskulauseita.',\n    reward: 'Osaat kirjoittaa laskun merkeillä!',\n    demo: () => [\n      { say: 'Kolme kalaa, tulee kaksi lisää, ja on viisi. Laskulauseena: kolme plus kaksi on yhtä paljon kuin viisi.', scene: signScene('kala', 3, 2, '+') },\n      { say: 'Viisi kalaa, kaksi ui pois, jää kolme: viisi miinus kaksi on yhtä paljon kuin kolme.', scene: signScene('kala', 5, 2, '−') },\n      { say: 'Tarinan voi kirjoittaa laskulauseeksi pala kerrallaan: pesässä kuusi munaa, lintu munii kolme lisää, nyt on yhdeksän.', scene: translateScene([['pesässä kuusi', '6'], ['munii kolme lisää', '+ 3'], ['nyt on yhdeksän', '= 9']]) },\n    ],\n    item: cases({\n      missingSign: (r) => {\n        const plus = r.chance(0.5), a = r.int(3, 7), b = r.int(1, plus ? 3 : a - 1);\n        const c = plus ? a + b : a - b;\n        return {\n          say: `Mikä merkki puuttuu? ${a} □ ${b} = ${c}`,\n          scene: paint(big(`${a} □ ${b} = ${c}`)),\n          task: fixed(SIGNS.map(sign), plus ? 0 : 1, plus ? [undefined, `${a} − ${b} olisi ${a - b}, ei ${c}.`, 'Merkki = on jo laskun lopussa.'] : [`${a} + ${b} olisi ${a + b}, ei ${c}.`, undefined, 'Merkki = on jo laskun lopussa.'], 3),\n          hint: `Onko ${c} enemmän vai vähemmän kuin ${a}?`,\n          explain: `${a} ${plus ? '+' : '−'} ${b} = ${c}.`,\n        };\n      },\n      story: (r) => {\n        const plus = r.chance(0.5), a = r.int(4, 7), b = r.int(1, 3);\n        const c = plus ? a + b : a - b;\n        const s = plus ? `Pesässä on ${word(a)} munaa. Lintu munii ${word(b)} lisää.` : `Pesässä on ${word(a)} munaa. ${cap(word(b))} kuoriutuu ja poikaset lähtevät.`;\n        return {\n          say: `${s} Mikä laskulause kertoo tämän?`,\n          task: choose(r, ex(`${a} ${plus ? '+' : '−'} ${b} = ${c}`), [ex(`${a} ${plus ? '−' : '+'} ${b} = ${plus ? a - b : a + b}`), ex(`${a} ${plus ? '+' : '−'} ${b} = ${c + 1}`)], [plus ? 'Munia tuli lisää, ei pois.' : 'Munia lähti pois, ei tullut lisää.', `Merkit ovat oikein, mutta ${a} ${plus ? '+' : '−'} ${b} on ${c}, ei ${c + 1}.`], 1),\n          hint: plus ? 'Tuli lisää: mikä merkki? Laske sitten, montako on nyt.' : 'Lähti pois: mikä merkki? Laske sitten, montako jäi.',\n          explain: `${a} ${plus ? '+' : '−'} ${b} = ${c}.`,\n        };\n      },\n      trueFalse: (r) => {\n        const plus = r.chance(0.5), a = r.int(3, 6), b = r.int(1, 3), ok = r.chance(0.5);\n        const right = plus ? a + b : a - b;\n        const c = right + (ok ? 0 : right === 0 ? 1 : r.pick([-1, 1])); // no negative numbers in grade 1–2\n        const e = `${a} ${plus ? '+' : '−'} ${b} = ${c}`;\n        return {\n          say: `Onko tämä totta? ${e}`,\n          scene: paint(big(e)),\n          task: fixed(YES, ok ? 0 : 1, ok ? [undefined, `${a} ${plus ? '+' : '−'} ${b} on ${right}. Molemmat puolet ovat yhtä paljon, joten totta.`] : [`${a} ${plus ? '+' : '−'} ${b} on ${right}, ei ${c}.`, undefined], 2),\n          hint: `Laske ensin ${a} ${plus ? '+' : '−'} ${b}. Onko tulos ${c}?`,\n          explain: `${a} ${plus ? '+' : '−'} ${b} on ${plus ? a + b : a - b}. ${ok ? 'Totta.' : 'Ei totta.'}`,\n        };\n      },\n      write: (r) => {\n        const plus = r.chance(0.5), k = r.pick(FOOD), a = r.int(3, 6), b = r.pick([1, 2, 3].filter((x) => x !== a && (plus || (x < a && x !== a - x))));\n        const c = plus ? a + b : a - b, op = plus ? '+' : '−';\n        return {\n          say: 'Kirjoita koko laskulause paloista: alussa, merkki, muutos, = ja lopussa.',\n          scene: signScene(k, a, b, op, false),\n          task: { kind: 'build' as const, mode: 'fact' as const, target: `${a} ${op} ${b} = ${c}`, tokens: r.shuffle([...new Set([a, b, c].map(String))]).concat(['+', '−', '=']), max: 5 },\n          hint: `Alussa ${a}. ${plus ? 'Tuli lisää' : 'Lähti pois'} ${b}. Montako ${plus ? 'on nyt' : 'jäi'}?`,\n          explain: `${a} ${op} ${b} = ${c}.`,\n        };\n      },\n    }, (r) => {\n      const a = r.int(5, 8), b = r.int(1, 3), plus = r.chance(0.5);\n      const c = plus ? a + b : a - b, op = plus ? '+' : '−';\n      return {\n        say: `Mikä merkki puuttuu? ${c} = ${a} □ ${b}`,\n        scene: paint(big(`${c} = ${a} □ ${b}`)),\n        task: fixed(SIGNS.map(sign), plus ? 0 : 1, plus ? [undefined, `${a} − ${b} olisi ${a - b}.`, 'Merkki = on jo laskussa.'] : [`${a} + ${b} olisi ${a + b}.`, undefined, 'Merkki = on jo laskussa.'], 3),\n        hint: `Lue lause lopusta: ${a} □ ${b} on ${c}. Onko ${c} enemmän vai vähemmän kuin ${a}?`,\n        explain: `${a} ${op} ${b} = ${c}, joten ${c} = ${a} ${op} ${b}. Lause voi alkaa myös vastauksella.`,\n      };\n    }),\n  },",
+        "startLine": 301,
+        "endLine": 367
+      },
+      "canonical": {
+        "id": "M-ARITH-01",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Matemaattiset symbolit",
+        "title": "Merkkien +, − ja = perusmerkitys",
+        "short_description": "Merkkien +, − ja = perusmerkitys",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2"
+        ],
+        "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: M-SYM-PLUS, M-SYM-MINUS, M-SYM-EQUAL. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+        "status": "candidate_refactored_integration",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "integration",
+        "relations": [
+          {
+            "id": "M-SYM-PLUS",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-ARITH-01 on v0.2:ssa integraationoodi; atominen alitaito M-SYM-PLUS vaaditaan kokonaisuuden hallintaan."
+          },
+          {
+            "id": "M-SYM-MINUS",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-ARITH-01 on v0.2:ssa integraationoodi; atominen alitaito M-SYM-MINUS vaaditaan kokonaisuuden hallintaan."
+          },
+          {
+            "id": "M-SYM-EQUAL",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-ARITH-01 on v0.2:ssa integraationoodi; atominen alitaito M-SYM-EQUAL vaaditaan kokonaisuuden hallintaan."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-SYM-PLUS",
+              "M-SYM-MINUS",
+              "M-SYM-EQUAL"
+            ],
+            "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "integration",
+        "split_children": [
+          "M-SYM-PLUS",
+          "M-SYM-MINUS",
+          "M-SYM-EQUAL"
+        ],
+        "integration_of": [
+          "M-SYM-PLUS",
+          "M-SYM-MINUS",
+          "M-SYM-EQUAL"
+        ],
+        "dynamic_prerequisite_rule": null,
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Matemaattiset symbolit"
+        ]
+      },
+      "liteGraphNode": {
+        "id": "M-ARITH-01",
+        "title": "Merkkien +, − ja = perusmerkitys",
+        "subject": "mathematics",
+        "grade": "1-2",
+        "kind": "integration",
+        "role": "integration",
+        "entry": "none",
+        "foundation": false,
+        "dynamic": null,
+        "groups": [
+          {
+            "all": [
+              "M-SYM-PLUS",
+              "M-SYM-MINUS",
+              "M-SYM-EQUAL"
+            ]
+          }
+        ],
+        "rel": [
+          {
+            "id": "M-SYM-PLUS",
+            "type": "prerequisite",
+            "strength": "required"
+          },
+          {
+            "id": "M-SYM-MINUS",
+            "type": "prerequisite",
+            "strength": "required"
+          },
+          {
+            "id": "M-SYM-EQUAL",
+            "type": "prerequisite",
+            "strength": "required"
+          }
+        ],
+        "soft": [],
+        "curriculum": [
+          "OPH-POPS2014-MATH-VL1-2-S2"
+        ],
+        "original": true
+      },
+      "registry": "FACT_NODES/RANTA2_NODES included in ALL and goals fallback; no targeted families DECL/data.coverage/SIMS overlay. cases transfer separate; other phases select actual listed families."
+    },
+    "sourceHashes": {
+      "src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+      "src/content/ranta2.ts": "28d8f7b08205a7e5be0c2087c85e256e609578e83a9e6e714a1ee8573ff47fc6",
+      "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+      "src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "src/content/audit.ts": "d9891d42eb739a4b65f8e80e4d24eda700f76e136a2fbc149e1965c3a4d69995",
+      "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+      "src/engine/expr.ts": "5aa128b08a9c45a6612f942cc9c52a670910ab87e28f47f5522b0dff67989b77",
+      "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+      "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427"
+    },
+    "taskFamilies": [
+      "missingSign",
+      "story",
+      "trueFalse",
+      "write",
+      "transfer"
+    ],
+    "changes": [
+      "Extend explicit comparison-minus and two composed equal sides; Lite main demos emphasize change stories.",
+      "Accept equivalent supported order/grouping and correctly related fact-family equations. Pure result repetition is not constructed representation; feedback must distinguish numerical truth from missing pictured relationship.",
+      "No unqualified weight-balance model or global semantic renderer."
+    ],
+    "frozenLite": "Read-only; suggestions recorded, no Lite/runtime/game-source edits.",
+    "inherited": "Small concrete quantities, meaningful strategy/models, contextual transfer and optional hints.",
+    "extended": "Situation change/pairing/quantity model followed by own bounded written equation; optional numeric/operator tokens.",
+    "bridge": "Teacher network resolver owns real deployed Lite/full routes; no public URL or personal mastery claim.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/audit.ts": "8877a26bb3939ee8f2639cc43fd2d1073bcde07aedc917b29d6b931321dd5783",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/facts.ts": "a696f7fd77cf6de59eae08d4fac0791a04f35065352415b1fac9c1fdb377c3c9",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/parts.ts": "806680eedb06693374837d9488532f84cd4c905ca9415cae83e4e855d78f9a7e",
+        "src/content/ranta2.ts": "87944d2b01f0eeb53212fa1e9d86fa034c4b8db3a8fd0c572f7d74a462716020",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/engine/check.ts": "47db66a3f49e0ad81dbe6a44ef630f68c219ef1278b96b1d48e353ccb5d113c3",
+        "src/engine/expr.ts": "5aa128b08a9c45a6612f942cc9c52a670910ab87e28f47f5522b0dff67989b77",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/ui/widgets.ts": "ed38f173766820cfc9dafcf8ea95a57a8940afe50a36ad19f3b00f3193e56ede"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M-ARITH-01",
+      "subject": "mathematics",
+      "grade_band": "1-2",
+      "topic_area": "Luvut ja laskutoimitukset",
+      "parent_concept": "Matemaattiset symbolit",
+      "title": "Merkkien +, − ja = perusmerkitys",
+      "short_description": "Merkkien +, − ja = perusmerkitys",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL1-2-S2"
+      ],
+      "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: M-SYM-PLUS, M-SYM-MINUS, M-SYM-EQUAL. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+      "status": "candidate_refactored_integration",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "integration",
+      "relations": [
+        {
+          "id": "M-SYM-PLUS",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-ARITH-01 on v0.2:ssa integraationoodi; atominen alitaito M-SYM-PLUS vaaditaan kokonaisuuden hallintaan."
+        },
+        {
+          "id": "M-SYM-MINUS",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-ARITH-01 on v0.2:ssa integraationoodi; atominen alitaito M-SYM-MINUS vaaditaan kokonaisuuden hallintaan."
+        },
+        {
+          "id": "M-SYM-EQUAL",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-ARITH-01 on v0.2:ssa integraationoodi; atominen alitaito M-SYM-EQUAL vaaditaan kokonaisuuden hallintaan."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-SYM-PLUS",
+            "M-SYM-MINUS",
+            "M-SYM-EQUAL"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "integration",
+      "split_children": [
+        "M-SYM-PLUS",
+        "M-SYM-MINUS",
+        "M-SYM-EQUAL"
+      ],
+      "integration_of": [
+        "M-SYM-PLUS",
+        "M-SYM-MINUS",
+        "M-SYM-EQUAL"
+      ],
+      "dynamic_prerequisite_rule": null,
+      "concept_path": [
+        "Matematiikka",
+        "Luvut ja laskutoimitukset",
+        "Matemaattiset symbolit"
+      ]
+    },
+    "canonicalSource": "reference/inputs/canonical-690-graph.json",
+    "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "gradeBand": "1-2",
+    "requiredGroups": [
+      {
+        "all_of": [
+          "M-SYM-PLUS",
+          "M-SYM-MINUS",
+          "M-SYM-EQUAL"
+        ],
+        "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+      }
+    ],
+    "strongSupport": [],
+    "additionalHardGates": [],
+    "teacherObjective": "Merkkien +, − ja = perusmerkitys",
+    "childGoal": "Kuvaan määrien yhteyden merkeillä +, − ja =.",
+    "instructionalForm": "Situation change/pairing/quantity model followed by own bounded written equation; optional numeric/operator tokens.",
+    "scope": "Finnish grades1–2, source-owned standalone support and low-stakes current-response checking. Canonical curriculum_refs copied as project provenance, not newly audited Finnish law/current curriculum claims.",
+    "support": "Adult reading optional, no spoken/naming/audio gate; free anchors to model/explanation/practice/exit and optional help/offline/extension.",
+    "assumptions": "Concrete objects/number words/numerals from actual prerequisite chain. Small +/- steps and equations explicitly explained where used; no new hard fluency gate.",
+    "evidenceLimits": "No timer, recall-speed, delayed retention, formal mastery, physical skill, efficacy, independent-credit or personal-history claims. Help/model/explanation and current feedback do not demonstrate independent construction/fluency.",
+    "interpretation": "FACT numeric answer checks a sum only; ARITH checks a written true quantity relationship with relevant parts, not just equal numeric totals; MENTAL requires two preserved parts plus correct result, accepts non-decade and commuted valid decompositions.",
+    "uiSkill": "game-studio:game-ui-frontend read and applied: calm tabletop math view, CSS theme variables, DOM controls, early action, low chrome, optional notes, meaningful manual state transitions, mobile wrapping.",
+    "playtestSkill": "game-studio:game-playtest read with shared checklist; planned source-preview boot/input/state/screenshot/lifecycle/resize checks320/390/1280, not integrated115 proof.",
+    "animation": "Finite manual steps/all/reset, no time loop or decorative character animation. No animation implies verified learner speed.",
+    "feedbackContract": {
+      "path": "INTERACTION_FEEDBACK_CONTRACT.md",
+      "sha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "eventCommitGuidance": "EVENT_COMMIT_REVIEW_B05.md",
+      "eventCommitSha256": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+      "rule": "Input/change retire dependent current verdict. Explicit checks read every visible response/context field. Help-only and separate model edits preserve invariant practice verdict."
+    }
+  },
+  "extensions": {
+    "batch": "B10",
+    "author": "Euler own3 only; Feynman independent review after freeze. No self-approval.",
+    "assetProvenance": "Unmodified supplied v2 generated raster reinterpretation of user-drawn identities, not asserted hand-drawn original. SHA bound; no asset generation. Original mathematical SVGs generated from own deterministic functions.",
+    "externalOracle": "No external runtime oracle. Main Wolfram finite reference crosscheck is separate project evidence, not approval or a replacement for own domain/source/UI tests. No duplicate query or new tool claim.",
+    "releaseHolds": "Human/learner/full manual accessibility/efficacy/licence/release/deployment holds remain unchanged.",
+    "entryRevision": "Own-body compact action/model adjacency after actual115 fullshell inspection; optional model selectors moved below figure. No shared chrome or mathematical/checker/module change. Author native recheck and different-author review required on this exact new revision.",
+    "relationFamilyFix": "Cumulative r7: all authored scenarios declare immutable coherent whole/parts families. One shared family-set evaluator handles add/remove/compare/equal, including both equality sets4/3/1 and4/2/2. No plus-only equality branch, question-text/ID whitelist or promise weakening. Numerical truth remains distinct from role membership; unsupported kind/incoherent set fail closed.",
+    "relationFamilyContract": "Finite0–20whole/parts data; exact declared family counts and common whole; same data drives equality picture and all number-token roles, supplying4 for equality inverses. Strict parser/rendered SVG bytes/body/CSS/teacher objectives preserved.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B02",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

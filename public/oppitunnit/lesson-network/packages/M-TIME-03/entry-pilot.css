@@ -1,0 +1,31 @@
+/* Bounded two-lesson entry pilot; the canonical shell and normal teacher mode remain available. */
+.presentation header { padding: .6rem 1rem; gap: .25rem; }
+.presentation header span, .presentation .toolbar [data-copy-id], .presentation .toolbar #copy-lesson { display: none; }
+.presentation main { padding: .75rem; }
+.presentation main > .eyebrow { font-size: .8rem; margin: .3rem 0; }
+.presentation main > h1 { font-family: inherit; font-size: 1.05rem; line-height: 1.3; margin: .25rem 0; max-width: none; }
+.presentation .toolbar { padding: .2rem 0; }
+.presentation .lesson { padding: .85rem; margin: .5rem 0; }
+.presentation .content-state { font-size: .8rem; margin: .15rem 0; }
+[data-entry-intro] { display: flex; align-items: center; gap: .75rem; margin: .4rem 0; }
+[data-entry-intro] img { flex: 0 0 72px; width: 72px; height: 72px; margin: 0; }
+[data-entry-intro] h2 { margin: .1rem 0; font-size: 1.4rem; line-height: 1.2; }
+[data-entry-intro] p { margin: .2rem 0; line-height: 1.45; }
+[data-entry-nav] { display: flex; flex-wrap: wrap; gap: .4rem; margin: .5rem 0; }
+[data-entry-nav] a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .4rem .65rem; border: 1px solid #49645c; border-radius: .3rem; background: white; font-size: 1rem; }
+[data-entry-explore] > p { line-height: 1.45; }
+[data-entry-explore] fieldset { margin: .4rem 0; padding: .65rem; }
+[data-seconds-controls] { display: flex; flex-wrap: wrap; gap: .35rem; margin: .3rem 0; }
+[data-seconds-controls] button { min-height: 44px; margin: 0; font-size: 1rem; white-space: normal; }
+
+[data-entry-intro] p { font-size: 1rem; }
+[data-entry-explore] > h3 { margin: .5rem 0; font-size: 1.15rem; }
+[data-measure] fieldset > p { font-size: 1rem; line-height: 1.45; margin: .4rem 0; }
+
+[data-entry-explore] > p { font-size: 1rem; }
+
+/* LR04 frame second pass: layout/spacing only. */
+.audience [data-seconds-lab] p{margin:.25rem 0}
+
+/* Review follow-up: bounded diagram size; shared audience columns handle narrow screens. */
+.audience [data-seconds-view] svg { width: 100%; height: min(28vh, 224px); }

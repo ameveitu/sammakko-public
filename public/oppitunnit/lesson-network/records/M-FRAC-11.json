@@ -1,0 +1,525 @@
+{
+  "kcId": "M-FRAC-11",
+  "pagePath": "lessons/M-FRAC-11.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-FRAC-11",
+  "canonicalNode": {
+    "id": "M-FRAC-11",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Murtolukulaskut",
+    "title": "Samannimisten murtolukujen yhteenlasku",
+    "short_description": "Samannimisten murtolukujen yhteenlasku",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-FRAC-03",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-FRAC-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-ADD-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-FRAC-03",
+          "M-ADD-01"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Murtolukulaskut"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-FRAC-03",
+      "targetKCId": "M-FRAC-11",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-FRAC-03 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ADD-01",
+      "targetKCId": "M-FRAC-11",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-FRAC-11",
+      "targetKCId": "M-FRAC-13",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-FRAC-11 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-FRAC-03",
+        "M-ADD-01"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-FRAC-11/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "NCETM — Adding and subtracting within one whole",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-304-adding-and-subtracting-within-one-whole/",
+        "accessed": "2026-10-29",
+        "retrieval": "Official HTML teaching points1–4 read, not a claim of reading every downloadable slide.",
+        "use": "Same-unit numerator arithmetic, inverse operations, whole represented as n/n.",
+        "ageAdaptation": "English Year3 comparator narrowed to Finnish frozen grades3–6 scope; not an OPH mandate or efficacy result.",
+        "licence": "Conceptual corroboration and link only. No external text, drawings or downloads reproduced."
+      },
+      {
+        "title": "NRICH — A4 Fraction Addition",
+        "url": "https://nrich.maths.org/problems/a4-fraction-addition",
+        "accessed": "2026-10-29",
+        "retrieval": "Official University of Cambridge problem read; associated subtraction link not opened. Shared paper/unit idea reused for subtraction, not a false subtraction-source retrieval claim.",
+        "use": "Define one whole explicitly and use physical paper pieces to relate area and numerical fractions.",
+        "ageAdaptation": "Age7–11; different denominators and mixed numbers in the original are outside this initial same-denominator lesson.",
+        "licence": "Copyright restrictions preserved. Original Finnish words/SVG only, no source figures or learner work copied."
+      },
+      {
+        "title": "NCETM — Primary subject knowledge audit: Fractions Q8",
+        "url": "https://www.ncetm.org.uk/media/wk4o3p3l/pska-frac-q8.pdf",
+        "accessed": "2026-10-29",
+        "retrieval": "Official PDF on numerator/denominator misconception retrieved during cluster preparation.",
+        "use": "Unitising explains why adding/subtracting denominators would change the unit.",
+        "ageAdaptation": "Adult knowledge comparator; short child counterexample after correct worked examples.",
+        "licence": "Crown copyright2022 source linked; no external figure/prose reproduced."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+    "history": [
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/fraction-independent-r2.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-FRAC-11",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "examples.svg",
+        "sha256": "e10c86bfd9b0cae69439f9f49febbc359afbfee530234cf532601b40c1cd3368"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "608283c875d1b135cd8d4d82c01747116458c7542f67ee5fdb9b8103ef20a482"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "title": "NCETM — Adding and subtracting within one whole",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-304-adding-and-subtracting-within-one-whole/",
+        "accessed": "2026-10-29",
+        "retrieval": "Official HTML teaching points1–4 read, not a claim of reading every downloadable slide.",
+        "use": "Same-unit numerator arithmetic, inverse operations, whole represented as n/n.",
+        "ageAdaptation": "English Year3 comparator narrowed to Finnish frozen grades3–6 scope; not an OPH mandate or efficacy result.",
+        "licence": "Conceptual corroboration and link only. No external text, drawings or downloads reproduced."
+      },
+      {
+        "title": "NRICH — A4 Fraction Addition",
+        "url": "https://nrich.maths.org/problems/a4-fraction-addition",
+        "accessed": "2026-10-29",
+        "retrieval": "Official University of Cambridge problem read; associated subtraction link not opened. Shared paper/unit idea reused for subtraction, not a false subtraction-source retrieval claim.",
+        "use": "Define one whole explicitly and use physical paper pieces to relate area and numerical fractions.",
+        "ageAdaptation": "Age7–11; different denominators and mixed numbers in the original are outside this initial same-denominator lesson.",
+        "licence": "Copyright restrictions preserved. Original Finnish words/SVG only, no source figures or learner work copied."
+      },
+      {
+        "title": "NCETM — Primary subject knowledge audit: Fractions Q8",
+        "url": "https://www.ncetm.org.uk/media/wk4o3p3l/pska-frac-q8.pdf",
+        "accessed": "2026-10-29",
+        "retrieval": "Official PDF on numerator/denominator misconception retrieved during cluster preparation.",
+        "use": "Unitising explains why adding/subtracting denominators would change the unit.",
+        "ageAdaptation": "Adult knowledge comparator; short child counterexample after correct worked examples.",
+        "licence": "Crown copyright2022 source linked; no external figure/prose reproduced."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/fraction-independent-r2.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/fraction-independent-r2.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-FRAC-11",
+      "sourceBuild": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "sourceFile": "authority/production-181-v2/lite/src/content/written.ts",
+      "actualFamilies": [
+        "add",
+        "picture",
+        "missing",
+        "sums",
+        "transfer"
+      ],
+      "familyMapping": {
+        "add": "Open result fields and same-size animation.",
+        "picture": "Original fixed-whole SVG and counts before notation.",
+        "missing": "Optional missing addend or explicit1=n/n cut before removal.",
+        "sums": "Three open rows, reordering preserves association.",
+        "transfer": "Remaining roll includes co-taught subtraction M-FRAC-12."
+      },
+      "demoInventory": [
+        "2/8+3/8",
+        "1/6+4/6"
+      ],
+      "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "sourceHashes": {
+        "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+        "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2",
+        "authority/production-181-v2/ASSETS.md": "bdccb0695c27382d99f8831077adf2f247b1bb168018bc5f829c510df3792c48",
+        "authority/production-181-v2/STYLE_REVIEW_FI.md": "aed7c1ba925e0743dc8f4d78b26cf875c5595e3afb39e0d3cd679f881b1683a4",
+        "authority/production-181-v2/ASSET_STYLE_GATE.txt": "fb5a31989b7ac7ad3f2e4f875ca86ea2f224821de09fa5eb4371fc3f36239fb7",
+        "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+        "EVENT_COMMIT_REVIEW_B05.md": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+        "authority/production-181-v2/lite/src/content/written.ts": "58ee93036fb7417e8324072db5be810426a99db346c23ef0651c9525a9bfd0c6",
+        "authority/production-181-v2/lite/src/content/added181.ts": "1fb1c7ec3aa12bf340768c7d87afdb5b3b5550323bb28f83fbe5c3fc33cbf236",
+        "authority/production-181-v2/lite/src/content/fracanim.ts": "b95b23255f75dfd3e88a4eba904e22d9cee75d2f756e4125824658488eac3ac1",
+        "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b"
+      },
+      "reconciliation": "alignment.md",
+      "corrections": [
+        "Unit size never grows/shrinks while translated.",
+        "Wrong denominator explicitly marked after coherent positive teaching.",
+        "Equivalent fractions and whole/zero boundaries accepted.",
+        "No undefined-fraction distractors or pretend new mascot frames."
+      ]
+    },
+    "planning": {
+      "gradeBand": "3-6",
+      "role": "atomic",
+      "teacherObjective": "Samannimisten murtolukujen yhteenlasku saman kokonaisen ja saman yksikköosan avulla.",
+      "childGoal": "Lasken saman kokoiset osat yhteen.",
+      "canonical": {
+        "id": "M-FRAC-11",
+        "subject": "mathematics",
+        "grade_band": "3-6",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Murtolukulaskut",
+        "title": "Samannimisten murtolukujen yhteenlasku",
+        "short_description": "Samannimisten murtolukujen yhteenlasku",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL3-6-S2"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-FRAC-03",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-FRAC-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-ADD-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-FRAC-03",
+              "M-ADD-01"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Murtolukulaskut"
+        ]
+      },
+      "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "prerequisiteGroups": [
+        {
+          "all_of": [
+            "M-FRAC-03",
+            "M-ADD-01"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "requiredPrerequisites": [
+        {
+          "id": "M-FRAC-03",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-FRAC-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+        },
+        {
+          "id": "M-ADD-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-ADD-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "strongSupport": [],
+      "assumptions": [
+        "One common whole; integer numerator arithmetic supplied by required KC.",
+        "Optional inverse/missing/leftover task is labelled, not an additional frozen prerequisite."
+      ],
+      "limits": [
+        "Nonnegative same-denominator fractions withinonewhole; no arbitrary denominator/mixed-number arithmetic.",
+        "Original SVG shows areas/lengths, not proof of hand-cutting or embodied skill."
+      ],
+      "evidenceLimit": "No independent/delayed/formal mastery or personalhistory; supported local practice only."
+    },
+    "extensions": {
+      "productionBatch": "B07",
+      "authoredOn": "2026-10-29",
+      "humanReview": "not_performed",
+      "simulationType": "same-unit-piece-translation",
+      "timingSemantics": "800ms perpiece is optional playback; no claim of real physical time.",
+      "sourceNotes": {
+        "research.md": "35f5fdae7adace4466492cd51ad4a6ed6a01aa9d1e00cf61084c58cd498c7cdd",
+        "alignment.md": "aa00271c0cbb6ccaa3d01cc6c6106a8fc687db4669ba9a979ab94b027baa3c7c",
+        "tests.mjs": "10b538114d0535b72da567d605e1a69d15a688f1896a919d3563d281f264b44d"
+      }
+    },
+    "contentHash": "7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+    "contentRevision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+      "history": [
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/fraction-independent-r2.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+          "note": "No actual human/target-learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@7f176a9e4397954efee11140ee53a79b4e4138bb25cda6eaadc3ca12911f3af8",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/fraction-independent-r2.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    }
+  },
+  "outputHash": "8a73df1d3da362d554a6ed64ef12130e33b28e339d5b83d8b2115ad184ac4a60",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "8a73df1d3da362d554a6ed64ef12130e33b28e339d5b83d8b2115ad184ac4a60",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

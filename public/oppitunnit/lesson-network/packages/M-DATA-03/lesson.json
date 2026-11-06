@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-DATA-03",
+  "revision": 14,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "row-column.svg",
+      "sha256": "ca2b79f78af3a9c7789239cc0ce27383b45496ba28b62886b6151b302b78fa79"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "1ce2d4130a56c2c5b8768a18bca1aaa40bdde9908252e90298822969ae682b7a"
+    }
+  ],
+  "research": [
+    {
+      "title": "White Rose Education — Year 2 Summer, Statistics Step 2: Tables",
+      "url": "https://assets.whiteroseeducation.com/new-schemes/Y2%20Summer%20Term%20Scheme%20of%20Learning.pdf",
+      "accessed": "2026-10-29",
+      "retrieval": "Search preview found Step2. Web full-open failed size limit; then actual PDF retrieved with curl. PDF pages78 and80 extracted; page78 rendered with Poppler and visually inspected.",
+      "sha256Retrieved": "cf8aa461a3db745b55db87a222ccdea14bffea3ae967144cb674077b5fe875cf",
+      "licence": "© White Rose Education 2022 printed on pages78 and80. No redistribution licence inferred. Only pedagogical ideas compared; no source table, turtle, worksheet, text or artwork reused.",
+      "use": "Adopt distinction between interpreting given information and collecting it. Compare verbal descriptions with table entries. Reject tallies, totalling, missing-value arithmetic and the original fruit worksheet as required tasks here."
+    },
+    {
+      "title": "NCETM Teaching for Mastery Year 2 — Statistics, printed p.30",
+      "url": "https://www.ncetm.org.uk/media/dnobtk14/mastery_assessment_yr2.pdf",
+      "accessed": "2026-10-29",
+      "retrieval": "Official PDF text opened in web; Statistics p.30 read. Web screenshot cache miss; no successful visual inspection claimed for that PDF.",
+      "licence": "Text © Crown Copyright 2015; illustration/design © Oxford University Press 2015. No illustrations copied; discussion of scope only.",
+      "use": "Adopt purposeful questions and explanation of what a table answers. Separate retrieval from totals/differences, which the source distinguishes; do not infer mastery from one correct response."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@0a68af9b31005e68129b37f234daf153f11cb56398a018b928bfe975a1e35392",
+      "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B02/review.md. Human/learner effectiveness and release approval remain pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@0a68af9b31005e68129b37f234daf153f11cb56398a018b928bfe975a1e35392",
+      "note": "Independent synthetic source review completed within the bounded technical scope; integration record, not author self-approval. See evidence/production/B02/review.md. Human/learner effectiveness and release approval remain pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@0a68af9b31005e68129b37f234daf153f11cb56398a018b928bfe975a1e35392",
+      "note": "No actual human or learner validation has occurred."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@51ff9cd45bab11891cb8637031fc8724bd369981f252b0a219a35675a1c5ae85",
+      "note": "LR04-B03: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@51ff9cd45bab11891cb8637031fc8724bd369981f252b0a219a35675a1c5ae85",
+      "note": "LR04-B03: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@51ff9cd45bab11891cb8637031fc8724bd369981f252b0a219a35675a1c5ae85",
+      "note": "LR04-B03: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@1a01a24e6a2dc97016e2575421ffcd3bd4c06e09f91792c3c9650019a4bc6a5b",
+      "note": "LR04 projector source framing: original text/owner roots retained, compound teaching stages separated; current independent review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@1a01a24e6a2dc97016e2575421ffcd3bd4c06e09f91792c3c9650019a4bc6a5b",
+      "note": "LR04 projector source framing: original text/owner roots retained, compound teaching stages separated; current independent review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@1a01a24e6a2dc97016e2575421ffcd3bd4c06e09f91792c3c9650019a4bc6a5b",
+      "note": "LR04 projector source framing: original text/owner roots retained, compound teaching stages separated; current independent review pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@0a55cc0202aa2f73f44870c632d2a169a99f2680111d474262730b96a048cdf0",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@0a55cc0202aa2f73f44870c632d2a169a99f2680111d474262730b96a048cdf0",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@0a55cc0202aa2f73f44870c632d2a169a99f2680111d474262730b96a048cdf0",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@0641a7206fb6e7718989255a6c86c95f63458d0861ee44f355516e869ec5f9a1",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@0641a7206fb6e7718989255a6c86c95f63458d0861ee44f355516e869ec5f9a1",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@0641a7206fb6e7718989255a6c86c95f63458d0861ee44f355516e869ec5f9a1",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@314e7ac3174658479e1b3915f0ffa781dbca2ce8af6b972129c717ea9879b6c1",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@314e7ac3174658479e1b3915f0ffa781dbca2ce8af6b972129c717ea9879b6c1",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@314e7ac3174658479e1b3915f0ffa781dbca2ce8af6b972129c717ea9879b6c1",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@da5921b66eb8a312a214974b6aa7c18e5a5758dcb06e374556aacc544f703934",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@da5921b66eb8a312a214974b6aa7c18e5a5758dcb06e374556aacc544f703934",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@da5921b66eb8a312a214974b6aa7c18e5a5758dcb06e374556aacc544f703934",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@a9e4e191dd7ef6ac8f67977166714577d628a602ee8cae97825ea50bf75d0233",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@a9e4e191dd7ef6ac8f67977166714577d628a602ee8cae97825ea50bf75d0233",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@a9e4e191dd7ef6ac8f67977166714577d628a602ee8cae97825ea50bf75d0233",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@5da17ed238ca4d2226a29d560f5353242876fbeb453c1231a4414be33dbc91c6",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@5da17ed238ca4d2226a29d560f5353242876fbeb453c1231a4414be33dbc91c6",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@5da17ed238ca4d2226a29d560f5353242876fbeb453c1231a4414be33dbc91c6",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@c8bd99f064b5c95ff2f4b0af649e1ec71173cbad7a862631dba64fa901d65321",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@c8bd99f064b5c95ff2f4b0af649e1ec71173cbad7a862631dba64fa901d65321",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@c8bd99f064b5c95ff2f4b0af649e1ec71173cbad7a862631dba64fa901d65321",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@8dcc0ddbafadd5092fa43fff3412cafdb66c2124fb42d7c185420e39fdf6496b",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@8dcc0ddbafadd5092fa43fff3412cafdb66c2124fb42d7c185420e39fdf6496b",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@8dcc0ddbafadd5092fa43fff3412cafdb66c2124fb42d7c185420e39fdf6496b",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@86aea5fd3e65eaddd0bf36a6e3bfe63a4a84af1fccf2f00fc7ea751e0a61de66",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@86aea5fd3e65eaddd0bf36a6e3bfe63a4a84af1fccf2f00fc7ea751e0a61de66",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Loikan eväs haetaan rivin ja sarakkeen risteyksestä: Leipä, ei saman rivin Vesi. Taulukon otsikot, kysymys ja valittava ruudukko pidetään samassa työtilassa. Sisältö ei edellytä lisäsummaa tavoitellun tiedonhaun näyttämiseen. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@86aea5fd3e65eaddd0bf36a6e3bfe63a4a84af1fccf2f00fc7ea751e0a61de66",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M-DATA-03",
+    "sourceBuild": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "validRevisions": [
+      "audit1-2026-10-28"
+    ],
+    "sourceFile": "authority/production-181-v2/lite/src/content/saari2.ts",
+    "actualFamilies": [
+      "read",
+      "twoWay",
+      "fewest",
+      "cells",
+      "transfer"
+    ],
+    "familyMapping": {
+      "read": "choice: animal row lookup in quantity table, values2–12",
+      "twoWay": "choice: animal and day intersection in 2x2 numerical table",
+      "fewest": "choice: compare quantities2–15, adds numerical comparison demand",
+      "cells": "place: retrieve three of four values from row/day labels, actual branch absent from COVERAGE.md snapshot",
+      "transfer": "numeric: sum two day values in chosen row, values2–12 each; arithmetic beyond structure"
+    },
+    "demoAnimationsRead": [
+      "dataanim.ts:tableReadScene"
+    ],
+    "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "liteGraphRevision": "551d6a2ebd541a30785040cee458ca49132a0756e313ce45f1799ed2d6a7be11",
+    "registry": {
+      "goalOverlay": "GOALS fills missing NodeSpec.goal; M-GEO-01 has explicit goal.",
+      "casePhases": "cases chooses all branch keys in guided/independent/retrieval unless guidedTags supplied; transfer uses transfer branch. These four have no guidedTags restriction.",
+      "motionOverlay": "index.ts SIMS overlay does not target any of these four IDs.",
+      "familyOverlay": "families.ts merges scope COVERAGE then DECL in node, node/*, node/tag order. No declarations or coverage rows target these four; default outcomes from Task.kind, empty assumed/supplied/coTaught/support/incidental.",
+      "canonicalDynamicRule": null,
+      "ruleResolution": "family.rule falls back to kc(node).dynamic; null for all four including dynamic-entry M-DATA-03; no invented rule.",
+      "familyLimits": "Registry default does not imply full canonical competence; authored interaction limits stated explicitly."
+    },
+    "audit": {
+      "path": "authority/production-181-v2/lite/audit/LESSON_AUDIT.md",
+      "row": 128,
+      "state": "tehty / korjattu",
+      "meaning": "Historical synthetic audit report, not learner or human efficacy evidence. Actual NodeSpec branches take precedence over stale COVERAGE.md snapshot."
+    },
+    "correctionsAndExtensions": [
+      "Keep row/column intersection from Lite demo; extend to selecting both headers and exact cell, accepting either header order.",
+      "Correct task scope: Lite fewest and transfer demand comparison/addition absent from this canonical target; omit these demands and flag separately.",
+      "Repeated value Vesi in two cells intentionally prevents matching the word alone from establishing the right location.",
+      "Retain canonical process role rather than describing any single answer as table-building or data-collection mastery."
+    ],
+    "sourceHashes": {
+      "src/content/saari2.ts": "bf9e657f3e4f975cbdafd9c8b5c891d789ffd4e98be7126ee438096f7d9f5c6e",
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "src/content/dataanim.ts": "a8c997f90dc9e53b2c9925984b6c1e5a4c0b24969dea0800fc0d68f407aa2fcd"
+    },
+    "reconciliation": "alignment.md",
+    "runtimeRoutePolicy": "No external game routes asserted. Main shared resolver alone may expose verified routes.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "launch1-2026-11-01",
+      "validRevisions": [
+        "launch1-2026-11-01",
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/dataanim.ts": "0389357a65aec379a6fdd75d9301c509ae5bc8b4373551707ff3fa82355fc745",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/saari2.ts": "98fb2fb855d272e91d93e194a98c3d401c2b784a2d364a87f434dadbe2604ec1",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "1-2",
+    "teacherObjective": "Oppilas toteuttaa tiedonhaun valmiista taulukosta tulkitsemalla kysymyksen, valitsemalla oikean rivi- ja sarakeotsikon ja osoittamalla niiden risteyksen.",
+    "childGoal": "Harjoittelen etsimään tiedon rivin ja sarakkeen avulla.",
+    "hook": "Aava ja Loikka pakkaavat: mistä löytyy juuri Loikan eväs?",
+    "canonical": {
+      "id": "M-DATA-03",
+      "subject": "mathematics",
+      "grade_band": "1-2",
+      "topic_area": "Tietojenkäsittely ja tilastot",
+      "parent_concept": "Taulukko",
+      "title": "Yksinkertaisen taulukon rakenteen ymmärtäminen",
+      "short_description": "Yksinkertaisen taulukon rakenteen ymmärtäminen",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL1-2-S4"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "representation",
+      "relations": [
+        {
+          "id": "M-DATA-02",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Taulukon rakennetta voidaan lukea ja oppia valmiista taulukosta ennen oman havaintoaineiston tallentamista."
+        }
+      ],
+      "prerequisite_groups": [],
+      "foundation_entry": false,
+      "zero_required_indegree": true,
+      "foundation_entry_rationale": null,
+      "entry_role": "dynamic",
+      "mastery_role": "process",
+      "concept_path": [
+        "Matematiikka",
+        "Tietojenkäsittely ja tilastot",
+        "Taulukko"
+      ]
+    },
+    "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "prerequisiteGroups": [],
+    "requiredPrerequisites": [],
+    "strongSupport": [
+      {
+        "id": "M-DATA-02",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Taulukon rakennetta voidaan lukea ja oppia valmiista taulukosta ennen oman havaintoaineiston tallentamista."
+      }
+    ],
+    "assumptions": [
+      "Aikuinen voi lukea otsikot ja lyhyet solutekstit; lukutaitoa ei päätellä suorituksesta.",
+      "Tiedot annetaan valmiina eikä aiempaa tiedonkeruuta vaadita.",
+      "Rivi, sarake, otsikko ja risteys selitetään näkyvällä mallilla.",
+      "Ennen ja Jälkeen tarkoittavat toisessa taulukossa ennen retkeä ja retken jälkeen; mitään kellonaikaa ei lueta."
+    ],
+    "limits": [
+      "Kanoninen process-rooli säilyy; tehtävä tarkistaa hakuprosessin, ei muodollista masteryä.",
+      "Otsikoiden korostus on tukea, joten tulosta ei kutsuta itsenäiseksi näytöksi.",
+      "Ei laskuja, havaintojen keräämistä, tukkimiehen merkkejä, taulukon tekemistä tai numerovaihtoehtojen tunnistamista.",
+      "Valmiit retkisuunnitelmat ovat keksittyjä; niiden ei väitetä olevan lasten havaintoja."
+    ],
+    "concreteToRepresentation": "Käsin kokeiltava tilanne → nimetty alkuperäinen kuva → itse tehtävä toimenpide → selitetty palaute; ei ennenaikaista formalismia.",
+    "interaction": "constructive-row-column-intersection",
+    "learnerAction": "Oppilas toteuttaa tiedonhaun valmiista taulukosta tulkitsemalla kysymyksen, valitsemalla oikean rivi- ja sarakeotsikon ja osoittamalla niiden risteyksen.",
+    "optionalHelp": "body.html details sisältää apua, lisätutkimuksen sekä opettajan offline-vinkin; exit-kysymys selityksen tai näyttämisen avulla.",
+    "evidenceLimit": "Low-stakes practice only. Visible supports are not independent evidence. No persistence, mastery awards or efficacy claim."
+  },
+  "extensions": {
+    "simulationType": "constructive-row-column-intersection",
+    "authoredOn": "2026-10-29",
+    "assignment": "B02 assigned four only",
+    "licence": "Original lesson text/SVG; ownership/licensing reserved to project owner. Supplied mascot PNG unchanged, user-provided v2 generated interpretation.",
+    "reviewStatus": "Author self-check only; independent synthetic review and integration pending; human review not performed.",
+    "pureTestCommand": "node --test lesson-network/packages/M-DATA-03/tests.mjs",
+    "sourceNotes": {
+      "research.md": "ae0885f043483b1b07bf4637f293340074933d715dfba434bf4c636857223b7f",
+      "alignment.md": "5f84a4da5eb4f7683ccb069c58645259faa91e1a7e2ffdc296f976e7ace266cb",
+      "tests.mjs": "48bbf6ed05f15bb91ac88111bf35447ef34b43d099d2a20cfb618874cdfccd82"
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B03",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

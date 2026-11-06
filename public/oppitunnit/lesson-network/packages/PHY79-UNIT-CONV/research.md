@@ -1,0 +1,7 @@
+# PHY79-UNIT-CONV — source comparison2026-10-29
+
+NIST SP811 Chapter4 defines decimal SI prefixes; Chapter5 lists minute/hour relationships. Corroborate exact km↔m↔cm↔mm and h↔min↔s factors. Reject applying base100 to time, or converting length into time by unit selection. The actual physical quantity remains equal. These are unit definitions, not evidence for learning effectiveness.
+
+Oak’s primary length-conversion lesson relates multiplication/division choice to larger/smaller units and preserving measured quantity; compare that conceptual route with Lite’s explicit factors and animated grouping. Adopt meaning before a shortcut; reject mechanical decimal-point shifting or pretending a typed conversion proves physical measuring skill. Foreign Year5 adaptation to Finnish7–9 is project design. No source slides/prose/figures reproduced or generic distribution licence inferred.
+
+Read Lite physics.ts317–355 kmM/minS/hMin/cmM/match/transfer, phyanim.ts156–200 convScene grouping/remainder, families94–100 per-quantity assumptions, goals/world/types and audit row138. Keep concrete250cm→2,5m and factor60 contrasts as mathematical definitions/common examples with own figures/text. Correct the overly broad “all units same” message: compatible units for each quantity before using a formula, not metres converted to seconds. No actual Lite modification. Original static/interactive SVG and unchanged supplied Aava PNG; no learner/efficacy/release approval.

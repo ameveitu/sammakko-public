@@ -1,0 +1,905 @@
+{
+  "kcId": "M-SUB-100",
+  "pagePath": "lessons/M-SUB-100.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-SUB-100",
+  "canonicalNode": {
+    "id": "M-SUB-100",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Vähennyslasku",
+    "title": "Vähennyslasku lukualueella 0–100",
+    "short_description": "Vähennyslasku lukualueella 0–100",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-SUB-20",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-SUB-20 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-PLACE-03",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-PLACE-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-MENTAL-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "M-MENTAL-01 tukee olennaisesti oppimista, mutta puute voidaan korjata noodin sisällä."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-SUB-20",
+          "M-PLACE-03"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Vähennyslasku"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-SUB-20",
+      "targetKCId": "M-SUB-100",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-SUB-20 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-PLACE-03",
+      "targetKCId": "M-SUB-100",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-PLACE-03 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-MENTAL-01",
+      "targetKCId": "M-SUB-100",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-MENTAL-01 tukee olennaisesti oppimista, mutta puute voidaan korjata noodin sisällä.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-SUB-100",
+      "targetKCId": "M-WRSUB",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-SUB-100 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-SUB-20",
+        "M-PLACE-03"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-SUB-100/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-116-subtraction-two-digit-and-two-digit-numbers/",
+        "title": "Subtraction: two-digit and two-digit numbers",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Introduction and teaching points1–2 HTML read.",
+        "usageRestrictions": "NCETM copyright HTML actually read2026-10-29: Crown/OGL default unless stated; acknowledgement and named-author permission caveat. Conceptual comparison only, no source prose/figures/slides/PDF/video copied. Not project or publication licence clearance.",
+        "adopted": "Keep removed amount as tens and ones; whole amount is conserved when a ten opens.",
+        "rejected": "Never reverse the ones subtraction; no claim one column algorithm is required.",
+        "scopeLimits": "Foreign teaching comparator, not a new Finnish grade/prerequisite claim or an efficacy study of this package."
+      },
+      {
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/column-subtraction/lessons/subtract-from-a-2-digit-number-using-column-subtraction-with-regrouping",
+        "title": "Subtract from a2-digit number using column subtraction with regrouping",
+        "organization": "Oak National Academy",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual HTML key points/misconception/teacher tip/licence at416–442 read; no linked slideshow, worksheet, image or video inspected.",
+        "usageRestrictions": "Actual lesson states ©Oak National Academy2025, OGL3 except otherwise stated, Collection2 terms linked. No copied text/figures/tasks; no blanket rights or publication approval.",
+        "adopted": "Explain the value-preserving exchange with base-ten pieces before notation; keep changed tens visible.",
+        "rejected": "Reject regrouping as a memorised unexplained rule; formal column algorithm is outside this junior lesson, not an added prerequisite.",
+        "scopeLimits": "Foreign teaching comparator, not a new Finnish grade/prerequisite claim or an efficacy study of this package."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-2-unit-8-addition-and-subtraction-of-two-digit-numbers/",
+        "title": "Addition and subtraction of two-digit numbers (2)",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual HTML learning outcomes1–12, not linked slides.",
+        "usageRestrictions": "NCETM copyright HTML actually read2026-10-29: Crown/OGL default unless stated; acknowledgement and named-author permission caveat. Conceptual comparison only, no source prose/figures/slides/PDF/video copied. Not project or publication licence clearance.",
+        "adopted": "Contrast examples with and without a ten exchange; own simple representations and useful alternative strategies.",
+        "rejected": "No mandatory fixed algorithm, imported year-group mandate, forced oral explanation or quiz-first route.",
+        "scopeLimits": "Foreign teaching comparator, not a new Finnish grade/prerequisite claim or an efficacy study of this package."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/copyright/",
+        "title": "Copyright",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual copyright HTML55–57 read.",
+        "usageRestrictions": "NCETM copyright HTML actually read2026-10-29: Crown/OGL default unless stated; acknowledgement and named-author permission caveat. Conceptual comparison only, no source prose/figures/slides/PDF/video copied. Not project or publication licence clearance.",
+        "adopted": "Record source acknowledgement and usage exceptions.",
+        "rejected": "No blanket CC/public-domain/project release or named-author permission assumption.",
+        "scopeLimits": "Foreign teaching comparator, not a new Finnish grade/prerequisite claim or an efficacy study of this package."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@8c21d1e7b3d8d499730d25855acf3942d08367a4486ed61be0cec5380122eb15",
+        "note": "Author draft; different-author Newton and human review are separate, not performed by this author check."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+        "note": "r2 host ownership/adjust repair; prior review history retained. Newton rebind and actual163 rebuild pending; human review not performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+        "note": "Independent B14 Newton source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/Newton-on-Feynman/current-r2/ready.json. Technical synthetic scope; not learner validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@8c21d1e7b3d8d499730d25855acf3942d08367a4486ed61be0cec5380122eb15",
+        "note": "Author draft; different-author Newton and human review are separate, not performed by this author check."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+        "note": "r2 host ownership/adjust repair; prior review history retained. Newton rebind and actual163 rebuild pending; human review not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-SUB-100",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "example.svg",
+        "sha256": "76adc337ba5257ad6371e640681a808e088cc6b3a389b6767bb8eb706eb802bb"
+      },
+      {
+        "path": "initial.svg",
+        "sha256": "6958b2e36f8a1bb1b1478e2e866d36e6fa2fba71019fb48c4722bb2ff3da9e6d"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "ed14821d8a33ef3e7bc5cd1b429cdabf4f1ccca7c05d7acc452f7a676bfb4c54"
+      },
+      {
+        "path": "transfer.svg",
+        "sha256": "3afb52651fdc1453e828da9fd4eaeebcce9768fe0127a0372cb3d5f30876e4e1"
+      },
+      {
+        "path": "shared/loikka/map.png",
+        "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-116-subtraction-two-digit-and-two-digit-numbers/",
+        "title": "Subtraction: two-digit and two-digit numbers",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Introduction and teaching points1–2 HTML read.",
+        "usageRestrictions": "NCETM copyright HTML actually read2026-10-29: Crown/OGL default unless stated; acknowledgement and named-author permission caveat. Conceptual comparison only, no source prose/figures/slides/PDF/video copied. Not project or publication licence clearance.",
+        "adopted": "Keep removed amount as tens and ones; whole amount is conserved when a ten opens.",
+        "rejected": "Never reverse the ones subtraction; no claim one column algorithm is required.",
+        "scopeLimits": "Foreign teaching comparator, not a new Finnish grade/prerequisite claim or an efficacy study of this package."
+      },
+      {
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/column-subtraction/lessons/subtract-from-a-2-digit-number-using-column-subtraction-with-regrouping",
+        "title": "Subtract from a2-digit number using column subtraction with regrouping",
+        "organization": "Oak National Academy",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual HTML key points/misconception/teacher tip/licence at416–442 read; no linked slideshow, worksheet, image or video inspected.",
+        "usageRestrictions": "Actual lesson states ©Oak National Academy2025, OGL3 except otherwise stated, Collection2 terms linked. No copied text/figures/tasks; no blanket rights or publication approval.",
+        "adopted": "Explain the value-preserving exchange with base-ten pieces before notation; keep changed tens visible.",
+        "rejected": "Reject regrouping as a memorised unexplained rule; formal column algorithm is outside this junior lesson, not an added prerequisite.",
+        "scopeLimits": "Foreign teaching comparator, not a new Finnish grade/prerequisite claim or an efficacy study of this package."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-2-unit-8-addition-and-subtraction-of-two-digit-numbers/",
+        "title": "Addition and subtraction of two-digit numbers (2)",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual HTML learning outcomes1–12, not linked slides.",
+        "usageRestrictions": "NCETM copyright HTML actually read2026-10-29: Crown/OGL default unless stated; acknowledgement and named-author permission caveat. Conceptual comparison only, no source prose/figures/slides/PDF/video copied. Not project or publication licence clearance.",
+        "adopted": "Contrast examples with and without a ten exchange; own simple representations and useful alternative strategies.",
+        "rejected": "No mandatory fixed algorithm, imported year-group mandate, forced oral explanation or quiz-first route.",
+        "scopeLimits": "Foreign teaching comparator, not a new Finnish grade/prerequisite claim or an efficacy study of this package."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/copyright/",
+        "title": "Copyright",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual copyright HTML55–57 read.",
+        "usageRestrictions": "NCETM copyright HTML actually read2026-10-29: Crown/OGL default unless stated; acknowledgement and named-author permission caveat. Conceptual comparison only, no source prose/figures/slides/PDF/video copied. Not project or publication licence clearance.",
+        "adopted": "Record source acknowledgement and usage exceptions.",
+        "rejected": "No blanket CC/public-domain/project release or named-author permission assumption.",
+        "scopeLimits": "Foreign teaching comparator, not a new Finnish grade/prerequisite claim or an efficacy study of this package."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@8c21d1e7b3d8d499730d25855acf3942d08367a4486ed61be0cec5380122eb15",
+        "note": "Author draft; different-author Newton and human review are separate, not performed by this author check."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@8c21d1e7b3d8d499730d25855acf3942d08367a4486ed61be0cec5380122eb15",
+        "note": "Author draft; different-author Newton and human review are separate, not performed by this author check."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@8c21d1e7b3d8d499730d25855acf3942d08367a4486ed61be0cec5380122eb15",
+        "note": "Author draft; different-author Newton and human review are separate, not performed by this author check."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+        "note": "r2 host ownership/adjust repair; prior review history retained. Newton rebind and actual163 rebuild pending; human review not performed."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+        "note": "r2 host ownership/adjust repair; prior review history retained. Newton rebind and actual163 rebuild pending; human review not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+        "note": "r2 host ownership/adjust repair; prior review history retained. Newton rebind and actual163 rebuild pending; human review not performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+        "note": "Independent B14 Newton source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/Newton-on-Feynman/current-r2/ready.json. Technical synthetic scope; not learner validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+        "note": "Independent B14 Newton canonical/Lite/source boundaries reviewed for current revision; frozen roles/prerequisite groups preserved. lesson-network/evidence/production/B14/reviews/Newton-on-Feynman/current-r2/ready.json"
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+        "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-SUB-100",
+      "liteSourceRevision": "audit1-2026-10-28",
+      "validLiteRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "sourceBuild": "lite181-2026-10-27 imported immutable authority",
+      "actualFamilies": [
+        "take",
+        "check",
+        "noBorrow",
+        "borrow",
+        "transfer"
+      ],
+      "actualFamilyInventory": {
+        "take": {
+          "node": "M-SUB-100",
+          "tag": "take",
+          "outcome": "kokoaa tilatun luvun nipuista (kymmenet) ja irtokaisloista (ykköset) tai avaa nipun ykkösiksi",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "check": {
+          "node": "M-SUB-100",
+          "tag": "check",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "noBorrow": {
+          "node": "M-SUB-100",
+          "tag": "noBorrow",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "borrow": {
+          "node": "M-SUB-100",
+          "tag": "borrow",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "transfer": {
+          "node": "M-SUB-100",
+          "tag": "transfer",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        }
+      },
+      "actualDemoInventory": [
+        {
+          "index": 0,
+          "say": "Kuusikymmentäkahdeksan miinus kaksikymmentäviisi. Ensin viisi irtokaislaa pois, sitten kaksi nippua. Jäljelle jää neljäkymmentäkolme.",
+          "animation": {
+            "width": 320,
+            "height": 200,
+            "duration": 8.3,
+            "label": "68 − 25 kaisloilla",
+            "frames": [
+              {
+                "t": 0,
+                "caption": "68 − 25: otetaan pois kaksi nippua ja viisi irtokaislaa.",
+                "frameSHA256": "bb5fe7665d9a1828a0cc888d05576279b000467c93c2fd53664dabc1e4b66f57"
+              },
+              {
+                "t": 4.15,
+                "caption": "Niput pois: kymmenen…",
+                "frameSHA256": "40328047facc5a95de98614ff7c6bb25b0ef93882ed1a658892f3ed32d36f1bc"
+              },
+              {
+                "t": 8.3,
+                "caption": "Jäljelle jäi 43.",
+                "frameSHA256": "88fec37807a8a3bd35d6f4a82482182967e58ecb4b72f4fa5d0ab4e94fec3a71"
+              }
+            ]
+          }
+        },
+        {
+          "index": 1,
+          "say": "Viisikymmentäkaksi miinus seitsemäntoista. Kahdesta ei voi ottaa seitsemää, eikä saa laskea väärin päin seitsemän miinus kaksi. Avataan nippu: nyt on kaksitoista irtokaislaa. Seitsemän pois, sitten yksi nippu pois. Jää kolmekymmentäviisi.",
+          "animation": {
+            "width": 320,
+            "height": 200,
+            "duration": 11.059999999999999,
+            "label": "52 − 17 kaisloilla",
+            "frames": [
+              {
+                "t": 0,
+                "caption": "52 − 17: otetaan pois yksi nippu ja seitsemän irtokaislaa.",
+                "frameSHA256": "8f356f061c30b44aeaad574f2f87db55d1662f5703d9e16d2675693b4734fd7a"
+              },
+              {
+                "t": 5.529999999999999,
+                "caption": "Ykköset pois: neljä…",
+                "frameSHA256": "2e89b00013a52a676dbee467855ea6d070a80f79b623030f0a6c7741ad653711"
+              },
+              {
+                "t": 11.059999999999999,
+                "caption": "Jäljelle jäi 35. Avattu nippu teki sen mahdolliseksi.",
+                "frameSHA256": "9ca062befb0f4c5c29eb8eafcb1916b6c5f25765d4a2af6dea0676f494c2ae21"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "say": "Tarkistus: vastaus ja pois otettu yhteen. 35 + 17 = 52, joten lasku meni oikein.",
+          "animation": null
+        }
+      ],
+      "actualIntro": "Kaisloja käytetään lautan tekoon. Montako jää jäljelle?",
+      "actualGoal": "Opit vähennyslaskut sataan asti ja purat kympin, kun ykköset eivät riitä.",
+      "actualItemSamples": {
+        "take": {
+          "phase": "guided",
+          "seed": 1,
+          "say": "Rannalla on 33 kaislaa. Lauttaan otetaan 19. Ota kaislat pois ja katso, montako jää.",
+          "task": {
+            "kind": "reeds",
+            "target": 14,
+            "from": 33
+          },
+          "hint": "3 irtokaislaa ei riitä 9:n ottamiseen. Avaa ensin yksi nippu.",
+          "explain": "33 − 19 = 14: avattu nippu antoi 13 irtokaislaa, 13 − 9 = 4."
+        },
+        "check": {
+          "phase": "guided",
+          "seed": 4,
+          "say": "Aava laski 58 − 20 = 38. Millä laskulla tarkistat?",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "big": "58 + 20 = 78"
+              },
+              {
+                "big": "38 + 58 = 96"
+              },
+              {
+                "big": "38 + 20 = 58"
+              }
+            ],
+            "answer": 2,
+            "why": [
+              "58 + 20 laskee yhteen alkuperäisen ja pois otetun. Se ei kerro, onko 38 oikein.",
+              "Vastaukseen 38 lisätään pois otettu 20, ei 58.",
+              null
+            ]
+          },
+          "hint": "Jos vastaus on oikein, vastaus + pois otettu = alkuperäinen luku.",
+          "explain": "38 + 20 = 58. Vastaus on oikein."
+        },
+        "noBorrow": {
+          "phase": "guided",
+          "seed": 7,
+          "say": "48 − 34 = ?",
+          "task": {
+            "kind": "numeric",
+            "answer": 14,
+            "whyAt": {
+              "4": "Kymppejä jää 1: ykköset riittävät, nippua ei tarvitse avata.",
+              "10": "Kympit on vähennetty. Ykkösiä jää vielä 8 − 4 = 4.",
+              "24": "Kymppejä jää 1, ei 2.",
+              "82": "Kaisloja otetaan pois: vähennyslasku."
+            }
+          },
+          "hint": "Ykköset 8 − 4, kympit 40 − 30.",
+          "explain": "Kympit 40 − 30 = 10, ykköset 8 − 4 = 4. Vastaus 14."
+        },
+        "borrow": {
+          "phase": "guided",
+          "seed": 12,
+          "say": "36 − 27 = ?",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "big": "19",
+                "speak": "yhdeksäntoista"
+              },
+              {
+                "big": "11",
+                "speak": "yksitoista"
+              },
+              {
+                "big": "9",
+                "speak": "yhdeksän"
+              }
+            ],
+            "answer": 2,
+            "why": [
+              "Avattu nippu on poissa nipuista: kymppejä jää 0, ei 1.",
+              "Ykkösissä 6 − 7 ei onnistu suoraan. 7 − 6 on väärin päin: avaa yksi nippu.",
+              null
+            ]
+          },
+          "hint": "6 ykköstä ei riitä: pura yksi kymppi kymmeneksi ykköseksi.",
+          "explain": "36 = 20 + 16. 16 − 7 = 9 ja 20 − 20 = 0. Vastaus 9."
+        },
+        "transfer": {
+          "phase": "transfer",
+          "seed": 1,
+          "say": "Rannalla oli 81 kaislaa. Lauttaan käytettiin 15. Montako kaislaa jäi?",
+          "task": {
+            "kind": "numeric",
+            "answer": 66,
+            "whyAt": {
+              "74": "Ykkösissä 1 − 5 ei onnistu: avaa nippu. 5 − 1 on väärin päin.",
+              "96": "Kaisloja käytettiin, joten niitä jäi vähemmän: vähennyslasku."
+            }
+          },
+          "hint": "1 irtokaislaa ei riitä 5:n ottamiseen: avaa ensin nippu.",
+          "explain": "81 − 15 = 66. Tarkistus: 66 + 15 = 81."
+        }
+      },
+      "sourceHashes": {
+        "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+        "authority/production-181-v2/lite/src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+        "authority/production-181-v2/lite/src/content/decimals.ts": "7ada1da383cb235ec320e4f4da2150c79ddb02fcd5334874a5c59fd05ae8c21e",
+        "authority/production-181-v2/lite/src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "authority/production-181-v2/lite/src/content/decanim.ts": "714c5d2eccee47d74d6ff7d67c04de3a5ccda3cc2b1551005396773d36af4d24",
+        "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "authority/production-181-v2/lite/src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+        "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317"
+      },
+      "registryOverlay": "Own AUDIT_REV and goal retained by index; no target SIMS overlay. Runtime family() merge returned default source for every observed target tag.6144 items and24 representative demo frames across3 inventoried, not mounted gameplay or learner outcomes.",
+      "coverageDifference": "Old COVERAGE table omits actual take family; actual generator inventory used.",
+      "audit": "LESSON_AUDIT row101 comparison animation/half sorting for DEC04; rows49/50 add/sub reeds, constructive raft/take and specific feedback. Audit completion is not pedagogical approval.",
+      "comparison": "Inherit meaningful base-ten join/exchange or open/remove semantics, not mascot SVG or reward/mastery assertions. Extend exact endpoints0 and100 and flexible valid group representations. No forced one-object taps.",
+      "corrections": "Opening a ten must remove it from tens. Keep original order, do not subtract smaller digit from larger. Immutable Lite unchanged.",
+      "limitations": "Standalone supported local responses and optional construction/model do not create formal personal mastery, procedure evidence, retention or classroom effects."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-SUB-100",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Vähennyslasku",
+        "title": "Vähennyslasku lukualueella 0–100",
+        "short_description": "Vähennyslasku lukualueella 0–100",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-SUB-20",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-SUB-20 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-PLACE-03",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-PLACE-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-MENTAL-01",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "M-MENTAL-01 tukee olennaisesti oppimista, mutta puute voidaan korjata noodin sisällä."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-SUB-20",
+              "M-PLACE-03"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Vähennyslasku"
+        ]
+      },
+      "gradeBand": "1-2",
+      "teacherObjective": "Vähentää0–100 avaamalla tarvittaessa kymppi ja tarkistaa lopputulos yhteenlaskulla; tunnistaa myös erotilanne.",
+      "childGoal": "Lasken, montako jää tai mikä on ero.",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-SUB-20",
+            "M-PLACE-03"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "strongSupport": [
+        "M-MENTAL-01"
+      ],
+      "additionalHardGates": [],
+      "assumed": [
+        "Required graph skills as stated, same-unit grouping; adult may read instructions.",
+        "Names/voice/speed/one-object taps are not entry gates."
+      ],
+      "scope": "Whole-number subtraction0–100,0≤removed≤start; exchange/remove and difference situations, no negative results.",
+      "evidenceLimits": [
+        "Current local feedback only.",
+        "Model/optional help and live parts sum are supplied support.",
+        "No independent/delayed/formal mastery, atomic prerequisite state, learner history or efficacy claims."
+      ],
+      "interaction": {
+        "initial": "61−28 starts6 tens1 one; first step opens a ten to5 tens11 ones.",
+        "practice": "Direct numeric answer plus optional constructive grouping; no compulsory method.",
+        "feedbackContractSHA256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+        "semanticEdits": "input and change plus explicit current-visible Check/Step; dependent feedback retires, model/help invariants preserve separate task verdict.",
+        "lifecycle": "Per-root WeakMap disposes prior owner; root resolved from sibling loader host; fields enabled on mount, paused reset preserved; exact listener cleanup; no timer/frame ownership.",
+        "noJS": "Static initial.svg from exact initial domain state and labelled solved examples; fieldsets initially disabled."
+      },
+      "executionLimits": "Whole-number subtraction0–100,0≤removed≤start; exchange/remove and difference situations, no negative results. Raw text128 characters; no exponent syntax, implicit coercion or rounding. Whole-number equivalents with harmless decimal zeros accepted; group counts0–100; no fractions or negatives. Model finite manual phases, not elapsed time.",
+      "assetProvenance": {
+        "mascot": {
+          "path": "shared/loikka/map.png",
+          "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6",
+          "provenance": "Supplied actual PNG identity, unchanged reuse; no redrawing or duplication."
+        },
+        "subjectSVG": "Original code-authored base-ten/counted-unit diagrams; original static files from exact same domain functions as runtime; no third-party figure.",
+        "css": "Declared local lesson.css linked in body; no copied shell/header overrides or shared CSS changes."
+      },
+      "sourceRevisionAtStart": "17af82222c31ba4d74fe61dcf98fdeac5837c920",
+      "author": "Feynman",
+      "date": "2026-10-29"
+    },
+    "extensions": {
+      "authoringBatch": "B14",
+      "authorChecks": "Author source scope; different-author Newton review and parent actual163 pending. No approval."
+    },
+    "contentHash": "9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+    "contentRevision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@8c21d1e7b3d8d499730d25855acf3942d08367a4486ed61be0cec5380122eb15",
+          "note": "Author draft; different-author Newton and human review are separate, not performed by this author check."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+          "note": "r2 host ownership/adjust repair; prior review history retained. Newton rebind and actual163 rebuild pending; human review not performed."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+          "note": "Independent B14 Newton source/domain/teaching and scoped current native review closed: lesson-network/evidence/production/B14/reviews/Newton-on-Feynman/current-r2/ready.json. Technical synthetic scope; not learner validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@8c21d1e7b3d8d499730d25855acf3942d08367a4486ed61be0cec5380122eb15",
+          "note": "Author draft; different-author Newton and human review are separate, not performed by this author check."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+          "note": "r2 host ownership/adjust repair; prior review history retained. Newton rebind and actual163 rebuild pending; human review not performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+          "note": "Target learner understanding, efficacy, full manual accessibility and human acceptance not performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@8c21d1e7b3d8d499730d25855acf3942d08367a4486ed61be0cec5380122eb15",
+          "note": "Author draft; different-author Newton and human review are separate, not performed by this author check."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+          "note": "r2 host ownership/adjust repair; prior review history retained. Newton rebind and actual163 rebuild pending; human review not performed."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@9fbaa78b2539a379023bae4fe5f0874846255ea9d9e5ec8812dcc3959fe9fcbd",
+          "note": "Independent B14 Newton canonical/Lite/source boundaries reviewed for current revision; frozen roles/prerequisite groups preserved. lesson-network/evidence/production/B14/reviews/Newton-on-Feynman/current-r2/ready.json"
+        }
+      ]
+    }
+  },
+  "outputHash": "b0094abcb67d940462006220349c8ef14c30bde41e4f19378343a27c9836a538",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "b0094abcb67d940462006220349c8ef14c30bde41e4f19378343a27c9836a538",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

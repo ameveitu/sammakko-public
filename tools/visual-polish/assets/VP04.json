@@ -1,0 +1,78 @@
+{
+ "schema": "sammakko-visual-polish-assets/1",
+ "module": "VP04",
+ "note": "Koristekerros: ei opetussisältöä, ei hahmoja, ei oppijadataa. Raakakuvat ja promptit eivät kuulu selainpakettiin.",
+ "files": [
+  {
+   "out": "lite/public/visual-polish/shore-left.webp",
+   "module": "VP04",
+   "kind": "image",
+   "bytes": 38232,
+   "sha256": "5ff693cf6e1c7e2de52788e10f9014e64a727f0e7361ad8d672ab6a75e573e53",
+   "budget": 81920,
+   "source": {
+    "generator": "tools/imagegen/imagegen.mjs batch tools/visual-polish/batches/plates.json (gpt-image-2.5-sunburst, style reference art/backgrounds/hero-island.jpg)",
+    "sidecar": "tools/visual-polish/provenance/vp-lite-shore-left-20261102-011335-1.png.json",
+    "rawSha256": "a44da41986e8953d2164ba80376ead00eba242a35cda446aa10f914cc03c8c6e"
+   },
+   "derived": "tools/visual-polish/build-assets.py: width 683, WebP quality 76"
+  },
+  {
+   "out": "lite/public/visual-polish/shore-right.webp",
+   "module": "VP04",
+   "kind": "image",
+   "bytes": 39668,
+   "sha256": "79662863873a3aa1d9ba4b062bb894538d2a4792b00bd8e7f3e37e28d7e50172",
+   "budget": 81920,
+   "source": {
+    "generator": "tools/imagegen/imagegen.mjs batch tools/visual-polish/batches/plates.json (gpt-image-2.5-sunburst, style reference art/backgrounds/hero-island.jpg)",
+    "sidecar": "tools/visual-polish/provenance/vp-lite-shore-right-20261102-011351-2.png.json",
+    "rawSha256": "e6ce2a979f6473c28a82395652a0a00e613c26e544862c95af024fffdce7d786"
+   },
+   "derived": "tools/visual-polish/build-assets.py: width 683, WebP quality 76"
+  },
+  {
+   "out": "lite/public/visual-polish/workshop.webp",
+   "module": "VP04",
+   "kind": "image",
+   "bytes": 53200,
+   "sha256": "e8e2257c666a60e4960ea042516931b4a486b236b3d058558ff93b36376858b0",
+   "budget": 81920,
+   "source": {
+    "generator": "tools/imagegen/imagegen.mjs batch tools/visual-polish/batches/plates.json (gpt-image-2.5-sunburst, style reference art/backgrounds/hero-island.jpg)",
+    "sidecar": "tools/visual-polish/provenance/vp-lite-workshop-edge-20261102-011407-1.png.json",
+    "rawSha256": "a41797639de440981fff85e4c21ef3aa329109bf9e254376617b453cbc0f5c75"
+   },
+   "derived": "tools/visual-polish/build-assets.py: width 683, WebP quality 76"
+  },
+  {
+   "out": "lite/public/visual-polish/reeds.webp",
+   "module": "VP04",
+   "kind": "image",
+   "bytes": 50954,
+   "sha256": "dfa04a6ac0e6d34aff70d08e9c46be9d868dfaff8a89ac42eee2cc9483d76fab",
+   "budget": 81920,
+   "source": {
+    "generator": "tools/visual-polish/blender/reeds.py (Blender 5.2.1 LTS, Cycles CPU, seed 20261102, 32 samples)",
+    "rawSha256": "7cdbbc1ce8d804ce1a1942162b815d20323cc599582c1477582b7a1ed6febd86"
+   },
+   "derived": "tools/visual-polish/build-assets.py: width 360, WebP quality 82, alpha, alpha-cropped"
+  },
+  {
+   "out": "lite/public/visual-polish/decor.js",
+   "module": "VP04",
+   "budget": 12288,
+   "kind": "code",
+   "bytes": 10300,
+   "sha256": "11ac05fe46709391887d9df4885f571e9731e7f78977048e769a75973175fbec"
+  },
+  {
+   "out": "lite/public/visual-polish/decor.css",
+   "module": "VP04",
+   "budget": 6144,
+   "kind": "code",
+   "bytes": 4028,
+   "sha256": "0435f12de43d2f300f5f1f56a5cc9754fe84bef3e1cfa6d7637e59b5a458342b"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+const mounted=new WeakMap();
+export const CASES=Object.freeze({pairs:Object.freeze({name:'Kahden merkin ryhmät',total:8,size:2}),fours:Object.freeze({name:'Neljän merkin ryhmät',total:8,size:4}),threes:Object.freeze({name:'Kolmen merkin ryhmät',total:12,size:3}),equal:Object.freeze({name:'Yhdeksän merkkiä, kolme jokaiseen ryhmään',total:9,size:3})});
+const task=key=>{if(!Object.hasOwn(CASES,key))throw new RangeError('Unknown grouping');return CASES[key];};
+export function groupingState(key,groups){const c=task(key);if(!Number.isInteger(groups)||groups<0||groups>c.total/c.size)throw new RangeError('Invalid group count');return{total:c.total,size:c.size,groups,remaining:c.total-groups*c.size};}
+export function changeGroups(key,groups,delta){const c=task(key);groupingState(key,groups);if(![1,-1].includes(delta))throw new RangeError('Invalid group move');return Math.max(0,Math.min(c.total/c.size,groups+delta));}
+export function checkGrouping(key,a){
+ const c=task(key),fail=(code,text)=>({ok:false,code,text});
+ if(!a||typeof a!=='object'||Array.isArray(a)||Object.keys(a).sort().join(',')!=='groups,reported'||!Number.isInteger(a.groups)||a.groups<0||a.groups>c.total/c.size||(a.reported!==null&&(!Number.isInteger(a.reported)||a.reported<0||a.reported>12)))return fail('invalid','Käytä vain kokonaisia täysiä ryhmiä ja yhtä kokonaislukua. Vastaus ei ole ehjä.');
+ const state=groupingState(key,a.groups);
+ if(state.remaining>0)return fail('remaining',`Kasassa on vielä ${state.remaining} merkkiä. Tee lisää täysiä ${c.size} merkin ryhmiä. Ryhmien koko on annettu, ryhmien määrä etsitään.`);
+ if(a.reported===null)return fail('number-empty','Koko kasa on ryhmitelty. Laske täysien ryhmien määrä ja merkitse se.');
+ if(a.reported!==a.groups)return fail('number',a.reported===c.size?`${c.size} kertoo yhden ryhmän koon. Kysyttiin ryhmien määrää: tässä on ${a.groups} ryhmää.`:`Kaikkiaan on ${c.total} merkkiä, mutta täysiä ryhmiä on ${a.groups}. Laske ryhmät, älä kaikkia merkkejä uudelleen.`);
+ return{ok:true,code:'match',text:`Kaikki ${c.total} merkkiä on jaettu ${c.size} merkin ryhmiin. Ryhmiä on ${a.groups}. Vastauksesi kertoo ryhmien määrän, ei yhden ryhmän kokoa. Tämä koskee ruudun mallia.`};
+}
+export function groupingKey(key,a){return JSON.stringify([key,a.groups,a.reported]);}
+export function groupingSvg(key,groups,guide=false){
+ const c=task(key),state=groupingState(key,groups),rows=Math.max(1,Math.ceil(groups/2)),h=120+rows*122;
+ const token=(x,y,where)=>`<circle data-token="${where}" cx="${x}" cy="${y}" r="7" fill="#5489ad" stroke="#22475d" stroke-width="1.5"/>`;
+ return`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 ${h}" role="img" aria-label="Kasassa vielä ${state.remaining} merkkiä. ${groups} täyttä ryhmää, jokaisessa ${c.size} merkkiä."><title>Annetun kokoiset ryhmät syntyvät samasta kasasta</title><rect width="360" height="${h}" rx="10" fill="#fffdf7"/><text x="18" y="25" font-size="18" fill="#183e36">Kasassa vielä ${state.remaining}</text>${Array.from({length:state.remaining},(_,i)=>token(28+i%10*31,49+Math.floor(i/10)*23,'pool')).join('')}${groups===0?'<text x="24" y="145" font-size="19" fill="#183e36">Tee ensimmäinen ryhmä.</text>':''}${Array.from({length:groups},(_,i)=>{const x=14+i%2*170,y=109+Math.floor(i/2)*122;return`<g data-group="${i}"><path d="M${x} ${y+14}H${x+156}L${x+146} ${y+104}H${x+10}Z" fill="#eee4c6" stroke="#70572c" stroke-width="2"/><text x="${x+78}" y="${y+6}" text-anchor="middle" font-size="18" fill="#183e36">Ryhmä ${i+1}</text>${Array.from({length:c.size},(_,j)=>token(x+30+j%4*29,y+47+Math.floor(j/4)*24,'g'+i)).join('')}${guide?`<text x="${x+78}" y="${y+88}" text-anchor="middle" font-size="18" fill="#183e36">${c.size} merkkiä</text>`:''}</g>`;}).join('')}</svg>`;
+}
+export function mount(host){
+ const scope=(host.closest('#lesson-body')||host).querySelector('[data-grouping]');if(!scope)throw new Error('Missing grouping lesson');mounted.get(scope)?.dispose();
+ const q=s=>scope.querySelector(s),fieldset=q('[data-controls]'),picker=q('[data-case]'),report=q('[data-reported]'),feedback=q('[data-feedback]');let key='pairs',groups=0,checked=null,paused=false,disposed=false;
+ const answer=()=>({groups,reported:report.value.trim()===''?null:Number(report.value)}),signature=()=>groupingKey(key,answer());
+ const neutral=()=>{checked=null;feedback.textContent='Ryhmiä tai vastausta muokattiin. Tarkista nykyiset ryhmät ja niiden määrä uudelleen, kun haluat.';feedback.dataset.result='neutral';};
+ function invalidate(){if(checked!==null&&checked!==signature())neutral();}
+ function draw(){const c=CASES[key],state=groupingState(key,groups);q('[data-picture]').innerHTML=groupingSvg(key,groups,q('[data-guide]').checked);q('[data-question]').textContent=`Merkkejä on ${c.total}. Tee ${c.size} merkin ryhmiä koko kasasta. Montako ryhmää tulee?`;q('[data-action="add"]').textContent=`Tee yksi ${c.size} merkin ryhmä`;q('[data-action="add"]').disabled=state.remaining<c.size;q('[data-action="undo"]').disabled=groups===0;}
+ function fresh(){groups=0;report.value='';checked=null;feedback.textContent='Yhden ryhmän koko on annettu. Muodosta ryhmiä ja laske, montako niitä tulee.';feedback.dataset.result='neutral';draw();}
+ function reset(){if(disposed)return;key='pairs';picker.value=key;q('[data-guide]').checked=false;fresh();fieldset.disabled=paused;}
+ function click(e){if(paused||disposed)return;const b=e.target.closest('button');if(!b||!scope.contains(b))return;if(b.dataset.action==='add'||b.dataset.action==='undo'){groups=changeGroups(key,groups,b.dataset.action==='add'?1:-1);invalidate();draw();}else if(b.dataset.action==='clear')fresh();else if(b.dataset.action==='check'){const r=checkGrouping(key,answer());feedback.textContent=r.text;feedback.dataset.result=r.ok?'correct':'retry';checked=signature();}}
+ function edit(e){if(paused||disposed||!scope.contains(e.target))return;if(e.target.matches('[data-case]')){if(Object.hasOwn(CASES,picker.value)&&picker.value!==key){key=picker.value;fresh();}else picker.value=key;}else if(e.target.matches('[data-reported]'))invalidate();else if(e.target.matches('[data-guide]'))draw();}
+ fieldset.disabled=false;scope.addEventListener('click',click);scope.addEventListener('input',edit);scope.addEventListener('change',edit);reset();scope.dataset.moduleReady='true';
+ const api={pause(){if(disposed)return;paused=true;fieldset.disabled=true;},resume(){if(disposed)return;paused=false;fieldset.disabled=false;if(Object.hasOwn(CASES,picker.value)&&picker.value!==key){key=picker.value;fresh();}else{picker.value=key;invalidate();draw();}},reset,dispose(){if(disposed)return;disposed=true;fieldset.disabled=true;scope.removeEventListener('click',click);scope.removeEventListener('input',edit);scope.removeEventListener('change',edit);delete scope.dataset.moduleReady;if(mounted.get(scope)===api)mounted.delete(scope);}};mounted.set(scope,api);return api;
+}

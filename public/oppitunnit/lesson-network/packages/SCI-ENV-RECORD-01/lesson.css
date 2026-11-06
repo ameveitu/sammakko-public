@@ -1,0 +1,18 @@
+[data-integrate-lesson] figure { margin: 1rem 0; }
+[data-integrate-lesson] img, [data-integrate-lesson] svg { max-width: 100%; height: auto; }
+[data-record-integrate] [data-observations], [data-record-integrate] [data-poster] { max-width: 30rem; }
+[data-record-integrate] [data-notebook], [data-record-integrate] [data-poster-rows] { display: grid; gap: .8rem; margin: 1rem 0; }
+[data-record-integrate] input { width: 7rem; max-width: 100%; }
+[data-record-integrate] select { width: 100%; max-width: 100%; }
+[data-record-integrate] button { max-width: 100%; white-space: normal; }
+[data-record-integrate] [data-feedback] { border-left: 4px solid #245f4c; padding: .6rem; }
+
+/* Projector follow-up: preserve labels, model geometry and 44px controls. */
+.audience [data-record-integrate] [data-notebook] { grid-template-columns: repeat(2,minmax(0,1fr)); gap: .5rem; margin: .4rem 0; }
+.audience [data-record-integrate] [data-poster-rows] { gap: .3rem; margin: .4rem 0; }
+.audience [data-record-integrate] [data-poster-rows] label { margin: 0; }
+
+/* Keep both closed support choices in one row; expanded work uses the full width. */
+[data-record-integrate] [data-record-support] { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,22rem),1fr)); gap: .5rem 1rem; align-items: start; }
+[data-record-integrate] [data-record-support] > details { min-width: 0; margin: 0; }
+[data-record-integrate] [data-record-support] > details[open] { grid-column: 1 / -1; }

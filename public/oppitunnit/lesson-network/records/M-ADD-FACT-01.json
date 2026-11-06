@@ -1,0 +1,761 @@
+{
+  "kcId": "M-ADD-FACT-01",
+  "pagePath": "lessons/M-ADD-FACT-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-ADD-FACT-01",
+  "canonicalNode": {
+    "id": "M-ADD-FACT-01",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Laskufaktat",
+    "title": "Yhteen- ja vähennyslaskun perusfaktat lukualueella 0–10",
+    "short_description": "Yhteen- ja vähennyslaskun perusfaktat lukualueella 0–10",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2"
+    ],
+    "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: M-ADD-FACT-10, M-SUB-FACT-10. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+    "status": "candidate_refactored_integration",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "integration",
+    "relations": [
+      {
+        "id": "M-ADD-FACT-10",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-ADD-FACT-01 on v0.2:ssa integraationoodi; atominen alitaito M-ADD-FACT-10 vaaditaan kokonaisuuden hallintaan."
+      },
+      {
+        "id": "M-SUB-FACT-10",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-ADD-FACT-01 on v0.2:ssa integraationoodi; atominen alitaito M-SUB-FACT-10 vaaditaan kokonaisuuden hallintaan."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-ADD-FACT-10",
+          "M-SUB-FACT-10"
+        ],
+        "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "integration",
+    "split_children": [
+      "M-ADD-FACT-10",
+      "M-SUB-FACT-10"
+    ],
+    "integration_of": [
+      "M-ADD-FACT-10",
+      "M-SUB-FACT-10"
+    ],
+    "dynamic_prerequisite_rule": null,
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Laskufaktat"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-ADD-FACT-10",
+      "targetKCId": "M-ADD-FACT-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-FACT-01 on v0.2:ssa integraationoodi; atominen alitaito M-ADD-FACT-10 vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-SUB-FACT-10",
+      "targetKCId": "M-ADD-FACT-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-FACT-01 on v0.2:ssa integraationoodi; atominen alitaito M-SUB-FACT-10 vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-ADD-FACT-01",
+      "targetKCId": "M-ADD-20",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-FACT-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ADD-FACT-01",
+      "targetKCId": "M-SUB-20",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ADD-FACT-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-ADD-FACT-10",
+        "M-SUB-FACT-10"
+      ],
+      "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-ADD-FACT-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "NCETM1.7 Addition and subtraction: strategies within10",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-107-addition-and-subtraction-strategies-within-10/",
+        "read": "HTML61–80 introduction and all10 teaching points; no guide/slides/video read",
+        "adopted": "Known-part/count-on and count-back alternatives; zero/self subtraction and doubles relation.",
+        "rejected": "No speed/fluency certification from short local responses; no mandated single strategy.",
+        "licence": "NCETM copyright HTML53–57 read2026-10-29: unless otherwise stated Crown copyright/OGL; attribution and named-author permission caveat. No source prose/figures/code copied.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      },
+      {
+        "title": "NCETM1.12 Subtraction as difference",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-112-subtraction-as-difference/",
+        "read": "HTML61–72 introduction and all4 teaching points; no downloads read",
+        "adopted": "Compare unchanged sets by pairing; subtraction can describe difference without removing.",
+        "rejected": "Not imported as a Finnish year requirement or a full data-comparison curriculum.",
+        "licence": "NCETM copyright policy as independently read; conceptual comparison only, original diagrams/prose.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      },
+      {
+        "title": "NCETM1.6 Augmentation and reduction",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-106-additive-structures-introduction-to-augmentation-and-reduction/",
+        "read": "HTML61–72 introduction and all4 teaching points; video/guide/representations not read",
+        "adopted": "Connect first/change/now quantities to symbols; two-step story retains intermediate state.",
+        "rejected": "No word-trigger-only sign heuristic; direction and exact quantities supplied, no forced narrated response.",
+        "licence": "NCETM copyright policy as independently read; original contexts and graphics only.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      },
+      {
+        "title": "Mathematics Hub Year1 Addition and subtraction",
+        "url": "https://www.mathematicshub.edu.au/planning-tool/1/number/addition-and-subtraction/",
+        "read": "HTML50–79 development/learner misconceptions, especially zero and equality; licence footer190 and actual terms-of-use60–85",
+        "adopted": "More than one strategy, fresh contexts and clear equal quantities; zero is a counterexample to always-bigger/smaller rules.",
+        "rejected": "Australian up-to20 and curriculum codes do not broaden this canonical0–10 graph or establish Finnish mandate/efficacy. No linked resource/slide claimed read.",
+        "licence": "Commonwealth material CC BY4 unless indicated; logos/trademarks/third-party exclusions (actual Terms of Use read). No copied text/figures; source is pedagogical comparator.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@c74ad925f461730adbbf5f23030fa40be4da814571dbea1bee0f36b4da47c441",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@e42fe75e014c4944cba360dd1dc96676539424a91d087dc518a4ee4c2e6dce27",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@ce135e267de785dca9dcffa3e1e5f97b958547fa7ceda50c83066289b91fad28",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+        "note": "B11 r2 author copy-only fix: exact evidence/support limits moved into existing teacher details. Feynman minimal delta/current390 review pending; no human validation or self approval."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@c74ad925f461730adbbf5f23030fa40be4da814571dbea1bee0f36b4da47c441",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@e42fe75e014c4944cba360dd1dc96676539424a91d087dc518a4ee4c2e6dce27",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@ce135e267de785dca9dcffa3e1e5f97b958547fa7ceda50c83066289b91fad28",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+        "note": "B11 r2 author copy-only fix: exact evidence/support limits moved into existing teacher details. Feynman minimal delta/current390 review pending; no human validation or self approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+        "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-ADD-FACT-01",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "chain-end.svg",
+        "sha256": "acf1423faadfa0c0eb20874742017e17839ee79805a5cb7b9091d3d184b1ec6c"
+      },
+      {
+        "path": "chain-start.svg",
+        "sha256": "0f197419160abd3aae2edc3263e6823e87393022c9359a6ec7f376572185503a"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "860da2bc5fb7b0e5cc09191c50dfafa0163eb65b5769f7e530e8af410bf7c006"
+      },
+      {
+        "path": "reverse-end.svg",
+        "sha256": "d31482c4ac8ce83487a80d889c9990b580371643c9110d34caf509ea9eb20d17"
+      },
+      {
+        "path": "shared/loikka/map.png",
+        "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+      }
+    ],
+    "research": [
+      {
+        "title": "NCETM1.7 Addition and subtraction: strategies within10",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-107-addition-and-subtraction-strategies-within-10/",
+        "read": "HTML61–80 introduction and all10 teaching points; no guide/slides/video read",
+        "adopted": "Known-part/count-on and count-back alternatives; zero/self subtraction and doubles relation.",
+        "rejected": "No speed/fluency certification from short local responses; no mandated single strategy.",
+        "licence": "NCETM copyright HTML53–57 read2026-10-29: unless otherwise stated Crown copyright/OGL; attribution and named-author permission caveat. No source prose/figures/code copied.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      },
+      {
+        "title": "NCETM1.12 Subtraction as difference",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-112-subtraction-as-difference/",
+        "read": "HTML61–72 introduction and all4 teaching points; no downloads read",
+        "adopted": "Compare unchanged sets by pairing; subtraction can describe difference without removing.",
+        "rejected": "Not imported as a Finnish year requirement or a full data-comparison curriculum.",
+        "licence": "NCETM copyright policy as independently read; conceptual comparison only, original diagrams/prose.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      },
+      {
+        "title": "NCETM1.6 Augmentation and reduction",
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-106-additive-structures-introduction-to-augmentation-and-reduction/",
+        "read": "HTML61–72 introduction and all4 teaching points; video/guide/representations not read",
+        "adopted": "Connect first/change/now quantities to symbols; two-step story retains intermediate state.",
+        "rejected": "No word-trigger-only sign heuristic; direction and exact quantities supplied, no forced narrated response.",
+        "licence": "NCETM copyright policy as independently read; original contexts and graphics only.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      },
+      {
+        "title": "Mathematics Hub Year1 Addition and subtraction",
+        "url": "https://www.mathematicshub.edu.au/planning-tool/1/number/addition-and-subtraction/",
+        "read": "HTML50–79 development/learner misconceptions, especially zero and equality; licence footer190 and actual terms-of-use60–85",
+        "adopted": "More than one strategy, fresh contexts and clear equal quantities; zero is a counterexample to always-bigger/smaller rules.",
+        "rejected": "Australian up-to20 and curriculum codes do not broaden this canonical0–10 graph or establish Finnish mandate/efficacy. No linked resource/slide claimed read.",
+        "licence": "Commonwealth material CC BY4 unless indicated; logos/trademarks/third-party exclusions (actual Terms of Use read). No copied text/figures; source is pedagogical comparator.",
+        "accessed": "2026-10-29",
+        "usage": "Original Finnish text, context and SVG; no external copied prose/figures/code.",
+        "limits": "Teaching comparator, not original research, curriculum approval, learning effectiveness or child validation."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@c74ad925f461730adbbf5f23030fa40be4da814571dbea1bee0f36b4da47c441",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@c74ad925f461730adbbf5f23030fa40be4da814571dbea1bee0f36b4da47c441",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@c74ad925f461730adbbf5f23030fa40be4da814571dbea1bee0f36b4da47c441",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@e42fe75e014c4944cba360dd1dc96676539424a91d087dc518a4ee4c2e6dce27",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@e42fe75e014c4944cba360dd1dc96676539424a91d087dc518a4ee4c2e6dce27",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@e42fe75e014c4944cba360dd1dc96676539424a91d087dc518a4ee4c2e6dce27",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@ce135e267de785dca9dcffa3e1e5f97b958547fa7ceda50c83066289b91fad28",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@ce135e267de785dca9dcffa3e1e5f97b958547fa7ceda50c83066289b91fad28",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@ce135e267de785dca9dcffa3e1e5f97b958547fa7ceda50c83066289b91fad28",
+        "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+        "note": "B11 r2 author copy-only fix: exact evidence/support limits moved into existing teacher details. Feynman minimal delta/current390 review pending; no human validation or self approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+        "note": "B11 r2 author copy-only fix: exact evidence/support limits moved into existing teacher details. Feynman minimal delta/current390 review pending; no human validation or self approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+        "note": "B11 r2 author copy-only fix: exact evidence/support limits moved into existing teacher details. Feynman minimal delta/current390 review pending; no human validation or self approval."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+        "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-ADD-FACT-01",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "definition": "facts.ts426–468",
+      "taskFamilies": [
+        "mixed",
+        "story",
+        "sign",
+        "missing",
+        "transfer callback"
+      ],
+      "demos": [
+        "signScene6+3",
+        "signScene6−3",
+        "translateScene7−2=5"
+      ],
+      "transfer": "a+b−c with a3…7,b1…3,c1…a; intermediate and end within0–10",
+      "audit": "LESSON_AUDIT.md67,394–396",
+      "media": "countanim.ts555–601,650–679,714–730",
+      "sourceHashes": {
+        "src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "overlay": "Both own AUDIT_REV audit1-2026-10-28; own explicit goals. Registry fallback/index read; neither target has SIMS or family DECL override; COVERAGE missing up/sign and understates3 demos, actual definitions prevail. Phase transfer callback separate from random guided/independent family pool. Numeric Lite tolerance1e−9 not inherited.",
+      "inherited": [
+        "mixed",
+        "story",
+        "sign",
+        "missing",
+        "transfer callback"
+      ],
+      "corrected": "Mixed facts plus genuine two-operation practice with explicit intermediate and final quantities; both change orders. Zero sign puzzle accepts both +/−. Supplied story meaning determines nonzero operation. No one-answer fluency or formal mastery claim.",
+      "limits": "Actual source read; old Lite audits are unapproved author reports, not new independent proof."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-ADD-FACT-01",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Laskufaktat",
+        "title": "Yhteen- ja vähennyslaskun perusfaktat lukualueella 0–10",
+        "short_description": "Yhteen- ja vähennyslaskun perusfaktat lukualueella 0–10",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2"
+        ],
+        "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: M-ADD-FACT-10, M-SUB-FACT-10. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+        "status": "candidate_refactored_integration",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "integration",
+        "relations": [
+          {
+            "id": "M-ADD-FACT-10",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-ADD-FACT-01 on v0.2:ssa integraationoodi; atominen alitaito M-ADD-FACT-10 vaaditaan kokonaisuuden hallintaan."
+          },
+          {
+            "id": "M-SUB-FACT-10",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-ADD-FACT-01 on v0.2:ssa integraationoodi; atominen alitaito M-SUB-FACT-10 vaaditaan kokonaisuuden hallintaan."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-ADD-FACT-10",
+              "M-SUB-FACT-10"
+            ],
+            "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "integration",
+        "split_children": [
+          "M-ADD-FACT-10",
+          "M-SUB-FACT-10"
+        ],
+        "integration_of": [
+          "M-ADD-FACT-10",
+          "M-SUB-FACT-10"
+        ],
+        "dynamic_prerequisite_rule": null,
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Laskufaktat"
+        ]
+      },
+      "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-ADD-FACT-10",
+            "M-SUB-FACT-10"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "gradeBand": "1-2",
+      "role": "integration",
+      "teacherObjective": "Yhteen- ja vähennyslaskun perusfaktat lukualueella 0–10",
+      "childGoal": "Yhdistän plussan ja miinuksen kahdessa muutoksessa.",
+      "additionalHardGates": [],
+      "strongSupport": [],
+      "scope": "Mixed +/− facts to10 (132 pairs), four two-event stories with two selected operations/intermediate/final, missing part and sign relation including zero dual-validity. Both atomic skills AND are actual required prerequisites.",
+      "evidenceLimits": "Local untimed checked responses only. Model/hints are assistance; no formal mastery, fluent recall, retention, strategy proof, personal history or learning-effectiveness inference.",
+      "assetProvenance": "Supplied immutable user-provided v2 transparent PNG as named character; no new raster generation or implied handdrawn provenance. Mathematical SVG is original exact code, not mascot replacement."
+    },
+    "extensions": {
+      "productionBatch": "B11",
+      "author": "Euler",
+      "simulationType": "Manual discrete quantity transformations; no playback/physical clock, frames or timer. Pause/resume/reset/dispose apply to all active controls.",
+      "interaction": "Both input/change commits and current visible readback before model actions/check; dependent edits retire verdict, independent model/help does not. Strict finite integer equality; blank is missing, no tolerance or semantic fallback.",
+      "integration": "Required AND atomicADDFACT10/SUBFACT10, explicit two-event interpretation and arithmetic. No single-response mastery/fluency claim.",
+      "independentReview": "pending_Feynman",
+      "humanReview": "not_performed",
+      "designQA": "Own isolated full current shell design preview only, not actual main127; no shared header/presentation overrides or main build.",
+      "researchLimits": "Primary HTML sections and copyright/terms inspected2026-10-29. No slides/video/original research/Finnish-current requirements/efficacy claims."
+    },
+    "contentHash": "0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+    "contentRevision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@c74ad925f461730adbbf5f23030fa40be4da814571dbea1bee0f36b4da47c441",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@e42fe75e014c4944cba360dd1dc96676539424a91d087dc518a4ee4c2e6dce27",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@ce135e267de785dca9dcffa3e1e5f97b958547fa7ceda50c83066289b91fad28",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+          "note": "B11 r2 author copy-only fix: exact evidence/support limits moved into existing teacher details. Feynman minimal delta/current390 review pending; no human validation or self approval."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+          "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@c74ad925f461730adbbf5f23030fa40be4da814571dbea1bee0f36b4da47c441",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@e42fe75e014c4944cba360dd1dc96676539424a91d087dc518a4ee4c2e6dce27",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@ce135e267de785dca9dcffa3e1e5f97b958547fa7ceda50c83066289b91fad28",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+          "note": "B11 r2 author copy-only fix: exact evidence/support limits moved into existing teacher details. Feynman minimal delta/current390 review pending; no human validation or self approval."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+          "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@c74ad925f461730adbbf5f23030fa40be4da814571dbea1bee0f36b4da47c441",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@e42fe75e014c4944cba360dd1dc96676539424a91d087dc518a4ee4c2e6dce27",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@ce135e267de785dca9dcffa3e1e5f97b958547fa7ceda50c83066289b91fad28",
+          "note": "Author technical/design checks only; Feynman different-author review required. Human/learner validation not performed."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+          "note": "B11 r2 author copy-only fix: exact evidence/support limits moved into existing teacher details. Feynman minimal delta/current390 review pending; no human validation or self approval."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@0bba85fc7d81287fa4aeedb4dd1310d205a1ac592efab5756f0d286c03e2554a",
+          "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "16f904c797ed703e83d487eaa338a3a5f72a8b30e20e093721787e59fc538877",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "16f904c797ed703e83d487eaa338a3a5f72a8b30e20e093721787e59fc538877",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

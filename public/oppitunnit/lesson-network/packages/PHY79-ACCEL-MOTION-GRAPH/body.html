@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="lesson.css"><div class="g15" data-graph15>
+
+
+
+
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/aava/curious.png" width="48" height="48" alt="Aava"><p>Aava: Katsotaan Loikan liikettä.</p></div><p data-goal><strong>Huomaan nopeuden muutoksen.</strong></p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<fieldset data-lesson-role="worked-example"><legend>Sekunti kerrallaan</legend><div class="actions"><button type="button" data-action="play" aria-pressed="false">Toista</button><button type="button" data-action="pause">Tauko</button></div><p data-model-legend>1. Loikka (yhtenäinen)</p><div data-model-view><img src="initial.svg" alt="Likiarvot: mallin kello 0 s. Loikka: paikka 0 m, nopeus 0 m/s. Suora kulkureitti on kuvan yläosassa, sen alla koko laskettu paikka–aika-kuvaaja."></div><p data-readout>Likiarvot: mallin kello 0 s. Loikka: paikka 0 m, nopeus 0 m/s.</p><p data-run-state>Toisto tauolla</p><p>Kuvaajan viiva näyttää koko sovitun mallin. Liikkuva piste seuraa kelloa. Kulkureitille jää merkki kerran sekunnissa.</p><details data-lesson-role="teaching-step"><summary>Vaihda mallia tai tutki aikaa</summary><label>Malli<select data-model><option value="increase" selected>Lähtö ja kasvavat välit</option><option value="decrease">Jarrutus ja lyhenevät välit</option><option value="steady">Tasaiset välit</option><option value="rest">Paikallaan, kello käy</option><option value="phases">Kasvaa, pysyy, pienenee</option><option value="higher">Korkeus vai nopeuden muutos?</option><option value="clock">Aikaväli kellon keskeltä</option></select></label><label>Mallin aika (s)<input data-time type="text" inputmode="decimal" maxlength="128" value="0"></label><p data-model-description>Mallin aika0–4s. Askel1s, ajanmerkit1s välein. Koko toisto4ruutusekuntia.</p><div class="actions"><button type="button" data-action="step">Askel 1 s</button><button type="button" data-action="end">Näytä loppu</button><button type="button" data-action="restart">Malli alkuun</button></div><p>Tauko pysäyttää katselun, ei muuta laskettua liikettä. Loppukuva ei itsessään tarkoita fyysistä pysähdystä. Tämä on laskettu malli, ei tehty mittaus. Näyttölukemat pyöristyvät enintään 3 desimaaliin; vastauksen totuutta ei pyöristetä. Aikakenttä tukee enintään 6 merkitsevää desimaalipaikkaa.</p><div class="table" data-model-table><table><caption>Kellon tasaiset 1 sekunnin välit; x on paikka ja v nopeus.</caption><thead><tr><th scope="col">t (s)</th><th scope="col">Loikka x (m)</th><th scope="col">Loikka v (m/s)</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td><td>0</td></tr><tr><th scope="row">1</th><td>1</td><td>2</td></tr><tr><th scope="row">2</th><td>4</td><td>4</td></tr><tr><th scope="row">3</th><td>9</td><td>6</td></tr><tr><th scope="row">4</th><td>16</td><td>8</td></tr></tbody></table></div></details></fieldset><p>Sama aika, eri matka: nopeus muuttuu.</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Pohdi ensin:</strong> Mitä merkkien väleille tapahtuu, kun nopeus kasvaa?</p>
+</section>
+
+
+
+
+
+
+<nav aria-label="Oppitunnin kohdat" data-lesson-role="metadata"><a href="#examples">Esimerkit</a><a href="#practice">Kokeile itse</a></nav>
+
+
+
+
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<details id="examples" data-lesson-role="teaching-step"><summary>Mistä tämän huomaa?</summary><h2>Sama sekunti, pidempi matka</h2><p>Ensimmäisessä mallissa Loikka etenee peräkkäisinä sekunteina <strong>1, 3, 5 ja 7 metriä</strong>. Ajanvälit ovat yhtä pitkiä, mutta niiden matkat kasvavat. Nopeus kasvaa, ja paikka–aika-kuvaaja jyrkkenee.</p><img src="example.svg" alt="Ratkaistu kasvavan nopeuden malli: paikat0,1,4,9,16metriä hetkillä0,1,2,3,4sekuntia."><figcaption>Merkkien välit kasvavat. Kulkureitti on suora, vaikka kuvaaja kaartuu.</figcaption><h3>Loiveneva viiva ei ole paluu</h3><p>Toisessa mallissa sekuntimatkat ovat <strong>7, 5, 3 ja 1 m</strong>. Loikka kulkee yhä oikealle mutta hidastuu. Paikka kasvaa, joten viiva nousee. Sen jyrkkyys pienenee.</p><img src="contrast.svg" alt="Ratkaistu jarrutus: paikat0,7,12,15,16metriä. Paikka kasvaa ja käyrä loivenee."><figcaption>Molemmat mallit päättyvät paikkaan16m ajassa4s. Pelkkä loppupaikka ei kerro nopeuden muutosta.</figcaption><h3>Suora ja vaakasuora ovat eri asioita</h3><p>Kun joka sekunti kuljetaan 4 m, nopeus pysyy 4 m/s:ssa ja paikka–aika-viiva on suora nouseva. Paikallaan ollessa paikka ei muutu: viiva on vaakasuora. <strong>Kuvaaja ei ole maaston kuva.</strong></p></details>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<section id="practice"><h2>Kokeile itse</h2><label>Tehtävä<select data-task><option value="increase">Tehtävä A</option><option value="decrease" selected>Tehtävä B</option><option value="steady">Tehtävä C</option><option value="rest">Tehtävä D</option><option value="same_ends">Tehtävä E</option><option value="interval">Tehtävä F</option></select></label><p data-question data-lesson-role="question">Mitä loiveneva paikka–aika-kuvaaja kertoo Loikan nopeudesta?</p><p data-task-legend>Loikka</p><div data-task-view><img src="practice-initial.svg" alt="Tämän tehtävän oma nimetty paikka–aika-kuvaaja. Arvot saa myös taulukkona."></div><fieldset data-answer-fields><label>Mikä kuvaus sopii?<select data-answer><option value="">Valitse</option><option value="increase">Nopeus kasvaa</option><option value="decrease">Nopeus pienenee</option><option value="steady">Liikkuu tasaisella nopeudella</option><option value="rest">On paikallaan</option></select></label></fieldset><button type="button" data-action="check">Tarkista</button><output data-feedback data-result="neutral" aria-live="polite">Tarkista, kun olet valmis.</output><div data-practice-support><details data-lesson-role="hint"><summary>Ajattelun tueksi</summary><p data-task-help>Viiva nousee vielä. Vertaile sen jyrkkyyttä alussa ja lopussa; tämä ei ole mäen kuva.</p></details><details data-lesson-role="teaching-step"><summary>Kuvaajan tiedot taulukkona</summary><div class="table" data-task-table><table><caption>Kellon tasaiset 1 sekunnin välit; x on paikka ja v nopeus.</caption><thead><tr><th scope="col">t (s)</th><th scope="col">Loikka x (m)</th><th scope="col">Loikka v (m/s)</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td><td>8</td></tr><tr><th scope="row">1</th><td>7</td><td>6</td></tr><tr><th scope="row">2</th><td>12</td><td>4</td></tr><tr><th scope="row">3</th><td>15</td><td>2</td></tr><tr><th scope="row">4</th><td>16</td><td>0</td></tr></tbody></table></div><p>Tehtävällä on oma kuvaajansa. Voit vastata suoraan tai palata esimerkkiin ja käyttää apua. Ylemmän mallin katsominen ei ole pakollista.</p></details></div></section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Vertaa uuteen tilanteeseen</summary><h2>Tutki myös välin sisälle</h2><p>Uudessa mallissa Loikka lähtee levosta, liikkuu hetken tasaisesti ja jarruttaa takaisin lepoon. Paikka–aika-kuvaajassa on jyrkkenevä kaari, suora osa ja loiveneva kaari.</p><img src="transfer.svg" alt="Ratkaistu kolmen vaiheen paikka–aika-kuvaaja. Lopussa paikka32m, nopeus0m/s."><figcaption>Alku- ja loppunopeus ovat0, mutta nopeus muuttui matkan aikana. Laskeva nopeus ei tässä tarkoita palaamista.</figcaption></details>
+</section>
+
+
+
+
+
+
+<details class="teacher" data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p>Luokat 7–9. Kanoninen rooli process säilyy; pakollinen esitieto on PHY79-ACCEL-CONCEPT. Harjoitellaan paikan ja kuluneen ajan sekä yhtä pitkien aikavälien matkojen tulkintaa. Kaavan tai derivaatan osaamista ei aseteta uudeksi esitietoportiksi.</p><p>Piirtäkää samaa suoraviivaista kävelyä kuvaava paikka–aika- ja nopeus–aika-kuva. Kirjatkaa paikka yhtä pitkien aikavälien päätteissä. Verratkaa merkkivälejä ja selittäkää, miksi kaareva kuvaaja ei tarkoita kaarevaa kulkureittiä. Ruutumalli ei todista oikean fyysisen mittauksen osaamista.</p><p>Malli kulkee suoralla oikealle, lähtöpaikka on 0 m ja suunnattu nopeus on vähintään0. Tässä rajauksessa paikka ja kuljettu matka ovat samat; yleisesti ne ovat eri suureita. Nopeus on paloittain lineaarinen ajan funktio. Paikka saadaan sen täsmällisestä integraalista, ja kuvaajan toisen asteen osat piirretään täsmällisinä Bézier-kaaren osina. Vaiheen vaihtumiskohdassa erisuuntaisten kiihtyvyyksien yhteistä hetkellistä derivaattaa ei väitetä tunnetuksi. Näissä tehtävissä käytetään ilmoitetun välin muutosta.</p><p>Vain nimetyt äärelliset mallit, metrit ja sekunnit, ilmoitetut alueet, akselit, askel, yhden sekunnin ajanmerkit ja toistonopeus. Tuntematon malli, yksikkö, ohjaus tai arvo ei korvaudu oletuksella. Negatiiviset nopeudet, suunnanvaihdot, voimat ja 2D-radat eivät kuulu tähän toteutukseen. Negatiivinen kiihtyvyys ei yleisesti tarkoita vauhdin pienenemistä muissa suunnissa.</p><p>Paikallinen palaute koskee nykyistä matalan kynnyksen harjoitusta. Ei henkilökohtaista historiaa, formaalia itsenäistä/viivästettyä näyttöä tai koko prosessin arviointirubriikkia. Esimerkki, vihje ja taulukko ovat tukea. Ei pakollista puhetta, kuuntelua, nimeämistä, aikarajaa tai tiettyä klikkausreittiä. Oppilasymmärrystä, vaikuttavuutta, täydellistä manuaalista saavutettavuutta ja julkaisuoikeuksia ei ole hyväksytty.</p></details>
+
+
+
+
+
+
+<section data-teaching-step="7" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lopuksi:</strong> Miksi sama loppupaikka ja loppuaika eivät kerro, muuttuiko nopeus?</p>
+</section>
+
+
+
+
+
+
+<noscript data-lesson-role="metadata"><p>Alkukuva, tekstit, ratkaistut esimerkit ja taulukot toimivat ilman JavaScriptiä. Voit tehdä tehtävän paperille. Liike ja paikallinen Tarkista-toiminto tarvitsevat JavaScriptin.</p></noscript></div>

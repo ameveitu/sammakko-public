@@ -1,0 +1,761 @@
+{
+  "kcId": "M-PLACE-01",
+  "pagePath": "lessons/M-PLACE-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-PLACE-01",
+  "canonicalNode": {
+    "id": "M-PLACE-01",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Kymmenjärjestelmä",
+    "title": "Kymmenen ykkösen ryhmittäminen yhdeksi kymmeneksi",
+    "short_description": "Kymmenen ykkösen ryhmittäminen yhdeksi kymmeneksi",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "concept",
+    "relations": [
+      {
+        "id": "M-NUM-18",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Kymmenen ykkösen ryhmittäminen ei edellytä kaikkien 1–10 hajotelmien hallintaa."
+      },
+      {
+        "id": "M-NUM-02",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "Kymmenen objektin ryhmittely edellyttää kardinaalisen lukumäärän ymmärtämistä."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-NUM-02"
+        ],
+        "rationale": "Lukumäärän ymmärtäminen on varsinainen välttämätön pohja; hajotelmat tukevat."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Kymmenjärjestelmä"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-NUM-18",
+      "targetKCId": "M-PLACE-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Kymmenen ykkösen ryhmittäminen ei edellytä kaikkien 1–10 hajotelmien hallintaa.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-NUM-02",
+      "targetKCId": "M-PLACE-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Kymmenen objektin ryhmittely edellyttää kardinaalisen lukumäärän ymmärtämistä.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-PLACE-01",
+      "targetKCId": "M-PLACE-02",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-PLACE-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-NUM-02"
+      ],
+      "rationale": "Lukumäärän ymmärtäminen on varsinainen välttämätön pohja; hajotelmat tukevat."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-PLACE-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-108-composition-of-numbers-multiples-of-10-up-to-100/",
+        "title": "Composition of numbers: multiples of 10 up to 100",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "inspected": "Official HTML introduction and all five teaching points. Linked32-page PDF retrieved separately; extracted text was largely symbols, so no complete-PDF or figure-reading claim.",
+        "usageRestrictions": "NCETM copyright page consulted in this production session: default Crown Copyright/OGL with acknowledgement and named-author/third-party exceptions. PD materials are not a ready-made textbook lesson to copy. No source figures or task wording reused.",
+        "adopted": "Treat a ten as a unit containing ten ones. Connect individual pieces to one grouped unit before numeral-place conventions.",
+        "rejected": "Do not make counting to100, number-line estimation, multiple-of-ten arithmetic or all ten-bonds compulsory for this frozen KC."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/media/ikjbjpbo/ncetm_mm_sp1_y1_se08_teach.pdf",
+        "title": "1.8 Composition of numbers: multiples of 10 up to 100 — Teacher Guide",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "inspected": "PDF endpoint retrieved,32 pages. Extraction inadequate/symbol-heavy. Primary search excerpt showed ten individual objects as one group and9/11 nonexamples; no claim of reading full guide or rendered figures.",
+        "usageRestrictions": "Crown/NCETM restrictions as above. Supplementary discovery record only; no copied material.",
+        "adopted": "No additional PDF-specific lesson treatment claimed beyond corroborated public HTML. Nine/eleven examples are independently derived quantity checks.",
+        "rejected": "No fabricated PDF reading, page-specific figure claim or imported worksheet."
+      },
+      {
+        "url": "https://resolve.edu.au/teaching-sequences/year-1/place-value-resolve-garden/task-2-making-tens",
+        "title": "Task 2 • Making tens",
+        "organization": "reSolve Maths / Australian Academy of Science",
+        "accessed": "2026-10-29",
+        "inspected": "Public task launch/explore/connect and teacher prompts, approximately lines23–159, plus copyright footer. Goal is forming one ten from ten ones, with leftovers. No downloaded PPTX/DOCX inspection claimed.",
+        "usageRestrictions": "Footer ©2026 Australian Academy of Science. No general reproduction licence verified in inspected page. Reference/conceptual comparison only; no story, worksheet, illustrations or lesson sequence copied.",
+        "adopted": "Grouping action keeps the size of the ten-unit constant while leftover singles vary. Use visible organisation to make the group size inspectable.",
+        "rejected": "Do not import the25–99 seed-packet demand, long garden story, gallery walk or place-value-digit pattern as a prerequisite for this short lesson."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+    "history": [
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+        "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/expression-place-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+        "note": "No human or target-learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-PLACE-01",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "ten-ones.svg",
+        "sha256": "fbcff191eb15f419cdb1c885161d3844108add2c3c29c3ec1c92ae626f5ccb3e"
+      },
+      {
+        "path": "shared/aava/map.png",
+        "sha256": "49b47a345fa26f9017acb1672d1b7d6d4fe0dcd511e756c693b731269579ebe9"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "d6ede870e985cc0cac40efdeb6bcd62e8ac7a11d0e7075aa8ffab82ef3be2628"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-108-composition-of-numbers-multiples-of-10-up-to-100/",
+        "title": "Composition of numbers: multiples of 10 up to 100",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "inspected": "Official HTML introduction and all five teaching points. Linked32-page PDF retrieved separately; extracted text was largely symbols, so no complete-PDF or figure-reading claim.",
+        "usageRestrictions": "NCETM copyright page consulted in this production session: default Crown Copyright/OGL with acknowledgement and named-author/third-party exceptions. PD materials are not a ready-made textbook lesson to copy. No source figures or task wording reused.",
+        "adopted": "Treat a ten as a unit containing ten ones. Connect individual pieces to one grouped unit before numeral-place conventions.",
+        "rejected": "Do not make counting to100, number-line estimation, multiple-of-ten arithmetic or all ten-bonds compulsory for this frozen KC."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/media/ikjbjpbo/ncetm_mm_sp1_y1_se08_teach.pdf",
+        "title": "1.8 Composition of numbers: multiples of 10 up to 100 — Teacher Guide",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "inspected": "PDF endpoint retrieved,32 pages. Extraction inadequate/symbol-heavy. Primary search excerpt showed ten individual objects as one group and9/11 nonexamples; no claim of reading full guide or rendered figures.",
+        "usageRestrictions": "Crown/NCETM restrictions as above. Supplementary discovery record only; no copied material.",
+        "adopted": "No additional PDF-specific lesson treatment claimed beyond corroborated public HTML. Nine/eleven examples are independently derived quantity checks.",
+        "rejected": "No fabricated PDF reading, page-specific figure claim or imported worksheet."
+      },
+      {
+        "url": "https://resolve.edu.au/teaching-sequences/year-1/place-value-resolve-garden/task-2-making-tens",
+        "title": "Task 2 • Making tens",
+        "organization": "reSolve Maths / Australian Academy of Science",
+        "accessed": "2026-10-29",
+        "inspected": "Public task launch/explore/connect and teacher prompts, approximately lines23–159, plus copyright footer. Goal is forming one ten from ten ones, with leftovers. No downloaded PPTX/DOCX inspection claimed.",
+        "usageRestrictions": "Footer ©2026 Australian Academy of Science. No general reproduction licence verified in inspected page. Reference/conceptual comparison only; no story, worksheet, illustrations or lesson sequence copied.",
+        "adopted": "Grouping action keeps the size of the ten-unit constant while leftover singles vary. Use visible organisation to make the group size inspectable.",
+        "rejected": "Do not import the25–99 seed-packet demand, long garden story, gallery walk or place-value-digit pattern as a prerequisite for this short lesson."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+        "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/expression-place-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+        "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/expression-place-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+        "note": "No human or target-learner validation performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-PLACE-01",
+      "nodeRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "globalFallback": "lite181-2026-10-27",
+      "sourceFile": "ranta2.ts",
+      "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "sourceHashes": {
+        "src/content/ranta2.ts": "28d8f7b08205a7e5be0c2087c85e256e609578e83a9e6e714a1ee8573ff47fc6",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+        "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+        "src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "goal": "Opit niputtamaan kymmenen ykköstä yhdeksi kymppinipuksi.",
+      "goalOverlay": "GOALS fills missing NodeSpec goal in index.ts",
+      "intro": "Lauttaan tarvitaan kaislanippuja. Yhteen nippuun sidotaan aina kymmenen kaislaa.",
+      "reward": "Kymmenen yksittäistä on yksi kymppi!",
+      "demos": [
+        {
+          "say": "Lasketaan kaislat yksi kerrallaan. Kun kaisloja on kymmenen, ne sidotaan yhdeksi nipuksi. Nippu on yksi kymppi, ja siinä on kymmenen kaislaa.",
+          "label": "10 kaislaa niputetaan kymmenittäin",
+          "seconds": 9.299999999999999,
+          "finalCaption": "Yksi nippu."
+        },
+        {
+          "say": "Kaisloja on kolmetoista. Kymmenen sidotaan nippuun, ja kolme jää irralleen. Kolmetoista on kymmenen ja kolme.",
+          "label": "13 kaislaa niputetaan kymmenittäin",
+          "seconds": 10.56,
+          "finalCaption": "Yksi nippu ja kolme irrallista."
+        },
+        {
+          "say": "Kaksikymmentäneljä kaislaa: kaksi nippua ja neljä irrallista.",
+          "label": "24 kaislaa niputetaan kymmenittäin",
+          "seconds": 16.779999999999998,
+          "finalCaption": "Kaksi nippua ja neljä irrallista."
+        }
+      ],
+      "families": {
+        "missing": {
+          "kind": "choice",
+          "registry": {
+            "node": "M-PLACE-01",
+            "tag": "missing",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "example": {
+            "say": "Montako kaislaa puuttuu, jotta saadaan kymmenen nippu?",
+            "scene": "[function]",
+            "task": {
+              "kind": "choice",
+              "options": [
+                {
+                  "big": "6",
+                  "speak": "kuusi"
+                },
+                {
+                  "big": "10",
+                  "speak": "kymmenen"
+                },
+                {
+                  "big": "5",
+                  "speak": "viisi"
+                }
+              ],
+              "answer": 2,
+              "why": [
+                "5 + 6 = 11, yksi liikaa.",
+                "Kymmenen on koko nippu. Osa kaisloista on jo valmiina.",
+                null
+              ]
+            },
+            "hint": "Laske kaislat. Jatka sitten laskemista kymmeneen asti: 6, …",
+            "explain": "5 + 5 = 10. Puuttuu viisi.",
+            "tag": "missing"
+          }
+        },
+        "tie": {
+          "kind": "bundle",
+          "registry": {
+            "node": "M-PLACE-01",
+            "tag": "tie",
+            "outcome": "kerää kaisloja nippuun napauttamalla ja sitoo nipun, kun siinä on tasan kymmenen (kymmenen ykköstä = yksi kymppi)",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "example": {
+            "say": "Rannalla on kaksitoista kaislaa. Kerää niistä tasan kymmenen nippuun ja sido nippu.",
+            "task": {
+              "kind": "bundle",
+              "n": 12
+            },
+            "hint": "Laske ääneen jokaisen kaislan kohdalla. Kymmenennen jälkeen lopeta.",
+            "explain": "Nippuun meni kymmenen, ja irralleen jäi kaksi: 12 = 10 + 2.",
+            "tag": "tie"
+          }
+        },
+        "bundles": {
+          "kind": "choice",
+          "registry": {
+            "node": "M-PLACE-01",
+            "tag": "bundles",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "example": {
+            "say": "Kaisloja on kolmekymmentä. Montako kymmenen nippua niistä saa?",
+            "task": {
+              "kind": "choice",
+              "options": [
+                {
+                  "big": "30",
+                  "speak": "kolmekymmentä"
+                },
+                {
+                  "big": "4",
+                  "speak": "neljä"
+                },
+                {
+                  "big": "3",
+                  "speak": "kolme"
+                }
+              ],
+              "answer": 2,
+              "why": [
+                "Tämä on kaislojen määrä. Kysyttiin nippujen määrää.",
+                "4 nippuun tarvittaisiin 40 kaislaa.",
+                null
+              ]
+            },
+            "hint": "Jokaisessa nipussa on kymmenen. Laske kymmenin.",
+            "explain": "10 + 10 + 10 = 30. Nippuja on 3.",
+            "tag": "bundles"
+          }
+        },
+        "enough": {
+          "kind": "choice",
+          "registry": {
+            "node": "M-PLACE-01",
+            "tag": "enough",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "example": {
+            "say": "Riittävätkö nämä kaislat yhteen nippuun?",
+            "scene": "[function]",
+            "task": {
+              "kind": "choice",
+              "options": [
+                {
+                  "text": "Riittää",
+                  "speak": "Riittää"
+                },
+                {
+                  "text": "Ei riitä",
+                  "speak": "Ei riitä"
+                }
+              ],
+              "answer": 1,
+              "why": [
+                "Kaisloja on vain 7. Nippuun tarvitaan kymmenen.",
+                null
+              ],
+              "cols": 2
+            },
+            "hint": "Laske kaislat. Yhteen nippuun tarvitaan kymmenen.",
+            "explain": "Kaisloja on seitsemän. Kymmeneen puuttuu 3.",
+            "tag": "enough"
+          }
+        },
+        "transfer": {
+          "kind": "choice",
+          "registry": {
+            "node": "M-PLACE-01",
+            "tag": "transfer",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          },
+          "example": {
+            "say": "Kaisloja on kolmetoista. Loikka sitoo niistä yhden kymmenen nipun. Montako kaislaa jää irralleen?",
+            "scene": "[function]",
+            "task": {
+              "kind": "choice",
+              "options": [
+                {
+                  "big": "10",
+                  "speak": "kymmenen"
+                },
+                {
+                  "big": "13",
+                  "speak": "kolmetoista"
+                },
+                {
+                  "big": "3",
+                  "speak": "kolme"
+                }
+              ],
+              "answer": 2,
+              "why": [
+                "Nippuun meni kymmenen. Kysyttiin irrallisia.",
+                "13 on kaikki kaislat. Kymmenen niistä meni nippuun.",
+                null
+              ]
+            },
+            "hint": "Nippuun menee kymmenen. Montako jää, kun luvusta 13 otetaan kymmenen?",
+            "explain": "13 = 10 + 3. Yksi nippu ja 3 irrallista.",
+            "tag": "transfer"
+          }
+        }
+      },
+      "phaseDispatch": "kit.cases: named ordinary families for guided/independent/retrieval; separate transfer.256 seeds/phase,1024 items perKC.",
+      "registryOverlay": "Manifest coverage then node/wildcard/tag family merges recorded in effective inventory. Neither assigned KC has a SIMS motion override or a dynamic canonical rule.",
+      "correctionsAndLimits": "COVERAGE omits tie/bundle and counts2 demos rather than3. Existing tiny pointer targets, auto-spoken count and locked retries are not copied. Same10 members persist inside one group; numeral-place reading remains later.",
+      "audit": "LESSON_AUDIT describes static ten/bundle recognition being replaced with bundleScene and tie construction plus specific9/11 feedback. Historical results are unapproved context.",
+      "reconciliationFile": "alignment.md",
+      "untouched": "Immutable Lite, frozen graph/roles/prerequisites and prior packages unchanged."
+    },
+    "planning": {
+      "gradeBand": "1-2",
+      "canonical": {
+        "id": "M-PLACE-01",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Kymmenjärjestelmä",
+        "title": "Kymmenen ykkösen ryhmittäminen yhdeksi kymmeneksi",
+        "short_description": "Kymmenen ykkösen ryhmittäminen yhdeksi kymmeneksi",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "concept",
+        "relations": [
+          {
+            "id": "M-NUM-18",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "Kymmenen ykkösen ryhmittäminen ei edellytä kaikkien 1–10 hajotelmien hallintaa."
+          },
+          {
+            "id": "M-NUM-02",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "Kymmenen objektin ryhmittely edellyttää kardinaalisen lukumäärän ymmärtämistä."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-NUM-02"
+            ],
+            "rationale": "Lukumäärän ymmärtäminen on varsinainen välttämätön pohja; hajotelmat tukevat."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Kymmenjärjestelmä"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-NUM-02"
+          ],
+          "rationale": "Lukumäärän ymmärtäminen on varsinainen välttämätön pohja; hajotelmat tukevat."
+        }
+      ],
+      "required": [
+        {
+          "id": "M-NUM-02",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "Kymmenen objektin ryhmittely edellyttää kardinaalisen lukumäärän ymmärtämistä."
+        }
+      ],
+      "strongSupport": [
+        {
+          "id": "M-NUM-18",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Kymmenen ykkösen ryhmittäminen ei edellytä kaikkien 1–10 hajotelmien hallintaa."
+        }
+      ],
+      "teacherObjective": "Oppilas tunnistaa ja muodostaa kymmenen yksilön ryhmän yhtenä kymmenenä sekä erottaa ryhmien ja yksilöiden määrän.",
+      "childGoal": "Teen kymmenestä ykkösestä yhden kymppinipun.",
+      "assumed": "Required vain M-NUM-02: kardinaalinen määrä. M-NUM-18 hajotelmat on vahva tuki, ei kaikkien hajotelmien hallintaportti. concept/atomic/entry none säilyy, vaikka tehtävä sisältää konkreettisen ryhmittelyteon. Ei yleistä kaksinumeroisten numeropaikkataitoa, fyysisen sitomisen tai itsenäisen oppimistuloksen väitettä. Lyhyet ydintekstit1–2-luokille; opettajatiedot erillään. Ei lapsiytimessä arviointi-/mastery-/evidenssikieltä.",
+      "scope": [
+        "One group of10 unique pieces from collections10,13,17; bead transfer13. Any valid subset of10 accepted.",
+        "Unitising ten ones as one ten. Multiple tens/positional numeral reading are extensions, not added requirements."
+      ],
+      "interaction": "Yhdestä kuvallisesta varastosta valitaan mitkä tahansa10 eri kaislaa. Jokainen iso natiivi kuvapainike valitsee tai palauttaa yhden; ei näkyviä A/B-esinenimiä eikä nimeämis- tai puhekuittausta. Sido kymppi on varsinainen ryhmittelyteko, ei ylimääräinen vastausvahvistus.9/11 yrityksistä saa määrään sidotun lyhyen avun. Pätevässä sidonnassa samat10 kuvallista yksilöä siirtyvät siteen sisälle ja loput jäävät näkyviin. Ei automaattista lukitusta tai palkintoa.",
+      "support": [
+        "Vihje: kymmenkehys tai laskettu valittujen määrä; puhe vain haluttaessa.",
+        "Lisätutkimus: voiko samasta20 tikun joukosta tehdä kaksi kymppinippua? Näytä ensin; ei lukko tai vaadittu30–100 laskutaito.",
+        "Opettaja/offline: tikut ja kumilenkki, myös9/11 vertailu. Ryhmittelyä ei voi päätellä pelkästä oikein sanotusta numerosta.",
+        "Exit: näytä nipusta, missä ovat kymmenen ykköstä."
+      ],
+      "feedbackSemantics": [
+        "Picture-button membership edits untie and neutralise the prior verdict; current visible membership is read on tying. Case selection handles input/change and resets only on actual case change.",
+        "The amount-help checkbox handles both events and preserves the same answer verdict. Changing materials does not change the definition of ten."
+      ],
+      "evidenceLimits": [
+        "Original curriculum facts are frozen canonical data; scenarios and finite models are project design choices.",
+        "Supported on-screen activity; no persistence, learner record, formal mastery award, efficacy, retention or human-validation claim.",
+        "No physical handling proficiency inferred. Child core contains mathematical instructions; assessment/evidence limitations are teacher-facing."
+      ],
+      "assetProvenance": [
+        {
+          "path": "ten-ones.svg",
+          "origin": "Original mathematical SVG drawn in code for this package2026-10-29; no source figure or mascot redrawn."
+        },
+        {
+          "path": "shared/aava/map.png",
+          "origin": "Actual user-supplied shared transparent PNG referenced unchanged; not duplicated into the package. Owner licensing/release decisions remain separate."
+        }
+      ]
+    },
+    "extensions": {
+      "batch": "B06",
+      "authored": "2026-10-29",
+      "sourcePreparation": "B06 actual source/research prep reused explicitly, not a fabricated fresh search per item.",
+      "feedbackContractSha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "eventCommitAddendumSha256": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+      "researchLimits": "Original diagrams/Finnish text. NCETM place-value PDF extraction inadequate; OpenStax material explicitly not adopted under assumed reuse terms. See research.md.",
+      "browserQA": "browser.mjs is intended for exact actual compiled site; source-harness checks separately labelled. Human review remains pending."
+    },
+    "contentHash": "f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+    "contentRevision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+      "history": [
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+          "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/expression-place-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+          "note": "No human or target-learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@f8c6d05ec24b7d759804be08aa365170479e39d7c5acde43f0df060023d44db0",
+          "note": "Independent SYNTHETIC source/domain/pedagogy review closed for this exact revision, not author self-approval. Evidence/production/B06/expression-place-independent-review.json. Actual compiled/native checks are separately bound. Human efficacy and release acceptance remain pending."
+        }
+      ]
+    }
+  },
+  "outputHash": "2ff2455aec1f514ff98d1c9138d8025870bc60b37286d30e22e79a76944eee4f",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "2ff2455aec1f514ff98d1c9138d8025870bc60b37286d30e22e79a76944eee4f",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

@@ -1,0 +1,2271 @@
+catalog:
+  id: Science_KC_Foundation_1_6_v0.2
+  version: '0.2'
+  status: pre-MVP refactored candidate baseline
+  scope: Ympäristöopin 1–6 fysiikan ja kemian yhteiset sekä tiedonalakohtaiset alkutiedot
+  language: fi
+  time_locked_note: Voimassa olevan POPS 2014 -rakenteen pohjalta tehty pedagoginen DAG; ei OPH:n määräämä vuosiluokkajärjestys.
+    POPS 2027/2028 -uudistus ei ole vielä tämän version normatiivinen lähde.
+  external_prerequisite_catalogs: []
+  prerequisite_semantics:
+    required: Aidosti välttämätön ydinesitieto useimmille ydintehtäville.
+    strong: Vahva tuki; voidaan korjata rinnalla tai ohittaa vaihtoehtoisella representaatiolla.
+    helpful: Hyödyllinen, ei avausportti.
+  group_semantics:
+    all_of: kaikki vaaditaan
+    any_of: vähintään yksi riittää
+    between_groups: ryhmät yhdistyvät AND-logiikalla
+  source_basis_semantics:
+    direct_curriculum: suoraan normatiivisen sisältöalueen nimeämä tai siitä suoraan erotettava taito
+    assessment_refined: arviointikriteeri/tukimateriaali auttaa hienontamaan
+    pedagogically_derived: Sammakon pedagoginen välisolmu tai granulaatio
+  relation_type_semantics:
+    prerequisite: Osaamiskohteen tiedollinen tai taidollinen esitieto.
+    process_support: Prosessitaito tukee työskentelyä mutta ei ole automaattisesti avausportti.
+    representation_support: Representaatiotaito tukee ymmärtämistä tai ilmaisua.
+    safety_gate: Turvallisuusehto käytännön/kokeelliselle toiminnalle; ei käsitteellisen osaamisen hard prerequisite.
+    transfer_bridge: Soveltamista tukeva yhteys.
+    enrichment: Syventävä yhteys.
+  refactor_lineage:
+    base_catalog: Science_KC_Foundation_1_6_v0.1
+    node_audit: STEM_KC_NODE_AUDIT_v0.1
+    refactor_generation: STEM_KC_Catalogs_v0.2
+    policy: Apply high-confidence granularity/foundation/parent changes; retain original IDs as integration nodes when split;
+      do not apply medium-confidence split candidates automatically.
+  node_kind_semantics:
+    foundation: Pedagoginen perustaito, joka voi toimia globaalina oppimisen lähtöpisteenä.
+    concept: Yksi erikseen hallittava käsite tai abstraktio.
+    procedure: Yksi erikseen harjoiteltava menettely, algoritmi tai suoritus.
+    representation: Matemaattisen tai luonnontieteellisen tiedon esitystapa tai esitysten välinen muunnos.
+    process_skill: Sisältöalueiden läpi kulkeva työskentely-, päättely-, tutkimus- tai strateginen taito.
+    integration: Koostenooodi, jonka hallinta edellyttää määriteltyjen atomisempien alinoodeiden yhdistämistä.
+  entry_role_semantics:
+    foundation: Voidaan aloittaa ilman aiempaa muodollista sisältö-KC:tä; arkikieli ja tavallinen havaintokyky sallitaan.
+    domain_entry: Ei globaali foundation, mutta voidaan esitellä ilmiö-/kontekstipohjaisesti ilman hard prerequisitea; strong/helpful-tukia
+      voi olla.
+    dynamic: Prosessi-/representaatiotaito, jonka todellinen konteksti määräytyy tehtäväinstanssista.
+    operational: Turvallisuus- tai toimintavalmius, joka voi olla käytännön tekemisen portti mutta ei käsitteellisen oppimisen
+      hard prerequisite.
+    none: Ei ole aloitusroolissa.
+  mastery_role_semantics:
+    atomic: Tavoitteena oma itsenäinen mastery-tila.
+    integration: Koostaa useita atomisia KC:itä; mastery johdetaan alinoodeista ja erillisestä soveltamisnäytöstä.
+    process: Evidenssiä kertyy useissa sisältökonteksteissa; ei välttämättä lineaarinen sisältömastery.
+    operational: Turvallisuus/toimintakyky; voidaan käyttää suoritusporttina.
+    placeholder: Paikallisen OPS:n tai myöhemmän lähdevalinnan täsmennettävä väliaikainen rakenne.
+  concept_path_semantics: Hierarkkinen taksonomiapolku. parent_concept säilyy välittömänä leaf-parenttina; concept_path estää
+    taksonomian jäämisen litteäksi.
+  foundation_semantics_v0_2: foundation_entry=true vain aidolle globaalille pedagogiselle lähtöpisteelle. zero_required_indegree
+    ei yksin tee foundationia.
+  integration_semantics_v0_2: Splitattu alkuperäinen ID säilytetään yhteensopivana integration-noodina. Uudet atomisemmat
+    lapset kantavat varsinaisen hienojakoisen mastery-tilan.
+source_registry:
+  ENV12-T5-T13:
+    authority: Opetushallitus
+    normative: true
+    title: Ympäristöoppi vuosiluokat 1–2
+    section: T5–T13, tutkimisen taidot ja mallit
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  ENV12-S4:
+    authority: Opetushallitus
+    normative: true
+    title: Ympäristöoppi vuosiluokat 1–2
+    section: S4 Tutkiminen ja kokeileminen
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  ENV12-S5:
+    authority: Opetushallitus
+    normative: true
+    title: Ympäristöoppi vuosiluokat 1–2
+    section: S5 Elämän perusedellytysten pohtiminen
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  ENV12-S2:
+    authority: Opetushallitus
+    normative: true
+    title: Ympäristöoppi vuosiluokat 1–2
+    section: S2 Kotona ja koulussa toimiminen
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  ENV36-T4-T18:
+    authority: Opetushallitus
+    normative: true
+    title: Ympäristöoppi vuosiluokat 3–6
+    section: T4–T18, tutkiminen sekä fysikaalisten ja kemiallisten ilmiöiden selittäminen
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  ENV36-S2:
+    authority: Opetushallitus
+    normative: true
+    title: Ympäristöoppi vuosiluokat 3–6
+    section: S2 Arjen tilanteissa ja yhteisöissä toimiminen
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  ENV36-S4:
+    authority: Opetushallitus
+    normative: true
+    title: Ympäristöoppi vuosiluokat 3–6
+    section: S4 Ympäristön tutkiminen
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  ENV36-S5:
+    authority: Opetushallitus
+    normative: true
+    title: Ympäristöoppi vuosiluokat 3–6
+    section: S5 Luonnon rakenteet, periaatteet ja kiertokulut
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+  ENV36-S6:
+    authority: Opetushallitus
+    normative: true
+    title: Ympäristöoppi vuosiluokat 3–6
+    section: S6 Kestävän tulevaisuuden rakentaminen
+    url: https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf
+    retrieved_at: '2026-10-06'
+nodes:
+- id: SCI-ENV-OBS-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Havainnointi
+  title: Havainnon tekeminen ja kuvaileminen
+  short_description: Havainnon tekeminen ja kuvaileminen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV12-T5-T13
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Integraationoodi edellyttää havainnon tekemistä.
+  - id: SCI-ENV-DESCRIBE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Integraationoodi edellyttää havainnon kuvailemista.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    - SCI-ENV-DESCRIBE-01
+    rationale: Sekä havainnointi että kuvaileminen muodostavat vanhan integroidun taidon.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: SCI-ENV-OBSERVE-01, SCI-ENV-DESCRIBE-01. Lisäksi vaaditaan
+    erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id001
+  - SCI-ENV-OBSERVE-01
+  - SCI-ENV-DESCRIBE-01
+  integration_of: *id001
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Havainnointi
+- id: SCI-ENV-COMPARE-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Vertailu ja luokittelu
+  title: Ilmiöiden, materiaalien ja tilanteiden vertaileminen ja luokitteleminen
+  short_description: Ilmiöiden, materiaalien ja tilanteiden vertaileminen ja luokitteleminen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV12-T5-T13
+  relations:
+  - id: SCI-ENV-COMPARE-02
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-COMPARE-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-COMPARE-02 vaaditaan kokonaisuuden
+      hallintaan.
+  - id: SCI-ENV-CLASSIFY-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-COMPARE-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-CLASSIFY-01 vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-COMPARE-02
+    - SCI-ENV-CLASSIFY-01
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: SCI-ENV-COMPARE-02, SCI-ENV-CLASSIFY-01. Lisäksi vaaditaan
+    erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id002
+  - SCI-ENV-COMPARE-02
+  - SCI-ENV-CLASSIFY-01
+  integration_of: *id002
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Vertailu ja luokittelu
+- id: SCI-ENV-QUESTION-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Kysymykset
+  title: Tutkittavan kysymyksen muodostamisen alku
+  short_description: Tutkittavan kysymyksen muodostamisen alku
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV12-T5-T13
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Tutkittava kysymys muodostetaan havaitusta ilmiöstä tai ongelmasta.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    rationale: Havainnon tekeminen on tutkittavan kysymyksen luonteva ydinesitieto.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Kysymykset
+- id: SCI-ENV-SAFE-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Turvallinen työskentely
+  title: Annettujen turvallisuusohjeiden noudattaminen
+  short_description: Annettujen turvallisuusohjeiden noudattaminen
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV12-S2
+  relations: []
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: operational
+  mastery_role: operational
+  operational_gate: true
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Turvallinen työskentely
+- id: SCI-ENV-TOOL-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Välineet
+  title: Yksinkertaisen tutkimus- tai mittausvälineen käyttäminen
+  short_description: Yksinkertaisen tutkimus- tai mittausvälineen käyttäminen
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV12-T5-T13
+  relations:
+  - id: SCI-ENV-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite.
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: Havainnointi tukee välineen tarkoituksenmukaista käyttöä.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: domain_entry
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Välineet
+- id: SCI-ENV-EXP-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Kokeilu
+  title: Pienen ohjatun kokeilun toteuttaminen
+  short_description: Pienen ohjatun kokeilun toteuttaminen
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV12-S4
+  relations:
+  - id: SCI-ENV-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite.
+  - id: SCI-ENV-QUESTION-01
+    relation_type: process_support
+    strength: strong
+    rationale: Kysymys auttaa jäsentämään kokeilua.
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: Havainnointi auttaa kokeilun tulkintaa.
+  - id: SCI-ENV-TOOL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: Välinetaidot tukevat kokeilua.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: domain_entry
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Kokeilu
+- id: SCI-ENV-RECORD-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Tulosten kirjaaminen
+  title: Havaintojen taltioiminen ja esittäminen
+  short_description: Havaintojen taltioiminen ja esittäminen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV12-T5-T13
+  relations:
+  - id: SCI-ENV-RECORD-DATA-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-RECORD-DATA-01 vaaditaan kokonaisuuden
+      hallintaan.
+  - id: SCI-ENV-PRESENT-DATA-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-RECORD-01 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-PRESENT-DATA-01 vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-RECORD-DATA-01
+    - SCI-ENV-PRESENT-DATA-01
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: SCI-ENV-RECORD-DATA-01, SCI-ENV-PRESENT-DATA-01. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id003
+  - SCI-ENV-RECORD-DATA-01
+  - SCI-ENV-PRESENT-DATA-01
+  integration_of: *id003
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Tulosten kirjaaminen
+- id: SCI-ENV-CAUSE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Tutkimisen taidot
+  parent_concept: Syy ja seuraus
+  title: Syy–seuraussuhteen tunnistaminen ilmiöstä
+  short_description: Syy–seuraussuhteen tunnistaminen ilmiöstä
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-T4-T18
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-OBSERVE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Syy ja seuraus
+- id: SCI-ENV-PLAN-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Tutkimisen taidot
+  parent_concept: Suunnittelu
+  title: Pienen tutkimuksen suunnitteleminen
+  short_description: Pienen tutkimuksen suunnitteleminen
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-T4-T18
+  relations:
+  - id: SCI-ENV-QUESTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-QUESTION-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: SCI-ENV-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite.
+  - id: SCI-ENV-EXP-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-EXP-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-QUESTION-01
+    rationale: Tutkittava kysymys on suunnittelun tiedollinen ydinesitieto.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Suunnittelu
+- id: SCI-ENV-MEAS-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Tutkimisen taidot
+  parent_concept: Mittaaminen
+  title: Mittauksen tekeminen tarkoituksenmukaisella välineellä
+  short_description: Mittauksen tekeminen tarkoituksenmukaisella välineellä
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-T4-T18
+  relations:
+  - id: SCI-ENV-TOOL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-TOOL-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-OBSERVE-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-TOOL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Mittaaminen
+- id: SCI-ENV-DATA-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Tutkimisen taidot
+  parent_concept: Aineisto
+  title: Mittausten ja havaintojen kokoaminen aineistoksi
+  short_description: Mittausten ja havaintojen kokoaminen aineistoksi
+  node_kind: representation
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-T4-T18
+  relations:
+  - id: SCI-ENV-RECORD-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-RECORD-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: SCI-ENV-MEAS-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-MEAS-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-RECORD-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Aineisto
+- id: SCI-ENV-CONCL-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Tutkimisen taidot
+  parent_concept: Johtopäätökset
+  title: Johtopäätöksen tekeminen tuloksista
+  short_description: Johtopäätöksen tekeminen tuloksista
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-T4-T18
+  relations:
+  - id: SCI-ENV-CAUSE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-CAUSE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: SCI-ENV-DATA-01
+    relation_type: representation_support
+    strength: strong
+    rationale: SCI-ENV-DATA-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-CAUSE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Johtopäätökset
+- id: SCI-ENV-EVAL-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Tutkimisen taidot
+  parent_concept: Tulosten arviointi
+  title: Tutkimustuloksen järkevyyden arviointi
+  short_description: Tutkimustuloksen järkevyyden arviointi
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-T4-T18
+  relations:
+  - id: SCI-ENV-CONCL-01
+    relation_type: process_support
+    strength: strong
+    rationale: SCI-ENV-CONCL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: SCI-ENV-DATA-01
+    relation_type: representation_support
+    strength: strong
+    rationale: SCI-ENV-DATA-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: dynamic
+  mastery_role: process
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Tulosten arviointi
+- id: SCI-ENV-MODEL-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Tutkimisen taidot
+  parent_concept: Mallit
+  title: Yksinkertaisen luonnontieteellisen mallin käyttäminen ilmiön selittämiseen
+  short_description: Yksinkertaisen luonnontieteellisen mallin käyttäminen ilmiön selittämiseen
+  node_kind: representation
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-T4-T18
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-OBSERVE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: process
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Mallit
+- id: SCI-ENV-MODEL-02
+  subject: science
+  grade_band: 3-6
+  topic_area: Tutkimisen taidot
+  parent_concept: Mallintaminen
+  title: Yksinkertaisen mallin tekeminen tai muuttaminen havaintojen perusteella
+  short_description: Yksinkertaisen mallin tekeminen tai muuttaminen havaintojen perusteella
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-T4-T18
+  relations:
+  - id: SCI-ENV-MODEL-CREATE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-MODEL-02 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-MODEL-CREATE-01 vaaditaan kokonaisuuden
+      hallintaan.
+  - id: SCI-ENV-MODEL-REVISE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-MODEL-02 on v0.2:ssa integraationoodi; atominen alitaito SCI-ENV-MODEL-REVISE-01 vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-MODEL-CREATE-01
+    - SCI-ENV-MODEL-REVISE-01
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: SCI-ENV-MODEL-CREATE-01, SCI-ENV-MODEL-REVISE-01. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id004
+  - SCI-ENV-MODEL-CREATE-01
+  - SCI-ENV-MODEL-REVISE-01
+  integration_of: *id004
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Mallintaminen
+- id: ENV-PHY-MOTION-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Liike
+  title: Liikkeen ja liikkeen muutoksen havainnointi
+  short_description: Liikkeen ja liikkeen muutoksen havainnointi
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV12-S4
+  relations:
+  - id: ENV-PHY-MOTION-OBS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-MOTION-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-MOTION-OBS-01 vaaditaan kokonaisuuden
+      hallintaan.
+  - id: ENV-PHY-MOTION-CHANGE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-MOTION-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-MOTION-CHANGE-01 vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-MOTION-OBS-01
+    - ENV-PHY-MOTION-CHANGE-01
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: ENV-PHY-MOTION-OBS-01, ENV-PHY-MOTION-CHANGE-01. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id005
+  - ENV-PHY-MOTION-OBS-01
+  - ENV-PHY-MOTION-CHANGE-01
+  integration_of: *id005
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Liike
+- id: ENV-PHY-CAUSE-MOTION-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Vuorovaikutus
+  title: Liikkeen muutoksen syyn pohtiminen
+  short_description: Liikkeen muutoksen syyn pohtiminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV12-S4
+  relations:
+  - id: ENV-PHY-MOTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-MOTION-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: SCI-ENV-CAUSE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-CAUSE-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-MOTION-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Vuorovaikutus
+- id: ENV-PHY-FORCE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Voima
+  title: Voiman käsite liikkeen muutoksen yhteydessä
+  short_description: Voiman käsite liikkeen muutoksen yhteydessä
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S4
+  relations:
+  - id: ENV-PHY-MOTION-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-MOTION-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-PHY-CAUSE-MOTION-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-CAUSE-MOTION-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-MOTION-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Voima
+- id: ENV-PHY-TEMP-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Lämpötila
+  title: Lämpötilan mittaaminen
+  short_description: Lämpötilan mittaaminen
+  node_kind: procedure
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: SCI-ENV-MEAS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-MEAS-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-MEAS-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Lämpötila
+- id: ENV-PHY-THERMAL-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Lämpöenergia
+  title: Lämpöenergia kvalitatiivisena ilmiönä
+  short_description: Lämpöenergia kvalitatiivisena ilmiönä
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-PHY-TEMP-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-TEMP-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: domain_entry
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Lämpöenergia
+- id: ENV-PHY-ENERGYFORM-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Energia
+  title: Energialajien tunnistaminen arjen ilmiöissä
+  short_description: Energialajien tunnistaminen arjen ilmiöissä
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-PHY-MOTION-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-MOTION-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: ENV-PHY-THERMAL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-THERMAL-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: ENV-PHY-LIGHT-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-LIGHT-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: ENV-PHY-SOUND-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-SOUND-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: domain_entry
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Energia
+- id: ENV-PHY-ENERGYTRANS-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Energia
+  title: Energian muuntumisen tunnistaminen
+  short_description: Energian muuntumisen tunnistaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-PHY-ENERGYFORM-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-ENERGYFORM-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-ENERGYFORM-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Energia
+- id: ENV-PHY-ENERGYCONS-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Energia
+  title: Energian säilymisen periaatteen alkumalli
+  short_description: Energian säilymisen periaatteen alkumalli
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-T4-T18
+  - ENV36-S5
+  relations:
+  - id: ENV-PHY-ENERGYTRANS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-ENERGYTRANS-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-ENERGYTRANS-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Energia
+- id: ENV-PHY-LIGHT-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Valo
+  title: Valoilmiöiden havainnointi ja yksinkertainen selittäminen
+  short_description: Valoilmiöiden havainnointi ja yksinkertainen selittäminen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-PHY-LIGHT-OBS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-LIGHT-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-LIGHT-OBS-01 vaaditaan kokonaisuuden
+      hallintaan.
+  - id: ENV-PHY-LIGHT-EXPLAIN-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-LIGHT-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-LIGHT-EXPLAIN-01 vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-LIGHT-OBS-01
+    - ENV-PHY-LIGHT-EXPLAIN-01
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: ENV-PHY-LIGHT-OBS-01, ENV-PHY-LIGHT-EXPLAIN-01. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id006
+  - ENV-PHY-LIGHT-OBS-01
+  - ENV-PHY-LIGHT-EXPLAIN-01
+  integration_of: *id006
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Valo
+- id: ENV-PHY-SOUND-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Ääni
+  title: Ääni-ilmiöiden havainnointi ja yksinkertainen selittäminen
+  short_description: Ääni-ilmiöiden havainnointi ja yksinkertainen selittäminen
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-PHY-SOUND-OBS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-SOUND-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-SOUND-OBS-01 vaaditaan kokonaisuuden
+      hallintaan.
+  - id: ENV-PHY-SOUND-EXPLAIN-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-SOUND-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-SOUND-EXPLAIN-01 vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-SOUND-OBS-01
+    - ENV-PHY-SOUND-EXPLAIN-01
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: ENV-PHY-SOUND-OBS-01, ENV-PHY-SOUND-EXPLAIN-01. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id007
+  - ENV-PHY-SOUND-OBS-01
+  - ENV-PHY-SOUND-EXPLAIN-01
+  integration_of: *id007
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Ääni
+- id: ENV-PHY-SPACE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Avaruus
+  title: Lähiavaruuden, päivän ja yön sekä vuodenaikojen perusmallit
+  short_description: Lähiavaruuden, päivän ja yön sekä vuodenaikojen perusmallit
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-PHY-SPACE-NEAR-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-SPACE-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-SPACE-NEAR-01 vaaditaan kokonaisuuden
+      hallintaan.
+  - id: ENV-PHY-DAYNIGHT-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-SPACE-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-DAYNIGHT-01 vaaditaan kokonaisuuden
+      hallintaan.
+  - id: ENV-PHY-SEASONS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-PHY-SPACE-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-PHY-SEASONS-01 vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-SPACE-NEAR-01
+    - ENV-PHY-DAYNIGHT-01
+    - ENV-PHY-SEASONS-01
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: ENV-PHY-SPACE-NEAR-01, ENV-PHY-DAYNIGHT-01, ENV-PHY-SEASONS-01.
+    Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id008
+  - ENV-PHY-SPACE-NEAR-01
+  - ENV-PHY-DAYNIGHT-01
+  - ENV-PHY-SEASONS-01
+  integration_of: *id008
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Avaruus
+- id: ENV-PHY-ELECSAFE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Sähköturvallisuus
+  title: Arjen sähköturvallisuuden perusperiaatteet
+  short_description: Arjen sähköturvallisuuden perusperiaatteet
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S2
+  relations:
+  - id: SCI-ENV-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: operational
+  mastery_role: operational
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Sähköturvallisuus
+- id: ENV-PHY-DEVICE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Teknologia
+  title: Arjen teknologisen laitteen toimintaperiaatteen tutkiminen
+  short_description: Arjen teknologisen laitteen toimintaperiaatteen tutkiminen
+  node_kind: process_skill
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S2
+  relations:
+  - id: SCI-ENV-MODEL-01
+    relation_type: representation_support
+    strength: strong
+    rationale: SCI-ENV-MODEL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-OBSERVE-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: dynamic
+  mastery_role: process
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Teknologia
+- id: ENV-CHEM-MATERIAL-01
+  subject: science
+  grade_band: 1-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Aine ja materiaali
+  title: Materiaalien ja aineiden tunnistaminen ja vertailu
+  short_description: Materiaalien ja aineiden tunnistaminen ja vertailu
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV12-T5-T13
+  - ENV36-S5
+  relations:
+  - id: ENV-CHEM-MATERIAL-ID-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-MATERIAL-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-CHEM-MATERIAL-ID-01 vaaditaan kokonaisuuden
+      hallintaan.
+  - id: ENV-CHEM-MATERIAL-COMPARE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-MATERIAL-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-CHEM-MATERIAL-COMPARE-01 vaaditaan
+      kokonaisuuden hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-MATERIAL-ID-01
+    - ENV-CHEM-MATERIAL-COMPARE-01
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: ENV-CHEM-MATERIAL-ID-01, ENV-CHEM-MATERIAL-COMPARE-01. Lisäksi
+    vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id009
+  - ENV-CHEM-MATERIAL-ID-01
+  - ENV-CHEM-MATERIAL-COMPARE-01
+  integration_of: *id009
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Aine ja materiaali
+- id: ENV-CHEM-PROP-01
+  subject: science
+  grade_band: 1-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Aineen ominaisuudet
+  title: Aineen havaittavan ominaisuuden tunnistaminen
+  short_description: Aineen havaittavan ominaisuuden tunnistaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV12-T5-T13
+  - ENV36-S5
+  relations:
+  - id: ENV-CHEM-MATERIAL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-MATERIAL-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-MATERIAL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Aineen ominaisuudet
+- id: ENV-CHEM-STATE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Olomuodot
+  title: Kiinteän, nestemäisen ja kaasumaisen olomuodon tunnistaminen
+  short_description: Kiinteän, nestemäisen ja kaasumaisen olomuodon tunnistaminen
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-CHEM-PROP-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-PROP-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-PROP-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Olomuodot
+- id: ENV-CHEM-STATECHANGE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Olomuodon muutokset
+  title: Olomuodon muutoksen tunnistaminen
+  short_description: Olomuodon muutoksen tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-CHEM-STATE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-STATE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-PHY-THERMAL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-THERMAL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-STATE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Olomuodon muutokset
+- id: ENV-CHEM-BURN-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Palaminen
+  title: Palamisen tunnistaminen aineen muutokseksi
+  short_description: Palamisen tunnistaminen aineen muutokseksi
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-CHEM-PROP-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-PROP-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-OBSERVE-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-PROP-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Palaminen
+- id: ENV-CHEM-PHOTOSYN-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Yhteyttäminen
+  title: Yhteyttämisen perusidea aineiden kiertoon liittyvänä prosessina
+  short_description: Yhteyttämisen perusidea aineiden kiertoon liittyvänä prosessina
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-CHEM-MATERIAL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-MATERIAL-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: ENV-PHY-LIGHT-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-LIGHT-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  - id: ENV-PHY-ENERGYFORM-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-PHY-ENERGYFORM-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: domain_entry
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Yhteyttäminen
+- id: ENV-CHEM-MATTERCONS-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Aineen säilyminen
+  title: Aineen säilymisen periaatteen alkumalli
+  short_description: Aineen säilymisen periaatteen alkumalli
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-T4-T18
+  - ENV36-S5
+  relations:
+  - id: ENV-CHEM-BURN-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-BURN-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate
+  entry_role: domain_entry
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Aineen säilyminen
+- id: ENV-CHEM-WATERCYCLE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Veden kierto
+  title: Veden kiertokulun ja olomuodon muutosten yhteys
+  short_description: Veden kiertokulun ja olomuodon muutosten yhteys
+  node_kind: concept
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-CHEM-STATE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-STATE-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: ENV-CHEM-STATECHANGE-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-STATECHANGE-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-STATE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate
+  entry_role: none
+  mastery_role: atomic
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Veden kierto
+- id: ENV-CHEM-HOMECHEM-SAFE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Kemikaaliturvallisuus
+  title: Kodin kemikaalien, myrkytysten ja paloturvallisuuden perusohjeet
+  short_description: Kodin kemikaalien, myrkytysten ja paloturvallisuuden perusohjeet
+  node_kind: integration
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - ENV36-S2
+  relations:
+  - id: ENV-CHEM-CHEMICAL-SAFE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-HOMECHEM-SAFE-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-CHEM-CHEMICAL-SAFE-01 vaaditaan
+      kokonaisuuden hallintaan.
+  - id: ENV-CHEM-POISON-SAFE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-HOMECHEM-SAFE-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-CHEM-POISON-SAFE-01 vaaditaan
+      kokonaisuuden hallintaan.
+  - id: ENV-CHEM-FIRE-SAFE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-HOMECHEM-SAFE-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-CHEM-FIRE-SAFE-01 vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-CHEMICAL-SAFE-01
+    - ENV-CHEM-POISON-SAFE-01
+    - ENV-CHEM-FIRE-SAFE-01
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: ENV-CHEM-CHEMICAL-SAFE-01, ENV-CHEM-POISON-SAFE-01, ENV-CHEM-FIRE-SAFE-01.
+    Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id010
+  - ENV-CHEM-CHEMICAL-SAFE-01
+  - ENV-CHEM-POISON-SAFE-01
+  - ENV-CHEM-FIRE-SAFE-01
+  integration_of: *id010
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Kemikaaliturvallisuus
+- id: ENV-CHEM-CYCLE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Aineen kiertokulut
+  title: Palamisen, yhteyttämisen ja aineen kierron yhteyden hahmottaminen
+  short_description: Palamisen, yhteyttämisen ja aineen kierron yhteyden hahmottaminen
+  node_kind: integration
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-CHEM-CYCLE-BURN-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-CYCLE-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-CHEM-CYCLE-BURN-01 vaaditaan kokonaisuuden
+      hallintaan.
+  - id: ENV-CHEM-CYCLE-PHOTO-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-CYCLE-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-CHEM-CYCLE-PHOTO-01 vaaditaan kokonaisuuden
+      hallintaan.
+  - id: ENV-CHEM-CYCLE-MATTER-01
+    relation_type: prerequisite
+    strength: required
+    rationale: ENV-CHEM-CYCLE-01 on v0.2:ssa integraationoodi; atominen alitaito ENV-CHEM-CYCLE-MATTER-01 vaaditaan kokonaisuuden
+      hallintaan.
+  prerequisite_groups:
+  - all_of:
+    - ENV-CHEM-CYCLE-BURN-01
+    - ENV-CHEM-CYCLE-PHOTO-01
+    - ENV-CHEM-CYCLE-MATTER-01
+    rationale: Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan.
+  evidence_notes: 'v0.2-integraationoodi. Atomiset mastery-tilat: ENV-CHEM-CYCLE-BURN-01, ENV-CHEM-CYCLE-PHOTO-01, ENV-CHEM-CYCLE-MATTER-01.
+    Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.'
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored_integration
+  entry_role: none
+  mastery_role: integration
+  split_children: &id011
+  - ENV-CHEM-CYCLE-BURN-01
+  - ENV-CHEM-CYCLE-PHOTO-01
+  - ENV-CHEM-CYCLE-MATTER-01
+  integration_of: *id011
+  dynamic_prerequisite_rule: null
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Aineen kiertokulut
+- id: SCI-ENV-OBSERVE-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Havainnointi
+  title: Havainnon tekeminen ilmiöstä tai kohteesta
+  short_description: Havainnon tekeminen ilmiöstä tai kohteesta
+  node_kind: foundation
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV12-T5-T13
+  relations: []
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista SCI-ENV-OBS-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: true
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: foundation
+  mastery_role: atomic
+  split_from: SCI-ENV-OBS-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Havainnointi
+- id: SCI-ENV-DESCRIBE-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Havainnointi
+  title: Tehdyn havainnon kuvaileminen
+  short_description: Tehdyn havainnon kuvaileminen
+  node_kind: representation
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV12-T5-T13
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Havainto täytyy tehdä ennen sen kuvailemista.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    rationale: Kuvaileminen perustuu tehtyyn havaintoon.
+  evidence_notes: v0.2-refaktorissa erotettu noodista SCI-ENV-OBS-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: SCI-ENV-OBS-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Havainnointi
+- id: SCI-ENV-COMPARE-02
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Vertailu
+  title: Ilmiöiden, materiaalien tai tilanteiden vertaileminen
+  short_description: Ilmiöiden, materiaalien tai tilanteiden vertaileminen
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV12-T5-T13
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-OBSERVE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista SCI-ENV-COMPARE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: SCI-ENV-COMPARE-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Vertailu
+- id: SCI-ENV-CLASSIFY-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Luokittelu
+  title: Ilmiöiden, materiaalien tai tilanteiden luokitteleminen
+  short_description: Ilmiöiden, materiaalien tai tilanteiden luokitteleminen
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV12-T5-T13
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-OBSERVE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista SCI-ENV-COMPARE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: SCI-ENV-COMPARE-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Luokittelu
+- id: SCI-ENV-RECORD-DATA-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Tulosten kirjaaminen
+  title: Havaintojen taltioiminen
+  short_description: Havaintojen taltioiminen
+  node_kind: procedure
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV12-T5-T13
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-OBSERVE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista SCI-ENV-RECORD-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: SCI-ENV-RECORD-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Tulosten kirjaaminen
+- id: SCI-ENV-PRESENT-DATA-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Tutkimisen taidot
+  parent_concept: Tulosten esittäminen
+  title: Havaintojen esittäminen tarkoituksenmukaisella tavalla
+  short_description: Havaintojen esittäminen tarkoituksenmukaisella tavalla
+  node_kind: representation
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV12-T5-T13
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-OBSERVE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista SCI-ENV-RECORD-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: SCI-ENV-RECORD-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Tulosten esittäminen
+- id: SCI-ENV-MODEL-CREATE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Tutkimisen taidot
+  parent_concept: Mallintaminen
+  title: Yksinkertaisen mallin tekeminen havaintojen perusteella
+  short_description: Yksinkertaisen mallin tekeminen havaintojen perusteella
+  node_kind: procedure
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-T4-T18
+  relations:
+  - id: SCI-ENV-MODEL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-MODEL-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: SCI-ENV-DATA-01
+    relation_type: representation_support
+    strength: strong
+    rationale: SCI-ENV-DATA-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: SCI-ENV-CONCL-01
+    relation_type: process_support
+    strength: strong
+    rationale: SCI-ENV-CONCL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-MODEL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista SCI-ENV-MODEL-02 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: SCI-ENV-MODEL-02
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Mallintaminen
+- id: SCI-ENV-MODEL-REVISE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Tutkimisen taidot
+  parent_concept: Mallintaminen
+  title: Mallin muuttaminen uusien havaintojen perusteella
+  short_description: Mallin muuttaminen uusien havaintojen perusteella
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-T4-T18
+  relations:
+  - id: SCI-ENV-MODEL-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-MODEL-01 on ydinesitieto tälle osaamiskohteelle.
+  - id: SCI-ENV-DATA-01
+    relation_type: representation_support
+    strength: strong
+    rationale: SCI-ENV-DATA-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: SCI-ENV-CONCL-01
+    relation_type: process_support
+    strength: strong
+    rationale: SCI-ENV-CONCL-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-MODEL-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista SCI-ENV-MODEL-02 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: SCI-ENV-MODEL-02
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Tutkimisen taidot
+  - Mallintaminen
+- id: ENV-PHY-MOTION-OBS-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Liike
+  title: Liikkeen havainnointi
+  short_description: Liikkeen havainnointi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV12-S4
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Liikkeen havainnointi perustuu yleiseen havainnointitaitoon.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    rationale: Yleinen havainnointi on ydinesitieto.
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-PHY-MOTION-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: ENV-PHY-MOTION-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Liike
+- id: ENV-PHY-MOTION-CHANGE-01
+  subject: science
+  grade_band: 1-2
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Liike
+  title: Liikkeen muutoksen havainnointi
+  short_description: Liikkeen muutoksen havainnointi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV12-S4
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Liikkeen havainnointi perustuu yleiseen havainnointitaitoon.
+  - id: ENV-PHY-MOTION-OBS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Liikkeen muutos edellyttää ensin liikkeen tunnistamista.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    - ENV-PHY-MOTION-OBS-01
+    rationale: Muutos tunnistetaan jo havaitussa liikkeessä.
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-PHY-MOTION-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: ENV-PHY-MOTION-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Liike
+- id: ENV-PHY-LIGHT-OBS-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Valo
+  title: Valoilmiön havainnointi
+  short_description: Valoilmiön havainnointi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Ilmiön havainnointi edellyttää yleistä havainnointitaitoa.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    rationale: Yleinen havainnointitaito on ydinesitieto.
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-PHY-LIGHT-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: ENV-PHY-LIGHT-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Valo
+- id: ENV-PHY-LIGHT-EXPLAIN-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Valo
+  title: Valoilmiön yksinkertainen selittäminen
+  short_description: Valoilmiön yksinkertainen selittäminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-PHY-LIGHT-OBS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Ilmiö täytyy tunnistaa/havaita ennen sen selittämistä.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-LIGHT-OBS-01
+    rationale: Havainnointi on selittämisen ydinesitieto.
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-PHY-LIGHT-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: ENV-PHY-LIGHT-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Valo
+- id: ENV-PHY-SOUND-OBS-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Ääni
+  title: Ääni-ilmiön havainnointi
+  short_description: Ääni-ilmiön havainnointi
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: SCI-ENV-OBSERVE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Ilmiön havainnointi edellyttää yleistä havainnointitaitoa.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-OBSERVE-01
+    rationale: Yleinen havainnointitaito on ydinesitieto.
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-PHY-SOUND-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: ENV-PHY-SOUND-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Ääni
+- id: ENV-PHY-SOUND-EXPLAIN-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Ääni
+  title: Ääni-ilmiön yksinkertainen selittäminen
+  short_description: Ääni-ilmiön yksinkertainen selittäminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-PHY-SOUND-OBS-01
+    relation_type: prerequisite
+    strength: required
+    rationale: Ilmiö täytyy tunnistaa/havaita ennen sen selittämistä.
+  prerequisite_groups:
+  - all_of:
+    - ENV-PHY-SOUND-OBS-01
+    rationale: Havainnointi on selittämisen ydinesitieto.
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-PHY-SOUND-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: ENV-PHY-SOUND-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Ääni
+- id: ENV-PHY-SPACE-NEAR-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Avaruus
+  title: Lähiavaruuden keskeisten kohteiden ja mittasuhteiden perusmalli
+  short_description: Lähiavaruuden keskeisten kohteiden ja mittasuhteiden perusmalli
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: SCI-ENV-MODEL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-MODEL-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-PHY-SPACE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: domain_entry
+  mastery_role: atomic
+  split_from: ENV-PHY-SPACE-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Avaruus
+- id: ENV-PHY-DAYNIGHT-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Avaruus
+  title: Päivän ja yön vaihtelun perusmalli
+  short_description: Päivän ja yön vaihtelun perusmalli
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: SCI-ENV-MODEL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-MODEL-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-PHY-SPACE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: domain_entry
+  mastery_role: atomic
+  split_from: ENV-PHY-SPACE-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Avaruus
+- id: ENV-PHY-SEASONS-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Fysiikan alkutiedot
+  parent_concept: Avaruus
+  title: Vuodenaikojen vaihtelun perusmalli
+  short_description: Vuodenaikojen vaihtelun perusmalli
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: SCI-ENV-MODEL-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: SCI-ENV-MODEL-01 on v0.2-refaktorissa pehmeä esitieto; sitä ei käytetä hard gate -porttina.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-PHY-SPACE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: domain_entry
+  mastery_role: atomic
+  split_from: ENV-PHY-SPACE-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Fysiikan alkutiedot
+  - Avaruus
+- id: ENV-CHEM-MATERIAL-ID-01
+  subject: science
+  grade_band: 1-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Aine ja materiaali
+  title: Materiaalin tai aineen tunnistaminen
+  short_description: Materiaalin tai aineen tunnistaminen
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV12-T5-T13
+  - ENV36-S5
+  relations:
+  - id: SCI-ENV-COMPARE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-COMPARE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-COMPARE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-CHEM-MATERIAL-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: atomic
+  split_from: ENV-CHEM-MATERIAL-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Aine ja materiaali
+- id: ENV-CHEM-MATERIAL-COMPARE-01
+  subject: science
+  grade_band: 1-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Aine ja materiaali
+  title: Materiaalien ja aineiden vertaileminen ominaisuuksien perusteella
+  short_description: Materiaalien ja aineiden vertaileminen ominaisuuksien perusteella
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV12-T5-T13
+  - ENV36-S5
+  relations:
+  - id: SCI-ENV-COMPARE-01
+    relation_type: prerequisite
+    strength: required
+    rationale: SCI-ENV-COMPARE-01 on ydinesitieto tälle osaamiskohteelle.
+  prerequisite_groups:
+  - all_of:
+    - SCI-ENV-COMPARE-01
+    rationale: Kaikki listatut ydinesitiedot tarvitaan.
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-CHEM-MATERIAL-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: false
+  status: candidate_refactored
+  entry_role: none
+  mastery_role: process
+  split_from: ENV-CHEM-MATERIAL-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Aine ja materiaali
+- id: ENV-CHEM-CHEMICAL-SAFE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Kemikaaliturvallisuus
+  title: Kodin kemikaalien turvallisen käytön perusohjeet
+  short_description: Kodin kemikaalien turvallisen käytön perusohjeet
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S2
+  relations:
+  - id: SCI-ENV-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-CHEM-HOMECHEM-SAFE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: operational
+  mastery_role: operational
+  split_from: ENV-CHEM-HOMECHEM-SAFE-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Kemikaaliturvallisuus
+- id: ENV-CHEM-POISON-SAFE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Kemikaaliturvallisuus
+  title: Myrkytysturvallisuuden perusohjeet
+  short_description: Myrkytysturvallisuuden perusohjeet
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S2
+  relations:
+  - id: SCI-ENV-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-CHEM-HOMECHEM-SAFE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: operational
+  mastery_role: operational
+  split_from: ENV-CHEM-HOMECHEM-SAFE-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Kemikaaliturvallisuus
+- id: ENV-CHEM-FIRE-SAFE-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Kemikaaliturvallisuus
+  title: Paloturvallisuuden perusohjeet kemikaaleihin liittyvissä tilanteissa
+  short_description: Paloturvallisuuden perusohjeet kemikaaleihin liittyvissä tilanteissa
+  node_kind: process_skill
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S2
+  relations:
+  - id: SCI-ENV-SAFE-01
+    relation_type: safety_gate
+    strength: required
+    rationale: Käytännön turvallisuusehto; ei käsitteellisen oppimisen hard prerequisite.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-CHEM-HOMECHEM-SAFE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: operational
+  mastery_role: operational
+  split_from: ENV-CHEM-HOMECHEM-SAFE-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Kemikaaliturvallisuus
+- id: ENV-CHEM-CYCLE-BURN-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Aineen kiertokulut
+  title: Palamisen yhteyden hahmottaminen aineen kiertoon
+  short_description: Palamisen yhteyden hahmottaminen aineen kiertoon
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-CHEM-BURN-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-BURN-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: ENV-CHEM-PHOTOSYN-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-PHOTOSYN-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: ENV-CHEM-MATTERCONS-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-MATTERCONS-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-CHEM-CYCLE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: domain_entry
+  mastery_role: atomic
+  split_from: ENV-CHEM-CYCLE-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Aineen kiertokulut
+- id: ENV-CHEM-CYCLE-PHOTO-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Aineen kiertokulut
+  title: Yhteyttämisen yhteyden hahmottaminen aineen kiertoon
+  short_description: Yhteyttämisen yhteyden hahmottaminen aineen kiertoon
+  node_kind: concept
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-CHEM-BURN-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-BURN-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: ENV-CHEM-PHOTOSYN-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-PHOTOSYN-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: ENV-CHEM-MATTERCONS-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-MATTERCONS-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-CHEM-CYCLE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: domain_entry
+  mastery_role: atomic
+  split_from: ENV-CHEM-CYCLE-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Aineen kiertokulut
+- id: ENV-CHEM-CYCLE-MATTER-01
+  subject: science
+  grade_band: 3-6
+  topic_area: Kemian alkutiedot
+  parent_concept: Aineen kiertokulut
+  title: Aineen kiertokulun kokonaisuuden hahmottaminen
+  short_description: Aineen kiertokulun kokonaisuuden hahmottaminen
+  node_kind: integration
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - ENV36-S5
+  relations:
+  - id: ENV-CHEM-BURN-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-BURN-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: ENV-CHEM-PHOTOSYN-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-PHOTOSYN-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  - id: ENV-CHEM-MATTERCONS-01
+    relation_type: prerequisite
+    strength: strong
+    rationale: ENV-CHEM-MATTERCONS-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.
+  prerequisite_groups: []
+  evidence_notes: v0.2-refaktorissa erotettu noodista ENV-CHEM-CYCLE-01 itsenäiseksi evidenssikohteeksi.
+  foundation_entry: false
+  zero_required_indegree: true
+  status: candidate_refactored
+  entry_role: domain_entry
+  mastery_role: integration
+  split_from: ENV-CHEM-CYCLE-01
+  concept_path:
+  - Ympäristöoppi / luonnontieteellinen perusta
+  - Kemian alkutiedot
+  - Aineen kiertokulut

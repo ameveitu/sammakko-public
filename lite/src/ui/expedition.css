@@ -1,0 +1,197 @@
+/* Visual thesis: a sunlit, hand-painted archipelago and a warm research desk.
+   Content: landscape → one local need → useful action → visible consequence.
+   Motion: autonomous animals, framed model experiments, quiet success ripples. */
+body.on-expedition { background:#dcece8; color:#163e46; }
+#app.saaristo-app { max-width:none; padding:0; }
+.expedition { --exp-desk-width:clamp(440px,39vw,600px); --ink:#163e46; --soft:#536c6c; --card:#fffaf0; --line:#d7dfcf; --pond:#176b65; --pond-ink:#fff; position:relative; min-height:calc(100svh - var(--publication-nav-height, 0px)); color:var(--ink); color-scheme:light; isolation:isolate; }
+.exp-world { position:absolute; inset:0; overflow:hidden; background:#addbd4; }
+.exp-world::before { content:''; position:absolute; inset:0; background:var(--exp-backdrop) center/cover; }
+.exp-world canvas { position:absolute; inset:0; width:100%; height:100%; display:block; }
+.exp-world[data-saaristo='ready']::before { display:none; }
+.expedition[data-view='lesson'] .exp-world { right:var(--exp-desk-width); }
+.exp-head { position:relative; z-index:3; display:flex; align-items:center; justify-content:space-between; padding:18px 28px; gap:16px; pointer-events:none; }
+.exp-head > * { pointer-events:auto; }
+.exp-brand { display:flex; align-items:center; gap:10px; text-decoration:none; color:#133f42; font-weight:850; letter-spacing:-.04em; font-size:25px; text-shadow:0 1px 12px #fff; }
+.exp-brand img { width:44px; height:44px; object-fit:contain; }
+.exp-tools { display:flex; gap:8px; }
+.exp-tool { min-width:44px; min-height:44px; border:1px solid #fff9; background:#fffaf0eb; border-radius:50%; color:#164a4c; cursor:pointer; font:inherit; font-size:19px; display:grid; place-items:center; padding:8px; text-decoration:none; }
+.exp-tool:focus-visible, .expedition a:focus-visible, .expedition button:focus-visible { outline:3px solid #db6a2c; outline-offset:3px; }
+.exp-home { position:relative; z-index:1; padding:clamp(30px,7vh,92px) 6vw 100px; width:min(580px,60%); pointer-events:none; }
+.exp-home > * { pointer-events:auto; }
+.exp-kicker { font-size:12px; text-transform:uppercase; font-weight:800; letter-spacing:.18em; }
+.exp-home h1 { margin:14px 0 18px; font-size:clamp(42px,5.6vw,76px); line-height:.98; letter-spacing:-.06em; color:#123e44; text-wrap:balance; text-shadow:0 2px 24px #e8f5eac9; }
+.exp-home p { max-width:330px; font-size:18px; line-height:1.55; margin:18px 0 24px; }
+.exp-home::before { content:''; position:absolute; inset:-70px -70px -20px -20px; z-index:-1; background:radial-gradient(ellipse at 25% 35%,#f5f4dceb, #f5f4dc88 47%,transparent 75%); pointer-events:none; }
+.exp-primary { border:0; border-radius:30px; padding:15px 24px; background:#176b65; color:white; font:inherit; font-weight:750; min-height:52px; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:12px; text-decoration:none; }
+.exp-primary:hover { background:#105550; transform:translateY(-1px); }
+.exp-secondary { background:transparent; border:0; border-bottom:1px solid currentColor; padding:8px 0; color:inherit; font:inherit; cursor:pointer; min-height:44px; }
+.exp-islands { position:absolute; z-index:2; right:26px; bottom:24px; width:min(340px,36vw); background:#fffaf0f0; border-radius:24px; padding:20px 22px; box-shadow:0 18px 70px #214c5122; backdrop-filter:blur(16px); }
+.exp-islands h2 { font-size:17px; margin-bottom:8px; }
+.exp-stop { border:0; border-bottom:1px solid #d5ddcf; padding:11px 0; background:transparent; width:100%; display:flex; text-align:left; align-items:center; gap:12px; font:inherit; color:inherit; cursor:pointer; min-height:48px; font-size:15px; }
+.exp-stop:last-child { border-bottom:0; }
+.exp-stop .exp-stop-icon { font-size:24px; flex:none; }
+.exp-stop .exp-stop-name { flex:1; }
+.exp-stop small { display:block; color:#647979; margin-top:2px; font-size:12px; }
+.exp-desk { position:relative; z-index:2; margin-left:auto; width:var(--exp-desk-width); padding:8px 30px 22px; background:#fffaf0; min-height:calc(100svh - 80px - var(--publication-nav-height,0px)); display:flex; flex-direction:column; gap:12px; }
+.expedition[data-view='lesson'] .exp-head { background:linear-gradient(to left,#fffaf0 0 var(--exp-desk-width),transparent var(--exp-desk-width) 100%); }
+.exp-desk h1 { font-size:clamp(24px,2.4vw,34px); line-height:1.08; letter-spacing:-.035em; }
+.exp-desk .exp-instruction { font-size:17px; font-weight:650; line-height:1.4; }
+.exp-phase { display:flex; align-items:center; justify-content:space-between; font-size:12px; color:#5c7471; gap:10px; }
+.exp-pips { display:flex; gap:6px; align-items:center; }
+.exp-pips i { display:block; width:8px; height:8px; border-radius:50%; background:#cad9ce; }
+.exp-pips i.done { background:#278678; }
+.exp-exact { padding:8px; background:#eff3e7; border-radius:14px; }
+.exp-exact:empty { display:none; }
+.exp-exact svg { max-height:160px; width:100%; }
+.exp-desk .exp-exact svg.force-surface-diagram { max-height:90px; }
+.exp-exact table { font-size:13px; }
+.exp-exact p { font-size:12px; margin:6px 0 0; }
+.exp-exact .graph-givens { font-size:14px; line-height:1.35; }
+.exp-desk .exp-exact svg.system-graph { max-height:245px; }
+.exp-exact:has(> table), .exp-exact:has(> svg):has(> .table-wrap) { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.35fr); gap:6px 10px; align-items:center; }
+.exp-exact:has(> table) > svg, .exp-exact:has(> .table-wrap) > svg { height:115px; max-height:115px; min-width:0; }
+.exp-exact:has(> table) > table, .exp-exact:has(> svg) > .table-wrap { margin:0; width:100%; min-width:0; }
+.exp-exact:has(> table) > p, .exp-exact:has(> svg):has(> .table-wrap) > p { grid-column:1 / -1; }
+.exp-exact th, .exp-exact td { padding:5px; }
+.exp-task { min-width:0; max-width:100%; overflow-x:auto; font-size:16px; }
+.exp-task label, .exp-task .row > * { min-width:0; max-width:100%; }
+.exp-task .token { white-space:normal; overflow-wrap:anywhere; }
+.exp-task .opts { gap:8px; }
+.exp-task .opt { min-height:48px; padding:10px; border-width:1px; border-radius:12px; background:#fffdf7; }
+.exp-task .opt:has(.listen) { padding-top:52px; }
+.exp-task .opt .listen { width:44px; height:44px; }
+.exp-task .opt .txt { font-size:15px; }
+.exp-task .btn { min-height:46px; font-size:15px; padding:9px 16px; }
+.exp-task .num-entry { margin:0; }
+.exp-task input { max-width:100%; }
+.exp-task .big { font-size:30px; }
+.exp-task .btn.big { min-height:46px; font-size:18px; }
+.exp-task .display { min-height:48px; padding:6px; font-size:24px; border-width:2px; }
+.exp-task .display .unit { font-size:21px; }
+.exp-task .token { min-width:46px; min-height:46px; font-size:18px; padding:6px 10px; border-width:2px; }
+.exp-task .tray { min-height:52px; gap:6px; padding:6px; }
+.exp-task .keys button { min-height:46px; font-size:22px; }
+.exp-task .cake-workbench { gap:8px; }
+.exp-feedback { border-top:1px solid #d9dfd0; padding-top:12px; display:flex; flex-direction:column; gap:10px; }
+.exp-feedback:empty { display:none; }
+.exp-feedback[data-ok='true'] { color:#1e6859; }
+.exp-feedback p { font-size:15px; line-height:1.45; }
+.exp-help { font-size:14px; color:#486963; padding:10px 13px; background:#e9efdf; border-radius:10px; }
+.exp-foot { margin-top:auto; padding-top:10px; display:flex; justify-content:space-between; align-items:center; gap:8px; }
+.exp-foot button { font-size:13px; }
+.exp-story { position:absolute; z-index:2; left:30px; bottom:28px; width:calc(100% - var(--exp-desk-width) - 60px); max-width:490px; border-radius:20px; background:#fffaf0ed; padding:16px 20px; display:flex; align-items:center; gap:14px; font-size:15px; box-shadow:0 8px 40px #133e4920; }
+.exp-story img { width:72px; height:84px; object-fit:contain; flex:none; }
+.exp-task [data-energy-islands] select,
+.exp-task [data-energy-islands] input[type='number'],
+.exp-task [data-circuit-workshop] select,
+.exp-task [data-circuit-workshop] input[type='number'],
+.exp-task [data-electricity-harbor] select,
+.exp-task [data-electricity-harbor] input[type='number'] { min-height:44px; max-width:100%; font:inherit; }
+.exp-task [data-energy-islands] label,
+.exp-task [data-circuit-workshop] label,
+.exp-task [data-electricity-harbor] label { display:inline-flex; align-items:center; gap:.35rem; flex-wrap:wrap; }
+.exp-task [data-energy-islands] [hidden],
+.exp-task [data-advanced-solids] [hidden],
+.exp-task [data-circuit-workshop] [hidden],
+.exp-task [data-electricity-harbor] [hidden],
+.exp-task [data-thermal-station] [hidden] { display:none !important; }
+.exp-memory { position:absolute; z-index:4; left:30px; bottom:28px; width:calc(100% - var(--exp-desk-width) - 60px); max-width:570px; max-height:52svh; overflow:auto; padding:18px; border-radius:16px; background:#fffaf0; box-shadow:0 8px 40px #133e4933; display:grid; gap:8px; }
+.exp-memory[hidden] { display:none; }
+.exp-memory p { margin:0; font-size:14px; line-height:1.4; }
+.exp-memory-controls { display:flex; flex-wrap:wrap; gap:8px; }
+.exp-memory button { min-height:44px; }
+.exp-memory-visual svg { display:block; width:100%; max-height:160px; }
+.exp-memory-visual[hidden] { display:none; }
+.expedition[data-climax='true'] .exp-story, .expedition[data-climax='true'] .exp-caption { visibility:hidden; }
+.exp-caption { position:absolute; top:94px; left:30px; max-width:calc(100% - var(--exp-desk-width) - 60px); z-index:2; background:#fffaf0dd; border-radius:12px; padding:8px 12px; font-size:12px; line-height:1.4; }
+.exp-fallback-note { display:none; }
+.expedition[data-fallback='true'] .exp-fallback-note { display:block; }
+.exp-overlay { position:fixed; z-index:30; inset:0; background:#153e46aa; display:flex; align-items:center; justify-content:center; padding:22px; backdrop-filter:blur(8px); }
+.exp-dialog { width:min(850px,100%); max-height:90svh; overflow:auto; background:#fffaf0; border-radius:22px; padding:26px; color:#163e46; box-shadow:0 30px 90px #072d4544; }
+.exp-dialog header { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:18px; }
+.exp-dialog input { width:100%; border:1px solid #bdcec5; border-radius:10px; font:inherit; padding:12px; margin:0 0 14px; }
+.exp-catalog-list { display:grid; grid-template-columns:1fr 1fr; column-gap:26px; }
+.exp-catalog-list .exp-stop[disabled] { opacity:.55; cursor:default; }
+.exp-dialog details { border-top:1px solid #d5ddcf; padding:12px 0; font-size:14px; }
+.exp-dialog summary { cursor:pointer; font-weight:700; min-height:36px; }
+.exp-dialog dl { display:grid; grid-template-columns:minmax(120px,1fr) 3fr; gap:8px 14px; font-size:14px; }
+.exp-dialog dd { margin:0; }
+.exp-dialog .small { font-size:13px; }
+@keyframes exp-arrive { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:none; } }
+.exp-home, .exp-desk, .exp-story { animation:exp-arrive 400ms ease-out both; }
+@media (min-width:1000px) and (min-height:850px) { .exp-desk { gap:14px; } }
+@media (min-width:901px) and (max-height:800px) {
+  .exp-head { padding-block:12px; }
+  .exp-desk { gap:10px; padding-bottom:16px; min-height:calc(100svh - 68px - var(--publication-nav-height,0px)); }
+  .exp-desk:has([data-lifecycle-workbench]) { gap:6px; }
+  .exp-desk h1 { font-size:28px; }
+  .exp-help { font-size:13px; padding:8px 10px; }
+}
+@media (max-width:900px) {
+  .exp-memory { position:fixed; left:12px; right:12px; bottom:12px; width:auto; max-width:none; max-height:48svh; }
+  .exp-head { padding:12px 18px; }
+  .expedition[data-view='lesson'] .exp-world { right:0; height:34svh; min-height:220px; }
+  .expedition[data-view='lesson'] .exp-head { background:none; }
+  .exp-desk { margin-top:calc(34svh - 68px); width:100%; padding:20px 24px 24px; min-height:66svh; border-radius:26px 26px 0 0; }
+  .exp-desk .exp-exact svg { max-height:145px; }
+  .exp-story { position:relative; width:auto; max-width:none; left:auto; bottom:auto; margin:0; padding:10px 24px 16px; border-radius:0; box-shadow:none; background:#fffaf0; font-size:13px; }
+  .exp-story img { width:40px; height:48px; }
+  .exp-caption { left:18px; top:76px; max-width:70%; }
+  .exp-home { width:65%; padding:50px 5vw 270px; }
+  .exp-home h1 { font-size:54px; }
+  .exp-islands { width:310px; right:20px; bottom:20px; }
+  .expedition:has(.exp-task) .exp-world { height:26svh; min-height:180px; }
+  .expedition:has(.exp-task) .exp-desk { margin-top:calc(26svh - 68px); min-height:74svh; }
+}
+@media (max-width:560px) {
+  .exp-brand { font-size:21px; gap:6px; }
+  .exp-brand img { width:32px; height:32px; }
+  .exp-tools { gap:6px; }
+  .exp-tool { min-width:40px; min-height:40px; font-size:17px; }
+  .exp-home { width:100%; padding:40px 24px 360px; }
+  .exp-home h1 { max-width:280px; font-size:51px; }
+  .exp-home p { font-size:16px; max-width:270px; }
+  .exp-islands { width:calc(100% - 32px); right:16px; bottom:16px; padding:16px 20px; }
+  .exp-islands .exp-stop:nth-of-type(n+4) { display:none; }
+  .expedition[data-view='lesson'] .exp-world { height:26svh; min-height:150px; }
+  .exp-desk { margin-top:calc(26svh - 64px); padding:18px 16px; border-radius:22px 22px 0 0; gap:9px; }
+  .exp-desk h1 { font-size:24px; }
+  .exp-desk .exp-instruction { font-size:15px; }
+  .exp-desk .exp-exact svg { max-height:130px; }
+  .exp-caption { top:66px; font-size:11px; padding:6px 9px; max-width:90%; }
+  .exp-task .opt .txt { font-size:14px; }
+  .exp-catalog-list { grid-template-columns:1fr; }
+  .exp-overlay { padding:10px; }
+  .exp-dialog { padding:18px; }
+  .exp-dialog dl { grid-template-columns:1fr; }
+  .expedition:has(.exp-task) .exp-world { height:20svh; min-height:140px; }
+  .expedition:has(.exp-task) .exp-desk { margin-top:calc(20svh - 64px); min-height:80svh; }
+  .exp-exact:has(> table) > svg, .exp-exact:has(> .table-wrap) > svg { height:100px; max-height:100px; }
+  .exp-task .cake-workbench > p { font-size:13px; }
+  .exp-help { font-size:13px; padding:8px 10px; }
+}
+@media (prefers-reduced-motion:reduce) { .expedition *, .expedition *::before { animation:none!important; transition:none!important; scroll-behavior:auto!important; } }
+
+.exp-memory-visual .authored-climax-fallback > strong,
+.exp-memory-visual .authored-climax-fallback > p:first-of-type { display:none; }
+.exp-memory:focus-visible { outline:3px solid #357c8b; outline-offset:3px; }
+
+/* Inline grid layouts must still respect the reasoning workshop handoff. */
+.exp-task [data-logic-workshop] [hidden] { display:none !important; }
+.exp-task [data-explanation-options] select { min-height:44px !important; }
+.exp-desk:has([data-explanation-options] [data-explanation-adult]:not([hidden])) > .exp-instruction { display:none; }
+.exp-desk:has([data-explanation-options] [data-explanation-adult]:not([hidden])) { gap:8px; }
+/* While the adult reviews an own explanation, the givens stay readable but compact so the confirm button fits a 768px-high screen. */
+.exp-desk:has([data-explanation-options] [data-explanation-adult]:not([hidden])) .exp-exact { padding:6px 8px; }
+.exp-desk:has([data-explanation-options] [data-explanation-adult]:not([hidden])) .exp-exact :is(th,td) { padding:2px 5px; font-size:12px; line-height:1.25; }
+.exp-desk:has([data-explanation-options] [data-explanation-adult]:not([hidden])) .exp-exact > svg { height:90px; max-height:90px; }
+.exp-desk:has([data-explanation-options] [data-explanation-adult]:not([hidden])) .exp-exact p { margin-top:3px; }
+
+/* These multi-step diagrams need room for labelled controls while retaining the Saaristo view. */
+@media (min-width:901px) {
+  .expedition:has([data-atomic-board]), .expedition:has([data-safety-workbench]), .expedition:has([data-carbon-workbench]), .expedition:has([data-cycle-workbench]), .expedition:has([data-explanation-options]), .expedition:has([data-reaction-board]), .expedition:has([data-reaction-workshop]) { --exp-desk-width:clamp(560px,50vw,640px); }
+}
+/* Inquiry workshops can be taller than the screen; keep their 3D apparatus in view while the desk scrolls. */
+@media (min-width:901px) {
+  .expedition[data-view='lesson']:has([data-inquiry-workshop]) .exp-world { position:fixed; top:var(--publication-nav-height,0px); bottom:auto; left:0; height:calc(100svh - var(--publication-nav-height,0px)); }
+}

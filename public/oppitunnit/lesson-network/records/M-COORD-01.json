@@ -1,0 +1,887 @@
+{
+  "kcId": "M-COORD-01",
+  "pagePath": "lessons/M-COORD-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-COORD-01",
+  "canonicalNode": {
+    "id": "M-COORD-01",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Geometria",
+    "parent_concept": "Koordinaatisto",
+    "title": "Pisteen lukeminen ja merkitseminen koordinaatiston I neljänneksessä",
+    "short_description": "Pisteen lukeminen ja merkitseminen koordinaatiston I neljänneksessä",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S4"
+    ],
+    "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: M-COORD-READ-Q1, M-COORD-PLOT-Q1. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+    "status": "candidate_refactored_integration",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "integration",
+    "relations": [
+      {
+        "id": "M-COORD-READ-Q1",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-COORD-01 on v0.2:ssa integraationoodi; atominen alitaito M-COORD-READ-Q1 vaaditaan kokonaisuuden hallintaan."
+      },
+      {
+        "id": "M-COORD-PLOT-Q1",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-COORD-01 on v0.2:ssa integraationoodi; atominen alitaito M-COORD-PLOT-Q1 vaaditaan kokonaisuuden hallintaan."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-COORD-READ-Q1",
+          "M-COORD-PLOT-Q1"
+        ],
+        "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "integration",
+    "split_children": [
+      "M-COORD-READ-Q1",
+      "M-COORD-PLOT-Q1"
+    ],
+    "integration_of": [
+      "M-COORD-READ-Q1",
+      "M-COORD-PLOT-Q1"
+    ],
+    "dynamic_prerequisite_rule": null,
+    "concept_path": [
+      "Matematiikka",
+      "Geometria",
+      "Koordinaatisto"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-COORD-READ-Q1",
+      "targetKCId": "M-COORD-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-COORD-01 on v0.2:ssa integraationoodi; atominen alitaito M-COORD-READ-Q1 vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-COORD-PLOT-Q1",
+      "targetKCId": "M-COORD-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-COORD-01 on v0.2:ssa integraationoodi; atominen alitaito M-COORD-PLOT-Q1 vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-COORD-01",
+      "targetKCId": "M-COORD-02",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-COORD-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-COORD-READ-Q1",
+        "M-COORD-PLOT-Q1"
+      ],
+      "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-COORD-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/coordinates/lessons/draw-polygons-specified-by-coordinates-in-the-first-quadrant",
+        "title": "Draw polygons specified by coordinates in the first quadrant",
+        "organization": "Oak National Academy",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual public lesson HTML key learning points, common misconception, teacher tip and licence; linked slides/worksheet/video not downloaded or watched.",
+        "adopted": "Read/mark coordinates together in a shape context; x horizontal and first; same-row/column reasoning for a missing rectangle corner. Original Finnish guided construction and paper transfer.",
+        "rejected": "Do not require unrelated shape naming, copying spoken mnemonic, all-quadrant/fractional coordinates or a fixed insertion order for an unordered corner set. No copied questions/figures.",
+        "usageRestrictions": "HTML states ©Oak National Academy Limited2025, Open Government Licence3.0 except where otherwise stated. Original code/graphics/text only; no third-party asset or slide licence inferred.",
+        "scopeLimits": "English Year4 comparable teaching, not Finnish-current curriculum authority, efficacy or pupil observation."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-4-unit-7-coordinates/",
+        "title": "Coordinates: Year4Unit7",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Official-page indexed learning outcomes1–8 retrieved; direct fullHTML open timed out. This is indexed-text comparison only, not a claim of reading full slides.",
+        "adopted": "Combine read/write with placing/moving points and polygon construction. Keep position and displacement distinct.",
+        "rejected": "Two-week allocation, full polygon translation mastery and required whole-class script are not inherited by this standalone scope.",
+        "usageRestrictions": "NCETM copyright page separately retrieved: default Crown/OGL subject to attribution, named-author/third-party exceptions. No slide/art/text copying.",
+        "scopeLimits": "Partial indexed retrieval explicitly limited; no native NCETM interaction or duration/learning claim."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/copyright/",
+        "title": "Copyright",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual public HTML copyright55–57.",
+        "adopted": "Record provenance and source/author/third-party exceptions.",
+        "rejected": "No blanket permission or teacher/learner acceptance inferred.",
+        "usageRestrictions": "Default Crown/OGL unless stated; source and applicable author acknowledgement, named-author permission where indicated.",
+        "scopeLimits": "No licencing clearance or release approval."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+        "note": "Author source draft; separate exact-version independent Newton and human reviews not performed by author."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+        "note": "Author source draft; separate exact-version independent Newton and human reviews not performed by author."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+        "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-COORD-01",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "lesson.css",
+        "sha256": "c7f71b59f787b33d965f48ee144bb55807b5139542adad79d2c03ab9d3b3a251"
+      },
+      {
+        "path": "move.svg",
+        "sha256": "411ac387656a73613ef449fd624d657df4411e8e8295af067ec12b500c837196"
+      },
+      {
+        "path": "rectangle.svg",
+        "sha256": "666eb19e5e98c192e85423eddf2540045bb6cb07e59b59bde0425f65a5cf0db8"
+      },
+      {
+        "path": "same-place.svg",
+        "sha256": "ced32e6d24bdf5ee97d0871ec67e3a9ef7e87648b858b62340ffa46ac135e2ff"
+      },
+      {
+        "path": "shared/loikka/map.png",
+        "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/coordinates/lessons/draw-polygons-specified-by-coordinates-in-the-first-quadrant",
+        "title": "Draw polygons specified by coordinates in the first quadrant",
+        "organization": "Oak National Academy",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual public lesson HTML key learning points, common misconception, teacher tip and licence; linked slides/worksheet/video not downloaded or watched.",
+        "adopted": "Read/mark coordinates together in a shape context; x horizontal and first; same-row/column reasoning for a missing rectangle corner. Original Finnish guided construction and paper transfer.",
+        "rejected": "Do not require unrelated shape naming, copying spoken mnemonic, all-quadrant/fractional coordinates or a fixed insertion order for an unordered corner set. No copied questions/figures.",
+        "usageRestrictions": "HTML states ©Oak National Academy Limited2025, Open Government Licence3.0 except where otherwise stated. Original code/graphics/text only; no third-party asset or slide licence inferred.",
+        "scopeLimits": "English Year4 comparable teaching, not Finnish-current curriculum authority, efficacy or pupil observation."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/cp-year-4-unit-7-coordinates/",
+        "title": "Coordinates: Year4Unit7",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Official-page indexed learning outcomes1–8 retrieved; direct fullHTML open timed out. This is indexed-text comparison only, not a claim of reading full slides.",
+        "adopted": "Combine read/write with placing/moving points and polygon construction. Keep position and displacement distinct.",
+        "rejected": "Two-week allocation, full polygon translation mastery and required whole-class script are not inherited by this standalone scope.",
+        "usageRestrictions": "NCETM copyright page separately retrieved: default Crown/OGL subject to attribution, named-author/third-party exceptions. No slide/art/text copying.",
+        "scopeLimits": "Partial indexed retrieval explicitly limited; no native NCETM interaction or duration/learning claim."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/copyright/",
+        "title": "Copyright",
+        "organization": "NCETM",
+        "accessed": "2026-10-29",
+        "retrieval": "Actual public HTML copyright55–57.",
+        "adopted": "Record provenance and source/author/third-party exceptions.",
+        "rejected": "No blanket permission or teacher/learner acceptance inferred.",
+        "usageRestrictions": "Default Crown/OGL unless stated; source and applicable author acknowledgement, named-author permission where indicated.",
+        "scopeLimits": "No licencing clearance or release approval."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+        "note": "Author source draft; separate exact-version independent Newton and human reviews not performed by author."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+        "note": "Author source draft; separate exact-version independent Newton and human reviews not performed by author."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+        "note": "Author source draft; separate exact-version independent Newton and human reviews not performed by author."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+        "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-COORD-01",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "actualInventory": {
+        "ownGoal": null,
+        "effectiveGoal": "Opit sekä lukemaan että merkitsemään pisteitä koordinaatistoon.",
+        "intro": "Rakennetaan saari koordinaateilla: ensin kulmat, sitten aarre keskelle.",
+        "reward": "Saari on rakennettu tarkasti!",
+        "revision": "audit1-2026-10-28",
+        "demos": [
+          {
+            "say": "Suorakulmion kulmat ovat (1, 1), (5, 1), (5, 4) ja (1, 4). Saman pystyreunan kulmilla on sama x, saman vaakareunan kulmilla sama y.",
+            "sceneKeys": [
+              "__anim"
+            ]
+          },
+          {
+            "say": "Jos yksi kulma puuttuu, sen x löytyy kulmasta samalla pystyreunalla ja y kulmasta samalla vaakareunalla.",
+            "sceneKeys": [
+              "__anim"
+            ]
+          },
+          {
+            "say": "Puoliväli löytyy, kun kuljetaan molemmista päistä yhtä monta askelta toisiaan kohti.",
+            "sceneKeys": [
+              "__anim"
+            ]
+          }
+        ],
+        "families": {
+          "move": {
+            "samples": 391,
+            "phases": [
+              "guided",
+              "independent",
+              "retrieval"
+            ],
+            "kinds": [
+              "plot"
+            ],
+            "example": {
+              "say": "Laiva on kohdassa (1, 5). Se liikkuu 1 ruutua oikealle. Merkitse uusi paikka.",
+              "task": {
+                "kind": "plot",
+                "xs": [
+                  2
+                ],
+                "ys": [
+                  5
+                ],
+                "xMax": 6,
+                "yMax": 6,
+                "xMin": 0,
+                "yMin": 0,
+                "xStep": 1,
+                "yStep": 1,
+                "xLabel": "x",
+                "yLabel": "y"
+              },
+              "hint": "Sivuttain muuttuu vain ensimmäinen luku. Oikealle se kasvaa.",
+              "explain": "Oikealle kasvaa x: 1 + 1 = 2. Uusi paikka (2, 5).",
+              "tag": "move"
+            },
+            "registry": {
+              "node": "M-COORD-01",
+              "tag": "move",
+              "outcome": "piirtää pisteet kuvaajaan",
+              "assumed": [],
+              "supplied": [],
+              "coTaught": [],
+              "incidental": {},
+              "support": [],
+              "source": [
+                "oletus"
+              ]
+            }
+          },
+          "readPoly": {
+            "samples": 358,
+            "phases": [
+              "guided",
+              "independent",
+              "retrieval"
+            ],
+            "kinds": [
+              "choice"
+            ],
+            "example": {
+              "say": "Mitkä ovat kärjen C koordinaatit?",
+              "task": {
+                "kind": "choice",
+                "options": [
+                  {
+                    "big": "(3, 5)"
+                  },
+                  {
+                    "big": "(5, 3)"
+                  },
+                  {
+                    "big": "(3, 6)"
+                  }
+                ],
+                "answer": 0,
+                "why": [
+                  null,
+                  "Väärin päin: ensin x, sitten y.",
+                  "Tämä on ruudun liian ylhäällä: laske ylös uudelleen."
+                ]
+              },
+              "hint": "Etsi kärki C. Ensin oikealle, sitten ylös.",
+              "explain": "Kärki C: 3 oikealle, 5 ylös, eli (3, 5).",
+              "tag": "readPoly"
+            },
+            "registry": {
+              "node": "M-COORD-01",
+              "tag": "readPoly",
+              "outcome": "valitsee oikean vaihtoehdon",
+              "assumed": [],
+              "supplied": [],
+              "coTaught": [],
+              "incidental": {},
+              "support": [],
+              "source": [
+                "oletus"
+              ]
+            }
+          },
+          "corner": {
+            "samples": 397,
+            "phases": [
+              "guided",
+              "independent",
+              "retrieval"
+            ],
+            "kinds": [
+              "plot"
+            ],
+            "example": {
+              "say": "Suorakulmaisen saaren kolme kulmaa on merkitty. Merkitse neljäs kulma.",
+              "task": {
+                "kind": "plot",
+                "xs": [
+                  2
+                ],
+                "ys": [
+                  0
+                ],
+                "xMax": 6,
+                "yMax": 6,
+                "xMin": 0,
+                "yMin": 0,
+                "xStep": 1,
+                "yStep": 1,
+                "xLabel": "x",
+                "yLabel": "y"
+              },
+              "hint": "Puuttuvalla kulmalla on sama x kuin yhdellä kulmalla ja sama y kuin toisella.",
+              "explain": "Samalla pystyreunalla oleva kulma antaa x:n (2), samalla vaakareunalla oleva y:n (0). Puuttuva kulma on (2, 0).",
+              "tag": "corner"
+            },
+            "registry": {
+              "node": "M-COORD-01",
+              "tag": "corner",
+              "outcome": "piirtää pisteet kuvaajaan",
+              "assumed": [],
+              "supplied": [],
+              "coTaught": [],
+              "incidental": {},
+              "support": [],
+              "source": [
+                "oletus"
+              ]
+            }
+          },
+          "build": {
+            "samples": 390,
+            "phases": [
+              "guided",
+              "independent",
+              "retrieval"
+            ],
+            "kinds": [
+              "plot"
+            ],
+            "example": {
+              "say": "Rakenna saari. Sen vasen alakulma on (2, 1). Saari on 2 ruutua leveä ja 5 ruutua korkea. Merkitse kaikki neljä kulmaa.",
+              "task": {
+                "kind": "plot",
+                "xs": [
+                  2,
+                  4,
+                  4,
+                  2
+                ],
+                "ys": [
+                  1,
+                  1,
+                  6,
+                  6
+                ],
+                "xMax": 6,
+                "yMax": 6,
+                "xMin": 0,
+                "yMin": 0,
+                "xStep": 1,
+                "yStep": 1,
+                "xLabel": "x",
+                "yLabel": "y"
+              },
+              "hint": "Leveys lisätään x:ään, korkeus y:hyn. Oikea alakulma: (2, 1) ja 2 oikealle.",
+              "explain": "Kulmat: (2, 1), (4, 1), (4, 6), (2, 6). Vasemmilla kulmilla x on 2, oikeilla 4. Alakulmilla y on 1, yläkulmilla 6.",
+              "tag": "build"
+            },
+            "registry": {
+              "node": "M-COORD-01",
+              "tag": "build",
+              "outcome": "piirtää pisteet kuvaajaan",
+              "assumed": [],
+              "supplied": [],
+              "coTaught": [],
+              "incidental": {},
+              "support": [],
+              "source": [
+                "oletus"
+              ]
+            }
+          },
+          "transfer": {
+            "samples": 512,
+            "phases": [
+              "transfer"
+            ],
+            "kinds": [
+              "plot"
+            ],
+            "example": {
+              "say": "Palmut ovat kohdissa (1, 1) ja (3, 1). Aarre on haudattu täsmälleen niiden puoliväliin. Merkitse aarre.",
+              "task": {
+                "kind": "plot",
+                "xs": [
+                  2
+                ],
+                "ys": [
+                  1
+                ],
+                "xMax": 6,
+                "yMax": 6,
+                "xMin": 0,
+                "yMin": 0,
+                "xStep": 1,
+                "yStep": 1,
+                "xLabel": "x",
+                "yLabel": "y"
+              },
+              "hint": "Kulje kummastakin palmusta yhtä monta askelta toisiaan kohti.",
+              "explain": "Puoliväli on yhtä kaukana molemmista: (2, 1).",
+              "tag": "transfer"
+            },
+            "registry": {
+              "node": "M-COORD-01",
+              "tag": "transfer",
+              "outcome": "piirtää pisteet kuvaajaan",
+              "assumed": [],
+              "supplied": [],
+              "coTaught": [],
+              "incidental": {},
+              "support": [],
+              "source": [
+                "oletus"
+              ]
+            }
+          }
+        },
+        "sampledItems": 2048
+      },
+      "taskFamilies": [
+        "corner",
+        "readPoly",
+        "move",
+        "build",
+        "transfer"
+      ],
+      "familyTreatment": {
+        "corner": "Three observed rectangle corners; plotmissingfourth,0..6, xleft0..2/xright4..6/ylow0..2/yhigh4..6. Hint same verticalx/horizontaly; explain namesbothsources.",
+        "readPoly": "Trianglevertices in0..6; choose namedvertexcoordinates. Reverse/±1y feedback; not free coordinate writing.",
+        "move": "x1..5,y3..6,d1..3, downward or side shiftkeptin0..6; taskplot. Positionvschange explained.",
+        "build": "Plotall4rectanglecorners from lower-left0..2, widths/heights2..remaininggrid; hints dimension changesx/y, setorderindependent.",
+        "transfer": "Horizontalorvertical even-unit endpointseparation2or4; plotinteger midpoint. Hint walks frombothends. No fractional/all-quadrant midpoint rule."
+      },
+      "rawNodeSpec": {
+        "path": "src/content/saari1.ts",
+        "startLine": 435,
+        "endLine": 514,
+        "text": "  {\n    id: 'M-COORD-01', stop: 'Saaren rakentaja', icon: '🏝️',\n    intro: 'Rakennetaan saari koordinaateilla: ensin kulmat, sitten aarre keskelle.',\n    reward: 'Saari on rakennettu tarkasti!',\n    rev: AUDIT_REV, validRevs: [AUDIT_REV],\n    demo: () => [\n      { say: 'Suorakulmion kulmat ovat (1, 1), (5, 1), (5, 4) ja (1, 4). Saman pystyreunan kulmilla on sama x, saman vaakareunan kulmilla sama y.', scene: coordWalk({ xMax: 6, yMax: 5, trace: true }, [\n        { x: 1, y: 1, icon: 'dot', say: 'Ensimmäinen kulma (1, 1).' },\n        { x: 5, y: 1, from: [1, 1], icon: 'dot', say: '4 oikealle: (5, 1). Vain x muuttui, joten reuna on vaakasuora.' },\n        { x: 5, y: 4, from: [5, 1], icon: 'dot', say: '3 ylös: (5, 4). Vain y muuttui, joten reuna on pystysuora.' },\n        { x: 1, y: 4, from: [5, 4], icon: 'dot', say: '4 vasemmalle: (1, 4). Saari sulkeutuu ja on valmis.' },\n      ]) },\n      { say: 'Jos yksi kulma puuttuu, sen x löytyy kulmasta samalla pystyreunalla ja y kulmasta samalla vaakareunalla.', scene: cornerScene([[1, 1], [5, 1], [5, 5], [1, 5]], 2) },\n      { say: 'Puoliväli löytyy, kun kuljetaan molemmista päistä yhtä monta askelta toisiaan kohti.', scene: midScene([1, 3], [5, 3]) },\n    ],\n    item: cases({\n      corner: (r) => {\n        const x1 = r.int(0, 2), x2 = r.int(4, 6), y1 = r.int(0, 2), y2 = r.int(4, 6);\n        const c: [number, number][] = [[x1, y1], [x2, y1], [x2, y2], [x1, y2]];\n        const miss = r.int(0, 3);\n        const [mx, my] = c[miss]!;\n        return {\n          say: `Suorakulmaisen saaren kolme kulmaa on merkitty. Merkitse neljäs kulma.`,\n          scene: paint(gridArt({ xMax: 6, yMax: 6, pins: c.filter((_, i) => i !== miss).map(([x, y]) => ({ x, y, label: P(x, y) })) })),\n          task: plot([mx], [my]),\n          hint: 'Puuttuvalla kulmalla on sama x kuin yhdellä kulmalla ja sama y kuin toisella.',\n          explain: `Samalla pystyreunalla oleva kulma antaa x:n (${mx}), samalla vaakareunalla oleva y:n (${my}). Puuttuva kulma on ${P(mx, my)}.`,\n        };\n      },\n      readPoly: (r) => {\n        const pts: [number, number][] = [[r.int(0, 2), r.int(0, 2)], [r.int(4, 6), r.int(0, 2)], [r.int(2, 4), r.int(4, 6)]];\n        const i = r.int(0, 2);\n        const [x, y] = pts[i]!;\n        const wrong = [[y, x], [x, y + 1 > 6 ? y - 1 : y + 1]].filter(([a, b]) => !(a === x && b === y));\n        return {\n          say: `Mitkä ovat kärjen ${'ABC'[i]} koordinaatit?`,\n          scene: paint(gridArt({ xMax: 6, yMax: 6, poly: pts, pins: pts.map(([px, py], k) => ({ x: px, y: py, label: 'ABC'[k] })) })),\n          task: choose(r, pt(x, y), wrong.map(([a, b]) => pt(a!, b!)), wrong.map(([a, b]) => (a === y && b === x ? 'Väärin päin: ensin x, sitten y.' : `Tämä on ruudun liian ${b! > y ? 'ylhäällä' : 'alhaalla'}: laske ylös uudelleen.`))),\n          hint: `Etsi kärki ${'ABC'[i]}. Ensin oikealle, sitten ylös.`,\n          explain: `Kärki ${'ABC'[i]}: ${x} oikealle, ${y} ylös, eli ${P(x, y)}.`,\n        };\n      },\n      move: (r) => {\n        const x = r.int(1, 5), y = r.int(3, 6), d = r.int(1, 3), down = r.chance(0.5);\n        const [nx, ny] = down ? [x, y - d] : [x + d > 6 ? x - d : x + d, y];\n        const dir = down ? 'alaspäin' : nx > x ? 'oikealle' : 'vasemmalle';\n        return {\n          say: `Laiva on kohdassa ${P(x, y)}. Se liikkuu ${d} ruutua ${dir}. Merkitse uusi paikka.`,\n          scene: paint(gridArt({ xMax: 6, yMax: 6, pins: [{ x, y, icon: 'ship' }] })),\n          task: plot([nx], [ny]),\n          hint: down ? 'Alaspäin muuttuu vain toinen luku, ja se pienenee.' : `Sivuttain muuttuu vain ensimmäinen luku. ${nx > x ? 'Oikealle se kasvaa.' : 'Vasemmalle se pienenee.'}`,\n          explain: `${down ? `Alaspäin pienenee y: ${y} − ${d} = ${ny}` : nx > x ? `Oikealle kasvaa x: ${x} + ${d} = ${nx}` : `Vasemmalle pienenee x: ${x} − ${d} = ${nx}`}. Uusi paikka ${P(nx, ny)}.`,\n        };\n      },\n      build: (r) => {\n        const x1 = r.int(0, 2), y1 = r.int(0, 2), w = r.int(2, 6 - x1), h = r.int(2, 6 - y1);\n        const xs = [x1, x1 + w, x1 + w, x1], ys = [y1, y1, y1 + h, y1 + h];\n        return {\n          say: `Rakenna saari. Sen vasen alakulma on ${P(x1, y1)}. Saari on ${w} ruutua leveä ja ${h} ruutua korkea. Merkitse kaikki neljä kulmaa.`,\n          task: plot(xs, ys),\n          hint: `Leveys lisätään x:ään, korkeus y:hyn. Oikea alakulma: ${P(x1, y1)} ja ${w} oikealle.`,\n          explain: `Kulmat: ${xs.map((x, i) => P(x, ys[i]!)).join(', ')}. Vasemmilla kulmilla x on ${x1}, oikeilla ${x1 + w}. Alakulmilla y on ${y1}, yläkulmilla ${y1 + h}.`,\n        };\n      },\n    }, (r) => {\n      const y = r.int(1, 5), x1 = r.int(0, 2), x2 = x1 + 2 * r.int(1, 2);\n      const vertical = r.chance(0.5);\n      const A: [number, number] = vertical ? [y, x1] : [x1, y], B: [number, number] = vertical ? [y, x2] : [x2, y];\n      const M: [number, number] = vertical ? [y, (x1 + x2) / 2] : [(x1 + x2) / 2, y];\n      return {\n        say: `Palmut ovat kohdissa ${P(...A)} ja ${P(...B)}. Aarre on haudattu täsmälleen niiden puoliväliin. Merkitse aarre.`,\n        scene: paint(gridArt({ xMax: 6, yMax: 6, pins: [{ x: A[0], y: A[1], icon: 'palm' }, { x: B[0], y: B[1], icon: 'palm' }] })),\n        task: plot([M[0]], [M[1]]),\n        hint: 'Kulje kummastakin palmusta yhtä monta askelta toisiaan kohti.',\n        explain: `Puoliväli on yhtä kaukana molemmista: ${P(...M)}.`,\n      };\n    }),\n  },\n\n  // ============================================================ talvi: negative numbers"
+      },
+      "sourceHashes": {
+        "src/content/saari1.ts": "0f0722dc20192b7414d481efe1b66251b3f8665baf07b107fb5be7872b0c0a25",
+        "src/content/decimals.ts": "7ada1da383cb235ec320e4f4da2150c79ddb02fcd5334874a5c59fd05ae8c21e",
+        "src/content/decanim.ts": "714c5d2eccee47d74d6ff7d67c04de3a5ccda3cc2b1551005396773d36af4d24",
+        "src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/audit.ts": "d9891d42eb739a4b65f8e80e4d24eda700f76e136a2fbc149e1965c3a4d69995",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427"
+      },
+      "registry": {
+        "defaultRevision": "index.ts revOf ownrev orCONTENT_REV; bothownAUDIT_REV audit1-2026-10-28",
+        "goals": "M-COORD-01 has noownGoal; index supplies GOALS[id]. M-DEC-03 ownGoal used.",
+        "families": "M-DEC-03/* explicitly supplies smallunitsperlargeunit; M-COORD-01 gets defaults, no targeted SIMS override. Source graph coverage checked below.",
+        "coverage": []
+      },
+      "audit": {
+        "path": "audit/LESSON_AUDIT.md",
+        "relevant": "575–577 coordinate integration construction/corner/midpoint;694–695 decimals zero-sensitive metric zoom/mmPair",
+        "limits": "Historical code/test/browser validation is not new evidence, no child/human proof inherited."
+      },
+      "comparison": "Retain orderedpairs/unitintervals/positionsandchanges, rectangle/midpoint reasoning. Integrate actual written reading with own constructedpoints rather than onlychoiceorplotresponse. Differenttaskviews freely switch, neverautofill. Rectanglecornerorderaccepted assetshapeclosedonlyforworkedexample. No fullformalrubric.",
+      "reconciliations": [
+        "Historical COVERAGE omits build family and lists2 instead of3demos. Axis/origin boundary language corrected to strictpositiveQ1interior. Polygonname/letterrecognition not an imposedgate."
+      ],
+      "limitations": "Standalone source support and local response check only; no retained/formal mastery/game-runtime mutation. Lite immutable; no suggested source fixes applied."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-COORD-01",
+        "subject": "mathematics",
+        "grade_band": "3-6",
+        "topic_area": "Geometria",
+        "parent_concept": "Koordinaatisto",
+        "title": "Pisteen lukeminen ja merkitseminen koordinaatiston I neljänneksessä",
+        "short_description": "Pisteen lukeminen ja merkitseminen koordinaatiston I neljänneksessä",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL3-6-S4"
+        ],
+        "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: M-COORD-READ-Q1, M-COORD-PLOT-Q1. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+        "status": "candidate_refactored_integration",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "integration",
+        "relations": [
+          {
+            "id": "M-COORD-READ-Q1",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-COORD-01 on v0.2:ssa integraationoodi; atominen alitaito M-COORD-READ-Q1 vaaditaan kokonaisuuden hallintaan."
+          },
+          {
+            "id": "M-COORD-PLOT-Q1",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-COORD-01 on v0.2:ssa integraationoodi; atominen alitaito M-COORD-PLOT-Q1 vaaditaan kokonaisuuden hallintaan."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-COORD-READ-Q1",
+              "M-COORD-PLOT-Q1"
+            ],
+            "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "integration",
+        "split_children": [
+          "M-COORD-READ-Q1",
+          "M-COORD-PLOT-Q1"
+        ],
+        "integration_of": [
+          "M-COORD-READ-Q1",
+          "M-COORD-PLOT-Q1"
+        ],
+        "dynamic_prerequisite_rule": null,
+        "concept_path": [
+          "Matematiikka",
+          "Geometria",
+          "Koordinaatisto"
+        ]
+      },
+      "canonicalSource": "reference/inputs/canonical-690-graph.json",
+      "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "gradeBand": "3-6",
+      "teacherObjective": "Pisteen lukeminen ja merkitseminen koordinaatiston I neljänneksessä",
+      "childGoal": "Luen kartan paikan ja merkitsen tilanteen mukaisen paikan itse.",
+      "role": "integration",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-COORD-READ-Q1",
+            "M-COORD-PLOT-Q1"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "strongSupport": [],
+      "additionalHardGates": [],
+      "assumed": "Atomic read+plot0..6 orderedpairs. Smallmoves/axisalignedrectangle/wholeunitmidpoint explicitlyexplained; optional arithmetichelp, no newhardgeometrygate.",
+      "scope": "Readselectedsourcepair and construct requiredpointset acrosscopy/axis/origin/move/corner/build/midpoint, unitintegergrid0..6. Ownsourceviewseparatedfromresponse; no shape-name/speech/tappingcountgate.",
+      "support": "Freeoptionalhelp/model/teacher/offline/exit, directtypedinput and nativekeyboard, noaudio/speechconfirmation/namingdemand.",
+      "evidenceLimits": "No formal mastery/rubric/retention/efficacy/physicalskill or personal history. Model/help answers are supported. Integration response is not formal integration approval.",
+      "assetProvenance": {
+        "mascot": "shared/loikka/map.png",
+        "kind": "Supplied actual v2 transparentPNG reinterpretation; not redrawn/duplicated, not asserted originalhanddrawing.",
+        "subjectSVG": "Original deterministic vector geometry, mathematicalnotcharacter artwork.",
+        "artAuthorityHashes": {
+          "ASSETS.md": "bdccb0695c27382d99f8831077adf2f247b1bb168018bc5f829c510df3792c48",
+          "STYLE_REVIEW_FI.md": "aed7c1ba925e0743dc8f4d78b26cf875c5595e3afb39e0d3cd679f881b1683a4",
+          "ASSET_STYLE_GATE.txt": "fb5a31989b7ac7ad3f2e4f875ca86ea2f224821de09fa5eb4371fc3f36239fb7"
+        }
+      },
+      "feedbackContract": {
+        "path": "INTERACTION_FEEDBACK_CONTRACT.md",
+        "sha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+        "eventGuidance": "EVENT_COMMIT_REVIEW_B05.md",
+        "eventSha256": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+        "rule": "Bothinput/change semanticcommits and explicitcurrentvisible check. Relevant editsretiredependentverdict;view/help/example controls preserveinvariant practice verdict."
+      },
+      "ui": "GameStudio game-ui-frontend/game-playtest read. Compactownsurface, currentmodel/state and44pxfirstaction at320/390x844withactualsharedchrome, no perKCheaderoverride. Finite manualsteps; no decorative or learner-speed clock."
+    },
+    "extensions": {
+      "batch": "B11",
+      "author": "Feynman owns onlyCOORD01/DEC03, mainintegrates.",
+      "licenceAndReleaseLimits": "Research/artprovenance notes do not grant public runtime/rights/human/learner approval. Existing shell resolver owns game routes.",
+      "ownQA": "Author pure/source/fullshell preview evidence reported in external exact-ready receipt; independent Newton review and actual combined127 native remain separate. No source status self-approval."
+    },
+    "contentHash": "75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+    "contentRevision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+          "note": "Author source draft; separate exact-version independent Newton and human reviews not performed by author."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+          "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+          "note": "Author source draft; separate exact-version independent Newton and human reviews not performed by author."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+          "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+          "note": "Author source draft; separate exact-version independent Newton and human reviews not performed by author."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@75ed1e7451558e046dda6f24a17b9dfff24b67b52835f2ebcee6d35f04d3402b",
+          "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "84cc520aee662d8838caafa7a8963a19d445d1ca796b6153aaf257724d4e448c",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "84cc520aee662d8838caafa7a8963a19d445d1ca796b6153aaf257724d4e448c",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fi" class="network-document">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#1d1b33">
+<title>Oppimisverkko — Sammakko</title>
+<meta name="description" content="Tutki Sammakon 690 osaamiskohteen STEM-verkkoa: hae aihe ja näe sen esitiedot ja jatkoaiheet omana aliverkkonaan.">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/brand.css"><link rel="stylesheet" href="./network.css"><script src="/assets/site.js" defer></script><script src="./network.js" type="module"></script>
+</head>
+<body class="network-page"><a class="skip-link" href="#network-stage">Siirry verkkoon</a>
+<header class="site-header" data-site-navigation="1">
+  <div class="header-inner wrap">
+    <a class="brand-link" href="/" aria-label="Sammakko - etusivu"><img src="/lite/characters/aava/wave.png" alt="" width="40" height="40"><span>Sammakko<small>Hulluttelulaboratorio</small></span></a>
+    <button class="nav-toggle" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false">Valikko <span aria-hidden="true">☰</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Päänavigaatio">
+      <a href="/">Etusivu</a>
+      <a href="/oppimisverkko/" aria-current="page">Oppimisverkko</a>
+      <a href="/whitepaper/">Whitepaper</a>
+      <a href="/tietoa/">Tietoa</a>
+      <a class="nav-play" data-lite-entry="start" href="/lite/">Avaa Sammakko Lite</a>
+    </nav>
+  </div>
+</header>
+<main class="network-shell">
+<section class="network-intro"><div class="wrap network-intro-inner"><div><p class="network-eyebrow">690 osaamiskohdetta · 1 287 yhteyttä</p><h1>Oppimisverkko</h1><p>Hae aihe tai valitse kortti. Näet heti, mitä sitä ennen kannattaa osata ja mihin se johtaa.</p></div><div class="network-intro-aava"><img src="/lite/characters/aava/map.png" alt="Aava tutkii oppimiskarttaa." width="112" height="112"><span>Valitse aihe — katsotaan, mihin se liittyy!</span></div></div></section>
+<div class="network-app" id="network-app" data-loading="true">
+<button class="sidebar-backdrop" id="sidebar-backdrop" type="button" tabindex="-1" aria-label="Sulje verkon työkalut" hidden></button>
+<aside class="network-sidebar" id="network-sidebar" aria-label="Oppimisverkon työkalut">
+<div class="sidebar-head"><div><strong>Hae ja tutki</strong><span id="network-status">Ladataan verkkoa…</span></div><button class="sidebar-close" id="sidebar-close" type="button" aria-label="Sulje työkalut">×</button></div>
+<div class="sidebar-block"><label for="network-search">Hae aihetta</label><input id="network-search" type="search" placeholder="Esim. murtoluku, voima, M-NUM-01…" autocomplete="off"><div id="network-results" class="network-results" aria-live="polite"></div></div>
+<div class="sidebar-block"><h2>Valittu aihe</h2><div id="node-info" class="node-info muted"><p>Valitse aihe kartalta tai haulla.</p></div></div>
+<div class="sidebar-block legend"><h2>Selite</h2><div class="legend-panel"><div><i class="dot math"></i> Matematiikka</div><div><i class="dot science"></i> Ympäristöopin perusta</div><div><i class="dot physics"></i> Fysiikka</div><div><i class="dot chemistry"></i> Kemia</div><hr><div><i class="edge required"></i> Pakollinen esitieto</div><div><i class="edge alternative"></i> Vaihtoehtoinen esitieto (TAI)</div><div><i class="edge strong"></i> Vahva esitieto</div><div><i class="edge helpful"></i> Hyödyllinen esitieto</div><div><i class="edge safety"></i> Turvallisuusehto</div><div><i class="edge support"></i> Tuki / esitystapa</div></div></div>
+<div class="sidebar-note"><strong>Mitä kartta kertoo?</strong><p>Yhteydet ovat perusteltuja suunnitteluoletuksia siitä, mikä auttaa seuraavan aiheen oppimisessa. Ne eivät väitä, että oppimisjärjestys olisi vain yksi.</p><a href="/whitepaper/#3-osaamisverkko-oppisisalto-puun-sijasta-dag-ina">Lue mallista whitepaperissa →</a></div>
+</aside>
+<section id="network-main" class="network-main" aria-label="Verkkonäkymä">
+<div class="network-toolbar">
+<button id="sidebar-open" class="sidebar-open" type="button" aria-controls="network-sidebar" aria-expanded="false">Hae</button>
+<div class="mode-switch" role="group" aria-label="Näkymä"><button id="btn-overview" class="active" type="button" aria-pressed="true">Koko verkko</button><button id="btn-focus" type="button" aria-pressed="false" disabled>Aliverkko</button><button id="btn-roots" type="button" aria-pressed="false">Juurinoodit</button></div>
+<button id="btn-fit" type="button">Sovita</button><button id="btn-clear" type="button" hidden>Poista valinta</button>
+<div class="zoom-controls"><button id="zoom-out" type="button" aria-label="Loitonna">−</button><input id="zoom-range" type="range" min="0.01" max="5" step="any" value="1" aria-label="Zoom"><button id="zoom-in" type="button" aria-label="Lähennä">+</button><span id="zoom-label">1.00×</span></div>
+<span id="focus-summary" class="focus-summary" aria-live="polite">Koko 690 noodin verkko · valitse aihe</span>
+</div>
+<p id="network-controls" class="network-controls">Siirrä vetämällä tai kahdella sormella, zoomaa nipistämällä tai +/−. <span>Nuolinäppäimet siirtävät, 0 näyttää koko verkon.</span></p>
+<div id="network-stage" class="network-stage" data-mode="overview" tabindex="0" aria-label="Interaktiivinen oppimisverkko" aria-describedby="network-controls">
+<svg id="network-svg" role="group" aria-labelledby="network-title network-desc"><title id="network-title">Sammakon 690 osaamiskohteen oppimisverkko</title><desc id="network-desc">Koko verkko. Valitse aihe nähdäksesi sen esitiedot ja jatkoaiheet omana aliverkkonaan.</desc><defs><marker id="arrow-required" markerUnits="userSpaceOnUse" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#ff9f87"/></marker><marker id="arrow-alternative" markerUnits="userSpaceOnUse" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#ffd27a"/></marker><marker id="arrow-strong" markerUnits="userSpaceOnUse" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#ff9f87"/></marker><marker id="arrow-helpful" markerUnits="userSpaceOnUse" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#c9c3ef"/></marker><marker id="arrow-safety" markerUnits="userSpaceOnUse" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#ffb44a"/></marker><marker id="arrow-support" markerUnits="userSpaceOnUse" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#8ce9d5"/></marker></defs><g id="viewport"><g id="edges-layer"></g><g id="nodes-layer"></g></g></svg>
+<svg id="focus-svg" class="focus-svg" role="group" aria-label="Valitun aiheen aliverkko"><defs><marker id="focus-arrow-required" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#ff9f87"/></marker><marker id="focus-arrow-alternative" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#ffd27a"/></marker><marker id="focus-arrow-helpful" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#c9c3ef"/></marker><marker id="focus-arrow-support" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#8ce9d5"/></marker><marker id="focus-arrow-safety" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#ffb44a"/></marker></defs><g id="focus-viewport"><g id="focus-edges"></g><g id="focus-cards"></g></g></svg>
+<div id="group-labels" class="group-labels"></div>
+<div id="layout-switch" class="layout-switch" role="group" aria-label="Järjestä koko verkko"><span>Järjestä</span><button type="button" data-layout="subject" aria-pressed="true">Oppiaineittain</button><button type="button" data-layout="grade" aria-pressed="false">Vuosiluokittain</button></div>
+<button id="scope-toggle" class="scope-toggle" type="button" aria-pressed="false">Näytä kaikki esivanhemmat ja jälkeläiset</button>
+<div id="minimap" class="minimap" aria-hidden="true" title="Pienoiskartta"><svg preserveAspectRatio="xMidYMid meet"><g id="mini-nodes"></g><rect id="mini-window"></rect></svg></div>
+<div class="loading-card" id="loading-card"><img src="/lite/characters/aava/curious.png" alt="" width="84" height="84"><div><strong>Aava piirtää karttaa…</strong><span>690 aihetta ja niiden yhteydet</span></div></div>
+</div>
+</section></div>
+<section class="network-after wrap"><div><p class="eyebrow">Mistä aloittaa?</p><h2>Kartta näyttää yhteydet. Litessä niitä pääsee kokeilemaan.</h2></div><div><p>Valitse aihe: sen tiedoista näet esitiedot, jatkoaiheet ja mahdollisen Lite-harjoituksen. 181 aiheessa on tarkistettu harjoitus; loput 509 näkyvät avoimesti sisältöä odottavina pohjina.</p></div></section>
+</main>
+<footer class="site-footer"><div class="wrap footer-inner"><a class="brand-link" href="/">Sammakko<small>Hulluttelulaboratorio</small></a><p>Uteliaisuudelle tilaa.<br>Oivalluksille aikaa.</p><nav aria-label="Alatunniste"><a href="/oppimisverkko/">Oppimisverkko</a><a href="/whitepaper/">Whitepaper</a><a href="/tietoa/">Käyttö ja tiedot</a></nav><span class="footer-edition">Oppimisverkko · 690 KC · kanoninen julkaisuversio</span></div></footer>
+</body></html>

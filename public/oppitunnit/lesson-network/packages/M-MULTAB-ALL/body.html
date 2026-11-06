@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="lesson.css">
+<div class="cb10">
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/loikka/map.png" width="76" height="76" alt="Loikka"><p>Loikan pisterivit.</p></div>
+<p data-entry-goal><strong>Käytän tuttua kertolaskua uuden tulon löytämiseen.</strong></p>
+</section>
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step" id="taulu-harjoitus">
+<div data-tables-lab data-lesson-context-source="workbench"><p>Ilman JavaScriptiä: 7 × 8 = 56. Seitsemään riviin yksi lisää antaa 7 × 9 = 63. Voit käyttää myös suoraan muistamaasi vastausta.</p></div>
+</section>
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<p>Loikka tuntee yhden kertolaskun. Auttaako se löytämään naapurin? Alla oleva malli alkaa rivistöstä 7 × 8. Lisää malliin yksi sarake ja katso, kuinka monta pistettä tulee lisää.</p>
+
+<details data-lesson-role="worked-example" data-lesson-context="tables-neighbor" data-context-source="workbench" data-context-preset="neighbor" data-context-reveal="model"><summary>Tutki naapurituloa tässä</summary><p data-context-fallback>Malli on ilman JavaScriptiä alkuperäisessä kohdassaan: <a href="#taulu-harjoitus">avaa mallin kohta</a>.</p><div data-context-slot></div><button type="button" data-context-close hidden>Sulje malli</button></details>
+</section>
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<h2>Tutusta tulosta uuteen</h2><p>Yksi uusi sarake lisää <strong>yhden pisteen joka riville</strong>. Seitsemässä rivissä se lisää 7, ei vain yhtä.</p>
+
+<p><a href="#taulu-esimerkit">Katso kaksi esimerkkiä</a> · <a href="#taulu-opettaja">Opettajan vinkki</a></p>
+</section>
+
+
+
+
+
+<section id="taulu-esimerkit">
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<h3>7 × 8 auttaa laskussa 7 × 9</h3><figure data-lesson-role="worked-example"><img src="neighbour.svg" width="340" height="262" alt="Seitsemän riviä, yhdeksän pistettä jokaisessa. Viimeinen sarake on eri värinen: siinä seitsemän pistettä."><figcaption>Sinisiä 56, viimeisessä sarakkeessa 7. Yhteensä 63.</figcaption></figure><p><strong>7 × 9 = 56 + 7 = 63.</strong> Myös 9 × 7 antaa 63. Tekijöiden vaihtaminen muuttaa rivistön suunnan, ei kokonaismäärää.</p>
+</section>
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<h3>Mikä tekijä puuttuu?</h3><figure data-lesson-role="worked-example"><img src="factor.svg" width="340" height="238" alt="Kuusi riviä, seitsemän pistettä jokaisessa. Yhteensä 42."><figcaption>6 × 7 = 42.</figcaption></figure><p>Laskussa <strong>□ × 7 = 42</strong> etsitään rivien määrää, ei koko tuloa. Viisi seitsemän riviä on 35. Vielä yksi seitsemän rivi antaa 42. Puuttuva tekijä on 6.</p>
+</section>
+</section>
+
+
+
+
+
+<section data-teaching-step="7" data-lesson-role="teaching-step">
+<section data-lesson-role="question"><p data-lesson-role="question">Mieti: miksei 7 × 9 ole 56 + 1?</p><details data-lesson-role="answer"><summary>Katso perustelu</summary><p>Yksi lisätään jokaiseen seitsemään riviin. Uudessa sarakkeessa on seitsemän pistettä. Samoin 6 × 8 saadaan luvusta 6 × 9 = 54 poistamalla 6: tulos on 48.</p></details></section>
+</section>
+
+
+
+
+
+
+<section data-teaching-step="8" data-lesson-role="teaching-step">
+<p><strong>Uusi tilanne:</strong> 8 riviä, 6 munapaikkaa joka rivissä. Montako paikkaa? Voit vastata alla munakennotehtävään. Et tarvitse kuvaa kaikista munista; mallin voi avata erikseen, jos haluat.</p>
+
+<details data-lesson-role="teaching-step" data-lesson-context="tables-transfer" data-context-source="workbench" data-context-preset="transfer"><summary>Avaa munakennotehtävä tähän</summary><p data-context-fallback>Malli on ilman JavaScriptiä alkuperäisessä kohdassaan: <a href="#taulu-harjoitus">avaa mallin kohta</a>.</p><div data-context-slot></div><button type="button" data-context-close hidden>Sulje malli</button></details>
+</section>
+
+
+
+
+
+
+<section data-teaching-step="9" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Lisää tutkittavaa</summary><p>Alla oleva malli alkaa rivistöstä 9 × 9. Vertaa tapoja 10 × 9 − 9 ja 9 × 8 + 9. Kumpikin antaa 81. Voit myös täydentää harjoituksen seitsemän taulua tai valita minkä tahansa tekijäparin 1–10.</p>
+<details data-lesson-role="worked-example" data-lesson-context="tables-nine" data-context-source="workbench" data-context-preset="nine" data-context-reveal="model"><summary>Tutki mallia: 9 × 9</summary><p data-context-fallback>Malli on ilman JavaScriptiä alkuperäisessä kohdassaan: <a href="#taulu-harjoitus">avaa mallin kohta</a>.</p><div data-context-slot></div><button type="button" data-context-close hidden>Sulje malli</button></details>
+</details>
+</section>
+
+
+
+
+
+
+<section data-teaching-step="10" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lopuksi:</strong> jos tiedät 8 × 7 = 56, miten löydät 8 × 6?</p>
+</section>
+
+
+
+<details id="taulu-opettaja" class="teacher" data-lesson-role="teacher-note"><summary>Opettajalle ja kertaus ilman ruutua</summary><p>Luokat 3–6. Alemmat ja ylemmät kertotaulut ovat vaaditut esitiedot. Kaikki 100 järjestettyä tekijäparia 1–10 ovat valittavissa tulon tai puuttuvan tekijän harjoitukseen. Tämä ei tarkoita, että oppija olisi käynyt tai muistanut ne kaikki. Erota oikein päätelty vastaus, tuettu vastaus ja muistista haettu vastaus.</p><p>Peitä paperirivistön yksi sarake ja kysy, kuinka paljon tulosta poistui. Käytä lyhyitä, vaihtelevia harjoituksia myös myöhempinä päivinä; kysy laskutapaa tarvittaessa vapaaehtoisesti. Yksittäinen vastaus tai sarjan läpikäynti ei todista koko kertotauluston sujuvuutta, nopeaa muistihakua tai säilymistä. Mallin ohjaimet eivät ole vastaus. Ei aikarajaa, puhepakkoa, pistetaulukkoa tai oppilashistoriaa.</p></details></div>

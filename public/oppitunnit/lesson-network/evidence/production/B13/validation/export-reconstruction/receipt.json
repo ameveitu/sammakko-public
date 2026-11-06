@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "kind": "POSTSEAL_B13_FRESH_RECONSTRUCTION_NOT_ORIGINAL_ZIP_CONTENT",
+  "archive": "/Users/aikuiset/Documents/Codex/2026-10-24/e/outputs/Sammakko/exports/Sammakko_181_B13_151of181.zip",
+  "inventory": {
+    "archive": "/Users/aikuiset/Documents/Codex/2026-10-24/e/outputs/Sammakko/exports/Sammakko_181_B13_151of181.zip",
+    "sha256": "ad9cfc38e987f12958a386d683f449e7d8edd558f6c34f5ddf0af7fc56fe7cf3",
+    "sourceRevision": "17af82222c31ba4d74fe61dcf98fdeac5837c920",
+    "zipBytes": 42577750,
+    "uncompressedBytes": 123029562,
+    "compressedMemberBytes": 40263610,
+    "members": 10856,
+    "manifestFiles": 10854,
+    "compressionMethods": {
+      "8": 10856
+    },
+    "CRC": "PASS",
+    "allManifestSHA256": "PASS",
+    "safePathsAndEntryTypes": "PASS",
+    "manifestSHA256": "8cab104f394d97cfc28acaa773bd440eeb843444be8c3a61f2ccb69fa2320e14",
+    "historicalIndexSHA256": "5fef68a1b096ffbbcf37e8b5f5f95cafdb92ff71d3d4f0aee39fa93ed4adf002"
+  },
+  "commands": [
+    {
+      "command": [
+        "npm",
+        "ci",
+        "--offline"
+      ],
+      "exitCode": 0,
+      "seconds": 1.573,
+      "stdout": "01-stdout.txt",
+      "stderr": "01-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/build.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 15.383,
+      "stdout": "02-stdout.txt",
+      "stderr": "02-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/verify.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 8.158,
+      "stdout": "03-stdout.txt",
+      "stderr": "03-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "--input-type=module",
+        "-e",
+        "import fs from 'node:fs';import assert from 'node:assert/strict';import{verifyValidationReceipt}from './lesson-network/validation-receipt.mjs';const p=JSON.parse(fs.readFileSync('lesson-network/evidence/production/B13/validation/current-postreview-r1/receipt.json'));assert(verifyValidationReceipt(process.cwd(),p));console.log(JSON.stringify({status:'PASS_REUSED_EXECUTION_SOURCE_HASHES_VERIFIED',counts:p.counts,lessons:Object.keys(p.contentRevisions).length,newExecution:false}));"
+      ],
+      "exitCode": 0,
+      "seconds": 0.245,
+      "stdout": "04-stdout.txt",
+      "stderr": "04-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "--test",
+        "--test-reporter=tap",
+        "lesson-network/packages/M-NEG-03/tests.mjs",
+        "lesson-network/packages/M-SUB-20/tests.mjs",
+        "lesson-network/packages/M-UNIT-02/tests.mjs",
+        "lesson-network/packages/M-UNIT-03/tests.mjs",
+        "lesson-network/packages/M-UNIT-04/tests.mjs",
+        "lesson-network/packages/M-WRDIV/tests.mjs",
+        "lesson-network/packages/M-WRMUL/tests.mjs",
+        "lesson-network/packages/M79-INT-DIST/tests.mjs",
+        "lesson-network/packages/M79-INT-ORDER/tests.mjs",
+        "lesson-network/packages/PHY79-ACCEL-CONCEPT/tests.mjs",
+        "lesson-network/packages/PHY79-SPEED-CALC/tests.mjs",
+        "lesson-network/packages/PHY79-SPEED-UNIT/tests.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.619,
+      "stdout": "05-stdout.txt",
+      "stderr": "05-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "lesson-network/production-status.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 5.135,
+      "stdout": "06-stdout.txt",
+      "stderr": "06-stderr.txt"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "lesson-network/test-export.py"
+      ],
+      "exitCode": 0,
+      "seconds": 0.99,
+      "stdout": "07-stdout.txt",
+      "stderr": "07-stderr.txt"
+    }
+  ],
+  "extracted": "/private/tmp/sammakko-b13-reconstruction/extracted",
+  "sourceRevision": "17af82222c31ba4d74fe61dcf98fdeac5837c920",
+  "technicalChecked": 151,
+  "networkVerified": 690,
+  "networkChecks": 352052,
+  "originalSourceTestsReused": {
+    "tests": 737,
+    "pass": 737,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "originalSourceExecutionRepeated": false,
+  "freshNew12DependencySmoke": {
+    "tests": 85,
+    "pass": 85,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "exporterTests": 5,
+  "scope": "Cached offline locked install; fresh normal690 build/verify; original737 execution verified by all source/output hashes, not rerun; only new12/85 tests freshly exercise new export dependencies; status151/export5. No browser or old139 test rerun solely for packaging. Fresh /tmp only."
+}

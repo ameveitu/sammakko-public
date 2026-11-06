@@ -1,0 +1,465 @@
+schema_version: 0.1.0
+kc_id: PHY79-QTY-01
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Fysikaalisen suureen, lukuarvon ja yksikön erottaminen
+  subject: physics
+  grade_band: 7-9
+  mastery_role: integration
+  node_kind: integration
+  concept_path:
+  - Fysiikka
+  - S1 Luonnontieteellinen tutkimus
+  - Suureet ja yksiköt
+  source_basis: direct_curriculum
+  curriculum_refs:
+  - PHY79-S1
+  - PHY79-ASSESS
+  prerequisite_snapshot:
+    hard:
+    - PHY79-QTY-CONCEPT
+    - PHY79-NUMVALUE
+    - PHY79-UNIT-CONCEPT
+    strong: []
+    helpful: []
+teaching_model:
+  learning_goal: 'Oppilas osaa jäsentää fysikaalisen mittaustuloksen kolmeen eri rooliin: mitattava suure, suureen lukuarvo
+    ja käytetty yksikkö, sekä käyttää erottelua uusissa mittaustilanteissa.'
+  learner_facing_goal: Kun näen esimerkiksi 'aika 4,2 s', osaan sanoa mikä on suure, mikä lukuarvo ja mikä yksikkö.
+  success_evidence:
+  - Tunnistaa suureen mitattavaksi ominaisuudeksi eikä pelkäksi kirjaimeksi.
+  - Erottaa mittausmerkinnästä lukuarvon.
+  - Erottaa yksikön lukuarvosta ja suureesta.
+  - Yhdistää kolme roolia samaan mittaustulokseen ilman vihjettä.
+  - Säilyttää roolit, vaikka sama suure ilmaistaan toisella yksiköllä.
+  core_idea: Fysikaalinen suure kertoo mitä ominaisuutta tarkastellaan, lukuarvo kertoo kuinka monta käytettyä yksikköä tulokseen
+    kuuluu ja yksikkö kertoo vertailuperustan; nämä ovat eri rooleja samassa mittaustuloksessa.
+  boundaries:
+    in_scope:
+    - Suureen, lukuarvon ja yksikön tunnistaminen mittaustuloksesta.
+    - Suureen nimen ja mahdollisen tunnuksen erottaminen yksiköstä.
+    - Sen ymmärtäminen, että saman suureen lukuarvo voi muuttua yksikön vaihtuessa.
+    out_of_scope:
+    - Yksikkömuunnosten laskeminen.
+    - Johdettujen yksiköiden muodostaminen.
+    - Nopeuden laskeminen tai muiden suureyhtälöiden ratkaiseminen.
+    - Mittausepävarmuuden laskenta.
+  prerequisite_assumptions:
+  - kc_id: PHY79-QTY-CONCEPT
+    expected_level: Required atomic child mastered.
+  - kc_id: PHY79-NUMVALUE
+    expected_level: Required atomic child mastered.
+  - kc_id: PHY79-UNIT-CONCEPT
+    expected_level: Required atomic child mastered.
+  conceptual_invariants:
+  - Suure on mitattava ominaisuus, ei sama asia kuin sen lukuarvo eikä yksikkö.
+  - Lukuarvo on numeerinen osa, jonka merkitys riippuu yksiköstä.
+  - Yksikkö ilmaisee käytetyn mitta-asteikon/vertailuperustan.
+  - Saman fysikaalisen suureen arvo voidaan ilmaista eri yksiköissä; tällöin lukuarvo voi muuttua, mutta tarkasteltava suure
+    ei.
+  - Integraationoodi ei korvaa kolmen atomisen child-KC:n evidenssiä.
+  likely_confusions:
+  - PHY79-QTY-01-MIS-NUMBER-IS-MEASUREMENT
+  - PHY79-QTY-01-MIS-UNIT-DECORATION
+  - PHY79-QTY-01-MIS-SYMBOL-ROLE
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+  - DIAGNOSTIC
+  - ORIENT
+  - GUIDED_PRACTICE
+  - INDEPENDENT_PRACTICE
+  - TRANSFER_CHECK
+  - MASTERY_GATE
+  fast_path:
+    enabled: true
+    diagnostic_requirement: Child-KC mastery evidence present and two integration diagnostic items correct independently.
+    transfer_confirmation: required
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Tarkista integraatio; jos virhe paikantuu lapseen, reititä kyseiseen child-KC:hen eikä opeta koko kokonaisuutta
+        uudelleen.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - PHY79-QTY-01-DIAG-TOKENS
+          - PHY79-QTY-01-DIAG-ROLE
+    ORIENT:
+      purpose: Kokoa jo hallitut osat yhdeksi mittaustuloksen rakenteeksi.
+      blocks:
+      - type: comparison
+        content:
+          example: pituus = 1,25 m
+          roles:
+            suure: pituus
+            lukuarvo: 1,25
+            yksikkö: m
+          note: Tunnus voidaan näyttää lisätietona, mutta sitä ei sekoiteta suureen käsitteeseen.
+    GUIDED_PRACTICE:
+      purpose: Harjoittele kolmen roolin yhtäaikaista erottelua ilman child-KC:iden pitkää uudelleenopetusta.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - PHY79-QTY-01-GUIDED-SORT
+    INDEPENDENT_PRACTICE:
+      purpose: Kerää integraation itsenäistä näyttöä useilla perussuureilla.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - PHY79-QTY-01-INDEP-PARSE
+          - PHY79-QTY-01-INDEP-REASSEMBLE
+    TRANSFER_CHECK:
+      purpose: Varmista roolien säilyminen, kun sama suure ilmaistaan toisella yksiköllä tai esitysmuoto muuttuu.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - PHY79-QTY-01-TRANSFER-UNIT-CHANGE
+    MASTERY_GATE:
+      purpose: Integraatio mastery edellyttää sekä child-KC masteryä että erillistä yhdistämisnäyttöä.
+      blocks:
+      - type: reflection
+        content: Jos 2,0 m kirjoitetaan senttimetreinä, mikä kolmesta roolista pysyy samana ja mitkä kaksi voivat muuttua?
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs:
+      PHY79-QTY-01-MIS-NUMBER-IS-MEASUREMENT: PHY79-NUMVALUE
+      PHY79-QTY-01-MIS-UNIT-DECORATION: PHY79-UNIT-CONCEPT
+      PHY79-QTY-01-MIS-SYMBOL-ROLE: PHY79-QTY-CONCEPT
+    minimum_templates: 2
+    fast_path_confirmation_tags: []
+    execution_policy: Fast path skips teaching and guided work; independent minima and all required quantity contexts remain required.
+    pass_rule: Requires existing mastery evidence for all integration children plus 2/2 correct integration diagnostics.
+  independent:
+    minimum_successes: 3
+    template_diversity: 2
+    required_tags: [three_roles, symbol_role]
+    must_cover_at_least_quantities:
+    - length
+    - time
+    - mass
+  transfer:
+    required: true
+    minimum_successes: 1
+    novel_context_required: true
+  delayed:
+    required: true
+    minimum_successes: 4
+    minimum_delay_hours: 24
+    reuse_templates: [PHY79-QTY-01-INDEP-PARSE, PHY79-QTY-01-INDEP-REASSEMBLE]
+    required_tags: [three_roles, symbol_role, bare_number_rejected]
+    required_contexts: [length, time, mass]
+    earliest_delay_policy: Schedule after at least one later motion/measurement KC or next session.
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+  - misconception_id: PHY79-QTY-01-MIS-UNIT-DECORATION
+    evidence_tags: [bare_number_rejected]
+    rule: Correctly rejects a bare number as a complete value in a later unaided genuinely delayed item; independent here describes assistance, not item purpose.
+  - misconception_id: PHY79-QTY-01-MIS-SYMBOL-ROLE
+    evidence_tags: [symbol_role]
+    rule: Correctly distinguishes quantity name/tunnus from unit symbol in at least one item.
+  - misconception_id: PHY79-QTY-01-MIS-NUMBER-IS-MEASUREMENT
+    evidence_tags: [three_roles]
+    rule: A later unaided item correctly composes or parses all three roles together.
+items:
+- id: PHY79-QTY-01-DIAG-TOKENS
+  kc_ids:
+  - PHY79-QTY-01
+  purpose: diagnostic
+  response_type: ordering
+  difficulty_band: core
+  prompt_model:
+    kind: role_sort
+    instruction: Järjestä mittaustuloksen osat rooleihin SUURE – LUKUARVO – YKSIKKÖ.
+    example_generation: Generate one of length/time/mass with optional standard symbol.
+  truth_model:
+    kind: semantic_role_mapping
+    mapping:
+      quantity: quantity.kind
+      numeric_value: quantity.numeric_value
+      unit: quantity.unit
+  misconception_rules:
+  - misconception_id: PHY79-QTY-01-MIS-SYMBOL-ROLE
+    detect: role_swap
+  hints: []
+  invariants:
+  - Unit token must never be accepted as quantity token.
+  - Number token alone is numeric_value only.
+  provenance: []
+  parameter_model:
+    quantities:
+    - length
+    - time
+    - mass
+    numeric_values:
+      range:
+      - 0.5
+      - 20
+      decimals:
+      - 0
+      - 1
+- id: PHY79-QTY-01-DIAG-ROLE
+  kc_ids:
+  - PHY79-QTY-01
+  purpose: diagnostic
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: role_question
+    instruction: Merkinnässä 'aika = 4,2 s', mikä on lukuarvo?
+    options_generated_from:
+    - quantity_name
+    - numeric_value
+    - unit
+  truth_model:
+    kind: field_select
+    correct_field: numeric_value
+  misconception_rules: []
+  hints: []
+  invariants: []
+  provenance: []
+- id: PHY79-QTY-01-GUIDED-SORT
+  kc_ids:
+  - PHY79-QTY-01
+  purpose: guided
+  response_type: ordering
+  difficulty_band: support
+  prompt_model:
+    kind: token_sort
+    instruction: Siirrä jokainen osa oikeaan laatikkoon.
+    roles:
+    - suure
+    - lukuarvo
+    - yksikkö
+  truth_model:
+    kind: semantic_role_mapping
+    mapping:
+      suure: quantity.kind
+      lukuarvo: quantity.numeric_value
+      yksikkö: quantity.unit
+  misconception_rules: []
+  hints:
+  - level: 1
+    text: 'Aloita kysymällä: mitä ominaisuutta mitattiin?'
+  - level: 2
+    text: Etsi sitten pelkkä luku. Jäljelle jää yksikkö.
+  invariants: []
+  provenance: []
+- id: PHY79-QTY-01-INDEP-PARSE
+  kc_ids:
+  - PHY79-QTY-01
+  purpose: independent
+  response_type: multi_choice
+  difficulty_band: core
+  prompt_model:
+    kind: three_role_parse
+    instruction: Valitse oikea suure, lukuarvo ja yksikkö annetusta mittaustuloksesta.
+    contexts:
+    - length
+    - time
+    - mass
+  truth_model:
+    kind: triple_exact
+    fields:
+    - quantity.kind
+    - quantity.numeric_value
+    - quantity.unit
+  misconception_rules:
+  - misconception_id: PHY79-QTY-01-MIS-NUMBER-IS-MEASUREMENT
+    detect: missing_quantity_or_unit
+  hints: []
+  invariants:
+  - All three roles required for full correctness.
+  provenance: []
+  parameter_model:
+    numeric_values:
+      range:
+      - 1
+      - 50
+      decimals:
+      - 0
+      - 1
+- id: PHY79-QTY-01-INDEP-REASSEMBLE
+  kc_ids:
+  - PHY79-QTY-01
+  purpose: independent
+  response_type: ordering
+  difficulty_band: core
+  prompt_model:
+    kind: reassemble_measurement
+    instruction: Saat erikseen suureen, lukuarvon ja yksikön. Muodosta niistä järkevä mittaustulos.
+    contexts:
+    - length
+    - time
+    - mass
+  truth_model:
+    kind: semantic_composition
+    required_roles:
+    - quantity.kind
+    - quantity.numeric_value
+    - quantity.unit
+  misconception_rules: []
+  hints: []
+  invariants:
+  - Do not assess unit conversion.
+  provenance: []
+- id: PHY79-QTY-01-TRANSFER-UNIT-CHANGE
+  kc_ids:
+  - PHY79-QTY-01
+  purpose: transfer
+  response_type: multi_choice
+  difficulty_band: challenge
+  prompt_model:
+    kind: same_quantity_different_unit
+    instruction: Sama pituus ilmoitetaan ensin metreinä ja sitten senttimetreinä. Mitkä roolit voivat muuttua ja mikä rooli
+      pysyy samana?
+    response_semantics:
+    - quantity_same
+    - numeric_value_changes
+    - unit_changes
+  truth_model:
+    kind: set_exact
+    correct:
+    - quantity_same
+    - numeric_value_changes
+    - unit_changes
+  misconception_rules: []
+  hints: []
+  invariants:
+  - Prompt must not require learner to calculate the converted numeric value.
+  provenance: []
+- id: PHY79-QTY-01-DELAYED-BARE-NUMBER
+  kc_ids:
+  - PHY79-QTY-01
+  purpose: delayed_review
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: concept_check
+    instruction: Kaveri mittasi pituuden ja kirjoitti tulokseksi vain '7'. Mikä tieto puuttuu, jotta pituuden arvo olisi yksiselitteinen?
+    options_semantics:
+    - unit
+    - color
+    - font_size
+    - nothing
+  truth_model:
+    kind: semantic_option
+    correct: unit
+  misconception_rules:
+  - misconception_id: PHY79-QTY-01-MIS-UNIT-DECORATION
+    detect: nothing
+  hints: []
+  invariants: []
+  provenance: []
+misconceptions:
+- id: PHY79-QTY-01-MIS-NUMBER-IS-MEASUREMENT
+  description: Oppilas käsittelee pelkkää lukuarvoa mittaustuloksena ja menettää yhteyden suureeseen sekä yksikköön.
+  evidence_patterns:
+  - kind: classification_pattern
+    when: Learner labels numeric token as the entire physical quantity/measurement.
+  feedback_strategy:
+    conceptual_prompt: Mitä ominaisuutta luku kuvaa, ja millä yksiköllä se on ilmoitettu?
+    representation: 'Render three labeled slots: SUURE | LUKUARVO | YKSIKKÖ.'
+  repair_targets:
+  - PHY79-NUMVALUE
+  - PHY79-QTY-CONCEPT
+  status: hypothesis
+- id: PHY79-QTY-01-MIS-UNIT-DECORATION
+  description: Oppilas pitää yksikköä vastauksen koristeena eikä osana suureen arvon merkitystä.
+  evidence_patterns:
+  - kind: classification_pattern
+    when: Learner says number stays fully meaningful after unit is removed.
+  feedback_strategy:
+    conceptual_prompt: Tarkoittaako '5' samaa pituutta kuin '5 m' tai '5 cm'?
+    representation: Show two otherwise identical numerical values with different units and ask whether they describe the same
+      amount.
+  repair_targets:
+  - PHY79-UNIT-CONCEPT
+  status: hypothesis
+- id: PHY79-QTY-01-MIS-SYMBOL-ROLE
+  description: Oppilas sekoittaa suureen tunnuksen, suureen nimen ja yksikön tunnuksen keskenään.
+  evidence_patterns:
+  - kind: token_sort_pattern
+    when: Places unit symbol in quantity-name slot or quantity symbol in unit slot.
+  feedback_strategy:
+    conceptual_prompt: Kertooko tämä merkki mitä mitataan vai millä yksiköllä tulos ilmoitetaan?
+    representation: Keep 'pituus (l)' and 'metri (m)' visually paired but in different semantic roles.
+  repair_targets:
+  - PHY79-QTY-CONCEPT
+  - PHY79-UNIT-CONCEPT
+  status: hypothesis
+differentiation:
+  support_variants:
+    step_chunking: First identify what is measured; then select numerical token; finally select unit token.
+    hint_availability: Hints ask role questions, never directly reveal all three labels at once.
+    text_density: Use a three-column role table and one sentence instruction.
+    worked_example_depth: One complete role decomposition followed by one partially completed example.
+    alternate_representation: Measurement card, token sorting or table; same semantic roles.
+    reduced_motion: Token sorting snaps instantly; no animated transitions.
+  challenge_variants:
+    learner_prompt: Sama pituus on kirjoitettu muodossa l = 2,0 m ja pituus = 200 cm. Vertaa esitystapoja. Mikä rooli pysyy samana, mitkä voivat muuttua ja miksi suureen tunnus ei ole yksikön tunnus? Muunnosta ei tarvitse laskea.
+    reduced_scaffolding: No role labels; learner constructs the three-part explanation from raw notation.
+    abstraction: Include quantity symbol notation such as t = 4.2 s after concept is clear.
+    multi_step_reasoning: Compare two representations of the same quantity and explain which roles changed under unit change.
+    alternate_solution_compare: Accept quantity name or standard symbol as identification only if the learner still explicitly
+      distinguishes the unit symbol.
+    transfer_novelty: Use unfamiliar-but-readable units or a compound unit only for role classification, not calculation.
+    acceleration_probe: If all child-KCs are already mastered, one clean diagnostic set plus transfer can complete the integration
+      node.
+representations:
+- id: PHY79-QTY-01-REP-THREE-ROLE
+  type: table
+  purpose: Keep quantity, numerical value and unit in separate semantic columns.
+  domain_bindings:
+  - quantity.kind
+  - quantity.numeric_value
+  - quantity.unit
+- id: PHY79-QTY-01-REP-NOTATION
+  type: equation
+  purpose: Show a conventional measurement statement while preserving semantic role annotations.
+  domain_bindings:
+  - quantity.symbol
+  - quantity.numeric_value
+  - quantity.unit
+simulation_specs: []
+requires_capabilities:
+- rich_text
+- inline_math
+- single_choice
+- draggable_objects
+- table
+- hint_ladder
+- reduced_motion_variant
+provenance:
+  curriculum:
+  - source_id: OPH-POPS-CURRENT
+    claim: The catalog maps the integration of physical quantity, numerical value and unit to physics 7–9 scientific inquiry/assessment
+      content; exact ePerusteet locator must be resolved before pilot.
+    status: needs_source
+  pedagogy:
+  - source_id: CAST-UDL-3
+    claim: Alternative semantic representations may reduce unnecessary access barriers while keeping the learning goal unchanged.
+    status: verified
+  - source_id: CEPEDA-ETAL-2006
+    claim: A delayed review item is included to support later retrieval rather than treating immediate integration success
+      as permanent mastery.
+    status: verified
+  domain:
+  - source_id: BIPM-SI-BROCHURE-9
+    claim: SI terminology distinguishes quantities, numerical values and units; exact clauses should be stored in the source
+      registry before pilot.
+    status: needs_source
+validation:
+  schema: pass
+  graph_refs: pass
+  domain_truth: pending
+  item_invariants: pass
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: designed

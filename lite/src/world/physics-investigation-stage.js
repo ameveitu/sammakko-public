@@ -1,0 +1,17 @@
+import * as THREE from 'three';
+/** Decorative spatial apparatus; model contains only given or learner-observed data. */
+export function mountPhysicsInvestigationStage(parent,model){
+ const root=new THREE.Group();root.name='physics-investigation';parent.add(root);const mats={wood:new THREE.MeshStandardMaterial({color:0x80583e,roughness:.9}),brass:new THREE.MeshStandardMaterial({color:0xc19b59,metalness:.25,roughness:.6}),paper:new THREE.MeshStandardMaterial({color:0xf1e5c6,roughness:.9}),dark:new THREE.MeshStandardMaterial({color:0x294e50,roughness:.8}),blue:new THREE.MeshStandardMaterial({color:0x83b8be,roughness:.7})};
+ const textures=[];const box=(x,y,z,w,h,d,material)=>{const mesh=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mats[material]);mesh.position.set(x,y,z);root.add(mesh);return mesh;};
+ box(0,.25,0,5.2,.16,2.5,'wood');box(0,.35,-1.1,5,.08,.08,'brass');const measured=model.observation?.status==='measured';
+ if(model.quantity==='length'){
+  const shown=Math.max(.2,Math.min(3.9,Number(model.targetLengthTenths)/10*.25));
+  const target=box(-1.6+shown/2,.46,.16,shown,.14,.70,'blue');target.userData.measuredTarget=true;box(-1.6+shown/2,.54,.16,Math.max(.12,shown-.08),.018,.58,'paper');box(-1.6+shown/2,.553,.16,Math.max(.06,Math.min(.14,shown*.2)),.01,.13,'brass');
+  if(model.instrument==='ruler'||model.instrument==='short'){
+   const length=model.instrument==='short'?.25:3.75;const start=model.placement==='edge'?-1.6:-1.0;box(start+length/2,.57,-.35,length,.06,.26,'paper');
+   for(let i=0;i<=Math.round(length/.025);i++)box(start+i*.025,.615,-.32,.006,.012,i%10===0?.18:i%5===0?.13:.07,'dark');box(start+.28,.70,-.55,.55,.14,.28,'dark');
+  }
+ }else {box(-.4,.42,0,3.5,.04,.8,'blue');for(const x of [-1.9,1.1]){box(x,.78,-.45,.06,.75,.06,'brass');box(x,.78,.45,.06,.75,.06,'brass');box(x,1.14,0,.06,.06,.95,'brass');}const bx=measured?.75:-1.5;box(bx,.55,0,.68,.17,.37,'wood');box(bx,.67,0,.35,.11,.23,'paper');box(bx,.86,0,.04,.40,.04,'brass');if(model.instrument==='timer'){box(1,.66,0,.75,.45,.5,'dark');box(1,.9,0,.55,.07,.30,'paper');}else if(model.instrument==='ruler'||model.instrument==='short'){box(1,.62,0,1.5,.07,.2,'paper');for(let i=0;i<=15;i++)box(.25+i*.1,.665,0,.01,.01,i%5===0?.16:.08,'dark');}}
+ if(measured&&typeof document!=='undefined'){const canvas=document.createElement('canvas');canvas.width=512;canvas.height=128;const ctx=canvas.getContext('2d');if(ctx){ctx.fillStyle='#deead1';ctx.fillRect(0,0,512,128);ctx.fillStyle='#183b39';ctx.font='bold 72px sans-serif';ctx.textAlign='center';ctx.fillText(`${(model.observation.valueTenths/10).toFixed(1)} ${model.observation.unit}`,256,88);const tex=new THREE.CanvasTexture(canvas);textures.push(tex);const material=new THREE.MeshBasicMaterial({map:tex});const screen=new THREE.Mesh(new THREE.PlaneGeometry(.48,.12),material);screen.rotation.x=-Math.PI/2;screen.position.set(model.quantity==='length'?-1.32:1,.79,model.quantity==='length'?-.55:0);root.add(screen);}}
+ return {advanceTime(){},snapshot(){return {kind:'physics-investigation',quantity:model.quantity,instrument:model.instrument??null,placement:model.placement??null,observed:measured,...(measured?{observation:{...model.observation}}:{})};},dispose(){root.traverse(o=>o.geometry?.dispose());Object.values(mats).forEach(m=>m.dispose());textures.forEach(t=>t.dispose());root.traverse(o=>{if(o.material&&!Object.values(mats).includes(o.material))o.material.dispose();});root.removeFromParent();}};
+}

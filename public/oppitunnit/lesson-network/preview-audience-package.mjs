@@ -1,0 +1,8 @@
+// Bounded development preview only. The final shared build/verify remains required.
+import fs from'node:fs';import path from'node:path';import{fileURLToPath}from'node:url';
+import{loadPackages,composePackage,digest}from'./content.mjs';import{parseFragment}from'./audience.mjs';
+const root=path.dirname(fileURLToPath(import.meta.url)),ids=process.argv.slice(2),selected=JSON.parse(fs.readFileSync(root+'/reference/inputs/mvp-scope-181.json')).selected_ids;
+if(!ids.length||ids.some(id=>!selected.includes(id)))throw Error('Supply only selected181 KC IDs');
+const rows=[];for(const[id,pkg]of loadPackages(root,ids,false,{onlySelected:true})){const file=root+'/site/presentations/'+id+'.html',old=fs.readFileSync(file,'utf8'),area=parseFragment(old).nodes.find(n=>n.attrs.id==='lesson-body');if(!area)throw Error('Build a full development site first');const html=old.slice(0,area.open)+composePackage(pkg,id,{audience:true})+old.slice(area.close);fs.writeFileSync(file,html);const dir=root+'/site/content/'+id;fs.mkdirSync(dir,{recursive:true});if(pkg.module)fs.writeFileSync(dir+'/'+pkg.metadata.module,pkg.module);for(const a of pkg.assets){const target=a.path.startsWith('shared/')?root+'/site/'+a.path:dir+'/'+a.path;fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,a.bytes);}rows.push({kc:id,contentRevision:pkg.metadata.contentRevision,bodySha256:digest(pkg.body),moduleSha256:pkg.module?digest(pkg.module):null,builtAudienceSha256:digest(html)});}
+for(const f of['shell.css','audience.js','lesson-flow.js','lesson-loader.js'])fs.copyFileSync(root+'/assets/'+f,root+'/site/assets/'+f);
+console.log(JSON.stringify({kind:'bounded development preview; not full build/verify/release evidence',rows},null,2));

@@ -1,0 +1,547 @@
+schema_version: 0.1.0
+kc_id: M-MEAS-00
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Mitattavien ominaisuuksien suora vertaaminen
+  subject: mathematics
+  grade_band: 1-2
+  mastery_role: atomic
+  node_kind: foundation
+  concept_path:
+  - Matematiikka
+  - Geometria ja mittaaminen
+  - Mittaamisen valmius
+  source_basis: pedagogically_derived
+  curriculum_refs:
+  - OPH-POPS2014-MATH-VL1-2-S3
+  prerequisite_snapshot:
+    hard: []
+    strong:
+    - M-TH-01
+    helpful: []
+teaching_model:
+  learning_goal: Oppilas osaa verrata kahta kohdetta suoraan yhden nimetyn mitattavan ominaisuuden suhteen ilman standardiyksikköä
+    ja perustella, miten vertailu tehdään reilusti.
+  learner_facing_goal: Osaan selvittää, kumpi kahdesta on esimerkiksi pidempi, kun vertaan niitä samalla tavalla.
+  success_evidence:
+  - Valitsee vertailtavan ominaisuuden tehtävänannon mukaisesti.
+  - Järjestää kohteet yhteiseen vertailuasetelmaan (esim. sama alkukohta pituudessa).
+  - Päättelee oikein suurempi/pienempi/yhtä suuri ilman yksikkölukua.
+  - Siirtää saman vertailuperiaatteen uuteen visuaaliseen tilanteeseen.
+  core_idea: Suora vertailu tarkoittaa kahden kohteen saman ominaisuuden vertaamista yhteisessä vertailuasetelmassa ennen
+    mittalukua tai standardiyksikköä.
+  boundaries:
+    in_scope:
+    - Suora pituusvertailu kohdistamalla tai asettamalla sama alkukohta.
+    - 'Saman ominaisuuden vertaaminen: pidempi/lyhyempi/yhtä pitkä.'
+    - Vertailutilanteen reiluuden arviointi.
+    out_of_scope:
+    - Standardiyksiköillä mittaaminen.
+    - Mittaluvun lukeminen viivaimesta.
+    - Yksikkömuunnokset.
+    - Epäsuora vertailu välillisen vertailukohteen avulla.
+  prerequisite_assumptions:
+  - kc_id: M-TH-01
+    expected_level: Strong support only; puuttuminen ei estä noodiin pääsyä.
+  conceptual_invariants:
+  - Vertailtavan ominaisuuden pitää olla sama molemmille kohteille.
+  - Pituusvertailussa kohteiden sijainti tai suunta ei muuta niiden pituutta.
+  - Reilu suora pituusvertailu edellyttää yhteistä vertailukohtaa, tyypillisesti samaa alkukohtaa.
+  - Suora vertailu ei vaadi lukua eikä standardiyksikköä.
+  likely_confusions:
+  - M-MEAS-00-MIS-START
+  - M-MEAS-00-MIS-VISUAL-EXTENT
+  - M-MEAS-00-MIS-ATTRIBUTE
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+  - DIAGNOSTIC
+  - ORIENT
+  - PREDICT
+  - EXPLORE
+  - EXPLAIN
+  - GUIDED_PRACTICE
+  - INDEPENDENT_PRACTICE
+  - TRANSFER_CHECK
+  - MASTERY_GATE
+  fast_path:
+    enabled: true
+    diagnostic_requirement: Kaksi itsenäistä diagnostista tehtäväpohjaa ilman vihjettä, joista toinen sisältää harhaanjohtavan
+      sijoittelun.
+    transfer_confirmation: required
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Selvitä, osaako oppilas jo suoran vertailun periaatteen eikä vain päättele kuvasta silmämääräisesti.
+      blocks:
+      - type: question
+        purpose: Kaksi erilaista vertailuasetelmaa, joista toisessa alkukohdat eivät ole samat.
+        content:
+          item_refs:
+          - M-MEAS-00-DIAG-ALIGN
+          - M-MEAS-00-DIAG-FAIR
+    ORIENT:
+      purpose: Ankkuroi ajatus arkiseen vertailuun ilman mittalukua.
+      blocks:
+      - type: explanatory_text
+        content: Loikka löytää kaksi oksaa sillan rakentamiseen. Pelkkä katsominen voi johtaa harhaan, jos oksat ovat eri
+          kohdissa. Miten vertailu tehdään niin, että tiedämme varmasti kumpi on pidempi?
+    PREDICT:
+      purpose: Aktivoi oppilaan oma vertailustrategia ennen opastusta.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - M-MEAS-00-PREDICT-METHOD
+    EXPLORE:
+      purpose: Anna oppilaan muodostaa vertailuasetelma itse.
+      blocks:
+      - type: manipulative
+        content:
+          capability: draggable_objects
+          task: Raahaa kaksi nauhaa niin, että niiden pituuksia voi verrata reilusti.
+          success_condition: common_start_aligned
+    EXPLAIN:
+      purpose: Nimeä havaittu invariantti oppilaan toiminnan jälkeen.
+      blocks:
+      - type: explanatory_text
+        content: Kun pituuksia verrataan suoraan, asetetaan päät samaan alkukohtaan. Silloin kauemmaksi ulottuva on pidempi.
+          Paikka kuvassa ei muuta esineen pituutta.
+      - type: comparison
+        content:
+          cases:
+          - eri alkukohdat → ei vielä luotettava vertailu
+          - sama alkukohta → suora vertailu mahdollinen
+    GUIDED_PRACTICE:
+      purpose: Harjoittele vertailuasetelman tekemistä kevyellä tuella.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - M-MEAS-00-GUIDED-ALIGN
+    INDEPENDENT_PRACTICE:
+      purpose: Kerää itsenäistä näyttöä eri sijoitteluilla ja suunnilla.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - M-MEAS-00-INDEP-COMPARE
+          - M-MEAS-00-INDEP-SAME
+          - M-MEAS-00-INDEP-ATTRIBUTE
+    TRANSFER_CHECK:
+      purpose: Varmista, että oppilas käyttää periaatetta uudessa visuaalisessa tilanteessa eikä opettele yhtä kuva-asettelua.
+      blocks:
+      - type: question
+        content:
+          item_refs:
+          - M-MEAS-00-TRANSFER-ROPE
+    MASTERY_GATE:
+      purpose: Päätä KC-kohtainen evidenssi; vihjettä käyttänyt onnistuminen ei yksin riitä.
+      blocks:
+      - type: reflection
+        content: Mikä tekee pituusvertailusta reilun, vaikka esineet olisivat kuvassa eri kohdissa?
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+    fast_path_confirmation_tags: [misleading_placement]
+    execution_policy: Fast path skips teaching and guided work; independent minima and coverage remain required.
+    pass_rule: 2/2 independently correct; at least one misleading-placement case.
+  independent:
+    minimum_successes: 3
+    template_diversity: 2
+    max_supported_attempts_counted: 0
+    required_tags: [attribute_identified, fair_alignment, misleading_placement, length_invariant, length_equal, length_unequal]
+  transfer:
+    required: true
+    minimum_successes: 1
+    novel_context_required: true
+  delayed:
+    required: true
+    minimum_successes: 2
+    minimum_delay_hours: 24
+    reuse_templates: [M-MEAS-00-INDEP-COMPARE]
+    required_tags: [fair_alignment, misleading_placement, length_equal, length_unequal]
+    required_contexts: []
+    earliest_delay_policy: Schedule after at least one intervening KC or next session; exact interval remains scheduler-configured.
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+  - misconception_id: M-MEAS-00-MIS-START
+    evidence_tags: [misleading_placement, fair_alignment]
+    rule: At least one later independent item with unequal starting positions must be correct without alignment hint.
+  - misconception_id: M-MEAS-00-MIS-ATTRIBUTE
+    evidence_tags: [attribute_identified]
+    rule: At least one item requiring explicit identification of the compared attribute must be correct.
+  - misconception_id: M-MEAS-00-MIS-VISUAL-EXTENT
+    evidence_tags: [length_invariant, fair_alignment]
+    rule: A later unaided comparison after translation/rotation must use invariant length and a fair configuration.
+items:
+- id: M-MEAS-00-DIAG-ALIGN
+  kc_ids:
+  - M-MEAS-00
+  purpose: diagnostic
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: generated_visual_choice
+    instruction: Kumpi nauha on pidempi? Valitse vasta, kun olet verrannut pituuksia reilusti.
+    scene_rule: Two bars have different x starts; endpoint order is counterbalanced against true length.
+  truth_model:
+    kind: compare_scalar
+    field: length
+    operators:
+      longer: '>'
+      shorter: <
+      same: ==
+  misconception_rules:
+  - misconception_id: M-MEAS-00-MIS-START
+    detect: selected_by_screen_endpoint
+  hints:
+  - level: 1
+    text: Katso, mistä kohdasta nauhat alkavat.
+  invariants:
+  - True object length is independent of pose.
+  - At least 50% of generated cases must visually favor the wrong answer before alignment.
+  provenance:
+  - source_id: PROJECT-MEASUREMENT-INVARIANTS-v0.1
+    claim: Generated item follows direct-comparison invariants.
+    status: needs_source
+  parameter_model:
+    object_lengths:
+      integer_range:
+      - 4
+      - 10
+      require_difference_min: 2
+    poses:
+      different_starts: true
+      counterbalance_screen_endpoint: true
+- id: M-MEAS-00-DIAG-FAIR
+  kc_ids:
+  - M-MEAS-00
+  purpose: diagnostic
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: procedure_choice
+    instruction: Mikä tapa näyttää varmasti, kumpi kahdesta suorasta tikusta on pidempi?
+    options_semantics:
+    - align_one_end_then_compare_other_end
+    - compare_rightmost_end_only
+    - compare_color_or_thickness
+  truth_model:
+    kind: semantic_option
+    correct: align_one_end_then_compare_other_end
+  misconception_rules: []
+  hints: []
+  invariants: []
+  provenance: []
+- id: M-MEAS-00-PREDICT-METHOD
+  kc_ids:
+  - M-MEAS-00
+  purpose: guided
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: strategy_prediction
+    instruction: Tikkujen päät ovat eri kohdissa. Mitä tekisit ensin?
+    options_semantics:
+    - align_start
+    - count_background_squares_without_alignment
+    - choose_visually
+  truth_model:
+    kind: semantic_option
+    correct: align_start
+  misconception_rules: []
+  hints: []
+  invariants: []
+  provenance: []
+- id: M-MEAS-00-GUIDED-ALIGN
+  kc_ids:
+  - M-MEAS-00
+  purpose: guided
+  response_type: interaction_state
+  difficulty_band: support
+  prompt_model:
+    kind: drag_to_state
+    instruction: Kohdista nauhojen merkityt alkupäät samaan kohtaan, jotta niitä voi verrata suoraan.
+  truth_model:
+    kind: interaction_predicate
+    predicate: abs(start_a-start_b)<=alignment_tolerance
+  misconception_rules: []
+  hints:
+  - level: 1
+    text: Minkä kohdan nauhoista pitäisi olla samassa kohdassa?
+  - level: 2
+    text: Kokeile kohdistaa alkupäät.
+  invariants:
+  - Changing pose must not change object length.
+  - Success depends on alignment, not selecting the longer object.
+  provenance: []
+  parameter_model:
+    lengths:
+      integer_range:
+      - 5
+      - 9
+    initial_poses:
+      must_be_misaligned: true
+- id: M-MEAS-00-INDEP-COMPARE
+  kc_ids:
+  - M-MEAS-00
+  purpose: independent
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: generated_visual_choice
+    instruction: Vertaa nauhojen pituuksia. Kumpi on pidempi vai ovatko ne yhtä pitkät?
+    scene_rule: Mixed equal and unequal lengths with translated or rotated placement; learner may manipulate before answer.
+  truth_model:
+    kind: compare_scalar
+    field: length
+    operators:
+      A: '>'
+      B: <
+      same: ==
+  misconception_rules:
+  - misconception_id: M-MEAS-00-MIS-VISUAL-EXTENT
+    detect: screen_extent_heuristic
+  hints: []
+  invariants:
+  - Answer must depend only on model length.
+  - Both comparison templates vary A longer, B longer and equal; wording and pose alone do not determine the relation.
+  provenance: []
+  parameter_model:
+    lengths:
+      integer_range:
+      - 4
+      - 12
+    pose_randomization:
+      translate: true
+      rotate_degrees:
+      - 0
+      - 180
+- id: M-MEAS-00-INDEP-SAME
+  kc_ids:
+  - M-MEAS-00
+  purpose: independent
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: generated_visual_choice
+    instruction: Vertaa nauhojen pituuksia. Kumpi on pidempi vai ovatko ne yhtä pitkät?
+    scene_rule: Mixed equal and unequal lengths with translated or rotated placement; learner may manipulate before answer.
+  truth_model:
+    kind: compare_scalar
+    field: length
+    operators:
+      A: '>'
+      B: <
+      same: ==
+  misconception_rules: []
+  hints: []
+  invariants:
+  - Answer must depend only on model length.
+  - Both comparison templates vary A longer, B longer and equal; wording and pose alone do not determine the relation.
+  provenance: []
+  parameter_model:
+    lengths:
+      integer_range:
+      - 4
+      - 12
+    pose_randomization:
+      translate: true
+      rotate_degrees:
+      - 0
+      - 180
+- id: M-MEAS-00-INDEP-ATTRIBUTE
+  kc_ids: [M-MEAS-00]
+  purpose: independent
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: procedure_choice
+    instruction: Tehtävässä kysytään, kumpi nauha on pidempi. Mitä ominaisuutta sinun pitää verrata?
+    options_semantics: [length, color, thickness]
+  truth_model:
+    kind: semantic_option
+    correct: length
+  misconception_rules:
+  - misconception_id: M-MEAS-00-MIS-ATTRIBUTE
+    detect: other_attribute
+  hints: []
+  invariants:
+  - This explicitly identifies the named attribute without requiring a unit or numerical measurement.
+  provenance: []
+- id: M-MEAS-00-TRANSFER-ROPE
+  kc_ids:
+  - M-MEAS-00
+  purpose: transfer
+  response_type: choice
+  difficulty_band: challenge
+  prompt_model:
+    kind: novel_context
+    instruction: Kaksi yhtä väristä köyttä on asetettu mutkalle eri tavoin. Mikä tieto tarvitaan reiluun suoraan pituusvertailuun?
+    options_semantics:
+    - straighten_or_align_same_reference
+    - compare_visible_width
+    - compare_number_of_bends
+  truth_model:
+    kind: semantic_option
+    correct: straighten_or_align_same_reference
+  misconception_rules: []
+  hints: []
+  invariants:
+  - Transfer tests comparison principle, not knowledge of standard units.
+  provenance: []
+- id: M-MEAS-00-DELAYED-FAIRNESS
+  kc_ids:
+  - M-MEAS-00
+  purpose: delayed_review
+  response_type: choice
+  difficulty_band: core
+  prompt_model:
+    kind: delayed_novel_visual
+    instruction: Mikä auttaa vertaamaan näiden viivojen pituuksia suoraan?
+    option_labels:
+      no_common_reference: Asetetaan toiset päät samaan kohtaan.
+      compare_rightmost_end_only: Katsotaan vain oikeanpuoleisinta päätä.
+      compare_color_or_thickness: Katsotaan viivojen väriä ja paksuutta.
+    scene_rule: Different start points, close lengths.
+  truth_model:
+    kind: semantic_option
+    correct: no_common_reference
+  misconception_rules: []
+  hints: []
+  invariants:
+  - No explicit reminder of the common-start rule in prompt.
+  provenance: []
+misconceptions:
+- id: M-MEAS-00-MIS-START
+  description: Oppilas vertaa kuvassa pisimmälle oikealle ulottuvaa kohdetta huomioimatta eri alkukohtia.
+  evidence_patterns:
+  - kind: choice_pattern
+    when: Chooses object with farther endpoint despite shorter true length.
+  feedback_strategy:
+    conceptual_prompt: Voivatko eri kohdista alkavat esineet näyttää harhaanjohtavilta? Mitä voisit kohdistaa samaan kohtaan?
+    representation: Show movable common-start guide, but do not move the objects automatically.
+  repair_targets:
+  - M-MEAS-00
+  status: hypothesis
+- id: M-MEAS-00-MIS-VISUAL-EXTENT
+  description: Oppilas tulkitsee esineen sijainnin, kaarevuuden tai muun visuaalisen laajuuden pituudeksi ilman yhteistä vertailuasetelmaa.
+  evidence_patterns:
+  - kind: interaction_pattern
+    when: Answer follows screen extent rather than invariant object length.
+  feedback_strategy:
+    conceptual_prompt: Muuttuuko esineen pituus, jos sitä siirretään tai käännetään?
+    representation: Allow rotation/translation while preserving model length.
+  repair_targets:
+  - M-MEAS-00
+  status: hypothesis
+- id: M-MEAS-00-MIS-ATTRIBUTE
+  description: Oppilas vertaa väärää ominaisuutta, esimerkiksi esineen pinta-alaa tai korkeutta, vaikka tehtävä kysyy pituutta.
+  evidence_patterns:
+  - kind: choice_pattern
+    when: Response is consistent with another salient attribute.
+  feedback_strategy:
+    conceptual_prompt: Mitä ominaisuutta tehtävä pyytää vertaamaan?
+    representation: Highlight the named comparison dimension only after learner requests a hint.
+  repair_targets:
+  - M-MEAS-00
+  status: hypothesis
+differentiation:
+  support_variants:
+    step_chunking: 1) nimeä ominaisuus, 2) kohdista alkupäät, 3) vertaa loppupäitä.
+    hint_availability: Hint 1 asks what is compared; Hint 2 suggests same start; Hint 3 shows a removable alignment guide.
+    text_density: Use one instruction sentence per screen.
+    worked_example_depth: One animated alignment example may be shown after an unsuccessful independent attempt.
+    alternate_representation: Use real-photo-like objects or plain bars; semantic relation stays identical.
+    reduced_motion: Objects snap without animation; no reward motion required.
+  challenge_variants:
+    learner_prompt: 'Vertaa kahta reilua tapaa: voit siirtää vain toista esinettä tai molemmat samaan alkukohtaan. Miksi molemmat tavat voivat toimia myös esineitä käännettäessä?'
+    reduced_scaffolding: No alignment guide and no attribute highlight.
+    abstraction: Compare irregularly placed line segments with different orientations.
+    multi_step_reasoning: Ask which of three proposed comparison procedures is fair and why.
+    alternate_solution_compare: Compare 'move one object' versus 'move both to a common baseline' as equivalent valid strategies.
+    transfer_novelty: Use ropes/paths whose current screen position is deliberately misleading.
+    acceleration_probe: Two clean diagnostic cases plus novel transfer may complete the KC without teaching sequence.
+representations:
+- id: M-MEAS-00-REP-COMMON-START
+  type: diagram
+  purpose: Make common starting point perceptually explicit without encoding the answer.
+  domain_bindings:
+  - object_a.length
+  - object_b.length
+  - object_a.pose
+  - object_b.pose
+- id: M-MEAS-00-REP-MANIPULATIVE
+  type: draggable_manipulative
+  purpose: Let learner create the fair comparison configuration.
+  domain_bindings:
+  - object_a.pose
+  - object_b.pose
+  - common_start_aligned
+- id: M-MEAS-00-JOURNEY-v1
+  kind: learning_journey_v1
+  chapter: Rannan valmistelut
+  companion: Aava
+  capability: length_compare_v1
+  purpose: Aava etsii retkiviirille pidemmän nauhan. Verrataan nauhoja.
+  consequence: Retkiviirin nauhat on vertailtu yhdessä.
+  instruction: Selvitä, kumpi nauha on pidempi.
+  model:
+    kind: length_compare_v1
+    lengthA: 6
+    lengthB: 8
+    startA: 2
+    startB: 0
+  alignment:
+    kind: reference_placement_v1
+    operations: [common_start, common_end, common_center, consecutive]
+  retrieval:
+    kind: conservative_situation_v1
+- id: v7-evidence-compatibility
+  kind: v7_evidence_compatibility_v1
+  sourceCommit: 0b2a791918f472cf8ba61eede095a6a578adeab6
+  sourceContentHash: 4f969c66bc4efea44d010471214aca97f9d7caffcca20a78ac2ba305c01971c1
+  allowedChanges: [additive_journey, lesson_wording]
+simulation_specs: []
+requires_capabilities:
+- rich_text
+- single_choice
+- draggable_objects
+- diagram
+- hint_ladder
+- reduced_motion_variant
+provenance:
+  curriculum:
+  - source_id: OPH-POPS-CURRENT
+    claim: National curriculum is the normative source for mathematics; the catalog maps this KC to VL1–2 mathematics S3.
+      Exact ePerusteet subsection locator must be resolved before pilot.
+    status: needs_source
+  - source_id: OPH-POPS-CURRENT
+    claim: The decomposition of direct comparison as a separate foundation KC is a Sammakko pedagogical derivation rather
+      than a verbatim curriculum requirement.
+    status: hypothesis
+  pedagogy:
+  - source_id: CAST-UDL-3
+    claim: Support variants should offer alternative representations and reduced barriers while preserving the learning goal.
+    status: verified
+  - source_id: ATKINSON-RENKL-MERRILL-2003
+    claim: If an example is needed after difficulty, support should fade toward independent performance rather than remain
+      permanent.
+    status: verified
+  domain:
+  - source_id: PROJECT-MEASUREMENT-INVARIANTS-v0.1
+    claim: Direct length comparison is modeled by invariant object length plus a fair common-reference configuration; this
+      project formalization requires subject review before pilot.
+    status: needs_source
+validation:
+  schema: pass
+  graph_refs: pass
+  domain_truth: pending
+  item_invariants: pass
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: designed

@@ -1,0 +1,198 @@
+SAMMAKKO — PHASE 1: THE 690-KC HTML5 LESSON NETWORK FOUNDATION
+
+Task owner: Sol 6.1
+Handover date: 28 October 2026
+Current phase: SCAFFOLD ONLY
+Required outcome: a complete, linked, reproducibly generated HTML5 page foundation for every one of the 690 canonical KCs, prepared for teacher presentation and later game links.
+
+USER DECISION THAT SUPERSEDES EARLIER COORDINATION NOTES
+
+The user has changed the immediate sequence. Earlier notes that said to continue authoring the full 690 lesson materials or preliminary microgames are superseded for this assignment.
+
+Complete the lesson-network foundation now. Do not begin comparative pedagogical web research, new lesson explanations, worked examples, questions, answer keys, feedback, KC-specific animations/simulations or microgames in this phase. Do not automatically enter Phase 2 after the scaffold is finished. Content authoring starts only under a separate later handover naming the reviewed Lite baseline and the next content-production task. The existing Lite181 review is useful evidence, but is not itself an instruction to start that content run.
+
+You may consult technical documentation needed to implement the foundation. The deferred research is curriculum/lesson-content research. Existing Sol drafts and the 52 annotations must be preserved, with their provenance and actual status; do not silently import them as approved lessons or overwrite them with empty scaffolds.
+
+Interpretation of the user's navigation wording
+
+The user wrote children at both the top and the bottom. This handover uses the following disclosed interpretation: TOP = the current KC's direct prerequisite/support neighbours; BOTTOM = the KCs that directly depend on or are supported by this KC. This is the dependency/support network, not the taxonomy or the integration component tree. Implement the regions separately so a later terminology correction does not require rewriting content.
+
+1. INPUTS AND SOURCE OF TRUTH
+
+Read this prompt with PHASE_CONTROL.json, CONTRACT.json, RUNTIME_LINKS.json, ACCEPTANCE_CASES.json, GRAPH_FACTS.json and RUNTIME_BRIDGE_HANDOFF.txt. Reference copies of the canonical 690 graph, the current Lite181 scope and the current review findings are supplied under inputs/.
+
+The supplied canonical graph SHA-256 is:
+17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb
+
+Use all 690 unique IDs from that full graph. Do not expand the reduced Lite runtime graph to guess the other KCs. Keep the canonical graph unchanged, including unknown fields, source provenance, node roles, curriculum references, groups, relation types, strengths and rationales. Put generated website metadata in separate records.
+
+Inspect the existing repository conventions, AGENTS instructions and Sol formats first. Reuse compatible infrastructure and preserve existing authored work. Use an isolated branch/worktree where appropriate. If another local catalogue differs, record the difference; do not silently mix snapshots or rewrite the supplied canonical reference. The default target of this handover is the pinned 690 snapshot.
+
+2. CONCRETE PHASE-1 DELIVERABLE
+
+Generate exactly one real HTML5 document per canonical KC, for example:
+
+  dist/index.html
+  dist/lessons/M-NUM-01.html
+  dist/lessons/M-TIME-03.html
+  dist/lessons/<every other canonical KC-ID>.html
+  dist/assets/lesson-shell.css
+  dist/assets/lesson-shell.js
+  dist/data/lesson-manifest.json
+  dist/data/navigation.json
+  dist/data/runtime-links.json
+
+The exact repository source layout may follow existing conventions, but the output must include 690 separately addressable .html files. A single SPA route with 690 empty hash targets does not satisfy the user's per-KC .html requirement.
+
+Use structured records and one shared template/renderer. Do not maintain 690 hand-edited copies of the same navigation and UI. Essential headings, canonical identity, pending-content state and ordinary <a href> neighbour links must be present in the generated HTML. Core navigation must work without JavaScript. Shared assets and URLs must also work when hosted beneath a path prefix rather than only at a domain root.
+
+Provide an index searchable/filterable by KC ID, Finnish title, subject, catalogue grade band, role and Lite181 membership. The linked pages and index are the required network. If an existing graph view is easy to reuse, expose the derived data to it; a new large graph-visualization project is not required to complete this phase.
+
+3. EXACT DIRECT-LINK SEMANTICS
+
+For a current node C:
+
+  topNeighbours(C) = C.relations, linking to each relation.id
+  bottomNeighbours(C) = every T whose T.relations contains id == C.id
+
+For a normalized edge, use prerequisite/support P -> dependent C. In the source JSON, that edge is stored inside C and names P.
+
+Use Finnish headings such as:
+
+  TOP:    Tätä aihetta tukevat aiheet
+  BOTTOM: Aiheet, joita tämä tukee
+
+Preserve relation type, strength and rationale in both directions. Group/label prerequisite, representation support, process support and safety relations appropriately. Required, strong and helpful are different. A strong relation is not automatically a mandatory access gate. Include cross-subject links even when the index has an active subject filter. Show direct neighbours, not an unlabelled transitive closure.
+
+Preserve prerequisite_groups separately:
+
+- all_of means all members of that group;
+- any_of means at least one member of that group;
+- different groups are combined with AND.
+
+Do not reconstruct this logic from individually required edge labels: members of an OR group also have required relation records. Display the grouping without implementing learner readiness locks.
+
+Required fixtures:
+
+  M-ALG-08:
+  M-ALG-07 AND (M-ADD-SUB-01 OR M-MULDIV-01)
+
+  M-SCALE-02:
+  M-SCALE-01 AND (M-MUL-01 OR M-DIV-01)
+
+  CHEM79-CHANGE-PHYS:
+  ENV-CHEM-STATECHANGE-01 OR ENV-CHEM-BURN-01
+
+The full support network contains a legitimate two-node cycle:
+
+  CHEM79-ELEMENT -> CHEM79-ATOM-01 : prerequisite / required
+  CHEM79-ATOM-01 -> CHEM79-ELEMENT : prerequisite / strong
+
+Keep both. The same neighbour can correctly appear in the top and bottom regions under different directed relationships. Do not delete links to force every relation into a DAG. Generation does not depend on one topological order of the full network; recursive traversal must be cycle-safe. Report the required-prerequisite-only graph separately from the full support graph.
+
+Keep taxonomy (concept_path, topic_area, parent_concept) and integration/split metadata separate from dependency navigation. For example, M-COORD-01 integrates M-COORD-READ-Q1 and M-COORD-PLOT-Q1: they are component children in the split structure but upstream prerequisites in the dependency network.
+
+Preserve dynamic_prerequisite_rule as an explicit unresolved rule for later activity binding. Do not turn a dynamic rule into links to all 690 KCs. Do not equate no recorded static relation with no prior knowledge. Use honest empty states, such as “Ei kirjattuja suoria tukiyhteyksiä” and “Ei kirjattuja suoria jatkoaiheita”.
+
+4. PAGE SHELL AND TEACHER WORKFLOW
+
+Each page should contain:
+
+A. Stable KC ID, canonical Finnish title and optional catalogue subtitle/grade/subject.
+B. The top direct-neighbour navigation and correctly grouped prerequisite information.
+C. A visually clear lesson-body region, explicitly labelled “Oppituntisisältö valmistellaan seuraavassa vaiheessa”. In this phase the new authored lesson body is null/absent.
+D. Teacher/presentation controls and clearly distinct copy actions for the lesson-page URL and the two possible game URLs.
+E. The bottom direct-dependent navigation.
+F. A teacher-only details panel for provenance, roles, integration components, source annotations and pending review/integration status.
+
+Implement a teacher/planning mode and a clean presentation layout using the same page identity and data. Keep detailed engineering metadata in teacher details, not scattered through the presentation surface. The draft/pending-content label remains visible whenever the content is not approved. Opening or presenting a page is not a learner completion or mastery event.
+
+Reserve structured slots for later content: bounded target, prerequisite support, initial experience/demonstration, explanation, worked examples, guided practice, independent check, transfer, recall and teacher notes. These are empty schema slots, not invitations to fill each page with generic instructional filler now. Preserve distinctions among atomic, process, integration, operational and placeholder nodes.
+
+5. GAME LINKS: USE REAL CONTRACTS, NOT GUESSED URLS
+
+Implement the network's own page links now. Keep game routing in a separate configurable adapter/manifest, joined by canonical kcId. Lesson content must not hard-code a deployment address.
+
+Source findings from the supplied builds:
+
+- Lite181 has no shareable KC URL route. Its adult view calls open(id, ...) in memory. Copying the address bar does not reproduce the selected KC. #aikuiselle, #alueet and #paja are not KC deep links.
+- The supplied full Sammakko supports BASE/#journey/<KC-ID> on a fresh application load, provided the ID is in that build's compiled registry. It does not have general same-document hash-change routing. Open a fresh document/tab for this adapter.
+- BASE/?engineering=1#<KC-ID> selects the engineering menu entry; it is not the direct game-launch route.
+- Canonical catalogue membership does not prove runtime availability. The full runtime availability must come from its actual compiled index. No live base URL or live endpoint was verified for this handover.
+
+The resolver must return either a valid link with a documented availability state or a specific unavailable reason. Keep these separate: route syntax, base URL configuration, KC implementation availability, endpoint verification and pedagogical/release review.
+
+Initially the Lite adapter is pending a runtime bridge. The full adapter may declare its source-backed journey-hash contract but still needs a configured deployment and real runtime index. Unknown availability must not become 690 playable links. Outside the Lite181 subset, say that the KC is outside the current Lite scope. Within the subset, membership still does not prove that a direct route works.
+
+Provide “Kopioi oppituntilinkki” and “Kopioi KC-tunnus” immediately. “Avaa Lite-peli”, “Kopioi Lite-pelilinkki”, “Avaa Sammakossa” and “Kopioi Sammakko-pelilinkki” must reflect the resolver's real status. Never copy an empty URL, fake placeholder or guessed #kc=... route as a working game link. A known unverified URL can be exposed in a clearly labelled developer test action, not as a verified classroom link.
+
+Track deployment scope and student reachability separately from local route correctness. A localhost, loopback or file: URL may be copied as an explicitly labelled local preview; do not label it shareable with pupils on other devices. This applies to lesson URLs as well as game URLs. A classroom-ready action requires a configured deployment reachable by its intended audience. If deployment is not configured, keep sharing readiness pending. No public deployment or pupil test is required to complete the local Phase-1 foundation.
+
+Supply the teacher-view integration manifest/contract so an existing Sammakko teacher view can later resolve KC -> HTML lesson -> playable game route. In this assignment, implement the network's teacher surface and adapter boundary. Record the missing Lite bridge as a separate runtime handoff; do not expand into changing Lite's game/evidence logic. The bridge checklist is in RUNTIME_BRIDGE_HANDOFF.txt.
+
+Links select a KC. They do not reproduce a particular random item, transfer a learner profile, override prerequisites, or award evidence. Keep teacher inspection state and learner history out of shareable URLs.
+
+6. LITE181 ALIGNMENT AND THE LATER CONTENT HANDOVER
+
+Mark the exact 181 IDs from inputs/mvp-scope-181.json. Store the referenced Lite build/review identity and pending alignment status. Keep this different from canonical curriculum metadata and scaffold readiness.
+
+Use selected_ids as the exact subset membership and recompute derived counts. The scope file retains some historical 177-expansion summary fields; do not use those older aggregate fields to infer current membership or mutate the reference copy.
+
+For these 181 KCs, the later HTML lesson must support the same bounded learning goal, concepts, representations and relevant task families as the reviewed Lite material. Use the designated corrected baseline from the later handover. Do not replicate known bugs merely to match an old implementation. Conversely, do not create a detached textbook lesson whose prerequisites and demands do not match the games pupils are sent to play.
+
+Preserve existing Sol drafts/annotations as referenced source material with their original statuses. The current 52 annotations are not automatically approved HTML lesson bodies. Freeze neither the old “eight task types” note nor any stale adapter summary as the final runtime contract.
+
+A later content handover should identify the accepted Lite source/build hash, lesson/task revisions, scoped IDs, relevant task-family contracts, resolved findings and accepted remaining limits. Current phase status stays scaffold-only until that handover explicitly authorizes content generation.
+
+7. PREPARE FOR RESEARCH, VISUALS AND SIMULATIONS WITHOUT AUTHORING THEM
+
+Reserve a research record for each future lesson/family: source URL/title, author/organization, publication/access date, exact concept/treatment compared, age/prior-knowledge context, strengths/limitations, adaptation decision, citations and asset-license/attribution information. Separate canonical catalogue provenance from pedagogical research provenance. Do not invent references or treat a KC title as evidence that its teaching method was researched.
+
+Reserve family contracts for learner action, assumed KCs, facts supplied before response, co-taught KCs, demonstrated outcome, number/operation/representation domains, equivalence rules, help and replay semantics, optional support and evidence limits. Leave unresolved fields explicitly unresolved; an empty list must not silently certify that a future activity has no prerequisites.
+
+Reserve renderer interfaces for HTML/SVG, Canvas2D, animation and optional Three.js/WebGL. Shared assets and lifecycle interfaces should support load, mount, pause, resume, reset and dispose. Load heavy renderers only when a future lesson needs them. Do not install a per-page copy of Three.js or create 690 invented simulations now.
+
+In Phase 2, comparative research should inform original, age- and prior-knowledge-appropriate explanations and visuals, with specific adoption/rejection rationale. Use multiple suitable treatments where available; document gaps rather than manufacture citations. Source reuse across a concept family is allowed, but every KC needs an explicit relevant binding. Use 3D when spatial reasoning benefits, and simpler graphical forms when they communicate the concept better. “Pedagogically optimal” is a quality objective to test, not a proven label to apply automatically.
+
+Those are future requirements only. New pedagogical research, lesson content and simulation authoring remain disabled in this phase.
+
+8. AUTONOMOUS, RESUMABLE PER-KC LOOP
+
+Build the template and schema, validate the representative fixtures, then continue through ALL 690 KCs in bounded batches without seeking approval per KC or stopping after a demo set.
+
+For each KC:
+
+  read pinned canonical record
+  -> derive direct forward/reverse navigation
+  -> bind exact Lite subset membership and existing-source references
+  -> create/merge the separate scaffold record without overwriting protected drafts
+  -> generate its .html document using the shared renderer
+  -> validate identity, roles, groups, links and pending-content state
+  -> atomically save the output and verified checkpoint
+
+Persist checkpoints containing canonical input hash, scaffold schema/template revision, relevant source-reference hash, output hash, validation result and any blocker. Resume only work whose inputs changed or whose validation is incomplete. With unchanged inputs, rerunning the generator must not change page identities or timestamps/content needlessly.
+
+Use separate state dimensions: scaffold generation/validation, existing-draft references, new research, new instructional content, content review, human review, Lite alignment and runtime-link verification. Do not use one ambiguous done flag. “690 scaffolds verified” must never be rendered as “690 lessons approved”. Preserve existing research/draft statuses without pretending this phase performed that work.
+
+If parallel workers are useful, one owner manages shared schema/templates and disjoint batches have one writer each. Consolidate indexes deterministically. Fix common template failures once before continuing. Checkpoint failed KCs honestly; do not loop indefinitely or count a failed page as complete because a file exists. Complete unaffected work and report any genuine input blockers precisely.
+
+9. VALIDATION AND COMPLETION
+
+Verify the entire generated set, not just the sample pages. The attached acceptance cases include:
+
+- exactly 690 unique canonical .html pages and zero missing/extra KC identities;
+- forward and reverse navigation matching all 1,287 typed relations, including 127 cross-subject records;
+- preserved 599 prerequisite groups, all 12 OR groups and both mixed multi-group examples;
+- all 18 explicit dynamic rules preserved without invented edges;
+- the chemical support cycle, integration direction, safety relation, foundation-with-support, placeholder and intentional empty states;
+- exact 181/509 Lite subset split;
+- no false mastery, content-readiness or playable-game claims;
+- honest unresolved link adapters and correct fresh-document URL construction;
+- deterministic second build, safe resume and protection of existing authored work;
+- ordinary browser navigation, copying, reload and responsive teacher/presentation layouts under a host path prefix.
+
+Use meaningful automated data/link checks and a small real-browser representative check. Test the known graph semantics and state boundaries, rather than only snapshotting the generator's own output. Technical fixture text is allowed; do not create curriculum examples to fill the browser test.
+
+Deliver the source, generator, structured records, 690-page static output, shared assets, exact commands to build/check/serve, checkpoint/coverage results and a short handover report. The report must distinguish completed scaffold work, unsupported game integrations, preserved old drafts and deferred research/content. A reviewable local build is sufficient for this phase; follow existing user authorization for any repository publication, rather than inventing a deployment requirement.
+
+Stop after Phase 1 and report the foundation ready for the separate content handover. Do not start the research/content loop, implement the full learner model or produce child/teacher feedback claims as part of scaffold completion.

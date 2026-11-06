@@ -1,0 +1,88 @@
+{
+  "kind": "initial_route_contracts_not_live_endpoint_configuration",
+  "version": 1,
+  "networkLessonRoute": {
+    "pathTemplate": "lessons/{encodedCanonicalKCId}.html",
+    "to_be_implemented_in_phase1": true,
+    "baseUrl": null,
+    "deploymentScope": "unconfigured",
+    "studentReachability": "unverified",
+    "localPreviewCopy": "allowed_with_explicit_local_label"
+  },
+  "adapters": {
+    "lite": {
+      "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+      "baseUrl": null,
+      "routeKind": "none",
+      "routeSyntaxState": "unsupported_in_reviewed_build",
+      "endpointVerification": "not_configured",
+      "scopeIdsReference": "inputs/mvp-scope-181.json#selected_ids",
+      "runtimeAvailability": {
+        "state": "not_loaded_for_a_direct_route",
+        "ids": null
+      },
+      "reason": "The reviewed runtime opens KCs in memory; no shareable KC URL is implemented.",
+      "nextAction": "Separate runtime bridge",
+      "deploymentScope": "unconfigured",
+      "studentReachability": "unverified"
+    },
+    "sammakko": {
+      "referenceBuild": "d547e9ebfbd8ca1737abe40be34e9ace53ea773e",
+      "baseUrl": null,
+      "routeKind": "journey_hash",
+      "hashTemplate": "#journey/{encodedCanonicalKCId}",
+      "routeSyntaxState": "source_verified_in_supplied_baseline",
+      "requiresFreshDocument": true,
+      "endpointVerification": "not_configured",
+      "runtimeAvailability": {
+        "state": "compiled_index_not_materialized_in_reviewed_checkout",
+        "ids": null,
+        "requiredSource": "actual build compiled/index.json kcIds plus supported content packs"
+      },
+      "provenance": "apps/web/adventure.ts startup route and packages/content/loader.ts membership validation",
+      "engineeringModeIsNotDirectLaunch": true,
+      "deploymentScope": "unconfigured",
+      "studentReachability": "unverified"
+    }
+  },
+  "resolver_results": [
+    "ready",
+    "base_url_missing",
+    "route_unsupported",
+    "runtime_index_missing",
+    "kc_not_implemented",
+    "outside_current_lite_scope",
+    "endpoint_unverified",
+    "local_preview_only",
+    "student_reachability_unverified"
+  ],
+  "ready_requires": [
+    "canonical identity is valid",
+    "supported route syntax",
+    "configured deployment base",
+    "ID available in the selected build",
+    "endpoint verified for the claimed route/build",
+    "deployment reachable by the intended pupil audience, not merely by the developer"
+  ],
+  "unverified_routes_may_be_developer_tests": true,
+  "copy_working_classroom_link_when_unresolved": false,
+  "game_link_is_not": [
+    "HTML lesson link",
+    "particular random item link",
+    "learner profile transfer",
+    "mastery grant",
+    "prerequisite bypass"
+  ],
+  "fresh_document": {
+    "linkTarget": "new document/tab",
+    "noopener": true
+  },
+  "verification_note": "No live endpoint was verified while preparing this assignment.",
+  "deployment_scopes": [
+    "unconfigured",
+    "local_preview",
+    "classroom_network",
+    "public"
+  ],
+  "local_preview_is_classroom_ready": false
+}

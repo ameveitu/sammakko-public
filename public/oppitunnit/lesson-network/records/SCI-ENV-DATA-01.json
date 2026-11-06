@@ -1,0 +1,595 @@
+{
+  "kcId": "SCI-ENV-DATA-01",
+  "pagePath": "lessons/SCI-ENV-DATA-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "SCI-ENV-DATA-01",
+  "canonicalNode": {
+    "id": "SCI-ENV-DATA-01",
+    "subject": "science",
+    "grade_band": "3-6",
+    "topic_area": "Tutkimisen taidot",
+    "parent_concept": "Aineisto",
+    "title": "Mittausten ja havaintojen kokoaminen aineistoksi",
+    "short_description": "Mittausten ja havaintojen kokoaminen aineistoksi",
+    "node_kind": "representation",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "ENV36-T4-T18"
+    ],
+    "relations": [
+      {
+        "id": "SCI-ENV-RECORD-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "SCI-ENV-RECORD-01 on ydinesitieto tälle osaamiskohteelle."
+      },
+      {
+        "id": "SCI-ENV-MEAS-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "SCI-ENV-MEAS-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "SCI-ENV-RECORD-01"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "status": "candidate",
+    "entry_role": "none",
+    "mastery_role": "process",
+    "concept_path": [
+      "Ympäristöoppi / luonnontieteellinen perusta",
+      "Tutkimisen taidot",
+      "Aineisto"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "SCI-ENV-RECORD-01",
+      "targetKCId": "SCI-ENV-DATA-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "SCI-ENV-RECORD-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "SCI-ENV-MEAS-01",
+      "targetKCId": "SCI-ENV-DATA-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "SCI-ENV-MEAS-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "SCI-ENV-DATA-01",
+      "targetKCId": "SCI-ENV-CONCL-01",
+      "relationType": "representation_support",
+      "strength": "strong",
+      "rationale": "SCI-ENV-DATA-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "SCI-ENV-DATA-01",
+      "targetKCId": "SCI-ENV-EVAL-01",
+      "relationType": "representation_support",
+      "strength": "strong",
+      "rationale": "SCI-ENV-DATA-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "SCI-ENV-DATA-01",
+      "targetKCId": "SCI-ENV-MODEL-CREATE-01",
+      "relationType": "representation_support",
+      "strength": "strong",
+      "rationale": "SCI-ENV-DATA-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "SCI-ENV-DATA-01",
+      "targetKCId": "SCI-ENV-MODEL-REVISE-01",
+      "relationType": "representation_support",
+      "strength": "strong",
+      "rationale": "SCI-ENV-DATA-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "SCI-ENV-DATA-01",
+      "targetKCId": "PHY79-DATA-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "SCI-ENV-DATA-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "SCI-ENV-DATA-01",
+      "targetKCId": "CHEM79-DATA-COLLECT",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "SCI-ENV-DATA-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "SCI-ENV-DATA-01",
+      "targetKCId": "CHEM79-DATA-PRESENT",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "SCI-ENV-DATA-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "SCI-ENV-RECORD-01"
+      ],
+      "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/SCI-ENV-DATA-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "OPH — Perusopetuksen opetussuunnitelman perusteet2014",
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "accessed": "2026-10-29",
+        "read": "Targeted2014 PDF passages: ENV1–2 S4 PDF132; ENV3–6 T4–T6 PDF239; physics7–9 S1 PDF389. Not a complete current-amendment review.",
+        "treatment": "Broad observation/inquiry/recording context. Exact frozen DAG/roles and project controls are not prescriptions.",
+        "usageRestrictions": "©OPH; paraphrase only, no source figures reused."
+      },
+      {
+        "title": "Department for Education — science programmes of study, lowerKS2 working scientifically",
+        "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study",
+        "accessed": "2026-10-29",
+        "read": "Public lowerKS2 working scientifically and guidance on questions, observations/measurement, gathering/recording/presenting data.",
+        "adopted": "Keep question, observation conditions and labelled records together; make a dataset from records.",
+        "rejected": "No invented learner observations or claim of independently designed/physically conducted inquiry.",
+        "limitations": "Foreign comparison for Finnish3–6; no independent trial analysis or efficacy proof.",
+        "usageRestrictions": "Crown/OGL3 except exceptions; paraphrase only, no figures/prose copied."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": {
+      "task_id": "KC-CLOSURE-SCI-ENV-DATA-01",
+      "kc_id": "SCI-ENV-DATA-01",
+      "production_order": 48,
+      "mastery_role": "process",
+      "node_kind": "representation",
+      "status": "PENDING_IMPLEMENTATION",
+      "content_file": null,
+      "prerequisites": [
+        {
+          "all_of": [
+            "SCI-ENV-RECORD-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "validation": {
+        "schema": "pending_autonomous_adventure_review",
+        "graph_refs": "pending_autonomous_adventure_review",
+        "domain_truth": "pending_autonomous_adventure_review",
+        "item_invariants": "pending_autonomous_adventure_review",
+        "pedagogy_review": "pending_autonomous_adventure_review",
+        "subject_review": "pending_autonomous_adventure_review",
+        "accessibility_review": "pending_autonomous_adventure_review",
+        "runtime_smoke": "pending_autonomous_adventure_review"
+      },
+      "historical_status": "DEFERRED_UNTIL_CALIBRATION",
+      "autonomous_evidence": [],
+      "historical_validation": {
+        "schema": "pending",
+        "graph_refs": "pending",
+        "domain_truth": "pending",
+        "item_invariants": "pending",
+        "pedagogy_review": "pending",
+        "subject_review": "pending",
+        "accessibility_review": "pending",
+        "runtime_smoke": "pending"
+      }
+    }
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+        "note": "Author checks completed; separate independent review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "SCI-ENV-DATA-01",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "worked.svg",
+        "sha256": "17cc092486700a7f703949b36f60c8224ff4806ffae8bd32da1ce4b2c127ac9e"
+      },
+      {
+        "path": "shared/loikka/map.png",
+        "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "bc809c8408678de636be1eb6b9fb3ca48e57d5546a826fbc846783ef8b548578"
+      }
+    ],
+    "research": [
+      {
+        "title": "OPH — Perusopetuksen opetussuunnitelman perusteet2014",
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "accessed": "2026-10-29",
+        "read": "Targeted2014 PDF passages: ENV1–2 S4 PDF132; ENV3–6 T4–T6 PDF239; physics7–9 S1 PDF389. Not a complete current-amendment review.",
+        "treatment": "Broad observation/inquiry/recording context. Exact frozen DAG/roles and project controls are not prescriptions.",
+        "usageRestrictions": "©OPH; paraphrase only, no source figures reused."
+      },
+      {
+        "title": "Department for Education — science programmes of study, lowerKS2 working scientifically",
+        "url": "https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study/national-curriculum-in-england-science-programmes-of-study",
+        "accessed": "2026-10-29",
+        "read": "Public lowerKS2 working scientifically and guidance on questions, observations/measurement, gathering/recording/presenting data.",
+        "adopted": "Keep question, observation conditions and labelled records together; make a dataset from records.",
+        "rejected": "No invented learner observations or claim of independently designed/physically conducted inquiry.",
+        "limitations": "Foreign comparison for Finnish3–6; no independent trial analysis or efficacy proof.",
+        "usageRestrictions": "Crown/OGL3 except exceptions; paraphrase only, no figures/prose copied."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+        "note": "Author checks completed; separate independent review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+        "note": "Author checks completed; separate independent review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+        "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+        "note": "No actual human/target-learner validation performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "SCI-ENV-DATA-01",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "inventory": "alignment.md",
+      "reconciliation": "alignment.md",
+      "sourceHashes": {
+        "src/content/science.ts": "b72eb983d570fda14794825e6f0210f4ef599fea039a431d817f32c25b7f9a58",
+        "src/content/physics.ts": "835ad69dd95f622adcb6050ab63d00a4477d64425545dd1b8af5a4892f978430",
+        "src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "actualFamilies": [
+        "fill",
+        "table",
+        "most",
+        "total",
+        "transfer"
+      ]
+    },
+    "planning": {
+      "gradeBand": "3-6",
+      "role": "process",
+      "canonical": {
+        "id": "SCI-ENV-DATA-01",
+        "subject": "science",
+        "grade_band": "3-6",
+        "topic_area": "Tutkimisen taidot",
+        "parent_concept": "Aineisto",
+        "title": "Mittausten ja havaintojen kokoaminen aineistoksi",
+        "short_description": "Mittausten ja havaintojen kokoaminen aineistoksi",
+        "node_kind": "representation",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "ENV36-T4-T18"
+        ],
+        "relations": [
+          {
+            "id": "SCI-ENV-RECORD-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "SCI-ENV-RECORD-01 on ydinesitieto tälle osaamiskohteelle."
+          },
+          {
+            "id": "SCI-ENV-MEAS-01",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "SCI-ENV-MEAS-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "SCI-ENV-RECORD-01"
+            ],
+            "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+          }
+        ],
+        "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "status": "candidate",
+        "entry_role": "none",
+        "mastery_role": "process",
+        "concept_path": [
+          "Ympäristöoppi / luonnontieteellinen perusta",
+          "Tutkimisen taidot",
+          "Aineisto"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "SCI-ENV-RECORD-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "strongSupport": [
+        {
+          "id": "SCI-ENV-MEAS-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "SCI-ENV-MEAS-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "teacherObjective": "Mittausten ja havaintojen kokoaminen aineistoksi",
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "sourceBasis": "direct_curriculum",
+      "childGoal": "Kokoan saman kysymyksen havainnot yhteen.",
+      "evidenceLimits": "Supported supplied model/record work, no independent physical proficiency, retention/mastery, human/learner or efficacy claim. No personal records.",
+      "curriculumVsDesign": "Frozen roles/grade/AND prerequisites retained. Primary comparisons support content, not project DAG/controls/thresholds. Historical2014 OPH passages targeted, no current normative completeness certification.",
+      "assetProvenance": "Original local domain diagrams; supplied shared raster PNG unchanged, not asserted hand-drawn or relicensed."
+    },
+    "extensions": {
+      "productionBatch": "B07",
+      "humanReview": "not_performed",
+      "independentReview": "pending_other_agent",
+      "researchNote": "research.md",
+      "alignmentNote": "alignment.md",
+      "simulationType": "contextual_record_dataset_construction",
+      "privacy": "Only transient local synthetic practice state. No storage/network/telemetry/personal observations.",
+      "feedback": "Both semantic input/change and explicit current visible answer; independent instructional support preserves valid verdicts."
+    },
+    "contentHash": "8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+    "contentRevision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+          "note": "Author checks completed; separate independent review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+          "note": "No human/learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+          "note": "No actual human/target-learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+          "note": "Author checks completed; separate independent review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@8dfe924aa419b3865e971df2191ad4ba61be37b80bdda68ed35888e6445224f0",
+          "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/science-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+        }
+      ]
+    }
+  },
+  "outputHash": "1ad9ce07e3b9a699ae39699a590f3494c5fdd86bda64e3063ddef20592c05540",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "efb4bbf2329a0b808bd453ff605e848334250da864b4ef198f2d3c974aabe046",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "1ad9ce07e3b9a699ae39699a590f3494c5fdd86bda64e3063ddef20592c05540",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

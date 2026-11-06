@@ -1,0 +1,680 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M79-INT-MUL",
+  "revision": 13,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "initial.svg",
+      "sha256": "1581aade58f73d7757340ad4ff779577ee44c14ae9c5c350136a6d35ab4c96da"
+    },
+    {
+      "path": "example1.svg",
+      "sha256": "2f03327f16bf794b3ec622a3599e21e2216587adefda91443126e6822549018d"
+    },
+    {
+      "path": "example2.svg",
+      "sha256": "7bfb827dc05b441db35d90ccb1ebb7bdfd95be0e787b5df3c1c373086ddd8d45"
+    },
+    {
+      "path": "transfer.svg",
+      "sha256": "e2968e2fb0145a6935196b061c99c06a0024e1d6c1930e46e2e9b22cca6c1e8f"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "6ff612f181239e19e28c27c74d21377b25b5d9a13e749574c8c639137e8a055b"
+    },
+    {
+      "path": "shared/loikka/map.png",
+      "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+    }
+  ],
+  "research": [
+    {
+      "title": "Prealgebra2e — 3.4 Multiply and Divide Integers",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/3-4-multiply-and-divide-integers",
+      "organization": "OpenStax / Rice University",
+      "accessed": "2026-10-29",
+      "inspected": "Actual conceptual section and worked reasoning, plus book preface licensing; not a study/learner trial.",
+      "adopted": "Connect positive repetition to signed product patterns and multiplication by−1 as opposite.",
+      "rejected": "No copied counter figures, source-specific examples, broad mastery/effectiveness claims or extra prerequisite gates.",
+      "usageRestrictions": "OpenStax Prealgebra2e preface: CC BY-NC-SA4.0 with separate art/permission conditions. AMSI resource PDF page1: University of Melbourne/ICE-EM2010, CC BY-NC-ND3.0 except stated exceptions. Comparison only: no expressive prose/task/figure translation, adaptation or reuse. Original Finnish explanations/SVG; supplied PNG. Not licence/public-release clearance."
+    },
+    {
+      "title": "The Integers — TIMES Module15",
+      "url": "https://www.amsi.org.au/teacher_modules/Integer.html",
+      "organization": "AMSI / ICE-EM, University of Melbourne",
+      "accessed": "2026-10-29",
+      "inspected": "Actual subtraction-as-opposite section203–220 and multiplication pattern/consistency section230–298; specific PDF frontmatter rights inspected separately.",
+      "adopted": "Use opposites to reverse signed addition; use consistent product patterns through zero, not negative physical object counts.",
+      "rejected": "No copied artwork, source tasks/prose or foreign prerequisite checklist. No target-learner/efficacy or Finnish grade inference.",
+      "usageRestrictions": "OpenStax Prealgebra2e preface: CC BY-NC-SA4.0 with separate art/permission conditions. AMSI resource PDF page1: University of Melbourne/ICE-EM2010, CC BY-NC-ND3.0 except stated exceptions. Comparison only: no expressive prose/task/figure translation, adaptation or reuse. Original Finnish explanations/SVG; supplied PNG. Not licence/public-release clearance."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@afc44b7f3bef6fadb2f3007cb3d49f8104a9b28bf2bc7ce8a277dae01feb3c49",
+      "note": "Independent B16 parent exact current source/domain/teaching and actual181 native scope closed: lesson-network/evidence/production/B16/reviews/parent-on-Descartes-ready-current.json. Synthetic technical scope, not learner validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@afc44b7f3bef6fadb2f3007cb3d49f8104a9b28bf2bc7ce8a277dae01feb3c49",
+      "note": "Independent B16 parent canonical/Lite/source boundaries reviewed, roles/groups preserved, no new hardgates. lesson-network/evidence/production/B16/reviews/parent-on-Descartes-ready-current.json"
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@afc44b7f3bef6fadb2f3007cb3d49f8104a9b28bf2bc7ce8a277dae01feb3c49",
+      "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@e4012b389ae393755a5616e0a5a5b9a0b4da93909c33e7e9cb0fe9471efbe035",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@e4012b389ae393755a5616e0a5a5b9a0b4da93909c33e7e9cb0fe9471efbe035",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@e4012b389ae393755a5616e0a5a5b9a0b4da93909c33e7e9cb0fe9471efbe035",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@35d3962462269d6f9210cb23fabcd5ebcdbef465976ce7d36e8ec21765d7a7f0",
+      "note": "LR04-B09: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@35d3962462269d6f9210cb23fabcd5ebcdbef465976ce7d36e8ec21765d7a7f0",
+      "note": "LR04-B09: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@35d3962462269d6f9210cb23fabcd5ebcdbef465976ce7d36e8ec21765d7a7f0",
+      "note": "LR04-B09: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@51225a97899e2f20853b765fdc4cb5948573f4a24596fea64411205ff218e35f",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@51225a97899e2f20853b765fdc4cb5948573f4a24596fea64411205ff218e35f",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@51225a97899e2f20853b765fdc4cb5948573f4a24596fea64411205ff218e35f",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@fcfb6ace0bc981b011ec3b2bb95ab81580dc722d52fb06a86feb0ce812423e0a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@fcfb6ace0bc981b011ec3b2bb95ab81580dc722d52fb06a86feb0ce812423e0a",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@fcfb6ace0bc981b011ec3b2bb95ab81580dc722d52fb06a86feb0ce812423e0a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "4@f3efafd9afe929a333c50ff679bf618e0a2a846369fc4d9e415a326255ae9d71",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "4@f3efafd9afe929a333c50ff679bf618e0a2a846369fc4d9e415a326255ae9d71",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@f3efafd9afe929a333c50ff679bf618e0a2a846369fc4d9e415a326255ae9d71",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@5d713cc31a2d04eb367ac26e8eb0e6e6773351dedbc9e60455736b7df5221b72",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@5d713cc31a2d04eb367ac26e8eb0e6e6773351dedbc9e60455736b7df5221b72",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@5d713cc31a2d04eb367ac26e8eb0e6e6773351dedbc9e60455736b7df5221b72",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@a1235de8e924ec74fc19236cdc1e9d6efd7653abf95ad5605a98cc6be8116d31",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@a1235de8e924ec74fc19236cdc1e9d6efd7653abf95ad5605a98cc6be8116d31",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@a1235de8e924ec74fc19236cdc1e9d6efd7653abf95ad5605a98cc6be8116d31",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@30a534ed28239f49a409a11fb23c8fb772c4181ec5ebbfa9c1c48af47061c294",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@30a534ed28239f49a409a11fb23c8fb772c4181ec5ebbfa9c1c48af47061c294",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@30a534ed28239f49a409a11fb23c8fb772c4181ec5ebbfa9c1c48af47061c294",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@458ed186101624d194789b95f0771da0b5c7ca23ef41f3efac62e21052c839ff",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@458ed186101624d194789b95f0771da0b5c7ca23ef41f3efac62e21052c839ff",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@458ed186101624d194789b95f0771da0b5c7ca23ef41f3efac62e21052c839ff",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@1d9be1ccfc7dfadbb40c9d53e691e2797bb1311c72908adf5d9625807c7ff28a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@1d9be1ccfc7dfadbb40c9d53e691e2797bb1311c72908adf5d9625807c7ff28a",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@1d9be1ccfc7dfadbb40c9d53e691e2797bb1311c72908adf5d9625807c7ff28a",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@14a2d1a6efc65c256cd6fd45176ce7b18c3e6a1dfe6e2519a61186452f4fe3d4",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@14a2d1a6efc65c256cd6fd45176ce7b18c3e6a1dfe6e2519a61186452f4fe3d4",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@14a2d1a6efc65c256cd6fd45176ce7b18c3e6a1dfe6e2519a61186452f4fe3d4",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@acd15d4264b513e2a5a769772fc9fbb5444a7c3bf3e1efbb146da8b4f89c51e7",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@acd15d4264b513e2a5a769772fc9fbb5444a7c3bf3e1efbb146da8b4f89c51e7",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Negatiivinen tekijä perustellaan lukukaavan jatkumisena, ei negatiivisina esineinä. 0, 1, −1 sekä yhteenlaskun ja kertolaskun eri merkkipäätelmät erotetaan. Oma tehtävä ja vastaus ovat yhdessä; ratkaistut esimerkit eivät väitä oppijan itsenäistä merkkiperustelua. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@acd15d4264b513e2a5a769772fc9fbb5444a7c3bf3e1efbb146da8b4f89c51e7",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M79-INT-MUL",
+    "sourceBuild": "lite181-2026-10-27",
+    "sourceRevision": "audit1-2026-10-28",
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+      "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "authority/production-181-v2/lite/src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+      "authority/production-181-v2/lite/src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+      "authority/production-181-v2/lite/src/content/neganim.ts": "38429c827f5637f57b054cade85b40cc9f36396e27cee3d79e99e526b89766a4",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/features.ts": "8ddef5451be9d011297f5d32b1ab0d869a1e132d608bd30f679b8e2d900884c5",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+    },
+    "actualFamilies": [
+      "negneg",
+      "transfer",
+      "signs",
+      "pattern",
+      "sign"
+    ],
+    "inventory": {
+      "goal": "Opit kertomaan kokonaislukuja: eri merkkiset tekijät antavat negatiivisen tulon, samanmerkkiset positiivisen.",
+      "intro": "Laboratorion kaavat tuottavat negatiivisia lukuja. Mitä tapahtuu, kun niitä kerrotaan?",
+      "reward": "Osaat merkkisäännön ja ymmärrät, mistä se tulee!",
+      "revision": "audit1-2026-10-28",
+      "demos": [
+        {
+          "say": "Kolme kertaa miinus kaksi: kolme kahden askeleen hyppyä vasemmalle.",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function",
+          "animation": {
+            "duration": 12.700000000000001,
+            "label": "Hypyt jään lukusuoralla",
+            "startCaption": "Loikka lähtee kohdasta 0.",
+            "endCaption": "3 · (−2) = −6: kolme kertaa −2."
+          }
+        },
+        {
+          "say": "Kaava: kolme kertaa kaksi, yksi, nolla… Tulos pienenee joka rivillä kolmella. Mitä tapahtuu, kun kaava jatkuu nollan ohi?",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function",
+          "animation": {
+            "duration": 10.1,
+            "label": "Merkkisääntö kaavasta",
+            "startCaption": "Kerrotaan luvulla 3. Seuraa tuloa lukusuoralla.",
+            "endCaption": "Positiivinen kertaa negatiivinen on negatiivinen."
+          }
+        },
+        {
+          "say": "Sama kaava luvulla miinus kolme: nyt tulos kasvaa joka rivillä kolmella. Siksi miinus kertaa miinus on plus.",
+          "sceneKeys": [
+            "__anim"
+          ],
+          "sceneKind": "function",
+          "animation": {
+            "duration": 10.1,
+            "label": "Merkkisääntö kaavasta",
+            "startCaption": "Kerrotaan luvulla −3. Seuraa tuloa lukusuoralla.",
+            "endCaption": "Negatiivinen kertaa negatiivinen on positiivinen: kaava kasvaa nollan yli."
+          }
+        }
+      ],
+      "items": {
+        "negneg": {
+          "say": "(−2) · (−6) = ?",
+          "task": {
+            "kind": "numeric",
+            "answer": 12,
+            "whyAt": {
+              "-12": "Samanmerkkiset tekijät antavat positiivisen tulon.",
+              "-8": "Tämä on summa, ei tulo."
+            }
+          },
+          "hint": "Kaksi miinusta kertolaskussa: tulo on positiivinen.",
+          "explain": "Samanmerkkiset tekijät: tulo on positiivinen. 2 · 6 = 12.",
+          "registry": {
+            "node": "M79-INT-MUL",
+            "tag": "negneg",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "transfer": {
+          "say": "Altaan vedenpinta laskee 5 cm tunnissa: muutos on −5 cm tunnissa. Paljonko pinta muuttuu 2 tunnissa? Kirjoita muutos etumerkillä.",
+          "task": {
+            "kind": "numeric",
+            "answer": -10,
+            "unit": "cm",
+            "whyAt": {
+              "10": "Pinta laskee, joten muutos on negatiivinen.",
+              "-7": "Laskit yhteen. Joka tunti muutos on sama, joten kerro."
+            }
+          },
+          "hint": "Kerro tunnit muutoksella tunnissa: 2 · (−5).",
+          "explain": "2 · (−5) = −10 cm: pinta laskee 10 cm.",
+          "registry": {
+            "node": "M79-INT-MUL",
+            "tag": "transfer",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "signs": {
+          "say": "Laskematta: onko tulo negatiivinen vai positiivinen?",
+          "task": {
+            "kind": "sort",
+            "items": [
+              {
+                "text": "7 · 5"
+              },
+              {
+                "text": "−3 · 3"
+              },
+              {
+                "text": "2 · (−3)"
+              },
+              {
+                "text": "(−6) · (−6) · (−4)"
+              },
+              {
+                "text": "(−5) · (−2)"
+              }
+            ],
+            "cats": [
+              {
+                "label": "Negatiivinen ❄️"
+              },
+              {
+                "label": "Positiivinen ☀️"
+              }
+            ],
+            "answer": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "why": [
+              "0 miinusmerkkistä tekijää: ei miinuksia, tulo positiivinen.",
+              "1 miinusmerkkistä tekijää: pariton määrä, tulo negatiivinen.",
+              "1 miinusmerkkistä tekijää: pariton määrä, tulo negatiivinen.",
+              "3 miinusmerkkistä tekijää: pariton määrä, tulo negatiivinen.",
+              "2 miinusmerkkistä tekijää: parillinen määrä, miinukset kumoavat toisensa pareittain."
+            ]
+          },
+          "hint": "Laske miinusmerkkiset tekijät. Kaksi miinusta kumoaa toisensa.",
+          "explain": "Parillinen määrä negatiivisia tekijöitä antaa positiivisen tulon, pariton negatiivisen.",
+          "registry": {
+            "node": "M79-INT-MUL",
+            "tag": "signs",
+            "outcome": "lajittelee jokaisen kuvan oikeaan laatikkoon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "pattern": {
+          "say": "Jatka kaavaa: 2 · 2 = 4, 2 · 1 = 2, 2 · 0 = 0, 2 · (−3) = ?",
+          "task": {
+            "kind": "numeric",
+            "answer": -6,
+            "whyAt": {
+              "0": "Nolla oli edellisen rivin tulos. Kaava jatkuu siitä alaspäin.",
+              "6": "Tulos pienenee joka askeleella, joten nollan jälkeen se menee negatiiviseksi."
+            }
+          },
+          "hint": "Paljonko tulos pienenee joka askeleella?",
+          "explain": "Tulos pienenee joka askeleella 2: 2 · (−3) = −6.",
+          "registry": {
+            "node": "M79-INT-MUL",
+            "tag": "pattern",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        },
+        "sign": {
+          "say": "(−2) · 6 = ?",
+          "task": {
+            "kind": "choice",
+            "options": [
+              {
+                "big": "12"
+              },
+              {
+                "big": "4"
+              },
+              {
+                "big": "−12"
+              }
+            ],
+            "answer": 2,
+            "why": [
+              "Eri merkkiset tekijät: tulo on negatiivinen.",
+              "Tämä on summa, ei tulo.",
+              null
+            ]
+          },
+          "hint": "Laske ensin ilman merkkejä. Sitten: ovatko tekijät eri merkkisiä?",
+          "explain": "Eri merkkiset: tulo negatiivinen. 2 · 6 = 12, joten vastaus on −12.",
+          "registry": {
+            "node": "M79-INT-MUL",
+            "tag": "sign",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "source": [
+              "oletus"
+            ]
+          }
+        }
+      }
+    },
+    "comparison": "Actual Lite pattern/sign/negneg/signs/transfer. Own bounded pattern makes the first factor vary through zero; no negative physical counts. Sign words classify individual products, not a constructed multi-card sorting performance. Three-factor sign reasoning remains explicit optional extension, not a claim of observing general expression construction.",
+    "audit": "LESSON_AUDIT1199–1206: subtraction thermometer/neutralpair/rewrite; multiplication iceHops/pattern/signs. Historical Lite validation is not new lesson approval.",
+    "runtimeOverlay": "Actual index.ts registry and family() metadata inspected; these2 have no SIMS overlay.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/algebra79.ts": "dba08bcb491473c1e29dde39e66c894631fc4ad96ddee5339eef2a2dbf7a1b6b",
+        "src/content/algebra79b.ts": "2cb8b4e292009053a217f710c067ef8fb9b7b33a3205c127fe622f3886e7ac3b",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/features.ts": "674518dd106c0bfa3f379e19c95a557de2eac361f86ec097eb2598dcbe86b181",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/neganim.ts": "38429c827f5637f57b054cade85b40cc9f36396e27cee3d79e99e526b89766a4",
+        "src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6"
+      },
+      "historicalNonLiteReferences": [
+        "AUTHORING.md",
+        "INTERACTION_FEEDBACK_CONTRACT.md",
+        "reference/inputs/canonical-690-graph.json",
+        "reference/inputs/mvp-scope-181.json"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "M79-INT-MUL",
+      "subject": "mathematics",
+      "grade_band": "7-9",
+      "topic_area": "S2 Luvut",
+      "parent_concept": "Kokonaislukulaskut",
+      "title": "Kokonaislukujen kertolasku ja merkkisääntö",
+      "short_description": "Kokonaislukujen kertolasku ja merkkisääntö",
+      "node_kind": "procedure",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "M79-S2"
+      ],
+      "relations": [
+        {
+          "id": "M-MUL-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MUL-01 on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "M79-INT-01",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M79-INT-01 on ydinesitieto tälle osaamiskohteelle."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-MUL-01",
+            "M79-INT-01"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "Ehdokasnoodi; arviointinäyttö ja virhekäsitykset täsmennetään sisältösuunnittelussa.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate",
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "S2 Luvut",
+        "Kokonaislukulaskut"
+      ]
+    },
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-MUL-01",
+          "M79-INT-01"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "role": "atomic",
+    "gradeBand": "7-9",
+    "teacherObjective": "Kokonaislukujen kertolasku ja merkkisääntö",
+    "childGoal": "Kerron kokonaisluvut ja perustelen merkin.",
+    "additionalHardGates": [],
+    "strongSupport": [],
+    "scope": "Tulomallien tekijät ovat kokonaislukuja −6…6 ja tulo −24…24. Mittausjaksojen mallissa ensimmäinen tekijä on lisäksi epänegatiivinen. Lukusuoran yksi väli on 1; cm-mallissa 1 cm. Kaksi merkkiä käsitellään kertolaskun tekijöinä, ei negatiivisina esinemäärinä.",
+    "interaction": "Finite typed product_pattern/difference/change with explicit unit and exact controls. Bounded coordinates/labels, reject extra fields/unknown controls/units/kinds/ranges and fractional model operands. Task kinds result/sign/opposite execute distinct semantics. Direct one-field response.",
+    "lifecycle": "B15r2 per-host immediatelyprecedingarticle, WeakMap owner, sameKC siblings/remount/oldAPIinert, pausedreset and exact listener/interval cleanup. Every dependent action/timer/pause/resume/dispose synchronizes current visible premises, including no-event/invalid. No shared runtime edit.",
+    "feedback": "Changed task/answer invalidates prior result. Unchanged unrelated model/help preserves current valid answer. Local practice is not independent/mastery/retention/history evidence.",
+    "curriculumVsDesign": "Exact frozen role/groups and source_basis imported. Foreign teaching comparison is not Finnish curriculum or efficacy evidence. Model ranges/numbers and Finnish prose/SVG are original project design.",
+    "assetProvenance": "Actual supplied unchanged Aava/Loikka PNG by shared path; original mathematical SVG. No redraw or hand-drawn claim.",
+    "evidenceLimits": "Author QA only; distinct parent review and actual181 integration pending. Human/learner/efficacy/fullmanualAXS/licence/public holds unchanged."
+  },
+  "extensions": {
+    "author": "Descartes",
+    "productionBatch": "B16",
+    "researchNote": "research.md",
+    "alignmentNote": "alignment.md",
+    "tests": "tests.mjs",
+    "browserQA": "browser-qa.mjs",
+    "independentReview": "pending_parent",
+    "humanReview": "not_performed",
+    "feedbackContractSHA256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B09",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

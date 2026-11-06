@@ -1,0 +1,46 @@
+{
+  "schema": "sammakko-audio-voices/1",
+  "note": "A voice is chosen by listening, never by its id. choice=user: picked by the user on 2026-11-02 from the listening page (Aava sage mini +3 semitones, Loikka alloy mini, narrator echo mini). shiftSemitones raises pitch and formants after rendering (tools/audiogen/lib/voicefx.mjs). voice=null: nothing can be produced for that role. A new voice or style version is a reviewed change; approved files are not regenerated automatically.",
+  "audition": {
+    "voices": [
+      "marin",
+      "cedar"
+    ],
+    "profile": {
+      "provider": "openai-realtime",
+      "model": "gpt-realtime-2.1-mini",
+      "styleVersion": "audition-v1",
+      "instructions": "Lue annettu suomalainen teksti täsmälleen. Puhu ystävällisesti ja selkeästi, rauhalliseen mutta luontevaan tahtiin. Pidä lauseiden välissä lyhyt tauko. Älä lisää tervehdyksiä, selityksiä, vastauksia tehtävään tai sanattomia hahmoääniä. Älä muuta numeroita tai matemaattista merkitystä. Sävy on lämmin ja hillitty."
+    }
+  },
+  "profiles": {
+    "Aava": {
+      "provider": "openai-realtime",
+      "model": "gpt-realtime-2.1-mini",
+      "voice": "sage",
+      "shiftSemitones": 3,
+      "styleVersion": "aava-v3",
+      "instructions": "Lue annettu suomalainen teksti täsmälleen, sana sanalta. Älä lisää mitään, älä vastaa tehtävään, älä tee sanattomia ääniä. Älä muuta numeroita. Hahmo on pieni ankanpoikanen. Ääni on korkea, kirkas, kevyt ja söpö, iloinen ja utelias. Puhu selkeästi ja ystävällisesti.",
+      "choice": "user"
+    },
+    "Loikka": {
+      "provider": "openai-realtime",
+      "model": "gpt-realtime-2.1-mini",
+      "voice": "alloy",
+      "styleVersion": "loikka-v3",
+      "instructions": "Lue annettu suomalainen teksti täsmälleen, sana sanalta. Älä lisää mitään, älä vastaa tehtävään, älä tee sanattomia ääniä. Älä muuta numeroita. Hahmo on nuori sammakko. Ääni on keskikorkea ja nuorekas, kuin pojan tai nuoren miehen ääni. Rauhallinen, pyöreä ja ystävällinen.",
+      "choice": "user"
+    },
+    "narrator": {
+      "provider": "openai-realtime",
+      "model": "gpt-realtime-2.1-mini",
+      "voice": "echo",
+      "styleVersion": "narrator-v3",
+      "instructions": "Lue annettu suomalainen teksti täsmälleen, sana sanalta. Älä lisää mitään, älä vastaa tehtävään, älä tee sanattomia ääniä. Älä muuta numeroita. Olet kertoja. Ääni on matala, rauhallinen ja lämmin. Puhu hitaasti ja selkeästi, lyhyt tauko lauseiden välissä.",
+      "choice": "user"
+    }
+  },
+  "aliases": {
+    "Sulka": "narrator"
+  }
+}

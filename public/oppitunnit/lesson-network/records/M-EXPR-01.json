@@ -1,0 +1,627 @@
+{
+  "kcId": "M-EXPR-01",
+  "pagePath": "lessons/M-EXPR-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-EXPR-01",
+  "canonicalNode": {
+    "id": "M-EXPR-01",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Laskulauseke",
+    "title": "Useita laskutoimituksia sisältävän lausekkeen tulkitseminen",
+    "short_description": "Useita laskutoimituksia sisältävän lausekkeen tulkitseminen",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-ARITH-01",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-ARITH-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-MUL-02",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Monilaskutoimituslauseke voi sisältää eri operaatioperheitä; kertolaskulausekkeen hallinta ei ole kaikkien varianttien globaali portti."
+      },
+      {
+        "id": "M-DIV-FACT-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Jakolaskufaktat ovat tehtäväkohtainen tuki, eivät yleisen lausekkeen tulkinnan globaali ehto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-ARITH-01"
+        ],
+        "rationale": "Laskumerkkien perusmerkitys on yleinen hard prerequisite."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "dynamic_prerequisite_rule": "requires_operation_knowledge_for_operations_present_in_item",
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Laskulauseke"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-ARITH-01",
+      "targetKCId": "M-EXPR-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ARITH-01 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-MUL-02",
+      "targetKCId": "M-EXPR-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Monilaskutoimituslauseke voi sisältää eri operaatioperheitä; kertolaskulausekkeen hallinta ei ole kaikkien varianttien globaali portti.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-DIV-FACT-01",
+      "targetKCId": "M-EXPR-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Jakolaskufaktat ovat tehtäväkohtainen tuki, eivät yleisen lausekkeen tulkinnan globaali ehto.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-EXPR-01",
+      "targetKCId": "M79-EXPR-EVAL",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-EXPR-01 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-ARITH-01"
+      ],
+      "rationale": "Laskumerkkien perusmerkitys on yleinen hard prerequisite."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": "requires_operation_knowledge_for_operations_present_in_item",
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-EXPR-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "Oak National Academy — Combine multiplication with addition and subtraction",
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/order-of-operations/lessons/combine-multiplication-with-addition-and-subtraction",
+        "read": "Actual HTML key points, misconception and teacher tip: brackets/grouping, priority and equal-priority pairs; licence section inspected. No video/slides claimed.",
+        "adopted": "Contrast same numerals with/without brackets and highlight a complete part; teach equal-priority pairs explicitly.",
+        "rejected": "No BODMAS ranking that implies multiply before divide or addition before subtraction; no speed criterion, copied diagrams or child-efficacy claim.",
+        "licence": "Page states © Oak National Academy2025 OGL3 except stated exceptions. Original Finnish lesson and art; source materials not redistributed.",
+        "accessed": "2026-10-29",
+        "usage": "Primary comparison; original new numerical examples, wording, code and mathematical diagrams.",
+        "limits": "No Finnish curriculum mandate inferred from comparator, no efficacy or human/learner validation claim."
+      },
+      {
+        "title": "OpenStax Prealgebra2.1 — Use the Language of Algebra",
+        "url": "https://openstax.org/books/prealgebra/pages/2-1-use-the-language-of-algebra",
+        "read": "Actual primary HTML order-of-operations section and current licence footer. Crosscheck equal precedence and left associativity only, no exercises/media copied.",
+        "adopted": "Independent mathematical crosscheck of +/− and ×/division precedence, brackets and left-to-right chains.",
+        "rejected": "Powers, variables, acronym, proprietary figures/exercises/text not imported; not a source licence for this original package.",
+        "licence": "Current fetched footer specifies CC BY-NC-SA4 with additional restrictions and mixed historical attribution wording. No reproduction permission assumed; only uncopyrightable arithmetic rules corroborated.",
+        "accessed": "2026-10-29",
+        "usage": "Primary comparison; original new numerical examples, wording, code and mathematical diagrams.",
+        "limits": "No Finnish curriculum mandate inferred from comparator, no efficacy or human/learner validation claim."
+      },
+      {
+        "title": "NZCER — Algebraic thinking concept map",
+        "url": "https://arbs.nzcer.org.nz/algebraic-thinking-concept-map",
+        "read": "Actual equality discussion on invalid chained equals and rewriting equivalent whole expressions; source drawings not copied.",
+        "adopted": "Every displayed reduction retains the entire expression value; avoid joining unrelated intermediate totals with =.",
+        "rejected": "Do not mandate one operation order for independent complete subexpressions when alternatives preserve the mathematical structure.",
+        "licence": "No broad redistribution licence established. Original code, Finnish wording and SVG only.",
+        "accessed": "2026-10-29",
+        "usage": "Primary comparison; original new numerical examples, wording, code and mathematical diagrams.",
+        "limits": "No Finnish curriculum mandate inferred from comparator, no efficacy or human/learner validation claim."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@fdf246690fcb0745a12f86b3be76e5d45c26515c7b3807200950e8c77797c0ed",
+        "note": "Author technical draft only; Euler independent review and main actual127 integration pending."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+        "note": "Author technical draft only; Euler independent review and main actual127 integration pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@fdf246690fcb0745a12f86b3be76e5d45c26515c7b3807200950e8c77797c0ed",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+        "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-EXPR-01",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "lesson.css",
+        "sha256": "5e26a8288dbd1da1e22a279b9a51f56d858454713068a59e235c8b244da22f56"
+      },
+      {
+        "path": "groups.svg",
+        "sha256": "772a4a4746f798208d48673953e5e8be2bd637fa4c2ea0146ee80daff01ad069"
+      },
+      {
+        "path": "brackets.svg",
+        "sha256": "61ab0418dd4630ae0b186177998a440e96a7b0038c2b41ba67fa34bd3ca0f00b"
+      },
+      {
+        "path": "shared/loikka/map.png",
+        "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+      }
+    ],
+    "research": [
+      {
+        "title": "Oak National Academy — Combine multiplication with addition and subtraction",
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/order-of-operations/lessons/combine-multiplication-with-addition-and-subtraction",
+        "read": "Actual HTML key points, misconception and teacher tip: brackets/grouping, priority and equal-priority pairs; licence section inspected. No video/slides claimed.",
+        "adopted": "Contrast same numerals with/without brackets and highlight a complete part; teach equal-priority pairs explicitly.",
+        "rejected": "No BODMAS ranking that implies multiply before divide or addition before subtraction; no speed criterion, copied diagrams or child-efficacy claim.",
+        "licence": "Page states © Oak National Academy2025 OGL3 except stated exceptions. Original Finnish lesson and art; source materials not redistributed.",
+        "accessed": "2026-10-29",
+        "usage": "Primary comparison; original new numerical examples, wording, code and mathematical diagrams.",
+        "limits": "No Finnish curriculum mandate inferred from comparator, no efficacy or human/learner validation claim."
+      },
+      {
+        "title": "OpenStax Prealgebra2.1 — Use the Language of Algebra",
+        "url": "https://openstax.org/books/prealgebra/pages/2-1-use-the-language-of-algebra",
+        "read": "Actual primary HTML order-of-operations section and current licence footer. Crosscheck equal precedence and left associativity only, no exercises/media copied.",
+        "adopted": "Independent mathematical crosscheck of +/− and ×/division precedence, brackets and left-to-right chains.",
+        "rejected": "Powers, variables, acronym, proprietary figures/exercises/text not imported; not a source licence for this original package.",
+        "licence": "Current fetched footer specifies CC BY-NC-SA4 with additional restrictions and mixed historical attribution wording. No reproduction permission assumed; only uncopyrightable arithmetic rules corroborated.",
+        "accessed": "2026-10-29",
+        "usage": "Primary comparison; original new numerical examples, wording, code and mathematical diagrams.",
+        "limits": "No Finnish curriculum mandate inferred from comparator, no efficacy or human/learner validation claim."
+      },
+      {
+        "title": "NZCER — Algebraic thinking concept map",
+        "url": "https://arbs.nzcer.org.nz/algebraic-thinking-concept-map",
+        "read": "Actual equality discussion on invalid chained equals and rewriting equivalent whole expressions; source drawings not copied.",
+        "adopted": "Every displayed reduction retains the entire expression value; avoid joining unrelated intermediate totals with =.",
+        "rejected": "Do not mandate one operation order for independent complete subexpressions when alternatives preserve the mathematical structure.",
+        "licence": "No broad redistribution licence established. Original code, Finnish wording and SVG only.",
+        "accessed": "2026-10-29",
+        "usage": "Primary comparison; original new numerical examples, wording, code and mathematical diagrams.",
+        "limits": "No Finnish curriculum mandate inferred from comparator, no efficacy or human/learner validation claim."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@fdf246690fcb0745a12f86b3be76e5d45c26515c7b3807200950e8c77797c0ed",
+        "note": "Author technical draft only; Euler independent review and main actual127 integration pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@fdf246690fcb0745a12f86b3be76e5d45c26515c7b3807200950e8c77797c0ed",
+        "note": "Author technical draft only; Euler independent review and main actual127 integration pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@fdf246690fcb0745a12f86b3be76e5d45c26515c7b3807200950e8c77797c0ed",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+        "note": "Author technical draft only; Euler independent review and main actual127 integration pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+        "note": "Author technical draft only; Euler independent review and main actual127 integration pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+        "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+        "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+      }
+    ],
+    "alignment": {
+      "build": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "inventory": {
+        "definition": "src/content/written.ts:564–625",
+        "objective": "Interpret a multiple-operation expression, with item-dependent operation prerequisites.",
+        "demo": "Three exprScene demos2+3×4,(2+3)×4,18:(4−1)+2×5.",
+        "families": [
+          "mulFirst choice",
+          "paren numeric",
+          "steps three ordered slots",
+          "sub numeric",
+          "transfer ticket+programme choice"
+        ],
+        "hints": "Identify multiplication, grouped bracket part; provide operation-specific wrong-value explanations and transferred repeated per-person total.",
+        "media": [
+          "writtenanim.ts138–211 exprScene: finite row reductions, actual precedence; timing is illustrative, not physics",
+          "engine/types.ts numeric/place/build contracts"
+        ],
+        "audit": "LESSON_AUDIT.md112 and653–655: notebook/steps, missing whyAt/hints and prior overflow fixed in Lite; reported historical browser checks are not our evidence.",
+        "coverageDifference": "COVERAGE113/301,878–881 omit steps and still list2demos; actual NodeSpec has3.",
+        "extends": "Default+/- only route; original group drawings before general rule, controllable one-part reduction, optional full visited rows. Short part-construction task accepts both independent complete parts of the complex expression. Numeric answers remain direct.",
+        "corrected": "Do not require multiplication/division globally. Do not treat one canonical displayed route as all valid reasoning. Every shown = must compare same-valued full expressions.",
+        "limits": "Whole arithmetic with exact nonzero division in authored scope; no powers, variables or arbitrary algebra-equivalence engine. Short answers do not prove independent full procedure."
+      },
+      "sourceHashes": {
+        "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "authority/production-181-v2/lite/src/content/parts.ts": "724aed2cf6df91996c55fdeafaa67b5cc3fc10b5ef68e47d4f4c968d4855efd5",
+        "authority/production-181-v2/lite/src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+        "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "authority/production-181-v2/lite/src/data/graph.json": "990c587527b821b7ba738e58ba95b10b9c1d13fbac10c868d1e3aaf63d0885e4",
+        "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da",
+        "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "authority/production-181-v2/lite/src/content/written.ts": "58ee93036fb7417e8324072db5be810426a99db346c23ef0651c9525a9bfd0c6",
+        "authority/production-181-v2/lite/src/content/writtenanim.ts": "96ae626bce755998b6ed390f84ee21f16ac0fdb22dac12c40021b9432f1b65bc",
+        "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb"
+      },
+      "authority": "Actual executable NodeSpec+families/media/audit read; Lite is existing unapproved comparator, not efficacy or production proof."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-EXPR-01",
+        "subject": "mathematics",
+        "grade_band": "3-6",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Laskulauseke",
+        "title": "Useita laskutoimituksia sisältävän lausekkeen tulkitseminen",
+        "short_description": "Useita laskutoimituksia sisältävän lausekkeen tulkitseminen",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL3-6-S2"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-ARITH-01",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-ARITH-01 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-MUL-02",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "Monilaskutoimituslauseke voi sisältää eri operaatioperheitä; kertolaskulausekkeen hallinta ei ole kaikkien varianttien globaali portti."
+          },
+          {
+            "id": "M-DIV-FACT-01",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "Jakolaskufaktat ovat tehtäväkohtainen tuki, eivät yleisen lausekkeen tulkinnan globaali ehto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-ARITH-01"
+            ],
+            "rationale": "Laskumerkkien perusmerkitys on yleinen hard prerequisite."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "dynamic_prerequisite_rule": "requires_operation_knowledge_for_operations_present_in_item",
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Laskulauseke"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-ARITH-01"
+          ],
+          "rationale": "Laskumerkkien perusmerkitys on yleinen hard prerequisite."
+        }
+      ],
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "gradeBand": "3-6",
+      "role": "atomic",
+      "objective": "Useita laskutoimituksia sisältävän lausekkeen tulkitseminen",
+      "childGoal": "Laske kokonainen osa säilyttäen muun lausekkeen merkitys.",
+      "required": [
+        "M-ARITH-01"
+      ],
+      "itemSpecificSupport": [
+        "M-MUL-02",
+        "M-DIV-FACT-01"
+      ],
+      "supportBoundary": "Only arithmetic operations actually used in selected task are assumed. No graph/mastery prerequisite promotion.",
+      "evidenceLimits": "Local optional-support practice; no pupil records, oral naming/speed/retention/physical performance/formal mastery claim."
+    },
+    "extensions": {
+      "design": "Game Studio game-ui-frontend and game-playtest: own compact early model/state/44pxaction, optional advanced tools, actual supplied PNG identity, original deterministic SVG. Shared presentation CSS unchanged.",
+      "mascotProvenance": "Supplied generated raster reinterpretation, unchanged SHA; not falsely claimed new hand-drawn original.",
+      "authorQA": "Scoped pure/adversarial/lint and isolated current-full-shell design evidence recorded in author-ready receipt. Main actual127 and Euler different-author review are separate and pending. No author selfapproval.",
+      "parseLimits": "Short integer expression grammar with31tokens,max8depth/literal0–99/safe intermediate magnitude<=10000/exact division; no eval, variable, approximate tolerance or arbitrary equivalence framework."
+    },
+    "contentHash": "348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+    "contentRevision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@fdf246690fcb0745a12f86b3be76e5d45c26515c7b3807200950e8c77797c0ed",
+          "note": "Author technical draft only; Euler independent review and main actual127 integration pending."
+        },
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+          "note": "Author technical draft only; Euler independent review and main actual127 integration pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+          "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@fdf246690fcb0745a12f86b3be76e5d45c26515c7b3807200950e8c77797c0ed",
+          "note": "No human/learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+          "note": "No human/learner validation performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+          "note": "Not performed; technical and synthetic reviews are not target-learner validation."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@fdf246690fcb0745a12f86b3be76e5d45c26515c7b3807200950e8c77797c0ed",
+          "note": "Author technical draft only; Euler independent review and main actual127 integration pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+          "note": "Author technical draft only; Euler independent review and main actual127 integration pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@348befd55edd0807c2616065f7e9e5208e1dc66c5f1373ae8dffdecaf75cedfc",
+          "note": "B11 different-author scoped review closed; exact full source SET/SHA before metadata and historical findings/closures: evidence/production/B11/review-bindings-before-metadata.json. No human/efficacy approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "225ecd8fdc317ee80962baa1ddcbef2869e923714b1d471f47c492c5077c30df",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "225ecd8fdc317ee80962baa1ddcbef2869e923714b1d471f47c492c5077c30df",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

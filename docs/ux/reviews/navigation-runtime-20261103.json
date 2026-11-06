@@ -1,0 +1,2212 @@
+{
+  "schemaVersion": 1,
+  "kind": "navigation_runtime_delta_review",
+  "at": "2026-11-03T09:14:43.748Z",
+  "baseCommit": "f12c9b7b072e3b557ab648558489a5fd38e40a76",
+  "localBaselineMeaning": "Selected source reconstructed from the checked public-source artifact; the six overlaid documents restored from the exact private main. Runtime bytes match the remote base. Local history is not the remote parent.",
+  "reviewers": [
+    "ChatGPT root: integration/source delta and invariant review",
+    "navigation_source_review: independent lesson-flow and integration review",
+    "navigation_accessibility_review: independent browser-regression design"
+  ],
+  "decision": "reviewed_with_stated_limits",
+  "humanValidation": "pending",
+  "scope": "Phases 0–2 navigation shell, disclosure visibility and teacher/presentation controls. No new pedagogical judgment is claimed for unchanged authored content.",
+  "fixesFromReview": [
+    "Bind shared navigation JSON/module and brand.css/site.js in global and technical source inventories",
+    "Show the first usable control with a short disclosure beginning when they fit together; ignore distant controls",
+    "Use visible focus target in a closed-details teacher stage",
+    "Keep standalone Lite and lesson builds independent of combined-publication routes",
+    "Add only /tietoa/ to the verifier combined-site mount allowlist"
+  ],
+  "verifiedInvariants": [
+    "All181 body.html, lesson.mjs and declared assets are byte-identical to base",
+    "All181 metadata differs only by revision and currentSource Lite generator digest before applying the new review history",
+    "All181 teacher/audience stage indexes match",
+    "Lite content, engine, audio, graph selection and art unchanged",
+    "Ordinary disclosure handling changes scroll only; no response, mastery, localStorage or module reset writes",
+    "Existing technical gates, retries and timeouts retained"
+  ],
+  "sourceBindingsBefore": {
+    "sourceBindingsVersion": 2,
+    "liteGeneratorSha256": "6569806aaf2227631769b3f5a1de71a5dcdfbde93f4a3ba01702cc36cdead104",
+    "lessonGeneratorSha256": "eb13db065975e64d001d2d91646c8ccd572be26e3b47945c46c9d1f7ae39095d"
+  },
+  "sourceBindingsAfter": {
+    "sourceBindingsVersion": 2,
+    "liteGeneratorPaths": [
+      "lite/src/audio/events.ts",
+      "lite/src/audio/key.ts",
+      "lite/src/audio/player.ts",
+      "lite/src/canonical.ts",
+      "lite/src/content/added181.ts",
+      "lite/src/content/alg79anim.ts",
+      "lite/src/content/alganim.ts",
+      "lite/src/content/algebra79.ts",
+      "lite/src/content/algebra79b.ts",
+      "lite/src/content/arith.ts",
+      "lite/src/content/audit-rev.ts",
+      "lite/src/content/audit.ts",
+      "lite/src/content/countanim.ts",
+      "lite/src/content/dataanim.ts",
+      "lite/src/content/decanim.ts",
+      "lite/src/content/decimals.ts",
+      "lite/src/content/divisanim.ts",
+      "lite/src/content/facts.ts",
+      "lite/src/content/families.ts",
+      "lite/src/content/features.ts",
+      "lite/src/content/fi.ts",
+      "lite/src/content/fracanim.ts",
+      "lite/src/content/geoanim.ts",
+      "lite/src/content/goals.ts",
+      "lite/src/content/index.ts",
+      "lite/src/content/kit.ts",
+      "lite/src/content/measure.ts",
+      "lite/src/content/measureanim.ts",
+      "lite/src/content/motionsims.ts",
+      "lite/src/content/multanim.ts",
+      "lite/src/content/neganim.ts",
+      "lite/src/content/numbers.ts",
+      "lite/src/content/parts.ts",
+      "lite/src/content/perimanim.ts",
+      "lite/src/content/phyanim.ts",
+      "lite/src/content/physics.ts",
+      "lite/src/content/pics.ts",
+      "lite/src/content/placeanim.ts",
+      "lite/src/content/ranta2.ts",
+      "lite/src/content/saari1.ts",
+      "lite/src/content/saari2.ts",
+      "lite/src/content/safeanim.ts",
+      "lite/src/content/science.ts",
+      "lite/src/content/sol.ts",
+      "lite/src/content/thinkanim.ts",
+      "lite/src/content/thinking.ts",
+      "lite/src/content/timeanim.ts",
+      "lite/src/content/toolanim.ts",
+      "lite/src/content/unitanim.ts",
+      "lite/src/content/world.ts",
+      "lite/src/content/written.ts",
+      "lite/src/content/writtenanim.ts",
+      "lite/src/data/graph.json",
+      "lite/src/data/sol-annotations.json",
+      "lite/src/engine/check.ts",
+      "lite/src/engine/evidence.ts",
+      "lite/src/engine/expr.ts",
+      "lite/src/engine/graph.ts",
+      "lite/src/engine/motion.ts",
+      "lite/src/engine/rng.ts",
+      "lite/src/engine/store.ts",
+      "lite/src/engine/types.ts",
+      "lite/src/game/flight.ts",
+      "lite/src/game/index.ts",
+      "lite/src/game/state.ts",
+      "lite/src/main.ts",
+      "lite/src/publication.ts",
+      "lite/src/route.ts",
+      "lite/src/ui/adultgraph.ts",
+      "lite/src/ui/anim.ts",
+      "lite/src/ui/art.ts",
+      "lite/src/ui/clock.ts",
+      "lite/src/ui/dom.ts",
+      "lite/src/ui/flight.ts",
+      "lite/src/ui/launch-controls.css",
+      "lite/src/ui/lesson.ts",
+      "lite/src/ui/maplayout.ts",
+      "lite/src/ui/motion.ts",
+      "lite/src/ui/paja.ts",
+      "lite/src/ui/speech.ts",
+      "lite/src/ui/sprite-data.ts",
+      "lite/src/ui/sprite.ts",
+      "lite/src/ui/status.ts",
+      "lite/src/ui/style.css",
+      "lite/src/ui/widgets.ts",
+      "lite/src/ui/worldlinks.ts",
+      "lite/src/ui/worldmap.ts",
+      "lite/src/vite-env.d.ts",
+      "public/shared/navigation.json"
+    ],
+    "lessonGeneratorPaths": [
+      "lite/public/lite-runtime.json",
+      "public/kotisivu/assets/brand.css",
+      "public/kotisivu/assets/site.js",
+      "public/oppitunnit/AUTONOMOUS_52_STATE.json",
+      "public/oppitunnit/CONTENT_STATUS.yaml",
+      "public/oppitunnit/lesson-network/assets/audience.js",
+      "public/oppitunnit/lesson-network/assets/lesson-flow.js",
+      "public/oppitunnit/lesson-network/assets/lesson-loader.js",
+      "public/oppitunnit/lesson-network/assets/shell.css",
+      "public/oppitunnit/lesson-network/assets/shell.js",
+      "public/oppitunnit/lesson-network/audience.mjs",
+      "public/oppitunnit/lesson-network/build.mjs",
+      "public/oppitunnit/lesson-network/content.mjs",
+      "public/oppitunnit/lesson-network/deployment.json",
+      "public/oppitunnit/lesson-network/reference/CONTRACT.json",
+      "public/oppitunnit/lesson-network/reference/HANDOVER_MANIFEST.json",
+      "public/oppitunnit/lesson-network/reference/RUNTIME_LINKS.json",
+      "public/oppitunnit/lesson-network/reference/inputs/canonical-690-graph.json",
+      "public/oppitunnit/lesson-network/reference/inputs/mvp-scope-181.json",
+      "public/oppitunnit/lesson-network/runtime.mjs",
+      "public/oppitunnit/lesson-network/site-config.mjs",
+      "public/shared/navigation.json",
+      "public/shared/navigation.mjs"
+    ],
+    "liteGeneratorSha256": "408dcb0a5cad406d82334eea921a6b3fae0817aa0a7690aaa9deb40cfe749866",
+    "lessonGeneratorSha256": "39251bff5c92c634854a407925eea102a7454504bae4e65044c1284d4a204f9c"
+  },
+  "reviewedChangedPaths": {
+    ".github/scripts/package-site.mjs": "6bf7ad9a4caf808fca894cad0b9738f5bd39b817f39534731603032d1fe5432c",
+    ".github/scripts/test-launch-review-gate.mjs": "d584b6fe9ebf04c4556914648927f3f8caab8df9372d406395b682476e84421c",
+    ".github/workflows/ci.yml": "aac587ee8eb2f576e0b97346301e35cf21ed023c56e5e2b8534f4119e300bbf4",
+    "docs/releases/launch/lessons/batch-browser.mjs": "3064139f29de6994432c570db56d29120822e5f72747b42956f263c02aa2a639",
+    "lite/publication-tests/launch-publication.spec.ts": "a427b049a4eb26d9f6f7d9e00c56e702640d26bf99ef10c8d0cd9e5811e7a15c",
+    "lite/publication-tests/navigation-flow.spec.ts": "7d9025d0ccd5dc5fe312b3bc685be4100daf61bc407e3662026643db58a96b66",
+    "lite/publication-tests/publication.spec.ts": "8bacf4253293b938570326db0f1d957b8ed0bd53b43b4a4acdc83a2ab6173575",
+    "lite/src/main.ts": "e4bfd4b1470993f356b8a981e343a059aa5c0fca31956f6bb904a89059420303",
+    "lite/src/publication.ts": "9ddc471160496c908b9d9eb304e40ac5fcaac618fb1c3aa67e3c834c1bee19cd",
+    "lite/src/ui/style.css": "00cbe39da1bc589551a97e330188cd79c5c2388529b9b01eb0c442fae0f023df",
+    "lite/tests/publication.test.ts": "0f3ccc28b9c689f07f629f15dc8c16a9b71201788dca9aca79f7c9cf16f5dc00",
+    "public/kotisivu/README.md": "6fa0f3dd57d9cb7c23d49ef5447c5fa01d7c311bbe24d70ac40011ea90e4a3fb",
+    "public/kotisivu/assets/brand.css": "0a6fa1a0a8972aff078176ca7d60589f94dea2c2c28a5d1b6e099668980a8329",
+    "public/kotisivu/assets/site.js": "8adc1f6b1cb060d35997d0289553443e0e5e10f4e91a87088956842278ec834c",
+    "public/kotisivu/index.html": "3506708f2223ce0bb490e5bdf762294ca1fe9aac7620b95671ce786296a0da8e",
+    "public/kotisivu/tietoa/index.html": "9d1401e501bea341e6d6b49e5cd316bbd9c41027ddc147648752fb766679ce1e",
+    "public/oppimisverkko/index.html": "127f62d228610b218de63ab5e7395a314efcf4cb66715bcc2ce23fcc63fd46bf",
+    "public/oppimisverkko/network.js": "0d7b66f4c31210e499512b8ce02f6dfd1f3fa50fca5fe9e4fbff694e7985b3d0",
+    "public/oppitunnit/lesson-network/assets/audience.js": "0d072029dd7502c1e69f08512f7ca6aceddc5623d3c90535bd7971fc9e7b16aa",
+    "public/oppitunnit/lesson-network/assets/lesson-flow.js": "cd99f6a29b9735b6a31e6994f11c00d1ecd56a2796def374b607c55a3f2b1b35",
+    "public/oppitunnit/lesson-network/assets/shell.css": "2a575ea128da4a61699b2c86fb1ad4ae301e6a9fdeccfb7f1c8c5c7c316446f3",
+    "public/oppitunnit/lesson-network/assets/shell.js": "810faf822990884a3d48462259f6cfb6101aafb152aff22590126acebdb1dd62",
+    "public/oppitunnit/lesson-network/build-status.json": "84a776e409d92487939eae6e81f02f858729d7210105a55775d9c45e40ab3d10",
+    "public/oppitunnit/lesson-network/build.mjs": "cea0d602ee945938ea6eeed7812ccfae219e385d5e26391c15c937f7b245027b",
+    "public/oppitunnit/lesson-network/preview-audience-package.mjs": "1ac1973e9ee8f187809ef84328d99ccc55e908d4df3e66b85ca6799f881ed7fb",
+    "public/oppitunnit/lesson-network/receipt.mjs": "52361c215882ee833f3622feae905737991618671a2db42d1817aa13de738ff6",
+    "public/oppitunnit/lesson-network/test-audience.mjs": "0792aebb88f1584b486bc5edfb2f5f753bb780c8c6c86e0a3b079c341491bd0e",
+    "public/oppitunnit/lesson-network/test-validation-receipt.mjs": "55ca3f341e7cb8c225f2a0d9eb39897901b76e830eb45059921a4e867446d9e2",
+    "public/oppitunnit/lesson-network/validation-receipt.mjs": "005996aec748955a61cc97181ac2aed81421be390fab36e77dcecf8f48dfe9ca",
+    "public/oppitunnit/lesson-network/verify.mjs": "86b6aa6eed9a6d1543b6a639926dc406f5e3b4b7e191ff3eda12636aedaa8b31",
+    "public/shared/navigation.json": "8730730f0e0e529b3091478db5f69c083447c4284c3e84100cc13ef76ec21437",
+    "public/shared/navigation.mjs": "ed844f8a4c4882467e67c2c76083096b8d898fe32541e7dfc45e8a5cef70c84e",
+    "public/shared/test-navigation.mjs": "de7e5bcfc534881f49c0fede80edf1ca2162095e5e32b9ea46c78b4f5b1e1e7b",
+    "public/whitepaper/build.mjs": "791dc09da0d9adfc2f361005a6642ed5b30f9b5fdbfe2719544d2d7cfa000e2f",
+    "public/whitepaper/index.html": "5432018e90fc05b3d7c0ee10b4ba934c200cac574f3762f65b93c7f3f84f17a3",
+    "tools/launch/source-bindings.mjs": "866a275bcd248584dc6626425f31d8d39ec76fa845bb31acb3f98348fcfc6545"
+  },
+  "localChecks": {
+    "liteTypeCheck": "passed",
+    "liteUnit": {
+      "passed": 1977,
+      "existingOptInDumpTestsSkipped": 2
+    },
+    "publicationAndReviewContracts": {
+      "passed": 52
+    },
+    "disclosureRuntime": {
+      "passed": 5
+    },
+    "liteProductionBuild": "passed",
+    "browserTestDiscovery": {
+      "newTests": 18,
+      "threeEngineNewCases": 54,
+      "totalPublicationCases": 183
+    }
+  },
+  "remainingChecks": [
+    "Run this exact branch through existing GitHub ci jobs",
+    "Review the resulting new disclosure/navigation screenshots",
+    "Actual teacher/learner and physical-projector validation remains pending"
+  ],
+  "limits": "Source assessment and checked unchanged-content transfer only. Passing source checks does not grant technical execution evidence, live deployment approval, human pedagogy validation or a 9/10 usability score. Historical evidence remains unchanged.",
+  "nodes": [
+    {
+      "kc": "M-GEO-01",
+      "from": "8@e4457febcc8806fd64aed732d233ce0a22efa68dbfdecb66342875ed6f87ab56",
+      "to": "9@40fd32335dcb4e08cd428cee10ffa42b601524cee704f1a75111368785ff7bd6",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-REP-04",
+      "from": "8@7e8f30b067d3e92ab3ded72ba12d0466433b4c18dc80c435b0774c0451c05636",
+      "to": "9@75a90bc1d75c2f8f794932014b0d0b496b476890b84d29ae2fe849d33370ddbb",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-TH-08",
+      "from": "9@3df8320ef580f1e614ad06aa1f56ebd1361bf1661cddce1beb51cd1561a33812",
+      "to": "10@ab117464cd96f40ac47db99db147c8b8231ed3d99f11e9ca51a63e63294aaff3",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "SCI-ENV-SAFE-01",
+      "from": "9@4c3808c4f6dffb0c13694d169e83548f957ce314d213b069c1ebfc0269077ac7",
+      "to": "10@ee94268a969e27ff8a4d43d059ba8feab8b5cce51564195fef7a41eef1813f9f",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-GEO-04",
+      "from": "10@05253510e69ebdbd8eba870abca1d616b9a10e3a3694a363478c27090b552205",
+      "to": "11@5d60ed950030dd62ef1d17cebbe3e70aea17fcfec5cf82c3a989ab40b10cd9b6",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-1TO1",
+      "from": "10@140ab82919612dee873c179c2f9952ad40f1febe4c840763fea53349fbb1bb7b",
+      "to": "11@690b26a06220e0d598b896e2b690216481991be97b5e296443ede28fe0b15139",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-SYM-01",
+      "from": "12@f9628ba6505788d5faa453c64fcdc261812993965306fa83277c50401f171d28",
+      "to": "13@f87aa6ed4c796f2f1b4b6cb1d45ce2b938ead1d9627a5a8ca40c564f475c9fda",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-STABLE-ORDER",
+      "from": "8@517e40f8faef8322cbbfc69c2563a8c5aeb2c5053d01af8f66b60e16bd97bc81",
+      "to": "9@5b978213214e14edbefc2255a493c30e4c96064a9e0fec64bd551814031cef60",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-WORD-NUMERAL",
+      "from": "8@f9d382231f4308ed9add7498e40701ad80e3b133b87ecdbd4fa39599f794e8c2",
+      "to": "9@a493babd6044520eb803a86c2a591baadee2669f8ec26e1daad45697ee34057c",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-TH-01",
+      "from": "8@0a8163808a6922bdcc83cbd6a42183fa8d2989a07de7d2d24b6560ac13f7dcf3",
+      "to": "9@55d090b0859a301eef5b5c2fbb91cfbdfc8aac3ab75de9d58b8c5361e6097e66",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-TH-02",
+      "from": "8@2ed9ed0bda9f693d413323ef1e6b1024b6636f629262683c5db285151fcba464",
+      "to": "9@274f100a3e8edff08e626a98a306c05eaff921405277dfe9e432163f41bfab43",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-TH-03",
+      "from": "9@4a614f87e47d1193345ce4c7895b795815dd82be65dda47af3caf6cdecfcc0af",
+      "to": "10@875e3dc9183369065b5b15ac5bdccc732078209638114f1728664b329eebc906",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-TH-04",
+      "from": "8@f4cfa0086d437893ce04fe7ad8bce9b2425558d3b086656f4078caacc9d0e581",
+      "to": "9@f4a79c7baddbed4d118345a538337fe35f88b4cd537a9564b06388996a31d0b8",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-WORK-01",
+      "from": "9@be562274ec5d3b5fc1a2b921f6814c555e0a8834b1227ac2d7a55cf4a1349c60",
+      "to": "10@97a14abe437825d8392a2c40b289ded685b8955ee8d50bef2baa2b8f62201a7c",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MEAS-00",
+      "from": "9@994edbfc655c1b6aed7a613d06b06a5a3551826bf49cfa6f5afe360c05534496",
+      "to": "10@995e7df09a192f45a5a6777c772f4a27d1cef0f674a92eab804c30ba5705edda",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-TH-07",
+      "from": "9@b607897648043785ad895640550450c466829c729dbbe5d881734e7e467f52e0",
+      "to": "10@af76cb60852fbe70b4add7c020b2d907dcd145c20097977a8969b588a923e75c",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-LOGIC-01",
+      "from": "10@f20aa9de934b08731ba501e499ee3a119972bc7cf1fa231ca97fb879d64be008",
+      "to": "11@79d863240d019dfbc72303fd5096532d0a574aef184320b54471676240d33ece",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "SCI-ENV-OBSERVE-01",
+      "from": "8@283b07f49ad4d47431fdbfb710659d2b309b01540603ecf0ea4e62ed112ff612",
+      "to": "9@12465ffccf346b1759b9594296e16b931435515f491fa9d46962ef558d09ef68",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MEAS-02",
+      "from": "12@112138adce13ce1bfb10d04b6d1a6c0fc6a99af49c0ea8704890568707e9093c",
+      "to": "13@e6c36f9d375fd6c29d6a4fd3175bf82957dd2a1bec49c36f71089e9eed1ec9a2",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-TIME-01",
+      "from": "9@fa284f90c7b07fd5dc242f4f4d6cefa34a498abe675ca969fd4751a2d4760f8d",
+      "to": "10@272e3dfc7da8b07797d71a512e9ad145d18441284faffb033001946aa870de6d",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-01",
+      "from": "8@a5465ca94d15043abb9120b8c27735adb3709b69463ae9b3d0bf05be0bab296c",
+      "to": "9@60b3d3f1085576fd4bec2e42c05a7256ebdd76dd7fef61f1851a4370fc8f5483",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "ENV-PHY-MOTION-OBS-01",
+      "from": "8@0f4e816fba9eea5fc6aaa747dbae8425365d2529699aaa6821f82cd2b0c679bc",
+      "to": "9@d2484f017ddf8d63a1b053672039404183fa1c4eacbfea82ea5aa97ec954b801",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-TIME-03",
+      "from": "13@a7c3d2c3116285786eee32cdf63c62e15722a998a2cb61482e810c0dc28b05bb",
+      "to": "14@ff43f0264a829fc6f0937418f93daa36dcf8b747d3a41e69e77f41e984f89fdf",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MEAS-01",
+      "from": "9@1d5910096cfc52b8ae5b8ddda22501853888bc3bb0ef8103526504cb516779f7",
+      "to": "10@0aac5b183cfc4202d14a9059589852372413bf2c893923f23ca627dc3df0d5c4",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-02",
+      "from": "8@e4e127909b5c1c07aae882772971f55f9f25060fae5d9ec387c7bf1feefe91f5",
+      "to": "9@0fba007c7e72a8b99b298670b0392c4e51e3b397ff6c7a49f4d7f5b91685afed",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-17",
+      "from": "8@eb61b8f0bfb1ab0f6aed521f0e436c3ea56a481aa18e9bd741eda2536c890aa0",
+      "to": "9@60164df9a862b4abc6931f3991d57895cb2f09de6e36df42803c39400f3cd1a5",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "ENV-PHY-MOTION-CHANGE-01",
+      "from": "10@72a4bd56eede8b6654975c2586750b781600b26be7c6f51f56b8d096ff7a3d18",
+      "to": "11@f3653ac71394208a1b82a89f078605d169a6cb3e8e579a84bd9196f6cd38fe12",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-ADD-01",
+      "from": "11@5dab04f6c9e9e1a0ed756b9f38e9f4eebc5a3989a8fb212c00326d629397ffac",
+      "to": "12@2ddd443852885404e992038f78abe4d8757cf25948bf984448a749e4b4c06bbb",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-QTY-NUMERAL",
+      "from": "8@e456fce7803a20740acd0814e0c2a5e1586b73d9b39587b513571ec3a3cd0607",
+      "to": "9@7f94508bb2fadcad3557b7d739c207680d5927b06efe88e57ea2b7048df8491c",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-QTY-WORD",
+      "from": "9@bae78ae53886627d656dbe15a134f2933b2eae492bab189c62f463aebe610a06",
+      "to": "10@953720bf3616d0cc09e7341f3ed1e210aef669caef5933073ad8f83060658784",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "ENV-PHY-MOTION-01",
+      "from": "8@0637eed36b3d88afafe04ee7441c6b01dd23f1c3c74a623d94f1c48774e16852",
+      "to": "9@473d3b14539f4fef1f79312c4351fc6f0850c9cd5039d0021bc6b74d26b174b8",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-03",
+      "from": "9@6543552b0a560ee35274af3cb1f47d0d04107ab331bedc9acd9ccd668384d157",
+      "to": "10@6eea4e81843d2e94ab9da07688a984b32a37d4ce19c81c6f16d916520fd74cad",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-18",
+      "from": "9@8af103eaf8004297b3064837f265ae428d47a5c2d3d14173878792c6de662819",
+      "to": "10@d4f3bb699fc49a1ec000cb02e7573ed82874984bc84ac1a6f737fea2b8070852",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-MOTION-REF",
+      "from": "10@39c454d9eb826cec092c54d96cb4739ac0ff70df1a698bd7e9d5cf684133e8c3",
+      "to": "11@6e88cfbec9e9b1b316f3261e6f6660b6adff873a9a2eccd37052bddd9db8a567",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-07",
+      "from": "8@c3d78c0ae595ec2e254bdb967efbbd344611afd3f4a89438885d50c5045e9e2a",
+      "to": "9@9f06352a015059830c55acf2f6cdb93a2fd585fef7fa5113c9d3b9da3d5e5ece",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-08",
+      "from": "10@b45002cf1a7a3df2d77dea55c1b97facf3e2eb1b0def1ae184cdf76cf3325d00",
+      "to": "11@559fffdad3ef0d6fc85d5cf4a66630b115ee2dcc43802aef4064306f0fa18447",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-10",
+      "from": "8@fa2463a979435d6e33ae678d30a0f2221a705f7f2465194337e0561f3d017cc6",
+      "to": "9@b5b7089f4aea754271e99007b046035af7be8d051fb1845cb4d6a296dfd1ca38",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-TIME-02",
+      "from": "14@8d166825f4dd6d8a09a0229e8388c7adbd611053b336001c89a0121732e15595",
+      "to": "15@87a7327d211ca30038f2ac8f9c5f575c8fa32277b27b931d7010b19d4b1cb265",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-14",
+      "from": "8@2a549efb81c1df26ed6e8cc4e2cbceedf95962063b54372ec577d30fb1190cfe",
+      "to": "9@4c2c1aeef6035ca6adbbe1e396b0d1f428b3aafeba6ab7e27ec46936eb38fe4e",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-QTY-CONCEPT",
+      "from": "9@3983e7a10a11f05a02abde05ebe6afd0e31b383b0c38a2f5a7d45fa7b390e674",
+      "to": "10@efbe709e00dcd1bc87e0a28bddaf39fc0c7355411a852429e92202a2ede927cb",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-NUMVALUE",
+      "from": "8@e77fbbda9e9136b461d51103d45f8c68e6faf918d69f267cfe4b5775f9b65b74",
+      "to": "9@2019740fc8f36a11301b22588af396c94f7f703ec1516a5d05d310d0f259b7bc",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-UNIT-CONCEPT",
+      "from": "9@06f5f8a73b3a1a1fc0f826c103453ee48f41f1a17a17a74328a08405bccccff3",
+      "to": "10@84a9aba979a9aa03b26e5a60245c6c594fea6cc6e064b9724ff471e7a0899575",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-QTY-01",
+      "from": "8@f250ca199204cb7f02f5ef6a0052154109e6ddab6b62b903251cbba8d291e485",
+      "to": "9@4b7e9116dbe83adb4bb93538be1fc0714bc5ddd9a5646ae59db1c43808d41105",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-DIST-TIME",
+      "from": "17@d57b1d78128b8a389c10ea8d1542fee0939f3fee2e49b6d8b50f8f189f440c21",
+      "to": "18@f9d572db338ba5fad7dbbb704cdcea7fcc3d54a2eb72949db18a38217f9a4401",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-EQUALSTEP-SEQ",
+      "from": "11@8a4dff1f7d2bc436324d485251c3618160352775bd80c53221a9fbca063eb516",
+      "to": "12@de5a7a95ad1dae085e410f82c352012031043570d294a6896ce905e48fa48c26",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-MULTIPLE-INTRO",
+      "from": "11@632355adf7f6855b0846e69ccbb8ca167ab6c95b375607131a7d4d4bcdea9fb9",
+      "to": "12@0746fdf2075e7e392b105e54b1de1882abf4643c6549d1172cc5029da8c8ba5a",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-16",
+      "from": "8@5dec7aa26d55c5c9887b929b60f36984d04eb42649f5fd0c5f756acdbd5bbf43",
+      "to": "9@c911438e6967c335cbf9f89fa58b20da604e5e6563869d0a2a66425927fde98f",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MUL-01",
+      "from": "9@f97035ccc86a579c66ca53ab65547d41f0fa6c039cc10dcb08476e1b40f93d9d",
+      "to": "10@9cf7f4ebd99a961ecdb6e9f6589d907728ea3aeb0ceda7d7749f535a25dbc9ee",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MULTAB-LOW",
+      "from": "9@53e554e9db864264bf382dbbdbaceaf9f5aaed55f24e09acf74c30328a491e7d",
+      "to": "10@325f9c154529e2fcedc4d68313108fd082b105a3cff44603b622d450e69e0a48",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DIV-02",
+      "from": "8@2004e25f90c77ad04d8662276c8069f7e63836b750d4515f458725d473dd887f",
+      "to": "9@56e7ce1d6487515387852175be1f80b9dbf1901308a2a43d921642b716cb9ab5",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MULTAB-HIGH",
+      "from": "9@46dad8b594f40d0fe3747983214df16da2e015f12a72ad470c056940afdc4b6a",
+      "to": "10@86ba6edfc7fbb85895bbc1a0647b20af9d01e5b20f1897c372ee8c2150decd7c",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MULTAB-ALL",
+      "from": "11@2894504057519904b584601f54a9d60cdfb227d7848e5400a658869bfc5f697c",
+      "to": "12@0140124da503478d35de1eff2629c144774dee96fd9d1deb0c5ee499e5a99dd3",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MULTREL-01",
+      "from": "8@a8c056fda50d8c86144321977276ba60679d061a07de0e62ba76e671d21b5396",
+      "to": "9@e77168bdc5233c86af17a87a3d771d1747e0426b8228b0788bf4aa58a997e4ce",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-SPEED-CONCEPT",
+      "from": "10@20e6ed4435243b5f4e4f224dcfb368f4fe06678e861f364aafba464960d6bafe",
+      "to": "11@473effba87cc39c3b97ec63e4acca6bae9a23d64f80ea31b8e506d7fbc20f696",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-ACCEL-CONCEPT",
+      "from": "8@27d5700f3577be1ba82b90d07550ea4147191a4d2ed4135defcb296a2adbf661",
+      "to": "9@c15cd1775052c2d8024c9a5fe4724a11147bec5960793d267a3b5827c92c60cd",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "SCI-ENV-PRESENT-DATA-01",
+      "from": "9@1f962afc512ccc3fec77157b15b896099f0aabc4bda583ca8c960720b0dc6333",
+      "to": "10@c3eca26479356fbb5bd329e1a9c1b64ba81032e5af9dccb69e8d4f24193eebd9",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "SCI-ENV-RECORD-DATA-01",
+      "from": "9@f5c4c990a954fe4fba6f123d35f6c37b1b4da78f1de349c4370a72125776e4c7",
+      "to": "10@5475ed80bf227b4a5ce751e12ffd6f83c105545acfecb2cee9ff3fbfc5fc764d",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "SCI-ENV-RECORD-01",
+      "from": "13@9630dc1c592480376f2a707edb90a77e730f2688b5934ff6beaf3deafe2ae2f4",
+      "to": "14@4faf8c71440b28247115ef2d5804c413efb6f0b2702bc1d48562efcf291d5626",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NUM-06",
+      "from": "9@29896ff002d5263d5415fcb48ba75d6c0a2c421add86d0a03d8d32a52814af6c",
+      "to": "10@839b4be19d1d96ca7e5760e3cdb76e843d38a263bc496bfb4d5fc65e4df1c359",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-PLACE-01",
+      "from": "8@b4656f4f0e5d970dd954decc3204a643478eb684653a105d241f9e25aa8d43b4",
+      "to": "9@78ba331d86d3ffc783395b63f1c4caff3dfc630690c10e1f9d121fdce942c2e4",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-PLACE-02",
+      "from": "9@9cceb610a95902fa3331ecc569dedaca1022ff20789366d425e79bd1f70732d0",
+      "to": "10@f6cbdec7dc1ded622f2af1977e5084d3477a05138b103559a239d40aaf2bead5",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-PLACE-03",
+      "from": "8@b2a563363073efb3bc5bffbb17d58fc7d2b3fe9cc03e08be0d0c4f6e14e10669",
+      "to": "9@5097a7ee8b1baf49c3bfc7b56220fa35c824f4e64cf500fb1a82bcdce53e83f0",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MENTAL-01",
+      "from": "9@7b12f57437fee8e6df02424606a1d3f9713dd24a04b2f91e81eb794e8a9edee4",
+      "to": "10@f064858739cec5f63ce843fee3e0e5b83052a1afb934ef0ebba2685b68eab130",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-SUB-01",
+      "from": "9@a5fa046a5ef370688dbd65ef28858754da4b1a6a3b2dd0e39f9a2aee58281404",
+      "to": "10@dc6f779c750d3a02333caa0309b6a8fdc22f69b99b450e3417fa73af65a681bd",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-ADD-SUB-01",
+      "from": "8@52c984e85e4cd97cd3dc5393c61c2bac4d93fcb623885c7f32ffd13d056b3e0d",
+      "to": "9@06ef6167d41050a4a187d4e9fd431bf0f1ca8fa5e855ad1def3ee519a3ebe2f2",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-ADD-FACT-10",
+      "from": "11@d8e6fdd15cd0658314a2914af758a460fbeab4f3424aa1f78f10b2c38393826e",
+      "to": "12@9a0327fc6a29d86b575610b6b13096f668b0cb260e09dd6f464e2f7c86886676",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DIV-01",
+      "from": "8@25939fd29a4085c5570e5172c810e2eb61e9347cbc8c2410fca78455dc889e46",
+      "to": "9@5967489cd8c8e37eb846168bb51002eae806d5829c78fa2b0fe11bb706a025cc",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-SUB-FACT-10",
+      "from": "9@c5baf1134dfe9485820feb9f6250acc43920c7941eb7b9063ed604b20978a263",
+      "to": "10@ece29a6a091dbc5464518f045b986fa048bdbcf17d42a65f3cb5b399a16f024d",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-ADD-FACT-01",
+      "from": "10@fd3f49a38f57ec93645b9969fcc56da066046966b469502c818628ebd7730a52",
+      "to": "11@0094f108818040e5b5daca7a408a5e9f4529a9c88cd74913e90f7ee44a84c5be",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DIVIS-01",
+      "from": "8@028b4a9d20aa33a8f56ecf4c2ecbf0436cee9967fb692e0d8be314a6768d6141",
+      "to": "9@2d662af3734e8f9abd788d14b8f90dd7c8b0945cc0c74ec67f893cc402823245",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MULDIV-01",
+      "from": "8@824a12c36c43f6dcf01a0796c7c45a6bd0c121c1e04a69c474839d927231970b",
+      "to": "9@38b3d40e478b66845e08cf92184e2ac567b237da4f94fe6f83956d5d06df84a2",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-ADD-20",
+      "from": "8@1ec1c15315411c09cec897be20c190ab2b20e9e319283ecc103c2094a4067c2a",
+      "to": "9@c3dc06a95f693b09e8483f65d2ce00f1f95c981000843813615e541dae8414ba",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DIV-FACT-01",
+      "from": "9@8b0d008580b73fd307cf373737d481d7c239f0731d9921344d665293a6d25cad",
+      "to": "10@ce850ca39c70be0e88941e36a68b12b54b5a0b711eff83f72c53cfa421e29ce5",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-FRAC-01",
+      "from": "8@cf1f65d85b827c9fb3fa83459fe342bf85153492a2348a7c8b238b556eb2211c",
+      "to": "9@8f66f983a7216c236991afcf9e0cc51a843105cde9f164a00d571049d2a11a6e",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-SUB-20",
+      "from": "8@8a18e422973cef646c9b37dc0f2c0c53da349ed485ad5570926796e8eb1d7121",
+      "to": "9@c9d5deb4b1da01f85eca471d07a7a4d746947c2d0f8d347698e21641a476bebd",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-ADD-100",
+      "from": "9@4641aa1c071e6bb67a72754012b7d4cd2056c9b1be61b9ec06c033d2cf7afac0",
+      "to": "10@ce9df8c1791e183926662857838ab0c31fb7d4b12169a3eab3a75bc284e1e2de",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-SUB-100",
+      "from": "9@a06df29fe61ccda988a5526fc4911519d7c9de15cf34638c826e7ffe601defa5",
+      "to": "10@4bbad8b5b5ea8edc31cc979d5a1925ea66820415a5bbae502c27a4410065d05c",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-GEO-02",
+      "from": "9@23a237cf742ae9f3302c81401a3cdd7a326500b4c5fa0a87732ae43470c97015",
+      "to": "10@122070c4d587a13305658bcb76ae58cb80350eff604f9e70b59e20efbc391464",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MEAS-03",
+      "from": "10@37d435a076df14883ea2689a6f551e64c8a0d282691e976f93f58dde93ba02a5",
+      "to": "11@0724f2c1675f6d170c7a5a4b28ec468690106dfa8f01099a31fba2aad40b9ebf",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MEAS-04",
+      "from": "14@bdee349d8934d73371af964ec3ee4db5ea75088cd0a4a11cf8d33139b86099f5",
+      "to": "15@ed5600ae198f65e9163ef59a4c13dabfa221af67ad1becc0d6181b218414099c",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-GMEAS-01",
+      "from": "10@12ed0f2b0e50ed54ce844f3db5700d771895ac3afae9b4fd9d5d1a8d44ae2364",
+      "to": "11@8fd79f17fc307a6ba220834d24f19cc0e8e062cb582968d4ef1e494f2875aced",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MEAS-05",
+      "from": "9@3dada98efeb39b0ceadf41dccf8374437fbb92a4a62da853eddc24efe001f600",
+      "to": "10@89dac3e9d1ee6b38d32b641e8b6923a5fd135e0b320002c5fe2f1deb3184bdef",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MEAS-06",
+      "from": "8@f076600dec412694b9fa9138ca2e73600518070d10e220e1e6bd62d58ee84c0d",
+      "to": "9@6c72665b3e2e07f0c85c0f4357e41a57cdb62146d13de4ec2ebf15cecf1e0afc",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MEAS-08",
+      "from": "9@6e0ddf4b316fa160208208ea02a15d78f2ae507182c0a16eb83436ad027caaf5",
+      "to": "10@44b53a730b95f27b98f576e324d89b850877be8dea28ac0502e50a72ca8c4fb6",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MEAS-09",
+      "from": "8@ed59d55f51311b6eeb2dbc691ddbc4397e3f9ac4e27631ec6678e5d08cec29df",
+      "to": "9@1019f6614fb3b55f3f57b71878b3069dc4387d29ca2e717582fb00022399c0eb",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DATA-01",
+      "from": "9@caa15f7f9f7b242c884d90696e270c380f30a3c92ed19a3ebebc3efecc4b3fb1",
+      "to": "10@88001343ca33ec754ba84dde8bd5f1531c069257f55ead768bb578f452f5a740",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DATA-02",
+      "from": "9@3c1f197b108da4c6a8da6a0dccbfa2859141ef12d770230529d5b4f77c793732",
+      "to": "10@ae2c41c84184d72ce3f10bc307e1d925c82eb67579e60c5d23af0bf276129847",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DATA-03",
+      "from": "9@a9e4e191dd7ef6ac8f67977166714577d628a602ee8cae97825ea50bf75d0233",
+      "to": "10@5da17ed238ca4d2226a29d560f5353242876fbeb453c1231a4414be33dbc91c6",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DATA-05",
+      "from": "8@804d49410cf89ce09fb10cd1f16f1d4a3c9200cc8eaba305bbd6ac18ea3d9144",
+      "to": "9@7bcc6b15cafd9c16ec501faba56f1f3df474ab03dc2ba507a3e079ee2929e7b4",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DATA-04",
+      "from": "9@d92711f9d5c6e8a7806ec6e69fed5fca9e40a44a754016fc1dd9eccfbf4abaae",
+      "to": "10@182ecf3f08d284e9c52a0a1bb95a4a70e80c01d951fe548070ac7cddcdbbb189",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-SYM-PLUS",
+      "from": "10@96f055cd49045c7806b60ff2dcb5fa6a706ada0be0751b6f7a094905bd24033f",
+      "to": "11@33ffbe783def5d711e877b8b6d34676a185adbd716b57b9628b1e7e0cd89c59c",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-SYM-MINUS",
+      "from": "10@f6ec4c60fa2a8fcf5b7c9ee9dda4c87c159997de5097f081b6a1fd3f6d42d663",
+      "to": "11@26dfc4e47c6715f0052035f6fc1fc2dd495d8437d5d7c10e0e7229f0452202b5",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-SYM-EQUAL",
+      "from": "8@30aebaaddbc5a9c8a6e983507e8b8d7a4875be8b4acabc85614b19851fcc5c9d",
+      "to": "9@eff65b35008d8ebd70c8236e0f6a3b69c6bb34de8f8ad5d10ad057afb635700d",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-ARITH-01",
+      "from": "14@98303483fea0e51cce167794f95c60ef3e84c51f237406b354db719a2c13e3e3",
+      "to": "15@532f8dd9e5508fdb3cab19cb9bdae753dbcae336d9b1198290659aa3cc02e4c6",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-MUL-02",
+      "from": "9@298b4e01b309ef405cdc394cb9f8b7c81445c26e0d982bc328a4a102ad123acf",
+      "to": "10@ed66561c5dd53adb826d28ec85a39a9785d4754a2454c14824f84d421a88141e",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-EXPR-01",
+      "from": "8@b3d9a922c01ce8c5d410307ff67a3f393da8bb5e77b3bcc0f0881753a3902499",
+      "to": "9@9fc0e4454007e00d26aaa6071d390b135493db272dcc4019051728d737ff7e31",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "SCI-ENV-TOOL-01",
+      "from": "9@a6c4e7cf88fb500fcbe6979d792590d842c806a6ebfc5af27739dad152ee68b3",
+      "to": "10@9ae2a52f73574c3f463b9156348e0c3eda04666498c01f4c78c944567bfd2476",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-PLACE-04",
+      "from": "9@bd0182add3c05c8f90b75f14d13d52987eed2abc48b046606a9576cdf96eb5d2",
+      "to": "10@d63faabfc17ec024388c947d35c21c3526b93afc5dce72bd95f120a363d8ef93",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-PLACE-05",
+      "from": "10@a2a3ded1b796f4be5107e441182e7520804306a02db8a53aecfcf4ff0b7694ed",
+      "to": "11@1f47dfd47e6868b8f64cbd0cde3f295d5119d64f662271fe4dc2d80d7dd1c880",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NEG-01",
+      "from": "10@0e6154afff6a94a2d5887fbb4efad967d766d8f8e734d2b791ee74c556e24e0e",
+      "to": "11@c9847c8b1976dd26f634972687fb2fbf4458c45261fb89c2235a851bd173cb4f",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-WRADD",
+      "from": "9@8198c8c234b744b7324824c188cbadeb853a3354620e38571cc14329b1fa9d84",
+      "to": "10@0e38818da4bf72b173678410b4b02ddd2e54ff4bb3c8b4db9c3b193308e69d35",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-WRDIV",
+      "from": "8@aa28692b75759cccea6d7db538998fd9f9625c1e85212cd8bb9ca1463826c10f",
+      "to": "9@a010d784afc5576b220c7c5fcaab573e6745e446f759f5455d0872756449a2b9",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-WRMUL",
+      "from": "8@659a21cb2bdab309a16fda45c28ef9f1139052b9db337915264a0764a5dcc788",
+      "to": "9@3d0029411bff7c35aa1bb2e0c69d6183199f23b305314cac789e19b3f89d928c",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-WRSUB",
+      "from": "9@95433656ba1048161acf71b15885a6f525b1e17778c8c1cf8d72943d3ce5528b",
+      "to": "10@6c163b8dd06249d9fa2f1a6b8c79bd6e95ab2f37b117847ee90f7798df4fa69f",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NEG-02",
+      "from": "8@59b33dd644517fca0073ad770339f0938484ff7fa65d59b8aa8a4da42c7034c7",
+      "to": "9@3e850edd81b78aae85428481fd8fc732214995a192f24c446a83ac6635ee5c3b",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-NEG-03",
+      "from": "8@88000a09953c0347378fc5ec85c145d39b786d0a95a64db9e48eb9a9d56301b0",
+      "to": "9@7ec03fb8c8a2157f534e3267eeaa5121a75a1d9dcce5950c40cd85f1c5068e6c",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-FRAC-02",
+      "from": "8@971f16ae5b0a54018ef0a166266c059a49ac8b81ff35a1ed6d59c268efe55386",
+      "to": "9@2a25843a2430d044b67276dee74274bbe8fb6b054e319c616ef01a1bad5a6e31",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DEC-01",
+      "from": "9@06c5c2e1cbc37f98deb0dc39c2e6b48dcd7a3c4747241637caba2d4c632e525c",
+      "to": "10@e1ddec018b31bbc787e675721b8f9aafb71c663da373ef019996436aaf141c4d",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-FRAC-06",
+      "from": "10@43c0c2b0315610dd258d190d18eb5b3894d51d7f67f9b77582343dafb9d0f9fa",
+      "to": "11@0c410addaeb4d63dfb94d2b0be277d6c747417e276685eb6949d6df8979df6e1",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DEC-02",
+      "from": "10@6b14d0da804d59684f271bc2f6f7cc90ed70b4c3fb7ab350a0c1a58145f4e8a1",
+      "to": "11@65cd22616da09cf82caa3117d934c398485bb09c6b0da07ba5c53cad987a9d7f",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-FRAC-03",
+      "from": "11@4aa192332729b19c807ec30d3fe8f819d402c4d252e3332f65ee17092ffa7e4f",
+      "to": "12@8911f580359f17c324c86482699aeda7b5bbe6af5839b7765d10a1993817c416",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-FRAC-08",
+      "from": "10@1978eceb65865a2530dd2659bdee50bbbd55ad7c0cc11a41f69a1f5f3a8411cf",
+      "to": "11@e09242957c0c4d0d6d92aab021cb1b484ea67bacd5363e9ef0f0563275d5eee3",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DEC-03",
+      "from": "9@852a937290297c17986eddade5045e023a67fb964bdfecaca506ac65d2517843",
+      "to": "10@9bbe264ec6e70fa5c8382a12bb027dd48a076c3d9b1d8ba4d66428ec7acd7b30",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-FRAC-05",
+      "from": "9@b2a26d3118c80fa8201dc86e0a0d0cda1e416f0735dd95c2e70de1e5f62788fc",
+      "to": "10@20156104577571e4529dee2de6b0cb1c04ee8d2a941ad04b577763c5b19d79f7",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-FRAC-11",
+      "from": "9@2d192f8c2e3af2234a7a40bb7c36a761347b66fb44fe3008306fdde7c01e75a8",
+      "to": "10@425b94686bdc570e1852bee2d53bf2921ab2b5d46be0dbd4464c14f4fb0bfc28",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-FRAC-12",
+      "from": "9@fc2dbd8c642c3af93916591091efc9dfa54a175c7b90c04850697619d23d1a38",
+      "to": "10@9358a2296fed3f5efae07df29a28e83ff7a4aa6bad20ff7902f91f68fbf2922b",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-RECIP-01",
+      "from": "8@2020fe62b558e32711eb25e278e7191f1ec4abebc261b0469b358629ed85f95f",
+      "to": "9@99c516cdc712f58ca66398cab3a85d511dc3b84eb5e875ec5a7f9abac57dd2b2",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DEC-DECOMPOSE",
+      "from": "8@65bde47ccc36638b90edcb4d22fbe5555b69a664d0b724f1084c7325c8098d81",
+      "to": "9@8170a73e8f3a6059432726927763c17b4d0ac5f1951e3b458cf59a7d86a40e3d",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DEC-READ",
+      "from": "9@fac17975fcfa1d7325d502b236ad178eb9c496fd66232e9ca482c4852dc8d906",
+      "to": "10@9c716fceae5a2da35569e88e9b27917ad3d3f557b122cd8d3e1646359013c8ad",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DEC-WRITE",
+      "from": "9@cac378cc345fc76b1712fe01505110564bf5818450721a1c51dbea28b4170833",
+      "to": "10@471472111edd3e0c136b0b3e1a103535f2cbf1de3d3a9287ac3379cf89fbea23",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-FRAC-15",
+      "from": "10@2f564b6b474fe95910f94a8667c3cfe9da500345cd866239955375d26dfa5ae6",
+      "to": "11@bfc1e49eda070c70477a0e8c5ba944c1b61e11d9b70b885522738b8b246992ed",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DEC-04",
+      "from": "9@f7161febcf3e454a6884f460ffd56504c1409aa1cba18a71613662c1e5abe46f",
+      "to": "10@6bc08de0317446872d5e1894a493c9973c4f96e92efac670079b5ea4bb7c869b",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-ALG-04",
+      "from": "8@f43548244e1f06c43500752e5971055cde0e48cc8d6bee2ef0d5fa0e4724a7ad",
+      "to": "9@a10834460aee9e747f30ef35b4baa7d55594b5d2f22f1ab6a4284b1831f631ad",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DEC-08",
+      "from": "10@cbd74f1e42ca6e2dccfc56ff174e957518886de7a09cc104d6b8619bdda24d5b",
+      "to": "11@0815b846ddbb3733a1befda57a930b8acf8ad7755d6c449d2ab2b9f2c1dd3a0e",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DEC-09",
+      "from": "10@e21385f1a9b1fa84030d8015de795c0cb8f8645d5a2c1b4c08ca69dc2d7fecdd",
+      "to": "11@be7d0aa899d1ae11a82f0f397b1ee835e0bf0ded379722f0cefd18e88c44ff83",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DEC-ADD",
+      "from": "10@99014c59df46a67f0696ac8874dd3e57c8289ed8d78864294262fe0b71bbba7f",
+      "to": "11@1561e58d0cbaae67b2d3ab3d640d7581a3ac593a8f8641defd1f1b9abee19420",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-ALG-05",
+      "from": "9@dbcfea549517a29b4eb17bced9b08662f5883f6efacebd909e7bb97f7f30d257",
+      "to": "10@0e9c7043a9359b597c27941f52b41411d755bc4177f0ae8f7f4bd8b9cdaaafb6",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-VAR-UNKNOWN",
+      "from": "8@033afb8e50fc8e47a1662c78b64c10d9274ba29e2b0dda508b4c502017c9ac6c",
+      "to": "9@e926d4b7b8e983191fad9381f427be3870adc1281d5cb951a4788871ea948ac9",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-VAR-VARYING",
+      "from": "10@ac2cc125c5811427894a368e5ef2b4eae4f50eee55e378404484294083fa6da4",
+      "to": "11@f68eb412357bc19b08120a125a41bd055aab466667d9ec276f39f9aa474c9e7a",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-ALG-06",
+      "from": "8@2515b5e12af643a7d2b2a63c9389ab1d2b95ceba178653ad4b6c5f06f54f014e",
+      "to": "9@4a44e11d53eeda97a79010695488a0c0a3bda5b0be948e201a9922523855770a",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-VAR-01",
+      "from": "10@c4f5b444ed0f6ac0be745b99e63dc7ba029fae3f1e1d4b2e8f48d1181b6539e8",
+      "to": "11@791c33f248d9e1b282f7e022315dde6806105fd93946e80fac29b8a52c7c5840",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-ALG-07",
+      "from": "10@73ea98567789d9d757c3a5165560fa9ec3cea95d2ad69a14e6388d2c86d3d76a",
+      "to": "11@b27cc4cb4faf9f0e1280ed9580b07fd0f6e2e476614b8e9fc96c4864dbfcf7ea",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-EXPR-EVAL",
+      "from": "8@9ceff28fa3ed811b3e18016a473023a1aab3fd55fb44550c6e05f617bbe165df",
+      "to": "9@e682b6308146dca8c6bd59b17610c2c5f778384fba5807e9739520a853c72894",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-EXPR-FORM",
+      "from": "8@30434ce6a8c344f29802719676e08f1f5add42a0dd978f618542275a0e610b1b",
+      "to": "9@6c511fed7f71856d2c257385188e4c09007cddcfed84187c2755d808880c67cf",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-ALG-08",
+      "from": "8@85f95dfdaaad4a1ec98445a59f6a275e0ac043fd008fb3ac3c6b1253615fe74c",
+      "to": "9@3dc2a6db29a07f4acd328cdd4bea26931196232b83d960b9b55ddcb7bfc239d9",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-UNIT-01",
+      "from": "9@54acfa4cf539936671753ebb8a5e58e30ecea90d7860351f8f64dcda79f688b1",
+      "to": "10@4654548c9235a4712404b515f87e34afda58a3dc97160a8b855cc0d4253bfca3",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-EQ1-FORM",
+      "from": "10@74385b12f68d8e450971f16bbc4276228020a79943bef9bdc9ead02c41278ea0",
+      "to": "11@238fc750538fe7a3ea134b8ea76553ead872c1351da54b4309aa2ed241c3b18b",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-UNIT-02",
+      "from": "8@0f614210aec3682e62aa34cf84b50a50d94784062ccb55105d66c242e0afb4d0",
+      "to": "9@33e5202157985a63e88c65dff4773fa918b5c45f27df6792715524e14e6bedd0",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-UNIT-03",
+      "from": "8@16b481cb050eb2b3a3f5fbbcd4bd5271063d1790ab8277b442d1caa066af90a5",
+      "to": "9@7a814d6f93f49f2929efb9bf32a8fcde28ef347c38daa9d04fb493757c652370",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-UNIT-04",
+      "from": "8@14fa3e105cb83f5ae44a023c06d5eea3fd81f2214baede776c70e07dbb2dd0ee",
+      "to": "9@bb2a3092952e5cec0ec54261508c6f72817b7bdc4c7a1f0e629db2d908b4f678",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-UNIT-05",
+      "from": "10@5a67abd027d3fdf662b7b45cc272bec7d84546d0064430751250c47f2580eee4",
+      "to": "11@99f0ce1b63535b330c55b3c125bd197307444c63752aaab216bba8d88e40c17b",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-SPEED-UNIT",
+      "from": "8@091debea54ae20d345817eaece36aae181e0092c4b64c4c3a290be106ccdac9a",
+      "to": "9@3bc4d919147aafb4da04568b5e8fa9e65ab0ce27455788753c6640add11d8b47",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DATA-09",
+      "from": "12@f9e44029133a8ae4655d57279cbf5e3b0ebe0d0e6d702bc7c524fe0f5b61c581",
+      "to": "13@f16f4014a50ba00f4c76921aca908cdd6e2736292ac60eecf94732a3e275a985",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-DATA-10",
+      "from": "8@c382559ed30e3b233c0235f719a2b63cf73e75b19db50f74bfd2235d3008d615",
+      "to": "9@e1bdf6d7ef03b825588f4401b2cd7a31c30e34bf11961e2a36fadd2d6ca4bb9c",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-COORD-READ-Q1",
+      "from": "9@13a0d0126c658b2cd6c62bcba68be8e48ce041cc457f96b554bb241aab1e7ef7",
+      "to": "10@35a2ced7d2918afaea90488ac33b2ade6bfa8ecd5dc952fdd90d83a6749a7bf1",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-COORD-PLOT-Q1",
+      "from": "9@88ea47cfaa1e776c448b60c68ff886dfcd46e64e160750487ed305fbc2e041ea",
+      "to": "10@79fc13b2c97139870489edf0debbbf6527ec846ed0a37e793c191ede0279e6b5",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-COORD-01",
+      "from": "8@9c4612daec52552e44444e6ce3202c9b73de8773ad7837feffdbe6a8f29d2311",
+      "to": "9@170c4bd385cbe9b9a21d912df2449f26537899387f0cca18d57026c733ea3ada",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M-COORD-02",
+      "from": "9@d57884671eadff0ba2d8b5df11adab4f7f6fefa9c366994b8220f7fcff94b2a2",
+      "to": "10@9595142f8a81012a4f9ce145b775968cda5b2468b9cc5b292536c658ff530577",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "SCI-ENV-MEAS-01",
+      "from": "9@88d9266061f994f92d6c7bec7ebd0034835e9d5d5b9df04158835eb8baf1692c",
+      "to": "10@7de70fbd52d87c309626692e7c61188f8f69a9564e48adfd8a75acc96540d9d3",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "SCI-ENV-DATA-01",
+      "from": "8@d2be486a63ea359703453a9f600b59569e6299b450b37fe45542c12cd23aa065",
+      "to": "9@1fc4b67171bb1b3224ec6532f8cef9afbc1dd9e3c5801d38682d922bb6317a83",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-DATA-01",
+      "from": "9@c422b17696e720c72e6f3927b5b92c055a38e063fc74bf2961eee5e8a567714f",
+      "to": "10@5657e933c8e6bf9e390c9cb724271f46c2e4f99a8fbb9b9e6e9dbdaf6e39b92e",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-FRAC-MUL",
+      "from": "14@d14694ddf939158d8136ca29097a6319cf4095f8f98acf45335621d9f081ab79",
+      "to": "15@285465ce539c80e3bf39de1efa85b4b4b4bf791ac3461a4175101530b65e5c7f",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-FRAC-DIV",
+      "from": "12@2dc63bd467f75c1b551b90b7d5991c340862e30e6dd0ac8c0522e0e21cfcbe11",
+      "to": "13@e53a8d58e964e3e5e3f44b91191b071d61504cc141f88753b505628aa38128bd",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-DEC-DIV",
+      "from": "9@87d67962234073f81f4fa2017fd49390bf0f985ed2d66291fabada71d0683a2e",
+      "to": "10@fce2c4a715c799d801e53eb7738b29126e061e8d81a1e7fd91c3739a80934a03",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-PROP-01",
+      "from": "12@26c87070274d8ce3fe7cf9a8649d14ea8011c88ac73c133fe5ae3127f2523032",
+      "to": "13@e0d4a54faa4edaf08f4cfdfffbb8e46b0da465fb9dd0bf147c898c43033c8d2f",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-SPEED-CALC",
+      "from": "9@87fed4dbcff20ff5823d5d8b1740d132c73ff706a198e7123bbc9d5e29fda420",
+      "to": "10@56cff28f57ec497802f420e262ed31003cec8410225bea2e103fcebc09539008",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-DEP-01",
+      "from": "9@368907034cde5d67783c28dc7de9b0593e3b096d6e165b085666ba3ff1c7f5a6",
+      "to": "10@1fbebf77eadf648308960e50b76f6f19b43cae68a5197a2f677d8ae5af945c71",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-FUNC-01",
+      "from": "9@9fdc880d95a661b0612b666ff911c69b6be5dccd8c519d50551523c1080b50c0",
+      "to": "10@7782168578c6f33e8bcca8f4f153ef2246fada887581de2852bfe668eb933310",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-FUNC-TABLE",
+      "from": "9@c0bb4fb0c0c33e28ed5bbf0405535141ed2d1f58d5fa2839cb61eefc4932912c",
+      "to": "10@32038c8fde1c8aec6115fc1b39bcabecc5cf6335238c1ea08d80a2c09cbae3c7",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-FUNC-GRAPH",
+      "from": "10@0aaa47d4bc68b392a895ed6e4e8d796591dd647c7fb1de79328424c56d522a50",
+      "to": "11@dc479381ae8dd04100c9a944936a0426f1086a62ddabb8ce10d47e95b3b622a4",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-GRAPH-01",
+      "from": "10@a7799305fabc76edc4ca74a21384a5c2dade9c7ff0d0531257404b0d135e565f",
+      "to": "11@30eea4a629c6323d46a3eb7023cc1168bbe66953a7686f8849fc97a385fe4567",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-VT-GRAPH",
+      "from": "8@11aa44214deaf5b80dd5164e2fb8972cebc7b999c9127eb82ae53b9ee613982a",
+      "to": "9@e19dc40fc65631ee7a992c88354166cf9986ac54ec7ce9644f19b9d9f60ad065",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-UNIT-LIN",
+      "from": "10@f1d81fc3c23916a77730dea59813e8a778373131796e3e6a1018c0ca5f66e744",
+      "to": "11@726c36ca2f061fc3c0f1f08a0ad548f6dfecb744e4e6c47c1afac10f6171f276",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-UNIT-CONV",
+      "from": "15@aaaa69a093b325ef9f9768bf7be86f3cb010a507980d4def5f61a0d0ff8128cc",
+      "to": "16@3680bb5f2314feef8b41f5fd495ebe5b278057c68216290e2a4584d9b18efd80",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-SPEED-MIXED",
+      "from": "9@185d2477aab89eafc757d6c1a5c247205eefacf9fc5f15c859b70df31cc7efe9",
+      "to": "10@254f63b253b48117e5dd2b1c636f894b32a6e17c14ea50f5eb4d1d6c320ba66e",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-INT-ORDER",
+      "from": "8@b4f8d8137b0def0a220b8d2ca2a78d15b88b6fc02ff07dc2d9ef8cfe1fb69fd9",
+      "to": "9@cc615f244ae6f94f3f826eec5c488b60cdf6893c09de9e5996b8809a1de9ec86",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-INT-DIST",
+      "from": "8@cb2c91184314a1321fe66edde5b45579dff4dcbe708a62ea6a6976ac34a71ae1",
+      "to": "9@dab3738889762d5f6500dc992ecf8430a9af2050e743e7b10067661467f40bad",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-INT-01",
+      "from": "10@73215bd20680d4315993131e16ad953bed19f006b775c3e2e3acbf520139a8ff",
+      "to": "11@a9291c6d1aa8de833b088da9f9867f9a211b6d471403d6090f3a8f5d8b0a1363",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-INT-ADD",
+      "from": "9@427310a00010d4114faef2b827bd23fe91196efc6c6b5301049e81a1ad9bdce7",
+      "to": "10@6b817671d54f13510635e07e82b72b65150f160245f728b58aba905b4c86b266",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-INT-MUL",
+      "from": "8@30a534ed28239f49a409a11fb23c8fb772c4181ec5ebbfa9c1c48af47061c294",
+      "to": "9@458ed186101624d194789b95f0771da0b5c7ca23ef41f3efac62e21052c839ff",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-EQ1-SOLVE",
+      "from": "10@cc24ea9d0232c153acd0c0c33b5b49457cafb92b014a54319cbdf5e42deeaf82",
+      "to": "11@11069ac1b379b18c892392e39b4d8f21a375bc92e122dcf6e7ced9055f7507d2",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-SPEED-REARR",
+      "from": "9@472d892fa5b5fc73aa2c500986a747a368bee9e2682c60dab2afce14cb07903c",
+      "to": "10@68340e946267634c044407443150d86f78a2ee0a36778988d7f831362a724b07",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-LINE-GRAPH",
+      "from": "9@a9242eadd810c7344599479d315f5d50ad73ad8c3809f640b769f0e62f8fbc6e",
+      "to": "10@3109a9b71ac9e308ed4d409f1607ac27f469e007f35cd292d9d585f303bcb7be",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-SLOPE",
+      "from": "9@01747e3b3ca406e688b777e98459fb6eaacc1f66a76fb1c03322a3a8bad5e8f1",
+      "to": "10@aab161a78485f9396098a5ff872dc65f42b66d0f9208ac515a9493d3f4c22f82",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-ST-GRAPH",
+      "from": "8@8ec40b38cde88827c6e91564a019fd3aeac521d0341e42575011607ee66b9a45",
+      "to": "9@afd20438668931c5a612698113da6938068b947c6565101740af71c4ed97e4d2",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-ACCEL-MOTION-GRAPH",
+      "from": "10@244e8269e8d83d039b99fa02c4341222f7a7005d207f8598ad55a0e7f63d16f0",
+      "to": "11@a15a4fbeb82c1334adad36235db6cec8cb1f309b1109fa618cd373033b2a0769",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-ACCEL-VT-GRAPH",
+      "from": "10@d57c9003338b7bcbd3223596e5e1e23a2f6409759dc500634a8857177f922bb1",
+      "to": "11@c3538f95c20332607397325a91a4209c6c372b348c8a93c82a4ace8524c8d26c",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-ACCEL-GRAPH",
+      "from": "10@e61b90cc36b2c9670b7210f0b3a44a7021d0ff49aa89ff98d31396b34f7d377a",
+      "to": "11@3595ec48dc2b7a395cdb833837ba3892d3887f89e0dd94a24b4c5cc3a23806f1",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-INT-DIV",
+      "from": "9@1f09511e46094fc15f1d253481a79422a29ffb0c2edeec34c77e75ccd6b3a933",
+      "to": "10@39ed98ece602b85d3c1b78f956ff8f308eedccb1a4616344ccc50dfa5e8d317d",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "M79-INT-SUB",
+      "from": "8@a863b9e72158fd734e5287f23602b6177453e0c631f7d8af6ca4d6b33aacb03f",
+      "to": "9@a9cd518e8b1cb686a51782b4c799f270444b74ea39442768c985dea3abbeedaa",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    },
+    {
+      "kc": "PHY79-ACCEL-CALC",
+      "from": "8@fb9fae9c1f65595899b4f283340f46c4cd5d81da4ecdcc0ff6bab3e44b3207f9",
+      "to": "9@d14dd767ffad7e18f96bea1fb3067ba0024cf6f69a433423804574b804873a3e",
+      "authoredFiles": "unchanged",
+      "metadataDelta": [
+        "revision + 1",
+        "alignment.currentSource.liteGeneratorSha256"
+      ],
+      "humanValidation": "pending"
+    }
+  ]
+}

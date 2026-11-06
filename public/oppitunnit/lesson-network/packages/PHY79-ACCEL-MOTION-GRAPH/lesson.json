@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "kcId": "PHY79-ACCEL-MOTION-GRAPH",
+  "revision": 15,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "lesson.css",
+      "sha256": "63b9bc2abff321520d85001756ba6af31d981f1e5876560441e4a430bc68e4a4"
+    },
+    {
+      "path": "initial.svg",
+      "sha256": "39a9e679191b7cfe3ac9e77ef0714459b90a5896b014724c6eff6eb1473aeb51"
+    },
+    {
+      "path": "practice-initial.svg",
+      "sha256": "2c910ab77a6af9267b5af3b79bdc271f2bd2924f7bb61547e06d7e44f1ef1865"
+    },
+    {
+      "path": "example.svg",
+      "sha256": "f8f839c0b8dbb674ec166fa1da143a24f6a0a01f2260bd216d573516127f35a4"
+    },
+    {
+      "path": "contrast.svg",
+      "sha256": "1af5cd2f1c56d29d879a6431d05c8b39ff91cadcfae2bc8e9db357fd3b2e9d4c"
+    },
+    {
+      "path": "transfer.svg",
+      "sha256": "5ad195bf387145d679f214e8b71e3e38da55e5a54569027e2e34a62bc66ebe0c"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    {
+      "path": "shared/loikka/map.png",
+      "sha256": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6"
+    }
+  ],
+  "research": [
+    {
+      "title": "OpenStax College Physics2e2.8 — Graphical Analysis of One-Dimensional Motion",
+      "url": "https://openstax.org/books/college-physics-2e/pages/2-8-graphical-analysis-of-one-dimensional-motion",
+      "accessed": "2026-10-29",
+      "read": "Primary page inspected: position slope/velocity, curved position under constant acceleration, velocity slope/acceleration. Generic deterministic physics crosscheck, not Finnish curriculum approval or this lesson efficacy.",
+      "licence": "Current page footer CC-BY-NC-SA4 and AI/commercial restrictions observed. No expressive prose, figures, exercises or layouts copied. Own Finnish exposition, explicit elementary mathematical model and original computed SVG. Public licence clearance remains open.",
+      "adopted": "Linked world, equal-time traces and exact quadratic position versus linear velocity; interval mean and phase distinction expressed in original Finnish."
+    },
+    {
+      "title": "R.J.Beichner1994 — Testing student interpretation of kinematics graphs",
+      "url": "https://doi.org/10.1119/1.17449",
+      "accessed": "2026-10-29",
+      "read": "B14 retrieved abstract/university bibliography reused as bounded design background, not new full-paper reading. Height/slope and graph-as-picture difficulties, not evidence of this lesson effect.",
+      "licence": "AAPT copyrighted assessment not redistributed. No TUG-K item or paper copied.",
+      "adopted": "Own contrasting cases, axes and physical track separated. Hypothesis requiring learner review."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "3@412aac5cdb779ffd185e808d0a2452221e55ddfe1217603287ec711ab20a52c4",
+      "note": "Independent B15 Newton current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Newton-on-parent-graph-ready-current.json. Synthetic technical scope, not learner validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "3@412aac5cdb779ffd185e808d0a2452221e55ddfe1217603287ec711ab20a52c4",
+      "note": "Independent B15 Newton canonical/Lite/source boundary review: roles/groups preserved, no new hardgates. lesson-network/evidence/production/B15/reviews/Newton-on-parent-graph-ready-current.json"
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@412aac5cdb779ffd185e808d0a2452221e55ddfe1217603287ec711ab20a52c4",
+      "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@5321d6f9d1bd3e51db7e3bdccc9bdb402db13b19e240b709df843ef9b911a6b3",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@5321d6f9d1bd3e51db7e3bdccc9bdb402db13b19e240b709df843ef9b911a6b3",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@5321d6f9d1bd3e51db7e3bdccc9bdb402db13b19e240b709df843ef9b911a6b3",
+      "note": "LR04-B10: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@ae1ea2b57997430712350e98cadaaff5f9b75bfdc7e66132a9e7a9117c0f2db1",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@ae1ea2b57997430712350e98cadaaff5f9b75bfdc7e66132a9e7a9117c0f2db1",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@ae1ea2b57997430712350e98cadaaff5f9b75bfdc7e66132a9e7a9117c0f2db1",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@0d3448869b3fe708b90d053a56707a7a4af7ad306de9bd44e12bccff4fc9065a",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@0d3448869b3fe708b90d053a56707a7a4af7ad306de9bd44e12bccff4fc9065a",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@0d3448869b3fe708b90d053a56707a7a4af7ad306de9bd44e12bccff4fc9065a",
+      "note": "LR04-B10: source role/answer/AX correction. Root independent current-source delta integration and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@c3decc5b284d8aefdb3816eccf3799b51fb29e9defc338390d8e7c6d45d25a3d",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@c3decc5b284d8aefdb3816eccf3799b51fb29e9defc338390d8e7c6d45d25a3d",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@c3decc5b284d8aefdb3816eccf3799b51fb29e9defc338390d8e7c6d45d25a3d",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "4@0b2b39413821d9c7bf9129e369f63bfcbafcb921ccfc936b2d3ad152a77745c8",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "4@0b2b39413821d9c7bf9129e369f63bfcbafcb921ccfc936b2d3ad152a77745c8",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "4@0b2b39413821d9c7bf9129e369f63bfcbafcb921ccfc936b2d3ad152a77745c8",
+      "note": "Source teaching-boundary refinement. Current independent review remains pending; prior evidence preserved."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "5@75bdf1ed2e0b6a15df08cd7724811952702116b847c6ec52d8478ef98f3ffb21",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "5@75bdf1ed2e0b6a15df08cd7724811952702116b847c6ec52d8478ef98f3ffb21",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "5@75bdf1ed2e0b6a15df08cd7724811952702116b847c6ec52d8478ef98f3ffb21",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "6@87fe391ade801d7f543fef3a21171bfd10e8571f04973be327f797af86eb1539",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "6@87fe391ade801d7f543fef3a21171bfd10e8571f04973be327f797af86eb1539",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "6@87fe391ade801d7f543fef3a21171bfd10e8571f04973be327f797af86eb1539",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "7@be8536eb6006d048c2629775ac93a00e037b7cef8e58ab18839a7e69db3a5e60",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "7@be8536eb6006d048c2629775ac93a00e037b7cef8e58ab18839a7e69db3a5e60",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "7@be8536eb6006d048c2629775ac93a00e037b7cef8e58ab18839a7e69db3a5e60",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@5ee1a0a9cf3207e876d3b501f963a7490e7f95c7a36aa0e0185e953b25c10b2e",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@5ee1a0a9cf3207e876d3b501f963a7490e7f95c7a36aa0e0185e953b25c10b2e",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@5ee1a0a9cf3207e876d3b501f963a7490e7f95c7a36aa0e0185e953b25c10b2e",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@244e8269e8d83d039b99fa02c4341222f7a7005d207f8598ad55a0e7f63d16f0",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@244e8269e8d83d039b99fa02c4341222f7a7005d207f8598ad55a0e7f63d16f0",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@244e8269e8d83d039b99fa02c4341222f7a7005d207f8598ad55a0e7f63d16f0",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@a15a4fbeb82c1334adad36235db6cec8cb1f309b1109fa618cd373033b2a0769",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@a15a4fbeb82c1334adad36235db6cec8cb1f309b1109fa618cd373033b2a0769",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@a15a4fbeb82c1334adad36235db6cec8cb1f309b1109fa618cd373033b2a0769",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "13@cf181d0b15de7e6ff448e2c2c82cd0dea378ac04e195b04e584ff9fc69eecb5d",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "13@cf181d0b15de7e6ff448e2c2c82cd0dea378ac04e195b04e584ff9fc69eecb5d",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "13@cf181d0b15de7e6ff448e2c2c82cd0dea378ac04e195b04e584ff9fc69eecb5d",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@fbc4faf9f06fd3a8093f0056cd8371bc63f79120c845a96fbd90939808d936e1",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@fbc4faf9f06fd3a8093f0056cd8371bc63f79120c845a96fbd90939808d936e1",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@fbc4faf9f06fd3a8093f0056cd8371bc63f79120c845a96fbd90939808d936e1",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@f56d8e863f09ed5c3d883effa9f604ae38af8c1717538a3a5ac3561a4dd54046",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@f56d8e863f09ed5c3d883effa9f604ae38af8c1717538a3a5ac3561a4dd54046",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Samoissa yhden sekunnin väleissä etenevät matkat 1,3,5,7 kasvavat; kumulatiiviset paikat 1,4,9,16 ovat eri asia. Jarruttavat välit 7,5,3,1 lyhenevät eikä käyrä esitä mäkeä. Oma kuvaaja, aikavälit ja vastaus kuuluvat samaan tehtävään. Tehtävä A–F -nimet eivät muuta mallin laskentaa tai tarkistinta. Nykyinen Lite erottaa jyrkkenevän, loivenevän, suoran ja vaakasuoran kuljetun matkan kuvaajan. Käyrän silmämääräinen luokittelu ei yksin ole kiihtyvyyden numeerinen mittaus. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@f56d8e863f09ed5c3d883effa9f604ae38af8c1717538a3a5ac3561a4dd54046",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "PHY79-ACCEL-MOTION-GRAPH",
+    "liteContentRevision": "lite181-2026-10-27",
+    "nodeRevision": "audit1-2026-10-28",
+    "actualFamilies": [
+      "decel",
+      "steps",
+      "accel",
+      "rest",
+      "steady",
+      "transfer",
+      "sim"
+    ],
+    "actualDemoCount": 2,
+    "sourceHashes": {
+      "reference/inputs/canonical-690-graph.json": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "reference/inputs/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt": "bd08ac58f4c3da42c1e58f8e2a290b434e94c1dded850170b9999ca2959097d2",
+      "AUTHORING.md": "06f86d3f8280df43b93a80c72ddcf7e51ceee2cd098edf42b2980e615253ab9f",
+      "INTERACTION_FEEDBACK_CONTRACT.md": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+      "EVENT_COMMIT_REVIEW_B05.md": "41434de438eb5195b9a02613fb1c6ff8dca375489eafb66da24fcb7f0acdc213",
+      "authority/production-181-v2/ASSETS.md": "bdccb0695c27382d99f8831077adf2f247b1bb168018bc5f829c510df3792c48",
+      "authority/production-181-v2/STYLE_REVIEW_FI.md": "aed7c1ba925e0743dc8f4d78b26cf875c5595e3afb39e0d3cd679f881b1683a4",
+      "authority/production-181-v2/ASSET_STYLE_GATE.txt": "fb5a31989b7ac7ad3f2e4f875ca86ea2f224821de09fa5eb4371fc3f36239fb7",
+      "authority/production-181-v2/lite/src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+      "authority/production-181-v2/lite/src/content/physics.ts": "835ad69dd95f622adcb6050ab63d00a4477d64425545dd1b8af5a4892f978430",
+      "authority/production-181-v2/lite/src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+      "authority/production-181-v2/lite/src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "authority/production-181-v2/lite/src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+      "authority/production-181-v2/lite/src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "authority/production-181-v2/lite/src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "authority/production-181-v2/lite/src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+      "authority/production-181-v2/lite/src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "authority/production-181-v2/lite/src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "authority/production-181-v2/lite/src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "authority/production-181-v2/lite/audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "authority/production-181-v2/lite/COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "authority/production-181-v2/lite/docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "authority/production-181-v2/lite/SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da",
+      "shared/loikka/map.png": "36533b35937043e3e679207f9fcf313990e4233d38ba1fbb981278450e19abf6",
+      "shared/aava/curious.png": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    "comparison": "Actual raw Lite physics nodes, all phase generators, demos/animation frames, registry/families and direct SIMS inspected. Historical coverage summaries not used as current approval.",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "SOL_INTEGRATION.md": "55c791c324faef753973a2d1e9611527de3e03afba63b89944bd32a3fa30ff42",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "src/content/goals.ts": "2b50c9fe64a436de1f6785ad5f0cdc059e82b6505b07a7844bbcf091a968c99a",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/phyanim.ts": "419fc83a164c4799543edf6f4dc72021abe3d6ee5fc74d719b70d53243bab7ad",
+        "src/content/physics.ts": "2318f77c54ed6bc5fd2956f1f7342e3169d8e276e86d878be0196a261b0b8412",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51"
+      },
+      "historicalNonLiteReferences": [
+        "AUTHORING.md",
+        "EVENT_COMMIT_REVIEW_B05.md",
+        "INTERACTION_FEEDBACK_CONTRACT.md",
+        "authority/production-181-v2/ASSETS.md",
+        "authority/production-181-v2/ASSET_STYLE_GATE.txt",
+        "authority/production-181-v2/SOL_181_LESSON_PRODUCTION.txt",
+        "authority/production-181-v2/STYLE_REVIEW_FI.md",
+        "reference/inputs/canonical-690-graph.json",
+        "reference/inputs/mvp-scope-181.json",
+        "shared/aava/curious.png",
+        "shared/loikka/map.png"
+      ],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "canonical": {
+      "id": "PHY79-ACCEL-MOTION-GRAPH",
+      "subject": "physics",
+      "grade_band": "7-9",
+      "topic_area": "S5 Vuorovaikutus ja liike",
+      "parent_concept": "Muuttuva liike",
+      "title": "Muuttuvan liikkeen tunnistaminen paikka–aika- tai liikekuvaajasta",
+      "short_description": "Muuttuvan liikkeen tunnistaminen paikka–aika- tai liikekuvaajasta",
+      "node_kind": "representation",
+      "source_basis": "pedagogically_derived",
+      "curriculum_refs": [
+        "PHY79-S5"
+      ],
+      "relations": [
+        {
+          "id": "PHY79-ACCEL-CONCEPT",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "PHY79-ACCEL-CONCEPT on ydinesitieto tälle osaamiskohteelle."
+        },
+        {
+          "id": "PHY79-ST-GRAPH",
+          "relation_type": "representation_support",
+          "strength": "strong",
+          "rationale": "PHY79-ST-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        },
+        {
+          "id": "PHY79-VT-GRAPH",
+          "relation_type": "representation_support",
+          "strength": "strong",
+          "rationale": "PHY79-VT-GRAPH tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "PHY79-ACCEL-CONCEPT"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "evidence_notes": "v0.2-refaktorissa erotettu noodista PHY79-ACCEL-GRAPH itsenäiseksi evidenssikohteeksi.",
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "status": "candidate_refactored",
+      "entry_role": "none",
+      "mastery_role": "process",
+      "split_from": "PHY79-ACCEL-GRAPH",
+      "concept_path": [
+        "Fysiikka",
+        "S5 Vuorovaikutus ja liike",
+        "Muuttuva liike"
+      ]
+    },
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "PHY79-ACCEL-CONCEPT"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "role": "process",
+    "gradeBand": "7-9",
+    "teacherObjective": "Tulkita muuttuva liike paikka–aika-kuvaajasta ja tasavälisistä ajanmerkeistä.",
+    "additionalHardGates": [],
+    "scope": "Finite nonnegative 1D velocity timelines, positive direction and origin0. Exact piecewise integration yields genuinely quadratic position paths, linear velocity, world/readout/strobes/table. Explicit axes/controls/units/ranges. Unsupported semantics rejected. At nondifferentiable phase joins acceleration is null. Every integer annotation/table value exact rational; moving live readouts labelled approximations.",
+    "sourceVsDesign": "Frozen metadata inherited, no new OPH verification. Physics/mathematics deterministic; narrative, examples, sequencing, support are project pedagogical derivations/hypotheses. Human learner, efficacy, full accessibility/VoiceOver, rights/public release remain separate holds.",
+    "evidenceLimits": "Process role preserved. Local graph explanation and phase practice do not award formal process/rubric mastery, independence or delayed evidence. Help/examples/feedback are instructional support. No personal history or runtime LLM."
+  },
+  "extensions": {
+    "productionBatch": "B15",
+    "author": "parent",
+    "simulationType": "finite_typed_piecewise_linear_velocity_exact_quadratic_position",
+    "modelDeclarationSource": "Bundled MODELS is the single executable typed source; all accepted semantics implemented, unknown semantics fail closed. No duplicated ignored simulation metadata.",
+    "assessmentDeclarationSource": "TASKS generic finite operations motion/change/sign/mean_a/compare_a/phases. No KC-ID or question-specific truth branches.",
+    "sharedRuntimeChanges": false,
+    "humanReview": "not_performed",
+    "initialModel": "increase",
+    "authoringLimits": "Selfcontained bundle no imports/storage/LLM. Exact answers<=128rawchars, up to12 meaningful decimal places, fractions; time control<=6meaningful decimals. One-second strobes only supported, reject others. Own article root/per-host ownership, explicit cleanup/pause/reset.",
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B10",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+schema_version: "0.1"
+kind: scoped_source_registry_supplement
+batch: production-06-number-triad
+approval_scope: citation_only_and_explicit_project_design_not_content_approval
+sources:
+  - id: PROD06-OPH-MATH12-NUMBER-TRIAD
+    type: curriculum_authority
+    title: Matematiikka1–2 — määrän, lukusanan ja numeromerkinnän yhteys
+    publisher: Opetushallitus / ePerusteet
+    url: https://eperusteet.opintopolku.fi/eperusteet-service/api/perusteet/419550/kaikki
+    status: verified_citation_scoped
+    applies_to:
+      - M-NUM-03
+    locator:
+      basis_id: 419550
+      subject_id: 466344
+      subject_band_id: 466963
+      band_definition_id: 428780
+      content_id: 469266
+      field: kuvaus.fi
+      html_paragraphs:
+        - 1
+        - 2
+    verification:
+      receipt: reports/autonomous-52/B03/number-triad-source-fetch.json
+      response_bytes: 9222036
+      sha256: 7692dcef834d7ab175a1053e40abff6c016bc12003b4a7fdf4b64370c7696d94
+      fresh_fetch: true
+      date: 2026-10-27
+    supported_claim: Määrän, lukusanan ja numeromerkinnän välinen yhteys ja lukujen tarkoituksenmukainen
+      käyttö ovat kansallisia sisältöalueita. Tässä toteutetaan rajattu kokonaisuus kolmella annetulla
+      lähtökohdalla.
+    limits: Ei projektin KC-jaon, integraatioroolin, määräalueen3–5, kolmen tapauksen, yhden korjauksen
+      tai24h-säännön normatiivinen/empiirinen hyväksyntä. Ei oppijavalidointia tai julkaisulupaa.
+  - id: PROJECT-NUMBER-TRIAD-v1
+    type: project_formalization
+    publisher: Sammakko
+    title: Retkirasian ryhmä ja kaksi lappua — rajattu kolmen esitysmuodon integraatio
+    status: project_design
+    applies_to:
+      - M-NUM-03
+    locators:
+      - authority/simple-core-next-batches-v1/CONTENT_CARDS_FI.txt
+      - content-design/autonomous-52/M-NUM-03.md
+      - packages/domain/number-triad.ts
+      - packages/learning/number-triad-policy.ts
+    supported_claim: "Alkuperäinen rajattu kokonaispäätös: yksi annettu esitysmuoto, molempien muiden
+      esitysten oma valinta, kokonaisarvio ja aito lappujen korjaus. Kaikki tapausrajat ja
+      opetusvalinnat ovat projektipäätöksiä."
+    limits: Ei tutkimusvakiota, oppimistehon tai oppijaymmärrettävyyden näyttöä eikä kaikkien lukujen
+      integraatiohallintaa. Malli, osavastaus tai tuettu kokonaisvastaus ei myönnä itsenäistä tai
+      esitietojen näyttöä.

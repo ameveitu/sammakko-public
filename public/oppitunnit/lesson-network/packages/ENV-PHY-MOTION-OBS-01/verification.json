@@ -1,0 +1,85 @@
+{
+  "kind": "author_self_check",
+  "kcId": "ENV-PHY-MOTION-OBS-01",
+  "contentRevision": "1@569b6b192b0db82577d9699d96bd690f3595db21eea5a72dc72e6398569509df",
+  "date": "2026-10-29",
+  "status": "source_frozen_pending_different_independent_review_and_main_integration",
+  "humanReview": "NOT_PERFORMED",
+  "independentReview": "NOT_PERFORMED by author; separate reviewer required",
+  "pureTests": {
+    "status": "PASS",
+    "assignedTests": 4,
+    "totalAcrossOwnThree": 12,
+    "command": "node --test lesson-network/packages/ENV-PHY-MOTION-OBS-01/tests.mjs"
+  },
+  "lint": "PASS scoped ESLint",
+  "sourceValidator": "PASS actual loadPackages/composePackage over isolated copies of assigned3 plus declared shared PNG; no live build",
+  "browser": {
+    "kcId": "ENV-PHY-MOTION-OBS-01",
+    "status": "PASS",
+    "runs": [
+      {
+        "width": 320,
+        "actualPositiveNegative": true,
+        "correctEditNeutralRecheckRepair": true,
+        "lifecycle": true,
+        "images": true,
+        "noOverflow": true
+      },
+      {
+        "width": 390,
+        "actualPositiveNegative": true,
+        "correctEditNeutralRecheckRepair": true,
+        "lifecycle": true,
+        "images": true,
+        "noOverflow": true
+      },
+      {
+        "width": 1280,
+        "actualPositiveNegative": true,
+        "correctEditNeutralRecheckRepair": true,
+        "lifecycle": true,
+        "images": true,
+        "noOverflow": true
+      }
+    ],
+    "static": true,
+    "pageErrors": [],
+    "artifacts": "/var/folders/5_/9spkk87514d17y3nq1rtxv3w0000gn/T/ENV-PHY-MOTION-OBS-01-B04-author-tiSOhv",
+    "limits": "Author source harness only. Main integrated review, different independent reviewer and human/learner validation remain.",
+    "harnessSha256": "cef8e9ba3486417236872f5b0d3e8fc0393c671279d911ed6180db6ad2b7538d",
+    "screenshots": [
+      {
+        "path": "/var/folders/5_/9spkk87514d17y3nq1rtxv3w0000gn/T/ENV-PHY-MOTION-OBS-01-B04-author-tiSOhv/320-practice.png",
+        "sha256": "9ca320b0155bba739ac0f6b37276260aa354c86d52e0c876813a072988466868",
+        "visuallyInspected": true
+      },
+      {
+        "path": "/var/folders/5_/9spkk87514d17y3nq1rtxv3w0000gn/T/ENV-PHY-MOTION-OBS-01-B04-author-tiSOhv/figure-0.png",
+        "sha256": "4d99cc744529e8d75d0b807ceda88cd3a97216f2a3bbf5ff39ffbb87b3b076f5",
+        "visuallyInspected": true
+      }
+    ],
+    "fixtureCorrection": "Initial preview omitted shared .lesson wrapper and failed overflow. Fixture corrected to actual wrapper; final3width runs passed. Motion option text shortened after real phone screenshot; final current bytes rerun passed.",
+    "visualObservations": "Fixed references and separated lanes; motion labels now readable at320. Original paper/book diagram identifies fixed edge; no strobe inference. Real Chromium position changes and held paused transform verified."
+  },
+  "evidenceLimits": [
+    "Author self-check only. No independent self-approval, learner/human validation, efficacy, retention or mastery claim.",
+    "Main owns integrated network build, shared-loader/render/navigation/export validation.",
+    "All observations explicitly given/simulated; screen record is not a real child observation or persistent notebook."
+  ],
+  "assets": [
+    {
+      "path": "reference.svg",
+      "sha256": "dd9f8a0262900e87d06ee2f34de94e180603cf1a500966f970a92dcde714b8c4"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "8f4d2e5e58244e4096c99080a54cc03eaa8c2e433f2ae70ad57b55e7b6e1708b"
+    }
+  ]
+}

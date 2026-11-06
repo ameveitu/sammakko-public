@@ -1,0 +1,734 @@
+{
+  "kcId": "M79-VAR-VARYING",
+  "pagePath": "lessons/M79-VAR-VARYING.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M79-VAR-VARYING",
+  "canonicalNode": {
+    "id": "M79-VAR-VARYING",
+    "subject": "mathematics",
+    "grade_band": "7-9",
+    "topic_area": "S3 Algebra",
+    "parent_concept": "Muuttuja",
+    "title": "Muuttujan ymmärtäminen muuttuvana suureena",
+    "short_description": "Muuttujan ymmärtäminen muuttuvana suureena",
+    "node_kind": "concept",
+    "source_basis": "pedagogically_derived",
+    "curriculum_refs": [
+      "M79-S3"
+    ],
+    "relations": [
+      {
+        "id": "M-ALG-04",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-ALG-04 on ydinesitieto tälle osaamiskohteelle."
+      },
+      {
+        "id": "M-ALG-05",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "M-ALG-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-ALG-04"
+        ],
+        "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+      }
+    ],
+    "evidence_notes": "v0.2-refaktorissa erotettu noodista M79-VAR-01 itsenäiseksi evidenssikohteeksi.",
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "status": "candidate_refactored",
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "split_from": "M79-VAR-01",
+    "concept_path": [
+      "Matematiikka",
+      "S3 Algebra",
+      "Muuttuja"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-ALG-04",
+      "targetKCId": "M79-VAR-VARYING",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-ALG-04 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-ALG-05",
+      "targetKCId": "M79-VAR-VARYING",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-ALG-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M79-VAR-VARYING",
+      "targetKCId": "M79-VAR-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M79-VAR-01 on v0.2:ssa integraationoodi; atominen alitaito M79-VAR-VARYING vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-ALG-04"
+      ],
+      "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M79-VAR-VARYING/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/media/zeeniedj/ncetm_ks3_cc_1_4.pdf",
+        "title": "1.4 Simplifying and manipulating expressions, equations and formulae — Key Stage 3",
+        "organization": "NCETM",
+        "retrieved": "2026-10-29",
+        "inspectedSections": "PDF pages2,5–6,10; key ideas1.4.1.4 and1.4.1.6; letter-role discussion and fruit-salad-algebra warning. Targeted PDF text, not whole-document/video viewing.",
+        "usageRestrictions": "Crown copyright; inspected NCETM copyright page https://www.ncetm.org.uk/copyright/: default Crown/OGL with attribution and named-author/third-party conditions. PDF warns professional-development material is not designed to be directly lifted as lessons. Original paraphrases, contexts, diagrams and code only; no source figures copied.",
+        "adopted": [
+          "Make the allowed input range and covarying quantities explicit."
+        ],
+        "rejected": [
+          "Do not conflate a letter with an object, or import symbol manipulation."
+        ]
+      },
+      {
+        "url": "https://link.springer.com/article/10.1007/s11858-026-01828-x",
+        "title": "Same variable, different values? A multilevel Latent Transition Analysis of students’ thinking about values of variables",
+        "organization": "Filip Moons, Katrin Klingbeil, Paul Drijvers and Bärbel Barzel; ZDM – Mathematics Education / Springer Nature",
+        "retrieved": "2026-10-29",
+        "inspectedSections": "Publisher HTML abstract, introduction and rights notice. Published2026-08-28; discovered through the2025 article, actually opened. No whole-paper/methods review claimed.",
+        "usageRestrictions": "Article CC BY4.0 with attribution, link and changes indication; third-party exceptions apply. No article figures, test items or long source passages reused.",
+        "adopted": [
+          "Keep the same chosen value across occurrences within each instance."
+        ],
+        "rejected": [
+          "Do not assume a letter has one permanent value across separate trials."
+        ]
+      },
+      {
+        "url": "https://link.springer.com/article/10.1007/s10649-025-10428-7",
+        "title": "The omnipresence of the Letter-as-Object misconception: a multilevel Latent Transition Analysis on understanding variables",
+        "organization": "Katrin Klingbeil and Filip Moons; Educational Studies in Mathematics / Springer Nature",
+        "retrieved": "2026-10-29",
+        "inspectedSections": "Publisher HTML abstract, introduction variable-role definitions, rights-and-permissions. No full-methods or intervention-efficacy review claimed.",
+        "usageRestrictions": "Article CC BY4.0 with attribution, link and changes indication; third-party material subject to credit lines. No figures, test items, or long quotations reused.",
+        "adopted": [
+          "State quantity, number and unit separately in the price model."
+        ],
+        "rejected": [
+          "Do not claim letters always mean numbers in every branch of mathematics."
+        ]
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@0370858fc5b5940fd1c867d482abf59afbe25f726546d3a59b7b4f12788716cb",
+        "note": "Author technical checks passed; independent review pending on this exact content revision. No author self-approval."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+        "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/algebra-independent-closure.json. Human/learner efficacy and release approval remain pending."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@0370858fc5b5940fd1c867d482abf59afbe25f726546d3a59b7b4f12788716cb",
+        "note": "No human or learner testing performed."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+        "note": "No actual human or learner validation has occurred."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M79-VAR-VARYING",
+    "revision": 2,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "diagram.svg",
+        "sha256": "0607b8db8d0da87444eea9af7a8fa569746cfb4e465d3d9a9d3ecbbb314f7464"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "8ff79dc32dd588a28a07c476f97dbaefd10498d49e879b096b463873c0e1237f"
+      },
+      {
+        "path": "shared/aava/map.png",
+        "sha256": "49b47a345fa26f9017acb1672d1b7d6d4fe0dcd511e756c693b731269579ebe9"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/media/zeeniedj/ncetm_ks3_cc_1_4.pdf",
+        "title": "1.4 Simplifying and manipulating expressions, equations and formulae — Key Stage 3",
+        "organization": "NCETM",
+        "retrieved": "2026-10-29",
+        "inspectedSections": "PDF pages2,5–6,10; key ideas1.4.1.4 and1.4.1.6; letter-role discussion and fruit-salad-algebra warning. Targeted PDF text, not whole-document/video viewing.",
+        "usageRestrictions": "Crown copyright; inspected NCETM copyright page https://www.ncetm.org.uk/copyright/: default Crown/OGL with attribution and named-author/third-party conditions. PDF warns professional-development material is not designed to be directly lifted as lessons. Original paraphrases, contexts, diagrams and code only; no source figures copied.",
+        "adopted": [
+          "Make the allowed input range and covarying quantities explicit."
+        ],
+        "rejected": [
+          "Do not conflate a letter with an object, or import symbol manipulation."
+        ]
+      },
+      {
+        "url": "https://link.springer.com/article/10.1007/s11858-026-01828-x",
+        "title": "Same variable, different values? A multilevel Latent Transition Analysis of students’ thinking about values of variables",
+        "organization": "Filip Moons, Katrin Klingbeil, Paul Drijvers and Bärbel Barzel; ZDM – Mathematics Education / Springer Nature",
+        "retrieved": "2026-10-29",
+        "inspectedSections": "Publisher HTML abstract, introduction and rights notice. Published2026-08-28; discovered through the2025 article, actually opened. No whole-paper/methods review claimed.",
+        "usageRestrictions": "Article CC BY4.0 with attribution, link and changes indication; third-party exceptions apply. No article figures, test items or long source passages reused.",
+        "adopted": [
+          "Keep the same chosen value across occurrences within each instance."
+        ],
+        "rejected": [
+          "Do not assume a letter has one permanent value across separate trials."
+        ]
+      },
+      {
+        "url": "https://link.springer.com/article/10.1007/s10649-025-10428-7",
+        "title": "The omnipresence of the Letter-as-Object misconception: a multilevel Latent Transition Analysis on understanding variables",
+        "organization": "Katrin Klingbeil and Filip Moons; Educational Studies in Mathematics / Springer Nature",
+        "retrieved": "2026-10-29",
+        "inspectedSections": "Publisher HTML abstract, introduction variable-role definitions, rights-and-permissions. No full-methods or intervention-efficacy review claimed.",
+        "usageRestrictions": "Article CC BY4.0 with attribution, link and changes indication; third-party material subject to credit lines. No figures, test items, or long quotations reused.",
+        "adopted": [
+          "State quantity, number and unit separately in the price model."
+        ],
+        "rejected": [
+          "Do not claim letters always mean numbers in every branch of mathematics."
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@0370858fc5b5940fd1c867d482abf59afbe25f726546d3a59b7b4f12788716cb",
+        "note": "Author technical checks passed; independent review pending on this exact content revision. No author self-approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@0370858fc5b5940fd1c867d482abf59afbe25f726546d3a59b7b4f12788716cb",
+        "note": "Author technical checks passed; independent review pending on this exact content revision. No author self-approval."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@0370858fc5b5940fd1c867d482abf59afbe25f726546d3a59b7b4f12788716cb",
+        "note": "No human or learner testing performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+        "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/algebra-independent-closure.json. Human/learner efficacy and release approval remain pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+        "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/algebra-independent-closure.json. Human/learner efficacy and release approval remain pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+        "note": "No actual human or learner validation has occurred."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M79-VAR-VARYING",
+      "sourceBuild": "lite181-2026-10-27 immutable production-181-v2 snapshot",
+      "sourceRevision": "audit1-2026-10-28",
+      "sourceFiles": {
+        "src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+        "src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "families": [
+        "fill",
+        "which",
+        "grow",
+        "step",
+        "transfer"
+      ],
+      "inventory": {
+        "goal": "Opit, että kirjain voi kertoa määrän, joka muuttuu: kun n kasvaa, myös lausekkeen arvo muuttuu.",
+        "intro": "Laboratorion kioskissa yksi jäätelö maksaa 2 €. Hinta riippuu jäätelöiden määrästä n.",
+        "reward": "Ymmärrät, miten lausekkeen arvo muuttuu, kun muuttuja muuttuu!",
+        "demos": [
+          {
+            "say": "Hinta on kaksi kertaa n euroa. Katso, kun n kasvaa yksi kerrallaan: jokainen jäätelö tuo kaksi euroa lisää, ja taulukko täyttyy.",
+            "label": "2n, kun n kasvaa",
+            "seconds": 12.7,
+            "finalCaption": "Kun n kasvaa yhdellä, hinta kasvaa 2 €. Luku 2 pysyy samana; vain n muuttuu."
+          },
+          {
+            "say": "Taksissa on aloitusmaksu neljä euroa ja kolme euroa jokaiselta kilometriltä: kolme n plus neljä. Kun n kasvaa, hinta kasvaa kolme euroa kerrallaan, mutta aloitusmaksu pysyy samana.",
+            "label": "3n + 4, kun n kasvaa",
+            "seconds": 12.7,
+            "finalCaption": "Kun n kasvaa yhdellä, hinta kasvaa 3 €. Luku 3 pysyy samana, samoin 4; vain n muuttuu."
+          }
+        ],
+        "families": {
+          "fill": {
+            "kind": "numeric",
+            "hint": "Sijoita n = 2: 2 · 2 + 1. Tai lisää 2 edelliseen riviin.",
+            "explain": "Kun n = 2: 2 · 2 + 1 = 5."
+          },
+          "which": {
+            "kind": "choice",
+            "hint": "Mikä kirjain kertoo ajan? Muuttuuko luku, joka on kirjoitettu numeroin?",
+            "explain": "t kasvaa koko ajan, ja matka 2t kasvaa sen mukana. Luku 2 pysyy samana."
+          },
+          "grow": {
+            "kind": "place",
+            "hint": "Sijoita jokainen n vuorollaan: 3 kertaa n, sitten + 1.",
+            "explain": "n = 4: 13, n = 5: 16, n = 6: 19. Kun n kasvaa yhdellä, arvo kasvaa 3."
+          },
+          "step": {
+            "kind": "numeric",
+            "hint": "Katso taulukosta, paljonko arvo kasvaa rivistä seuraavaan.",
+            "explain": "Jokainen uusi tuote maksaa 2 €: 2(n + 1) = 2n + 2."
+          },
+          "transfer": {
+            "kind": "numeric",
+            "hint": "Mikä osa hinnasta muuttuu, kun matka pitenee yhden kilometrin? Mikä pysyy?",
+            "explain": "Yksi kilometri lisää tuo 2 € lisää. Aloitusmaksu 4 € pysyy samana."
+          }
+        }
+      },
+      "registry": {
+        "fill": {
+          "node": "M79-VAR-VARYING",
+          "tag": "fill",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [
+            "M79-EXPR-EVAL",
+            "M-MULTAB-ALL"
+          ],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [
+            "M79-EXPR-EVAL"
+          ],
+          "source": [
+            "families.ts M79-VAR-VARYING/fill"
+          ]
+        },
+        "which": {
+          "node": "M79-VAR-VARYING",
+          "tag": "which",
+          "outcome": "valitsee oikean vaihtoehdon",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "grow": {
+          "node": "M79-VAR-VARYING",
+          "tag": "grow",
+          "outcome": "sijoittaa osat oikeille paikoille",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "step": {
+          "node": "M79-VAR-VARYING",
+          "tag": "step",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        },
+        "transfer": {
+          "node": "M79-VAR-VARYING",
+          "tag": "transfer",
+          "outcome": "kirjoittaa luvun",
+          "assumed": [],
+          "supplied": [],
+          "coTaught": [],
+          "incidental": {},
+          "support": [],
+          "source": [
+            "oletus"
+          ]
+        }
+      },
+      "runtimeOverlay": "index.ts collects ALGEBRA79_NODES/ALGEBRA79B_NODES, fills missing goals, applies NodeSpec revision policy. None of these IDs in SIMS. kit.cases transfer separate; other phases reuse generator pool. Registry merges manifest coverage plus node/wildcard/tag declarations.",
+      "comparison": "Inherit varyScene link between changing count, fixed coefficient/base and table. Actual families step/fill/which/grow/transfer; COVERAGE misses grow and second demo. Main path avoids speed/time assumption in which. Supply substitution support rather than hard-gate EXPR-EVAL; acknowledge fill registry and extra arithmetic in grow/transfer. Add decreasing transfer and avoid only n changes caption, because dependent amount changes too.",
+      "reconciliationForOpus": [
+        "COVERAGE omits grow/place and second varyScene demo.",
+        "Caption only n changes needs qualification: coefficients/base stay fixed, but dependent amount also changes.",
+        "which invokes a time/speed model; main authored path uses count/cost and decreasing remaining quantity. Growth of input need not imply growth of every expression.",
+        "Registry fill assumption EXPR-EVAL/M-MULTAB-ALL is content support. Comparable arithmetic is also used in grow/transfer even with default registry. Do not silently add canonical required edges."
+      ],
+      "limits": "Annettu kokonaislukumalli: tulostetilauksen hinta h=4+2n, n0–6; siirtona jäljellä olevat12−n korttia. Ei yleistä riippuvuuden tunnistamista havaintodatan perusteella, jatkuvan ajan animaatiota tai todellisten hintojen väitettä."
+    },
+    "planning": {
+      "gradeBand": "7-9",
+      "teacherObjective": "Muuttujan ymmärtäminen muuttuvana suureena",
+      "lessonObjective": "Tulkita kirjain muuttuvan suureen lukuarvoksi, seurata kahden suureen vaihtelua annetulla säännöllä ja erottaa vakio-osat muuttuvista arvoista.",
+      "childGoal": "Vaihdan määrää ja selitän, mikä muuttuu ja mikä pysyy samana.",
+      "canonicalNodeKind": "concept",
+      "canonicalMasteryRole": "atomic",
+      "canonicalEntryRole": "none",
+      "canonicalDynamicPrerequisiteRule": null,
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-ALG-04"
+          ],
+          "rationale": "Kaikki listatut ydinesitiedot tarvitaan."
+        }
+      ],
+      "requiredPrerequisites": [
+        {
+          "id": "M-ALG-04",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-ALG-04 on ydinesitieto tälle osaamiskohteelle."
+        }
+      ],
+      "strongSupport": [
+        {
+          "id": "M-ALG-05",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "M-ALG-05 tukee olennaisesti tätä osaamiskohdetta, mutta ei ole globaali hard gate."
+        }
+      ],
+      "assumed": [
+        "Yhteen- ja vähennyslasku sekä2:n kertotaulu; sijoituslasku näytettävissä tukena. M79-EXPR-EVAL ei uusi kanoninen kova portti.",
+        "Ei nopeuden, kellonajan tai kuvaajan lukemisen vaatimusta."
+      ],
+      "canonicalGraph": {
+        "path": "reference/inputs/canonical-690-graph.json",
+        "sha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+        "sourceCommit": "d547e9ebfbd8ca1737abe40be34e9ace53ea773e",
+        "sourceBasis": "pedagogically_derived",
+        "curriculumRefs": [
+          "M79-S3"
+        ]
+      },
+      "scope": "Annettu kokonaislukumalli: tulostetilauksen hinta h=4+2n, n0–6; siirtona jäljellä olevat12−n korttia. Ei yleistä riippuvuuden tunnistamista havaintodatan perusteella, jatkuvan ajan animaatiota tai todellisten hintojen väitettä.",
+      "evidenceLimits": "All plans, numerical bounds, contexts and controls are project design. Canonical concept/atomic role retained. No practice recognition/choice is described as free construction or independent long-term understanding; no human efficacy claim.",
+      "interaction": {
+        "action": "Explore the current n using plus/minus controls0–6; the picture and computed price update. There is no direct exploration selector or live table. A separate prediction panel names its own target n and rule; enter its predicted quantity, check, and optionally reveal the calculation. Transfer uses remaining count12−n.",
+        "checkedMeaning": "Check predicted quantity against explicit current target/rule, with feedback for omitted fixed fee, concatenation, wrong neighbouring row or increment vs total confusion. Computed exploration is support, not independent arithmetic evidence.",
+        "domain": "n integer0–6 in price core,0–12 in remaining count transfer. h4+2n, r12−n. Any arbitrary input jump uses exact difference, not always+2. Zero items has4€ because the example explicitly includes the reserved base charge.",
+        "feedback": "Editing a prediction or its separate target/rule neutralizes that panel feedback. Changing the demonstration n preserves a fixed independent prediction target. Optional fixed-fee highlighting leaves the answer and verdict unchanged.",
+        "tests": [
+          "All n0..6 price results and n0..12 remaining results; increases and decreases.",
+          "For every from/to in0..6, price difference2*(to−from); arbitrary jumps must not be described as+2.",
+          "Full checked cycle correct→editwrong→support→retry→repair→support→correct for each panel.",
+          "Rule/context/target changes aftercorrect clear only dependent feedback. View-only help leaves verdict.",
+          "Blank/nonnumeric/noninteger/out-of-domain entries reject; controls clamp at stated limits.",
+          "No time or playback-rate claim, storage or counting/naming gate. Pause/reset/dispose/remount."
+        ]
+      },
+      "curriculumVsDesign": "Canonical facts imported unchanged. Foreign primary guidance/research is conceptual corroboration, not new Finnish OPS mapping, human review or lesson efficacy. Contexts/values/controls are original project design.",
+      "feedbackContract": {
+        "path": "INTERACTION_FEEDBACK_CONTRACT.md",
+        "sha256": "b32d4d23dfa0947aecc1331987d3a56c6bff6d866f0cc7999e927d721fc6b317",
+        "semanticBoundary": "Editing a prediction or its separate target/rule neutralizes that panel feedback. Changing the demonstration n preserves a fixed independent prediction target. Optional fixed-fee highlighting leaves the answer and verdict unchanged."
+      },
+      "assetProvenance": [
+        {
+          "path": "diagram.svg",
+          "origin": "Original subject SVG and mathematical coordinates authored2026-10-29; no source figure reused."
+        },
+        {
+          "path": "lesson.css",
+          "origin": "Scoped local presentation, no external or escaped dependency."
+        },
+        {
+          "path": "shared/aava/map.png",
+          "origin": "Unmodified user-supplied raster v2 interpretation; named static96×96. Not asserted hand-drawn original; no redraw/duplication."
+        }
+      ],
+      "reviewStatus": "Author isolated source/domain/browser checks passed. Independent content/domain/alignment review and human validation remain pending."
+    },
+    "extensions": {
+      "researchNote": "research.md",
+      "alignmentNote": "alignment.md",
+      "tests": "tests.mjs",
+      "browserQA": "browser.mjs",
+      "authorization": "Explicit main B04 GO after B03 source7c58cd2. Own only these3 packages.",
+      "preparation": "Actual targeted2026-10-29 retrieval and source/media preparation reused; hashes rechecked at GO. No fabricated fresh perKC retrieval.",
+      "lifecycle": "Self-contained module; delegated own-root listeners, no timers/storage/network. pause/reset preserve disabled controls; dispose removes listeners; remount disposes prior own instance.",
+      "domainBoundary": "All learner work is low-stakes local feedback; no persistence, mastery awards or assessment evidence claims.",
+      "authorTechnicalChecks": {
+        "date": "2026-10-29",
+        "pureTests": 4,
+        "isolatedSchema": "Only this own package copied into a temporary root with actual declared shared assets; loadPackages passed. No broad package load or main build.",
+        "browser": {
+          "id": "M79-VAR-VARYING",
+          "status": "PASS_AUTHOR_SOURCE_QA",
+          "views": [
+            {
+              "width": 390,
+              "constructionAndRepair": true,
+              "correctAndRetryEditFeedback": true,
+              "viewOnlyPreservesVerdict": true,
+              "images": true,
+              "controls44": true,
+              "noOverflow": true,
+              "lifecycle": true
+            },
+            {
+              "width": 1280,
+              "constructionAndRepair": true,
+              "correctAndRetryEditFeedback": true,
+              "viewOnlyPreservesVerdict": true,
+              "images": true,
+              "controls44": true,
+              "noOverflow": true,
+              "lifecycle": true
+            }
+          ],
+          "staticTeaching": true,
+          "pageErrors": [],
+          "limits": "Isolated source composition; no live690 build, independent content approval, learner/human testing or efficacy claim."
+        },
+        "actualVisualInspection": "Actual original diagrams and practice states viewed at390px; full1280px pages viewed. Named supplied PNGs loaded,44px controls, no horizontal overflow.",
+        "feedback": "Real correct→edit→support→retry→repair→support→correct paths, earlier-retry edits, and view-only preservation passed.",
+        "domain": "All20 input counts×31 predictions, arbitrary up/down jumps, zero counts, numeric domains, string normalisation and finite model geometry tested.",
+        "humanValidation": false,
+        "mainBuild": false
+      }
+    },
+    "contentHash": "94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+    "contentRevision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@0370858fc5b5940fd1c867d482abf59afbe25f726546d3a59b7b4f12788716cb",
+          "note": "Author technical checks passed; independent review pending on this exact content revision. No author self-approval."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+          "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/algebra-independent-closure.json. Human/learner efficacy and release approval remain pending."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@0370858fc5b5940fd1c867d482abf59afbe25f726546d3a59b7b4f12788716cb",
+          "note": "No human or learner testing performed."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+          "note": "No actual human or learner validation has occurred."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@0370858fc5b5940fd1c867d482abf59afbe25f726546d3a59b7b4f12788716cb",
+          "note": "Author technical checks passed; independent review pending on this exact content revision. No author self-approval."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "2@94fe36a92e616469f92b6e3af8eacb4c6cdfd959bcbb4e65fdc31312b9773439",
+          "note": "Independent SYNTHETIC source review completed within technical scope; integration record, not author self-approval. See evidence/production/B04/algebra-independent-closure.json. Human/learner efficacy and release approval remain pending."
+        }
+      ]
+    }
+  },
+  "outputHash": "369df642bcd57059fdee86835d7638ad17242000defa475798e20310ba3382c3",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "369df642bcd57059fdee86835d7638ad17242000defa475798e20310ba3382c3",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

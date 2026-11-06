@@ -1,0 +1,634 @@
+{
+  "kcId": "M-DIV-02",
+  "pagePath": "lessons/M-DIV-02.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-DIV-02",
+  "canonicalNode": {
+    "id": "M-DIV-02",
+    "subject": "mathematics",
+    "grade_band": "1-2",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Jakolasku",
+    "title": "Sisältöjako: selvitetään montako annettua ryhmää määrään mahtuu",
+    "short_description": "Sisältöjako: selvitetään montako annettua ryhmää määrään mahtuu",
+    "source_basis": "assessment_refined",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL1-2-S2",
+      "OPH-MATH-VL6-ASSESSMENT-SUPPORT"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "concept",
+    "relations": [
+      {
+        "id": "M-MUL-01",
+        "relation_type": "prerequisite",
+        "strength": "strong",
+        "rationale": "Sisältöjako voidaan rakentaa ryhmittelynä ennen kertolaskun muodollista hallintaa."
+      },
+      {
+        "id": "M-NUM-02",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "Ryhmiteltävä määrä pitää hahmottaa lukumääränä."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-NUM-02"
+        ],
+        "rationale": "Sisältöjaon vähimmäisesitieto on lukumäärän hallinta; kertolasku on vahva yhteys."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Jakolasku"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-MUL-01",
+      "targetKCId": "M-DIV-02",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Sisältöjako voidaan rakentaa ryhmittelynä ennen kertolaskun muodollista hallintaa.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-NUM-02",
+      "targetKCId": "M-DIV-02",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Ryhmiteltävä määrä pitää hahmottaa lukumääränä.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-DIV-02",
+      "targetKCId": "M-MULDIV-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-DIV-02 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-DIV-02",
+      "targetKCId": "M-MULTREL-01",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Multiplikatiivinen vertailu voidaan rakentaa kertolaskun kautta; sisältöjako on hyödyllinen käänteissuhteen ymmärtämiseen.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "M-DIV-02",
+      "targetKCId": "M-DIVIS-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "Jaollisuus voidaan ymmärtää myös sisältöjakona / tasakokoisina ryhminä.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-NUM-02"
+      ],
+      "rationale": "Sisältöjaon vähimmäisesitieto on lukumäärän hallinta; kertolasku on vahva yhteys."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-DIV-02/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "title": "Perusopetuksen opetussuunnitelman perusteet2014, matematiikka1–2",
+        "organization": "Opetushallitus",
+        "retrievedAt": "2026-10-29",
+        "read": "Original2014 PDF127–129, printed128–130; S2/S3 and T10.",
+        "usageRestrictions": "©OPH; paraphrase only, no external figures/long passages or blanket open licence assumption. No current-amendment compliance claim.",
+        "adoptedIdeas": "Concrete preparation for division; use canonical grouping refinement.",
+        "rejectedIdeas": "Do not attribute project DAG ordering, exact UI, split concept labels or age-specific task numbers directly to OPH."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-206-structures-quotitive-and-partitive-division/",
+        "title": "Structures: quotitive and partitive division, Spine2 Topic2.6",
+        "organization": "NCETM / Etio",
+        "retrievedAt": "2026-10-29",
+        "read": "HTML introduction and teaching points1–5. Full teacher-guide PDF could not be opened by web tool (content too large); not claimed read.",
+        "usageRestrictions": "NCETM Crown/OGL policy with attribution/author caveat; PD material used as conceptual reference, no source diagrams or text copied.",
+        "adoptedIdeas": "Known total and group size; ask unknown number of full groups.",
+        "rejectedIdeas": "Do not import multiplication/skip-counting as new hard gates. Core stays exactly divisible; leftovers, zero and formal generalizations only optional bounded discussion.",
+        "licenceUrl": "https://www.ncetm.org.uk/copyright/"
+      },
+      {
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks1/units/introduction-to-division-structures/lessons/calculate-the-number-of-equal-groups-in-a-division-story",
+        "title": "Calculate the number of equal groups in a division story",
+        "organization": "Oak National Academy",
+        "retrievedAt": "2026-10-29",
+        "read": "HTML learning points, size-vs-number misconception, manipulative/bar-model tip and licence; slides/video not read.",
+        "usageRestrictions": "©Oak2025 OGL3.0 except where stated, Collection2 terms. Conceptual paraphrase only.",
+        "adoptedIdeas": "Label items per group separately from groups; construct/count whole groups from a finite pool.",
+        "rejectedIdeas": "No sea-animal leg facts, large50/70object cases, speed/skip-counting requirement or equation-only practice."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": {
+      "task_id": "KC-17-M-DIV-02",
+      "kc_id": "M-DIV-02",
+      "mastery_role": "atomic",
+      "node_kind": "concept",
+      "status": "PENDING_IMPLEMENTATION",
+      "content_file": null,
+      "prerequisites": [
+        {
+          "all_of": [
+            "M-NUM-02"
+          ],
+          "rationale": "Sisältöjaon vähimmäisesitieto on lukumäärän hallinta; kertolasku on vahva yhteys."
+        }
+      ],
+      "validation": {
+        "schema": "pending_autonomous_adventure_review",
+        "graph_refs": "pending_autonomous_adventure_review",
+        "domain_truth": "pending_autonomous_adventure_review",
+        "item_invariants": "pending_autonomous_adventure_review",
+        "pedagogy_review": "pending_autonomous_adventure_review",
+        "subject_review": "pending_autonomous_adventure_review",
+        "accessibility_review": "pending_autonomous_adventure_review",
+        "runtime_smoke": "pending_autonomous_adventure_review"
+      },
+      "production_order": 17,
+      "historical_status": "DEFERRED_UNTIL_CALIBRATION",
+      "autonomous_evidence": [],
+      "historical_validation": {
+        "schema": "pending",
+        "graph_refs": "pending",
+        "domain_truth": "pending",
+        "item_invariants": "pending",
+        "pedagogy_review": "pending",
+        "subject_review": "pending",
+        "accessibility_review": "pending",
+        "runtime_smoke": "pending"
+      }
+    }
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+    "history": [
+      {
+        "kind": "content",
+        "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+        "state": "pending",
+        "note": "Author source and pure checks complete; independent review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/measure-division-independent-review.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+    "history": [
+      {
+        "kind": "human",
+        "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+        "state": "pending",
+        "note": "No human/learner validation performed or claimed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-DIV-02",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "lesson.css",
+        "sha256": "78f1524a278b4faac30445eb23f00887c87509191b67d2fb81e42d92cee406f7"
+      },
+      {
+        "path": "worked.svg",
+        "sha256": "8e55f14464793e17775a2e69d20b883cd64b155372b6794f17b727def76bae88"
+      },
+      {
+        "path": "fours.svg",
+        "sha256": "50ed94c570635487d1b6ca4c86b63453cd3e6c9eb0f8f105ac2df09c7d8c64ff"
+      },
+      {
+        "path": "shared/loikka/curious.png",
+        "sha256": "2f37944313e56999bf899a2f9211e336e2b12a4b043882d70a84a530e661f03d"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "title": "Perusopetuksen opetussuunnitelman perusteet2014, matematiikka1–2",
+        "organization": "Opetushallitus",
+        "retrievedAt": "2026-10-29",
+        "read": "Original2014 PDF127–129, printed128–130; S2/S3 and T10.",
+        "usageRestrictions": "©OPH; paraphrase only, no external figures/long passages or blanket open licence assumption. No current-amendment compliance claim.",
+        "adoptedIdeas": "Concrete preparation for division; use canonical grouping refinement.",
+        "rejectedIdeas": "Do not attribute project DAG ordering, exact UI, split concept labels or age-specific task numbers directly to OPH."
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-206-structures-quotitive-and-partitive-division/",
+        "title": "Structures: quotitive and partitive division, Spine2 Topic2.6",
+        "organization": "NCETM / Etio",
+        "retrievedAt": "2026-10-29",
+        "read": "HTML introduction and teaching points1–5. Full teacher-guide PDF could not be opened by web tool (content too large); not claimed read.",
+        "usageRestrictions": "NCETM Crown/OGL policy with attribution/author caveat; PD material used as conceptual reference, no source diagrams or text copied.",
+        "adoptedIdeas": "Known total and group size; ask unknown number of full groups.",
+        "rejectedIdeas": "Do not import multiplication/skip-counting as new hard gates. Core stays exactly divisible; leftovers, zero and formal generalizations only optional bounded discussion.",
+        "licenceUrl": "https://www.ncetm.org.uk/copyright/"
+      },
+      {
+        "url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks1/units/introduction-to-division-structures/lessons/calculate-the-number-of-equal-groups-in-a-division-story",
+        "title": "Calculate the number of equal groups in a division story",
+        "organization": "Oak National Academy",
+        "retrievedAt": "2026-10-29",
+        "read": "HTML learning points, size-vs-number misconception, manipulative/bar-model tip and licence; slides/video not read.",
+        "usageRestrictions": "©Oak2025 OGL3.0 except where stated, Collection2 terms. Conceptual paraphrase only.",
+        "adoptedIdeas": "Label items per group separately from groups; construct/count whole groups from a finite pool.",
+        "rejectedIdeas": "No sea-animal leg facts, large50/70object cases, speed/skip-counting requirement or equation-only practice."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+        "state": "pending",
+        "note": "Author source and pure checks complete; independent review pending."
+      },
+      {
+        "kind": "alignment",
+        "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+        "state": "pending",
+        "note": "Author source and pure checks complete; independent review pending."
+      },
+      {
+        "kind": "human",
+        "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+        "state": "pending",
+        "note": "No human/learner validation performed or claimed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/measure-division-independent-review.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+        "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/measure-division-independent-review.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-DIV-02",
+      "sourceFile": "authority/production-181-v2/lite/src/content/arith.ts",
+      "nodeRevision": "audit1-2026-10-28",
+      "validRevs": [
+        "audit1-2026-10-28"
+      ],
+      "sourceBuild": "lite181-2026-10-27",
+      "stop": "Montako pussia",
+      "actualFamilies": [
+        "pic",
+        "fill",
+        "story",
+        "transfer"
+      ],
+      "actualTaskKinds": [
+        "choice",
+        "bagup"
+      ],
+      "motionOverlay": null,
+      "familyRegistry": "No own DECL/activity-use override; bounded defaults inspected.",
+      "sourceHashes": {
+        "src/content/arith.ts": "b04cc4cfa2d0e94777ce2461c755519f7927e274e80d859fdd4bf6e2dbe13381",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "inventory": "Exact frozen objective is QUOTITIVE grouping: known whole and group size, unknown number of groups. Two bagupScene demos8 objects with2 or4 per bag. pic: g2/3/5,q2..5 adjusted to differ, whole=g×q, choices distinguish g and q±1; grouping hint and repeated-sum explain. fill: g2/3/4/5,q2..4 adjusted ifequal, constructive bagup task. story: g2/3/4,q2..4 adjusted ifequal, differentiate whole/one-group/groups. transfer: g2/3,boxes2/3,2bags perbox, two-stage grouping; deliberately kept optional scope, not silently required. bagupFrame/Scene preserve pile/items per formed bag; ui.bagup adds one full bag per click, reversible, animated450ms; engine check compares bag count n/g. Our no-timer controlled groups form from conserved pile; no arbitrary individual taps. All exact cases plus q=g case9/3 included. Audit row24; COVERAGE omits fill and has stale global revision. No own family declaration or SIMS overlay; index fills GOALS, audit revision retained.",
+      "comparison": "alignment.md",
+      "limitations": "Supported model actions are narrower than physical action or independent/deferred understanding."
+    },
+    "planning": {
+      "gradeBand": "1-2",
+      "teacherObjective": "Sisältöjako: selvitetään montako annettua ryhmää määrään mahtuu",
+      "childGoal": "Muodosta annetun kokoisia ryhmiä ja selvitä ryhmien määrä.",
+      "canonical": {
+        "id": "M-DIV-02",
+        "subject": "mathematics",
+        "grade_band": "1-2",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Jakolasku",
+        "title": "Sisältöjako: selvitetään montako annettua ryhmää määrään mahtuu",
+        "short_description": "Sisältöjako: selvitetään montako annettua ryhmää määrään mahtuu",
+        "source_basis": "assessment_refined",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL1-2-S2",
+          "OPH-MATH-VL6-ASSESSMENT-SUPPORT"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "concept",
+        "relations": [
+          {
+            "id": "M-MUL-01",
+            "relation_type": "prerequisite",
+            "strength": "strong",
+            "rationale": "Sisältöjako voidaan rakentaa ryhmittelynä ennen kertolaskun muodollista hallintaa."
+          },
+          {
+            "id": "M-NUM-02",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "Ryhmiteltävä määrä pitää hahmottaa lukumääränä."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-NUM-02"
+            ],
+            "rationale": "Sisältöjaon vähimmäisesitieto on lukumäärän hallinta; kertolasku on vahva yhteys."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Jakolasku"
+        ]
+      },
+      "sourceGraphRevision": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-NUM-02"
+          ],
+          "rationale": "Sisältöjaon vähimmäisesitieto on lukumäärän hallinta; kertolasku on vahva yhteys."
+        }
+      ],
+      "required": [
+        {
+          "id": "M-NUM-02",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "Ryhmiteltävä määrä pitää hahmottaa lukumääränä."
+        }
+      ],
+      "strongSupport": [
+        {
+          "id": "M-MUL-01",
+          "relation_type": "prerequisite",
+          "strength": "strong",
+          "rationale": "Sisältöjako voidaan rakentaa ryhmittelynä ennen kertolaskun muodollista hallintaa."
+        }
+      ],
+      "assumed": [
+        "Small whole-number quantities/digits are supported; adult may read text.",
+        "No shape/object naming, speech confirmation or arbitrary counting taps.",
+        "Unit size/group size/recipient-count meanings are explicitly introduced."
+      ],
+      "scope": "Concept/atomic role retained. Given group size, unknown count; whole-group construction with add/undo then report groups. Same8 in pairs→4 groups and fours→2 groups; transfer6 cards→3 pairs. No known-number-of-recipients task. All core divisions exact; leftovers only optional explicit discussion.",
+      "evidenceLimits": [
+        "Deterministic on-screen model only; no physical handling/observation certification.",
+        "Optional help allowed; no inference of independent strategy, retention, efficacy or mastery.",
+        "No storage, personal history, awards or verified public pupil link."
+      ],
+      "assetProvenance": [
+        {
+          "path": "worked.svg",
+          "origin": "Original subject SVG authored from the deterministic local geometry; no source figures or mascot redraw."
+        },
+        {
+          "path": "fours.svg",
+          "origin": "Original subject SVG authored from the deterministic local geometry; no source figures or mascot redraw."
+        },
+        {
+          "path": "shared/loikka/curious.png",
+          "origin": "Supplied actual transparent shared PNG; byte-identical reference, no duplication/redraw, owner licensing retained."
+        }
+      ],
+      "moduleContract": "Self-contained no imports/timers; root closest(#lesson-body), component-owned click/input/change; pause, resume catches pending native answer changes, reset no handlers, dispose removes all3.",
+      "feedbackContract": "INTERACTION_FEEDBACK_CONTRACT.md; semantic state signatures; guide/order invariance; recheck after both positive/negative verdict edits."
+    },
+    "extensions": {
+      "productionBatch": "B05",
+      "authoredOn": "2026-10-29",
+      "authorChecks": {
+        "status": "source_frozen_author_checks_complete",
+        "sourceStable": true,
+        "pureTests": "12/12 PASS across assigned3; exhaustive bounded states, conservation, geometry, dense/extra/invalid guards",
+        "scopedLint": "PASS",
+        "sourceContract": "PASS own-only isolated loadPackages; no shared build",
+        "integratedNativeBrowser": "PENDING main55 build",
+        "humanValidation": "Not performed or claimed"
+      },
+      "reconciliation": "alignment.md",
+      "sourceNotes": {
+        "alignment.md": "a5d3079bf0b9ec218de8bbe87f3cc4c81ab70d325d3179ae3b81b16ccc194c2e",
+        "research.md": "f3edca49e83921cedb7f57e674385ca0af92689c929c0afce1d439a95bc5e17e",
+        "tests.mjs": "141719e2645b8f0efed93beb0c6f5ede8ce3e4ec116a53b1f550898c479bbb4a"
+      }
+    },
+    "contentHash": "f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+    "contentRevision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+      "history": [
+        {
+          "kind": "content",
+          "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+          "state": "pending",
+          "note": "Author source and pure checks complete; independent review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+          "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/measure-division-independent-review.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+      "history": [
+        {
+          "kind": "human",
+          "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+          "state": "pending",
+          "note": "No human/learner validation performed or claimed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+      "history": [
+        {
+          "kind": "alignment",
+          "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+          "state": "pending",
+          "note": "Author source and pure checks complete; independent review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@f26f3541d8ecd2cffccff085885c21c1463e5094799ed8eb2be098f6e82632a3",
+          "note": "Independent SYNTHETIC source review closed for this exact version; not author self-approval. See evidence/production/B05/measure-division-independent-review.json. Compiled/native validation is separately recorded; no human/learner efficacy or release approval."
+        }
+      ]
+    }
+  },
+  "outputHash": "9d8f8ab6eb2698ff6009774c4d13fb198bcf53e257448d10816b65aa2a1fc89a",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "e99d6104c79dc4659b2f64b006fc4cbb929f1535ed9886da1e362f3eab7373fc",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "9d8f8ab6eb2698ff6009774c4d13fb198bcf53e257448d10816b65aa2a1fc89a",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

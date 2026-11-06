@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="lesson.css"><div class="phys14" data-physics14>
+
+
+
+
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/aava/curious.png" width="48" height="48" alt="Aava"><p>Aava selvittää, miten veneen nopeus muuttuu.</p></div><p data-goal><strong>Lasken nopeuden muutoksen sekuntia kohti.</strong></p><p>Muutos = loppu − alku. Jaa kuluneella ajalla.</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<fieldset data-lesson-role="worked-example"><legend>Ensin muutos, sitten jako</legend><p data-model-legend>1. Loikka (yhtenäinen)</p><div class="actions" data-entry-primary><button type="button" data-action="play" aria-pressed="false">Toista</button><button type="button" data-action="pause">Tauko</button></div><div data-model-view><img src="initial.svg" alt="Mallin aika 0 s. Loikka: nopeus 2 m/s, kuljettu matka 0 m. Viiva näyttää koko nimetyn malliaineiston; piste valitun ajan."></div><p data-readout>Mallin aika 0 s. Loikka: nopeus 2 m/s, kuljettu matka 0 m.</p><p data-run-state>Toisto tauolla</p><details data-lesson-role="teaching-step"><summary>Vaihda mallia tai tutki aikaa</summary><label>Malli<select data-model><option value="moving" selected>Vene jo liikkeessä</option><option value="rest">Vene lähtee levosta</option><option value="brake">Jarrutus oikealle</option><option value="steady">Tasainen nopeus</option><option value="half">Puolikkaankin saa vastata</option><option value="average">Aluksi muutos, sitten tasainen</option><option value="clock">Aikaväli kellon keskeltä</option></select></label><label>Mallin aika, s<input data-time type="text" inputmode="decimal" value="0" maxlength="128"></label><p data-model-description>Mallin aika 0–3 s. Askel 1 s. Koko toisto 3 ruutusekuntia. Yläreunassa on suora kulkureitti, alla kuvaaja.</p><div class="actions"><button type="button" data-action="step">Askel 1 s</button><button type="button" data-action="end">Näytä loppu</button><button type="button" data-action="restart">Malli alkuun</button></div><p>Viivat näyttävät koko malliaineiston. Pisteet seuraavat mallin kelloa. Tauko pysäyttää katselun: se ei lisää fyysiseen liikkeeseen taukoa. Loppukuva ei itsessään tarkoita fyysistä pysähdystä. Tämä on laskettu malli, ei oikea mittaus. Näytön lukemat pyöristetään enintään 3 desimaaliin; tarkistuksen totuutta ei pyöristetä. Aikakenttä tukee desimaalilukua enintään 6 desimaalilla.</p><div data-model-table><table><caption>Vene jo liikkeessä. Nopeus v (m/s).</caption><thead><tr><th scope="col">Aika (s)</th><th scope="col">Loikka</th></tr></thead><tbody><tr><th scope="row">0</th><td>2</td></tr><tr><th scope="row">3</th><td>8</td></tr></tbody></table></div></details></fieldset>
+</section>
+
+
+
+
+
+
+<nav aria-label="Oppitunnin kohdat" data-lesson-role="metadata"><a href="#practice">Kokeile itse</a><a href="#examples">Esimerkit</a></nav>
+
+
+
+
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<details id="examples" data-lesson-role="teaching-step"><summary>Mistä tämän huomaa?</summary><h2>Vene on jo liikkeessä</h2><p>Nopeus kasvaa 2 m/s:sta 8 m/s:iin kolmessa sekunnissa.</p><ol><li>Muutos: 8 − 2 = 6 m/s.</li><li>Kulunut aika: 3 s.</li><li>Keskimääräinen kiihtyvyys: 6 m/s / 3 s = <strong>2 m/s²</strong>.</li></ol><img src="example.svg" alt="Ratkaistu malli: alku2m/s, loppu8m/s, aika3s."><figcaption>Pelkkä loppunopeus 8 m/s ei ole kiihtyvyys.</figcaption><h3>Jarrutuksessakin vähennetään samassa järjestyksessä</h3><p>Oikea suunta on plus. Nopeus pienenee 12 m/s:sta nollaan kolmessa sekunnissa. Muutos on 0 − 12 = −12 m/s. Jako antaa <strong>−4 m/s²</strong>.</p><img src="contrast.svg" alt="Ratkaistu jarrutusmalli: alku12m/s, loppu0m/s, aika3s."><figcaption>Miinus kertoo tässä nopeuden pienenemisen valitulla positiivisella suunnalla.</figcaption><p>Jos nopeus pysyy 5 m/s:ssa, muutos on 0. Silloin kiihtyvyys on 0, vaikka vene liikkuu.</p></details>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<section id="practice"><h2>Kokeile itse</h2><label>Tehtävä<select data-task><option value="moving">Tehtävä A</option><option value="rest">Tehtävä B</option><option value="brake" selected>Tehtävä C</option><option value="steady">Tehtävä D</option><option value="half">Tehtävä E</option><option value="average">Tehtävä F</option><option value="clock">Tehtävä G</option><option value="build">Tehtävä H</option></select></label><p data-question data-lesson-role="question">Oikea suunta on plus. Nopeus pienenee 12 m/s:sta nollaan 3 sekunnissa. Laske kiihtyvyys, m/s².</p><p data-task-legend>Loikka</p><div data-task-view><img src="practice-initial.svg" alt="Tämän tehtävän oma nimetty kuvaaja. Samat täsmälliset arvot löytyvät avattavasta taulukosta."></div><fieldset data-answer-fields><label>Keskimääräinen kiihtyvyys (m/s²)<input data-answer type="text" inputmode="text" maxlength="128" autocomplete="off"></label></fieldset><button type="button" data-action="check">Tarkista</button><output data-feedback data-result="neutral" aria-live="polite">Tarkista, kun olet valmis.</output><div data-practice-support><details data-lesson-role="hint"><summary>Ajattelun tueksi</summary><p data-task-help>Muutos on 0 − 12 = −12 m/s. Jaa kolmella. Miinus säilyy.</p></details><details data-lesson-role="teaching-step"><summary>Kuvaajan tiedot taulukkona</summary><div data-task-table><table><caption>Jarrutus oikealle. Nopeus v (m/s).</caption><thead><tr><th scope="col">Aika (s)</th><th scope="col">Loikka</th></tr></thead><tbody><tr><th scope="row">0</th><td>12</td></tr><tr><th scope="row">3</th><td>0</td></tr></tbody></table></div><p>Tehtävällä on oma kuvaajansa. Ylempää mallia voi tutkia erikseen, eikä sen katsominen tai toistaminen ole pakollista. Voit käyttää apua ja taulukkoa; ne ovat tukea, eivät itsenäisen hallinnan näyttö.</p></details></div></section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Vertaa toiseen tilanteeseen</summary><h2>Keskimääräinen ei ole aina joka hetken arvo</h2><p>Uudessa mallissa nopeus kasvaa ensin 2 → 8 m/s yhdessä sekunnissa ja pysyy sitten kolme sekuntia samana. Koko neljän sekunnin keskimääräinen kiihtyvyys on (8 − 2) / 4 = <strong>1,5 m/s²</strong>.</p><img src="transfer.svg" alt="Ratkaistu muuttuvan kiihtyvyyden malli: lopussa nopeus8m/s ja aika4s; alussa nopeus2m/s."><figcaption>Koko välin keskiarvo 1,5 m/s²; ensin kiihtyvyys 6 m/s², lopuksi 0.</figcaption><p>Laske kulunut aika: kellon hetkien 2 s ja 6 s väli on 6 − 2 = 4 s. Pelkkä kellon loppulukema ei aina ole jakaja.</p></details>
+</section>
+
+
+
+
+
+
+<details class="teacher" data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p>Luokat 7–9. Kanoninen rooli atomic ja pakollinen PHY79-ACCEL-CONCEPT säilyvät. Lasketaan keskimääräinen kiihtyvyys nopeuden kokonaismuutoksesta ja kuluneesta ajasta. Vakion kiihtyvyyden mallit ja muuttuvan kiihtyvyyden keskiarvo erotetaan. Näiden mallien nopeus on ei-negatiivinen yhdellä suoralla akselilla. Miinuskiihtyvyys ei yleisesti tarkoita hidastumista, jos suunta voi olla myös negatiivinen; sellaisia nopeusmalleja tämä sivu ei tue.</p><p>Kirjoita paperille alku- ja loppunopeus sekä kulunut aika. Rakenna lasku ja nimeä muutos, aika ja kiihtyvyys omilla yksiköillään. Graafin katsominen ei ole edellytys lukutehtävän ratkaisemiselle. Mallin piste esittää veneen mitattavaa kohtaa, ei Aavan kokoa.</p><p>Vain nimetyt äärelliset mallit metreissä ja sekunneissa. Akselit, alueet, kulkusuunta, lähtöpaikka, askel ja katselunopeus on ilmoitettu mallissa. Kuljetun matkan mallin oikealle kulkeminen on erikseen sovittu; kuvaaja ei yksin määrää suuntaa. Tuntematon tai epätuettu arvo ei korvaudu oletuksella. Ruudun piste on yksi mitattava kohta suoralla, ei kuva maastosta tai hahmon koosta. Ei 2D-reittejä, voimia tai mielivaltaista käyttäjän antamaa simulaatiota.</p><p>Paikallinen palaute koskee vain nykyisiä vastauksia. Ei formaalia oppijahistoriaa, hallintapäätöstä, viivästettyä näyttöä tai riippumatonta prosessirubriikkia. Vihje, esimerkki ja taulukko ovat tukea. Ei aikarajaa, pakollista puhetta, kuuntelua, nimeämistä tai tiettyä klikkausreittiä. Lukuvastauksessa hyväksytään samanarvoinen desimaaliluku tai kokonaislukujen murtoluku, myös etunollat, merkit ja nolla. Ei laskulausekkeita tai hiljaista pyöristystä. Enintään 128 merkkiä/kenttä.</p></details>
+
+
+
+
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lopuksi:</strong> Miksi loppunopeus yksin ei riitä? Voiko keskimääräinen kiihtyvyys olla0, vaikka nopeus on muu kuin0?</p>
+</section>
+
+
+
+
+
+
+<noscript data-lesson-role="metadata"><p>Alkukuva ja tämän tehtävän kuvaaja ovat nimettyä malliaineistoa. Esimerkkikuvat on merkitty ratkaistuiksi. Ilman JavaScriptiä voit lukea tekstit ja taulukot sekä vastata paperilla. Liike ja paikallinen tarkistus tarvitsevat JavaScriptin.</p></noscript></div>

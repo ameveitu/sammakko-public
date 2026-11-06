@@ -1,0 +1,317 @@
+<!doctype html>
+<!-- Generated from Sammakko_whitepaper_FI.md by build.mjs. Do not hand-edit. -->
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f3e7">
+<meta name="description" content="Sammakon alkuperäiseen 22 luvun whitepaperiin perustuva pedagoginen, tekninen ja tutkimuksellinen kuvaus.">
+<title>Whitepaper — Sammakko</title><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/brand.css"><link rel="stylesheet" href="./whitepaper.css"><script src="/assets/site.js" defer></script></head>
+<body class="whitepaper-page"><a class="skip-link" href="#main">Siirry sisältöön</a>
+<header class="site-header" data-site-navigation="1">
+  <div class="header-inner wrap">
+    <a class="brand-link" href="/" aria-label="Sammakko - etusivu"><img src="/lite/characters/aava/wave.png" alt="" width="40" height="40"><span>Sammakko<small>Hulluttelulaboratorio</small></span></a>
+    <button class="nav-toggle" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false">Valikko <span aria-hidden="true">☰</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Päänavigaatio">
+      <a href="/">Etusivu</a>
+      <a href="/oppimisverkko/">Oppimisverkko</a>
+      <a href="/whitepaper/" aria-current="page">Whitepaper</a>
+      <a href="/tietoa/">Tietoa</a>
+      <a class="nav-play" data-lite-entry="start" href="/lite/">Avaa Sammakko Lite</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<header class="paper-hero wrap"><div class="paper-intro"><p class="eyebrow">Whitepaper · tutkimus- ja kehityspaperi</p><h1>Sammakko — white paper</h1><p class="paper-subtitle">Osaamisverkkoon perustuva adaptiivinen oppimisympäristö suomalaisen perusopetuksen matematiikkaan ja luonnontieteisiin</p><p class="paper-metadata"><strong>Työpaperi v0.1 — verkkoversio päivitetty 1.11.2026</strong><br><strong>Kieli:</strong> suomi<br><strong>Tarkoitus:</strong> kuvata Sammakon pedagoginen, psykologinen, matemaattis-luonnontieteellinen ja tutkimuksellinen perusidea nykyisen Sammakko Lite -demon, oppituntikirjaston ja avoimesti tutkittavan osaamisverkon taustaksi.<br><strong>Nykyinen toteutustila:</strong> verkkoversiossa on 690 osaamiskohteen kanoninen STEM-verkko, 1 287 relaatiota, 181 Lite-harjoitteluun kytkettyä aihetta ja 181 teknisesti tarkistettua oppituntiluonnosta. Loput 509 oppituntisivua ovat avoimesti merkittyjä sisältöpohjia, eivät valmiita oppitunteja.<br>Luettavaa noin 21 minuuttia</p><div class="paper-actions"><a class="button button-primary" href="#tiivistelma">Lue tiivistelmä <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="/oppimisverkko/">Tutki 690 KC:n verkkoa</a><button class="button button-secondary" type="button" data-print>Tulosta / PDF</button></div><p class="paper-source"><a href="./Sammakko_whitepaper_FI.md" download="Sammakko_whitepaper_FI.md">Lataa whitepaper tekstinä (Markdown)</a></p></div><figure class="paper-aava"><div class="paper-aava-island"><img src="/lite/characters/aava/map.png" width="224" height="224" alt="Aava-ankanpoikanen tutkii karttaa."></div><figcaption>Aava näyttää suunnan. Väitteet ratkaisee näyttö.</figcaption></figure></header>
+<section class="paper-status wrap"><div><strong>Nykyinen julkaisu</strong><span>1.11.2026</span></div><div class="paper-stats"><span><b>690</b> osaamiskohdetta</span><span><b>1 287</b> relaatiota</span><span><b>181</b> Lite-aihetta</span><span><b>509</b> sisältöpohjaa</span></div><p><strong>Ei empiirisesti validoitu kokonaisuus.</strong> Verkko, prerequisite-suhteet ja mastery-säännöt ovat tutkimus- ja kehityshypoteeseja. Tekninen tarkistus ei ole oppimistulosnäyttöä.</p></section>
+<section class="paper-question wrap" aria-label="Tutkimuskysymys"><p class="eyebrow">Ydinhypoteesi</p><blockquote>Saavuttaako Sammakko saman tai paremman opetussuunnitelman mukaisen osaamisen, kun osaamista arvioidaan sekä viiveellä että uusissa soveltamistilanteissa, mutta lyhyemmällä aktiivisella opiskeluajalla kuin valitulla vertailumenetelmällä?</blockquote><p>Kyse on hypoteesista, ei markkinointiväitteestä.</p></section>
+<div class="paper-layout wrap"><nav class="paper-toc" aria-label="Whitepaperin sisällys"><p class="eyebrow">Sisällys</p><div class="paper-toc-group"><strong>Idea</strong><ol><li><a href="#1-ongelma-johon-sammakko-yrittaa-vastata">1. Ongelma, johon Sammakko yrittää vastata</a></li><li><a href="#2-osaamiskohde-pienin-jarkevasti-opetettava-ja-arvioitava-yksikko">2. Osaamiskohde: pienin järkevästi opetettava ja arvioitava yksikkö</a></li><li><a href="#3-osaamisverkko-oppisisalto-puun-sijasta-dag-ina">3. Osaamisverkko: oppisisältö puun sijasta DAG:ina</a></li><li><a href="#4-nelja-eri-asiaa-joita-ei-saa-sekoittaa">4. Neljä eri asiaa, joita ei saa sekoittaa</a></li></ol></div><div class="paper-toc-group"><strong>Oppimismalli</strong><ol><li><a href="#5-milta-yhden-noodin-oppiminen-nayttaa">5. Miltä yhden noodin oppiminen näyttää?</a></li><li><a href="#6-osaamisen-hallinta-ei-tarkoita-yhta-prosenttilukua">6. Osaamisen hallinta ei tarkoita yhtä prosenttilukua</a></li><li><a href="#7-miksi-viive-muistihaku-ja-soveltaminen-ovat-keskiossa">7. Miksi viive, muistihaku ja soveltaminen ovat keskiössä?</a></li><li><a href="#8-malliratkaisuista-itsenaiseen-ongelmanratkaisuun">8. Malliratkaisuista itsenäiseen ongelmanratkaisuun</a></li><li><a href="#9-lisatuki-ei-tarkoita-alemman-tavoitetason-oppilasta">9. Lisätuki ei tarkoita alemman tavoitetason oppilasta</a></li><li><a href="#10-haastetaso-ei-tarkoita-suurempia-numeroita">10. Haastetaso ei tarkoita suurempia numeroita</a></li><li><a href="#11-pelillisyys-on-kayttoliittyma-ei-oppimistavoite">11. Pelillisyys on käyttöliittymä, ei oppimistavoite</a></li></ol></div><div class="paper-toc-group"><strong>Tekninen rakenne</strong><ol><li><a href="#12-matemaattis-luonnontieteellisen-sisallon-erityisvaatimus-oikeellisuuden-pitaa-olla-koneellisesti-testattavaa">12. Matemaattis-luonnontieteellisen sisällön erityisvaatimus: oikeellisuuden pitää olla koneellisesti testattavaa</a></li><li><a href="#13-canonical-learning-content-ja-runtime-erotetaan-toisistaan">13. Canonical Learning Content ja runtime erotetaan toisistaan</a></li><li><a href="#14-mika-sammakossa-on-aidosti-uusi-kulma">14. Mikä Sammakossa on aidosti uusi kulma?</a></li></ol></div><div class="paper-toc-group"><strong>Tutkimus</strong><ol><li><a href="#15-mika-sammakossa-voisi-olla-tutkimisen-arvoista">15. Mikä Sammakossa voisi olla tutkimisen arvoista?</a></li><li><a href="#16-ehdotettu-tutkimushypoteesi-ja-ensisijaiset-paatulosmuuttujat">16. Ehdotettu tutkimushypoteesi ja ensisijaiset päätulosmuuttujat</a></li><li><a href="#17-falsifioitavuus-milloin-sammakon-perusidea-ei-saa-tukea">17. Falsifioitavuus: milloin Sammakon perusidea ei saa tukea?</a></li><li><a href="#18-tietosuoja-ja-tutkimusarkkitehtuuri">18. Tietosuoja ja tutkimusarkkitehtuuri</a></li></ol></div><div class="paper-toc-group"><strong>Avoimuus ja status</strong><ol><li><a href="#19-agenttinen-sisaltotuotanto-ei-tarkoita-automaattista-julkaisemista">19. Agenttinen sisältötuotanto ei tarkoita automaattista julkaisemista</a></li><li><a href="#20-mika-sammakko-ei-ole">20. Mikä Sammakko ei ole?</a></li><li><a href="#21-miksi-tama-voisi-olla-merkityksellista">21. Miksi tämä voisi olla merkityksellistä?</a></li><li><a href="#22-johtopaatos">22. Johtopäätös</a></li><li><a href="#kirjallisuutta-ja-taustaa">Kirjallisuutta ja taustaa</a></li></ol></div></nav><article class="paper-content" id="whitepaper-content"><h3 id="tiivistelma">Tiivistelmä</h3>
+<p>Sammakko on kehitteillä oleva adaptiivinen oppimisjärjestelmä, jonka käyttöliittymä on peli. Sen lähtökohta ei ole tehdä oppikirjan tehtävistä viihteellisempiä, vaan mallintaa opetussuunnitelman mukainen osaaminen mahdollisimman hienojakoiseksi verkoksi, seurata oppilaan osaamista osaamiskohdekohtaisesti ja valita seuraava oppimistoiminto sen perusteella, mitä oppilas jo osaa, mitä häneltä puuttuu ja millaista näyttöä osaamisesta vielä tarvitaan.</p>
+<p>Sammakon tämänhetkinen STEM-baseline sisältää matematiikan vuosiluokkien 1–9 sekä ympäristöopin luonnontieteellisen perustan, fysiikan 7–9 ja kemian 7–9. Sisältö on hajotettu 690 osaamiskohteeseen (Knowledge Component, KC), jotka on kytketty 1 287 relaatiolla osaamisverkoksi. Hard prerequisite -rakenne on suunnattu syklitön verkko (DAG); kaikki tukirelaatiot eivät ole etenemisen portteja. Määrä ei ole tarkoitettu lopulliseksi; tärkeämpää on periaate, jonka mukaan esimerkiksi “desimaaliluvut”, “nopeus” tai “kehäkulma” eivät ole yksi taito, vaan joukko erikseen opetettavia ja arvioitavia käsitteitä, representaatioita ja menettelyjä.</p>
+<p>Sammakon tutkimuksellinen ydinkysymys on:</p>
+<blockquote><p><strong>Saavuttaako Sammakko saman tai paremman opetussuunnitelman mukaisen osaamisen, kun osaamista arvioidaan sekä viiveellä että uusissa soveltamistilanteissa, mutta lyhyemmällä aktiivisella opiskeluajalla kuin valitulla vertailumenetelmällä?</strong></p></blockquote>
+<p>Kyse on hypoteesista, ei markkinointiväitteestä.</p>
+<p>Sammakon mahdollinen uutuusarvo ei perustu yhteen uuteen pedagogiseen menetelmään. Sen keskeiset osat — mastery learning, älykkäät tutorointijärjestelmät, retrieval practice, spacing, worked examples, tuen asteittainen vähentäminen, pelillisyys ja oppimisanalytiikka — ovat ennestään tutkittuja. Uutuudellinen kulma on niiden systemaattinen yhdistäminen samaan, opetussuunnitelmaan jäljitettävään ja koneellisesti validoitavaan arkkitehtuuriin siten, että yksittäinen opetettava mikrotaito, sen esitiedot, tehtävät, tyypilliset virhekäsitykset, tuki, haastetaso, viivekertaus ja soveltamisnäyttö muodostavat yhden läpinäkyvän kokonaisuuden.</p>
+<p>Sammakko pyrkii siis vastaamaan kysymykseen: <strong>mitä tapahtuu, jos opetussuunnitelmaa ei digitalisoida lukuina ja tehtäväsivuina, vaan eksplisiittisenä oppimisen riippuvuusverkkona, jonka läpi jokainen oppilas kulkee oman osaamisensa perusteella?</strong></p>
+<hr>
+<section aria-labelledby="1-ongelma-johon-sammakko-yrittaa-vastata"><h2 id="1-ongelma-johon-sammakko-yrittaa-vastata">1. Ongelma, johon Sammakko yrittää vastata</h2>
+<p>Luokkamuotoisessa opetuksessa on väistämätön rakenteellinen kompromissi. Opetus etenee ryhmän, vuosiluokan ja käytettävissä olevan ajan ehdoilla, vaikka oppilaiden esitiedot, oppimisnopeus ja tuen tarve vaihtelevat huomattavasti.</p>
+<p>Sama seitsemäsluokkalainen voi esimerkiksi:</p>
+<ul><li>hallita laskutoimitukset mutta kompastua yksiköihin,</li><li>ymmärtää fysiikan ilmiön intuitiivisesti mutta olla epävarma suhteista ja kuvaajista,</li><li>osata jo koko opetettavan asian ja käyttää suuren osan tunnista odottamiseen,</li><li>osata suorittaa tutun tehtävätyypin mutta epäonnistua, kun sama idea esiintyy uudessa kontekstissa,</li><li>hyötyä vaiheistetusta tuesta ilman, että itse oppimistavoitetta tarvitsee laskea.</li></ul>
+<p>Perinteinen digitaalinen oppimateriaali ratkaisee osan ongelmasta: tehtäviä voidaan tehdä omaan tahtiin, palaute voidaan automatisoida ja sisältöä voidaan tarjota runsaasti. Silti järjestys on yleensä edelleen pääosin materiaalin laatijan ennalta määräämä: luku 1, tehtävät 1–10, luku 2 ja niin edelleen.</p>
+<p>Sammakon lähtökohta on toinen. Oppimisen etenemisen perusyksikkö ei ole oppitunti, kirjan sivu tai vuosiluokka, vaan <strong>osaamiskohde</strong>.</p>
+<hr>
+</section>
+<section aria-labelledby="2-osaamiskohde-pienin-jarkevasti-opetettava-ja-arvioitava-yksikko"><h2 id="2-osaamiskohde-pienin-jarkevasti-opetettava-ja-arvioitava-yksikko">2. Osaamiskohde: pienin järkevästi opetettava ja arvioitava yksikkö</h2>
+<p>Osaamiskohde eli KC on yksi riittävän itsenäinen käsite, representaatio, menettely tai prosessitaito, jonka osaamisesta voidaan kerätä erillistä näyttöä.</p>
+<p>Esimerkiksi “lukukäsite” voidaan purkaa muun muassa seuraaviin osiin:</p>
+<ul><li>lukusanojen käyttäminen vakaassa järjestyksessä,</li><li>yhden lukusanan kohdistaminen kuhunkin laskettavaan kohteeseen,</li><li>ymmärrys siitä, että viimeinen lukusana kertoo koko joukon lukumäärän eli kardinaliteettiperiaate,</li><li>lukumäärän yhdistäminen lukusanaan,</li><li>lukumäärän yhdistäminen numeromerkintään.</li></ul>
+<p>Vastaavasti yläkoulun geometriassa “kehäkulma” voidaan erottaa ainakin:</p>
+<ol><li>kehäkulman käsitteen tunnistamiseen ja ymmärtämiseen;</li><li>kehäkulman ja samaa kaarta vastaavan keskuskulman välisen suhteen käyttämiseen.</li></ol>
+<p>Tämä granulaatio ei ole itseisarvo. Noodia ei pidä pilkkoa niin pieneksi, ettei sillä enää ole pedagogista merkitystä. Tavoitteena on löytää taso, jolla kaksi asiaa voidaan aidosti osata toisistaan riippumatta ja jolla niiden erottaminen auttaa diagnostiikkaa, opetusta tai palautetta.</p>
+<hr>
+</section>
+<section aria-labelledby="3-osaamisverkko-oppisisalto-puun-sijasta-dag-ina"><h2 id="3-osaamisverkko-oppisisalto-puun-sijasta-dag-ina">3. Osaamisverkko: oppisisältö puun sijasta DAG:ina</h2>
+<p>Osaamiskohteet muodostavat suunnatun syklittömän verkon (DAG). Nuoli A → B tarkoittaa, että A on jollakin tavalla B:n esitieto tai tuki.</p>
+<p>Kaikki relaatiot eivät ole samanarvoisia. Sammakossa erotetaan esimerkiksi:</p>
+<ul><li><strong>required prerequisite</strong> — ilman tätä ydinesitietoa B:n hallinta ei ole mielekkäästi saavutettavissa;</li><li><strong>strong prerequisite</strong> — vahvasti hyödyllinen pohja, mutta ei globaali lukko;</li><li><strong>representation support</strong> — esimerkiksi lukusuora, taulukko tai diagrammi tukee käsitteen ymmärtämistä;</li><li><strong>process support</strong> — yleinen päättely-, havainnointi- tai strateginen taito tukee sisältöä;</li><li><strong>safety gate</strong> — käytännön työskentelyä rajoittava turvallisuusehto, joka ei saa estää käsitteen opiskelua esimerkiksi simulaatiossa.</li></ul>
+<p>Tämä ero on tärkeä. Jos jokainen hyödyllinen esitieto mallinnetaan pakolliseksi hard gateksi, järjestelmä muuttuu jäykäksi ja oppilas joutuu helposti turhaan pitkille kiertoteille. Jos taas esitiedot jätetään mallintamatta, järjestelmä ei osaa korjata todellista osaamisaukkoa.</p>
+<p>Sammakon tämänhetkisessä refaktorissa erotetaan lisäksi todelliset pedagogiset <strong>foundation-entryt</strong> pelkistä graafiteoreettisista juurista. Se, ettei noodilla ole hard prerequisitea, ei vielä tarkoita, että se olisi hyvä ensimmäinen asia opetettavaksi.</p>
+<p>Esimerkiksi “hiukkassäteilyn tunnistaminen säteilylajiksi” voidaan esitellä ilman raskasta laskentaa, mutta se ei silti ole luonnollinen koko fysiikan lähtöpiste. Alakoulun havainto-, liike-, vuorovaikutus- ja energiakäsitteet muodostavat sille hyödyllisen pehmeän pohjan.</p>
+<hr>
+</section>
+<section aria-labelledby="4-nelja-eri-asiaa-joita-ei-saa-sekoittaa"><h2 id="4-nelja-eri-asiaa-joita-ei-saa-sekoittaa">4. Neljä eri asiaa, joita ei saa sekoittaa</h2>
+<p>Sammakko erottaa neljä kerrosta:</p>
+<pre><code class="language-text">1. NORMATIIVINEN OPETUSSUUNNITELMAVERKKO
+   Mitä opetussuunnitelma tavoittelee?
+
+2. OSAAMISVERKKO
+   Mitkä pienet taidot ja käsitteet tavoitteen saavuttaminen käytännössä edellyttää?
+
+3. PEDAGOGINEN JÄRJESTYS
+   Missä järjestyksessä nämä yleensä kannattaa opettaa?
+
+4. HENKILÖKOHTAINEN OPPIMISPOLKU
+   Missä järjestyksessä juuri tämän oppilaan kannattaa edetä?</code></pre>
+<p>Tämä erottelu on yksi Sammakon keskeisistä rakenteellisista lähtökohdista.</p>
+<p>Valtakunnallinen opetussuunnitelma ei ole sama asia kuin optimaalinen yksilöllinen etenemisjärjestys. Vuosiluokka ei ole sama asia kuin taitotaso. Eikä pedagogisesti johdettu prerequisite-suhde ole sama asia kuin Opetushallituksen normatiivinen vaatimus.</p>
+<p>Kaikella julkaistulla sisällöllä on tarkoitus säilyttää jäljitettävyys siihen opetussuunnitelman kohtaan tai erikseen merkittyyn pedagogiseen rikastustavoitteeseen, josta se on johdettu.</p>
+<hr>
+</section>
+<section aria-labelledby="5-milta-yhden-noodin-oppiminen-nayttaa"><h2 id="5-milta-yhden-noodin-oppiminen-nayttaa">5. Miltä yhden noodin oppiminen näyttää?</h2>
+<p>Sammakon oletusmalli ei ole “lue teoria ja vastaa kymmeneen kysymykseen”. Yhden KC:n ympärille voidaan muodostaa lyhyt oppimissykli:</p>
+<pre><code class="language-text">DIAGNOSTIIKKA
+→ KONTEKSTI / UTELIAISUUS
+→ ENNUSTA
+→ MANIPULOI / HAVAINNOI
+→ SELITÄ
+→ MALLIRATKAISU
+→ TUEN ASTEITTAINEN VÄHENTÄMINEN
+→ ITSENÄINEN HARJOITTELU
+→ SOVELTAMINEN UUTEEN TILANTEESEEN
+→ OSAAMISTARKISTUS
+→ VIIPEELLÄ TEHTÄVÄ MUISTIHAKU</code></pre>
+<p>Kaikkia vaiheita ei suoriteta rituaalinomaisesti jokaisessa noodissa.</p>
+<p>Jos oppilas osoittaa diagnostisesti vahvan osaamisen, järjestelmä voi siirtyä suoraan soveltamistehtävään ja edelleen seuraavaan noodiin. Jos taas perusteissa on aukko, järjestelmä palaa prerequisite-noodiin tai antaa enemmän rakennetta.</p>
+<p>Tämä on tärkeää kahdesta vastakkaisesta syystä:</p>
+<ul><li>tukea tarvitseva oppilas ei joudu etenemään uuden abstraktion päälle, jos kriittinen pohjataito puuttuu;</li><li>jo osaava oppilas ei joudu käymään läpi pitkää selitystä vain siksi, että materiaali on suunniteltu keskiverto-oppilaalle.</li></ul>
+<hr>
+</section>
+<section aria-labelledby="6-osaamisen-hallinta-ei-tarkoita-yhta-prosenttilukua"><h2 id="6-osaamisen-hallinta-ei-tarkoita-yhta-prosenttilukua">6. Osaamisen hallinta ei tarkoita yhtä prosenttilukua</h2>
+<p>Sammakossa yhden oikein ratkaistun tehtävän ei ole tarkoitus tarkoittaa “mastered”.</p>
+<p>Osaamisnäyttö erotellaan ainakin käsitteellisesti seuraaviin luokkiin:</p>
+<ul><li>itsenäinen välitön suoritus,</li><li>vihjeellä tuettu suoritus,</li><li>viiveellä saatu näyttö,</li><li>osaamisen soveltaminen uuteen tilanteeseen,</li><li>tehtäväpohjien ja representaatioiden monipuolisuus,</li><li>havaittu tyypillinen virhekäsitys,</li><li>viimeisin harjoitteluaika.</li></ul>
+<p>Näin voidaan erottaa esimerkiksi kolme hyvin erilaista tilannetta:</p>
+<p><strong>A.</strong> Oppilas ratkaisee tehtävän vihjeiden avulla. Hän oppii, mutta itsenäistä osaamista ei vielä ole osoitettu.</p>
+<p><strong>B.</strong> Oppilas ratkaisee tutun tehtävätyypin itsenäisesti heti opetuksen jälkeen. Välitön näyttö on vahva, mutta säilyminen ja siirtovaikutus ovat vielä epävarmoja.</p>
+<p><strong>C.</strong> Oppilas ratkaisee myöhemmin uuden kontekstin tehtävän ilman vihjeitä. Tämä on olennaisesti vahvempaa evidenssiä siitä, että opittu rakenne on käytettävissä.</p>
+<p>Tässä Sammakko nojaa ajatukseen, että oppimisen arvioinnin pitää kohdistua siihen, mitä halutaan pysyväksi: ei vain harjoitustilanteessa onnistumiseen vaan myöhempään mieleen palauttamiseen ja joustavaan soveltamiseen.</p>
+<hr>
+</section>
+<section aria-labelledby="7-miksi-viive-muistihaku-ja-soveltaminen-ovat-keskiossa"><h2 id="7-miksi-viive-muistihaku-ja-soveltaminen-ovat-keskiossa">7. Miksi viive, muistihaku ja soveltaminen ovat keskiössä?</h2>
+<p>Muistitutkimuksessa retrieval practice eli aktiivinen mieleen palauttaminen on osoittautunut tehokkaaksi myöhemmän säilymisen kannalta. Roedigerin ja Karpicken klassisessa tutkimuksessa toistettu testaus tuotti viiveellä paremman muistamisen kuin pelkkä uudelleenopiskelu, vaikka välitön suoritus saattoi näyttää toisenlaiselta.</p>
+<p>Samoin harjoittelun ajallinen hajauttaminen on laajassa meta-analyysissä yhdistetty parempaan pitkäkestoiseen muistamiseen kuin saman harjoittelun kasaaminen yhteen jaksoon.</p>
+<p>Matematiikassa myös sekoitettu eli interleaved harjoittelu voi olla hyödyllistä erityisesti silloin, kun oppilaan täytyy itse tunnistaa, mitä menetelmää ongelmaan pitäisi soveltaa.</p>
+<p>Sammakon kannalta näiden havaintojen olennainen seuraus on arkkitehtoninen: harjoittelu ei pääty siihen, kun noodi on “läpäisty”. Aiemmin opittu noodi voi palata myöhemmin muistihakuna, ja tehtävä voi esiintyä toisessa kontekstissa ilman, että käyttöliittymä kertoo etukäteen, mitä kaavaa tai strategiaa pitäisi käyttää.</p>
+<hr>
+</section>
+<section aria-labelledby="8-malliratkaisuista-itsenaiseen-ongelmanratkaisuun"><h2 id="8-malliratkaisuista-itsenaiseen-ongelmanratkaisuun">8. Malliratkaisuista itsenäiseen ongelmanratkaisuun</h2>
+<p>Aloittelijalle suoraan annettu vaikea ongelma voi kuluttaa suuren osan työmuistista itse ratkaisutavan etsimiseen. Cognitive Load -perinteessä worked examples -tutkimus on osoittanut, että valmiiden ratkaisujen tutkiminen voi alkuvaiheessa tukea skeemojen muodostumista tehokkaammin kuin pelkkä yritys–erehdys-ongelmanratkaisu.</p>
+<p>Sammakon mallissa tämä näkyy tuen asteittaisena vähentämisenä:</p>
+<ol><li>täydellinen malliratkaisu;</li><li>yksi puuttuva vaihe;</li><li>useampia puuttuvia vaiheita;</li><li>itsenäinen ratkaisu;</li><li>sama rakenne uudessa tilanteessa.</li></ol>
+<p>Tärkeää on, ettei tuki jää pysyväksi. Tuen tarkoitus on tehdä osaamisesta itsenäistä.</p>
+<hr>
+</section>
+<section aria-labelledby="9-lisatuki-ei-tarkoita-alemman-tavoitetason-oppilasta"><h2 id="9-lisatuki-ei-tarkoita-alemman-tavoitetason-oppilasta">9. Lisätuki ei tarkoita alemman tavoitetason oppilasta</h2>
+<p>Sammakossa tuki mallinnetaan ominaisuuksina, ei diagnoosina.</p>
+<p>Oppilas voi esimerkiksi saada:</p>
+<ul><li>pienempiin vaiheisiin pilkotun tehtävän,</li><li>helpommin saatavilla olevat vihjeet,</li><li>matalamman tekstitiheyden,</li><li>vaihtoehtoisen representaation,</li><li>enemmän malliratkaisuja,</li><li>puhe- tai lukutukea,</li><li>vähennettyä animaatiota,</li><li>enemmän aikaa.</li></ul>
+<p>Olennaista on, että sama ydintavoite voi säilyä.</p>
+<p>Ajatus on lähellä Universal Design for Learning -periaatteita: oppimisen esteitä voidaan vähentää tarjoamalla useita tapoja havaita sisältöä, toimia ja ilmaista osaamista ilman, että oppimistavoitetta tarpeettomasti muutetaan.</p>
+<p>Sammakko ei tarvitse oppilaan diagnoosia voidakseen tarjota tällaisia ominaisuuksia.</p>
+<hr>
+</section>
+<section aria-labelledby="10-haastetaso-ei-tarkoita-suurempia-numeroita"><h2 id="10-haastetaso-ei-tarkoita-suurempia-numeroita">10. Haastetaso ei tarkoita suurempia numeroita</h2>
+<p>Lahjakkaan tai nopeasti etenevän oppilaan eriyttäminen typistyy digitaalisissa materiaaleissa helposti “samaan tehtävään suuremmilla luvuilla”.</p>
+<p>Sammakossa haastetaso tarkoittaa ennemmin:</p>
+<ul><li>tiiviimpää etenemistä,</li><li>diagnostista ohittamista,</li><li>vähäisempää scaffoldingia,</li><li>abstraktimpaa representaatiota,</li><li>monivaiheista päättelyä,</li><li>mallintamista,</li><li>uuden tilanteen soveltamista,</li><li>vaihtoehtoisten ratkaisujen vertailua,</li><li>aikaisempaa etenemistä seuraavaan osaamisnoodiin.</li></ul>
+<p>Tavoite on vähentää jo hallitun asian päälle käytettyä aikaa, ei vain kasvattaa laskukuormaa.</p>
+<hr>
+</section>
+<section aria-labelledby="11-pelillisyys-on-kayttoliittyma-ei-oppimistavoite"><h2 id="11-pelillisyys-on-kayttoliittyma-ei-oppimistavoite">11. Pelillisyys on käyttöliittymä, ei oppimistavoite</h2>
+<p>Sammakko on peli vain siinä mielessä, että oppiminen tapahtuu lämpimässä, reagoivassa ja motivoivassa ympäristössä.</p>
+<p>Pelin ei ole tarkoitus palkita:</p>
+<ul><li>mahdollisimman pitkää ruutuaikaa,</li><li>loputonta klikkailua,</li><li>streakin säilyttämistä menettämisen pelolla,</li><li>vihjeiden välttämistä hinnalla millä hyvänsä,</li><li>ensimmäisellä yrityksellä onnistumista tavalla, joka suosii jo ennestään osaavia.</li></ul>
+<p>Sen sijaan pelimaailma voi reagoida esimerkiksi:</p>
+<ul><li>uuden taidon hallintaan,</li><li>aiemmin opitun muistamiseen,</li><li>soveltamiseen uuteen tilanteeseen,</li><li>vaikean virhekäsityksen korjaamiseen,</li><li>itsenäistymiseen vihjeistä.</li></ul>
+<p>Gamifikaatiotutkimus antaa syytä olettaa, että pelillisyydellä voi olla positiivisia vaikutuksia oppimiseen ja motivaatioon, mutta vaikutus riippuu toteutuksesta. Sammakon kannalta tästä seuraa varovainen periaate: <strong>pelikerros palvelee oppimista, ei päinvastoin</strong>.</p>
+<p>Itsemääräämisteorian näkökulmasta tavoiteltavia kokemuksia ovat erityisesti kompetenssi ja autonomia: oppija näkee edistymisensä, saa sopivan haasteen ja pystyy etenemään oman osaamisensa perusteella.</p>
+<hr>
+</section>
+<section aria-labelledby="12-matemaattis-luonnontieteellisen-sisallon-erityisvaatimus-oikeellisuuden-pitaa-olla-koneellisesti-testattavaa"><h2 id="12-matemaattis-luonnontieteellisen-sisallon-erityisvaatimus-oikeellisuuden-pitaa-olla-koneellisesti-testattavaa">12. Matemaattis-luonnontieteellisen sisällön erityisvaatimus: oikeellisuuden pitää olla koneellisesti testattavaa</h2>
+<p>Sammakon yksi tärkeä teknis-pedagoginen lähtökohta on, ettei numeerista tai muodollista oikeellisuutta jätetä generatiivisen kielimallin arvattavaksi.</p>
+<p>Tehtäväpohjalla voi olla esimerkiksi:</p>
+<pre><code class="language-text">generate(seed)
+solve(params)
+validateAnswer(answer, expected)
+classifyMisconceptions(...)</code></pre>
+<p>Matematiikassa tämä voi tarkoittaa eksaktia aritmetiikkaa, ekvivalenssia ja ominaisuustestejä.</p>
+<p>Fysiikassa sama domain state voi syöttää:</p>
+<ul><li>laskennallisen oikean vastauksen,</li><li>yksiköt,</li><li>kuvaajan,</li><li>animaation tai simulaation.</li></ul>
+<p>Jos kuvaajassa näkyvä liike ei vastaa samaa matemaattista mallia kuin oikea vastaus, visualisointi on pedagogisesti haitallinen.</p>
+<p>Kemiassa vastaavasti hiukkastason visualisoinnin, symbolisen esityksen ja mahdollisten aine-/rakenneinvarianssien pitää olla keskenään johdonmukaisia.</p>
+<p>Generatiivista tekoälyä voidaan käyttää sisältötuotannon apuna, mutta sen tuotos kulkee skeema-, solver-, lähde- ja validointiporttien läpi.</p>
+<hr>
+</section>
+<section aria-labelledby="13-canonical-learning-content-ja-runtime-erotetaan-toisistaan"><h2 id="13-canonical-learning-content-ja-runtime-erotetaan-toisistaan">13. Canonical Learning Content ja runtime erotetaan toisistaan</h2>
+<p>Sammakon sisältöarkkitehtuuri voidaan jäsentää näin:</p>
+<pre><code class="language-text">CANONICAL LEARNING CONTENT
+│
+├─ Curriculum graph
+├─ KC graph
+├─ LessonBlueprint
+├─ AssessmentBlueprint
+├─ ItemTemplate
+├─ Misconceptions
+├─ Support variants
+├─ Challenge variants
+├─ Simulation spec
+└─ provenance
+         │
+         ▼
+   DELIVERY ADAPTER
+     ┌───┴────┐
+     ▼        ▼
+Sammakko    ViLLE /
+runtime     muu alusta</code></pre>
+<p>Tämä erottelu on sekä teknisesti että tutkimuksellisesti tärkeä.</p>
+<p>Pedagoginen sisältö voidaan julkaista avoimena ja koneellisesti luettavana aineistona, vaikka Sammakon varsinainen runtime, adaptiivinen scheduler, learner model, pelimaailma ja käyttöliittymä säilyvät erillisenä ohjelmistona.</p>
+<p>Tämänhetkinen lisenssisuunta on julkaista Canonical Learning Content vapaasti käytettäväksi ja muokattavaksi esimerkiksi CC BY 4.0 -lisenssillä, kun taas Sammakon runtimeen pidetään erilliset oikeudet. Tämä mahdollistaisi saman opetussisällön käyttämisen esimerkiksi ViLLEssä ilman, että Sammakon tutkimus- tai tuotekehitys olisi riippuvainen yhden jakelukanavan infrastruktuurista.</p>
+<p>Samalla avoin sisältö tekisi itse pedagogisesta mallista tutkittavan ja kritisoitavan: prerequisite-edgejä, noodigranulaatiota, lesson blueprinttejä ja tehtäväpohjia voidaan tarkastella riippumatta Sammakon käyttöliittymästä.</p>
+<hr>
+</section>
+<section aria-labelledby="14-mika-sammakossa-on-aidosti-uusi-kulma"><h2 id="14-mika-sammakossa-on-aidosti-uusi-kulma">14. Mikä Sammakossa on aidosti uusi kulma?</h2>
+<p>On tärkeää olla väittämättä liikaa.</p>
+<p>Sammakko ei ole ensimmäinen:</p>
+<ul><li>adaptiivinen oppimisjärjestelmä,</li><li>älykäs tutorointijärjestelmä,</li><li>mastery learning -järjestelmä,</li><li>pelillistetty oppimisympäristö,</li><li>prerequisite-graafia käyttävä järjestelmä,</li><li>retrieval practicea tai spacingia käyttävä järjestelmä.</li></ul>
+<p>Älykkäistä tutorointijärjestelmistä on jo meta-analyyttistä näyttöä: Ma ym. raportoivat ITS-järjestelmille keskimäärin paremman oppimistuloksen kuin opettajajohtoiselle suurryhmäopetukselle, muulle tietokonepohjaiselle opetukselle ja oppikirja-/työkirjatyöskentelylle, vaikka vaikutukset vaihtelevat vertailuryhmän ja toteutuksen mukaan.</p>
+<p>Sammakon mahdollinen uutuus on <strong>integraatiossa ja operationalisoinnissa</strong>.</p>
+<h4 id="14-1-opetussuunnitelma-muutetaan-eksplisiittiseksi-osaamisriippuvuusverkoksi">14.1 Opetussuunnitelma muutetaan eksplisiittiseksi osaamisriippuvuusverkoksi</h4>
+<p>OPS-kytkentä ei jää metadata-tagiksi oppitunnin kylkeen, vaan opetussuunnitelman tavoite puretaan arvioitaviksi mikrotiedoiksi ja -taidoiksi sekä niiden keskinäisiksi riippuvuuksiksi.</p>
+<h4 id="14-2-sama-graafi-ohjaa-seka-tukea-etta-kiihdytysta">14.2 Sama graafi ohjaa sekä tukea että kiihdytystä</h4>
+<p>Prerequisite-graafi ei ole vain heikon oppilaan remediation-työkalu. Sen avulla voidaan myös osoittaa, mitä jo osaava oppilas voi turvallisesti ohittaa.</p>
+<h4 id="14-3-mastery-maaritellaan-evidenssiprofiilina">14.3 Mastery määritellään evidenssiprofiilina</h4>
+<p>Sammakko ei optimoi vain välitöntä oikeellisuutta, vaan erottaa vihjeellisen, itsenäisen, viiveellisen ja soveltavan näytön.</p>
+<h4 id="14-4-tutkimusoptimointi-kohdistuu-aikaan-suhteutettuun-pysyvaan-osaamiseen">14.4 Tutkimusoptimointi kohdistuu aikaan suhteutettuun pysyvään osaamiseen</h4>
+<p>North Star ei ole “enemmän tehtäviä”, “enemmän pisteitä” tai “enemmän käyttöaikaa”, vaan:</p>
+<blockquote><p><strong>mahdollisimman hyvä viiveellä mitattu osaaminen ja kyky soveltaa opittua uusiin tilanteisiin mahdollisimman vähäisellä aktiivisella opiskeluajalla.</strong></p></blockquote>
+<p>Tämä tekee oppimisnopeudesta falsifioitavan tutkimuskysymyksen.</p>
+<h4 id="14-5-matemaattis-luonnontieteellinen-totuuskerros-on-erotettu-kayttoliittymasta">14.5 Matemaattis-luonnontieteellinen totuuskerros on erotettu käyttöliittymästä</h4>
+<p>Tehtävän numeerinen totuus, yksiköt, kuvaaja ja simulaatio pyritään johtamaan samasta domain-mallista. Tämä on erityisen tärkeää fysiikassa ja kemiassa, joissa näyttävä mutta väärä visualisointi voi opettaa väärän mallin.</p>
+<h4 id="14-6-sisalto-voidaan-erottaa-alustasta">14.6 Sisältö voidaan erottaa alustasta</h4>
+<p>Avoin Canonical Learning Content mahdollistaa saman KC:n pedagogisen toteutuksen Sammakon omassa runtimessa, ViLLEssä tai myöhemmin toisessa ympäristössä. Tämä mahdollistaa myös sen tutkimisen, johtuuko mahdollinen vaikutus itse sisältöarkkitehtuurista vai Sammakon runtime-adaptaatiosta.</p>
+<hr>
+</section>
+<section aria-labelledby="15-mika-sammakossa-voisi-olla-tutkimisen-arvoista"><h2 id="15-mika-sammakossa-voisi-olla-tutkimisen-arvoista">15. Mikä Sammakossa voisi olla tutkimisen arvoista?</h2>
+<p>Tutkimuksellisesti kiinnostavinta ei ehkä ole kysymys “toimiiko oppimispeli?”, vaan useampi tarkempi kysymys.</p>
+<h4 id="15-1-vahentaako-prerequisite-pohjainen-eteneminen-aktiivista-opiskeluaikaa">15.1 Vähentääkö prerequisite-pohjainen eteneminen aktiivista opiskeluaikaa?</h4>
+<p>Jos oppilas saa ohittaa jo hallitut KC:t mutta järjestelmä varmistaa osaamisen soveltamistehtävällä, voidaanko sama tavoitetaso saavuttaa lyhyemmässä aktiivisessa ajassa?</p>
+<h4 id="15-2-parantaako-kc-tasoinen-remediation-verrattuna-oppitunti-tai-lukutason-kertaukseen">15.2 Parantaako KC-tasoinen remediation verrattuna oppitunti- tai lukutason kertaukseen?</h4>
+<p>Jos virhe paikannetaan esimerkiksi yksikkömuunnokseen eikä koko nopeusaiheeseen, kuinka paljon tarpeetonta uudelleenopiskelua voidaan välttää?</p>
+<h4 id="15-3-onko-hyoty-suurin-heterogeenisissa-ryhmissa">15.3 Onko hyöty suurin heterogeenisissä ryhmissä?</h4>
+<p>Adaptiivisuuden teoreettinen hyöty kasvaa, kun oppilaiden lähtötasot eroavat. Tämä on empiirisesti testattavissa.</p>
+<h4 id="15-4-voiko-sama-tavoitetaso-sailya-tukiprofiilista-riippumatta">15.4 Voiko sama tavoitetaso säilyä tukiprofiilista riippumatta?</h4>
+<p>Voidaan testata, vähentääkö lisätuki keskeytyksiä, virhekäsityksiä tai hint-riippuvuutta ilman, että tavoiteltu osaamistaso madaltuu.</p>
+<h4 id="15-5-voidaanko-lahjakkaan-oppilaan-hukka-aikaa-mitattavasti-vahentaa">15.5 Voidaanko lahjakkaan oppilaan hukka-aikaa mitattavasti vähentää?</h4>
+<p>Fast path -mekanismi voidaan arvioida erikseen: paljonko opetusaikaa voidaan ohittaa ilman, että viiveellä mitattu osaaminen tai prerequisite-peitto heikkenee?</p>
+<h4 id="15-6-kuinka-tarkea-itse-graafin-laatu-on">15.6 Kuinka tärkeä itse graafin laatu on?</h4>
+<p>Tämä on erityisen kiinnostava Sammakko-kysymys.</p>
+<p>Prerequisite-edge voi olla:</p>
+<ul><li>oikea,</li><li>turhan tiukka,</li><li>puuttuva,</li><li>väärän vahvuinen.</li></ul>
+<p>Siksi osaamisverkko ei ole vain infrastruktuuria vaan itsessään empiirisesti parannettava pedagoginen malli. Oppimisdata voi myöhemmin osoittaa, että jokin oletettu hard prerequisite kannattaa muuttaa softiksi tai että jokin puuttuva välinooodi selittää systemaattista epäonnistumista.</p>
+<hr>
+</section>
+<section aria-labelledby="16-ehdotettu-tutkimushypoteesi-ja-ensisijaiset-paatulosmuuttujat"><h2 id="16-ehdotettu-tutkimushypoteesi-ja-ensisijaiset-paatulosmuuttujat">16. Ehdotettu tutkimushypoteesi ja ensisijaiset päätulosmuuttujat</h2>
+<p>Sammakon pääkysymys:</p>
+<blockquote><p><strong>Saavuttaako Sammakko saman tai paremman opetussuunnitelman mukaisen osaamisen, kun osaamista arvioidaan sekä viiveellä että uusissa soveltamistilanteissa, mutta lyhyemmällä aktiivisella opiskeluajalla kuin valitulla vertailumenetelmällä?</strong></p></blockquote>
+<p>Tätä ei kannata tiivistää yhdeksi epämääräiseksi “oppimistehokkuusindeksiksi”.</p>
+<p>Kaksi ensisijaista päätulosmuuttujaa voisivat olla:</p>
+<p><strong>A. Osaaminen vakioidun aktiivisen opiskeluajan jälkeen</strong></p>
+<ul><li>viiveellä mitattu suoritus,</li><li>soveltaminen uusiin tilanteisiin,</li><li>opetussuunnitelman mukainen osaaminen.</li></ul>
+<p><strong>B. Aika ennalta määritellyn tavoitellun osaamistason saavuttamiseen</strong></p>
+<p>Näiden lisäksi voidaan mitata esimerkiksi:</p>
+<ul><li>välitön oppimistulos,</li><li>prerequisite-aukkojen määrä,</li><li>vihjeiden käyttö,</li><li>virhekäsitysten korjaantuminen,</li><li>keskeyttäminen,</li><li>koettu kuormitus,</li><li>motivaatio ja koettu autonomia,</li><li>käytettävyys.</li></ul>
+<p>Pelkkää sovelluksessa vietettyä aikaa, XP:tä tai välitöntä tehtäväpistemäärää ei pidetä vaikuttavuuden päätuloksena.</p>
+<hr>
+</section>
+<section aria-labelledby="17-falsifioitavuus-milloin-sammakon-perusidea-ei-saa-tukea"><h2 id="17-falsifioitavuus-milloin-sammakon-perusidea-ei-saa-tukea">17. Falsifioitavuus: milloin Sammakon perusidea ei saa tukea?</h2>
+<p>Sammakon tutkimusohjelma on mielekäs vain, jos myös epäonnistuminen on mahdollinen tulos.</p>
+<p>Perusidea ei saa vahvaa tukea, jos esimerkiksi:</p>
+<ul><li>samaan viiveellä mitattuun osaamiseen päästään yhtä nopeasti tai nopeammin yksinkertaisemmalla materiaalilla;</li><li>hienojakoinen KC-graafi lisää kitkaa ilman oppimishyötyä;</li><li>diagnostiikan virheet aiheuttavat enemmän väärää ohittamista kuin hyödyllistä nopeutusta;</li><li>prerequisite-edgejen ylläpitokustannus ylittää niiden pedagogisen hyödyn;</li><li>pelillinen käyttöliittymä häiritsee käsitteellistä oppimista;</li><li>tuki tuottaa liiallista vihjeriippuvuutta;</li><li>avoin sisältö osoittautuu hyvin siirrettäväksi mutta Sammakon runtime ei tuo siihen lisäarvoa.</li></ul>
+<p>Tällaiset tulokset eivät olisi epäonnistunutta tutkimusta. Ne kertoisivat, missä järjestelmän oletukset ovat väärin.</p>
+<hr>
+</section>
+<section aria-labelledby="18-tietosuoja-ja-tutkimusarkkitehtuuri"><h2 id="18-tietosuoja-ja-tutkimusarkkitehtuuri">18. Tietosuoja ja tutkimusarkkitehtuuri</h2>
+<p>Sammakon ydintoimintojen on tarkoitus toimia myös paikallisesti ilman pilvitiliä.</p>
+<p>Paikallinen versio voi säilyttää:</p>
+<ul><li>oppijamallin,</li><li>harjoitteluhistorian,</li><li>review-jonon,</li><li>asetukset</li></ul>
+<p>esimerkiksi selaimen paikallisessa tallennuksessa.</p>
+<p>Pilvisynkronointi ja tutkimusdatan luovutus voidaan erottaa tästä opt-in-toiminnoiksi.</p>
+<p>Tutkimusvalmiudessa keskeinen periaate on datan minimointi. Oppimistapahtumalla on oltava dokumentoitu käyttötarkoitus; nimeä, sähköpostia, diagnoosia tai muuta tarpeetonta henkilötietoa ei tarvitse sisällyttää itse learning eventiin.</p>
+<p>Avoin Canonical Learning Content ja mahdollinen ViLLE-adapteri tarjoavat toisen polun: pedagogista sisältöä voidaan käyttää institutionaalisessa ympäristössä ilman, että Sammakon oman palvelun täytyy olla koulun käyttäjä- ja henkilötietoinfrastruktuurin keskus.</p>
+<hr>
+</section>
+<section aria-labelledby="19-agenttinen-sisaltotuotanto-ei-tarkoita-automaattista-julkaisemista"><h2 id="19-agenttinen-sisaltotuotanto-ei-tarkoita-automaattista-julkaisemista">19. Agenttinen sisältötuotanto ei tarkoita automaattista julkaisemista</h2>
+<p>690 KC:n ympärille ei ole realistista rakentaa korkeatasoista sisältöä kokonaan käsin yksi kerrallaan, jos jokaisessa pitäisi olla:</p>
+<ul><li>orientaatio,</li><li>visualisointi tai manipulointi,</li><li>selitys,</li><li>malliratkaisu,</li><li>vihjeportaat,</li><li>itsenäisiä tehtäviä,</li><li>soveltamistehtäviä,</li><li>virhekäsitysmalli,</li><li>perustaso,</li><li>lisätuki,</li><li>haastetaso,</li><li>validointi ja lähdejälki.</li></ul>
+<p>Siksi Sammakon kehitys on suunniteltu agenttiseksi:</p>
+<pre><code class="language-text">suunnittelu
+→ implementointi
+→ automaattinen validointi
+→ riippumaton review
+→ korjaus
+→ hyväksyntä</code></pre>
+<p>Tämä ei tarkoita, että kielimalli saisi päättää opetussuunnitelmasta tai matemaattisesta totuudesta.</p>
+<p>Agentti voi tuottaa sisältöehdotuksia, mutta julkaisu edellyttää muun muassa:</p>
+<ul><li>skeemavalidointia,</li><li>prerequisite-validointia,</li><li>determinististä solver-testausta,</li><li>yksikkö- ja invarianssitestejä,</li><li>lähteitä ja jäljitettävyyttä,</li><li>visuaalista tarkistusta,</li><li>tarvittaessa ihmisarviointia.</li></ul>
+<p>Tavoitteena ei ole automatisoida opettajaa pois, vaan tehdä laajan, hienojakoisen materiaalin systemaattinen tuottaminen ja ylläpito mahdolliseksi.</p>
+<hr>
+</section>
+<section aria-labelledby="20-mika-sammakko-ei-ole"><h2 id="20-mika-sammakko-ei-ole">20. Mikä Sammakko ei ole?</h2>
+<p>Sammakko ei ole:</p>
+<ul><li>chatbot, joka arvaa oppilaan tason keskustelusta;</li><li>oppikirjan PDF pelillisellä kuorella;</li><li>pelkkä tehtävägeneraattori;</li><li>järjestelmä, jossa ensimmäinen oikea vastaus tarkoittaa osaamista;</li><li>tekoäly, joka itse päättää numeerisen vastauksen oikeellisuudesta;</li><li>järjestelmä, joka kerää diagnooseja tarjotakseen tukea;</li><li>“vaikeustaso 3 = samat laskut suuremmilla numeroilla”;</li><li>tutkimusväite siitä, että digitaalinen oppiminen olisi automaattisesti opettajaa parempaa.</li></ul>
+<p>Sammakko on yritys rakentaa <strong>läpinäkyvä, testattava ja muokattava oppimisen infrastruktuuri</strong>, jossa opetussuunnitelma, osaamisriippuvuudet, oppilaan näyttö ja pedagoginen toiminta voidaan erottaa toisistaan ja yhdistää uudelleen eksplisiittisin säännöin.</p>
+<hr>
+</section>
+<section aria-labelledby="21-miksi-tama-voisi-olla-merkityksellista"><h2 id="21-miksi-tama-voisi-olla-merkityksellista">21. Miksi tämä voisi olla merkityksellistä?</h2>
+<p>Jos Sammakon hypoteesi ei pidä paikkaansa, syntyy silti mahdollisesti hyödyllinen avoin osaamisverkko, tehtävä- ja lesson blueprint -kokoelma sekä systemaattinen tapa jäljittää digitaalinen STEM-oppimateriaali opetussuunnitelmaan.</p>
+<p>Jos hypoteesi pitää osittain paikkansa, voidaan ehkä vähentää:</p>
+<ul><li>jo osatun asian turhaa harjoittelua,</li><li>prerequisite-aukkojen päälle rakentamista,</li><li>yhden tahdin pakkoa,</li><li>tuen ja tavoitteiden tarpeetonta sekoittamista.</li></ul>
+<p>Jos se pitää vahvasti paikkansa, kiinnostava tulos ei olisi se, että “peli opettaa paremmin”, vaan että <strong>eksplisiittinen osaamisverkko, evidenssipohjainen adaptointi ja viive-/soveltamisperusteinen mastery voivat parantaa opetussuunnitelman mukaisen osaamisen aika–laatu-suhdetta</strong>.</p>
+<p>Juuri tämä on Sammakon tutkimisen arvoinen väite.</p>
+<hr>
+</section>
+<section aria-labelledby="22-johtopaatos"><h2 id="22-johtopaatos">22. Johtopäätös</h2>
+<p>Sammakon perusajatus voidaan tiivistää yhteen lauseeseen:</p>
+<blockquote><p><strong>Älä kysy ensisijaisesti, minkä vuosiluokan materiaalia oppilaan pitäisi tehdä, vaan mikä on seuraava pienin merkityksellinen asia, jonka hänen kannattaa oppia — ja millainen näyttö osoittaa, että se myös säilyy ja siirtyy uuteen tilanteeseen.</strong></p></blockquote>
+<p>Sammakko pyrkii rakentamaan tämän kysymyksen ympärille kokonaisen järjestelmän:</p>
+<ul><li>opetussuunnitelmaan jäljitettävä osaamisverkko,</li><li>prerequisite-suhteet,</li><li>KC-kohtainen oppijamalli,</li><li>support/core/challenge-polut,</li><li>deterministisesti validoidut STEM-tehtävät ja simulaatiot,</li><li>viivekertaus,</li><li>soveltamistehtävät,</li><li>pelillinen mutta ei manipuloiva käyttöliittymä,</li><li>avoin Canonical Learning Content,</li><li>erillinen Sammakko-runtime.</li></ul>
+<p>Sen arvoa ei lopulta ratkaise arkkitehtuurin eleganssi eikä noodien määrä. Sen ratkaisee empiirinen kysymys:</p>
+<p><strong>oppivatko oppilaat paremmin, pysyvämmin ja/tai nopeammin?</strong></p>
+<p>Siksi Sammakon tavoite ei ole ainoastaan rakentaa oppimissovellusta. Tavoitteena on rakentaa järjestelmä, jonka keskeiset pedagogiset oletukset ovat riittävän eksplisiittisiä, jotta niitä voidaan myös tutkia, kumota ja parantaa.</p>
+<hr>
+</section>
+<section aria-labelledby="kirjallisuutta-ja-taustaa"><h2 id="kirjallisuutta-ja-taustaa">Kirjallisuutta ja taustaa</h2>
+<p>Atkinson, R. K., Renkl, A. &amp; Merrill, M. M. (2003). <em>Transitioning From Studying Examples to Solving Problems: Effects of Self-Explanation Prompts and Fading Worked-Out Steps.</em> Journal of Educational Psychology, 95(4), 774–783. <a href="https://doi.org/10.1037/0022-0663.95.4.774">DOI</a></p>
+<p>CAST (2024). <em>Universal Design for Learning Guidelines version 3.0.</em> <a href="https://udlguidelines.cast.org/">Avaa lähde</a></p>
+<p>Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T. &amp; Rohrer, D. (2006). <em>Distributed practice in verbal recall tasks: A review and quantitative synthesis.</em> Psychological Bulletin, 132(3), 354–380. <a href="https://doi.org/10.1037/0033-2909.132.3.354">DOI</a></p>
+<p>Ma, W., Adesope, O. O., Nesbit, J. C. &amp; Liu, Q. (2014). <em>Intelligent tutoring systems and learning outcomes: A meta-analysis.</em> Journal of Educational Psychology, 106(4), 901–918. <a href="https://doi.org/10.1037/a0037123">DOI</a></p>
+<p>Renkl, A., Atkinson, R. K. &amp; Große, C. S. (2004). <em>How Fading Worked Solution Steps Works – A Cognitive Load Perspective.</em> Instructional Science, 32, 59–82. <a href="https://doi.org/10.1023/B:TRUC.0000021815.74806.F6">DOI</a></p>
+<p>Roediger, H. L. &amp; Karpicke, J. D. (2006). <em>Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention.</em> Psychological Science, 17(3), 249–255. <a href="https://doi.org/10.1111/j.1467-9280.2006.01693.x">DOI</a></p>
+<p>Rohrer, D., Dedrick, R. F., Hartwig, M. K. &amp; Cheung, C.-N. (2020). <em>A randomized controlled trial of interleaved mathematics practice.</em> Journal of Educational Psychology, 112(1), 40–52. <a href="https://doi.org/10.1037/edu0000367">DOI</a></p>
+<p>Ryan, R. M. &amp; Deci, E. L. (2000). <em>Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being.</em> American Psychologist, 55(1), 68–78. <a href="https://doi.org/10.1037/0003-066X.55.1.68">DOI</a></p>
+<p>Sailer, M. &amp; Homner, L. (2020). <em>The Gamification of Learning: a Meta-analysis.</em> Educational Psychology Review, 32, 77–112. <a href="https://doi.org/10.1007/s10648-019-09498-w">DOI</a></p>
+<p>Sweller, J. (1988). <em>Cognitive Load During Problem Solving: Effects on Learning.</em> Cognitive Science, 12(2), 257–285. <a href="https://doi.org/10.1207/s15516709cog1202_4">DOI</a></p>
+<p>VanLehn, K. (2011). <em>The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems.</em> Educational Psychologist, 46(4), 197–221. <a href="https://doi.org/10.1080/00461520.2011.611369">DOI</a></p>
+<hr>
+<h3 id="dokumentin-asema">Dokumentin asema</h3>
+<p>Tämä white paper kuvaa Sammakon nykyistä suunnittelusuuntaa. Se ei ole tutkimustulos, lopullinen tekninen spesifikaatio eikä väite siitä, että nykyinen noin 690 KC:n verkko olisi jo empiirisesti validoitu. Noodit, prerequisite-suhteet, mastery-säännöt ja pedagogiset blueprintit ovat tutkimus- ja kehityshypoteeseja, joita on tarkoitus korjata lähdeauditoinnin, asiantuntija-arvioinnin, käyttäjätestien ja oppimistulosten perusteella.</p>
+</section></article></div>
+<section class="paper-next wrap"><p class="eyebrow">Paperista rakenteeseen</p><h2>Tutki sama ajatus datana tai sisältönä.</h2><p>Oppimisverkko näyttää kaikki 690 osaamiskohdetta ja niiden relaatiot.</p><div class="paper-actions"><a class="button button-primary" href="/oppimisverkko/">Avaa oppimisverkko</a></div></section>
+</main><footer class="site-footer"><div class="wrap footer-inner"><a class="brand-link" href="/">Sammakko<small>Hulluttelulaboratorio</small></a><p>Uteliaisuudelle tilaa.<br>Oivalluksille aikaa.</p><nav aria-label="Alatunniste"><a href="/oppimisverkko/">Oppimisverkko</a><a href="/whitepaper/" aria-current="page">Whitepaper</a><a href="/tietoa/">Käyttö ja tiedot</a></nav><span class="footer-edition">Whitepaper v0.1 · verkkoversio 1.11.2026</span></div></footer></body></html>

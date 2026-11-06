@@ -1,0 +1,3935 @@
+TAP version 13
+# Subtest: one report couples observation and change for each same lane and event
+ok 1 - one report couples observation and change for each same lane and event
+  ---
+  duration_ms: 8.464583
+  type: 'test'
+  ...
+# Subtest: shared-time trajectories are bounded, continuous and have correct observed changes
+ok 2 - shared-time trajectories are bounded, continuous and have correct observed changes
+  ---
+  duration_ms: 8.800625
+  type: 'test'
+  ...
+# Subtest: strict selectors, dense exact lane IDs, valid labels and finite bounds reject unsupported input
+ok 3 - strict selectors, dense exact lane IDs, valid labels and finite bounds reject unsupported input
+  ---
+  duration_ms: 1.1425
+  type: 'test'
+  ...
+# Subtest: supports add only marks, not trajectories or target report truth
+ok 4 - supports add only marks, not trajectories or target report truth
+  ---
+  duration_ms: 0.270083
+  type: 'test'
+  ...
+# Subtest: constant clock intervals give the intended observed changes with fixed reference
+ok 5 - constant clock intervals give the intended observed changes with fixed reference
+  ---
+  duration_ms: 5.780833
+  type: 'test'
+  ...
+# Subtest: each question accepts its intended observation and rejects other supported descriptions
+ok 6 - each question accepts its intended observation and rejects other supported descriptions
+  ---
+  duration_ms: 0.447417
+  type: 'test'
+  ...
+# Subtest: sparse/extra/invalid sequences and nonfinite clocks cannot pass
+ok 7 - sparse/extra/invalid sequences and nonfinite clocks cannot pass
+  ---
+  duration_ms: 0.215125
+  type: 'test'
+  ...
+# Subtest: real object positions and helper line do not falsify model or create extra objects
+ok 8 - real object positions and helper line do not falsify model or create extra objects
+  ---
+  duration_ms: 0.248042
+  type: 'test'
+  ...
+# Subtest: all task helpers reject coerced keys while canonical string tasks retain their meaning
+ok 9 - all task helpers reject coerced keys while canonical string tasks retain their meaning
+  ---
+  duration_ms: 0.2195
+  type: 'test'
+  ...
+# Subtest: actual trajectories retain fixed references and exact still coordinates
+ok 10 - actual trajectories retain fixed references and exact still coordinates
+  ---
+  duration_ms: 3.806292
+  type: 'test'
+  ...
+# Subtest: classification concerns observed whole trajectory, including return and explicit no movement
+ok 11 - classification concerns observed whole trajectory, including return and explicit no movement
+  ---
+  duration_ms: 0.364916
+  type: 'test'
+  ...
+# Subtest: finite model clock is partition independent and unsupported/sparse answers never pass
+ok 12 - finite model clock is partition independent and unsupported/sparse answers never pass
+  ---
+  duration_ms: 0.41275
+  type: 'test'
+  ...
+# Subtest: original SVG actually moves objects without moving the reference
+ok 13 - original SVG actually moves objects without moving the reference
+  ---
+  duration_ms: 0.22125
+  type: 'test'
+  ...
+# Subtest: joining conserves each piece, origin and final slot across every supported state
+ok 14 - joining conserves each piece, origin and final slot across every supported state
+  ---
+  duration_ms: 25.984958
+  type: 'test'
+  ...
+# Subtest: direct totals require all parts; optional marks and viewing are absent from truth inputs
+ok 15 - direct totals require all parts; optional marks and viewing are absent from truth inputs
+  ---
+  duration_ms: 0.523041
+  type: 'test'
+  ...
+# Subtest: sentence uses the original operand multiset, accepts both orders and preserves repeated operands
+ok 16 - sentence uses the original operand multiset, accepts both orders and preserves repeated operands
+  ---
+  duration_ms: 1.320875
+  type: 'test'
+  ...
+# Subtest: unsupported cases, sparse/inherited/extra parts and invalid domains cannot become successes
+ok 17 - unsupported cases, sparse/inherited/extra parts and invalid domains cannot become successes
+  ---
+  duration_ms: 2.108667
+  type: 'test'
+  ...
+# Subtest: exact canonical metadata, assets, source hashes and source-only staged composition
+ok 18 - exact canonical metadata, assets, source hashes and source-only staged composition
+  ---
+  duration_ms: 123.818833
+  type: 'test'
+  ...
+# Subtest: Every231 ordered nonnegative pair to20 has exact sum, make-ten or direct route, zero and boundaries
+ok 19 - Every231 ordered nonnegative pair to20 has exact sum, make-ten or direct route, zero and boundaries
+  ---
+  duration_ms: 7.638416
+  type: 'test'
+  ...
+# Subtest: Every valid split of either addend is accepted, including commuted grouping, non-ten and zero parts; wrong construction cannot get credit
+ok 20 - Every valid split of either addend is accepted, including commuted grouping, non-ten and zero parts; wrong construction cannot get credit
+  ---
+  duration_ms: 15.463209
+  type: 'test'
+  ...
+# Subtest: Every state preserves joined+pending total and exact colored quantities; original external XML generated from same model
+ok 21 - Every state preserves joined+pending total and exact colored quantities; original external XML generated from same model
+  ---
+  duration_ms: 139.762333
+  type: 'test'
+  ...
+# Subtest: Blank≠0; strict primitive numbers and response shape reject approximate/coerced values and unsupported split flags
+ok 22 - Blank≠0; strict primitive numbers and response shape reject approximate/coerced values and unsupported split flags
+  ---
+  duration_ms: 0.3
+  type: 'test'
+  ...
+# Subtest: NoJS8+5 initial inputs/question/model and optional decomposition disclosure are explicit
+ok 23 - NoJS8+5 initial inputs/question/model and optional decomposition disclosure are explicit
+  ---
+  duration_ms: 0.5355
+  type: 'test'
+  ...
+# Subtest: Exact canonical/assets/source contract and review transitions use OS-temp fixtures, never assume own content review pending
+ok 24 - Exact canonical/assets/source contract and review transitions use OS-temp fixtures, never assume own content review pending
+  ---
+  duration_ms: 268.921792
+  type: 'test'
+  ...
+# Subtest: All132 mixed facts are exact, zero identities respected and no negative/out-of-range intermediates admitted
+ok 25 - All132 mixed facts are exact, zero identities respected and no negative/out-of-range intermediates admitted
+  ---
+  duration_ms: 7.625916
+  type: 'test'
+  ...
+# Subtest: Every supported two-operation model has independently calculated intermediate/final quantities at all3 stages
+ok 26 - Every supported two-operation model has independently calculated intermediate/final quantities at all3 stages
+  ---
+  duration_ms: 107.705208
+  type: 'test'
+  ...
+# Subtest: Integration checks operation meaning plus intermediate and final, not a guessed final answer; zero permits either valid operation
+ok 27 - Integration checks operation meaning plus intermediate and final, not a guessed final answer; zero permits either valid operation
+  ---
+  duration_ms: 0.329625
+  type: 'test'
+  ...
+# Subtest: Sign relation evaluates all supported alternatives and blank is not a semantic default
+ok 28 - Sign relation evaluates all supported alternatives and blank is not a semantic default
+  ---
+  duration_ms: 5.960333
+  type: 'test'
+  ...
+# Subtest: Strict strings/domain/selectors reject near-zero, nonfinite, coercion and unintroduced expressions
+ok 29 - Strict strings/domain/selectors reject near-zero, nonfinite, coercion and unintroduced expressions
+  ---
+  duration_ms: 0.370458
+  type: 'test'
+  ...
+# Subtest: Original figures are exact model exports; metadata declares both atomic prerequisites without assuming mastery
+ok 30 - Original figures are exact model exports; metadata declares both atomic prerequisites without assuming mastery
+  ---
+  duration_ms: 3.187625
+  type: 'test'
+  ...
+# Subtest: FACT10: complete66 ordered pairs; independent121-domain sum checks including both zeros
+ok 31 - FACT10: complete66 ordered pairs; independent121-domain sum checks including both zeros
+  ---
+  duration_ms: 6.157
+  type: 'test'
+  ...
+# Subtest: FACT10: count-on exact unit landings; first position never counts as first hop
+ok 32 - FACT10: count-on exact unit landings; first position never counts as first hop
+  ---
+  duration_ms: 0.507917
+  type: 'test'
+  ...
+# Subtest: FACT10: strict primitive selection, parsing and support bounds
+ok 33 - FACT10: strict primitive selection, parsing and support bounds
+  ---
+  duration_ms: 0.228125
+  type: 'test'
+  ...
+# Subtest: FACT10: all model phases conserve count geometry and external XML
+ok 34 - FACT10: all model phases conserve count geometry and external XML
+  ---
+  duration_ms: 102.153667
+  type: 'test'
+  ...
+# Subtest: FACT10: supplied diagrams equal generators; deep immutable domain
+ok 35 - FACT10: supplied diagrams equal generators; deep immutable domain
+  ---
+  duration_ms: 1.092875
+  type: 'test'
+  ...
+# Subtest: Source package: immediate action/free anchors, explicit local CSS, noJS/teacher and exact canonical prerequisites
+ok 36 - Source package: immediate action/free anchors, explicit local CSS, noJS/teacher and exact canonical prerequisites
+  ---
+  duration_ms: 0.45025
+  type: 'test'
+  ...
+# Subtest: FACT10: learner selector covers each supported fact exactly once without result-named groups
+ok 37 - FACT10: learner selector covers each supported fact exactly once without result-named groups
+  ---
+  duration_ms: 0.248208
+  type: 'test'
+  ...
+# Subtest: all bounded subtraction triples accept either valid part, equal parts once and zero correctly
+ok 38 - all bounded subtraction triples accept either valid part, equal parts once and zero correctly
+  ---
+  duration_ms: 59.401666
+  type: 'test'
+  ...
+# Subtest: every actual frame retains original identities, fixed sizes and full quantity in truthful regions
+ok 39 - every actual frame retains original identities, fixed sizes and full quantity in truthful regions
+  ---
+  duration_ms: 12.628792
+  type: 'test'
+  ...
+# Subtest: strict primitive keys, finite bounds, exact dense fields and no missing/invalid acceptance
+ok 40 - strict primitive keys, finite bounds, exact dense fields and no missing/invalid acceptance
+  ---
+  duration_ms: 1.883666
+  type: 'test'
+  ...
+# Subtest: exact local figures, frozen graph/Lite/assets and own-only isolated source contract
+ok 41 - exact local figures, frozen graph/Lite/assets and own-only isolated source contract
+  ---
+  duration_ms: 104.70025
+  type: 'test'
+  ...
+# PASS unknown is not automatically zero, whole numeral may contain two digits, fixed case quantities
+# Subtest: lesson-network/packages/M-ALG-04/tests.mjs
+ok 9 - lesson-network/packages/M-ALG-04/tests.mjs
+  ---
+  duration_ms: 54.837209
+  type: 'test'
+  ...
+# Subtest: equal value is symmetric and independent of how parts are written, with zero and dense guard
+ok 43 - equal value is symmetric and independent of how parts are written, with zero and dense guard
+  ---
+  duration_ms: 10.732292
+  type: 'test'
+  ...
+# Subtest: every numeric, reverse, truth, repeated-slot and transfer answer is checked by complete-side arithmetic
+ok 44 - every numeric, reverse, truth, repeated-slot and transfer answer is checked by complete-side arithmetic
+  ---
+  duration_ms: 2.160125
+  type: 'test'
+  ...
+# Subtest: blank is distinct from0 and malformed/coerced/sparse/extra selectors and responses fail honestly
+ok 45 - blank is distinct from0 and malformed/coerced/sparse/extra selectors and responses fail honestly
+  ---
+  duration_ms: 0.789666
+  type: 'test'
+  ...
+# Subtest: all model states preserve a common unit and reversal/guide invariants with strict finite bounds
+ok 46 - all model states preserve a common unit and reversal/guide invariants with strict finite bounds
+  ---
+  duration_ms: 1.315958
+  type: 'test'
+  ...
+# Subtest: original vector assets are exact outputs and parse as external XML
+ok 47 - original vector assets are exact outputs and parse as external XML
+  ---
+  duration_ms: 103.103708
+  type: 'test'
+  ...
+# Subtest: own exact source/canonical/assets contract and synthetic reviewed content+alignment never assume real pending
+ok 48 - own exact source/canonical/assets contract and synthetic reviewed content+alignment never assume real pending
+  ---
+  duration_ms: 291.8345
+  type: 'test'
+  ...
+# Subtest: Unknown equality structure is distinct from numeric truth and solvability, with reversed sides and cancellation
+ok 49 - Unknown equality structure is distinct from numeric truth and solvability, with reversed sides and cancellation
+  ---
+  duration_ms: 3.830709
+  type: 'test'
+  ...
+# Subtest: Finite coherent whole/part families accept every independently derived equivalent linear form, not arbitrary true statements
+ok 50 - Finite coherent whole/part families accept every independently derived equivalent linear form, not arbitrary true statements
+  ---
+  duration_ms: 10.03825
+  type: 'test'
+  ...
+# Subtest: Malformed, nonlinear, nonfinite and inconsistent descriptors fail closed; exact blank and zero handling
+ok 51 - Malformed, nonlinear, nonfinite and inconsistent descriptors fail closed; exact blank and zero handling
+  ---
+  duration_ms: 1.132458
+  type: 'test'
+  ...
+# Subtest: Every authored bag count/unit quantity and substitution result match exact XML, without physical-mass imagery
+ok 52 - Every authored bag count/unit quantity and substitution result match exact XML, without physical-mass imagery
+  ---
+  duration_ms: 45.465333
+  type: 'test'
+  ...
+# Subtest: Static initial guess/unknown relation and practice context agree, with honest classification/construction limits
+ok 53 - Static initial guess/unknown relation and practice context agree, with honest classification/construction limits
+  ---
+  duration_ms: 0.492125
+  type: 'test'
+  ...
+# Subtest: Exact canonical/assets/source contract and review transitions use OS-temp fixtures, never assume own content review pending
+ok 54 - Exact canonical/assets/source contract and review transitions use OS-temp fixtures, never assume own content review pending
+  ---
+  duration_ms: 299.679
+  type: 'test'
+  ...
+# Subtest: ARITH: exact expression grammar matches independently calculated sums/differences and relational sides
+ok 55 - ARITH: exact expression grammar matches independently calculated sums/differences and relational sides
+  ---
+  duration_ms: 13.599625
+  type: 'test'
+  ...
+# Subtest: ARITH: construct relevant picture relationship, valid reversals/groupings/inverse facts respected
+ok 56 - ARITH: construct relevant picture relationship, valid reversals/groupings/inverse facts respected
+  ---
+  duration_ms: 0.872458
+  type: 'test'
+  ...
+# Subtest: ARITH: strict syntax, no ignored characters, coercion, evaluation, unbounded depth or unsupported negative intermediates
+ok 57 - ARITH: strict syntax, no ignored characters, coercion, evaluation, unbounded depth or unsupported negative intermediates
+  ---
+  duration_ms: 0.321792
+  type: 'test'
+  ...
+# Subtest: ARITH: displayed original/added/removal/comparison/equal quantities stay exact at every stage and side swap
+ok 58 - ARITH: displayed original/added/removal/comparison/equal quantities stay exact at every stage and side swap
+  ---
+  duration_ms: 42.149
+  type: 'test'
+  ...
+# Subtest: ARITH: all original external figures equal generators and source data immutable
+ok 59 - ARITH: all original external figures equal generators and source data immutable
+  ---
+  duration_ms: 0.9215
+  type: 'test'
+  ...
+# Subtest: Source package: immediate action/free anchors, explicit local CSS, noJS/teacher and exact canonical prerequisites
+ok 60 - Source package: immediate action/free anchors, explicit local CSS, noJS/teacher and exact canonical prerequisites
+  ---
+  duration_ms: 0.934208
+  type: 'test'
+  ...
+# Subtest: ARITH P2: a parameterized part-whole family honours inverse, reversed and regrouped relations without accepting unrelated truth
+ok 61 - ARITH P2: a parameterized part-whole family honours inverse, reversed and regrouped relations without accepting unrelated truth
+  ---
+  duration_ms: 2.724125
+  type: 'test'
+  ...
+# Subtest: ARITH finite relation API: incoherent or unsupported whole/part values and forged result values fail closed
+ok 62 - ARITH finite relation API: incoherent or unsupported whole/part values and forged result values fail closed
+  ---
+  duration_ms: 0.204125
+  type: 'test'
+  ...
+# Subtest: ARITH r7: every authored scenario declares exact coherent frozen families, including both equality sets
+ok 63 - ARITH r7: every authored scenario declares exact coherent frozen families, including both equality sets
+  ---
+  duration_ms: 1.284958
+  type: 'test'
+  ...
+# Subtest: ARITH r7 equality: inverse/reversed/regrouped relationships accepted, balanced equality retained, unrelated or false equations rejected
+ok 64 - ARITH r7 equality: inverse/reversed/regrouped relationships accepted, balanced equality retained, unrelated or false equations rejected
+  ---
+  duration_ms: 0.470584
+  type: 'test'
+  ...
+# Subtest: ARITH r7 family-set API: supported kinds only, coherent complete finite sets required before any membership succeeds
+ok 65 - ARITH r7 family-set API: supported kinds only, coherent complete finite sets required before any membership succeeds
+  ---
+  duration_ms: 9.99175
+  type: 'test'
+  ...
+# Subtest: Integrated response requires BOTH actual source reading and constructed destination; independent finite oracle
+ok 66 - Integrated response requires BOTH actual source reading and constructed destination; independent finite oracle
+  ---
+  duration_ms: 16.385958
+  type: 'test'
+  ...
+# Subtest: Unordered rectangle construction accepts all24 insertion orders, no holes/extras/duplicates
+ok 67 - Unordered rectangle construction accepts all24 insertion orders, no holes/extras/duplicates
+  ---
+  duration_ms: 0.552584
+  type: 'test'
+  ...
+# Subtest: Typed zero is not blank; supported keys and coordinate domains reject coercion/sparse/invalid arrays
+ok 68 - Typed zero is not blank; supported keys and coordinate domains reject coercion/sparse/invalid arrays
+  ---
+  duration_ms: 0.575584
+  type: 'test'
+  ...
+# Subtest: Equal unit coordinates and pointer inverse cover all49locations including origin and boundary
+ok 69 - Equal unit coordinates and pointer inverse cover all49locations including origin and boundary
+  ---
+  duration_ms: 1.135917
+  type: 'test'
+  ...
+# Subtest: SVG originals are valid XML and show correct pin counts/closed rectangle
+ok 70 - SVG originals are valid XML and show correct pin counts/closed rectangle
+  ---
+  duration_ms: 10.45725
+  type: 'test'
+  ...
+# Subtest: Authored integration, canonical AND grouping and source-owned body survive review-history updates
+ok 71 - Authored integration, canonical AND grouping and source-owned body survive review-history updates
+  ---
+  duration_ms: 0.6045
+  type: 'test'
+  ...
+# Subtest: strict case keys and recursively frozen task records
+ok 72 - strict case keys and recursively frozen task records
+  ---
+  duration_ms: 2.391125
+  type: 'test'
+  ...
+# Subtest: exact integer lexical boundary: zero, equivalence, no rounding/coercion
+ok 73 - exact integer lexical boundary: zero, equivalence, no rounding/coercion
+  ---
+  duration_ms: 0.791958
+  type: 'test'
+  ...
+# Subtest: source contract retains frozen curriculum and human review boundary
+ok 74 - source contract retains frozen curriculum and human review boundary
+  ---
+  duration_ms: 0.75225
+  type: 'test'
+  ...
+# Subtest: 99 integerpositions, four quadrants and19 boundary points: inverse geometry and signs
+ok 75 - 99 integerpositions, four quadrants and19 boundary points: inverse geometry and signs
+  ---
+  duration_ms: 1.119375
+  type: 'test'
+  ...
+# Subtest: dense and bounded points, unsupported numeric/selector/phase domains
+ok 76 - dense and bounded points, unsupported numeric/selector/phase domains
+  ---
+  duration_ms: 0.355708
+  type: 'test'
+  ...
+# Subtest: all task truths across entire99 domain; equivalent visible forms, blanks and swap diagnostics
+ok 77 - all task truths across entire99 domain; equivalent visible forms, blanks and swap diagnostics
+  ---
+  duration_ms: 3.8485
+  type: 'test'
+  ...
+# Subtest: exact coherent initial/static examples, manual route meaning, original correct XML-producing assets
+ok 78 - exact coherent initial/static examples, manual route meaning, original correct XML-producing assets
+  ---
+  duration_ms: 2.081125
+  type: 'test'
+  ...
+# Subtest: All finite targets and insertion orders; zero boundary is not blank; exact point collections
+ok 79 - All finite targets and insertion orders; zero boundary is not blank; exact point collections
+  ---
+  duration_ms: 6.460708
+  type: 'test'
+  ...
+# Subtest: Strict primitive selectors, dense pairs and complete arrays reject holes/extras/types
+ok 80 - Strict primitive selectors, dense pairs and complete arrays reject holes/extras/types
+  ---
+  duration_ms: 0.432667
+  type: 'test'
+  ...
+# Subtest: Equal unit axes, pixel inverse and honest precision tolerance include origin and edges
+ok 81 - Equal unit axes, pixel inverse and honest precision tolerance include origin and edges
+  ---
+  duration_ms: 1.129042
+  type: 'test'
+  ...
+# Subtest: Every trace frame stays within axes and externalSVG is exact original XML
+ok 82 - Every trace frame stays within axes and externalSVG is exact original XML
+  ---
+  duration_ms: 23.401542
+  type: 'test'
+  ...
+# Subtest: Authored purpose precedes support, CSS is actually linked, canonical role/prerequisites retained
+ok 83 - Authored purpose precedes support, CSS is actually linked, canonical role/prerequisites retained
+  ---
+  duration_ms: 0.69625
+  type: 'test'
+  ...
+# Subtest: Every displayed target is read by horizontal then vertical coordinate, including zero axes/origin
+ok 84 - Every displayed target is read by horizontal then vertical coordinate, including zero axes/origin
+  ---
+  duration_ms: 3.694375
+  type: 'test'
+  ...
+# Subtest: Exact dense pair and strict keys, no unsupported partial/sparse/extra success
+ok 85 - Exact dense pair and strict keys, no unsupported partial/sparse/extra success
+  ---
+  duration_ms: 0.429
+  type: 'test'
+  ...
+# Subtest: Reverse trace projects same target to correct axes without changing coordinates
+ok 86 - Reverse trace projects same target to correct axes without changing coordinates
+  ---
+  duration_ms: 1.881708
+  type: 'test'
+  ...
+# Subtest: External XML and original static reading/axis examples
+ok 87 - External XML and original static reading/axis examples
+  ---
+  duration_ms: 14.331958
+  type: 'test'
+  ...
+# Subtest: Authored purpose precedes support, CSS is actually linked, canonical role/prerequisites retained
+ok 88 - Authored purpose precedes support, CSS is actually linked, canonical role/prerequisites retained
+  ---
+  duration_ms: 3.765542
+  type: 'test'
+  ...
+# Subtest: exhaustive selection sets: only the full relevant sample passes for either defined topic
+ok 89 - exhaustive selection sets: only the full relevant sample passes for either defined topic
+  ---
+  duration_ms: 4.076417
+  type: 'test'
+  ...
+# Subtest: distinct equal-colour observations are retained; a second click removes instead of duplicating
+ok 90 - distinct equal-colour observations are retained; a second click removes instead of duplicating
+  ---
+  duration_ms: 1.163625
+  type: 'test'
+  ...
+# Subtest: unrecognised sources and topics fail instead of producing invented data
+ok 91 - unrecognised sources and topics fail instead of producing invented data
+  ---
+  duration_ms: 0.445209
+  type: 'test'
+  ...
+# Subtest: every complete/partial category assignment checked per event; cancelling swaps fail
+ok 92 - every complete/partial category assignment checked per event; cancelling swaps fail
+  ---
+  duration_ms: 44.537083
+  type: 'test'
+  ...
+# Subtest: sparse, duplicate, inherited and unsupported records cannot pass
+ok 93 - sparse, duplicate, inherited and unsupported records cannot pass
+  ---
+  duration_ms: 0.577458
+  type: 'test'
+  ...
+# Subtest: one stroke per recorded event, fifth diagonal replaces fifth vertical and exact static images
+ok 94 - one stroke per recorded event, fifth diagonal replaces fifth vertical and exact static images
+  ---
+  duration_ms: 3.109125
+  type: 'test'
+  ...
+# Subtest: own-only contract, exact graph/Lite hashes and external SVG XML independently of HTML
+ok 95 - own-only contract, exact graph/Lite hashes and external SVG XML independently of HTML
+  ---
+  duration_ms: 204.56225
+  type: 'test'
+  ...
+# Subtest: every search checks headers and actual intersection, including duplicate values
+ok 96 - every search checks headers and actual intersection, including duplicate values
+  ---
+  duration_ms: 0.685375
+  type: 'test'
+  ...
+# Subtest: table carries semantic row/column headers and no arithmetic demand
+ok 97 - table carries semantic row/column headers and no arithmetic demand
+  ---
+  duration_ms: 0.467708
+  type: 'test'
+  ...
+# Subtest: construction accepts every row order and equal quantities
+ok 98 - construction accepts every row order and equal quantities
+  ---
+  duration_ms: 1.1655
+  type: 'test'
+  ...
+# Subtest: headers, category identity, zero and missing values are separate checks
+ok 99 - headers, category identity, zero and missing values are separate checks
+  ---
+  duration_ms: 0.238542
+  type: 'test'
+  ...
+# Subtest: correct total cannot hide swapped category quantities
+ok 100 - correct total cannot hide swapped category quantities
+  ---
+  duration_ms: 0.108833
+  type: 'test'
+  ...
+# Subtest: source SVGs contain exactly the declared observations, contained in each category panel
+ok 101 - source SVGs contain exactly the declared observations, contained in each category panel
+  ---
+  duration_ms: 0.685708
+  type: 'test'
+  ...
+# Subtest: checked table identity follows labelled values and headers, not row order
+ok 102 - checked table identity follows labelled values and headers, not row order
+  ---
+  duration_ms: 0.226208
+  type: 'test'
+  ...
+# Subtest: lookup follows row identity after any row ordering, including equal quantities
+ok 103 - lookup follows row identity after any row ordering, including equal quantities
+  ---
+  duration_ms: 1.867834
+  type: 'test'
+  ...
+# Subtest: zero is a recorded count and unknown is not a count of zero
+ok 104 - zero is a recorded count and unknown is not a count of zero
+  ---
+  duration_ms: 0.417417
+  type: 'test'
+  ...
+# Subtest: largest-number shortcut and wrong-row values receive relevant feedback
+ok 105 - largest-number shortcut and wrong-row values receive relevant feedback
+  ---
+  duration_ms: 0.806375
+  type: 'test'
+  ...
+# Subtest: original row-route diagram keeps each label and count on the same row
+ok 106 - original row-route diagram keeps each label and count on the same row
+  ---
+  duration_ms: 3.101334
+  type: 'test'
+  ...
+# Subtest: protocol checks the actual question: either area is valid for its matching question
+ok 107 - protocol checks the actual question: either area is valid for its matching question
+  ---
+  duration_ms: 1.739292
+  type: 'test'
+  ...
+# Subtest: complete records can arrive in any order, but zero is never inferred from a missing visit
+ok 108 - complete records can arrive in any order, but zero is never inferred from a missing visit
+  ---
+  duration_ms: 0.905167
+  type: 'test'
+  ...
+# Subtest: correction replaces a visit, while duplicates, wrong scope/time and wrong counts are detected
+ok 109 - correction replaces a visit, while duplicates, wrong scope/time and wrong counts are detected
+  ---
+  duration_ms: 0.366791
+  type: 'test'
+  ...
+# Subtest: actual rendered pencil counts and full geometry respect the mat boundary
+ok 110 - actual rendered pencil counts and full geometry respect the mat boundary
+  ---
+  duration_ms: 0.62325
+  type: 'test'
+  ...
+# Subtest: dense observation lists are required at both read and update boundaries
+ok 111 - dense observation lists are required at both read and update boundaries
+  ---
+  duration_ms: 0.213916
+  type: 'test'
+  ...
+# Subtest: checked collection identity changes with protocol, recorded values or pending draft, but not record order
+ok 112 - checked collection identity changes with protocol, recorded values or pending draft, but not record order
+  ---
+  duration_ms: 0.774959
+  type: 'test'
+  ...
+# Subtest: every recorded card adds once to its two-attribute intersection, independent of list order
+ok 113 - every recorded card adds once to its two-attribute intersection, independent of list order
+  ---
+  duration_ms: 1.314708
+  type: 'test'
+  ...
+# Subtest: duplicates, sparse or unknown records cannot manufacture a complete list
+ok 114 - duplicates, sparse or unknown records cannot manufacture a complete list
+  ---
+  duration_ms: 0.25325
+  type: 'test'
+  ...
+# Subtest: the exact whole table is required; repeated values and explicit zero remain valid
+ok 115 - the exact whole table is required; repeated values and explicit zero remain valid
+  ---
+  duration_ms: 2.110208
+  type: 'test'
+  ...
+# Subtest: original diagram, assets and canonical AND requirements are exact
+ok 116 - original diagram, assets and canonical AND requirements are exact
+  ---
+  duration_ms: 64.526459
+  type: 'test'
+  ...
+# Subtest: all finite tenth positions and whole boundaries are exact integer counts
+ok 117 - all finite tenth positions and whole boundaries are exact integer counts
+  ---
+  duration_ms: 3.422959
+  type: 'test'
+  ...
+# Subtest: strict supported keys and lattice positions never coerce or round unsupported answers
+ok 118 - strict supported keys and lattice positions never coerce or round unsupported answers
+  ---
+  duration_ms: 0.621458
+  type: 'test'
+  ...
+# Subtest: same visual unit and synchronized shade/marker are conserved at each model stage
+ok 119 - same visual unit and synchronized shade/marker are conserved at each model stage
+  ---
+  duration_ms: 4.719208
+  type: 'test'
+  ...
+# Subtest: Every supported task accepts equal decimal forms, never blank as zero
+ok 120 - Every supported task accepts equal decimal forms, never blank as zero
+  ---
+  duration_ms: 1.708625
+  type: 'test'
+  ...
+# Subtest: Exact hundredth parsing, bounded counts, primitive keys and malformed strings
+ok 121 - Exact hundredth parsing, bounded counts, primitive keys and malformed strings
+  ---
+  duration_ms: 5.108125
+  type: 'test'
+  ...
+# Subtest: Same exact whole,100 congruent cells and ten-column hundredths relation; all amounts conserved
+ok 122 - Same exact whole,100 congruent cells and ten-column hundredths relation; all amounts conserved
+  ---
+  duration_ms: 35.5865
+  type: 'test'
+  ...
+# Subtest: Generated external assets parse as XML and retain exact whole area through partition animation
+ok 123 - Generated external assets parse as XML and retain exact whole area through partition animation
+  ---
+  duration_ms: 24.598042
+  type: 'test'
+  ...
+# Subtest: Authored purpose precedes support, CSS is actually linked, canonical role/prerequisites retained
+ok 124 - Authored purpose precedes support, CSS is actually linked, canonical role/prerequisites retained
+  ---
+  duration_ms: 1.004916
+  type: 'test'
+  ...
+# Subtest: Unit controls always change exactly1or10, never clamp a shorter amount at boundaries
+ok 125 - Unit controls always change exactly1or10, never clamp a shorter amount at boundaries
+  ---
+  duration_ms: 0.217667
+  type: 'test'
+  ...
+# Subtest: Exact integer-thousandths parsing and digit composition for every0..9999quantity
+ok 126 - Exact integer-thousandths parsing and digit composition for every0..9999quantity
+  ---
+  duration_ms: 30.122541
+  type: 'test'
+  ...
+# Subtest: Every authored case constructs correct places and accepts ordinary equivalent decimal forms
+ok 127 - Every authored case constructs correct places and accepts ordinary equivalent decimal forms
+  ---
+  duration_ms: 0.558375
+  type: 'test'
+  ...
+# Subtest: Place values must be canonical single digits, not a false rejection of equivalent written decimals
+ok 128 - Place values must be canonical single digits, not a false rejection of equivalent written decimals
+  ---
+  duration_ms: 170.732583
+  type: 'test'
+  ...
+# Subtest: Blank is not0; strict primitive selectors/dense arrays/syntax/finer unequal places rejected
+ok 129 - Blank is not0; strict primitive selectors/dense arrays/syntax/finer unequal places rejected
+  ---
+  duration_ms: 0.603084
+  type: 'test'
+  ...
+# Subtest: Specific place errors retain correct physical comparison unit in supplied-context transfer
+ok 130 - Specific place errors retain correct physical comparison unit in supplied-context transfer
+  ---
+  duration_ms: 0.142792
+  type: 'test'
+  ...
+# Subtest: Nested zoom preserves original whole: hundredth width300, thousandth width30,10equal subdivisions
+ok 131 - Nested zoom preserves original whole: hundredth width300, thousandth width30,10equal subdivisions
+  ---
+  duration_ms: 21.9725
+  type: 'test'
+  ...
+# Subtest: Canonical atomic scope, supplied unit premises and actual assets remain visible in source
+ok 132 - Canonical atomic scope, supplied unit premises and actual assets remain visible in source
+  ---
+  duration_ms: 1.3275
+  type: 'test'
+  ...
+# Subtest: Exact decimal normalization preserves zeros and rejects unsupported coercions and precision without rounding
+ok 133 - Exact decimal normalization preserves zeros and rejects unsupported coercions and precision without rounding
+  ---
+  duration_ms: 22.529166
+  type: 'test'
+  ...
+# Subtest: Finnish number words, decimal phrases and fixed-whole diagrams retain their exact declared meaning
+ok 134 - Finnish number words, decimal phrases and fixed-whole diagrams retain their exact declared meaning
+  ---
+  duration_ms: 61.096125
+  type: 'test'
+  ...
+# Subtest: All authored component targets and compose/transfer values use an independent decimal-digit oracle
+ok 135 - All authored component targets and compose/transfer values use an independent decimal-digit oracle
+  ---
+  duration_ms: 2.011167
+  type: 'test'
+  ...
+# Subtest: Named decomposition requires dense exact response slots without vacuous credit
+ok 136 - Named decomposition requires dense exact response slots without vacuous credit
+  ---
+  duration_ms: 0.165
+  type: 'test'
+  ...
+# Subtest: Static initial picture/readout, selected task and declared domains are coherent without JavaScript
+ok 137 - Static initial picture/readout, selected task and declared domains are coherent without JavaScript
+  ---
+  duration_ms: 0.505208
+  type: 'test'
+  ...
+# Subtest: own exact source/canonical/assets contract and synthetic reviewed content+alignment never assume real pending
+ok 138 - own exact source/canonical/assets contract and synthetic reviewed content+alignment never assume real pending
+  ---
+  duration_ms: 247.964167
+  type: 'test'
+  ...
+# Subtest: Exact decimal normalization preserves zeros and rejects unsupported coercions and precision without rounding
+ok 139 - Exact decimal normalization preserves zeros and rejects unsupported coercions and precision without rounding
+  ---
+  duration_ms: 18.822625
+  type: 'test'
+  ...
+# Subtest: Finnish number words, decimal phrases and fixed-whole diagrams retain their exact declared meaning
+ok 140 - Finnish number words, decimal phrases and fixed-whole diagrams retain their exact declared meaning
+  ---
+  duration_ms: 63.414041
+  type: 'test'
+  ...
+# Subtest: Constructed meanings accept supported equivalent units, not a single memorized unit name
+ok 141 - Constructed meanings accept supported equivalent units, not a single memorized unit name
+  ---
+  duration_ms: 6.695
+  type: 'test'
+  ...
+# Subtest: Reading API rejects unsupported selectors/sparse/extra/invalid count fields and does not claim oral process evidence
+ok 142 - Reading API rejects unsupported selectors/sparse/extra/invalid count fields and does not claim oral process evidence
+  ---
+  duration_ms: 0.317375
+  type: 'test'
+  ...
+# Subtest: Static initial picture/readout, selected task and declared domains are coherent without JavaScript
+ok 143 - Static initial picture/readout, selected task and declared domains are coherent without JavaScript
+  ---
+  duration_ms: 0.421583
+  type: 'test'
+  ...
+# Subtest: own exact source/canonical/assets contract and synthetic reviewed content+alignment never assume real pending
+ok 144 - own exact source/canonical/assets contract and synthetic reviewed content+alignment never assume real pending
+  ---
+  duration_ms: 248.508042
+  type: 'test'
+  ...
+# Subtest: Count of decimal parts is not division quotient; fewer equivalent parts preserve value
+ok 145 - Count of decimal parts is not division quotient; fewer equivalent parts preserve value
+  ---
+  duration_ms: 0.76325
+  type: 'test'
+  ...
+# Subtest: Exact decimal normalization preserves zeros and rejects unsupported coercions and precision without rounding
+ok 146 - Exact decimal normalization preserves zeros and rejects unsupported coercions and precision without rounding
+  ---
+  duration_ms: 26.702959
+  type: 'test'
+  ...
+# Subtest: Finnish number words, decimal phrases and fixed-whole diagrams retain their exact declared meaning
+ok 147 - Finnish number words, decimal phrases and fixed-whole diagrams retain their exact declared meaning
+  ---
+  duration_ms: 50.732917
+  type: 'test'
+  ...
+# Subtest: Actual typed production accepts exact alternative notation and rejects misplaced/rounded/recognition-only input
+ok 148 - Actual typed production accepts exact alternative notation and rejects misplaced/rounded/recognition-only input
+  ---
+  duration_ms: 0.438292
+  type: 'test'
+  ...
+# Subtest: Writing API exact response and selector guards do not credit recognition, holes or extra fields
+ok 149 - Writing API exact response and selector guards do not credit recognition, holes or extra fields
+  ---
+  duration_ms: 0.127333
+  type: 'test'
+  ...
+# Subtest: Static initial picture/readout, selected task and declared domains are coherent without JavaScript
+ok 150 - Static initial picture/readout, selected task and declared domains are coherent without JavaScript
+  ---
+  duration_ms: 0.454958
+  type: 'test'
+  ...
+# Subtest: own exact source/canonical/assets contract and synthetic reviewed content+alignment never assume real pending
+ok 151 - own exact source/canonical/assets contract and synthetic reviewed content+alignment never assume real pending
+  ---
+  duration_ms: 254.069333
+  type: 'test'
+  ...
+# Subtest: Writing instructions place every part-count digit, not a division quotient
+ok 152 - Writing instructions place every part-count digit, not a division quotient
+  ---
+  duration_ms: 0.403375
+  type: 'test'
+  ...
+# Subtest: partitive truth requires the entire given pile and equal shares for every recipient
+ok 153 - partitive truth requires the entire given pile and equal shares for every recipient
+  ---
+  duration_ms: 20.735875
+  type: 'test'
+  ...
+# Subtest: any allocation order conserves all original items and can be undone
+ok 154 - any allocation order conserves all original items and can be undone
+  ---
+  duration_ms: 0.590666
+  type: 'test'
+  ...
+# Subtest: empty/short/sparse/extra/invalid sharing arrays and response shapes never pass
+ok 155 - empty/short/sparse/extra/invalid sharing arrays and response shapes never pass
+  ---
+  duration_ms: 0.369375
+  type: 'test'
+  ...
+# Subtest: source figures and intermediate visual states contain exactly the conserved total
+ok 156 - source figures and intermediate visual states contain exactly the conserved total
+  ---
+  duration_ms: 0.954042
+  type: 'test'
+  ...
+# Subtest: quotitive response counts groups, not known group size or original whole
+ok 157 - quotitive response counts groups, not known group size or original whole
+  ---
+  duration_ms: 1.741833
+  type: 'test'
+  ...
+# Subtest: forming and undoing whole groups conserves items at every supported state
+ok 158 - forming and undoing whole groups conserves items at every supported state
+  ---
+  duration_ms: 0.512333
+  type: 'test'
+  ...
+# Subtest: missing/extra/array/sparse/invalid response states cannot earn success
+ok 159 - missing/extra/array/sparse/invalid response states cannot earn success
+  ---
+  duration_ms: 0.340833
+  type: 'test'
+  ...
+# Subtest: same whole produces different numbers of groups and static diagrams match model
+ok 160 - same whole produces different numbers of groups and static diagrams match model
+  ---
+  duration_ms: 0.417
+  type: 'test'
+  ...
+# Subtest: exact inverse includes quotient0, division1 and nonzero supported divisor
+ok 161 - exact inverse includes quotient0, division1 and nonzero supported divisor
+  ---
+  duration_ms: 0.807458
+  type: 'test'
+  ...
+# Subtest: each scenario accepts direct/alternative numeral, blanks not zero and finite informative wrong feedback
+ok 162 - each scenario accepts direct/alternative numeral, blanks not zero and finite informative wrong feedback
+  ---
+  duration_ms: 1.40375
+  type: 'test'
+  ...
+# Subtest: sharing and grouping conserve all12 pieces in every discrete phase, distinct answer units
+ok 163 - sharing and grouping conserve all12 pieces in every discrete phase, distinct answer units
+  ---
+  duration_ms: 440.583541
+  type: 'test'
+  ...
+# Subtest: strict keys, dense counts, actual assets and stylesheet contract
+ok 164 - strict keys, dense counts, actual assets and stylesheet contract
+  ---
+  duration_ms: 0.803542
+  type: 'test'
+  ...
+# Subtest: quotient/remainder and every pack step conserve all identities, including zero
+ok 165 - quotient/remainder and every pack step conserve all identities, including zero
+  ---
+  duration_ms: 36.96175
+  type: 'test'
+  ...
+# Subtest: each remainder/relation pair checked against independent division, all supported divisors
+ok 166 - each remainder/relation pair checked against independent division, all supported divisors
+  ---
+  duration_ms: 1.693917
+  type: 'test'
+  ...
+# Subtest: strict keys/bounds/dense exact answers reject malformed input without success
+ok 167 - strict keys/bounds/dense exact answers reject malformed input without success
+  ---
+  duration_ms: 0.203292
+  type: 'test'
+  ...
+# Subtest: original comparison depicts exactly24+25 pieces, not incomplete or invented examples
+ok 168 - original comparison depicts exactly24+25 pieces, not incomplete or invented examples
+  ---
+  duration_ms: 1.394833
+  type: 'test'
+  ...
+# Subtest: independent arithmetic oracle across whole-number precedence/brackets and associativity
+ok 169 - independent arithmetic oracle across whole-number precedence/brackets and associativity
+  ---
+  duration_ms: 20.801667
+  type: 'test'
+  ...
+# Subtest: every complete-part reduction is value preserving; two independent first routes both construct a valid shorter expression
+ok 170 - every complete-part reduction is value preserving; two independent first routes both construct a valid shorter expression
+  ---
+  duration_ms: 3.021375
+  type: 'test'
+  ...
+# Subtest: strict grammar and bounded tree API reject unsupported syntax, malformed/cyclic/coerced inputs and nonexact division
+ok 171 - strict grammar and bounded tree API reject unsupported syntax, malformed/cyclic/coerced inputs and nonexact division
+  ---
+  duration_ms: 0.706625
+  type: 'test'
+  ...
+# Subtest: all current answers, blank zero and numeric alternatives; sparse/extra response shapes cannot receive credit
+ok 172 - all current answers, blank zero and numeric alternatives; sparse/extra response shapes cannot receive credit
+  ---
+  duration_ms: 14.919666
+  type: 'test'
+  ...
+# Subtest: finite SVG/model stages and original concrete groups have exact counts and valid external XML
+ok 173 - finite SVG/model stages and original concrete groups have exact counts and valid external XML
+  ---
+  duration_ms: 1317.295583
+  type: 'test'
+  ...
+# Subtest: own exact source/canonical/assets contract and synthetic reviewed content+alignment never assume real pending
+ok 174 - own exact source/canonical/assets contract and synthetic reviewed content+alignment never assume real pending
+  ---
+  duration_ms: 247.511458
+  type: 'test'
+  ...
+# Subtest: all possible grid partitions conserve the whole and only the equal splits pass
+ok 175 - all possible grid partitions conserve the whole and only the equal splits pass
+  ---
+  duration_ms: 1.6845
+  type: 'test'
+  ...
+# Subtest: same count is insufficient, order and duplicate clicks do not affect geometry
+ok 176 - same count is insufficient, order and duplicate clicks do not affect geometry
+  ---
+  duration_ms: 0.356917
+  type: 'test'
+  ...
+# Subtest: all subsets may construct the requested fraction, without adjacency restrictions
+ok 177 - all subsets may construct the requested fraction, without adjacency restrictions
+  ---
+  duration_ms: 3.30125
+  type: 'test'
+  ...
+# Subtest: sparse selections and every invalid index boundary are rejected
+ok 178 - sparse selections and every invalid index boundary are rejected
+  ---
+  duration_ms: 0.656291
+  type: 'test'
+  ...
+# Subtest: notation checker accepts every bounded equivalent value and identifies misconceptions
+ok 179 - notation checker accepts every bounded equivalent value and identifies misconceptions
+  ---
+  duration_ms: 8.241417
+  type: 'test'
+  ...
+# Subtest: bar and square drawings conserve equal part areas across all selection states
+ok 180 - bar and square drawings conserve equal part areas across all selection states
+  ---
+  duration_ms: 1.138916
+  type: 'test'
+  ...
+# Subtest: original different-shape quarter polygons each cover one fourth and have disjoint interiors
+ok 181 - original different-shape quarter polygons each cover one fourth and have disjoint interiors
+  ---
+  duration_ms: 3.266875
+  type: 'test'
+  ...
+# Subtest: role tasks separately change numerator and denominator; set transfer names its whole
+ok 182 - role tasks separately change numerator and denominator; set transfer names its whole
+  ---
+  duration_ms: 0.686958
+  type: 'test'
+  ...
+# Subtest: all bounded models agree with equal part area and selected units, including zero and whole
+ok 183 - all bounded models agree with equal part area and selected units, including zero and whole
+  ---
+  duration_ms: 7.308333
+  type: 'test'
+  ...
+# Subtest: response slots must be own and dense, no sparse/prototype/extra answers gain success
+ok 184 - response slots must be own and dense, no sparse/prototype/extra answers gain success
+  ---
+  duration_ms: 0.43675
+  type: 'test'
+  ...
+# Subtest: model API rejects unsupported integer/representation values
+ok 185 - model API rejects unsupported integer/representation values
+  ---
+  duration_ms: 0.204375
+  type: 'test'
+  ...
+# Subtest: same positive unit: all bounded relations including equality, zero and whole
+ok 186 - same positive unit: all bounded relations including equality, zero and whole
+  ---
+  duration_ms: 3.560375
+  type: 'test'
+  ...
+# Subtest: every subset accepts exactly the independent count condition, including alternative valid counts and arrangements
+ok 187 - every subset accepts exactly the independent count condition, including alternative valid counts and arrangements
+  ---
+  duration_ms: 4.907042
+  type: 'test'
+  ...
+# Subtest: selected unit geometry and same-whole model bounds stay exact across every fixture
+ok 188 - selected unit geometry and same-whole model bounds stay exact across every fixture
+  ---
+  duration_ms: 7.418583
+  type: 'test'
+  ...
+# Subtest: strict primitive case keys reject arrays, boxed strings, objects, numeric and prototype names
+ok 189 - strict primitive case keys reject arrays, boxed strings, objects, numeric and prototype names
+  ---
+  duration_ms: 0.245834
+  type: 'test'
+  ...
+# Subtest: holes, inherited slots, duplicate, extra and malformed parts fail closed
+ok 190 - holes, inherited slots, duplicate, extra and malformed parts fail closed
+  ---
+  duration_ms: 0.264125
+  type: 'test'
+  ...
+# Subtest: feedback is finite/current and static original diagram has six equal272-by34 wholes
+ok 191 - feedback is finite/current and static original diagram has six equal272-by34 wholes
+  ---
+  duration_ms: 0.534292
+  type: 'test'
+  ...
+# Subtest: all bounded equivalent fractions accepted by independent reduced-form oracle, not one preferred answer
+ok 192 - all bounded equivalent fractions accepted by independent reduced-form oracle, not one preferred answer
+  ---
+  duration_ms: 5.791208
+  type: 'test'
+  ...
+# Subtest: subdivision preserves original shaded geometry at every cut, labels only at uniform partitions
+ok 193 - subdivision preserves original shaded geometry at every cut, labels only at uniform partitions
+  ---
+  duration_ms: 6.659417
+  type: 'test'
+  ...
+# Subtest: both static comparison wholes keep exactly equal widths; numerical extent agrees with fractions
+ok 194 - both static comparison wholes keep exactly equal widths; numerical extent agrees with fractions
+  ---
+  duration_ms: 3.326416
+  type: 'test'
+  ...
+# Subtest: invalid, sparse, inherited and coercible objects are not numerical responses
+ok 195 - invalid, sparse, inherited and coercible objects are not numerical responses
+  ---
+  duration_ms: 0.59
+  type: 'test'
+  ...
+# Subtest: all bounded grouping divisors preserve independently reduced rational values and whole partitions
+ok 196 - all bounded grouping divisors preserve independently reduced rational values and whole partitions
+  ---
+  duration_ms: 7.146
+  type: 'test'
+  ...
+# Subtest: all bounded candidates distinguish changed value, common-factor progress and already-irreducible originals
+ok 197 - all bounded candidates distinguish changed value, common-factor progress and already-irreducible originals
+  ---
+  duration_ms: 3.346042
+  type: 'test'
+  ...
+# Subtest: multiple valid reduction routes12/18 are accepted without a forced greatest divisor
+ok 198 - multiple valid reduction routes12/18 are accepted without a forced greatest divisor
+  ---
+  duration_ms: 0.562875
+  type: 'test'
+  ...
+# Subtest: grouping model always preserves original shaded extent and exact group sizes, including optional old cuts
+ok 199 - grouping model always preserves original shaded extent and exact group sizes, including optional old cuts
+  ---
+  duration_ms: 2.201375
+  type: 'test'
+  ...
+# Subtest: strict string cases and finite integer values reject coercion and malformed/sparse input
+ok 200 - strict string cases and finite integer values reject coercion and malformed/sparse input
+  ---
+  duration_ms: 0.534083
+  type: 'test'
+  ...
+# Subtest: feedback remains bounded and original static figures preserve five equal wholes and six-of-nine flags
+ok 201 - feedback remains bounded and original static figures preserve five equal wholes and six-of-nine flags
+  ---
+  duration_ms: 0.570959
+  type: 'test'
+  ...
+# Subtest: independent same-unit arithmetic all within-one-whole operands and invalid contracts
+ok 202 - independent same-unit arithmetic all within-one-whole operands and invalid contracts
+  ---
+  duration_ms: 2.5835
+  type: 'test'
+  ...
+# Subtest: every moving piece retains area, identity and conservation at all partial steps
+ok 203 - every moving piece retains area, identity and conservation at all partial steps
+  ---
+  duration_ms: 3.9635
+  type: 'test'
+  ...
+# Subtest: all authored cases accept equivalent fractions, not only displayed notation
+ok 204 - all authored cases accept equivalent fractions, not only displayed notation
+  ---
+  duration_ms: 0.427125
+  type: 'test'
+  ...
+# Subtest: three rows permit reordering and equal valid answers but reject holes/missing/duplicateIDs
+ok 205 - three rows permit reordering and equal valid answers but reject holes/missing/duplicateIDs
+  ---
+  duration_ms: 0.274459
+  type: 'test'
+  ...
+# Subtest: source metadata binds actual Lite families and retains graph/prerequisite scope
+ok 206 - source metadata binds actual Lite families and retains graph/prerequisite scope
+  ---
+  duration_ms: 0.787375
+  type: 'test'
+  ...
+# Subtest: independent same-unit arithmetic all within-one-whole operands and invalid contracts
+ok 207 - independent same-unit arithmetic all within-one-whole operands and invalid contracts
+  ---
+  duration_ms: 2.207166
+  type: 'test'
+  ...
+# Subtest: every moving piece retains area, identity and conservation at all partial steps
+ok 208 - every moving piece retains area, identity and conservation at all partial steps
+  ---
+  duration_ms: 5.224958
+  type: 'test'
+  ...
+# Subtest: all authored cases accept equivalent fractions, not only displayed notation
+ok 209 - all authored cases accept equivalent fractions, not only displayed notation
+  ---
+  duration_ms: 0.437042
+  type: 'test'
+  ...
+# Subtest: three rows permit reordering and equal valid answers but reject holes/missing/duplicateIDs
+ok 210 - three rows permit reordering and equal valid answers but reject holes/missing/duplicateIDs
+  ---
+  duration_ms: 0.260875
+  type: 'test'
+  ...
+# Subtest: source metadata binds actual Lite families and retains graph/prerequisite scope
+ok 211 - source metadata binds actual Lite families and retains graph/prerequisite scope
+  ---
+  duration_ms: 0.543834
+  type: 'test'
+  ...
+# Subtest: whole multiplication repeats the original fraction unit over all bounded operands
+ok 212 - whole multiplication repeats the original fraction unit over all bounded operands
+  ---
+  duration_ms: 1.871958
+  type: 'test'
+  ...
+# Subtest: equivalent/improper/whole/zero answers are judged by exact rational amount
+ok 213 - equivalent/improper/whole/zero answers are judged by exact rational amount
+  ---
+  duration_ms: 13.609791
+  type: 'test'
+  ...
+# Subtest: every motion phase conserves exact piece identity, dimensions and area, including all8guests
+ok 214 - every motion phase conserves exact piece identity, dimensions and area, including all8guests
+  ---
+  duration_ms: 4.994625
+  type: 'test'
+  ...
+# Subtest: strict case/domain/fraction inputs reject holes, coerced IDs and malformed/extra digits
+ok 215 - strict case/domain/fraction inputs reject holes, coerced IDs and malformed/extra digits
+  ---
+  duration_ms: 0.887083
+  type: 'test'
+  ...
+# Subtest: physical referent, drawing and thin paper remain distinct
+ok 216 - physical referent, drawing and thin paper remain distinct
+  ---
+  duration_ms: 0.662
+  type: 'test'
+  ...
+# Subtest: only the selected flat base is traced; cube and cylinder differ
+ok 217 - only the selected flat base is traced; cube and cylinder differ
+  ---
+  duration_ms: 0.459959
+  type: 'test'
+  ...
+# Subtest: all five relations have one unambiguous instructed place in the fixed view
+ok 218 - all five relations have one unambiguous instructed place in the fixed view
+  ---
+  duration_ms: 0.987834
+  type: 'test'
+  ...
+# Subtest: movements are one place, clamp at edges, and reverse in the interior
+ok 219 - movements are one place, clamp at edges, and reverse in the interior
+  ---
+  duration_ms: 0.832792
+  type: 'test'
+  ...
+# Subtest: inclusive geometric membership agrees with independent named truth and all group subsets
+ok 220 - inclusive geometric membership agrees with independent named truth and all group subsets
+  ---
+  duration_ms: 10.934042
+  type: 'test'
+  ...
+# Subtest: rhombus is not square: equal lengths and right angles are separate properties
+ok 221 - rhombus is not square: equal lengths and right angles are separate properties
+  ---
+  duration_ms: 0.330334
+  type: 'test'
+  ...
+# Subtest: every degree of rotation preserves lengths, area, angles and visible frame
+ok 222 - every degree of rotation preserves lengths, area, angles and visible frame
+  ---
+  duration_ms: 15.523625
+  type: 'test'
+  ...
+# Subtest: all demonstration steps close the same shape; circle marks smooth arc without corner dots
+ok 223 - all demonstration steps close the same shape; circle marks smooth arc without corner dots
+  ---
+  duration_ms: 0.689792
+  type: 'test'
+  ...
+# Subtest: sparse arrays, invalid shape names and invalid numeric domains fail closed
+ok 224 - sparse arrays, invalid shape names and invalid numeric domains fail closed
+  ---
+  duration_ms: 0.558292
+  type: 'test'
+  ...
+# Subtest: Closed boundary, independent L-cell edge sum and triangle side lengths
+ok 225 - Closed boundary, independent L-cell edge sum and triangle side lengths
+  ---
+  duration_ms: 1.19825
+  type: 'test'
+  ...
+# Subtest: Every trace point lies on the route; traced path and tape length conserved at shared scale
+ok 226 - Every trace point lies on the route; traced path and tape length conserved at shared scale
+  ---
+  duration_ms: 46.097166
+  type: 'test'
+  ...
+# Subtest: Strict selectors, finite domain and dense exact answer guards
+ok 227 - Strict selectors, finite domain and dense exact answer guards
+  ---
+  duration_ms: 0.378542
+  type: 'test'
+  ...
+# Subtest: Correct answers and specific misconception/unit feedback, no false half-boundary success
+ok 228 - Correct answers and specific misconception/unit feedback, no false half-boundary success
+  ---
+  duration_ms: 0.254583
+  type: 'test'
+  ...
+# Subtest: External SVG files exactly match generators and every generated asset parses as XML
+ok 229 - External SVG files exactly match generators and every generated asset parses as XML
+  ---
+  duration_ms: 43.358959
+  type: 'test'
+  ...
+# Subtest: Numeric side-label callouts have separated 18 by22 model-pixel boxes
+ok 230 - Numeric side-label callouts have separated 18 by22 model-pixel boxes
+  ---
+  duration_ms: 0.126291
+  type: 'test'
+  ...
+# Subtest: Declared geometry is deeply immutable, preventing static/model divergence after import
+ok 231 - Declared geometry is deeply immutable, preventing static/model divergence after import
+  ---
+  duration_ms: 0.493417
+  type: 'test'
+  ...
+# Subtest: Authored body explicitly loads its declared stylesheet; composer asset listing alone cannot load CSS
+ok 232 - Authored body explicitly loads its declared stylesheet; composer asset listing alone cannot load CSS
+  ---
+  duration_ms: 0.438958
+  type: 'test'
+  ...
+# Subtest: translation preserves every ribbon length and convergence fixes misleading end order
+ok 233 - translation preserves every ribbon length and convergence fixes misleading end order
+  ---
+  duration_ms: 0.806458
+  type: 'test'
+  ...
+# Subtest: all three answer outcomes have concept-specific feedback including equal case
+ok 234 - all three answer outcomes have concept-specific feedback including equal case
+  ---
+  duration_ms: 0.902292
+  type: 'test'
+  ...
+# Subtest: static diagrams match actual intended comparisons and metadata keeps canonical support soft
+ok 235 - static diagrams match actual intended comparisons and metadata keeps canonical support soft
+  ---
+  duration_ms: 0.549667
+  type: 'test'
+  ...
+# Subtest: unit coverage checks start/end, whole coverage, gaps and overlaps rather than count alone
+ok 236 - unit coverage checks start/end, whole coverage, gaps and overlaps rather than count alone
+  ---
+  duration_ms: 0.782209
+  type: 'test'
+  ...
+# Subtest: reported unit count is distinct from blank/zero and inconsistent number
+ok 237 - reported unit count is distinct from blank/zero and inconsistent number
+  ---
+  duration_ms: 0.163125
+  type: 'test'
+  ...
+# Subtest: sparse/extra/invalid input cannot fabricate complete measurement
+ok 238 - sparse/extra/invalid input cannot fabricate complete measurement
+  ---
+  duration_ms: 0.481875
+  type: 'test'
+  ...
+# Subtest: rendered geometry uses touching full-width units; key ignores piece IDs but includes semantic edits
+ok 239 - rendered geometry uses touching full-width units; key ignores piece IDs but includes semantic edits
+  ---
+  duration_ms: 0.729625
+  type: 'test'
+  ...
+# Subtest: bending preserves every segment and total while endpoint span changes
+ok 240 - bending preserves every segment and total while endpoint span changes
+  ---
+  duration_ms: 2.915542
+  type: 'test'
+  ...
+# Subtest: different routes keep their own arc lengths, not just common endpoint distances
+ok 241 - different routes keep their own arc lengths, not just common endpoint distances
+  ---
+  duration_ms: 0.620875
+  type: 'test'
+  ...
+# Subtest: all case answers agree with independent lengths, including both cut pieces and removal
+ok 242 - all case answers agree with independent lengths, including both cut pieces and removal
+  ---
+  duration_ms: 0.237375
+  type: 'test'
+  ...
+# Subtest: rendered cut pieces sum to same length at every phase and rendered bends retain path length
+ok 243 - rendered cut pieces sum to same length at every phase and rendered bends retain path length
+  ---
+  duration_ms: 1.164333
+  type: 'test'
+  ...
+# Subtest: invalid/sparse/inherited points, prototype names and noninteger indices fail closed
+ok 244 - invalid/sparse/inherited points, prototype names and noninteger indices fail closed
+  ---
+  duration_ms: 0.553292
+  type: 'test'
+  ...
+# Subtest: centimetre length invariant under every supported ruler position, accepts valid method without alignment
+ok 245 - centimetre length invariant under every supported ruler position, accepts valid method without alignment
+  ---
+  duration_ms: 1.989167
+  type: 'test'
+  ...
+# Subtest: metre and centimetre alternate answers preserve full quantity; unit changes affect answer meaning
+ok 246 - metre and centimetre alternate answers preserve full quantity; unit changes affect answer meaning
+  ---
+  duration_ms: 0.196583
+  type: 'test'
+  ...
+# Subtest: empty/invalid shapes, quantities and coerced selector keys do not pass
+ok 247 - empty/invalid shapes, quantities and coerced selector keys do not pass
+  ---
+  duration_ms: 0.61075
+  type: 'test'
+  ...
+# Subtest: original figures show exact unit counts and match generated geometry
+ok 248 - original figures show exact unit counts and match generated geometry
+  ---
+  duration_ms: 1.31075
+  type: 'test'
+  ...
+# Subtest: all tile row orders accepted, both output meanings and unit sizes preserve length
+ok 249 - all tile row orders accepted, both output meanings and unit sizes preserve length
+  ---
+  duration_ms: 36.611625
+  type: 'test'
+  ...
+# Subtest: coverage precedes numeral, gap/overlap/start/end faults do not pass a correct reported6
+ok 250 - coverage precedes numeral, gap/overlap/start/end faults do not pass a correct reported6
+  ---
+  duration_ms: 0.180958
+  type: 'test'
+  ...
+# Subtest: strict supported selectors, dense positions and reports, finite geometry bounds
+ok 251 - strict supported selectors, dense positions and reports, finite geometry bounds
+  ---
+  duration_ms: 0.213
+  type: 'test'
+  ...
+# Subtest: original two-unit SVG endpoints and drawn lengths agree exactly
+ok 252 - original two-unit SVG endpoints and drawn lengths agree exactly
+  ---
+  duration_ms: 0.306958
+  type: 'test'
+  ...
+# Subtest: entry pilot has local optional section links and a declared actually loaded stylesheet
+ok 253 - entry pilot has local optional section links and a declared actually loaded stylesheet
+  ---
+  duration_ms: 1.049417
+  type: 'test'
+  ...
+# Subtest: larger scale labels preserve actual SVG XML; bare attributes fail rather than relying on HTML repair
+ok 254 - larger scale labels preserve actual SVG XML; bare attributes fail rather than relying on HTML repair
+  ---
+  duration_ms: 1569.290459
+  type: 'test'
+  ...
+# Subtest: truth contains both appearance counterexamples and equal differently sized packages
+ok 255 - truth contains both appearance counterexamples and equal differently sized packages
+  ---
+  duration_ms: 0.937875
+  type: 'test'
+  ...
+# Subtest: zeroed, one-loaded and full equal-arm model has correct lower-pan geometry
+ok 256 - zeroed, one-loaded and full equal-arm model has correct lower-pan geometry
+  ---
+  duration_ms: 0.34775
+  type: 'test'
+  ...
+# Subtest: side swap reverses visual slope but not object identity or correct answer
+ok 257 - side swap reverses visual slope but not object identity or correct answer
+  ---
+  duration_ms: 2.714333
+  type: 'test'
+  ...
+# Subtest: all rendered physical stages are finite, correctly labelled and within the frame
+ok 258 - all rendered physical stages are finite, correctly labelled and within the frame
+  ---
+  duration_ms: 0.705583
+  type: 'test'
+  ...
+# Subtest: unsupported answers, sparse arrays and invalid index/prototype names cannot be correct
+ok 259 - unsupported answers, sparse arrays and invalid index/prototype names cannot be correct
+  ---
+  duration_ms: 0.395167
+  type: 'test'
+  ...
+# Subtest: all supported mass compositions use actual grams, not count or appearance
+ok 260 - all supported mass compositions use actual grams, not count or appearance
+  ---
+  duration_ms: 3.753583
+  type: 'test'
+  ...
+# Subtest: conserved labelled masses accept every order and equivalent exchange; immutable add is bounded
+ok 261 - conserved labelled masses accept every order and equivalent exchange; immutable add is bounded
+  ---
+  duration_ms: 0.611292
+  type: 'test'
+  ...
+# Subtest: dense arrays, exact allowed finite values, limits and malformed data
+ok 262 - dense arrays, exact allowed finite values, limits and malformed data
+  ---
+  duration_ms: 0.395125
+  type: 'test'
+  ...
+# Subtest: equal-arm geometry moves heavier side downward; figures and all pack counts agree
+ok 263 - equal-arm geometry moves heavier side downward; figures and all pack counts agree
+  ---
+  duration_ms: 0.753917
+  type: 'test'
+  ...
+# Subtest: every pour step conserves source plus receiver plus tray and respects capacity bounds
+ok 264 - every pour step conserves source plus receiver plus tray and respects capacity bounds
+  ---
+  duration_ms: 0.733916
+  type: 'test'
+  ...
+# Subtest: same amount has different surface heights under explicit equal depth, not extra water
+ok 265 - same amount has different surface heights under explicit equal depth, not extra water
+  ---
+  duration_ms: 0.1265
+  type: 'test'
+  ...
+# Subtest: full-source comparison covers both directions, equal capacities and actual receiver loss
+ok 266 - full-source comparison covers both directions, equal capacities and actual receiver loss
+  ---
+  duration_ms: 0.183167
+  type: 'test'
+  ...
+# Subtest: actual drawing height encodes model volume in equal-depth rectangular interiors
+ok 267 - actual drawing height encodes model volume in equal-depth rectangular interiors
+  ---
+  duration_ms: 1.265542
+  type: 'test'
+  ...
+# Subtest: invalid cases/progress and sparse or unsupported answers fail closed
+ok 268 - invalid cases/progress and sparse or unsupported answers fail closed
+  ---
+  duration_ms: 0.382625
+  type: 'test'
+  ...
+# Subtest: whole-unit transfer conserves supply+measure+jug at every phase in both directions
+ok 269 - whole-unit transfer conserves supply+measure+jug at every phase in both directions
+  ---
+  duration_ms: 46.504125
+  type: 'test'
+  ...
+# Subtest: all supported quantities checked exactly; recipe repair uses two1dl transfers
+ok 270 - all supported quantities checked exactly; recipe repair uses two1dl transfers
+  ---
+  duration_ms: 0.247125
+  type: 'test'
+  ...
+# Subtest: finite strict boundaries reject coerced selectors and unsupported liquid states
+ok 271 - finite strict boundaries reject coerced selectors and unsupported liquid states
+  ---
+  duration_ms: 0.4105
+  type: 'test'
+  ...
+# Subtest: static jug heights, equal dl intervals and source figures match actual quantities
+ok 272 - static jug heights, equal dl intervals and source figures match actual quantities
+  ---
+  duration_ms: 0.467375
+  type: 'test'
+  ...
+# Subtest: MENTAL: independent finite routes preserve each part sum and final quantity in either order
+ok 273 - MENTAL: independent finite routes preserve each part sum and final quantity in either order
+  ---
+  duration_ms: 58.541125
+  type: 'test'
+  ...
+# Subtest: MENTAL: every valid split accepted, including non-decade, reversed, tens/ones and zero; wrong/blank/extra not construction
+ok 274 - MENTAL: every valid split accepted, including non-decade, reversed, tens/ones and zero; wrong/blank/extra not construction
+  ---
+  duration_ms: 2.764042
+  type: 'test'
+  ...
+# Subtest: MENTAL: strict primitive numbers and dense exact tuple, no sparse/extra-key acceptance
+ok 275 - MENTAL: strict primitive numbers and dense exact tuple, no sparse/extra-key acceptance
+  ---
+  duration_ms: 0.292334
+  type: 'test'
+  ...
+# Subtest: MENTAL: current parts, same-scale intermediate/endpoint geometry and all external XML variants
+ok 276 - MENTAL: current parts, same-scale intermediate/endpoint geometry and all external XML variants
+  ---
+  duration_ms: 66.380833
+  type: 'test'
+  ...
+# Subtest: MENTAL: original SVGs equal exact generators and source configurations immutable
+ok 277 - MENTAL: original SVGs equal exact generators and source configurations immutable
+  ---
+  duration_ms: 0.764583
+  type: 'test'
+  ...
+# Subtest: Source package: immediate action/free anchors, explicit local CSS, noJS/teacher and exact canonical prerequisites
+ok 278 - Source package: immediate action/free anchors, explicit local CSS, noJS/teacher and exact canonical prerequisites
+  ---
+  duration_ms: 1.0105
+  type: 'test'
+  ...
+# Subtest: all bounded constructions check every group, not just equal grand total
+ok 279 - all bounded constructions check every group, not just equal grand total
+  ---
+  duration_ms: 22.208667
+  type: 'test'
+  ...
+# Subtest: correct groups still require the correct whole quantity and add extras only once
+ok 280 - correct groups still require the correct whole quantity and add extras only once
+  ---
+  duration_ms: 0.255583
+  type: 'test'
+  ...
+# Subtest: dense/extra/invalid guards and strict string task selectors
+ok 281 - dense/extra/invalid guards and strict string task selectors
+  ---
+  duration_ms: 0.166208
+  type: 'test'
+  ...
+# Subtest: optional model steps and original diagram match the actual repeated groups
+ok 282 - optional model steps and original diagram match the actual repeated groups
+  ---
+  duration_ms: 0.434167
+  type: 'test'
+  ...
+# Subtest: every authored expression accepts both exact factor orders, not unrelated equal products
+ok 283 - every authored expression accepts both exact factor orders, not unrelated equal products
+  ---
+  duration_ms: 4.251083
+  type: 'test'
+  ...
+# Subtest: explicit two one-digit factor grammar refuses incomplete/coercive/extra expressions and unsupported cases
+ok 284 - explicit two one-digit factor grammar refuses incomplete/coercive/extra expressions and unsupported cases
+  ---
+  duration_ms: 0.41475
+  type: 'test'
+  ...
+# Subtest: all supported group pictures contain every distinct object exactly once through marking and regrouping
+ok 285 - all supported group pictures contain every distinct object exactly once through marking and regrouping
+  ---
+  duration_ms: 197.043959
+  type: 'test'
+  ...
+# Subtest: isolated current source/authority/assets and review lifecycle survive real review-state transitions
+ok 286 - isolated current source/authority/assets and review lifecycle survive real review-state transitions
+  ---
+  duration_ms: 257.494625
+  type: 'test'
+  ...
+# Subtest: all bounded triples accept exactly the inverse family, either order and deduplicated equal factors
+ok 287 - all bounded triples accept exactly the inverse family, either order and deduplicated equal factors
+  ---
+  duration_ms: 309.80775
+  type: 'test'
+  ...
+# Subtest: every model frame conserves fixed identities, radii and quantity; distinct sequential grouping/dealing
+ok 288 - every model frame conserves fixed identities, radii and quantity; distinct sequential grouping/dealing
+  ---
+  duration_ms: 28.702375
+  type: 'test'
+  ...
+# Subtest: strict meaning/keys, exact dense triples and finite bounds reject missing, coercion and malformed answers
+ok 289 - strict meaning/keys, exact dense triples and finite bounds reject missing, coercion and malformed answers
+  ---
+  duration_ms: 0.660792
+  type: 'test'
+  ...
+# Subtest: own-only contract, exact graph/Lite hashes and external SVG XML independently of HTML
+ok 290 - own-only contract, exact graph/Lite hashes and external SVG XML independently of HTML
+  ---
+  duration_ms: 179.62525
+  type: 'test'
+  ...
+# Subtest: all100 product pairs and100 missing factors exact; either factor order valid
+ok 291 - all100 product pairs and100 missing factors exact; either factor order valid
+  ---
+  duration_ms: 5.01375
+  type: 'test'
+  ...
+# Subtest: row produces all three values, transfer and alternatives accepted
+ok 292 - row produces all three values, transfer and alternatives accepted
+  ---
+  duration_ms: 0.183542
+  type: 'test'
+  ...
+# Subtest: nonfinite/out-of-domain keys and sparse/extra/malformed arrays cannot win
+ok 293 - nonfinite/out-of-domain keys and sparse/extra/malformed arrays cannot win
+  ---
+  duration_ms: 0.444958
+  type: 'test'
+  ...
+# Subtest: original arrays count correctly and external SVG parses, no cosmetic answer oracle
+ok 294 - original arrays count correctly and external SVG parses, no cosmetic answer oracle
+  ---
+  duration_ms: 741.060625
+  type: 'test'
+  ...
+# Subtest: All40products, all260valid row partitions, and exact ten-row subtraction
+ok 295 - All40products, all260valid row partitions, and exact ten-row subtraction
+  ---
+  duration_ms: 16.587167
+  type: 'test'
+  ...
+# Subtest: Same ten-row identities and coordinates before/after removal; partition is a reclassification
+ok 296 - Same ten-row identities and coordinates before/after removal; partition is a reclassification
+  ---
+  duration_ms: 4.215208
+  type: 'test'
+  ...
+# Subtest: Strict strings, finite bounds and exact dense array contract
+ok 297 - Strict strings, finite bounds and exact dense array contract
+  ---
+  duration_ms: 0.198
+  type: 'test'
+  ...
+# Subtest: Correct values never receive wrong-strategy feedback, including9×9 and6×6
+ok 298 - Correct values never receive wrong-strategy feedback, including9×9 and6×6
+  ---
+  duration_ms: 0.164833
+  type: 'test'
+  ...
+# Subtest: ExternalSVG static-generator equality, exact active/excluded counts and XML validation
+ok 299 - ExternalSVG static-generator equality, exact active/excluded counts and XML validation
+  ---
+  duration_ms: 71.039583
+  type: 'test'
+  ...
+# Subtest: Authored body explicitly loads its declared stylesheet; composer asset listing alone cannot load CSS
+ok 300 - Authored body explicitly loads its declared stylesheet; composer asset listing alone cannot load CSS
+  ---
+  duration_ms: 0.543625
+  type: 'test'
+  ...
+# Subtest: All60facts and all row counts match independently repeated addition
+ok 301 - All60facts and all row counts match independently repeated addition
+  ---
+  duration_ms: 7.58975
+  type: 'test'
+  ...
+# Subtest: Quarter turn preserves each point and all pairwise distances, without scaling
+ok 302 - Quarter turn preserves each point and all pairwise distances, without scaling
+  ---
+  duration_ms: 4.22475
+  type: 'test'
+  ...
+# Subtest: Primitive selectors and bounded dense answers reject sparse, extra and invalid values
+ok 303 - Primitive selectors and bounded dense answers reject sparse, extra and invalid values
+  ---
+  duration_ms: 0.265083
+  type: 'test'
+  ...
+# Subtest: Equivalent correct products win over misconception heuristics, specific repairs
+ok 304 - Equivalent correct products win over misconception heuristics, specific repairs
+  ---
+  duration_ms: 0.206292
+  type: 'test'
+  ...
+# Subtest: Static SVG identity and external XML validity for all facts/orientations/stages
+ok 305 - Static SVG identity and external XML validity for all facts/orientations/stages
+  ---
+  duration_ms: 70.314541
+  type: 'test'
+  ...
+# Subtest: Authored body explicitly loads its declared stylesheet; composer asset listing alone cannot load CSS
+ok 306 - Authored body explicitly loads its declared stylesheet; composer asset listing alone cannot load CSS
+  ---
+  duration_ms: 0.627375
+  type: 'test'
+  ...
+# Subtest: each question asks its actual unknown: amount, multiplier or reference; all bounded answers exact
+ok 307 - each question asks its actual unknown: amount, multiplier or reference; all bounded answers exact
+  ---
+  duration_ms: 2.335083
+  type: 'test'
+  ...
+# Subtest: all supported towers including wrong twenty-block answers have exact equal block dimensions and true common-baseline height
+ok 308 - all supported towers including wrong twenty-block answers have exact equal block dimensions and true common-baseline height
+  ---
+  duration_ms: 4.293375
+  type: 'test'
+  ...
+# Subtest: copy model creates exactly whole reference parts with stable identities and no false unfinished equation
+ok 309 - copy model creates exactly whole reference parts with stable identities and no false unfinished equation
+  ---
+  duration_ms: 15.125792
+  type: 'test'
+  ...
+# Subtest: strict case/number/array/model domains reject holes, extras, coercion and undefined comparisons
+ok 310 - strict case/number/array/model domains reject holes, extras, coercion and undefined comparisons
+  ---
+  duration_ms: 0.837042
+  type: 'test'
+  ...
+# Subtest: all external SVG states parse as XML, static references are exact producer output
+ok 311 - all external SVG states parse as XML, static references are exact producer output
+  ---
+  duration_ms: 59.551583
+  type: 'test'
+  ...
+# Subtest: uniform meaningful zero scale and symmetric opposites, including zero itself
+ok 312 - uniform meaningful zero scale and symmetric opposites, including zero itself
+  ---
+  duration_ms: 0.875459
+  type: 'test'
+  ...
+# Subtest: signed forms, plus optional and signed zero accepted; expression is not a number
+ok 313 - signed forms, plus optional and signed zero accepted; expression is not a number
+  ---
+  duration_ms: 0.898167
+  type: 'test'
+  ...
+# Subtest: all figure states valid external XML and exact labelled physical reference range
+ok 314 - all figure states valid external XML and exact labelled physical reference range
+  ---
+  duration_ms: 2847.794042
+  type: 'test'
+  ...
+# Subtest: selectors and independent original assets/child text boundaries retained
+ok 315 - selectors and independent original assets/child text boundaries retained
+  ---
+  duration_ms: 0.644459
+  type: 'test'
+  ...
+# Subtest: strict case keys and recursively frozen task records
+ok 316 - strict case keys and recursively frozen task records
+  ---
+  duration_ms: 0.824417
+  type: 'test'
+  ...
+# Subtest: exact integer lexical boundary: zero, equivalence, no rounding/coercion
+ok 317 - exact integer lexical boundary: zero, equivalence, no rounding/coercion
+  ---
+  duration_ms: 1.294375
+  type: 'test'
+  ...
+# Subtest: source contract retains frozen curriculum and human review boundary
+ok 318 - source contract retains frozen curriculum and human review boundary
+  ---
+  duration_ms: 0.765916
+  type: 'test'
+  ...
+# Subtest: all17 intervals, orientations and click inverse
+ok 319 - all17 intervals, orientations and click inverse
+  ---
+  duration_ms: 0.253167
+  type: 'test'
+  ...
+# Subtest: all finite task truths, zero distinct from blank, sign and offbyone feedback
+ok 320 - all finite task truths, zero distinct from blank, sign and offbyone feedback
+  ---
+  duration_ms: 0.419
+  type: 'test'
+  ...
+# Subtest: static initial, blank and worked geometry exactly match own deterministic renderer
+ok 321 - static initial, blank and worked geometry exactly match own deterministic renderer
+  ---
+  duration_ms: 2.06775
+  type: 'test'
+  ...
+# M-NUM-01: source schema, canonical prerequisites and boundary-specific logic PASS
+# Subtest: lesson-network/packages/M-NUM-01/tests.mjs
+ok 67 - lesson-network/packages/M-NUM-01/tests.mjs
+  ---
+  duration_ms: 303.036209
+  type: 'test'
+  ...
+# M-NUM-02: source schema, canonical prerequisites and boundary-specific logic PASS
+# Subtest: lesson-network/packages/M-NUM-02/tests.mjs
+ok 68 - lesson-network/packages/M-NUM-02/tests.mjs
+  ---
+  duration_ms: 290.075291
+  type: 'test'
+  ...
+# Subtest: joint integration never accepts one correct pair with the third representation wrong
+ok 324 - joint integration never accepts one correct pair with the third representation wrong
+  ---
+  duration_ms: 41.890459
+  type: 'test'
+  ...
+# Subtest: rendered quantities are conserved under layout/help and constructive set updates are immutable/bounded
+ok 325 - rendered quantities are conserved under layout/help and constructive set updates are immutable/bounded
+  ---
+  duration_ms: 33.382125
+  type: 'test'
+  ...
+# Subtest: exact dense distinct IDs, primitive selectors and finite bounded response shapes reject malformed input
+ok 326 - exact dense distinct IDs, primitive selectors and finite bounded response shapes reject malformed input
+  ---
+  duration_ms: 0.755
+  type: 'test'
+  ...
+# Subtest: exact original examples and own-only contract retain canonical integration and prerequisite children
+ok 327 - exact original examples and own-only contract retain canonical integration and prerequisite children
+  ---
+  duration_ms: 82.643292
+  type: 'test'
+  ...
+# Subtest: zero practice uses actual current tray and explicit numeral; blank and ten never substitute zero
+ok 328 - zero practice uses actual current tray and explicit numeral; blank and ten never substitute zero
+  ---
+  duration_ms: 0.865916
+  type: 'test'
+  ...
+# Subtest: complete temporal paths retain every equal unit, empty named only after completed final arrival
+ok 329 - complete temporal paths retain every equal unit, empty named only after completed final arrival
+  ---
+  duration_ms: 9.376833
+  type: 'test'
+  ...
+# Subtest: unsupported primitive cases, nonfinite state, range and malformed numeral guards
+ok 330 - unsupported primitive cases, nonfinite state, range and malformed numeral guards
+  ---
+  duration_ms: 0.467167
+  type: 'test'
+  ...
+# Subtest: explicit check preserves the visible answer across an uncommitted case change; ordinary semantic commits still reset
+ok 331 - explicit check preserves the visible answer across an uncommitted case change; ordinary semantic commits still reset
+  ---
+  duration_ms: 2.74025
+  type: 'test'
+  ...
+# Subtest: own-only isolated source contract, exact graph/source hashes, linked CSS and external SVG XML
+ok 332 - own-only isolated source contract, exact graph/source hashes, linked CSS and external SVG XML
+  ---
+  duration_ms: 217.110375
+  type: 'test'
+  ...
+# Subtest: all bounded two-field continuations agree with the supplied one-more rule, including tens crossings
+ok 333 - all bounded two-field continuations agree with the supplied one-more rule, including tens crossings
+  ---
+  duration_ms: 18.416542
+  type: 'test'
+  ...
+# Subtest: all card permutations and sparse/duplicate/extra responses; immutable original card identities
+ok 334 - all card permutations and sparse/duplicate/extra responses; immutable original card identities
+  ---
+  duration_ms: 1.601583
+  type: 'test'
+  ...
+# Subtest: model labels only completed arrivals, visible fixed premise and marker clear of text/card regions
+ok 335 - model labels only completed arrivals, visible fixed premise and marker clear of text/card regions
+  ---
+  duration_ms: 24.045584
+  type: 'test'
+  ...
+# Subtest: own-only isolated source contract, exact graph/source hashes, linked CSS and external SVG XML
+ok 336 - own-only isolated source contract, exact graph/source hashes, linked CSS and external SVG XML
+  ---
+  duration_ms: 179.349125
+  type: 'test'
+  ...
+# Subtest: each task agrees with an independent arithmetic/rule oracle over all bounded numeric responses
+ok 337 - each task agrees with an independent arithmetic/rule oracle over all bounded numeric responses
+  ---
+  duration_ms: 24.282291
+  type: 'test'
+  ...
+# Subtest: blank is not zero, exact response shapes and unsupported types never silently coerce
+ok 338 - blank is not zero, exact response shapes and unsupported types never silently coerce
+  ---
+  duration_ms: 0.63925
+  type: 'test'
+  ...
+# Subtest: numeric axis affine geometry, completed-arrival captions and finite lifecycle model endpoints
+ok 339 - numeric axis affine geometry, completed-arrival captions and finite lifecycle model endpoints
+  ---
+  duration_ms: 5.784375
+  type: 'test'
+  ...
+# Subtest: own isolated source package, immutable authority hashes, assets/XML and review lifecycle only in disposable fixture
+ok 340 - own isolated source package, immutable authority hashes, assets/XML and review lifecycle only in disposable fixture
+  ---
+  duration_ms: 196.528292
+  type: 'test'
+  ...
+# Subtest: all bounded natural-number relations include exact equality, zero and reversed comparisons
+ok 341 - all bounded natural-number relations include exact equality, zero and reversed comparisons
+  ---
+  duration_ms: 6.480833
+  type: 'test'
+  ...
+# Subtest: all equivalent tied card orders accepted, but holes/duplicates/inherited or unsupported IDs rejected
+ok 342 - all equivalent tied card orders accepted, but holes/duplicates/inherited or unsupported IDs rejected
+  ---
+  duration_ms: 0.362833
+  type: 'test'
+  ...
+# Subtest: every given unit rendered once at equal size; layout cannot change truth; static images and strict domain
+ok 343 - every given unit rendered once at equal size; layout cannot change truth; static images and strict domain
+  ---
+  duration_ms: 2.277083
+  type: 'test'
+  ...
+# Subtest: own-only isolated source contract, exact graph/source hashes, linked CSS and external SVG XML
+ok 344 - own-only isolated source contract, exact graph/source hashes, linked CSS and external SVG XML
+  ---
+  duration_ms: 239.447708
+  type: 'test'
+  ...
+# Subtest: Every supported report equals whole span divided by selected unit and never mutates ribbon
+ok 345 - Every supported report equals whole span divided by selected unit and never mutates ribbon
+  ---
+  duration_ms: 1.969417
+  type: 'test'
+  ...
+# Subtest: Actual unit rectangles abut at exact edges and cover full bar at every count-help stage
+ok 346 - Actual unit rectangles abut at exact edges and cover full bar at every count-help stage
+  ---
+  duration_ms: 3.52925
+  type: 'test'
+  ...
+# Subtest: Deep immutable configurations, strict selector strings and dense exact answer shape
+ok 347 - Deep immutable configurations, strict selector strings and dense exact answer shape
+  ---
+  duration_ms: 0.487208
+  type: 'test'
+  ...
+# Subtest: Count parser and specific feedback do not certify physical measuring
+ok 348 - Count parser and specific feedback do not certify physical measuring
+  ---
+  duration_ms: 0.238584
+  type: 'test'
+  ...
+# Subtest: Declared original SVGs exactly match generators; every variant is valid external XML
+ok 349 - Declared original SVGs exactly match generators; every variant is valid external XML
+  ---
+  duration_ms: 50.042208
+  type: 'test'
+  ...
+# Subtest: Authored CSS reference and primary measurement data outside optional assistance
+ok 350 - Authored CSS reference and primary measurement data outside optional assistance
+  ---
+  duration_ms: 0.278833
+  type: 'test'
+  ...
+# Subtest: Equal steps and multiples are distinct; independently enumerate bounded sequences and zero-based group counts
+ok 351 - Equal steps and multiples are distinct; independently enumerate bounded sequences and zero-based group counts
+  ---
+  duration_ms: 4.517875
+  type: 'test'
+  ...
+# Subtest: Integrated answers require step, next, membership and group count together; a next-number guess is insufficient
+ok 352 - Integrated answers require step, next, membership and group count together; a next-number guess is insufficient
+  ---
+  duration_ms: 0.58675
+  type: 'test'
+  ...
+# Subtest: All model group/unit/step counts and original SVG XML are exact, including zero groups and shifted origin
+ok 353 - All model group/unit/step counts and original SVG XML are exact, including zero groups and shifted origin
+  ---
+  duration_ms: 62.052459
+  type: 'test'
+  ...
+# Subtest: Invalid, blank, approximate-zero, sparse and coerced inputs cannot become a correct semantic default
+ok 354 - Invalid, blank, approximate-zero, sparse and coerced inputs cannot become a correct semantic default
+  ---
+  duration_ms: 0.274625
+  type: 'test'
+  ...
+# Subtest: Static initial task, model, noJS note and integration prerequisites are coherent without script defaults
+ok 355 - Static initial task, model, noJS note and integration prerequisites are coherent without script defaults
+  ---
+  duration_ms: 0.449
+  type: 'test'
+  ...
+# Subtest: Exact canonical/assets/source contract and review transitions use OS-temp fixtures, never assume own content review pending
+ok 356 - Exact canonical/assets/source contract and review transitions use OS-temp fixtures, never assume own content review pending
+  ---
+  duration_ms: 269.98175
+  type: 'test'
+  ...
+# Subtest: all allocation states conserve the whole; only two full equal shares pass
+ok 357 - all allocation states conserve the whole; only two full equal shares pass
+  ---
+  duration_ms: 411.571
+  type: 'test'
+  ...
+# Subtest: direct half answers are independent of optional model progress
+ok 358 - direct half answers are independent of optional model progress
+  ---
+  duration_ms: 0.231
+  type: 'test'
+  ...
+# Subtest: primitive selectors and exact dense allocation fields reject forged input
+ok 359 - primitive selectors and exact dense allocation fields reject forged input
+  ---
+  duration_ms: 0.4965
+  type: 'test'
+  ...
+# Subtest: original figures and own-only source ingestion bind canonical/assets/Lite
+ok 360 - original figures and own-only source ingestion bind canonical/assets/Lite
+  ---
+  duration_ms: 80.538875
+  type: 'test'
+  ...
+# Subtest: All65 ordered valid decompositions across wholes1–10; not just a predetermined split
+ok 361 - All65 ordered valid decompositions across wholes1–10; not just a predetermined split
+  ---
+  duration_ms: 9.037209
+  type: 'test'
+  ...
+# Subtest: Every fixed known-part task checks precisely its missing part, whole is not accepted as missing
+ok 362 - Every fixed known-part task checks precisely its missing part, whole is not accepted as missing
+  ---
+  duration_ms: 0.30625
+  type: 'test'
+  ...
+# Subtest: All65 partition states conserve identities/count/radius; actual graphic groups match its labels
+ok 363 - All65 partition states conserve identities/count/radius; actual graphic groups match its labels
+  ---
+  duration_ms: 5.257417
+  type: 'test'
+  ...
+# Subtest: Cover does not draw hidden dots or disclose their count; actual constructed picture may show wrong totals truthfully
+ok 364 - Cover does not draw hidden dots or disclose their count; actual constructed picture may show wrong totals truthfully
+  ---
+  duration_ms: 5.284291
+  type: 'test'
+  ...
+# Subtest: Strict finite keys/bounds and exact dense arrays cannot award sparse/extra malformed values
+ok 365 - Strict finite keys/bounds and exact dense arrays cannot award sparse/extra malformed values
+  ---
+  duration_ms: 0.371209
+  type: 'test'
+  ...
+# Subtest: Original SVG/static-generator agreement and independent XML validity for all bounded diagrams
+ok 366 - Original SVG/static-generator agreement and independent XML validity for all bounded diagrams
+  ---
+  duration_ms: 49.40625
+  type: 'test'
+  ...
+# Subtest: Authored stylesheet is loaded and always-visible question precedes optional model
+ok 367 - Authored stylesheet is loaded and always-visible question precedes optional model
+  ---
+  duration_ms: 0.30775
+  type: 'test'
+  ...
+# M-NUM-1TO1: source schema, canonical prerequisites and boundary-specific logic PASS
+# Subtest: lesson-network/packages/M-NUM-1TO1/tests.mjs
+ok 78 - lesson-network/packages/M-NUM-1TO1/tests.mjs
+  ---
+  duration_ms: 298.696
+  type: 'test'
+  ...
+# Subtest: each task agrees with an independent arithmetic/rule oracle over all bounded numeric responses
+ok 369 - each task agrees with an independent arithmetic/rule oracle over all bounded numeric responses
+  ---
+  duration_ms: 62.033625
+  type: 'test'
+  ...
+# Subtest: blank is not zero, exact response shapes and unsupported types never silently coerce
+ok 370 - blank is not zero, exact response shapes and unsupported types never silently coerce
+  ---
+  duration_ms: 0.645833
+  type: 'test'
+  ...
+# Subtest: numeric axis affine geometry, completed-arrival captions and finite lifecycle model endpoints
+ok 371 - numeric axis affine geometry, completed-arrival captions and finite lifecycle model endpoints
+  ---
+  duration_ms: 39.248875
+  type: 'test'
+  ...
+# Subtest: own isolated source package, immutable authority hashes, assets/XML and review lifecycle only in disposable fixture
+ok 372 - own isolated source package, immutable authority hashes, assets/XML and review lifecycle only in disposable fixture
+  ---
+  duration_ms: 174.409542
+  type: 'test'
+  ...
+# Subtest: each task agrees with an independent arithmetic/rule oracle over all bounded numeric responses
+ok 373 - each task agrees with an independent arithmetic/rule oracle over all bounded numeric responses
+  ---
+  duration_ms: 27.334708
+  type: 'test'
+  ...
+# Subtest: blank is not zero, exact response shapes and unsupported types never silently coerce
+ok 374 - blank is not zero, exact response shapes and unsupported types never silently coerce
+  ---
+  duration_ms: 0.774083
+  type: 'test'
+  ...
+# Subtest: numeric axis affine geometry, completed-arrival captions and finite lifecycle model endpoints
+ok 375 - numeric axis affine geometry, completed-arrival captions and finite lifecycle model endpoints
+  ---
+  duration_ms: 13.554417
+  type: 'test'
+  ...
+# Subtest: own isolated source package, immutable authority hashes, assets/XML and review lifecycle only in disposable fixture
+ok 376 - own isolated source package, immutable authority hashes, assets/XML and review lifecycle only in disposable fixture
+  ---
+  duration_ms: 172.216292
+  type: 'test'
+  ...
+# Subtest: constructed mappings inspect every group; same value and reordered mappings remain valid
+ok 377 - constructed mappings inspect every group; same value and reordered mappings remain valid
+  ---
+  duration_ms: 7.720125
+  type: 'test'
+  ...
+# Subtest: mapping/API guards reject holes, extras, unsupported selector types and nonfinite labels
+ok 378 - mapping/API guards reject holes, extras, unsupported selector types and nonfinite labels
+  ---
+  duration_ms: 0.668
+  type: 'test'
+  ...
+# Subtest: all rearrangement frames preserve each original object once, count and non-overlapping bounds
+ok 379 - all rearrangement frames preserve each original object once, count and non-overlapping bounds
+  ---
+  duration_ms: 4.864333
+  type: 'test'
+  ...
+# Subtest: count model synchronizes actual visible pieces and the current whole-set label
+ok 380 - count model synchronizes actual visible pieces and the current whole-set label
+  ---
+  duration_ms: 0.271
+  type: 'test'
+  ...
+# Subtest: requested three allows every distinct subset of three; no fixed object privilege
+ok 381 - requested three allows every distinct subset of three; no fixed object privilege
+  ---
+  duration_ms: 0.358708
+  type: 'test'
+  ...
+# Subtest: reverse word-to-set action is bounded; words do not claim free spoken production
+ok 382 - reverse word-to-set action is bounded; words do not claim free spoken production
+  ---
+  duration_ms: 0.163209
+  type: 'test'
+  ...
+# Subtest: constructed mappings inspect every group; same value and reordered mappings remain valid
+ok 383 - constructed mappings inspect every group; same value and reordered mappings remain valid
+  ---
+  duration_ms: 3.825959
+  type: 'test'
+  ...
+# Subtest: mapping/API guards reject holes, extras, unsupported selector types and nonfinite labels
+ok 384 - mapping/API guards reject holes, extras, unsupported selector types and nonfinite labels
+  ---
+  duration_ms: 0.684458
+  type: 'test'
+  ...
+# Subtest: all rearrangement frames preserve each original object once, count and non-overlapping bounds
+ok 385 - all rearrangement frames preserve each original object once, count and non-overlapping bounds
+  ---
+  duration_ms: 6.240041
+  type: 'test'
+  ...
+# Subtest: count model synchronizes actual visible pieces and the current whole-set label
+ok 386 - count model synchronizes actual visible pieces and the current whole-set label
+  ---
+  duration_ms: 0.293875
+  type: 'test'
+  ...
+# Subtest: requested three allows every distinct subset of three; no fixed object privilege
+ok 387 - requested three allows every distinct subset of three; no fixed object privilege
+  ---
+  duration_ms: 0.376292
+  type: 'test'
+  ...
+# Subtest: reverse word-to-set action is bounded; words do not claim free spoken production
+ok 388 - reverse word-to-set action is bounded; words do not claim free spoken production
+  ---
+  duration_ms: 0.163708
+  type: 'test'
+  ...
+# M-NUM-STABLE-ORDER: source schema, canonical prerequisites and boundary-specific logic PASS
+# Subtest: lesson-network/packages/M-NUM-STABLE-ORDER/tests.mjs
+ok 83 - lesson-network/packages/M-NUM-STABLE-ORDER/tests.mjs
+  ---
+  duration_ms: 299.910125
+  type: 'test'
+  ...
+# M-NUM-WORD-NUMERAL: schema/canonical/hash PASS; 33 semantic cases PASS
+# Subtest: lesson-network/packages/M-NUM-WORD-NUMERAL/tests.mjs
+ok 84 - lesson-network/packages/M-NUM-WORD-NUMERAL/tests.mjs
+  ---
+  duration_ms: 316.4505
+  type: 'test'
+  ...
+# Subtest: every ten of thirteen, in different orders, makes exactly one ten with three loose identities
+ok 391 - every ten of thirteen, in different orders, makes exactly one ten with three loose identities
+  ---
+  duration_ms: 52.729
+  type: 'test'
+  ...
+# Subtest: ten is a group size independent of material or leftover count; nine/eleven are not tens
+ok 392 - ten is a group size independent of material or leftover count; nine/eleven are not tens
+  ---
+  duration_ms: 0.246958
+  type: 'test'
+  ...
+# Subtest: dense unique in-domain identities required; no holes, duplicates, strings or inherited identities
+ok 393 - dense unique in-domain identities required; no holes, duplicates, strings or inherited identities
+  ---
+  duration_ms: 0.196542
+  type: 'test'
+  ...
+# Subtest: strict primitive string selectors and exact piece ids prevent prototype/array coercion
+ok 394 - strict primitive string selectors and exact piece ids prevent prototype/array coercion
+  ---
+  duration_ms: 0.210917
+  type: 'test'
+  ...
+# Subtest: every normalized two-digit representation has its actual value; all fixture answers exact
+ok 395 - every normalized two-digit representation has its actual value; all fixture answers exact
+  ---
+  duration_ms: 2.906417
+  type: 'test'
+  ...
+# Subtest: strict keys/digits/bounds reject coercion, sparse arrays and malformed values
+ok 396 - strict keys/digits/bounds reject coercion, sparse arrays and malformed values
+  ---
+  duration_ms: 0.506917
+  type: 'test'
+  ...
+# Subtest: every visible bundle contains exactly ten units of the same size as singles
+ok 397 - every visible bundle contains exactly ten units of the same size as singles
+  ---
+  duration_ms: 5.290166
+  type: 'test'
+  ...
+# Subtest: ten labels reserve separate space below ten unchanged equal units in both bundle rows
+ok 398 - ten labels reserve separate space below ten unchanged equal units in both bundle rows
+  ---
+  duration_ms: 1.360083
+  type: 'test'
+  ...
+# Subtest: all bounded decompositions and valid alternatives respect amount AND visible loose-piece request
+ok 399 - all bounded decompositions and valid alternatives respect amount AND visible loose-piece request
+  ---
+  duration_ms: 4.249583
+  type: 'test'
+  ...
+# Subtest: opening and binding are inverse quantity-preserving actions over every supported state
+ok 400 - opening and binding are inverse quantity-preserving actions over every supported state
+  ---
+  duration_ms: 4.43225
+  type: 'test'
+  ...
+# Subtest: all ten original pieces move into loose positions, with exact identities, sizes, total and endpoints
+ok 401 - all ten original pieces move into loose positions, with exact identities, sizes, total and endpoints
+  ---
+  duration_ms: 40.353542
+  type: 'test'
+  ...
+# Subtest: strict primitive keys, integer counts and dense exact answer shapes reject unsupported inputs
+ok 402 - strict primitive keys, integer counts and dense exact answer shapes reject unsupported inputs
+  ---
+  duration_ms: 0.683292
+  type: 'test'
+  ...
+# Subtest: static SVG equals producer and every bounded construct/animation is valid external XML with equal-size units
+ok 403 - static SVG equals producer and every bounded construct/animation is valid external XML with equal-size units
+  ---
+  duration_ms: 107.264916
+  type: 'test'
+  ...
+# Subtest: place values agree with independent right-to-left digit strings, including repeated digits and zero
+ok 404 - place values agree with independent right-to-left digit strings, including repeated digits and zero
+  ---
+  duration_ms: 12.471375
+  type: 'test'
+  ...
+# Subtest: strict whole-numeral grammar accepts grouped/ungrouped and whitespace, never blank/exponent/decimal coercion
+ok 405 - strict whole-numeral grammar accepts grouped/ungrouped and whitespace, never blank/exponent/decimal coercion
+  ---
+  duration_ms: 0.347292
+  type: 'test'
+  ...
+# Subtest: all named practice semantics and adversarial response shapes use current mathematical truth
+ok 406 - all named practice semantics and adversarial response shapes use current mathematical truth
+  ---
+  duration_ms: 34.094083
+  type: 'test'
+  ...
+# Subtest: original number boards and conserving exchange frames exactly count labelled value tokens
+ok 407 - original number boards and conserving exchange frames exactly count labelled value tokens
+  ---
+  duration_ms: 172.917458
+  type: 'test'
+  ...
+# Subtest: isolated current source/authority/assets and review lifecycle survive real review-state transitions
+ok 408 - isolated current source/authority/assets and review lifecycle survive real review-state transitions
+  ---
+  duration_ms: 254.214375
+  type: 'test'
+  ...
+# Subtest: exactauthoritativeLite/canonical anddeclaredassets; reviewmetadata canbeappended
+ok 409 - exactauthoritativeLite/canonical anddeclaredassets; reviewmetadata canbeappended
+  ---
+  duration_ms: 8.172125
+  type: 'test'
+  ...
+# Subtest: digit-string independentoracle all10000smallnaturals; zero and largerplaces
+ok 410 - digit-string independentoracle all10000smallnaturals; zero and largerplaces
+  ---
+  duration_ms: 8.785166
+  type: 'test'
+  ...
+# Subtest: wholeparse blanks/syntax/boundsversus harmlesszeros/grouping
+ok 411 - wholeparse blanks/syntax/boundsversus harmlesszeros/grouping
+  ---
+  duration_ms: 0.406167
+  type: 'test'
+  ...
+# Subtest: freeconstruction accepts differentdecompositions andorder, refusesfalseforms
+ok 412 - freeconstruction accepts differentdecompositions andorder, refusesfalseforms
+  ---
+  duration_ms: 0.409958
+  type: 'test'
+  ...
+# Subtest: all9declaredfamilies correct/wrong/blank and namedpositiontruth
+ok 413 - all9declaredfamilies correct/wrong/blank and namedpositiontruth
+  ---
+  duration_ms: 0.246542
+  type: 'test'
+  ...
+# Subtest: allfinitephaseSVGs/staticnoJSconsistent and exchangeconservesvalue
+ok 414 - allfinitephaseSVGs/staticnoJSconsistent and exchangeconservesvalue
+  ---
+  duration_ms: 52.399709
+  type: 'test'
+  ...
+# Subtest: Carver sparseAPI regression: exact dense ownindices only, no holes/extras/symbols
+ok 415 - Carver sparseAPI regression: exact dense ownindices only, no holes/extras/symbols
+  ---
+  duration_ms: 0.799917
+  type: 'test'
+  ...
+# M-REP-04: source/schema/hash/role checks PASS; 240 semantic cases PASS
+# Subtest: lesson-network/packages/M-REP-04/tests.mjs
+ok 90 - lesson-network/packages/M-REP-04/tests.mjs
+  ---
+  duration_ms: 311.599083
+  type: 'test'
+  ...
+# Subtest: every valid removed subset/order preserves original pieces and only the requested size passes
+ok 417 - every valid removed subset/order preserves original pieces and only the requested size passes
+  ---
+  duration_ms: 12.683333
+  type: 'test'
+  ...
+# Subtest: remaining, removed and initial roles have correct boundaries including zero/equal roles
+ok 418 - remaining, removed and initial roles have correct boundaries including zero/equal roles
+  ---
+  duration_ms: 0.244
+  type: 'test'
+  ...
+# Subtest: selectors/removed-ID arrays reject sparse, duplicate, missing, inherited and extra fields
+ok 419 - selectors/removed-ID arrays reject sparse, duplicate, missing, inherited and extra fields
+  ---
+  duration_ms: 0.447917
+  type: 'test'
+  ...
+# Subtest: exact figures and isolated own-only contract bind source/canonical/assets/Lite
+ok 420 - exact figures and isolated own-only contract bind source/canonical/assets/Lite
+  ---
+  duration_ms: 70.301209
+  type: 'test'
+  ...
+# Subtest: All66 subtraction facts have exact whole/part inverse and independent result, including zero boundaries
+ok 421 - All66 subtraction facts have exact whole/part inverse and independent result, including zero boundaries
+  ---
+  duration_ms: 2.137584
+  type: 'test'
+  ...
+# Subtest: Numeric and selector boundaries reject coercion, blank-as-zero, approximate-zero and unsupported domains
+ok 422 - Numeric and selector boundaries reject coercion, blank-as-zero, approximate-zero and unsupported domains
+  ---
+  duration_ms: 0.364042
+  type: 'test'
+  ...
+# Subtest: Every discrete model preserves quantities, count-up intervals and comparison sets in all finite states
+ok 423 - Every discrete model preserves quantities, count-up intervals and comparison sets in all finite states
+  ---
+  duration_ms: 111.217625
+  type: 'test'
+  ...
+# Subtest: Transfer compares unchanged quantities or finds hidden part; original external SVG matches exact generators
+ok 424 - Transfer compares unchanged quantities or finds hidden part; original external SVG matches exact generators
+  ---
+  duration_ms: 0.553208
+  type: 'test'
+  ...
+# Subtest: Source contract preserves exact canonical AND/strong role, explicit assets/free anchors/help/noJS and review lifecycle flexibility
+ok 425 - Source contract preserves exact canonical AND/strong role, explicit assets/free anchors/help/noJS and review lifecycle flexibility
+  ---
+  duration_ms: 0.830709
+  type: 'test'
+  ...
+# Subtest: NoJS initial selected subtraction, visible question and inverse hint describe the same task as JS reset
+ok 426 - NoJS initial selected subtraction, visible question and inverse hint describe the same task as JS reset
+  ---
+  duration_ms: 0.732625
+  type: 'test'
+  ...
+# Subtest: independent expected axes and multiple valid answers, not one hardcoded axis
+ok 427 - independent expected axes and multiple valid answers, not one hardcoded axis
+  ---
+  duration_ms: 4.7385
+  type: 'test'
+  ...
+# Subtest: actual diagonal endpoints, reflection involution, fixed line points, perpendicular paired distance
+ok 428 - actual diagonal endpoints, reflection involution, fixed line points, perpendicular paired distance
+  ---
+  duration_ms: 4.052666
+  type: 'test'
+  ...
+# Subtest: folded projection uses cosine, clips two polygon halves and keeps geometry finite
+ok 429 - folded projection uses cosine, clips two polygon halves and keeps geometry finite
+  ---
+  duration_ms: 10.938208
+  type: 'test'
+  ...
+# Subtest: grid correspondence and all alternative selection orders; translation fails
+ok 430 - grid correspondence and all alternative selection orders; translation fails
+  ---
+  duration_ms: 0.444291
+  type: 'test'
+  ...
+# Subtest: holes, inherited slots, extras, duplicate/prototype names and malformed points fail closed
+ok 431 - holes, inherited slots, extras, duplicate/prototype names and malformed points fail closed
+  ---
+  duration_ms: 0.618
+  type: 'test'
+  ...
+# Subtest: first square task accepts all four without claiming more; every nonempty proper valid subset retains available-axis feedback
+ok 432 - first square task accepts all four without claiming more; every nonempty proper valid subset retains available-axis feedback
+  ---
+  duration_ms: 1.430333
+  type: 'test'
+  ...
+# Subtest: triangle side candidates describe one-sided paper at every fold stage and keep false-axis verdict
+ok 433 - triangle side candidates describe one-sided paper at every fold stage and keep false-axis verdict
+  ---
+  duration_ms: 0.575
+  type: 'test'
+  ...
+# Subtest: Equal: independently calculated quantities, symmetric equality and both composed sides
+ok 434 - Equal: independently calculated quantities, symmetric equality and both composed sides
+  ---
+  duration_ms: 37.128417
+  type: 'test'
+  ...
+# Subtest: Equal: current case part is checked against the whole other side; total is not missing part
+ok 435 - Equal: current case part is checked against the whole other side; total is not missing part
+  ---
+  duration_ms: 0.757583
+  type: 'test'
+  ...
+# Subtest: Equal: exact dense arrays, no extra or symbolic keys, strict primitive quantity and case
+ok 436 - Equal: exact dense arrays, no extra or symbolic keys, strict primitive quantity and case
+  ---
+  duration_ms: 0.367042
+  type: 'test'
+  ...
+# Subtest: Equal: SVG displays exactly the totals for every case, side swap and spacing; valid external XML
+ok 437 - Equal: SVG displays exactly the totals for every case, side swap and spacing; valid external XML
+  ---
+  duration_ms: 105.383292
+  type: 'test'
+  ...
+# Subtest: Equal: configurations are deeply frozen; caller edits to returned state cannot change truth
+ok 438 - Equal: configurations are deeply frozen; caller edits to returned state cannot change truth
+  ---
+  duration_ms: 0.404917
+  type: 'test'
+  ...
+# Subtest: Package: local CSS actually linked, purpose/action before optional explanation, no gated stages
+ok 439 - Package: local CSS actually linked, purpose/action before optional explanation, no gated stages
+  ---
+  duration_ms: 0.962209
+  type: 'test'
+  ...
+# Subtest: Minus: independent absolute differences and actual removal endpoints
+ok 440 - Minus: independent absolute differences and actual removal endpoints
+  ---
+  duration_ms: 2.464875
+  type: 'test'
+  ...
+# Subtest: Minus: distinguish removed from remaining and difference from total; reversed owners supported
+ok 441 - Minus: distinguish removed from remaining and difference from total; reversed owners supported
+  ---
+  duration_ms: 0.5065
+  type: 'test'
+  ...
+# Subtest: Minus: strict primitive input shape and bounded grammar
+ok 442 - Minus: strict primitive input shape and bounded grammar
+  ---
+  duration_ms: 0.163625
+  type: 'test'
+  ...
+# Subtest: Minus: removal crossed objects vs unchanged paired sets have distinct geometric meanings
+ok 443 - Minus: removal crossed objects vs unchanged paired sets have distinct geometric meanings
+  ---
+  duration_ms: 41.37825
+  type: 'test'
+  ...
+# Subtest: Minus: immutable model data and exact shipped external SVGs
+ok 444 - Minus: immutable model data and exact shipped external SVGs
+  ---
+  duration_ms: 1.495542
+  type: 'test'
+  ...
+# Subtest: Package: local CSS actually linked, purpose/action before optional explanation, no gated stages
+ok 445 - Package: local CSS actually linked, purpose/action before optional explanation, no gated stages
+  ---
+  duration_ms: 0.965125
+  type: 'test'
+  ...
+# Subtest: Plus: independently calculated bounded unions, both orders and zero
+ok 446 - Plus: independently calculated bounded unions, both orders and zero
+  ---
+  duration_ms: 0.6805
+  type: 'test'
+  ...
+# Subtest: Plus: each pictured union accepts commuted operands; equal result is not the pictured parts
+ok 447 - Plus: each pictured union accepts commuted operands; equal result is not the pictured parts
+  ---
+  duration_ms: 1.922667
+  type: 'test'
+  ...
+# Subtest: Plus: primitive keys, bounded syntax, no coercion/evaluation/injection
+ok 448 - Plus: primitive keys, bounded syntax, no coercion/evaluation/injection
+  ---
+  duration_ms: 1.325458
+  type: 'test'
+  ...
+# Subtest: Plus: sequential arrival conserves initial, arrived and waiting objects; union conserves all objects
+ok 449 - Plus: sequential arrival conserves initial, arrived and waiting objects; union conserves all objects
+  ---
+  duration_ms: 45.813667
+  type: 'test'
+  ...
+# Subtest: Plus: immutable cases and shipped diagrams match actual generators
+ok 450 - Plus: immutable cases and shipped diagrams match actual generators
+  ---
+  duration_ms: 2.935458
+  type: 'test'
+  ...
+# Subtest: Package: local CSS actually linked, purpose/action before optional explanation, no gated stages
+ok 451 - Package: local CSS actually linked, purpose/action before optional explanation, no gated stages
+  ---
+  duration_ms: 0.617666
+  type: 'test'
+  ...
+# M-TH-01: schema/canonical/hash PASS; 512 semantic cases PASS
+# Subtest: lesson-network/packages/M-TH-01/tests.mjs
+ok 97 - lesson-network/packages/M-TH-01/tests.mjs
+  ---
+  duration_ms: 285.948916
+  type: 'test'
+  ...
+# M-TH-02: schema/canonical/hash PASS; 128 semantic cases PASS
+# Subtest: lesson-network/packages/M-TH-02/tests.mjs
+ok 98 - lesson-network/packages/M-TH-02/tests.mjs
+  ---
+  duration_ms: 296.617708
+  type: 'test'
+  ...
+# PASS constructive ordering, reversed rule, both valid ties, missing/repeated objects
+# Subtest: lesson-network/packages/M-TH-03/tests.mjs
+ok 99 - lesson-network/packages/M-TH-03/tests.mjs
+  ---
+  duration_ms: 41.358292
+  type: 'test'
+  ...
+# M-TH-04: source/schema/hash/role checks PASS; 87 semantic cases PASS
+# Subtest: lesson-network/packages/M-TH-04/tests.mjs
+ok 100 - lesson-network/packages/M-TH-04/tests.mjs
+  ---
+  duration_ms: 300.924958
+  type: 'test'
+  ...
+# M-TH-07: source/schema/hash/role checks PASS; 888 semantic cases PASS
+# Subtest: lesson-network/packages/M-TH-07/tests.mjs
+ok 101 - lesson-network/packages/M-TH-07/tests.mjs
+  ---
+  duration_ms: 312.769333
+  type: 'test'
+  ...
+# Subtest: each pictured grouping has a constructed sum and two defined factor roles
+ok 457 - each pictured grouping has a constructed sum and two defined factor roles
+  ---
+  duration_ms: 0.677334
+  type: 'test'
+  ...
+# Subtest: equal totals are acknowledged rather than declared mathematically false
+ok 458 - equal totals are acknowledged rather than declared mathematically false
+  ---
+  duration_ms: 0.18875
+  type: 'test'
+  ...
+# Subtest: sparse or nonnumeric sums cannot earn vacuous construction credit
+ok 459 - sparse or nonnumeric sums cannot earn vacuous construction credit
+  ---
+  duration_ms: 0.342084
+  type: 'test'
+  ...
+# Subtest: re-layout keeps exactly the same objects at every intermediate position
+ok 460 - re-layout keeps exactly the same objects at every intermediate position
+  ---
+  duration_ms: 3.338958
+  type: 'test'
+  ...
+# Subtest: every frame uses the same interval truth and conserved illustrative wax height
+ok 461 - every frame uses the same interval truth and conserved illustrative wax height
+  ---
+  duration_ms: 2.754
+  type: 'test'
+  ...
+# Subtest: later finishing does not determine longer time and ties remain valid
+ok 462 - later finishing does not determine longer time and ties remain valid
+  ---
+  duration_ms: 0.266125
+  type: 'test'
+  ...
+# Subtest: static pictures match the same model, exact assets and canonical boundaries
+ok 463 - static pictures match the same model, exact assets and canonical boundaries
+  ---
+  duration_ms: 61.952375
+  type: 'test'
+  ...
+# Subtest: clock: all24 whole/half times use continuous coupled hour hand and Finnish next-hour half naming
+ok 464 - clock: all24 whole/half times use continuous coupled hour hand and Finnish next-hour half naming
+  ---
+  duration_ms: 5.176583
+  type: 'test'
+  ...
+# Subtest: clock: each accelerated model minute follows same exact geometry, wrap and60minute limit
+ok 465 - clock: each accelerated model minute follows same exact geometry, wrap and60minute limit
+  ---
+  duration_ms: 2.292334
+  type: 'test'
+  ...
+# Subtest: clock: reading and setting check semantic h/min, no unsupported or coercive input
+ok 466 - clock: reading and setting check semantic h/min, no unsupported or coercive input
+  ---
+  duration_ms: 0.295125
+  type: 'test'
+  ...
+# Subtest: clock: source SVG and all supported minute diagrams are valid XML and same truth
+ok 467 - clock: source SVG and all supported minute diagrams are valid XML and same truth
+  ---
+  duration_ms: 104.090375
+  type: 'test'
+  ...
+# Subtest: clock: source explicitly distinguishes model speed, optional support and actual Finnish learning limits
+ok 468 - clock: source explicitly distinguishes model speed, optional support and actual Finnish learning limits
+  ---
+  duration_ms: 0.790584
+  type: 'test'
+  ...
+# Subtest: clock production sibling-host regression: resolves own content root, usable model and full cleanup
+ok 469 - clock production sibling-host regression: resolves own content root, usable model and full cleanup
+  ---
+  duration_ms: 0.768166
+  type: 'test'
+  ...
+# Subtest: clock current visible case regression: input/change and no-event check read fresh premise
+ok 470 - clock current visible case regression: input/change and no-event check read fresh premise
+  ---
+  duration_ms: 0.281667
+  type: 'test'
+  ...
+# Subtest: clock ownership regression: a second mount disposes first handlers and its interval
+ok 471 - clock ownership regression: a second mount disposes first handlers and its interval
+  ---
+  duration_ms: 0.346333
+  type: 'test'
+  ...
+# Subtest: clock picker regression: blank/unsupported is not zero or uncaught exception, current fields rechecked
+ok 472 - clock picker regression: blank/unsupported is not zero or uncaught exception, current fields rechecked
+  ---
+  duration_ms: 0.327416
+  type: 'test'
+  ...
+# Subtest: clock deterministic timer regression: current start/no-event read,12→1, stop-at60 and paused reset
+ok 473 - clock deterministic timer regression: current start/no-event read,12→1, stop-at60 and paused reset
+  ---
+  duration_ms: 0.955791
+  type: 'test'
+  ...
+# Subtest: own clocks include neither pre-event nor after-event waiting
+ok 474 - own clocks include neither pre-event nor after-event waiting
+  ---
+  duration_ms: 0.747
+  type: 'test'
+  ...
+# Subtest: every supported event/picture uses one deterministic clamped clock
+ok 475 - every supported event/picture uses one deterministic clamped clock
+  ---
+  duration_ms: 2.018375
+  type: 'test'
+  ...
+# Subtest: informal rhythmic counts differ despite one same5s duration
+ok 476 - informal rhythmic counts differ despite one same5s duration
+  ---
+  duration_ms: 0.309458
+  type: 'test'
+  ...
+# Subtest: strict case/time/index/response boundary; no coercion to accepted truth
+ok 477 - strict case/time/index/response boundary; no coercion to accepted truth
+  ---
+  duration_ms: 1.293333
+  type: 'test'
+  ...
+# Subtest: source metadata fidelity and unchanged original SVG/raster assets
+ok 478 - source metadata fidelity and unchanged original SVG/raster assets
+  ---
+  duration_ms: 0.574
+  type: 'test'
+  ...
+# Subtest: entry pilot has local optional section links and a declared actually loaded stylesheet
+ok 479 - entry pilot has local optional section links and a declared actually loaded stylesheet
+  ---
+  duration_ms: 0.994375
+  type: 'test'
+  ...
+# Subtest: exactauthoritativeLite/canonical anddeclaredassets; reviewmetadata canbeappended
+ok 480 - exactauthoritativeLite/canonical anddeclaredassets; reviewmetadata canbeappended
+  ---
+  duration_ms: 8.528792
+  type: 'test'
+  ...
+# Subtest: strict exactrational parser/format, samevaluepadding andnearbywrong
+ok 481 - strict exactrational parser/format, samevaluepadding andnearbywrong
+  ---
+  duration_ms: 0.830791
+  type: 'test'
+  ...
+# Subtest: threefamiliesall49pairs physicalquantityoracle andinverse, no hour60/area/dimensionfallback
+ok 482 - threefamiliesall49pairs physicalquantityoracle andinverse, no hour60/area/dimensionfallback
+  ---
+  duration_ms: 5.685375
+  type: 'test'
+  ...
+# Subtest: elevencontexts constructnumericquantity and distinctunitordering, validalternatives
+ok 483 - elevencontexts constructnumericquantity and distinctunitordering, validalternatives
+  ---
+  duration_ms: 0.518833
+  type: 'test'
+  ...
+# Subtest: everymodelphase preservesquantity andsevendecimalplaces; staticframesactualphase
+ok 484 - everymodelphase preservesquantity andsevendecimalplaces; staticframesactualphase
+  ---
+  duration_ms: 59.529958
+  type: 'test'
+  ...
+# Subtest: Carver sparseAPI regression: exact dense ownindices only, no holes/extras/symbols
+ok 485 - Carver sparseAPI regression: exact dense ownindices only, no holes/extras/symbols
+  ---
+  duration_ms: 0.198625
+  type: 'test'
+  ...
+# Subtest: independent standard unit factors and exact integral roundtrips
+ok 486 - independent standard unit factors and exact integral roundtrips
+  ---
+  duration_ms: 1.578459
+  type: 'test'
+  ...
+# Subtest: reverse grouping preserves duration, including zero and boundary remainders
+ok 487 - reverse grouping preserves duration, including zero and boundary remainders
+  ---
+  duration_ms: 2.00575
+  type: 'test'
+  ...
+# Subtest: clock and its hands share same continuous minute truth and stop boundary
+ok 488 - clock and its hands share same continuous minute truth and stop boundary
+  ---
+  duration_ms: 1.854292
+  type: 'test'
+  ...
+# Subtest: practice accepts real equalities and distinguishes ungrouped from unequal
+ok 489 - practice accepts real equalities and distinguishes ungrouped from unequal
+  ---
+  duration_ms: 0.421875
+  type: 'test'
+  ...
+# Subtest: frozen canonical role/prerequisites and source scope remain explicit
+ok 490 - frozen canonical role/prerequisites and source scope remain explicit
+  ---
+  duration_ms: 0.532166
+  type: 'test'
+  ...
+# Subtest: every subset is checked against the current question, not against all numbers
+ok 491 - every subset is checked against the current question, not against all numbers
+  ---
+  duration_ms: 0.831792
+  type: 'test'
+  ...
+# Subtest: the same fact changes relevance with the question; corrections are reversible
+ok 492 - the same fact changes relevance with the question; corrections are reversible
+  ---
+  duration_ms: 0.59
+  type: 'test'
+  ...
+# Subtest: unknown information is not silently accepted as a relevant observation
+ok 493 - unknown information is not silently accepted as a relevant observation
+  ---
+  duration_ms: 1.049292
+  type: 'test'
+  ...
+# Subtest: sparse fact selections never count as a complete observation
+ok 494 - sparse fact selections never count as a complete observation
+  ---
+  duration_ms: 0.135417
+  type: 'test'
+  ...
+# Subtest: every supported time conserves water, scale, fixed height and inverse fill/drain
+ok 495 - every supported time conserves water, scale, fixed height and inverse fill/drain
+  ---
+  duration_ms: 1.002958
+  type: 'test'
+  ...
+# Subtest: decreasing is still dependent, fixed container is not water level
+ok 496 - decreasing is still dependent, fixed container is not water level
+  ---
+  duration_ms: 0.280208
+  type: 'test'
+  ...
+# Subtest: source/static cases and canonical groups agree
+ok 497 - source/static cases and canonical groups agree
+  ---
+  duration_ms: 4745.123791
+  type: 'test'
+  ...
+# Subtest: each supplied substitution and intermediate quantity has independent arithmetic meaning
+ok 498 - each supplied substitution and intermediate quantity has independent arithmetic meaning
+  ---
+  duration_ms: 0.721042
+  type: 'test'
+  ...
+# Subtest: dense two-stage answers required; no sparse or extra stage can pass
+ok 499 - dense two-stage answers required; no sparse or extra stage can pass
+  ---
+  duration_ms: 0.120416
+  type: 'test'
+  ...
+# Subtest: case keys and values reject coercion, inherited property names and unsafe numerals
+ok 500 - case keys and values reject coercion, inherited property names and unsafe numerals
+  ---
+  duration_ms: 0.274417
+  type: 'test'
+  ...
+# Subtest: visual demo total conserves group members; all four steps use the same supplied value
+ok 501 - visual demo total conserves group members; all four steps use the same supplied value
+  ---
+  duration_ms: 0.859542
+  type: 'test'
+  ...
+# Subtest: constructive alternatives preserve each distinct situation, including order and shared-side transfer
+ok 502 - constructive alternatives preserve each distinct situation, including order and shared-side transfer
+  ---
+  duration_ms: 2.163375
+  type: 'test'
+  ...
+# Subtest: exact affine coefficients across generated rearrangements; no sampled-value false success
+ok 503 - exact affine coefficients across generated rearrangements; no sampled-value false success
+  ---
+  duration_ms: 3.265125
+  type: 'test'
+  ...
+# Subtest: unsupported syntax/domain/boxed keys never accepted, parser is bounded and fails closed
+ok 504 - unsupported syntax/domain/boxed keys never accepted, parser is bounded and fails closed
+  ---
+  duration_ms: 1.116917
+  type: 'test'
+  ...
+# Subtest: model totals match finite physical meaning and no invalid model/key/typed values are drawn
+ok 505 - model totals match finite physical meaning and no invalid model/key/typed values are drawn
+  ---
+  duration_ms: 0.810375
+  type: 'test'
+  ...
+# Subtest: division exact independent inverse identity across signed, zero and improper fractions
+ok 506 - division exact independent inverse identity across signed, zero and improper fractions
+  ---
+  duration_ms: 25.011667
+  type: 'test'
+  ...
+# Subtest: every declared fresh task accepts equivalent signs/unreduced/zero padding, rejects distinct values
+ok 507 - every declared fresh task accepts equivalent signs/unreduced/zero padding, rejects distinct values
+  ---
+  duration_ms: 0.933
+  type: 'test'
+  ...
+# Subtest: unsupported descriptor/domain/input declarations reject rather than replacing semantic defaults
+ok 508 - unsupported descriptor/domain/input declarations reject rather than replacing semantic defaults
+  ---
+  duration_ms: 0.495834
+  type: 'test'
+  ...
+# Subtest: all declared model phases have exact full/remainder meaning and valid SVG; static initial and worked figures agree
+ok 509 - all declared model phases have exact full/remainder meaning and valid SVG; static initial and worked figures agree
+  ---
+  duration_ms: 44.823125
+  type: 'test'
+  ...
+# Subtest: canonical objective/AND ancestry/assistance/human/noJS boundary and real Lite reading remain explicit
+ok 510 - canonical objective/AND ancestry/assistance/human/noJS boundary and real Lite reading remain explicit
+  ---
+  duration_ms: 0.783792
+  type: 'test'
+  ...
+# Subtest: fraction-capable answer control requests text rather than decimal-only keyboard
+ok 511 - fraction-capable answer control requests text rather than decimal-only keyboard
+  ---
+  duration_ms: 0.284583
+  type: 'test'
+  ...
+# Subtest: Lite reconciliation stays attached to actual fraction-division families, not proportion prose
+ok 512 - Lite reconciliation stays attached to actual fraction-division families, not proportion prose
+  ---
+  duration_ms: 0.145667
+  type: 'test'
+  ...
+# Subtest: fraction multiplication: independent exact cross-products and sign/zero/one/improper boundaries
+ok 513 - fraction multiplication: independent exact cross-products and sign/zero/one/improper boundaries
+  ---
+  duration_ms: 21.498625
+  type: 'test'
+  ...
+# Subtest: fraction multiplication: every same-valued unreduced/signed-denominator/decimal result accepted, wrong denominator sums not
+ok 514 - fraction multiplication: every same-valued unreduced/signed-denominator/decimal result accepted, wrong denominator sums not
+  ---
+  duration_ms: 2.477875
+  type: 'test'
+  ...
+# Subtest: fraction multiplication: exact drawable whole/part/overlap cells, valid XML and static representation identity
+ok 515 - fraction multiplication: exact drawable whole/part/overlap cells, valid XML and static representation identity
+  ---
+  duration_ms: 44.647709
+  type: 'test'
+  ...
+# Subtest: fraction multiplication: primitive bounded parser and declaration, no eval/coercion/zero denominator or silent model substitution
+ok 516 - fraction multiplication: primitive bounded parser and declaration, no eval/coercion/zero denominator or silent model substitution
+  ---
+  duration_ms: 0.504542
+  type: 'test'
+  ...
+# Subtest: fraction multiplication: canonical role and explicit scope/assistance/human limits
+ok 517 - fraction multiplication: canonical role and explicit scope/assistance/human limits
+  ---
+  duration_ms: 0.76275
+  type: 'test'
+  ...
+# Subtest: fraction area rejects unsupported declared factors instead of substituting a proper square
+ok 518 - fraction area rejects unsupported declared factors instead of substituting a proper square
+  ---
+  duration_ms: 0.230792
+  type: 'test'
+  ...
+# Subtest: fraction exact equivalent input regression: arbitrary harmless zero padding and unreduced value are preserved
+ok 519 - fraction exact equivalent input regression: arbitrary harmless zero padding and unreduced value are preserved
+  ---
+  duration_ms: 0.157083
+  type: 'test'
+  ...
+# Subtest: noJS initial area phase does not silently display a solved future phase
+ok 520 - noJS initial area phase does not silently display a solved future phase
+  ---
+  duration_ms: 0.266416
+  type: 'test'
+  ...
+# Subtest: own package matches atomic canonical node and isolated source contract
+ok 521 - own package matches atomic canonical node and isolated source contract
+  ---
+  duration_ms: 76.122208
+  type: 'test'
+  ...
+# Subtest: every finite arrow subset: exactly 27 functions including constants and shared outputs
+ok 522 - every finite arrow subset: exactly 27 functions including constants and shared outputs
+  ---
+  duration_ms: 3.915416
+  type: 'test'
+  ...
+# Subtest: every required record and tuple index is own, dense and in the stated domain
+ok 523 - every required record and tuple index is own, dense and in the stated domain
+  ---
+  duration_ms: 0.206083
+  type: 'test'
+  ...
+# Subtest: editable arrows preserve originals, deduplicate observations and reverse their own changes
+ok 524 - editable arrows preserve originals, deduplicate observations and reverse their own changes
+  ---
+  duration_ms: 0.53825
+  type: 'test'
+  ...
+# Subtest: specified models, finite domains and constant many-to-one mapping
+ok 525 - specified models, finite domains and constant many-to-one mapping
+  ---
+  duration_ms: 0.678416
+  type: 'test'
+  ...
+# Subtest: entire paired table, every creation order, repeated outputs accepted
+ok 526 - entire paired table, every creation order, repeated outputs accepted
+  ---
+  duration_ms: 0.280792
+  type: 'test'
+  ...
+# Subtest: all rows and both tuple entries dense: missing/extra/malformed/unsupported fail closed
+ok 527 - all rows and both tuple entries dense: missing/extra/malformed/unsupported fail closed
+  ---
+  duration_ms: 0.928291
+  type: 'test'
+  ...
+# Subtest: wrong pairs have actionable row-specific feedback; numbers do not coerce blanks
+ok 528 - wrong pairs have actionable row-specific feedback; numbers do not coerce blanks
+  ---
+  duration_ms: 0.302667
+  type: 'test'
+  ...
+# Subtest: all bounded candidate constructions are checked on every supplied pair
+ok 529 - all bounded candidate constructions are checked on every supplied pair
+  ---
+  duration_ms: 0.777083
+  type: 'test'
+  ...
+# Subtest: finite agreement does not establish uniqueness among unrestricted rules
+ok 530 - finite agreement does not establish uniqueness among unrestricted rules
+  ---
+  duration_ms: 0.122333
+  type: 'test'
+  ...
+# Subtest: unsupported rule inputs cannot pass vacuously or produce NaN feedback
+ok 531 - unsupported rule inputs cannot pass vacuously or produce NaN feedback
+  ---
+  duration_ms: 1.080917
+  type: 'test'
+  ...
+# Subtest: adjacent squares deduplicate their shared edge and add exactly three new edges
+ok 532 - adjacent squares deduplicate their shared edge and add exactly three new edges
+  ---
+  duration_ms: 3.560458
+  type: 'test'
+  ...
+# Subtest: equivalent structural formulas accepted; a single coincidental match does not suffice
+ok 533 - equivalent structural formulas accepted; a single coincidental match does not suffice
+  ---
+  duration_ms: 0.927041
+  type: 'test'
+  ...
+# Subtest: custom observation feedback does not invent a fixed number of pairs
+ok 534 - custom observation feedback does not invent a fixed number of pairs
+  ---
+  duration_ms: 0.122958
+  type: 'test'
+  ...
+# Subtest: ordered ratio equality matches independent rational comparison across full bounded sample including 1:1 additive exception
+ok 535 - ordered ratio equality matches independent rational comparison across full bounded sample including 1:1 additive exception
+  ---
+  duration_ms: 34.351791
+  type: 'test'
+  ...
+# Subtest: one-hole result is derived from declared ratio and genuinely satisfies crossproduct; every equivalent answer accepted
+ok 536 - one-hole result is derived from declared ratio and genuinely satisfies crossproduct; every equivalent answer accepted
+  ---
+  duration_ms: 1.534541
+  type: 'test'
+  ...
+# Subtest: model decisions genuinely follow selected current ratio, not the shown label or last example
+ok 537 - model decisions genuinely follow selected current ratio, not the shown label or last example
+  ---
+  duration_ms: 0.226416
+  type: 'test'
+  ...
+# Subtest: unsupported ratio descriptors and answer formats fail explicitly, no zero-denominator or object/string coercion
+ok 538 - unsupported ratio descriptors and answer formats fail explicitly, no zero-denominator or object/string coercion
+  ---
+  duration_ms: 0.469375
+  type: 'test'
+  ...
+# Subtest: shared cup scale and explicitly solved/static phases agree, XML valid for all models
+ok 539 - shared cup scale and explicitly solved/static phases agree, XML valid for all models
+  ---
+  duration_ms: 48.657792
+  type: 'test'
+  ...
+# Subtest: canonical narrow concept is not silently general algebra, 1:1 exception and part/whole distinction taught honestly
+ok 540 - canonical narrow concept is not silently general algebra, 1:1 exception and part/whole distinction taught honestly
+  ---
+  duration_ms: 0.465083
+  type: 'test'
+  ...
+# Subtest: fraction-capable answer control requests text rather than decimal-only keyboard
+ok 541 - fraction-capable answer control requests text rather than decimal-only keyboard
+  ---
+  duration_ms: 0.320791
+  type: 'test'
+  ...
+# Subtest: current model premise retires judgement on silent selection+Step or unsupported+Play, while unrelated practice evidence remains
+ok 542 - current model premise retires judgement on silent selection+Step or unsupported+Play, while unrelated practice evidence remains
+  ---
+  duration_ms: 0.8605
+  type: 'test'
+  ...
+# Subtest: Lite reconciliation stays attached to actual proportion families, not fraction-division prose
+ok 543 - Lite reconciliation stays attached to actual proportion families, not fraction-division prose
+  ---
+  duration_ms: 0.17625
+  type: 'test'
+  ...
+# Subtest: bounded rational reciprocal invariant and zero exception, positive/negative/whole/equal entries
+ok 544 - bounded rational reciprocal invariant and zero exception, positive/negative/whole/equal entries
+  ---
+  duration_ms: 18.680917
+  type: 'test'
+  ...
+# Subtest: all finite candidate fractions use exact product-one truth and accept unsimplified/sign alternatives
+ok 545 - all finite candidate fractions use exact product-one truth and accept unsimplified/sign alternatives
+  ---
+  duration_ms: 36.6545
+  type: 'test'
+  ...
+# Subtest: nonexistence is checked only for zero and numeric answers/unsupported modes cannot disguise it
+ok 546 - nonexistence is checked only for zero and numeric answers/unsupported modes cannot disguise it
+  ---
+  duration_ms: 0.168875
+  type: 'test'
+  ...
+# Subtest: integer fields and strict string cases reject sparse/extra/coercible/nonfinite inputs
+ok 547 - integer fields and strict string cases reject sparse/extra/coercible/nonfinite inputs
+  ---
+  duration_ms: 0.615916
+  type: 'test'
+  ...
+# Subtest: strip construction preserves unit length and identifies remainder in whole and piece units
+ok 548 - strip construction preserves unit length and identifies remainder in whole and piece units
+  ---
+  duration_ms: 0.914583
+  type: 'test'
+  ...
+# Subtest: all two-plan alternatives and both constrained orders integrate both roles
+ok 549 - all two-plan alternatives and both constrained orders integrate both roles
+  ---
+  duration_ms: 2.057416
+  type: 'test'
+  ...
+# Subtest: same n means same group size; zero is valid and domain is a contextual restriction
+ok 550 - same n means same group size; zero is valid and domain is a contextual restriction
+  ---
+  duration_ms: 0.234333
+  type: 'test'
+  ...
+# Subtest: sparse plans and tuples, duplicates, extras, coercions and malformed inputs rejected
+ok 551 - sparse plans and tuples, duplicates, extras, coercions and malformed inputs rejected
+  ---
+  duration_ms: 0.216791
+  type: 'test'
+  ...
+# Subtest: new target or proposal rechecks truth; parser does not coerce empty or noninteger answers
+ok 552 - new target or proposal rechecks truth; parser does not coerce empty or noninteger answers
+  ---
+  duration_ms: 0.167875
+  type: 'test'
+  ...
+# Subtest: own package matches atomic canonical node and isolated source contract
+ok 553 - own package matches atomic canonical node and isolated source contract
+  ---
+  duration_ms: 80.256666
+  type: 'test'
+  ...
+# Subtest: both fixed conditions accept exactly the intended count across all candidates
+ok 554 - both fixed conditions accept exactly the intended count across all candidates
+  ---
+  duration_ms: 0.373959
+  type: 'test'
+  ...
+# Subtest: blank and malformed candidates never turn into a zero or a successful number
+ok 555 - blank and malformed candidates never turn into a zero or a successful number
+  ---
+  duration_ms: 0.2095
+  type: 'test'
+  ...
+# Subtest: own package matches atomic canonical node and isolated source contract
+ok 556 - own package matches atomic canonical node and isolated source contract
+  ---
+  duration_ms: 72.76775
+  type: 'test'
+  ...
+# Subtest: all allowed counts and every prediction value have exact model truth
+ok 557 - all allowed counts and every prediction value have exact model truth
+  ---
+  duration_ms: 0.926416
+  type: 'test'
+  ...
+# Subtest: arbitrary jumps and decreases use the complete change, not an unconditional +2
+ok 558 - arbitrary jumps and decreases use the complete change, not an unconditional +2
+  ---
+  duration_ms: 0.404375
+  type: 'test'
+  ...
+# Subtest: numeric domains and displayed model quantities stay finite and explicit
+ok 559 - numeric domains and displayed model quantities stay finite and explicit
+  ---
+  duration_ms: 0.614208
+  type: 'test'
+  ...
+# Subtest: all valid row orders and physical column transposes accepted, stop repeats and zero retained
+ok 560 - all valid row orders and physical column transposes accepted, stop repeats and zero retained
+  ---
+  duration_ms: 23.424959
+  type: 'test'
+  ...
+# Subtest: strict headings, primitives, dense unique rows, missing and unsupported bounds
+ok 561 - strict headings, primitives, dense unique rows, missing and unsupported bounds
+  ---
+  duration_ms: 0.653417
+  type: 'test'
+  ...
+# Subtest: one coherent model clock, no future samples, stationary interval and exact XML images
+ok 562 - one coherent model clock, no future samples, stationary interval and exact XML images
+  ---
+  duration_ms: 5.605
+  type: 'test'
+  ...
+# Subtest: own-only contract, exact graph/Lite hashes and external SVG XML independently of HTML
+ok 563 - own-only contract, exact graph/Lite hashes and external SVG XML independently of HTML
+  ---
+  duration_ms: 173.007459
+  type: 'test'
+  ...
+# Subtest: distance/time: independent piecewise path totals, own interval clock and post-finish wait
+ok 564 - distance/time: independent piecewise path totals, own interval clock and post-finish wait
+  ---
+  duration_ms: 2.891375
+  type: 'test'
+  ...
+# Subtest: distance/time: same physical trajectory drives exact SVG position and final static example
+ok 565 - distance/time: same physical trajectory drives exact SVG position and final static example
+  ---
+  duration_ms: 60.743791
+  type: 'test'
+  ...
+# Subtest: distance/time: exact new reports, equivalent decimal forms, unit swaps and end-readout traps
+ok 566 - distance/time: exact new reports, equivalent decimal forms, unit swaps and end-readout traps
+  ---
+  duration_ms: 0.576166
+  type: 'test'
+  ...
+# Subtest: distance/time: strict noncoercive bounds and immutable declared cases
+ok 567 - distance/time: strict noncoercive bounds and immutable declared cases
+  ---
+  duration_ms: 0.462875
+  type: 'test'
+  ...
+# Subtest: distance/time: source preserves scope, canonical prerequisites and no independent mastery claim
+ok 568 - distance/time: source preserves scope, canonical prerequisites and no independent mastery claim
+  ---
+  duration_ms: 1.00475
+  type: 'test'
+  ...
+# Subtest: measured equivalent zero padding regression cannot invent correctness by Number rounding
+ok 569 - measured equivalent zero padding regression cannot invent correctness by Number rounding
+  ---
+  duration_ms: 0.113834
+  type: 'test'
+  ...
+# Subtest: noJS initial and solved static frames derive from compatible deterministic domain states
+ok 570 - noJS initial and solved static frames derive from compatible deterministic domain states
+  ---
+  duration_ms: 0.54675
+  type: 'test'
+  ...
+# Subtest: actual construction accepts each point order, zero/repeated distances and either supported scale, not one correct subset
+ok 571 - actual construction accepts each point order, zero/repeated distances and either supported scale, not one correct subset
+  ---
+  duration_ms: 30.978542
+  type: 'test'
+  ...
+# Subtest: all value/pixel mappings use the chosen constant numeric scale and fit labelled plot bounds
+ok 572 - all value/pixel mappings use the chosen constant numeric scale and fit labelled plot bounds
+  ---
+  duration_ms: 0.931333
+  type: 'test'
+  ...
+# Subtest: drawing guide uses exact same pairs, safe XML and truthful manual phases rather than physical time
+ok 573 - drawing guide uses exact same pairs, safe XML and truthful manual phases rather than physical time
+  ---
+  duration_ms: 99.384667
+  type: 'test'
+  ...
+# Subtest: supported selectors, finite bounds and exact dense pairs reject malformed/extra/sparse inputs
+ok 574 - supported selectors, finite bounds and exact dense pairs reject malformed/extra/sparse inputs
+  ---
+  duration_ms: 0.903792
+  type: 'test'
+  ...
+# Subtest: declared SVGs are exact source models, valid external XML and scoped CSS actually linked
+ok 575 - declared SVGs are exact source models, valid external XML and scoped CSS actually linked
+  ---
+  duration_ms: 5.485917
+  type: 'test'
+  ...
+# Subtest: full frozen role/AND/strong and read-source hashes survive actual own-only ingestion
+ok 576 - full frozen role/AND/strong and read-source hashes survive actual own-only ingestion
+  ---
+  duration_ms: 79.126125
+  type: 'test'
+  ...
+# Subtest: whole-event paired report requires both meanings against the selected reference; alternate row order accepted
+ok 577 - whole-event paired report requires both meanings against the selected reference; alternate row order accepted
+  ---
+  duration_ms: 2.267167
+  type: 'test'
+  ...
+# Subtest: one world/time under both translating views: reference anchored, all relative positions and sizes conserved
+ok 578 - one world/time under both translating views: reference anchored, all relative positions and sizes conserved
+  ---
+  duration_ms: 11.993167
+  type: 'test'
+  ...
+# Subtest: the analytic models have steady conditions; elapsed model clock is bounded and independent of reference/support
+ok 579 - the analytic models have steady conditions; elapsed model clock is bounded and independent of reference/support
+  ---
+  duration_ms: 0.765333
+  type: 'test'
+  ...
+# Subtest: strict primitive selectors/time and dense exact supported IDs cannot award malformed answers
+ok 580 - strict primitive selectors/time and dense exact supported IDs cannot award malformed answers
+  ---
+  duration_ms: 0.822041
+  type: 'test'
+  ...
+# Subtest: external and every generated subject SVG are actual valid XML, not just accepted inline HTML
+ok 581 - external and every generated subject SVG are actual valid XML, not just accepted inline HTML
+  ---
+  duration_ms: 162.363
+  type: 'test'
+  ...
+# Subtest: exact canonical/Lite/local-asset bindings and own-only isolated loader/composer contract
+ok 582 - exact canonical/Lite/local-asset bindings and own-only isolated loader/composer contract
+  ---
+  duration_ms: 82.139583
+  type: 'test'
+  ...
+# Subtest: whole decimal and every equivalent bounded decimal spelling are preserved exactly
+ok 583 - whole decimal and every equivalent bounded decimal spelling are preserved exactly
+  ---
+  duration_ms: 2.017958
+  type: 'test'
+  ...
+# Subtest: decimal parsing roundtrips independent integer rationals and rejects unsupported forms honestly
+ok 584 - decimal parsing roundtrips independent integer rationals and rejects unsupported forms honestly
+  ---
+  duration_ms: 3.238084
+  type: 'test'
+  ...
+# Subtest: classification requires all five actual pieces, accepts any order, no sparse/duplicate/extra evidence
+ok 585 - classification requires all five actual pieces, accepts any order, no sparse/duplicate/extra evidence
+  ---
+  duration_ms: 0.451208
+  type: 'test'
+  ...
+# Subtest: static and progressive external SVG is valid XML and same exact authored record
+ok 586 - static and progressive external SVG is valid XML and same exact authored record
+  ---
+  duration_ms: 205.102083
+  type: 'test'
+  ...
+# Subtest: canonical atomic boundary and source-owned metadata retain required vs strong
+ok 587 - canonical atomic boundary and source-owned metadata retain required vs strong
+  ---
+  duration_ms: 0.425792
+  type: 'test'
+  ...
+# Subtest: joint complete record accepts exactly coherent triples, not one correct pair or an arbitrary kind-fit unit
+ok 588 - joint complete record accepts exactly coherent triples, not one correct pair or an arbitrary kind-fit unit
+  ---
+  duration_ms: 6.394459
+  type: 'test'
+  ...
+# Subtest: full decimals, leading/trailing zeros, comma/point and signed zero preserve exact numerical meaning
+ok 589 - full decimals, leading/trailing zeros, comma/point and signed zero preserve exact numerical meaning
+  ---
+  duration_ms: 1.8095
+  type: 'test'
+  ...
+# Subtest: strict source keys, exact fields and supported lexical forms do not award malformed responses
+ok 590 - strict source keys, exact fields and supported lexical forms do not award malformed responses
+  ---
+  duration_ms: 0.432416
+  type: 'test'
+  ...
+# Subtest: original model geometry keeps2.5metres at the right ruler endpoint and three parts separated
+ok 591 - original model geometry keeps2.5metres at the right ruler endpoint and three parts separated
+  ---
+  duration_ms: 0.242625
+  type: 'test'
+  ...
+# Subtest: external XML and exact source asset generation include quoted attributes and actual body CSS link
+ok 592 - external XML and exact source asset generation include quoted attributes and actual body CSS link
+  ---
+  duration_ms: 9.919
+  type: 'test'
+  ...
+# Subtest: exact canonical integration/AND and source assets survive actual own-only ingestion
+ok 593 - exact canonical integration/AND and source assets survive actual own-only ingestion
+  ---
+  duration_ms: 73.258292
+  type: 'test'
+  ...
+# Subtest: property is distinguished from instrument, unit, value and an identifier
+ok 594 - property is distinguished from instrument, unit, value and an identifier
+  ---
+  duration_ms: 0.725208
+  type: 'test'
+  ...
+# Subtest: original ideal ruler geometry respects every model length and cm interval
+ok 595 - original ideal ruler geometry respects every model length and cm interval
+  ---
+  duration_ms: 0.944
+  type: 'test'
+  ...
+# Subtest: selectors and bounded model quantities reject coercion/nonfinite/unsupported values
+ok 596 - selectors and bounded model quantities reject coercion/nonfinite/unsupported values
+  ---
+  duration_ms: 0.480334
+  type: 'test'
+  ...
+# Subtest: changing a model value need not change the measured property
+ok 597 - changing a model value need not change the measured property
+  ---
+  duration_ms: 0.14675
+  type: 'test'
+  ...
+# Subtest: exported and declared external SVGs parse as XML; static ruler is the exact generator output
+ok 598 - exported and declared external SVGs parse as XML; static ruler is the exact generator output
+  ---
+  duration_ms: 37.470167
+  type: 'test'
+  ...
+# PASS speed-concept deterministic truth, stopping, elapsed time and comparisons
+# Subtest: lesson-network/packages/PHY79-SPEED-CONCEPT/tests.mjs
+ok 129 - lesson-network/packages/PHY79-SPEED-CONCEPT/tests.mjs
+  ---
+  duration_ms: 38.510458
+  type: 'test'
+  ...
+# Subtest: same number vs same length are different deterministic contracts
+ok 600 - same number vs same length are different deterministic contracts
+  ---
+  duration_ms: 0.87525
+  type: 'test'
+  ...
+# Subtest: all offered valid dimensional alternatives accepted, exact-source extraction stays exact
+ok 601 - all offered valid dimensional alternatives accepted, exact-source extraction stays exact
+  ---
+  duration_ms: 1.719708
+  type: 'test'
+  ...
+# Subtest: source-bound records cannot silently swap unit while retaining source numerical value
+ok 602 - source-bound records cannot silently swap unit while retaining source numerical value
+  ---
+  duration_ms: 0.34175
+  type: 'test'
+  ...
+# Subtest: external SVG preserves exact ratio and reference widths in both modes, no HTML-only boolean attributes
+ok 603 - external SVG preserves exact ratio and reference widths in both modes, no HTML-only boolean attributes
+  ---
+  duration_ms: 177.17375
+  type: 'test'
+  ...
+# Subtest: canonical role/prerequisites and source design distinguish unit semantics from conversion mastery
+ok 604 - canonical role/prerequisites and source design distinguish unit semantics from conversion mastery
+  ---
+  duration_ms: 0.7565
+  type: 'test'
+  ...
+# Subtest: five equal metre partitions have well-formed vertical path geometry
+ok 605 - five equal metre partitions have well-formed vertical path geometry
+  ---
+  duration_ms: 0.190666
+  type: 'test'
+  ...
+# Subtest: unit conversion: independent exact SI reference factors and finite rational cross-products
+ok 606 - unit conversion: independent exact SI reference factors and finite rational cross-products
+  ---
+  duration_ms: 2.712875
+  type: 'test'
+  ...
+# Subtest: unit conversion: supported exercises exact boundary, same quantity honest alternate form and incompatible units
+ok 607 - unit conversion: supported exercises exact boundary, same quantity honest alternate form and incompatible units
+  ---
+  duration_ms: 0.382292
+  type: 'test'
+  ...
+# Subtest: unit conversion: strict quantities, no blank zero/coercion, unsupported units fail explicitly
+ok 608 - unit conversion: strict quantities, no blank zero/coercion, unsupported units fail explicitly
+  ---
+  duration_ms: 0.204208
+  type: 'test'
+  ...
+# Subtest: unit conversion: visual same-quantity labels derived from exact conversion, valid XML, static source identity
+ok 609 - unit conversion: visual same-quantity labels derived from exact conversion, valid XML, static source identity
+  ---
+  duration_ms: 49.852292
+  type: 'test'
+  ...
+# Subtest: unit conversion: canonical scope and distinct supplied art, human still pending
+ok 610 - unit conversion: canonical scope and distinct supplied art, human still pending
+  ---
+  duration_ms: 0.975208
+  type: 'test'
+  ...
+# Subtest: unit equivalent zero padding regression preserves exact value without coercion/precision loss
+ok 611 - unit equivalent zero padding regression preserves exact value without coercion/precision loss
+  ---
+  duration_ms: 0.142916
+  type: 'test'
+  ...
+# Subtest: noJS model fallback uses current initial quantity, solved alternative stays explicit
+ok 612 - noJS model fallback uses current initial quantity, solved alternative stays explicit
+  ---
+  duration_ms: 0.261875
+  type: 'test'
+  ...
+# Subtest: construction retains each day/value/unit, allows row permutation and repeated values
+ok 613 - construction retains each day/value/unit, allows row permutation and repeated values
+  ---
+  duration_ms: 13.208875
+  type: 'test'
+  ...
+# Subtest: observed zero, unmeasured source and unanswered response remain distinct
+ok 614 - observed zero, unmeasured source and unanswered response remain distinct
+  ---
+  duration_ms: 0.135084
+  type: 'test'
+  ...
+# Subtest: exact record IDs, dense arrays, supported units and finite integer fields
+ok 615 - exact record IDs, dense arrays, supported units and finite integer fields
+  ---
+  duration_ms: 0.525167
+  type: 'test'
+  ...
+# Subtest: source diagrams encode actual supplied counts, correct units and explicit missing records
+ok 616 - source diagrams encode actual supplied counts, correct units and explicit missing records
+  ---
+  duration_ms: 0.215625
+  type: 'test'
+  ...
+# Subtest: scale divisions encode interval values, not number of tick lines
+ok 617 - scale divisions encode interval values, not number of tick lines
+  ---
+  duration_ms: 2.520708
+  type: 'test'
+  ...
+# Subtest: moving the ruler changes readings while preserving measured geometry
+ok 618 - moving the ruler changes readings while preserving measured geometry
+  ---
+  duration_ms: 0.228917
+  type: 'test'
+  ...
+# Subtest: length checks both equivalent units and specifically the stated zero-start procedure
+ok 619 - length checks both equivalent units and specifically the stated zero-start procedure
+  ---
+  duration_ms: 0.344041
+  type: 'test'
+  ...
+# Subtest: thermometer step is2 degrees, with quantity/unit and blank checks
+ok 620 - thermometer step is2 degrees, with quantity/unit and blank checks
+  ---
+  duration_ms: 0.131541
+  type: 'test'
+  ...
+# Subtest: malformed records, sparse arrays, missing/extra fields and invalid domains never pass
+ok 621 - malformed records, sparse arrays, missing/extra fields and invalid domains never pass
+  ---
+  duration_ms: 0.164875
+  type: 'test'
+  ...
+# Subtest: feedback key covers answer and rule context, not optional visual help
+ok 622 - feedback key covers answer and rule context, not optional visual help
+  ---
+  duration_ms: 0.127208
+  type: 'test'
+  ...
+# Subtest: static and interactive figures use consistent exact coordinates and scale values
+ok 623 - static and interactive figures use consistent exact coordinates and scale values
+  ---
+  duration_ms: 0.931208
+  type: 'test'
+  ...
+# Subtest: visible hole and droplets are observations; agent and temperature remain unknown
+ok 624 - visible hole and droplets are observations; agent and temperature remain unknown
+  ---
+  duration_ms: 0.695167
+  type: 'test'
+  ...
+# Subtest: two-sided exploration keeps the same hole and only adds specified back spot
+ok 625 - two-sided exploration keeps the same hole and only adds specified back spot
+  ---
+  duration_ms: 0.169875
+  type: 'test'
+  ...
+# Subtest: invalid assessment requests do not silently become correct or reveal another item
+ok 626 - invalid assessment requests do not silently become correct or reveal another item
+  ---
+  duration_ms: 0.289666
+  type: 'test'
+  ...
+# Subtest: canonical foundation and explicit physical-evidence limits are retained
+ok 627 - canonical foundation and explicit physical-evidence limits are retained
+  ---
+  duration_ms: 1.4815
+  type: 'test'
+  ...
+# Subtest: construction checks every count, including zero and ties, with alternative row orders
+ok 628 - construction checks every count, including zero and ties, with alternative row orders
+  ---
+  duration_ms: 1.71475
+  type: 'test'
+  ...
+# Subtest: missing/extra/duplicate/sparse/unknown/invalid entries cannot earn success
+ok 629 - missing/extra/duplicate/sparse/unknown/invalid entries cannot earn success
+  ---
+  duration_ms: 0.360167
+  type: 'test'
+  ...
+# Subtest: picture renders the actual answer counts rather than the target counts
+ok 630 - picture renders the actual answer counts rather than the target counts
+  ---
+  duration_ms: 0.350458
+  type: 'test'
+  ...
+# Subtest: static original figure has exactly three and one equal-size leaf markers
+ok 631 - static original figure has exactly three and one equal-size leaf markers
+  ---
+  duration_ms: 0.593875
+  type: 'test'
+  ...
+# Subtest: integration requires source→record fidelity and complete record→presentation assembly
+ok 632 - integration requires source→record fidelity and complete record→presentation assembly
+  ---
+  duration_ms: 0.92525
+  type: 'test'
+  ...
+# Subtest: every supported count combination checked; repeated quantities/zero are legitimate
+ok 633 - every supported count combination checked; repeated quantities/zero are legitimate
+  ---
+  duration_ms: 2.961375
+  type: 'test'
+  ...
+# Subtest: missing/extra/sparse/duplicate/unsupported records and poster rows cannot pass
+ok 634 - missing/extra/sparse/duplicate/unsupported records and poster rows cannot pass
+  ---
+  duration_ms: 0.413333
+  type: 'test'
+  ...
+# Subtest: presentation faithfully displays current notebook even when it is wrong, never hidden correct data
+ok 635 - presentation faithfully displays current notebook even when it is wrong, never hidden correct data
+  ---
+  duration_ms: 1.060458
+  type: 'test'
+  ...
+# Subtest: all supported object choices preserve place bindings; alternate row order is valid
+ok 636 - all supported object choices preserve place bindings; alternate row order is valid
+  ---
+  duration_ms: 1.50025
+  type: 'test'
+  ...
+# Subtest: repair requires actual source correspondence and leaves valid rows intact
+ok 637 - repair requires actual source correspondence and leaves valid rows intact
+  ---
+  duration_ms: 0.140334
+  type: 'test'
+  ...
+# Subtest: empty/extra/sparse/duplicate/unknown/malformed notebooks cannot pass
+ok 638 - empty/extra/sparse/duplicate/unknown/malformed notebooks cannot pass
+  ---
+  duration_ms: 0.311542
+  type: 'test'
+  ...
+# Subtest: visible source gives the same specific place/item information as checker
+ok 639 - visible source gives the same specific place/item information as checker
+  ---
+  duration_ms: 0.215
+  type: 'test'
+  ...
+# Subtest: paper plan follows the actual given instruction, not familiarity with a tool
+ok 640 - paper plan follows the actual given instruction, not familiarity with a tool
+  ---
+  duration_ms: 0.740875
+  type: 'test'
+  ...
+# Subtest: unexpected breakage accepts every order of required protective actions, rejects self-cleaning
+ok 641 - unexpected breakage accepts every order of required protective actions, rejects self-cleaning
+  ---
+  duration_ms: 0.250167
+  type: 'test'
+  ...
+# Subtest: out-of-contract cards fail clearly
+ok 642 - out-of-contract cards fail clearly
+  ---
+  duration_ms: 0.307542
+  type: 'test'
+  ...
+# Subtest: both location and clear view are necessary in every model state
+ok 643 - both location and clear view are necessary in every model state
+  ---
+  duration_ms: 0.749416
+  type: 'test'
+  ...
+# Subtest: focus controls stop at model limits and clear drawings contain the right details
+ok 644 - focus controls stop at model limits and clear drawings contain the right details
+  ---
+  duration_ms: 1.165375
+  type: 'test'
+  ...
+# Subtest: unknown focus/target values cannot be accepted
+ok 645 - unknown focus/target values cannot be accepted
+  ---
+  duration_ms: 0.343791
+  type: 'test'
+  ...
+# Subtest: dynamic paper preserves four dots with uniform spacing and radius magnification
+ok 646 - dynamic paper preserves four dots with uniform spacing and radius magnification
+  ---
+  duration_ms: 1.082708
+  type: 'test'
+  ...
+# Subtest: dynamic fabric preserves exactly two horizontal and two vertical threads, including widths and colours
+ok 647 - dynamic fabric preserves exactly two horizontal and two vertical threads, including widths and colours
+  ---
+  duration_ms: 0.324583
+  type: 'test'
+  ...
+# Subtest: static paper SVG preserves the same four dots with the same spacing/radius scale
+ok 648 - static paper SVG preserves the same four dots with the same spacing/radius scale
+  ---
+  duration_ms: 0.318959
+  type: 'test'
+  ...
+# Subtest: a later successful command cannot conceal failed test exit, missing totals or skipped assertions
+ok 649 - a later successful command cannot conceal failed test exit, missing totals or skipped assertions
+  ---
+  duration_ms: 1.043791
+  type: 'test'
+  ...
+# Subtest: missing, forged and traversal validation receipts fail closed
+ok 650 - missing, forged and traversal validation receipts fail closed
+  ---
+  duration_ms: 0.465291
+  type: 'test'
+  ...
+# Subtest: a passing receipt becomes unusable after package, shared delivery/compiler, policy or log changes
+ok 651 - a passing receipt becomes unusable after package, shared delivery/compiler, policy or log changes
+  ---
+  duration_ms: 51.739791
+  type: 'test'
+  ...
+# Subtest: lifecycle fixture refuses symlink and hard-link escapes before any writes
+ok 652 - lifecycle fixture refuses symlink and hard-link escapes before any writes
+  ---
+  duration_ms: 5.44625
+  type: 'test'
+  ...
+1..652
+# tests 652
+# suites 0
+# pass 652
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7982.297708

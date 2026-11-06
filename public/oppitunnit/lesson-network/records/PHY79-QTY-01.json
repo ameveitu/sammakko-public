@@ -1,0 +1,693 @@
+{
+  "kcId": "PHY79-QTY-01",
+  "pagePath": "lessons/PHY79-QTY-01.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "PHY79-QTY-01",
+  "canonicalNode": {
+    "id": "PHY79-QTY-01",
+    "subject": "physics",
+    "grade_band": "7-9",
+    "topic_area": "S1 Luonnontieteellinen tutkimus",
+    "parent_concept": "Suureet ja yksiköt",
+    "title": "Fysikaalisen suureen, lukuarvon ja yksikön erottaminen",
+    "short_description": "Fysikaalisen suureen, lukuarvon ja yksikön erottaminen",
+    "node_kind": "integration",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "PHY79-S1",
+      "PHY79-ASSESS"
+    ],
+    "relations": [
+      {
+        "id": "PHY79-QTY-CONCEPT",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-QTY-CONCEPT vaaditaan kokonaisuuden hallintaan."
+      },
+      {
+        "id": "PHY79-NUMVALUE",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-NUMVALUE vaaditaan kokonaisuuden hallintaan."
+      },
+      {
+        "id": "PHY79-UNIT-CONCEPT",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-UNIT-CONCEPT vaaditaan kokonaisuuden hallintaan."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "PHY79-QTY-CONCEPT",
+          "PHY79-NUMVALUE",
+          "PHY79-UNIT-CONCEPT"
+        ],
+        "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+      }
+    ],
+    "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-QTY-CONCEPT, PHY79-NUMVALUE, PHY79-UNIT-CONCEPT. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "status": "candidate_refactored_integration",
+    "entry_role": "none",
+    "mastery_role": "integration",
+    "split_children": [
+      "PHY79-QTY-CONCEPT",
+      "PHY79-NUMVALUE",
+      "PHY79-UNIT-CONCEPT"
+    ],
+    "integration_of": [
+      "PHY79-QTY-CONCEPT",
+      "PHY79-NUMVALUE",
+      "PHY79-UNIT-CONCEPT"
+    ],
+    "dynamic_prerequisite_rule": null,
+    "concept_path": [
+      "Fysiikka",
+      "S1 Luonnontieteellinen tutkimus",
+      "Suureet ja yksiköt"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "PHY79-QTY-CONCEPT",
+      "targetKCId": "PHY79-QTY-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-QTY-CONCEPT vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "PHY79-NUMVALUE",
+      "targetKCId": "PHY79-QTY-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-NUMVALUE vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "PHY79-UNIT-CONCEPT",
+      "targetKCId": "PHY79-QTY-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-UNIT-CONCEPT vaaditaan kokonaisuuden hallintaan.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "PHY79-QTY-01",
+      "targetKCId": "PHY79-SI-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "PHY79-QTY-01",
+      "targetKCId": "PHY79-UNIT-CONV",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "PHY79-QTY-01",
+      "targetKCId": "PHY79-MEAS-01",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "PHY79-QTY-01",
+      "targetKCId": "PHY79-DIST-TIME",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "PHY79-QTY-01",
+      "targetKCId": "PHY79-SPEED-UNIT",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "PHY79-QTY-01",
+      "targetKCId": "PHY79-CURRENT",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "PHY79-QTY-01",
+      "targetKCId": "PHY79-VOLTAGE",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "PHY79-QTY-01",
+      "targetKCId": "PHY79-FORCE-MAGNITUDE",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 1
+    },
+    {
+      "sourceKCId": "PHY79-QTY-01",
+      "targetKCId": "PHY79-FORCE-DIRECTION",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "PHY79-QTY-01 on ydinesitieto tälle osaamiskohteelle.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "PHY79-QTY-CONCEPT",
+        "PHY79-NUMVALUE",
+        "PHY79-UNIT-CONCEPT"
+      ],
+      "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/PHY79-QTY-01/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "title": "OPH — historical2014 curriculum S1 physics",
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "accessed": "2026-10-29",
+        "read": "PDF389 lines18238–18243 original physics7–9 S1 researchprocess/resultprocessing/presentation, targetedpassage only.",
+        "adopted": "Explicitlybounded component of investigation: compile and represent results; exactprojectroles/ANDgroups frozen separately.",
+        "rejected": "No current-amendment completeness or exactUI/formal-criterion mandate.",
+        "usageRestrictions": "©OPH factual paraphrase, originalfigures.",
+        "limits": "Targeted primary comparison, not efficacy, Finnish UI/DAG or formal assessment validation."
+      },
+      {
+        "title": "BIPM — SI Brochure9th V4.01 June2026",
+        "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf",
+        "accessed": "2026-10-29",
+        "read": "ReuseactualB08primaryretrieval:102pagePDF targeted5.4.1–4 and5.4.7/copyright, not a fabricated freshsearch pernode.",
+        "adopted": "Quantity value combines numerical value and referenceunit; number changes withunit; comma/point, context-defined symbols and oftenimplicitunit1.",
+        "rejected": "No solepreferredunitperkind or mandatoryprintedunit for allquantityvalues; no conversion mastery inferred.",
+        "usageRestrictions": "CCBY4.0 stated, attributionURL retained; no copied source figures/tables.",
+        "limits": "Targeted primary comparison, not efficacy, Finnish UI/DAG or formal assessment validation."
+      },
+      {
+        "title": "NIST SI Chapter7",
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values",
+        "accessed": "2026-10-29",
+        "read": "ReuseactualB08primaryHTML7.1 quantityvalue/numericalvalue and context; not wholemanual.",
+        "adopted": "Compare complete coherent record, not number or unit inisolation.",
+        "rejected": "Do not add fullquantitycalculus or formalgrammar as novel prerequisite.",
+        "usageRestrictions": "Primaryconceptualcomparison only; no copiedimages or blanketthirdpartymedia licence.",
+        "limits": "Targeted primary comparison, not efficacy, Finnish UI/DAG or formal assessment validation."
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [
+      {
+        "path": "canonical/fi/PHY79-QTY-01.canonical.yaml",
+        "sha256": "0f482e4764b8c3ac886def7781c6b362534ed1a93f84dbfa4a2d253c24b80ae7",
+        "status": "original_source_referenced_not_reapproved",
+        "originalHeader": "schema_version: 0.1.0\nkc_id: PHY79-QTY-01\ncatalog_version: STEM_KC_Catalogs_v0.2\nmetadata:\n  title: Fysikaalisen suureen, lukuarvon ja yksikön erottaminen\n  subject: physics\n  grade_band: 7-9\n  mastery_role: integration"
+      }
+    ],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": {
+      "task_id": "KC-26-PHY79-QTY-01",
+      "kc_id": "PHY79-QTY-01",
+      "mastery_role": "integration",
+      "node_kind": "integration",
+      "status": "LEGACY_IMPLEMENTATION_REQUIRES_ADVENTURE_REVIEW",
+      "content_file": "canonical/fi/PHY79-QTY-01.canonical.yaml",
+      "prerequisites": [
+        {
+          "all_of": [
+            "PHY79-QTY-CONCEPT",
+            "PHY79-NUMVALUE",
+            "PHY79-UNIT-CONCEPT"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "validation": {
+        "schema": "pending_autonomous_adventure_review",
+        "graph_refs": "pending_autonomous_adventure_review",
+        "domain_truth": "pending_autonomous_adventure_review",
+        "item_invariants": "pending_autonomous_adventure_review",
+        "pedagogy_review": "pending_autonomous_adventure_review",
+        "subject_review": "pending_autonomous_adventure_review",
+        "accessibility_review": "pending_autonomous_adventure_review",
+        "architecture_review": "pending_autonomous_adventure_review",
+        "runtime_smoke": "pending_autonomous_adventure_review",
+        "local_e2e": "pending_autonomous_adventure_review",
+        "local_e2e_evidence": "pending_autonomous_adventure_review",
+        "source_approval": "pending_autonomous_adventure_review",
+        "provenance_evidence": "pending_autonomous_adventure_review"
+      },
+      "production_order": 26,
+      "historical_status": "CALIBRATION_ACCEPTED_SCOPED",
+      "autonomous_evidence": [],
+      "historical_validation": {
+        "schema": "pass",
+        "graph_refs": "pass",
+        "domain_truth": "pass",
+        "item_invariants": "pass",
+        "pedagogy_review": "pass_scoped",
+        "subject_review": "pass_scoped",
+        "accessibility_review": "pass_scoped",
+        "architecture_review": "pass_scoped",
+        "runtime_smoke": "pass_connected_browser",
+        "local_e2e": "pass_native_local",
+        "local_e2e_evidence": "reports/local-e2e/manifest.json",
+        "source_approval": "accepted_narrow_calibration_scope",
+        "provenance_evidence": "PROVENANCE_AUDIT.md"
+      }
+    }
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+        "note": "Author source checks only, independent review assigned to Feynman."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+        "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/physics-independent-r1.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+        "note": "No human/learner validation performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "PHY79-QTY-01",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "ribbon.svg",
+        "sha256": "da80b0b9e4964439b2686af217dc956bdda3d09c79947c9cde9e8ef6ff34c16a"
+      },
+      {
+        "path": "parts.svg",
+        "sha256": "139bbc3f5e04f710e47c4c4d911cc23fc3dd36ee204b5cb4d8903083e1bb0c83"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "0f46553870c01fcabad5474a984a970ce2f21001113991c436b8489dcd163b4d"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "title": "OPH — historical2014 curriculum S1 physics",
+        "url": "https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf",
+        "accessed": "2026-10-29",
+        "read": "PDF389 lines18238–18243 original physics7–9 S1 researchprocess/resultprocessing/presentation, targetedpassage only.",
+        "adopted": "Explicitlybounded component of investigation: compile and represent results; exactprojectroles/ANDgroups frozen separately.",
+        "rejected": "No current-amendment completeness or exactUI/formal-criterion mandate.",
+        "usageRestrictions": "©OPH factual paraphrase, originalfigures.",
+        "limits": "Targeted primary comparison, not efficacy, Finnish UI/DAG or formal assessment validation."
+      },
+      {
+        "title": "BIPM — SI Brochure9th V4.01 June2026",
+        "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf",
+        "accessed": "2026-10-29",
+        "read": "ReuseactualB08primaryretrieval:102pagePDF targeted5.4.1–4 and5.4.7/copyright, not a fabricated freshsearch pernode.",
+        "adopted": "Quantity value combines numerical value and referenceunit; number changes withunit; comma/point, context-defined symbols and oftenimplicitunit1.",
+        "rejected": "No solepreferredunitperkind or mandatoryprintedunit for allquantityvalues; no conversion mastery inferred.",
+        "usageRestrictions": "CCBY4.0 stated, attributionURL retained; no copied source figures/tables.",
+        "limits": "Targeted primary comparison, not efficacy, Finnish UI/DAG or formal assessment validation."
+      },
+      {
+        "title": "NIST SI Chapter7",
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values",
+        "accessed": "2026-10-29",
+        "read": "ReuseactualB08primaryHTML7.1 quantityvalue/numericalvalue and context; not wholemanual.",
+        "adopted": "Compare complete coherent record, not number or unit inisolation.",
+        "rejected": "Do not add fullquantitycalculus or formalgrammar as novel prerequisite.",
+        "usageRestrictions": "Primaryconceptualcomparison only; no copiedimages or blanketthirdpartymedia licence.",
+        "limits": "Targeted primary comparison, not efficacy, Finnish UI/DAG or formal assessment validation."
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+        "note": "Author source checks only, independent review assigned to Feynman."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+        "note": "Author source checks only, independent review assigned to Feynman."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+        "note": "No human/learner validation performed."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+        "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/physics-independent-r1.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+        "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/physics-independent-r1.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "PHY79-QTY-01",
+      "liteContentRevision": "lite181-2026-10-27",
+      "nodeRevision": "audit1-2026-10-28",
+      "sourceHashes": {
+        "src/content/physics.ts": "835ad69dd95f622adcb6050ab63d00a4477d64425545dd1b8af5a4892f978430",
+        "src/content/phyanim.ts": "7c46f415d95d8f21a645cfda8140d472f07b5621c37c2b59ce58cd9ffa79a338",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+        "src/engine/graph.ts": "8bcdc3d7cafed82fd8d2a0a7dd69a547f2e70d6d2a87834f110164d4fe4b24d9",
+        "src/engine/motion.ts": "7b2851bee0927ba383462ea8d24b7f2a8467c82b581fd519efdb4b4566365451",
+        "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+        "src/ui/motion.ts": "1a3598c501e33fda21af3b42e86d0ddfef91fc4d67de15754159eaa5f98f19cc",
+        "src/ui/anim.ts": "f915fa142c7fa7da51d3ed98a197e0009c70639e6ee83efedb7baf2363ff6e95",
+        "src/data/sol-annotations.json": "fb22d9fd48c774458b5241bacf76e16b2975974cf9b4c7eb2875ae861831c98d",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f"
+      },
+      "inventory": "alignment.md",
+      "reconciliation": "alignment.md",
+      "actualFamilies": [
+        "sort",
+        "whole",
+        "which",
+        "transfer"
+      ]
+    },
+    "planning": {
+      "gradeBand": "7-9",
+      "role": "integration",
+      "canonical": {
+        "id": "PHY79-QTY-01",
+        "subject": "physics",
+        "grade_band": "7-9",
+        "topic_area": "S1 Luonnontieteellinen tutkimus",
+        "parent_concept": "Suureet ja yksiköt",
+        "title": "Fysikaalisen suureen, lukuarvon ja yksikön erottaminen",
+        "short_description": "Fysikaalisen suureen, lukuarvon ja yksikön erottaminen",
+        "node_kind": "integration",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "PHY79-S1",
+          "PHY79-ASSESS"
+        ],
+        "relations": [
+          {
+            "id": "PHY79-QTY-CONCEPT",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-QTY-CONCEPT vaaditaan kokonaisuuden hallintaan."
+          },
+          {
+            "id": "PHY79-NUMVALUE",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-NUMVALUE vaaditaan kokonaisuuden hallintaan."
+          },
+          {
+            "id": "PHY79-UNIT-CONCEPT",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "PHY79-QTY-01 on v0.2:ssa integraationoodi; atominen alitaito PHY79-UNIT-CONCEPT vaaditaan kokonaisuuden hallintaan."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "PHY79-QTY-CONCEPT",
+              "PHY79-NUMVALUE",
+              "PHY79-UNIT-CONCEPT"
+            ],
+            "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+          }
+        ],
+        "evidence_notes": "v0.2-integraationoodi. Atomiset mastery-tilat: PHY79-QTY-CONCEPT, PHY79-NUMVALUE, PHY79-UNIT-CONCEPT. Lisäksi vaaditaan erillinen integraatio-/soveltamisnäyttö ennen täydellistä masteryä.",
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "status": "candidate_refactored_integration",
+        "entry_role": "none",
+        "mastery_role": "integration",
+        "split_children": [
+          "PHY79-QTY-CONCEPT",
+          "PHY79-NUMVALUE",
+          "PHY79-UNIT-CONCEPT"
+        ],
+        "integration_of": [
+          "PHY79-QTY-CONCEPT",
+          "PHY79-NUMVALUE",
+          "PHY79-UNIT-CONCEPT"
+        ],
+        "dynamic_prerequisite_rule": null,
+        "concept_path": [
+          "Fysiikka",
+          "S1 Luonnontieteellinen tutkimus",
+          "Suureet ja yksiköt"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "PHY79-QTY-CONCEPT",
+            "PHY79-NUMVALUE",
+            "PHY79-UNIT-CONCEPT"
+          ],
+          "rationale": "Integraationoodi saavutetaan, kun kaikki korkean varmuuden auditissa erotetut atomiset alitaidot hallitaan."
+        }
+      ],
+      "sourceGraphHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+      "sourceBasis": "direct_curriculum",
+      "strongSupport": [],
+      "teacherObjective": "Fysikaalisen suureen, lukuarvon ja yksikön erottaminen",
+      "childGoal": "Kokoan suureen, koko lukuarvon ja yksikön samasta lähteestä.",
+      "scope": "Joint complete-record construction/repair, exact source extraction vs two supplied equivalent whole-record expressions; not isolated one-field recognition.",
+      "evidenceLimits": "Supported coherent record integration; does not award/replace atomic states or full integration mastery, independent physical measurement, unrestricted notation competence, retention or efficacy.",
+      "curriculumVsDesign": "Historical OPH2014 S1 supports investigation/result representation broadly. Exact project roles/prerequisitegroups/UI/finite task bounds remain frozen project design, not quoted curricular mandates.",
+      "assetProvenance": "Original domain SVGs; actual supplied named character PNG unchanged. No protected source figures/prose copied, invented poses or vector mascot replacement."
+    },
+    "extensions": {
+      "productionBatch": "B09",
+      "humanReview": "not_performed",
+      "independentReview": "pending_other_agent",
+      "researchNote": "research.md",
+      "alignmentNote": "alignment.md",
+      "simulationType": "joint_coherent_record_construction",
+      "timing": "No elapsed-time simulation or decorative animation.",
+      "privacy": "Transient local prescribed models/responses only; no storage/network/telemetry/personalevidence.",
+      "feedback": "Both input/change, explicit current-visible check, scoped verdict validity; support/reorder/scale preserves unchanged meaning.",
+      "authorChecks": "verification.json"
+    },
+    "contentHash": "46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+    "contentRevision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+          "note": "Author source checks only, independent review assigned to Feynman."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+          "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/physics-independent-r1.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+          "note": "No human/learner validation performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+          "note": "Author source checks only, independent review assigned to Feynman."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@46ecb71dcf80e51eee22636a0fe93e827a67b69e4af14d02c81afaf10f565f06",
+          "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/physics-independent-r1.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+        }
+      ]
+    }
+  },
+  "outputHash": "4087c02966e93e926315aa4aa0a466d7f0658830d8ef8de896cf4c8336e58561",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "0a15a163460ac856c18a49734456accee0ef8afdb4d593c3701926df2e0bdb7d",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "4087c02966e93e926315aa4aa0a466d7f0658830d8ef8de896cf4c8336e58561",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

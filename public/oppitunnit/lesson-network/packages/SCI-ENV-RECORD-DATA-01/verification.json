@@ -1,0 +1,85 @@
+{
+  "kind": "author_self_check",
+  "kcId": "SCI-ENV-RECORD-DATA-01",
+  "contentRevision": "1@26455e01d30e998b97885e8d77e2f24fae18c95f6a58892c2feb52356292157f",
+  "date": "2026-10-29",
+  "status": "source_frozen_pending_different_independent_review_and_main_integration",
+  "humanReview": "NOT_PERFORMED",
+  "independentReview": "NOT_PERFORMED by author; separate reviewer required",
+  "pureTests": {
+    "status": "PASS",
+    "assignedTests": 4,
+    "totalAcrossOwnThree": 12,
+    "command": "node --test lesson-network/packages/SCI-ENV-RECORD-DATA-01/tests.mjs"
+  },
+  "lint": "PASS scoped ESLint",
+  "sourceValidator": "PASS actual loadPackages/composePackage over isolated copies of assigned3 plus declared shared PNG; no live build",
+  "browser": {
+    "kcId": "SCI-ENV-RECORD-DATA-01",
+    "status": "PASS",
+    "runs": [
+      {
+        "width": 320,
+        "actualPositiveNegative": true,
+        "correctEditNeutralRecheckRepair": true,
+        "lifecycle": true,
+        "images": true,
+        "noOverflow": true
+      },
+      {
+        "width": 390,
+        "actualPositiveNegative": true,
+        "correctEditNeutralRecheckRepair": true,
+        "lifecycle": true,
+        "images": true,
+        "noOverflow": true
+      },
+      {
+        "width": 1280,
+        "actualPositiveNegative": true,
+        "correctEditNeutralRecheckRepair": true,
+        "lifecycle": true,
+        "images": true,
+        "noOverflow": true
+      }
+    ],
+    "static": true,
+    "pageErrors": [],
+    "artifacts": "/var/folders/5_/9spkk87514d17y3nq1rtxv3w0000gn/T/SCI-ENV-RECORD-DATA-01-B04-author-aNSIpx",
+    "limits": "Author source harness only. Main integrated review, different independent reviewer and human/learner validation remain.",
+    "harnessSha256": "cef8e9ba3486417236872f5b0d3e8fc0393c671279d911ed6180db6ad2b7538d",
+    "screenshots": [
+      {
+        "path": "/var/folders/5_/9spkk87514d17y3nq1rtxv3w0000gn/T/SCI-ENV-RECORD-DATA-01-B04-author-aNSIpx/320-practice.png",
+        "sha256": "4f6b73fa36669b6c320557c5f76379155b40b72858332aaf1348747558f73518",
+        "visuallyInspected": true
+      },
+      {
+        "path": "/var/folders/5_/9spkk87514d17y3nq1rtxv3w0000gn/T/SCI-ENV-RECORD-DATA-01-B04-author-aNSIpx/figure-0.png",
+        "sha256": "e91bc76a9183386874ee360498d55fc57246b7d001ab1892efa7136a5b4f969d",
+        "visuallyInspected": true
+      }
+    ],
+    "fixtureCorrection": "Initial preview omitted shared .lesson wrapper and failed overflow. Fixture corrected to actual wrapper; final3width runs passed. Motion option text shortened after real phone screenshot; final current bytes rerun passed.",
+    "visualObservations": "Phone source and place/object choices visible. Original notebook figure links correct source leaf/flower to place rows. No overflow or colour-only response cue."
+  },
+  "evidenceLimits": [
+    "Author self-check only. No independent self-approval, learner/human validation, efficacy, retention or mastery claim.",
+    "Main owns integrated network build, shared-loader/render/navigation/export validation.",
+    "All observations explicitly given/simulated; screen record is not a real child observation or persistent notebook."
+  ],
+  "assets": [
+    {
+      "path": "notebook.svg",
+      "sha256": "bc901ccbc061b1667f8be4eb3ccc733ec736611cdc824be36dbbfc89b8b5e6c5"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "65cbb5c7d085754409dbfc604b2faafa76b0074c711a078cbb79e5bc3d900257"
+    }
+  ]
+}

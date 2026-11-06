@@ -1,0 +1,7 @@
+# M-NUM-17 — primary comparison and design
+
+Primary NCETM pages were independently read in preparation and revisited at GO. HTML teaching points only; linked videos and teacher-guide PDFs not claimed read. Foreign early-years/Year1 guidance is conceptual comparison, not a new OPH mapping or lesson-efficacy finding. Original text and graphics only. NCETM default Crown/OGL attribution, named-author and third-party caveats checked at https://www.ncetm.org.uk/copyright/; that licence is not inferred for supplied mascot artwork.
+
+NCETM Composition https://www.ncetm.org.uk/classroom-resources/ey-composition/ supports parts/whole and recombination. NCETM strategies within10 https://www.ncetm.org.uk/classroom-resources/primm-107-addition-and-subtraction-strategies-within-10/ connects equal doubles/halves. Adopt equal quantities with whole conservation. Reject importing memorized doubles, area-halves or hidden-part fluency as prerequisites.
+
+Project choices: two fixed named trays, small even wholes2–10,5/3 repair and equal3/3 with2 still unallocated. Each original item is always in exactly one location; no original object is missing before playback. Direct numeric response is separate from model repair; no forced watching or unrelated tapping. Generated SVGs derive from the same deterministic renderer. Shared PNG is unchanged owner-supplied artwork, not a vector redraw. Author tests are synthetic technical checks, not human/learner or efficacy evidence.

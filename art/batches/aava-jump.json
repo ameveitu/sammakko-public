@@ -1,0 +1,14 @@
+{
+ "_ohje": "Pilotti: Aavan hyppysarja ja juhlinta. Hyppy ajettiin ensin yksin (idle+wave+walk_02), sen jälkeen muut neljällä referenssillä, joista viimeinen oli valmis hyppyruutu. Aja repojuuresta: node tools/imagegen/imagegen.mjs batch art/batches/aava-jump.json [--live]",
+ "defaults": {
+  "model": "sunburst", "quality": "medium", "size": "1024x1024", "background": "transparent", "n": 2,
+  "template": "edit-keep-character", "character": ["aava"], "out": "../_raw/aava",
+  "image": ["../../lite/public/characters/aava/idle.png", "../../lite/public/characters/aava/wave.png", "../../lite/public/characters/aava/walk_02.png", "../characters/aava/jump.png"]
+ },
+ "jobs": [
+  { "name": "pilot-aava-jump", "image": ["../../lite/public/characters/aava/idle.png", "../../lite/public/characters/aava/wave.png", "../../lite/public/characters/aava/walk_02.png"], "vars": { "change": "pose only: Aava jumps happily straight up, both feet off the ground, wings raised slightly, still in side profile facing right, beak closed" } },
+  { "name": "pilot-aava-crouch", "vars": { "change": "pose only: Aava crouches down ready to jump, body squashed slightly lower, knees bent, feet on the ground, side profile facing right, beak closed" } },
+  { "name": "pilot-aava-land", "vars": { "change": "pose only: Aava has just landed from a jump, feet on the ground, knees slightly bent, wings slightly out for balance, side profile facing right, beak closed" } },
+  { "name": "pilot-aava-celebrate", "vars": { "change": "pose only: Aava celebrates, both wings raised up high, eyes happily closed as two small upward curves, feet on the ground, side profile facing right, beak closed" } }
+ ]
+}

@@ -1,0 +1,677 @@
+{
+  "kcId": "M-WRSUB",
+  "pagePath": "lessons/M-WRSUB.html",
+  "canonicalSourceHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+  "canonicalNodeId": "M-WRSUB",
+  "canonicalNode": {
+    "id": "M-WRSUB",
+    "subject": "mathematics",
+    "grade_band": "3-6",
+    "topic_area": "Luvut ja laskutoimitukset",
+    "parent_concept": "Kirjallinen laskeminen",
+    "title": "Kirjallinen vähennyslaskualgoritmi",
+    "short_description": "Kirjallinen vähennyslaskualgoritmi",
+    "source_basis": "direct_curriculum",
+    "curriculum_refs": [
+      "OPH-POPS2014-MATH-VL3-6-S2"
+    ],
+    "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+    "status": "candidate",
+    "required_root": false,
+    "root_kind": "none",
+    "node_kind": "procedure",
+    "relations": [
+      {
+        "id": "M-SUB-100",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-SUB-100 on tämän osaamiskohteen välitön välttämätön esitieto."
+      },
+      {
+        "id": "M-PLACE-05",
+        "relation_type": "prerequisite",
+        "strength": "required",
+        "rationale": "M-PLACE-05 on tämän osaamiskohteen välitön välttämätön esitieto."
+      }
+    ],
+    "prerequisite_groups": [
+      {
+        "all_of": [
+          "M-SUB-100",
+          "M-PLACE-05"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "foundation_entry": false,
+    "zero_required_indegree": false,
+    "foundation_entry_rationale": null,
+    "entry_role": "none",
+    "mastery_role": "atomic",
+    "concept_path": [
+      "Matematiikka",
+      "Luvut ja laskutoimitukset",
+      "Kirjallinen laskeminen"
+    ]
+  },
+  "schemaVersion": 1,
+  "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+  "generationState": "generated",
+  "validationState": "verified",
+  "top": [
+    {
+      "sourceKCId": "M-SUB-100",
+      "targetKCId": "M-WRSUB",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-SUB-100 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 0
+    },
+    {
+      "sourceKCId": "M-PLACE-05",
+      "targetKCId": "M-WRSUB",
+      "relationType": "prerequisite",
+      "strength": "required",
+      "rationale": "M-PLACE-05 on tämän osaamiskohteen välitön välttämätön esitieto.",
+      "sourceRelationIndex": 1
+    }
+  ],
+  "bottom": [
+    {
+      "sourceKCId": "M-WRSUB",
+      "targetKCId": "M-CALC-STRAT",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "M-WRSUB tukee olennaisesti oppimista, mutta puute voidaan korjata noodin sisällä.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-WRSUB",
+      "targetKCId": "M-DEC-ADD",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Desimaalien vähennyslasku voidaan rakentaa paikka-arvomalleilla ilman kirjallisen kokonaislukualgoritmin hard masteryä.",
+      "sourceRelationIndex": 2
+    },
+    {
+      "sourceKCId": "M-WRSUB",
+      "targetKCId": "M-DEC-SUB",
+      "relationType": "prerequisite",
+      "strength": "strong",
+      "rationale": "Desimaalien vähennyslasku voidaan rakentaa paikka-arvomalleilla ilman kirjallisen kokonaislukualgoritmin hard masteryä.",
+      "sourceRelationIndex": 2
+    }
+  ],
+  "prerequisiteGroups": [
+    {
+      "all_of": [
+        "M-SUB-100",
+        "M-PLACE-05"
+      ],
+      "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+    }
+  ],
+  "dynamicPrerequisite": {
+    "rule": null,
+    "binding": "unresolved"
+  },
+  "newInstructionalContent": {
+    "state": "draft",
+    "body": {
+      "source": "packages/M-WRSUB/body.html"
+    },
+    "slots": {
+      "bounded_target": null,
+      "assumed_supported_or_supplied_knowledge": null,
+      "initial_experience": null,
+      "demonstration": null,
+      "explanation": null,
+      "worked_examples": null,
+      "guided_practice": null,
+      "independent_check": null,
+      "transfer": null,
+      "recall": null,
+      "teacher_notes": null
+    },
+    "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8"
+  },
+  "newPedagogicalResearch": {
+    "state": "source_records_present",
+    "records": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-120-algorithms-column-addition/",
+        "title": "Algorithms: column addition",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML teaching points and copyright page read. Subtraction teacher-guide introduction/exchange explanation read; no linked slides/video executed.",
+        "adopted": "Align place values; start at ones; regroup ten smaller units as one larger unit. Explicit incoming carry and new digit.",
+        "rejected": "No copied prose, figures or tasks. English Year3 sequencing is comparison only, not Finnish grade mapping or efficacy evidence. No mandatory written method when another method works.",
+        "licence": "NCETM copyright page: Crown Copyright, superseded by Open Government Licence, unless otherwise stated; attribution and named-author permission conditions stated. Third-party exceptions not cleared.",
+        "licenceURL": "https://www.ncetm.org.uk/copyright/"
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-121-algorithms-column-subtraction/",
+        "title": "Algorithms: column subtraction",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML teaching points and copyright page read. Subtraction teacher-guide introduction/exchange explanation read; no linked slides/video executed.",
+        "adopted": "Exchange larger units when needed; separate steps over zero; inverse and estimation checks; choose methods.",
+        "rejected": "No copied prose, figures or tasks. English Year3 sequencing is comparison only, not Finnish grade mapping or efficacy evidence. No mandatory written method when another method works.",
+        "licence": "NCETM copyright page: Crown Copyright, superseded by Open Government Licence, unless otherwise stated; attribution and named-author permission conditions stated. Third-party exceptions not cleared.",
+        "licenceURL": "https://www.ncetm.org.uk/copyright/"
+      }
+    ],
+    "recordSchema": {
+      "sourceUrl": null,
+      "sourceTitle": null,
+      "authorOrOrganization": null,
+      "publicationDate": null,
+      "accessedDate": null,
+      "specificConceptOrTreatment": null,
+      "ageAndPriorKnowledgeContext": null,
+      "comparisonFindings": null,
+      "adoptionOrRejectionRationale": null,
+      "citationBindings": null,
+      "assetLicenseAndAttribution": null
+    }
+  },
+  "activityFamily": {
+    "state": "unresolved",
+    "fields": {
+      "familyId": null,
+      "revision": null,
+      "learnerAction": null,
+      "assumedKCIds": null,
+      "suppliedBeforeResponse": null,
+      "coTaughtKCIds": null,
+      "demonstratedOutcome": null,
+      "operationAndNumberDomain": null,
+      "representationDomain": null,
+      "equivalenceRules": null,
+      "processContract": null,
+      "helpAndReplaySemantics": null,
+      "supportDestinations": null,
+      "evidenceLimits": null
+    }
+  },
+  "renderer": {
+    "capabilities": [
+      "html_svg",
+      "canvas2d",
+      "animation",
+      "threejs_webgl_when_justified"
+    ],
+    "lifecycle": [
+      "load",
+      "mount",
+      "pause",
+      "resume",
+      "reset",
+      "dispose"
+    ],
+    "loading": "shared and lazy where appropriate",
+    "new_curricular_renderers_implemented_now": false
+  },
+  "existingDrafts": {
+    "inventoryState": "inventoried",
+    "references": [],
+    "preserveOriginalStatuses": true,
+    "originalTaskStatus": null
+  },
+  "contentReview": {
+    "state": "reviewed",
+    "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+    "history": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+        "note": "Author QA is not independent approval. Descartes review pending."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+        "note": "Independent B15 Descartes current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Descartes-on-Newton-ready-current.json. Synthetic technical scope, not learner validation."
+      }
+    ]
+  },
+  "humanReview": {
+    "state": "pending",
+    "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+    "history": [
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+        "note": "Not performed. No learner/efficacy/manual acceptance."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+        "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+      }
+    ]
+  },
+  "liteAlignment": {
+    "subsetMembership": true,
+    "referenceBuild": "d475715339169463354e91f260c8c305db91a50a",
+    "reviewReference": "reference/inputs/lite181-review-findings.json",
+    "alignmentState": "awaiting_corrected_reviewed_baseline"
+  },
+  "runtimeAvailability": {
+    "lite": {
+      "status": "route_unsupported",
+      "url": null,
+      "classroomReady": false
+    },
+    "sammakko": {
+      "status": "base_url_missing",
+      "url": null,
+      "classroomReady": false
+    }
+  },
+  "authoredPackage": {
+    "schemaVersion": 1,
+    "kcId": "M-WRSUB",
+    "revision": 1,
+    "state": "draft",
+    "body": "body.html",
+    "module": "lesson.mjs",
+    "assets": [
+      {
+        "path": "initial.svg",
+        "sha256": "281a41d1e615ae25b6acf8c777051d2fc5ec9ce9663cfaa43472c68766864be5"
+      },
+      {
+        "path": "example1.svg",
+        "sha256": "091303d2ee8aa52bbf1fd57e9fadd473c45114f89090b0877c48c239596872ca"
+      },
+      {
+        "path": "example2.svg",
+        "sha256": "4284e3906f2f06ff098d432e1ab367ce7c69cc39fea5640e35d25a67fa8cdcd3"
+      },
+      {
+        "path": "lesson.css",
+        "sha256": "4a68a4d0003538a6fd9a48d533f47dbaab09c2614e16d88b3026ac8be40808e2"
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+      }
+    ],
+    "research": [
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-120-algorithms-column-addition/",
+        "title": "Algorithms: column addition",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML teaching points and copyright page read. Subtraction teacher-guide introduction/exchange explanation read; no linked slides/video executed.",
+        "adopted": "Align place values; start at ones; regroup ten smaller units as one larger unit. Explicit incoming carry and new digit.",
+        "rejected": "No copied prose, figures or tasks. English Year3 sequencing is comparison only, not Finnish grade mapping or efficacy evidence. No mandatory written method when another method works.",
+        "licence": "NCETM copyright page: Crown Copyright, superseded by Open Government Licence, unless otherwise stated; attribution and named-author permission conditions stated. Third-party exceptions not cleared.",
+        "licenceURL": "https://www.ncetm.org.uk/copyright/"
+      },
+      {
+        "url": "https://www.ncetm.org.uk/classroom-resources/primm-121-algorithms-column-subtraction/",
+        "title": "Algorithms: column subtraction",
+        "organization": "NCETM / Etio",
+        "accessed": "2026-10-29",
+        "retrieval": "Primary HTML teaching points and copyright page read. Subtraction teacher-guide introduction/exchange explanation read; no linked slides/video executed.",
+        "adopted": "Exchange larger units when needed; separate steps over zero; inverse and estimation checks; choose methods.",
+        "rejected": "No copied prose, figures or tasks. English Year3 sequencing is comparison only, not Finnish grade mapping or efficacy evidence. No mandatory written method when another method works.",
+        "licence": "NCETM copyright page: Crown Copyright, superseded by Open Government Licence, unless otherwise stated; attribution and named-author permission conditions stated. Third-party exceptions not cleared.",
+        "licenceURL": "https://www.ncetm.org.uk/copyright/"
+      }
+    ],
+    "reviews": [
+      {
+        "kind": "content",
+        "state": "pending",
+        "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+        "note": "Author QA is not independent approval. Descartes review pending."
+      },
+      {
+        "kind": "alignment",
+        "state": "pending",
+        "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+        "note": "Author QA is not independent approval. Descartes review pending."
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+        "note": "Not performed. No learner/efficacy/manual acceptance."
+      },
+      {
+        "kind": "content",
+        "state": "reviewed",
+        "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+        "note": "Independent B15 Descartes current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Descartes-on-Newton-ready-current.json. Synthetic technical scope, not learner validation."
+      },
+      {
+        "kind": "alignment",
+        "state": "reviewed",
+        "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+        "note": "Independent B15 Descartes canonical/Lite/source boundary review: roles/groups preserved, no new hardgates. lesson-network/evidence/production/B15/reviews/Descartes-on-Newton-ready-current.json"
+      },
+      {
+        "kind": "human",
+        "state": "pending",
+        "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+        "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+      }
+    ],
+    "alignment": {
+      "nodeSpecId": "M-WRSUB",
+      "sourceBuild": "audit1-2026-10-28",
+      "sourceHashes": {
+        "src/content/written.ts": "58ee93036fb7417e8324072db5be810426a99db346c23ef0651c9525a9bfd0c6",
+        "src/content/writtenanim.ts": "96ae626bce755998b6ed390f84ee21f16ac0fdb22dac12c40021b9432f1b65bc",
+        "src/content/algebra79.ts": "76919f14b71155725ddc08bbc5b4180cdd965a4089da40601a08f38a277122c0",
+        "src/content/algebra79b.ts": "026e0465ad4365a7d9b5696f182a6c38d05cef98c89c3b9fc73618d3b2155077",
+        "src/content/alganim.ts": "642784b6cbdaec8b5300dfac38089cdbd46319b47b68c76523e35e4f96bdf0d8",
+        "src/content/alg79anim.ts": "a9b64af94da517558ee2d242c31d180507b6f454082608dba18f5f7dbaed7fba",
+        "src/content/placeanim.ts": "d6f1284272675a8b78d62649f3b9e3490a7d324df139f292986f533cee803f99",
+        "src/content/numbers.ts": "2ff4cae1816ea1d61ec938361a8306dc9a24d6e893f67895a390a83b7ae1c4d5",
+        "src/content/facts.ts": "4625a5cc64561ff3496f275c4c77e601573ca04f627a9a47788ca6308354003b",
+        "src/content/countanim.ts": "b4b58ceb096bf3b0247f7a77ed562df02cff2d61af06eb4244cdd838315f1521",
+        "src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+        "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+        "src/content/fi.ts": "34e782e536a7c335e05b64a391150842c5356a8a8bc13b544f9d379e36a3168d",
+        "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+        "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+        "src/content/goals.ts": "732d66480e4ac3efae1f1eba38e9bc844db6707725bec7c4721777d8598f2e7e",
+        "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+        "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+        "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "SOL_INTEGRATION.md": "fb1a7a4add5c41e05e44b7b807a377969457b284108b35346a3ee24c13b489da"
+      },
+      "actualTaskFamilies": {
+        "step": {
+          "kind": "numeric",
+          "prompt": "Ykkösissä 0 − 5 ei onnistu, joten vaihdetaan yksi kymppi kymmeneksi ykköseksi. Mikä numero tulee vastauksen ykkösten paikalle?",
+          "hint": "Kymppi vaihdetaan: 0 + 10 = 10 ykköstä.",
+          "explanation": "Vaihdon jälkeen ykkösiä on 10: 10 − 5 = 5. Kymppejä jää 8. Koko erotus 205.",
+          "registry": {
+            "node": "M-WRSUB",
+            "tag": "step",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "limit": "Perheessä step tarkistetaan lainaus; muissa vain lopputulos.",
+            "source": [
+              "families.ts M-WRSUB/*"
+            ]
+          }
+        },
+        "needs": {
+          "kind": "multi",
+          "prompt": "524 − 175: missä sarakkeissa pitää vaihtaa? Valitse kaikki.",
+          "hint": "Käy sarakkeet läpi ykkösistä. Muista, että vaihdossa ylempi numero pienenee yhdellä.",
+          "explanation": "Vaihto tarvitaan: ykköset ja kymmenet. 524 − 175 = 349.",
+          "registry": {
+            "node": "M-WRSUB",
+            "tag": "needs",
+            "outcome": "valitsee kaikki oikeat vaihtoehdot eikä muita",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "limit": "Perheessä step tarkistetaan lainaus; muissa vain lopputulos.",
+            "source": [
+              "families.ts M-WRSUB/*"
+            ]
+          }
+        },
+        "check": {
+          "kind": "choice",
+          "prompt": "Miten tarkistat laskun 313 − 177 = 136?",
+          "hint": "Vähennyslaskun voi purkaa yhteenlaskulla: vastaus + otettu = alussa ollut.",
+          "explanation": "Erotus + vähentäjä = alkuperäinen luku: 136 + 177 = 313.",
+          "registry": {
+            "node": "M-WRSUB",
+            "tag": "check",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "limit": "Perheessä step tarkistetaan lainaus; muissa vain lopputulos.",
+            "source": [
+              "families.ts M-WRSUB/*"
+            ]
+          }
+        },
+        "column": {
+          "kind": "numeric",
+          "prompt": "Laske allekkain.",
+          "hint": "Jos ylempi numero on pienempi, vaihda yksi seuraavan sarakkeen yksikkö kymmeneksi.",
+          "explanation": "351 − 248 = 103. Tarkistus: 103 + 248 = 351.",
+          "registry": {
+            "node": "M-WRSUB",
+            "tag": "column",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "limit": "Perheessä step tarkistetaan lainaus; muissa vain lopputulos.",
+            "source": [
+              "families.ts M-WRSUB/*"
+            ]
+          }
+        },
+        "flip": {
+          "kind": "choice",
+          "prompt": "Loikka laski 360 − 195 = 235. Mikä meni vikaan?",
+          "hint": "Katso ykkösiä: kummasta luvusta Loikka otti pois?",
+          "explanation": "Ylhäältä alhaalta pois: kun ylempi numero on pienempi, vaihdetaan. Oikea vastaus on 165.",
+          "registry": {
+            "node": "M-WRSUB",
+            "tag": "flip",
+            "outcome": "valitsee oikean vaihtoehdon",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "limit": "Perheessä step tarkistetaan lainaus; muissa vain lopputulos.",
+            "source": [
+              "families.ts M-WRSUB/*"
+            ]
+          }
+        },
+        "transfer": {
+          "kind": "numeric",
+          "prompt": "Verstaalla oli 701 naulaa. Niistä käytettiin 499. Montako jäi?",
+          "hint": "Nollan kohdalla vaihdetaan ensin sata kympeiksi.",
+          "explanation": "701 − 499 = 202. Kymppejä ei ollut, joten ensin vaihdetaan sata kymmeneksi kympiksi.",
+          "registry": {
+            "node": "M-WRSUB",
+            "tag": "transfer",
+            "outcome": "kirjoittaa luvun",
+            "assumed": [],
+            "supplied": [],
+            "coTaught": [],
+            "incidental": {},
+            "support": [],
+            "limit": "Perheessä step tarkistetaan lainaus; muissa vain lopputulos.",
+            "source": [
+              "families.ts M-WRSUB/*"
+            ]
+          }
+        }
+      },
+      "demoSummaries": [
+        {
+          "say": "Lasketaan 352 − 178. Ykköset: kahdesta ei voi ottaa kahdeksaa. Vaihdetaan yksi kymppi kymmeneksi ykköseksi: kaksitoista miinus kahdeksan on neljä. Kympeissä sama uudestaan.",
+          "kind": "animation",
+          "duration": 16.400000000000002,
+          "label": "352 − 178 allekkain"
+        },
+        {
+          "say": "Jos viereinen sarake on nolla, vaihdetaan kauempaa: sata kymmeneksi kympiksi, ja niistä yksi kymppi ykkösiksi. Nollasta tulee yhdeksän.",
+          "kind": "animation",
+          "duration": 15.600000000000001,
+          "label": "405 − 178 allekkain"
+        },
+        {
+          "say": "Väärin olisi laskea kahdeksan miinus kaksi. Tarkistus tehdään yhteenlaskulla: erotus plus vähentäjä on alkuperäinen luku, 174 + 178 = 352.",
+          "kind": "animation",
+          "duration": 14.600000000000001,
+          "label": "174 + 178 allekkain"
+        }
+      ],
+      "reconciliation": "M-WRSUB: actual column/flip/check/step/needs/transfer. Separate every adjacent exchange, including zero chains, preserve upper quantity and account for reduced columns. Actual needs omitted by Coverage summary is retained as explicit yes/no for every column, dense array guarded. Free-result tasks accept mental/complement methods; inverse task checks recomposition, flip asks result plus correction, not claim of independently observed written process. No negative physical quantities. Whole operands/result0..9999, a>=b; invalid/negative/unsupported inputs rejected, not clamped."
+    },
+    "planning": {
+      "canonical": {
+        "id": "M-WRSUB",
+        "subject": "mathematics",
+        "grade_band": "3-6",
+        "topic_area": "Luvut ja laskutoimitukset",
+        "parent_concept": "Kirjallinen laskeminen",
+        "title": "Kirjallinen vähennyslaskualgoritmi",
+        "short_description": "Kirjallinen vähennyslaskualgoritmi",
+        "source_basis": "direct_curriculum",
+        "curriculum_refs": [
+          "OPH-POPS2014-MATH-VL3-6-S2"
+        ],
+        "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+        "status": "candidate",
+        "required_root": false,
+        "root_kind": "none",
+        "node_kind": "procedure",
+        "relations": [
+          {
+            "id": "M-SUB-100",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-SUB-100 on tämän osaamiskohteen välitön välttämätön esitieto."
+          },
+          {
+            "id": "M-PLACE-05",
+            "relation_type": "prerequisite",
+            "strength": "required",
+            "rationale": "M-PLACE-05 on tämän osaamiskohteen välitön välttämätön esitieto."
+          }
+        ],
+        "prerequisite_groups": [
+          {
+            "all_of": [
+              "M-SUB-100",
+              "M-PLACE-05"
+            ],
+            "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+          }
+        ],
+        "foundation_entry": false,
+        "zero_required_indegree": false,
+        "foundation_entry_rationale": null,
+        "entry_role": "none",
+        "mastery_role": "atomic",
+        "concept_path": [
+          "Matematiikka",
+          "Luvut ja laskutoimitukset",
+          "Kirjallinen laskeminen"
+        ]
+      },
+      "canonicalPrerequisiteGroups": [
+        {
+          "all_of": [
+            "M-SUB-100",
+            "M-PLACE-05"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "role": "atomic",
+      "additionalHardGates": [],
+      "childGoal": "Vähennä allekkain ja ymmärrä vaihto.",
+      "bounds": "No formal independent process/history. Whole nonnegative operands/result0..9999; subtraction a>=b.",
+      "art": "Supplied Aava curious PNG, unchanged bytes, generated raster reinterpretation of user character. Original mathematical SVG generated by this module; no external figures."
+    },
+    "extensions": {
+      "batch": "B15",
+      "author": "Newton",
+      "licenceScope": "Reference provenance only, no publication or human/efficacy clearance."
+    },
+    "contentHash": "d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+    "contentRevision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+    "contentReview": {
+      "state": "reviewed",
+      "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+      "history": [
+        {
+          "kind": "content",
+          "state": "pending",
+          "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+          "note": "Author QA is not independent approval. Descartes review pending."
+        },
+        {
+          "kind": "content",
+          "state": "reviewed",
+          "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+          "note": "Independent B15 Descartes current source/domain/teaching and actual175 native scope closed: lesson-network/evidence/production/B15/reviews/Descartes-on-Newton-ready-current.json. Synthetic technical scope, not learner validation."
+        }
+      ]
+    },
+    "humanReview": {
+      "state": "pending",
+      "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+      "history": [
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+          "note": "Not performed. No learner/efficacy/manual acceptance."
+        },
+        {
+          "kind": "human",
+          "state": "pending",
+          "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+          "note": "Target learner understanding, efficacy, fullmanualAXS/VoiceOver and human acceptance not performed."
+        }
+      ]
+    },
+    "alignmentReview": {
+      "state": "reviewed",
+      "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+      "history": [
+        {
+          "kind": "alignment",
+          "state": "pending",
+          "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+          "note": "Author QA is not independent approval. Descartes review pending."
+        },
+        {
+          "kind": "alignment",
+          "state": "reviewed",
+          "revision": "1@d7b790f211e4cd062f498ec210f1e18f76f29242ce5e566ea725bb2461a075a8",
+          "note": "Independent B15 Descartes canonical/Lite/source boundary review: roles/groups preserved, no new hardgates. lesson-network/evidence/production/B15/reviews/Descartes-on-Newton-ready-current.json"
+        }
+      ]
+    }
+  },
+  "outputHash": "f56aaa1a260d390a179cdb24a9ad3ff8cc02589f63e769b16eb909ff2d2f569c",
+  "checkpoint": {
+    "canonicalInputHash": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "sourceReferenceHash": "830a85329197f430e19eb2a1245ce605a52c6780c7f1a19b90bc7644769464f6",
+    "schemaVersion": 1,
+    "templateVersion": "24ed858361c235c347baed17108e3617ca5501a7172c66c81b91a5b415248e42",
+    "outputHash": "f56aaa1a260d390a179cdb24a9ad3ff8cc02589f63e769b16eb909ff2d2f569c",
+    "validationResult": "verified",
+    "blockers": []
+  }
+}

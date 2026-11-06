@@ -1,0 +1,9 @@
+# Lite alignment, unapproved source material
+
+Read src/content/measure.ts534–590: intro/demo with event-aligned stopwatch, lamp/compare/unit families, hop+swim transfer. Read src/content/timeanim.ts1–81: burned floor/clamp, lamp on/off and clap cadence; src/content/motionsims.ts22,48–55: WATCH eligibility and arrival-stopped clock; content/index.ts SIM_SHARE overlay, goals.ts22, audit/LESSON_AUDIT.md208–213 and engine/types.ts. Frozen role atomic, grade1–2, requiredTIME01; no relation changed.
+
+Preserved: real controllable time, standard-second rationale, lamp own start/end, two lamps, informal rhythm contrast, optional additive transfer. Corrected: no stationary tick boxes substituting temporal experience, no fake mascot animation, no sound/speech confirmation, no mandatory response-latency or motion gate. Explicitly cap the event clock when its event ends, despite a retained after-event wait. Manual stepping is one model second without wall-time wait; auto playback is approximately1:1. All representations derive from stateAt.
+
+Extended: equal durations with delayed start; separate domain guard for unsupported case/lane/time; short typed readout with meaningful repair. Arrival overlay becomes an original moving marker between start/end, no invented distance or duck sprite. All phases share one teaching model, not an opaque mixture of two rendering systems. Practice measures reading/understanding supplied event clocks only. Optional transfer adds two3s durations without claiming an independent assessment of addition. Number/counter labels remain visual support, not required speech.
+
+Deferred: clockface reading, hour/minute conversions, physical stopwatch technique, independent mastery/retention and game evidence. Other181/690 relations and legacy game policy unaffected. Author review is not human validation.

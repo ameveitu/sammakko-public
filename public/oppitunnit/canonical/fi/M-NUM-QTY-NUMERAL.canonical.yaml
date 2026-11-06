@@ -1,0 +1,727 @@
+# Private B03 draft: implementation and independent/native review pending.
+schema_version: 0.1.0
+kc_id: M-NUM-QTY-NUMERAL
+catalog_version: STEM_KC_Catalogs_v0.2
+metadata:
+  title: Lukumäärän yhdistäminen sitä vastaavaan numeromerkintään
+  subject: mathematics
+  grade_band: 1-2
+  mastery_role: process
+  node_kind: representation
+  concept_path:
+    - Matematiikka
+    - Luvut ja laskutoimitukset
+    - Lukumäärän representaatiot
+  source_basis: pedagogically_derived
+  curriculum_refs:
+    - OPH-POPS2014-MATH-VL1-2-S2
+  prerequisite_snapshot:
+    hard:
+      - M-NUM-02
+    strong: []
+    helpful: []
+teaching_model:
+  learning_goal: Oppilas yhdistää näkyvän 3–6 esineen ryhmän numeromerkkiin ja numeromerkin vastaavaan
+    valmiiseen ryhmään. Molempien suuntien kahdeksan tapausta arvioidaan erikseen.
+  learner_facing_goal: Löydän rasiaan sopivan numerolapun.
+  core_idea: Numero kertoo koko ryhmän määrän. Esineiden koko, väri tai asettelu ei muuta määrää.
+  success_evidence:
+    - Valitsee itse numeromerkin kunkin määrän3,4,5,6 perusteella ja oikean ryhmän jokaisesta numeromerkistä.
+    - Korjaa aidosti väärän määrä–numero-parin molempiin suuntiin. Väärä alkupari ei poista kaikkia vääriä
+      vaihtoehtoja.
+    - Antaa vähintään24h jälkeen neljä uutta tuetonta vastausta ensimmäisestä ja viimeisestä faktasta
+      molempiin suuntiin. Tämä on edustava näyte, ei yleinen säilymisväite.
+  boundaries:
+    in_scope:
+      - Määrät3–6, desimaaliset numeromerkit3–6 ja molemmat vastaavuussuunnat.
+      - Oma rauhallinen laskeminen, erilliset näkyvät esineet, rivit ja hajautetut ryhmät, aidon väärän parin
+        korjaus.
+    out_of_scope:
+      - Kirjoitettujen lukusanojen tunnistus, spontaani puhe tai ääntäminen.
+      - Give-N-rakentaminen, numeroiden käsin kirjoittaminen, laskutoimitukset tai kolmen esitysmuodon
+        integraatio.
+      - Automaattinen laskuri tai numeroon liitetty pistemäärä itsenäisenä numerotaitona.
+  prerequisite_assumptions:
+    - kc_id: M-NUM-02
+      expected_level: "Required-esitieto ja all_of-ryhmän ainoa jäsen: ajantasainen yhteensopiva hankinta ennen
+        itsenäistä arviointia. Pelkkä tuettu tutustuminen ei täytä sitä; erillistä kalenteriodotusta ei
+        lisätä."
+  conceptual_invariants:
+    - Koko ryhmän määrä ratkaisee numerolapun, ei esineen nimi tai ryhmän leveys.
+    - Jokainen oma vastaus osoittaa vain kyseisen suunnan ja arvon; ei toisen suunnan tai prerequisite-KC:n
+      hallintaa.
+    - Mallipari, vihje tai automaattinen laskenta on tukea. Oma tapauksen mukainen palauttaminen vaatii
+      erillisen todellisen vastauksen.
+    - Kahdeksan tapauksen process-rajaa ei korvata onnistumisten yleisminimillä.
+  likely_confusions:
+    - M-NUM-QTY-NUMERAL-OBS-PARI
+lesson_blueprint:
+  entry_state: DIAGNOSTIC
+  default_path:
+    - DIAGNOSTIC
+    - ORIENT
+    - WORKED_EXAMPLE
+    - GUIDED_PRACTICE
+    - FADED_EXAMPLE
+    - INDEPENDENT_PRACTICE
+    - TRANSFER_CHECK
+    - MASTERY_GATE
+  fast_path:
+    enabled: false
+  state_specs:
+    DIAGNOSTIC:
+      purpose: Kokeile määrä–numero-yhteyttä molempiin suuntiin.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-QTY-NUMERAL-DIAG-RYHMAN-LAPPU
+              - M-NUM-QTY-NUMERAL-DIAG-SANAN-RYHMA
+    ORIENT:
+      purpose: Anna numerolapulle tarkoitus Aavan retkirasioissa.
+      blocks:
+        - type: explanatory_text
+          content: Aavan rasiat tarvitsevat numerolaput. Valitse rasiaan sopiva numero.
+    WORKED_EXAMPLE:
+      purpose: Näytä kaikki neljä koko ryhmän ja numeron yhteyttä molempiin suuntiin.
+      blocks:
+        - type: worked_example
+          content: Katso ryhmää ja numeroa. Ne kertovat saman määrän.
+    GUIDED_PRACTICE:
+      purpose: Valitse pari näkyvän mallin avulla.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-QTY-NUMERAL-GUIDED-RYHMASTA
+              - M-NUM-QTY-NUMERAL-GUIDED-SANASTA
+    FADED_EXAMPLE:
+      purpose: Kokeile paria ilman mallia; tämä vaihe on vielä harjoittelua.
+      blocks:
+        - type: explanatory_text
+          content: Katso ryhmää ja numeroa. Ne kertovat saman määrän.
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-QTY-NUMERAL-GUIDED-RYHMASTA
+              - M-NUM-QTY-NUMERAL-GUIDED-SANASTA
+    INDEPENDENT_PRACTICE:
+      purpose: Valitse itse jokaisen määrän numero ja jokaisen numeron ryhmä.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-QTY-NUMERAL-INDEP-PAKKAUSLAPPU
+              - M-NUM-QTY-NUMERAL-INDEP-TARVIKERYHMA
+    TRANSFER_CHECK:
+      purpose: Korjaa aidosti väärä numerolappu tai valmis ryhmä.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-QTY-NUMERAL-APPFIRST-RYHMAN-SANALAPPU
+              - M-NUM-QTY-NUMERAL-APPFIRST-SANAN-ESINERYHMA
+    MASTERY_GATE:
+      purpose: Tarkista kaikki vaaditut omat tapaukset ja soveltaminen.
+      blocks:
+        - type: reflection
+          content: Katso ryhmää ja numeroa. Ne kertovat saman määrän.
+    DELAYED_REVIEW:
+      purpose: Palaa myöhemmin uusiin omiin määrä–numero-päätöksiin.
+      blocks:
+        - type: question
+          content:
+            item_refs:
+              - M-NUM-QTY-NUMERAL-DELAY-RYHMASTA
+              - M-NUM-QTY-NUMERAL-DELAY-SANASTA
+assessment_blueprint:
+  diagnostic:
+    localized_child_repairs: {}
+    minimum_templates: 2
+    fast_path_confirmation_tags:
+      - association_resolved
+    execution_policy: Kaksi alkukartoitusta auttaa valitsemaan tuen. Fast path on pois käytöstä, eikä diagnoosi
+      korvaa koko prosessin itsenäistä tapauskattavuutta.
+    pass_rule: Molemmat vastaavuuspäätökset kirjataan todellisina havaintoina. Väärä pari ei paikanna puutetta
+      lapsi-KC:hen.
+  independent:
+    minimum_successes: 3
+    template_diversity: 2
+    max_supported_attempts_counted: 0
+    required_tags:
+      - association_resolved
+  transfer:
+    required: true
+    minimum_successes: 2
+    novel_context_required: true
+  delayed:
+    required: true
+    minimum_successes: 4
+    minimum_delay_hours: 24
+    reuse_templates: []
+    required_tags:
+      - association_resolved
+    required_contexts: []
+    earliest_delay_policy: Vähintään 24 tuntia koko hankintanäytön täyttymisestä; myöhemmässä istunnossa tai
+      toisen osaamiskohteen jälkeen neljä uutta tuetonta havaintoa. Ensimmäinen ja viimeinen arvo molemmissa
+      suunnissa ovat rajattu näyte, eivät koko faktajoukon säilymisnäyttö. Ajastus ja onnistumisrajat ovat
+      projektipäätöksiä.
+  supported_evidence:
+    counts_as_mastery: false
+  misconception_clearance:
+    - misconception_id: M-NUM-QTY-NUMERAL-OBS-PARI
+      evidence_tags:
+        - association_resolved
+      rule: Myöhempi tueton oikea relaatiopäätös poistaa tämän tehtäväkohtaisen aktiivisen havaintomerkinnän
+        nykyisessä politiikassa. Se ei vahvista aiemman virheen syytä tai korvaa koko prosessin erikseen
+        vaadittuja tapauksia.
+items:
+  - id: M-NUM-QTY-NUMERAL-DIAG-RYHMAN-LAPPU
+    kc_ids:
+      - M-NUM-QTY-NUMERAL
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse rasian numero.
+      access: visual_quantity_numeral_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_numeral
+      direction: forward
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+        - 6
+      optionCount: 3
+      context: Retkirasian numerolappu
+      layout: row
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko ryhmää. Saat laskea esineet rauhassa.
+      - level: 2
+        text: Katsotaan ryhmän ja numeron pari yhdessä. Tämä on harjoittelua.
+    invariants:
+      - Numeromerkissä ei ole vastausta kertovia pisteitä tai lukusanaa.
+      - Jokainen vaihtoehto voidaan valita; tyhjä ja väärä vastaus pysyvät mahdollisina.
+    provenance:
+      - source_id: PROJECT-QUANTITY-NUMERAL-v1
+        claim: Alkuperäinen rajattu määrä–numeromerkintä-päätös ja aito parikorjaus; ei empiirinen kynnys.
+  - id: M-NUM-QTY-NUMERAL-DIAG-SANAN-RYHMA
+    kc_ids:
+      - M-NUM-QTY-NUMERAL
+    purpose: diagnostic
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse numeroon sopiva ryhmä.
+      access: visual_quantity_numeral_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_numeral
+      direction: reverse
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+        - 6
+      optionCount: 3
+      context: Retkirasian numerolappu
+      layout: scatter
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko ryhmää. Saat laskea esineet rauhassa.
+      - level: 2
+        text: Katsotaan ryhmän ja numeron pari yhdessä. Tämä on harjoittelua.
+    invariants:
+      - Numeromerkissä ei ole vastausta kertovia pisteitä tai lukusanaa.
+      - Jokainen vaihtoehto voidaan valita; tyhjä ja väärä vastaus pysyvät mahdollisina.
+    provenance:
+      - source_id: PROJECT-QUANTITY-NUMERAL-v1
+        claim: Alkuperäinen rajattu määrä–numeromerkintä-päätös ja aito parikorjaus; ei empiirinen kynnys.
+  - id: M-NUM-QTY-NUMERAL-GUIDED-RYHMASTA
+    kc_ids:
+      - M-NUM-QTY-NUMERAL
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: support
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse rasian numero.
+      access: visual_quantity_numeral_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_numeral
+      direction: forward
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+        - 6
+      optionCount: 3
+      context: Retkirasian numerolappu
+      layout: row
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko ryhmää. Saat laskea esineet rauhassa.
+      - level: 2
+        text: Katsotaan ryhmän ja numeron pari yhdessä. Tämä on harjoittelua.
+    invariants:
+      - Numeromerkissä ei ole vastausta kertovia pisteitä tai lukusanaa.
+      - Jokainen vaihtoehto voidaan valita; tyhjä ja väärä vastaus pysyvät mahdollisina.
+    provenance:
+      - source_id: PROJECT-QUANTITY-NUMERAL-v1
+        claim: Alkuperäinen rajattu määrä–numeromerkintä-päätös ja aito parikorjaus; ei empiirinen kynnys.
+  - id: M-NUM-QTY-NUMERAL-GUIDED-SANASTA
+    kc_ids:
+      - M-NUM-QTY-NUMERAL
+    purpose: guided
+    response_type: interaction_state
+    difficulty_band: support
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse numeroon sopiva ryhmä.
+      access: visual_quantity_numeral_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_numeral
+      direction: reverse
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+        - 6
+      optionCount: 3
+      context: Retkirasian numerolappu
+      layout: scatter
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko ryhmää. Saat laskea esineet rauhassa.
+      - level: 2
+        text: Katsotaan ryhmän ja numeron pari yhdessä. Tämä on harjoittelua.
+    invariants:
+      - Numeromerkissä ei ole vastausta kertovia pisteitä tai lukusanaa.
+      - Jokainen vaihtoehto voidaan valita; tyhjä ja väärä vastaus pysyvät mahdollisina.
+    provenance:
+      - source_id: PROJECT-QUANTITY-NUMERAL-v1
+        claim: Alkuperäinen rajattu määrä–numeromerkintä-päätös ja aito parikorjaus; ei empiirinen kynnys.
+  - id: M-NUM-QTY-NUMERAL-INDEP-PAKKAUSLAPPU
+    kc_ids:
+      - M-NUM-QTY-NUMERAL
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse rasian numero.
+      access: visual_quantity_numeral_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_numeral
+      direction: forward
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+        - 6
+      optionCount: 3
+      context: Retkirasian numerolappu
+      layout: scatter
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko ryhmää. Saat laskea esineet rauhassa.
+      - level: 2
+        text: Katsotaan ryhmän ja numeron pari yhdessä. Tämä on harjoittelua.
+    invariants:
+      - Numeromerkissä ei ole vastausta kertovia pisteitä tai lukusanaa.
+      - Jokainen vaihtoehto voidaan valita; tyhjä ja väärä vastaus pysyvät mahdollisina.
+    provenance:
+      - source_id: PROJECT-QUANTITY-NUMERAL-v1
+        claim: Alkuperäinen rajattu määrä–numeromerkintä-päätös ja aito parikorjaus; ei empiirinen kynnys.
+  - id: M-NUM-QTY-NUMERAL-INDEP-TARVIKERYHMA
+    kc_ids:
+      - M-NUM-QTY-NUMERAL
+    purpose: independent
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse numeroon sopiva ryhmä.
+      access: visual_quantity_numeral_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_numeral
+      direction: reverse
+      operator: match
+      values:
+        - 3
+        - 4
+        - 5
+        - 6
+      optionCount: 3
+      context: Retkirasian numerolappu
+      layout: row
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko ryhmää. Saat laskea esineet rauhassa.
+      - level: 2
+        text: Katsotaan ryhmän ja numeron pari yhdessä. Tämä on harjoittelua.
+    invariants:
+      - Numeromerkissä ei ole vastausta kertovia pisteitä tai lukusanaa.
+      - Jokainen vaihtoehto voidaan valita; tyhjä ja väärä vastaus pysyvät mahdollisina.
+    provenance:
+      - source_id: PROJECT-QUANTITY-NUMERAL-v1
+        claim: Alkuperäinen rajattu määrä–numeromerkintä-päätös ja aito parikorjaus; ei empiirinen kynnys.
+  - id: M-NUM-QTY-NUMERAL-APPFIRST-RYHMAN-SANALAPPU
+    kc_ids:
+      - M-NUM-QTY-NUMERAL
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: challenge
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Lappu meni sekaisin. Valitse oikea pari.
+      access: visual_quantity_numeral_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_numeral
+      direction: forward
+      operator: repair
+      values:
+        - 3
+        - 4
+        - 5
+      optionCount: 3
+      context: Retkirasian väärä lappu
+      layout: scatter
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko ryhmää. Saat laskea esineet rauhassa.
+      - level: 2
+        text: Katsotaan ryhmän ja numeron pari yhdessä. Tämä on harjoittelua.
+    invariants:
+      - Numeromerkissä ei ole vastausta kertovia pisteitä tai lukusanaa.
+      - Jokainen vaihtoehto voidaan valita; tyhjä ja väärä vastaus pysyvät mahdollisina.
+    provenance:
+      - source_id: PROJECT-QUANTITY-NUMERAL-v1
+        claim: Alkuperäinen rajattu määrä–numeromerkintä-päätös ja aito parikorjaus; ei empiirinen kynnys.
+  - id: M-NUM-QTY-NUMERAL-APPFIRST-SANAN-ESINERYHMA
+    kc_ids:
+      - M-NUM-QTY-NUMERAL
+    purpose: transfer
+    response_type: interaction_state
+    difficulty_band: challenge
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse numerolle sopiva ryhmä.
+      access: visual_quantity_numeral_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_numeral
+      direction: reverse
+      operator: repair
+      values:
+        - 3
+        - 4
+        - 5
+      optionCount: 3
+      context: Retkirasian väärä lappu
+      layout: row
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko ryhmää. Saat laskea esineet rauhassa.
+      - level: 2
+        text: Katsotaan ryhmän ja numeron pari yhdessä. Tämä on harjoittelua.
+    invariants:
+      - Numeromerkissä ei ole vastausta kertovia pisteitä tai lukusanaa.
+      - Jokainen vaihtoehto voidaan valita; tyhjä ja väärä vastaus pysyvät mahdollisina.
+    provenance:
+      - source_id: PROJECT-QUANTITY-NUMERAL-v1
+        claim: Alkuperäinen rajattu määrä–numeromerkintä-päätös ja aito parikorjaus; ei empiirinen kynnys.
+  - id: M-NUM-QTY-NUMERAL-DELAY-RYHMASTA
+    kc_ids:
+      - M-NUM-QTY-NUMERAL
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse rasian numero.
+      access: visual_quantity_numeral_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_numeral
+      direction: forward
+      operator: match
+      values:
+        - 3
+        - 6
+      optionCount: 2
+      context: Retkirasian numerolappu
+      layout: scatter
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko ryhmää. Saat laskea esineet rauhassa.
+      - level: 2
+        text: Katsotaan ryhmän ja numeron pari yhdessä. Tämä on harjoittelua.
+    invariants:
+      - Numeromerkissä ei ole vastausta kertovia pisteitä tai lukusanaa.
+      - Jokainen vaihtoehto voidaan valita; tyhjä ja väärä vastaus pysyvät mahdollisina.
+    provenance:
+      - source_id: PROJECT-QUANTITY-NUMERAL-v1
+        claim: Alkuperäinen rajattu määrä–numeromerkintä-päätös ja aito parikorjaus; ei empiirinen kynnys.
+  - id: M-NUM-QTY-NUMERAL-DELAY-SANASTA
+    kc_ids:
+      - M-NUM-QTY-NUMERAL
+    purpose: delayed_review
+    response_type: interaction_state
+    difficulty_band: core
+    prompt_model:
+      kind: finite_association_task_v1
+      instruction: Valitse numeroon sopiva ryhmä.
+      access: visual_quantity_numeral_v1
+      assistance:
+        kind: none
+    truth_model:
+      kind: finite_association_predicate_v1
+    parameter_model:
+      kind: finite_association_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_numeral
+      direction: reverse
+      operator: match
+      values:
+        - 3
+        - 6
+      optionCount: 2
+      context: Retkirasian numerolappu
+      layout: row
+    misconception_rules:
+      - misconception_id: M-NUM-QTY-NUMERAL-OBS-PARI
+        detect: observed:association
+    hints:
+      - level: 1
+        text: Katso koko ryhmää. Saat laskea esineet rauhassa.
+      - level: 2
+        text: Katsotaan ryhmän ja numeron pari yhdessä. Tämä on harjoittelua.
+    invariants:
+      - Numeromerkissä ei ole vastausta kertovia pisteitä tai lukusanaa.
+      - Jokainen vaihtoehto voidaan valita; tyhjä ja väärä vastaus pysyvät mahdollisina.
+    provenance:
+      - source_id: PROJECT-QUANTITY-NUMERAL-v1
+        claim: Alkuperäinen rajattu määrä–numeromerkintä-päätös ja aito parikorjaus; ei empiirinen kynnys.
+misconceptions:
+  - id: M-NUM-QTY-NUMERAL-OBS-PARI
+    description: Valittu numerolappu ei vastaa koko ryhmän määrää tai ryhmä ei vastaa numeroa. Tämä havainto ei
+      osoita virheen syytä.
+    evidence_patterns:
+      - kind: committed_relation_error
+        when: Oppija vahvistaa vaihtoehdon, joka ei vastaa vihjeen arvoa. Keskeneräistä tai vahvistamatonta vastausta
+          ei nimetä tällä havainnolla.
+    feedback_strategy:
+      conceptual_prompt: Lappu ja ryhmä eivät vielä täsmää. Tarkistetaan pari.
+      representation: Näytä todellinen valittu pari; pyydetty ratkaistu tukipari kirjataan tueksi.
+    repair_targets:
+      - M-NUM-QTY-NUMERAL
+    status: hypothesis
+differentiation:
+  support_variants:
+    step_chunking: Yksi ryhmä ja yksi päätös. Mallissa koko ryhmä yhdistyy suureen numeromerkkiin.
+    hint_availability: Apu on saatavilla ennen virhettä ja kirjataan nykyiseen faktaan.
+    text_density: Lyhyt ohje ja kuvat. Ei esineiden nimeämistä tai kirjoitettuja lukusanoja.
+    representation_boundary: Numerovaihtoehdon rinnalla ei ole määrää antavia pisteitä. Itse laskeminen on sallittu.
+    reduced_motion: Staattiset kuvat; ei aikapainetta.
+    optional_audio: Ääni on valinnainen ja aluksi pois. Se ei valitse eikä laske tuntematonta määrää.
+  challenge_variants:
+    learner_prompt: Kahden rasian laput menivät sekaisin. Korjaa ne yksi kerrallaan.
+    reduced_scaffolding: Sama pieni määräalue; vaikeus tulee ristiriidan löytämisestä, ei suuremmista luvuista.
+    assessment_limit: Valmiin ryhmän valinta ei osoita joukon rakentamista. Vapaa pohdinta ei myönnä numerotaidon näyttöä.
+    transfer_novelty: Todellisen väärän parin korjaus on eri operaatio kuin oikean parin valinta. Tarina tai
+      asettelu eivät yksin anna soveltamisnäyttöä.
+representations:
+  - id: M-NUM-QTY-NUMERAL-PROCESS
+    kind: finite_association_process_v1
+    relation: quantity_numeral
+    independent_cases:
+      - direction: forward
+        value: 3
+      - direction: forward
+        value: 4
+      - direction: forward
+        value: 5
+      - direction: forward
+        value: 6
+      - direction: reverse
+        value: 3
+      - direction: reverse
+        value: 4
+      - direction: reverse
+        value: 5
+      - direction: reverse
+        value: 6
+    application_cases:
+      - direction: forward
+        value: 3
+      - direction: reverse
+        value: 3
+    delayed_cases:
+      - direction: forward
+        value: 3
+      - direction: forward
+        value: 6
+      - direction: reverse
+        value: 3
+      - direction: reverse
+        value: 6
+  - id: M-NUM-QTY-NUMERAL-JOURNEY
+    kind: learning_journey_v1
+    capability: finite_association_v1
+    chapter: Retkirasian numerolappu
+    companion: Aava
+    purpose: Valitaan rasioihin numerolaput.
+    consequence: Aavan rasiassa on oma numerolappusi.
+    instruction: Katso ryhmää. Valitse sopiva pari.
+    model:
+      kind: association_deck_v1
+      lexicon: fi-1-10-v1
+      relation: quantity_numeral
+      entries:
+        - value: 3
+          alternatives:
+            - 3
+            - 4
+            - 6
+          layout: row
+        - value: 4
+          alternatives:
+            - 4
+            - 3
+            - 5
+          layout: scatter
+        - value: 5
+          alternatives:
+            - 5
+            - 4
+            - 6
+          layout: row
+        - value: 6
+          alternatives:
+            - 6
+            - 5
+            - 3
+          layout: scatter
+    retrieval:
+      kind: closed_association_facts_v2
+      claim: association
+simulation_specs: []
+requires_capabilities:
+  - rich_text
+  - diagram
+  - worked_example
+  - single_choice
+  - hint_ladder
+  - reduced_motion_variant
+provenance:
+  curriculum:
+    - source_id: PROD05-OPH-MATH12-QTY-NUMERAL
+      claim: 419550/466344/466963/S2469266 kappaleet1–2 tukevat määrä–numeromerkintä-yhteyden sisältöaluetta; eivät
+        tämän rajatun prosessin kynnyksiä.
+      status: verified
+  pedagogy:
+    - source_id: PROJECT-QUANTITY-NUMERAL-v1
+      claim: "Alkuperäinen käyttäjän korttiin ja olemassa olevaan parimalliin perustuva sovitus: näkyvä malli,
+        hyödyllinen tuki ja erillinen oma päätös. Oppijaymmärrettävyys on testaamaton hypoteesi."
+  domain:
+    - source_id: PROJECT-QUANTITY-NUMERAL-v1
+      claim: 3–6 esineen deterministinen määrä vastaa desimaalista numeromerkkiä. Kahdeksan tapausta ja4/24h-näyte
+        ovat projektipäätöksiä, eivät normi tai tutkimustulos.
+validation:
+  schema: pending
+  graph_refs: pending
+  domain_truth: pending
+  item_invariants: pending
+  pedagogy_review: pending
+  subject_review: pending
+  accessibility_review: pending
+  runtime_smoke: pending
+  status: draft

@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "kcId": "M-MEAS-04",
+  "revision": 19,
+  "state": "draft",
+  "body": "body.html",
+  "module": "lesson.mjs",
+  "assets": [
+    {
+      "path": "same-length-two-units.svg",
+      "sha256": "f5054ef327d36ff250a5b22a0df10207a5cea1170fb15335b1a083e0b2f5d4c1"
+    },
+    {
+      "path": "lesson.css",
+      "sha256": "d8ca78c10a63e3ef9957a3c8e747f7dc6a6b56a192b270d83b095f481589b56c"
+    },
+    {
+      "path": "shared/aava/curious.png",
+      "sha256": "49c270acf571f4fe81a9789cc5979e44b44d21fc0516d083c26d0e8d9f6c0ba2"
+    },
+    {
+      "path": "entry-pilot.css",
+      "sha256": "d00a83cf46daa23dd97b15f97b6c7a266d9326987b243a88ca607460d8090f94"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://www.ncetm.org.uk/classroom-resources/ey-measures/",
+      "title": "Measures",
+      "organization": "NCETM",
+      "accessed": "2026-10-29",
+      "retrieval": "Actual public source retrieved during B07 preparation/GO research; no full linked resource reading inferred.",
+      "inspected": "Public HTML unit iteration, equal units, endpoints, no gaps/overlaps and measurement errors; first read in earlier measurement batches and actually re-retrieved for B07.",
+      "usageRestrictions": "NCETM copyright page independently retrieved2026-10-29: default Crown Copyright/Open Government Licence with acknowledgement, named-author and third-party exceptions. Professional development is not a ready-made lesson to lift. No source figure, worksheet or wording copied.",
+      "adopted": "Tile a complete length using equal-size units; the unit must be named with the number. Model correct endpoints and expose gaps.",
+      "rejectedOrLimited": "Do not treat a screen centimetre as physically calibrated; no weight/capacity/time branches imported. Early-years comparison guidance is not a new prerequisite."
+    },
+    {
+      "url": "https://www.mathematicshub.edu.au/planning-tool/2/measurement/informal-units/",
+      "title": "Informal units: Year2 planning tool",
+      "organization": "Mathematics Hub / Education Services Australia / Australian Government",
+      "accessed": "2026-10-29",
+      "retrieval": "Actual public source retrieved during B07 preparation/GO research; no full linked resource reading inferred.",
+      "inspected": "Public expected development, explicit tiling versus iteration and smaller-unit/larger-count misconception, plus licence footer.",
+      "usageRestrictions": "Footer ©Commonwealth of Australia unless indicated; CC BY4.0 unless indicated. No linked third-party material or source assets copied.",
+      "adopted": "Keep object length fixed when changing unit size; distinguish number of selected pieces from length in cm. Feedback on actual gap/overlap arrangement.",
+      "rejectedOrLimited": "Do not import mass/capacity or curved measurement and fraction demands; no claim source establishes new lesson efficacy."
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+      "note": "Source-owned B07 draft; author pure/source checks do not grant independent or human approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+      "note": "Source-owned B07 draft; author pure/source checks do not grant independent or human approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+      "note": "Source-owned B07 draft; author pure/source checks do not grant independent or human approval."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+      "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/core-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+      "note": "Independent SYNTHETIC different-author scoped review of exact revision: evidence/production/B07/core-independent-review.json. Actual compiled native QA separately bound. Not author self-approval or human/learner/efficacy validation."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "1@eaef7e7bb03cfda0f3bd71fc12234331693d986eae79613a7771df5614ebc5c1",
+      "note": "No actual human/target-learner validation performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@7fee90e0df97ff88002cfd43499f58ccb1d4ddc81da69ae7dc56bb08b4ceab12",
+      "note": "Source-owned two-lesson entry pilot author draft; current independent technical review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@7fee90e0df97ff88002cfd43499f58ccb1d4ddc81da69ae7dc56bb08b4ceab12",
+      "note": "Source-owned two-lesson entry pilot author draft; current independent technical review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@7fee90e0df97ff88002cfd43499f58ccb1d4ddc81da69ae7dc56bb08b4ceab12",
+      "note": "No human/learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@5c5d64fcb99c429666fe79042e959b7258e41cf04bc8a3ffde1d9b7c9837f0d7",
+      "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@5c5d64fcb99c429666fe79042e959b7258e41cf04bc8a3ffde1d9b7c9837f0d7",
+      "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@5c5d64fcb99c429666fe79042e959b7258e41cf04bc8a3ffde1d9b7c9837f0d7",
+      "note": "No human/learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+      "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+      "note": "Entry pilot source updated after first viewport test; prior failed source/history retained; current independent review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+      "note": "No human/learner review performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+      "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/entry-pilot-independent.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "2@30b47a9bcc88142689bccfcc3fe0f81dc63f1386dc3ab0f553daad5faac02cc2",
+      "note": "Different-author synthetic B09 scoped review, exact pre-append source binding: lesson-network/evidence/production/B09/reviews/entry-pilot-independent.json. Scope/closures and remaining human limits recorded in REVIEW_FI.md; no learner/efficacy claim."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@6febda27ae8ed5d1b18d5b844e98184a8093e0ec79530bc036e97ccd155454dc",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@6febda27ae8ed5d1b18d5b844e98184a8093e0ec79530bc036e97ccd155454dc",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@6febda27ae8ed5d1b18d5b844e98184a8093e0ec79530bc036e97ccd155454dc",
+      "note": "LR04-B09: source roles/steps changed. Automated migration is not content/alignment approval. Prior evidence retained; current independent and real human review pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@f87af8ed16263872f20f42b4fdf19ab8b5bb6660fc0e4b43ab570c1f4e9c3ab6",
+      "note": "LR04-B09: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@f87af8ed16263872f20f42b4fdf19ab8b5bb6660fc0e4b43ab570c1f4e9c3ab6",
+      "note": "LR04-B09: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@f87af8ed16263872f20f42b4fdf19ab8b5bb6660fc0e4b43ab570c1f4e9c3ab6",
+      "note": "LR04-B09: manual semantic source refinements after migration; independent current content/alignment and real human acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@1846bd7a9239cfd11ff8c5b5a056d36f98a52706afd5ef4484fc9478aa04d891",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@1846bd7a9239cfd11ff8c5b5a056d36f98a52706afd5ef4484fc9478aa04d891",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@1846bd7a9239cfd11ff8c5b5a056d36f98a52706afd5ef4484fc9478aa04d891",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "3@71b5ae0cccdd264c8a39b00573db91a467e5199aacdecabf1c5bd497d7db2c2e",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "3@71b5ae0cccdd264c8a39b00573db91a467e5199aacdecabf1c5bd497d7db2c2e",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "3@71b5ae0cccdd264c8a39b00573db91a467e5199aacdecabf1c5bd497d7db2c2e",
+      "note": "LR04 frame-art: source framing, local styles or scoped mount markup changed; previous source evidence retained. Current independent delta review and human/learner acceptance pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "8@ba133d6bb730ba3c99b23f14893bbcbbf424568200a0efe6e07272c03ba045f6",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "8@ba133d6bb730ba3c99b23f14893bbcbbf424568200a0efe6e07272c03ba045f6",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "8@ba133d6bb730ba3c99b23f14893bbcbbf424568200a0efe6e07272c03ba045f6",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "pending",
+      "revision": "9@be7bd57bcdd4d75543093f5afebba2fb661521258f150fc91977cbff0ef95c96",
+      "note": "Final projector follow-up: local CSS keeps model, piece controls and response in three desktop columns; adaptive piece-position grid also covers completed six-piece and maximum eight-piece states. Module, body, mathematical geometry and shared shell unchanged. Independent current review pending."
+    },
+    {
+      "kind": "alignment",
+      "state": "pending",
+      "revision": "9@be7bd57bcdd4d75543093f5afebba2fb661521258f150fc91977cbff0ef95c96",
+      "note": "Final projector follow-up: local CSS keeps model, piece controls and response in three desktop columns; adaptive piece-position grid also covers completed six-piece and maximum eight-piece states. Module, body, mathematical geometry and shared shell unchanged. Independent current review pending."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "9@be7bd57bcdd4d75543093f5afebba2fb661521258f150fc91977cbff0ef95c96",
+      "note": "Final projector follow-up: local CSS keeps model, piece controls and response in three desktop columns; adaptive piece-position grid also covers completed six-piece and maximum eight-piece states. Module, body, mathematical geometry and shared shell unchanged. Independent current review pending."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "9@be7bd57bcdd4d75543093f5afebba2fb661521258f150fc91977cbff0ef95c96",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "9@be7bd57bcdd4d75543093f5afebba2fb661521258f150fc91977cbff0ef95c96",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "10@3d84e5aed76f16de65a0f00a00bf849ce7f2e9ffda6427b3e966689be8fc6fed",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "10@3d84e5aed76f16de65a0f00a00bf849ce7f2e9ffda6427b3e966689be8fc6fed",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "10@3d84e5aed76f16de65a0f00a00bf849ce7f2e9ffda6427b3e966689be8fc6fed",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "11@a175c50449c6aa409db6206e0756276b07fb228acb0b465f46294df99caa1b87",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "11@a175c50449c6aa409db6206e0756276b07fb228acb0b465f46294df99caa1b87",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "11@a175c50449c6aa409db6206e0756276b07fb228acb0b465f46294df99caa1b87",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "12@ed7e64bd6e602b983ddc2ffdb3d358b14734abdc55188ad9efcbd97530c73e2d",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "12@ed7e64bd6e602b983ddc2ffdb3d358b14734abdc55188ad9efcbd97530c73e2d",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "12@ed7e64bd6e602b983ddc2ffdb3d358b14734abdc55188ad9efcbd97530c73e2d",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "14@bdee349d8934d73371af964ec3ee4db5ea75088cd0a4a11cf8d33139b86099f5",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "14@bdee349d8934d73371af964ec3ee4db5ea75088cd0a4a11cf8d33139b86099f5",
+      "note": "Launch software review by Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "14@bdee349d8934d73371af964ec3ee4db5ea75088cd0a4a11cf8d33139b86099f5",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "15@ed5600ae198f65e9163ef59a4c13dabfa221af67ad1becc0d6181b218414099c",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "15@ed5600ae198f65e9163ef59a4c13dabfa221af67ad1becc0d6181b218414099c",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "15@ed5600ae198f65e9163ef59a4c13dabfa221af67ad1becc0d6181b218414099c",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "17@45a65a654551464dc378a9f22d7b47e69ab054a6dc7d61cf5d2d14056e5287bb",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "17@45a65a654551464dc378a9f22d7b47e69ab054a6dc7d61cf5d2d14056e5287bb",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "17@45a65a654551464dc378a9f22d7b47e69ab054a6dc7d61cf5d2d14056e5287bb",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "18@af85244ed847980427075fd8916e3fdf16b722b67b5df695eeeee66abd84ea8d",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "18@af85244ed847980427075fd8916e3fdf16b722b67b5df695eeeee66abd84ea8d",
+      "note": "Launch software review by ChatGPT navigation integration (runtime delta); prior content reviewer: Follow-up source review team; accountable integration by root: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Navigation delta 2026-11-03: authored body, module and assets are unchanged. Shared navigation and disclosure/stage runtime reviewed separately; this revision updates only the current Lite source binding and retains human validation pending. Browser execution evidence is produced by this branch CI. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "18@af85244ed847980427075fd8916e3fdf16b722b67b5df695eeeee66abd84ea8d",
+      "note": "Actual teacher and learner validation has not been performed."
+    },
+    {
+      "kind": "content",
+      "state": "reviewed",
+      "revision": "19@637644a7176b719bb49fc4134b2d666e12bc7da2b99cfc2d9b619ac6acdc0630",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "alignment",
+      "state": "reviewed",
+      "revision": "19@637644a7176b719bb49fc4134b2d666e12bc7da2b99cfc2d9b619ac6acdc0630",
+      "note": "Launch software review by ChatGPT, Sammakko 2026-11-06 software delta review: Kuusi1cm palaa ja kolme2cm palaa mittaavat6cm. Alku2/loppu8 antaa kuusi väliä, ei loppulukua8. Yksikkö ja palojen määrä erotetaan. Näyttökaaviota ei käytetä oikean ruudun senttimetrimitaksi. Nykyinen paikallinen kolmen palstan CSS pitää myös 6–8 mittapalan asetukset ja vastauksen näkyvissä. Kaikki mittageometria ja hyväksytyt vastaukset säilyvät; oikean vastauksen aiempi 198 px ylivuoto korjattiin muuttamatta fonttia tai 44 px ohjaimia. Source and delta assessment only; technical gates and real teacher/learner validation are tracked separately. Source comparison to the prior release review: Sampled classic item output is unchanged. The authored standalone lesson body, module and declared assets are unchanged. Evidence: docs/releases/launch/review-decisions.json. No teacher/learner validation or live release approval."
+    },
+    {
+      "kind": "human",
+      "state": "pending",
+      "revision": "19@637644a7176b719bb49fc4134b2d666e12bc7da2b99cfc2d9b619ac6acdc0630",
+      "note": "Actual teacher and learner validation has not been performed."
+    }
+  ],
+  "alignment": {
+    "nodeSpecId": "M-MEAS-04",
+    "nodeRevision": "audit1-2026-10-28",
+    "validRevisions": [
+      "audit1-2026-10-28"
+    ],
+    "globalFallback": "lite181-2026-10-27",
+    "sourceFile": "src/content/added181.ts",
+    "sourceHashes": {
+      "src/content/index.ts": "8f16c2b9948ae3652929092414c6694e6c9421a83e94052035d02dc3841896c8",
+      "src/content/families.ts": "b221e08f8c6bad3d559aae20eac57fa9de7704d3541b6a49f142047fbbec1903",
+      "src/content/kit.ts": "95a1ea48a8152caaca4a63c36a5d0a14e31a2bc51136e0535f320fec3da81bad",
+      "src/content/audit-rev.ts": "78a9737d2dbb5eb3b8aaa01fad9875c64f98cb3048b89b30030cb46b4aea644f",
+      "src/content/motionsims.ts": "18925da01c1a4e237a1381b51f49af9ec8ee46dffb0d86b598f413de6401d2ba",
+      "src/engine/types.ts": "1691c1ec54ee12823d8b8dce2dd0f798d8b9a5b704658460d06796dd508bd533",
+      "src/engine/check.ts": "f5e2838356d5bb41b695855ce40914b964b95f98e3e2b11795859b684ecc9f8f",
+      "src/ui/widgets.ts": "03720bd54cb408efb21fdaa0bb9a5cc80920a645c5c7f506d20859f265b5b5ed",
+      "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+      "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+      "COVERAGE.md": "49b94c0a19a6b5ab747aec95a95f5b45b4247be8ded226725ace6156bea18427",
+      "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+      "src/content/measureanim.ts": "e157bfeb17df885cc8a6392a55b9bd10f8078efb6f065bae2f0347b6270d6cf4",
+      "src/content/pics.ts": "799cfe129124e88a5f577575f5d6e56ad390ffac8cdb41ce790184b0657b6711",
+      "src/content/added181.ts": "1fb1c7ec3aa12bf340768c7d87afdb5b3b5550323bb28f83fbe5c3fc33cbf236"
+    },
+    "rawNodeSpec": "  {\n    id: 'M-MEAS-04', rev: AUDIT_REV, validRevs: [AUDIT_REV], stop: 'Mittaa yksiköllä', icon: '📐',\n    goal: 'Opit mittaamaan pituuden toistamalla samaa yksikköä alusta loppuun ja kertomaan tuloksen luvulla ja yksiköllä.',\n    intro: 'Lentopajan siipiin tarvitaan oikean pituisia rimoja. Mitataan ne yksiköllä.',\n    reward: 'Mittaat pituuden yksiköllä, alusta loppuun!',\n    demo: () => [\n      { say: 'Pituus mitataan toistamalla samaa yksikköä: palat peräkkäin, ilman rakoja, alusta loppuun. Jokainen pala on yksi senttimetri. Viisi palaa: viisi senttimetriä.', scene: layScene(5) },\n      { say: 'Viivoittimessa yksiköt ovat valmiina. Jos rima alkaa kohdasta kaksi, lasketaan välit kohdasta kaksi loppuun asti: kuusi senttiä.', scene: rulerScene(2, 8) },\n      { say: 'Sama rima isommilla paloilla antaa pienemmän luvun. Siksi tulokseen kirjoitetaan aina yksikkö.', scene: twoUnitScene(6, 2) },\n    ],\n    item: cases({\n      units: (r) => {\n        const n = r.int(3, 9);\n        return ask(`Jokainen keltainen pala on 1 cm. Kuinka pitkä rima on?`, n, `Paloja on ${n}, ja jokainen on 1 cm: ${n} cm.`, { unit: 'cm', scene: unitRow(n), hint: 'Laske palat rimaa pitkin alusta loppuun.', whyAt: { [n - 1]: 'Yksi pala jäi laskematta.', [n + 1]: 'Laskit yhden palan liikaa.' } });\n      },\n      offset: (r) => {\n        const a = r.int(1, 4), len = r.int(3, 7), b = a + len;\n        return ask('Kuinka monta senttimetriä rima on?', len, `Rima alkaa kohdasta ${a} ja loppuu kohtaan ${b}: välejä on ${len}, eli ${len} cm.`, { unit: 'cm', scene: rulerArt(12, a, b), hint: 'Rima ei ala nollasta. Laske välit.', whyAt: { [len + 1]: 'Laskit viivat, et välejä. Laske välit.', [b]: `${b} on riman loppukohta. Rima alkaa kohdasta ${a}, joten laske välit siitä.` } });\n      },\n      unitSize: (r) => {\n        const big = r.pick([2, 3]), n = r.int(2, 4);\n        return {\n          say: `Loikka mittasi riman isoilla paloilla: ${word(n)} palaa. Aava mittaa saman riman pienillä paloilla. Saako Aava suuremman vai pienemmän luvun?`,\n          scene: paint(unitRow(n, 24 * big, `${n} isoa palaa`) + unitRow(n * big, 24, `${n * big} pientä palaa`)),\n          task: fixed([t('suuremman'), t('pienemmän'), t('saman')], 0, [undefined, 'Pieniä paloja mahtuu samaan pituuteen enemmän.', 'Luku riippuu siitä, kuinka iso yksikkö on.'], 3),\n          hint: 'Kumpia paloja tarvitaan enemmän samaan pituuteen: isoja vai pieniä?',\n          explain: `Pienempiä paloja tarvitaan enemmän: ${n * big} pientä palaa. Siksi tulokseen kirjoitetaan aina myös yksikkö.`,\n        };\n      },\n    }, (r) => {\n      const a = r.int(3, 6), len = r.int(4, 8), b = a + len;\n      return {\n        say: `Viivoittimen alkupää on katkennut. Rima on kohdasta ${a} kohtaan ${b}. Sulka sanoo: \"Rima on ${b} cm.\" Kuinka pitkä rima on?`,\n        scene: paint(rulerArt(14, a, b)),\n        task: choose(r, t(`${len} cm`), [t(`${b} cm`), t(`${len + 1} cm`)], [`Riman pää on kohdassa ${b}, mutta alku ei ole nollassa.`, 'Laske välit, älä viivoja.']),\n        hint: 'Loppukohta ei ole pituus, kun alku ei ole nollassa.',\n        explain: `Välejä kohdasta ${a} kohtaan ${b} on ${len}: rima on ${len} cm.`,\n      };\n    }),\n  },",
+    "goal": "Own NodeSpec.goal retained in rawNodeSpec",
+    "actualFamilies": [
+      {
+        "tag": "units",
+        "kind": "numeric",
+        "range": "n3..9",
+        "treatment": "One labelled1cm piece each; count all units; whyAt n±1."
+      },
+      {
+        "tag": "offset",
+        "kind": "numeric",
+        "range": "a1..4,len3..7,b=a+len",
+        "treatment": "Ruler12, length intervals, whyAt len+1 vs endpointb; same-key collision at a1 gives endpoint feedback precedence."
+      },
+      {
+        "tag": "unitSize",
+        "kind": "choice",
+        "range": "big2/3,n2..4",
+        "treatment": "Same object; smaller units give more pieces; picture two independently sized SVG viewports needs caution."
+      },
+      {
+        "tag": "transfer",
+        "kind": "choice",
+        "range": "a3..6,len4..8,b=a+len",
+        "treatment": "Broken ruler14; reject endpoint length and tick-count error."
+      }
+    ],
+    "demos": [
+      "layScene(5): sequential1cm unit copies",
+      "rulerScene(2,8): count6 intervals after moving stick",
+      "twoUnitScene(6,2): same length6 small or3 large units"
+    ],
+    "phaseDispatch": "kit.cases ordinary named families in guided/independent/retrieval, transfer separate. No guidedTags on these3.",
+    "registryOverlay": "index.ts registered actual ARITH/WRITTEN/ADDED181 NodeSpecs. None of these3 in SIMS overlay. No explicit families.ts node/wildcard/tag declarations or scope activity-use rows targeting these3: defaults OUTCOME, empty assumed/supplied/coTaught/support; canonical dynamic rule absent. M-MUL-01 goal fallback from GOALS; other2 own explicit goal.",
+    "audit": "audit/LESSON_AUDIT.md overview19 and detailed M-MEAS-04 lines301ff.3 actual demos vs2 coverage. whyAt collision a1 noted by audit. Current unitRow rect widths unit-2 leave visual gutters although comment says no gaps; original authored tile boundaries use true abutment.",
+    "comparison": "Constructive layout has individual piece-start controls, add/remove and shared geometry. Check sorted coverage, then report value/unit; arbitrary row order accepted. Detect gap, overlap, start/end faults separately. A correct numeral cannot hide bad layout. Both6cm and correctly named piece count accepted. Helper boundary overlay preserves still-valid answer.",
+    "evidenceLimits": "Virtual tiling and reported measurement do not verify physical alignment, ruler handling, reading strategy, independence or learning efficacy.",
+    "reconciliationFile": "alignment.md",
+    "currentSource": {
+      "scope": "Current Lite source bytes; sourceFiles/sourceHashes outside currentSource remain historical supplied-snapshot provenance.",
+      "kcRevision": "audit1-2026-10-28",
+      "validRevisions": [
+        "audit1-2026-10-28"
+      ],
+      "revisionPolicy": "explicit_valid_revisions",
+      "liteGeneratorSha256": "c6a954c036e0c9f1b6b313ad6577ef9097dc1148dfb7de98c11ea746bd08ca75",
+      "sourceHashes": {
+        "COVERAGE.md": "4d706037b852cff571fc278f4cfbc17e6bb7dd6d95059467b0682f8228d345a0",
+        "audit/LESSON_AUDIT.md": "bc9979f2e5174f9c4039fbbd009d6d0cc341d59c451467e6d53c7e72299ee00b",
+        "docs/PEDAGOGY_REFERENCES.md": "d18d901f2001a7c931ad72c55ce2921676234735bae83356b241d78841da4d1f",
+        "reference/mvp-scope-181.json": "394daa811285dec750d7428f42c84e4a0a237229fd09170eae0ddcafb3777715",
+        "src/content/added181.ts": "38b574a0c54ce1a57f86b52010be6c9e7c75b97b2093571b98a0b049eac5aad7",
+        "src/content/audit-rev.ts": "b99bbc6abdcc6837869451a5daddce2f960595ec24f2e2de93f58cefaf9270a6",
+        "src/content/families.ts": "dfa5df26f18c9894fd79302254d4311ec91aeddade5fc7fdea0d7c97ce97e3a7",
+        "src/content/index.ts": "1eee67903d905d7c37dba0d6c41600e3e916a23651ebe224a75f9b18db74d0e3",
+        "src/content/kit.ts": "967aa84c615ab5e637dcf80dca1710e9f1841c9885c9f159327edc582b4b0011",
+        "src/content/measureanim.ts": "e157bfeb17df885cc8a6392a55b9bd10f8078efb6f065bae2f0347b6270d6cf4",
+        "src/content/motionsims.ts": "c68310a919d334e42d394b80ba26573de4e17db7ebe61e5b2ea1d4459dd1b770",
+        "src/content/pics.ts": "1dae20df8e5f19164829b96d15671a401c143db0826a69776060b88d2458103d",
+        "src/engine/check.ts": "47db66a3f49e0ad81dbe6a44ef630f68c219ef1278b96b1d48e353ccb5d113c3",
+        "src/engine/types.ts": "a7b6107b3e8b1393ec5939203df1e2132c5494ab5944602fcaf6df6f6acf2c51",
+        "src/ui/widgets.ts": "ed38f173766820cfc9dafcf8ea95a57a8940afe50a36ad19f3b00f3193e56ede"
+      },
+      "historicalNonLiteReferences": [],
+      "reviewBoundary": "Source binding only. Current content/alignment decisions and technical evidence are separate; teacher and learner validation remain pending."
+    }
+  },
+  "planning": {
+    "gradeBand": "1-2",
+    "canonical": {
+      "id": "M-MEAS-04",
+      "subject": "mathematics",
+      "grade_band": "1-2",
+      "topic_area": "Geometria ja mittaaminen",
+      "parent_concept": "Pituusmittaus",
+      "title": "Pituuden mittaaminen yksikön avulla",
+      "short_description": "Pituuden mittaaminen yksikön avulla",
+      "source_basis": "direct_curriculum",
+      "curriculum_refs": [
+        "OPH-POPS2014-MATH-VL1-2-S3"
+      ],
+      "evidence_notes": "Ehdokasnoodi. Arviointinäyttö, virhekäsitykset ja oppimispolku täsmennetään sisältösuunnittelussa.",
+      "status": "candidate",
+      "required_root": false,
+      "root_kind": "none",
+      "node_kind": "procedure",
+      "relations": [
+        {
+          "id": "M-MEAS-03",
+          "relation_type": "prerequisite",
+          "strength": "required",
+          "rationale": "M-MEAS-03 on tämän osaamiskohteen välitön välttämätön esitieto."
+        }
+      ],
+      "prerequisite_groups": [
+        {
+          "all_of": [
+            "M-MEAS-03"
+          ],
+          "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+        }
+      ],
+      "foundation_entry": false,
+      "zero_required_indegree": false,
+      "foundation_entry_rationale": null,
+      "entry_role": "none",
+      "mastery_role": "atomic",
+      "concept_path": [
+        "Matematiikka",
+        "Geometria ja mittaaminen",
+        "Pituusmittaus"
+      ]
+    },
+    "canonicalGraphSha256": "17eca8c1675ffe14aa3d6836e1ce7109020f440b22df09b7a7b15a8e95bb39fb",
+    "teacherObjective": "Oppilas asettaa samankokoiset mittayksiköt koko pituuden peitoksi ilman rakoja tai päällekkäisyyttä ja ilmoittaa mittaluvun sekä yksikön.",
+    "childGoal": "Mittaan pituuden ja kerron luvun sekä yksikön.",
+    "canonicalPrerequisiteGroups": [
+      {
+        "all_of": [
+          "M-MEAS-03"
+        ],
+        "rationale": "v0.1:n required-esitiedot siirretty v0.2:ssa eksplisiittiseen AND-ryhmään."
+      }
+    ],
+    "strongSupport": [],
+    "assumed": "Required M-MEAS-03 (centimetre and ruler interval). Iteration/tiling applied procedurally; no extra M-MEAS-01 hard gate, conversion fluency, fraction or object naming demand. Screen geometry not physical cm calibration.",
+    "scope": "All target lengths6cm; targets0..6 or2..8 in model coordinates. Selected piece1cm or2cm, maximum8 pieces within0..12cm drawing; positions editable in1cm steps. Report6cm or correct number of selected-size pieces. No fractional remainder piece.",
+    "interaction": "Constructive layout has individual piece-start controls, add/remove and shared geometry. Check sorted coverage, then report value/unit; arbitrary row order accepted. Detect gap, overlap, start/end faults separately. A correct numeral cannot hide bad layout. Both6cm and correctly named piece count accepted. Helper boundary overlay preserves still-valid answer.",
+    "evidenceLimits": "Virtual tiling and reported measurement do not verify physical alignment, ruler handling, reading strategy, independence or learning efficacy.",
+    "curriculumVsDesign": "Canonical roles/grade/groups/curriculum refs are frozen curriculum facts. Finite scenes, controls and lesson sequencing are original project design; external comparables corroborate concepts, not new normative graph facts or efficacy.",
+    "feedbackSemantics": "Root-owned input and change handlers each commit semantic edits; explicit check rereads visible task/answer. Edits clear dependent verdict. Separate help/model actions preserve the same still-valid practice verdict. No timers or persistence; pause/resume/reset/dispose clean3 scoped listeners.",
+    "assetProvenance": [
+      {
+        "path": "same-length-two-units.svg",
+        "origin": "Original package code-native subject diagram or source CSS,2026-10-29. No external artwork copied."
+      },
+      {
+        "path": "lesson.css",
+        "origin": "Original package code-native subject diagram or source CSS,2026-10-29. No external artwork copied."
+      },
+      {
+        "path": "shared/aava/curious.png",
+        "origin": "Actual supplied shared PNG unchanged, no redraw/duplication."
+      }
+    ]
+  },
+  "extensions": {
+    "authorBatch": "B07",
+    "author": "Mill",
+    "sourceOnly": true,
+    "noHumanValidation": true,
+    "entryPilot": {
+      "referenceArchiveSha256": "ba487d6ebf45035efaee1a435f0ae36536f68079a249006dfb6fc7a49de05494",
+      "reviewSha256": "61e5a72690371010146c5fa6a5730346d7e78b9eea7ce3c681c8afab96b01946",
+      "design": "Early live exploration and optional native anchor navigation; compact presentation chrome only on these two pages. Retained full explanations, case/answer semantics, constructive placement or event-clock/rhythm meaning, canonical title and all teacher functions.",
+      "learningBenefit": "Unmeasured design hypothesis; no human/learner validation.",
+      "review": "author_draft_pending_independent_review"
+    },
+    "audienceContract": 1,
+    "audienceMigration": {
+      "stage": "LR04",
+      "batch": "LR04-B09",
+      "method": "bounded source-role/step annotation with separately recorded author corrections",
+      "contentReview": "pending",
+      "alignmentReview": "pending",
+      "humanReview": "pending"
+    }
+  }
+}

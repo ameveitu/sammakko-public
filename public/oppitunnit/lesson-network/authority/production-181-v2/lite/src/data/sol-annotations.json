@@ -1,0 +1,1450 @@
+{
+ "from": "slice52_design_cards.json",
+ "sha256": "0e1d7c521773bca970d51ff98d04c5dab7174fed669c75ebaa30e51b5732e649",
+ "note": "Sol design cards imported as annotations. Not lesson content; not production authorized unless the status says so.",
+ "cards": [
+  {
+   "id": "ENV-PHY-MOTION-01",
+   "role": "integration",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Kerron sekä liikkeestä että siinä tapahtuvasta muutoksesta.",
+   "example": "Sama lyhyt reitti: pallo lähtee, liikkuu hetken tasaisesti, pysähtyy. Näytetään missä se liikkui ja missä liike muuttui.",
+   "task": "Kuvaa toinen leike kahdella havainnolla: liike suhteessa tolppaan ja muutos.",
+   "expected": "Molemmat havainnot oikeasta samasta leikkeestä.",
+   "feedback": "”Havaitsit liikkeen. Missä kohdassa vauhti tai suunta muuttui?”",
+   "boundary": "Integraation oma yhteisnäyttö; ei automaattisia lasten mastery-merkintöjä.",
+   "research": [
+    "R07",
+    "R09"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "ENV-PHY-MOTION-OBS-01",
+      "ENV-PHY-MOTION-CHANGE-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Science_KC_Foundation_1_6_v0.2.yaml",
+    "line": 652,
+    "sha256": "1e74827257ba40d255c1fd6e19651ef47756313bbaffbca0acc9909b467f8127"
+   }
+  },
+  {
+   "id": "ENV-PHY-MOTION-CHANGE-01",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Huomaan liikkeen nopeutumisen, hidastumisen tai suunnan muutoksen.",
+   "example": "Paikkamerkit otetaan yhtä pitkien aikavälien välein. Malli näyttää ensin yhtä suuret välit ja sitten kasvavat välit. Selitetään välin kasvun tarkoittavan pidempää matkaa samassa ajassa.",
+   "task": "Valitse samanmittaisista videoleikkeistä se, jossa liike muuttuu, ja osoita muutoskohta.",
+   "expected": "Havaittava nopeuden tai suunnan muutos; ei pelkkä liikkeessä oleminen.",
+   "feedback": "”Tämä pallo on koko ajan liikkeessä, mutta sen tasaväliset merkit eivät näytä nopeutumista.”",
+   "boundary": "Aikavälit eksplisiittisesti samat. Ei kiihtyvyyden laskentaa eikä väitettä, että kiihtyminen tarkoittaisi vain nopeutumista.",
+   "research": [
+    "R07",
+    "R09"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "SCI-ENV-OBSERVE-01",
+      "ENV-PHY-MOTION-OBS-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Science_KC_Foundation_1_6_v0.2.yaml",
+    "line": 669,
+    "sha256": "1e74827257ba40d255c1fd6e19651ef47756313bbaffbca0acc9909b467f8127"
+   }
+  },
+  {
+   "id": "ENV-PHY-MOTION-OBS-01",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Huomaan, muuttaako kohde paikkaansa suhteessa ympäristöön.",
+   "example": "Kaksi pysäytyskuvaa: pallo on ensin aidan vasemman tolpan, sitten oikean tolpan kohdalla. Aita pysyy paikallaan. ”Pallo liikkui aidan suhteen.”",
+   "task": "Katso kaksi kuvaa samasta paikasta. Mikä kohde vaihtoi paikkaa?",
+   "expected": "Kohde, jonka sijainti yhteiseen vertailukohteeseen nähden muuttui.",
+   "feedback": "”Vertaa palloa tähän paikallaan pysyvään tolppaan, älä kameran reunaan.”",
+   "boundary": "Ei nopeuslaskua tai kameran liikkeellä harhauttamista ensimmäiseksi. Uusi kuvaussuunta myöhemmin lähisoveltamisena.",
+   "research": [
+    "R07"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "SCI-ENV-OBSERVE-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Science_KC_Foundation_1_6_v0.2.yaml",
+    "line": 664,
+    "sha256": "1e74827257ba40d255c1fd6e19651ef47756313bbaffbca0acc9909b467f8127"
+   }
+  },
+  {
+   "id": "M-ADD-01",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Yhdistän kaksi määrää ja selvitän yhteismäärän.",
+   "example": "Kolme nappia ja kaksi nappia siirretään yhteen. Lasketaan kaikki viisi. 3 + 2 = 5 kirjoitetaan vasta toiminnan rinnalle.",
+   "task": "Yhdistä neljän ja kolmen napin ryhmät. Montako on yhteensä?",
+   "expected": "7; yhdistyneessä joukossa kaikki alkuperäiset napit kerran.",
+   "feedback": "”Näihin neljään tulivat vielä nämä kolme. Lasketaan koko uusi joukko.”",
+   "boundary": "Kuvallinen toiminta ennen symbolisääntöä. Älä edellytä ulkoa opittuja summia.",
+   "research": [
+    "R01",
+    "R05"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-NUM-02"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 1925,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-DIV-02",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Selvitän, montako samankokoista ryhmää määrästä saa.",
+   "example": "12 nappia pakataan neljän napin pusseihin: pussi 1, pussi 2, pussi 3. 12 : 4 = 3 pussia.",
+   "task": "20 nappia, jokaiseen pussiin 5. Montako täyttä pussia?",
+   "expected": "4 pussia, kussakin 5 nappia.",
+   "feedback": "”Viisi kertoo yhden pussin sisällön. Kysymys pyytää pussien määrää.”",
+   "boundary": "Sisältöjako erotetaan jakamisesta annettuun määrään ryhmiä. Kertotaulun muistaminen ei ole uusi hard gate.",
+   "research": [
+    "R01",
+    "R11"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-NUM-02"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 2691,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-MEAS-00",
+   "role": "atomic",
+   "status": "existing_pack_repair_proposal",
+   "goal": "Vertaan, kumpi kahdesta nauhasta on pidempi.",
+   "example": "Nauhat asetetaan yhteisestä alkupäästä. Pidemmän loppupää ulottuu kauemmas; kääntäminen ei muuta nauhan pituutta.",
+   "task": "Näytä nauhaparit ilman pituusnumeroita ja kysy jokaisesta samalla tavalla: ”Kumpi nauha on pidempi, vai ovatko ne yhtä pitkät?” Suunnittelijan pituusparit: 6 ja 9, 8 ja 5, 7 ja 7.",
+   "expected": "B, A, yhtä pitkät.",
+   "feedback": "”Nauhan paikka vaihtui, mutta se ei venynyt. Aseta alkupäät samaan kohtaan.”",
+   "boundary": "Ei kaikkien eri alusta alkavien vertailujen julistamista mahdottomiksi. P12–P14.",
+   "research": [
+    "R03"
+   ],
+   "findings": [
+    "P12",
+    "P13",
+    "P14"
+   ],
+   "groups": [],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 1308,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-MEAS-01",
+   "role": "atomic",
+   "status": "existing_pack_repair_proposal",
+   "goal": "Kerron pituuden yhteisen mittapalan avulla.",
+   "example": "Kolme samaa palaa täyttää nauhan. Näytä aloitus, saumat ja viimeinen reuna. ”Kolmen tällaisen palan pituinen.”",
+   "task": "Näytössä on uusi nauha ja sovittu mittapala. Peitä koko nauha samanlaisilla paloilla ilman rakoja ja ilmoita tulos. Suunnittelijan totuustila: nauha on viiden palan pituinen; tätä lukua ei kerrota oppijalle.",
+   "expected": "Viisi käytettyä mittapalaa; oikea yhtä suuri yksikkö, täysi peitto.",
+   "feedback": "”Näiden kahden palan väliin jäi rako. Siirrä ne vierekkäin.”",
+   "boundary": "Tämä lukumäärä on suunnitteluesimerkki, ei valmiiksi hyväksytty generaattoriparametri. Vältä ohjatun tilanteen skaalauskopiota itsenäisenä. M2 säilyy.",
+   "research": [
+    "R03",
+    "R01"
+   ],
+   "findings": [
+    "P08",
+    "P15",
+    "P16",
+    "P17"
+   ],
+   "groups": [
+    {
+     "all": [
+      "M-MEAS-00",
+      "M-NUM-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 1359,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-MEAS-02",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Tunnistan pituuden ominaisuutena, joka voi säilyä esinettä siirrettäessä.",
+   "example": "Sama nauha siirretään ja käännetään venyttämättä. ”Nauha on eri paikassa, mutta yhtä pitkä.” Vertaa sen pituutta ja väriä eri kysymyksissä.",
+   "task": "Nauha käännetään pystyasentoon: muuttuiko pituus? Osoita sitten kahdesta eri nauhasta pidempi.",
+   "expected": "Kääntäminen ei muuta pituutta; toinen vertailu perustuu nauhan mitattavaan ulottuvuuteen.",
+   "feedback": "”Korkeampi sijainti ei tarkoita pidempää nauhaa. Katso nauhaa alusta loppuun.”",
+   "boundary": "Ei numeromitan tai yksikkö muunnoksen lisävaatimusta. Reusable attribute/representation/evidence -kyvykkyys tarvitaan ennen tuotantoa; edelleen deferred.",
+   "research": [
+    "R03"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-MEAS-00"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 6423,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-MUL-01",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Näen kertolaskussa yhtä suuret ryhmät.",
+   "example": "Kolme kulhoa, jokaisessa 4 marjaa. 4 + 4 + 4 = 12; tässä 3 × 4 tarkoittaa kolmea neljän ryhmää.",
+   "task": "Tee neljä kahden napin ryhmää ja kerro yhteismäärä.",
+   "expected": "8 nappia, neljä ryhmää ja kaksi jokaisessa.",
+   "feedback": "”Ryhmiä on neljä; yhdessä ryhmässä on kaksi. Kumpikin tieto kuuluu malliin.”",
+   "boundary": "Valittu kertolaskun järjestyksen nimeämiskäytäntö näkyviin. Ei hylätä matemaattisesti samanarvoista merkintää ilman kysytyn roolin perustelua.",
+   "research": [
+    "R01",
+    "R05"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-ADD-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 2474,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-MULTREL-01",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Ymmärrän, mitä kolme kertaa niin paljon tarkoittaa.",
+   "example": "Punaisia 3, sinisiä 9. Kolme punaisten kokoista ryhmää täyttää sinisten määrän. ”Sinisiä on kolme kertaa niin paljon.”",
+   "task": "Punaisia 4, sinisiä 12. ”Sinisiä on __ kertaa punaisten määrä.”",
+   "expected": "3.",
+   "feedback": "”Luku 8 kertoo erotuksen. Kysymme nyt, montako neljän ryhmää kahteentoista mahtuu.”",
+   "boundary": "Ei sekoiteta suomen ”kolme kertaa enemmän” -epäselvyyteen. Ryhmittely näkyviin.",
+   "research": [
+    "R11",
+    "R01"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-MUL-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 3170,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-01",
+   "role": "integration",
+   "status": "existing_pack_repair_proposal",
+   "goal": "Lasken kaikki esineet kerran käyttäen lukusanoja järjestyksessä.",
+   "example": "Osoita vuorollaan viittä nappia ja käytä sanoja 1–5. Näytä sekä jokaisen esineen mukanaolo että sanajono.",
+   "task": "Näytössä on hajallaan nappeja. ”Laske napit, aloita mistä haluat.” Suunnittelijan totuustila: kuusi nappia.",
+   "expected": "Kuusi eri kohdetta täsmälleen kerran ja lukusanojen peräkkäinen 1–6-jono.",
+   "feedback": "”Sanat olivat järjestyksessä, mutta tähän nappiin palattiin. Tämä toinen jäi väliin.”",
+   "boundary": "Integroitu predikaatti säilyy. Ei käyttöliittymän automaattista laskemista itsenäisellä reitillä.",
+   "research": [
+    "R02"
+   ],
+   "findings": [
+    "P07",
+    "P08"
+   ],
+   "groups": [
+    {
+     "all": [
+      "M-NUM-STABLE-ORDER",
+      "M-NUM-1TO1"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 834,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-02",
+   "role": "atomic",
+   "status": "existing_pack_repair_proposal",
+   "goal": "Tiedän, että viimeinen laskusana kertoo koko joukon määrän.",
+   "example": "Neljä nappia lasketaan. Koko joukko kehystetään, ei vain viimeistä nappia. ”Nappeja on neljä.”",
+   "task": "Oppija on itse laskenut nappijoukon. Samat napit siirtyvät toiseen asetteluun. ”Montako nappeja on yhteensä? Mihin joukkoon vastauksesi viittaa?” Suunnittelijan totuustila: viisi nappia.",
+   "expected": "Viisi; sama koko joukko.",
+   "feedback": "”Viisi kertoo kaikkien laskettujen nappien määrän, ei viimeisen napin nimeä.”",
+   "boundary": "Säilytä nykyinen same-members-raja; Give-N on erillinen laajennusehdotus, ei nykyiseen näyttöön salaa lisättävä testi.",
+   "research": [
+    "R02"
+   ],
+   "findings": [
+    "P08",
+    "P09",
+    "P10",
+    "P11"
+   ],
+   "groups": [
+    {
+     "all": [
+      "M-NUM-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 880,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-03",
+   "role": "integration",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Yhdistän määrän, lukusanan ja numeromerkin.",
+   "example": "Neljä nappia ↔ sana neljä ↔ merkki 4. Esitetään yhteinen merkitys, ei kolme irrallista luokittelua.",
+   "task": "Näytössä on hajallaan esineitä. ”Valitse samaa määrää tarkoittava lukusana ja numeromerkki.” Suunnittelijan totuustila: viisi esinettä; määrää ei nimetä kysymyksessä.",
+   "expected": "viisi ja5, oikeaan esinejoukkoon sidottuna.",
+   "feedback": "”Tämä merkki 5 tarkoittaa samaa määrää kuin sana viisi ja tämä laskettu joukko.”",
+   "boundary": "Kolme process-lapsitaitoa ja oma integraationäyttö säilyvät. Ei valmiiden naapuririvien kopiointia näyttönä.",
+   "research": [
+    "R02"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-NUM-QTY-WORD",
+      "M-NUM-QTY-NUMERAL",
+      "M-NUM-WORD-NUMERAL"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 914,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-07",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Jatkan lukujonoa annetusta kohdasta eteenpäin.",
+   "example": "Aloitus 5, seuraavat 6,7,8. Lukusuora auttaa harjoittelussa; sitä ei tarvita kaikessa itsenäisessä näytössä.",
+   "task": "Jatka 8:sta kolme seuraavaa lukua.",
+   "expected": "9,10,11.",
+   "feedback": "”Aloitusluku on jo annettu. Sen jälkeen tulee seuraava luku, ei uusi aloitus yhdestä.”",
+   "boundary": "Valitse lukualue opetetun tavoitteen mukaan. Ei nopeus- tai ääneenlukuvaatimusta oletuksena.",
+   "research": [
+    "R02",
+    "R01"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-NUM-03"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 1068,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-14",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Yhdistän mittaluvun siihen, mitä ja millä mitattiin.",
+   "example": "Nauhaan sopii neljä samankokoista palaa. Merkintä 4 kuvataan palan symbolin vieressä.",
+   "task": "Valmiissa kuvassa nauha on kuuden sovitun palan pituinen. Valitse sitä kuvaava luku ja yksikkö.",
+   "expected": "6 käytettyä palaa.",
+   "feedback": "”Pelkkä 6 ei vielä kerro, mihin palaa verrattiin. Näytä myös sovittu mittapala.”",
+   "boundary": "Luvun esittämistä arvioidaan; toistettujen yksiköiden peitto voidaan antaa valmiina, ettei strong-mittausesitiedosta tule salainen hard gate.",
+   "research": [
+    "R03"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-NUM-03"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 1339,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-16",
+   "role": "integration",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Yhdistän tasavälisen jonon samankokoisiin ryhmiin.",
+   "example": "Kolmen napin ryhmä lisätään kerrallaan:3,6,9,12. Sama kasvu näkyy ryhmissä ja jonossa.",
+   "task": "Neljä ryhmää, jokaisessa 2. Yhdistä ryhmäkuvat lukuihin 2,4,6,8.",
+   "expected": "Ryhmämäärät 1,2,3,4 vastaavat kokonaismääriä 2,4,6,8.",
+   "feedback": "”Jokainen uusi ryhmä lisää kaksi. Pelkkä kahden välein lueteltu jono ei vielä kerro, mitä ryhmät tarkoittavat.”",
+   "boundary": "Integraation oma yhdistämisnäyttö; ei lapsien automaattista hyväksyntää.",
+   "research": [
+    "R01",
+    "R05"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-NUM-EQUALSTEP-SEQ",
+      "M-NUM-MULTIPLE-INTRO"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 1409,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-1TO1",
+   "role": "atomic",
+   "status": "existing_pack_repair_proposal",
+   "goal": "Lasken jokaisen esineen vain kerran.",
+   "example": "Kolme näkyvää kiveä, mallissa tavalliset sanat yksi–kaksi–kolme. Esineiden käyntijärjestystä saa vaihtaa.",
+   "task": "Näytössä on kiviä. ”Osoita jokaista kiveä kerran ja valitse joka osoitukseen yksi lukusana.” Suunnittelijan totuustila: viisi kiveä; määrää ei kerrota oppijalle.",
+   "expected": "Vastaavuus: jokainen kohde kerran, yksi sana per osoitus. Lukusanojen järjestys pisteytetään erikseen eikä vaikuta tähän komponenttiin.",
+   "feedback": "”Tämä kivi jäi ilman lukusanaa.” Tuetussa mallissa osoitetaan puuttuva toiminta.",
+   "boundary": "Älä nosta yhden komponentin onnistumista kokonaiseksi laskemistaidoksi. Oikea opetusmalli ei vaadi graderin osataitojen yhdistämistä.",
+   "research": [
+    "R01",
+    "R02"
+   ],
+   "findings": [
+    "P01",
+    "P02",
+    "P03"
+   ],
+   "groups": [],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 856,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-EQUALSTEP-SEQ",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Huomaan saman muutoksen jokaisessa jonon välissä.",
+   "example": "2,4,6,8: joka kerta lisätään 2. Näytä yhtä pitkät hypyt lukusuoralla.",
+   "task": "Täydennä 3,6,9,__ ja kerro askel.",
+   "expected": "12; lisätään 3.",
+   "feedback": "”Tarkista muutos jokaisen vierekkäisen parin välillä, ei vain ensimmäisestä viimeiseen.”",
+   "boundary": "Lukusuora voi olla tuki; ei vaadita kertolaskusymbolia. Vaihtele aloituskohtaa myöhemmin.",
+   "research": [
+    "R01"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-NUM-07"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 1426,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-MULTIPLE-INTRO",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Ymmärrän monikerran saman määrän toistumisena.",
+   "example": "Yksi kolmen ryhmä 3; kaksi 6; kolme 9. Nämä ovat kolmen monikertoja.",
+   "task": "Muodosta kahden ryhmistä 10 nappia. Montako ryhmää tarvittiin?",
+   "expected": "5 kahden ryhmää;10 on2:n monikerta.",
+   "feedback": "”Jokainen ryhmä on samaa kokoa. Etsi kokonaisia ryhmiä, älä vain saman viimeisen numeron lukuja.”",
+   "boundary": "Ryhmittely ja luku näkyvät yhdessä; alkutavoite ei vaadi abstraktia jaollisuussääntöä.",
+   "research": [
+    "R01",
+    "R05"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-NUM-07"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 1430,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-QTY-NUMERAL",
+   "role": "process",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Yhdistän esineiden määrän numeromerkkiin.",
+   "example": "Kolme kuvassa olevaa nappia lasketaan ja liitetään merkkiin 3. Vaihdetaan asettelu määrää muuttamatta.",
+   "task": "Näytössä on hajallaan nappeja. ”Valitse nappien määrää tarkoittava numeromerkki: 5, 6 vai 7.” Suunnittelijan totuustila: kuusi nappia.",
+   "expected": "6.",
+   "feedback": "”Lasketaan, montako nappia on. Merkin muoto ei muistuta esineiden asettelua.”",
+   "boundary": "Process-rooli: näyttö useassa määrässä/asettelussa, ei yhden kuvaparin tunnistus. Nykyinen runtime ei vielä tue tätä roolia.",
+   "research": [
+    "R02"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-NUM-02"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 935,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-QTY-WORD",
+   "role": "process",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Yhdistän määrän lukusanaan.",
+   "example": "Neljän esineen ryhmä ja sana neljä, ei numeromerkkiä välittäjänä ensimmäiseksi.",
+   "task": "Näytössä on nappeja. ”Mikä lukusana kertoo nappien määrän: neljä, viisi vai kuusi?” Suunnittelijan totuustila: viisi nappia.",
+   "expected": "viisi.",
+   "feedback": "”Viisi tarkoittaa koko tätä määrää. Sana ei ole yhden napin nimi.”",
+   "boundary": "Process; useita määriä ja asetelmia. Sanan kuuntelu/lukeminen rajataan rehellisesti: ei väitettä vapaasta suullisesta tuottamisesta.",
+   "research": [
+    "R02"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-NUM-02"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 931,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-STABLE-ORDER",
+   "role": "atomic",
+   "status": "existing_pack_repair_proposal",
+   "goal": "Käytän lukusanoja tavallisessa järjestyksessä.",
+   "example": "Malli yksi–kaksi–kolme–neljä, sitten ohjattu yksi–kaksi–__–neljä. Tuki poistetaan ennen itsenäistä palautusta.",
+   "task": "Muodosta lukusanajono yhdestä kahdeksaan ilman näkyvää mallia.",
+   "expected": "yksi, kaksi, kolme, neljä, viisi, kuusi, seitsemän, kahdeksan.",
+   "feedback": "”Kolme jäi väliin. Kuuntele tai katso: kaksi, kolme, neljä.” Tämä apu kirjataan.",
+   "boundary": "Itsenäinen palautus, uuden aloituskohdan soveltaminen ja viive eivät ole sama näyttö. Kiinteän faktan policy-kysymys P05 tarvitsee erillisen päätöksen. Sanapankki ei todista vapaata suullista tuottoa.",
+   "research": [
+    "R02",
+    "R04"
+   ],
+   "findings": [
+    "P04",
+    "P05",
+    "P06"
+   ],
+   "groups": [],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 852,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-NUM-WORD-NUMERAL",
+   "role": "process",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Tunnistan numeromerkin kuulemasta tai näkemästäni lukusanasta.",
+   "example": "Sana kolme ja merkki 3 yhdistetään, myöhemmin myös käänteinen suunta.",
+   "task": "Kuultu tai sovitulla tekstireitillä esitetty ”kuusi”: valitse 6,9 tai 3.",
+   "expected": "6.",
+   "feedback": "”Kuusi kirjoitetaan näin:6. Vertaa merkin muotoa tähän malliin.”",
+   "boundary": "Process-rooli ei katoa vaikka grader on deterministinen. Numeron kääntäminen 6/9 on merkityksellinen havainto, ei diagnoosi. Tavoitekohtainen auditiivinen/tekstireitti hyväksyttävä erikseen.",
+   "research": [
+    "R02"
+   ],
+   "findings": [],
+   "groups": [],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 939,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-TH-01",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Vertaan kohteita yhden nimetyn ominaisuuden perusteella.",
+   "example": "Sama muoto eri värillä ja sama väri eri muodolla. Kysymys kertoo, katsotaanko muotoa vai väriä.",
+   "task": "Valitse kaksi samanmuotoista merkkiä, vaikka ne ovat eri kokoisia.",
+   "expected": "Kaksi samalla muodolla; ei valintaa pelkän koon mukaan.",
+   "feedback": "”Katsomme nyt muotoa. Väri saa olla eri.”",
+   "boundary": "Väri ei saa olla ainoa saavutettava tietokanava. Ei oppijan tarvitse arvata luokittelusääntöä ennen sen opettamista.",
+   "research": [
+    "R01",
+    "R03"
+   ],
+   "findings": [],
+   "groups": [],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 134,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-TIME-01",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Vertaan, kuinka kauan tapahtuma kestää.",
+   "example": "Kaksi tapahtumaa alkaa samalla merkkiäänellä/visuaalisella merkillä. Ensimmäinen päättyy aikaisemmin. Näytetään alun ja lopun väli.",
+   "task": "Näytä kaksi eri aikaan alkavaa tapahtumaa ja niiden kestoa kuvaavat palkit. ”Kestävätkö tapahtumat yhtä kauan?” Suunnittelijan totuustila: sama kesto; tätä ei kerrota kysymyksessä.",
+   "expected": "Sama kesto, vaikka kellon aloitusaika eri.",
+   "feedback": "”Kesto on alun ja lopun väli. Pelkkä myöhempi loppu ei kerro pidemmästä kestosta.”",
+   "boundary": "Aloita yhteisestä alusta, erilliset alut vasta myöhemmin. Ei kellotaulun lukemista salaiseksi esitiedoksi.",
+   "research": [
+    "R03"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-MEAS-00"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 6735,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "M-TIME-03",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Yhdistän aikayksikön ja keston.",
+   "example": "Yksi minuutti esitetään 60 sekuntina. Kaksi samanlaista minuutin jaksoa kestää 120 sekuntia.",
+   "task": "Kumpi kestää kauemmin: yksi minuutti vai 90 sekuntia?",
+   "expected": "90 s, koska 1 min=60 s.",
+   "feedback": "”Numerot 1 ja90 käyttävät eri yksikköä. Muunna ne samaan yksikköön ennen vertailua.”",
+   "boundary": "Tarvittava 60-suhde opetetaan. Älä päättele aikayksikön ymmärrystä kellon graafisen muodon tunnistuksesta.",
+   "research": [
+    "R03",
+    "R10"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-TIME-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Math_KC_Catalog_1_6_v0.4.yaml",
+    "line": 6806,
+    "sha256": "328de7ebf110adc6c15e67e24f0622c1ca12f94c0a9e6885704fa108e323336c"
+   }
+  },
+  {
+   "id": "PHY79-ACCEL-CALC",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Lasken nopeuden muutoksen aikaväliä kohti.",
+   "example": "Nopeus kasvaa 2→8 m/s kolmessa sekunnissa. Muutos 6 m/s;6/3=2 m/s².",
+   "task": "Nopeus muuttuu 3→11 m/s neljässä sekunnissa. Laske keskimääräinen kiihtyvyys.",
+   "expected": "2 m/s².",
+   "feedback": "”Jaa nopeuden muutos 8, ei loppunopeutta 11, neljällä sekunnilla.”",
+   "boundary": "Vektori/suunta rajataan tilanteessa; negatiivinen ei automaattisesti tarkoita hidastumista. Ei johdannaislaskentaa.",
+   "research": [
+    "R09"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-ACCEL-CONCEPT"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1558,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-ACCEL-CONCEPT",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Erottelen nopeuden ja sen muuttumisen.",
+   "example": "A liikkuu vakionopeutta 6 m/s; B:n nopeus on peräkkäisinä sekunteina 1,3,5 m/s. B:n nopeus muuttuu, A:n ei.",
+   "task": "Kumpi kiihtyy: vakionopeudella nopeampi A vai tasaisesti nopeutuva hitaampi B?",
+   "expected": "B; korkea nopeus ei yksin tarkoita kiihtyvyyttä.",
+   "feedback": "”Katso muutosta samassa ajassa, älä nopeuden suurinta lukua.”",
+   "boundary": "Lisää myöhemmin hidastuminen/suunnan muutos. Älä opeta kiihtyvyyttä vain nopeutumisena.",
+   "research": [
+    "R09"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-SPEED-CONCEPT"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1524,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-ACCEL-GRAPH",
+   "role": "integration",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Yhdistän samasta muuttuvasta liikkeestä kaksi esitystä.",
+   "example": "Mallissa v(t)=2t ja x(t)=t², t≥0: nopeuskuvaaja suora, paikkakuvaaja kaartuva. Oppilaalle ensin havainnolliset pisteet, ei derivaattaa.",
+   "task": "Valitse samalle nopeutuvalle liikkeelle sopiva paikka–aika- ja nopeus–aika-kuvaajapari.",
+   "expected": "Kasvavasti jyrkkenevä x(t) ja nouseva v(t), yhteensopivat alkuarvot ja aikaskaala.",
+   "feedback": "”Korkeus tarkoittaa eri kuvaajissa eri suuretta. Etsi sama ajanhetki ja kysy, mitä pystyakseli kertoo.”",
+   "boundary": "Integraatio: molempien graafien semantiikka ja samasta domain-tilasta tuotanto. Lapsiprosessit säilyvät erillisinä.",
+   "research": [
+    "R08",
+    "R09"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-ACCEL-MOTION-GRAPH",
+      "PHY79-ACCEL-VT-GRAPH"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1596,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-ACCEL-MOTION-GRAPH",
+   "role": "process",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Tunnistan muuttuvan liikkeen paikan aikakuvaajasta.",
+   "example": "Samaan suuntaan etenevän kappaleen x-arvot 0,1,4,9 m ajanhetkillä 0,1,2,3 s. Samassa ajassa paikan muutos kasvaa.",
+   "task": "Mikä kolmesta x(t)-kuvaajasta jyrkkenee ajan myötä? Mitä se kertoo tällä positiivisen suunnan reitillä?",
+   "expected": "Nopeuden suuruus kasvaa annetulla suunnalla; suora kalteva x(t) olisi vakionopeutta.",
+   "feedback": "”Vertaa paikan muutosta yhtä pitkissä aikaväleissä, älä kuvan korkeutta yksin.”",
+   "boundary": "Process; useita kuvamuotoja. Selitä paikka vs kumulatiivinen matka. Tässä pysytään positiivisessa liikkeessä, laajemmat etumerkkitulkinnat erikseen.",
+   "research": [
+    "R08",
+    "R09"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-ACCEL-CONCEPT"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1608,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-ACCEL-VT-GRAPH",
+   "role": "process",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Luen nopeuden muutosta nopeus–aika-kuvaajasta.",
+   "example": "v=1,3,5 m/s yhtä pitkien sekuntien välein: muutos on+2 m/s jokaisessa sekunnissa.",
+   "task": "Vertaa vaakasuoraa v=8 m/s viivaa ja nousevaa v=2→6 m/s viivaa 2 sekunnissa. Missä kiihtyvyys on nolla?",
+   "expected": "Vaakasuoralla; nousevalla keskimääräinen kiihtyvyys 2 m/s².",
+   "feedback": "”Vakiokorkeus tarkoittaa tässä vakionopeutta, ei paikallaan oloa.”",
+   "boundary": "Process; älä pisteytä kuvaajan korkeutta kiihtyvyysarvoksi. Akselit ja yksiköt näkyviin.",
+   "research": [
+    "R09"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-ACCEL-CONCEPT"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1613,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-DATA-01",
+   "role": "process",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Kirjaan mittaustulokset niin, että aika ja havainto pysyvät parina.",
+   "example": "0 s→0 m,1 s→2 m,2 s→4 m taulukoksi. Otsikoissa suure ja yksikkö.",
+   "task": "Siirrä havaintokortit 3 s→6 m ja4 s→8 m oikeille riveille.",
+   "expected": "Parit(3,6),(4,8), t/s ja x/m oikein.",
+   "feedback": "”Nämä luvut kuuluvat samaan mittaushetkeen. Älä lajittele sarakkeita toisistaan irti.”",
+   "boundary": "Process useassa tilanteessa; kirjaaminen ei edellytä nopeuden laskua. Simuloitu tarkka data vs oikea mittausepävarmuus erotetaan.",
+   "research": [
+    "R08",
+    "R10"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "SCI-ENV-DATA-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 431,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-DIST-TIME",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Erotan kuljetun matkan ja siihen käytetyn ajan.",
+   "example": "Kävelijä kulkee merkityn 12 m reitin 4 s:ssa. Näytetään reitti ja erillinen aikajana.",
+   "task": "Kertomus: kuljettu 18 m, aikaa 6 s. Mikä tieto kertoo kuinka pitkälle ja mikä kuinka kauan?",
+   "expected": "Matka 18 m, aika 6 s.",
+   "feedback": "”Sekunti kertoo kestosta; metri reitin pituudesta.”",
+   "boundary": "Ei nopeuslaskua tähän ydintehtävään. Meno–paluu erottaa myöhemmin matkan ja siirtymän; ei oleteta loppupaikkaa matkaksi.",
+   "research": [
+    "R06",
+    "R07"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-QTY-01",
+      "PHY79-MOTION-REF"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1218,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-GRAPH-01",
+   "role": "process",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Esitän saman mittausaineiston koordinaatistossa.",
+   "example": "Taulukon t=0,1,2 s ja x=0,2,4 m jokainen rivi siirretään yhdeksi pisteeksi. Akselit nimetään ennen pisteitä.",
+   "task": "Piirrä taulukon pari t=3 s,x=6 m ja nimeä akselien yksiköt.",
+   "expected": "Piste(3,6), vaaka t/s ja pysty x/m tässä esityksessä.",
+   "feedback": "”Valitse ensin aika vaaka-akselilta, sitten paikan arvo pystyakselilta.”",
+   "boundary": "Process; ei aina identtistä asteikkoa tai samaa pistekuviota. Viivojen liittäminen aineiston mallioletuksen mukaan, ei aina automaattisesti.",
+   "research": [
+    "R08",
+    "R10"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-DATA-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 465,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-MOTION-REF",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Kerron, minkä suhteen kohde liikkuu.",
+   "example": "Matkustaja istuu bussissa. Bussin penkin suhteen paikka säilyy, kadun valopylvään suhteen muuttuu.",
+   "task": "Onko istuva matkustaja liikkeessä? Vastaa bussin ja kadun suhteen erikseen.",
+   "expected": "Bussin suhteen ei; kadun suhteen kyllä, kun bussi liikkuu.",
+   "feedback": "”Molemmat vastaukset voivat olla oikein eri vertailukohteessa. Nimeä se ensin.”",
+   "boundary": "Ei suhteellisuusteorian kaavoja. Näkymän kamera ei ole nimettömästi ainoa vertailukehys.",
+   "research": [
+    "R07"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "ENV-PHY-MOTION-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1188,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-NUMVALUE",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Tunnistan lukuarvon ja ymmärrän sen riippuvuuden yksiköstä.",
+   "example": "Merkintä 0,75 m: lukuarvo 0,75, yksikkö m. Sama pituus annetaan 75 cm.",
+   "task": "Mikä on lukuarvo merkinnässä ”aika 2,5 s”?",
+   "expected": "2,5, ei2,5 s eikä pelkkä 5.",
+   "feedback": "”Lukuarvo on koko luku desimaaliosineen. Yksikkö kertoo, mihin luku vertautuu.”",
+   "boundary": "Ei automaattista desimaalimuunnoksen taitovaatimusta; käytetyn lukualueen osaaminen tai korjaus saatavilla.",
+   "research": [
+    "R10"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-QTY-CONCEPT"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 232,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-QTY-01",
+   "role": "integration",
+   "status": "existing_pack_repair_proposal",
+   "goal": "Yhdistän mitattavan asian, lukuarvon ja yksikön.",
+   "example": "”Narun pituus 3 m”: ominaisuus pituus, lukuarvo 3, yksikkö m. Pelkkä 3 ei riitä narun tekemiseen.",
+   "task": "Jäsennä ”kappaleen massa 250 g”.",
+   "expected": "Suure massa, lukuarvo 250, yksikkö g.",
+   "feedback": "”Massa on se, mitä mitataan. Gramma on vertailuyksikkö, ei sama asia kuin massa.”",
+   "boundary": "Integraation omat tehtävät; ei kaikkien lapsikäsitteiden uutta pitkää kurssia. Lapsisolmut ovat vielä osin deferred.",
+   "research": [
+    "R10"
+   ],
+   "findings": [
+    "P18",
+    "P19"
+   ],
+   "groups": [
+    {
+     "all": [
+      "PHY79-QTY-CONCEPT",
+      "PHY79-NUMVALUE",
+      "PHY79-UNIT-CONCEPT"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 215,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-QTY-CONCEPT",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Tunnistan ominaisuuden, jota voidaan mitata.",
+   "example": "Nauhasta voidaan mitata pituus; pallosta massa. Viivain on väline, metri yksikkö, pituus ominaisuus.",
+   "task": "Kun selvitetään kuinka kauan hyppy kestää, mikä on tarkasteltava suure?",
+   "expected": "Aika/kesto, ei sekuntikello tai sekunti.",
+   "feedback": "”Sekuntikello on väline. Mitä ominaisuutta se auttaa vertaamaan?”",
+   "boundary": "Älä aloita pelkillä kirjainsymboleilla. Erota mitattava ominaisuus, väline ja yksikkö.",
+   "research": [
+    "R10"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "M-MEAS-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 228,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-SPEED-CALC",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Lasken keskinopeuden jakamalla koko matkan koko ajalla.",
+   "example": "12 m /4 s =3 m/s. Tulkinta 3 m jokaista sekuntia kohti keskimäärin.",
+   "task": "18 m kuudessa sekunnissa. Laske keskinopeus yksikköineen.",
+   "expected": "3 m/s.",
+   "feedback": "”Nopeus vertaa matkaa aikaan:18 jaetaan 6:lla. Pelkkä 3 ei vielä kerro nopeuden yksikköä.”",
+   "boundary": "Tämä on laskenta-KC, toisin kuin pelkkä suhdekäsitteen vertailu. Ei ylimääräisiä sekayksiköitä ennen niiden taitoa.",
+   "research": [
+    "R06"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-SPEED-CONCEPT"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1295,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-SPEED-CONCEPT",
+   "role": "atomic",
+   "status": "existing_pack_repair_proposal",
+   "goal": "Vertaan matkaa ja aikaa yhdessä.",
+   "example": "Sama 4 s:8 m vs12 m → jälkimmäinen nopeampi. Sama 12 m:3 s vs6 s → ensimmäinen nopeampi. Sitten molemmat suureet muuttuvat.",
+   "task": "A12 m/4 s ja B15 m/3 s: kumpi keskimäärin nopeampi?",
+   "expected": "B:5 m/s vs3 m/s, tai pätevä verrannollinen perustelu.",
+   "feedback": "”B kulki enemmän matkaa jokaista sekuntia kohti. Pelkkä kokonaismatka ei riitä yleiseksi säännöksi.”",
+   "boundary": "Helppo alkualue; yhteinen mittakaava; tasaiseen liikkeeseen rajoittuva simulointimalli näkyviin.",
+   "research": [
+    "R06",
+    "R01"
+   ],
+   "findings": [
+    "P20",
+    "P21",
+    "P22",
+    "P23"
+   ],
+   "groups": [
+    {
+     "all": [
+      "PHY79-DIST-TIME"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1261,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-SPEED-MIXED",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Muunna yksiköt vertailukelpoisiksi ennen nopeuslaskua.",
+   "example": "120 m yhden minuutin aikana:1 min=60 s, joten 120/60=2 m/s.",
+   "task": "300 m kahdessa minuutissa. Ilmoita m/s.",
+   "expected": "2,5 m/s, koska 2 min=120 s.",
+   "feedback": "”Jakolasku 300/2 antaa metriä minuutissa. Kysytty yksikkö on metriä sekunnissa.”",
+   "boundary": "Vaatii kaikki nykyiset required-ryhmän taidot. Yksikkömuunnos ei ole koristevaihe.",
+   "research": [
+    "R06",
+    "R10"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-SPEED-CALC",
+      "PHY79-UNIT-CONV",
+      "PHY79-SPEED-UNIT"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1376,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-SPEED-REARR",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Ratkaisen puuttuvan matkan tai ajan nopeusajattelusta.",
+   "example": "3 m/s viiden sekunnin ajan:3+3+3+3+3=15 m, joten s=vt. Sama 15 m nopeudella 3 m/s kestää 5 s.",
+   "task": "Nopeus 4 m/s, matka 20 m. Kuinka kauan?",
+   "expected": "5 s.",
+   "feedback": "”Joka sekunti kertyy 4 m. Montako tällaista sekuntia tarvitaan 20 metriin?”",
+   "boundary": "Yhtälön muodollinen siirtosääntö ei ainoa sallittu strategia; graafin strong-algebra ei muutu hard gateksi.",
+   "research": [
+    "R06"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-SPEED-CALC"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1416,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-SPEED-UNIT",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Ymmärrän nopeuden yksikön matkaa aikayksikköä kohti.",
+   "example": "12 metriä jaetaan 4 sekunnilla. Luku 3 kertoo metriä per sekunti, merkintä m/s.",
+   "task": "Millä yksiköllä ilmoitat kilometrien ja tuntien suhteena lasketun nopeuden?",
+   "expected": "km/h.",
+   "feedback": "”Osoittaja kertoo matkan yksikön, nimittäjä ajan yksikön.”",
+   "boundary": "Johdettu yksikkö selitetään merkityksen kautta ennen kirjainmuistia; m·s ei vastaa samaa suuretta.",
+   "research": [
+    "R06",
+    "R10"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-SPEED-CONCEPT",
+      "PHY79-QTY-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1333,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-ST-GRAPH",
+   "role": "process",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Tulkitsen matkan kertymistä ajan kuluessa.",
+   "example": "Kumulatiivinen kuljettu matka s:0,2,4,4 m ajoilla 0,1,2,3 s. Aluksi liikutaan, viimeinen sekunti seistään.",
+   "task": "Millä aikavälillä kuljettu matka ei kasva?",
+   "expected": "2–3 s.",
+   "feedback": "”Vaakasuora osa kertoo, ettei uutta matkaa kertynyt. Se ei tarkoita kuvassa vaakasuoraa tietä.”",
+   "boundary": "Täsmennä s=kuljettu matka eikä signed position. Kumulatiivinen matka ei vähene takaisin kulkiessa. Process-näyttö useista tilanteista.",
+   "research": [
+    "R07",
+    "R08"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-SPEED-CONCEPT",
+      "PHY79-GRAPH-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1450,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-UNIT-CONCEPT",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Ymmärrän yksikön yhteisenä vertailuna.",
+   "example": "Sama nauha täyttyy kolmella pitkällä tai kuudella puolta lyhyemmällä palalla. Nimetään, mitä palaa käytetään.",
+   "task": "Miksi ”pituus 6” ei riitä toiselle henkilölle?",
+   "expected": "Yksikön koko/merkitys puuttuu.",
+   "feedback": "”Kuusi pientä tai kuusi suurta palaa antaa eri pituuden. Tarvitsemme sovitun yksikön.”",
+   "boundary": "Ei vielä vaadita kaikkia SI-yksiköitä tai muunnoksia ulkoa. Sama fysikaalinen kohde säilyy.",
+   "research": [
+    "R03",
+    "R10"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-QTY-CONCEPT"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 236,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-UNIT-CONV",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Muutan merkintää säilyttäen saman suureen arvon.",
+   "example": "1 m=100 cm.2,4 m on kaksi kokonaista metriä ja40 cm, siis 240 cm.",
+   "task": "Muuta 350 cm metreiksi.",
+   "expected": "3,5 m.",
+   "feedback": "”Pienempi yksikkö tarvitsee enemmän yksiköitä samaan pituuteen. Kohde ei kasva.”",
+   "boundary": "Yksikkökohtainen suhde eksplisiittinen. Aikaa ei muunneta kymmenjärjestelmällä. Vältä pelkkää pilkun siirtämisen rituaalia.",
+   "research": [
+    "R10"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-QTY-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 297,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "PHY79-VT-GRAPH",
+   "role": "process",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Tulkitsen nopeuskuvaajan korkeuden ja muutoksen eri asioina.",
+   "example": "Vaakasuora viiva v=4 m/s tarkoittaa liikettä vakionopeudella; v=0 tarkoittaa lepoa. Nouseva viiva kertoo nopeuden kasvusta tällä positiivisella reitillä.",
+   "task": "Valitse kuvaaja, jossa kappale liikkuu tasaisesti 4 m/s kahden sekunnin ajan.",
+   "expected": "Vaakasuora viiva korkeudella 4, ei x(t)-tyyppinen nouseva viiva.",
+   "feedback": "”Tämän kuvan pystyakseli kertoo nopeuden, ei paikkaa.”",
+   "boundary": "Process. Älä vaadi pinta-alaintegraalia tässä rajatussa tulkintatehtävässä. Negatiivinen nopeus käsitellään nimetyssä suunnassa.",
+   "research": [
+    "R09",
+    "R08"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "PHY79-SPEED-CONCEPT",
+      "PHY79-GRAPH-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Physics_KC_Catalog_7_9_v0.2.yaml",
+    "line": 1489,
+    "sha256": "6f89e03e8d22298cb3776d97c91eaa74f046ae47424c0d59f27cba41864f84cd"
+   }
+  },
+  {
+   "id": "SCI-ENV-DATA-01",
+   "role": "process",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Kokoan useita havaintoja niin, että niiden alkuperä säilyy.",
+   "example": "Kolmen havaintokerran merkinnät siirretään taulukkoon havaintokerta–kohde–havainto. Sama sarake tarkoittaa samaa asiaa joka rivillä.",
+   "task": "Yhdistä kahden ryhmän annetut havaintokortit yhdeksi luettavaksi taulukoksi.",
+   "expected": "Kaikki annetut havainnot kerran, lähde/ajankohta ja merkitys säilyvät.",
+   "feedback": "”Tämä tieto tuli toiselta havaintokerralta. Säilytä sen tunniste, älä vaihda arvoja keskenään.”",
+   "boundary": "Process: eri aineistotyyppejä; ei arvata puuttuvaa mittausta. Tämän kortin tehtävämuoto on oma ehdotus, ei löydetty valmis opetuskoe.",
+   "research": [
+    "R01"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "SCI-ENV-RECORD-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Science_KC_Foundation_1_6_v0.2.yaml",
+    "line": 480,
+    "sha256": "1e74827257ba40d255c1fd6e19651ef47756313bbaffbca0acc9909b467f8127"
+   }
+  },
+  {
+   "id": "SCI-ENV-OBSERVE-01",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Erottelen sen, mitä näen, siitä mitä arvelen syyksi.",
+   "example": "Kuvassa märkä maa. ”Maa näyttää märältä” on havainto; ”yöllä satoi” on mahdollinen selitys, jota kuva yksin ei todista.",
+   "task": "Valitse leikkeestä suoraan havaittava tieto: pallo vaihtoi paikkaa / joku puhalsi siihen.",
+   "expected": "Pallo vaihtoi paikkaa, jos se näkyy; puhallus ei havainto ilman näkyvää/kuuluvaa näyttöä.",
+   "feedback": "”Näimme muutoksen. Sen syystä tarvitaan lisää tietoa.”",
+   "boundary": "Älä väitä että havainnot ovat aina tulkinnattomia. Rajattu tehtävä erottaa annetun havaintoaineiston ja lisäoletuksen.",
+   "research": [
+    "R13"
+   ],
+   "findings": [],
+   "groups": [],
+   "source": {
+    "path": "baseline/Science_KC_Foundation_1_6_v0.2.yaml",
+    "line": 139,
+    "sha256": "1e74827257ba40d255c1fd6e19651ef47756313bbaffbca0acc9909b467f8127"
+   }
+  },
+  {
+   "id": "SCI-ENV-PRESENT-DATA-01",
+   "role": "process",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Valitsen esitystavan, josta toinen ymmärtää havainnon.",
+   "example": "Kolmen kohteen värit esitetään kohde–väri-taulukkona; liiketapahtuman järjestys kuvajonona. Selitetään miksi eri tiedoille eri esitys.",
+   "task": "Valitse sopiva esitys tapahtumien alku–keskikohta–loppu-järjestykselle.",
+   "expected": "Järjestetty kuvajono tai muu yksiselitteisesti ajallisesti järjestetty esitys.",
+   "feedback": "”Yksi irrallinen kuva ei kerro tapahtumajärjestystä. Näytä mikä tuli ensin.”",
+   "boundary": "Process; useampi pätevä esitys sallittava perustellusti. Deterministinen rubriikki ei saa hylätä toista yhtä hyvää esitystä ilman näkyvää rajausta.",
+   "research": [
+    "R04"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "SCI-ENV-OBSERVE-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Science_KC_Foundation_1_6_v0.2.yaml",
+    "line": 352,
+    "sha256": "1e74827257ba40d255c1fd6e19651ef47756313bbaffbca0acc9909b467f8127"
+   }
+  },
+  {
+   "id": "SCI-ENV-RECORD-01",
+   "role": "integration",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Tallennan havainnon ja teen siitä toiselle ymmärrettävän esityksen.",
+   "example": "Lyhyt liikevideo→kolme havaintokorttia aikajärjestyksessä→otsikoitu kuvajono.",
+   "task": "Kirjaa toisen leikkeen kolme havaittavaa vaihetta ja esitä ne oikeassa järjestyksessä.",
+   "expected": "Sisältö uskollinen annetulle leikkeelle ja esityksessä tapahtumajärjestys luettava.",
+   "feedback": "”Kirjasit vaiheet, mutta niiden järjestys vaihtui esityksessä. Tarkista videon järjestys.”",
+   "boundary": "Integraation erillinen yhteisnäyttö; lasten onnistuminen ei yksin riitä. Muistikuorman minimointi: lähdeleike saa olla käytettävissä, ellei muistia arvioida.",
+   "research": [
+    "R04"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "SCI-ENV-RECORD-DATA-01",
+      "SCI-ENV-PRESENT-DATA-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Science_KC_Foundation_1_6_v0.2.yaml",
+    "line": 335,
+    "sha256": "1e74827257ba40d255c1fd6e19651ef47756313bbaffbca0acc9909b467f8127"
+   }
+  },
+  {
+   "id": "SCI-ENV-RECORD-DATA-01",
+   "role": "atomic",
+   "status": "deferred_design_only_not_production_authorized",
+   "goal": "Tallennan havainnon muuttamatta sen sisältöä.",
+   "example": "Havaintokortissa ”punainen pallo pysähtyi viivan kohdalle”. Sama tieto siirretään päivättyyn yksinkertaiseen havaintoriviin.",
+   "task": "Kirjaa annetusta leikkeestä, mikä esine pysähtyi ja mihin.",
+   "expected": "Kohde ja pysähtymiskohta vastaavat lähdettä; ei keksittyä syytä.",
+   "feedback": "”Kirjauksessa lukee sininen, mutta leikkeen pysähtyvä pallo on punainen.”",
+   "boundary": "Älä vaadi kirjoittamisen sujuvuutta havaintokyvyn mittarina; rajatut valinnat/symbolit mahdollisia. Tietosisältö ja ilmaisu arvioidaan erikseen.",
+   "research": [
+    "R04"
+   ],
+   "findings": [],
+   "groups": [
+    {
+     "all": [
+      "SCI-ENV-OBSERVE-01"
+     ]
+    }
+   ],
+   "source": {
+    "path": "baseline/Science_KC_Foundation_1_6_v0.2.yaml",
+    "line": 347,
+    "sha256": "1e74827257ba40d255c1fd6e19651ef47756313bbaffbca0acc9909b467f8127"
+   }
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="lesson.css"><div class="g16" data-graph16>
+
+
+
+
+
+
+<section data-teaching-step="1" data-lesson-role="teaching-step">
+<div class="intro"><img src="shared/aava/curious.png" width="48" height="48" alt="Aava"><p>Aava: Yksi liike, kaksi kuvaa.</p></div><p data-goal><strong>Yhdistän kuvaajat.</strong></p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="2" data-lesson-role="teaching-step">
+<fieldset data-lesson-role="worked-example" id="mallin-ohjaus" data-lesson-context-source="workbench"><legend>Seuraa samaa hetkeä</legend><div class="actions"><button type="button" data-action="play" aria-pressed="false">Toista</button><button type="button" data-action="pause">Tauko</button></div><p data-model-legend>Loikka · yksi kellonhetki</p><div data-model-view><img src="initial.svg" alt="Loikan suora kulkureitti ylimpänä. Vasemmalla paikka–aika-kuva, oikealla nopeus–aika-kuva samasta liikkeestä."></div><p data-readout>Likiarvot: t = 0 s, x = 0 m, v = 0 m/s.</p><p data-run-state>Toisto tauolla</p><details data-lesson-role="teaching-step"><summary>Vaihda mallia tai tutki hetkeä</summary><label>Malli<select data-model><option value="increase" selected>Nopeus kasvaa</option><option value="decrease">Loikka jarruttaa</option><option value="steady">Tasainen liike</option><option value="rest">Paikallaan, kello käy</option><option value="phases">Lepo, lähtö, kävely ja jarrutus</option><option value="rescale">Sama liike, eri pystyasteikot</option></select></label><label>Mallin aika (s)<input data-time type="text" inputmode="decimal" maxlength="128" value="0"></label><div class="actions"><button type="button" data-action="step">Askel 1 s</button><button type="button" data-action="end">Näytä loppu</button><button type="button" data-action="restart">Malli alkuun</button></div><p data-model-description>Mallin aika 0–4 s, askel 1 s ja yksi merkki sekunnissa. Koko toisto kestää 4 ruutusekuntia.</p><p>Toiston tauko pysäyttää katselun, ei muuta liikettä. Loppukuva ei yksin tarkoita fyysistä pysähtymistä. Mallin vaihto aloittaa kellon alusta. Lukemat voivat pyöristyä, tarkka taulukko ei pyöristy.</p><div class="table" data-model-table><table><caption>Vasemman kuvan paikka ja oikean kuvan nopeus samalla kellonhetkellä</caption><thead><tr><th scope="col">t (s)</th><th scope="col">x (m)</th><th scope="col">v (m/s)</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td><td>0</td></tr><tr><th scope="row">1</th><td>1</td><td>2</td></tr><tr><th scope="row">2</th><td>4</td><td>4</td></tr><tr><th scope="row">3</th><td>9</td><td>6</td></tr><tr><th scope="row">4</th><td>16</td><td>8</td></tr></tbody></table></div></details></fieldset><p>Vasemman kuvan <strong>jyrkkyys</strong> kertoo nopeuden. Oikeasta kuvasta sama nopeus luetaan <strong>korkeutena</strong>. Pisteet näyttävät saman kellonhetken.</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="3" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Pohdi ensin:</strong> voiko toinen viiva nousta samalla kun toinen pysyy vaakasuorana?</p>
+</section>
+
+
+
+
+
+
+<nav aria-label="Oppitunnin kohdat" data-lesson-role="metadata"><a href="#examples">Esimerkit</a><a href="#practice">Kokeile itse</a></nav>
+
+
+
+
+
+
+<section data-teaching-step="4" data-lesson-role="teaching-step">
+<details id="examples" data-lesson-role="worked-example"><summary>Katso kaksi esimerkkiä</summary><h2>Nopeus kasvaa</h2><p>Hetkellä 1 s paikka on 1 m ja nopeus 2 m/s. Hetkellä 3 s paikka on 9 m ja nopeus 6 m/s. Paikka ja nopeus ovat eri suureita, vaikka molemmille piirretään viiva.</p><img src="example.svg" alt="Ratkaistu kiihtyvän liikkeen pari: paikka nousee jyrkkenevästi, nopeus nousee suorana."><figcaption>Paikkakäyrä jyrkkenee juuri silloin kun nopeusviiva nousee. Lopussa paikka on 16 m ja nopeus 8 m/s.</figcaption><h3>Loikka jarruttaa</h3><p>Paikka kasvaa edelleen mutta yhä hitaammin. Vasen käyrä nousee loiventuen, oikea viiva laskee. Laskeva nopeusviiva ei tarkoita paluuta lähtöpaikkaan.</p><img src="contrast.svg" alt="Ratkaistu jarrutuksen pari: paikka kasvaa loiventuen, nopeus laskee nollaan."><figcaption>Lopussa paikka on 16 m ja nopeus 0 m/s. Molemmat reitit päättyvät samaan paikkaan, mutta liike oli erilainen.</figcaption><p><strong>Muista ero:</strong> tasaisessa liikkeessä vasen viiva nousee suorana ja oikea on vaakasuora nollan yläpuolella. Levossa paikka pysyy samana ja nopeus on 0. Pelkkä sana ”vaakasuora” ei siis riitä: katso myös suure ja korkeus.</p><div class="contrast"><h3>Tahallinen virhepari</h3><p>Tämä pari on tarkoituksella ristiriitainen. Vasemmalla paikkakäyrä jyrkkenee, mutta oikealla nopeus väitetään muuttumattomaksi.</p><figure data-lesson-role="worked-example"><img src="mismatch.svg" alt="Selvästi virheeksi nimetty vertailupari: kiihtyvän liikkeen paikkakäyrä ja tasaisen nopeuden vaakaviiva."><figcaption>Korjaus: jyrkkenevään paikkakäyrään kuuluu nouseva nopeusviiva. Tämä ei ole oikean liikkeen positiivinen esimerkki.</figcaption></figure></div></details>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="5" data-lesson-role="teaching-step" data-audience-spacing="compact">
+<section id="practice"><h2>Kokeile itse</h2><label>Tehtävä<select data-task><option value="increase">Tehtävä A</option><option value="decrease">Tehtävä B</option><option value="steady" selected>Tehtävä C</option><option value="rest">Tehtävä D</option><option value="phase_rest">Tehtävä E</option><option value="phase_start">Tehtävä F</option><option value="phase_steady">Tehtävä G</option><option value="phase_brake">Tehtävä H</option><option value="scaled">Tehtävä I</option><option value="constant_trap">Tehtävä J</option><option value="rest_trap">Tehtävä K</option><option value="brake_trap">Tehtävä L</option></select></label><p data-question data-lesson-role="question">Millaista viivaa tasainen liike tekee kumpaankin kuvaan?</p><p data-task-legend>Kaksi kuvaa samasta liikkeestä.</p><div data-task-view><img src="practice-initial.svg" alt="Tämän tehtävän oma paikka–aika- ja nopeus–aika-kuvapari."></div><fieldset data-answer-fields><label>Paikka–aika-kuvaaja<select data-answer><option value="">Valitse</option><option value="flat">Vaakasuora</option><option value="line">Suora ja nouseva</option><option value="steeper">Nousee ja jyrkkenee</option><option value="flatter">Nousee ja loivenee</option></select></label><label>Nopeus–aika-kuvaaja<select data-answer><option value="">Valitse</option><option value="zero">Nollassa</option><option value="flat">Vaakasuora nollan yläpuolella</option><option value="rising">Nouseva suora</option><option value="falling">Laskeva suora</option></select></label></fieldset><button type="button" data-action="check">Tarkista</button><output data-feedback data-result="neutral" aria-live="polite">Tarkista, kun olet valmis.</output><div data-practice-support><details data-help data-lesson-role="hint"><summary>Ajattelun tueksi</summary><p data-task-help>Paikka kasvaa joka sekunti 4 m. Nopeus pysyy 4 m/s:ssa, joten se ei kasva.</p></details><details data-lesson-role="teaching-step"><summary>Kuvaajan luvut taulukkona</summary><div class="table" data-task-table><table><caption>Vasemman kuvan paikka ja oikean kuvan nopeus samalla kellonhetkellä</caption><thead><tr><th scope="col">t (s)</th><th scope="col">x (m)</th><th scope="col">v (m/s)</th></tr></thead><tbody><tr><th scope="row">0</th><td>0</td><td>4</td></tr><tr><th scope="row">1</th><td>4</td><td>4</td></tr><tr><th scope="row">2</th><td>8</td><td>4</td></tr><tr><th scope="row">3</th><td>12</td><td>4</td></tr><tr><th scope="row">4</th><td>16</td><td>4</td></tr></tbody></table></div><p>Tehtävällä on oma kuvapari. Voit vastata suoraan tai käyttää esimerkkiä ja apua. Molemmat pyydetyt kuvaukset tarvitaan; oikea toinen kuvaus ei yksin riitä koko vastaukseksi.</p></details></div></section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-teaching-step="6" data-lesson-role="teaching-step">
+<details data-lesson-role="teaching-step"><summary>Uusi tilanne: liike vaihtuu</summary><p>Loikka lepää aluksi, lähtee liikkeelle, kävelee tasaisesti ja jarruttaa. Tapahtuma vaihtuu molemmissa kuvissa samalla kellonhetkellä.</p><img src="transfer.svg" alt="Nelivaiheinen ratkaistu kuvapari: lepo 0–1 s, kiihtyminen 1–3 s, tasainen liike 3–5 s ja jarrutus 5–7 s."><figcaption>Alku ja loppu ovat levossa, mutta väliin mahtuu liikettä. Paikka päättyy 16 m:iin, eikä paikkakäyrä laske.</figcaption><p>Kokeile mallivalikon vaihemallia. Pysäytä samaan hetkeen ja kerro ensin, mitä tapahtuu, sitten miten kumpikin kuva näyttää sen. Erilaiset pystyasteikot eivät yksin tarkoita eri liikettä: tarkista luvut ja yksiköt.</p><p>Alla oleva malli alkaa levon, lähdön, kävelyn ja jarrutuksen tilanteesta. Käynnistä tai askella sitä itse ja vertaa saman hetken kuvaajia.</p>
+<details data-lesson-role="worked-example" data-lesson-context="acceleration-phases" data-context-source="workbench" data-context-preset="phases" data-context-reveal="model"><summary>Tutki liikkeen vaiheita tässä</summary><p data-context-fallback>Malli on ilman JavaScriptiä alkuperäisessä kohdassaan: <a href="#mallin-ohjaus">avaa mallin kohta</a>.</p><div data-context-slot></div><button type="button" data-context-close hidden>Sulje malli</button></details>
+</details>
+</section>
+
+
+
+
+
+
+<details class="teacher" data-lesson-role="teacher-note"><summary>Opettajalle ja ilman ruutua</summary><p>Luokat 7–9, kanoninen integraatiorooli säilyy. Molemmat erotetut alitaidot PHY79-ACCEL-MOTION-GRAPH ja PHY79-ACCEL-VT-GRAPH ovat vaadittu all_of-ryhmä; niitä ei muuteta vaihtoehdoiksi eikä uudeksi laskenta-/derivaattaportiksi. Oppilas yhdistää saman tapahtuman merkityksen ja selittää kahden kuvan suhteen. Oikea paikallinen vastaus ei todista molempien esitietojen tai koko integraation itsenäistä hallintaa.</p><p>Tuki voidaan paikantaa erikseen paikan ja nopeuden kuvaukseen. Palaute erottaa ne, mutta ei muuta epäonnistunutta kokonaisuutta hallinnaksi. Tee tuettu kierros ja sitten uusi vastaava pari ilman apua; tämä sovellus ei tallenna niistä formaalia itsenäistä tai viivästettyä näyttöä. Ei henkilökohtaista historiaa, globaalia oppijatasoa tai runtime-LLM:ää.</p><p>Paperilla: pyydä piirtämään samasta oikealle suuntautuvasta liikkeestä kaksi kuvaajaa ja merkitsemään samat vaiheen vaihtumishetket. Pyydä perusteluksi paikan jyrkkyyden ja nopeuden korkeuden yhteys, ei vain oikeaa vaihtoehtoa. Akselit ja suureet on nimettävä. Arvioi perustelu aidosti; agentin tai selaimen koe ei ole oppilasvalidointi.</p><p>Tässä malli on yksiulotteinen, lähtöpaikka 0 m ja nopeus ei-negatiivinen. Tässä rajauksessa paikka x ja kuljettu matka s ovat samat; yleisesti ne ovat eri suureita. Paikka integroidaan täsmällisesti paloittain lineaarisesta nopeudesta, ja kaari piirretään aidosti toisen asteen osina. Vaiheen rajassa epäjatkuvaa hetkellistä kiihtyvyyttä ei väitetä tunnetuksi. Yksi Loikka, metrit/sekunnit, näkyvät rajat ja ohjaukset; tuntematonta mallia, toista näyttämätöntä toimijaa tai yksikköä ei korvata oletuksella. Ristiriitaiselle vertailuparille ei piirretä keksittyä yhteistä kulkureittiä.</p><p>Esimerkit ja taulukot ovat hyödyllistä opetustukea. Ei pakollista ääntä, puhetta, nimeämistä, aikarajaa tai tiettyä klikkausreittiä. Ihmisoppilaan ymmärrys, vaikuttavuus, täysi manuaalinen saavutettavuus/VoiceOver, oikeus-/julkaisuarvio, Lite-silta ja julkiset pelireitit pysyvät avoimina.</p></details>
+
+
+
+
+
+
+<section data-teaching-step="7" data-lesson-role="teaching-step">
+<p data-lesson-role="question"><strong>Lopuksi:</strong> miksi nouseva paikan suora ja vaakasuora nopeusviiva voivat kuvata täsmälleen samaa liikettä?</p>
+</section>
+
+
+
+
+
+
+<noscript data-lesson-role="metadata"><p>Alkukuva, esimerkit ja taulukot toimivat ilman JavaScriptiä. Vastaa paperille ja perustele pari. Toisto ja paikallinen Tarkista-toiminto tarvitsevat JavaScriptin.</p></noscript></div>

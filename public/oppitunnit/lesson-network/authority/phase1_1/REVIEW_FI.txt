@@ -1,0 +1,202 @@
+SAMMAKKO — 690 KC:N OPPITUNTIVERKON KRIITTINEN KATSELMOINTI
+28.10.2026
+
+Kohde: Sammakko_690_Phase1.zip
+Lähderevisio paketin manifestissa: 20f589ef1e076e4b2b7dcc18d183cbf6dfa02459
+ZIP SHA-256: 446d74f9b0dba9bf44a9f7db47ab3dd95c77fb28e8ba634bac4fb4651a3f8836
+
+1. PÄÄTELMÄ
+
+Solin tekemä 690 KC:n graafi- ja sivupohjaverkko on käyttökelpoinen perusta. Sen kanoniset tunnisteet, suorat suhteet, esitietoryhmät ja tiedostolinkit toimivat riippumattoman tarkistuksen perusteella oikein. Säilyttäisin tämän toteutuksen ja jatkaisin sen päälle.
+
+Varsinaisen oppituntien tuotantoloopin käynnistämistä ennen tarvitaan kuitenkin yksi rajattu tekninen jatkovaihe: yhden oppitunnin sisällön lisääminen, näyttäminen, päivittäminen ja säilyttäminen on osoitettava toimivaksi normaalin rakennuksen läpi. Nykyinen toteutus generoi tarkoituksellisesti tyhjiä pohjia ja torjuu täytetyn sisältörungon. Se ei vielä tarjoa tuettua sisällön kirjoitus- ja liittämisreittiä.
+
+Tämä ei tarkoita, että Solin olisi pitänyt kirjoittaa opetussisällöt jo nyt. Käyttäjän viimeisin vaiheistus ja toimituksen README lykkäävät ne erilliseen handoveriin. Aiempi tehtävä vaati tyhjät sisältöpaikat ja tulevien rajapintojen valmistelun; se ei määritellyt riittävän konkreettisesti yhden teknisen sisältöpaketin läpivientiä. Siksi tässä raportissa erotetaan nykyiset virheet ja ennen sisältötuotantoa ratkaistavat valmiuspuutteet.
+
+Suositeltu päätös:
+
+- Hyväksy graafin, linkityksen ja staattisten sivupohjien perusta.
+- Korjaa tunnistetut käyttöliittymä- ja tarkistuspuutteet.
+- Toteuta sisältöpaketin liittäminen ja päivittäminen kahdella selvästi ei-opetuksellisella teknisellä koekappaleella.
+- Käynnistä pedagoginen tutkimus ja oikeiden oppituntien tuotanto vasta erillisen, katselmoituun Lite-versioon sidotun sisältöhandoverin perusteella.
+
+2. MITÄ TARKISTETTIIN
+
+Alkuperäinen toimitus säilytettiin muuttumattomana. Rakennus- ja virheensyöttökokeet tehtiin erillisissä kopioissa. Käyttäjän myöhemmin uudelleen liittämä ZIP on tavuiltaan sama kuin katselmoitu paketti.
+
+Paketin 2 165 manifestiin kirjattua tiedostoa vastasivat ilmoitettuja kokoja ja SHA-256-tiivisteitä. Manifesti itse mukaan lukien paketissa on 2 166 tiedostoa. Kaikki 12 alkuperäisen handoverin viitetiedostoa täsmäsivät aiempaan tehtäväpakettiin.
+
+Riippumaton Python/lxml-tarkistus johti odotetut suhteet suoraan kanonisesta graafista ja vertasi niitä jokaiseen HTML-sivuun ja tietueeseen. Se ei tuonut Solin generaattoria tai tarkistinta osaksi omaa toteutustaan. Tuloksena oli 43 990 vertailua ilman poikkeamia:
+
+- 690 KC:tä, 690 oikeaa HTML-tiedostoa ja 690 vastaavaa tietuetta.
+- 1 287 tyypitettyä suhdetta ja 2 574 niitä vastaavaa navigointilinkkiä.
+- 127 oppiainerajan ylittävää suhdetta.
+- 599 esitietoryhmää, mukaan lukien 12 TAI-ryhmää.
+- 18 dynaamista sääntöä.
+- Täsmällinen 181 Lite-KC:n ja 509 muun KC:n jako.
+- 6 887 paikallista hyperlinkki- tai resurssiviittausta sekä 691 fragmenttiviittausta ratkesivat.
+- Sykli, integraation osataidot, toiminnallinen turvallisuussuhde ja muut erityistapaukset säilyivät.
+
+Solin oma tarkistin läpäisi alkuperäisellä aineistolla 274 086 tarkistusta. Generaattori ja mukana tullut check-behavior.mjs läpäisivät erillisessä kopiossa. Uudelleenrakennus, puuttuvan sivun palautus, rikotun checkpointin korjaus, jaetun CSS:n muutoksen huomioiminen ja muutoksen palauttaminen toimivat. Kanonisen lähteen muuttaminen hylättiin ennen kohdesivun kirjoittamista.
+
+Selainkokeet ajettiin erikseen Chromium 133.0.6943.0:lla ja Playwright 1.58.2:lla paikallisen /site/-polkuprefiksin alla. Näkymät olivat 390 x 900 ja 1280 x 900. Hakemisto, 181-suodatus, tunnushaku, kopiointi, uudelleenavaaminen, leikepöydän eston varatoiminto sekä JavaScriptitön syklin navigointi toimivat. Tarkastetuissa näkymissä ei havaittu vaakaylivuotoa tai sovelluksen JavaScript-virheitä. Kaksi erillistä navigoinnin tilatestiä paljasti kohdissa R06 ja R08 kuvatut puutteet.
+
+Selaimen alkuperäisten latauspalvelujen ongelma ratkaistiin käyttämällä erillistä npm-paketoitua Chromiumia. Ensimmäisen testiharnessin yhden prosessin asetus häiritsi toisen selainkontekstin sulkemista; se poistettiin ja koe uusittiin onnistuneesti. Tätä ympäristöongelmaa ei lasketa tuotteen virheeksi. Lukittu täysi npm ci ei valmistunut verkkorajoitusten vuoksi; rakennuskokeissa käytettiin täsmälleen ilmoitettua yaml 2.9.1 -riippuvuutta ja Node 24.22.1:tä.
+
+Katselmointi ei sisällä oppilas- tai opettajakokeita, pedagogista verkkotutkimusta, julkaistun palvelun testaamista tai täyttä saavutettavuusarviointia. Mukana olevat tekniset koekappaleet eivät ole oppimateriaalia. Kuvakaappaukset olivat tarkastuksen työaineistoa eivätkä sisälly raporttipakettiin.
+
+3. MIKÄ TOTEUTUKSESSA ON HYVÄÄ
+
+Kanoninen graafi on aidosti säilytetty, eikä 690 sivun määrä peitä puuttuvia suhteita. Molemmat navigointisuunnat vastaavat lähdettä. Suhteiden tyypit, vahvuudet, perustelut ja yksilöivät lähdeindeksit näkyvät tietueissa ja käyttöliittymässä. TAI-logiikka on säilytetty oikein erillisissä esitietoryhmissä.
+
+Staattiset HTML-sivut, yhteinen malli ja jaetut resurssit ovat tähän tarkoitukseen käyttökelpoinen ratkaisu. Jokaisella aiheella on selkeä tiedosto ja osoite. Koko verkon perusnavigointi toimii ilman JavaScriptiä ja muun kuin verkkotunnuksen juuripolun alla. Tämä helpottaa myöhempää opettajanäkymän integraatiota ja jakelua.
+
+Vaiheiden erottelu on rehellinen: 690 tarkistettua pohjaa ei esitetä 690 hyväksyttynä oppituntina. Vanhoja sisältöluonnoksia ei ole automaattisesti hyväksytty uudelleen. Pelilinkkien oletustilat ovat poissa käytöstä oikeasta syystä. Täyden Sammakon katalogijäsenyyttä ei ole muutettu väitteeksi kaikkien KC:iden pelattavuudesta.
+
+Rakennus on toistettava ja palauttaa vahingoittuneita johdettuja tiedostoja. Vanhan täytetyn sisältörungon suojatarkistus toimii. Tyhjäpohjien tekninen laatu on selvästi parempi kuin pelkkä käsin kopioitu 690 tiedoston joukko.
+
+4. LÖYDÖKSET
+
+Prioriteetit kuvaavat seuraavan työn järjestystä. P1 tarkoittaa ratkaistavaa ennen oikean sisältötuotannon käynnistämistä, P2 ennen sujuvaa opettajakäyttöä tai luotettavaa automaattista jakelua ja P3 toimituksen viimeistelyä. Valmiuspuutetta ei pidä tulkita väitteeksi, että lykkäyksen piiriin kuulunut työ olisi ollut jo luvattu valmiiksi.
+
+R01 — Oppitunnin tuettu sisääntulo puuttuu [P1, sisältövalmius]
+
+Normaalissa rakennuksessa vanhan tietueen newInstructionalContent.body-arvon on oltava null. Myös sisältöpaikkojen ja tutkimustietojen on oltava tyhjiä. HTML:n oppituntialue tuotetaan kiinteästä odotustekstistä.
+
+Kokeessa records/M-NUM-01.json-tietueeseen lisättiin ei-opetuksellinen merkintä. Rakennus pysähtyi virheeseen Protected authored record: M-NUM-01 ja säilytti tietueen. Toisessa kokeessa sama merkintä lisättiin suoraan generoituun HTML-sivuun. Seuraava tavallinen rakennus onnistui, ilmoitti written: 1 / resumed: 689 ja palautti sivun odotustekstin.
+
+Molemmat käyttäytymiset ovat nykyisen generaattorin tarkoituksen mukaisia. Niiden yhteinen seuraus on kuitenkin tärkeä: kumpikaan paikka ei ole tuettu kirjoituskohde tulevan sisältöagentin oppitunnille. Pelkkä body-kentän olemassaolo ei muodosta toimivaa sisällön liittämisen rajapintaa.
+
+Korjaus: erillinen pysyvä oppituntilähde ja sitä lukeva koostaja. Säilytä 690 johdettua sivua ja graafisuhteet. Älä ratkaise asiaa vain poistamalla suojatarkistusta.
+
+Hyväksyntä: yhden KC:n tekninen sisältöpaketti näkyy normaalissa esikatselusivussa, säilyy kahden rakennuksen yli, on muokattavissa koskematta generaattoriin ja jättää muut KC:t asianmukaisesti tyhjiksi.
+
+Lähteet: build.mjs rivit 53–56, 65–74 ja 81; verify.mjs rivit 192–209. Kokeet: evidence/content_readiness.json.
+
+R02 — Osa lisätystä suunnittelutiedosta ylikirjoittuu hiljaisesti [P1, todettu säilytysriski]
+
+Sisältörungon suoja ei kata kaikkia tulevaan kirjoittamiseen houkuttelevia tietuekenttiä. Kokeessa M-ALG-08:n body jätettiin tyhjäksi, mutta lisättiin learnerAction, sisältökatselmuksen tila ja muistiinpano sekä Lite-yhteensovituksen reviewerNote. Rakennus onnistui ja tarkistus läpäisi, mutta kaikki lisäykset katosivat. LearnerAction palautui null-arvoksi ja katselmustila oletukseksi.
+
+Tämä ei ole havainto alkuperäisten canonical- tai content-design-luonnosten katoamisesta. Ne säilyivät. Havainto osoittaa, ettei records-hakemistoa voi antaa seuraavalle sisältöagentille pysyväksi suunnittelu- tai katselmointitietojen kirjoituskohteeksi.
+
+Korjaus: määrittele selkeästi mitkä tiedostot sisältävät kirjoitetun tiedon ja mitkä ovat johdettuja tuloksia. Kirjoitettu lähde säilyy. Jos joku yrittää muuttaa nykyistä johdettua tietuetta, ristiriita pitää havaita ja selittää ennen ylikirjoitusta. Vältä hiljaista yhdistelyä, jossa lähteen omistajuus jää epäselväksi.
+
+Hyväksyntä: sisältö, lähteet, katselmointimuistiinpanot ja Lite-yhteensovituksen merkinnät säilyvät tuetussa lähdemallissa muuttumattomina uudelleenrakennuksissa ja naapurien päivityksissä.
+
+Lähteet: build.mjs rivit 53–79. Kokeet: evidence/build_probes.json.
+
+R03 — Interaktiivisen sisällön resurssi- ja elinkaarituki on kuvaus, ei toteutus [P1 ennen interaktiivista tuotantoa, sisältövalmius]
+
+Tietueissa on lista load-, mount-, pause-, resume-, reset- ja dispose-vaiheista sekä HTML/SVG-, Canvas- ja Three.js-valmiuksista. Nykyinen JavaScript käsittelee suodatusta, kopiointia ja esitystilaa. Se ei lataa KC:n omaa moduulia tai toteuta sen elinkaarta. Rakennus kopioi vain yhteisen shell.css:n ja shell.js:n. Tarkistin vaatii nämä ainoiksi sivun skripti- ja tyylitiedostoiksi ja kieltää tietyt mediaelementit.
+
+Tämä on johdonmukaista tyhjille sivupohjille. Sisältöagentti tarvitsee silti ennen animaatioiden ja simulaatioiden tuotantoa yksiselitteisen tavan toimittaa tekstin lisäksi kuvat, SVG:t, moduulit ja mahdolliset 3D-resurssit.
+
+Korjaus: pieni oppituntipaketti, jossa on sisältöviite, valinnaiset moduuli- ja resurssiviitteet sekä toimiva rajapinta käynnistykselle, nollaukselle ja vapautukselle. Todista polkuprefiksin säilyminen ja vain tarvittavan moduulin lataus yhdellä teknisellä interaktiolla. Kaikkia tulevia renderereitä tai opetuksellista Three.js-simulaatiota ei tarvitse rakentaa tässä jatkovaiheessa.
+
+Hyväksyntä: staattinen kuva/SVG ja yksinkertainen tekninen interaktio tulevat mukaan omasta KC-paketistaan; toisen KC:n sivu ei lataa niitä; toistuva nollaus ei monista tapahtumankäsittelijöitä; poistuminen vapauttaa aktiivisen moduulin resurssit.
+
+Lähteet: build.mjs rivit 68 ja 84; assets/shell.js; verify.mjs rivit 245 ja 275–276.
+
+R04 — Yksittäisen oppitunnin versiota ei vielä eroteta sivumallin versiosta [P2, sisältövalmius]
+
+Teacher-integration-manifestin yksi lessonRevision on koko generaattorin, tyylien, skriptien, asetusten ja sopimuksen yhteinen tiiviste. KC-kohtaista sisältöversiota ei ole. Tyhjille sivuille se on ymmärrettävä ratkaisu, mutta myöhemmässä työssä opettajan palaute pitää voida sitoa juuri siihen oppituntiin ja versioon, jota hän käytti.
+
+Korjaus: erota canonicalGraphRevision, templateVersion, contentRevision/contentHash ja valittu runtimeBuild. Katselmus ja Lite-yhteensovitus sidotaan nimettyyn sisältöversioon. Sisällön muutos ei saa siirtää vanhaa katselmusta huomaamatta uuden version hyväksynnäksi.
+
+Hyväksyntä: vain yhden KC:n sisältöä muuttamalla sen sisältöversio muuttuu, muiden sisältöversiot säilyvät ja yhteisen sivumallin versio pysyy samana. Indeksit voivat luonnollisesti päivittyä.
+
+Lähteet: build.mjs rivit 42, 81, 88 ja 96.
+
+R05 — Tarkistin hyväksyy virheellisen käyttövalmiin pelilinkin [P2, nykyinen tarkistusaukko]
+
+Toimituksen oletuslinkit ovat asianmukaisesti pois käytöstä. Resolverin tavalliset saatavuusrajat toimivat testatuissa tapauksissa. Aukko koskee riippumatonta tarkistinta.
+
+Virheensyöttökokeessa M-ALG-08:n pelitiedot muutettiin väittämään ready/classroomReady:true ja osoitteeksi asetettiin https://unverified.example/#journey/WRONG-KC. Sama arvo vietiin kahteen manifestiin. Todellinen deployment-asetus jätettiin määrittämättä. Tarkistin hyväksyi kokonaisuuden.
+
+Toisessa kokeessa myös sivun Avaa Sammakko-peli -toiminto muutettiin aktiiviseksi linkiksi väärään KC:hen ja sivun sekä checkpointin tiivisteet päivitettiin keskenään johdonmukaisiksi. Tarkistin hyväksyi yhä: passed:true, 274 090 tarkistusta, nolla virhettä.
+
+Tämä osoittaa, että tällä rajalla tarkistetaan tietueiden keskinäistä yhdenmukaisuutta, mutta ei pelilinkin oikeellisuutta asetuksiin ja KC:hen nähden. Suuri tarkistusmäärä ei korvaa tätä nimenomaista sääntöä.
+
+Korjaus: johda odotettu reitti ja saatavuus riippumattomasti valitusta asetuksesta ja runtime-indeksistä. Vertaa myös näkyvät avaus- ja kopiointitoiminnot odotettuun tulokseen.
+
+Hyväksyntä: väärään KC:hen osoittava linkki, puuttuvan konfiguraation ready-väite ja aktiivinen tavallinen pelitoiminto ilman saatavuuden edellytyksiä hylätään myös silloin, kun kaikki tiivisteet täsmäävät.
+
+Lähteet: verify.mjs rivit 184–234, 236–277, 290–300 ja 323–345. Kokeet: evidence/validation_probes.json.
+
+R06 — Esitystila tarvitsee opetusta palvelevan rakenteen ja jatkuvuuden [P2, käyttötarkoituksen valmius]
+
+Esitystila piilottaa opettajapaneelin, mutta jättää pitkät esitietolistat ja niiden uudelleen esitetyt ryhmät oppituntialueen yläpuolelle. Testissä M-ALG-08:n oppituntialue alkoi noin 1 357 pikselin kohdalla 1280 x 900 -näkymässä ja 1 654 pikselin kohdalla 390 x 900 -näkymässä. PHY79-UNIT-CONV:n vastaavat luvut olivat noin 1 619 ja 1 828. Tämä koskee jo tyhjää oppituntialuetta.
+
+Lisäksi ?mode=presentation-tilassa tukilinkin avaaminen vei oikeaan KC:hen mutta palautti opettajatilan. Kyse on käyttötavan jatkuvuudesta, ei väärästä graafikohteesta.
+
+Korjaus: säilytä käyttäjän vaatimat suorat linkit ylhäällä ja alhaalla, mutta tiivistä niitä esitystilassa. Esimerkiksi kompakti linkkirivi ja avattavat lisätiedot säilyttävät löydettävyyden. Oppitunnin alku nostetaan heti näkyviin, ja siirtymä seuraavaan KC:hen säilyttää esitystilan ilman oppijaprofiilin tai muun henkilökohtaisen tilan lisäämistä osoitteeseen.
+
+Hyväksyntä: lyhyt tekninen oppitunti on havaittavissa ensimmäisessä näkymässä sovitulla työpöytäkoossa; kaikki suorat linkit ovat edelleen saatavilla; linkin seuraaminen säilyttää tilan. Mobiilissa vältetään monen näytön mittaista teknisten tietojen esilistaa.
+
+Lähteet: build.mjs rivit 47 ja 74; assets/shell.css; assets/shell.js rivit 3–5. Kokeet: evidence/ui_results.json.
+
+R07 — Vaihtoehtoiset esitaitoreitit näyttävät ensin kaikki vaadituilta [P2, semanttinen käyttöliittymä]
+
+Kaikki 12 TAI-ryhmää ovat oikein datassa ja alempana esitietoryhmien esityksessä. Ylänavigaatio näyttää kuitenkin niiden kaikkien 24 vaihtoehtoisen relaation raakan vahvuuden muodossa Esitieto · Vaadittu. Käänteiset suhteet näkyvät 15 eri esitaitosivulla.
+
+M-ALG-08 havainnollistaa asian: todellinen sääntö on M-ALG-07 JA (M-ADD-SUB-01 TAI M-MULDIV-01). Ensimmäisessä listassa kaikki kolme näyttävät samalla tavalla yksittäin pakollisilta. Myöhempi oikea ryhmäesitys ei poista ensimmäisen näkymän tulkintariskiä.
+
+Korjaus: tee ensisijaisesta navigaatiosta ryhmätietoinen. Vaihtoehtojen kohdalla voidaan näyttää Vähintään yksi näistä esitietoreiteistä tai Vaihtoehtoinen esitieto — yksi tästä ryhmästä riittää. Raaka canonical strength ja perustelu säilytetään opettajan lähdetiedoissa. Kanonista graafia ei tarvitse muuttaa.
+
+Hyväksyntä: kaikki 12 tapausta, etenkin M-ALG-08 ja M-SCALE-02, näyttävät pakollisen osuuden ja vaihtoehdot yksiselitteisesti jo ensisijaisessa navigaatiossa.
+
+Lähteet: build.mjs rivit 45, 47, 72 ja 74. Määrät: evidence/alternative_prerequisites.json.
+
+R08 — Takaisin-paluu voi jättää hakuehdot ja tulokset ristiriitaan [P2, toistettu käyttöliittymävirhe]
+
+Kokeessa hakemistossa valittiin Lite181=kyllä ja haettiin M-ALG-08. Näkyviin jäi yksi aihe. Aiheen avaamisen ja selaimen Takaisin-toiminnon jälkeen hakukentässä oli edelleen M-ALG-08 ja Lite-suodattimessa kyllä, mutta luettelo ja laskuri näyttivät kaikki 690 aihetta.
+
+Tämä toistui käytetyssä Chromium-kokeessa, jossa paluu ei palauttanut valmista sivutilaa selaimen välimuistista. Tulos ei tarkoita, että kaikki selainversiot käyttäytyisivät aina näin. Koodi suorittaa suodatuksen vain syötetapahtumasta eikä synkronoi palautettuja lomakearvoja sivun latauksessa tai pageshow-tapahtumassa.
+
+Korjaus: johda näkyvät rivit lomakkeen senhetkisistä arvoista alustuksessa ja paluun yhteydessä. Tarvittaessa säilytä hakuehdot myös tarkoituksenmukaisessa URL-tilassa.
+
+Hyväksyntä: haun, avauksen ja Takaisin-paluun jälkeen kentät, laskuri ja näkyvät rivit täsmäävät sekä välimuistista palautuvassa että uudelleen luotavassa näkymässä.
+
+Lähde: assets/shell.js rivit 14–16. Kokeet: evidence/ui_results.json.
+
+R09 — Dokumentoitu uudelleenpaketointi vaatii Git-repositorion [P3, siirrettävyys]
+
+README:ssa neuvottu python3 lesson-network/export.py epäonnistuu itsenäisestä puretusta ZIP-paketista, koska export.py suorittaa aina git rev-parse HEAD. Avaaminen, rakentaminen ja tarjoilu toimivat tästä riippumatta.
+
+Korjaus: tue alkuperäisen vientimanifestin revisiota tai eksplisiittisesti annettua lähderevisiota Gitin puuttuessa. Jos Git on käytettävissä, varmista että kyseessä on tämän projektin juuri eikä jokin ylempi vieras repositorio. Jos tarkoitus on rajata vienti pelkkään lähderepositorioon, sano tämä ohjeessa.
+
+Lähde: export.py rivi 16. Kokeet: evidence/build_probes.json.
+
+5. SUOSITELTU SEURAAVA TOIMITUS
+
+Työn nimi: Oppitunnin liittämisen ja päivittämisen todentaminen.
+
+Pidä nykyinen graafi ja kaikki 690 osoitetta. Erota kirjoitettava KC-kohtainen sisältöpaketti johdetuista records- ja site-tiedostoista. Paketilla on tarkka KC-tunnus, sisältöversio, sisältöviite, valinnaiset moduulit ja resurssit, tutkimusviitteet, katselmointitilat ja Lite-yhteensovituksen viite. Kaikkia pedagogisia kenttiä ei täytetä vielä.
+
+Todista samaa tulevaa tuotantoreittiä käyttäen kaksi ei-opetuksellista koekappaletta: staattinen teksti ja SVG sekä pieni painikkeella ohjattava tekninen interaktio. Nimeä ja eristä ne testisisällöksi. Tavallinen julkaisutulos ei saa laskea niitä hyväksytyiksi oppitunneiksi. Kummankaan lisääminen ei saa edellyttää yhteisen generaattorin erikoistapausta.
+
+Päivitä yhtä koekappaletta, rakenna uudelleen ja näytä, että vain oikea sisältöversio ja sitä vastaavat tulokset muuttuvat. Tarkista kuvat, moduulit, polkuprefiksi, toisto ja poistuminen. Riko yksi paketti hallitusti ja osoita, ettei virheellinen sisältö tai harhaanjohtava valmiustila päädy viimeisen toimivan tuloksen tilalle.
+
+Korjaa samalla R05–R09. Erillisiä uusia kirjautumisia, tietokantaa, suurta sisällönhallintajärjestelmää, oppijamallia tai varsinaisia mikropelien korjauksia ei tarvita tämän tavoitteen täyttämiseksi. Olemassa oleva staattinen lähestymistapa riittää, kun kirjoitettava sisältö, johdettu tulos ja tarkistus on erotettu hyvin.
+
+Yksityiskohtainen tehtävä on SOL_PHASE1_1_PROMPT.txt-tiedostossa ja hyväksymiskokeet ACCEPTANCE_CASES_PHASE1_1.json-tiedostossa.
+
+6. MITÄ ERINOMAINEN OPETUSSISÄLTÖ EDELLYTTÄÄ TÄLTÄ POHJALTA
+
+Tekninen verkko voi helpottaa hyvän sisällön tuottamista, vertailemista, korjaamista ja jakamista. Se ei yksin osoita, että jokainen oppitunti opettaa asian hyvin.
+
+Sisältöpaketin pitää myöhemmin kuvata rajattu tavoite, oppijalta todella oletetut taidot, ennen vastaamista tarjottu tuki ja oppijan konkreettinen toiminta. Tutkimusviitteiden pitää liittyä juuri käytettyyn käsittelytapaan; yhteinen lähdelista ei riitä jokaisen KC:n perusteluksi. Eri KC-tyypit tarvitsevat erilaisia sisältörakenteita. Yhtä pakollista pitkää oppituntikaavaa ei pidä pakottaa jokaiseen prosessi-, integraatio- ja käsitenoodiin.
+
+Käyttäjän aiempi laskemistehtävää koskenut huomio havainnollistaa, miksi toiminnan sopimus on tärkeä: lukumäärän tietäminen ja jokaisen esineen osoittaminen ovat eri vaatimuksia. Vastaavasti ajan ja nopeuden esittely tarvitsee myöhemmin mahdollisuuden todelliseen ajalliseen havainnollistukseen ja hallittuun uudelleentoistoon. Sivun olemassaolo tai Canvas-elementin latautuminen ei todista näiden pedagogista onnistumista.
+
+181 Lite-KC:n oppituntien pitää tukea myöhemmin nimettyä korjattua peliä ja sen tehtäväperheitä. Yhteensopivuus tarkoittaa tavoitteen, esitystavan, esitietovaatimusten ja toiminnan johdonmukaisuutta. Vanhan virheen kopioiminen oppituntiin ei kuulu siihen.
+
+Palautteen kohteeksi tarvitaan vähintään KC, sisältöversio ja tarvittaessa tehtäväperhe, aktiviteetti sekä runtime-versio. Tällöin havainto voidaan yhdistää juuri nähtyyn oppituntiin ja korjaus voidaan arvioida seuraavasta versiosta. Rakennuksen läpäisy, pedagoginen katselmus, ihmisen arvio ja oppilaalta saatu näyttö pidetään erillisinä tietoina. Näiden erottelu antaa mahdollisuuden kehittää laatua ilman, että automaatio muuttaa keskeneräistä sisältöä huomaamatta hyväksytyksi.
+
+Kun tekninen sisällönlisäys on todistettu ja Lite-baseline nimetty, aloittaisin muutamalla keskenään erilaisella oikealla oppitunnilla. Niiden avulla varmistetaan, että sisältösopimus palvelee staattista selitystä, ajallista havainnollistusta, itsenäistä harjoittelua ja integraationoodia. Sen jälkeen samaa tuotantoloopia voidaan laajentaa KC kerrallaan koko verkkoon.
+
+7. AINEISTO JA RAJAT
+
+FINDINGS.json sisältää löydösten koneellisesti luettavat tiedot. evidence/ sisältää riippumattomien tarkistusten tulokset ja virheensyöttökokeet. reviewed-source/ sisältää vain raportin kannalta olennaiset alkuperäiset lähdetiedostot luettavaksi; se ei ole uusi rakennettava projektitoimitus. reproductions/ sisältää tarkastuksessa käytetyt skriptit alkuperäisine työtilapolkuineen. Niitä voi käyttää toistamisen lähtökohtana asettamalla polut omaan purettuun kopioon.
+
+Tämän katselmoinnin toimitus on raportti ja rajattu jatkotehtävä. Alkuperäistä Solin toteutusta, kanonista graafia tai pelejä ei ole korjattu tässä paketissa. Varsinaista pedagogista tutkimusta ja sisältötuotantoa ei käynnistetty.
