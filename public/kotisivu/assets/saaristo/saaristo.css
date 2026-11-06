@@ -25,8 +25,8 @@
 .saaristo-eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--mint);margin:0 0 18px}
 .saaristo-hero h1{width:fit-content;max-width:100%;font-size:clamp(40px,8.6vw,96px);line-height:1.1;letter-spacing:-.045em;text-shadow:0 3px 24px rgba(30,20,50,.45)}
 .saaristo-hero h1 span{color:var(--mint)}
-[data-saaristo-text=particles] .saaristo-hero h1{color:transparent;text-shadow:none}
-[data-saaristo-text=particles] .saaristo-hero h1 span{color:transparent}
+[data-saaristo=webgl][data-saaristo-text=particles] .saaristo-hero h1{color:transparent;text-shadow:none}
+[data-saaristo=webgl][data-saaristo-text=particles] .saaristo-hero h1 span{color:transparent}
 .saaristo-lead{max-width:460px;margin-top:26px;font-size:clamp(16px,1.6vw,19px);line-height:1.7;text-shadow:0 1px 14px rgba(20,15,40,.7)}
 .saaristo-scroll{margin-top:40px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:750;display:flex;align-items:center;gap:12px;opacity:.85}
 .saaristo-scroll span{width:22px;height:34px;border:2px solid var(--cream);border-radius:12px;position:relative}
@@ -79,7 +79,7 @@
 .saaristo-header .saaristo-actions{flex-wrap:nowrap}
 .saaristo-chip[data-waiting]{animation:chip-wait 2.4s ease-in-out infinite}
 @keyframes chip-wait{50%{box-shadow:0 0 0 6px rgba(140,233,213,.25)}}
-@media (max-width:960px){
+@media (max-width:960px), (hover:none) and (pointer:coarse){
   .js .saaristo-menu{display:inline-flex;align-items:center;gap:6px}
   .js .saaristo-nav{display:none;position:absolute;top:calc(100% - 4px);right:clamp(16px,4vw,40px);flex-direction:column;align-items:stretch;min-width:220px;margin:0;padding:10px;border-radius:20px;background:rgba(26,22,48,.95);border:1px solid var(--glass-line);box-shadow:0 24px 60px -20px rgba(10,6,30,.8)}
   .js .saaristo-nav.is-open{display:flex}
@@ -108,3 +108,34 @@
 /* The hero eyebrow sits over a bright sunset sky: give it a dark backing so it stays readable. */
 .saaristo-hero .saaristo-eyebrow{display:inline-block;padding:5px 12px;border-radius:999px;background:rgba(20,24,40,.62);color:#bff5df;backdrop-filter:blur(4px)}
 @media (max-width:480px){.saaristo-hero .saaristo-eyebrow{font-size:11px;letter-spacing:.1em}}
+
+/* On touch screens the pond fills one view, with navigation at its edges. */
+@media (max-width:960px), (hover:none) and (pointer:coarse) {
+  .saaristo-page { min-height:100svh; min-height:100dvh; display:flex; flex-direction:column; }
+  html:not(.js) .saaristo-header { flex-wrap:wrap; gap:4px; }
+  html:not(.js) .saaristo-header .saaristo-chip { display:none; }
+  html:not(.js) .saaristo-nav { flex-wrap:wrap; }
+  html:not(.js) .saaristo-nav a { min-height:36px; padding:0 7px; font-size:13px; }
+  .saaristo-page main { flex:1; display:flex; flex-direction:column; }
+  .saaristo-canvas { touch-action:none; }
+  .saaristo-hero { flex:1; min-height:0; align-items:center; justify-content:flex-start; padding:clamp(78px,18svh,180px) 18px 16px; }
+  .saaristo-hero h1 { width:max-content; margin:0; font-size:clamp(32px,8.8vw,72px); line-height:1.1; }
+  .saaristo-page .saaristo-hero > :not(h1), .saaristo-section:not(.saaristo-exit),
+  .saaristo-closing > :not(.saaristo-actions) { display:none; }
+
+  .saaristo-throwzone { left:max(18px,env(safe-area-inset-left)); top:auto; bottom:max(23svh,102px); width:104px; height:60px; margin:0; padding:4px; border:0; border-radius:16px; color:#fff7de; background:transparent; text-shadow:0 1px 5px #181626,0 1px 2px #181626; }
+  .saaristo-throwzone span:before { line-height:1; margin-bottom:5px; }
+  html[data-saaristo=static] .saaristo-throwzone:not(.is-away):not(.is-off):enabled { opacity:1; pointer-events:auto; transform:none; }
+  html:not([data-saaristo=webgl]):not([data-saaristo=static]) .saaristo-throwzone,
+  .saaristo-throwzone.is-away, .saaristo-throwzone.is-off, .saaristo-throwzone:disabled { visibility:hidden; }
+  .saaristo-exit, .saaristo-closing { display:block; min-height:0; margin:0; padding:0; width:auto; }
+  .saaristo-closing { border:0; border-radius:0; background:none; box-shadow:none; backdrop-filter:none; -webkit-backdrop-filter:none; pointer-events:none; }
+  .saaristo-closing .saaristo-actions { justify-content:center; }
+  .saaristo-closing .saaristo-button { min-height:44px; padding:6px 16px; }
+  .saaristo-footer { align-items:center; justify-content:space-between; gap:4px 10px; padding:4px max(16px,env(safe-area-inset-right)) max(2px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left)); font-size:12px; }
+  .saaristo-footer a { display:inline-flex; align-items:center; min-height:44px; }
+}
+@media (max-height:480px) and (orientation:landscape) and (pointer:coarse) {
+  .saaristo-hero { padding-top:max(62px,env(safe-area-inset-top)); }
+  .saaristo-hero h1 { font-size:clamp(30px,9svh,44px); }
+}

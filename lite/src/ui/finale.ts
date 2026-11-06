@@ -2,6 +2,7 @@ import {
   FINALE_CHAPTERS, FINALE_CREDITS, FINALE_SECONDS, FINALE_TITLE,
   finaleAt, finaleElapsed, pauseFinale, seekFinale, type FinaleArt, type FinaleClock,
 } from '../content/finale';
+import { saaristoJourney } from '../engine/journey';
 import { sulka } from './art';
 import { h } from './dom';
 import { calmByAdult, poseUrl, spriteSvg } from './sprite';
@@ -280,7 +281,7 @@ function transcript() {
     }));
 }
 
-/** Mounts an optional, independent viewing experience with no learner-store dependency. */
+/** The film is always available, including before any practice. */
 export function finale(host: HTMLElement, { onExit }: { onExit: () => void }): () => void {
   const sound = createFinaleSound();
   const reduced = typeof matchMedia === 'function' ? matchMedia('(prefers-reduced-motion: reduce)') : undefined;
@@ -324,7 +325,11 @@ export function finale(host: HTMLElement, { onExit }: { onExit: () => void }): (
     text.querySelector('summary')?.focus();
     text.scrollIntoView?.({ block: 'nearest' });
   } }, 'Katso muistoja');
-  const ending = h('div', { class: 'ep-ending', hidden: true }, returnButton, memory);
+  const { review } = saaristoJourney().storyProgress();
+  const revisit = review.length ? h('button', { type: 'button', class: 'ep-primary', onclick: () => {
+    location.hash = 'saaristo/kertaus/' + encodeURIComponent(review[0]);
+  } }, `Aloita kertauskierros (${review.length})`) : null;
+  const ending = h('div', { class: 'ep-ending', hidden: true }, revisit, returnButton, memory);
 
   function buttonLabel(label: string): void {
     if (play.textContent !== label) play.textContent = label;

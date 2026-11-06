@@ -1,0 +1,17 @@
+.lite-map {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: calc(100dvh - var(--publication-nav-height, 0px) - 24px - env(safe-area-inset-bottom));
+}
+#app:has(> .lite-map) { padding: 8px 10px calc(8px + env(safe-area-inset-bottom)); }
+.lite-map-header { display: flex; align-items: center; gap: 7px; }
+.lite-map-header h1 { flex: 1; margin: 0; font-size: clamp(16px, 5vw, 24px); line-height: 1.1; }
+.lite-map-header .btn { min-height: 44px; padding: 5px 10px; font-size: 15px; text-decoration: none; }
+.lite-map-scroll { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; border-radius: 18px; }
+.lite-map .wmap { border-radius: 16px; }
+.lite-destinations .world { grid-template-columns: 52px 1fr; gap: 12px; padding: 6px 12px; }
+.lite-destinations .world small { display: block; font-size: 14px; font-weight: 500; }
+.lite-adventures { display: flex; flex-wrap: wrap; gap: 8px; }
+.lite-adventures a { text-decoration: none; }
+.lite-map-options > summary { cursor: pointer; padding-block: 12px; }

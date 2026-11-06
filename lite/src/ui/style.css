@@ -111,6 +111,8 @@ svg { display: block; }
 @media (prefers-reduced-motion: reduce) { .stop.next .disc { animation: none; } }
 
 /* Lesson */
+.reading-option > summary { color:var(--muted); font-size:14px; font-weight:600; cursor:pointer; padding:12px 0; }
+.reading-option[open] > summary { margin-bottom:6px; }
 .say { display: flex; gap: 10px; align-items: flex-start; }
 .say p { font-size: 21px; font-weight: 700; flex: 1; min-width: 0; overflow-wrap: anywhere; padding-top: 10px; white-space: pre-line; }
 .lab .say p { font-size: 19px; }

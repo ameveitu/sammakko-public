@@ -96,7 +96,8 @@ test.describe('Saaristo expedition', () => {
 
   // ENV-PHY-SPACE-01 is now an own-explanation task (exp690 v2); e2e/integration-revisions.spec.ts covers its flow.
 
-  test('cake cuts both plates into sixths, moves them and counts seven pieces', async ({ page }) => {
+  test('cake cuts both plates into sixths, counts seven pieces and lets the story continue on a phone', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
     await page.goto('./?qa=1&seed=1#saaristo/M-FRAC-13');
     await page.getByRole('button', { name: 'Tutkitaan yhdessä', exact: true }).click();
     await expect(task(page).locator('[data-cake-option]').first()).toBeHidden();
@@ -113,6 +114,40 @@ test.describe('Saaristo expedition', () => {
     expect(partitions?.map(({ denominator, pieces }) => [denominator, pieces.length])).toEqual([[6, 3], [6, 4]]);
     await expect(task(page).locator('[data-cake-option="6"]')).toBeDisabled();
     expect((await save(page)).attempts).toHaveLength(1);
+    await expect(page.getByRole('button', { name: 'Kokeile uudelleen', exact: true })).toBeInViewport();
+    await expect(page.getByRole('button', { name: 'Kokeilen nyt itse', exact: true })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Toinen yhteinen kokeilu' })).toHaveCount(0);
+    await page.getByRole('button', { name: 'Eteenpäin', exact: true }).click();
+    await expect(page.getByRole('button', { name: 'Tutkitaan yhdessä', exact: true })).toBeVisible();
+    expect((await snapshot(page)).node).not.toBe('M-FRAC-13');
+  });
+
+  test('wrong cake answer, reveal, same-task retry, and skipping never trap a phone player', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 640 });
+    await page.goto('./?qa=1&seed=1#saaristo/M-FRAC-13');
+    await page.getByRole('button', { name: 'Tutkitaan yhdessä', exact: true }).click();
+    const pieces = async () => {
+      await task(page).getByRole('button', { name: /Leikkaa palat yhtä suuriksi/ }).click();
+      await task(page).getByRole('button', { name: /Siirrä palat lautasille/ }).click();
+    };
+    await pieces();
+    await task(page).locator('[data-cake-option="6"]').click();
+    await expect(page.locator('.exp-feedback')).toHaveAttribute('data-ok', 'false');
+    await expect(page.getByRole('button', { name: 'Eteenpäin', exact: true })).toBeInViewport();
+    await page.getByRole('button', { name: 'Näytä ja selitä' }).click();
+    const previous = await snapshot(page);
+    await page.getByRole('button', { name: 'Kokeile uudelleen' }).click();
+    expect((await snapshot(page)).seed).toBe(previous.seed);
+    await pieces();
+    await task(page).locator('[data-cake-option="7"]').click();
+    expect((await save(page)).attempts[1]).toMatchObject({ ok: true, replay: true, help: expect.arrayContaining(['reveal', 'retry']) });
+    await page.getByRole('button', { name: 'Eteenpäin', exact: true }).click();
+    await page.getByRole('button', { name: 'Kokeilen itse', exact: true }).click();
+    const skipped = (await snapshot(page)).node;
+    await page.getByRole('button', { name: 'Ohita tehtävä', exact: true }).click();
+    await expect(page.getByRole('button', { name: 'Tutkitaan yhdessä', exact: true })).toBeVisible();
+    expect((await snapshot(page)).node).not.toBe(skipped);
+    expect((await save(page)).attempts).toHaveLength(2);
   });
 
   test('a completed task offers a fresh recall only after the 20-hour interval', async ({ page }) => {

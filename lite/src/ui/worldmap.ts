@@ -207,10 +207,10 @@ const CLOUD = '<svg viewBox="0 0 80 52"><g fill="#fff" stroke="#b9cbd3" stroke-w
 export interface MapHooks { open(id: string, mode: Mode): void; refresh(): void; go(w: World, chapter?: string): void }
 
 /** The map element. `next` is the place the green button leads to. */
-export function worldMap(w: World, next: string | undefined, hooks: MapHooks) {
+export function worldMap(w: World, next: string | undefined, hooks: MapHooks, compact = false) {
   const base = layout(w);
   // Sea routes to the other areas sit in the gap below each chapter; the last one needs room.
-  const routes = (base.regions ?? []).map((r) => ({ r, ...routesOf(w, r.id) }));
+  const routes = compact ? [] : (base.regions ?? []).map((r) => ({ r, ...routesOf(w, r.id) }));
   const lastHas = routes.length > 0 && (routes.at(-1)!.out.length + routes.at(-1)!.in.length) > 0;
   const L: MapLayout = { ...base, h: base.h + (lastHas ? 24 : 0) };
   const wrap = h('div', { class: `wmap ${w}`, style: `aspect-ratio:${L.w}/${L.h}` });
@@ -232,7 +232,7 @@ export function worldMap(w: World, next: string | undefined, hooks: MapHooks) {
       }, text));
     });
   }
-  wrap.insertAdjacentHTML('afterbegin', `<svg class="wmap-bg" viewBox="0 0 ${L.w} ${L.h}" preserveAspectRatio="none" aria-hidden="true">${scenery(w, L)}${lightAndFog(w, L)}${roads(w, L)}${seaLines.join('')}${banners(w, L)}</svg>`);
+  wrap.insertAdjacentHTML('afterbegin', `<svg class="wmap-bg" viewBox="0 0 ${L.w} ${L.h}" preserveAspectRatio="none" aria-hidden="true">${scenery(w, L)}${lightAndFog(w, L)}${roads(w, L)}${seaLines.join('')}${compact ? '' : banners(w, L)}</svg>`);
   for (const n of L.nodes.values()) {
     const id = n.id, spec = NODES[id]!, st = store.state(id);
     const ch = chapterIn(w, id)!;
@@ -254,12 +254,16 @@ export function worldMap(w: World, next: string | undefined, hooks: MapHooks) {
       h('button', {
         class: cls, style: `${pct(n.x, n.y)};--ch:${CHAPTER_COLOR[ch.id]}`, 'data-id': id,
         'aria-label': label,
-        onclick: () => sheet(w, id, hooks),
+        onclick: () => {
+          const mode = modeFor(w, id);
+          if (compact && mode !== 'leap') hooks.open(id, mode);
+          else sheet(w, id, hooks, compact);
+        },
       }, h('span', { class: 'disc' }, spec.icon),
         // unexplored places sit under a light cloud; the frontier's cloud is thinner
         !lit && !inferred && id !== next ? h('span', { class: `cloud${open ? ' thin' : ''}`, 'aria-hidden': 'true', html: CLOUD }) : null,
         badge),
-      h('span', { class: 'sign', style: pct(n.x, n.y + MAP.r + 3) }, spec.stop));
+      ...(compact ? [] : [h('span', { class: 'sign', style: pct(n.x, n.y + MAP.r + 3) }, spec.stop)]));
   }
   // scroll targets for the chapter buttons above the map
   for (const r of L.regions ?? []) wrap.append(h('span', { class: 'region-anchor', id: `alue-${r.id}`, style: `top:${((r.y - 30) / L.h) * 100}%` }));
@@ -299,7 +303,7 @@ export function avatarArt(w: World) {
 }
 
 /** Bottom sheet for one place: what is it, and what can I do here? */
-function sheet(w: World, id: string, hooks: MapHooks) {
+function sheet(w: World, id: string, hooks: MapHooks, jumpOnly: boolean) {
   document.querySelector('.sheet-back')?.remove();
   const spec = NODES[id]!, st = store.state(id), ch = chapterIn(w, id)!;
   const mode = modeFor(w, id);
@@ -344,11 +348,11 @@ function sheet(w: World, id: string, hooks: MapHooks) {
       h('p', {}, `Hyppäät ${missing.length} paikan yli: ${names.slice(0, 5).join(', ')}${names.length > 5 ? ` ja ${names.length - 5} muuta` : ''}.`),
       h('p', { class: 'small muted' }, 'Jos onnistut, ohitetut pohjapaikat merkitään päätellyiksi ☆, koska tämä paikka käyttää niitä. Niitä ei tarkisteta erikseen. Jos tämä tuntuu liian vaikealta, voit harjoitella pohjaa milloin vain.'),
       btn(ICON.bolt, 'Kyllä, hyppään!', () => { close(); hooks.open(id, 'leap'); }, 'primary big wide'),
-      btn(ICON.back, 'Ei sittenkään', main, 'big wide'));
+      btn(ICON.back, 'Ei sittenkään', jumpOnly ? close : main, 'big wide'));
     say(`Hypätäänkö? Hyppäät ${missing.length} paikan yli.`);
   }
 
-  main();
+  if (jumpOnly) confirm(); else main();
   document.body.append(back);
   (body.querySelector('.btn.primary') as HTMLElement | null)?.focus();
 }

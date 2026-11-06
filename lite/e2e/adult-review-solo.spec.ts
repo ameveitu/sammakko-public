@@ -27,7 +27,7 @@ test('pure explanation becomes a guided self-check that lets the story continue'
     await expect(page.locator('.exp-feedback')).toHaveAttribute('data-ok', 'true');
     if (round === 0) await btn(page, 'Toinen yhteinen kokeilu').click();
   }
-  await expect(btn(page, 'Seuraavalle retkelle')).toBeVisible();
+  await expect(btn(page, 'Eteenpäin')).toBeVisible();
   const attempts = (await ledger(page)).attempts.filter(a => a.node === 'M-REP-03');
   expect(attempts).toHaveLength(2);
   // Practice only: guided, unreviewed, never adult-observed or independent.

@@ -1,4 +1,6 @@
 import './ui/style.css';
+import './ui/mobile-map.css';
+import { compactPlay } from './ui/compact-play';
 import { GRAPH_SHA, KCS, kc, MANIFEST, ORDER, requiredOf } from './engine/graph';
 import { BACKUP_KEY, exportData, store, type World } from './engine/store';
 import { independentRatio } from './engine/evidence';
@@ -88,12 +90,13 @@ function route() {
   }
   if (location.hash === '#saaristo' || location.hash.startsWith('#saaristo/')) {
     const seq = routeSeq;
-    const raw = location.hash.slice('#saaristo/'.length);
+    const reviewing = location.hash.startsWith('#saaristo/kertaus/');
+    const raw = location.hash.slice((reviewing ? '#saaristo/kertaus/' : '#saaristo/').length);
     let id: string | undefined;
     try { id = location.hash.startsWith('#saaristo/') ? decodeURIComponent(raw) : undefined; } catch { id = undefined; }
     app.replaceChildren(h('p', { class: 'card', role: 'status' }, 'Saaristo herää…'));
     void import('./ui/expedition').then(({ expedition }) => {
-      if (seq === routeSeq) stopExpedition = expedition(app, id);
+      if (seq === routeSeq) stopExpedition = expedition(app, id, reviewing);
     }).catch(() => {
       if (seq === routeSeq) app.replaceChildren(h('p', { class: 'card', role: 'alert' }, 'Retkeä ei saatu ladattua. Yritä ladata sivu uudelleen.'), h('a', { href: '#alueet' }, 'Aihevalintaan'));
     });
@@ -102,15 +105,15 @@ function route() {
   const kr = parseKcHash(location.hash);
   if (kr) return openLink(kr);
   if (location.hash === '#aikuiselle') return adult();
-  if (location.hash === '#alueet') return chooseWorld();
+  if (location.hash === '#alueet' || (compactPlay() && location.hash === '#aiheet')) return chooseWorld();
   if (location.hash.startsWith('#paja')) {
     const sc = location.hash.slice(6);
     if (sc === 'lento') return flight(app, () => storageNotice());
     return paja(app, (['ranta', 'rata', 'torni'] as const).find((x) => x === sc) ?? 'paja', { lesson: openMission, notice: () => storageNotice() });
   }
   const w = store.get().world;
-  if (!w) return chooseWorld();
-  map(w);
+  if (!w && !compactPlay()) return chooseWorld();
+  map(w ?? 'ranta');
 }
 window.addEventListener('hashchange', route);
 // Another tab saved progress (review G01): redraw overview pages; a lesson in progress is not interrupted.
@@ -218,6 +221,28 @@ function storageNotice(detail = false) {
 // ---------------------------------------------------------------- world choice
 function chooseWorld() {
   const pick = (w: World) => { store.update((s) => { s.world = w; }); if (location.hash) location.hash = ''; else route(); };
+  if (compactPlay()) {
+    const current = store.get().world ?? 'ranta';
+    const W = worldInfo(current);
+    const quietButton = h('button', { type: 'button', class: 'btn', 'aria-pressed': String(store.quiet()), onclick: () => {
+      hush();
+      store.update(s => { s.quietUntil = store.quiet() ? 0 : Date.now() + 3 * 3600e3; });
+      quietButton.setAttribute('aria-pressed', String(store.quiet()));
+    } }, 'Hiljainen tila');
+    app.replaceChildren(h('main', { class: 'lite-destinations stack' },
+      h('header', { class: 'lite-map-header' }, h('h1', {}, 'Valitse alue'), h('a', { class: 'btn', href: '#' }, 'Kartalle')),
+      h('div', { class: 'worlds' }, ...WORLDS.map(region =>
+        h('button', { type: 'button', class: `world ${region.id}`, onclick: () => pick(region.id),
+          'aria-current': region.id === current ? 'true' : undefined },
+        h('span', { 'aria-hidden': 'true', html: svg(60, 56, avatarArt(region.id)) }),
+        h('span', {}, h('b', {}, region.name), h('small', {}, region.grade))))),
+      h('nav', { class: 'lite-adventures', 'aria-label': 'Muut seikkailut' },
+        h('a', { class: 'btn', href: '#saaristo' }, 'Saaristo 690'), h('a', { class: 'btn', href: '#paja' }, 'Lentopaja')),
+      h('details', { class: 'lite-map-options' }, h('summary', {}, 'Kartan tarina ja äänet'),
+        h('p', {}, W.tale), quietButton),
+      storageNotice()));
+    return;
+  }
   app.replaceChildren(h('div', { class: 'stack' },
     h('h1', {}, 'Sammakko'),
     h('a', { href: '#saaristo', class: 'card start-opt', style: 'background:#e3eee0;border-color:#93b4a5' }, h('b', {}, 'Aavan matkassa · Saaristo'), h('span', { class: 'small' }, 'Elävä 3D-maailma, juhlapöytä ja yhteiset tutkimusretket.')),
@@ -245,6 +270,27 @@ function chooseWorld() {
 // ---------------------------------------------------------------- map
 function map(w: World) {
   const n = nextNode(w);
+  if (compactPlay()) {
+    const play = (id: string, mode: Mode) => open(id, mode, undefined, true);
+    const m = worldMap(w, n?.node, { open: play, refresh: route, go: goTo }, true);
+    const scroll = h('div', { class: 'lite-map-scroll', role: 'region', 'aria-label': 'Pelattava kartta' }, m);
+    const title = worldInfo(w);
+    app.replaceChildren(h('main', { class: 'lite-map' },
+      h('header', { class: 'lite-map-header' }, h('h1', {}, title.name),
+        n ? h('button', { type: 'button', class: 'btn primary', onclick: () => play(n.node, n.retrieval ? 'retrieval' : modeFor(w, n.node)) }, 'Pelaa') : null,
+        h('a', { class: 'btn', href: '#alueet' }, 'Alueet')),
+      storageNotice(), scroll));
+    const target = m.querySelector('.place.next');
+    if (target) {
+      const box = scroll.getBoundingClientRect();
+      const place = target.getBoundingClientRect();
+      if (place.bottom > box.bottom) scroll.scrollTop = place.top - box.top - box.height / 2 + place.height / 2;
+    }
+    if (!taleSeen(w) && !store.quiet() && canSpeak(title.tale)) {
+      void say(title.tale).finished.then(e => { if (e === 'ended') markTale(w); });
+    }
+    return;
+  }
   const chapters = chaptersFor(w);
   const total = worldIds(w);
   const lit = total.filter(store.lit).length;

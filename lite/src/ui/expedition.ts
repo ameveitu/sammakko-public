@@ -23,6 +23,7 @@ import { numberRouteScene } from '../content/models/number-route';
 import { recordSolidConstruction } from '../content/models/solid-construction';
 import './expedition.css';
 import { h } from './dom';
+import { compactPlay, readingOption } from './compact-play';
 import { say, hush } from './speech';
 import { mount, type Widget } from './widgets';
 import { adultReviewOn, setAdultReview } from './adult-review-setting';
@@ -30,7 +31,8 @@ import { hasAdultReview, withoutAdultReview } from '../content/adult-review';
 import { mountSelfExplanation } from '../content/scenes/observed-explanations';
 import { check } from '../engine/check';
 import { CATALOG, FAMILIES, catalogNode, canEnter } from '../engine/catalog';
-import { createJourney } from '../engine/journey';
+import { saaristoJourney } from '../engine/journey';
+import { STORY_ORDER, type StoryOutcome } from '../engine/story-route';
 import { itemIdentity } from '../engine/item-identity';
 import { newSeed, rng } from '../engine/rng';
 import { store as legacy } from '../engine/store';
@@ -56,8 +58,8 @@ declare global {
 
 /** The new journey is deliberately isolated from the established 181 evidence stream.
  * Its title, catalog and settings make availability and observation limits inspectable. */
-export function expedition(app: HTMLElement, requested?: string): () => void {
-  const journey = createJourney();
+export function expedition(app: HTMLElement, requested?: string, reviewing = false): () => void {
+  const journey = saaristoJourney();
   const assets = (name: string) => new URL(name, document.baseURI).href;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let disposed = false, userPaused = false, paused = reduced.matches, cleanupPaint: (() => void) | undefined;
@@ -109,7 +111,7 @@ export function expedition(app: HTMLElement, requested?: string): () => void {
         showStage(mode === 'result' || mode === 'demo');
         if (memoryBefore?.isConnected && !memoryBefore.matches(':disabled')) memoryBefore.focus();
         else contents.querySelector<HTMLElement>('.exp-feedback')?.focus();
-      } }, 'Takaisin tutkimukseen')));
+      } }, 'Takaisin tutkimukseen'), nextButton()));
   let refreshOnLoss: (() => void) | undefined;
   const pauseButton = h('button', { class: 'exp-tool', type: 'button', onclick: () => {
     userPaused = !userPaused;
@@ -119,7 +121,7 @@ export function expedition(app: HTMLElement, requested?: string): () => void {
     h('a', { class: 'exp-brand', href: '#saaristo' }, h('img', { src: assets('characters/aava/idle.png'), alt: '' }), 'Sammakko'),
     h('nav', { class: 'exp-tools', 'aria-label': 'Retken valinnat' },
       pauseButton,
-      h('button', { class: 'exp-tool', type: 'button', 'aria-label': 'Retkikartta', onclick: () => openCatalog() }, '⌘'),
+      h('button', { class: 'exp-tool exp-map-tool', type: 'button', 'aria-label': 'Retkikartta', onclick: () => openCatalog() }, 'Kartta'),
       h('button', { class: 'exp-tool', type: 'button', 'aria-label': 'Aikuiselle: retken tiedot', onclick: () => adult() }, 'i'),
       h('a', { class: 'exp-tool', href: '#alueet', 'aria-label': 'Palaa aihevalintaan' }, '↗')));
   root.append(worldHost, head, contents, memoryPanel); app.replaceChildren(root);
@@ -282,24 +284,36 @@ export function expedition(app: HTMLElement, requested?: string): () => void {
   }
 
   function go(id: string) { closeModal(); location.hash = `saaristo/${encodeURIComponent(id)}`; }
-  function stopRow(id: string) {
+  let advancing = false;
+  function nextButton(skip = false) {
+    return h('button', { class: skip ? 'exp-secondary exp-skip' : 'exp-primary', type: 'button', onclick: () => {
+      if (!spec || disposed || advancing) return;
+      advancing = true;
+      const next = journey.advanceStory(spec.id, reviewing);
+      location.hash = next ? `saaristo/${reviewing ? 'kertaus/' : ''}${encodeURIComponent(next)}` : 'saaristo/loppu';
+    } }, skip ? 'Ohita tehtävä' : 'Eteenpäin');
+  }
+  function stopRow(id: string, outcome?: StoryOutcome) {
     const node = EXPEDITION_NODES[id], info = catalogNode(id);
     const state = node ? observe(node).state : undefined;
     const recallDue = state?.checked && state.dueAt !== undefined && state.dueAt <= Date.now();
+    const prior = recallDue ? 'Voit kokeilla, mitä muistat' : journey.hasEvent(info?.eventId ?? '') ? 'Muisto retkeltä · tutki uudelleen' : info?.title ?? '';
+    const outcomes: Record<StoryOutcome, string> = { independent: 'Onnistui itse', assisted: 'Onnistui avun kanssa', open: 'Jäi kokeiltavaksi' };
     return h('button', { class: 'exp-stop', type: 'button', disabled: !node, onclick: () => go(id), 'data-node': id },
       h('span', { class: 'exp-stop-icon', 'aria-hidden': 'true' }, node?.icon ?? '·'),
       h('span', { class: 'exp-stop-name' }, node?.stop ?? info?.title ?? id,
-        h('small', {}, node ? (recallDue ? 'Voit kokeilla, mitä muistat' : journey.hasEvent(info?.eventId ?? '') ? 'Muisto retkeltä · tutki uudelleen' : info?.title ?? '') : 'Suunnitteilla')),
+        h('small', {}, node ? (outcome ? outcomes[outcome] : prior) : 'Suunnitteilla')),
       node ? h('span', { 'aria-hidden': 'true' }, '↗') : null);
   }
   function openCatalog(unavailableId?: string) {
     const list = h('div', { class: 'exp-catalog-list' });
     const search = h('input', { type: 'search', placeholder: 'Etsi retkeä tai taitoa', 'aria-label': 'Etsi retkeä tai taitoa' });
     const showPlanned = h('input', { type: 'checkbox', id: 'exp-planned', style: 'width:auto;margin:0 8px 0 0' });
+    const { outcomes } = journey.storyProgress();
     const fill = () => {
       const q = search.value.toLocaleLowerCase('fi');
       const nodes = CATALOG.filter(node => (showPlanned.checked || !!EXPEDITION_NODES[node.id]) && `${node.title} ${EXPEDITION_NODES[node.id]?.stop ?? ''} ${node.id}`.toLocaleLowerCase('fi').includes(q));
-      list.replaceChildren(...nodes.map(node => stopRow(node.id)));
+      list.replaceChildren(...nodes.map(node => stopRow(node.id, outcomes.get(node.id))));
     };
     search.addEventListener('input', fill); showPlanned.addEventListener('change', fill); fill();
     const unavailable = unavailableId === undefined ? null : catalogNode(unavailableId);
@@ -402,25 +416,30 @@ export function expedition(app: HTMLElement, requested?: string): () => void {
     const observation = spec ? observe(spec) : undefined;
     const streak = observation?.streak ?? 0;
     const out = h('section', { class: 'exp-desk', 'aria-label': 'Tutkimuspöytä' }, h('div', { class: 'exp-phase' },
-      h('span', {}, mode === 'demo' ? 'Katsotaan yhdessä' : mode === 'intro' ? 'Uusi pieni tutkimus' : phase === 'guided' ? 'Tutkitaan yhdessä' : phase === 'transfer' ? 'Uusi tilanne' : phase === 'retrieval' ? 'Mitä muistan' : 'Kokeilen itse'),
+      h('span', {}, reviewing ? 'Kertauskierros · ' : '', mode === 'demo' ? 'Katsotaan yhdessä' : mode === 'intro' ? 'Uusi pieni tutkimus' : phase === 'guided' ? 'Tutkitaan yhdessä' : phase === 'transfer' ? 'Uusi tilanne' : phase === 'retrieval' ? 'Mitä muistan' : 'Kokeilen itse'),
       h('div', { class: 'exp-pips', 'aria-label': `${streak} peräkkäistä itsenäistä onnistumista` },
         ...Array.from({ length: observation?.target ?? 3 }, (_, i) => h('i', { class: streak > i ? 'done' : '' })))),
-      h('h1', {}, title));
+      h('h1', { tabindex: '-1' }, title));
     contents.replaceChildren(out);
     world.resize();
     return out;
   }
 
   function home() {
+    const { next, visited, review, outcomes } = journey.storyProgress();
     mode = 'home'; spec = undefined; item = undefined; model = undefined; clearPaint(); showStage(); root.dataset.view = 'home';
     contents.replaceChildren(
       h('section', { class: 'exp-home' }, h('div', { class: 'exp-kicker' }, 'Yhteisten virtojen saaristo'),
         h('h1', {}, 'Aavan matkassa'),
         h('p', {}, 'Pieni havainto. Yhteinen oivallus. Lähde tutkimaan, mitä rannalla voi tapahtua.'),
-        h('button', { class: 'exp-primary', type: 'button', onclick: () => go('M-FRAC-13') }, 'Juhlapöydän ääreen', h('span', { 'aria-hidden': 'true' }, '→')),
+        next ? h('button', { class: 'exp-primary', type: 'button', onclick: () => go(next) },
+          next === STORY_ORDER[0] && !visited ? 'Juhlapöydän ääreen' : 'Jatka tarinaa', h('span', { 'aria-hidden': 'true' }, '→'))
+          : h('a', { class: 'exp-primary', href: '#saaristo/loppu' }, 'Katso lopputarina'),
+        visited ? h('p', { class: 'small' }, `Kuljettu ${visited}/${STORY_ORDER.length} retkeä.`) : null,
+        review.length ? h('a', { class: 'exp-secondary', href: '#saaristo/kertaus/' + encodeURIComponent(review[0]) }, `Kertaa retkiä (${review.length})`) : null,
         h('div', { style: 'margin-top:18px' }, h('button', { class: 'exp-secondary', type: 'button', onclick: () => openCatalog() }, 'Valitse oma retki'))),
       h('aside', { class: 'exp-islands', 'aria-label': 'Retkiä saaristossa' }, h('h2', {}, 'Rannalta tutkimusretkelle'),
-        ...['M-NUM-QTY-NUMERAL', 'PHY79-FORCE-MOTION', 'PHY79-PARALLEL', 'ENV-PHY-SPACE-01'].map(stopRow),
+        ...['M-NUM-QTY-NUMERAL', 'PHY79-FORCE-MOTION', 'PHY79-PARALLEL', 'ENV-PHY-SPACE-01'].map(id => stopRow(id, outcomes.get(id))),
         h('button', { class: 'exp-secondary', type: 'button', onclick: () => openCatalog() }, 'Kaikki retket →'),
         h('a', { class: 'exp-secondary', href: '#saaristo/loppu', style: 'display:block;margin-top:8px;font-size:13px' }, 'Tulevaisuuden tarina')));
     world.resize();
@@ -433,16 +452,21 @@ export function expedition(app: HTMLElement, requested?: string): () => void {
     const out = desk(spec.stop);
     const state = observe(spec).state;
     const recallDue = state.checked && state.dueAt !== undefined && state.dueAt <= Date.now();
-    out.append(h('p', { class: 'exp-instruction' }, spec.intro),
-      h('p', { class: 'small' }, spec.goal ?? catalogNode(id)?.action ?? ''),
+    const story = h('p', { class: 'exp-instruction' }, spec.intro);
+    const goal = h('p', { class: 'small' }, spec.goal ?? catalogNode(id)?.action ?? '');
+    if (compactPlay()) {
+      out.append(readingOption('Lue tarina ja tavoite', story, goal));
+      say(spec.intro);
+    } else out.append(story, goal);
+    out.append(
       h('div', { class: 'stack', style: 'margin-top:20px' },
         recallDue ? h('button', { class: 'exp-primary', type: 'button', onclick: () => startTask('retrieval') }, 'Kokeilen, mitä muistan') : null,
         h('button', { class: 'exp-primary', type: 'button', onclick: () => startTask('guided') }, 'Tutkitaan yhdessä'),
         h('button', { class: 'btn', type: 'button', onclick: () => startTask('independent') }, 'Kokeilen itse'),
-        h('button', { class: 'exp-secondary', type: 'button', onclick: showDemo }, 'Katso mallia')));
+        h('button', { class: 'exp-secondary', type: 'button', onclick: showDemo }, 'Katso mallia'), nextButton(true)));
     const hasMemory = journey.hasEvent(catalogNode(id)?.eventId ?? '');
     if (hasMemory && hasAuthoredClimax(id)) out.append(h('button', { type: 'button', class: 'exp-secondary', onclick: () => playMemory(id) }, 'Katso retkimuisto'));
-    contents.append(characterStory(hasMemory ? 'Tämän retken muisto säilyy. Voimme palata siihen ja tutkia uuden tilanteen.' : 'Voit pysähtyä, pyytää apua ja kokeilla rauhassa. Aava tutkii kanssasi.'));
+    if (!compactPlay()) contents.append(characterStory(hasMemory ? 'Tämän retken muisto säilyy. Voimme palata siihen ja tutkia uuden tilanteen.' : 'Voit pysähtyä, pyytää apua ja kokeilla rauhassa. Aava tutkii kanssasi.'));
     // A representative model establishes the scene without exposing an assessment answer.
     const preview = spec.item(rng(20261105), 'independent'); setModel(preview);
   }
@@ -460,15 +484,15 @@ export function expedition(app: HTMLElement, requested?: string): () => void {
     out.append(h('p', { class: 'exp-instruction' }, step.say), board);
     setModel(step, true); paint(step, board);
     out.append(h('button', { class: 'exp-primary', type: 'button', onclick: () => { demoIndex++; renderDemo(); } }, demoIndex + 1 < demos.length ? 'Seuraava havainto' : 'Kokeilen yhdessä'),
-      h('button', { class: 'exp-secondary', type: 'button', onclick: () => say(step.say, true) }, 'Kuuntele'));
-    contents.append(characterStory('Mallissa saa katsoa, mistä ratkaisu syntyy. Sen jälkeen kokeilemme uutta tilannetta yhdessä.'));
+      h('button', { class: 'exp-secondary', type: 'button', onclick: () => say(step.say, true) }, 'Kuuntele'), nextButton(true));
+    if (compactPlay()) say(step.say);
+    else contents.append(characterStory('Mallissa saa katsoa, mistä ratkaisu syntyy. Sen jälkeen kokeilemme uutta tilannetta yhdessä.'));
   }
 
   function startTask(nextPhase: Phase) {
     if (!spec || disposed) return;
     const previousItem = item;
-    phase = nextPhase; mode = 'task'; answered = false; lastOk = undefined; help = phase === 'guided' ? ['support'] : [];
-    clearPaint();
+    phase = nextPhase; help = phase === 'guided' ? ['support'] : [];
     const observation = observe(spec);
     if (phase === 'transfer' && !observation.readyTransfer) phase = 'independent';
     if (selfCheckNode(spec)) { phase = 'guided'; if (!help.includes('support')) help = ['support']; }
@@ -496,17 +520,23 @@ export function expedition(app: HTMLElement, requested?: string): () => void {
       if (phase !== 'independent' || !newFamilyNeeded || desiredFamily) { fallback = { item, seed }; break; }
     }
     if (fallback ?? familiar) ({ item, seed } = (fallback ?? familiar)!);
-    const current = item!;
+    renderTask(item!, trackIdentity && usedItems.has(itemIdentity(item!)));
+  }
+
+  function renderTask(current: Item, familiar: boolean) {
+    if (!spec || disposed) return;
+    mode = 'task'; answered = false; lastOk = undefined;
+    clearPaint();
     selfCheck = current.task.kind === 'observed-explanation' && !adultReviewOn();
     const out = desk(spec.stop), exact = h('div', { class: 'exp-exact' }), task = h('div', { class: 'exp-task', 'data-task-kind': current.task.kind });
     const feedback = h('div', { class: 'exp-feedback', role: 'status', 'aria-live': 'polite' });
     const hint = h('div', { class: 'exp-help', hidden: true });
     out.append(h('p', { class: 'exp-instruction' }, current.say), exact, task, hint, feedback);
-    if (trackIdentity && usedItems.has(itemIdentity(current))) {
+    if (familiar) {
       task.before(h('p', { class: 'exp-help' }, 'Tämä tilanne on jo tuttu. Voit harjoitella sitä uudelleen. Uusi taitonäyttö tarvitsee uuden tilanteen.'));
     }
     setModel(current); paint(current, exact);
-    if (current.task.kind === 'tapcount' && current.task.words) help.push('words');
+    if (current.task.kind === 'tapcount' && current.task.words && !help.includes('words')) help.push('words');
     const showHint = () => {
       if (answered) return;
       if (!help.includes('hint')) help.push('hint');
@@ -579,16 +609,26 @@ export function expedition(app: HTMLElement, requested?: string): () => void {
         showStage(false);
       }
     });
-    if (phase === 'guided' && current.hint) showHint();
+    if ((phase === 'guided' && current.hint) || help.includes('hint')) showHint();
     out.append(h('footer', { class: 'exp-foot' },
       hintButton,
       h('button', { class: 'exp-secondary', type: 'button', onclick: () => say(current.say, true) }, 'Kuuntele'),
-      h('button', { class: 'exp-secondary', type: 'button', onclick: showDemo }, 'Katso mallia')));
-    contents.append(characterStory(observation.state.checked ? 'Tutkimme uuden tilanteen. Aiempi retki ja sen muisto pysyvät tallessa.' : spec.intro));
-    if (model) contents.append(h('div', { class: 'exp-caption' },
+      h('button', { class: 'exp-secondary', type: 'button', onclick: showDemo }, 'Katso mallia')), nextButton(true));
+    if (compactPlay()) say(current.say);
+    else contents.append(characterStory(observe(spec).state.checked ? 'Tutkimme uuden tilanteen. Aiempi retki ja sen muisto pysyvät tallessa.' : spec.intro));
+    if (model && (!compactPlay() || model.kind === 'space' || model.kind === 'force-track')) contents.append(h('div', { class: 'exp-caption' },
       model.kind === 'space' ? 'Taivaankappaleiden koko, etäisyys ja aika tutkitaan eri malleissa.' : model.kind === 'force-track' ? 'Ihanteellinen kitkaton vaakarata · ennusta ensin' : 'Tutkimuksen pienoismalli',
       h('span', { class: 'exp-fallback-note' }, ' · Tarkka havainto näkyy myös tutkimuspöydällä.')));
     world.resize();
+  }
+
+  function resultActions(current: Item) {
+    return h('div', { class: 'exp-result-actions' }, nextButton(),
+      h('button', { class: 'btn', type: 'button', onclick: () => {
+        if (!help.includes('retry')) help.push('retry');
+        renderTask(current, true);
+        contents.querySelector<HTMLElement>('.exp-desk h1')?.focus();
+      } }, 'Kokeile uudelleen'));
   }
 
   function appendMotionEnd(host: HTMLElement) {
@@ -621,6 +661,7 @@ export function expedition(app: HTMLElement, requested?: string): () => void {
     if (verdict.assisted && !help.includes('support')) help.push('support');
     answered = true; mode = 'result'; lastOk = verdict.ok;
     hintButton.disabled = true;
+    contents.querySelector('.exp-skip')?.remove();
     taskHost.querySelectorAll<HTMLButtonElement | HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>('button,input,select,textarea').forEach(el => { el.disabled = true; });
     const recordedResponse = response.kind === 'observed-explanation' ? {
       kind: response.kind, channel: response.channel, observations: response.observations,
@@ -641,14 +682,17 @@ export function expedition(app: HTMLElement, requested?: string): () => void {
     feedback.tabIndex = -1;
     if (!verdict.ok) {
       const nextPhase = phase === 'guided' || help.length ? 'guided' : phase;
-      feedback.replaceChildren(h('p', {}, verdict.why ?? 'Havainto jäi vielä auki. Voit kokeilla uutta tehtävää tai katsoa selityksen.'),
-        h('button', { class: 'exp-primary', type: 'button', onclick: () => startTask(nextPhase) }, 'Uusi kokeilu'),
-        h('button', { class: 'exp-secondary', type: 'button', onclick: () => {
+      feedback.replaceChildren(h('p', {}, verdict.why ?? 'Havainto jäi vielä auki. Voit jatkaa matkaa tai kokeilla uudelleen.'), resultActions(current));
+      if (current.task.kind !== 'cake' || nextPhase !== 'guided') {
+        feedback.append(h('button', { class: 'exp-secondary', type: 'button', onclick: () => startTask(nextPhase) }, 'Uusi kokeilu'));
+      }
+      feedback.append(h('button', { class: 'exp-secondary', type: 'button', onclick: () => {
           help.push('reveal'); widget?.reveal();
           if (model?.kind === 'force-workshop' && model.surfaceOptions) model = { ...model, surfaceView: 'rough' };
           if (model?.kind !== 'cake') showStage(true);
           if (current.afterCorrect) paint({ scene: current.afterCorrect }, exact);
-          feedback.replaceChildren(h('p', {}, current.explain), h('button', { class: 'exp-primary', type: 'button', onclick: () => startTask('guided') }, 'Uusi yhteinen kokeilu'));
+          feedback.replaceChildren(h('p', {}, current.explain), resultActions(current));
+          if (current.task.kind !== 'cake') feedback.append(h('button', { class: 'exp-secondary', type: 'button', onclick: () => startTask('guided') }, 'Uusi yhteinen kokeilu'));
           appendMotionEnd(feedback);
           feedback.focus();
         } }, 'Näytä ja selitä'));
@@ -672,19 +716,19 @@ export function expedition(app: HTMLElement, requested?: string): () => void {
     }
     const success = phase === 'retrieval' && state.retained !== undefined
       ? 'Muistit tämän myös tauon jälkeen. Retken muisto säilyy.'
-      : reached ? spec.reward : selfCheck ? 'Hienoa, vertasit omaa selitystäsi malliin. Kokeillaan vielä toista tilannetta.' : 'Havainto osui kohdalleen. Kokeillaan vielä toista tilannetta.';
-    const explain = current.explain;
-    feedback.replaceChildren(h('p', {}, success), h('p', { class: 'small' }, explain));
+      : reached ? spec.reward : selfCheck ? 'Vertasit omaa selitystäsi malliin.' : 'Havainto osui kohdalleen!';
+    const explain = h('p', { class: 'small' }, current.explain);
+    feedback.replaceChildren(h('p', {}, success), resultActions(current),
+      compactPlay() ? readingOption('Lue selitys', explain) : explain);
     if (selfCheck && state.helped) {
-      feedback.append(h('button', { class: 'exp-primary', type: 'button', onclick: () => openCatalog() }, 'Seuraavalle retkelle'),
-        h('button', { class: 'exp-secondary', type: 'button', onclick: () => startTask('guided') }, 'Harjoittelen vielä'));
+      feedback.append(h('button', { class: 'exp-secondary', type: 'button', onclick: () => startTask('guided') }, 'Harjoittelen vielä'));
     } else if (state.checked) {
-      feedback.append(h('button', { class: 'exp-primary', type: 'button', onclick: () => openCatalog() }, 'Seuraavalle retkelle'),
-        h('button', { class: 'exp-secondary', type: 'button', onclick: () => startTask('independent') }, 'Tutkin vielä'));
+      feedback.append(h('button', { class: 'exp-secondary', type: 'button', onclick: () => startTask('independent') }, 'Tutkin vielä'));
     } else if (phase === 'guided' || help.length) {
-      feedback.append(h('button', { class: 'exp-primary', type: 'button', onclick: () => startTask(state.helped ? 'independent' : 'guided') }, state.helped ? 'Kokeilen nyt itse' : 'Toinen yhteinen kokeilu'));
+      const tryIndependently = state.helped || current.task.kind === 'cake';
+      feedback.append(h('button', { class: 'exp-secondary', type: 'button', onclick: () => startTask(tryIndependently ? 'independent' : 'guided') }, tryIndependently ? 'Kokeilen nyt itse' : 'Toinen yhteinen kokeilu'));
     } else {
-      feedback.append(h('button', { class: 'exp-primary', type: 'button', onclick: () => startTask(readyTransfer ? 'transfer' : 'independent') }, readyTransfer ? 'Kokeile uudessa tilanteessa' : 'Seuraava kokeilu'));
+      feedback.append(h('button', { class: 'exp-secondary', type: 'button', onclick: () => startTask(readyTransfer ? 'transfer' : 'independent') }, readyTransfer ? 'Kokeile uudessa tilanteessa' : 'Seuraava kokeilu'));
     }
     appendMotionEnd(feedback);
     if (info && hasAuthoredClimax(spec.id) && journey.hasEvent(info.eventId)) {

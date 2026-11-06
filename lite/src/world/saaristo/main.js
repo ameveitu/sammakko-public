@@ -40,7 +40,7 @@ const later = (fn, ms) => { const id = setTimeout(() => { timers.delete(id); if 
 const cancelLater = (id) => { clearTimeout(id); timers.delete(id); };
 function fallback(reason) {
   root.dataset.saaristo = 'fallback'; root.dataset.saaristoReason = reason; state.lost = true;
-  for (const el of queryAll('[data-throw],[data-loikka-hop],[data-saaristo-pause],[data-saaristo-sound],[data-hulluttelu]')) el.disabled = true;
+  for (const el of queryAll('[data-throw],[data-throwzone],[data-loikka-hop],[data-saaristo-pause],[data-saaristo-sound],[data-hulluttelu]')) el.disabled = true;
   const live = query('[data-saaristo-live]');
   if (live) live.textContent = 'Tämä selain näyttää saaren kuvana. Elävä lampi tarvitsee WebGL2-tuen.';
   options.onStatus?.({ status: 'fallback', reason });
@@ -76,6 +76,8 @@ function billboard(map, size) {
 
 function start() {
   const narrow = innerWidth < 760;
+  const compact = matchMedia('(max-width:960px), (hover:none) and (pointer:coarse)');
+  const mobilePond = () => publication && compact.matches;
   renderer.setPixelRatio(Math.min(devicePixelRatio, narrow ? 1.5 : 1.75));
   renderer.setSize(innerWidth, innerHeight);
   renderer.autoClear = false;
@@ -210,7 +212,8 @@ function start() {
   function layoutText(scatter) {
     if (!text) return;
     const r = headline.getBoundingClientRect();
-    text.layout({ left: r.left, top: r.top + scrollY, width: Math.min(r.width, innerWidth - r.left - 16) }, renderer.getPixelRatio(), scatter);
+    const compactType = matchMedia('(max-width: 960px), (hover: none) and (pointer: coarse)').matches ? getComputedStyle(headline) : null;
+    text.layout({ left: r.left, top: r.top + scrollY, width: Math.min(r.width, innerWidth - r.left - 8) }, renderer.getPixelRatio(), scatter, compactType);
   }
   if (text) { root.dataset.saaristoText = 'particles'; layoutText(true); }
 
@@ -243,7 +246,11 @@ function start() {
     ruoho: (on) => { grass.mesh.visible = on; },
     kaislat: (on) => { reeds.group.visible = on; },
     tulikarpaset: (on) => { flies.mesh.visible = on; },
-    kivet: (on) => { query('[data-throw]').disabled = !on; state.stonesOff = !on; zone?.classList.toggle('is-off', !on); },
+    kivet: (on) => {
+      query('[data-throw]').disabled = !on;
+      state.stonesOff = !on;
+      zone?.classList.toggle('is-off', !on);
+    },
     kirjaimet: (on) => { if (text) { text.scene.visible = on; root.dataset.saaristoText = on ? 'particles' : 'plain'; } },
     parvi: (on) => { swarmOn = on; if (swarm) { swarm.canvas.style.display = on ? '' : 'none'; if (!on) swarm.clear(); } },
   };
@@ -274,7 +281,8 @@ function start() {
     if (now - lastGust > 400) { state.gusts++; lastGust = now; sound.gust(s, (localX(e) / innerWidth) * 2 - 1); }
   }
   const zone = query('[data-throwzone]');
-  const throwReady = () => !publication || scrollY > innerHeight * 0.3;
+  const throwReady = () => !publication || mobilePond() || scrollY > innerHeight * 0.3;
+  let handledButtonPointer = false;
   const onUi = (e) => e.target.closest('a,button,input,label,summary,.saaristo-panel');
   function aim(e) { ndc.set((localX(e) / innerWidth) * 2 - 1, -(localY(e) / innerHeight) * 2 + 1); ray.setFromCamera(ndc, camera); }
   function waterHit(e) { aim(e); return ray.ray.intersectPlane(plane, hit) && hit.distanceTo(camera.position) < 60 ? hit : null; }
@@ -296,24 +304,51 @@ function start() {
   listen(publication ? window : container, 'pointerleave', () => { pushTarget = 0; attrTarget = 0; if (text) text.pointer.power = 0; });
   listen(publication ? window : container, 'pointerdown', (e) => {
     if (!publication && !options.interactive) return;
-    if (onUi(e) || calm()) return;
+    const fromZone = !!zone && zone.contains(e.target);
+    if (state.lost || e.button !== 0 || (onUi(e) && !fromZone)) return;
+    const onPond = mobilePond() && (fromZone || stage.contains(e.target));
+    if (fromZone) handledButtonPointer = false;
+    // Let the visitor throw from anywhere on the mobile pond, even at scroll position zero.
+    // Capture the gesture before hit-testing a character beneath the opening touch.
+    if ((onPond || fromZone) && !state.stonesOff && (mobilePond() || !calm())) {
+      if (swipe) return;
+      (fromZone ? zone : stage).setPointerCapture(e.pointerId);
+      swipe = { id: e.pointerId, x: localX(e), y: localY(e), t: performance.now(), zone: fromZone };
+      return;
+    }
+    if (calm()) return;
     aim(e);
     const ch = ray.intersectObjects([aava, loikka, water.pads], false)[0];
     if (ch?.object === aava && A.mode === 'float') { drag = true; A.mode = 'drag'; state.aava = 'drag'; swipe = null; sound.play('aava.peep', { x: panAt(A.pos) }); return; }
     if (ch?.object === loikka) { if (!hop) { hopTo(pad, true); sound.play('loikka.joy', { x: panAt(loikka.position) }); } return; }
     if (ch?.object === water.pads && ch.instanceId !== undefined) { if (!hop && ch.instanceId !== pad && padClear(ch.instanceId)) hopTo(ch.instanceId); return; }
-    const fromZone = !!e.target.closest('[data-throwzone]');
-    if (e.pointerType !== 'mouse' && !fromZone) return; // touch elsewhere scrolls the page
-    if (fromZone) zone.setPointerCapture?.(e.pointerId);
-    swipe = { x: localX(e), y: localY(e), t: performance.now(), zone: fromZone };
+    if (e.pointerType !== 'mouse') return;
+    swipe = { id: e.pointerId, x: localX(e), y: localY(e), t: performance.now(), zone: false };
   });
   listen(publication ? window : container, 'pointerup', (e) => {
     if (!publication && !options.interactive) return;
     if (drag) { drag = false; A.mode = 'float'; state.aava = 'float'; A.next = rnd(4, 7); return; }
-    if (!swipe || state.stonesOff) { swipe = null; return; }
+    if (!swipe || swipe.id !== e.pointerId) return;
+    if (state.stonesOff || state.lost) { swipe = null; return; }
     const dx = localX(e) - swipe.x, dy = localY(e) - swipe.y, dt = Math.max(60, performance.now() - swipe.t) / 1000, s = swipe;
     swipe = null;
+    if (s.zone) handledButtonPointer = true;
     if (dy > -40) { // a tap: a ring where you tapped, and Aava paddles over to look
+      if (s.zone) {
+        // Capturing a touch begun on the label can suppress the browser's click.
+        if (Math.hypot(dx, dy) < 16 && throwReady()) quickThrow();
+        return;
+      }
+      if (calm()) return;
+      if (mobilePond()) {
+        aim(e);
+        const ch = ray.intersectObjects([loikka, water.pads], false)[0];
+        if (ch?.object === loikka) { if (!hop) hopTo(pad, true); return; }
+        if (ch?.object === water.pads && ch.instanceId !== undefined) {
+          if (!hop && ch.instanceId !== pad && padClear(ch.instanceId)) hopTo(ch.instanceId);
+          return;
+        }
+      }
       const h = waterHit(e);
       if (h) {
         water.drop(h.x, h.z, 0.4, 0.5);
@@ -321,20 +356,37 @@ function start() {
       }
       return;
     }
-    if (!throwReady()) return; // the first screen is for reading: stones fly once the visitor scrolls toward the shore
-    const speed = clamp(Math.hypot(dx, dy) / dt * 0.014, 5, 28);
+    if (!throwReady()) return;
+    const speed = clamp(Math.hypot(dx, dy) / dt * 0.014, mobilePond() ? 10 : 5, 28);
     const flat = clamp(0.05 + Math.abs(dx) / (Math.hypot(dx, dy) + 1) * 0.08, 0.04, 0.16);
     throwFrom(Math.atan2(dx, -dy) * 0.6 - (s.zone ? 0.02 : 0.12), speed, flat, s.zone);
   });
-  listen(publication ? window : container, 'pointercancel', () => { swipe = null; drag = false; if (A.mode === 'drag') A.mode = 'float'; });
+  listen(publication ? window : container, 'pointercancel', e => {
+    if (swipe?.id === e.pointerId) swipe = null;
+    drag = false; if (A.mode === 'drag') A.mode = 'float';
+  });
   function throwFrom(a, speed, flat, fromLeft) {
     const dir = new V3(Math.sin(a), 0, -Math.cos(a));
     const side = new V3().setFromMatrixColumn(camera.matrixWorld, 0).setY(0).normalize();
-    const from = camera.position.clone().addScaledVector(side, fromLeft ? -2.4 : -0.8).setY(0.95).addScaledVector(dir, 3.5);
+    let from;
+    if (mobilePond()) {
+      // A world-space throw from the far left can miss a portrait viewport entirely.
+      // Launch inside the lower part of this camera's frustum and aim along the pond.
+      camera.getWorldDirection(dir).setY(0).normalize();
+      from = camera.position.clone().addScaledVector(dir, 4.2).addScaledVector(side, -Math.min(0.65, camera.aspect * 0.75)).setY(0.95);
+      dir.applyAxisAngle(THREE.Object3D.DEFAULT_UP, -clamp(a, -0.2, 0.2));
+    } else {
+      from = camera.position.clone().addScaledVector(side, fromLeft ? -2.4 : -0.8).setY(0.95).addScaledVector(dir, 3.5);
+    }
     stones.throwStone(from, dir.multiplyScalar(speed).setY(speed * flat));
     needsFrame = true;
   }
-  listen(query('[data-throw]'), 'click', () => throwFrom(rnd(-0.42, -0.18), rnd(15, 21), 0.06, false));
+  const quickThrow = () => throwFrom(mobilePond() ? -0.04 : rnd(-0.42, -0.18), rnd(15, 21), 0.06, false);
+  listen(query('[data-throw]'), 'click', quickThrow);
+  listen(zone, 'click', e => {
+    if (e.detail && handledButtonPointer) { handledButtonPointer = false; return; }
+    if (!state.lost && !state.stonesOff && throwReady()) quickThrow();
+  });
 
   // ---- Loikka hops pad to pad (or to the pad you click), and dodges stones.
   let pad = publication ? 0 : 3, hop = null, nextHop = 2.2;
@@ -456,6 +508,7 @@ function start() {
   // ---- Camera: scroll dives from the overview to the water line; the pointer adds parallax.
   const camA = { p: new V3(0.5, 4.8, 19.5), l: new V3(3.5, 1.0, -4) };
   const camB = { p: new V3(-1.5, 1.35, 15.5), l: new V3(1.5, 0.7, -6) };
+  const mobileCamera = { p: new V3(0.4, 2.8, 17.3), l: new V3(1.6, 0.5, -4) };
   const par = new THREE.Vector2(), parT = new THREE.Vector2(), look = new V3();
   let progress = 0, focus = null, focusMix = 0, cameraPose = null;
   const activityLook = new V3(0.6, 0.7, 6.0), activityPosition = new V3();
@@ -470,8 +523,13 @@ function start() {
     // The camera travels over the first screens only, however long the homepage below grows.
     progress = publication ? clamp(scrollY / Math.min(max * 0.55, innerHeight * 1.8), 0, 1) : 0;
     const e = progress * progress * (3 - 2 * progress);
-    camera.position.lerpVectors(camA.p, camB.p, e).add(new V3(par.x * 0.9, -par.y * 0.4, 0));
-    look.lerpVectors(camA.l, camB.l, e);
+    if (mobilePond()) {
+      camera.position.copy(mobileCamera.p);
+      look.copy(mobileCamera.l);
+    } else {
+      camera.position.lerpVectors(camA.p, camB.p, e).add(new V3(par.x * 0.9, -par.y * 0.4, 0));
+      look.lerpVectors(camA.l, camB.l, e);
+    }
     camera.fov = camera.aspect < 1 ? 62 : 45;
     const desired = focus ? 1 : 0;
     focusMix = (calm() || state.paused || state.workMode) ? desired : focusMix + (desired - focusMix) * Math.min(1, dt * 4);
@@ -484,7 +542,12 @@ function start() {
     camera.updateProjectionMatrix();
     camera.lookAt(look);
     camera.updateMatrixWorld();
-    zone?.classList.toggle('is-away', !throwReady() || scrollY > innerHeight * 1.5);
+    if (zone && publication) {
+      const away = !throwReady() || scrollY > innerHeight * 1.5 || (calm() && !mobilePond());
+      zone.classList.toggle('is-away', away);
+      const disabled = away || !!state.stonesOff;
+      if (zone.disabled !== disabled) zone.disabled = disabled;
+    }
   }
 
   let needsFrame = true, lastT = performance.now(), acc = 0, t = 0, ambient = 0.8, charactersVisible = true;

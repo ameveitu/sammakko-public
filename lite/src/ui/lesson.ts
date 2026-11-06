@@ -2,6 +2,7 @@
 // tries, independent tries, one new situation (transfer), and later a recall.
 // Every answer is recorded with the item seed, response, help and mode, so that an
 // adult can see exactly what happened. Opening, skipping or deferring never counts.
+import { compactPlay, readingOption } from './compact-play';
 import { check, solution, wrongs } from '../engine/check';
 import { produceNoun } from './status';
 import { RULES, type AttemptPhase, type Help } from '../engine/evidence';
@@ -87,7 +88,7 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
   let practiceLeft = 0, practiceOk = 0;
   active = () => { cleanup?.(); cleanup = undefined; painted?.(); painted = undefined; };
 
-  function frame(sayText: string, ...body: (Node | null)[]) {
+  function frame(kind: 'intro' | 'task' | 'story', sayText: string, ...body: (Node | null)[]) {
     cleanup?.();
     cleanup = painted;
     painted = undefined;
@@ -97,6 +98,10 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
         ...Array.from({ length: RULES.streak }, (_, i) => h('i', { class: i < st.streak ? 'on' : '' })),
         h('i', { class: `t${st.transfer > 0 ? ' on' : ''}` }))
       : null;
+    const words: HTMLElement[] = [h('div', { class: 'say' },
+      canSpeak(sayText) ? h('button', { class: 'icon-btn speak', 'aria-label': 'Kuuntele ohje', html: ICON.speaker, onclick: () => say(sayText, true) }) : null,
+      h('p', {}, sayText))];
+    if (kind === 'intro') words.push(goal());
     root.replaceChildren(h('div', { class: `stack${lab ? ' lab' : ''}` },
       h('div', { class: 'top' },
         h('button', { class: 'icon-btn', 'aria-label': hooks.homeLabel ?? 'Kartalle', html: ICON.back, onclick: () => { hush(); cleanup?.(); hooks.home(); } }),
@@ -111,9 +116,7 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
       back ? h('div', { class: 'detour' },
         h('span', {}, `🧭 Tukiretki. Sitten palataan: ${back.icon} ${back.stop}`),
         h('button', { type: 'button', class: 'linklike small', onclick: () => { hush(); cleanup?.(); hooks.open(from!, 'learn'); } }, 'Palaa nyt')) : null,
-      h('div', { class: 'say' },
-        canSpeak(sayText) ? h('button', { class: 'icon-btn speak', 'aria-label': 'Kuuntele ohje', html: ICON.speaker, onclick: () => say(sayText, true) }) : null,
-        h('p', {}, sayText)),
+      ...(compactPlay() && kind !== 'task' ? [readingOption(kind === 'intro' ? 'Lue tarina ja tavoite' : 'Lue palaute', ...words)] : words),
       ...body));
     say(sayText);
   }
@@ -149,30 +152,29 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
   function start() {
     redraw = start;
     if (mode === 'retrieval') {
-      frame(`Muistatko vielä? ${intro}`, goal(),
+      frame('intro', `Muistatko vielä? ${intro}`,
         btn(ICON.next, 'Aloita', () => item('retrieval'), 'primary big wide'), laterBtn());
       return;
     }
     if (mode === 'quick') {
-      frame(`Pikatarkistus: ${spec.stop}. Kaksi oikein peräkkäin riittää.`, goal(),
+      frame('intro', `Pikatarkistus: ${spec.stop}. Kaksi oikein peräkkäin riittää.`,
         btn(ICON.next, 'Aloita', () => item('independent'), 'primary big wide'),
         btn(ICON.eye, 'Näytä ensin esimerkki', () => { mode = 'learn'; demo(0); }, 'big wide'), laterBtn());
       return;
     }
     if (mode === 'preview') {
-      frame(intro, goal(), h('p', { class: 'muted' }, 'Tämä paikka on vielä polun takana. Voit katsoa esimerkin.'),
+      frame('intro', intro, h('p', { class: 'muted' }, 'Tämä paikka on vielä polun takana. Voit katsoa esimerkin.'),
         btn(ICON.eye, 'Katso esimerkki', () => demo(0), 'primary big wide'));
       return;
     }
     if (mode === 'practice') {
-      frame(`Harjoitellaan lisää: ${spec.stop}. Tulossa ${PRACTICE} tehtävää.`, goal(),
+      frame('intro', `Harjoitellaan lisää: ${spec.stop}. Tulossa ${PRACTICE} tehtävää.`,
         btn(ICON.next, 'Aloita harjoitus', () => practice(), 'primary big wide'),
         btn(ICON.eye, 'Katso ensin esimerkki', () => demo(0), 'big wide'));
       return;
     }
     const skipped = ancestors(id).filter((a) => !store.known(a)).length;
-    frame(intro,
-      goal(),
+    frame('intro', intro,
       mode === 'leap' && skipped ? h('p', { class: 'hint' }, '🦘 Hyppy! Kokeile rohkeasti. Jos tämä tuntuu vaikealta, voit palata polulle.') : null,
       h('div', { class: 'scene cast', html: spriteHtml('loikka', 'wave', 96, { name: true }) + spriteHtml('aava', 'talk', 88, { name: true }) }),
       btn(ICON.eye, 'Näytä ensin', () => { entry = 'demo'; demo(0); }, 'primary big wide'),
@@ -187,7 +189,7 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
     sawDemo = true;
     const s = steps[i]!;
     const last = i === steps.length - 1;
-    frame(s.say, scene(s.scene), btn(ICON.next, last ? (mode === 'preview' ? 'Takaisin kartalle' : 'Kokeile itse') : 'Seuraava', () => {
+    frame('task', s.say, scene(s.scene), btn(ICON.next, last ? (mode === 'preview' ? 'Takaisin kartalle' : 'Kokeile itse') : 'Seuraava', () => {
       if (!last) demo(i + 1);
       else if (mode === 'preview') hooks.home();
       else if (mode === 'practice') practice();
@@ -208,7 +210,7 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
 
   function helpedBeat() {
     redraw = helpedBeat;
-    frame('Paikka alkaa loistaa, koska harjoittelit sitä avun kanssa. Kokeile nyt itse, niin saat tähden.',
+    frame('story', 'Paikka alkaa loistaa, koska harjoittelit sitä avun kanssa. Kokeile nyt itse, niin saat tähden.',
       h('div', { class: 'reward stack' }, h('div', { class: 'helped-mark', 'aria-hidden': 'true' }, '🤝'), news()),
       back ? btn(ICON.back, `Palaa: ${back.icon} ${back.stop}`, () => { hush(); cleanup?.(); hooks.open(from!, 'learn'); }, 'primary big wide') : null,
       btn(ICON.next, 'Kokeilen itse', () => next(), back ? 'big wide' : 'primary big wide'),
@@ -229,7 +231,7 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
   function practiceDone() {
     redraw = practiceDone;
     const st = store.state(id);
-    frame(`Harjoitus valmis: ${practiceOk}/${PRACTICE} oikein.`,
+    frame('story', `Harjoitus valmis: ${practiceOk}/${PRACTICE} oikein.`,
       h('div', { class: 'reward stack' },
         h('div', { class: 'score' }, `${practiceOk}/${PRACTICE}`),
         st.difficulty ? h('p', { class: 'small' }, 'Tässä oli vielä vähän vaikeaa. Se näkyy kartalla huutomerkkinä, kunnes menee taas sujuvasti.') : h('p', { class: 'small' }, 'Hyvin sujui!'),
@@ -303,7 +305,7 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
         confusing.setAttribute('disabled', '');
       },
     }, '🤔 Tämä oli hämmentävää');
-    frame(q && it.listen ? it.listen.say : it.say,
+    frame('task', q && it.listen ? it.listen.say : it.say,
       it.listen && !q ? btn(ICON.mute, 'En voi nyt kuunnella', () => setQuiet(true), 'small-btn') : null,
       phase === 'transfer' ? h('p', { class: 'hint' }, '✨ Uusi tilanne') : null,
       it.scene ? scene(it.scene) : null,
@@ -460,7 +462,7 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
       : inferred ? `${spec.reward} Koska osasit tämän, ${inferred === 1 ? 'yksi ohitettu paikka merkitään päätellyksi' : `${inferred} ohitettua paikkaa merkitään päätellyiksi`} ☆. ${inferred === 1 ? 'Sitä' : 'Niitä'} ei tarkistettu erikseen.`
         : st.produced === false ? `Tunnistat oikeat vastaukset! Omaa ${produceNoun(id)} ei ole vielä nähty: kokeile sitä Harjoittele-tilassa.`
         : spec.reward;
-    frame(text,
+    frame('story', text,
       h('div', { class: 'reward stack' },
         h('div', { class: 'stars' }, h('span', { html: ICON.star }), recalled ? h('span', { html: ICON.star }) : null),
         h('div', { class: 'cast', html: spriteHtml('loikka', 'happy', 96) + spriteHtml('aava', 'wave', 88) }),

@@ -1,3 +1,4 @@
+import { STORY_ORDER, storyProgress } from './story-route';
 import { catalogNode, requiredAncestors } from './catalog';
 import { neutral, nodeState, RULES, type Attempt, type Help, type NodeState } from './evidence';
 import type { NodeSpec } from './types';
@@ -16,6 +17,7 @@ export interface JourneySave {
   attempts: Attempt[];
   events: JourneyEvent[];
   effects: string[];
+  storyStops: string[];
 }
 export interface JourneyNote {
   mode: 'local' | 'memory';
@@ -36,7 +38,7 @@ const phases = new Set(['guided', 'independent', 'transfer', 'retrieval', 'quick
 const helpKinds: ReadonlySet<Help> = new Set(['demo', 'hint', 'retry', 'support', 'reveal', 'words']);
 const stringFields = ['rev', 'resp', 'mode', 'sess', 'from', 'scn', 'mission', 'itemKey'];
 const booleanFields = ['syn', 'legacy', 'math', 'proc', 'replay', 'unreviewed'];
-const fresh = (): JourneySave => ({ v: 3, attempts: [], events: [], effects: [] });
+const fresh = (): JourneySave => ({ v: 3, attempts: [], events: [], effects: [], storyStops: [] });
 const object = (value: unknown): value is Record<string, unknown> => typeof value === 'object' && value !== null && !Array.isArray(value);
 const time = (value: unknown): value is number => typeof value === 'number' && Number.isFinite(value) && value >= 0;
 
@@ -68,7 +70,10 @@ function decode(raw: string): JourneySave | undefined {
   const expected = new Set(effectsFor(data.events));
   const effects = new Set(data.effects);
   if (effects.size !== expected.size || [...effects].some((id) => !expected.has(id))) return undefined;
-  return { v: 3, attempts: data.attempts, events: data.events, effects: data.effects };
+  // v3 saves made before story navigation only have attempts, events and effects.
+  const storyStops = data.storyStops === undefined ? [] : data.storyStops;
+  if (!Array.isArray(storyStops) || !storyStops.every(id => typeof id === 'string' && !!catalogNode(id))) return undefined;
+  return { v: 3, attempts: data.attempts, events: data.events, effects: data.effects, storyStops };
 }
 
 function attemptKey(attempt: Attempt): string {
@@ -92,7 +97,8 @@ function merge(left: JourneySave, right: JourneySave): JourneySave {
   const mergedEvents = [...events.values()].sort((a, b) => a.at - b.at || a.id.localeCompare(b.id));
   // Stable timestamp sort retains recorded order for multiple answers in one clock tick.
   const orderedAttempts = [...attempts.values()].sort((a, b) => a.at - b.at);
-  return { v: 3, attempts: orderedAttempts, events: mergedEvents, effects: effectsFor(mergedEvents) };
+  return { v: 3, attempts: orderedAttempts, events: mergedEvents, effects: effectsFor(mergedEvents),
+    storyStops: [...new Set([...left.storyStops, ...right.storyStops])] };
 }
 
 /** An optional callback requires actual experience of a canonical prerequisite event. */
@@ -179,6 +185,19 @@ export function createJourney(storage?: JourneyStorage | null) {
   latest();
   return {
     get: snapshot,
+    storyProgress() { latest(); return storyProgress(save.storyStops, save.attempts); },
+    advanceStory(id: string, reviewing = false): string | undefined {
+      latest();
+      if (!catalogNode(id)) return undefined;
+      if (!reviewing && !save.storyStops.includes(id)) {
+        save.storyStops.push(id);
+        write();
+      }
+      const progress = storyProgress(save.storyStops, save.attempts);
+      if (!reviewing) return progress.next;
+      const remaining = new Set(progress.review);
+      return STORY_ORDER.slice(STORY_ORDER.indexOf(id) + 1).find(next => remaining.has(next));
+    },
     export: snapshot,
     note(): JourneyNote { latest(); return { ...note }; },
     record(attempt: Attempt): boolean {
@@ -238,3 +257,7 @@ export function createJourney(storage?: JourneyStorage | null) {
     effectIds(): string[] { latest(); return [...save.effects]; },
   };
 }
+
+// Keep the in-memory fallback across hash navigation when browser storage is unavailable.
+let activeJourney: ReturnType<typeof createJourney> | undefined;
+export function saaristoJourney() { return activeJourney ??= createJourney(); }

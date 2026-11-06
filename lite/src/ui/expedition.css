@@ -73,6 +73,13 @@ body.on-expedition { background:#dcece8; color:#163e46; }
 .exp-task .keys button { min-height:46px; font-size:22px; }
 .exp-task .cake-workbench { gap:8px; }
 .exp-feedback { border-top:1px solid #d9dfd0; padding-top:12px; display:flex; flex-direction:column; gap:10px; }
+.exp-result-actions { display:flex; flex-wrap:wrap; gap:8px; }
+.exp-result-actions > button { flex:1 1 auto; min-height:48px; }
+.exp-head .exp-map-tool { border-radius:22px; font-size:14px; font-weight:700; }
+@media (max-width:380px) {
+  .exp-head { gap:6px; }
+  .exp-head .exp-brand img { display:none; }
+}
 .exp-feedback:empty { display:none; }
 .exp-feedback[data-ok='true'] { color:#1e6859; }
 .exp-feedback p { font-size:15px; line-height:1.45; }

@@ -319,9 +319,23 @@ fallback('repeated navigation keeps exactly one layer and one stylesheet', async
   expect(await page.locator('link[data-vp-lite]').count()).toBe(1);
 });
 
-fallback('narrow screens keep the original look', async ({page}) => {
+fallback('narrow screens open the playable map directly and remember the selected region', async ({page}) => {
   await page.setViewportSize({width: 390, height: 844});
-  await openMap(page);
+  await page.goto('/lite/');
+  const next = page.locator('.wmap.ranta .place.next');
+  await expect(next).toBeInViewport();
+  await expect(page.locator('.worlds, .legend, .wmap .sign')).toHaveCount(0);
+  await next.click();
+  await expect(page).toHaveURL(/#kc\//);
+  await page.getByRole('button', {name:'Kartalle', exact:true}).first().click();
+  await expect(next).toBeInViewport();
+  await page.getByRole('link', {name:'Alueet', exact:true}).click();
+  await expect(page.getByRole('link', {name:'Saaristo 690'})).toHaveAttribute('href', '#saaristo');
+  await expect(page.getByRole('link', {name:'Lentopaja'})).toHaveAttribute('href', '#paja');
+  await page.getByRole('button', {name:/Lampilaboratorio/}).click();
+  await expect(page.locator('.wmap.lab')).toBeVisible();
+  await page.reload();
+  await expect(page.locator('.wmap.lab .place.next')).toBeInViewport();
   await expect(page.locator('#vp-decor')).toBeHidden();
   expect(await page.evaluate(() => getComputedStyle(document.body).backgroundColor)).not.toBe('rgba(0, 0, 0, 0)');
 });
