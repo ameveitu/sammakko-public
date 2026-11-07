@@ -337,3 +337,11 @@ h1{overflow-wrap:anywhere;hyphens:auto}
  .audience #supistusmalli label:has(>input[type=checkbox]){flex-direction:row;align-items:center}
  .audience [data-grouping]>h2,.audience [data-sharing]>h2{margin:.2rem 0 .5rem}
 }
+
+@media screen and (max-width:960px) {
+  .lesson-network .lesson-footer > a, .lesson-network .lesson-footer-links { display:none; }
+}
+@media screen and (max-width:600px) {
+  .lesson-network .catalogue-intro { display:block; padding:0 0 1rem; }
+  .lesson-network .catalogue-aava, .lesson-network .catalogue-intro .eyebrow { display:none; }
+}

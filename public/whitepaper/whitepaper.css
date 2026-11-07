@@ -99,3 +99,10 @@
 
 .paper-source{margin-top:1rem;font-size:.88rem}.paper-source a{display:inline-flex;align-items:center;min-height:44px}
 @media print{.paper-source{display:none}}
+
+.paper-toc summary { color:#173f3b; font-weight:750; cursor:pointer; }
+@media screen and (max-width:680px) {
+  .paper-toc { padding:.5rem 0; margin-bottom:1.5rem; }
+  .paper-toc summary { padding:.75rem 0; }
+  .paper-hero .paper-actions a[href="/oppimisverkko/"], .paper-next { display:none; }
+}

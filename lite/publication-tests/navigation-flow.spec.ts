@@ -136,9 +136,9 @@ for (const item of [
     await page.goto(item.route);
     const nav=page.locator('#site-nav');
     await expect(nav).toHaveAttribute('aria-label','Päänavigaatio');
-    // The landing page keeps its Lite call to action in the hero, so its header lists only the site sections.
+    // On desktop the homepage keeps its play link in the hero. Mobile has extra destinations in Valikko.
     const expected=item.route==='/' ? primaryLinks.filter(link => link.href!=='/lite/') : primaryLinks;
-    expect(await nav.locator(':scope > a').evaluateAll(links => links.map(link => ({text:link.textContent?.trim(),href:link.getAttribute('href')})))).toEqual(expected);
+    expect(await nav.locator(':scope > a:visible').evaluateAll(links => links.map(link => ({text:link.textContent?.trim(),href:link.getAttribute('href')})))).toEqual(expected);
     if (item.active) await expect(nav.locator('[aria-current="page"]')).toHaveText(item.active);
     else await expect(nav.locator('[aria-current="page"]')).toHaveCount(0);
     if (item.route!=='/') await expect(nav.locator('a[href="/lite/"]')).not.toHaveAttribute('target','_blank');

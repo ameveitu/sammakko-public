@@ -48,13 +48,18 @@ test('the homepage is the pond: shared section links beside the sound and motion
   const html = await read('../kotisivu/index.html');
   const header = headerOf(html);
   assert.equal(header, renderLandingHeader('home'));
-  assert.deepEqual(navLinks(header).map(({href, label}) => ({href, label})), navigation.sections.filter(item => item.nav !== false).map(({href, label}) => ({href, label})));
-  assert.ok(header.indexOf('id="site-nav"') < header.indexOf('data-saaristo-sound'), 'section links sit left of the chips');
+  assert.deepEqual(navLinks(header).map(item => item.href), [navigation.lite.href, navigation.workshop.href, ...navigation.sections.filter(item => item.nav !== false).map(item => item.href), '/tietoa/#yhteystiedot', '#main']);
+  const panel = header.match(/<nav id="site-nav"[^>]*>([\s\S]*?)<\/nav>/)[1];
+  for (const attr of ['data-saaristo-sound', 'data-saaristo-pause', 'data-throw-menu-slot']) {
+    assert.equal(header.split(attr).length, 2);
+    assert.ok(panel.includes(attr));
+  }
+  assert.ok(header.indexOf('data-menu-toggle') < header.indexOf('id="site-nav"'));
   assert.match(header, /<small>Hulluttelulaboratorio<\/small>/);
   assert.doesNotMatch(html, /href="\/oppitunnit/);
   assert.doesNotMatch(html, /data-topic-panel|Mikä saa sinut uteliaaksi/);
   const actions = [...html.matchAll(/<a\b([^>]*)href="\/lite\/(?:[^"]*)"[^>]*>([\s\S]*?)<\/a>/g)];
-  assert.equal(actions.length, 3);
+  assert.equal(actions.length, 5);
   for (const match of actions) assert.match(match[1], /data-lite-entry="(?:start|workshop)"/);
   assert.match(html, /data-lite-entry="workshop" href="\/lite\/#paja">Avaa Lentopaja/);
   assert.doesNotMatch(await read('../kotisivu/tietoa/index.html'), /Aloita Aavan kanssa/);

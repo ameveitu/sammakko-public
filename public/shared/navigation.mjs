@@ -27,14 +27,20 @@ export function renderLandingHeader(activeId = 'home') {
   if (!navigation.sections.some(item => item.id === activeId)) throw new Error(`Unknown site section: ${activeId}`);
   const links = navigation.sections.filter(item => item.nav !== false).map(item => `      <a href="${escape(item.href)}"${item.id === activeId ? ' aria-current="page"' : ''}>${escape(item.label)}</a>`).join('\n');
   return `<header class="saaristo-header" data-site-navigation="${navigation.version}">
-  <a class="saaristo-brand" href="/" aria-label="Sammakko - etusivu"><img src="${escape(navigation.brand.image)}" alt="" width="36" height="36"><span>${escape(navigation.brand.name)}<small>${escape(navigation.brand.tagline)}</small></span></a>
+  <span class="saaristo-brand"><img src="${escape(navigation.brand.image)}" alt="" width="36" height="36"><span>${escape(navigation.brand.name)}<small>${escape(navigation.brand.tagline)}</small></span></span>
   <div class="saaristo-actions">
-    <nav id="site-nav" class="saaristo-nav" aria-label="Päänavigaatio">
+    <button class="saaristo-chip saaristo-menu" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false">Valikko <span aria-hidden="true">☰</span></button>
+    <noscript><a class="saaristo-chip saaristo-menu-fallback" href="#site-nav">Valikko <span aria-hidden="true">☰</span></a></noscript>
+    <nav id="site-nav" class="saaristo-nav" aria-label="Päänavigaatio" tabindex="-1">
+      <a class="nav-play saaristo-compact-link" data-lite-entry="start" href="${escape(navigation.lite.href)}">${escape(navigation.lite.label)}</a>
+      <a class="nav-play saaristo-compact-link" data-lite-entry="workshop" href="${escape(navigation.workshop.href)}">${escape(navigation.workshop.label)}</a>
 ${links}
+      <a class="saaristo-compact-link" href="/tietoa/#yhteystiedot">Tekijä ja yhteys</a>
+      <span data-throw-menu-slot></span>
+      <button class="saaristo-chip" type="button" data-saaristo-sound aria-pressed="true" title="Tuuli kaislikossa ja laineiden liplatus"><span aria-hidden="true">♪</span> <span class="saaristo-chip-label">Äänimaisema</span> <span class="saaristo-sound-state" aria-hidden="true"></span></button>
+      <button class="saaristo-chip" type="button" data-saaristo-pause aria-pressed="false"><span aria-hidden="true">Ⅱ</span> <span class="saaristo-chip-label">Pysäytä liike</span></button>
+      <a class="saaristo-menu-close" href="#main">Sulje valikko</a>
     </nav>
-    <button class="saaristo-chip saaristo-menu" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false"><span class="saaristo-chip-label">Valikko</span> <span aria-hidden="true">☰</span></button>
-    <button class="saaristo-chip" type="button" data-saaristo-sound aria-pressed="true" title="Tuuli kaislikossa ja laineiden liplatus"><span aria-hidden="true">♪</span> <span class="saaristo-chip-label">Äänimaisema</span></button>
-    <button class="saaristo-chip" type="button" data-saaristo-pause aria-pressed="false"><span aria-hidden="true">Ⅱ</span> <span class="saaristo-chip-label">Pysäytä liike</span></button>
   </div>
 </header>`;
 }

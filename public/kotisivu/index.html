@@ -22,19 +22,25 @@
   <img class="saaristo-fallback" src="/assets/art/hero-island.webp" alt="" width="1536" height="1024" decoding="async" fetchpriority="high">
 </div>
 <div class="saaristo-pops" data-saaristo-pops aria-hidden="true"></div>
-<button class="saaristo-throwzone" type="button" data-throwzone aria-label="Heitä kivi: pyyhkäise tästä ylöspäin tai napauta"><span>Pyyhkäise tästä</span></button>
+<div class="saaristo-throwzone" data-throwzone aria-hidden="true"><span>Pyyhkäise tästä</span></div>
 <header class="saaristo-header" data-site-navigation="1">
-  <a class="saaristo-brand" href="/" aria-label="Sammakko - etusivu"><img src="/lite/characters/aava/wave.png" alt="" width="36" height="36"><span>Sammakko<small>Hulluttelulaboratorio</small></span></a>
+  <span class="saaristo-brand"><img src="/lite/characters/aava/wave.png" alt="" width="36" height="36"><span>Sammakko<small>Hulluttelulaboratorio</small></span></span>
   <div class="saaristo-actions">
-    <nav id="site-nav" class="saaristo-nav" aria-label="Päänavigaatio">
+    <button class="saaristo-chip saaristo-menu" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false">Valikko <span aria-hidden="true">☰</span></button>
+    <noscript><a class="saaristo-chip saaristo-menu-fallback" href="#site-nav">Valikko <span aria-hidden="true">☰</span></a></noscript>
+    <nav id="site-nav" class="saaristo-nav" aria-label="Päänavigaatio" tabindex="-1">
+      <a class="nav-play saaristo-compact-link" data-lite-entry="start" href="/lite/">Avaa Sammakko Lite</a>
+      <a class="nav-play saaristo-compact-link" data-lite-entry="workshop" href="/lite/#paja">Avaa Lentopaja</a>
       <a href="/" aria-current="page">Etusivu</a>
       <a href="/oppimisverkko/">Oppimisverkko</a>
       <a href="/whitepaper/">Whitepaper</a>
       <a href="/tietoa/">Tietoa</a>
+      <a class="saaristo-compact-link" href="/tietoa/#yhteystiedot">Tekijä ja yhteys</a>
+      <span data-throw-menu-slot></span>
+      <button class="saaristo-chip" type="button" data-saaristo-sound aria-pressed="true" title="Tuuli kaislikossa ja laineiden liplatus"><span aria-hidden="true">♪</span> <span class="saaristo-chip-label">Äänimaisema</span> <span class="saaristo-sound-state" aria-hidden="true"></span></button>
+      <button class="saaristo-chip" type="button" data-saaristo-pause aria-pressed="false"><span aria-hidden="true">Ⅱ</span> <span class="saaristo-chip-label">Pysäytä liike</span></button>
+      <a class="saaristo-menu-close" href="#main">Sulje valikko</a>
     </nav>
-    <button class="saaristo-chip saaristo-menu" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false"><span class="saaristo-chip-label">Valikko</span> <span aria-hidden="true">☰</span></button>
-    <button class="saaristo-chip" type="button" data-saaristo-sound aria-pressed="true" title="Tuuli kaislikossa ja laineiden liplatus"><span aria-hidden="true">♪</span> <span class="saaristo-chip-label">Äänimaisema</span></button>
-    <button class="saaristo-chip" type="button" data-saaristo-pause aria-pressed="false"><span aria-hidden="true">Ⅱ</span> <span class="saaristo-chip-label">Pysäytä liike</span></button>
   </div>
 </header>
 <main id="main">
@@ -47,6 +53,12 @@
       <a class="saaristo-button is-ghost" href="#kivi">Heitä kivi <span aria-hidden="true">↓</span></a>
     </div>
     <p class="saaristo-hint">Lampi herää, kun sitä koskettaa.</p>
+  </section>
+
+  <section class="saaristo-pocket-info" aria-labelledby="pocket-title">
+    <h2 id="pocket-title">Mikä Sammakko on?</h2>
+    <p>Harjoittele matematiikkaa ja luonnontieteitä Aavan ja Loikan kanssa. Litessä on 181 sisältötarkistettua aihetta. Saaristossa voit tutkia koko 690 aiheen oppimisverkkoa.</p>
+    <p>Pelaat ilman tiliä. Edistymisesi tallentuu tähän selaimeen.</p>
   </section>
 
   <section class="saaristo-section" id="kivi" aria-labelledby="kivi-title">

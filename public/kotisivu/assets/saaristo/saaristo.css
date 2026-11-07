@@ -18,7 +18,7 @@
 .saaristo-chip{min-height:44px;padding:8px 16px;border-radius:999px;border:1px solid var(--glass-line);background:var(--glass);color:var(--cream);font-size:13px;font-weight:750;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .saaristo-chip[aria-pressed=true]{background:var(--cream);color:#24203a}
 .saaristo-actions{display:flex;gap:8px;align-items:center}
-@media (max-width:480px){.saaristo-chip-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.saaristo-actions .saaristo-chip{padding:8px 13px}}
+
 .saaristo-page main{position:relative;z-index:2;pointer-events:none}
 .saaristo-page main a,.saaristo-page main button,.saaristo-page main label,.saaristo-panel{pointer-events:auto}
 .saaristo-hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:110px clamp(16px,6vw,90px) 70px}
@@ -75,15 +75,24 @@
 .saaristo-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border-radius:999px;color:var(--cream);font-size:14px;font-weight:750;text-decoration:none;text-shadow:0 1px 10px rgba(20,15,40,.6)}
 .saaristo-nav a:hover{background:rgba(255,241,214,.12)}
 .saaristo-nav a[aria-current=page]{color:var(--mint);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
-.saaristo-menu{display:none}
+.saaristo-menu, .saaristo-menu-fallback, .saaristo-nav .saaristo-menu-close, .saaristo-nav .saaristo-compact-link,
+.saaristo-pocket-info, .saaristo-sound-state, [data-throw-menu-slot]:empty { display:none; }
+.saaristo-nav { align-items:center; }
 .saaristo-header .saaristo-actions{flex-wrap:nowrap}
 .saaristo-chip[data-waiting]{animation:chip-wait 2.4s ease-in-out infinite}
 @keyframes chip-wait{50%{box-shadow:0 0 0 6px rgba(140,233,213,.25)}}
 @media (max-width:960px), (hover:none) and (pointer:coarse){
-  .js .saaristo-menu{display:inline-flex;align-items:center;gap:6px}
-  .js .saaristo-nav{display:none;position:absolute;top:calc(100% - 4px);right:clamp(16px,4vw,40px);flex-direction:column;align-items:stretch;min-width:220px;margin:0;padding:10px;border-radius:20px;background:rgba(26,22,48,.95);border:1px solid var(--glass-line);box-shadow:0 24px 60px -20px rgba(10,6,30,.8)}
-  .js .saaristo-nav.is-open{display:flex}
-  .saaristo-nav a{padding:0 14px}
+  .js .saaristo-menu, .saaristo-menu-fallback { display:inline-flex; align-items:center; gap:6px; text-decoration:none; }
+  .saaristo-nav { display:none; position:absolute; top:100%; right:max(16px,env(safe-area-inset-right)); flex-direction:column; align-items:stretch; width:min(260px,calc(100vw - 32px)); max-height:calc(100dvh - var(--site-header-height,74px) - 12px); overflow-y:auto; overscroll-behavior:contain; margin:0; padding:10px; border-radius:18px; background:#211f35; border:1px solid var(--glass-line); box-shadow:0 18px 32px #100d2680; }
+  .saaristo-nav.is-open, html:not(.js) .saaristo-nav:target {display:flex}
+  .saaristo-nav .saaristo-compact-link, html:not(.js) .saaristo-nav .saaristo-menu-close {display:flex}
+  .saaristo-nav [aria-current=page], html:not(.js) .saaristo-nav button {display:none}
+  .saaristo-nav a, .saaristo-nav button {justify-content:flex-start; flex-shrink:0; padding:8px 14px; text-align:left;}
+  .saaristo-sound-state {display:inline;}
+  [data-saaristo-sound][aria-pressed=true] .saaristo-sound-state::after {content:" · päällä";}
+  [data-saaristo-sound][aria-pressed=false] .saaristo-sound-state::after {content:" · pois";}
+  [data-throw-menu-slot] {margin-top:4px; padding-top:8px; border-top:1px solid var(--glass-line);}
+  .saaristo-nav [data-throw] {width:100%; min-height:44px; background:var(--glass); color:var(--cream); box-shadow:none; border-color:var(--glass-line); font-size:13px;}
 }
 @media (max-width:480px){.saaristo-brand small{font-size:8.5px;letter-spacing:.12em}.saaristo-header .saaristo-actions{gap:6px}.saaristo-header .saaristo-chip{padding:8px 12px}}
 /* First screen: what Sammakko is, and where to start. */
@@ -111,29 +120,20 @@
 
 /* On touch screens the pond fills one view, with navigation at its edges. */
 @media (max-width:960px), (hover:none) and (pointer:coarse) {
-  .saaristo-page { min-height:100svh; min-height:100dvh; display:flex; flex-direction:column; }
-  html:not(.js) .saaristo-header { flex-wrap:wrap; gap:4px; }
-  html:not(.js) .saaristo-header .saaristo-chip { display:none; }
-  html:not(.js) .saaristo-nav { flex-wrap:wrap; }
-  html:not(.js) .saaristo-nav a { min-height:36px; padding:0 7px; font-size:13px; }
-  .saaristo-page main { flex:1; display:flex; flex-direction:column; }
-  .saaristo-canvas { touch-action:none; }
-  .saaristo-hero { flex:1; min-height:0; align-items:center; justify-content:flex-start; padding:clamp(78px,18svh,180px) 18px 16px; }
+  .saaristo-hero { min-height:100svh; align-items:center; justify-content:flex-start; padding:clamp(78px,18svh,180px) 18px 16px; }
+  .saaristo-pocket-info { display:block; padding:32px max(24px,calc((100vw - 38rem)/2)); background:#211f35; pointer-events:auto; }
+  .saaristo-pocket-info h2 { margin:0 0 12px; font-size:24px; }
+  .saaristo-pocket-info p { max-width:38rem; margin:8px 0 0; line-height:1.55; }
   .saaristo-hero h1 { width:max-content; margin:0; font-size:clamp(32px,8.8vw,72px); line-height:1.1; }
-  .saaristo-page .saaristo-hero > :not(h1), .saaristo-section:not(.saaristo-exit),
-  .saaristo-closing > :not(.saaristo-actions) { display:none; }
+  .saaristo-page .saaristo-hero > :not(h1), .saaristo-section { display:none; }
 
-  .saaristo-throwzone { left:max(18px,env(safe-area-inset-left)); top:auto; bottom:max(23svh,102px); width:104px; height:60px; margin:0; padding:4px; border:0; border-radius:16px; color:#fff7de; background:transparent; text-shadow:0 1px 5px #181626,0 1px 2px #181626; }
+  .saaristo-throwzone { position:absolute; left:max(18px,env(safe-area-inset-left)); top:calc(100svh - max(23svh,102px) - 60px); bottom:auto; width:104px; height:60px; margin:0; padding:4px; border:0; border-radius:16px; color:#fff7de; background:transparent; text-shadow:0 1px 5px #181626,0 1px 2px #181626; }
   .saaristo-throwzone span:before { line-height:1; margin-bottom:5px; }
-  html[data-saaristo=static] .saaristo-throwzone:not(.is-away):not(.is-off):enabled { opacity:1; pointer-events:auto; transform:none; }
+  html[data-saaristo=static] .saaristo-throwzone:not(.is-away):not(.is-off) { opacity:1; pointer-events:auto; transform:none; }
   html:not([data-saaristo=webgl]):not([data-saaristo=static]) .saaristo-throwzone,
   .saaristo-throwzone.is-away, .saaristo-throwzone.is-off, .saaristo-throwzone:disabled { visibility:hidden; }
-  .saaristo-exit, .saaristo-closing { display:block; min-height:0; margin:0; padding:0; width:auto; }
-  .saaristo-closing { border:0; border-radius:0; background:none; box-shadow:none; backdrop-filter:none; -webkit-backdrop-filter:none; pointer-events:none; }
-  .saaristo-closing .saaristo-actions { justify-content:center; }
-  .saaristo-closing .saaristo-button { min-height:44px; padding:6px 16px; }
-  .saaristo-footer { align-items:center; justify-content:space-between; gap:4px 10px; padding:4px max(16px,env(safe-area-inset-right)) max(2px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left)); font-size:12px; }
-  .saaristo-footer a { display:inline-flex; align-items:center; min-height:44px; }
+  .saaristo-footer { padding:0 24px max(16px,env(safe-area-inset-bottom)); background:#211f35; }
+  .saaristo-footer a { display:none; }
 }
 @media (max-height:480px) and (orientation:landscape) and (pointer:coarse) {
   .saaristo-hero { padding-top:max(62px,env(safe-area-inset-top)); }

@@ -12,6 +12,23 @@ if (siteHeader) {
   if (typeof ResizeObserver !== 'undefined') new ResizeObserver(measureHeader).observe(siteHeader);
   else window.addEventListener('resize', measureHeader);
 }
+// Keep one real throw button and its game listener in both layouts.
+const throwSlot = document.querySelector('[data-throw-menu-slot]');
+const throwButton = document.querySelector('[data-throw]');
+if (throwSlot && throwButton) {
+  const home = document.createComment('throw button');
+  throwButton.before(home);
+  const compact = matchMedia('(max-width:960px), (hover:none) and (pointer:coarse)');
+  const placeThrow = () => compact.matches ? throwSlot.append(throwButton) : home.after(throwButton);
+  placeThrow();
+  compact.addEventListener('change', placeThrow);
+  throwButton.addEventListener('click', () => {
+    if (compact.matches && menuButton.getAttribute('aria-expanded') === 'true') {
+      menuButton.click();
+      menuButton.focus();
+    }
+  });
+}
 if (menuButton && menu) {
   const setMenu = (open) => {
     menuButton.setAttribute('aria-expanded', String(open));
@@ -54,4 +71,12 @@ if (topics.length) {
 }
 for (const printButton of document.querySelectorAll('[data-print]')) {
   printButton.addEventListener('click', () => window.print());
+}
+
+const paperContents = document.querySelector('[data-paper-contents]');
+if (paperContents) {
+  const stacked = matchMedia('(max-width: 680px)');
+  const setContentsLayout = () => { paperContents.open = !stacked.matches; };
+  setContentsLayout();
+  stacked.addEventListener('change', setContentsLayout);
 }
