@@ -72,6 +72,8 @@ body.on-expedition { background:#dcece8; color:#163e46; }
 .exp-task .tray { min-height:52px; gap:6px; padding:6px; }
 .exp-task .keys button { min-height:46px; font-size:22px; }
 .exp-task .cake-workbench { gap:8px; }
+/* Let ferry fields wrap from their native select width instead of clipping long outcomes. */
+.expedition:not([data-book='true']) .exp-task:has(.programming-ferry-board) label:has(> select) { flex-basis:auto !important; }
 .exp-feedback { border-top:1px solid #d9dfd0; padding-top:12px; display:flex; flex-direction:column; gap:10px; }
 .exp-result-actions { display:flex; flex-wrap:wrap; gap:8px; }
 .exp-result-actions > button { flex:1 1 auto; min-height:48px; }
@@ -176,6 +178,11 @@ body.on-expedition { background:#dcece8; color:#163e46; }
   .exp-exact:has(> table) > svg, .exp-exact:has(> .table-wrap) > svg { height:100px; max-height:100px; }
   .exp-task .cake-workbench > p { font-size:13px; }
   .exp-help { font-size:13px; padding:8px 10px; }
+}
+@media (max-width:360px) {
+  .exp-head { padding-inline:8px; gap:6px; }
+  .exp-brand { gap:4px; }
+  .exp-tools { gap:4px; }
 }
 @media (prefers-reduced-motion:reduce) { .expedition *, .expedition *::before { animation:none!important; transition:none!important; scroll-behavior:auto!important; } }
 

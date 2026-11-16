@@ -16,7 +16,7 @@ const numeric = (value: string): number => value.includes('/') ? value.split('/'
 const extractRoots = (text: string) => [...text.matchAll(/√\(?([−-]?\d+)\)?/g)].map(m => numeric(m[1]!));
 
 async function open(page: Page, id: Id, seed = 7) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(page, 'Kokeilen itse').click();
   await expect(board(page)).toBeVisible();
   expect((await snapshot(page)).contentContext.skills.length).toBeGreaterThan(0);

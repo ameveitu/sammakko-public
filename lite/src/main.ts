@@ -16,6 +16,7 @@ import { canSpeak, hasFinnish, hush, onVoices, quiet, say, speechPossible } from
 import { ambientAssets, hasSpeechAssets, onAudioChange, setSfxOn, sfxOn } from './audio/player';
 import { ambientOn, setAmbientOn } from './audio/ambient';
 import { avatarArt, CHAPTER_COLOR, modeFor, worldIds, worldMap } from './ui/worldmap';
+import { disposeWorldMap, rememberMapStop } from './ui/map-travel';
 import { adultGraph } from './ui/adultgraph';
 import { worldOverview } from './ui/worldlinks';
 import { lesson, stopLesson, type Mode } from './ui/lesson';
@@ -56,12 +57,14 @@ let ownHash: string | null = null;
 /** Bumped on every route, so a late async answer can tell it is no longer wanted (review G03). */
 let routeSeq = 0;
 let stopExpedition: (() => void) | undefined;
+let stopMap: (() => void) | undefined;
 
 function route() {
   routeSeq++;
   updatePublicationNav();
   if (ownHash !== null && location.hash === ownHash) { ownHash = null; return; }
   ownHash = null;
+  stopMap?.(); stopMap = undefined;
   hush();
   // A lesson left by an address change stops its players and timers (review V4-03).
   stopLesson();
@@ -171,9 +174,11 @@ function openLink(r: Exclude<KcRoute, null>) {
 }
 
 function open(id: string, mode: Mode, from?: string, fast = false) {
+  stopMap?.(); stopMap = undefined;
   toldNow = null;
   window.scrollTo(0, 0);
   const w = store.get().world ?? 'ranta';
+  rememberMapStop(w, id);
   // The address names the open lesson, so it can be copied or reloaded. Lentopaja missions keep their own address.
   const want = kcHash(id);
   if (!location.hash.startsWith('#paja') && location.hash !== want) {
@@ -269,10 +274,12 @@ function chooseWorld() {
 
 // ---------------------------------------------------------------- map
 function map(w: World) {
+  stopMap?.(); stopMap = undefined;
   const n = nextNode(w);
   if (compactPlay()) {
     const play = (id: string, mode: Mode) => open(id, mode, undefined, true);
     const m = worldMap(w, n?.node, { open: play, refresh: route, go: goTo }, true);
+    stopMap = () => disposeWorldMap(m);
     const scroll = h('div', { class: 'lite-map-scroll', role: 'region', 'aria-label': 'Pelattava kartta' }, m);
     const title = worldInfo(w);
     app.replaceChildren(h('main', { class: 'lite-map' },
@@ -281,7 +288,7 @@ function map(w: World) {
         h('a', { class: 'btn', href: '#alueet' }, 'Alueet')),
       storageNotice(), scroll));
     const target = m.querySelector('.place.next');
-    if (target) {
+    if (target && m.dataset.travel !== 'moving' && m.dataset.travelViewport !== 'restore') {
       const box = scroll.getBoundingClientRect();
       const place = target.getBoundingClientRect();
       if (place.bottom > box.bottom) scroll.scrollTop = place.top - box.top - box.height / 2 + place.height / 2;
@@ -306,6 +313,7 @@ function map(w: World) {
     ? btn(ICON.bolt, 'Suoraan tehtävään', () => open(n.node, fastMode, undefined, true), 'big wide fast-btn')
     : null;
   const m = worldMap(w, n?.node, { open, refresh: route, go: goTo });
+  stopMap = () => disposeWorldMap(m);
   const unheard = !taleSeen(w);
   const firstVisit = unheard || toldNow === w;
   app.replaceChildren(h('div', { class: 'stack' },
@@ -341,7 +349,7 @@ function map(w: World) {
     h('p', { class: 'small muted' }, `Paina luvun nimeä, niin kartta vierii sinne. Tiet näyttävät taitojen järjestyksen: ensin tien yläpää, sitten alapää.${worldInfo(w).islands ? ' Lautta vie saarelta toiselle.' : ''} Tähti ⭐ = osasit itse, 🤝 = harjoittelit avun kanssa, ☆ = päätelty myöhemmästä paikasta, ! = viime aikoina vaikeaa, 🕒 = jätetty myöhemmäksi. Tuntemattomat paikat ovat pilven alla. Lukittuun paikkaan voi hypätä, jos uskaltaa.`),
     h('div', { class: 'go-bar' }, go, fastBtn)));
   const target = m.querySelector('.place.next');
-  if (!firstVisit && target && target.getBoundingClientRect().top > window.innerHeight * 0.6) target.scrollIntoView({ block: 'center' });
+  if (m.dataset.travel !== 'moving' && m.dataset.travelViewport !== 'restore' && !firstVisit && target && target.getBoundingClientRect().top > window.innerHeight * 0.6) target.scrollIntoView({ block: 'center' });
   // Read the tale once, when a voice is there; keep it on screen until a lesson opens.
   // Marked as heard only after the whole tale actually played (not on a blocked or cut-off attempt).
   if (unheard && canSpeak(worldInfo(w).tale)) { toldNow = w; void say(worldInfo(w).tale).finished.then((e) => { if (e === 'ended') markTale(w); }); }

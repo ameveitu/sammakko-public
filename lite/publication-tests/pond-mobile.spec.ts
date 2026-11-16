@@ -1,9 +1,11 @@
-import { expect, test } from '@playwright/test';
+import { expect, test as base, type Page } from '@playwright/test';
 
-test.use({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+// Firefox does not support Playwright's isMobile option; it still exercises the
+// same narrow viewport and touch-capable context.
+const test = base.extend({ isMobile: async ({ browserName }, use) => { await use(browserName !== 'firefox'); } });
+test.use({ viewport: { width: 390, height: 844 }, hasTouch: true });
 
-test('the phone landing leaves the pond open and throws from the first screen', async ({ page }) => {
-  test.setTimeout(90_000);
+async function preparePhone(page: Page) {
   await page.goto('/');
   const root = page.locator('html');
   await expect(root).toHaveAttribute('data-saaristo', /^(webgl|static|fallback)$/);
@@ -26,9 +28,22 @@ test('the phone landing leaves the pond open and throws from the first screen', 
   const cue = page.locator('[data-throwzone]');
   if (await root.getAttribute('data-saaristo') === 'fallback') {
     await expect(cue).toBeHidden();
-    return;
+    return null;
   }
   await expect(cue).toBeInViewport();
+  return cue;
+}
+
+test('the phone landing leaves the pond open and exposes the menu', async ({ page }) => {
+  test.setTimeout(90_000);
+  await preparePhone(page);
+});
+
+test('Chromium touch swipe throws and outside swipe scrolls', async ({ page, browserName }) => {
+  test.skip(browserName !== 'chromium', 'Trusted touch-drag dispatch uses Chromium CDP; other engines have no equivalent Playwright touch-drag API.');
+  test.setTimeout(90_000);
+  const cue = await preparePhone(page);
+  if (!cue) return;
   const box = (await cue.boundingBox())!;
   const x = Math.round(box.x + box.width / 2), y = Math.round(box.y + box.height / 2);
   const cdp = await page.context().newCDPSession(page);

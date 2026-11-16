@@ -48,6 +48,10 @@ import { mountExpeditionStage, type StageModel } from '../world/expedition-stage
 import { mountAuthoredClimax, type ClimaxLessonModel } from '../world/authored-climax';
 import { AUTHORED_CLIMAX_IDS, authoredClimaxes, hasAuthoredClimax } from '../content/authored-climaxes';
 import { authoredClimaxPaint } from '../content/scenes/authored-climax';
+import { FULL_WORKBENCHES } from '../content/light';
+import { bookPage } from '../book/pages';
+import { createBookPlayer, type BookPlayer } from './book';
+import { bookTravelPresentation } from './book-travel-presentation';
 
 declare global {
   interface Window {
@@ -72,6 +76,9 @@ export function expedition(app: HTMLElement, requested?: string, reviewing = fal
   const solo = (next: Item): Item => adultReviewOn() ? next : { ...next, task: withoutAdultReview(next.task) };
   const selfCheckNode = (node: NodeSpec) => !adultReviewOn() && node.item(rng(0), 'guided').task.kind === 'observed-explanation';
   let mode: 'home' | 'intro' | 'demo' | 'task' | 'result' = 'home';
+  // Saaristo is the theory book: pages of short explanations with an optional one-move try.
+  // The full workbench flow stays behind ?full for QA.
+  let book: BookPlayer | undefined;
   const session = `journey-${Date.now().toString(36)}-${newSeed()}`;
   const params = new URLSearchParams(location.search);
   const qaSeed = params.get('seed');
@@ -129,6 +136,10 @@ export function expedition(app: HTMLElement, requested?: string, reviewing = fal
     onStatus(status) { root.dataset.fallback = String(status.status === 'fallback'); if (status.status === 'fallback') refreshOnLoss?.(); },
   });
   root.dataset.fallback = String(!world.scene);
+  const travelPresentation = bookTravelPresentation(root, worldHost, () => {
+    world.setWorkMode(true);
+    world.setPaused(root.dataset.bookStage === 'true' || paused || document.hidden);
+  });
   const stage = mountExpeditionStage(world);
   const familyWorld = mountFamilyWorlds(world, { reducedMotion: reduced.matches, quality: 'balanced' });
   const climax = mountAuthoredClimax(world, { characterBase: assets('models/characters/') });
@@ -255,6 +266,7 @@ export function expedition(app: HTMLElement, requested?: string, reviewing = fal
     effects: journey.effectIds(), climax: climax.snapshot(), familyWorld: familyWorld.snapshot(),
     world: { frames: world.state.frames, time: world.state.time ?? 0, workMode: world.state.workMode },
     availableStops: SLICE_IDS.map(id => ({ id, name: EXPEDITION_NODES[id]?.stop })),
+    book: book?.snapshot() ?? null,
   });
 
   function closeModal() {
@@ -739,7 +751,68 @@ export function expedition(app: HTMLElement, requested?: string, reviewing = fal
     if (memoryPanel.hidden) feedback.focus();
   }
 
-  if (requested) intro(requested); else home();
+  const storyHash = (id: string) => `saaristo/${reviewing ? 'kertaus/' : ''}${encodeURIComponent(id)}`;
+  if (!FULL_WORKBENCHES) book = createBookPlayer({
+    contents, worldHost, root, assets,
+    reducedMotion: () => reduced.matches,
+    enter(id) {
+      const next = EXPEDITION_NODES[id];
+      if (!next || disposed) return undefined;
+      closeModal(); clearPaint(); hush();
+      spec = next; item = undefined; answered = false; lastOk = undefined; phase = 'guided';
+      return next;
+    },
+    page: bookPage,
+    familyTitle: id => FAMILIES.find(family => family.id === catalogNode(id)?.familyId)?.title ?? '',
+    setMode(next) { mode = next; },
+    setModel(step, revealed) {
+      if (step) setModel(step, revealed);
+      else { model = undefined; showStage(revealed); }
+    },
+    paint(scene, host) { if (scene) paint({ scene }, host); else clearPaint(); },
+    layout() { root.dataset.view = 'lesson'; root.dataset.book = 'true'; world.resize(); },
+    usedSeeds(node) { return new Set(journey.get().attempts.filter(a => a.node === node.id && !a.syn).flatMap(a => a.seed === undefined ? [] : [a.seed])); },
+    record(node, attempt, response, verdict) {
+      item = attempt.item; seed = attempt.seed; phase = attempt.phase; answered = true; lastOk = verdict.ok;
+      journey.record({ node: node.id, phase: attempt.phase, ok: verdict.ok, tag: attempt.item.tag, seed: attempt.seed, at: Date.now(),
+        rev: attempt.rev ? `${expeditionRevision(node.id)}-${attempt.rev}` : expeditionRevision(node.id),
+        ...(catalogNode(node.id)?.scope === 'new_509_content' ? { itemKey: itemIdentity(attempt.item) } : {}),
+        resp: JSON.stringify(response), help: [], sess: session, mode: 'saaristo-kirja', ...(attempt.item.scn ? { scn: attempt.item.scn } : {}),
+        ...(verdict.math === undefined ? {} : { math: verdict.math }), ...(verdict.proc === undefined ? {} : { proc: verdict.proc }),
+      });
+      if (!verdict.ok) return;
+      // A right answer lights the family's island the same way the full workbench does.
+      const info = catalogNode(node.id), { state } = observe(node);
+      if ((state.helped || state.checked) && info && journey.resolve(node.id, !state.checked) && !hasAuthoredClimax(node.id)) {
+        if (familyWorld.resolve(node.id, { eventId: info.effectId, lessonModel: model })) scheduleStage();
+        else stage.celebrate(info.effectId);
+      }
+    },
+    advance(node) {
+      let next = journey.advanceStory(node.id, reviewing);
+      // A catalog stop without Saaristo content is passed over.
+      for (let guard = 0; next && !EXPEDITION_NODES[next] && guard < 8; guard++) next = journey.advanceStory(next, reviewing);
+      return next && EXPEDITION_NODES[next] ? next : undefined;
+    },
+    hashFor: storyHash,
+    travel() {
+      haltStage(); stage.clear(); world.setActivityFocus(false);
+      if (reduced.matches || paused) { travelPresentation.clear(); return; }
+      travelPresentation.begin(() => {
+        world.setPaused(document.hidden);
+        return world.travel();
+      });
+    },
+    coverWorld(covered) { root.dataset.bookStage = String(covered); world.setPaused(covered || paused || document.hidden); },
+    onChange() {},
+  });
+  if (book && requested && EXPEDITION_NODES[requested]) book.open(requested);
+  else if (book && !requested && journey.storyProgress().next && EXPEDITION_NODES[journey.storyProgress().next!]) {
+    // The landing is the book itself: the next page of the wide story opens at once.
+    const next = journey.storyProgress().next!;
+    history.replaceState(null, '', `#${storyHash(next)}`);
+    book.open(next);
+  } else if (requested) intro(requested); else home();
   const fullscreen = (event: KeyboardEvent) => {
     if (!memoryPanel.hidden && event.key === 'Escape' && !modal) {
       event.preventDefault();
@@ -751,7 +824,7 @@ export function expedition(app: HTMLElement, requested?: string, reviewing = fal
   };
   window.addEventListener('keydown', fullscreen);
   return () => {
-    if (disposed) return; disposed = true; haltStage(); clearPaint(); closeModal(); hush();
+    if (disposed) return; disposed = true; book?.dispose(); travelPresentation.dispose(); haltStage(); clearPaint(); closeModal(); hush();
     reduced.removeEventListener('change', syncMotion);
     document.removeEventListener('visibilitychange', syncMotion);
     familyWorld.dispose(); climax.dispose(); stage.dispose(); world.dispose(); window.removeEventListener('keydown', fullscreen);

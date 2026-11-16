@@ -1,0 +1,417 @@
+/* Saaristo theory book: one page per node, everything in one view, the next step always at the bottom. */
+/* The book never scrolls the page: a 1px header difference or a sliding desk cannot widen or lengthen it. */
+.expedition[data-book='true'] { height:calc(100svh - var(--publication-nav-height,0px)); overflow:clip; }
+/* Notes about the model itself (scale, symbols, sources) are for the full workbench. */
+.book-figure [data-model-note] { display:none; }
+/* Several small pictures (original + models) sit side by side, each big enough to read. */
+.book-figure .light-figures:has(> figure ~ figure) { width:100%; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); align-items:end; }
+.book-figure .light-figures:has(> figure ~ figure) > figure { margin:0; display:grid; justify-items:center; gap:2px; }
+.book-figure .light-figures:has(> figure ~ figure) > figure > svg { width:100%; max-width:200px; height:auto; }
+/* After the answer the picture's play controls are not needed: the feedback has the room. */
+.book-main:has(> .book-feedback:not(:empty)) .book-figure .motion-ctl { display:none; }
+/* On a wide desk the distance and speed graphs of one run sit side by side, so the picture keeps one view. */
+@media (min-width:900px) {
+  .book-figure .motion:has(> .motion-graph + .motion-graph) { max-width:none; grid-template-columns:1fr 1fr; column-gap:10px; }
+  .book-figure .motion:has(> .motion-graph + .motion-graph) > :not(.motion-graph) { grid-column:1 / -1; width:100%; max-width:360px; justify-self:center; }
+}
+/* The feedback explains the answer: a worked-solution panel added to the picture would only repeat it. */
+.book-main:has(> .book-feedback:not(:empty)) .book-figure :is([data-atomic-worked],[data-solution-worked],[data-logic-worked-model]) { display:none; }
+.book-main:has(> .book-feedback:not(:empty)) .book-task .keys { display:none; }
+/* A beat picture is a solved example: a frozen field reads as its value, a button that does nothing is left out. */
+.book-figure [data-frozen='action'] { display:none !important; }
+.book-figure :is(button,[role='button'])[data-frozen=''] { opacity:1 !important; cursor:default; box-shadow:none !important; }
+/* Scenes style their fields inline, so these rules must win over the style attribute. */
+.book-figure :is(select,input:not([type='checkbox']):not([type='radio']):not([type='range']))[data-frozen] {
+  appearance:none !important; -webkit-appearance:none !important; background:#fff3d6 !important; border:0 !important; border-radius:6px !important;
+  padding:2px 8px !important; min-height:0 !important; height:auto !important; width:auto !important; min-width:2ch; max-width:100%; field-sizing:content;
+  font-weight:750 !important; color:#153d39 !important; -webkit-text-fill-color:#153d39; opacity:1 !important; cursor:default; box-shadow:none !important;
+}
+.book-figure input[data-frozen='empty'] { background:transparent !important; outline:1.5px dashed #b9c9bd; outline-offset:-1.5px; }
+.book-figure input:is([type='checkbox'],[type='radio'])[data-frozen] { opacity:1 !important; accent-color:#216860; }
+.book-figure select[data-frozen]:has(option[value='']:checked) { display:none; }
+.expedition[data-book='true'] .exp-desk.book-desk {
+  height:calc(100svh - 80px - var(--publication-nav-height,0px)); min-height:0; overflow:hidden;
+  padding:4px 30px 18px; gap:10px;
+}
+.book-top { display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:22px; }
+.book-kicker { font-size:12px; font-weight:750; letter-spacing:.06em; text-transform:uppercase; color:var(--soft); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.book-dots { display:flex; gap:6px; margin:0; padding:0; list-style:none; flex:none; }
+.book-dots li { width:9px; height:9px; border-radius:50%; background:#d7dfcf; transition:background .25s, transform .25s; }
+.book-dots li.done { background:#7fb3a9; }
+.book-dots li.now { background:var(--pond); transform:scale(1.3); }
+.book-dots li.try { border-radius:2px; transform:rotate(45deg) scale(.9); }
+.book-dots li.try.now { transform:rotate(45deg) scale(1.2); background:#e0a33a; }
+.book-desk h1 { margin:0; outline:none; }
+.book-main { flex:1 1 auto; min-height:0; overflow:auto; display:flex; flex-direction:column; gap:12px; overscroll-behavior:contain; scrollbar-width:thin; }
+.book-text { margin:0; font-size:clamp(18px,1.45vw,21px); line-height:1.42; font-weight:600; text-wrap:pretty; }
+.book-example { margin:0; padding:10px 14px; border-radius:14px; background:#e6f1ec; font-size:16px; line-height:1.4; display:grid; gap:2px; }
+.book-example > span, .book-label { font-size:11px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--pond); }
+.book-q { margin:0; font-size:clamp(18px,1.4vw,20px); line-height:1.4; font-weight:700; display:grid; gap:2px; }
+.book-q .book-label { color:#a86a10; }
+.book-more { font-size:15px; line-height:1.45; color:var(--soft); }
+.book-more summary { cursor:pointer; font-weight:700; color:var(--pond); min-height:32px; display:inline-flex; align-items:center; gap:6px; list-style:none; }
+.book-more summary::-webkit-details-marker { display:none; }
+.book-more summary::before { content:'＋'; font-weight:800; }
+.book-more[open] summary::before { content:'－'; }
+.book-more p { margin:4px 0 0; }
+.book-figure { flex:0 1 auto; min-height:0; display:grid; place-items:center; }
+.book-figure > * { max-width:100%; }
+/* A picture built from an auto-fit grid needs the full width, or its cells collapse to their minimum. */
+.book-figure > div:has([style*='auto-fit']) { justify-self:stretch; }
+.book-figure svg { max-height:min(30svh,230px); }
+/* A drawn figure takes the free height of the page, so its labels grow when there is room. */
+.book-figure:has(> svg.bf) { flex:1 1 0; min-height:min(110px,16svh); max-height:340px; grid-template:minmax(0,1fr) / minmax(0,1fr); }
+.book-figure > svg.bf { width:100%; height:100%; max-height:none; }
+.book-figure [aria-hidden='true'] { pointer-events:none; }
+.book-task { flex:none; }
+.book-task .opts { --cols:2; }
+/* After the answer only the picked option and the right one stay, so the feedback fits in view. */
+.book-task .opt:disabled:not(.right):not(.wrong) { display:none; }
+.book-task .display.wrong { border-color:var(--bad); background:var(--bad-soft); }
+/* A try's number pad takes two rows, so the picture keeps its room: 1–7, then 8 9 0 , − ⌫ OK.
+   With a mouse on a wide screen the digits fit on one row. Buttons in DOM order: 7 8 9 ⌫ 4 5 6 OK 1 2 3 0 , − */
+.book-task .keys:has(> button:nth-child(14):last-child) { grid-template-columns:repeat(7,1fr); gap:6px; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button { min-height:46px; font-size:22px; padding:0; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(9) { grid-row:1; grid-column:1; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(10) { grid-row:1; grid-column:2; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(11) { grid-row:1; grid-column:3; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(5) { grid-row:1; grid-column:4; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(6) { grid-row:1; grid-column:5; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(7) { grid-row:1; grid-column:6; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(1) { grid-row:1; grid-column:7; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(2) { grid-row:2; grid-column:1; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(3) { grid-row:2; grid-column:2; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(12) { grid-row:2; grid-column:3; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(13) { grid-row:2; grid-column:4; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(14) { grid-row:2; grid-column:5; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(4) { grid-row:2; grid-column:6; }
+.book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(8) { grid-row:2; grid-column:7; }
+
+.book-task .opt { min-height:56px; font-size:17px; }
+.book-task .opt .big { font-size:30px; }
+.book-feedback:empty { display:none; }
+.book-feedback { border-radius:16px; padding:12px 16px; display:grid; gap:6px; animation:book-pop 280ms cubic-bezier(.2,.9,.3,1.3) both; }
+.book-feedback p { margin:0; line-height:1.4; }
+.book-feedback[data-ok='true'] { background:#e1f3e3; box-shadow:inset 4px 0 #2f8f5b; }
+.book-feedback[data-ok='false'] { background:#fff1d9; box-shadow:inset 4px 0 #d08a1e; }
+.book-verdict { display:flex; align-items:center; gap:10px; font-size:19px; font-weight:800; }
+.book-verdict > span[aria-hidden] { flex:none; width:30px; height:30px; border-radius:50%; display:grid; place-items:center; color:#fff; font-size:17px; }
+.book-feedback[data-ok='true'] .book-verdict > span[aria-hidden] { background:#2f8f5b; }
+.book-feedback[data-ok='false'] .book-verdict > span[aria-hidden] { background:#d08a1e; }
+.book-why { font-weight:650; }
+.book-explain { font-size:15px; color:#2e5257; }
+.book-feedback:has(.book-more + .book-again) { grid-template-columns:minmax(0,1fr) auto; }
+.book-feedback:has(.book-more + .book-again) > :not(.book-more):not(.book-again) { grid-column:1 / -1; }
+.book-more + .book-again { justify-self:end; align-self:start; }
+.book-again { justify-self:start; background:none; border:0; padding:4px 0; font:inherit; font-size:14px; color:var(--pond); text-decoration:underline; cursor:pointer; min-height:32px; }
+.book-nav { flex:none; display:flex; align-items:center; gap:10px; padding-top:10px; border-top:1px solid var(--line); }
+.book-spacer { flex:1; }
+.book-icon { width:46px; height:46px; border-radius:50%; border:1px solid var(--line); background:#fffdf7; color:var(--ink); font-size:19px; cursor:pointer; display:grid; place-items:center; }
+.book-icon:disabled { opacity:.35; cursor:default; }
+.book-icon:not(:disabled):hover { background:#eef4ea; }
+.book-next { min-width:170px; font-size:17px; }
+.book-next > span { transition:transform .2s; }
+.book-next:hover > span { transform:translateX(3px); }
+.book-skip { min-width:0; border:0; font-size:15px; color:var(--soft); display:inline-flex; gap:8px; align-items:center; }
+.book-desk.book-arrive { animation:book-arrive 420ms cubic-bezier(.2,.8,.2,1) both; }
+.book-desk.book-leaving { animation:book-leave 320ms ease-in both; pointer-events:none; }
+@keyframes book-arrive { from { opacity:0; transform:translateX(26px); } to { opacity:1; transform:none; } }
+@keyframes book-leave { to { opacity:0; transform:translateX(-30px); } }
+@keyframes book-pop { from { opacity:0; transform:translateY(6px) scale(.98); } to { opacity:1; transform:none; } }
+
+/* The book's own figures (book/figures): one text style and small looping motions that show the idea. */
+.bf { display:block; font-family:inherit; overflow:visible; }
+.bf .bf-flow { animation:bf-flow 1.2s linear infinite; }
+.bf .bf-flow.bf-fast { animation-duration:.45s; }
+.bf .bf-flow-slow { animation:bf-flow-slow 2.4s linear infinite; }
+.bf .bf-glow { animation:bf-glow 2s ease-in-out infinite; }
+.bf .bf-push-l { animation:bf-push-l 1.6s ease-in-out infinite; }
+.bf .bf-push-r { animation:bf-push-r 1.6s ease-in-out infinite; }
+.bf .bf-hop { animation:bf-hop 1.1s ease-in-out both; }
+.bf .bf-roll { animation:bf-roll 3.6s ease-in infinite; }
+.bf .bf-orbit { animation:bf-orbit 10s linear infinite; }
+.bf .bf-jiggle { animation:bf-jiggle .5s ease-in-out infinite alternate; }
+.bf .bf-slide { animation:bf-slide 2.4s ease-in-out infinite alternate; }
+.bf .bf-fly { animation:bf-fly 3.2s ease-in-out infinite alternate; }
+.bf .bf-spread { animation:bf-spread 2.6s cubic-bezier(.3,.6,.4,1) both; }
+.bf .bf-drift { animation:bf-slide 2.6s ease-in-out infinite alternate; }
+.bf .bf-zip { animation:bf-fly 1s ease-in-out infinite alternate; }
+.bf .bf-rise { animation:bf-rise 2.4s ease-in infinite; }
+.bf .bf-spin { animation:bf-orbit 6s linear infinite; transform-box:fill-box; transform-origin:center; }
+.bf .bf-blink { animation:bf-glow 1.4s ease-in-out infinite; }
+.bf .bf-lift { animation:bf-lift 2.4s ease-in-out infinite; }
+.bf .bf-wobble { animation:bf-wobble .5s ease-in-out infinite alternate; }
+.bf .bf-shoot { animation:bf-shoot 2s ease-out infinite; }
+@keyframes bf-flow { to { stroke-dashoffset:-32; } }
+@keyframes bf-flow-slow { to { stroke-dashoffset:-24; } }
+@keyframes bf-glow { 0%,100% { opacity:.55; } 50% { opacity:1; } }
+@keyframes bf-push-l { 50% { transform:translateX(-8px); } }
+@keyframes bf-push-r { 50% { transform:translateX(8px); } }
+@keyframes bf-hop { 0% { transform:none; } 50% { transform:translate(95px,-52px); } 100% { transform:translate(190px,0); } }
+@keyframes bf-roll { 0% { transform:translate(40px,51px); } 22% { transform:translate(120px,51px); } 62% { transform:translate(280px,131px); } 85%,100% { transform:translate(360px,131px); } }
+@keyframes bf-orbit { to { transform:rotate(360deg); } }
+@keyframes bf-jiggle { from { transform:translate(-1.5px,1px); } to { transform:translate(1.5px,-1px); } }
+@keyframes bf-slide { 0% { transform:translate(-5px,0); } 50% { transform:translate(2px,-3px); } 100% { transform:translate(5px,1px); } }
+@keyframes bf-fly { 0% { transform:translate(-14px,9px); } 50% { transform:translate(10px,-12px); } 100% { transform:translate(14px,8px); } }
+@keyframes bf-spread { from { transform:translate(var(--fx,0),var(--fy,0)); } to { transform:none; } }
+@keyframes bf-rise { 0% { transform:none; opacity:0; } 15% { opacity:1; } 100% { transform:translateY(-72px); opacity:0; } }
+@keyframes bf-lift { 0%,12% { transform:none; } 50%,62% { transform:translateY(-58px); } 100% { transform:none; } }
+@keyframes bf-wobble { from { transform:translateX(-3px); } to { transform:translateX(3px); } }
+@keyframes bf-shoot { 0% { transform:none; opacity:1; } 80% { opacity:1; } 100% { transform:translate(70px,0); opacity:0; } }
+@media (prefers-reduced-motion: reduce) {
+  .bf * { animation:none !important; }
+  .bf .bf-hop { transform:translate(190px,0); }
+  .bf .bf-roll { transform:translate(80px,51px); }
+  .bf .bf-rise { opacity:0; }
+}
+
+/* Book figures drawn in 3D (book/figures/solids): the canvas, names under each solid and measure labels. */
+.bf3 { position:relative; width:100%; }
+.bf3 canvas { width:100%; aspect-ratio:400/170; max-height:min(30svh,230px); display:block; margin:0 auto; }
+.bf3-labels { position:absolute; inset:0 0 auto 0; height:0; pointer-events:none; }
+.bf3-labels span { position:absolute; left:0; top:0; font-weight:800; font-size:13px; color:#b03a2e; background:rgba(255,255,255,.82); border-radius:6px; padding:0 4px; white-space:nowrap; }
+.bf3-names { display:grid; grid-template-columns:repeat(var(--n,1),1fr); text-align:center; font-weight:700; font-size:14px; color:#163e46; margin-top:2px; }
+.bf3-names span[data-mark='ok'] { color:#1f7a4a; }
+.bf3-names span[data-mark='ok']::after { content:' ✓'; }
+.bf3-names span[data-mark='no'] { color:#b03a2e; }
+.bf3-names span[data-mark='no']::after { content:' ✗'; }
+.bf3-caption { margin:4px 0 0; text-align:center; font-size:14px; font-weight:700; color:#163e46; }
+.bf3[data-flat='true'] canvas { display:none; }
+
+/* An authored 3D stage covers the pond in the world area. */
+.book-stage { position:absolute; inset:0; z-index:1; background:#08121f; }
+.book-stage > canvas { position:absolute; inset:0; width:100%; height:100%; display:block; touch-action:none; }
+.expedition[data-book-stage='true'] .exp-head { color:#fff; }
+
+@media (min-width:901px) and (max-height:800px) {
+  .expedition[data-book='true'] .exp-desk.book-desk { height:calc(100svh - 68px - var(--publication-nav-height,0px)); padding-bottom:14px; gap:8px; }
+  .book-figure svg { max-height:min(28svh,190px); }
+}
+@media (max-width:900px) {
+  .expedition[data-book='true'] .exp-desk.book-desk { height:calc(66svh - var(--publication-nav-height,0px)); min-height:0; padding:16px 22px 14px; }
+}
+@media (max-width:560px) {
+  .expedition[data-book='true'] .exp-world { height:30svh; }
+  .expedition[data-book='true'] .exp-desk.book-desk { margin-top:calc(30svh - 66px); height:calc(70svh - var(--publication-nav-height,0px)); padding:14px 16px 12px; gap:8px; border-radius:22px 22px 0 0; }
+  .expedition[data-book='true']:has(.exp-task) .exp-world { height:24svh; }
+  .expedition[data-book='true']:has(.exp-task) .exp-desk.book-desk { margin-top:calc(24svh - 66px); height:calc(76svh - var(--publication-nav-height,0px)); }
+  .book-text { font-size:17px; }
+  .book-q { font-size:17px; }
+  .book-example { font-size:15px; padding:8px 12px; }
+  .book-figure svg { max-height:22svh; }
+  .book-next { min-width:0; flex:1; max-width:220px; }
+  .book-icon { width:44px; height:44px; }
+}
+
+/* When the 3D model is the control, the option buttons stay for the keyboard (1–9) and screen readers only. */
+.book-task-stage:not(:has(:focus-visible)) {
+  position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0;
+}
+
+/* ENV-PHY-SPACE-01: Sun, Earth and Moon. */
+.space-stage { background:radial-gradient(120% 90% at 50% 40%, #12243f 0%, #08121f 62%, #050a13 100%); overflow:hidden; font-family:inherit; }
+.space-stage > p { margin:0; }
+.space-hint {
+  position:absolute; left:0; right:0; margin-inline:auto; width:fit-content; top:max(64px, 9%); z-index:2; max-width:min(92%, 460px);
+  padding:8px 16px; border-radius:999px; background:rgba(10,24,44,.78); color:#e9f2ff; font-size:15px; font-weight:700; line-height:1.3;
+  text-align:center; backdrop-filter:blur(6px); box-shadow:0 0 0 1px rgba(160,200,255,.25); pointer-events:none;
+  animation:book-pop 260ms cubic-bezier(.2,.9,.3,1.3) both;
+}
+.space-hint[data-tone='warn'] { background:rgba(70,44,8,.86); color:#ffe6b8; box-shadow:0 0 0 1px rgba(255,190,90,.55); }
+.space-hint[data-tone='warn']::before { content:'↺ '; font-weight:900; }
+.space-hint[hidden], .space-label[hidden], .space-card[hidden], .space-ctl[hidden] { display:none; }
+.space-badge {
+  position:absolute; right:12px; bottom:12px; z-index:2; padding:3px 9px; border-radius:6px; font-size:11px; font-weight:800;
+  letter-spacing:.06em; text-transform:uppercase; color:#b8cbe8; background:rgba(8,18,31,.6); box-shadow:0 0 0 1px rgba(160,200,255,.22); pointer-events:none;
+}
+.space-label {
+  position:absolute; z-index:2; transform:translate(-50%,0); max-width:220px; padding:7px 12px; border-radius:12px;
+  background:rgba(255,253,247,.94); color:#16324a; font-size:14px; font-weight:700; line-height:1.3; text-align:center;
+  box-shadow:0 6px 18px rgba(0,0,0,.35); pointer-events:none;
+}
+.space-card {
+  position:absolute; left:12px; bottom:12px; z-index:2; margin:0; width:clamp(118px, 22%, 190px); padding:8px 8px 6px; border-radius:16px;
+  background:rgba(255,253,247,.92); box-shadow:0 8px 22px rgba(0,0,0,.35); display:grid; gap:2px; pointer-events:none;
+}
+.space-card img { width:100%; height:auto; aspect-ratio:1.45; object-fit:contain; display:block; }
+.space-card figcaption { font-size:12px; font-weight:750; color:#2e5257; text-align:center; line-height:1.25; }
+.space-card[data-season='winter'] { box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 0 0 3px #8fc1ff; }
+.space-card[data-season='summer'] { box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 0 0 3px #ffc95a; }
+.space-ctl { position:absolute; right:14px; bottom:44px; z-index:2; display:flex; gap:12px; }
+.space-ctl button {
+  width:52px; height:52px; border-radius:50%; border:0; background:rgba(255,253,247,.94); color:#16324a; font-size:22px; font-weight:800;
+  cursor:pointer; box-shadow:0 4px 14px rgba(0,0,0,.35); display:grid; place-items:center;
+}
+.space-ctl button:hover { background:#fff; transform:translateY(-1px); }
+.space-ctl button:focus-visible { outline:3px solid #ffc95a; outline-offset:2px; }
+
+@media (max-width:560px) {
+  .expedition[data-book='true'][data-book-stage='true'] .exp-world,
+  .expedition[data-book='true'][data-book-stage='true']:has(.exp-task) .exp-world { height:50svh; }
+  .expedition[data-book='true'][data-book-stage='true'] .exp-desk.book-desk,
+  .expedition[data-book='true'][data-book-stage='true']:has(.exp-task) .exp-desk.book-desk { margin-top:calc(50svh - 66px); height:calc(50svh - var(--publication-nav-height,0px)); }
+  .space-hint { font-size:13px; padding:6px 12px; top:58px; }
+  .space-card { width:104px; left:8px; bottom:72px; padding:5px 5px 4px; }
+  .space-card figcaption { font-size:10px; }
+  .space-badge { bottom:76px; right:8px; font-size:10px; }
+  .space-ctl { right:8px; bottom:100px; gap:10px; }
+  .space-ctl button { width:46px; height:46px; }
+}
+
+/* ENV-PHY-ELECSAFE-01: a broken cord on a wet jetty. */
+.elec-stage { background:#9cc4de; overflow:hidden; font-family:inherit; }
+.elec-bubble[hidden], .elec-tag[hidden], .elec-badge[hidden], .elec-replay[hidden] { display:none; }
+.elec-bubble {
+  position:absolute; z-index:2; margin:0; translate:-50% -100%; max-width:min(240px, 60%); padding:8px 13px; border-radius:16px;
+  background:#fffdf7; color:#16324a; font-size:15px; font-weight:750; line-height:1.3; text-align:center;
+  box-shadow:0 6px 18px rgba(20,40,60,.28); pointer-events:none; animation:book-pop 260ms cubic-bezier(.2,.9,.3,1.3) both;
+}
+.elec-bubble::after { content:''; position:absolute; left:50%; bottom:-6px; width:13px; height:13px; background:inherit; translate:-50% 0; rotate:45deg; border-radius:2px; }
+.elec-bubble[data-loud='true'] { background:#fff1c2; box-shadow:0 6px 18px rgba(20,40,60,.28), 0 0 0 2px #e0a33a; font-size:16px; }
+.elec-tag {
+  position:absolute; z-index:2; margin:0; translate:-50% 10px; padding:4px 10px; border-radius:9px; background:rgba(150,30,20,.9); color:#fff;
+  font-size:13px; font-weight:800; white-space:nowrap; pointer-events:none; box-shadow:0 4px 12px rgba(60,10,5,.3);
+  animation:book-pop 260ms cubic-bezier(.2,.9,.3,1.3) both;
+}
+.elec-tag[data-place='above'] { translate:-50% calc(-100% - 4px); }
+.elec-badge {
+  position:absolute; left:0; right:0; margin-inline:auto; width:fit-content; max-width:92%; bottom:18px; z-index:2;
+  padding:8px 16px; border-radius:999px; font-size:15px; font-weight:800; line-height:1.3; text-align:center; pointer-events:none;
+  color:#fff; background:rgba(30,60,90,.88); box-shadow:0 6px 18px rgba(0,0,0,.25); animation:book-pop 300ms cubic-bezier(.2,.9,.3,1.3) both;
+}
+.elec-badge[data-tone='danger'] { background:rgba(165,32,20,.92); }
+.elec-badge[data-tone='off'] { background:rgba(28,104,64,.92); }
+.elec-badge[data-tone='fix'] { background:rgba(34,72,118,.92); }
+.elec-badge[data-tone='ok'] { background:rgba(255,212,90,.96); color:#3d2c06; }
+.elec-replay {
+  position:absolute; right:12px; top:max(60px, 8%); z-index:3; min-height:40px; padding:6px 14px; border:0; border-radius:999px;
+  background:rgba(255,253,247,.94); color:#16324a; font:inherit; font-size:14px; font-weight:800; cursor:pointer; box-shadow:0 4px 14px rgba(0,0,0,.22);
+}
+.elec-replay:hover { background:#fff; }
+.elec-replay:focus-visible { outline:3px solid #e0a33a; outline-offset:2px; }
+.expedition[data-book-stage='true']:has(.elec-stage) .exp-head { color:#0f2a3c; text-shadow:0 1px 0 rgba(255,255,255,.5); }
+
+@media (max-width:560px) {
+  .elec-bubble { font-size:13px; padding:6px 10px; max-width:min(190px, 58%); }
+  .elec-bubble[data-loud='true'] { font-size:14px; }
+  .elec-tag { font-size:11px; padding:3px 8px; }
+  .elec-badge { font-size:13px; padding:6px 12px; bottom:14px; }
+  .elec-replay { top:54px; right:8px; font-size:13px; min-height:36px; }
+  /* A try answered with the desk's buttons: the stage steps back so the feedback fits without scrolling. */
+  .expedition[data-book='true'][data-book-stage='true']:has(.exp-task:not(.book-task-stage)) .exp-world { height:40svh; }
+  .expedition[data-book='true'][data-book-stage='true']:has(.exp-task:not(.book-task-stage)) .exp-desk.book-desk { margin-top:calc(40svh - 66px); height:calc(60svh - var(--publication-nav-height,0px)); }
+  .book-feedback { padding:10px 12px; gap:4px; }
+  .book-verdict { font-size:16px; gap:8px; }
+  .book-verdict > span[aria-hidden] { width:26px; height:26px; font-size:15px; }
+  .book-why { font-size:15px; }
+  .book-explain { font-size:14px; }
+}
+@media (max-width:560px) and (max-height:700px) {
+  .expedition[data-book='true'][data-book-stage='true']:has(.exp-task:not(.book-task-stage)) .exp-world { height:33svh; }
+  .expedition[data-book='true'][data-book-stage='true']:has(.exp-task:not(.book-task-stage)) .exp-desk.book-desk { margin-top:calc(33svh - 66px); height:calc(67svh - var(--publication-nav-height,0px)); }
+}
+
+/* Control legibility is a layout constraint, never a zoom fallback. */
+.book-task .opt .txt { font-size:15px; line-height:1.3; }
+.book-figure :is(.motion-ctl,.solid-views) button,
+.book-figure .listen { min-height:44px; min-width:44px; }
+.book-again, .book-more summary { min-height:44px; }
+
+/* A short phone lends its decorative pond band to the question and answer cards.
+   The world remains behind the header; no lesson text or control is removed. */
+@media (max-width:560px) and (max-height:700px) {
+  .expedition[data-book='true']:not([data-book-stage='true']) .exp-world { height:66px; min-height:66px; }
+  .expedition[data-book='true']:not([data-book-stage='true']) .exp-desk.book-desk {
+    margin-top:0; height:calc(100svh - 66px - var(--publication-nav-height,0px));
+    padding:8px 12px; gap:6px;
+  }
+  .book-top { min-height:16px; }
+  .book-desk h1 { font-size:22px; }
+  .book-main { gap:8px; }
+  .book-nav { padding-top:6px; gap:8px; }
+  .book-task .opts:has(> .opt:nth-child(3):last-child) { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .book-task .opt { padding:6px; min-height:48px; }
+  .book-task .opt:has(.listen) { padding-top:50px; }
+  .book-task .opt .txt { font-size:15px; }
+}
+
+/* Answers get a stable viewport budget. The prompt and model remain available
+   in their own scrollport instead of pushing a choice beneath the footer. */
+.book-main:has(> .book-context) { overflow:hidden; }
+.book-context { flex:1 1 auto; min-height:72px; overflow:auto; overscroll-behavior:contain; scrollbar-width:thin; }
+.book-context > .book-q { margin-bottom:8px; }
+.book-context > .book-figure { min-height:0; }
+.book-q .book-label { display:flex; justify-content:space-between; align-items:baseline; gap:8px; }
+.book-scroll-cue { color:#315d59; font-size:11px; font-weight:700; letter-spacing:normal; line-height:1.2; text-transform:none; }
+.book-scroll-cue[hidden] { display:none; }
+@media (max-width:560px) {
+  [data-book-id='M-GMEAS-05'] .book-figure:has(> svg + .table-wrap) { grid-template-columns:1fr; }
+  [data-book-id='M-GMEAS-05'] .book-figure:has(> svg + .table-wrap) > .table-wrap { width:100%; }
+}
+@media (max-width:360px) {
+  [data-book-id='M-GMEAS-05'] .book-figure:has(> svg + .table-wrap) > svg { height:50px; max-height:50px; }
+}
+.book-main > .book-feedback:not(:empty) { flex:0 1 auto; min-height:100px; overflow:auto; }
+.book-main:has(> .book-feedback:not(:empty)) > .book-context { flex:1 1 30%; }
+.book-nav:has(.book-again) { flex-wrap:wrap; }
+.book-nav .book-again { padding:4px 8px; text-align:center; max-width:140px; }
+@media (max-width:560px) {
+  .book-nav:has(.book-again) { display:grid; grid-template-columns:44px 44px minmax(0,1fr) minmax(0,1fr); }
+  .book-nav:has(.book-again) .book-spacer { display:none; }
+  .book-nav .book-again { font-size:14px; padding:2px; line-height:1.25; }
+  .book-nav:has(.book-again) .book-next { font-size:15px; padding-inline:4px; }
+}
+
+/* Five digits per row keeps a 44px touch width on the narrowest phone. */
+@media (max-width:360px) {
+  .book-task .keys:has(> button:nth-child(14):last-child) { grid-template-columns:repeat(5,minmax(44px,1fr)); }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(9) { grid-area:1 / 1; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(10) { grid-area:1 / 2; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(11) { grid-area:1 / 3; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(5) { grid-area:1 / 4; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(6) { grid-area:1 / 5; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(7) { grid-area:2 / 1; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(1) { grid-area:2 / 2; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(2) { grid-area:2 / 3; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(3) { grid-area:2 / 4; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(12) { grid-area:2 / 5; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(13) { grid-area:3 / 1; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(14) { grid-area:3 / 2; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(4) { grid-area:3 / 3; }
+  .book-task .keys:has(> button:nth-child(14):last-child) > button:nth-child(8) { grid-area:3 / 4 / auto / span 2; }
+}
+@media (max-width:560px) and (max-height:700px) {
+  .book-figure .anim-pic svg { max-height:100px; }
+  .book-figure .anim { gap:4px; }
+  .book-figure .anim-cap { min-height:16px; margin:0; }
+  .book-figure .motion-ctl { gap:6px; }
+  .book-figure .motion-ctl .btn { font-size:14px; padding:6px 8px; }
+}
+
+.book-task .book-axes { margin:0 0 6px; font-size:15px; font-weight:650; line-height:1.3; }
+.book-task .opt .book-axes { margin:0; }
+@media (max-width:560px) {
+  .book-nav:has(.book-again) .book-next { flex-direction:column; gap:0; padding-block:4px; line-height:1.2; }
+}
+
+/* A source task may request a single column for the full workbench. In the
+   book, compact answer grids reserve room for every option without text zoom. */
+.book-task .opts:has(> .opt:nth-child(3):last-child) { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.book-task .opts:has(> .opt:nth-child(4):last-child) { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.book-task .opts:has(> .opt:nth-child(3):last-child):has(table) { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.book-context { min-height:48px; }
+
+/* Two illustrated choices need the same visible answer budget as larger sets.
+   Match the option art container, not the SVG icon on a listen button. */
+.book-task .opts:has(> .opt:nth-child(2):last-child):has(> .opt > div > svg) { grid-template-columns:repeat(2,minmax(0,1fr)); }
+@media (max-width:560px) {
+  /* Keep table text and row metrics intact; only the surrounding card gives room. */
+  .book-task .opt:has(table) { padding-block:4px; }
+}
+/* Progression is separate from the landscape animation pause. */
+.book-pause { flex:none; }
+@media (max-width:560px) {
+  .book-nav { gap:4px; }
+  .book-nav:not(:has(.book-again)) .book-spacer { display:none; }
+  .book-nav:has(.book-again) { grid-template-columns:44px 44px 44px minmax(0,1fr) minmax(88px,1.25fr); gap:4px; }
+}

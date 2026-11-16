@@ -15,7 +15,7 @@ const feedback = (page: Page) => page.locator('.exp-feedback');
 const integers = (value: string) => [...value.matchAll(/\d+/g)].map(match => Number(match[0]));
 
 async function open(page: Page, id: Id, seed = 7) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(page, 'Kokeilen itse').click();
   await expect(workbench(page)).toBeVisible();
   await expect(givens(page)).toContainText('Tuttu työväline');

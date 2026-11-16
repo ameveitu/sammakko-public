@@ -15,7 +15,7 @@ const menu = (p: Page, name: string) => p.getByRole('combobox', { name, exact: t
 const ledger = (p: Page) => p.evaluate(() => JSON.parse(localStorage.getItem('sammakko-journey-3') ?? '{"attempts":[],"events":[]}'));
 const number = (raw: string) => Number(raw.replace('−', '-').replace(',', '.'));
 async function open(p: Page, id: Id, seed = 1) {
-  await p.emulateMedia({ reducedMotion: 'reduce' }); await p.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await p.emulateMedia({ reducedMotion: 'reduce' }); await p.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(p, 'Kokeilen itse').press('Enter'); await expect(work(p)).toBeVisible();
 }
 async function adult(p: Page, written = false, helped = false) {

@@ -2,7 +2,7 @@ import { expect,test,type Page } from '@playwright/test';
 type Lift={forceN:number;distanceM:number;durationS:number;direction:string};
 type State={family:string;lastOk?:boolean;renderer:string;model:{lifts:Lift[]};stage:{results?:{workJ:number;powerW:number;positionM:number}[]}};
 const state=(p:Page):Promise<State>=>p.evaluate(()=>JSON.parse(window.render_game_to_text!()));
-async function begin(p:Page,id:string,seed=0){await p.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);await p.reload();await p.getByRole('button',{name:'Tutkitaan yhdessä',exact:true}).click();}
+async function begin(p:Page,id:string,seed=0){await p.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);await p.reload();await p.getByRole('button',{name:'Tutkitaan yhdessä',exact:true}).click();}
 test.beforeEach(async({page})=>{await page.emulateMedia({reducedMotion:'reduce'});if(process.env.WORK_POWER_WEBGL)return;await page.addInitScript(()=>{const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(this:HTMLCanvasElement,type:string,...args:unknown[]){return /^webgl/.test(type)?null:Reflect.apply(original,this,[type,...args])} as typeof original});});
 test('learner calculates work with keyboard and sees the model outcome',async({page})=>{
  await begin(page,'PHY79-WORK-CALC');const s=await state(page),l=s.model.lifts[0]!;

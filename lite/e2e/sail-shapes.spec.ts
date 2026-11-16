@@ -10,7 +10,7 @@ const button = (page: Page, name: string) => page.getByRole('button', { name, ex
 const grid = (page: Page) => board(page).getByRole('img', { name: 'Napautettava kokonaislukuruudukko' });
 
 async function go(page: Page, id: typeof ids[number], seed = 1) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(page, 'Kokeilen itse').click();
   await expect(board(page)).toBeVisible();
 }

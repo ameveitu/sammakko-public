@@ -8,7 +8,7 @@ const exactCells = (page: Page) => board(page).locator('table tbody td').allText
 const snapshot = (page: Page): Promise<{ phase: string; family: string; quantity: { rows: { amount: number | null; extent?: number }[] } }> =>
   page.evaluate(() => JSON.parse((window as Window & { render_game_to_text: () => string }).render_game_to_text()));
 const goto = async (page: Page, seed: number) => {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await page.getByRole('button', { name: 'Kokeilen itse', exact: true }).click();
   await expect(board(page)).toBeVisible();
 };

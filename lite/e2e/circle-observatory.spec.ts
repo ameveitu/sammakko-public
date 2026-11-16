@@ -19,7 +19,7 @@ const turn = (a: number, b: number) => (b - a + 360) % 360;
 const halfDegree = (v: number) => Math.round(v * 2) / 2;
 
 async function open(page: Page, id: Id, seed = 1) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(page, 'Kokeilen itse').click();
   await expect(work(page)).toBeVisible();
 }

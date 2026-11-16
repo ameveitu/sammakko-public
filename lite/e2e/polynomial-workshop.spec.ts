@@ -10,7 +10,7 @@ const workbench = (page: Page) => page.locator('.polynomial-workshop');
 const task = (page: Page) => page.locator('.exp-task');
 const feedback = (page: Page) => page.locator('.exp-feedback');
 const go = async (page: Page, id: Id, seed = 1) => {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await page.getByRole('button', { name: 'Kokeilen itse', exact: true }).click();
   await expect(workbench(page)).toBeVisible();
 };

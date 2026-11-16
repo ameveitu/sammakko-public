@@ -11,6 +11,7 @@ import { layoutRegions, MAP, type MapLayout } from './maplayout';
 import { say } from './speech';
 import { placesLeaving, routeLines, routesOf, SHORT, type Crossing } from './worldlinks';
 import type { Mode } from './lesson';
+import { mountMapTravel } from './map-travel';
 
 export const CHAPTER_COLOR: Record<string, string> = {
   loru: '#e0533f', mitat: '#3b7fd6', evaat: '#e39a1b', kivet: '#2f8f6b', merkit: '#c2457a', simpukat: '#d06a8a', kympit: '#1f8fa3', kertopaja: '#6a8f2f',
@@ -268,8 +269,9 @@ export function worldMap(w: World, next: string | undefined, hooks: MapHooks, co
   // scroll targets for the chapter buttons above the map
   for (const r of L.regions ?? []) wrap.append(h('span', { class: 'region-anchor', id: `alue-${r.id}`, style: `top:${((r.y - 30) / L.h) * 100}%` }));
   if (next) {
-    const n = L.nodes.get(next)!;
-    wrap.append(h('div', { class: 'avatar', style: pct(n.x - 32, n.y - 22), html: svg(60, 56, avatarArt(w)) }));
+    const avatar = h('div', { class: 'avatar map-traveller', 'aria-hidden': 'true', html: svg(60, 56, avatarArt(w)) });
+    wrap.append(avatar);
+    mountMapTravel(w, next, L, wrap, avatar);
   }
   return wrap;
 }

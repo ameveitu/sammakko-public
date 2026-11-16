@@ -1,39 +1,38 @@
-import { expect, test, type Page } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
-// One node per light (theory book) kind: the task shows one answer control and accepts the answer.
+import { answerBook, book, bookTask, fallbackBook, journey, openBook, pauseBook, reachQuestion } from './book-contract';
+
+// Preserve the ten light adapter families on the default learner route, now the book.
 const NODES = ['M79-GRAPH-MONO', 'CHEM79-COMPOUND', 'CHEM79-SOLUBILITY', 'M-GEO-17', 'M-PROB-04', 'M-GEO-24', 'M-GMEAS-04', 'M79-CONG-CRIT', 'CHEM79-MATTER-CONS', 'SCI-ENV-MODEL-01'];
-type Snapshot = { light: boolean; basisKind: string | null; taskKind: string | null; qaAnswer?: number; lastOk: boolean | null };
-const snapshot = (page: Page): Promise<Snapshot> => page.evaluate(() => JSON.parse((window as Window & { render_game_to_text?: () => string }).render_game_to_text!()));
-const task = (page: Page) => page.locator('.exp-task');
-
+test.beforeEach(async ({ page }) => fallbackBook(page));
 for (const id of NODES) {
   test(`${id} is one theory-book question with one answer control`, async ({ page }) => {
-    await page.goto(`./?qa=1&seed=3#saaristo/${id}`);
-    await page.getByRole('button', { name: 'Tutkitaan yhdessä', exact: true }).click();
-    const state = await snapshot(page);
-    expect(state.light).toBe(true);
-    expect(['choice', 'numeric']).toContain(state.taskKind);
-    expect(state.basisKind).not.toBeNull();
-    const controls = task(page).locator('input:not([type=hidden]), select, textarea, [role=slider]');
-    if (state.taskKind === 'choice') {
-      await expect(task(page).locator('button.opt').first()).toBeVisible();
+    await openBook(page, id);
+    await pauseBook(page);
+    await reachQuestion(page);
+    const state = await book(page);
+    expect(state.steps.filter(step => step === 'try')).toHaveLength(1);
+    expect(['choice', 'numeric']).toContain(state.tryKind);
+    const controls = bookTask(page).locator('input:not([type=hidden]), select, textarea, [role=slider]');
+    if (state.tryKind === 'choice') {
+      await expect(bookTask(page).locator('button.opt').first()).toBeVisible();
       expect(await controls.count()).toBe(0);
-      await task(page).locator('button.opt').nth(state.qaAnswer!).click();
     } else {
       expect(await controls.count()).toBeLessThanOrEqual(1);
-      expect(await task(page).locator('.keys').count()).toBe(1);
-      const text = String(state.qaAnswer).replace('.', ',').replace('-', '−');
-      for (const key of text) await task(page).getByRole('button', { name: key === ',' ? ',' : key, exact: true }).click();
-      await task(page).getByRole('button', { name: 'OK', exact: true }).click();
+      await expect(bookTask(page).locator('.keys')).toHaveCount(1);
     }
-    await expect.poll(async () => (await snapshot(page)).lastOk).toBe(true);
+    expect((await journey(page))?.attempts ?? []).toHaveLength(0);
+    await answerBook(page);
+    await expect(page.locator('.book-feedback')).toContainText('Oikein!');
+    expect((await journey(page)).attempts).toEqual([expect.objectContaining({ node: id, phase: 'guided', ok: true, mode: 'saaristo-kirja' })]);
+    await expect(bookTask(page).locator('button:not([disabled]), input:not([disabled])')).toHaveCount(0);
   });
 }
 
 test('full=1 keeps the full workbench for QA and the future full runtime', async ({ page }) => {
   await page.goto('./?qa=1&full=1&seed=3#saaristo/M79-GRAPH-MONO');
   await page.getByRole('button', { name: 'Tutkitaan yhdessä', exact: true }).click();
-  const state = await snapshot(page);
+  const state = await page.evaluate(() => JSON.parse(window.render_game_to_text!()));
   expect(state.light).toBe(false);
   expect(state.taskKind).toBe('function-garden');
 });

@@ -14,7 +14,8 @@ import { NODES, revOf } from '../content';
 import { chapterIn, chapterOf, chaptersFor, PRIZES, supportFor, worldInfo } from '../content/world';
 import { ICON } from './art';
 import { spriteHtml } from './sprite';
-import { btn, h, wait } from './dom';
+import { btn, h } from './dom';
+import { ordinaryWrong, progression } from './progression';
 import { canSpeak, hush, quiet, say, sfx, speechOff, speechPossible } from './speech';
 import { MOTION_CFG, scnRecord, type MotionPaint } from './motion';
 import { mount } from './widgets';
@@ -68,6 +69,13 @@ export function stopLesson() { const a = active; active = null; a?.(); }
 export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: LessonHooks, from?: string) {
   stopLesson();
   let mode = startMode;
+  const auto = progression();
+  let pauseButton: HTMLButtonElement | undefined;
+  const hold = () => { auto.pause(); if (pauseButton?.isConnected) { pauseButton.textContent = 'Jatka etenemistä'; pauseButton.setAttribute('aria-label', 'Jatka automaattista etenemistä'); } };
+  const suspend = () => { if (document.hidden) hold(); };
+  const replay = (event: Event) => { if ((event.target as HTMLElement).closest('.speak')) hold(); };
+  document.addEventListener('visibilitychange', suspend);
+  root.addEventListener('click', replay, true);
   const spec: NodeSpec = NODES[id]!;
   const back = from ? NODES[from] : undefined;
   const lab = chapterOf(id).world !== 'ranta' || mode === 'quick';
@@ -86,9 +94,10 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
   let helpedShown = store.lit(id);
   const wasKnown = store.known(id);
   let practiceLeft = 0, practiceOk = 0;
-  active = () => { cleanup?.(); cleanup = undefined; painted?.(); painted = undefined; };
+  active = () => { auto.dispose(); document.removeEventListener('visibilitychange', suspend); root.removeEventListener('click', replay, true); cleanup?.(); cleanup = undefined; painted?.(); painted = undefined; };
 
   function frame(kind: 'intro' | 'task' | 'story', sayText: string, ...body: (Node | null)[]) {
+    auto.cancel(); pauseButton = undefined; if (!document.hidden) auto.resume();
     cleanup?.();
     cleanup = painted;
     painted = undefined;
@@ -314,7 +323,18 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
       area, feedback, confusing);
     // Development builds only: browser QA answers through the same path as a tap.
     if (import.meta.env.DEV) (window as unknown as { __qa: unknown }).__qa = { id, phase, seed, tag: it.tag, answer: (ok: boolean) => onResp(ok ? solution(it.task) : wrongs(it.task)[0]!), show: (p: Phase, s: number) => item(p, 0, false, s) };
+    function automatic(text: string, kind: 'correct' | 'wrong', playback: ReturnType<typeof say>, advance: () => void) {
+      const schedule = () => auto.schedule(text, kind, playback, advance);
+      const pause = h('button', { type: 'button', class: 'small-btn', 'aria-label': 'Keskeytä automaattinen eteneminen', onclick: () => {
+        if (auto.paused) { auto.resume(); pause.textContent = 'Keskeytä eteneminen'; pause.setAttribute('aria-label', 'Keskeytä automaattinen eteneminen'); schedule(); }
+        else { auto.pause(); pause.textContent = 'Jatka etenemistä'; pause.setAttribute('aria-label', 'Jatka automaattista etenemistä'); }
+      } }, 'Keskeytä eteneminen');
+      pauseButton = pause; feedback.append(pause);
+      if (document.hidden || auto.paused) hold();
+      schedule();
+    }
     const onResp = (resp: Response) => {
+      auto.cancel();
       const v = check(it.task, resp);
       const recPhase: AttemptPhase = mode === 'quick' ? 'quick' : mode === 'practice' ? 'practice' : phase;
       const help: Help[] = [];
@@ -372,9 +392,7 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
             : h('p', {}, h('b', {}, p))));
         sfx('ui.confirm', 0.8);
         const praise = say(p, false, true);
-        // The answer is already recorded. Move on after 1.1 s, or when the praise has been heard,
-        // but never wait longer than 2.6 s for audio that is late, blocked or missing its end signal.
-        if (!note) Promise.race([Promise.all([wait(1100), praise.finished]), wait(2600)]).then(go);
+        if (!note) automatic(p, 'correct', praise, go);
       } else {
         w.reveal();
         const why = v.why ? `${v.why}\n` : '';
@@ -407,7 +425,13 @@ export function lesson(root: HTMLElement, id: string, startMode: Mode, hooks: Le
         }
         feedback.replaceChildren(box);
         sfx('ui.retry', 0.7);
-        say(msg, false, true);
+        const spoken = say(msg, false, true);
+        // Choices after repeated difficulty, retrieval and quick-check failure stay visible.
+        const ordinary = ordinaryWrong(shown, mode, guided, wrongRun);
+        if (ordinary) {
+          const nextButton = box.querySelector<HTMLButtonElement>('button');
+          if (nextButton) automatic(msg, 'wrong', spoken, () => { if (feedback.isConnected) nextButton.click(); });
+        }
       }
       // Feedback can land below the fold on a phone: bring it into view.
       requestAnimationFrame(() => feedback.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' }));

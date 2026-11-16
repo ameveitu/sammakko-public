@@ -5,7 +5,7 @@ test.use({launchOptions:{args:['--enable-unsafe-swiftshader']}});
 const state=(p:Page)=>p.evaluate(()=>JSON.parse(window.render_game_to_text!()));
 test('quiet task background keeps exact work responsive while its own experiment clock runs',async({page})=>{
   test.setTimeout(90000);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.emulateMedia({reducedMotion:'no-preference'});
-  await page.goto('./?qa=1&seed=0#saaristo/M-TH-05');await page.waitForLoadState('networkidle');
+  await page.goto('./?qa=1&seed=0&full=1#saaristo/M-TH-05');await page.waitForLoadState('networkidle');
   const intro=await state(page);expect(intro.renderer).toBe('webgl');expect(intro.world.workMode).toBe(false);
   await expect.poll(async()=>(await state(page)).world.time).toBeGreaterThan(intro.world.time);
   await page.getByRole('button',{name:'Kokeilen itse',exact:true}).click();await page.waitForLoadState('networkidle');

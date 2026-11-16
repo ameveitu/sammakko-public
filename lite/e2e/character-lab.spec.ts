@@ -50,6 +50,8 @@ test.describe('character lab on WebGL2', () => {
     await page.goto('./#saaristo/hahmot'); await expect(page.locator('.character-lab-status')).toContainText('Aava latautuu');
     await page.getByRole('link', { name: 'Takaisin Saaristoon' }).click();
     await expect(page.locator('.character-lab')).toHaveCount(0); release();
+    // The next route installs its hook asynchronously after the lab disposes its own.
+    await expect.poll(() => page.evaluate(() => typeof window.render_game_to_text)).toBe('function');
     await expect.poll(async () => (await state(page)).mode).not.toBe('character-lab');
     await page.evaluate(() => { location.hash = 'alueet'; });
     await expect(page.locator('.saaristo-canvas')).toHaveCount(0);
@@ -60,7 +62,7 @@ test.describe('character lab on WebGL2', () => {
     await page.goto('./#saaristo/hahmot'); await ready(page);
     const before = await saved(page);
     await page.getByRole('button', { name: 'Sisi', exact: true }).click(); await ready(page, 'sisi');
-    expect(await state(page)).toMatchObject({ renderer: 'webgl', character: 'sisi', bones: 18, paused: true, time: 0 });
+    expect(await state(page)).toMatchObject({ renderer: 'webgl', character: 'sisi', bones: 23, paused: true, time: 0 });
     const ground = (await state(page)).bounds.minY;
     const standing = (await state(page)).bounds.maxY;
     for (const [name, clip] of [['Kävely', 'walk'], ['Tervehdys', 'greet'], ['Torkahdus', 'sleep'], ['Lepo', 'idle']]) {

@@ -10,7 +10,7 @@ const values = (page: Page) => workbench(page).locator('table tbody td').allText
 const fraction = (text: string) => text.split('/').map(Number) as [number, number];
 const write = (n: number, d: number) => [...String(n), '/', ...String(d)];
 const goto = async (page: Page, id: Id) => {
-  await page.goto(`./?qa=1&seed=1#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=1&full=1#saaristo/${id}`);
   await page.getByRole('button', { name: 'Kokeilen itse', exact: true }).click();
   await expect(workbench(page)).toBeVisible();
 };
@@ -105,7 +105,7 @@ test.describe('LM08 fraction workshop', () => {
     await expect(workbench(page)).toContainText(`Valittu yhteinen jako: ${cuts} osaa`);
     await expect(task(page).getByRole('status')).toContainText(`Jäljelle jää ${delta * 2}/${cuts}`);
 
-    await page.goto('./?qa=1&seed=20#saaristo/M-FRAC-14');
+    await page.goto('./?qa=1&seed=20&full=1#saaristo/M-FRAC-14');
     await page.getByRole('button', { name: 'Tutkitaan yhdessä', exact: true }).click();
     await subtract(page, false);
     await page.getByRole('button', { name: 'Toinen yhteinen kokeilu', exact: true }).click();

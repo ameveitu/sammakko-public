@@ -15,3 +15,23 @@
 .lite-adventures { display: flex; flex-wrap: wrap; gap: 8px; }
 .lite-adventures a { text-decoration: none; }
 .lite-map-options > summary { cursor: pointer; padding-block: 12px; }
+
+/* Feet follow the drawn road; the small portrait sits above it, clear of the
+   place button. Places remain above passing portraits and retain all hit tests. */
+.wmap .map-traveller { width: 46px; height: 43px; transform: translate(-50%, calc(-100% - 34px)); animation: none; z-index: 1; will-change: left, top; }
+.wmap:not([data-travel="moving"]) .map-traveller { will-change: auto; }
+.wmap .place { z-index: 2; }
+.wmap .map-traveller::after { content: ''; position: absolute; left: 17px; bottom: -38px; width: 12px; height: 4px; border-radius: 50%; background: #5d734f; opacity: .35; }
+.map-travel-route { fill: none; stroke: #f6c94d; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; opacity: .8; pointer-events: none; }
+.wmap:not([data-travel="moving"]) .map-travel-route { opacity: 0; transition: opacity .4s; }
+.wmap.map-arrived .place.next .disc { animation: map-arrival .8s ease-out both; }
+@keyframes map-arrival { from { box-shadow: 0 0 0 14px #ffe68f88; } to { box-shadow: 0 0 0 6px #f4c54273; } }
+
+.book-travel-picture { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.book-travel-picture img { position: absolute; width: 100px; height: 100px; object-fit: contain; top: 44%; left: 20%; animation: book-picture-travel 620ms ease-in-out both; }
+.book-travel-picture .aava { width: 80px; height: 80px; top: 30%; left: 35%; }
+@keyframes book-picture-travel { 0% { transform: translateX(0) translateY(0); opacity: 0; } 20% { opacity: 1; } 65% { transform: translateX(95px) translateY(-35px); opacity: 1; } 100% { transform: translateX(160px) translateY(0); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .wmap.map-arrived .place.next .disc, .book-travel-picture img { animation: none; }
+  .map-travel-route { transition: none !important; }
+}

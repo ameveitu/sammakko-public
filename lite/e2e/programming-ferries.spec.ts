@@ -58,7 +58,7 @@ function findProgram(chart:Chart):Move[]{
   throw new Error('No feasible route on visible board');
 }
 async function open(page:Page,id:Id,seed=1){
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await btn(page,'Kokeilen itse').click();
   await expect(board(page)).toBeVisible();
   return snapshot(page);

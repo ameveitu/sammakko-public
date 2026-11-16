@@ -17,7 +17,7 @@ const comparison = [['below', 'Liian pieni'], ['fits', 'Sopii'], ['above', 'Liia
 
 export function arithmeticBoard(task: ArithmeticReasoningTask): Paint {
   return host => host.replaceChildren(h('div', { 'data-arithmetic-givens': '', style: grid },
-    h('p', { class: 'small', style: 'margin:0' }, title('Tuttu rakenne. '), task.context.title),
+    h('p', { class: 'small', style: 'margin:0', 'data-model-note': '' }, title('Tuttu rakenne. '), task.context.title),
     h('dl', { style: 'display:grid;grid-template-columns:auto minmax(0,1fr);margin:0;gap:2px 9px' },
       ...task.givens.flatMap(({ label, value }) => [h('dt', { style: 'font-weight:700' }, label), h('dd', { style: 'margin:0;font-size:14px' }, value)]))));
 }

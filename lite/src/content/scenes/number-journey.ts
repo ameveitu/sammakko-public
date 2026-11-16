@@ -16,7 +16,7 @@ const integer = (value: string) => /^[−+-]?\d{1,6}$/.test(value.trim()) ? Numb
 
 export function numberJourneyBoard(task: NumberJourneyTask): Paint {
   return host => host.replaceChildren(h('div', { 'data-number-givens': '', style: grid },
-    h('p', { class: 'small', style: 'margin:0' }, bold('Tuttu ajatus. '), task.context.title),
+    h('p', { class: 'small', style: 'margin:0', 'data-model-note': '' }, bold('Tuttu ajatus. '), task.context.title),
     h('dl', { style: 'display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 9px;margin:0' },
       ...task.givens.flatMap(({ label, value }) => [h('dt', { style: 'font-weight:700' }, label), h('dd', { style: 'margin:0;font-size:14px' }, value)]))));
 }

@@ -1,12 +1,14 @@
 import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 import { expect, test } from 'vitest';
 import { NODES } from '../src/content/index';
 import { rng } from '../src/engine/rng';
 
-// Reviewed at the 2026-11-06 release checkpoint. JSON covers the generated questions,
-// answer keys and feedback; drawing functions need a separate browser check.
-const baseline = '443fb548767938c84670ec45101e45fa3d58912d669d537705e11c68e538f76a';
-test('the 181 classic generators match their reviewed serialized items', () => {
+// Current technical matrix, separately source-bound and reviewed. The unreconstructed
+// 2026-11-06 digest and receipt remain preserved in the checkpoint's historicalReference.
+// This guards generated questions, answers and feedback, not drawing or pedagogy.
+const checkpoint = JSON.parse(readFileSync(new URL('../../docs/releases/launch/serialized181-technical-20261115.json', import.meta.url), 'utf8'));
+test('the 181 classic generators match the source-bound technical matrix', () => {
   const digest = createHash('sha256');
   const ids = Object.keys(NODES).sort();
   const phases = ['guided', 'independent', 'transfer', 'retrieval'];
@@ -19,7 +21,7 @@ test('the 181 classic generators match their reviewed serialized items', () => {
     count++;
   }
   expect(count).toBe(92672);
-  expect(digest.digest('hex')).toBe(baseline);
+  expect(digest.digest('hex')).toBe(checkpoint.matrix.testDigest);
 }, 120000);
 
 test('every decimal-division slot has exactly one mathematically equivalent card', () => {

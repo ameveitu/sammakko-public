@@ -12,7 +12,7 @@ const snapshot = (page: Page): Promise<State> => page.evaluate(() => JSON.parse(
 const evidence = (page: Page) => page.evaluate(() => JSON.parse(localStorage.getItem('sammakko-journey-3') ?? '{"attempts":[],"events":[]}'));
 const num = (s: string) => Number(s.replaceAll('−', '-').replace(',', '.'));
 async function open(page: Page, id: Id, seed = 1) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await btn(page, 'Kokeilen itse').click();
   await expect(board(page)).toBeVisible();
 }

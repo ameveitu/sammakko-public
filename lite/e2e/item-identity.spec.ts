@@ -15,7 +15,7 @@ test('another seed for an already practised item is skipped before independent a
       v: 3, events: [], effects: [], attempts: [{ node: id, rev, tag, itemKey, seed: 0, phase: 'guided', ok: true, at: 1 }],
     }));
   }, { id: spec.id, rev: spec.rev, tag: prior.tag, itemKey: key });
-  await page.goto(`./?qa=1&seed=${duplicate}#saaristo/${spec.id}`);
+  await page.goto(`./?qa=1&seed=${duplicate}&full=1#saaristo/${spec.id}`);
   await page.getByRole('button', { name: 'Kokeilen itse', exact: true }).click();
   const state = await page.evaluate(() => JSON.parse(window.render_game_to_text!()));
   expect(state.seed).not.toBe(duplicate);

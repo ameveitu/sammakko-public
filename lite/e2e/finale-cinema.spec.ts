@@ -11,7 +11,8 @@ test('the picture story is the default and loads no 3D film until asked',async({
 });
 async function seek(page:Page,t:number){
   await page.getByRole('slider',{name:'Etene tarinassa'}).evaluate((element,t)=>{const input=element as HTMLInputElement;input.value=String(t);input.dispatchEvent(new Event('input',{bubbles:true}));},t);
-  await expect.poll(async()=>(await state(page)).film.time).toBe(t);
+  await expect.poll(async()=>(await state(page)).time).toBe(t);
+  if(!(await state(page)).pictureMode) expect((await state(page)).film.time).toBe(t);
 }
 test('all35 screenplay shots render through the real Saaristo film and the final child has only the original bill',async({page},info)=>{
   test.setTimeout(240000);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',message=>{if(message.type()==='error')errors.push(message.text());});await page.emulateMedia({reducedMotion:'reduce'});
@@ -54,5 +55,5 @@ test('loss of WebGL preserves the current story, captions and controls',async({p
   await open3d(page);await expect.poll(async()=>(await state(page)).film.status,{timeout:45000}).toBe('ready');await seek(page,184);
   const lost=await page.evaluate(()=>{const canvas=document.querySelector<HTMLCanvasElement>('.ep-film canvas'),extension=canvas?.getContext('webgl2')?.getExtension('WEBGL_lose_context');if(!extension)return false;extension.loseContext();return true;});expect(lost).toBe(true);
   await expect(page.locator('.ep-film')).toHaveAttribute('data-ready','false');await expect(page.locator('.ep-art > svg')).toBeVisible();await expect(page.getByText('Sinä saat lähteä. Minä saan jäädä. Me saamme silti olla me.',{exact:false}).first()).toBeVisible();
-  await seek(page,512);expect((await state(page)).film.art).toBe('bill');
+  await seek(page,512);await expect(page.locator('.ep-screen')).toHaveAttribute('data-shot','bill');
 });

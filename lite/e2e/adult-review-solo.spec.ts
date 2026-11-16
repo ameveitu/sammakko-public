@@ -14,7 +14,7 @@ type Attempt = { node: string; phase: string; ok: boolean; help: string[]; asses
 const ledger = (p: Page): Promise<{ attempts: Attempt[] }> => p.evaluate(() => JSON.parse(localStorage.getItem('sammakko-journey-3') ?? '{"attempts":[]}'));
 
 test('pure explanation becomes a guided self-check that lets the story continue', async ({ page }) => {
-  await page.goto('./?qa=1&seed=7#saaristo/M-REP-03');
+  await page.goto('./?qa=1&seed=7&full=1#saaristo/M-REP-03');
   await btn(page, 'Kokeilen itse').click();
   await expect(page.locator('[data-explanation-board]')).toBeVisible();
   for (let round = 0; round < 2; round++) {

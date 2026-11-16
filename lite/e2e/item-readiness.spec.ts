@@ -13,7 +13,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('readiness describes the selected quantity and does not turn its story into mastery', async ({ page }) => {
-  await page.goto('./?qa=1&seed=1#saaristo/M-MEAS-12');
+  await page.goto('./?qa=1&seed=1&full=1#saaristo/M-MEAS-12');
   await page.getByRole('button', { name: 'Aikuiselle: retken tiedot' }).click();
   await expect(page.locator('[data-item-readiness]')).toHaveAttribute('data-item-readiness', 'no-item');
   await page.keyboard.press('Escape');
@@ -43,7 +43,7 @@ test('readiness describes the selected quantity and does not turn its story into
 // in the running game; tests/item-readiness*.test.ts cover it with unknown structures. This keeps the browser check that
 // readiness only informs the adult and never blocks or records direct investigation.
 test('an audited equation context reports missing evidence while direct investigation remains possible', async ({ page }) => {
-  await page.goto('./?qa=1&seed=1#saaristo/M79-EQ1-SOLVE');
+  await page.goto('./?qa=1&seed=1&full=1#saaristo/M79-EQ1-SOLVE');
   await page.getByRole('button', { name: 'Kokeilen itse', exact: true }).click();
   const current = await snapshot(page);
   expect(current.itemReadiness).toMatchObject({ diagnosticAvailable: true, dynamic: { status: 'missing' } });

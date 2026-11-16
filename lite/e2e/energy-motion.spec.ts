@@ -5,7 +5,7 @@ const state = (page: Page) => page.evaluate(() => JSON.parse(window.render_game_
 test('observing the energy experiment starts its clock and respects pause and reduced motion', async ({ page }) => {
   test.setTimeout(60_000); // Software WebGL renders the original Saaristo as well as the apparatus.
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
-  await page.goto('./?qa=1&seed=0#saaristo/PHY79-KINETIC');
+  await page.goto('./?qa=1&seed=0&full=1#saaristo/PHY79-KINETIC');
   await page.getByRole('button', { name: 'Tutkitaan yhdessä', exact: true }).click();
   const initial = await state(page), g = initial.model.given;
   expect(initial.renderer).toBe('webgl'); expect(initial.stage.elapsed).toBe(0);

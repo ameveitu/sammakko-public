@@ -19,7 +19,7 @@ const exponentText = (text: string) => text.replace(/[⁰¹²³⁴⁵⁶⁷⁸�
 const parsePowers = (text: string) => [...text.matchAll(/([⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+)/g)].map(([n]) => Number(exponentText(n)));
 
 async function open(page: Page, id: Id, seed = 7) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(page, 'Kokeilen itse').click();
   await expect(workbench(page)).toBeVisible();
   await expect(givens(page)).toContainText('Tuttu rakenne');

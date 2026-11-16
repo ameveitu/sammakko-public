@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test';
 
 type State = {node:string;family:string;taskKind:string;lastOk?:boolean;model:{kind:string;rotation:number;site:'A'|'B';siteOffset:0|180;mode:string;latitude:number;month:'june'|'december';pair:string}};
 const state=(page:Page):Promise<State>=>page.evaluate(()=>JSON.parse(window.render_game_to_text!()));
-async function begin(page:Page,id:string,seed=0) { await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`); await page.reload(); await page.getByRole('button',{name:'Tutkitaan yhdessä',exact:true}).click(); }
+async function begin(page:Page,id:string,seed=0) { await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`); await page.reload(); await page.getByRole('button',{name:'Tutkitaan yhdessä',exact:true}).click(); }
 
 test.beforeEach(async ({page})=>{
   await page.emulateMedia({reducedMotion:'reduce'});

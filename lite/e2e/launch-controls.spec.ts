@@ -31,6 +31,8 @@ for (const { kc, selector, keys } of [
 
 test('flight: keyboard resumes hidden pause, repeated replay retains tester truth and exits', async ({ page }) => {
   await page.goto('./#paja');
+  await expect(page.locator('.paja-stage')).toBeVisible();
+  await expect.poll(() => page.evaluate(key => localStorage.getItem(key), KEY)).not.toBeNull();
   await page.evaluate(key => {
     const s = JSON.parse(localStorage.getItem(key)!);
     const inv: Record<string, unknown> = { vihko: { from: 'start', at: 0 } };

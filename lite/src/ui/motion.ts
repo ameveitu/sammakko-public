@@ -7,6 +7,7 @@ import { Clock, frameAt, Run, type Frame, type Leg, type Track } from '../engine
 import type { Paint } from '../engine/types';
 import { duck, frog, ICON, svg } from './art';
 import { btn, h } from './dom';
+import { PAUSE_ICON } from './player-icon';
 
 export type View = 'track' | 'ruler' | 'watch' | 'lamps' | 'timeline' | 'table' | 'st' | 'vt' | 'strobe' | 'speedo' | 'laps';
 export type Thing = 'car' | 'car2' | 'duck' | 'frog' | 'leaf' | 'boat';
@@ -186,6 +187,7 @@ export function motionScene(c: MotionCfg): MotionPaint {
       clock.play(performance.now()); start();
     }, 'primary');
     const playLabel = playBtn.querySelector('span:last-child') as HTMLElement;
+    const playIcon = playBtn.querySelector<HTMLElement>('.ico');
     const draw = () => {
       const fs = frames();
       trackEl.innerHTML = trackSvg(c, fs) + (c.track.kind === 'oval' ? unrolled(c, fs[0]!.s, Math.max(c.track.L, runs[0]!.s(c.end))) : '');
@@ -203,6 +205,10 @@ export function motionScene(c: MotionCfg): MotionPaint {
       if (has('st')) stEl.innerHTML = graphSvg('st', c, runs, clock.t);
       if (has('vt') && !c.hideSpeed) vtEl.innerHTML = graphSvg('vt', c, runs, clock.t);
       playLabel.textContent = clock.playing ? 'Tauko' : clock.t > 0 && clock.t < c.end ? 'Jatka' : clock.t >= c.end ? 'Alusta' : 'Käynnistä';
+      // The icon says what the button does now: pause while playing, replay at the end.
+      const icon = clock.playing ? 'pause' : clock.t >= c.end ? 'replay' : 'next';
+      if (playIcon && playIcon.dataset.icon !== icon) { playIcon.innerHTML = icon === 'pause' ? PAUSE_ICON : ICON[icon]; playIcon.dataset.icon = icon; }
+      playBtn.setAttribute('aria-label', playLabel.textContent);
       if (clock.rate === 1 || clock.autoPaused) status.textContent = clock.autoPaused ? 'Tauko: sivu oli piilossa.' : clock.playing && runs.every((r) => r.v(clock.t) === 0) && runs.some((r) => r.s(clock.t) > 0) ? 'Kaikki paikallaan. Aika kulkee.' : '';
     };
     // A trial counts as observed only when the run is played (not scrubbed or skipped) to the finish.

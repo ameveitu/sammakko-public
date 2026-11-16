@@ -40,7 +40,7 @@ async function decompose(page: Page, wrong: boolean) {
 test('the learner’s wrong decomposition really fails in the machine before a correct fresh recovery', async ({ page }, info) => {
   test.setTimeout(120_000);
   const errors: string[] = []; page.on('pageerror', error => errors.push(error.message));
-  await page.goto('./?qa=1&seed=0#saaristo/M79-ALGTH-01');
+  await page.goto('./?qa=1&seed=0&full=1#saaristo/M79-ALGTH-01');
   await button(page, 'Tutkitaan yhdessä').click(); expect((await state(page)).renderer).toBe('webgl');
   await decompose(page, true);
   await button(page, 'Uusi kokeilu').click(); await decompose(page, false);
@@ -51,8 +51,10 @@ test('the learner’s wrong decomposition really fails in the machine before a c
 test('own rectangle research displays its model and records only the adult criteria, not the explanation', async ({ page }, info) => {
   test.setTimeout(120_000);
   const errors: string[] = []; page.on('pageerror', error => errors.push(error.message));
+  // This contract examines adult criteria; solo mode deliberately omits that handoff.
+  await page.addInitScript(() => localStorage.setItem('sammakko-saaristo-adult-review', 'on'));
   await page.setViewportSize({ width: 768, height: 1024 });
-  await page.goto('./?qa=1&seed=0#saaristo/M79-TECH-01'); await button(page, 'Kokeilen itse').click();
+  await page.goto('./?qa=1&seed=0&full=1#saaristo/M79-TECH-01'); await button(page, 'Kokeilen itse').click();
   expect((await state(page)).renderer).toBe('webgl');
   const given = await page.locator('.exp-exact').innerText();
   const match = given.match(/puolipiiri on (\d+)/); expect(match).not.toBeNull(); const max = Number(match![1]);

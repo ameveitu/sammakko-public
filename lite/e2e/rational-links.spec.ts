@@ -15,7 +15,7 @@ const saved = (page: Page) => page.evaluate(() => JSON.parse(localStorage.getIte
 const mark = (page: Page, kind: Form) => form(page).locator(`[data-rational-format="${kind}"]`);
 
 async function open(page: Page, id: Id, seed = 7, guided = false) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(page, guided ? 'Tutkitaan yhdessä' : 'Kokeilen itse').click();
   await expect(form(page)).toBeVisible();
   expect((await shot(page)).node).toBe(id);

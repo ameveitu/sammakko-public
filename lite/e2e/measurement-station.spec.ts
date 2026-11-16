@@ -15,7 +15,7 @@ const givens = (page: Page) => page.locator('[data-measure-givens]');
 const submit = (page: Page) => button(page, 'Tarkista mittalappu');
 
 async function open(page: Page, id: Id, seed = 7) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(page, 'Kokeilen itse').click();
   await expect(board(page)).toBeVisible();
   expect((await shot(page)).contentContext.skills.length).toBeGreaterThan(0);

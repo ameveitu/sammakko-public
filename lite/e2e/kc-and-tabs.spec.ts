@@ -145,8 +145,10 @@ test.describe('two tabs (review G01)', () => {
   });
 });
 
-test('the /lite/ deployment prefix preserves KC routes and title-list recovery', async ({ page }) => {
-  const base = 'http://127.0.0.1:5203/lite/';
+test('the /lite/ deployment prefix preserves KC routes and title-list recovery', async ({ page, baseURL }) => {
+  const prefix = new URL('lite/', baseURL);
+  prefix.port = String(Number(prefix.port) + 1);
+  const base = prefix.href;
   const errors: string[] = [], titleRequests: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
   page.on('request', (r) => {

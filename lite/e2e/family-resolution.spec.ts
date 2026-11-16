@@ -16,7 +16,7 @@ async function sameAndDifferent(p:Page) {
 test('a real guided observation resolves a local world once; pause, skip and reload preserve evidence',async({page},info)=>{
   test.setTimeout(90000);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
   await page.setViewportSize({width:1024,height:768});await page.emulateMedia({reducedMotion:'no-preference'});
-  await page.goto('./?qa=1&seed=1#saaristo/M-TH-01');await page.getByRole('button',{name:'Tutkitaan yhdessä',exact:true}).click();
+  await page.goto('./?qa=1&seed=1&full=1#saaristo/M-TH-01');await page.getByRole('button',{name:'Tutkitaan yhdessä',exact:true}).click();
   await expect.poll(async()=>(await state(page)).renderer).toBe('webgl');
   await sameAndDifferent(page);await expect(page.locator('.exp-feedback')).toHaveAttribute('data-ok','true');
   await page.getByRole('button',{name:'Toinen yhteinen kokeilu',exact:true}).click();

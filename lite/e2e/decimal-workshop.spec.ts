@@ -21,7 +21,7 @@ const asHundredths = (value: string): number => {
 };
 
 async function open(page: Page, id: Id, seed = 7, guided = false) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(page, guided ? 'Tutkitaan yhdessä' : 'Kokeilen itse').click();
   await expect(board(page)).toHaveAttribute('data-decimal-workbench', 'given');
   expect((await snapshot(page)).node).toBe(id);

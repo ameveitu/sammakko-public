@@ -17,7 +17,7 @@ const feedback = (page: Page) => page.locator('.exp-feedback');
 const nums = (s: string) => [...s.matchAll(/\d+/g)].map(match => Number(match[0]));
 
 async function open(page: Page, id: Id, seed = 7) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(page, 'Kokeilen itse').click();
   await expect(workbench(page)).toBeVisible();
   expect((await shot(page)).contentContext.skills.length).toBeGreaterThan(0);

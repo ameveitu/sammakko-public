@@ -22,7 +22,7 @@ const workbench = (page: Page) => page.locator('.quantity-workbench');
 const submitButton = (page: Page) => task(page).getByRole('button', { name: 'OK', exact: true });
 const outcome = (page: Page) => page.locator('.exp-feedback');
 const goto = async (page: Page, id: Id, seed = 1) => {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await page.getByRole('button', { name: 'Kokeilen itse', exact: true }).click();
   await expect(workbench(page)).toBeVisible();
 };

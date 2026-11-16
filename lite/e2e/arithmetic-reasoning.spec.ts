@@ -19,7 +19,7 @@ const feedback = (page: Page) => page.locator('.exp-feedback');
 const nums = (text: string) => [...text.matchAll(/\d+/g)].map(match => Number(match[0]));
 
 async function open(page: Page, id: Id, seed = 7) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(page, 'Kokeilen itse').click();
   if (id === 'M-ALG-02') await expect(page.locator('[data-observed-explanation="spoken"]')).toBeVisible();
   else await expect(workbench(page)).toBeVisible();

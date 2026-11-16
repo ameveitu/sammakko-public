@@ -1,0 +1,78 @@
+{
+  "file": "space-winter-20261110-005302.png",
+  "sha256": "7a8f7a4ce03961e2c7ba12e01e73d7c7ac3d5db8cb5a8d05e6b489a15c84d484",
+  "bytes": 1609383,
+  "createdAt": "2026-11-09T22:52:39.814Z",
+  "tool": "sammakko-imagegen 1.0.0",
+  "keySource": "keychain",
+  "endpoint": "images/edits",
+  "requestId": "req_668c0af0b10847b09078bb35cad84799",
+  "model": "gpt-image-2.5-flare",
+  "preset": "sprite",
+  "params": {
+    "size": "1024x1024",
+    "quality": "high",
+    "background": "transparent",
+    "output_format": "png",
+    "output_compression": null,
+    "n": 1,
+    "moderation": "auto"
+  },
+  "returned": {
+    "size": "1024x1024",
+    "quality": "high",
+    "background": "transparent",
+    "output_format": "png"
+  },
+  "prompt": "Style: hand-drawn children's picture-book illustration in the Sammakko style. Soft colored-pencil and wax-crayon texture inside the shapes, with visible grainy strokes. Bold, smooth, rounded dark navy-blue outline (#244868-like) of even weight around every shape. Simple friendly faces: round black eyes with one small white highlight, small pink blush on the cheeks. Bright but gentle colors, flat even lighting, no hard shadows, no gradients, no 3D render look, no photorealism. Clean silhouette that reads well at small size (128-256 px). No text, no letters, no watermark, no frame.\n\nCharacter Aava (must match the reference images exactly): a small pale butter-yellow duckling drawn in SIDE PROFILE facing right. Large rounded orange bill made of two soft lobes (upper and lower) with a darker orange outline, pointing right. One simple round dark-blue/black eye with a tiny white highlight, a soft pink blush dot under the eye. Round head on a short pear-shaped body, a small rounded wing on the side, a short pointed tail at the back-left, two thin orange legs with small webbed feet. NO hair tuft on the head, NO open mouth, NO eyebrows, NO extra details. Dark-blue outline (#244868) of even weight. Aava is the main character and the brand mascot: never redesign her.\n\nCharacter Loikka (must match the reference images exactly): a friendly sky-blue frog with a speckled, sparkly blue crayon texture. Two large round bulging eyes on top of the head with pale cream-yellow whites, dark pupils and a small highlight. Wide simple smile, soft pink blush on both cheeks, a pale light-blue oval belly patch, short arms and legs with round toe tips, standing upright. Deep-blue outline (#033d85) of even weight. Loikka is Aava's friend and sidekick.\n\nA single game sprite of Aava and Loikka sit together on a small wooden sled on a little patch of snow. Both wear warm knitted woolly hats with pompoms and striped scarves. Happy faces, a few snowflakes. Whole sled and both characters visible, centered, nothing else.. Pose / action: standing, friendly, looking at the viewer. Full body visible, centered, with generous empty margin on all sides so nothing touches the edges. Transparent background, no ground, no cast shadow, no scenery.",
+  "promptParts": [
+    {
+      "from": "style-sammakko",
+      "text": "Style: hand-drawn children's picture-book illustration in the Sammakko style. Soft colored-pencil and wax-crayon texture inside the shapes, with visible grainy strokes. Bold, smooth, rounded dark navy-blue outline (#244868-like) of even weight around every shape. Simple friendly faces: round black eyes with one small white highlight, small pink blush on the cheeks. Bright but gentle colors, flat even lighting, no hard shadows, no gradients, no 3D render look, no photorealism. Clean silhouette that reads well at small size (128-256 px). No text, no letters, no watermark, no frame."
+    },
+    {
+      "from": "character-aava",
+      "text": "Character Aava (must match the reference images exactly): a small pale butter-yellow duckling drawn in SIDE PROFILE facing right. Large rounded orange bill made of two soft lobes (upper and lower) with a darker orange outline, pointing right. One simple round dark-blue/black eye with a tiny white highlight, a soft pink blush dot under the eye. Round head on a short pear-shaped body, a small rounded wing on the side, a short pointed tail at the back-left, two thin orange legs with small webbed feet. NO hair tuft on the head, NO open mouth, NO eyebrows, NO extra details. Dark-blue outline (#244868) of even weight. Aava is the main character and the brand mascot: never redesign her."
+    },
+    {
+      "from": "character-loikka",
+      "text": "Character Loikka (must match the reference images exactly): a friendly sky-blue frog with a speckled, sparkly blue crayon texture. Two large round bulging eyes on top of the head with pale cream-yellow whites, dark pupils and a small highlight. Wide simple smile, soft pink blush on both cheeks, a pale light-blue oval belly patch, short arms and legs with round toe tips, standing upright. Deep-blue outline (#033d85) of even weight. Loikka is Aava's friend and sidekick."
+    },
+    {
+      "from": "sprite",
+      "text": "A single game sprite of Aava and Loikka sit together on a small wooden sled on a little patch of snow. Both wear warm knitted woolly hats with pompoms and striped scarves. Happy faces, a few snowflakes. Whole sled and both characters visible, centered, nothing else.. Pose / action: standing, friendly, looking at the viewer. Full body visible, centered, with generous empty margin on all sides so nothing touches the edges. Transparent background, no ground, no cast shadow, no scenery."
+    }
+  ],
+  "inputs": [
+    {
+      "file": "lite/public/characters/aava/idle.png",
+      "sha256": "84675b1db8291223a553c76ceca0053553de9597667d16025a5580c92b423b83"
+    },
+    {
+      "file": "lite/public/characters/loikka/idle.png",
+      "sha256": "de2aa05fec754aee9d52cdcbc5b0488cf633f527d0507d0b3a7d517707289060"
+    }
+  ],
+  "mask": null,
+  "cost": {
+    "estimateUsd": 0.3098,
+    "actualUsd": 0.059366,
+    "usage": {
+      "input_tokens": 1030,
+      "input_tokens_details": {
+        "image_tokens": 512,
+        "text_tokens": 518
+      },
+      "output_tokens": 1756,
+      "output_tokens_details": {
+        "image_tokens": 1756,
+        "text_tokens": 0
+      },
+      "total_tokens": 2786
+    },
+    "imagesInRequest": 1,
+    "note": "actualUsd koskee koko pyyntöä"
+  },
+  "seconds": 23,
+  "license": "OpenAI-ehdot: tuotos kuuluu käyttäjälle; tarkista README:n lisenssiosio ennen julkaisua."
+}

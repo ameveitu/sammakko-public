@@ -3,10 +3,12 @@ import {rng} from '../src/engine/rng';
 import {wavesObservatorySpecs} from '../src/content/waves-observatory';
 import type {WavesObservatoryTask} from '../src/content/models/waves-observatory';
 import {independentlyAnswerWaves} from '../tests/waves-observatory-fixtures';
+// These peer cases exercise the explicit adult-review contract.
+test.beforeEach(async ({page})=>{await page.addInitScript(()=>{try{localStorage.setItem('sammakko-saaristo-adult-review','on');}catch{/* storage blocked */}});});
 test.use({contextOptions:{reducedMotion:'reduce'},launchOptions:{args:['--enable-unsafe-swiftshader']}});
 const state=(p:Page)=>p.evaluate(()=>JSON.parse(window.render_game_to_text!()));
 const button=(p:Page,name:string)=>p.getByRole('button',{name,exact:true});
-async function start(p:Page,id:string,seed=8){await p.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);await button(p,'Kokeilen itse').click();}
+async function start(p:Page,id:string,seed=8){await p.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);await button(p,'Kokeilen itse').click();}
 async function answer(p:Page,info?:TestInfo,helped=false){
   const before=await state(p),spec=wavesObservatorySpecs.find(s=>s.id===before.node)!;
   const task=spec.item(rng(before.seed),before.phase,{knownChecked:id=>id===(before.contentContext?.route==='particle'?'PHY79-RAD-PARTICLE':'PHY79-RAD-EM')}).task as WavesObservatoryTask;

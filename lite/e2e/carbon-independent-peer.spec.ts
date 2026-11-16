@@ -10,7 +10,7 @@ const b=(p:Page,name:string)=>p.getByRole('button',{name,exact:true});
 const f=(p:Page,name:string)=>p.getByLabel(name,{exact:true});
 const state=(p:Page)=>p.evaluate(()=>JSON.parse(window.render_game_to_text!()));
 const saved=(p:Page)=>p.evaluate(()=>JSON.parse(localStorage.getItem('sammakko-journey-3')??'{"attempts":[]}'));
-async function go(p:Page,id:string,seed=1){await p.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);await b(p,'Kokeilen itse').click();await expect.poll(async()=>(await state(p)).renderer).toBe('webgl');}
+async function go(p:Page,id:string,seed=1){await p.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);await b(p,'Kokeilen itse').click();await expect.poll(async()=>(await state(p)).renderer).toBe('webgl');}
 async function task(p:Page){const s=await state(p);return carbonKitchenSpecs.find(n=>n.id===s.node)!.item(rng(s.seed),s.phase).task as CarbonKitchenTask;}
 async function composition(p:Page,wrong=false){const t=await task(p),a=carbonOwnAnswer(t);if(t.mode!=='composition'||a.mode!=='composition')throw Error('composition');await f(p,'Hiilen alkuaineen tunnus').selectOption('C');for(const row of a.rows){await f(p,`${row.id} hiiliatomien määrä`).fill(String(row.carbon));await f(p,`${row.id} aineen tyyppi`).selectOption(row.type!);}if(t.claim)await f(p,'Väitteen vastaesimerkki').selectOption(wrong?'d':a.counterexample!);return t;}
 test('a second valid counterexample survives the visible repair and fresh transfer path',async({page},info)=>{

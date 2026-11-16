@@ -25,7 +25,7 @@ function atomCounts(raw:string):Inventory{
   return counts;
 }
 async function start(p:Page,id:string,seed=1,independent=true){
-  await p.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await p.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await btn(p,independent?'Kokeilen itse':'Tutkitaan yhdessä').click();
   await expect(work(p)).toBeVisible();
 }

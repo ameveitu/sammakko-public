@@ -12,6 +12,8 @@ function el<K extends keyof HTMLElementTagNameMap>(tag: K, text?: string) {
     return node;
 }
 function note(text: string) { const n = el('p', text); n.style.cssText = 'margin:0;font-size:13px;line-height:1.2'; return n; }
+/** A note about the model itself (scale, symbols, sources), not about the task. The theory book leaves these out. */
+function limitNote(text: string) { const n = note(text); n.dataset.modelNote = ''; return n; }
 function button(text: string, action: () => void) { const b = el('button', text); b.type = 'button'; b.className = 'btn'; b.style.cssText = 'min-height:45px;font-size:13px;line-height:1.15;padding:4px 6px'; b.onclick = action; return b; }
 function field<T extends HTMLInputElement | HTMLSelectElement>(name: string, input: T, caption = name) { const wrapper = el('label', caption); wrapper.style.cssText = 'display:grid;gap:1px;min-width:0;font-size:13px;line-height:1.15'; input.setAttribute('aria-label', name); input.style.cssText = 'font:inherit;box-sizing:border-box;min-height:45px;min-width:44px;max-width:100%;width:100%;border:1px solid #76958a;border-radius:6px;padding:3px 5px;color:#224b43;background:#fffdf4'; wrapper.append(input); return wrapper; }
 function text(name: string, caption = name) { const input = el('input'); input.type = 'text'; input.autocomplete = 'off'; input.maxLength = 32; return { node: field(name, input, caption), input, get: () => input.value.trim() }; }
@@ -182,7 +184,7 @@ export const atomicWorldPaint = (task: AtomicWorldTask): Paint => (host, context
     root.dataset.atomicMode = task.mode;
     root.style.cssText = stack;
     if (task.mode !== 'phase' && task.mode !== 'model-use')
-        root.append(note('Pienten rakenteiden luolat · havainto ja selitysmalli pidetään erillään.'));
+        root.append(limitNote('Pienten rakenteiden luolat · havainto ja selitysmalli pidetään erillään.'));
     if (task.mode === 'atom') {
         if (task.sample)
             root.append(note(`${task.sample.appearance} · alkuaine ${task.sample.symbol} · ${task.sample.units} rakenneyksikköä, jokaisessa ${task.sample.atomsPerUnit} atomia. Näytteen märkyys, kiinteys tai väri koskee suurta näytettä.`));
@@ -199,19 +201,19 @@ export const atomicWorldPaint = (task: AtomicWorldTask): Paint => (host, context
             root.append(note(task.inverse ? `Etsi kortti, jonka varaus on ${atomicParticleFacts[task.particle!].charge} ja alue ${labels[atomicParticleFacts[task.particle!].region]}.` : `Tutkittava hiukkanen ${atomicParticleFacts[task.particle!].label}.`), note('Hiukkaskortit · protoni +1 ytimessä · neutroni 0 ytimessä · elektroni −1 elektroniverhon kuvauksessa. Neutroni on massallinen hiukkanen, vaikka varaus on nolla.'));
         if (task.activity === 'number')
             root.append(periodicTable());
-        root.append(note(atomicModelLimit));
+        root.append(limitNote(atomicModelLimit));
     }
     else if (task.mode === 'sample')
-        root.append(samplePicture(task), note('Toisiinsa yhdistetyt atomit kuuluvat samaan molekyyliin. Hilan katkoviivainen ikkuna jatkuu. Seoksessa on erillisiä aineita. Lukumäärä tarkoittaa kuvattuja atomeja, molekyylejä tai hilatoistoyksiköitä, ei makronäytteen kaikkia atomeja.'));
+        root.append(samplePicture(task), limitNote('Toisiinsa yhdistetyt atomit kuuluvat samaan molekyyliin. Hilan katkoviivainen ikkuna jatkuu. Seoksessa on erillisiä aineita. Lukumäärä tarkoittaa kuvattuja atomeja, molekyylejä tai hilatoistoyksiköitä, ei makronäytteen kaikkia atomeja.'));
     else if (task.mode === 'build') {
         if (task.structure === 'molecule')
             root.append(note(`Rakenna yksi ${task.compound}-molekyyli. Koostumus ${Object.entries(task.composition).map(([s, n]) => `${s} × ${n}`).join(' · ')}.`), note(`Annettu sidontamalli ${Object.entries(task.valences).map(([s, n]) => `${s}, sidosten kertalukusumma ${n}`).join(' · ')}. Yksi, kaksi tai kolme viivaa merkitsevät sidoksen kertalukua. Atomipankissa on ylimääräisiä osia.`));
         else
             root.append(note(`${task.compound} · annetun hilaikkunan suhde ${task.species[0]}:${task.species[1]} = ${task.counts[0]}:${task.counts[1]}. Lähinaapurien merkit vuorottelevat kaikissa kolmessa suunnassa. Paikka s1 on ${task.species[0]}.`), note('Täydennä alla näkyvät kerroskartat. Kaikki paikat ovat tarjolla myös koordinaattivalikossa.'));
-        root.append(note('Oma rakenne päivittyy 3D-työpöydälle ja tarkkaan 2D-esikatseluun. Symbolien koko ja sidostikut ovat kaavamaisia.'));
+        root.append(limitNote('Oma rakenne päivittyy 3D-työpöydälle ja tarkkaan 2D-esikatseluun. Symbolien koko ja sidostikut ovat kaavamaisia.'));
     }
     else if (task.mode === 'periodic') {
-        root.append(periodicTable(), note('IUPACin ryhmänumerot 1–18. Tämä on nimetty osajoukko oikeasta taulukosta. Tyhjät kohdat ovat pois jätettyjä alkuaineita. Taulukko kuvaa aineiden järjestystä, ei niiden maantieteellistä sijaintia.'));
+        root.append(periodicTable(), limitNote('IUPACin ryhmänumerot 1–18. Tämä on nimetty osajoukko oikeasta taulukosta. Tyhjät kohdat ovat pois jätettyjä alkuaineita. Taulukko kuvaa aineiden järjestystä, ei niiden maantieteellistä sijaintia.'));
         const e = atomicElement(task.target)!;
         root.append(note(task.activity === 'order' ? `Kortit ${task.cards.map(s => `${s}, Z=${atomicElement(s)!.z}`).join(' · ')}` : task.activity === 'fill' ? `Nimetön kohde, järjestysluku Z=${e.z}` : task.activity === 'inverse' ? `Kohde ryhmässä ${e.group}, jaksossa ${e.period}` : `Kohde ${e.symbol} · ${e.name}`));
     }
@@ -225,7 +227,7 @@ export const atomicWorldPaint = (task: AtomicWorldTask): Paint => (host, context
         root.append(note(`Kohde ${e.symbol}, ryhmä ${e.group}, jakso ${e.period}. Vertailukortti ${task.comparison}.`));
         if (task.property === 'state')
             root.append(note(`Kohteen annettu sulamispiste ${e.meltingC} °C ja kiehumispiste ${e.boilingC} °C. Alle sulamispisteen kiinteä, niiden välissä neste, yli kiehumispisteen kaasu. Tässä 20 °C ei ole rajalla.`));
-        root.append(note('Annetut RSC-taulukkoarvot. Näiden rivien suuntausta käytetään rajattuna ennustemallina. Havainto avautuu vasta lukituksen jälkeen.'));
+        root.append(limitNote('Annetut RSC-taulukkoarvot. Näiden rivien suuntausta käytetään rajattuna ennustemallina. Havainto avautuu vasta lukituksen jälkeen.'));
     }
     else if (task.mode === 'phase') {
         const row = el('div');
@@ -243,7 +245,7 @@ export const atomicWorldPaint = (task: AtomicWorldTask): Paint => (host, context
         root.append(note(task.chambers[0]!.substance === 'water' ? 'Vesi normaalipaineessa · sulaminen 0 °C · kiehuminen 100 °C. Jään avoin rakenne tekee sen väleistä tässä mallissa nestettä suuremmat.' : 'Argon normaalipaineessa · sulamispiste noin −189 °C · kiehumispiste noin −186 °C.'));
         if (task.change)
             root.append(note(`Toimenpide ${task.change === 'melt' ? 'lämmitä jää sulaksi' : task.change === 'vaporize' ? 'lämmitä vesi höyryksi' : 'jäähdytä vesihöyry nesteeksi'} · lopun lämpötila ${task.afterTemperatureC} °C. Suljettu mallikammio.`));
-        root.append(note('Kaavamainen malli · hiukkasen oma koko on vakio. Nuolet ja 3D näyttävät liikettä, eivät laskettuja molekyyliratoja.'));
+        root.append(limitNote('Kaavamainen malli · hiukkasen oma koko on vakio. Nuolet ja 3D näyttävät liikettä, eivät laskettuja molekyyliratoja.'));
     }
     else if (task.mode === 'model-use') {
         for (const s of task.structures)

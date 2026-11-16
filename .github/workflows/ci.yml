@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   pull_request:
+    # The temporary account diagnostic has its own deliberately tiny workflow.
+    branches-ignore: [d7-webkit-diagnostic-base-20261115]
   workflow_dispatch:
     inputs:
       delivery:
@@ -30,6 +32,8 @@ concurrency:
 permissions:
   contents: read
 jobs:
+  # PRs run focused validation; main and every manual run retain the full
+  # source-bound release matrix below. A PR pass is not a release acceptance.
   art:
     runs-on: ubuntu-24.04
     timeout-minutes: 5
@@ -84,6 +88,25 @@ jobs:
       - name: Record checked Lite tree
         id: digest
         run: echo "sha=$(bash ../.github/scripts/tree-digest.sh dist)" >> "$GITHUB_OUTPUT"
+  pr-contracts:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: lite/.nvmrc
+          cache: npm
+          cache-dependency-path: public/oppitunnit/package-lock.json
+      - run: npm ci
+        working-directory: public/oppitunnit
+      - name: Publication and lesson source contracts
+        run: node --test public/shared/test-navigation.mjs public/oppimisverkko/test-view.mjs public/oppimisverkko/test-navigation.mjs public/whitepaper/test-build.mjs .github/scripts/test-publication-metadata.mjs .github/scripts/test-launch-review-gate.mjs public/oppitunnit/lesson-network/test-audience.mjs
+      - name: Check generated publication sources
+        run: |
+          node public/shared/navigation.mjs --check
+          node public/whitepaper/build.mjs --check
   browsers:
     needs: check
     runs-on: ubuntu-24.04
@@ -91,7 +114,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        engine: [chromium, firefox, webkit]
+        engine: ${{ fromJSON(github.event_name == 'pull_request' && '["chromium"]' || '["chromium","firefox","webkit"]') }}
     defaults:
       run:
         working-directory: lite
@@ -117,7 +140,7 @@ jobs:
         if: inputs.full_lite
         run: npx playwright test --config playwright.launch.config.ts --project=${{ matrix.engine }} --trace off --reporter=dot
       - name: Inspect the 181 reviewed topics on desktop and mobile
-        if: matrix.engine == 'chromium'
+        if: github.event_name != 'pull_request' && matrix.engine == 'chromium'
         env:
           SAMMAKKO_CAPTURE_TOPIC: ${{ inputs.diagnostics == 'lite' && inputs.topic || '' }}
         run: npx playwright test --config playwright.scope.config.ts --reporter=dot --trace off
@@ -130,6 +153,7 @@ jobs:
           if-no-files-found: ignore
           retention-days: 1
   lessons:
+    if: github.event_name != 'pull_request'
     outputs:
       digest: ${{ steps.digest.outputs.sha }}
     runs-on: ubuntu-24.04

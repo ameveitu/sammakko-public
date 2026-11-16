@@ -32,7 +32,7 @@ async function fallback(p:Page){
 }
 async function start(p:Page,id:string,seed:number,independent=false){
   if(p.url()!=='about:blank')await p.goto('about:blank');
-  await p.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await p.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await b(p,independent?'Kokeilen itse':'Tutkitaan yhdessä').click();
   await expect(work(p)).toBeVisible();
 }

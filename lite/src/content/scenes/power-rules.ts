@@ -34,7 +34,7 @@ export const powerNotationContrast: Paint = host => {
 
 export function powerRuleBoard(task: PowerRuleTask): Paint {
   return host => host.replaceChildren(h('div', { 'data-power-givens': '', style: grid },
-    h('p', { class: 'small', style: 'margin:0' }, caption('Tuttu rakenne. '), task.context.title),
+    h('p', { class: 'small', style: 'margin:0', 'data-model-note': '' }, caption('Tuttu rakenne. '), task.context.title),
     h('dl', { style: 'margin:0;display:grid;gap:2px 10px;grid-template-columns:auto minmax(0,1fr)' },
       ...task.givens.flatMap(({ label, value }) => [h('dt', { style: 'font-weight:700' }, label), h('dd', { style: 'margin:0;font-size:14px' }, value)])), equalGrids(task)));
 }

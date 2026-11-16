@@ -7,7 +7,7 @@ test('observed generator animates automatically and respects pause and reduced m
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.goto('./?qa=1&seed=0#saaristo/PHY79-GENERATION');
+  await page.goto('./?qa=1&seed=0&full=1#saaristo/PHY79-GENERATION');
   await page.getByRole('button', { name: 'Tutkitaan yhdessä', exact: true }).click();
   expect((await snapshot(page)).model.given.moving).toBe(true);
   expect((await snapshot(page)).renderer).toBe('webgl');

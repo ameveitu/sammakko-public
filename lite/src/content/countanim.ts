@@ -434,8 +434,8 @@ export function moreVsTimes(a: number, k: number): AnimPaint {
       return `<line x1="0" y1="${TB}" x2="${W}" y2="${TB}" stroke="currentColor" opacity=".4"/>` +
         stackBlocks(a, 20, a, 'var(--sun)', 'var(--sun)') + `<text x="40" y="232" text-anchor="middle" font-size="13" font-weight="800" fill="currentColor">Aava ${a}</text>` +
         stackBlocks(a, 120, 99, 'var(--sun)', 'var(--sun)') + Array.from({ length: p }, (_, i) => `<rect x="120" y="${TB - (a + i + 1) * TU}" width="40" height="${TU - 2}" rx="3" fill="#d9534f"/>`).join('') +
-        `<text x="140" y="232" text-anchor="middle" font-size="13" font-weight="800" fill="currentColor">${a} + ${k} = ${a + p}</text>` +
-        stackBlocks(a + q, 220, a) + `<text x="240" y="232" text-anchor="middle" font-size="13" font-weight="800" fill="var(--pond)">${k} × ${a} = ${a + q}</text>`;
+        `<text x="140" y="232" text-anchor="middle" font-size="13" font-weight="800" fill="currentColor">${a} + ${k} = ${p < nP ? '?' : a + p}</text>` +
+        stackBlocks(a + q, 220, a) + `<text x="240" y="232" text-anchor="middle" font-size="13" font-weight="800" fill="var(--pond)">${k} × ${a} = ${q < nT ? '?' : a + q}</text>`;
     },
     caption: (t) => t < t0 ? `Kaksi eri asiaa: ${k} enemmän ja ${k} kertaa niin paljon.`
       : t < fin ? 'Plus lisää palikat vain kerran. Kertaa lisää kokonaisia torneja.'

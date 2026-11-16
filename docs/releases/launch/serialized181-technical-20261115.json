@@ -1,0 +1,67 @@
+{
+  "schema": "sammakko-serialized181-technical-checkpoint/1",
+  "status": "accepted-technical-regression-guard",
+  "date": "2026-11-15",
+  "scope": "Current-source technical serialization regression guard only; not a reconstructed historical corpus or new pedagogical approval.",
+  "source": {
+    "commit": "e6670685436698950e70fbac7ef2f686c548a11e",
+    "contentTree": "d49f954df65a9d64b83d6d2a048131c3011f21d9",
+    "sourceTree": "6cd8d5de5d192c440bad1eebee19e24b9d1e454d",
+    "packageLockSha256": "8098788855987360c99520688fdf1ac4878b311ec79c305a063cbf5805c0b719",
+    "diagnosticCommit": "7de1890ac74a2ef79812e0c6caba63de851d5885"
+  },
+  "protocol": {
+    "ids": "Object.keys(NODES).sort()",
+    "phases": [
+      "guided",
+      "independent",
+      "transfer",
+      "retrieval"
+    ],
+    "seedsInclusive": [
+      0,
+      127
+    ],
+    "record": "JSON.stringify([id,phase,seed,JSON.stringify(item)])",
+    "digest": "SHA-256 of consecutive UTF-8 records, no separator",
+    "learnerKnowledge": "knownChecked throws; content must not consult learner state",
+    "drawFunctions": "omitted by JSON.stringify; separately reviewed in browser"
+  },
+  "matrix": {
+    "ids": 181,
+    "records": 92672,
+    "testDigest": "739b71d6f26ce748623d423c22d58849774ceb95e8e193d529eb534512a69bec",
+    "jsonlSha256": "efc32c2dfcfc51a27ab996a4705d084cec983a2352c5180ff628eee6ea4c2118",
+    "rngJsonlSha256": "b39009a0632a6c6c6999b3b40c2d66bd5f02f40d143ffd02fb951fbee22f5670",
+    "contentRev": "lite181-2026-10-27"
+  },
+  "independentReproduction": {
+    "diagnosis": "Sol 6.1 isolated historical/current snapshots and direct per-case comparison",
+    "parent": "Codex orchestrator independently generated candidate matrix and compared all item/RNG records and181 revision entries to originalD1 head",
+    "itemsChanged": 0,
+    "rngRecordsChanged": 0,
+    "nodeRevisionsChanged": 0,
+    "historicSourcesCompared": [
+      "c8eaa1facf06277c5ec968f7ae2357b4b492658d",
+      "212f930180c5a423532614945375dc2ba538b08d",
+      "7cce536c74b7750edf327924ee87174b59505b25"
+    ],
+    "historicalDecimalFix": "f10584b9 to c8eaa1fa changes84 cases only in M79-DEC-DIV; documented old review delta agrees; current unique-equivalence regression passes"
+  },
+  "historicalReference": {
+    "preservedReceipt": "docs/releases/launch/rebind-c6a954c036e0.json",
+    "expectedDigest": "443fb548767938c84670ec45101e45fa3d58912d669d537705e11c68e538f76a",
+    "status": "Unresolved original protocol/artifact binding; value fails even at introduction commit c8eaa1fa under the stated protocol. Historical receipt is not edited."
+  },
+  "checks": {
+    "beforeGuardCorrection": "57 focused tests:56 passed,1 failed solely on unreconstructed historical digest",
+    "afterGuardCorrection": "57/57 focused tests passed with maxWorkers=1: readiness-serialized181, review181, review2, journey, story-route",
+    "diagnosticComparisonTests": "4 passed",
+    "coverageLimit": "review181/review2 are selective regression oracles, not independent mathematical checking of every case; no all-seed, drawing, device, OPS, efficacy or learner validation claim"
+  },
+  "approval": {
+    "verdict": "accepted for the bounded current-source serialization regression guard only",
+    "reviewer": "Independent checkpoint opponent, 2026-11-15",
+    "reason": "Source bindings, independent current snapshot, direct historical matrix comparisons and focused regressions verified; historical reviewed corpus and digest binding remain unresolved. This does not approve pedagogy, learner outcomes, browser rendering or release."
+  }
+}

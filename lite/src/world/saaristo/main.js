@@ -48,7 +48,7 @@ function fallback(reason) {
 let renderer;
 try { renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' }); if (!renderer.capabilities.isWebGL2) throw new Error('webgl2'); }
 catch (e) { renderer?.dispose(); renderer = null; fallback('no-webgl'); }
-if (!renderer) return { scene: null, camera: null, state, resize() {}, invalidate() {}, setActivityFocus() {}, setCameraPose() {}, setAtmosphere() {}, setBackdropVisible() {}, renderAt() {}, setWorkMode(value) { state.workMode = !!value; }, setCharactersVisible(value) { state.charactersVisible = !!value; }, advanceTime() {}, setPaused(value) { state.paused = value; }, dispose() { if (disposed) return; disposed = true; controller.abort(); } };
+if (!renderer) return { scene: null, camera: null, state, resize() {}, invalidate() {}, setActivityFocus() {}, setCameraPose() {}, setAtmosphere() {}, setBackdropVisible() {}, renderAt() {}, setWorkMode(value) { state.workMode = !!value; }, travel() { return false; }, setCharactersVisible(value) { state.charactersVisible = !!value; }, advanceTime() {}, setPaused(value) { state.paused = value; }, dispose() { if (disposed) return; disposed = true; controller.abort(); } };
 return start();
 
 // A camera-facing character card. Fragments below `uCut` (the waterline) are dropped, so a
@@ -215,7 +215,7 @@ function start() {
     const compactType = matchMedia('(max-width: 960px), (hover: none) and (pointer: coarse)').matches ? getComputedStyle(headline) : null;
     text.layout({ left: r.left, top: r.top + scrollY, width: Math.min(r.width, innerWidth - r.left - 8) }, renderer.getPixelRatio(), scatter, compactType);
   }
-  if (text) { root.dataset.saaristoText = 'particles'; layoutText(true); }
+  if (text) { root.dataset.saaristoText = 'particles'; layoutText(false); }
 
   // WebGPU swarm, started asynchronously; its checkbox stays disabled where WebGPU is missing.
   let swarm = null, swarmOn = true;
@@ -394,6 +394,13 @@ function start() {
   const padTop = (i) => water.padPos[i].clone().setY(0.52);
   loikka.position.copy(padTop(pad));
   function hopTo(to, happy = false) { hop = { from: padTop(pad), to: padTop(to), t: happy ? 0 : -0.18, idx: to, happy, h: happy ? 0.9 : 1.4 }; nextHop = rnd(4, 7); }
+  // A book departure may be interrupted or rendered sparsely. Settle its own hop
+  // without replaying landing effects when the book restores its still backdrop.
+  function settleBookHop() {
+    if (!hop?.bookTravel) return;
+    loikka.position.copy(hop.to); pad = hop.idx; state.loikkaPad = pad; hop = null;
+    loikka.userData.u.map.value = LT.idle;
+  }
   function hopNext(far = false) {
     let to = pad, best = -1;
     for (let k = 0; k < (far ? 7 : 1); k++) {
@@ -616,12 +623,12 @@ function start() {
       if (voiceNext.peep < 0) { voiceNext.peep = rnd(15, 40); if (A.mode === 'float') sound.play('aava.peep', { x: panAt(A.pos), gain: 0.8 }); }
       if (hop) {
         hop.t += dt;
-        const k = clamp(hop.t / 0.75, 0, 1);
+        const k = hop.bookTravel ? clamp((now - hop.started) / 500, 0, 1) : clamp(hop.t / 0.75, 0, 1);
         if (!hop.pushed && hop.t >= 0) { hop.pushed = true; sound.play('loikka.push', { x: panAt(loikka.position) }); }
         loikka.userData.u.map.value = hop.happy ? LT.happy : hop.t < 0 ? LT.crouch : k < 0.3 ? LT.leap : k < 0.85 ? LT.airborne : LT.land;
         loikka.userData.u.uFlip.value = hop.to.x < hop.from.x - 0.01 ? 1 : 0;
-        loikka.position.lerpVectors(hop.from, hop.to, k).setY(0.52 + Math.sin(k * Math.PI) * hop.h);
-        if (k >= 1) { water.drop(hop.to.x, hop.to.z, 0.55, 0.35); sound.play('land.wet', { x: panAt(hop.to) }); pad = hop.idx; state.loikkaPad = pad; hop = null; later(() => { if (!hop) loikka.userData.u.map.value = LT.idle; }, 260); }
+        loikka.position.lerpVectors(hop.from, hop.to, k).setY((hop.bookTravel ? THREE.MathUtils.lerp(hop.from.y, hop.to.y, k) : 0.52) + Math.sin(k * Math.PI) * hop.h);
+        if (k >= 1) { const bookTravel = hop.bookTravel; water.drop(hop.to.x, hop.to.z, 0.55, 0.35); sound.play('land.wet', { x: panAt(hop.to) }); pad = hop.idx; state.loikkaPad = pad; hop = null; if (bookTravel) loikka.userData.u.map.value = LT.idle; else later(() => { if (!hop) loikka.userData.u.map.value = LT.idle; }, 260); }
       } else loikka.position.y = 0.52 + Math.sin(t * 1.3 + pad) * 0.02;
       updateAava(dt, t);
       grass.uniforms.uPush.value += (pushTarget - grass.uniforms.uPush.value) * Math.min(1, dt * 6);
@@ -693,7 +700,16 @@ function start() {
       lastT = performance.now();
     },
     setPaused(value) { if (disposed) return; state.paused = !!value; lastT = performance.now(); needsFrame = true; },
-    setWorkMode(value) { if (disposed) return; state.workMode = !!value; lastT = performance.now(); needsFrame = true; },
+    setWorkMode(value) { if (disposed) return; if (value) settleBookHop(); state.workMode = !!value; lastT = performance.now(); needsFrame = true; },
+    /** Theory-book page turn: Loikka takes a long hop and Aava flutters ahead. */
+    travel() {
+      if (disposed || state.lost) return false;
+      state.workMode = false; lastT = performance.now(); needsFrame = true;
+      if (!hop) hopNext(true);
+      if (hop) { hop.from.copy(loikka.position); hop.t = 0; hop.bookTravel = true; hop.started = performance.now(); }
+      if (A.mode !== 'fly' && A.mode !== 'drag') startFly();
+      return true;
+    },
     dispose() {
       if (disposed) return;
       disposed = true; hostResize?.disconnect(); headlineResize?.disconnect(); controller.abort(); cancelAnimationFrame(raf); for (const id of timers) clearTimeout(id); timers.clear();

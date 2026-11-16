@@ -25,6 +25,8 @@ export interface SaaristoHandle {
   setPaused(paused: boolean): void;
   /** Stops ambient movement while task apparatus continues on its own clock. */
   setWorkMode(working: boolean): void;
+  /** Theory-book page turn: Loikka hops far and Aava flies ahead. False when nothing moves. */
+  travel(): boolean;
   dispose(): void;
 }
 export function mountSaaristo(options: SaaristoOptions): SaaristoHandle;

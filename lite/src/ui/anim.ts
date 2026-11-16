@@ -7,6 +7,7 @@ import { Clock } from '../engine/motion';
 import type { Paint } from '../engine/types';
 import { ICON, svg } from './art';
 import { btn, h } from './dom';
+import { PAUSE_ICON } from './player-icon';
 
 export interface AnimCfg {
   /** Length in seconds (real seconds at normal playback). */
@@ -47,11 +48,16 @@ export function anim(c: AnimCfg): AnimPaint {
       clock.play(performance.now()); start();
     }, 'primary');
     const playLabel = playBtn.querySelector('span:last-child') as HTMLElement;
+    const playIcon = playBtn.querySelector<HTMLElement>('.ico');
     const draw = () => {
       pic.innerHTML = svg(c.w, c.h, c.frame(clock.t), c.label);
       if (c.caption) cap.textContent = c.caption(clock.t);
       if (c.watch) watch.textContent = `⏱ ${Math.floor((typeof c.watch === 'function' ? c.watch(clock.t) : clock.t) + 1e-6)} s`;
       playLabel.textContent = clock.playing ? 'Tauko' : clock.t > 0 && clock.t < c.dur ? 'Jatka' : clock.t >= c.dur ? 'Katso uudelleen' : 'Toista';
+      // The icon says what the button does now: pause while playing, replay at the end.
+      const icon = clock.playing ? 'pause' : clock.t >= c.dur ? 'replay' : 'next';
+      if (playIcon && playIcon.dataset.icon !== icon) { playIcon.innerHTML = icon === 'pause' ? PAUSE_ICON : ICON[icon]; playIcon.dataset.icon = icon; }
+      playBtn.setAttribute('aria-label', playLabel.textContent);
     };
     const loop = (now: number) => { clock.tick(now); draw(); if (clock.playing) raf = requestAnimationFrame(loop); };
     const start = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(loop); };

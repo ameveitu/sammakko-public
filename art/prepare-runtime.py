@@ -61,5 +61,8 @@ result = {'schema': 'sammakko-art-runtime/1', 'sourceManifest': 'art/manifest.js
                       'backgrounds': ['forest-clearing', 'night-pond'],
                       'icons': ['heart', 'leaf', 'lock', 'map-pin', 'shell', 'star', 'trophy']},
           'budgets': {'heroBytes': 204800, 'mapTexturesBytes': 122880, 'actionNewPosesBytes': 204800, 'iconBytes': 12288}}
+# Existing theory-book PNGs remain untouched; bind their explicit inventory.
+result['bookManifest'] = 'art/book-runtime-manifest.json'
+result['bookManifestSha256'] = digest(ART / 'book-runtime-manifest.json')
 (ART / 'runtime-manifest.json').write_text(json.dumps(result, indent=2) + '\n')
 print(f'Prepared {len(records)} images; selected actions: {sum(map(len,selected.values()))}; no generation/network calls')

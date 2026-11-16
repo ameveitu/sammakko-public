@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test';
 
 type State={family:string;lastOk?:boolean;renderer:string;model:{body:string;given:string;surfaceView?:string;inputs?:{kind:string;direction?:string;newtons?:number;from?:string;netForceN?:number}};stage:{surfaceView?:string;motion?:{velocity:number;displacement:number;relativeVelocity?:number;frictionN?:number}}};
 const state=(p:Page):Promise<State>=>p.evaluate(()=>JSON.parse(window.render_game_to_text!()));
-async function begin(p:Page,id:string,seed=0){await p.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);await p.reload();await p.getByRole('button',{name:'Tutkitaan yhdessä',exact:true}).click();}
+async function begin(p:Page,id:string,seed=0){await p.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);await p.reload();await p.getByRole('button',{name:'Tutkitaan yhdessä',exact:true}).click();}
 async function assign(p:Page,slot:string,token:string){await p.locator('.place-tray').getByRole('button',{name:token,exact:true}).click();await p.locator('.exp-task .slot').filter({hasText:slot}).locator('.lbl').click();}
 
 async function assignKeyboard(p:Page,slot:string,token:string){const source=p.locator('.place-tray').getByRole('button',{name:token,exact:true});await source.focus();await p.keyboard.press('Enter');const target=p.locator('.exp-task .slot').filter({hasText:slot});await target.focus();await p.keyboard.press('Enter');}
@@ -92,7 +92,8 @@ test('reduced motion exposes the domain-determined force outcome without autopla
   await begin(page,'ENV-PHY-FORCE-01');
   if(process.env.FORCE_WORKSHOP_WEBGL==='1') expect((await state(page)).renderer).toBe('webgl');
   const m=(await state(page)).model, source=m.inputs!.from!, force=m.inputs!.netForceN!;
-  await assign(page,`Voiman aiheuttaja kappaleeseen ${m.body}`,source);
+  expect(m.body).toBe('lautta');
+  await assign(page,'Voiman aiheuttaja lauttaan',source);
   await assign(page,'Nopeuden muutos',`Muutos ${force>0?'oikealle':'vasemmalle'}`);
   await page.locator('.exp-task').getByRole('button',{name:'Valmis'}).click();
   expect((await state(page)).lastOk).toBe(true);

@@ -18,7 +18,7 @@ const menu = (page: Page, name: string) => work(page).getByRole('combobox', { na
 const submit = (page: Page) => work(page).locator('[data-harbor-submit]');
 
 async function open(page: Page, id: Id, seed = 7) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(page, 'Kokeilen itse').click();
   await expect(work(page)).toBeVisible();
 }

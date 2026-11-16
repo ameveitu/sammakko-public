@@ -12,7 +12,7 @@ async function fallback(p: Page) {
   await p.addInitScript(() => { const original = HTMLCanvasElement.prototype.getContext; HTMLCanvasElement.prototype.getContext = function (id, ...rest) { return /^webgl/.test(String(id)) ? null : Reflect.apply(original, this, [id, ...rest]); } as typeof original; });
 }
 async function open(p: Page, id: string, seed = 1) {
-  await p.goto(`./?qa=1&seed=${seed}#saaristo/${id}`); await btn(p, 'Kokeilen itse').press('Enter'); await expect(board(p)).toBeVisible();
+  await p.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`); await btn(p, 'Kokeilen itse').press('Enter'); await expect(board(p)).toBeVisible();
 }
 function nutrientGroup(text: string) {
   if (/Glukoosi|Fruktoosi|Sakkaroosi|Maltoosi|Tärkkelys/.test(text)) return 'carbohydrate';

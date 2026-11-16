@@ -14,7 +14,7 @@ const workbench = (p: Page) => p.locator('[data-lifecycle-workbench]');
 async function fallback(p: Page) {
   await p.addInitScript(() => { const original = HTMLCanvasElement.prototype.getContext; HTMLCanvasElement.prototype.getContext = function (id, ...rest) { return /^webgl/.test(String(id)) ? null : Reflect.apply(original, this, [id, ...rest]); } as typeof original; });
 }
-async function open(p: Page, id: string, seed = 1) { await p.goto(`./?qa=1&seed=${seed}#saaristo/${id}`); await btn(p, 'Kokeilen itse').press('Enter'); await expect(workbench(p)).toBeVisible(); }
+async function open(p: Page, id: string, seed = 1) { await p.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`); await btn(p, 'Kokeilen itse').press('Enter'); await expect(workbench(p)).toBeVisible(); }
 async function active(p: Page): Promise<LifecycleHarborTask> { const s = await state(p); return lifecycleHarborSpecs.find(n => n.id === s.node)!.item(rng(s.seed), s.phase).task as LifecycleHarborTask; }
 async function fit(p: Page) {
   return p.evaluate(() => [...document.querySelectorAll<HTMLElement>('[data-lifecycle-workbench] button,[data-lifecycle-workbench] select,[data-lifecycle-workbench] input:not([type=checkbox]),[data-lifecycle-workbench] svg,[data-lifecycle-workbench] label:has(input[type=checkbox])')].filter(e => e.checkVisibility()).flatMap(e => {

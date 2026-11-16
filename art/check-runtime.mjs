@@ -79,7 +79,34 @@ assert.deepEqual(selected.anchor, anim.anchor); assert.equal(selected.frame, ani
 const embedded = read('lite/src/ui/sprite-data.ts').toString().match(/export const ART_SEQS:[^=]+=\s*([\s\S]*?);\n\/\/ END SELECTED ART SEQUENCES/);
 assert(embedded, 'selected sequence source marker'); assert.deepEqual(JSON.parse(embedded[1]), selected.sequences, 'sprite registry drift');
 for (const [actor, pose, score] of [['aava', 'read', 68], ['loikka', 'read', 72], ['aava', 'sad', 85]]) { assert.equal(source.characters[actor][pose].pickedBy, 'picks.json'); assert.equal(source.characters[actor][pose].score, score); }
-const shipped = new Set(runtime.images.filter((r) => !r.file.startsWith('art/')).map((r) => r.file));
+assert.equal(runtime.bookManifest, 'art/book-runtime-manifest.json');
+hash(runtime.bookManifest, runtime.bookManifestSha256);
+const book = json(runtime.bookManifest);
+assert.equal(book.schema, 'sammakko-book-art-runtime/1');
+assert.equal(book.introducedCommit, '7a6612382986423ef45a6c19c98658d857fc0161');
+const bookRoles = {
+  'elec-otter': ['elec', 'ENV-PHY-ELECSAFE-01'],
+  'elec-sulka': ['elec', 'ENV-PHY-ELECSAFE-01'],
+  'space-rocket': ['space', 'ENV-PHY-SPACE-01'],
+  'space-summer': ['space', 'ENV-PHY-SPACE-01'],
+  'space-winter': ['space', 'ENV-PHY-SPACE-01'],
+};
+assert.deepEqual(book.images.map((r) => r.file).sort(), Object.keys(bookRoles).map((name) => `lite/public/art/book/${name}.png`).sort(), 'exact theory-book art roster');
+const catalog = json('lite/src/data/journey-catalog.json');
+for (const image of book.images) {
+  hash(image.file, image.sha256);
+  assert.equal(read(image.file).length, image.bytes);
+  assert.deepEqual(dimensions(image.file), [image.width, image.height]);
+  const name = path.basename(image.file, '.png'), [stage, kcId] = bookRoles[name];
+  assert.equal(image.stage, `lite/src/book/stages/${stage}.js`);
+  assert.equal(image.kcId, kcId); assert(catalog.order.includes(kcId));
+  assert(read(image.stage).toString().includes(`art/book/${name}.png`), `unused book art ${name}`);
+  assert(image.generationRecord.startsWith(`tools/imagegen/provenance/${name}-`));
+  hash(image.generationRecord, image.generationRecordSha256);
+  // The historical record describes a different raw output; no transformation is inferred.
+  assert.equal(json(image.generationRecord).sha256, image.recordedRawOutputSha256);
+}
+const shipped = new Set([...runtime.images.filter((r) => !r.file.startsWith('art/')), ...book.images].map((r) => r.file));
 for (const [actor, names] of Object.entries(runtime.selectedActions)) {
   assert.deepEqual(Object.keys(selected.sequences[actor]).sort(), [...names].sort());
   for (const name of names) {

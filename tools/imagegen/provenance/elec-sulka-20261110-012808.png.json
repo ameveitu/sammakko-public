@@ -1,0 +1,70 @@
+{
+  "file": "elec-sulka-20261110-012808.png",
+  "sha256": "5a6a3c043b5421472a5302c2841fbe237b4d8a7da086396ae3e08ee8786d60c7",
+  "bytes": 1020418,
+  "createdAt": "2026-11-09T23:27:46.631Z",
+  "tool": "sammakko-imagegen 1.0.0",
+  "keySource": "keychain",
+  "endpoint": "images/edits",
+  "requestId": "req_cd5e815da29d48488b406ddc7611d6db",
+  "model": "gpt-image-2.5-flare",
+  "preset": "sprite",
+  "params": {
+    "size": "1024x1024",
+    "quality": "high",
+    "background": "transparent",
+    "output_format": "png",
+    "output_compression": null,
+    "n": 1,
+    "moderation": "auto"
+  },
+  "returned": {
+    "size": "1024x1024",
+    "quality": "high",
+    "background": "transparent",
+    "output_format": "png"
+  },
+  "prompt": "Style: hand-drawn children's picture-book illustration in the Sammakko style. Soft colored-pencil and wax-crayon texture inside the shapes, with visible grainy strokes. Bold, smooth, rounded dark navy-blue outline (#244868-like) of even weight around every shape. Simple friendly faces: round black eyes with one small white highlight, small pink blush on the cheeks. Bright but gentle colors, flat even lighting, no hard shadows, no gradients, no 3D render look, no photorealism. Clean silhouette that reads well at small size (128-256 px). No text, no letters, no watermark, no frame.\n\nA single game sprite of Use the two reference images ONLY as a style guide (same soft flat 2D cartoon sprite style, line weight, shading and cuteness). Draw ONE new character and nothing else: Sulka, a tall slender friendly grey-blue heron scientist. Long neck, small head with a short dark crest feather, long yellow-orange beak, round black-rimmed glasses, kind eyes, wearing a white lab coat with two small buttons, thin orange legs. Standing three-quarter view facing left, one wing raised as if saying 'thank you for telling me'. Whole body visible, centered, transparent background.. Pose / action: standing, friendly, looking at the viewer. Full body visible, centered, with generous empty margin on all sides so nothing touches the edges. Transparent background, no ground, no cast shadow, no scenery.",
+  "promptParts": [
+    {
+      "from": "style-sammakko",
+      "text": "Style: hand-drawn children's picture-book illustration in the Sammakko style. Soft colored-pencil and wax-crayon texture inside the shapes, with visible grainy strokes. Bold, smooth, rounded dark navy-blue outline (#244868-like) of even weight around every shape. Simple friendly faces: round black eyes with one small white highlight, small pink blush on the cheeks. Bright but gentle colors, flat even lighting, no hard shadows, no gradients, no 3D render look, no photorealism. Clean silhouette that reads well at small size (128-256 px). No text, no letters, no watermark, no frame."
+    },
+    {
+      "from": "sprite",
+      "text": "A single game sprite of Use the two reference images ONLY as a style guide (same soft flat 2D cartoon sprite style, line weight, shading and cuteness). Draw ONE new character and nothing else: Sulka, a tall slender friendly grey-blue heron scientist. Long neck, small head with a short dark crest feather, long yellow-orange beak, round black-rimmed glasses, kind eyes, wearing a white lab coat with two small buttons, thin orange legs. Standing three-quarter view facing left, one wing raised as if saying 'thank you for telling me'. Whole body visible, centered, transparent background.. Pose / action: standing, friendly, looking at the viewer. Full body visible, centered, with generous empty margin on all sides so nothing touches the edges. Transparent background, no ground, no cast shadow, no scenery."
+    }
+  ],
+  "inputs": [
+    {
+      "file": "lite/public/characters/aava/idle.png",
+      "sha256": "84675b1db8291223a553c76ceca0053553de9597667d16025a5580c92b423b83"
+    },
+    {
+      "file": "lite/public/characters/loikka/idle.png",
+      "sha256": "de2aa05fec754aee9d52cdcbc5b0488cf633f527d0507d0b3a7d517707289060"
+    }
+  ],
+  "mask": null,
+  "cost": {
+    "estimateUsd": 0.30875,
+    "actualUsd": 0.058411,
+    "usage": {
+      "input_tokens": 839,
+      "input_tokens_details": {
+        "image_tokens": 512,
+        "text_tokens": 327
+      },
+      "output_tokens": 1756,
+      "output_tokens_details": {
+        "image_tokens": 1756,
+        "text_tokens": 0
+      },
+      "total_tokens": 2595
+    },
+    "imagesInRequest": 1,
+    "note": "actualUsd koskee koko pyyntöä"
+  },
+  "seconds": 22,
+  "license": "OpenAI-ehdot: tuotos kuuluu käyttäjälle; tarkista README:n lisenssiosio ennen julkaisua."
+}

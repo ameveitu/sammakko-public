@@ -8,7 +8,7 @@ const state=(p:Page)=>p.evaluate(()=>JSON.parse(window.render_game_to_text!()));
 test.beforeEach(async({page},info)=>{if(!info.title.includes('WebGL'))await page.addInitScript(()=>{const get=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(type:string,...args:unknown[]){return /^webgl/.test(type)?null:Reflect.apply(get,this,[type,...args]);} as typeof get;});});
 const ids=['CHEM79-CONC-01','CHEM79-CONC-COMP','CHEM79-CONC-CALC','CHEM79-ACIDBASE','CHEM79-PH','CHEM79-INDICATOR'];
 async function begin(p:Page,id:string,seed=1,phase='Kokeilen itse'){
- await p.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);await button(p,phase).click();await p.locator('[data-solution-lab]').waitFor();
+ await p.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);await button(p,phase).click();await p.locator('[data-solution-lab]').waitFor();
 }
 async function numeric(p:Page,name:string,value:string|number){await field(p,name).fill(String(value));}
 async function select(p:Page,name:string,value:string){await field(p,name).selectOption(value);}

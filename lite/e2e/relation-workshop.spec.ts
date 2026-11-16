@@ -23,7 +23,7 @@ const coef = (text: string, v: 'x' | 'y') => {
 const table = (page: Page) => panel(page).locator('tbody tr').evaluateAll(rows => rows.map(row => [...row.querySelectorAll('td')].map(cell => cell.textContent!.trim())));
 
 async function open(page: Page, id: Id, seed = 7) {
-  await page.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);
+  await page.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);
   await button(page, 'Kokeilen itse').click();
   await expect(panel(page)).toBeVisible();
 }

@@ -9,7 +9,7 @@ const button=(p:Page,name:string)=>p.getByRole('button',{name,exact:true});
 const field=(p:Page,name:string)=>p.getByLabel(name,{exact:true});
 const state=(p:Page)=>p.evaluate(()=>JSON.parse(window.render_game_to_text!()));
 const saved=(p:Page)=>p.evaluate(()=>JSON.parse(localStorage.getItem('sammakko-journey-3')??'{"attempts":[]}'));
-async function open(p:Page,id:string){await p.goto(`./?qa=1&seed=7#saaristo/${id}`);await button(p,'Kokeilen itse').press('Enter');}
+async function open(p:Page,id:string){await p.goto(`./?qa=1&seed=7&full=1#saaristo/${id}`);await button(p,'Kokeilen itse').press('Enter');}
 async function ledger(p:Page,wrong=false){
   const s=await state(p),t=decimalLedgerSpec.item(rng(s.seed),s.phase).task;if(t.kind!=='decimal-ledger')throw Error('ledger');
   let cents=BigInt(t.startHundredths);
@@ -23,7 +23,7 @@ test('decimal integration rejects the wrong intermediate even when the final amo
   await expect(page.locator('.exp-feedback')).toHaveAttribute('data-ok','false');
   expect((await saved(page)).attempts.at(-1)).toMatchObject({ok:false,rev:'exp690-decimal-ledger-v2'});
   await page.screenshot({path:info.outputPath('ledger-intermediate-not-yet.png'),animations:'disabled'});
-  await page.goto('./?qa=1&seed=11#saaristo/M-DEC-07');await button(page,'Kokeilen itse').press('Enter');
+  await page.goto('./?qa=1&seed=11&full=1#saaristo/M-DEC-07');await button(page,'Kokeilen itse').press('Enter');
   for(let i=0;i<3;i++){await ledger(page);await expect(page.locator('.exp-feedback')).toHaveAttribute('data-ok','true');if(i<2)await button(page,'Seuraava kokeilu').press('Enter');}
   await button(page,'Kokeile uudessa tilanteessa').press('Enter');expect((await state(page)).phase).toBe('transfer');
   await ledger(page);expect((await state(page)).progress.checked).toBe(true);

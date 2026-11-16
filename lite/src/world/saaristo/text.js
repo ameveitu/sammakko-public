@@ -52,7 +52,7 @@ export function makeParticleText(lines, colors) {
     w = innerWidth; h = innerHeight;
     cam.right = w; cam.bottom = -h; cam.updateProjectionMatrix();
     compact = !!compactType;
-    rim.visible = compact; uniforms.uCompact.value = Number(compact);
+    rim.visible = true; uniforms.uCompact.value = Number(compact);
     const fs = compact ? parseFloat(compactType.fontSize) : Math.round(Math.min(rect.width / 8.2, 96));
     const lh = compact ? parseFloat(compactType.lineHeight) || fs * 1.1 : fs * 1.1;
     const c = document.createElement('canvas'), W = Math.ceil(rect.width), H = Math.ceil(lh * lines.length + fs * 0.4);

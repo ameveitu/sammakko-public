@@ -11,7 +11,7 @@ const field=(p:Page,name:string)=>p.getByLabel(name,{exact:true});
 const state=(p:Page)=>p.evaluate(()=>JSON.parse(window.render_game_to_text!()));
 const pick=(p:Page,name:string,value:string)=>field(p,name).selectOption(value);
 const fill=(p:Page,name:string,value:number|string)=>field(p,name).fill(String(value));
-async function start(p:Page,id:string,seed=0){await p.goto(`./?qa=1&seed=${seed}#saaristo/${id}`);await button(p,'Kokeilen itse').click();}
+async function start(p:Page,id:string,seed=0){await p.goto(`./?qa=1&seed=${seed}&full=1#saaristo/${id}`);await button(p,'Kokeilen itse').click();}
 async function current(p:Page){const s=await state(p),spec=logicWorkshopSpecs.find(n=>n.id===s.node)!;return {state:s,task:spec.item(rng(s.seed),s.phase).task as LogicWorkshopTask};}
 async function visible(p:Page,selector:string,height:number){const box=await p.locator(selector).boundingBox();expect(box,selector).not.toBeNull();expect(box!.y,selector).toBeGreaterThanOrEqual(0);expect(box!.y+box!.height,selector).toBeLessThanOrEqual(height+1);}
 async function solve(p:Page,options:{height?:number;pending?:boolean;helped?:boolean;forcedHelped?:boolean;capture?:TestInfo}={}){

@@ -51,7 +51,7 @@ test.describe('Saaristo expedition', () => {
   });
 
   test('guided story resolution, fresh independent retry and modal keyboard isolation preserve v2', async ({ page }) => {
-    await page.goto('./?qa=1&seed=1#saaristo/M-SCALE-03');
+    await page.goto('./?qa=1&seed=1&full=1#saaristo/M-SCALE-03');
     await page.getByRole('heading', { name: 'Matka kartasta rantaan' }).waitFor();
     await page.evaluate(({ key, contents }) => localStorage.setItem(key, contents), { key: legacyKey, contents: previousSave });
     await page.getByRole('button', { name: 'Tutkitaan yhdessä', exact: true }).click();
@@ -98,7 +98,7 @@ test.describe('Saaristo expedition', () => {
 
   test('cake cuts both plates into sixths, counts seven pieces and lets the story continue on a phone', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto('./?qa=1&seed=1#saaristo/M-FRAC-13');
+    await page.goto('./?qa=1&seed=1&full=1#saaristo/M-FRAC-13');
     await page.getByRole('button', { name: 'Tutkitaan yhdessä', exact: true }).click();
     await expect(task(page).locator('[data-cake-option]').first()).toBeHidden();
     await task(page).getByRole('button', { name: '✂️ Leikkaa palat yhtä suuriksi' }).click();
@@ -124,7 +124,7 @@ test.describe('Saaristo expedition', () => {
 
   test('wrong cake answer, reveal, same-task retry, and skipping never trap a phone player', async ({ page }) => {
     await page.setViewportSize({ width: 320, height: 640 });
-    await page.goto('./?qa=1&seed=1#saaristo/M-FRAC-13');
+    await page.goto('./?qa=1&seed=1&full=1#saaristo/M-FRAC-13');
     await page.getByRole('button', { name: 'Tutkitaan yhdessä', exact: true }).click();
     const pieces = async () => {
       await task(page).getByRole('button', { name: /Leikkaa palat yhtä suuriksi/ }).click();
@@ -153,7 +153,7 @@ test.describe('Saaristo expedition', () => {
   test('a completed task offers a fresh recall only after the 20-hour interval', async ({ page }) => {
     const started = new Date('2026-11-05T08:00:00Z');
     await page.clock.setFixedTime(started);
-    await page.goto('./?qa=1&seed=1#saaristo/M-SCALE-03');
+    await page.goto('./?qa=1&seed=1&full=1#saaristo/M-SCALE-03');
     await page.getByRole('button', { name: 'Kokeilen itse', exact: true }).click();
     for (let i = 0; i < 3; i++) {
       await numberAnswer(page, await scaleAnswer(page));

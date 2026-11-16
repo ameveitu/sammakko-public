@@ -31,7 +31,7 @@ const text = (x: number, y: number, s: string, size = 13, anchor = 'middle', wei
 const arrow = (x1: number, x2: number, y: number, color = '#a67f48') =>
   `<path d="M${x1} ${y}H${x2}" stroke="${color}" stroke-width="4"/><path d="M${x2} ${y}l${x2 > x1 ? -10 : 10} -7v14Z" fill="${color}"/>`;
 
-type Look = 'liquid' | 'solid' | 'gas' | 'bubbles' | 'flame' | 'clear' | 'colour' | 'cloud';
+type Look = 'bent-solid' | 'fragments' | 'liquid' | 'solid' | 'gas' | 'bubbles' | 'flame' | 'clear' | 'colour' | 'cloud';
 
 /** One beaker at x (width 90), with what is seen inside it. */
 function beaker(x: number, look: Look, tint: string): string {
@@ -43,6 +43,8 @@ function beaker(x: number, look: Look, tint: string): string {
     case 'clear': return glass + fill(56, '#cfe6f2');
     case 'colour': return glass + fill(56, '#e3a65b');
     case 'solid': return glass + `<rect x="${x + 28}" y="72" width="34" height="25" rx="4" fill="#c1ac79" stroke="#7b6a43"/>`;
+    case 'bent-solid': return glass + `<path d="M${x + 25} 59v27h40" fill="none" stroke="#7b6a43" stroke-width="12" stroke-linejoin="round"/><path d="M${x + 25} 59v27h40" fill="none" stroke="#c1ac79" stroke-width="8" stroke-linejoin="round"/>`;
+    case 'fragments': return glass + [[17, 82], [39, 88], [61, 78], [69, 94]].map(([dx, y]) => `<path d="M${x + dx!} ${y!}l8 -6l8 10l-10 2Z" fill="#c1ac79" stroke="#7b6a43"/>`).join('');
     case 'gas': return glass + dots(8, 34, '#e8eef6', 5);
     case 'bubbles': return glass + fill(62, tint) + dots(7, 30, '#ffffff', 5);
     case 'cloud': return glass + fill(56, '#dfe8ea') + dots(6, 84, '#f5f5f5', 3);
@@ -61,7 +63,16 @@ function afterLook(c: ReactionCase): Look {
     case 'gas-release': return 'bubbles';
     case 'burn': return 'flame';
     case 'dissolve': return 'clear';
-    case 'melt': return 'liquid';
+    case 'melt': {
+      // Some legacy cases use this illustration for shape changes. Phase data takes precedence.
+      if (!c.after.length) return 'liquid'; // Appearance-only record: preserve its qualitative fallback.
+      const after = lookOf(c.after);
+      if (after === 'solid' && c.before.every(s => s.phase === 'solid')) {
+        if (c.observation === 'Rautapala taipuu.') return 'bent-solid';
+        if (c.observation === 'Grafiittipala murskautuu.') return 'fragments';
+      }
+      return after;
+    }
     case 'colour': return 'colour';
     case 'precipitate': return 'cloud';
   }
@@ -74,9 +85,9 @@ function changePicture(c: ReactionCase): Paint {
   const below = (x: number, lines: readonly string[]) => lines.slice(0, 3).map((line, i) => text(x, 122 + i * 16, line, 12)).join('');
   const after = verified ? names(c.after) : ['ainetta ei tunnistettu'];
   const markup = text(70, 13, 'ennen', 13, 'middle', 700) + text(290, 13, 'jälkeen', 13, 'middle', 700)
-    + beaker(25, lookOf(c.before), '#a7c6b4') + arrow(130, 225, 60) + beaker(245, afterLook(c), '#a7c6b4')
+    + `<g data-reaction-before="${lookOf(c.before)}">${beaker(25, lookOf(c.before), '#a7c6b4')}</g>` + arrow(130, 225, 60) + `<g data-reaction-after="${afterLook(c)}">${beaker(245, afterLook(c), '#a7c6b4')}</g>`
     + below(70, names(c.before)) + below(290, after);
-  return picture(markup, `Ennen: ${names(c.before).join(', ')}. Jälkeen: ${after.join(', ')}.`, 360, 172);
+  return picture(markup, `${c.observation} Ennen: ${names(c.before).join(', ')}. Jälkeen: ${after.join(', ')}.`, 360, 172);
 }
 
 /** A reaction as pills: starting substances → products. */

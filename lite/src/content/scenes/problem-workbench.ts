@@ -9,7 +9,7 @@ const field = 'min-height:36px;box-sizing:border-box;border:1px solid #86a99b;bo
 
 export function problemWorkbenchBoard(task: ProblemWorkbenchTask): Paint {
   return host => host.replaceChildren(h('div', { 'data-problem-givens': '', style: grid },
-    h('p', { class: 'small', style: 'margin:0' }, h('strong', {}, 'Tuttu työväline. '), task.context.title),
+    h('p', { class: 'small', style: 'margin:0', 'data-model-note': '' }, h('strong', {}, 'Tuttu työväline. '), task.context.title),
     h('dl', { style: 'margin:0;display:grid;gap:2px 10px;grid-template-columns:auto minmax(0,1fr)' },
       ...task.givens.flatMap(given => [h('dt', { style: 'font-weight:700' }, given.label), h('dd', { style: 'margin:0' }, given.value)]))));
 }
